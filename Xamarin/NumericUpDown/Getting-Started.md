@@ -129,7 +129,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ## Create a Simple SfNumericUpDown
 
-The SfNumericUpDown control configured entirely in C# code or by using XAML markup. The following steps explains how to create a SfNumericUpDown and configure its elements.
+The [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) control can be configured entirely in C# code or by using the XAML markup. The following steps explain how to create a SfNumericUpDown and configure its elements.
 
 * Adding namespace for the added assemblies. 
 
@@ -156,7 +156,7 @@ The SfNumericUpDown control configured entirely in C# code or by using XAML mark
 
 {% highlight xaml %}
 
-	<numeric:SfNumericUpDown x:Name="numericUpDown"/>
+	<numeric:SfNumericUpDown/>
 	
 {% endhighlight %}
 
@@ -169,15 +169,17 @@ this.Content = numericUpDown;
 
 {% endtabs %}
 
-## Set Value
+![Show numeric updown control](images/Updown_Control.PNG)
 
-The SfNumericUpDown control display value can be set using `Value` property. 
+## Set value in SfNumericUpDown
+
+The [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) control display value can be set using the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Value) property. 
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<numeric:SfNumericUpDown x:Name="numericUpDown" Value="5"/>
+	<numeric:SfNumericUpDown Value="5"/>
 	
 {% endhighlight %}
 
@@ -189,8 +191,9 @@ this.Content = numericUpDown;
 
 {% endhighlight %}
 
-
 {% endtabs %}
+
+![Show numeric updown with value](images/UpDown_Value.PNG)
 
 You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Textbox)
 

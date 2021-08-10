@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Designing a Custom Toolbar in Xamarin Pdf Viewer control | Syncfusion
+title: Designing a Custom Toolbar in Xamarin Pdf Viewer | Syncfusion
 description: Learn here all about Designing a Custom Toolbar support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: Xamarin
 control: SfPdfViewer

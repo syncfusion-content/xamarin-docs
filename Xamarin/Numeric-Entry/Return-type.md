@@ -8,13 +8,13 @@ documentation: ug
 ---
 # Return Type in Xamarin Numeric Entry (SfNumericTextBox)
 
-We can able to define the return key type of NumericTextBox by using the `ReturnType` property of the type [Xamarin.Forms ReturnType](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry.returntype?view=xamarin-forms).
+You can define the return key type of [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) by using the [`ReturnType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ReturnType) property of the type [Xamarin.Forms ReturnType](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry.returntype?view=xamarin-forms).
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:SfNumericTextBox x:Name="numericTextBox" ReturnType= "Next" Value="123" />
+<syncfusion:SfNumericTextBox ReturnType= "Next" Value="123" />
 	
 {% endhighlight %}
 
@@ -28,25 +28,27 @@ numericTextBox.Value = 123;
 
 {% endtabs %}
 
-N> Default value of `ReturnType` is `Default`.
+N> Default value of ReturnType is `Default`.
+
+![Xamarin.Forms Numeric TextBox with return type](images/retureType.PNG)
 
 ## Return Command
 
-The `ReturnCommand` property defines an [`ICommand`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8) implementation that wraps an action when the user presses return button.
+The [`ReturnCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ReturnCommand) property defines an [`ICommand`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8) implementation that wraps an action when the user presses return button.
 
 ## Return Command Parameter
 
-The `ReturnCommandParameter` property is used to set the parameter that is sent to the `ReturnCommand`.
+The [`ReturnCommandParameter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ReturnCommandParameter) property is used to set the parameter that is sent to the [`ReturnCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ReturnCommand).
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<ContentPage.BindingContext>
+  <ContentPage.BindingContext>
     <local:ViewModel />
  </ContentPage.BindingContext>
 
-	<syncfusion:SfNumericTextBox x:Name="numericTextBox" ReturnType="Next" Value="123" ReturnCommand="{Binding CommandProperty}" />
+	<syncfusion:SfNumericTextBox ReturnType="Next" Value="123" ReturnCommand="{Binding CommandProperty}" />
 	
 {% endhighlight %}
 

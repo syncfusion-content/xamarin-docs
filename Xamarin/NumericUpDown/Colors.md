@@ -1,32 +1,32 @@
 ---
 layout: post
-title: Colors in Xamarin NumericUpDown control | Syncfusion
-description: Learn here all about Colors support in Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control and more.
+title: Colors in Syncfusion NumericUpDown control for Xamarin.Forms
+description: This section explains, different color customization supports in Syncfusion NumericUpDown control for Xamarin.Forms.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
 # Colors in Xamarin NumericUpDown (SfNumericUpDown)
 
-SfNumericUpDown is used to set custom background, text, and border colors through the following bindable properties:
+You can customize the [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) background, text, and border colors using the following bindable properties:
 
-* `TextColor` - Sets the color of NumericUpDown's value
+* [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_TextColor) - Sets the color of NumericUpDown's value
 
 * `BackgroundColor` - Sets the background color of NumericUpDown.
 
-* `BorderColor` - Sets the border custom color of NumericUpDown
+* [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_BorderColor) - Sets the border color of NumericUpDown control.
 
-* `WatermarkColor` - Sets the watermark custom color of NumericUpDown's watermark Text.
+* [`WatermarkColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_WatermarkColor) - Sets the color of NumericUpDown's watermark text.
 
-### TextColor
+## Text color support in SfNumericUpDown
 
-The following code sample demonstrates how to set the TextColor in XAML and in C#:
+The following code sample demonstrates how to set the text color in XAML and in C#:
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<numeric:SfNumericUpDown x:Name="NumericUpDown" Value="123" TextColor="Green" />
+	<numeric:SfNumericUpDown Value="123" TextColor="Green" />
 	
 {% endhighlight %}
 
@@ -41,17 +41,17 @@ this.Content = NumericUpDown;
 
 {% endtabs %}
 
-![Display the NumericUpDown with TextColor](images/textcolor.png)
+![Display the NumericUpDown with TextColor](images/TextColor.PNG)
 
-### BackgroundColor
+## Background color support in SfNumericUpDown
 
-The following code sample demonstrates how to set the BackgroundColor in XAML and in C#:
+The following code sample demonstrates how to set the background color in XAML and in C#:
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<numeric:SfNumericUpDown x:Name="NumericUpDown" Value="123" BackgroundColor="Maroon" TextColor="White"/>
+	<numeric:SfNumericUpDown Value="123" BackgroundColor="Maroon" TextColor="White"/>
 	
 {% endhighlight %}
 
@@ -67,17 +67,17 @@ this.Content = NumericUpDown;
 
 {% endtabs %}
 
-![Display the NumericUpDown with BackgroundColor](images/backgroundcolor.png)
+![Display the NumericUpDown with BackgroundColor](images/backgroundcolor.PNG)
 
-### BorderColor
+## Border color support in SfNumericUpDown
 
-The following code sample demonstrates how to set the BorderColor color in XAML and in C#:
+The following code sample demonstrates how to set the border color color in XAML and in C#:
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<numeric:SfNumericUpDown x:Name="NumericUpDown" Value="123" BorderColor="Red" />
+	<numeric:SfNumericUpDown Value="123" BorderColor="Red" />
 	
 {% endhighlight %}
 
@@ -92,32 +92,33 @@ this.Content = NumericUpDown;
 
 {% endtabs %}
 
-![Display the NumericUpDown with BorderColor](images/bordercolor.png)
+![Display the NumericUpDown with BorderColor](images/bordercolor.PNG)
 
-### WatermarkColor
+## Watermark color support in SfNumericUpDown
 
-The following code sample demonstrates how to set the WatermarkColor in XAML and in C#:
+The following code sample demonstrates how to set the watermark color in XAML and in C#:
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<numeric:SfNumericUpDown  x:Name="NumericUpDown" AllowNull="true" WatermarkColor="Blue" />
+	<numeric:SfNumericUpDown AllowNull="true" Watermark="NumericUpDown" WatermarkColor="Blue" />
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfNumericUpDown NumericUpDown=new SfNumericUpDown();
+SfNumericUpDown NumericUpDown = new SfNumericUpDown();
 NumericUpDown.WatermarkColor = Color.Blue;
-NumericUpDown.AllowNull=true;
+NumericUpDown.Watermark = "NumericUpDown";
+NumericUpDown.AllowNull = true;
 this.Content = NumericUpDown;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Display the NumericUpDown with WatermarkColor](images/watermarkcolor.png)
+![Display the NumericUpDown with WatermarkColor](images/watermarkcolor.PNG)
 
 ## See also
 

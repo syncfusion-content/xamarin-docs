@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Item Height Customization in Xamarin TreeView control | Syncfusion
+title: Item Height Customization in Xamarin TreeView | Syncfusion
 description: Learn here all about Item Height Customization support in Syncfusion Xamarin TreeView (SfTreeView) control and more.
 platform: xamarin
 control: SfTreeView

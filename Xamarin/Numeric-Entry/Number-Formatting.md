@@ -8,15 +8,15 @@ documentation: ug
 ---
 # Number Formatting in Xamarin Numeric Entry (SfNumericTextBox)
 
-The Values of the SfNumericTextBox can be configured to display different formats like currency format, percent format etc. 
+The values of the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) can be configured to display different formats like currency format, percent format etc. 
 
-## Format String
+## Format string in SfNumericTextBox
 
-The `FormatString` property determines the format specifier by which the display text has to be formatted. 
+The [`FormatString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_FormatString) property determines the format specifier by which the display text has to be formatted. 
 
-N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n".
+N> The control displays the formatted text when the focus is lost. The default value of [`FormatString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_FormatString) is "n".
 
-### Display Currency Notation
+### Display currency notation in SfNumericTextBox
 
 `c` - Displays the value with currency notation.
 	
@@ -24,7 +24,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 {% highlight xaml %}
 
-	<syncfusion:SfNumericTextBox x:Name="numericTextBox" Value="1000" FormatString="c" />
+	<syncfusion:SfNumericTextBox Value="1000" FormatString="c" />
 	
 {% endhighlight %}
 	
@@ -33,7 +33,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 SfNumericTextBox numericTextBox=new SfNumericTextBox();
 numericTextBox.FormatString="c";
 numericTextBox.Value=1000;
-this.content=numericTextBox;
+this.Content=numericTextBox;
 
 {% endhighlight %}
 
@@ -41,7 +41,7 @@ this.content=numericTextBox;
 	
 ![Display the value with currency notation](images/currency.png)
 
-### Display Number Notation
+### Display number notation in SfNumericTextBox
 
 `n` – Displays the value in number format.
 
@@ -49,7 +49,7 @@ this.content=numericTextBox;
 
 {% highlight xaml %}
 
-	<syncfusion:SfNumericTextBox x:Name="numericTextBox" Value="1000" FormatString="n" />
+	<syncfusion:SfNumericTextBox Value="1000" FormatString="n" />
 	
 {% endhighlight %}
 	
@@ -58,7 +58,7 @@ this.content=numericTextBox;
 SfNumericTextBox numericTextBox=new SfNumericTextBox();
 numericTextBox.FormatString="n";
 numericTextBox.Value=1000;
-this.content=numericTextBox;
+this.Content=numericTextBox;
 	 
 {% endhighlight %}
 
@@ -66,7 +66,7 @@ this.content=numericTextBox;
 
 ![Display value with number notation](images/number.png)
 
-### Display Percentage Notation
+### Display percentage notation in SfNumericTextBox
 
 `p` – Displays the value in percentage.
 	
@@ -74,7 +74,7 @@ this.content=numericTextBox;
 
 {% highlight xaml %}
 
-	<syncfusion:SfNumericTextBox x:Name="numericTextBox" Value="1000" FormatString="p" />
+	<syncfusion:SfNumericTextBox  Value="1000" FormatString="p" />
 	
 {% endhighlight %}
 	
@@ -83,7 +83,7 @@ this.content=numericTextBox;
 SfNumericTextBox numericTextBox=new SfNumericTextBox();
 numericTextBox.FormatString="p";
 numericTextBox.Value=1000;
-this.content=numericTextBox;
+this.Content=numericTextBox;
 	 
 {% endhighlight %}
 
@@ -91,24 +91,25 @@ this.content=numericTextBox;
 	
 ![Display the value with Percentage mode](images/percentage.png)
 
-N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in SfNumericTextBox. 
+N> Instead of using above [`FormatString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_FormatString) types, you can provide any symbol or value as string in FormatString property which will be appended with the value in [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html). 
 
-By passing any string , we can get the same as appended with the value of NumericTextBox
+By passing any string, you can get the same as appended with the value of [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html).
 
 {% tabs %}	
 
 {% highlight xaml %}
 
-	<syncfusion:SfNumericTextBox x:Name="numericTextBox" Value="1000" FormatString="years" />
+	<syncfusion:SfNumericTextBox Value="23" FormatString="years" MaximumNumberDecimalDigits="0"/>
 	
 {% endhighlight %}
 	
 {% highlight c# %}
 
-SfNumericTextBox numericTextBox=new SfNumericTextBox();
-numericTextBox.FormatString="years";
-numericTextBox.Value=23;
-this.content=numericTextBox;
+SfNumericTextBox numericTextBox = new SfNumericTextBox();
+numericTextBox.FormatString = "years";
+numericTextBox.MaximumNumberDecimalDigits = 0;
+numericTextBox.Value = 23;
+this.Content = numericTextBox;
 	 
 {% endhighlight %}
 
@@ -117,17 +118,17 @@ this.content=numericTextBox;
 
 ![Display the value with custom format string](images/years.png)
 
-## Compute to Percentage
+## Compute to percentage in SfNumericTextBox
 
-When the NumericTextBox is in percentage format, the value can be displayed in two ways as follows
+When the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) is in percentage format, the value can be displayed in two ways as follows:
 
-* `Value`: Displays the actual value with percentage symbol.
+* [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.PercentDisplayMode.html#Syncfusion_SfNumericTextBox_XForms_PercentDisplayMode_Value): Displays the actual value with percentage symbol.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<syncfusion:SfNumericTextBox x:Name="numericTextBox" FormatString="p" Value="1000"  PercentDisplayMode="Value" />
+	<syncfusion:SfNumericTextBox FormatString="p" Value="1000"  PercentDisplayMode="Value" />
 	
 {% endhighlight %}
 
@@ -146,13 +147,13 @@ this.content=numericTextBox;
 ![Display the value with percent display mode is value](images/percentage.png)
 
 
-* `Compute`: Displays the computed value with percentage symbol.
+* [`Compute`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.PercentDisplayMode.html#Syncfusion_SfNumericTextBox_XForms_PercentDisplayMode_Compute): Displays the computed value with percentage symbol.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<syncfusion:SfNumericTextBox x:Name="numericTextBox" FormatString="p" Value="1000"  PercentDisplayMode="Compute" />
+	<syncfusion:SfNumericTextBox FormatString="p" Value="1000"  PercentDisplayMode="Compute" />
 	
 {% endhighlight %}
 
@@ -162,7 +163,7 @@ SfNumericTextBox numericTextBox=new SfNumericTextBox();
 numericTextBox.PercentDisplayMode=PercentDisplayMode.Compute;
 numericTextBox.FormatString="p";
 numericTextBox.Value=1000;
-this.content=numericTextBox;
+this.Content=numericTextBox;
 
 {% endhighlight %}
 
@@ -170,11 +171,17 @@ this.content=numericTextBox;
 
 ![Display the value with percent display mode is compute](images/percentagevalue.png)
 
-## Set EnableGroupSeparator 
+## Enable group separator in SfNumericTextBox 
 
-`EnableGroupSeparator` property is used to get rid of the comma in the Value of SfNumericTextBox.
+[`EnableGroupSeparator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_EnableGroupSeparator) property is used to get rid of the comma in the value of [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html).
 
 {% tabs %}
+
+{% highlight xaml %}
+
+	<syncfusion:SfNumericTextBox Value="12345" EnableGroupSeparator="True" />
+	
+{% endhighlight %}
 
 {% highlight c# %}
  
@@ -187,12 +194,13 @@ this.Content = numericTextBox;
 
 {% endtabs %}
 
-![Display the value with enable group separator](images/enablegroupseparator.png)
+![Display the value with enable group separator](images/enablegroupseparator.PNG)
 
-## Group separator modes
+## Group separator modes in SfNumericTextBox
 
 [`GroupSeparatorMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_GroupSeparatorMode) provides 2 states to display the group separator. 
-When the mode is set as `Always`, it will display separator while typing itself on the other hand when the mode is set as `LostFocus` it will enable the separator when the control lost its focus.
+
+When the mode is set to Always, it will display the separator while typing; however when the mode is set to [`LostFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.GroupSeparatorMode.html#Syncfusion_SfNumericTextBox_XForms_GroupSeparatorMode_LostFocus) it will enable the separator when the control loses its focus.
 
 N> [`EnableGroupSeparator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_EnableGroupSeparator) property must be enabled to use the [`GroupSeparatorMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_GroupSeparatorMode).
 

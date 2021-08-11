@@ -134,7 +134,7 @@ By selecting the drop-down option for tab view control, The `â€œOverflow buttonâ
 
 ![OverFlowButton](images/Handling-of-Overflow-Tabs/OverFlowButtonSettings.png)
 
-N> The pop-up will display the text value and title value of the respective tab item.
+N> The title of the corresponding tab item will be displayed in the pop-up. Set [TabHeaderBackgroundColor]("https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_TabHeaderBackgroundColor") in SfTabView to change the pop-up background color.
 
 ## How to customize the more button?
 

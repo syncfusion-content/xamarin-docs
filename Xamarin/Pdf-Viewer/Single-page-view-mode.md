@@ -74,3 +74,22 @@ pdfViewer.IsPageFlipEnabled= false;
 {% endtabs %}
 
 N>You can refer to our [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.
+
+## How to show and hide the page navigation buttons in the page by page view mode on desktop
+
+By default in the Xamarin.Forms.UWP platform, buttons to navigate to the next page and the previous page in the page by page view mode will be visible. It can be shown or hidden by setting the `ShowPageFlipNavigationArrows` property of PDF Viewer to true and false respectively.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfPdfViewer x:Name="pdfViewerControl" ShowPageFlipNavigationArrows="False" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+pdfViewerControl.ShowPageFlipNavigationArrows = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+N>This API is only applicable for desktop device in UWP platform. Changing the value of this API does not have any effect on Android and iOS platforms.

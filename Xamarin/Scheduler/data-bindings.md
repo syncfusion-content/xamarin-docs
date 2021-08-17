@@ -130,7 +130,7 @@ schedule.DataSource = Meetings;
 {% endtabs %}
 
 ## Spanned Appointments
-Spanned Appointment is an appointment which lasts more than 24 hours. It doesn’t block out time slots in `SfSchedule`, it will render in [All-Day appointment](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#all-day-appointment-panel) panel exclusively.
+Spanned Appointment is an appointment which lasts more than 24 hours. It doesn’t block out time slots in `SfSchedule`, it will render in [All-Day appointment](https://help.syncfusion.com/xamarin/scheduler/date-navigations#all-day-appointment-panel) panel exclusively.
 
 {% tabs %}
 {% highlight c# %}

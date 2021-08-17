@@ -567,7 +567,7 @@ NumericUpDown
 Int or Double type property.
 </td>
 <td>
-{{'[SfNumericUpDown](https://help.syncfusion.com/xamarin/sfnumericupdown/overview)'| markdownify }}
+{{'[SfNumericUpDown](https://help.syncfusion.com/xamarin/numericupdown/overview)'| markdownify }}
 </td>
 </tr>
 <tr>

@@ -13,7 +13,7 @@ The [SfPullToRefresh](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPullTo
 
 Refer [control dependencies](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfpulltorefresh) section to get the list of assemblies or NuGet package needs to be added as reference to use the SfPullToRefresh control.
 
-Refer [initializing pull-to-refresh](https://help.syncfusion.com/xamarin/sfpulltorefresh/getting-started#launching-the-sfpulltorefresh-on-each-platform) to launch pull-to-refresh on each platform.
+Refer [initializing pull-to-refresh](https://help.syncfusion.com/xamarin/pull-to-refresh/getting-started#launching-the-sfpulltorefresh-on-each-platform) to launch pull-to-refresh on each platform.
 
 ## SfListView inside the SfPullToRefresh 
 

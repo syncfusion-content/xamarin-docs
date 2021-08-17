@@ -508,7 +508,7 @@ Numeric
 Int or Double type property.
 </td>
 <td>
-{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -520,7 +520,7 @@ The Int or Double type Property with percent value.
 [DataType("Percent")]].
 </td>
 <td>
-{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -532,7 +532,7 @@ The Int or Double type property with currency value.
 [DataType(DataType.Currency)].
 </td>
 <td>
-{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -578,7 +578,7 @@ Segment
 Enum type property.
 </td>
 <td>
-{{'[SfSegmentedControl](https://help.syncfusion.com/xamarin/sfsegmentedcontrol/overview)'| markdownify }}
+{{'[SfSegmentedControl](https://help.syncfusion.com/xamarin/segmented-control/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -589,7 +589,7 @@ Bool
 Bool type property.
 </td>
 <td>
-{{'[SfCheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/overview)'| markdownify }}
+{{'[SfCheckBox](https://help.syncfusion.com/xamarin/checkbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -624,7 +624,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-{{'[SfComboBox](https://help.syncfusion.com/xamarin/sfcombobox/overview)'| markdownify }}
+{{'[SfComboBox](https://help.syncfusion.com/xamarin/combobox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -636,7 +636,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-{{'[SfAutoComplete](https://help.syncfusion.com/xamarin/sfautocomplete/overview)'| markdownify }}
+{{'[SfAutoComplete](https://help.syncfusion.com/xamarin/autocomplete/overview)'| markdownify }}
 </td>
 </tr>
 <tr>

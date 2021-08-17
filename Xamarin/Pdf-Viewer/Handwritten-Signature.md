@@ -262,7 +262,7 @@ N>The default value of the property is `true`.
 
 ### Events
 
-Since the handwritten signature is preserved as ink annotation, the events for both handwritten signatures and ink annotations are same. The events supported by ink annotations are described in detail [here](https://help.syncfusion.com/xamarin/sfpdfviewer/ink). 
+Since the handwritten signature is preserved as ink annotation, the events for both handwritten signatures and ink annotations are same. The events supported by ink annotations are described in detail [here](https://help.syncfusion.com/xamarin/pdf-viewer/ink). 
 
 When the common events occur, ink annotation and handwritten signature can be distinguished using the event argument's `IsChildSignature` property. Also, the `sender` parameter will be of type `InkAnnotation` and `HandwrittenSignature` for the respective annotations. For brevity, only the `InkSelected` event is illustrated below. 
 

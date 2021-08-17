@@ -533,4 +533,4 @@ namespace GettingStarted
 
 ![Popup with custom content](GettingStarted_images/ContentView.png)
 
-To display ListView as content of the Popup, refer to this [documentation](https://help.syncfusion.com/xamarin/sfpopuplayout/faq#show-listview-as-a-popup).
+To display ListView as content of the Popup, refer to this [documentation](https://help.syncfusion.com/xamarin/popup/faq#show-listview-as-a-popup).

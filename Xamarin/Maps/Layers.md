@@ -19,7 +19,7 @@ The maps control consists the following two layers:
 
 ## Imagery layer
 
-The [`MapsProvider`](https://help.syncfusion.com/xamarin/sfmaps/mapsprovider) section explains about the imagery layer.
+The [`MapsProvider`](https://help.syncfusion.com/xamarin/maps/mapsprovider) section explains about the imagery layer.
 
 ## Shape file layer
 
@@ -256,7 +256,7 @@ The shape layers are the core layers of the maps. Multiple layers can be added t
 
 ### Adding multiple layers in the map
 
-Multiple layers can be added to the maps using [`Sublayer`](https://help.syncfusion.com/xamarin/sfmaps/sublayer).
+Multiple layers can be added to the maps using [`Sublayer`](https://help.syncfusion.com/xamarin/maps/sublayer).
 
 
 ## Displaying layer in the view

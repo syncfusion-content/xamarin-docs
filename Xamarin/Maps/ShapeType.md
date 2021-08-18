@@ -330,7 +330,7 @@ The size, shape, and position of the map points can be customized using the [`Ma
 
 ### Polyline
 
-The shape file layer with the polyline shape type is used as [`sublayer`](https://help.syncfusion.com/xamarin/sfmaps/sublayer#adding-sublayers-in-shapefilelayer).
+The shape file layer with the polyline shape type is used as [`sublayer`](https://help.syncfusion.com/xamarin/maps/sublayer#adding-sublayers-in-shapefilelayer).
 
 The following code example demonstrates the sublayer with polyline shape type. The roads (sublayer) of Bahrain (base layer) is displayed using the shape file layer of maps.
 
@@ -412,7 +412,7 @@ this.Content = maps;
 
 ### Points
 
-The following code example demonstrates the [`sublayer`](https://help.syncfusion.com/xamarin/sfmaps/sublayer#adding-sublayers-in-shapefilelayer) with the points shape type. The places (sublayer) of Australia (base layer) is displayed using the shape file layer of maps.
+The following code example demonstrates the [`sublayer`](https://help.syncfusion.com/xamarin/maps/sublayer#adding-sublayers-in-shapefilelayer) with the points shape type. The places (sublayer) of Australia (base layer) is displayed using the shape file layer of maps.
 
 {% tabs %}
 

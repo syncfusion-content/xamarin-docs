@@ -99,7 +99,7 @@ this.dataGrid.IndentColumnWidth = 60;
 
 ### Customize indent column background color 
 
-Set background colors to indent cells based on the row where indent cells present. To set the desired background color, use the `GetIndentBackgroundColor()` override in the custom `DataGridStyle` class. Refer to this [link](https://help.syncfusion.com/xamarin/sfdatagrid/styles) to know how to apply custom style to the SfDataGrid. Refer to the following code snippet to apply background color to indent cells based on the row type:
+Set background colors to indent cells based on the row where indent cells present. To set the desired background color, use the `GetIndentBackgroundColor()` override in the custom `DataGridStyle` class. Refer to this [link](https://help.syncfusion.com/xamarin/datagrid/styles) to know how to apply custom style to the SfDataGrid. Refer to the following code snippet to apply background color to indent cells based on the row type:
 
 {% tabs %}
 {% highlight c# %}

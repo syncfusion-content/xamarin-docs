@@ -156,7 +156,7 @@ schedule.TimeInterval = 180;
 ![Time interval in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-interval.png)
 
 >**NOTE**
-If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` as “hh:mm”. By default, `TimeFormat` is "hh a". Refer to this [documentation](https://help.syncfusion.com/xamarin/sfschedule/weekview#time-label-formatting) for changing `TimeFormat` value.
+If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` as “hh:mm”. By default, `TimeFormat` is "hh a". Refer to this [documentation](https://help.syncfusion.com/xamarin/scheduler/weekview#time-label-formatting) for changing `TimeFormat` value.
 
 
 ## Time interval height 

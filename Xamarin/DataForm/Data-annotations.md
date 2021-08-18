@@ -31,7 +31,7 @@ Specifies the label text.
 {{'[GroupName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.groupname?view=netframework-4.8)'| markdownify }}
 </td>
 <td>
-Specifies the group name which groups the fields in the data form. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/layout#grouping-data-fields)'| markdownify }} for more details.
+Specifies the group name which groups the fields in the data form. Refer to {{'[here](https://help.syncfusion.com/xamarin/dataform/layout#grouping-data-fields)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -47,7 +47,7 @@ Specifies the label text. It takes higher priority than Name.
 {{'[AutoGenerateField](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.autogeneratefield?view=netframework-4.8)'| markdownify }}
 </td>
 <td>
-Specifies whether the field should be auto generated or not. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#cancel-dataformitem-generation-of-data-field)'| markdownify }} for more details.
+Specifies whether the field should be auto generated or not. Refer to {{'[here](https://help.syncfusion.com/xamarin/dataform/working-with-dataform#cancel-dataformitem-generation-of-data-field)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Specifies whether the field should be auto generated or not. Refer to {{'[here](
 {{'[Prompt](https://help.syncfusion.com/cr/xamarin/)'| markdownify }}
 </td>
 <td>
-Specifies watermark text for the editor. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#setting-watermark)'| markdownify }} for more details.
+Specifies watermark text for the editor. Refer to {{'[here](https://help.syncfusion.com/xamarin/dataform/working-with-dataform#setting-watermark)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -63,7 +63,7 @@ Specifies watermark text for the editor. Refer to {{'[here](https://help.syncfus
 {{'[Order](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.order?view=netframework-4.8)'| markdownify }}
 </td>
 <td>
-Specifies the order of field in the data form. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/layout#changing-order-of-the-dataformitem	)'| markdownify }} for more details.
+Specifies the order of field in the data form. Refer to {{'[here](https://help.syncfusion.com/xamarin/dataform/layout#changing-order-of-the-dataformitem	)'| markdownify }} for more details.
 </td>
 </tr>
 </table>
@@ -84,7 +84,7 @@ Details
 MinLength
 </td>
 <td>
-Specifies the required minimum length. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/validation#data-annotations)'| markdownify }} for more details.
+Specifies the required minimum length. Refer to {{'[here](https://help.syncfusion.com/xamarin/dataform/validation#data-annotations)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -93,7 +93,7 @@ MaxLength
 
 </td>
 <td>
-Specifies the required maximum length. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/validation#data-annotations)'| markdownify }} for more details.
+Specifies the required maximum length. Refer to {{'[here](https://help.syncfusion.com/xamarin/dataform/validation#data-annotations)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -102,7 +102,7 @@ Required
 
 </td>
 <td>
-Specifies the required data field value. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/validation#data-annotations)'| markdownify }} for more details.
+Specifies the required data field value. Refer to {{'[here](https://help.syncfusion.com/xamarin/dataform/validation#data-annotations)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -111,14 +111,14 @@ Range
 
 </td>
 <td>
-Specifies the maximum and minimum values. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/validation#data-annotations)'| markdownify }} for more details.
+Specifies the maximum and minimum values. Refer to {{'[here](https://help.syncfusion.com/xamarin/dataform/validation#data-annotations)'| markdownify }} for more details.
 </td>
 </tr>
 </table>
 
 ## Bindable attribute
 
-It specifies whether the field should be auto generated or not. Refer to [here](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#cancel-dataformitem-generation-of-data-field) for more details.
+It specifies whether the field should be auto generated or not. Refer to [here](https://help.syncfusion.com/xamarin/dataform/working-with-dataform#cancel-dataformitem-generation-of-data-field) for more details.
 
 ## Editable attribute
 
@@ -126,7 +126,7 @@ It specifies whether the data field is editable or not.
 
 ## ReadOnly attribute
 
-It specifies whether the data field is read only or not. Refer to [here](https://help.syncfusion.com/xamarin/sfdataform/editing#disable-editing) for more details.
+It specifies whether the data field is read only or not. Refer to [here](https://help.syncfusion.com/xamarin/dataform/editing#disable-editing) for more details.
 
 ## EnumDataType attribute
 
@@ -138,7 +138,7 @@ It specifies data type for the field.
 
 Supported data types are Text, MultilineText, Date, DateTime, Time, and Currency.
 
-Refer to [here](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#auto-generating-dataformitems-for-the-data-field) for more details.
+Refer to [here](https://help.syncfusion.com/xamarin/dataform/working-with-dataform#auto-generating-dataformitems-for-the-data-field) for more details.
 
 ## DisplayFormat attribute
 
@@ -226,7 +226,7 @@ public class ContactInfo
 
 ## CustomDataType attribute
 
-The Percent data type is supported. Refer to [here](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#auto-generating-dataformitems-for-the-data-field) for more details.
+The Percent data type is supported. Refer to [here](https://help.syncfusion.com/xamarin/dataform/working-with-dataform#auto-generating-dataformitems-for-the-data-field) for more details.
 
 ## Custom attribute
 The data form supports the following custom attribute, and these attributes can be accessible using `Syncfusion.SfDataForm.XForms`.
@@ -247,7 +247,7 @@ Details
 {{'[RowSpan](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DisplayOptionsAttribute.html#Syncfusion_XForms_DataForm_DisplayOptionsAttribute_RowSpan)'| markdownify }}
 </td>
 <td>
-Specifies the row span for the data form item. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/layout#row-span)'| markdownify }} for more details.
+Specifies the row span for the data form item. Refer to {{'[here](https://help.syncfusion.com/xamarin/dataform/layout#row-span)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -255,7 +255,7 @@ Specifies the row span for the data form item. Refer to {{'[here](https://help.s
 {{'[ColumnSpan](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DisplayOptionsAttribute.html#Syncfusion_XForms_DataForm_DisplayOptionsAttribute_ColumnSpan)'| markdownify }}
 </td>
 <td>
-Specifies the column span for the data form item. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/layout#column-span)'| markdownify }} for more details.
+Specifies the column span for the data form item. Refer to {{'[here](https://help.syncfusion.com/xamarin/dataform/layout#column-span)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -263,7 +263,7 @@ Specifies the column span for the data form item. Refer to {{'[here](https://hel
 {{'[ValidMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DisplayOptionsAttribute.html#Syncfusion_XForms_DataForm_DisplayOptionsAttribute_ValidMessage)'| markdownify }}
 </td>
 <td>
-Specifies positive message to be shown when validation is passed. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/validation#valid-or-positive-message)'| markdownify }} for more details.
+Specifies positive message to be shown when validation is passed. Refer to {{'[here](https://help.syncfusion.com/xamarin/dataform/validation#valid-or-positive-message)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -271,7 +271,7 @@ Specifies positive message to be shown when validation is passed. Refer to {{'[h
 {{'[ImageSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html#Syncfusion_XForms_DataForm_DataFormItem_ImageSource)'| markdownify }}
 </td>
 <td>
-Specifies the image source for loading image instead of label. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/layout#loading-images-for-label)'| markdownify }} for more details.
+Specifies the image source for loading image instead of label. Refer to {{'[here](https://help.syncfusion.com/xamarin/dataform/layout#loading-images-for-label)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -279,7 +279,7 @@ Specifies the image source for loading image instead of label. Refer to {{'[here
 {{'[ShowLabel](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DisplayOptionsAttribute.html#Syncfusion_XForms_DataForm_DisplayOptionsAttribute_ShowLabel)'| markdownify }}
 </td>
 <td>
-Specifies whether the label should be visible or not. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/layout#label-visibility)'| markdownify }} for more details.
+Specifies whether the label should be visible or not. Refer to {{'[here](https://help.syncfusion.com/xamarin/dataform/layout#label-visibility)'| markdownify }} for more details.
 </td>
 </tr>
 </table>
@@ -366,4 +366,4 @@ Specifies the required maximum day.
 </tr>
 </table>
 
-Refer to [here](https://help.syncfusion.com/xamarin/sfdataform/validation#data-annotations) for more details.
+Refer to [here](https://help.syncfusion.com/xamarin/dataform/validation#data-annotations) for more details.

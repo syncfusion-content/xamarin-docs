@@ -313,7 +313,7 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-Refer [this](https://help.syncfusion.com/xamarin/sfautocomplete/populating-data) link to learn more about the options available in SfAutoComplete to populate data.
+Refer [this](https://help.syncfusion.com/xamarin/autocomplete/populating-data) link to learn more about the options available in SfAutoComplete to populate data.
 
 ## Configuring filter options
 
@@ -409,7 +409,7 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-Refer [this](https://help.syncfusion.com/xamarin/sfautocomplete/autocomplete-filtering-options) link to learn more about the options available in SfAutoComplete to filter suggestions.
+Refer [this](https://help.syncfusion.com/xamarin/autocomplete/autocomplete-filtering-options) link to learn more about the options available in SfAutoComplete to filter suggestions.
 
 ![Image-casesensitive](images/Getting-Started/contains-casesensitive.png)
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Xamarin Expander (SfExpander)
 
-The Expander control provides a way to expand and collapse when tapping a header. This section provides a quick overview for working with the `SfExpander` for Xamarin.Forms. This section covers the minimal features that you need to know to get started with the Expander. 
+The [Expander](https://www.syncfusion.com/xamarin-ui-controls/xamarin-expander) control provides a way to expand and collapse when tapping a header. This section provides a quick overview for working with the `SfExpander` for Xamarin.Forms. This section covers the minimal features that you need to know to get started with the Expander. 
 
 ## Assembly deployment
 
@@ -33,7 +33,7 @@ N> Install the same version of Expander NuGet in all the projects.
 
 **Method 2: Adding SfExpander reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the `SfExpander` control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox). 
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the `SfExpander` control to the XAML page. It will automatically install the required [NuGet packages](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox). 
 
 **Method 3: Adding SfExpander assemblies manually from the installed location**
 
@@ -87,7 +87,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the tria
 
 ## Launching the expander on each platform
 
-To use the expander in an application, each platform application must initialize the expander renderer. This initialization step varies from platform to platform and is discussed in the following sections: 
+To use the [Expander](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.html) in an application, each platform application must initialize the expander renderer. This initialization step varies from platform to platform and is discussed in the following sections: 
 
 ### Android
 

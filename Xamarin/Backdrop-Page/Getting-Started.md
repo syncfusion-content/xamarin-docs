@@ -152,7 +152,7 @@ namespace BackdropGettingStarted
 
 ### Configure header
 
-Page header for the backdrop appears only when adding backdrop as a child of NavigationPage. To know more about it, refer to [header configuration](https://help.syncfusion.com/xamarin/Sfbackdroppage/header-configuration).
+Page header for the backdrop appears only when adding backdrop as a child of NavigationPage. To know more about it, refer to [header configuration](https://help.syncfusion.com/xamarin/backdrop-page/header-configuration).
  
 ## Add back layer content
 The back layer holds actionable content (navigation or filtration), which is relevant to the front layer. The back layer will either fill the entire background or occupy the background based on the content height.

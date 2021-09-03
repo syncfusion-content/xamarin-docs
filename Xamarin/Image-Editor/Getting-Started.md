@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains the steps required to load an image to the image editor control.
 
-To get start quickly with Xamarin Image Editor control, you can check on this video:
+To get start quickly with [Xamarin Image Editor](https://www.syncfusion.com/xamarin-ui-controls/xamarin-image-editor) control, you can check on this video:
 
 <style>#xamarinImageEditorVideoTutorial{width : 90% !important; height: 300px !important }</style>
 <iframe id='xamarinImageEditorVideoTutorial' src='https://www.youtube.com/embed/SW1fsk7YbeA'></iframe>
@@ -30,7 +30,7 @@ You can add SfImageEditor reference using one of the following methods:
 
 **Method 1: Adding SfImageEditor reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfImageEditor to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfImageEditor](https://www.nuget.org/packages/Syncfusion.Xamarin.SfImageEditor), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfImageEditor to your project, open the [NuGet package](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) manager in Visual Studio, search for [Syncfusion.Xamarin.SfImageEditor](https://www.nuget.org/packages/Syncfusion.Xamarin.SfImageEditor), and then install it.
 
 ![Adding SfImageEditor reference from NuGet](ImageEditor_images/Adding SfImageEditor reference.png)
 

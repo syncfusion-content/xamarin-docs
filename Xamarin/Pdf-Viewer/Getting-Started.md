@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Xamarin Pdf Viewer (SfPdfViewer)
 
-This section demonstrates how to create an application that displays a PDF file using [SfPdfViewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) control.
+This section demonstrates how to create an application that displays a PDF file using [Xamarin Pdf Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) (SfPdfViewer) control.
  
 ## Assembly deployment
 
@@ -33,7 +33,7 @@ N> Install the same version of SfPdfViewer NuGet in all the projects.
 
 **Method 2: Adding SfPdfViewer reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfPdfViewer control to the XAML page. It will automatically install the required [NuGet packages](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfPdfViewer control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfPdfViewer assemblies manually from the installed location**
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Xamarin Popup (SfPopupLayout)
 
-This section provides a quick overview for working with the SfPopupLayout for Xamarin.Forms.
+This section provides a quick overview for working with the [Xamarin Popup](https://www.syncfusion.com/xamarin-ui-controls/xamarin-popup) (SfPopupLayout) for Xamarin.Forms.
 
 ## Assembly deployment
 
@@ -21,13 +21,13 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## NuGet configuration
 
-To install the required NuGet for the SfPopupLayout control in the application, configure the NuGet packages of the Syncfusion components.
+To install the required NuGet for the Xamarin Popup (SfPopupLayout) control in the application, configure the [NuGet packages](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) of the Syncfusion components.
 
 Refer to the following KB to configure the NuGet package of the Syncfusion components:
 
 [How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
 
-The following NuGet package should be installed to use the SfPopupLayout control in the application.
+The following NuGet package should be installed to use the Xamarin Popup (SfPopupLayout) control in the application.
 
 <table>
 <tr>
@@ -42,7 +42,7 @@ The following NuGet package should be installed to use the SfPopupLayout control
 
 ## Adding SfPopupLayout reference
 
-You can add SfPopupLayout reference using one of the following methods:
+You can add Xamarin Popup (SfPopupLayout) reference using one of the following methods:
 
 **Method 1: Adding SfPopupLayout reference from nuget.org**
 
@@ -91,7 +91,7 @@ To use the SfPopupLayout inside an application, each platform application must i
 
 ### Android
 
-If you are using SfPopupLayout by [Displaying popup when the SfPopupLayout is set as root view](https://help.syncfusion.com/xamarin/sfpopuplayout/getting-started#displaying-popup-when-the-sfpopuplayout-is-set-as-root-view), the Android launches the SfPopupLayout without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application.
+If you are using Xamarin Popup (SfPopupLayout) by [Displaying popup when the SfPopupLayout is set as root view](https://help.syncfusion.com/xamarin/sfpopuplayout/getting-started#displaying-popup-when-the-sfpopuplayout-is-set-as-root-view), the Android launches the SfPopupLayout without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application.
 
 If you are using SfPopupLayout by [Displaying popup on the go](https://help.syncfusion.com/xamarin/sfpopuplayout/getting-started#displaying-popup-on-the-go), call the `SfPopupLayoutRenderer.Init()` in the `OnCreate` overridden method of the MainActivity.cs class after the Xamarin.Forms Framework initialization and before the LoadApplication is called as demonstrated in the following code example.
 
@@ -200,7 +200,7 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio o
 
 ### Displaying popup when the SfPopupLayout is set as root view
 
-The SfPopupLayout can be displayed by making it as base view or content view of the main page. For the first case, set the view over which the SfPopupLayout should be displayed as the content of the SfPopupLayout by using the [SfPopupLayout.Content](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html#Syncfusion_XForms_PopupLayout_SfPopupLayout_ContentProperty) property.
+The Xamarin Popup (SfPopupLayout) can be displayed by making it as base view or content view of the main page. For the first case, set the view over which the SfPopupLayout should be displayed as the content of the SfPopupLayout by using the [SfPopupLayout.Content](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html#Syncfusion_XForms_PopupLayout_SfPopupLayout_ContentProperty) property.
 
 Refer to the following code example for displaying popup.
 
@@ -314,7 +314,7 @@ N> Two Popups cannot be displayed at the same time in a page.
 
 ## Customize positioning
 
-The SfPopupLayout allows showing the popup content at various positions.
+The Xamarin Popup (SfPopupLayout) allows showing the popup content at various positions.
 
 The following list of options are available to position the SfPopupLayout in the desired position:
 

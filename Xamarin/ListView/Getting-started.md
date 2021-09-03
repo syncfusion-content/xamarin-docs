@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Xamarin ListView (SfListView)
 
-This section provides a quick overview for getting started with the [SfListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) for Xamarin.Forms. Walk through the entire process of creating the real world SfListView.
+This section provides a quick overview for getting started with the [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) (SfListView) for Xamarin.Forms. Walk through the entire process of creating the real world SfListView.
 
 ## Assembly Deployment
 
@@ -35,7 +35,7 @@ N> Install the same version of SfListView NuGet in all the projects.
 
 **Method 2: Adding SfListView reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfListView control to the XAML page. It will automatically install the required [NuGet packages](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfListView control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfListView assemblies manually from the installed location**
 
@@ -234,7 +234,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ## Create a Simple SfListView 
 
-This section explains how to create a SfListView, and configure it. The [SfListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) control can be configured entirely in C# code, or by using XAML markup. This is how the control will look like on iOS, Android, and Windows devices.
+This section explains how to create a SfListView, and configure it. The Xamarin ListView (SfListView) control can be configured entirely in C# code, or by using XAML markup. This is how the control will look like on iOS, Android, and Windows devices.
  
 ![Xamarin.Forms listview](SfListView_images/SfListView-Xamarin_img1.jpg)
 

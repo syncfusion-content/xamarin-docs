@@ -11,7 +11,7 @@ keywords: button, SfRadioButton, RadioButton
 
 # Getting Started with Xamarin Radio Button (SfRadioButton)
 
-This section explains the steps required to configure the [SfRadioButton](https://www.syncfusion.com/xamarin-ui-controls/xamarin-radio-button) control in a real-time scenario and provides a walk-through on some of the customization features available in `SfRadioButton` control.
+This section explains the steps required to configure the [Xamarin Radio Button](https://www.syncfusion.com/xamarin-ui-controls/xamarin-radio-button) (SfRadioButton) control in a real-time scenario and provides a walk-through on some of the customization features available in `SfRadioButton` control.
 
 ## Assembly deployment
 

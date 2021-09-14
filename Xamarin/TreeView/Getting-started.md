@@ -292,7 +292,7 @@ Create a simple data source as shown in the following code example in a new clas
 {% highlight c# %}
 public class FileManager : INotifyPropertyChanged
 {
-   private string fileName;
+   private string itemName;
    private ImageSource imageIcon;
    private ObservableCollection<FileManager> subFiles;
 
@@ -308,11 +308,11 @@ public class FileManager : INotifyPropertyChanged
 
    public string ItemName
    {
-      get { return fileName; }
+      get { return itemName; }
       set
       {
-         fileName = value;
-         RaisedOnPropertyChanged("FolderName");
+         itemName = value;
+         RaisedOnPropertyChanged("ItemName");
       }
    }
    

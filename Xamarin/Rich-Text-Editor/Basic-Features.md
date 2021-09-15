@@ -146,6 +146,36 @@ int ContentHeight = richtexteditor.ContentHeightRequest;
 
 N> This is a readonly property.
 
+## Word Wrap
+
+Rich Text Editor provides the support to allow long words to be able to break and wrap onto the next line.
+The enum `Word Wrap` has two constants - Normal, BreakWord. The default value is BreakWord.
+
+### Normal 
+Specifies to break words only at allowed break points.
+
+### BreakWord 
+Specifies unbreakable words to be broken
+
+
+The following code example explains how to set word wrap in the Rich Text Editor. 
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+ <rte:SfRichTextEditor x:Name="richtexteditor"  VerticalOptions="FillAndExpand" WordWrap="BreakWord"/>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+SfRichTextEditor richtexteditor = new SfRichTextEditor();
+richTextEditor.WordWrap = WordWrap.BreakWord;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## RichTextEditor scrolls in scroll view layout
 
 RichTextEditor relies on WebView for rendering the HTML content and, as there is a limitation for placing the WebView inside the ScrollView control. As in [MSDN](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/layouts/scrollview#usage), the ScrollViews should not be nested with other controls that provide scrolling like ListView and WebView. So, the scrolling is not working in the SfRichTextEditor, which is inside the ScrollView in Android. This is known as the [LimitationOfWebView](https://help.syncfusion.com/xamarin/rich-text-editor/overview#limitations).

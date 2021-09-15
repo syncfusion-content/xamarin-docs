@@ -33,6 +33,33 @@ diagram.PageSettings.PageBackGround= Color.White;
 {% endhighlight %}
 {% endtabs %}
 
+## View Port Start Position
+Page settings enable you to customize the viewport start position of the diagram page. The enum `ViewPort Start Position` has two constants: Default, Origin. The default value is set to Default.
+
+### Default 
+The viewport of the diagram page is decided based on the node's offsets. 
+
+N> The viewport of the diagram page will be in a negative region when the node’s offsets are negative.  
+
+### Origin
+The viewport of the diagram page begins with origin (0,0) even though when the node’s offsets are negative.
+
+The following code explains how to customize the view port start position of the page.
+
+{% tabs %}
+{% highlight xml %}
+<diagram:SfDiagram x:Name="diagram"> 
+    <diagram:SfDiagram.PageSettings>
+      <diagram:PageSettings ViewPortStartPosition = "Origin">  
+    <diagram:SfDiagram.PageSettings>
+</diagram:SfDiagram>
+{% endhighlight %}
+{% highlight c# %}
+//Sets the viewport start position.
+SfDiagram.PageSettings.ViewPortStartPosition = ViewportStartPosition.Origin;
+{% endhighlight %}
+{% endtabs %}
+
 ## Stencil:
 Stencil has a collection of Symbols. Stencil is used to clone the desired symbol by dragging it from the Stencil and dropping it into the SfDiagram.
 The following code snippet illustrates to add the stencil.

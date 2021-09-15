@@ -26,9 +26,9 @@ The scroll limit allows you to define the scrollable region of the Diagram while
 </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight C# %}
-//Initialize the SfDiagram
+//Initialize the SfDiagram.
 SfDiagram diagram = new SfDiagram();
-//Initialize the scroll settings with scroll limit
+//Initialize the scroll settings with scroll limit.
 diagram.ScrollSettings = new ScrollSettings()
 {
     ScrollLimit = ScrollLimit.Diagram,
@@ -51,9 +51,9 @@ You can restrict scrolling beyond any particular rectangle area by using the `Sc
 </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight C# %}
-//Initialize the SfDiagram
+//Initialize the SfDiagram.
 SfDiagram diagram = new SfDiagram();
-//Initialize the scroll settings with scroll limit and scrollabl area value
+//Initialize the scroll settings with scroll limit and scrollabl area value.
 diagram.ScrollSettings = new ScrollSettings()
 {
     ScrollLimit = ScrollLimit.Limited,
@@ -61,3 +61,9 @@ diagram.ScrollSettings = new ScrollSettings()
 };
 {% endhighlight %}
 {% endtabs %}
+
+| ScrollLimit | Output |
+|---|---|
+| Infinity |![ScrollLimit infinity](ScrollSettings_Images/ScrollLimit_Infinity.gif) |
+| Diagram |![ScrollLimit Diagram](ScrollSettings_Images/ScrollLimit_DiagramContent.gif) |
+| Limited <br> ScrollableArea = (0,0,1500,1500) | ![ScrollLimit Limited](ScrollSettings_Images/ScrollLimit_Limited.gif) |

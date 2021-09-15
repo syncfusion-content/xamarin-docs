@@ -15,7 +15,7 @@ The drag limit allows you to define the dragging region of the Diagram while dia
 * Diagram: Allows you to drag the diagram objects within the Diagram content.
 * Limited: Allows you to drag the diagram objects within the specified area. The `EditableArea` property is used to specify the area that is allowed to dragging.
 
-The default operation is `Infinity`.
+The default operation is `Infinity.`
 
 {% tabs %}
 {% highlight xaml %}
@@ -28,9 +28,9 @@ The default operation is `Infinity`.
 </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight C# %}
-//Initialize the SfDiagram
+//Initialize the SfDiagram.
 SfDiagram diagram = new SfDiagram();
-//Initialize the scroll settings with drag limit and drag limit area
+//Initialize the scroll settings with drag limit and drag limit area.
 diagram.ScrollSettings = new ScrollSettings()
 {
     DragLimit = ScrollLimit.Limited,
@@ -38,3 +38,9 @@ diagram.ScrollSettings = new ScrollSettings()
 };
 {% endhighlight %}
 {% endtabs %}
+
+| DragLimit | Output |
+|---|---|
+| Infinity |![DragLimit infinity](ScrollSettings_Images/DragLimit_Infinity.gif) |
+| Diagram |![DragLimit diagram](ScrollSettings_Images/DragLimit_DiagramContent.gif) |
+| Limited <br> EditableArea = (100, 100, 400, 300) | ![DragLimit limited](ScrollSettings_Images/DragLimit_Limited.gif) |

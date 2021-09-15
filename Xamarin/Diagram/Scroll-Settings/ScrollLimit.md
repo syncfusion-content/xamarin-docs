@@ -9,7 +9,7 @@ documentation: ug
 
 # Scroll Limit in Xamarin Diagram (SfDiagram)
 
-The scroll limit allows you to define the scrollable region of the Diagram while mouse scrolling on the page. The `ScrollLimit` property of scroll settings helps to limit the scrolling area. It includes the following options:
+The scroll limit allows you to define the scrollable region of the Diagram while pan on the page. The `ScrollLimit` property of scroll settings helps to limit the scrolling area. It includes the following options:
 
 * Infinity: Allows you to scroll in all directions without any restriction.
 * Diagram: Allows you to scroll within the Diagram content.

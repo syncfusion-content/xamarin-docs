@@ -9,11 +9,11 @@ documentation: ug
 
 # Selection in Xamarin ListView (SfListView)
 
-This section explains how to perform selection and its related operations in the `SfListView`.
+This section explains how to perform selection and its related operations in the [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) (SfListView).
 
 ## UI selection
 
-The `SfListView` allows selecting items either programmatically or touch interactions by setting the [SfListView.SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectionMode) property value to other than `None`. The control has different selection modes to perform selection operations listed as follows:
+The Xamarin ListView (SfListView) allows selecting items either programmatically or touch interactions by setting the [SfListView.SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectionMode) property value to other than `None`. The control has different selection modes to perform selection operations listed as follows:
 
  * [None](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SelectionMode.html#Syncfusion_ListView_XForms_SelectionMode_None): Allows disabling selection.
  * [Single](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SelectionMode.html#Syncfusion_ListView_XForms_SelectionMode_Single): Allows selecting single item only. When clicking the selected item, selection not will not be cleared. This is the default value for `SelectionMode`.
@@ -126,7 +126,7 @@ W> If you select an item when [SfListView.SelectionMode](https://help.syncfusio
 
 ## Selected item customization 
 
-The `SfListView` supports customizing the selection background color for the selected items by using the [SfListView.SelectedItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectedItemTemplate) if the background color is set to view loaded in the [SfListView.ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemTemplate).
+The Xamarin ListView (SfListView) supports customizing the selection background color for the selected items by using the [SfListView.SelectedItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectedItemTemplate) if the background color is set to view loaded in the [SfListView.ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemTemplate).
 
 {% tabs %}
 {% highlight xaml %}

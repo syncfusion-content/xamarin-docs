@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Xamarin Tabbed View (SfTabView)
 
-This section provides an overview for working with the tab view control for Xamarin.Forms. Walk through the entire process of creating a real-world application with the tab view.
+This section provides an overview for working with the [Xamarin.Forms Tabbed View](https://www.syncfusion.com/xamarin-ui-controls/xamarin-tabbed-view) control. Walk through the entire process of creating a real-world application with the tab view.
 
 ## Assembly deployment
 
@@ -25,7 +25,7 @@ You can add SfTabView reference using one of the following methods:
 
 **Method 1: Adding SfTabView reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfTabView to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfTabView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfTabView), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfTabView to your project, open the [NuGet package](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) manager in Visual Studio, search for [Syncfusion.Xamarin.SfTabView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfTabView), and then install it.
 
 ![Adding SfTabView reference from NuGet](images/Getting-Started/Adding SfTabView reference.png)
 

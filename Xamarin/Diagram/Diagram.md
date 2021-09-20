@@ -34,17 +34,17 @@ diagram.PageSettings.PageBackGround= Color.White;
 {% endtabs %}
 
 ## View Port Start Position
-Page settings enable to customize the view port start position of the Diagram page. The enum `View Port Start Position` has two constants - Default, Origin. The default value is Default.
+Page settings enable you to customize the viewport start position of the diagram page. The enum `ViewPort Start Position` has two constants: Default, Origin. The default value is set to Default.
 
 ### Default 
-The view port of the diagram page is decided based on the node's offsets. 
+The viewport of the diagram page is decided based on the node's offsets. 
 
-N> The view port of the diagram page will be in negative region when the node’s offsets are negative.  
+N> The viewport of the diagram page will be in a negative region when the node’s offsets are negative.  
 
 ### Origin
-The view port of the diagram page begins with origin (0,0) even though when the node’s offsets are negative.
+The viewport of the diagram page begins with origin (0,0) even though when the node’s offsets are negative.
 
-The following code illustrates how to customize the view port start position of page.
+The following code explains how to customize the view port start position of the page.
 
 {% tabs %}
 {% highlight xml %}
@@ -55,7 +55,7 @@ The following code illustrates how to customize the view port start position of 
 </diagram:SfDiagram>
 {% endhighlight %}
 {% highlight c# %}
-//Sets view port start position
+//Sets the viewport start position.
 SfDiagram.PageSettings.ViewPortStartPosition = ViewportStartPosition.Origin;
 {% endhighlight %}
 {% endtabs %}

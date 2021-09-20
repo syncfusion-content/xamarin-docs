@@ -60,4 +60,73 @@ segmentedControl.SelectedIndex = 2;
 
 ![selectionchange](images/Selection-changed/selectionchange.png)
 
+## Event to command
+
+The SegmentedControl event can be converted into commands using [Behaviors](https://developer.xamarin.com/guides/xamarin-forms/behaviors/). To achieve this, create a command in the ViewModel class and use `Behaviors` to associate it to the SegmentedControl event.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+     <buttons:SfSegmentedControl 
+            x:Name="Segment" 
+            SelectionTextColor= "White"
+            HeightRequest="80"
+            VisibleSegmentsCount="5"
+            Color="Transparent" 
+            BorderColor="#929292"
+            SelectedIndex="0" 
+            FontColor="#929292"
+            BackgroundColor="Transparent"
+            ItemsSource="{Binding ItemCollection,Mode=TwoWay}">
+    <buttons:SfSegmentedControl.Behaviors>
+        <local:EventToCommandBehavior Command="{Binding SelectionChangedCommand}" EventName="SelectionChanged"/>
+    </buttons:SfSegmentedControl.Behaviors>
+    </buttons:SfSegmentedControl>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public class ViewModel
+    {
+    public Command SelectionChangedCommand
+    {
+        get;
+        set;
+    }
+    public ViewModel()
+    {
+        SelectionChangedCommand = new Command<Syncfusion.XForms.Buttons.SelectionChangedEventArgs>(SelectionChanged);
+        ItemCollection = new ObservableCollection<SfSegmentItem>
+                    {
+                        new SfSegmentItem() {  Text = "Once"},
+                        new SfSegmentItem() {  Text = "Daily"},
+                        new SfSegmentItem() {  Text = "Weekly"},
+                        new SfSegmentItem() {  Text = "Monthly"},
+                        new SfSegmentItem() {  Text = "Yearly"},
+                    };
+    }
+
+    private void SelectionChanged(Syncfusion.XForms.Buttons.SelectionChangedEventArgs obj)
+    {
+        Application.Current.MainPage.DisplayAlert("Notification", "The Selected Index: " + obj.Index, "Ok");
+    }
+
+    private ObservableCollection<SfSegmentItem> itemCollection = new ObservableCollection<SfSegmentItem>();
+
+    public ObservableCollection<SfSegmentItem> ItemCollection
+    {
+        get { return itemCollection; }
+        set { itemCollection = value; }
+    }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/xamarin.forms-segmentedcontrol-with-event-to-command-behavior).
+
+For more information about the event to command behavior in Xamarin.Forms, please refer to [this](https://developer.xamarin.com/samples/xamarin-forms/Behaviors/EventToCommandBehavior/) link.
+
 

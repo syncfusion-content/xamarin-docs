@@ -213,12 +213,12 @@ diagram.Stencil=stencil;
 {% endtabs %}
 ![Category heading text in Xamarin.Forms diagram](Stencil_images/Stencil_img3.jpeg)
 
-N> You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.
+N> You can refer to the [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations. You can also explore the [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.
 
 ## Add Annotation into stencil
- Stencil has able to load the symbols like connectors and nodes (all shapes), custom shapes with annotation into the SfDiagram. Each symbol can be grouped together by using the SymbolGroup.
- The following example illustrates how to add the Annotation into a stencil:
- {% tabs %}
+Stencil is able to load the symbols like connectors and nodes (all shapes), custom shapes with annotation into the SfDiagram. Each symbol can be grouped together by using the SymbolGroup.
+The following example explains how to add the Annotation into a stencil:
+{% tabs %}
 {% highlight xml %}
 <ContentPage.Resources>
   <ResourceDictionary>
@@ -357,7 +357,7 @@ SmallDataBox.Add(new Node()
     Annotations = { new Annotation() { Content = "Node", FontSize = 30, TextBrush = new SolidBrush(Color.Green), HorizontalAlignment = HorizontalAlignment.Center, VerticalAlignment = VerticalAlignment.Center } }
 });
 
-//Add category of symbol group with heading text
+//Add a category of symbol group with a heading text
 stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = SmallDataBox, HeaderName = "Small Data Box" });
 stencil.SymbolStyle.Width = 150;
 stencil.SymbolStyle.Height = 150;

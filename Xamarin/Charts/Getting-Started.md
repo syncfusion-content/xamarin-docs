@@ -463,7 +463,7 @@ chart.Title.Text = "Chart";
 
 {% endtabs %}  
 
-Refer this [link](https://help.syncfusion.com/xamarin/sfchart/charttitle) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize chart title.
+Refer this [link](https://help.syncfusion.com/xamarin/charts/charttitle) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize chart title.
 
 ## Enable data labels
 
@@ -497,7 +497,7 @@ series.DataMarker = new ChartDataMarker();
 
 {% endtabs %}  
 
-Refer this [link](https://help.syncfusion.com/xamarin/sfchart/datamarker) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize data markers.
+Refer this [link](https://help.syncfusion.com/xamarin/charts/datamarker) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize data markers.
 
 ## Enable legend
 
@@ -555,7 +555,7 @@ series.Label = "Heights";
 
 {% endtabs %}  
 
-Refer this [link](https://help.syncfusion.com/xamarin/sfchart/legend) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize legend.
+Refer this [link](https://help.syncfusion.com/xamarin/charts/legend) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize legend.
 
 ## Enable tooltip
 
@@ -587,7 +587,7 @@ series.EnableTooltip = true;
 
 {% endtabs %}
 
-Refer this [link](https://help.syncfusion.com/xamarin/sfchart/tooltip) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize tooltip.
+Refer this [link](https://help.syncfusion.com/xamarin/charts/tooltip) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize tooltip.
 
 The following code example gives you the complete code of above configurations.
 

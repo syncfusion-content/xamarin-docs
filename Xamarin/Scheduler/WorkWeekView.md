@@ -69,7 +69,7 @@ schedule.ViewHeaderHeight = 50;
 
 ### Customize Font Appearance
 
-you can change the appearance of Font by setting the  [DayFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderStyle.html#Syncfusion_SfSchedule_XForms_ViewHeaderStyle_DayFontFamilyProperty) and [DateFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderStyle.html#Syncfusion_SfSchedule_XForms_ViewHeaderStyle_DateFontFamilyProperty) property of [ViewHeaderStyle](https://help.syncfusion.com/xamarin/sfschedule/dayview#viewheader-appearance) property in Schedule.
+you can change the appearance of Font by setting the  [DayFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderStyle.html#Syncfusion_SfSchedule_XForms_ViewHeaderStyle_DayFontFamilyProperty) and [DateFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderStyle.html#Syncfusion_SfSchedule_XForms_ViewHeaderStyle_DateFontFamilyProperty) property of [ViewHeaderStyle](https://help.syncfusion.com/xamarin/scheduler/dayview#viewheader-appearance) property in Schedule.
 
 {% tabs %}
 {% highlight XAML %}
@@ -88,7 +88,7 @@ viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-R
 
 ![Schedule customizing view header work week view](workweekview_images/xamarin.forms-schedule-custom-font-view-header.png)
 
-Refer [this](https://help.syncfusion.com/xamarin/sfschedule/monthview#custom-font-setting-in-xamarinforms-android) to configure the custom fonts in Xamarin.Forms.
+Refer [this](https://help.syncfusion.com/xamarin/scheduler/monthview#custom-font-setting-in-xamarinforms-android) to configure the custom fonts in Xamarin.Forms.
 
 ### ViewHeader Date Format
 You can customize the date and day format of `SfSchedule` ViewHeader by using [DateFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.WorkWeekLabelSettings.html#Syncfusion_SfSchedule_XForms_WorkWeekLabelSettings_DateFormat) and [DayFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.WorkWeekLabelSettings.html#Syncfusion_SfSchedule_XForms_WorkWeekLabelSettings_DayFormat) properties of `WorkWeekLabelSettings`.
@@ -168,7 +168,7 @@ schedule.TimeInterval = 180;
 ![Schedule customizing time interval work week view](workweekview_images/xamarin.forms-schedule-timeinterval.png)
 
 >**NOTE**
-If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` value as "hh:mm". By default, TimeFormat value is `"hh a"`. You can refer [here](https://help.syncfusion.com/xamarin/sfschedule/workweekview#time-label-formatting) for changing TimeFormat value.
+If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` value as "hh:mm". By default, TimeFormat value is `"hh a"`. You can refer [here](https://help.syncfusion.com/xamarin/scheduler/workweekview#time-label-formatting) for changing TimeFormat value.
 
 ## Change Time Interval Height
 You can customize the interval height of timeslots in `WorkWeekView` by setting [TimeIntervalHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_TimeIntervalHeight)  property of `SfSchedule`.

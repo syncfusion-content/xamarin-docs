@@ -149,16 +149,16 @@ N> This is a readonly property.
 ## Word Wrap
 
 Rich Text Editor provides the support to allow long words to be able to break and wrap onto the next line.
-The enum `Word Wrap` has two constants - Normal, BreakWord. The default value is BreakWord.
+The enum `Word Wrap` has two constants: Normal, BreakWord. The default value is BreakWord.
 
 ### Normal 
 Specifies to break words only at allowed break points.
 
 ### BreakWord 
-Specifies unbreakable words to be broken
+Specifies the unbreakable words to be broken
 
 
-The following code example explains how to set word wrap in the Rich Text Editor. 
+The following code example explains how to set a word wrap in the Rich Text Editor. 
 
 {% tabs %} 
 

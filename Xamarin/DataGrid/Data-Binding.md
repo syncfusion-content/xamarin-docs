@@ -99,7 +99,7 @@ this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID.Order" }
 
 ## View
 
-The DataGrid has the [View](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_View) property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/xamarin/Syncfusion.Data.CollectionViewAdv.html) interface that implements `ICollectionView` interface. `View` is responsible for maintaining and manipulating data and other advanced operations, like [Sorting](https://help.syncfusion.com/xamarin/sfdatagrid/getting-started#sorting), [Grouping](https://help.syncfusion.com/xamarin/sfdatagrid/getting-started#grouping), and etc.,
+The DataGrid has the [View](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_View) property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/xamarin/Syncfusion.Data.CollectionViewAdv.html) interface that implements `ICollectionView` interface. `View` is responsible for maintaining and manipulating data and other advanced operations, like [Sorting](https://help.syncfusion.com/xamarin/datagrid/getting-started#sorting), [Grouping](https://help.syncfusion.com/xamarin/datagrid/getting-started#grouping), and etc.,
 
 When you bind collection to the [ItemsSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ItemsSource) property of the SfDataGrid, then `View` will be created and maintains the operations on `Data` such as `Grouping`, `Sorting`, `Insert`, `Delete`, and `Modification`.
 

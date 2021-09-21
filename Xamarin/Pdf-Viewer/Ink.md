@@ -715,3 +715,19 @@ private void PdfViewerControl_InkAdded(object sender, InkAddedEventArgs args)
 N>For illustration purposes, we have only provided the sample for modifying the name of the ink annotation in the [InkAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_InkAdded) event. But this can be done in all other events as well. 
 
 N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.
+
+## How to change properties of each ink stroke separately
+
+By default, when the ink annotation is drawn, all strokes that are drawn in the ink annotation mode before clicking the done button will be considered as a single ink annotation. All these strokes will be selected and their properties changed as a whole since they represent a single ink annotation. 
+
+You can change the properties of each ink stoke separately by setting the `SfPdfViewer.AnnotationSettings.Ink.EnableSeparateAttributesForEachStroke` API to `true`.
+
+The following code sample explains the same.
+
+{% tabs %}
+{% highlight c# %}
+
+pdfViewerControl.AnnotationSettings.Ink.EnableSeparateAttributesForEachStroke = true;
+
+{% endhighlight %}
+{% endtabs %}

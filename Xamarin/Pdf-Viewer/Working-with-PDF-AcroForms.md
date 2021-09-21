@@ -75,7 +75,7 @@ bool pdfContainsXFAForm = pdfViewerControl.IsXFAForm;
 
 N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.
 
-# Events to track form field interaction
+## Events to track form field interaction
 
 [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows you to track form field interactions using events. The interactions on the following types of form fields can be tracked using events.
 
@@ -86,7 +86,7 @@ N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com
 5.List box
 6.Signature
 
-## Detecting the value change of form fields
+### Detecting the value change of form fields
 
 The event `FormFieldValueChanged` will be raised when the values of the form fields are changed.
 
@@ -123,7 +123,7 @@ privatevoidPdfViewerControl_FormFieldValueChanged(object sender, FormFieldValueC
 
 
 
-## Detecting the focus of form fields
+### Detecting the focus of form fields
 
 The event `FormFieldFocused` will be raised when text or signature field is focused.
 
@@ -154,7 +154,7 @@ FormFieldType formFieldType= args.FormFieldType;
 
 N>This event will be raised only for text and signature form fields.
 
-## Detecting the unfocus of form fields
+### Detecting the unfocus of form fields
 
 The event `FormFieldUnfocused` will be raised when text or signature field is unfocused.
 

@@ -79,12 +79,12 @@ N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com
 
 The [PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows you to track form field interactions using events. The interactions on the following types of form fields can be tracked using events.
 
-*Text
-*Check Box
-*Radio button
-*Combo Box
-*List box
-*Signature
+* Text
+* Check Box
+* Radio button
+* Combo Box
+* List box
+* Signature
 
 ### Detecting the value change of form fields
 
@@ -120,8 +120,6 @@ privatevoidPdfViewerControl_FormFieldValueChanged(object sender, FormFieldValueC
 
 {% endhighlight %}
 {% endtabs %}
-
-
 
 ### Detecting the focus of form fields
 

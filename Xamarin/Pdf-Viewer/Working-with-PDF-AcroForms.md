@@ -77,7 +77,7 @@ N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com
 
 ## Events to track form field interaction
 
-[Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows you to track form field interactions using events. The interactions on the following types of form fields can be tracked using events.
+The [PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows you to track form field interactions using events. The interactions on the following types of form fields can be tracked using events.
 
 *Text
 *Check Box
@@ -88,7 +88,7 @@ N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com
 
 ### Detecting the value change of form fields
 
-The event `FormFieldValueChanged` will be raised when the values of the form fields are changed.
+The`FormFieldValueChanged` event will be raised when the values of the form fields are changed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -125,7 +125,7 @@ privatevoidPdfViewerControl_FormFieldValueChanged(object sender, FormFieldValueC
 
 ### Detecting the focus of form fields
 
-The event `FormFieldFocused` will be raised when text or signature field is focused.
+The `FormFieldFocused` event will be raised when text or signature field is focused.
 
 {% tabs %}
 {% highlight xaml %}
@@ -152,11 +152,11 @@ FormFieldType formFieldType= args.FormFieldType;
 {% endhighlight %}
 {% endtabs %}
 
-N>This event will be raised only for text and signature form fields.
+N>This event will be raised only for the text and signature form fields.
 
 ### Detecting the unfocus of form fields
 
-The event `FormFieldUnfocused` will be raised when text or signature field is unfocused.
+The `FormFieldUnfocused` event will be raised when text or signature field is unfocused.
 
 {% tabs %}
 {% highlight xaml %}
@@ -182,4 +182,4 @@ privatevoidPdfViewerControl_FormFieldUnfocused(object sender, FormFieldUnfocused
 {% endhighlight %}
 {% endtabs %}
 
-N>This event will be raised only for text and signature form fields.
+N>This event will be raised only for the text and signature form fields.

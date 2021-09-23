@@ -9,7 +9,7 @@ documentation: ug
 
 **SfDataForm**
 
-The SfDataForm control helps editing the data fields of any data object. It can be used to develop various forms such as login, reservation, data entry, etc. Key features includes the following:
+The [Xamarin DataForm](https://www.syncfusion.com/xamarin-ui-controls/xamarin-dataform) (SfDataForm) control helps editing the data fields of any data object. It can be used to develop various forms such as login, reservation, data entry, etc. Key features includes the following:
 
 * Layout and grouping: Supports to linear, grid layout and floating label layout with grouping support. Supports customizing the layout with different heights for each item.
 * Caption customization: Supports loading the image as caption for the editor.
@@ -19,7 +19,7 @@ The SfDataForm control helps editing the data fields of any data object. It can 
 
 # Getting Started with Xamarin DataForm (SfDataForm)
 
-This section explains the quick overview to use the [SfDataForm](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html) for Xamarin.Forms in your application.
+This section explains the quick overview to use the [Xamarin DataForm (SfDataForm)](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html) (SfDataForm) for Xamarin.Forms in your application.
 
 ## Assembly deployment
 

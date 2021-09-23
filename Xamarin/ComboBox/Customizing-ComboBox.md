@@ -1019,28 +1019,38 @@ The `SelectAllOnFocus` property specifies whether the text should be selected wh
 
 {% highlight c# %}
 
-StackLayout layout = new StackLayout() 
-{ 
-    VerticalOptions = LayoutOptions.Start, 
-    HorizontalOptions = LayoutOptions.Start, 
-    Padding = new Thickness(30) 
-};	   
+namespace ComboBoxSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout layout = new StackLayout() 
+            { 
+                VerticalOptions = LayoutOptions.Start, 
+                HorizontalOptions = LayoutOptions.Start, 
+                Padding = new Thickness(30) 
+            };	   
 
-    List<String> resolutionList = new List<String>();
-    resolutionList.Add("Frank");
-    resolutionList.Add("James");
-    resolutionList.Add("Steve");
-    resolutionList.Add("Lucas");
-    resolutionList.Add("Mark");
+            List<String> resolutionList = new List<String>();
+            resolutionList.Add("Frank");
+            resolutionList.Add("James");
+            resolutionList.Add("Steve");
+            resolutionList.Add("Lucas");
+            resolutionList.Add("Mark");
 
-    SfComboBox comboBox = new SfComboBox();
-    comboBox.HeightRequest = 40;
-    comboBox.SelectAllOnFocus = "true"
-    comboBox.IsEditableMode = "true"
-    comboBox.ComboBoxSource = resolutionList;
+            SfComboBox comboBox = new SfComboBox();
+            comboBox.HeightRequest = 40;
+            comboBox.SelectAllOnFocus = "true"
+            comboBox.IsEditableMode = "true"
+            comboBox.ComboBoxSource = resolutionList;
 
-    layout.Children.Add(comboBox); 
-    Content = layout;
+            layout.Children.Add(comboBox); 
+            Content = layout;
+        }
+    }
+}
 
 {% endhighlight %}
 

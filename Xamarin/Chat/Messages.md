@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Messages | SfChat | Xamarin | Syncfusion
-description: Describes about the available message types that comes built-in and how to create different types of messages in Xamarin.Forms chat control.
+title: Messages in Xamarin Chat control | Syncfusion
+description: Learn here all about Messages support in Syncfusion Xamarin Chat (SfChat) control, its elements and more.
 platform: xamarin
 control: SfChat
 documentation: ug
@@ -1661,6 +1661,58 @@ public class MyCustomMessageTemplateSelector : ChatMessageTemplateSelector
 
 You can also download the entire source code of this demo [here](https://github.com/SyncfusionExamples/Chat-Message-Template-Xamarin.Forms).
 
+## Spacing between messages
+
+SfChat allows to change the vertical spacing between the messages in view using [SfChat.MessageSpacing](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_MessageSpacing) property. The default value is 24.
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfChat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:GettingStartedViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+                    <sfChat:SfChat x:Name="sfChat"
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}"
+                           MessageSpacing="8"
+	<ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
+
+{% highlight c# %}
+using Syncfusion.XForms.Chat;
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        SfChat sfChat;
+        GettingStartedViewModel viewModel;
+        public MainPage()
+        {
+            InitializeComponent();
+            sfChat = new SfChat();
+            viewModel = new GettingStartedViewModel();
+            this.sfChat.Messages = viewModel.Messages;
+            this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.MessageSpacing = 8;
+            this.Content = sfChat;
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Xamarin Forms chat message spacing](SfChat_images/messagespacing.jpg)
 
 ## Sending message
 
@@ -1867,7 +1919,7 @@ N> In iOS you cannot scroll horizontally on the editor when `AllowMultilineInput
 
 ## Show avatar and author name for outgoing message
 
-By default the author name and avatar are not displayed for the outgoing messages(messages sent by the [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_CurrentUser)). You can choose to either show or hide the avatar and name for all outgoing messages using the [SfChat.ShowOutgoingMessageAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowOutgoingMessageAvatar) and [SfChat.ShowOutgoingMessageAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowOutgoingMessageAuthorName) properties respectively.
+By default the author name and avatar are not displayed for the outgoing messages sent by the [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_CurrentUser). You can choose to either show or hide the avatar and name for all outgoing messages using the [SfChat.ShowOutgoingMessageAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowOutgoingMessageAvatar) and [SfChat.ShowOutgoingMessageAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowOutgoingMessageAuthorName) properties respectively.
 
 {% tabs %}
 {% highlight xaml %}
@@ -2005,7 +2057,7 @@ namespace GettingStarted
 
 ## Hide avatar and author name for incoming messages
 
-By default the author name and avatar are displayed for the incoming messages(messages sent by users other than the [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_CurrentUser)). You can choose to either show or hide the avatar and name for all incoming messages using the [SfChat.ShowIncomingMessageAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowIncomingMessageAvatar) and [SfChat.ShowIncomingMessageAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowIncomingMessageAuthorName) properties respectively.
+By default the author name and avatar are displayed for the incoming messages sent by users other than the [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_CurrentUser). You can choose to either show or hide the avatar and name for all incoming messages using the [SfChat.ShowIncomingMessageAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowIncomingMessageAvatar) and [SfChat.ShowIncomingMessageAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowIncomingMessageAuthorName) properties respectively.
 
 {% tabs %}
 {% highlight xaml %}

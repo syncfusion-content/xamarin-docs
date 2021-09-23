@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Basic features in Syncfusion Xamarin.Forms Rich Text Editor
-description: This page explains how to basic features available in Syncfusion Rich Text Editor for Xamarin.Forms platform.
+title: Basic Features in Xamarin Rich Text Editor control | Syncfusion
+description: Learn here all about Basic Features support in Syncfusion Xamarin Rich Text Editor (SfRichTextEditor) control and more.
 platform: xamarin
 control: Rich Text Editor
 documentation: ug
 ---
 
-# Basic Features of Rich Text Editor
+# Basic Features in Xamarin Rich Text Editor (SfRichTextEditor)
 
 ## Setting Text
 
@@ -145,6 +145,36 @@ int ContentHeight = richtexteditor.ContentHeightRequest;
 {% endtabs %}
 
 N> This is a readonly property.
+
+## Word Wrap
+
+Rich Text Editor provides the support to allow long words to be able to break and wrap onto the next line.
+The enum `Word Wrap` has two constants: Normal, BreakWord. The default value is BreakWord.
+
+### Normal 
+Specifies to break words only at allowed break points.
+
+### BreakWord 
+Specifies the unbreakable words to be broken
+
+
+The following code example explains how to set a word wrap in the Rich Text Editor. 
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+ <rte:SfRichTextEditor x:Name="richtexteditor"  VerticalOptions="FillAndExpand" WordWrap="BreakWord"/>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+SfRichTextEditor richtexteditor = new SfRichTextEditor();
+richTextEditor.WordWrap = WordWrap.BreakWord;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## RichTextEditor scrolls in scroll view layout
 

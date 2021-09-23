@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Multi Selection in Syncfusion SfComboBox control for Xamarin.Forms
-description: Learn how to select multiple items in SfComboBox
+title: Multiple selection in Xamarin ComboBox control | Syncfusion
+description: Learn here all about Multiple selection support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
 platform: xamarin
 control: SfComboBox
 documentation: ug
 ---
-# Multiple selection
+# Multiple selection in Xamarin ComboBox (SfComboBox)
 
 Select multiple items from a suggestion list. There are two ways to perform multi selection in the combo box control.
 

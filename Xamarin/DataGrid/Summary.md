@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Summary | SfDataGrid | Xamarin | Syncfusion
-description: Apply summary for the caption, group and table row. Customize its format, aggregate. Use custom summaries/override summary renderers to modify the summary data.
+title: Summaries in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Summaries support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -1198,7 +1198,7 @@ sfGrid.CaptionSummaryRow= summaryRow;
 
 Format the summary value by setting the appropriate format after the aggregate function followed by a colon(:) in the `GridSummaryColumn.Format` property.
 
-In the following code snippet `Salary` column summary is formatted using `c` format specifier. Refer to [here](https://msdn.microsoft.com/en-us/library/dwhawy9k.aspx?f=255&MSPPError=-2147217396) to know about how to set different formats.
+In the following code snippet `Salary` column summary is formatted using `c` format specifier. Refer to [here](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings?redirectedfrom=MSDN) to know about how to set different formats.
 
 {% tabs %}
 {% highlight xaml%}
@@ -1693,6 +1693,8 @@ public class GridGroupSummaryCellRendererExt : GridGroupSummaryCellRenderer
 ![Customize group summary using custom cell renderer](SfDataGrid_images/CustomizingGroupSummary.jpg)
 
 You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SummaryDemo_Forms1739363115) .
+
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
 
 ## See also
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started for Syncfusion Xamarin.Forms Rich Text Editor
-description: A quick tour to initial users for getting started with Syncfusion Rich Text Editor control for Xamarin.Forms platform.
+title: Getting Started with Xamarin Rich Text Editor control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Rich Text Editor (SfRichTextEditor) control, its elements and more.
 platform: xamarin
 control: Rich Text Editor
 documentation: ug
 ---
 
-# Getting Started with Xamarin RichTextEditor (SfRichTextEditor)
+# Getting Started with Xamarin Rich Text Editor (SfRichTextEditor)
 
 This section explains the steps required to work with the Rich Text Editor control for Xamarin.Forms.
 

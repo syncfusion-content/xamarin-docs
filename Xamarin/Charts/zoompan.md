@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Zooming and Panning in Syncfusion.Xamarin.Forms Chart
-description: This section explains how to add ZoomPanBehavior to the chart and its features such as zooming types, zooming modes, events, and methods.
+title: Zooming and Panning in Xamarin Charts control | Syncfusion
+description: Learn here all about Zooming and Panning support in Syncfusion Xamarin Charts (SfChart) control and more.
 platform: xamarin
 control: Chart
 documentation: ug

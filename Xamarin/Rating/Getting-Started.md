@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Getting Started with Syncfusion SfRating control for Xamarin.Forms
-description: A quick tour to initial users of Syncfusion Rating control(Xamarin.Forms) on how to create a simple rating view, set number,value and precision of rating items.
+title: Getting Started with Xamarin Rating control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Rating (SfRating) control, its elements and more.
 platform: Xamarin
 control: Rating
 documentation: ug
 
 ---
 
-# Getting Started with Xamarin Rating(SfRating)
+# Getting Started with Xamarin Rating (SfRating)
 
 
 This section explains how to configure a SfRating control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRating control.

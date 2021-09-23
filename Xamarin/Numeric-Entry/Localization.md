@@ -1,33 +1,32 @@
 ---
 layout: post
-title: Localization in Syncfusion NumericTextBox control for Xamarin.Forms
-description: This scetion expalin how to Localize the Syncfusion Xamarin.Forms SfNumericTextBox value and Change localization of return key text.
+title: Localization in Xamarin Numeric Entry control | Syncfusion
+description: Learn here all about Localization support in Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control and more.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
 # Localization in Xamarin Numeric Entry (SfNumericTextBox)
 
-The SfNumericTextBox value can be localized to any specific culture. It can be specified by setting the `Culture` property with `System.Globalization.CultureInfo` object instance.
+The [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) value can be localized to any specific culture. It can also be specified by setting the [`Culture`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Culture) property with `System.Globalization.CultureInfo` object instance.
 
 {% tabs %}
+	
+{% highlight xaml %}
 
-{% highlight c# %}
- 
-SfNumericTextBox numericTextBox=new SfNumericTextBox();
-numericTextBox.Value=123.45;
-numericTextBox.Culture = new System.Globalization.CultureInfo("fr-FR");
-this.Content = numericTextBox;
+	<numeric:SfNumericTextBox Value="12345"  x:Name="numericTextBox" FormatString="c"/>
+	
+{% endhighlight %}
 
+{% highlight C# %}
+
+   numericTextBox.Culture = new System.Globalization.CultureInfo("fr-FR");
+	 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Display the culter applied value image](images/Culture.png)
-
-## Change Localization of Return key text
-
-The SfNumericTextBox provides the Localization support for the Return Key in soft keypad of iOS. We have provided the knowledge base document for the same. Please refer the Knowledge Base document from this [link.](https://www.syncfusion.com/kb/8075/how-to-localize-the-return-buttons-text-in-sfnumerictextbox-in-xforms-ios)
 
 ## See also
 

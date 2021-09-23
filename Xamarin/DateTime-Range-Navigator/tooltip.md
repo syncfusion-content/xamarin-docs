@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip customization for SfDateTimeRangeNavigator
-description: Tooltip
+title: Tooltip in Xamarin DateTime Range Navigator control | Syncfusion
+description: Learn here all about Tooltip support in Syncfusion Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator) control and more.
 platform: xamarin
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Tooltip
+# Tooltip in Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator)
 
 The tooltip is used to show the selected range start and end value of the [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html).
 
@@ -28,7 +28,7 @@ dateTimeRangeNavigator.EnableTooltip = false;
 {% endhighlight %}
 {% endtabs %}
 
-![](tooltip_images/tooltip_img1.png)
+![tooltip_img1](tooltip_images/tooltip_img1.png)
 
 ## Tooltip Format
 
@@ -44,7 +44,7 @@ dateTimeRangeNavigator.TooltipFormat = "yyyy/MM";
 {% endhighlight %}
 {% endtabs %}
 
-![](tooltip_images/tooltip_img2.png)
+![tooltip_img2](tooltip_images/tooltip_img2.png)
 
 ## Appearance Customization
 
@@ -94,6 +94,6 @@ dateTimeRangeNavigator.RightTooltipStyle.Margin = 15;
 {% endhighlight %}
 {% endtabs %}
 
-![](tooltip_images/tooltip_img3.png)
+![tooltip_img3](tooltip_images/tooltip_img3.png)
 
 

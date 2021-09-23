@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Carousel control for Xamarin.Forms
-description: A quick tour to initial users on Syncfusion Carousel control and explain about how to use it for Xamarin.Forms platform.
+title: Getting Started with Xamarin Carousel View control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Carousel View (SfCarousel) control, its elements and more.
 platform: Xamarin
 control: Carousel
 documentation: ug
 ---
 
-# Getting Started with Xamarin Carousel (SfCarousel)
+# Getting Started with Xamarin Carousel View (SfCarousel)
 
 This section explains how to showcase a Gallery of photos along with a Title using SfCarousel Control.
 
@@ -77,7 +77,7 @@ N> If you are adding the references from toolbox, this step is not needed.
 
 ### iOS
 
-To launch SfCarousel in iOS, need to create an instance of SfCarouselRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below.
+To launch the SfCarousel in iOS, call the `SfCarouselRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework has been initialized and before the LoadApplication is called, as demonstrated in the following code example.
 
 
 {% highlight C# %}
@@ -86,7 +86,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
 	global::Xamarin.Forms.Forms.Init();
 
-	new SfCarouselRenderer();
+	Syncfusion.SfCarousel.XForms.iOS.SfCarouselRenderer.Init();
 
 	LoadApplication(new App());
 

@@ -1,12 +1,12 @@
 ---
-title: Adding Stencil in Diagram control for Xamarin.Forms | Syncfusion
-description: Describes how to add stencil,custom shape,stencil group and stencil header in diagram control for Xamarin.Forms
+title: Stencil in Xamarin Diagram control | Syncfusion
+description: Learn here all about Stencil support in Syncfusion Xamarin Diagram (SfDiagram) control, its elements and more.
 platform: Xamarin
 control: Diagram
 documentation: ug
 keywords: 
 ---
-# Stencil
+# Stencil in Xamarin Diagram (SfDiagram)
 Stencil has a collection of Symbols. Stencil is used to clone the desired symbol by dragging it from the Stencil and dropping it into the SfDiagram. Each symbol can be grouped together by using the SymbolGroup .
 {% tabs %}
 {% highlight xml %}
@@ -213,3 +213,158 @@ diagram.Stencil=stencil;
 {% endtabs %}
 ![Category heading text in Xamarin.Forms diagram](Stencil_images/Stencil_img3.jpeg)
 
+N> You can refer to the [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations. You can also explore the [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.
+
+## Add Annotation into stencil
+Stencil is able to load the symbols like connectors and nodes (all shapes), custom shapes with annotation into the SfDiagram. Each symbol can be grouped together by using the SymbolGroup.
+The following example explains how to add the Annotation into a stencil:
+{% tabs %}
+{% highlight xml %}
+<ContentPage.Resources>
+  <ResourceDictionary>
+    <diagram:SymbolCollection x:Key="SmallDataBox">
+      <diagram:Node                     
+        Width="150"
+        Height="150"
+        EnableDrag="True"
+        EnableResize="True"
+        ShapeType="Rectangle">
+        <diagram:Node.Annotations>
+          <diagram:Annotation
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center"
+              Content="Node"
+              FontSize="36">
+              <diagram:Annotation.TextBrush>
+                <diagram:SolidBrush FillColor="Red" />
+                  </diagram:Annotation.TextBrush>
+          </diagram:Annotation>
+        </diagram:Node.Annotations>
+      </diagram:Node>
+      <diagram:Node                     
+          Width="150"
+          Height="150"
+          EnableDrag="True"
+          EnableResize="True"
+          ShapeType="Circle">
+          <diagram:Node.Annotations>
+            <diagram:Annotation
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Content="Node"
+                FontSize="30">
+                <diagram:Annotation.TextBrush>
+                  <diagram:SolidBrush FillColor="Blue" />
+                </diagram:Annotation.TextBrush>
+            </diagram:Annotation>
+          </diagram:Node.Annotations>
+      </diagram:Node>
+      <diagram:Node                     
+        Width="150"
+        Height="150"
+        EnableDrag="True"
+        EnableResize="True"
+        ShapeType="Diamond">
+        <diagram:Node.Annotations>
+          <diagram:Annotation
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Content="Node"
+            FontSize="30">
+            <diagram:Annotation.TextBrush>
+              <diagram:SolidBrush FillColor="Green" />
+            </diagram:Annotation.TextBrush>
+          </diagram:Annotation>
+        </diagram:Node.Annotations>
+      </diagram:Node>
+    </diagram:SymbolCollection>
+    <diagram:SymbolGroups x:Key="groups">
+      <diagram:SymbolGroup  HeaderName="Small Data Box" SymbolSource="{StaticResource SmallDataBox}"/>
+    </diagram:SymbolGroups>
+  </ResourceDictionary>
+</ContentPage.Resources>
+<ContentPage.Content>
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="2*" />
+      <ColumnDefinition Width="150" />
+    </Grid.ColumnDefinitions>
+    <diagram:SfDiagram
+      x:Name="diagram"
+      Grid.Column="0"
+      BackgroundColor="Transparent"
+      HeightRequest="1280"
+      WidthRequest="720">
+      <diagram:SfDiagram.PageSettings>
+        <diagram:PageSettings
+          GridColor="LightGray"
+          PageBackGround="Transparent"
+          ShowGrid="False"
+          SnapToGrid="False" />
+      </diagram:SfDiagram.PageSettings>
+    </diagram:SfDiagram>
+    <diagram:Stencil Grid.Column="1" SymbolGroups="{StaticResource groups}" >
+      <diagram:Stencil.SymbolStyle>
+        <diagram:SymbolStyle Width="150" Height="150"/>
+      </diagram:Stencil.SymbolStyle>
+    </diagram:Stencil>
+  </Grid>
+</ContentPage.Content>
+{% endhighlight %}
+{% highlight c# %}
+Grid grid = new Grid();
+var column = new ColumnDefinition() { Width = new GridLength(2, GridUnitType.Star) };
+var column1 = new ColumnDefinition() { Width = new GridLength(150) };
+grid.ColumnDefinitions.Add(column);
+grid.ColumnDefinitions.Add(column1);
+
+SfDiagram diagram = new SfDiagram();
+diagram.HeightRequest = 1280;
+diagram.WidthRequest = 720;
+diagram.BackgroundColor = Color.Transparent;
+diagram.PageSettings.GridColor = Color.LightGray;
+diagram.PageSettings.PageBackGround = Color.Transparent;
+diagram.PageSettings.ShowGrid = false;
+diagram.PageSettings.SnapToGrid = false;
+
+Stencil stencil = new Stencil();
+SymbolCollection SmallDataBox = new SymbolCollection();
+SmallDataBox.Add(new Node()
+{
+    Width = 150,
+    Height = 150,
+    EnableDrag = true,
+    EnableResize = true,
+    ShapeType = ShapeType.Rectangle,
+    Annotations = { new Annotation() { Content = "Node", FontSize = 36, TextBrush = new SolidBrush(Color.Red), HorizontalAlignment = HorizontalAlignment.Center, VerticalAlignment = VerticalAlignment.Center } }
+});
+SmallDataBox.Add(new Node()
+{
+    Width = 150,
+    Height = 150,
+    EnableDrag = true,
+    EnableResize = true,
+    ShapeType = ShapeType.Circle,
+    Annotations = { new Annotation() { Content = "Node", FontSize = 30, TextBrush = new SolidBrush(Color.Blue), HorizontalAlignment = HorizontalAlignment.Center, VerticalAlignment = VerticalAlignment.Center } }
+});
+SmallDataBox.Add(new Node()
+{
+    Width = 150,
+    Height = 150,
+    EnableDrag = true,
+    EnableResize = true,
+    ShapeType = ShapeType.Diamond,
+    Annotations = { new Annotation() { Content = "Node", FontSize = 30, TextBrush = new SolidBrush(Color.Green), HorizontalAlignment = HorizontalAlignment.Center, VerticalAlignment = VerticalAlignment.Center } }
+});
+
+//Add a category of symbol group with a heading text
+stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = SmallDataBox, HeaderName = "Small Data Box" });
+stencil.SymbolStyle.Width = 150;
+stencil.SymbolStyle.Height = 150;
+grid.Children.Add(diagram, 0, 0);
+grid.Children.Add(stencil, 1, 0);
+this.Content = grid;
+{% endhighlight %}
+{% endtabs %}
+
+![Add annotation into stencil in Xamarin.Forms diagram](Stencil_images/Stencil_img4.png)

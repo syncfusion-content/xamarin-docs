@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with TreeView for Xamarin.Forms | Syncfusion
-description: The user guide explains needed references, adding control to the app, binding data, etc. with demo app.
+title: Getting Started with Xamarin TreeView control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin TreeView (SfTreeView) control, its elements and more.
 platform: xamarin
 control: SfTreeView
 documentation: ug
@@ -292,7 +292,7 @@ Create a simple data source as shown in the following code example in a new clas
 {% highlight c# %}
 public class FileManager : INotifyPropertyChanged
 {
-   private string fileName;
+   private string itemName;
    private ImageSource imageIcon;
    private ObservableCollection<FileManager> subFiles;
 
@@ -308,11 +308,11 @@ public class FileManager : INotifyPropertyChanged
 
    public string ItemName
    {
-      get { return fileName; }
+      get { return itemName; }
       set
       {
-         fileName = value;
-         RaisedOnPropertyChanged("FolderName");
+         itemName = value;
+         RaisedOnPropertyChanged("ItemName");
       }
    }
    

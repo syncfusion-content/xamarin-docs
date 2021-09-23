@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | SfPopupLayout |Xamarin| Syncfusion
-description: Overview and key features of Xamarin.Forms PopupLayout control with its customization capabilities.
+title: About Xamarin Popup control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Popup (SfPopupLayout) control, its elements and more.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 --- 
 
-# Overview
+# Xamarin Popup (SfPopupLayout) Overview
 
 Popup layout provides a layout that allows users to display an alert message with customizable buttons or load any desired view inside a popup. It provides options to fully customize the popup with custom header, body, and footer capabilities, allowing you to display important information to use precisely how user want to.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AutomationId for inner elements of Syncfusion Text Input Layout
-description: How to set AutomationId for inner elements(password toggle icon and drop down icon) of essential Xamarin.Forms text input layout control.
+title: Accessibility in Xamarin Text Input Layout control | Syncfusion
+description: Learn here all about Accessibility support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
 platform: Xamarin
 control: SfTextInputLayout
 documentation: ug

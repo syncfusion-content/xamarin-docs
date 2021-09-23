@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Retrieving selected value in Syncfusion ComboBox control.
-description: This section describes how to get the selected value and set the selected value in the SfComboBox control.
+title: Retrieving Selected Values in Xamarin ComboBox control | Syncfusion
+description: Learn here all about Retrieving Selected Values support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
 platform: xamarin
 control: SfComboBox
 documentation: ug
 ---
 
-# Handling Selected Items
+# Retrieving Selected Values in Xamarin ComboBox (SfComboBox)
 
 SfComboBox provides a way to handle the selected item using the following properties:
 * SelectedIndex

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Restrict Dates From Selection in Xamarin Calendar | Syncfusion
-description: This section explains on how to set min and max date in calendar (SfCalendar) control for Xamarin platforms.
+description: Learn here all about Restrict Dates From Selection support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
 platform: Xamarin
 control: Calendar
 documentation: ug
 ---
 
-# Restrict Dates From Selection
+# Restrict Dates From Selection in Xamarin Calendar (SfCalendar)
 
 Dates can be restricted or a collection of dates can be blacked out in `SfCalendar` Control.
 

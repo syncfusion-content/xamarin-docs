@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion.Xamarin.Forms Chart Annotation
-description: This section explains the different types of annotations in chart and how to customize its appearance.
+title: Annotations in Xamarin Charts control | Syncfusion
+description: Learn here all about Annotations support in Syncfusion Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Annotation in Xamarin Charts (SfChart)
+# Annotations in Xamarin Charts (SfChart)
 
 [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) supports annotations which allows you to mark the specific area of interest in the chart area. You can add text, images, and custom views. 
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: View & review PDF using PDF Viewer Xamarin.Forms | Syncfusion
-description: Getting started section demonstrates how to create an application that displays a PDF file using PDF Viewer Xamarin.Forms.
+title: Getting Started with Xamarin Pdf Viewer control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control, its elements and more.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---
 
-# Getting started with Xamarin PDF Viewer (SfPdfViewer)
+# Getting Started with Xamarin Pdf Viewer (SfPdfViewer)
 
-This section demonstrates how to create an application that displays a PDF file using SfPdfViewer control.
+This section demonstrates how to create an application that displays a PDF file using [Xamarin Pdf Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) (SfPdfViewer) control.
  
 ## Assembly deployment
 
@@ -21,11 +21,11 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## Adding SfPdfViewer reference
 
-You can add SfPdfViewer reference using one of the following methods:
+You can add [SfPdfViewer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html) reference using one of the following methods:
 
 **Method 1: Adding SfPdfViewer reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfPdfViewer to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfPdfViewer](https://www.nuget.org/packages/Syncfusion.Xamarin.SfPdfViewer), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfPdfViewer to your project, open the [NuGet package](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) manager in Visual Studio, search for [Syncfusion.Xamarin.SfPdfViewer](https://www.nuget.org/packages/Syncfusion.Xamarin.SfPdfViewer), and then install it.
 
 ![Adding SfPdfViewer reference from NuGet](pdfviewer_images/Adding SfPdfViewer reference.png)
 
@@ -498,9 +498,26 @@ int verticalScrollBarWidth = pdfViewerControl.VerticalScrollBarWidth;
 
 N>This API is only applicable for UWP desktop. Changing the value of this API does not affect Android and iOS devices.
 
+## How to get the list of annotations present in the PDF?
+
+By using `Annotations` property, You can get the list of annotations present in the PDF document.
+  .
+Refer the following code sample.
+
+{% tabs %}
+{% highlight c# %}
+
+//Gets the list annotations present in the PDF
+var annotations = pdfViewer.Annotations;
+
+{% endhighlight %}
+{% endtabs %}
+
+N> The list remains empty if the PDF does not have any pre-existing annotations.
+
 ## Rendering the appearance content of annotations
 
-By  default,  the  PDF  viewer  does  not  render  the  appearance  content  of annotations. But the appearance can be rendered by flattening the annotations before loading the PDF. This can be achieved by setting the [Flatten](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.AnnotationSettings.html#Syncfusion_SfPdfViewer_XForms_AnnotationSettings_Flatten) API to true. The default value of the API is set to false.
+By default, the PDF Viewer does not render the appearance content of annotations. But the appearance can be rendered by flattening the annotations before loading the PDF. This can be achieved by setting the [Flatten](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.AnnotationSettings.html#Syncfusion_SfPdfViewer_Android_AnnotationSettings_Flatten) API to true. The default value of the API is set to false.
 
 {% tabs %}
 {% highlight c# %}
@@ -514,6 +531,6 @@ pdfViewerControl.LoadDocument(stream);
 {% endhighlight %}
 {% endtabs %}
 
-N>Annotations are only flattened when the page is rendered in the viewer only  for  viewing  the  appearance  of  annotations.  Once,  the  annotations  have flattened  the  interactions  such  as  select,  edit,  resize,  and  remove  cannot  be performed.  Setting  the  [Flatten](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.AnnotationSettings.html#Syncfusion_SfPdfViewer_XForms_AnnotationSettings_Flatten)  API  to  true  does  not  affect  the  save  and annotation export operations and the annotations will not be flattened in these operations.
+N>Annotations are only flattened when the page displayed in the viewer is only for viewing the appearance of annotations. Once the annotations are flattened, the interactions such as select, edit, resize, and remove cannot be performed. Setting the [Flatten](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfPdfViewer.Android.AnnotationSettings.html#Syncfusion_SfPdfViewer_Android_AnnotationSettings_Flatten) property to `true` will does not affect the save and annotation export operations. The annotations will not be flattened in these operations.
 
 N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

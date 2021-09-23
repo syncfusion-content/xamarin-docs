@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding  in Syncfusion ComboBox control for Xamarin.Forms
-description: This section provides the information about how to perfoming a DataBinding & Populating data items using ComboBox Xamarin
+title: Populating Data  in Xamarin ComboBox control | Syncfusion
+description: Learn here all about Populating Data  support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
 platform: xamarin
 control: SfComboBox
 documentation: ug
 ---
 
-# Populating data in SfComboBox
+# Populating Data  in Xamarin ComboBox (SfComboBox)
 
 SfComboBox control can be populated with a list of string or business objects, which assists the users when typing. Users can choose one item from the filtered suggestion list.
 

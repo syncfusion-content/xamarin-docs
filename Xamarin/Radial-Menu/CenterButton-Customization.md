@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Center button with  Syncfusion RadialMenu control in Xamarin.Forms
-description: Working with various options available in SfRadialMenuItems in Xamarin.Forms
+title: CenterButton Customization in Xamarin Radial Menu control | Syncfusion
+description: Learn here all about CenterButton Customization support in Syncfusion Xamarin Radial Menu (SfRadialMenu) control and more.
 platform: Xamarin
 control: SfRadialMenu
 documentation: ug
 ---
 
-# CenterButton Customization
+# CenterButton Customization in Xamarin Radial Menu (SfRadialMenu)
 
 The CenterButton or BackButton in radial menu is a view in the center of the radial menu. It performs the operations such as opening and closing the rim and navigating to next level items. The radial menu allows you customize the CenterButton/BackButton with `FontIcon`, `Custom View`, and `Caption`.
 

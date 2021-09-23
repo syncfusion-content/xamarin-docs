@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating data | TreeView for Xamarin.Forms | Syncfusion
-description: This topic explains how to populate the data and treeview nodes in bound mode in SfTreeView Xamarin.Forms
+title: Data Population in Xamarin TreeView control | Syncfusion
+description: Learn here all about Data Population support in Syncfusion Xamarin TreeView (SfTreeView) control and more.
 platform: xamarin
 control: SfTreeView
 documentation: ug
@@ -41,7 +41,7 @@ Create a simple data source as shown in the following code example in a new clas
 //FileManager.cs
 public class FileManager : INotifyPropertyChanged
 {
-   private string fileName;
+   private string itemName;
    private ImageSource imageIcon;
    private ObservableCollection<FileManager> subFiles;
 
@@ -57,11 +57,11 @@ public class FileManager : INotifyPropertyChanged
 
    public string ItemName
    {
-      get { return fileName; }
+      get { return itemName; }
       set
       {
-         fileName = value;
-         RaisedOnPropertyChanged("FolderName");
+         itemName = value;
+         RaisedOnPropertyChanged("ItemName");
       }
    }
    

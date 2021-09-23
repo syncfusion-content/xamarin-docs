@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip support for Syncfusion RangeSlider control for Xamarin.Forms
-description: Learn how to set tooltip for RangeSlider in Xamarin.Forms
+title: ToolTip Support in Xamarin Range Slider control | Syncfusion
+description: Learn here all about ToolTip Support in Syncfusion Xamarin Range Slider (SfRangeSlider) control and more.
 platform: Xamarin
 control: RangeSlider
 documentation: ug
 ---
 
-# ToolTip Support
+# ToolTip Support in Xamarin Range Slider (SfRangeSlider)
 
 The ToolTip shows the current value based on thumb position.
 

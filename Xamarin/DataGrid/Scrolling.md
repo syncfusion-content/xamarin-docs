@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Scroll to Row Column Index | SfDataGrid | Xamarin | Syncfusion
-description: Modes of scrolling, programmatic scrolling to scroll to a particular row and/or column in Xamarin.Forms DataGrid and the bouncing behavior when scrolling.
+title: Scrolling in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Scrolling support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
 ---
-# Scrolling in Xamarin.Forms DataGrid(SfDataGrid)
+# Scrolling in Xamarin DataGrid (SfDataGrid)
 
 ## Scrolling mode
 

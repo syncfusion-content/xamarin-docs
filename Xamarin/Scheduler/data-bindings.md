@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Appointments | SfSchedule | Xamarin | Syncfusion
-description: Learn how to schedule and customize different kinds of appointments in Xamarin.Forms SfSchedule control.
+title: Appointments in Xamarin Scheduler control | Syncfusion
+description: Learn here all about Appointments support in Syncfusion Xamarin Scheduler (SfSchedule) control and more.
 platform: xamarin
 control: SfSchedule
 documentation: ug
@@ -130,7 +130,7 @@ schedule.DataSource = Meetings;
 {% endtabs %}
 
 ## Spanned Appointments
-Spanned Appointment is an appointment which lasts more than 24 hours. It doesn’t block out time slots in `SfSchedule`, it will render in [All-Day appointment](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#all-day-appointment-panel) panel exclusively.
+Spanned Appointment is an appointment which lasts more than 24 hours. It doesn’t block out time slots in `SfSchedule`, it will render in [All-Day appointment](https://help.syncfusion.com/xamarin/scheduler/date-navigations#all-day-appointment-panel) panel exclusively.
 
 {% tabs %}
 {% highlight c# %}
@@ -873,11 +873,11 @@ private void Schedule_VisibleDatesChangedEvent(object sender, VisibleDatesChange
 ## Appearance Customization
 The default appearance of the appointment can be customized by using the [AppointmentStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_AppointmentStyle) property and [AppointmentLoadedEvent](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.
 
-* [Customize appearance using Style](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-style) 
-* [Customize appearance using Event](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-event) 
-* [Customize appearance using Custom View](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-custom-view)
-* [Customize appearance using DataTemplate](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-datatemplate)
-* [Customize appearance using DataTemplateSelector](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-datatemplateselector)
+* [Customize appearance using Style](https://help.syncfusion.com/xamarin/scheduler/date-navigations#customize-appearance-using-style) 
+* [Customize appearance using Event](https://help.syncfusion.com/xamarin/scheduler/date-navigations#customize-appearance-using-event) 
+* [Customize appearance using Custom View](https://help.syncfusion.com/xamarin/scheduler/date-navigations#customize-appearance-using-custom-view)
+* [Customize appearance using DataTemplate](https://help.syncfusion.com/xamarin/scheduler/date-navigations#customize-appearance-using-datatemplate)
+* [Customize appearance using DataTemplateSelector](https://help.syncfusion.com/xamarin/scheduler/date-navigations#customize-appearance-using-datatemplateselector)
 
 ### Customize appearance using Style
 Schedule appointment can be customized by setting appointment style properties such as [TextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentStyle.html#Syncfusion_SfSchedule_XForms_AppointmentStyle_TextColor), [FontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentStyle.html#Syncfusion_SfSchedule_XForms_AppointmentStyle_FontFamily), [FontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentStyle.html#Syncfusion_SfSchedule_XForms_AppointmentStyle_FontSize), [FontAttributes](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentStyle.html#Syncfusion_SfSchedule_XForms_AppointmentStyle_FontAttributes), [BorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentStyle.html#Syncfusion_SfSchedule_XForms_AppointmentStyle_BorderColor), [BorderCornerRadius](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentStyle.html#Syncfusion_SfSchedule_XForms_AppointmentStyle_BorderCornerRadius), [BorderWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentStyle.html#Syncfusion_SfSchedule_XForms_AppointmentStyle_BorderWidth) to the [AppointmentStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentStyle.html) property of `SfSchedule`.
@@ -1144,7 +1144,7 @@ appointmentStyle.FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regu
 
 ![custom font support in schedule Xamarin Forms](PopulatingAppointments_images/customfontappointment.png)
 
-Refer [this](https://help.syncfusion.com/xamarin/sfschedule/monthview#custom-font-setting-in-xamarinforms-android) to configure the custom fonts in Xamarin.Forms.
+Refer [this](https://help.syncfusion.com/xamarin/scheduler/monthview#custom-font-setting-in-xamarinforms-android) to configure the custom fonts in Xamarin.Forms.
 
 ## Selection
 Schedule control has built-in events to handle tapped, double tapped and long pressed touch actions.
@@ -1344,7 +1344,7 @@ this.Content = schedule;
 * `MinHeight` has ScheduleAppointmentMapping Support.
 * All day Appointment does not support `MinHeight`.
 
-N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.
+You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.
 
 ## See also
 

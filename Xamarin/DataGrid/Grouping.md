@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Grouping | SfDataGrid | Xamarin | Syncfusion
-description: Describes how to group one or more columns, expand/collapse the groups, use custom grouping logic in Xamarin.Forms DataGrid.
+title: Grouping in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Grouping support in Syncfusion Xamarin DataGrid (SfDataGrid) control, its elements and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Grouping in Xamarin.Forms DataGrid (SfDataGrid)
+# Grouping in Xamarin DataGrid (SfDataGrid)
 
 A group represents a collection of records that belongs to a particular category. When grouping, the data is organized into hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a group. Each group is identified by its [CaptionSummaryRow](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_CaptionSummaryRowProperty) to get the underlying records in view.
 
 To get started quickly with grouping in Xamarin.Forms DataGrid, you can check out this video:
 <style>#XamarinDataGridVideoTutorial{width : 90% !important; height: 400px !important }</style>
-<iframe id='XamarinDataGridVideoTutorial' src='https://www.youtube.com/watch?v=Z2JidYmNDYk'></iframe>
+<iframe id='XamarinDataGridVideoTutorial' src='https://www.youtube.com/embed/Z2JidYmNDYk'></iframe>
 
 N> To update grouping for the newly added row or column, set the `SfDataGrid.View.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`.
 
@@ -99,7 +99,7 @@ this.dataGrid.IndentColumnWidth = 60;
 
 ### Customize indent column background color 
 
-Set background colors to indent cells based on the row where indent cells present. To set the desired background color, use the `GetIndentBackgroundColor()` override in the custom `DataGridStyle` class. Refer to this [link](https://help.syncfusion.com/xamarin/sfdatagrid/styles) to know how to apply custom style to the SfDataGrid. Refer to the following code snippet to apply background color to indent cells based on the row type:
+Set background colors to indent cells based on the row where indent cells present. To set the desired background color, use the `GetIndentBackgroundColor()` override in the custom `DataGridStyle` class. Refer to this [link](https://help.syncfusion.com/xamarin/datagrid/styles) to know how to apply custom style to the SfDataGrid. Refer to the following code snippet to apply background color to indent cells based on the row type:
 
 {% tabs %}
 {% highlight c# %}
@@ -127,7 +127,11 @@ public class CustomStyle : DataGridStyle
 
 ## Custom grouping
 
-The SfDataGrid allows to group a column based on custom logic when the standard grouping techniques do not meet the requirements. To achieve this, write a converter that implements `IValueConverter` with custom grouping logic. Assign that converter to the [GroupColumnDescription.Converter](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GroupColumnDescription.html#Syncfusion_SfDataGrid_XForms_GroupColumnDescription_Converter) property.
+The SfDataGrid allows to group a column based on custom logic when the standard grouping techniques do not meet the requirements.
+
+### Using IValueConverter
+
+To achieve this, write a converter that implements `IValueConverter` with custom grouping logic. Assign that converter to the [GroupColumnDescription.Converter](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GroupColumnDescription.html#Syncfusion_SfDataGrid_XForms_GroupColumnDescription_Converter) property.
 
 To set custom grouping converter for the group description that is added to group the freight column, follow the code example:
 
@@ -196,6 +200,50 @@ public class GroupConverter : IValueConverter
     }
 }
 {% endhighlight %}
+
+### Using KeySelector
+
+To achieve this, specify the custom logic in [GroupColumnDescription.KeySelector](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GroupColumnDescription.html#Syncfusion_SfDataGrid_XForms_GroupColumnDescription_KeySelector) property and column name in [GroupColumnDescription.ColumnName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GroupColumnDescription.html#Syncfusion_SfDataGrid_XForms_GroupColumnDescription_ColumnName) property.
+
+In the below example, the Date column is grouped based on weeks.
+{% tabs %}
+{% highlight c# %}
+//Apply the CustomGrouping for Date Column by using KeySelector.
+dataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
+{
+    ColumnName = "Date",
+    KeySelector = (string ColumnName, object o) =>
+        {
+            var dt = DateTime.Now;
+            var item = (o as SalesByDate).Date;
+            var days = (int)Math.Floor((dt - item).TotalDays);
+            var dayOfWeek = (int)dt.DayOfWeek;
+            var difference = days - dayOfWeek;
+            if (days <= dayOfWeek)
+            {
+                if (days == 0)
+                    return "TODAY";
+                if (days == 1)
+                    return "YESTERDAY";
+                return item.Date.DayOfWeek.ToString().ToUpper();
+            }
+            if (difference > 0 && difference <= 7)
+                return "LAST WEEK";
+            if (difference > 7 && difference <= 14)
+                return "TWO WEEKS AGO";
+            if (difference > 14 && difference <= 21)
+                return "THREE WEEKS AGO";
+            if (dt.Year == item.Date.Year && dt.Month == item.Date.Month)
+                return "EARLIER THIS MONTH";
+            if (DateTime.Now.AddMonths(-1).Month == item.Date.Month)
+                return "LAST MONTH";
+            return "OLDER";
+        }
+
+});
+{% endhighlight %}
+{% endtabs %}
+
 
 ### Sorting the grouped column records
 In custom grouping, you can sort all the inner records of each group by setting [GroupColumnDescription.SortGroupRecords](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GroupColumnDescription.html#Syncfusion_SfDataGrid_XForms_GroupColumnDescription_SortGroupRecords) property as `true` to sort the records based on the `GroupColumnDescription.ColumnName` property.
@@ -484,7 +532,7 @@ The [GroupChangingEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 
  `Cancel`: Decides to cancel group expansion.
  
-Cancel group expansion by setting [GroupChangingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) to `true`.
+Cancel group expansion by setting [GroupChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -516,7 +564,7 @@ The [GroupChangingEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 
  `Cancel`: Decides to cancel the group collapsing.
 
-Cancel the group is being collapsed by using the [GroupChangingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) of `GroupCollapsing` event.
+Cancel the group is being collapsed by using the [GroupChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) of `GroupCollapsing` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -587,6 +635,8 @@ this.dataGrid.ShowColumnWhenGrouped = false;
 
 {% endhighlight %}
 {% endtabs %}
+
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
 
 ## See also
 

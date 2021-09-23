@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Save image in Syncfusion SfImageEditor control in Xamarin.Forms
-description: Learn how to save the image in different ways as well as the use of different events in ImageEditor for Xamarin.Forms
+title: Save and Events in Xamarin Image Editor control | Syncfusion
+description: Learn here all about Save and Events support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: ImageEditor
 documentation: ug
 ---
 
-# Save in SfImageEditor
+# Save and Events in Xamarin Image Editor (SfImageEditor)
 
 You can save the image along with the current edits to the device using the [`Save`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_Save_System_String_Xamarin_Forms_Size_) method.
 

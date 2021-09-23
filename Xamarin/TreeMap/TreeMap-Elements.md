@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion.Xamarin.Forms TreeMap-Elements
-description: treemap elements
+title: TreeMap Elements in Xamarin TreeMap control | Syncfusion
+description: Learn here all about TreeMap Elements support in Syncfusion Xamarin TreeMap (SfTreeMap) control and more.
 platform: xamarin
 control: TreeMap
 documentation: ug
 ---
 
-# TreeMap Elements
+# TreeMap Elements in Xamarin TreeMap (SfTreeMap)
 
 The TreeMap contains the following elements:
 

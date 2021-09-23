@@ -1,12 +1,12 @@
 ---
 layout: post
-title: MatchHighlighting in Syncfusion SfComboBox control for Xamarin.Forms
-description: Learn how to highlight the matched text in SfComboBox
+title: Highlighting matched text in Xamarin ComboBox control | Syncfusion
+description: Learn here all about Highlighting matched text support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
 platform: xamarin
 control: SfComboBox
 documentation: ug
 ---
-# Highlighting matched text
+# Highlighting matched text in Xamarin ComboBox (SfComboBox)
 
 You can highlight matching characters in a suggestion list to pick an item with more clarity by following two ways:
 

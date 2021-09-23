@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AutoSizing in Syncfusion SfComboBox control in Xamarin.Forms
-description: Learn how to enable the AutoSizing feature in SfComboBox control to extend the layout based on the input token size available.
+title: AutoSizing in Xamarin ComboBox control | Syncfusion
+description: Learn here all about AutoSizing support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
 platform: Xamarin
 control: SfComboBox
 documentation: ug
 ---
 
-# Enabling the AutoSizing
+# AutoSizing in Xamarin ComboBox (SfComboBox)
 
 AutoSizing can be enabled in SfComboBox control so that the control will extend its layout based on the text input.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started | SfDataForm | Xamarin | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin DataForm (SfDataForm) control and more details..
+title: Getting Started with Xamarin DataForm control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin DataForm (SfDataForm) control, its elements and more.
 platform: xamarin
 control: SfDataForm
 documentation: ug
@@ -15,7 +15,7 @@ The SfDataForm control helps editing the data fields of any data object. It can 
 * Caption customization: Supports loading the image as caption for the editor.
 * Editors: Built-in support for text, numeric, numeric up-down, picker, date picker, time picker, switch,drop-down,autoComplete and checkbox editors. 
 * Custom editor: Supports loading the custom editors.
-* Validation: Built-in support to validate the data based on the [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx) and data annotations. It also programmatically supports validation handling.
+* Validation: Built-in support to validate the data based on the [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?redirectedfrom=MSDN&view=net-5.0) and data annotations. It also programmatically supports validation handling.
 
 # Getting Started with Xamarin DataForm (SfDataForm)
 
@@ -508,7 +508,7 @@ Numeric
 Int or Double type property.
 </td>
 <td>
-{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -520,7 +520,7 @@ The Int or Double type Property with percent value.
 [DataType("Percent")]].
 </td>
 <td>
-{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -532,7 +532,7 @@ The Int or Double type property with currency value.
 [DataType(DataType.Currency)].
 </td>
 <td>
-{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -567,7 +567,7 @@ NumericUpDown
 Int or Double type property.
 </td>
 <td>
-{{'[SfNumericUpDown](https://help.syncfusion.com/xamarin/sfnumericupdown/overview)'| markdownify }}
+{{'[SfNumericUpDown](https://help.syncfusion.com/xamarin/numericupdown/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -578,7 +578,7 @@ Segment
 Enum type property.
 </td>
 <td>
-{{'[SfSegmentedControl](https://help.syncfusion.com/xamarin/sfsegmentedcontrol/overview)'| markdownify }}
+{{'[SfSegmentedControl](https://help.syncfusion.com/xamarin/segmented-control/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -589,7 +589,7 @@ Bool
 Bool type property.
 </td>
 <td>
-{{'[SfCheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/overview)'| markdownify }}
+{{'[SfCheckBox](https://help.syncfusion.com/xamarin/checkbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -624,7 +624,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-{{'[SfComboBox](https://help.syncfusion.com/xamarin/sfcombobox/overview)'| markdownify }}
+{{'[SfComboBox](https://help.syncfusion.com/xamarin/combobox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -636,7 +636,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-{{'[SfAutoComplete](https://help.syncfusion.com/xamarin/sfautocomplete/overview)'| markdownify }}
+{{'[SfAutoComplete](https://help.syncfusion.com/xamarin/autocomplete/overview)'| markdownify }}
 </td>
 </tr>
 <tr>

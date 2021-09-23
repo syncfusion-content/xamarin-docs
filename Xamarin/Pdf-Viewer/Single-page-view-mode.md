@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Single page view mode in PDF Viewer Xamarin Forms | Syncfusion
-description: The Syncfusion Xamarin.Forms PDF Viewer provides option to view the PDF documents page by page with horizontal navigation support.
+title: Single page view mode in Xamarin Pdf Viewer control | Syncfusion
+description: Learn here all about Single page view mode support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---
 
-# Single page view mode
+# Single page view mode in Xamarin Pdf Viewer (SfPdfViewer)
 
 The default continuous view mode of PDF Viewer allows vertical scrolling. In addition to that, PDF Viewer also provides options to view PDFs page by page with horizontal navigation support.
 
@@ -74,3 +74,22 @@ pdfViewer.IsPageFlipEnabled= false;
 {% endtabs %}
 
 N>You can refer to our [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.
+
+## How to show and hide the page navigation buttons in the page by page view mode on desktop
+
+By default in the Xamarin.Forms.UWP platform, buttons to navigate to the next page and the previous page in the page by page view mode will be visible. It can be shown or hidden by setting the [ShowPageFlipNavigationArrows](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_ShowPageFlipNavigationArrows) property of PDF Viewer to `true` and `false` respectively.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfPdfViewer x:Name="pdfViewerControl" ShowPageFlipNavigationArrows="False" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+pdfViewerControl.ShowPageFlipNavigationArrows = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+N>This API is only applicable for desktop device in UWP platform. Changing the value of this API does not have any effect on Android and iOS platforms.

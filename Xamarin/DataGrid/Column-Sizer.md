@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column Sizer | SfDataGrid | Xamarin | Syncfusion
-description: Different column sizing options available in Xamarin.Forms DataGrid and its working.
+title: Column Sizer in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Column Sizer support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
 ---
 
-# ColumnSizer
+# Column Sizer in Xamarin DataGrid (SfDataGrid)
 
 The SfDataGrid allows to apply `ColumnSizer` for the [GridColumn](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html) by setting the [SfDataGrid.ColumnSizer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ColumnSizer) property. 
 
@@ -360,8 +360,7 @@ public class CustomColumnSizer : GridColumnSizer
             //Calculate the ColumnSizer ratio for every column 
             starWidth *= StarSizerRatioHelpers.GetColumnRatio(getColumn);
             var columnSizer = DataGrid.GridColumnSizer;
-            var method = columnSizer.GetType().GetRuntimeMethods().FirstOrDefault(x => x.Name == "SetColumnWidth");
-            var width = method.Invoke(columnSizer, new object[] { getColumn, starWidth });
+            var width = columnSizer.GetActualWidth(getColumn, starWidth);
             double computeWidth = (double)width;
 
             if (starWidth != computeWidth && starWidth > 0)
@@ -415,3 +414,5 @@ public static class StarSizerRatioHelpers
 {% endhighlight %}   
 
 ![DataGrid with star column sizing based on ratio](SfDataGrid_images/StarColumnSizerRatio_Forms.png)
+
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.

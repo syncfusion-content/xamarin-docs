@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Syncfusion Essential Xamarin.Forms SfButton
-description: How to create a simple button view, add caption, background image, icon, enable toggle view and customize visual states.
+title: Getting Started with Xamarin Button control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Button (SfButton) control, its elements and more.
 platform: xamarin
 control: sfbutton
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Xamarin Button (SfButton)
 
-This section explains the steps required to work with the button control for Xamarin.Forms.
+This section explains the steps required to work with the [Xamarin.Forms Button](https://www.syncfusion.com/xamarin-ui-controls/xamarin-button) control. 
 
 ## Assembly deployment
 
@@ -25,7 +25,7 @@ You can add SfButton reference using one of the following methods:
 
 **Method 1: Adding SfButton reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfButton to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfButton to your project, open the [NuGet package](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) manager in Visual Studio, search for [Syncfusion.Xamarin.Buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons), and then install it.
 
 ![Adding SfButton reference from NuGet](Images/Adding SfButton reference.png)
 

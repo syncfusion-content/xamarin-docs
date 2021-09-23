@@ -1,7 +1,7 @@
 ---
 layout: post
-title: NestedTab with Syncfusion TabView control for Xamarin.Forms 
-description: This section shows how to use the Nested Tab in Syncfusion TabView control for Xamarin.Forms platform
+title: NestedTab in Xamarin Tabbed View control | Syncfusion
+description: Learn here all about NestedTab support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
 platform: Xamarin
 control: TabView
 documentation: ug
@@ -217,3 +217,27 @@ namespace TabViewAutomationSample
 {% endtabs %}
 
 ![NestedTab Image](images/NestedTab/NestedTab.png)
+
+## Lazy Loading 
+
+Lazy loading improves performance of SfTabView at initial loading. To enable this support, set the [EnableVirtualization](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_EnableVirtualization) property to true in SfTabView.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <tabview:SfTabView x:Name="tabView" EnableVirtualization="True"> 
+     ... 
+     </tabview:SfTabView> 
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+{% endhighlight %}
+
+    tabView.EnableVirtualization = true;
+
+{% endtabs %}
+
+Lazy loading sample is available in this [link](https://github.com/SyncfusionExamples/lazy-loading-in-sftabview).

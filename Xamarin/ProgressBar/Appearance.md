@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Appearance
+title: Appearance in Xamarin ProgressBar control | Syncfusion
+description: Learn here all about appearance support in Syncfusion Xamarin ProgressBar control, its elements and more.
 platform: xamarin
 control: ProgressBar
 documentation: ug
 ---
 
-# Appearance
+# Appearance in Xamarin ProgressBar (Progress Bar)
 
 ## Angle
 
@@ -36,7 +37,7 @@ circularProgressBar.EndAngle = 360;
 
 {% endtabs %} 
 
-![](overview_images/angle.png)
+![angle](overview_images/angle.png)
 
 ## Range colors
 
@@ -147,7 +148,7 @@ circularProgressBar.RangeColors = rangeColors;
 
 {% endtabs %} 
 
-![](overview_images/rangecolors.png)
+![rangecolors](overview_images/rangecolors.png)
 
 The following code sample demonstrates how to apply gradient transition effect to the range colors in the linear progress bar.
 
@@ -241,7 +242,7 @@ circularProgressBar.RangeColors = rangeColors;
 
 {% endtabs %} 
 
-![](overview_images/gradient.png)
+![gradient](overview_images/gradient.png)
 
 ## Thickness
 
@@ -271,7 +272,7 @@ linearProgressBar.Padding = 2;
 
 {% endtabs %} 
 
-![](overview_images/thickness_linear.png)
+![thickness_linear](overview_images/thickness_linear.png)
 
 ### Circular progress bar
 
@@ -312,7 +313,7 @@ trackOutsideProgressBar.ShowProgressValue = false;
 
 {% endtabs %} 
 
-![](overview_images/appearance.png)
+![appearance](overview_images/appearance.png)
 
 ## Corner radius
 
@@ -339,7 +340,7 @@ linearProgressBar.CornerRadius = 10;
 
 {% endtabs %} 
 
-![](overview_images/cornerradius.png)
+![cornerradius](overview_images/cornerradius.png)
 
 ## Color customization
 
@@ -372,7 +373,7 @@ linearProgressBar.TrackColor = Color.FromHex("3351483a");
 
 {% endtabs %} 
 
-![](overview_images/color1.png)
+![color1](overview_images/color1.png)
 
 The linear progress bar provides support to customize the color for the secondary progress bar using the [`SecondaryProgressColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.SfLinearProgressBar.html#Syncfusion_XForms_ProgressBar_SfLinearProgressBar_SecondaryProgressColor) property as demonstrated in the following code sample.
 
@@ -395,5 +396,5 @@ linearProgressBar.SecondaryProgressColor = Color.CornflowerBlue;
 
 {% endtabs %} 
 
-![](overview_images/color2.png)
+![color2](overview_images/color2.png)
 

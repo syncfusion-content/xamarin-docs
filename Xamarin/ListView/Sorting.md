@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in Syncfusion ListView
-description: This section describes about the sorting behavior in Syncfusion Xamarin.Forms ListView and its various customization features.
+title: Sorting in Xamarin ListView control | Syncfusion
+description: Learn here all about Sorting support in Syncfusion Xamarin ListView (SfListView) control, its elements and more.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -124,7 +124,7 @@ public class CustomSortComparer : IComparer<object>
 {% endhighlight %}
 {% endtabs %}
 
-For more information about custom sorting of groups, please refer the documentation [here](https://help.syncfusion.com/xamarin/sflistview/grouping#custom-sorting-of-groups).
+For more information about custom sorting of groups, please refer the documentation [here](https://help.syncfusion.com/xamarin/listview/grouping#custom-sorting-of-groups).
 
 ## Sort the items on header tapped
 

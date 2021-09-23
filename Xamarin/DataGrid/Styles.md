@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Styles | SfDataGrid | Xamarin | Syncfusion
-description: Apply styles for all the elements in Xamarin.Forms DataGrid. Customize the border, border color, sort icons and resizing indicator in the DataGrid.
+title: Styles in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Styles support in Syncfusion Xamarin DataGrid (SfDataGrid) control, its elements and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -768,6 +768,8 @@ private void DataGrid_QueryCellStyle(object sender, QueryCellStyleEventArgs e)
 {% endhighlight %}
 
 ![DataGrid with border customized](SfDataGrid_images/BorderCustomization.png)
+
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
 
 ## See also
 

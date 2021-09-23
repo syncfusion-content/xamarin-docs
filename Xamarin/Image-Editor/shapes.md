@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Shapes in Syncfusion SfImageEditor control in Xamarin.Forms
-description: Learn how to add shapes, text, and draw over an Image in the SfImageEditor control for Xamarin.Forms platform
+title: Shapes in Xamarin Image Editor control | Syncfusion
+description: Learn here all about Shapes support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: ImageEditor
 documentation: ug
 ---
 
-# Shapes in SfImageEditor
+# Shapes in Xamarin Image Editor (SfImageEditor)
 
 You can annotate any shapes over an image using the [`AddShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_AddShape_Syncfusion_SfImageEditor_XForms_ShapeType_Syncfusion_SfImageEditor_XForms_PenSettings_) method. The following shapes are available in image editor:
 

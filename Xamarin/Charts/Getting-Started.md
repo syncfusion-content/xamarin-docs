@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Essential Syncfusion.Xamarin.Forms Chart
-description: A quick tour to create a chart with title, series, legend, data labels, tooltip, and multiple Y axis in Xamarin.Forms Chart.
+title: Getting Started with Xamarin Charts control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -154,7 +154,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### macOS
 
-To launch the chart in macOS, call the SfChartRenderer.Init() method in the DidFinishLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication method is called as demonstrated in the following code sample:
+To launch the chart in macOS, call the SfChartRenderer.Init() method in the DidFinishLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and LoadApplication method as demonstrated in the following code sample:
 
 {% highlight C# %} 
 
@@ -163,9 +163,9 @@ public override void DidFinishLaunching(NSNotification notification)
     … 
     Forms.Init();
 
-    Syncfusion.SfChart.XForms.MacOS.SfChartRenderer.Init();
+    LoadApplication(new App());       
 
-    LoadApplication(new App());          
+    Syncfusion.SfChart.XForms.MacOS.SfChartRenderer.Init();   
     …
 }
 
@@ -463,7 +463,7 @@ chart.Title.Text = "Chart";
 
 {% endtabs %}  
 
-Refer this [link](https://help.syncfusion.com/xamarin/sfchart/charttitle) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize chart title.
+Refer this [link](https://help.syncfusion.com/xamarin/charts/charttitle) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize chart title.
 
 ## Enable data labels
 
@@ -497,7 +497,7 @@ series.DataMarker = new ChartDataMarker();
 
 {% endtabs %}  
 
-Refer this [link](https://help.syncfusion.com/xamarin/sfchart/datamarker) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize data markers.
+Refer this [link](https://help.syncfusion.com/xamarin/charts/datamarker) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize data markers.
 
 ## Enable legend
 
@@ -555,7 +555,7 @@ series.Label = "Heights";
 
 {% endtabs %}  
 
-Refer this [link](https://help.syncfusion.com/xamarin/sfchart/legend) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize legend.
+Refer this [link](https://help.syncfusion.com/xamarin/charts/legend) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize legend.
 
 ## Enable tooltip
 
@@ -587,7 +587,7 @@ series.EnableTooltip = true;
 
 {% endtabs %}
 
-Refer this [link](https://help.syncfusion.com/xamarin/sfchart/tooltip) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize tooltip.
+Refer this [link](https://help.syncfusion.com/xamarin/charts/tooltip) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize tooltip.
 
 The following code example gives you the complete code of above configurations.
 

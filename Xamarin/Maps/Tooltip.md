@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip feature of Syncfusion Maps in Xamarin.Forms 
-description: This section describes the tooltip feature of maps.
+title: Tooltip in Xamarin.Forms Maps control | Syncfusion
+description: Learn here all about Tooltip support in Syncfusion Xamarin Maps (SfMaps) control, its elements and more.
 platform: xamarin
 control: SfMaps
 documentation: ug
 ---
 
-# Tooltip
+# Tooltip in Xamarin.Forms Maps (SfMaps)
 
 Tooltip provides additional information about the shapes in the maps. To enable tooltip, set the [`ShowTooltip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipSetting.html#Syncfusion_SfMaps_XForms_TooltipSetting_ShowTooltip) property to true, and set the [`ValuePath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipSetting.html#Syncfusion_SfMaps_XForms_TooltipSetting_ValuePath) property of tooltip.
 
@@ -668,3 +668,6 @@ Content = sfMaps;
 {% endtabs %} 
 
 ![Xamarin Tooltip Customization for Marker Image](Images/marker_tooltip_customization.png)
+
+N> You can refer to our [Xamarin Maps](https://www.syncfusion.com/xamarin-ui-controls/xamarin-maps) feature tour page for its groundbreaking feature representations.
+You can also explore our [Xamarin.Forms Maps example](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Maps) to knows the functionalities of each feature.

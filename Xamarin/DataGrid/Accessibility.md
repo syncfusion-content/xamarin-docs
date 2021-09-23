@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Accessibility | SfDataGrid | Xamarin | Syncfusion
-description: Set AutomationId to SfDataGrid for automation framework to find and interact with control inner elements.
+title: Accessibility in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Accessibility support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# AutomationId in Xamarin.Forms DataGrid
+# Accessibility in Xamarin DataGrid (SfDataGrid)
 
 SfDataGrid and SfDataPager support built-in [AutomationId](https://docs.microsoft.com/en-gb/dotnet/api/xamarin.forms.element.automationid?view=xamarin-forms#Xamarin_Forms_Element_AutomationId) for all their inner elements. These `AutomationId` values allow the automation framework to find and interact with the inner elements when the test scripts are run. A unique `AutomationId` is maintained for each inner element by prefixing the control's `AutomationId` with the inner element's Id.
 
@@ -259,3 +259,5 @@ public void SfDataPager_AutomationId()
 
 {% endhighlight %}
 {% endtabs %}
+
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects. 

@@ -1,31 +1,32 @@
 ---
 layout: post
-title: Font Settings in Syncfusion NumericTextBox control for Xamarin.Forms
-description: This section explains how to set the Font style in Syncfusion NumericTextBox control for Xamarin.Forms.
+title: Font Settings in Xamarin Numeric Entry control | Syncfusion
+description: Learn here all about Font Settings support in Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control and more.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
 # Font Settings in Xamarin Numeric Entry (SfNumericTextBox)
 
-NumericTextBox has the following two font-related properties that display the value's text:
-We can customize the font style of NumericTextBox by using the following properties.
+[`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) has the following two font-related properties that display the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Value) text:
 
-* `FontSize` : Sets the font size for NumericTextBox’s text. 
+You can customize the font style of [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) by using the following properties.
 
-* `FontAttributes` : Sets the style of NumericTextBox’s text. We can give three types of style on it.It is specifying style information like Italic and Bold (using the FontAttributes enumeration in C#)
+* [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_FontSize) : Sets the font size for [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) text. 
 
-1. Bold- The font is bold
-2. Italic – The font is Italic
-3. None – The font is unmodified.
+* [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_FontAttributes) : Sets the style of [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) text. You can apply three types of style on it. It is specifying style information like Italic and Bold (using the FontAttributes enumeration in C#).
+
+   1. Bold - The font is bold.
+   2. Italic – The font is Italic.
+   3. None – The font is unmodified.
 
 N> Default value is None.
 
-* `FontFamily` : Customizes the font family of the NumericTextBox’s text.
+* [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_FontFamily) : Customizes the font family of the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) text.
 
-* `TextAlignment` : Sets the style of NumericTextBox’s text. We can give three types of style on it.It is specifying style information like Start,End and Center (using the TextAlignment enumeration in C#)
+* [`TextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_TextAlignment) : Sets the style of [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) text. You can apply three types of style on it. It is specifying style information like Start, End, and Center (using the TextAlignment enumeration in C#).
 
-N> Default value is Start.
+N> Default value is [`Start`].
 
 To set the font size and attributes in XAML as well as in C#:
 
@@ -33,7 +34,7 @@ To set the font size and attributes in XAML as well as in C#:
 
 {% highlight xaml %}
 
-	<syncfusion:SfNumericTextBox x:Name="numericTextBox" FontSize="27" FontAttributes="Bold" Value="123" TextAlignment="End" />
+	<syncfusion:SfNumericTextBox FontSize="27" FontAttributes="Bold" Value="123" TextAlignment="End" />
 	
 {% endhighlight %}
 

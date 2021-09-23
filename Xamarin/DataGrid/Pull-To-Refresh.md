@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pull To Refresh | SfDataGrid | Xamarin | Syncfusion
-description: Use the pull to refresh functionality in Xamarin.Forms DataGrid to refresh data in the runtime. Built-in properties and other customizations available when using the pull to refresh functionality.
+title: Pull To Refresh in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Pull To Refresh support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Pull To Refresh
+# Pull To Refresh in Xamarin DataGrid (SfDataGrid)
 
 The data grid enables the `PullToRefresh` option by setting the [SfDataGrid.AllowPullToRefresh](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_AllowPullToRefresh) property to `true` and by setting the [SfDataGrid.PullToRefreshCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_PullToRefreshCommand) property. When the `PullToRefresh` is enabled, the control supports for refreshing the data source at runtime while doing the pull to refresh action. 
 
@@ -140,8 +140,10 @@ Running application renders the following output:
 
 The pull-to-refresh is a refreshing control allows you to interact and refresh the view loaded in it. When the control is hosted inside the pull-to-refresh, it is used to refresh the item while performing the pull to refresh action. 
 
-For more details and code example for hosting the SfDataGrid inside SfPullToRefresh, refer [here](https://help.syncfusion.com/xamarin/sfpulltorefresh/customization#host-sfdatagrid-as-pullable-content).
+For more details and code example for hosting the SfDataGrid inside SfPullToRefresh, refer [here](https://help.syncfusion.com/xamarin/pull-to-refresh/customization#host-sfdatagrid-as-pullable-content).
 
 The output will look like on iOS, Android, and Windows Phone devices as follows:
 
 ![Hosting DataGrid inside PullToRefresh component](SfDataGrid_images/SfDataGrid_Refresh.png)
+
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.

@@ -1,14 +1,14 @@
 ---
-title: Diagram control for Xamarin.Forms | Syncfusion
-description: Briefs about diagram,stencil,page setting and diagram constraints in SfDiagram for Xamarin.Forms
+title: Diagram in Xamarin Diagram control | Syncfusion
+description: Learn here all about Diagram support in Syncfusion Xamarin Diagram (SfDiagram) control, its elements and more.
 platform: xamarin
 control: SfDiagram
 documentation: ug
 keywords: 
 ---
 
-# Diagram
-Diagram control allows to create different types of diagrams such as flow charts, use case diagrams, workflow process diagrams, and more.
+# Diagram in Xamarin Diagram (SfDiagram)
+[Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) allows to create different types of diagrams such as flow charts, use case diagrams, workflow process diagrams, and more.
 
 ## Page settings
 Page settings enable to customize the appearance, width, and height of the Diagram page. The size and appearance of the Diagram pages can be customized with the PageSettings property.
@@ -30,6 +30,33 @@ diagram.PageSettings.PageWidth = 500;
 diagram.PageSettings.PageHeight = 500; 
 //Customizes the appearance of Page
 diagram.PageSettings.PageBackGround= Color.White;
+{% endhighlight %}
+{% endtabs %}
+
+## View Port Start Position
+Page settings enable you to customize the viewport start position of the diagram page. The enum `ViewPort Start Position` has two constants: Default, Origin. The default value is set to Default.
+
+### Default 
+The viewport of the diagram page is decided based on the node's offsets. 
+
+N> The viewport of the diagram page will be in a negative region when the node’s offsets are negative.  
+
+### Origin
+The viewport of the diagram page begins with origin (0,0) even though when the node’s offsets are negative.
+
+The following code explains how to customize the view port start position of the page.
+
+{% tabs %}
+{% highlight xml %}
+<diagram:SfDiagram x:Name="diagram"> 
+    <diagram:SfDiagram.PageSettings>
+      <diagram:PageSettings ViewPortStartPosition = "Origin">  
+    <diagram:SfDiagram.PageSettings>
+</diagram:SfDiagram>
+{% endhighlight %}
+{% highlight c# %}
+//Sets the viewport start position.
+SfDiagram.PageSettings.ViewPortStartPosition = ViewportStartPosition.Origin;
 {% endhighlight %}
 {% endtabs %}
 
@@ -138,4 +165,4 @@ Supports customizing the zoom levels. You can set minimum zoom level value to 0.
 {% endtabs %}
 
 N> Diagram supports zooming with custom option in Xamarin.Forms.Android and Xamarin.Forms.iOS alone.
-
+You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

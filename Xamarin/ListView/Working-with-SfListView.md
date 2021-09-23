@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with Xamarin.Forms ListView | Syncfusion
-description: This topic describes how to use Syncfusion Xamarin.Forms ListView along with SQLite, Prism frameworks, interacting events, and other different functionalities.
+title: Working with ListView in Xamarin ListView control | Syncfusion
+description: Learn here all about Working with ListView support in Syncfusion Xamarin ListView (SfListView) control and more.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -13,7 +13,7 @@ documentation: ug
 
 ### Loaded event
 
-The [Loaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_Loaded) event is raised when the `SfListView` is loading in view for the first time.
+The [Loaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_Loaded) event is raised when the [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) (SfListView) is loading in view for the first time.
 
 {% tabs %}
 {% highlight c# %}
@@ -183,7 +183,7 @@ The [ItemDisappearing](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListVie
 
 ## Improving ListView performance
 
-The `SfListView` has been built from the ground up with an optimized view reuse strategy for the best possible performance on the Xamarin platform even when loading large data sets. Following techniques are used to improve performance of the `SfListView`:
+The Xamarin ListView (SfListView) has been built from the ground up with an optimized view reuse strategy for the best possible performance on the Xamarin platform even when loading large data sets. Following techniques are used to improve performance of the `SfListView`:
 
  * Bind the `ItemsSource` property to an IList<T> collection instead of an IEnumerable<T> collection because IEnumerable<T> collection do not support random access.
  * The `SfListView` gets refreshed each and every time a new item added into the underlying collection. Because, when adding items at runtime, the `DataSource` gets refreshed. To avoid this behavior, use [BeginInit()](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_BeginInit) to stop the `RefreshView()` calling in each time, and use [EndInit()](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_EndInit) to start the `RefreshView()` calling when adding number of finished items.
@@ -410,7 +410,7 @@ You can download the entire source code of this demo [here](https://github.com/S
 
 The `SfListView` allows displaying the paging by using the [SfDataPager](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.html) control. It can be performed through loading data dynamically into ItemsSource of the SfListView using OnDemandLoading event for the current page by setting the [SfDataPager.UseOnDemandPaging](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager.html#Syncfusion_SfDataGrid_XForms_DataPager_SfDataPager_UseOnDemandPaging) to `True`. By using the [SfDataPager.PageSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager.html#Syncfusion_SfDataGrid_XForms_DataPager_SfDataPager_PageSize) property, you can define the number of list items to be displayed in each page.
 
-N> For more details about paging refer to [here](https://help.syncfusion.com/xamarin/sfdatagrid/paging).
+N> For more details about paging refer to [here](https://help.syncfusion.com/xamarin/datagrid/paging).
 
 {% tabs %}
 {% highlight xaml %}
@@ -539,7 +539,7 @@ Download the entire source code form GitHub [here](https://github.com/Syncfusion
  
 ## Loading data from SQLite online database
 
-The `SfListView` allows binding the data from online database with the help of `Azure App Service`. To perform this, follow the steps:
+The Xamarin ListView (SfListView) allows binding the data from online database with the help of `Azure App Service`. To perform this, follow the steps:
 
 Step 1: Get URL to store the data online.
 Step 2: Create table using `AppServiceHelpers`.

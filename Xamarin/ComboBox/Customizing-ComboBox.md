@@ -1,13 +1,13 @@
 ---
 layout : post
-title : Customizations in ComboBox
-description : This section describes about the visual customization of entry, suggestion box and suggestion items in the ComboBox
+title: Customizing ComboBox in Xamarin ComboBox control | Syncfusion
+description: Learn here all about Customizing ComboBox support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
 platform : Xamarin
 control : SfComboBox
 documentation : ug
 ---
 
-# Customizing ComboBox
+# Customizing ComboBox in Xamarin ComboBox (SfComboBox)
 
 The combo box control  provides user friendly customizing options for both entry part and drop-down part. In this section, customizing the entire ComboBox control is explained.
 

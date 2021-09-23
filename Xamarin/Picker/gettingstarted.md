@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started of Syncfusion Picker control for Xamarin.Forms
-description: This section describes about quick tour to initial users on Syncfusion Picker control for Xamarin.Forms platform.
+title: Getting Started with Xamarin Picker control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Picker (SfPicker) control, its elements and more.
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
 
-# Getting Started with Xamarin Picker(SfPicker)
+# Getting Started with Xamarin Picker (SfPicker)
 
 This section explains the steps required to configure a picker control in a real-time scenario, and provides a walk-through on some of the customization features available in picker control.
 
@@ -453,3 +453,5 @@ The following screenshot illustrates the output of above code.
 We have attached sample for reference. You can download the sample from the following link.
 
 Sample link:[GettingStarted](https://github.com/SyncfusionExamples/xamarin-forms-sfpicker)
+
+N> You can refer to our [Xamarin Picker](https://www.syncfusion.com/xamarin-ui-controls/xamarin-picker) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms Picker example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Picker) to knows the functionalities of each feature.

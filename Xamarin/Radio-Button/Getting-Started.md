@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started in Syncfusion Radio Button for Xamarin.Forms platform
-description: Learn how to create a simple radio button and its customization options with its available basic features
+title: Getting Started with Xamarin Radio Button control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Radio Button (SfRadioButton) control, its elements and more.
 platform: xamarin
 control: SfRadioButton
 documentation: ug 
@@ -9,9 +9,9 @@ keywords: button, SfRadioButton, RadioButton
 
 ---
 
-# Getting Started in Xamarin Charts (SfRadioButton)
+# Getting Started with Xamarin Radio Button (SfRadioButton)
 
-This section explains the steps required to configure the `SfRadioButton` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfRadioButton` control.
+This section explains the steps required to configure the [Xamarin Radio Button](https://www.syncfusion.com/xamarin-ui-controls/xamarin-radio-button) (SfRadioButton) control in a real-time scenario and provides a walk-through on some of the customization features available in `SfRadioButton` control.
 
 ## Assembly deployment
 
@@ -37,7 +37,7 @@ N>
 
 **Method 2: Adding SfRadioButton reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfRadioButton control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfRadioButton control to the XAML page. It will automatically install the required [NuGet packages](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfRadioButton assemblies manually from the installed location**
 

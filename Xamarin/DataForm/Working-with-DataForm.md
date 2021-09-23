@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with DataForm | SfDataForm | Xamarin.Forms | Syncfusion
-description: This section explains how to use Syncfusion Xamarin.Forms DataForm along with interacting events and other different functionalities.
+title: Working with DataForm in Xamarin DataForm control | Syncfusion
+description: Learn here all about Working with DataForm support in Syncfusion Xamarin DataForm (SfDataForm) control and more.
 platform: xamarin
 control: SfDataForm
 documentation: UG
 ---
 
-# Working with the data form
+# Working with DataForm in Xamarin DataForm (SfDataForm)
 
 ## Auto-generating DataFormItems for the data field
 
@@ -166,7 +166,7 @@ You can cancel the specific [DataFormItem](https://help.syncfusion.com/cr/xamari
 
 ### Using attributes
 
-You can set [AutoGenerateField](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.displayattribute.autogeneratefield.aspx) to `false` for canceling the `DataFormItem` generation.
+You can set [AutoGenerateField](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.autogeneratefield?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_DataAnnotations_DisplayAttribute_AutoGenerateField) to `false` for canceling the `DataFormItem` generation.
 
 {% tabs %}
 {% highlight c# %}
@@ -569,7 +569,7 @@ You can download the source code of this demo from [GenerateDataFormItemsForDict
 
 ## Binding with dynamic data object
 
-You can also load the dynamic object in SfDataForm `DataObject` and by default text editor will be generated for each dynamic object property. You can change the editor of DataFormItem for dynamic object property data type (default string) by using the AutoGeneratingDataFormItem event. You can find details about this [here](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#changing-editor-type)
+You can also load the dynamic object in SfDataForm `DataObject` and by default text editor will be generated for each dynamic object property. You can change the editor of DataFormItem for dynamic object property data type (default string) by using the AutoGeneratingDataFormItem event. You can find details about this [here](https://help.syncfusion.com/xamarin/dataform/working-with-dataform#changing-editor-type)
 
 ### Limitations
 

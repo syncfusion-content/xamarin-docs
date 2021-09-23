@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | SfListView | Xamarin | Syncfusion
-description: This topic describes about the quick overview of ListView features sets and its advantages in Xamarin.Forms.
+title: About Xamarin ListView control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin ListView (SfListView) control, its elements and more.
 platform: xamarin
 control: SfListView
 documentation: ug

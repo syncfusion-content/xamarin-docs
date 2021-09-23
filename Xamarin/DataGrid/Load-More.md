@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Load More | SfDataGrid | Xamarin | Syncfusion
-description: Use the load more functionality in Xamarin.Forms DataGrid to load a subset of data in runtime. Describes the built-in customizations available.
+title: Load More in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Load More support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
-# Load More
+# Load More in Xamarin DataGrid (SfDataGrid)
 
 The data grid enables `LoadMore` option when the [SfDataGrid.AllowLoadMore](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_AllowLoadMore) property is set to `true`, and also by setting the [SfDataGrid.LoadMoreCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_LoadMoreCommand) property. When `LoadMore` is enabled, the control loads a subset of data to its data source at runtime using [LoadMoreView](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.LoadMoreView.html). 
 
@@ -214,3 +214,5 @@ The data grid also allows to customize the opacity of the [LoadMoreView](https:/
 The following screenshot shows the customized LoadMoreView opacity
 
 ![Customized LoadMoreView opacity](SfDataGrid_images/LoadMoreViewOpacity.png)
+
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.

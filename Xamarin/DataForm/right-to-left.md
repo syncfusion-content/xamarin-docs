@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Right to left (RTL) | DataForm | Xamarin.Forms | Syncfusion
-description: Xamarin.Forms DataForm supports right to left (RTL) direction for users working in right-to-left languages like Hebrew, Arabic, or Persian.
+title: Right to left (RTL) in Xamarin DataForm control | Syncfusion
+description: Learn here all about Right to left (RTL) support in Syncfusion Xamarin DataForm (SfDataForm) control and more.
 platform: xamarin
 control: SfDataForm
 documentation: UG
@@ -22,7 +22,7 @@ dataForm.FlowDirection = FlowDirection.RightToLeft;
 {% endtabs %}
 
 >**Note**
-For implementing the `FlowDirection` in the control, Xamarin.Forms package version must be 3.0 and above. Please refer [RightToLeft](https://blog.xamarin.com/right-to-left-localization-xamarin-forms) to get more details about `RightToLeft` flow direction in Xamarin.Forms.
+For implementing the `FlowDirection` in the control, Xamarin.Forms package version must be 3.0 and above. Please refer [RightToLeft](https://devblogs.microsoft.com/xamarin/right-to-left-localization-xamarin-forms) to get more details about `RightToLeft` flow direction in Xamarin.Forms.
 
 ### Android
 For Android, add `android:supportsRtl="true"` in your application tag of `AndroidManifest.xml` file, and make sure your `MinSDKVersion` is 17+. By changing the device language / enabling the device's `Force RTL layout` can achieve the `RightToLeft` layout direction in DataForm.

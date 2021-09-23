@@ -152,7 +152,7 @@ namespace BackdropGettingStarted
 
 ### Configure header
 
-Page header for the backdrop appears only when adding backdrop as a child of NavigationPage. To know more about it, refer to [header configuration](https://help.syncfusion.com/xamarin/Sfbackdroppage/header-configuration).
+Page header for the backdrop appears only when adding backdrop as a child of NavigationPage. To know more about it, refer to [header configuration](https://help.syncfusion.com/xamarin/backdrop-page/header-configuration).
  
 ## Add back layer content
 The back layer holds actionable content (navigation or filtration), which is relevant to the front layer. The back layer will either fill the entire background or occupy the background based on the content height.
@@ -239,7 +239,7 @@ The following options are provided in backdrop to reveal and conceal the back la
 * **Touch interaction** - Reveals back layer by clicking the tool bar icon at the top-right corner of navigation bar header. The Hamburger (or menu ) icon reveals and the Close icon conceals the back layer. When adding the backdrop as a child of MasterDetailPage, the Hamburger and Close icons will be replaced by expand (or down arrow) and collapse (or up arrow) icons, respectively.
 * **Swipe or fling action** - Reveals back layer by swipe/fling action on the front layer to the required direction. Swipe downwards to reveal, and swipe upwards to conceal the back layer.  The swipe/fling action will be handled only on the top of the front layer to the [`RevealedHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.BackdropFrontLayer.html#Syncfusion_XForms_Backdrop_BackdropFrontLayer_RevealedHeight).
 
-To know more information about reveal height customization ,refer this [link](https://help.syncfusion.com/xamarin/sfbackdroppage/revealingheight-customization).
+To know more information about reveal height customization ,refer this [link](https://help.syncfusion.com/xamarin/backdrop-page/revealingheight-customization).
 
 ![Reveal and conceal back layer](Getting-Started_images/Backdrop_reveal.gif)
 

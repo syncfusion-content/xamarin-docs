@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Maps control for Xamarin.Forms
-description: A quick tour to initial users for getting started with Syncfusion Maps control for Xamarin.Forms platform
+title: Getting Started with Xamarin.Forms Maps control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Maps (SfMaps) control, its elements and more.
 platform: xamarin
 control: SfMaps 
 documentation: ug
 ---
 
-# Getting Started with SfMaps
+# Getting Started with Xamarin Maps (SfMaps)
 
 This section explains the steps required to configure the maps control and customize its elements.
 
@@ -507,6 +507,7 @@ The following screenshot illustrates the result of the above code sample.
 
 You can download the complete [Getting started](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Maps) sample.
 
+N> You can refer to our [Xamarin Maps](https://www.syncfusion.com/xamarin-ui-controls/xamarin-maps) feature tour page for its groundbreaking feature representations.
 
 ## See also
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion.Xamarin.Forms Chart types
-description: This section explains the different types of charts, including Cartesian, Financial, Accumulation, PolarRadar and its properties.
+title: Chart Types in Xamarin Charts control | Syncfusion
+description: Learn here all about Chart Types support in Syncfusion Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Chart Types in Xamarin
+# Chart Types in Xamarin Charts (SfChart)
 
 ## Line Chart
 
@@ -1663,6 +1663,72 @@ Following properties are used to customize the bubble segment appearance.
 
 ![Bubble chart type in Xamarin.Forms](charttypes_images/charttypes_img16.png)
 
+### Show zero size bubbles
+
+The zero size bubble segments can be enabled or disabled by using the `ShowZeroSizeBubbles` property. The default value of `ShowZeroSizeBubbles` property value is true.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.Series>
+...
+
+	<chart:BubbleSeries ShowZeroSizeBubbles = "True"/>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+BubbleSeries bubbleSeries = new BubbleSeries() 
+{ 
+       ShowZeroSizeBubbles = true;
+};
+chart.Series.Add(bubbleSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Enable zero size bubble segments support in Xamarin.Forms](charttypes_images/ShowIndicationForZeroValueTrue.png)
+
+The following code example and screenshots describes when `ShowZeroSizeBubbles` value is false.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.Series>
+...
+
+	<chart:BubbleSeries ShowZeroSizeBubbles = "False"/>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+BubbleSeries bubbleSeries = new BubbleSeries() 
+{ 
+    ShowZeroSizeBubbles = false;
+};
+chart.Series.Add(bubbleSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Disable zero size bubble segments support in Xamarin.Forms](charttypes_images/ShowIndicationForZeroValueFalse.png)
+
 N> You can also explore our [Xamarin Bubble Chart example](https://github.com/syncfusion/xamarin-demos/blob/master/Forms/Chart/Chart/Samples/BubbleChart) to knows how to render and configure the bubble type charts
 
 ## Scatter Chart	
@@ -2597,7 +2663,7 @@ PieSeries pieSeries = new PieSeries()
 
 ### Group small data points into “others”
 
-The small segments in the pie chart can be grouped into “others” category using the [`GroupTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupTo) and [`GroupMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupMode) properties of PieSeries. The [`GroupMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupMode) property is used to specify the grouping type based on slice [`Angle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PieGroupMode.html), actual data point value, or [`Percentage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PieGroupMode.html), and the [`GroupTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupTo) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupTo) property is [`double.NAN`], and [`GroupMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupMode) property is Value.
+The small segments in the pie chart can be grouped into “others” category using the [`GroupTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupTo) and [`GroupMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupMode) properties of PieSeries. The [`GroupMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupMode) property is used to specify the grouping type based on slice [`Angle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PieGroupMode.html), actual data point value, or [`Percentage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PieGroupMode.html), and the [`GroupTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupTo) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupTo) property and [`GroupMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupMode) property is Value.
 
 ## Doughnut Chart
 
@@ -2855,7 +2921,7 @@ DoughnutSeries doughnutSeries = new DoughnutSeries()
 
 ### Group small data points into “others”
 
-The small segments in the doughnut chart can be grouped into “others” category using the [`GroupTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupTo) and [`GroupMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupMode) properties of DoughnutSeries. The [`GroupMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupMode) property is used to specify the grouping type based on slice angle, actual data point value, or percentage, and the [`GroupTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupTo) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupTo) property is [`double.NAN`], and [`GroupMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupMode) property is Value.
+The small segments in the doughnut chart can be grouped into “others” category using the [`GroupTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupTo) and [`GroupMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupMode) properties of DoughnutSeries. The [`GroupMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupMode) property is used to specify the grouping type based on slice angle, actual data point value, or percentage, and the [`GroupTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupTo) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupTo) property and [`GroupMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupMode) property is Value.
 
 ### Add view to the center of doughnut chart
 

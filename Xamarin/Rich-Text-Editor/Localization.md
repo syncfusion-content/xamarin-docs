@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization | SfRichTextEditor | Xamarin | Syncfusion
-description: Rich Text Editor in Xamarin.Forms supports to localize the static texts used within it to a specific language at the application level.
+title: Localization in Xamarin Rich Text Editor control | Syncfusion
+description: Learn here all about Localization support in Syncfusion Xamarin Rich Text Editor (SfRichTextEditor) control and more.
 platform: xamarin
 control: SfRichTextEditor
 documentation: UG
 ---
 
-# Localization 
+# Localization in Xamarin Rich Text Editor (SfRichTextEditor)
 
 Localization is the process of translating application resources into different languages for specific cultures. SfRichTextEditor uses the following static text that can be localized in application level:
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cropping Image in Syncfusion SfImageEditor control in Xamarin.Forms
-description: Learn how to crop an image in different ways in the SfImageEditor control for Xamarin.Forms platforms
+title: Crop in Xamarin Image Editor control | Syncfusion
+description: Learn here all about Crop support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: ImageEditor
 documentation: ug
 ---
 
-# Crop in SfImageEditor
+# Crop in Xamarin Image Editor (SfImageEditor)
 
 You can crop the desired portion of an image using the cropping tool.
 
@@ -158,6 +158,14 @@ The following code sample will add the cropping preview on the image in square s
 
 {% endtabs %}
 
+* To crop an image in a circle or an ellipse with a specific ratio, use [`ToggleCropping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_ToggleCropping_System_Single_System_Single_System_Boolean_) with a ratio argument and an optional parameter of true, which specifies whether the cropping panel should be added in an elliptical or rectangle shape. The default value is false.
+
+{% highlight C# %}
+
+editor.ToggleCropping(1, 1, true);    
+
+{% endhighlight %} 
+
 ## Tilt the image
 
 You can tilt the image from -45 to +45 degree by using the [`Tilt()`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_Tilt_System_Int32_) method. When calling the tilt method, the image will be in preview state. You can zoom and pan the image in preview state. To apply this effect to the image, you can call the [`Crop()`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_Crop_Xamarin_Forms_Rectangle_System_Boolean_) method programmatically or can crop from footer toolbar cropping options.
@@ -194,7 +202,7 @@ After tilt preview, cropping can be performed using the available cropping optio
 
 [How to include custom cropping aspect in toolbar](https://www.syncfusion.com/kb/8854/how-to-include-custom-cropping-aspect-in-toolbar)
 
-[How to avoid crop sluggishness in MasterDetailPage](syncfusion.com/kb/9634/how-to-avoid-crop-sluggishness-in-masterdetailpage)
+[How to avoid crop sluggishness in MasterDetailPage](https://www.syncfusion.com/kb/9634/how-to-avoid-crop-sluggishness-in-masterdetailpage)
 
 [How can we set default cropping in SfImageEditor](https://www.syncfusion.com/kb/9369/how-can-we-set-default-cropping-in-image-editor)
 

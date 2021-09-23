@@ -1,7 +1,7 @@
 ---
 layout : post
-title : AutomationId support for Syncfusion Switch control in Xamarin.Forms
-description : Set AutomationId to find and interact with inner elements in Switch
+title: Accessibility in Xamarin Switch control | Syncfusion
+description: Learn here all about Accessibility support in Syncfusion Xamarin Switch (SfSwitch) control and more.
 platform : Xamarin.Forms
 control : SfSwitch
 documentation : ug

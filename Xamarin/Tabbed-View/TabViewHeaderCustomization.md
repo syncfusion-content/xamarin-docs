@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header Customization for Syncfusion SfTabView control.
-description: About customization of header by using the Header content, visible header count options in Syncfusion TabView control for Xamarin.Forms platform
+title: TabView Header Customization in Xamarin Tabbed View | Syncfusion
+description: Learn here all about TabView Header Customization support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
 platform: Xamarin
 control: TabView
 documentation: ug
@@ -421,3 +421,87 @@ namespace TabViewAutomationSample
 
 
 N> The `TabWidthMode` for `BasedOnText` is supported only when the [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_VisibleHeaderCount) is not set and [OverFlowMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_OverflowMode) is set to `Scroll`. 
+
+## TabViewHeaderBackgroundColor
+
+ To change the header background color of tabbed view, set [TabHeaderBackgroundColor]("https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_TabHeaderBackgroundColor") property in tabbed view.
+
+{% tabs %}
+
+{% highlight xaml %}
+   
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             x:Class="TabView.TabView">
+    <ContentPage.Content>
+       <tabView:SfTabView TabHeaderBackgroundColor="SkyBlue">
+            <tabView:SfTabItem Title="Call">
+                 <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Red" x:Name="allContactsGrid"/>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Favorites">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Green"    x:Name="FavoritesGrid"/>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Contacts">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Blue" x:Name="ContactsGrid"/>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            </tabView:SfTabView>
+      </ContentPage.Content>
+    </ContentPage>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+    using Syncfusion.XForms.TabView;
+    using Xamarin.Forms;
+    using Xamarin.Forms.Xaml;
+    
+    namespace TabView
+    {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class TabView : ContentPage
+	{
+        SfTabView tabView;
+		public TabView ()
+		{
+			InitializeComponent ();
+            tabView = new SfTabView();
+            var allContactsGrid = new Grid { BackgroundColor = Color.Red };
+            var favoritesGrid = new Grid { BackgroundColor = Color.Blue };
+            var contactsGrid = new Grid { BackgroundColor = Color.Green };
+            var tabItems = new TabItemCollection
+            {
+                new SfTabItem()
+                {
+                    Title = "Call",
+                    Content = allContactsGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Favorites",
+                    Content = favoritesGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Contacts",
+                    Content = contactsGrid
+                }
+           };
+
+            tabView.TabHeaderBackgroundColor = Color.SkyBlue;
+            tabView.Items = tabItems;
+            this.Content = tabView;
+		}
+       }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}

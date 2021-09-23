@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Event for Syncfusion.Xamarin.Forms SfRadioButton
-description: This section describes event for the Xamarin.Forms Syncfusion SfRadioButton to notify the control is checked. 
+title: Event in Xamarin Radio Button control | Syncfusion
+description: Learn here all about Event support in Syncfusion Xamarin Radio Button (SfRadioButton) control and more.
 platform: xamarin
 control: SfRadioButton
 documentation: ug 
@@ -9,7 +9,7 @@ keywords: button, SfRadioButton, RadioButton
 
 ---
 
-# Event of SfRadioButton
+# Event in Xamarin Radio Button (SfRadioButton)
 
 ## StateChanged event
 

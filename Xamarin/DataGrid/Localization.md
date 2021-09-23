@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization | SfDataGrid | Xamarin | Syncfusion
-description: Set localized text for the static texts used in Xamarin.Forms DataGrid.
+title: Localization in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Localization support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Localization 
+# Localization in Xamarin DataGrid (SfDataGrid)
 
 Localization is the process of translating application resources into different languages for specific cultures. SfDataGrid uses the following static text that can be localized in application level:
 
@@ -337,3 +337,5 @@ public MainPage()
 ![DataGrid with localized content](SfDataGrid_images/DataGridLocalization.png)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataGridLocalization-65024307).
+
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.

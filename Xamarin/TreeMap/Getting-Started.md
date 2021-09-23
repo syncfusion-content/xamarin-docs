@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion TreeMap control for Xamarin.Forms
-description: This section provides a quick tour to initial users of the Syncfusion TreeMap control for Xamarin.Forms platform.
+title: Getting Started with Xamarin TreeMap control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin TreeMap (SfTreeMap) control, its elements and more.
 platform: xamarin
 control: SfTreeMap
 documentation: ug

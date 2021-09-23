@@ -1,12 +1,12 @@
 ---
 layout: post
-title: LoadMore in Syncfusion SfComboBox control for Xamarin.Forms
-description: This section describes how to restrict the maximum suggestion to be displayed in Xamarin.Forms SfComboBox.
+title: Maximum display item with Expander in Xamarin ComboBox | Syncfusion
+description: Learn here all about Maximum display item with Expander support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
 platform: xamarin
 control: SfComboBox
 documentation: ug
 ---
-# Maximum Display Item with Expander
+# Maximum display item with Expander in Xamarin ComboBox (SfComboBox)
 
 ## Maximum display item with expander in Xamarin SfComboBox
 

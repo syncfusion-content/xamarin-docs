@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Layers in Syncfusion Maps control for Xamarin.Forms
-description: This section describes about the imagery layer, shape file layer, shape settings, customize the shapes and events in maps
+title: Layers in Xamarin.Forms Maps control | Syncfusion
+description: Learn here all about Layers support in Syncfusion Xamarin Maps (SfMaps) control, its elements and more.
 platform: xamarin
 control: SfMaps
 documentation: ug
 ---
 
-# Layers in Maps (SfMaps)
+# Layers in Xamarin.Forms Maps (SfMaps)
 
-The maps control is maintained through [`Layers`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.SfMaps.html#Syncfusion_SfMaps_XForms_SfMaps_LayersProperty); a map can accommodate one or more layers.
+[Xamarin maps](https://www.syncfusion.com/xamarin-ui-controls/xamarin-maps) control is maintained through [`Layers`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.SfMaps.html#Syncfusion_SfMaps_XForms_SfMaps_LayersProperty); a map can accommodate one or more layers.
 
 The maps control consists the following two layers:
 
@@ -19,7 +19,7 @@ The maps control consists the following two layers:
 
 ## Imagery layer
 
-The [`MapsProvider`](https://help.syncfusion.com/xamarin/sfmaps/mapsprovider) section explains about the imagery layer.
+The [`MapsProvider`](https://help.syncfusion.com/xamarin/maps/mapsprovider) section explains about the imagery layer.
 
 ## Shape file layer
 
@@ -256,7 +256,7 @@ The shape layers are the core layers of the maps. Multiple layers can be added t
 
 ### Adding multiple layers in the map
 
-Multiple layers can be added to the maps using [`Sublayer`](https://help.syncfusion.com/xamarin/sfmaps/sublayer).
+Multiple layers can be added to the maps using [`Sublayer`](https://help.syncfusion.com/xamarin/maps/sublayer).
 
 
 ## Displaying layer in the view
@@ -356,6 +356,8 @@ In the ShapeSelected event, the *BaseMapIndex* property has been used to change 
 {% endtabs %}
 
 ![Drilldown support in Xamarin.Forms Maps](Images/Drilldown1.jpg)  ![Xamarin Maps DrilldownAsia Image](Images/Drilldown_Asia.jpg) 
+
+N> You can also explore our [Xamarin.Forms Maps example](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Maps) to knows the functionalities of each feature.
 
 ## See Also
 

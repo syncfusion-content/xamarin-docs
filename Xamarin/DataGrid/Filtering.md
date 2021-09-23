@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering | SfDataGrid | Xamarin | Syncfusion
-description: Filter the records in view using the properties in Xamarin.Forms DataGrid by simply setting a predicate to the view. 
+title: Filtering in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Filtering support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Filtering
+# Filtering in Xamarin DataGrid (SfDataGrid)
 
 The SfDataGrid supports to view filtering.
 
@@ -671,3 +671,5 @@ private void OnFilterChanged()
 {% endhighlight %}
 
 You can download the filtering demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FilteringDemo1597365704).
+
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.

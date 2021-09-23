@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing | SfDataForm | Xamarin.Forms | Syncfusion
-description: Describes editing, number of editor types, converter, and commit mode of SfDataForm for Xamarin.Forms
+title: Editing in Xamarin DataForm control | Syncfusion
+description: Learn here all about Editing support in Syncfusion Xamarin DataForm (SfDataForm) control, its elements and more.
 platform: xamarin
 control: SfDataForm
 documentation: UG
@@ -60,7 +60,7 @@ Numeric
 The property of Int, Double, Float, Decimal, Long types and also its nullable property.
 </td>
 <td>
-{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -74,7 +74,7 @@ Percent
 The property of Int, Double, Float, Decimal, Long types and also its nullable property with [DataType(“Percent”)] attribute.
 </td>
 <td>
-{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
+{{'[SfNumericTextBox](htthttps://help.syncfusion.com/xamarin/numeric-entry/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -88,7 +88,7 @@ Currency
 The property of Int, Double, Float, Decimal, Long types and also its nullable property with [DataType(DataType.Currency)] attribute.
 </td>
 <td>
-{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ NumericUpDown
 Int or Double type property.
 </td>
 <td>
-{{'[SfNumericUpDown](https://help.syncfusion.com/xamarin/sfnumericupdown/overview)'| markdownify }}
+{{'[SfNumericUpDown](https://help.syncfusion.com/xamarin/numericupdown/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -144,7 +144,7 @@ Segment
 Enum type property.
 </td>
 <td>
-{{'[SfSegmentedControl](https://help.syncfusion.com/xamarin/sfsegmentedcontrol/overview)'| markdownify }}
+{{'[SfSegmentedControl](https://help.syncfusion.com/xamarin/segmented-control/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -158,7 +158,7 @@ Bool
 Bool type property.
 </td>
 <td>
-{{'[SfCheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/overview)'| markdownify }}
+{{'[SfCheckBox](https://help.syncfusion.com/xamarin/checkbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -202,7 +202,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-{{'[SfComboBox](https://help.syncfusion.com/xamarin/sfcombobox/overview)'| markdownify }}
+{{'[SfComboBox](https://help.syncfusion.com/xamarin/combobox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -217,7 +217,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-{{'[SfAutoComplete](https://help.syncfusion.com/xamarin/sfautocomplete/overview)'| markdownify }}
+{{'[SfAutoComplete](https://help.syncfusion.com/xamarin/autocomplete/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -425,7 +425,7 @@ dataForm.ValidationMode = ValidationMode.LostFocus;
 {% endhighlight %}
 {% endtabs %}
 
-You should manually commit the custom DataFormItem editor value by using [OnCommitValue](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.Editors.DataFormEditor-1.html#Syncfusion_XForms_DataForm_Editors_DataFormEditor_1_OnCommitValue__0_) override method of [DataFormEditor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.Editors.DataFormEditor-1.html) class on custom editor `Value` or `Focus changed` event which is used to update the custom editor value in respective property in [DataObject](https://help.syncfusion.com/xamarin/sfdataform/getting-started#setting-data-object) based on dataform [commit mode](https://help.syncfusion.com/xamarin/sfdataform/editing#commit-mode) set. 
+You should manually commit the custom DataFormItem editor value by using [OnCommitValue](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.Editors.DataFormEditor-1.html#Syncfusion_XForms_DataForm_Editors_DataFormEditor_1_OnCommitValue__0_) override method of [DataFormEditor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.Editors.DataFormEditor-1.html) class on custom editor `Value` or `Focus changed` event which is used to update the custom editor value in respective property in [DataObject](https://help.syncfusion.com/xamarin/dataform/getting-started#setting-data-object) based on dataform [commit mode](https://help.syncfusion.com/xamarin/dataform/editing#commit-mode) set. 
 
 Also , you should manually validate the custom editor value in by using [OnValidateValue](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.Editors.DataFormEditor-1.html#Syncfusion_XForms_DataForm_Editors_DataFormEditor_1_OnValidateValue__0_) override method of `DataFormEditor` class on custom editor `Value` or `Focus changed` event which is used to validate the custom editor value based on data form [validation mode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_ValidationMode) set . In the override method for OnValidateValue, you need to return [DataForm.Validate(string)](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Validate) method in order to validate the particular data item.
 

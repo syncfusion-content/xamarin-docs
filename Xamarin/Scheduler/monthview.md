@@ -1,7 +1,7 @@
 ---
 layout: post   
-title: Month View | SfSchedule | Xamarin | Syncfusion   
-description: This section describes how to set the month view in sfschdule and also how to customize the month view appearance.
+title: Month View in Xamarin Scheduler control | Syncfusion
+description: Learn here all about Month View support in Syncfusion Xamarin Scheduler (SfSchedule) control and more.
 platform: xamarin   
 control: SfSchedule   
 documentation: ug   
@@ -245,7 +245,7 @@ schedule.MonthViewSettings = monthViewSettings;
 
 ### Customize inline items using AgendaView
 
-You can customize the inline items using the [AgendaItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaItemTemplate.html) property of the [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_MonthViewSettings) in schedule. You can show the inline view by setting the `ShowAppointmentsInline` property to true.
+You can customize the inline items using the [AgendaItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.MonthViewSettings.html#Syncfusion_SfSchedule_XForms_MonthViewSettings_AgendaItemTemplateProperty) property of the [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_MonthViewSettings) in schedule. You can show the inline view by setting the `ShowAppointmentsInline` property to true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1210,10 +1210,10 @@ schedule.MonthViewSettings = monthViewSettings;
 
 You can change the appearance of Font by setting the FontFamily property to the following classes.
 
-* [ViewHeaderStyle](https://help.syncfusion.com/xamarin/sfschedule/dayview#viewheader-appearance) - You can change the appearance of [ViewHeaderStyle](https://help.syncfusion.com/xamarin/sfschedule/dayview#viewheader-appearance) by setting the [DayFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderStyle.html#Syncfusion_SfSchedule_XForms_ViewHeaderStyle_DayFontFamilyProperty) and [DateFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderStyle.html#Syncfusion_SfSchedule_XForms_ViewHeaderStyle_DateFontFamilyProperty) properties of Schedule `ViewHeaderStyle`.
-* [MonthCellStyle](https://help.syncfusion.com/xamarin/sfschedule/monthview#monthcell-appearance) - You can change the appearance of [MonthCellStyle](https://help.syncfusion.com/xamarin/sfschedule/monthview#monthcell-appearance) by setting the [FontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.MonthViewCellStyle.html#Syncfusion_SfSchedule_XForms_MonthViewCellStyle_FontFamily) property of Schedule `MonthCellStyle`.
-* [MonthInlineViewStyle](https://help.syncfusion.com/xamarin/sfschedule/monthview#inlineview-appearance) - You can change the appearance of [MonthInlineViewStyle](https://help.syncfusion.com/xamarin/sfschedule/monthview#inlineview-appearance) by setting the [FontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.MonthInlineViewStyle.html#Syncfusion_SfSchedule_XForms_MonthInlineViewStyle_FontFamily) property of Schedule `MonthInlineViewStyle`.
-* [WeekNumberStyle](https://help.syncfusion.com/xamarin/sfschedule/monthview#week-number-appearance) - You can change the appearance of [WeekNumber](https://help.syncfusion.com/xamarin/sfschedule/monthview#week-number-appearance) by setting the [FontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.WeekNumberStyle.html#Syncfusion_SfSchedule_XForms_WeekNumberStyle_FontFamily) property of Schedule `WeekNumberStyle`.
+* [ViewHeaderStyle](https://help.syncfusion.com/xamarin/scheduler/dayview#viewheader-appearance) - You can change the appearance of [ViewHeaderStyle](https://help.syncfusion.com/xamarin/scheduler/dayview#viewheader-appearance) by setting the [DayFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderStyle.html#Syncfusion_SfSchedule_XForms_ViewHeaderStyle_DayFontFamilyProperty) and [DateFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderStyle.html#Syncfusion_SfSchedule_XForms_ViewHeaderStyle_DateFontFamilyProperty) properties of Schedule `ViewHeaderStyle`.
+* [MonthCellStyle](https://help.syncfusion.com/xamarin/scheduler/monthview#monthcell-appearance) - You can change the appearance of [MonthCellStyle](https://help.syncfusion.com/xamarin/scheduler/monthview#monthcell-appearance) by setting the [FontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.MonthViewCellStyle.html#Syncfusion_SfSchedule_XForms_MonthViewCellStyle_FontFamily) property of Schedule `MonthCellStyle`.
+* [MonthInlineViewStyle](https://help.syncfusion.com/xamarin/scheduler/monthview#inlineview-appearance) - You can change the appearance of [MonthInlineViewStyle](https://help.syncfusion.com/xamarin/scheduler/monthview#inlineview-appearance) by setting the [FontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.MonthInlineViewStyle.html#Syncfusion_SfSchedule_XForms_MonthInlineViewStyle_FontFamily) property of Schedule `MonthInlineViewStyle`.
+* [WeekNumberStyle](https://help.syncfusion.com/xamarin/scheduler/monthview#week-number-appearance) - You can change the appearance of [WeekNumber](https://help.syncfusion.com/xamarin/scheduler/monthview#week-number-appearance) by setting the [FontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.WeekNumberStyle.html#Syncfusion_SfSchedule_XForms_WeekNumberStyle_FontFamily) property of Schedule `WeekNumberStyle`.
 
 {% tabs %}
 {% highlight xaml %}

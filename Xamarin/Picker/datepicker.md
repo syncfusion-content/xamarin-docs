@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Demonstrate Date Picker using Syncfusion Picker for Xamarin.Forms
-description: Learn here all about how to create Date Picker using Syncfusion Xamarin Picker (SfPicker) control and it contains sample and code snippet for this. 
+title: Date Picker in Xamarin Picker control | Syncfusion
+description: Learn here all about Date Picker support in Syncfusion Xamarin Picker (SfPicker) control, its elements and more.
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
-# Date Picker in Xamarin DatePicker (SfDatePicker)
+# Date Picker in Xamarin Picker (SfPicker)
 
 We recommend to use our standalone Date Picker component which is available from our Volume 4 2019 release and please have the documentation [`link`](https://help.syncfusion.com/xamarin/datepicker/overview). If you need further customizations, below steps explains how to create a custom DatePicker by using the Picker control.
 
@@ -416,3 +416,4 @@ You can download the DatePicker sample for reference from the following link.
 
 Sample link: [DatePicker](https://github.com/SyncfusionExamples/xamarin-sfpicker-examples/tree/master/Samples/DatePicker)
 
+N> You can refer to our [Xamarin Picker](https://www.syncfusion.com/xamarin-ui-controls/xamarin-picker) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms Picker example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Picker) to knows the functionalities of each feature.

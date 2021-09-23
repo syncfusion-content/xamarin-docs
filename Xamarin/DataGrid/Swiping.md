@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Swiping| SfDataGrid | Xamarin | Syncfusion
-description: Load custom view with actions on both the sides of a data row and perform swiping. Use the swiping events to customize or cancel the swiping operations. 
+title: Swiping in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Swiping support in Syncfusion Xamarin DataGrid (SfDataGrid) control, its elements and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
@@ -99,7 +99,7 @@ N> The `DataTemplateSelector` can also be directly assigned to the `SfDataGrid.R
 
 ## Swipe events
 
-[SwipeStarted](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html): Fired when the swipe offset changes from its initial value. The swipe action can be canceled by setting the [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true# “”) property of the [SwipeStartedEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SwipeStartedEventArgs.html# “”) to `true`. 
+[SwipeStarted](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html): Fired when the swipe offset changes from its initial value. The swipe action can be canceled by setting the [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue&view=net-5.0# “”) property of the [SwipeStartedEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SwipeStartedEventArgs.html# “”) to `true`. 
 [SwipeEnded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html): Fired when the swipe offset value reaches the `SfDataGrid.MaxSwipeOffset` indicating that the swipe action is completed. This event is triggered with [SwipeEndedEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SwipeEndedEventArgs.html# “”).
 [Swiping](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html): Raised while swiping a row is in progress. This event is triggered with [SwipingEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SwipingEventArgs.html# “”). 
 

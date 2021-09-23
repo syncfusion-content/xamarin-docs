@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Popup positioning | SfPopupLayout |Xamarin| Syncfusion
-description: Position the popup at the center, absolute postion, relative to another view and relative with absolute postion using the Xamarin.Forms PopupLayout.
+title: Popup Positioning in Xamarin Popup control | Syncfusion
+description: Learn here all about Popup Positioning support in Syncfusion Xamarin Popup (SfPopupLayout) control and more.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 --- 
 
-# Popup Positioning
+# Popup Positioning in Xamarin Popup (SfPopupLayout)
 
 The SfPopupLayout allows showing the popup content at various available positions.
 
@@ -455,7 +455,7 @@ Executing the above codes renders the following output in Android device respect
 
 ## Display the popup with Padding
 
-The SfPopupLayout allows users to set padding for the PopupView when the space between the popup and the screen is less than the minimum padding value of 5 pixels. The custom padding value set in the sample will not apply when the space between the popup and the screen is already greater than 5 pixels. For cases where you want to position your popup farther away from the screen use the [SfPopupLayout.Show(double,double)](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html#Syncfusion_XForms_PopupLayout_SfPopupLayout_Show_System_Double_System_Double_) as shown [here](https://help.syncfusion.com/xamarin/sfpopuplayout/popup-positioning#absolute-positioning).
+The SfPopupLayout allows users to set padding for the PopupView when the space between the popup and the screen is less than the minimum padding value of 5 pixels. The custom padding value set in the sample will not apply when the space between the popup and the screen is already greater than 5 pixels. For cases where you want to position your popup farther away from the screen use the [SfPopupLayout.Show(double,double)](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html#Syncfusion_XForms_PopupLayout_SfPopupLayout_Show_System_Double_System_Double_) as shown [here](https://help.syncfusion.com/xamarin/popup/popup-positioning#absolute-positioning).
 
 {% tabs %}
 {% highlight xaml %}

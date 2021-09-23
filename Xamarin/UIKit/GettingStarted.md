@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Get started with Syncfusion Essential UI Kit for Xamarin
-description: Getting started with Essential UI Kit for Xamarin. To learn how to add and render the XAML templates for Xamarin.Forms apps using Visual Studio extension.
+title: Getting Started with Xamarin UI Kit control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio Xamarin UI Kit control, its elements and more.
 platform: xamarin
 control: Xamarin UI Kit
 documentation: ug
 ---
 
-# Essential UI Kit Getting started
+# Getting Started with Xamarin UI Kit
 
 The UI Kit screens can be added in your application by the following two ways:
 

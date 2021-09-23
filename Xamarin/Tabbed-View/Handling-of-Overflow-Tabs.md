@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Handling Tabs with Syncfusion OverFlowButton.
-description: This section shows the handling of Overflow tabs in Syncfusion TabView control for Xamarin.Forms platform
+title: Handling of Overflow Tabs in Xamarin Tabbed View control | Syncfusion
+description: Learn here all about Handling of Overflow Tabs support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
 platform: Xamarin
 control: TabView
 documentation: ug
 ---
 
-# Handling overflow tabs
+# Handling of Overflow Tabs in Xamarin Tabbed View (SfTabView)
 
 When you have large number of tabs, by default, the scroller will be enabled to view the overflow of headers, if needed. It can be selected from the pop-up by setting the `OverflowMode` property of `SfTabView` to `DropDown`.
 
@@ -134,7 +134,7 @@ By selecting the drop-down option for tab view control, The `â€œOverflow buttonâ
 
 ![OverFlowButton](images/Handling-of-Overflow-Tabs/OverFlowButtonSettings.png)
 
-N> The pop-up will display the text value and title value of the respective tab item.
+N> The title of the corresponding tab item will be displayed in the pop-up. Set [TabHeaderBackgroundColor]("https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_TabHeaderBackgroundColor") in SfTabView to change the pop-up background color.
 
 ## How to customize the more button?
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PullToRefresh in Xamrin.Forms ListView | Syncfusion
-description: Describes about the pull to refresh integration into ListView with ScrollView, SearchBar and Grouping in Xamarin.Forms SfListView.
+title: Pull To Refresh in Xamarin ListView control | Syncfusion
+description: Learn here all about Pull To Refresh support in Syncfusion Xamarin ListView (SfListView) control and more.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -13,7 +13,7 @@ The [SfPullToRefresh](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPullTo
 
 Refer [control dependencies](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfpulltorefresh) section to get the list of assemblies or NuGet package needs to be added as reference to use the SfPullToRefresh control.
 
-Refer [initializing pull-to-refresh](https://help.syncfusion.com/xamarin/sfpulltorefresh/getting-started#launching-the-sfpulltorefresh-on-each-platform) to launch pull-to-refresh on each platform.
+Refer [initializing pull-to-refresh](https://help.syncfusion.com/xamarin/pull-to-refresh/getting-started#launching-the-sfpulltorefresh-on-each-platform) to launch pull-to-refresh on each platform.
 
 ## SfListView inside the SfPullToRefresh 
 
@@ -175,7 +175,9 @@ When the `SearchBar` or any view placed above the [SfPullToRefresh](https://help
   
             <pulltoRefresh:SfPullToRefresh x:Name="pullToRefresh" Grid.Row="1"
                                            ProgressBackgroundColor="#428BCA" RefreshContentHeight="50" 
-                                           RefreshContentWidth="50" TransitionMode="Push" IsRefreshing="False">
+                                           RefreshContentWidth="50" TransitionMode="Push" 
+                                           IsRefreshing="{Binding IsRefreshing}"
+                                           RefreshCommand="{Binding RefreshCommand}">
                 <pulltoRefresh:SfPullToRefresh.PullableContent>
                     <Grid>
                         <syncfusion:SfListView x:Name="listView" AllowSwiping="True"

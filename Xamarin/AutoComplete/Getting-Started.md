@@ -9,11 +9,9 @@ documentation: ug
 
 # Getting Started with Xamarin AutoComplete (SfAutoComplete)
 
-## Getting started with SfAutoComplete
-
 This section explains the steps to create AutoComplete, populate it with data and filter the suggestions. This section covers only the minimal features that are needed to get started with the AutoComplete.
 
-To get start quickly with Xamarin.Forms SfAutoComplete, you can check on this video:
+To get start quickly with [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) (SfAutoComplete), you can check on this video:
 
 <style>#XamarinAutoCompleteVideoTutorial{width : 90% !important; height: 400px !important }</style>
 <iframe id='XamarinAutoCompleteVideoTutorial' src='https://www.youtube.com/embed/XT5-CKZCiH8'></iframe>
@@ -32,7 +30,7 @@ You can add SfAutoComplete reference using one of the following methods:
 
 **Method 1: Adding SfAutoComplete reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfAutoComplete to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfAutoComplete](https://www.nuget.org/packages/Syncfusion.Xamarin.SfAutoComplete), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfAutoComplete to your project, open the [NuGet package](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) manager in Visual Studio, search for [Syncfusion.Xamarin.SfAutoComplete](https://www.nuget.org/packages/Syncfusion.Xamarin.SfAutoComplete), and then install it.
 
 ![Adding SfAutoComplete reference](images/Getting-Started/Adding_SfAutoComplete_reference.png)
 
@@ -313,7 +311,7 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-Refer [this](https://help.syncfusion.com/xamarin/sfautocomplete/populating-data) link to learn more about the options available in SfAutoComplete to populate data.
+Refer [this](https://help.syncfusion.com/xamarin/autocomplete/populating-data) link to learn more about the options available in SfAutoComplete to populate data.
 
 ## Configuring filter options
 
@@ -409,7 +407,7 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-Refer [this](https://help.syncfusion.com/xamarin/sfautocomplete/autocomplete-filtering-options) link to learn more about the options available in SfAutoComplete to filter suggestions.
+Refer [this](https://help.syncfusion.com/xamarin/autocomplete/autocomplete-filtering-options) link to learn more about the options available in SfAutoComplete to filter suggestions.
 
 ![Image-casesensitive](images/Getting-Started/contains-casesensitive.png)
 

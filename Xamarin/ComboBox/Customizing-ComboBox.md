@@ -1024,26 +1024,26 @@ StackLayout layout = new StackLayout()
     VerticalOptions = LayoutOptions.Start, 
     HorizontalOptions = LayoutOptions.Start, 
     Padding = new Thickness(30) 
-};	    
-List<String> resolutionList = new List<String>();
-resolutionList.Add("Frank");
-resolutionList.Add("James");
-resolutionList.Add("Steve");
-resolutionList.Add("Lucas");
-resolutionList.Add("Mark");
+};	   
 
-SfComboBox comboBox = new SfComboBox();
-comboBox.HeightRequest = 40;
-comboBox.SelectAllOnFocus = "true"
-comboBox.IsEditableMode = "true"
-comboBox.ComboBoxSource = resolutionList;
+    List<String> resolutionList = new List<String>();
+    resolutionList.Add("Frank");
+    resolutionList.Add("James");
+    resolutionList.Add("Steve");
+    resolutionList.Add("Lucas");
+    resolutionList.Add("Mark");
 
-layout.Children.Add(comboBox); 
-Content = layout;
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.HeightRequest = 40;
+    comboBox.SelectAllOnFocus = "true"
+    comboBox.IsEditableMode = "true"
+    comboBox.ComboBoxSource = resolutionList;
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![SelectAllOnFocus](images/Customizing-ComboBox/ComboBox_SelectAllOnFocus.gif)
-

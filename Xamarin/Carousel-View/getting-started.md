@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Xamarin Carousel View (SfCarousel)
 
-This section explains how to showcase a Gallery of photos along with a Title using SfCarousel Control.
+This section explains how to showcase a Gallery of photos along with a Title using [Xamarin Carousel View](https://www.syncfusion.com/xamarin-ui-controls/xamarin-carousel-view) (SfCarousel) Control.
 
 ## Assembly deployment
 
@@ -125,7 +125,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 {% endhighlight %}
 ## Create a Simple SfCarousel 
 
-The SfCarousel control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfCarousel and configure its elements,
+The Xamarin Carousel View (SfCarousel) control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfCarousel and configure its elements,
 
 * Adding namespace for the added assemblies. 
 
@@ -298,7 +298,7 @@ namespace CarouselSample
 
 ### Through ItemTemplate
 
-`ItemTemplate` property of SfCarousel control is used to customize the contents of SfCarousel items.
+`ItemTemplate` property of Xamarin Carousel View (SfCarousel) control is used to customize the contents of SfCarousel items.
 
 * Create a model view which holds image data
 

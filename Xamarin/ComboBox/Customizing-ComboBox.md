@@ -986,7 +986,7 @@ Text color of watermark can be customized using [`WatermarkColor`](https://help.
 
 ![Watermark color](images/Customizing-ComboBox/watermark-color.png)
 
-## Selection support in SfComboBox
+## Select text on focus
 
 The `SelectAllOnFocus` property specifies whether the text should be selected when the input field is focused.
 {% tabs %}

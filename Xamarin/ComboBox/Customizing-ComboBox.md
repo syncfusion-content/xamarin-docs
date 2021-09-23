@@ -985,3 +985,65 @@ Text color of watermark can be customized using [`WatermarkColor`](https://help.
 {% endtabs %}
 
 ![Watermark color](images/Customizing-ComboBox/watermark-color.png)
+
+## Selection support in SfComboBox
+
+The `SelectAllOnFocus` property specifies whether the text should be selected when the input field is focused.
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:local="clr-namespace:NamespaceName"            
+             x:Class="NamespaceName.ClassName">
+	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+            <combobox:SfComboBox HeightRequest="40" SelectAllOnFocus="true" IsEditableMode="true" x:Name="comboBox">
+                <combobox:SfComboBox.ComboBoxSource>
+                    <ListCollection:List x:TypeArguments="x:String">
+                	<x:String>Frank</x:String>
+                	<x:String>James</x:String>
+                	<x:String>Steve</x:String>
+                	<x:String>Lucas</x:String>
+                	<x:String>Mark</x:String>
+            	</ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
+        </combobox:SfComboBox>              
+    </StackLayout> 
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+StackLayout layout = new StackLayout() 
+{ 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
+};	    
+List<String> resolutionList = new List<String>();
+resolutionList.Add("Frank");
+resolutionList.Add("James");
+resolutionList.Add("Steve");
+resolutionList.Add("Lucas");
+resolutionList.Add("Mark");
+
+SfComboBox comboBox = new SfComboBox();
+comboBox.HeightRequest = 40;
+comboBox.SelectAllOnFocus = "true"
+comboBox.IsEditableMode = "true"
+comboBox.ComboBoxSource = resolutionList;
+
+layout.Children.Add(comboBox); 
+Content = layout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![SelectAllOnFocus](images/Customizing-ComboBox/ComboBox_SelectAllOnFocus.gif)
+

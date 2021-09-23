@@ -938,3 +938,87 @@ namespace AutocompleteSample
 ![Border visibility](images/Customizing-AutoComplete/show-border.png)
 
 N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to knows the functionalities of each feature.
+
+## Selection support in SfAutoComplete
+
+The `SelectAllOnFocus` property specifies whether the text should be selected when the input field is focused.
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout 
+        VerticalOptions="Start" 
+        HorizontalOptions="Start"
+        Padding="30">
+        <autocomplete:SfAutoComplete x:Name="autoComplete"
+                                     HeightRequest="40"
+                                     SelectAllOnFocus="true"
+                                     ShowBorder="False">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Frank</x:String>
+                    <x:String>James</x:String>
+                    <x:String>Steve</x:String>
+                    <x:String>Lucas</x:String>
+                    <x:String>Mark</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                ShowBorder = false,
+                SelectAllOnFocus = true,
+                AutoCompleteSource = new List<string>()
+                {
+                    "Frank",
+                    "James",
+                    "Steve",
+                    "Lucas",
+                    "Mark",
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![SelectAllOnFocus](images/Customizing-AutoComplete/AutoComplete_SelectAllOnFocus.gif)

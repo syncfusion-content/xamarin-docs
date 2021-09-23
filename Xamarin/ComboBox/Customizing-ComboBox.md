@@ -9,7 +9,7 @@ documentation : ug
 
 # Customizing ComboBox in Xamarin ComboBox (SfComboBox)
 
-The combo box control  provides user friendly customizing options for both entry part and drop-down part. In this section, customizing the entire ComboBox control is explained.
+The [Xamarin ComboBox](https://www.syncfusion.com/xamarin-ui-controls/xamarin-combobox) (SfComboBox) control  provides user friendly customizing options for both entry part and drop-down part. In this section, customizing the entire ComboBox control is explained.
 
 ## Customizing the entry
 
@@ -21,7 +21,7 @@ The combo box control provides the user to customize the foreground color of the
 
 ### Text size
 
-The combo box control provides the user to customize the text size of the text inside the entry part using [`TextSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TextSize) property.
+The Xamarin ComboBox (SfComboBox) control provides the user to customize the text size of the text inside the entry part using [`TextSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TextSize) property.
 
 ### Font attributes
 

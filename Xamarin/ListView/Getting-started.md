@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Xamarin ListView (SfListView)
 
-This section provides a quick overview for getting started with the SfListView for Xamarin.Forms. Walk through the entire process of creating the real world SfListView.
+This section provides a quick overview for getting started with the [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) (SfListView) for Xamarin.Forms. Walk through the entire process of creating the real world SfListView.
 
 ## Assembly Deployment
 
@@ -17,7 +17,7 @@ After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downl
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
-Refer [control dependencies](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sflistview) section to get the list of assemblies or NuGet package needs to be added as reference to use the SfListView control in any application.
+Refer [control dependencies](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sflistview) section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) needs to be added as reference to use the SfListView control in any application.
 
 N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
@@ -70,7 +70,7 @@ N> To know more about obtaining our components, refer to these links for [Mac](
 
 I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
-N> After adding the reference, an additional step is required for [iOS](https://help.syncfusion.com/xamarin/sflistview/getting-started#ios) and [UWP](https://help.syncfusion.com/xamarin/sflistview/getting-started#universal-windows-platform-uwp) projects. For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain is enabled. You can refer to this [KB article](https://www.syncfusion.com/kb/8476/how-to-overcome-the-crash-system-reflection-missingmetadataexception-when-usedotnetnativetoolchain-is?_ga=2.156869305.342100434.1550463054-1358537634.1524639131) for more details. If you are adding the references from toolbox, this step is not needed.
+N> After adding the reference, an additional step is required for [iOS](https://help.syncfusion.com/xamarin/listview/getting-started#ios) and [UWP](https://help.syncfusion.com/xamarin/listview/getting-started#universal-windows-platform-uwp) projects. For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain is enabled. You can refer to this [KB article](https://www.syncfusion.com/kb/8476/how-to-overcome-the-crash-system-reflection-missingmetadataexception-when-usedotnetnativetoolchain-is?_ga=2.156869305.342100434.1550463054-1358537634.1524639131) for more details. If you are adding the references from toolbox, this step is not needed.
 
 ## System Requirements
 
@@ -234,7 +234,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ## Create a Simple SfListView 
 
-This section explains how to create a SfListView, and configure it. The SfListView control can be configured entirely in C# code, or by using XAML markup. This is how the control will look like on iOS, Android, and Windows devices.
+This section explains how to create a SfListView, and configure it. The Xamarin ListView (SfListView) control can be configured entirely in C# code, or by using XAML markup. This is how the control will look like on iOS, Android, and Windows devices.
  
 ![Xamarin.Forms listview](SfListView_images/SfListView-Xamarin_img1.jpg)
 

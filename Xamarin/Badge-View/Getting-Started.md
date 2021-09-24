@@ -9,7 +9,7 @@ documentation: ug
 
 # SfBadgeView Getting Started
 
-This section explains the steps required to configure the [`SfBadgeView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.SfBadgeView.html) control and customize its elements.
+This section explains the steps required to configure the [Xamarin Badge View](https://www.syncfusion.com/xamarin-ui-controls/xamarin-badge-view) (SfBadgeView) control and customize its elements.
 
 ## Assembly deployment
 
@@ -33,7 +33,7 @@ N> Install the same version of SfBadgeView NuGet in all the projects.
 
 **Method 2: Adding SfBadgeView reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfBadgeView control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the Xamarin Badge View (SfBadgeView) control to the XAML page. It will automatically install the required [NuGet packages](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfBadgeView assemblies manually from the installed location**
 

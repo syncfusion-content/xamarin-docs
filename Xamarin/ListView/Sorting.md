@@ -124,7 +124,7 @@ public class CustomSortComparer : IComparer<object>
 {% endhighlight %}
 {% endtabs %}
 
-For more information about custom sorting of groups, please refer the documentation [here](https://help.syncfusion.com/xamarin/sflistview/grouping#custom-sorting-of-groups).
+For more information about custom sorting of groups, please refer the documentation [here](https://help.syncfusion.com/xamarin/listview/grouping#custom-sorting-of-groups).
 
 ## Sort the items on header tapped
 

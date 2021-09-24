@@ -296,7 +296,7 @@ The data field caption will be displayed as floating or hint label for the edito
 
 ### Helper label
 
-The helper label is used to display the water mark for the editor to provide hint for users and it can be set using [Prompt](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#setting-watermark).
+The helper label is used to display the water mark for the editor to provide hint for users and it can be set using [Prompt](https://help.syncfusion.com/xamarin/dataform/working-with-dataform#setting-watermark).
 
 The visibility of helper text in DataForm floating label layout can be collapsed by setting [ShowHelperText](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_ShowHelperText) to false in `DataForm` or [TextInputLayoutSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.TextInputLayoutSettings.html). In this case, DataForm `Prompt` text will be displayed as editor view hint text if the hint label visibility is collapsed using the `ShowLabel` property of [DisplayOption](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DisplayOptionsAttribute.html) or `DataFormItem`.
 
@@ -341,7 +341,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Validation label
 
-The validation label used to display the dataform validation messages such as valid or invalid data. Refer [validation](https://help.syncfusion.com/xamarin/sfdataform/validation) to learn more about dataform validation.
+The validation label used to display the dataform validation messages such as valid or invalid data. Refer [validation](https://help.syncfusion.com/xamarin/dataform/validation) to learn more about dataform validation.
 
 ### Counter label
 
@@ -598,7 +598,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 * It is recommended not to provide background color for editor view while customizing existing editor inside floating label layout.
 * It is recommended not to use non-editable custom editor views inside floating label layout such as range slider,etc.
 * It is recommended not to use the [LayoutOptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DisplayOptionsAttribute.html#Syncfusion_XForms_DataForm_DisplayOptionsAttribute_LayoutOptions) attribute for setting default layout for data fields.
-* It is recommended not to use null values in [Date Editor](https://help.syncfusion.com/xamarin/sfdataform/editors#date-editor) and [Time Editor](https://help.syncfusion.com/xamarin/sfdataform/editors#time-editor)  with text input layout in initial loading time and runtime in iOS platform.
+* It is recommended not to use null values in [Date Editor](https://help.syncfusion.com/xamarin/dataform/editors#date-editor) and [Time Editor](https://help.syncfusion.com/xamarin/dataform/editors#time-editor)  with text input layout in initial loading time and runtime in iOS platform.
 
 ## Unsupported editors
 Floating label layout do not support for the following non-editable editors.
@@ -608,6 +608,6 @@ Floating label layout do not support for the following non-editable editors.
 * CheckBox editor
 * Switch editor
 
-N> While using unsupported editors with `DataForm` layout option as `TextInputLayout` we can set layout options for unsupported editors' data fields using this [link](https://help.syncfusion.com/xamarin/sfdataform/floating-label-layout#changing-layout-options-of-the-dataformitem)
+N> While using unsupported editors with `DataForm` layout option as `TextInputLayout` we can set layout options for unsupported editors' data fields using this [link](https://help.syncfusion.com/xamarin/dataform/floating-label-layout#changing-layout-options-of-the-dataformitem)
 
 You can download the [DataForm with floating labels](https://github.com/SyncfusionExamples/Floating-label-editors-in-xamarin.forms-dataform) sample in GitHub.

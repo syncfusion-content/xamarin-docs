@@ -226,7 +226,7 @@ You can restrict the dynamic editing of the masked entry using the [`IsReadOnly`
 
 The `IsSpellCheckEnabled` property can be used to control whether spell checking is enabled or not when the user enters text and the misspellings are indicated in the red line. By default, the property is set to true.
 
-N> This feature is supported when [`Mask`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Mask) is not set to the [`SfMaskedEdit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html)  control.
+N> This feature is supported when [`Mask`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Mask) is not set to the [`SfMaskedEdit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html) control.
 
 {% tabs %}
 
@@ -248,9 +248,9 @@ N> This feature is supported when [`Mask`](https://help.syncfusion.com/cr/xamari
 
 ![Spell check support in Xamarin.Forms masked edit](SfMaskedEditImages/SpellCheck.png)
 
-## Text Prediction
+## Text prediction
 
-The `IsTextPredictionEnabled` property can be used to control whether text prediction in the soft keyboard and automatic text correction is enabled or not when the user enters text. By default, the property is set to true.
+The `IsTextPredictionEnabled` property can be used to control whether text prediction in the soft keyboard and automatic text correction are enabled or not when the user enters text. By default, the property is set to true.
 
 N> This feature is supported when [`Mask`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Mask) is not set to the [`SfMaskedEdit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html)
 

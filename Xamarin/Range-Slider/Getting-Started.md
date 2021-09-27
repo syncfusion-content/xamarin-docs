@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Xamarin Range Slider (SfRangeSlider)
 
-This section explains you the steps to configure a SfRangeSlider control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRangeSlider control.
+This section explains you the steps to configure a [Xamarin Range Slider](https://www.syncfusion.com/xamarin-ui-controls/xamarin-range-slider) (SfRangeSlider) control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRangeSlider control.
 
 ## Assembly deployment
 
@@ -25,7 +25,7 @@ You can add SfRangeSlider reference using one of the following methods:
 
 **Method 1: Adding SfRangeSlider reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfRangeSlider to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfRangeSlider](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRangeSlider), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfRangeSlider to your project, open the [NuGet package](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) manager in Visual Studio, search for [Syncfusion.Xamarin.SfRangeSlider](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRangeSlider), and then install it.
 
 ![Adding SfRangeSlider reference from nuget.org](images/Adding SfRangeSlider reference.png)
 
@@ -149,7 +149,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ## Set Range
 
-SfRangeSlider provides option to set single thumb and double thumb. While setting the double thumb, each thumb value can be set using `RangeStart` and `RangeEnd` properties.
+Xamarin Range Slider (SfRangeSlider) provides option to set single thumb and double thumb. While setting the double thumb, each thumb value can be set using `RangeStart` and `RangeEnd` properties.
 
 N> The `ShowRange` property is used to switch between a single thumb and double thumb. 
 

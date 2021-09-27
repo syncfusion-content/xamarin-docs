@@ -11,7 +11,7 @@ keywords: button, SfCheckBox, CheckBox
 
 # Getting Started with Xamarin CheckBox (SfCheckBox)
 
-This section explains the steps required to configure the [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html) control in a real-time scenario and provides a walk-through on some of the customization features available in [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html) control.
+This section explains the steps required to configure the [Xamarin CheckBox](https://www.syncfusion.com/xamarin-ui-controls/xamarin-checkbox) (SfCheckBox) control in a real-time scenario and provides a walk-through on some of the customization features available in [Xamarin CheckBox](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html) (SfCheckBox) control.
 
 ## Assembly deployment
 
@@ -134,7 +134,7 @@ public partial class MainWindow : FormsApplicationPage
 {% endtabs %}
 
 ## Create a Simple SfCheckBox
-The [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html) control is configured entirely in C# code or by using XAML markup. The following steps explain how to create a [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html) and configure its elements.
+The [Xamarin CheckBox](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html) (SfCheckBox) control is configured entirely in C# code or by using XAML markup. The following steps explain how to create a [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html) and configure its elements.
 
 ### Add namespace for referred assemblies
 

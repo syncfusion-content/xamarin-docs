@@ -10,11 +10,11 @@ documentation: ug
 
 # Populating Items in Xamarin Picker (SfPicker)
 
-This section explains the ways of populating items for picker control.
+This section explains the ways of populating items for [Xamarin Picker](https://www.syncfusion.com/xamarin-ui-controls/xamarin-picker) control.
 
 ## Binding data source
 
-picker control is bound to the external data source to display the data. It supports any collections that implements the `IEnumerable` interface.
+Xamarin Picker control is bound to the external data source to display the data. It supports any collections that implements the `IEnumerable` interface.
 
 To bind the data source in picker, set the `SfPicker.ItemsSource` property as shown in the following code.
 
@@ -205,7 +205,7 @@ The following screenshot illustrates the output of the above code.
 
 ## Set items colors and font attributes customization
 
-picker control, both items text color and font can be selected and unselected by customizing as shown in the following code.  
+Xamarin Picker control, both items text color and font can be selected and unselected by customizing as shown in the following code.  
 
 ### Selected item customization
 

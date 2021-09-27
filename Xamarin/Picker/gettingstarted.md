@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with Xamarin Picker (SfPicker)
 
-This section explains the steps required to configure a Xamarin Picker control in a real-time scenario, and provides a walk-through on some of the customization features available in picker control.
+This section explains the steps required to configure a [Xamarin Picker](https://www.syncfusion.com/xamarin-ui-controls/xamarin-picker) control in a real-time scenario, and provides a walk-through on some of the customization features available in picker control.
 
 ## Assembly deployment
 

@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with Xamarin Picker (SfPicker)
 
-This section explains the steps required to configure a picker control in a real-time scenario, and provides a walk-through on some of the customization features available in picker control.
+This section explains the steps required to configure a Xamarin Picker control in a real-time scenario, and provides a walk-through on some of the customization features available in picker control.
 
 ## Assembly deployment
 
@@ -26,7 +26,7 @@ You can add SfPicker reference using one of the following methods:
 
 **Method 1: Adding SfPicker reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfPicker to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfPicker](https://www.nuget.org/packages/Syncfusion.Xamarin.SfPicker), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfPicker to your project, open the [NuGet package](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) manager in Visual Studio, search for [Syncfusion.Xamarin.SfPicker](https://www.nuget.org/packages/Syncfusion.Xamarin.SfPicker), and then install it.
 
 ![Adding SfPicker reference from NuGet](images/Adding SfPicker reference.png)
 
@@ -237,7 +237,7 @@ this.Content = picker;
 
 ### Set header to the picker
 
-The picker control allows you to the define header text by setting the `SfPicker.HeaderText`, and enable SfPicker header by setting `SfPicker.ShowHeader` property to true. Default value of `SfPicker.ShowHeader` is true.
+The Xamarin Picker control allows you to the define header text by setting the `SfPicker.HeaderText`, and enable SfPicker header by setting `SfPicker.ShowHeader` property to true. Default value of `SfPicker.ShowHeader` is true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -255,7 +255,7 @@ picker.HeaderText = "Select a Color";
 
 ### Adding picker items 
 
-picker control is a data bounded control. Hence, you must create collection of data’s and bind it to picker control.
+Xamarin Picker control is a data bounded control. Hence, you must create collection of data’s and bind it to picker control.
 
 * Create a simple Observable Collection with string type of data for the picker 
 
@@ -306,7 +306,7 @@ Colors.Add("Pink");
 
 * Bind the Collection to picker
 
-picker control allows you to bind collection of data by setting the `SfPicker.ItemsSource` property. You can bind the collection of data in both XAML or C#.
+Xamarin Picker control allows you to bind collection of data by setting the `SfPicker.ItemsSource` property. You can bind the collection of data in both XAML or C#.
 
 {% tabs %}
 {% highlight xaml %}
@@ -384,7 +384,7 @@ picker.ShowColumnHeader = true;
 
 ### Enable validation button in footer
 
-In picker control, validation buttons (OK and Cancel)can be enabled by setting `SfPicker.ShowFooter` property to true. Default value of `SfPicker.ShowFooter` property is false
+In Xamarin Picker control, validation buttons (OK and Cancel)can be enabled by setting `SfPicker.ShowFooter` property to true. Default value of `SfPicker.ShowFooter` property is false
 
 {% tabs %}
 {% highlight xaml %}

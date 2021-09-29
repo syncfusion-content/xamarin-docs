@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Xamarin Calendar (SfCalendar)
 
-This section explains how to implement simple holiday indicator application which allows user to select working days using [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html) control.
+This section explains how to implement simple holiday indicator application which allows user to select working days using [Xamarin Calendar](https://www.syncfusion.com/xamarin-ui-controls/xamarin-calendar) (SfCalendar) control.
 
 ## Assembly deployment
 

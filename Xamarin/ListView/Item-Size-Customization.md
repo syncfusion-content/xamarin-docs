@@ -9,7 +9,7 @@ documentation: ug
 
 # Item Size Customization in Xamarin ListView (SfListView)
 
-This section explains how to customize the item size in the SfListView.
+This section explains how to customize the item size in the [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) (SfListView).
 
 ## Customize item size of a particular item on-demand
 
@@ -100,7 +100,7 @@ You can download the entire source code of this demo [here](https://github.com/S
 
 ## Updating the listview item size based on font at runtime
 
-`SfListView` allows you to resize the item size based on the change in font size of the label element at runtime when `SfListView.AutoFitMode` is [DynamicHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.AutoFitMode.html#Syncfusion_ListView_XForms_AutoFitMode_DynamicHeight).
+Xamarin ListView (SfListView) allows you to resize the item size based on the change in font size of the label element at runtime when `SfListView.AutoFitMode` is [DynamicHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.AutoFitMode.html#Syncfusion_ListView_XForms_AutoFitMode_DynamicHeight).
 
 {% tabs %}
 {% highlight xaml %}

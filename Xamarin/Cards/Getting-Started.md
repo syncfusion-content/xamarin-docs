@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Xamarin Cards
 
-This section explains you the steps required to add content to SfCardView with indicator and add SfCardView to SCardLayout. This section covers only the minimal features needed to get started with the cards.
+This section explains you the steps required to add content to [Xamarin Cards](https://www.syncfusion.com/xamarin-ui-controls/xamarin-cards) with indicator and add SfCardView to SCardLayout. This section covers only the minimal features needed to get started with the cards.
 
 ## Assembly deployment
 

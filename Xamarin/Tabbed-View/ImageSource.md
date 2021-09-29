@@ -9,7 +9,7 @@ documentation: ug
 
 # ImageSource in Xamarin Tabbed View (SfTabView)
 
-The `ImageSource` property customizes the icon image of SfTabView by adding a custom image.
+The `ImageSource` property customizes the icon image of [Xamarin Tabbed View](https://www.syncfusion.com/xamarin-ui-controls/xamarin-tabbed-view) (SfTabView) by adding a custom image.
 
 {% tabs %}
 

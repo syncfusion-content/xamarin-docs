@@ -221,3 +221,55 @@ You can control the selection of masked edit [`Value`](https://help.syncfusion.c
 ## Restrict editing
 
 You can restrict the dynamic editing of the masked entry using the [`IsReadOnly`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_IsReadOnly) property. But, you can change the control text programmatically by using the bindable [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) property of the masked edit.
+
+## Spell check
+
+The `IsSpellCheckEnabled` property can be used to control whether spell checking is enabled or not when the user enters text and the misspellings are indicated in the red line. By default, the property is set to true.
+
+N> This feature is supported when [`Mask`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Mask) is not set to the [`SfMaskedEdit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html) control.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+ <syncmaskededit:SfMaskedEdit IsSpellCheckEnabled="True"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfMaskedEdit maskedEdit = new SfMaskedEdit();
+            maskedEdit.IsSpellCheckEnabled = true;
+            this.Content = maskedEdit;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Spell check support in Xamarin.Forms masked edit](SfMaskedEditImages/SpellCheck.png)
+
+## Text prediction
+
+The `IsTextPredictionEnabled` property can be used to control whether text prediction in the soft keyboard and automatic text correction are enabled or not when the user enters text. By default, the property is set to true.
+
+N> This feature is supported when [`Mask`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Mask) is not set to the [`SfMaskedEdit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html)
+
+{% tabs %}
+
+{% highlight xaml %}
+
+ <syncmaskededit:SfMaskedEdit IsTextPredictionEnabled="True"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfMaskedEdit maskedEdit = new SfMaskedEdit();
+            maskedEdit.IsTextPredictionEnabled = true;
+            this.Content = maskedEdit;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Text Prediction support in Xamarin.Forms masked edit](SfMaskedEditImages/TextPrediction.png)

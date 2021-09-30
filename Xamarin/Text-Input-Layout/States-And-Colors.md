@@ -207,6 +207,62 @@ inputLayout.InputView = new Entry();
 
 ![Disabled state](States-And-Colors-images/textInput_colors_img5.PNG)
 
+## Customizing the text color of label
+
+You can customize the text color of the [`hint`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_Hint) label, counter label, [`helper`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_HelperText) label and [`error`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ErrorText) label using the `Color` property of the [`LabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.LabelStyle.html).
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<inputLayout:SfTextInputLayout 
+    Hint="Name" ContainerType="Outlined" HelperText="Enter your name"
+    ErrorText="Invalid text" ErrorColor="#B00020"
+    ShowCharCount="true" CharMaxLength="3">
+        
+    <inputLayout:SfTextInputLayout.HintLabelStyle>
+        <inputLayout:LabelStyle Color="Green"/>
+    </inputLayout:SfTextInputLayout.HintLabelStyle>
+    <inputLayout:SfTextInputLayout.HelperLabelStyle>
+        <inputLayout:LabelStyle Color="Blue"/>
+    </inputLayout:SfTextInputLayout.HelperLabelStyle>
+    <inputLayout:SfTextInputLayout.CounterLabelStyle>
+        <inputLayout:LabelStyle Color="Brown"/>
+    </inputLayout:SfTextInputLayout.CounterLabelStyle>
+    <inputLayout:SfTextInputLayout.ErrorLabelStyle>
+        <inputLayout:LabelStyle Color="Maroon"/>
+    </inputLayout:SfTextInputLayout.ErrorLabelStyle>
+        
+    <Entry Text="John" />
+        
+</inputLayout:SfTextInputLayout>  
+ 
+{% endhighlight %}
+
+{% highlight C# %} 
+
+    SfTextInputLayout inputLayout = new SfTextInputLayout();
+    inputLayout.Hint = "Name";
+    inputLayout.ContainerType = ContainerType.Outlined;
+    inputLayout.HelperText = "Enter your name";
+    inputLayout.ErrorColor = Color.FromHex("#B00020");
+    inputLayout.CharMaxLength = 3;
+    inputLayout.ShowCharCount = true;
+    inputLayout.ErrorText = "Invalid text";
+    inputLayout.InputView = new Entry();
+
+    inputLayout.HintLabelStyle = new LabelStyle() { Color = Color.Green };
+    inputLayout.HelperLabelStyle = new LabelStyle() { Color = Color.Blue };
+    inputLayout.CounterLabelStyle = new LabelStyle() { Color = Color.Brown };
+    inputLayout.ErrorLabelStyle = new LabelStyle() { Color = Color.Maroon };
+    this.Content = inputLayout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Label text color](States-And-Colors-images/LabelTextColor.PNG)
+
 ## See also
 
 [How to validate with required verification in SfTextInputLayout](https://www.syncfusion.com/kb/11788/how-to-validate-with-required-verification-in-text-input-layout-in-xamarin-forms)

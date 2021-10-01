@@ -154,7 +154,7 @@ N> If `BackgroundColor` is set to `DragItemTemplate` or [DragIndicatorView](http
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
-listView.ItemTemplate = new DataTemplate(() => {
+listView.DragItemTemplate = new DataTemplate(() => {
   var grid = new Grid();
   var name = new Label { FontSize = 15 };
   name.SetBinding(Label.TextProperty, new Binding("Name"));

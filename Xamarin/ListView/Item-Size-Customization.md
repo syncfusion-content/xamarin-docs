@@ -142,7 +142,7 @@ private void Button_Clicked(object sender, EventArgs e)
 
 ## Updating the Header and Footer height based on font at runtime
 
-`SfListView` allows you to resize the `Header` and `Footer` item size based on the change in font size of the label element at runtime by calling [RefreshListViewItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_RefreshListViewItem_System_Int32_System_Int32_System_Boolean_) method asynchronously when `SfListView.AutoFitMode` is `Height`.
+`SfListView` allows you to resize the `Header` and `Footer` item size based on the change in font size of the label element at runtime when `SfListView.AutoFitMode` is `DynamicHeight`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -152,11 +152,11 @@ private void Button_Clicked(object sender, EventArgs e)
         <RowDefinition Height="50"/>
         <RowDefinition Height="*"/>
     </Grid.RowDefinitions>
-    <Button Text="Change FontSize" Command="{Binding ResizeHeaderFooterCommand}" CommandParameter="{x:Reference listView}"/>
+    <Button Text="Change FontSize" Command="{Binding ResizeHeaderFooterCommand}"/>
     <syncfusion:SfListView x:Name="listView" 
                 ItemsSource="{Binding Contacts}"
                 BackgroundColor="#FFE8E8EC"
-                AutoFitMode="Height">
+                AutoFitMode="DynamicHeight">
                 <syncfusion:SfListView.HeaderTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -194,9 +194,8 @@ namespace SfListViewSample
         {
            ResizeHeaderFooterCommand = new Command(ResizeHeaderFooter);
         }
-        private void ResizeHeaderFooter(object obj)
+        private void ResizeHeaderFooter()
         {
-            list = obj as SfListView;
             var maxFont = Device.Idiom == TargetIdiom.Phone ? MaxPhone : MaxTablet;
             var minFont = (Device.Idiom == TargetIdiom.Phone) ? MinPhone : MinTablet;
             if (FontSize >= maxFont)
@@ -207,7 +206,6 @@ namespace SfListViewSample
             {
                 FontSize += 10;
             }
-            list.RefreshListViewItem(-1, -1, true);
         }
     }
 }       

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Xamarin ComboBox (SfComboBox)
 
-This section explains the steps required to create the combo box control, populate it with data and filter the suggestions. This section covers only the minimal features that are needed to get started with the control.
+This section explains the steps required to create the [Xamarin ComboBox](https://www.syncfusion.com/xamarin-ui-controls/xamarin-combobox) control, populate it with data and filter the suggestions. This section covers only the minimal features that are needed to get started with the control.
 
 ## Assembly deployment
 
@@ -271,7 +271,7 @@ Refer [this](https://help.syncfusion.com/xamarin/sfcombobox/populating-data) lin
 
 ## ComboBox modes
 
-The combo box control supports both editable and non-editable text boxes to choose selected items in given data source. You can select an item from the suggestion list.
+The Xamarin ComboBox control supports both editable and non-editable text boxes to choose selected items in given data source. You can select an item from the suggestion list.
 
 N > The default value of the IsEditableMode property is false. 
 

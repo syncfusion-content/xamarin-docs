@@ -43,7 +43,7 @@ The following example illustrates how to add the Symbol into a Collection:
 <!-- Add SfDiagram and stencil in xaml page -->
       <control:SfDiagram x:Name="diagram">
       </control:SfDiagram>
-      <control:Stencil x:Name="stencil" SymbolGroups="{StaticResource groups}" >
+      <control:Stencil x:Name="stencil" SymbolGroups="{StaticResource groups}" Grid.Column="1" >
       </control:Stencil>
       </Grid>
 </ContentPage.Content>
@@ -56,7 +56,7 @@ Collection1.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Elli
 Collection1.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Triangle});
 Collection1.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.RightAngleTriangle});
 //Add collection into SymbolGroup
-stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = coll, HeaderName = "BasicShapes" });
+stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = Collection1, HeaderName = "BasicShapes" });
 {% endhighlight %}
 {% endtabs %}
 This Collection will be the SymbolSource to the Stencil. Based on the SymbolSource, the Stencil will populate the Symbols.
@@ -206,7 +206,6 @@ con1.Add(new Connector() { SegmentType = SegmentType.StraightSegment, SourcePoin
 //Add category of symbol group with heading text
 stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = coll, HeaderName = "BasicShapes" });
 stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = coll1, HeaderName = "Flow Chart" });
-stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = coll2, HeaderName = "CustomShapes" });
 stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = con1, HeaderName = "Connectors" });
 diagram.Stencil=stencil;
 {% endhighlight %}

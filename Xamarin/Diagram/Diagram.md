@@ -86,7 +86,7 @@ The following code snippet and screenshot illustrates this.
     <Image Source="diagram.png"/>
   </Grid>
 </DataTemplate>
-<control:SfDiagram x:Name="diagram" NodeTemplate="{StaticResource template}">
+<control:SfDiagram x:Name="diagram" NodeTemplate="{StaticResource template}"/>
 {% endhighlight %}
 {% highlight c# %}
 var template = new DataTemplate(() =>
@@ -106,10 +106,10 @@ diagram.NodeTemplate = template;
 ## Diagram constraints
 The constraints property of Diagram allows you to enable/disable certain features.
 Diagram Constraints allow to enable or disable the following behaviors of Node.
-Drag
-Resize
-Rotate
-AnnotationEditing
+EnableDrag
+EnableResize
+EnableRotation
+EnableTextEditing
 EnableSelectors
 EnableZoomAndPan
 IsReadOnly

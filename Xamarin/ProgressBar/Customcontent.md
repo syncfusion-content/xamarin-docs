@@ -115,4 +115,4 @@ By default, the progress value will be displayed at the center. You can hide the
 
 ## Limitations
 
-SfLinearProgressBar will not support any custom content by implementation.
+The SfLinearProgressBar will not support any custom content.

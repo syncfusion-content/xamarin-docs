@@ -229,7 +229,11 @@ The following code example illustrates how to customize the Connector appearance
       <control:Connector SourcePoint="100,100" TargetPoint="300,300" SegmentType="StraightSegment">
         <!--defining connector styles-->
        <control:Connector.Style>
-         <control:Style StrokeStyle="Dashed" StrokeWidth="4"/>
+         <control:Style StrokeStyle="Dashed" StrokeWidth="4">
+             <control:Style.StrokeBrush>
+                 <control:SolidBrush FillColor="Gray" />
+             </control:Style.StrokeBrush>
+         </control:Style>
        </control:Connector.Style>
       </control:Connector>
     </control:ConnectorCollection>

@@ -111,7 +111,7 @@ port.Width = 10;
 //Setting the shape type for the port
 port.ShapeType = ShapeType.Circle;
 //Creating style instance for the port 
-Syncfusion.SfDiagram.XForms.Style style = new Syncfusion.SfDiagram.XForms.Style();
+Style style = new Style();
 style.StrokeWidth = 3;
 style.Brush = new SolidBrush(Color.Black);
 port.Style = style;

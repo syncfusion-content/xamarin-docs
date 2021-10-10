@@ -23,10 +23,42 @@ The following example illustrates how to add the Symbol into a Collection:
   <ResourceDictionary>
 <!-- Add Symbols into SymbolCollection -->
       <control:SymbolCollection x:Key="collection">
-        <control:Node Height="50" Width="50" ShapeType="Rectangle" />
-        <control:Node Height="50" Width="50" ShapeType="Ellipse" />
-        <control:Node Height="50" Width="50" ShapeType="Triangle" />
-        <control:Node Height="50" Width="50" ShapeType="RightAngleTriangle" />
+        <control:Node Height="50" Width="50" ShapeType="Rectangle" >
+            <control:Node.Style>
+                <control:Style>
+                    <control:Style.Brush>
+                        <control:SolidBrush FillColor="White" />
+                    </control:Style.Brush>
+                </control:Style>
+            </control:Node.Style>
+        </control:Node>
+        <control:Node Height="50" Width="50" ShapeType="Ellipse" >
+            <control:Node.Style>
+                <control:Style>
+                    <control:Style.Brush>
+                        <control:SolidBrush FillColor="White" />
+                    </control:Style.Brush>
+                </control:Style>
+            </control:Node.Style>
+        </control:Node>
+        <control:Node Height="50" Width="50" ShapeType="Triangle" >
+            <control:Node.Style>
+                <control:Style>
+                    <control:Style.Brush>
+                        <control:SolidBrush FillColor="White" />
+                    </control:Style.Brush>
+                </control:Style>
+            </control:Node.Style>
+        </control:Node>
+        <control:Node Height="50" Width="50" ShapeType="RightAngleTriangle" >
+            <control:Node.Style>
+                <control:Style>
+                    <control:Style.Brush>
+                        <control:SolidBrush FillColor="White" />
+                    </control:Style.Brush>
+                </control:Style>
+            </control:Node.Style>
+        </control:Node>
       </control:SymbolCollection>
 <!-- Add collection into SymbolGroup -->
       <control:SymbolGroups x:Key="groups">
@@ -51,10 +83,10 @@ The following example illustrates how to add the Symbol into a Collection:
 {% highlight c# %}
 //Add Symbols into SymbolCollection
 SymbolCollection Collection = new SymbolCollection();
-Collection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Rectangle});
-Collection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Ellipse});
-Collection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Triangle});
-Collection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.RightAngleTriangle});
+Collection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Rectangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White) } });
+Collection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Ellipse, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White) } });
+Collection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Triangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White) } });
+Collection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.RightAngleTriangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White) } });
 //Add collection into SymbolGroup
 stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = Collection, HeaderName = "BasicShapes" });
 {% endhighlight %}
@@ -161,17 +193,81 @@ We can able to add category of symbol group heading in stencil. The following ex
 <ResourceDictionary>
 <!--SymbolCollection1-->
       <control:SymbolCollection x:Key="BasicShapescollection">
-        <control:Node Height="50" Width="50" ShapeType="Rectangle" />
-        <control:Node Height="50" Width="50" ShapeType="Ellipse" />
-        <control:Node Height="50" Width="50" ShapeType="Triangle" />
-        <control:Node Height="50" Width="50" ShapeType="RightAngleTriangle" />
+        <control:Node Height="50" Width="50" ShapeType="Rectangle" >
+            <control:Node.Style>
+                <control:Style>
+                    <control:Style.Brush>
+                        <control:SolidBrush FillColor="White" />
+                    </control:Style.Brush>
+                </control:Style>
+            </control:Node.Style>
+        </control:Node>
+        <control:Node Height="50" Width="50" ShapeType="Ellipse" >
+            control:Node.Style>
+                <control:Style>
+                    <control:Style.Brush>
+                        <control:SolidBrush FillColor="White" />
+                    </control:Style.Brush>
+                </control:Style>
+            </control:Node.Style>
+        </control:Node>
+        <control:Node Height="50" Width="50" ShapeType="Triangle" >
+            <control:Node.Style>
+                <control:Style>
+                    <control:Style.Brush>
+                        <control:SolidBrush FillColor="White" />
+                    </control:Style.Brush>
+                </control:Style>
+            </control:Node.Style>
+        </control:Node>
+        <control:Node Height="50" Width="50" ShapeType="RightAngleTriangle" >
+            <control:Node.Style>
+                <control:Style>
+                    <control:Style.Brush>
+                        <control:SolidBrush FillColor="White" />
+                    </control:Style.Brush>
+                </control:Style>
+            </control:Node.Style>
+        </control:Node>
       </control:SymbolCollection>
 <!--SymbolCollection2-->
       <control:SymbolCollection x:Key="FlowChartcollection">
-        <control:Node Height="50" Width="50" ShapeType="RoundedRectangle" />
-        <control:Node Height="50" Width="50" ShapeType="Rectangle" />
-        <control:Node Height="50" Width="50" ShapeType="Diamond" />
-        <control:Node Height="50" Width="50" ShapeType="Parallelogram" />
+        <control:Node Height="50" Width="50" ShapeType="RoundedRectangle" >
+            <control:Node.Style>
+                <control:Style>
+                    <control:Style.Brush>
+                        <control:SolidBrush FillColor="White" />
+                    </control:Style.Brush>
+                </control:Style>
+            </control:Node.Style>
+        </control:Node>
+        <control:Node Height="50" Width="50" ShapeType="Rectangle" >
+            <control:Node.Style>
+                <control:Style>
+                    <control:Style.Brush>
+                        <control:SolidBrush FillColor="White" />
+                    </control:Style.Brush>
+                </control:Style>
+            </control:Node.Style>
+        </control:Node>
+        <control:Node Height="50" Width="50" ShapeType="Diamond" >
+            <control:Node.Style>
+                <control:Style>
+                    <control:Style.Brush>
+                        <control:SolidBrush FillColor="White" />
+                    </control:Style.Brush>
+                </control:Style>
+            </control:Node.Style>
+        </control:Node>
+        <control:Node Height="50" Width="50" ShapeType="Parallelogram" >
+            <control:Node.Style>
+                <control:Style>
+                    <control:Style.Brush>
+                        <control:SolidBrush FillColor="White" />
+                    </control:Style.Brush>
+                </control:Style>
+            </control:Node.Style>
+        </control:Node>
       </control:SymbolCollection>
 <!--SymbolCollection3-->
       <control:SymbolCollection x:Key="Connectorscollection">
@@ -189,16 +285,16 @@ We can able to add category of symbol group heading in stencil. The following ex
 {% highlight c# %}
 //SymbolCollection1 
 SymbolCollection BasicShapescollection = new SymbolCollection();
-BasicShapescollection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Rectangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White), StrokeBrush = new SolidBrush(Color.Gray) } });
-BasicShapescollection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Ellipse, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White), StrokeBrush = new SolidBrush(Color.Gray) } });
-BasicShapescollection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Triangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White), StrokeBrush = new SolidBrush(Color.Gray) } });
-BasicShapescollection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.RightAngleTriangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White), StrokeBrush = new SolidBrush(Color.Gray) } });
+BasicShapescollection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Rectangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White) } });
+BasicShapescollection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Ellipse, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White) } });
+BasicShapescollection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Triangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White) } });
+BasicShapescollection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.RightAngleTriangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White) } });
 //SymbolCollection2 
 SymbolCollection FlowChartcollection = new SymbolCollection();
-FlowChartcollection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.RoundedRectangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White), StrokeBrush = new SolidBrush(Color.Gray) } });
-FlowChartcollection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Rectangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White), StrokeBrush = new SolidBrush(Color.Gray) } });
-FlowChartcollection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Diamond, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White), StrokeBrush = new SolidBrush(Color.Gray) } });
-FlowChartcollection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Parallelogram, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White), StrokeBrush = new SolidBrush(Color.Gray) } });
+FlowChartcollection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.RoundedRectangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White) } });
+FlowChartcollection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Rectangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White) } });
+FlowChartcollection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Diamond, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White) } });
+FlowChartcollection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Parallelogram, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White) } });
 //SymbolCollection3
 SymbolCollection Connectorscollection = new SymbolCollection();
 Connectorscollection.Add(new Connector() { SegmentType = SegmentType.OrthoSegment, SourcePoint = new Point(0, 0), TargetPoint = new Point(50, 50) });

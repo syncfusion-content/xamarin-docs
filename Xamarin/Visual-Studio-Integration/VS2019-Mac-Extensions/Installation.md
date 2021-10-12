@@ -7,7 +7,7 @@ control: Syncfusion Mac Extensions
 documentation: ug
 ---
 
-# Installation
+# Installation of Syncfuion Mac Extensions
 
 The following procedure illustrates how to install Syncfusion Xamarin Extension in Visual Studio for Mac. 
 

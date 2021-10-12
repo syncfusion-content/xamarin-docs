@@ -7,7 +7,7 @@ control: Syncfusion Mac Extensions
 documentation: ug
 ---
 
-# Create Project
+# Create Xamarin Project in Visual Studio for Mac
 
 Syncfusion provides the Visual Studio for Mac Project Templates for Xamarin platform to create the Syncfusion Xamarin application with required Syncfusion NuGet packages based on the control chosen.
 

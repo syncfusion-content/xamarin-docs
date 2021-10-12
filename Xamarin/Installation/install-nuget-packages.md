@@ -94,7 +94,7 @@ The **Package Manager Console** saves NuGet packages installation time since you
 
     **For example:** Install-Package Syncfusion.Xamarin.SfDataGrid -ProjectName SyncfusionXamarinApp
 
-3. By default, the package will be installed with latest version. You can give the required version with the -Version term like below to install the Syncfusion Xamarin NuGet packages in the appropriate versionn.
+3. By default, the package will be installed with latest version. You can give the required version with the -Version term like below to install the Syncfusion Xamarin NuGet packages in the appropriate version.
 
     ```Install-Package Syncfusion.Xamarin.SfDataGrid -Version 19.3.0.44```
 

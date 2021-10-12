@@ -7,7 +7,7 @@ control: Syncfusion VS Mac Extensions
 documentation: ug
 ---
 
-# Overview
+# Xamarin Mac Extensions Overview
 
 The Syncfusion Essential Studio for Xamarin Visual Studio for Mac extensions allow you to create a Xamarin application using Syncfusion components along with required NuGet packages in Visual Studio for Mac. 
 
@@ -17,7 +17,7 @@ The Syncfusion provides the following extension supports in Visual Studio for Ma
 
 [Project template](https://help.syncfusion.com/xamarin/visual-studio-integration/visual-studio-mac-extensions/create-project): To create a Syncfusion Xamarin application by adding the required Syncfusion NuGet based on the control chosen.
 
-# Syncfusion Menu
+## Syncfusion Menu
 
 ![Syncfusion Menu in Visual Studio Mac](Overview_images/Syncfusion_Menu_OverView.PNG)
 

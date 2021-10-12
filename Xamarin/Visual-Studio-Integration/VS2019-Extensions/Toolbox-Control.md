@@ -15,7 +15,7 @@ I> The Syncfusion Xamarin Toolbox is available from v16.2.0.41.
 
 Create a Microsoft Xamarin project or Syncfusion Xamarin project by using Syncfusion project template. The steps below will guide you through adding the Syncfusion controls to the Visual Studio Toolbox:
 
-> Check whether the **Xamarin Extensions - Syncfusion** are installed or not in Visual Studio Extension Manager by going to **Tools -> Extensions and Updates -> Installed** for Visual Studio 2017 or lower, and **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 by going to **Extensions -> Manage Extensions -> Installed**. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://help.syncfusion.com/xamarin/visual-studio-integration/vs2019-extensions/download-and-installation) help topic.
+> Check whether the **Xamarin Extensions - Syncfusion** are installed or not in Visual Studio Extension Manager by going to **Tools -> Extensions and Updates -> Installed** for Visual Studio 2017 or lower, and **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 by going to **Extensions -> Manage Extensions -> Installed**. If this extension not installed, please install the extension by follow the steps from the [download and installation](xamarin/visual-studio-integration/vs2019-extensions/download-and-installation) help topic.
 
 1. Follow one of the choices below to launch the Syncfusion Toolbox Wizard:
 

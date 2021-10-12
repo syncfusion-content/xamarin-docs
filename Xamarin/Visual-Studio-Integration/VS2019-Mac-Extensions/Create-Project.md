@@ -7,7 +7,7 @@ control: Syncfusion Mac Extensions
 documentation: ug
 ---
 
-#### Create Project
+# Create Project
 
 Syncfusion provides the Visual Studio for Mac Project Templates for Xamarin platform to create the Syncfusion Xamarin application with required Syncfusion NuGet packages based on the control chosen.
 
@@ -29,19 +29,19 @@ Choose **File > New > Project** and navigate to **Syncfusion > App > Syncfusion 
 
 ![Project Configuration](ProjectTemplate_Images/ProjectConfiguration.PNG)
 
-### Android:
+## Android:
 
 **1. Minimum Android Version:** Choose the earliest Android version for which you want to provide support for your app.
 
 **2. Target Android Version:** Choose the Android version on which your app will run.
 
-### iOS:
+## iOS:
 
 **1. Target Device:** Choose the Xamarin.iOS device of Xamarin.iOS project either Unified, iPhone/iPod, or iPad.
 
 **2. Target Version:** Select the Xamarin.iOS Project version.  
 
-### Choose controls:
+## Choose controls:
 
 To create the Syncfusion Xamarin application, choose at least one Syncfusion control.
 

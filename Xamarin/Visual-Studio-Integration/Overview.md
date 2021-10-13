@@ -9,7 +9,7 @@ documentation: ug
 
 # Xamarin Syncfusion Extensions Overview
 
-The Syncfusion Xamarin  Visual Studio Extensions can be accessed through the Syncfusion Menu to create and configure the project with Syncfusion references in Visual Studio.
+The Syncfusion Xamarin Visual Studio extensions allow you to create a Xamarin application using Syncfusion components along with required NuGet packages in Visual Studio.
 
 N> Syncfusion Extension is published in Visual Studio Marketplace. You can download Xamarin Extensions [here](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.XamarinExtension).
 

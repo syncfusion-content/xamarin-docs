@@ -42,7 +42,7 @@ The following code snippet is used to create the Node with custom shape/path.
 {% tabs %}
 {% highlight c# %}
 //Initialize Node
-Node node = new Node();
+Node node = new Node(){ Width = 120, Height = 80, OffsetX = 200, OffsetY = 200 };
 //Initialize SfGraphics
 SfGraphics graphics = new SfGraphics();
 Pen pen = new Pen();
@@ -50,7 +50,7 @@ pen.StrokeBrush = new SolidBrush(Color.Red);
 pen.StrokeWidth = 2;
 SolidBrush brush = new SolidBrush(Color.Yellow);
 brush.FillColor = Color.Yellow;
-pen.Brush = brush2;
+pen.Brush = brush;
 graphics.DrawRectangle(pen, new Rectangle(0, 0, 50, 50));
 //Update the SfGraphics to the node
 node.UpdateSfGraphics(graphics);
@@ -87,7 +87,7 @@ We can Customize the entire node with our own customized design using Template p
   </Grid>
 </DataTemplate>
 <!--Initialize node-->
-<diagram:Node OffsetX="300" OffsetY="300" Width="60" Height="70" Template="{StaticResource template}" >
+<diagram:Node OffsetX="300" OffsetY="300" Width="60" Height="70" Template="{StaticResource template}" />
 {% endhighlight %}
 {% highlight c# %}
 //Initialize the template
@@ -107,11 +107,11 @@ Node node = new Node() { Width = 120, Height = 40, OffsetX = 300, OffsetY = 60, 
 {% endtabs %}
 
 ## Constraints
-Node Constraints allow us to enable or disable the following behaviors of Node.
-•Drag
-•Resize
-•Rotate
-•AnnotationEditing
+The Node Constraints allow you to enable or disable the following behaviors of Node.
+•EnableDrag
+•EnableResize
+•EnableRotate
+•EnableTextEditing
 •IsLocked.
 Example
 The following code illustrates how to disable node dragging.

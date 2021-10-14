@@ -57,7 +57,7 @@ An organizational chart is a Diagram that displays the structure of an organizat
 <ContentPage.Resources>
    <ResourceDictionary>
       <local:Employees x:Key="Employees">
-    <!—-Employee Collection -->
+    <!--Employee Collection-->
           <local:Employee EmployeeId="0" Role="Project Management" />
           <local:Employee EmployeeId= "1"  Role= "R and D Team" Team= "0"/>
           <local:Employee EmployeeId= "3"  Role= "Philosophy" Team= "1"/>
@@ -90,12 +90,12 @@ An organizational chart is a Diagram that displays the structure of an organizat
   <control:SfDiagram x:Name="diagram" >
     <!--Initializes the DataSourceSettings--> 
     <control:SfDiagram.DataSourceSettings>
-        <control:DataSourceSettings x:Key="DataSourceSettings" ParentId="Team" Id="EmployeeId" 
+        <control:DataSourceSettings ParentId="Team" Id="EmployeeId" 
         DataSource="{StaticResource Employees}" />
       </control:SfDiagram.DataSourceSettings>
    <!--Initializes the Layout-->
     <control:SfDiagram.LayoutManager>
-     <control:LayoutManager x:Key="LayoutManager" 
+     <control:LayoutManager
                Layout="{StaticResource TreeLayout}" />
       </control:SfDiagram.LayoutManager>    </control:SfDiagram>
       </Grid>
@@ -147,7 +147,7 @@ User can change ChartType and Orientation by using BeginNodeLayout event of the 
 
 private void Diagram_BeginNodeLayout(object sender, BeginNodeLayoutEventArgs args)
         {
-            if (!args.HasSubTree)
+            if (!args.HasChildNodes)
             {
                 args.Type = ChartType.Left;
                 args.Orientation = Orientation.Vertical;
@@ -190,7 +190,7 @@ User can able to expand and collapse the parent node using NodeClicked event of 
 {% tabs %}
 {% highlight c# %}
 // Registering an event
-diagram.BeginNodeLayout += Diagram_BeginNodeLayout;
+diagram.NodeClicked += Diagram_NodeClicked;
 
 void Diagram_NodeClicked(object sender, NodeClickedEventArgs args)
  {

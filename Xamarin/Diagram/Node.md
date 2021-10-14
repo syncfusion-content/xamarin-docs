@@ -107,7 +107,7 @@ Node node = new Node() { Width = 120, Height = 40, OffsetX = 300, OffsetY = 60, 
 {% endtabs %}
 
 ## Constraints
-Node Constraints allow us to enable or disable the following behaviors of Node.
+The Node Constraints allow you to enable or disable the following behaviors of Node.
 •EnableDrag
 •EnableResize
 •EnableRotate

@@ -105,7 +105,7 @@ diagram.NodeTemplate = template;
 
 ## Diagram constraints
 The constraints property of Diagram allows you to enable/disable certain features.
-Diagram Constraints allow to enable or disable the following behaviors of Node.
+The Diagram Constraints allow you to enable or disable the following behaviors of Node.
 EnableDrag
 EnableResize
 EnableRotation

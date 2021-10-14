@@ -47,7 +47,7 @@ The following steps illustrates you how to create the Syncfusion Xamarin Applica
 
 	![Choose Controls](ProjectTemplate_Images/ChooseControls.png)
 
-3.  Provide the name of the project and click create.
+3.  Provide the **name** of the project and click **create**.
 
 	![New Project](ProjectTemplate_Images/NewProject.png)
 

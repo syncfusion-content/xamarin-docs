@@ -14,7 +14,7 @@ documentation: ug
 
 **NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion publishing all Xamarin  NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tags%3A%22xamarin%22+syncfusion). The Syncfusion Xamarin NuGet packages can be used without installing the Syncfusion Essential Studio setup. To create with the Syncfusion Xamarin components, just use the Syncfusion Xamarin NuGet packages in a Xamarin application.
 
-> From v16.2.0.46 (2018 Volume 2 Service Pack 1) onwards, all the Syncfusion WPF components are available as NuGet packages at [nuget.org](https://www.nuget.org/packages?q=Tags%3A%22xamarin%22+syncfusion).
+> From v16.2.0.46 (2018 Volume 2 Service Pack 1) onwards, all the Syncfusion Xamarin components are available as NuGet packages at [nuget.org](https://www.nuget.org/packages?q=Tags%3A%22xamarin%22+syncfusion).
 
 ## Installation using Package Manager UI
 
@@ -26,7 +26,7 @@ The NuGet Package Manager UI allows you to search, install, uninstall, and updat
 
     As an alternative, after opening the Xamarin application in Visual Studio, go to the **Tools** menu and after hovering **NuGet Package Manager**, select **Manage NuGet Packages for Solution...**
 
-2. The Manage NuGet Packages window will open. Navigate to the Browse tab, then search for the Syncfusion WPF NuGet packages using a term like "Syncfusion.WPF" and select the appropriate Syncfusion WPF NuGet package for your development.
+2. The Manage NuGet Packages window will open. Navigate to the Browse tab, then search for the Syncfusion Xamarin NuGet packages using a term like "**Syncfusion.Xamarin**" and select the appropriate Syncfusion Xamarin NuGet package for your development.
 
     ![Xamarin NuGet Packages Search](Platform_images/NuGetsearch.png)
 
@@ -38,7 +38,7 @@ The NuGet Package Manager UI allows you to search, install, uninstall, and updat
 
     ![Xamarin NuGet Packages Install](Platform_images/InstallNuGet.png)
 
-5.  At this point, your application has all the required Syncfusion assemblies, and you will be ready to start building high-performance, responsive app with  [Syncfusion Xamarin components]https://www.syncfusion.com/xamarin-ui-controls). Also, you can refer to the [Syncfusion Xamarin help document](https://help.syncfusion.com/xamarin/introduction/overview) for development.
+5.  At this point, your application has all the required Syncfusion assemblies, and you will be ready to start building high-performance, responsive app with  [Syncfusion Xamarin components](https://www.syncfusion.com/xamarin-ui-controls). Also, you can refer to the [Syncfusion Xamarin help document](https://help.syncfusion.com/xamarin/introduction/overview) for development.
 
 ## Installation using Dotnet (.NET) CLI
 
@@ -64,7 +64,7 @@ Follow the below instructions to use the dotnet CLI command to install the Syncf
 
     > Restoring is done automatically with **dotnet build** and **dotnet run** in .NET Core 2.0 and later.
 
-5. At this point, your application has all the required Syncfusion assemblies, and you will be ready to start building high-performance, responsive app with  [Syncfusion Xamarin components]https://www.syncfusion.com/xamarin-ui-controls). Also, you can refer to the [Syncfusion Xamarin help document](https://help.syncfusion.com/xamarin/introduction/overview) for development.
+5. At this point, your application has all the required Syncfusion assemblies, and you will be ready to start building high-performance, responsive app with  [Syncfusion Xamarin components](https://www.syncfusion.com/xamarin-ui-controls). Also, you can refer to the [Syncfusion Xamarin help document](https://help.syncfusion.com/xamarin/introduction/overview) for development.
 
 ## Installation using Package Manager Console
 
@@ -84,7 +84,7 @@ The **Package Manager Console** saves NuGet packages installation time since you
 
     **For example:** Install-Package Syncfusion.Xamarin.SfDataGrid
 
-    > You can find the list of Syncfusion WPF NuGet packages which are published in nuget.org from [here](https://www.nuget.org/packages?q=Tags%3A%22xamarin%22+syncfusion)
+    > You can find the list of Syncfusion Xamarin NuGet packages which are published in nuget.org from [here](https://www.nuget.org/packages?q=Tags%3A%22xamarin%22+syncfusion)
 
     ***Install specified Syncfusion Xamarin NuGet package in specified Xamarin application***
 
@@ -102,4 +102,4 @@ The **Package Manager Console** saves NuGet packages installation time since you
 
 4. The NuGet package manager console will install the Syncfusion Xamarin NuGet package as well as the dependencies it has. When the installation is complete, the console will show that your Syncfusion Xamarin package has been successfully added to the application.
 
-5. At this point, your application has all the required Syncfusion assemblies, and you will be ready to start building high-performance, responsive app with  [Syncfusion Xamarin components]https://www.syncfusion.com/xamarin-ui-controls). Also, you can refer to the [Syncfusion Xamarin help document](https://help.syncfusion.com/xamarin/introduction/overview) for development.
+5. At this point, your application has all the required Syncfusion assemblies, and you will be ready to start building high-performance, responsive app with  [Syncfusion Xamarin components](https://www.syncfusion.com/xamarin-ui-controls). Also, you can refer to the [Syncfusion Xamarin help document](https://help.syncfusion.com/xamarin/introduction/overview) for development.

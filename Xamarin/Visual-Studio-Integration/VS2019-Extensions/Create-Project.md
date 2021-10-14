@@ -65,7 +65,7 @@ To create the **Syncfusion Xamarin Application** in Visual Studio 2017, follow t
 
 	![Choose Syncfusion Xamarin control](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates-img4.png)
 
-4.	The Syncfusion Xamarin Application has been created when you click Create.
+4.	The Syncfusion Xamarin Application has been created when you click **Create**.
 
 	N> Choose any one of the project type and controls from Project Configuration Wizard.
 

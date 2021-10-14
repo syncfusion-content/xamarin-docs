@@ -144,7 +144,7 @@ Curve segments are used to create links between two points, nodes or ports with 
 {% tabs %}
 {% highlight c# %}
 // creating connector instance with define its segment type
-Connector connector = new Connector(this);
+Connector connector = new Connector();
 connector.SourcePoint = new Point(100, 100);
 connector.TargetPoint = new Point(300, 300);
 connector.SegmentType = SegmentType.CurveSegment;
@@ -226,10 +226,14 @@ The following code example illustrates how to customize the Connector appearance
 <!--creating connector instance-->
 <control:SfDiagram.Connectors>
     <control:ConnectorCollection>
-      <control:Connector SourcePoint="100,100" TargetPoint="300,300">
+      <control:Connector SourcePoint="100,100" TargetPoint="300,300" SegmentType="StraightSegment">
         <!--defining connector styles-->
        <control:Connector.Style>
-         <control:Style StrokeStyle="Dashed" StrokeWidth="4"/>
+         <control:Style StrokeStyle="Dashed" StrokeWidth="4">
+             <control:Style.StrokeBrush>
+                 <control:SolidBrush FillColor="Gray" />
+             </control:Style.StrokeBrush>
+         </control:Style>
        </control:Connector.Style>
       </control:Connector>
     </control:ConnectorCollection>
@@ -262,7 +266,7 @@ The following code example illustrates how to customize the appearance of the de
 <!--creating connector instance with decorator-->
 <control:SfDiagram.Connectors>
     <control:ConnectorCollection>
-      <control:Connector SourcePoint="100,100" TargetPoint="300,300" TargetDecoratorType="Diamond" SourceDecoratorType="Circle">
+      <control:Connector SourcePoint="100,100" TargetPoint="300,300" TargetDecoratorType="Diamond" SourceDecoratorType="Circle" SegmentType="StraightSegment">
        <!--defining decorator style for a connector-->
        <control:Connector.SourceDecoratorStyle>
          <control:DecoratorStyle  Fill="Green" Stroke="Grey" StrokeThickness="5" Width="12"/>

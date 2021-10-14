@@ -21,7 +21,7 @@ The scroll limit allows you to define the scrollable region of the Diagram while
 <syncfusion:SfDiagram x:Name="diagram">
     <!--Initialize the scroll setting class with scroll limit-->
     <syncfusion:SfDiagram.ScrollSettings>
-        <syncfusion:ScrollSettings ScrollLimit="Diagram"/>
+        <syncfusion:ScrollSettings ScrollLimit="DiagramContent"/>
     </syncfusion:SfDiagram.ScrollSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
@@ -31,7 +31,7 @@ SfDiagram diagram = new SfDiagram();
 //Initialize the scroll settings with scroll limit.
 diagram.ScrollSettings = new ScrollSettings()
 {
-    ScrollLimit = ScrollLimit.Diagram,
+    ScrollLimit = ScrollLimit.DiagramContent,
 };
 {% endhighlight %}
 {% endtabs %}

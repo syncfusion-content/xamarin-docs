@@ -250,34 +250,34 @@ Define Employee Information as a Collection. The below code example shows an emp
 {% highlight xml %}
 <!-- Initializes the employee collection--> 
 <local:Employees x:Key="employees"> 
-<local:Employee Name="Elizabeth" Employee_Id="1" ParentId="" Designation="CEO"/> 
-<local:Employee Name="Christina" Employee_Id="2" ParentId="1" Designation="Manager"/> 
-<local:Employee Name="Yang" Employee_Id="3" ParentId="1" Designation="Manager"/> 
-<local:Employee Name="Yoshi" Employee_Id="4" ParentId="2" Designation="Team Lead"/> 
-<local:Employee Name="Philip" Employee_Id="5" ParentId="2" Designation="S/w Developer"/> 
-<local:Employee Name="Roland" Employee_Id="6" ParentId="3" Designation="TeamLead"/> 
-<local:Employee Name="Yuonne" Employee_Id="7" ParentId="3" Designation="Testing Engineer"/> 
+<local:Employee Name="Elizabeth" EmpId="1" ParentId="" Designation="CEO"/> 
+<local:Employee Name="Christina" EmpId="2" ParentId="1" Designation="Manager"/> 
+<local:Employee Name="Yang" EmpId="3" ParentId="1" Designation="Manager"/> 
+<local:Employee Name="Yoshi" EmpId="4" ParentId="2" Designation="Team Lead"/> 
+<local:Employee Name="Philip" EmpId="5" ParentId="2" Designation="S/w Developer"/> 
+<local:Employee Name="Roland" EmpId="6" ParentId="3" Designation="TeamLead"/> 
+<local:Employee Name="Yuonne" EmpId="7" ParentId="3" Designation="Testing Engineer"/> 
 </local:Employees> 
 <!--Initializes the DataSourceSettings --> 
-<syncfusion:DataSourceSettings x:Key="DataSourceSettings" DataSource="{StaticResource employees}" ParentId="ParentId" Id="Employee_Id" Root="1"/> 
+<syncfusion:DataSourceSettings x:Key="DataSourceSettings" DataSource="{StaticResource employees}" ParentId="ParentId" Id="EmpId" Root="1"/> 
 <!--Initializes the Layout--> 
-<syncfusion:DirectedTreeLayout x:Key="treeLayout" HorizontalSpacing="80" VerticalSpacing="50" SpaceBetweenSubTrees="20" Orientation="TopToBottom"/> 
+<syncfusion:DirectedTreeLayout x:Key="treeLayout" HorizontalSpacing="80" VerticalSpacing="50" TreeOrientation="TopToBottom"/> 
 <syncfusion:LayoutManager x:Key="layoutManager" Layout="{StaticResource treeLayout}"/> 
 <!--Initializes the SfDiagram--> 
-<syncfusion:SfDiagram x:Name="diagram" LayoutManager="{StaticResource layoutManager}" DataSourceSettings="{StaticResource DataSourceSettings}">
+<syncfusion:SfDiagram x:Name="diagram" LayoutManager="{StaticResource layoutManager}" DataSourceSettings="{StaticResource DataSourceSettings}"/>
 {% endhighlight %}
 {% highlight c# %}
 //Initializes the employee collection
 ObservableCollection<Employee> employees = new ObservableCollection<Employee>();            
-employees.Add(new Employee() { Name = "Elizabeth", Employee_Id = "1", ParentId = "", Designation = "CEO" });
-employees.Add(new Employee() { Name = "Christina", Employee_Id = "2", ParentId = "1", Designation = "Manager" });
-employees.Add(new Employee() { Name = "Yang", Employee_Id = "3", ParentId = "1", Designation = "Manager" });
-employees.Add(new Employee() { Name = "Yoshi", Employee_Id = "4", ParentId = "2", Designation = "Team Lead" });
-employees.Add(new Employee() { Name = "Philip", Employee_Id = "5", ParentId = "2", Designation = "S/w Developer" });
-employees.Add(new Employee() { Name = "Roland", Employee_Id = "6", ParentId = "3", Designation = "TeamLead" });
-employees.Add(new Employee() { Name = "Yvonne", Employee_Id = "7", ParentId = "3", Designation = "Testing Engineer" });
+employees.Add(new Employee() { Name = "Elizabeth", EmpId = "1", ParentId = "", Designation = "CEO" });
+employees.Add(new Employee() { Name = "Christina", EmpId = "2", ParentId = "1", Designation = "Manager" });
+employees.Add(new Employee() { Name = "Yang", EmpId = "3", ParentId = "1", Designation = "Manager" });
+employees.Add(new Employee() { Name = "Yoshi", EmpId = "4", ParentId = "2", Designation = "Team Lead" });
+employees.Add(new Employee() { Name = "Philip", EmpId = "5", ParentId = "2", Designation = "S/w Developer" });
+employees.Add(new Employee() { Name = "Roland", EmpId = "6", ParentId = "3", Designation = "TeamLead" });
+employees.Add(new Employee() { Name = "Yvonne", EmpId = "7", ParentId = "3", Designation = "Testing Engineer" });
 //Initializes the DataSourceSettings
-diagram.DataSourceSettings = new DataSourceSettings() { DataSource = employees, Id = "Employee_Id", ParentId = "ParentId" };
+diagram.DataSourceSettings = new DataSourceSettings() { DataSource = employees, Id = "EmpId", ParentId = "ParentId" };
 //Initializes the Layout
 DirectedTreeLayout treeLayout = new DirectedTreeLayout() { HorizontalSpacing = 80, VerticalSpacing = 50, TreeOrientation = TreeOrientation.TopToBottom };
 diagram.LayoutManager = new LayoutManager() { Layout = treeLayout };

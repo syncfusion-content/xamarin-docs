@@ -27,4 +27,4 @@ void UpdateTheme(object sender, System.EventArgs e)
 
 Similarly, to switch to dark theme from light theme, remove the light theme resource, and add the dark theme resource dictionary.
 
-You can find the complete switch to dark theme from light theme sample from [this](https://github.com/SyncfusionExamples/xamarin-sfautocomplete-samples/tree/main/How-to-switch-between-Light-and-Dark-Themes/AutoCompleteTheme) link.
+The complete Theme switch sample is available in [this](https://github.com/SyncfusionExamples/xamarin-sfautocomplete-samples/tree/main/How-to-switch-between-Light-and-Dark-Themes/AutoCompleteTheme) link.

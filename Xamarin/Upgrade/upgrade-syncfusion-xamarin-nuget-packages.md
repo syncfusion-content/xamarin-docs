@@ -9,8 +9,7 @@ documentation: ug
 
 # Upgrading Syncfusion Xamarin NuGet packages to a latest version
 
-Every three months, Syncfusion releases new volumes with interesting new features. For this volume, there will be weekly NuGet releases and a service pack. Syncfusion Xamarin NuGet packages are released on a weekly basis to address critical issue fixes.
-From any Syncfusion Xamarin NuGet version you have installed; you can update to our most recent version.
+Every three months, Syncfusion releases new volumes with interesting new features. For this volume, there will be weekly NuGet releases and a service pack. Syncfusion Xamarin NuGet packages are released on a weekly basis to address critical issue fixes. From any Syncfusion Xamarin NuGet version you have installed; you can update to our most recent version.
 
 
 ## Upgrade NuGet packages through Package Manager UI
@@ -31,7 +30,7 @@ The NuGet Package Manager UI in Visual Studio allows you to easily install, unin
 
     ![Xamarin Upgrade](Upgrade-images/NuGetUpgrade.png)
 
-    You can choose the multiple NuGet packages by selecting the checkbox like below and click the **Update** button to update the multiple Syncfusion NuGet packages in your application.
+    You can choose the multiple NuGet packages by **selecting the checkbox** like below and click the **Update** button to update the multiple Syncfusion NuGet packages in your application.
 
     ![Xamarin NuGet Upgrade](Upgrade-images/MultipleNuGetUpgrade.png)
 
@@ -41,7 +40,7 @@ There is no distinct command for the update procedure in the .NET CLI. Unless yo
 
 To specify a version, add the -v parameter:
 
-```dotnet add package Syncfusion.Xamarin.SfDataGrid -v 19.3.0.43.```
+```dotnet add package Syncfusion.Xamarin.SfDataGrid -v 19.3.0.43```
 
 ## Upgrade NuGet packages through Package Manager Console
 
@@ -51,7 +50,7 @@ The **Package Manager Console** saves NuGet packages upgrade time since you don'
 
     ![Package Manager Console](Upgrade-images/console.png)
 
-2.  The Package Manager Console will be shown at the bottom of the screen. You can install the Syncfusion Xamarin NuGet packages by enter the following NuGet update commands.
+2.  The Package Manager Console will be shown at the bottom of the screen. You can update the Syncfusion Xamarin NuGet packages by enter the following NuGet update commands.
 
     ***Update specified Syncfusion Xamarin NuGet package***
 

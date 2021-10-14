@@ -176,10 +176,10 @@ The following example illustrates how to add the custom shapes into a Collection
             grap6.DrawEllipse(pen4, new Xamarin.Forms.Rectangle(30, 12, 5, 5));
             custom3.UpdateSfGraphics(grap6);
             SymbolCollection CustomShapeCollection = new SymbolCollection();
-            col4.Add(custom);
-            col4.Add(custom1);
-            col4.Add(custom2);
-            col4.Add(custom3);
+            CustomShapeCollection.Add(custom);
+            CustomShapeCollection.Add(custom1);
+            CustomShapeCollection.Add(custom2);
+            CustomShapeCollection.Add(custom3);
 //Add custom shapes into group
 stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = CustomShapeCollection , HeaderName = "Custom Shapes" });
 {% endhighlight %}

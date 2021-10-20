@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Install Syncfusion WPF NuGet packages
+# Install Syncfusion Xamarin NuGet packages
 
 ## Overview
 

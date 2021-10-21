@@ -128,6 +128,23 @@ this.Content = diagram;
 {% endhighlight %}
 {% endtabs %}
 
+## Show Selector Handle
+You can show or hide the selector handle for diagram element based on the specified SelectorPosition options.You can restrict the resize operation for Nodes using `ShowSelectorHandle` method. The following code snippet illustrates this.
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram(); 
+diagram.AddNode(new Node(100, 100, 300,300) { ShapeType = ShapeType.Rectangle });         
+diagram.ShowSelectorHandle(false, SelectorPosition.TopLeft);
+diagram.ShowSelectorHandle(false, SelectorPosition.TopRight);
+diagram.ShowSelectorHandle(false, SelectorPosition.BottomLeft);
+diagram.ShowSelectorHandle(false, SelectorPosition.BottomRight);
+diagram.ShowSelectorHandle(true, SelectorPosition.MiddleLeft);
+diagram.ShowSelectorHandle(true, SelectorPosition.MiddleRight);
+diagram.ShowSelectorHandle(true, SelectorPosition.TopCenter);
+diagram.ShowSelectorHandle(true, SelectorPosition.BottomCenter);
+this.Content = diagram;
+{% endhighlight %}
+{% endtabs %}
+
 ## Diagram style settings		
 It is easier to apply default rendering styles to all shapes, connectors, stencil symbol, and stencil header in a diagram. Pass the following arguments to diagram style setting constructor: 
  * DefaultNodeStyle argument: Defines the node style properties. 

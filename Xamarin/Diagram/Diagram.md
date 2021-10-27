@@ -129,7 +129,7 @@ this.Content = diagram;
 {% endtabs %}
 
 ## Show Selector Handle
-You can show or hide the selector handle for diagram element based on the specified SelectorPosition options.You can restrict the resize operation for Nodes using `ShowSelectorHandle` method. The following code snippet illustrates this.
+You can show or hide the selector handle for the diagram element based on the specified SelectorPosition options. You can restrict the resize operation for Nodes using the `ShowSelectorHandle` method. The following code sample explains this.
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram(); 
 diagram.AddNode(new Node(100, 100, 300,300) { ShapeType = ShapeType.Rectangle });         

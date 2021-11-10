@@ -86,7 +86,7 @@ The following code snippet and screenshot illustrates this.
     <Image Source="diagram.png"/>
   </Grid>
 </DataTemplate>
-<control:SfDiagram x:Name="diagram" NodeTemplate="{StaticResource template}">
+<control:SfDiagram x:Name="diagram" NodeTemplate="{StaticResource template}"/>
 {% endhighlight %}
 {% highlight c# %}
 var template = new DataTemplate(() =>
@@ -105,11 +105,11 @@ diagram.NodeTemplate = template;
 
 ## Diagram constraints
 The constraints property of Diagram allows you to enable/disable certain features.
-Diagram Constraints allow to enable or disable the following behaviors of Node.
-Drag
-Resize
-Rotate
-AnnotationEditing
+The Diagram Constraints allow you to enable or disable the following behaviors of Node.
+EnableDrag
+EnableResize
+EnableRotation
+EnableTextEditing
 EnableSelectors
 EnableZoomAndPan
 IsReadOnly
@@ -124,6 +124,24 @@ The following code illustrates how to disable the item dragging.
 SfDiagram diagram = new SfDiagram(); 
 // Disable the item dragging
 diagram.EnableDrag = false;
+this.Content = diagram;
+{% endhighlight %}
+{% endtabs %}
+
+## Show Selector Handle
+You can show or hide the selector handle for the diagram element based on the specified SelectorPosition options. You can restrict the resize operation for Nodes using the `ShowSelectorHandle` method. The following code sample explains this.
+{% tabs %}
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram(); 
+diagram.AddNode(new Node(100, 100, 300,300) { ShapeType = ShapeType.Rectangle });         
+diagram.ShowSelectorHandle(false, SelectorPosition.TopLeft);
+diagram.ShowSelectorHandle(false, SelectorPosition.TopRight);
+diagram.ShowSelectorHandle(false, SelectorPosition.BottomLeft);
+diagram.ShowSelectorHandle(false, SelectorPosition.BottomRight);
+diagram.ShowSelectorHandle(true, SelectorPosition.MiddleLeft);
+diagram.ShowSelectorHandle(true, SelectorPosition.MiddleRight);
+diagram.ShowSelectorHandle(true, SelectorPosition.TopCenter);
+diagram.ShowSelectorHandle(true, SelectorPosition.BottomCenter);
 this.Content = diagram;
 {% endhighlight %}
 {% endtabs %}

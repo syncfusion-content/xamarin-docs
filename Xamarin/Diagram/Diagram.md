@@ -147,7 +147,7 @@ this.Content = diagram;
 {% endtabs %}
 
 ##  Load and Save Json:
-You can save the diagram as a JSON format and loads the JSON saved file into Diagram. The following code sample explains this.
+You can save the diagram in JSON format and load the JSON saved file into Diagram. The following code sample explains this.
 {% tabs %}
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();

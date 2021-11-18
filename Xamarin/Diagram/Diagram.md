@@ -146,6 +146,16 @@ this.Content = diagram;
 {% endhighlight %}
 {% endtabs %}
 
+##  Load and Save Json:
+You can save the diagram in JSON format and load the JSON saved file into Diagram. The following code sample explains this.
+{% tabs %}
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
+string JsonText = diagram.SaveAsJson();
+diagram.LoadFromJson(JsonText);
+{% endhighlight %}
+{% endtabs %}
+
 ## Diagram style settings		
 It is easier to apply default rendering styles to all shapes, connectors, stencil symbol, and stencil header in a diagram. Pass the following arguments to diagram style setting constructor: 
  * DefaultNodeStyle argument: Defines the node style properties. 

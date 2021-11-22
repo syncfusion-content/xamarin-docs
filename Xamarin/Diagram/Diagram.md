@@ -192,5 +192,172 @@ Supports customizing the zoom levels. You can set minimum zoom level value to 0.
 {% endhighlight %}
 {% endtabs %}
 
+## Clear
+To remove all the items in the diagram page using ['Clear'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_Clear) method. To remove all the items in the diagram, use the following code snippet. 
+{% tabs %}
+{% highlight c# %} 
+  SfDiagram diagram = new SfDiagram(); 
+  diagram.Clear(); 
+{% endhighlight %}
+{% endtabs %}
+
+## Select
+To select the node or connector items in the diagram using ['Select'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_Select_Syncfusion_SfDiagram_XForms_DiagramBaseItem_) method. To select the items in the diagram, use the following code snippet.  
+{% tabs %}
+{% highlight c# %} 
+  SfDiagram diagram = new SfDiagram(); 
+  Node node = new Node() { Width = 120, Height = 40, OffsetX = 300,OffsetY = 60};
+  diagram.AddNode(node);
+  diagram.Select(node); 
+{% endhighlight %}
+{% endtabs %}
+
+## ClearSelection
+To clear the selected items in the diagram using ['ClearSelection'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_ClearSelection) method. To select the items in the diagram, use the following code snippet.  
+{% tabs %}
+{% highlight c# %} 
+  SfDiagram diagram = new SfDiagram(); 
+  diagram. ClearSelection();  
+{% endhighlight %}
+{% endtabs %}
+
+## Undo and Redo 
+Diagram tracks the history of actions that are performed after initializing the diagram and provides support to reverse and restore those changes.  
+The ['Undo'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_Undo) is a function performed to reverse the action of an earlier action.
+
+The ['Redo'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_Redo) function restores any actions that have been previously undone using an undo
+{% tabs %}
+{% highlight c# %} 
+  //To perform the Undo action in Diagram
+  SfDiagram diagram = new SfDiagram(); 
+  diagram.Undo(); 
+
+  //To Perform the Redo action in Diagram
+  SfDiagram diagram = new SfDiagram(); 
+  diagram.Redo(); 
+{% endhighlight %}
+{% endtabs %}
+
+## BringToFront and SendToBack
+The ['BringToFront'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_BringToFront) is used to visually brings the selected element to the front over all other overlapped elements. 
+
+The ['SendToBack'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SendToBack) visually moves the selected elements behind all the other overlapped elements. 
+{% tabs %}
+{% highlight c# %} 
+  //Brings to front
+  SfDiagram diagram = new SfDiagram(); 
+  diagram.BringToFront(); 
+
+  // Send To Back
+  SfDiagram diagram = new SfDiagram(); 
+  diagram.SendToBack();  
+{% endhighlight %}
+{% endtabs %}
+
+## BringForward and SendBackward
+The ['BringForward'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_BringForward) visually moves the selected element over the nearest overlapping element. 
+
+The ['SendBackward'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SendBackward) visually moves the selected elements behind the underlying element. 
+{% tabs %}
+{% highlight c# %} 
+  // Brings To Forward
+  SfDiagram diagram = new SfDiagram(); 
+  diagram.BringForward();
+
+  // Send To Backward
+  SfDiagram diagram = new SfDiagram(); 
+  diagram.SendBackward(); 
+{% endhighlight %}
+{% endtabs %}
+
+## BringToView 
+The ['BringToView'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_BringToView_Syncfusion_SfDiagram_XForms_DiagramBaseItem_) is used to visually brings the  element to the front over all elements.
+{% tabs %}
+{% highlight c# %} 
+  SfDiagram diagram = new SfDiagram(); 
+  Node node = new Node() { Width = 120, Height = 40, OffsetX = 300,OffsetY = 60};
+  diagram.AddNode(node);
+  diagram.BringToView(node);  
+{% endhighlight %}
+{% endtabs %}
+
+## DiagramClicked  
+The ['DiagramClickedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.DiagramClickedEventArgs.html) will triggers when click the ['Diagram'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.html) page. The following code example explains how to create a DiagramClickedEvent trigger. 
+{% tabs %}
+{% highlight c# %}
+diagram.DiagramClicked += Diagram_DiagramClicked; 
+
+private void Diagram_DiagramClicked(object sender, DiagramClickedEventArgs args)
+        {
+            var items = args.Item;
+        }
+{% endhighlight %}
+{% endtabs %}
+
+## ItemAdded
+The ['ItemAddedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.ItemAddedEventArgs.html) will triggers when the node or connector will be added to the ['Diagram'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.html).The following code example explains how to create a ItemAddedEvent trigger.
+{% tabs %}
+{% highlight c# %}
+diagram.ItemAdded += Diagram_ItemAdded;
+
+private void Diagram_ItemAdded(object sender, ItemAddedEventArgs args)
+        {
+            Node node = (Node)args.Item;
+        }
+{% endhighlight %}
+{% endtabs %}
+
+## DragEnd
+The ['DragEndEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.DragEndEventArgs.html) will triggers when the node or connector will be drag from the one place to another place of the ['Diagram'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.html) page. The following code example explains how to create a DragEndEvent trigger.
+{% tabs %}
+{% highlight c# %}
+diagram.DragEnd += Diagram_DragEnd;
+
+private void Diagram_DragEnd(object sender, DragEndEventArgs args)
+        {
+            Node node = (Node)args.Item;
+        }
+{% endhighlight %}
+{% endtabs %}
+
+## DiagramObjectDeleted
+The ['DiagramObjectDeletedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.DiagramObjectDeletedEventArgs.html) will triggers when delete the node or connector in ['Diagram'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.html) page. The following code example explains how to create a DiagramObjectDeletedEvent trigger.
+{% tabs %}
+{% highlight c# %}
+diagram.DiagramObjectDeleted += Diagram_DiagramObjectDeleted; 
+
+private void Diagram_DiagramObjectDeleted(object sender, DiagramObjectDeletedEventArgs args)
+        {
+            Node node = (Node)args.Item;
+        }
+{% endhighlight %}
+{% endtabs %}
+
+## ResizeEnd
+The ['ResizeEndEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.ResizeEndEventArgs.html) will triggers when the node or connector will be resizing. The following code example explains how to create a ResizeEndEvent trigger.
+{% tabs %}
+{% highlight c# %}
+diagram.ResizeEnd += Diagram_ResizeEnd;  
+
+private void Diagram_ResizeEnd(object sender, ResizeEndEventArgs args)
+        {
+            Node node = (Node)args.Item;
+        }
+{% endhighlight %}
+{% endtabs %}
+
+## ItemLongPressed
+The ['ItemLongPressedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.ItemLongPressedEventArgs.html) will triggers when long pressed the node or connector items. The following code example explains how to create a ItemLongPressedEvent trigger.
+{% tabs %}
+{% highlight c# %}
+diagram.ItemLongPressed += Diagram_ItemLongPressed;    
+
+private void Diagram_ItemLongPressed(object sender, ItemLongPressedEventArgs args)
+        {
+            Node node = (Node)args.Item;
+        }
+{% endhighlight %}
+{% endtabs %} 
+
 N> Diagram supports zooming with custom option in Xamarin.Forms.Android and Xamarin.Forms.iOS alone.
 You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

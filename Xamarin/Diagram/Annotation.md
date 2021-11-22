@@ -203,4 +203,17 @@ diagram.AddConnector(Connector1);
 The following output is displayed as result of the above code example.
 ![Annotation alignment in Xamarin.Forms diagram](Annotation_images/Annotation_img3.jpg)
 
+## TextChanged
+The ['TextChangedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.TextChangedEventArgs.html) will triggers when changing the annotation content of the node or connector. The following code example explains how to create a TextChangedEvent trigger. 
+{% tabs %}
+{% highlight c# %}
+diagram.TextChanged += Diagram_TextChanged; 
+
+private void Diagram_TextChanged(object sender, Syncfusion.SfDiagram.XForms.TextChangedEventArgs args)
+        {
+            var content = args.Item;
+        }
+{% endhighlight %}
+{% endtabs %}
+
 N> You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

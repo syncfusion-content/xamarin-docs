@@ -58,6 +58,38 @@ richtexteditor.InsertHTMLText("New text content");
 
 {% endtabs %}
 
+## GetSelectedText
+
+Rich Text Editor provides the support to get the selected text using the [`GetSelectedText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_GetSelectedText) method of [`SfRichTextEditor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html).
+
+{% tabs %} 
+
+{% highlight C# %} 
+string selectedText = richtexteditor.GetSelectedText();
+{% endhighlight %}
+
+{% endtabs %}
+
+## GetHtmlString 
+
+Rich Text Editor provides the support to get the html text using the [`GetHtmlString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_GetHtmlString) method of [`SfRichTextEditor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html).
+
+{% tabs %} 
+
+{% highlight C# %} 
+string htmlText = richtexteditor.GetHtmlString();
+{% endhighlight %}
+
+## GetRawString 
+
+Rich Text Editor provides the support to get the the text/formatted text(HTML string) using the [`GetRawString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_GetRawString) method of [`SfRichTextEditor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html).
+
+{% tabs %} 
+
+{% highlight C# %} 
+string text = richtexteditor.GetRawString();
+{% endhighlight %}
+
 ## TextChanged 
 
 The TextChanged event will trigger in the Rich Text Editor for every text change action in the content.
@@ -108,6 +140,34 @@ private void Richtexteditor_FormatChanged(object sender, FormatChangedEventArgs 
 {% endhighlight %}
 
 {% endtabs %}
+
+## HyperlinkSelected
+
+The ['HyperlinkSelectedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_HyperlinkSelected) will triggers when a selected text contains hyperlink. The following code example explains how to create a TextChangedEvent trigger. 
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<rte:SfRichTextEditor x:Name="richtexteditor" VerticalOptions="FillAndExpand" HyperlinkSelected="Richtexteditor_HyperlinkSelected"/>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+SfRichTextEditor richtexteditor = new SfRichTextEditor();
+richtexteditor.HyperlinkSelected += Richtexteditor_HyperlinkSelected;
+this.Content = richtexteditor;
+			
+private void Richtexteditor_HyperlinkSelected(object sender, HyperlinkSelectedEventArgs e)
+{
+    string displayText = e.DisplayText;
+    string urlText = e.URL;
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ## Cursor Position
 

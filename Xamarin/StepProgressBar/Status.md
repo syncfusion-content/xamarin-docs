@@ -177,7 +177,7 @@ stepProgress.Children.Add(step4);
 ![Different status in StepProgressBar control](overview_images/style.png)
 
 ### StatusChanged
-The ['StatusChangedEvent'] (https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.SfStepProgressBar.html#Syncfusion_XForms_ProgressBar_SfStepProgressBar_StatusChanged) will triggers when changing the [StepView] (https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.StepView.html) status of [StepProgressBar] (https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.SfStepProgressBar.html). 
+The ['StatusChangedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.SfStepProgressBar.html#Syncfusion_XForms_ProgressBar_SfStepProgressBar_StatusChanged) will triggers when changing the [StepView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.StepView.html) status of [StepProgressBar](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.SfStepProgressBar.html). 
 {% tabs %}
 {% highlight c# %}
 step.StatusChanged += Step_StatusChanged;  
@@ -190,7 +190,7 @@ private void Step_StatusChanged(object sender, Syncfusion.XForms.ProgressBar.Sta
 {% endtabs %}
 
 ### StepTapped
-The ['StepTappedEvent'] https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.SfStepProgressBar.html#Syncfusion_XForms_ProgressBar_SfStepProgressBar_StepTapped will triggers when marker in [StepView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.StepView.html) was tapped in [StepProgressBar] (https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.SfStepProgressBar.html).  
+The ['StepTappedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.SfStepProgressBar.html#Syncfusion_XForms_ProgressBar_SfStepProgressBar_StepTapped) will triggers when marker in [StepView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.StepView.html) was tapped in [StepProgressBar](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.SfStepProgressBar.html).  
 {% tabs %}
 {% highlight c# %}
 step.StepTapped += Step_StepTapped;   

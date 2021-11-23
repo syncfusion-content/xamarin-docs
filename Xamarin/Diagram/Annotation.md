@@ -216,4 +216,17 @@ private void Diagram_TextChanged(object sender, Syncfusion.SfDiagram.XForms.Text
 {% endhighlight %}
 {% endtabs %}
 
+## OnTextEdit
+The ['OnTextEditEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.OnTextEditEventArgs.html) will triggers when adding the annotation content of the node or connector. The following code example explains how to create a OnTextEditEvent trigger. 
+{% tabs %}
+{% highlight c# %}
+diagram.OnTextEdit += Diagram_OnTextEdit; 
+
+private void Diagram_OnTextEdit(object sender, OnTextEditEventArgs args)
+        {
+            var content = args.Item;
+        }
+{% endhighlight %}
+{% endtabs %}
+
 N> You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

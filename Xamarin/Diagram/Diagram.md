@@ -146,7 +146,7 @@ this.Content = diagram;
 {% endhighlight %}
 {% endtabs %}
 
-##  Load and Save Json:
+##  Load and Save JSON :
 You can save the diagram in JSON format and load the JSON saved file into Diagram. The following code sample explains this.
 {% tabs %}
 {% highlight c# %}

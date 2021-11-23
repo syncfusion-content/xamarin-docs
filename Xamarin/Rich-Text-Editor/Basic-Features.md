@@ -92,7 +92,7 @@ string text = richtexteditor.GetRawString();
 
 ## TextChanged 
 
-The TextChanged event will trigger in the Rich Text Editor for every text change action in the content.
+The TextChanged event will be triggered in the Rich Text Editor for every text change action in the content.
 
 {% tabs %} 
 
@@ -143,7 +143,7 @@ private void Richtexteditor_FormatChanged(object sender, FormatChangedEventArgs 
 
 ## HyperlinkSelected
 
-The ['HyperlinkSelectedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_HyperlinkSelected) will triggers when a selected text contains hyperlink. The following code example explains how to create a TextChangedEvent trigger. 
+The ['HyperlinkSelectedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_HyperlinkSelected) will be triggered when a selected text contains a hyperlink. The following code example explains how to create a TextChangedEvent trigger.
 
 {% tabs %} 
 

@@ -204,7 +204,7 @@ The following output is displayed as result of the above code example.
 ![Annotation alignment in Xamarin.Forms diagram](Annotation_images/Annotation_img3.jpg)
 
 ## TextChanged
-The ['TextChangedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.TextChangedEventArgs.html) will triggers when changing the annotation content of the node or connector. The following code example explains how to create a TextChangedEvent trigger. 
+The ['TextChangedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.TextChangedEventArgs.html) will be triggered when you change the annotation content of the node or connector. The following code example explains how to create a TextChangedEvent trigger. 
 {% tabs %}
 {% highlight c# %}
 diagram.TextChanged += Diagram_TextChanged; 
@@ -217,7 +217,7 @@ private void Diagram_TextChanged(object sender, Syncfusion.SfDiagram.XForms.Text
 {% endtabs %}
 
 ## OnTextEdit
-The ['OnTextEditEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.OnTextEditEventArgs.html) will triggers when adding the annotation content of the node or connector. The following code example explains how to create a OnTextEditEvent trigger. 
+The ['OnTextEditEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.OnTextEditEventArgs.html) will be triggered when adding the annotation content of the node or connector. The following code example explains how to create a OnTextEditEvent trigger. 
 {% tabs %}
 {% highlight c# %}
 diagram.OnTextEdit += Diagram_OnTextEdit; 

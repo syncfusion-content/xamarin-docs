@@ -254,7 +254,7 @@ The ['SendToBack'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.X
 {% endhighlight %}
 {% endtabs %}
 
-![BringToFront and SendToBack in Xamarin.forms diagram](Diagram_images/BringtofrontandSendtoback.gif)
+![BringToFront and SendToBack in Xamarin.forms diagram](Diagram_images/Bringtofrontandsendtoback.gif)
 
 ## BringForward and SendBackward
 The ['BringForward'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_BringForward) visually moves the selected element over the nearest overlapping element. 

@@ -70,26 +70,6 @@ string selectedText = richtexteditor.GetSelectedText();
 
 {% endtabs %}
 
-## GetHtmlString 
-
-Rich Text Editor provides the support to get the html text using the [`GetHtmlString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_GetHtmlString) method of [`SfRichTextEditor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html).
-
-{% tabs %} 
-
-{% highlight C# %} 
-string htmlText = richtexteditor.GetHtmlString();
-{% endhighlight %}
-
-## GetRawString 
-
-Rich Text Editor provides the support to get the the text/formatted text(HTML string) using the [`GetRawString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_GetRawString) method of [`SfRichTextEditor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html).
-
-{% tabs %} 
-
-{% highlight C# %} 
-string text = richtexteditor.GetRawString();
-{% endhighlight %}
-
 ## TextChanged 
 
 The TextChanged event will be triggered in the Rich Text Editor for every text change action in the content.

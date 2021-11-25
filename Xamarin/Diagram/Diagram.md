@@ -197,9 +197,9 @@ Remove all the items from the diagram page using the ['Clear'](https://help.sync
 
 {% tabs %}
 {% highlight c# %} 
-  SfDiagram diagram = new SfDiagram(); 
-  diagram.Clear(); 
-  this.Content = diagram;
+SfDiagram diagram = new SfDiagram(); 
+diagram.Clear(); 
+this.Content = diagram;
 {% endhighlight %}
 {% endtabs %}
 
@@ -208,11 +208,11 @@ Select the node or connector items from the diagram using the ['Select'](https:/
 
 {% tabs %}
 {% highlight c# %} 
-  SfDiagram diagram = new SfDiagram(); 
-  Node node = new Node() { Width = 120, Height = 40, OffsetX = 300,OffsetY = 60};
-  diagram.AddNode(node);
-  diagram.Select(node); 
-  this.Content = diagram;
+SfDiagram diagram = new SfDiagram(); 
+Node node = new Node() { Width = 120, Height = 40, OffsetX = 300,OffsetY = 60};
+diagram.AddNode(node);
+diagram.Select(node); 
+this.Content = diagram;
 {% endhighlight %}
 {% endtabs %}
 
@@ -221,9 +221,9 @@ Clear the selected items from the diagram using the ['ClearSelection'](https://h
 
 {% tabs %}
 {% highlight c# %} 
-  SfDiagram diagram = new SfDiagram(); 
-  diagram. ClearSelection();  
-  this.Content = diagram;
+SfDiagram diagram = new SfDiagram(); 
+diagram. ClearSelection();  
+this.Content = diagram;
 {% endhighlight %}
 {% endtabs %}
 
@@ -235,15 +235,15 @@ The ['Redo'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.
 
 {% tabs %}
 {% highlight c# %} 
-  //To perform the Undo action in the Diagram
-  SfDiagram diagram = new SfDiagram(); 
-  diagram.Undo(); 
-  this.Content = diagram;
+//To perform the Undo action in the Diagram
+SfDiagram diagram = new SfDiagram(); 
+diagram.Undo(); 
+this.Content = diagram;
 
-  //To Perform the Redo action in the Diagram
-  SfDiagram diagram = new SfDiagram(); 
-  diagram.Redo(); 
-  this.Content = diagram;
+//To Perform the Redo action in the Diagram
+SfDiagram diagram = new SfDiagram(); 
+diagram.Redo(); 
+this.Content = diagram;
 {% endhighlight %}
 {% endtabs %}
 
@@ -254,15 +254,15 @@ The ['SendToBack'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.X
 
 {% tabs %}
 {% highlight c# %} 
-  //Bring it to the front
-  SfDiagram diagram = new SfDiagram(); 
-  diagram.BringToFront(); 
-  this.Content = diagram;
+//Bring it to the front
+SfDiagram diagram = new SfDiagram(); 
+diagram.BringToFront(); 
+this.Content = diagram;
 
-  // Send it To the Back
-  SfDiagram diagram = new SfDiagram(); 
-  diagram.SendToBack();  
-  this.Content = diagram;
+// Send it To the Back
+SfDiagram diagram = new SfDiagram(); 
+diagram.SendToBack();  
+this.Content = diagram;
 {% endhighlight %}
 {% endtabs %}
 
@@ -275,15 +275,15 @@ The ['SendBackward'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram
 
 {% tabs %}
 {% highlight c# %} 
-  // Brings it Forward
-  SfDiagram diagram = new SfDiagram(); 
-  diagram.BringForward();
-  this.Content = diagram;
+// Brings it Forward
+SfDiagram diagram = new SfDiagram(); 
+diagram.BringForward();
+this.Content = diagram;
 
-  // Send it Backward
-  SfDiagram diagram = new SfDiagram(); 
-  diagram.SendBackward(); 
-  this.Content = diagram;
+// Send it Backward
+SfDiagram diagram = new SfDiagram(); 
+diagram.SendBackward(); 
+this.Content = diagram;
 {% endhighlight %}
 {% endtabs %}
 

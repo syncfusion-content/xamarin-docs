@@ -126,4 +126,24 @@ Node node = new Node() {EnableDrag = false;, Width = 50, Height = 50, OffsetX = 
 {% endhighlight %}
 {% endtabs %}
 
+## RotateEnd
+The ['RotateEndEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.RotateEndEventArgs.html) will be triggered while rotating the node. The following code example explains how to create a RotateEndEvent trigger. 
+
+{% tabs %}
+{% highlight xml %}
+<diagram:SfDiagram x:Name="diagram" VerticalOptions="FillAndExpand" RotateEnd="Diagram_RotateEnd" />
+{% endhighlight %}
+
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
+diagram.RotateEnd += Diagram_RotateEnd; 
+this.Content = diagram;
+
+private void Diagram_RotateEnd(object sender, RotateEndEventArgs args)
+{
+    Node node = (Node)args.Item;
+}
+{% endhighlight %}
+{% endtabs %}
+
 N> You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

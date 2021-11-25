@@ -210,6 +210,7 @@ The ['TextChangedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDia
 {% highlight xml %}
 <diagram:SfDiagram x:Name="diagram" VerticalOptions="FillAndExpand" TextChanged="Diagram_TextChanged"/>
 {% endhighlight %}
+
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
 diagram.TextChanged += Diagram_TextChanged; 
@@ -224,10 +225,12 @@ private void Diagram_TextChanged(object sender, Syncfusion.SfDiagram.XForms.Text
 
 ## OnTextEdit
 The ['OnTextEditEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.OnTextEditEventArgs.html) will be triggered when adding the annotation content of the node or connector. The following code example explains how to create a OnTextEditEvent trigger. 
+
 {% tabs %}
 {% highlight xml %}
 <diagram:SfDiagram x:Name="diagram" VerticalOptions="FillAndExpand" OnTextEdit="Diagram_OnTextEdit"/>
 {% endhighlight %}
+
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
 diagram.OnTextEdit += Diagram_OnTextEdit; 

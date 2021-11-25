@@ -193,7 +193,8 @@ Supports customizing the zoom levels. You can set minimum zoom level value to 0.
 {% endtabs %}
 
 ## Clear
-Remove all the items from the diagram page using the ['Clear'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_Clear) method. To remove all the items in the diagram, use the following code snippet. 
+Remove all the items from the diagram page using the ['Clear'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_Clear) method. To remove all the items in the diagram, use the following code snippet.
+
 {% tabs %}
 {% highlight c# %} 
   SfDiagram diagram = new SfDiagram(); 
@@ -203,7 +204,8 @@ Remove all the items from the diagram page using the ['Clear'](https://help.sync
 {% endtabs %}
 
 ## Select
-Select the node or connector items from the diagram using the ['Select'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_Select_Syncfusion_SfDiagram_XForms_DiagramBaseItem_) method. To select the items in the diagram, use the following code snippet.  
+Select the node or connector items from the diagram using the ['Select'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_Select_Syncfusion_SfDiagram_XForms_DiagramBaseItem_) method. To select the items in the diagram, use the following code snippet.
+
 {% tabs %}
 {% highlight c# %} 
   SfDiagram diagram = new SfDiagram(); 
@@ -215,7 +217,8 @@ Select the node or connector items from the diagram using the ['Select'](https:/
 {% endtabs %}
 
 ## ClearSelection
-Clear the selected items from the diagram using the ['ClearSelection'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_ClearSelection) method. To clear the selected items in the diagram, use the following code snippet.  
+Clear the selected items from the diagram using the ['ClearSelection'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_ClearSelection) method. To clear the selected items in the diagram, use the following code snippet. 
+
 {% tabs %}
 {% highlight c# %} 
   SfDiagram diagram = new SfDiagram(); 
@@ -228,7 +231,8 @@ Clear the selected items from the diagram using the ['ClearSelection'](https://h
 The diagram tracks the history of actions that are performed after initializing the diagram and provides support to reverse and restore those changes.  
 The ['Undo'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_Undo) function is performed to reverse the action of an earlier action.
 
-The ['Redo'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_Redo) function is restores any actions that have been previously undone using an undo
+The ['Redo'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_Redo) function is restores any actions that have been previously undone using an undo.
+
 {% tabs %}
 {% highlight c# %} 
   //To perform the Undo action in the Diagram
@@ -247,6 +251,7 @@ The ['Redo'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.
 The ['BringToFront'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_BringToFront) is used to visually move the selected elements to the front of all other overlapped elements. 
 
 The ['SendToBack'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SendToBack) visually moves the selected elements behind all other overlapped elements. 
+
 {% tabs %}
 {% highlight c# %} 
   //Bring it to the front
@@ -267,6 +272,7 @@ The ['SendToBack'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.X
 The ['BringForward'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_BringForward) visually moves the selected element over the nearest overlapping element. 
 
 The ['SendBackward'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SendBackward) visually moves the selected elements behind the underlying element. 
+
 {% tabs %}
 {% highlight c# %} 
   // Brings it Forward
@@ -290,6 +296,7 @@ The ['DiagramClickedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 {% highlight xml %}
 <diagram:SfDiagram x:Name="diagram" VerticalOptions="FillAndExpand" DiagramClicked="Diagram_DiagramClicked"/>
 {% endhighlight %}
+
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
 diagram.DiagramClicked += Diagram_DiagramClicked; 
@@ -309,6 +316,7 @@ The ['ItemAddedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagr
 {% highlight xml %}
 <diagram:SfDiagram x:Name="diagram" VerticalOptions="FillAndExpand" ItemAdded="Diagram_ItemAdded"/>
 {% endhighlight %}
+
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
 diagram.ItemAdded += Diagram_ItemAdded;
@@ -328,6 +336,7 @@ The ['DragEndEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram
 {% highlight xml %}
 <diagram:SfDiagram x:Name="diagram" VerticalOptions="FillAndExpand" DragEnd="Diagram_DragEnd"/>
 {% endhighlight %}
+
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
 diagram.DragEnd += Diagram_DragEnd;
@@ -347,6 +356,7 @@ The ['DiagramObjectDeletedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfus
 {% highlight xml %}
 <diagram:SfDiagram x:Name="diagram" VerticalOptions="FillAndExpand" DiagramObjectDeleted="Diagram_DiagramObjectDeleted"/>
 {% endhighlight %}
+
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
 diagram.DiagramObjectDeleted += Diagram_DiagramObjectDeleted; 
@@ -366,6 +376,7 @@ The ['ResizeEndEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagr
 {% highlight xml %}
 <diagram:SfDiagram x:Name="diagram" VerticalOptions="FillAndExpand" ResizeEnd="Diagram_ResizeEnd"/>
 {% endhighlight %}
+
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
 diagram.ResizeEnd += Diagram_ResizeEnd;
@@ -380,10 +391,12 @@ private void Diagram_ResizeEnd(object sender, ResizeEndEventArgs args)
 
 ## ItemLongPressed
 The ['ItemLongPressedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.ItemLongPressedEventArgs.html) will be triggered when long pressing the node or connector items. The following code example explains how to create a ItemLongPressedEvent trigger.
+
 {% tabs %}
 {% highlight xml %}
 <diagram:SfDiagram x:Name="diagram" VerticalOptions="FillAndExpand" ItemLongPressed="Diagram_ItemLongPressed" />
 {% endhighlight %}
+
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
 diagram.ItemLongPressed += Diagram_ItemLongPressed;

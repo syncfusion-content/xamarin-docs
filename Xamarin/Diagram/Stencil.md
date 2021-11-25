@@ -306,7 +306,8 @@ stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = Connectorscollection
 diagram.Stencil=stencil;
 {% endhighlight %}
 {% endtabs %}
-![Category heading text in Xamarin.Forms diagram](Stencil_images/Stencil_img3.jpeg)
+
+![Category heading text in Xamarin.Forms diagram](Stencil_images/Stencilimage.png)
 
 N> You can refer to the [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations. You can also explore the [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.
 
@@ -471,6 +472,7 @@ The ['DiagramObjectDroppedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfus
 {% highlight xml %}
 <diagram:SfDiagram x:Name="diagram" VerticalOptions="FillAndExpand" DiagramObjectDropped="Diagram_DiagramObjectDropped" />
 {% endhighlight %}
+
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
 diagram.DiagramObjectDropped += Diagram_DiagramObjectDropped;
@@ -490,6 +492,7 @@ The ['SymbolGroupExpandCollapseEvent'](https://help.syncfusion.com/cr/xamarin/Sy
 {% highlight xml %}
 <diagram:SfDiagram x:Name="diagram" VerticalOptions="FillAndExpand" SymbolGroupExpandCollapse="Diagram_SymbolGroupExpandCollapse" />
 {% endhighlight %}
+
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
 diagram.SymbolGroupExpandCollapse += Diagram_SymbolGroupExpandCollapse; 

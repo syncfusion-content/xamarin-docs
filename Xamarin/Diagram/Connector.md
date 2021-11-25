@@ -317,6 +317,7 @@ The ['ConnectorClickedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.
 {% highlight xml %}
 <diagram:SfDiagram x:Name="diagram" VerticalOptions="FillAndExpand" ConnectorClicked="Diagram_ConnectorClicked"/>
 {% endhighlight %}
+
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
 diagram.ConnectorClicked += Diagram_ConnectorClicked; 

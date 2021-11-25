@@ -127,15 +127,21 @@ Node node = new Node() {EnableDrag = false;, Width = 50, Height = 50, OffsetX = 
 {% endtabs %}
 
 ## RotateEnd
-The ['RotateEndEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.RotateEndEventArgs.html) will be triggered while rotating the node. The following code example explains how to create a RotateEndEvent trigger.  
+The ['RotateEndEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.RotateEndEventArgs.html) will be triggered while rotating the node. The following code example explains how to create a RotateEndEvent trigger. 
+ 
 {% tabs %}
+{% highlight xml %}
+<diagram:SfDiagram x:Name="diagram" VerticalOptions="FillAndExpand" RotateEnd="Diagram_RotateEnd" />
+{% endhighlight %}
 {% highlight c# %}
+SfDiagram diagram = new SfDiagram();
 diagram.RotateEnd += Diagram_RotateEnd; 
+this.Content = diagram;
 
-    private void Diagram_RotateEnd(object sender, RotateEndEventArgs args)
-      {
-          Node node = (Node)args.Item;
-      }
+private void Diagram_RotateEnd(object sender, RotateEndEventArgs args)
+{
+    Node node = (Node)args.Item;
+}
 {% endhighlight %}
 {% endtabs %}
 

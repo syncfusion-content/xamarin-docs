@@ -205,27 +205,38 @@ The following output is displayed as result of the above code example.
 
 ## TextChanged
 The ['TextChangedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.TextChangedEventArgs.html) will be triggered when you change the annotation content of the node or connector. The following code example explains how to create a TextChangedEvent trigger. 
+
 {% tabs %}
+{% highlight xml %}
+<diagram:SfDiagram x:Name="diagram" VerticalOptions="FillAndExpand" TextChanged="Diagram_TextChanged"/>
+{% endhighlight %}
 {% highlight c# %}
+SfDiagram diagram = new SfDiagram();
 diagram.TextChanged += Diagram_TextChanged; 
+this.Content = diagram;
 
 private void Diagram_TextChanged(object sender, Syncfusion.SfDiagram.XForms.TextChangedEventArgs args)
-        {
-            var content = args.Item;
-        }
+{
+    var content = args.Item;
+}
 {% endhighlight %}
 {% endtabs %}
 
 ## OnTextEdit
 The ['OnTextEditEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.OnTextEditEventArgs.html) will be triggered when adding the annotation content of the node or connector. The following code example explains how to create a OnTextEditEvent trigger. 
 {% tabs %}
+{% highlight xml %}
+<diagram:SfDiagram x:Name="diagram" VerticalOptions="FillAndExpand" OnTextEdit="Diagram_OnTextEdit"/>
+{% endhighlight %}
 {% highlight c# %}
+SfDiagram diagram = new SfDiagram();
 diagram.OnTextEdit += Diagram_OnTextEdit; 
+this.Content = diagram;
 
 private void Diagram_OnTextEdit(object sender, OnTextEditEventArgs args)
-        {
-            var content = args.Item;
-        }
+{
+    var content = args.Item;
+}
 {% endhighlight %}
 {% endtabs %}
 

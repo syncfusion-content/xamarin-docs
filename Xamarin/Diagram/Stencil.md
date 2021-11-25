@@ -466,26 +466,38 @@ this.Content = grid;
 
 ## DiagramObjectDropped
 The ['DiagramObjectDroppedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.DiagramObjectDroppedEventArgs.html) will be triggered when the node or connector is dragged and dropped from the ['Stencil'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.Stencil.html) to the [diagram](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.html) page. The following code example explains how to create a DiagramObjectDroppedEvent trigger.  
+
 {% tabs %}
+{% highlight xml %}
+<diagram:SfDiagram x:Name="diagram" VerticalOptions="FillAndExpand" DiagramObjectDropped="Diagram_DiagramObjectDropped" />
+{% endhighlight %}
 {% highlight c# %}
-diagram.DiagramObjectDropped += Diagram_DiagramObjectDropped; 
+SfDiagram diagram = new SfDiagram();
+diagram.DiagramObjectDropped += Diagram_DiagramObjectDropped;
+this.Content = diagram;
 
 private void Diagram_DiagramObjectDropped(object sender, Syncfusion.SfDiagram.XForms.DiagramObjectDroppedEventArgs args)
-        {
-            Node node = (Node)args.Item;
-        }
+{
+    Node node = (Node)args.Item;
+}
 {% endhighlight %}
 {% endtabs %} 
 
 ## SymbolGroupExpandCollapse
-The ['SymbolGroupExpandCollapseEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SymbolGroupExpandCollapseEventArgs.html) will be triggered when the Symbol Group is expand or collapse in ['Stencil'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.Stencil.html).The following code example explains how to create a SymbolGroupExpandCollapseEvent trigger.  
+The ['SymbolGroupExpandCollapseEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SymbolGroupExpandCollapseEventArgs.html) will be triggered when the Symbol Group is expand or collapse in ['Stencil'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.Stencil.html).The following code example explains how to create a SymbolGroupExpandCollapseEvent trigger.
+
 {% tabs %}
+{% highlight xml %}
+<diagram:SfDiagram x:Name="diagram" VerticalOptions="FillAndExpand" SymbolGroupExpandCollapse="Diagram_SymbolGroupExpandCollapse" />
+{% endhighlight %}
 {% highlight c# %}
+SfDiagram diagram = new SfDiagram();
 diagram.SymbolGroupExpandCollapse += Diagram_SymbolGroupExpandCollapse; 
+this.Content = diagram;
 
 private void Diagram_SymbolGroupExpandCollapse(object sender, SymbolGroupExpandCollapseEventArgs args)
-        {
-            SymbolGroup symbolgroup = args.SymbolGroup;
-        }
+{
+    SymbolGroup symbolgroup = args.SymbolGroup;
+}
 {% endhighlight %}
 {% endtabs %} 

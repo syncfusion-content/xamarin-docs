@@ -151,6 +151,105 @@ this.Content = richtexteditor;
 
 {% endtabs %}
 
+## ToggleBold
+
+Rich Text Editor provides ['ToggleBold'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_ToggleBold) support, which allows the users to toggle the text in bold format. The following code example explains how to set ToggleBold mode in Rich Text Editor.
+
+{% tabs %}
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.ToggleBold();
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}
+
+## ToggleBulletList
+
+Rich Text Editor provides ['ToggleBulletList'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_ToggleBulletList) support, which allows the users to toggle the text in bullet format. The following code example explains how to set ToggleBulletList mode in Rich Text Editor.
+
+{% tabs %}
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.ToggleBulletList();
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}
+
+## ToggleItalic
+
+Rich Text Editor provides ['ToggleItalic'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_ToggleItalic) support, which allows the users to toggle the text in italic format. The following code example explains how to set ToggleItalic mode in Rich Text Editor.
+
+{% tabs %}
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.ToggleItalic();
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}
+
+## ToggleNumberedList
+
+Rich Text Editor provides ['ToggleNumberedList'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_ToggleNumberedList) support, which allows the users to toggle the text in numbered list format. The following code example explains how to set ToggleNumberedList mode in Rich Text Editor.
+
+{% tabs %}
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.ToggleNumberedList();
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}
+
+## ToggleSubScript
+
+Rich Text Editor provides ['ToggleSubScript'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_ToggleSubScript) support, which allows the users to toggle the selected text as sub script format. The following code example explains how to set ToggleSubScript mode in Rich Text Editor.
+
+{% tabs %}
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.ToggleSubScript();
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}
+
+## ToggleSuperScript
+
+Rich Text Editor provides ['ToggleSuperScript'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_ToggleSuperScript) support, which allows the users to toggle the selected text as super script format. The following code example explains how to set ToggleSuperScript mode in Rich Text Editor.
+
+{% tabs %}
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.ToggleSuperScript();
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}
+
+## ToggleUnderline
+
+Rich Text Editor provides ['ToggleUnderline'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_ToggleUnderline) support, which allows the users to toggle the text in underline format. The following code example explains how to set ToggleUnderline mode in Rich Text Editor.
+
+{% tabs %}
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.ToggleUnderline();
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}
+
+
 ## ToolbarPosition
 
 Rich Text Editor provides the support to switch the position of a toolbar to the top or bottom of the screen. The following code example explains how to switch the toolbar position in the Rich Text Editor.

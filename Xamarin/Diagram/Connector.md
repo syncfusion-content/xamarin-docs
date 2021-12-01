@@ -310,4 +310,24 @@ diagram.AddConnector(connector1);
 {% endtabs %}
 ![Decorator appearance in Xamarin.Forms diagram](Connector_images/Connector_img9.jpeg)
 
+## ConnectorClicked 
+The ['ConnectorClickedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.ConnectorClickedEventArgs.html) will be triggered when you click you the connector in the diagram. The following code example explains how to create a ConnectorClickedEvent trigger. 
+
+{% tabs %}
+{% highlight xml %}
+<diagram:SfDiagram x:Name="diagram" VerticalOptions="FillAndExpand" ConnectorClicked="Diagram_ConnectorClicked"/>
+{% endhighlight %}
+
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
+diagram.ConnectorClicked += Diagram_ConnectorClicked; 
+this.Content = diagram;
+
+private void Diagram_ConnectorClicked(object sender, ConnectorClickedEventArgs args)
+{
+    Connector connector = (Connector)args.Item;  
+}
+{% endhighlight %}
+{% endtabs %}
+
 N> You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

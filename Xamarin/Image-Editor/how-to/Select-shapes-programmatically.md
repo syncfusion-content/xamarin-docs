@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to select annotations programmatically | Syncfusion
-description: Learn here about how to select the annotations (Text, Shapes, Paths, Custom views)  added in the image editor programmatically.
+description: Learn here about how to select the annotations (Text, Shapes, Paths, Custom views) added in the image editor programmatically.
 platform: xamarin
 control: SfImageEditor
 documentation : ug
@@ -9,7 +9,7 @@ documentation : ug
 
 # Select annotations programmatically in Image Editor (SfImageEditor)
 
-In ImageEditor, the Unique ID has been generated for all annotations (Text, Shapes, Paths, CustomViews) while adding it to the image editor and we can get this Unique ID from the ItemsSelected event arguments or from the serialized JSON. By passing this Unique ID to the SelectShape method of SfImageEditor, we can select the particular annotation programmatically.
+In ImageEditor, the Unique ID is generated for all annotations (Text, Shapes, Paths, and CustomViews) when they are added to the image editor and you can get this Unique ID from the ItemsSelected event arguments or from the serialized JSON. By passing this Unique ID to the `SelectShape` method of SfImageEditor, you can select the particular annotation programmatically.
 
 The following code sample demonstrates this.
 
@@ -32,7 +32,6 @@ The following code sample demonstrates this.
                 HorizontalOptions="FillAndExpand"/>
     </StackLayout>
 </Grid>
-
 
 {% endhighlight %}
 

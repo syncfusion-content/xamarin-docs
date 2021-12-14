@@ -9,7 +9,7 @@ documentation : ug
 
 # Clear all annotations (Text, Shapes, Paths, etc) from Image Editor
 
-By invoking the ClearAnnotations method of SfImageEditor, we can clear all the annotations (Text, Shapes, Path, CustomView) added in the image editor without resetting the other edits (Rotation, Flip, Crop, Effects, etc).
+By invoking the `ClearAnnotations` method of SfImageEditor, you can clear all the annotations (Text, Shapes, Path, and CustomView) added in the image editor without resetting the other edits (Rotation, Flip, Crop, Effects, etc).
 
 The following code sample demonstrates this.
 

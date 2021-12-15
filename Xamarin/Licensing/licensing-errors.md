@@ -15,7 +15,7 @@ Licensing error popup is displayed with various messages under different circums
 
 The following error message will be shown if a Syncfusion license key has not been registered in your application. 
 
-**Error message:** This application was built using a trial version of Syncfusion Essential Studio. Please include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Please refer to this help topic(https://help.syncfusion.com/es/licensing/) for more information.
+**Error message:** This application was built using a trial version of Syncfusion Essential Studio. Please include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Please refer to this [help topic](https://help.syncfusion.com/xamarin/licensing/licensing-errors#license-key-not-registered) for more information.
 
 **Solution:** Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform.
 

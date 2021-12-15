@@ -835,6 +835,101 @@ public class Address
 
 ![Loading complex type property values for drop down editor in Xamarin.Forms DataForm](SfDataForm_images/ComplexPropertyComboBox.jpg)
 
+### Enable the MultiSelectMode in Custom DataFormDropDown editor
+
+MultiSelectMode can be achieved in the DataFormDropDown editor with the help of the Custom DataFromDropDown editor class. Inside the custom class, override the comboBox MultiSelectMode. For the DropDown editor, this property is of type string or int, but while MultiSelection allows us to select more items from a list of items, these items cannot be stored in a single string property. To overcome this scenario, we should override the OnCommitValue, OnUpdateValue, and OnValidateValue methods and update the value manually.
+
+{% tabs %}
+{% highlight c# %}
+public class CustomDropDownEditor : DataFormDropDownEditor
+{
+    private Address Address;
+    SfDataForm sfDataForm;
+    public CustomDropDownEditor(SfDataForm dataForm) : base(dataForm)
+    {
+        this.sfDataForm = dataForm;
+        this.Address = this.DataForm.DataObject as Address;
+    }
+    protected override void OnInitializeView(DataFormItem dataFormItem, SfComboBox view)
+    {
+        base.OnInitializeView(dataFormItem, view);
+        view.MultiSelectMode = MultiSelectMode.Token;
+        view.TokensWrapMode = TokensWrapMode.Wrap;
+  }
+ 
+    protected override void OnCommitValue(SfComboBox view)
+    {
+        if (view.MultiSelectMode == MultiSelectMode.None)
+        {
+            // Use existing method for single selection.
+            base.OnCommitValue(view);
+        }
+        else
+        {
+            // Multi Selection needs to be updated with all selected items.
+            if (view != null && view.SelectedItem != null && view.SelectedItem is IList)
+            {
+                string country = string.Empty;
+                foreach (TestData item in (IList)view.SelectedItem)
+                {
+                    if (country.Contains(item.label))
+                    {
+                        continue;
+                    }
+ 
+                    country = string.IsNullOrEmpty(country) ? item.label : country + "," + item.label;
+                }
+ 
+                this.Address.Country = country;
+            }
+        }
+    }
+ 
+    protected override void OnUpdateValue(DataFormItem dataFormItem, SfComboBox view)
+    {
+        if (view.MultiSelectMode == MultiSelectMode.None)
+        {
+            base.OnUpdateValue(dataFormItem, view);
+        }
+        else
+        {
+            var list = (dataFormItem as DataFormDropDownItem).ItemsSource;
+            if (list != null)
+            {
+                view.DataSource = list.OfType<object>().ToList();
+            }
+            else
+            {
+                view.DataSource = null;
+            }
+        }
+    }
+ 
+    protected override bool OnValidateValue(SfComboBox view)
+    {
+        if (view.MultiSelectMode == MultiSelectMode.None)
+        {
+            return base.OnValidateValue(view);
+        }
+        else
+        {
+            this.OnCommitValue(view);
+ 
+            // Here country is multi selection property.
+            if (string.IsNullOrEmpty(this.Address.Country))
+            {
+                return false;
+            }
+ 
+            return true;
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can download the entire source code [here] (https://github.com/SyncfusionExamples/multi-select-drop-down-editor-in-xamarin.forms-dataform)
+
 ### See also
 
 [How to make editable drop down in Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11272/)                                                                                                                                                                                                                                                                                                                                                                           

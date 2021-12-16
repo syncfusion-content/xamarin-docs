@@ -4,7 +4,7 @@ title: How to select annotations programmatically | Syncfusion
 description: Learn here about how to select the annotations (Text, Shapes, Paths, Custom views) added in the image editor programmatically.
 platform: xamarin
 control: SfImageEditor
-documentation : ug
+documentation: ug
 ---
 
 # Select annotations programmatically in Image Editor (SfImageEditor)

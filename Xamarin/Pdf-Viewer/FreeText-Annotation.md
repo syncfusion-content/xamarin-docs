@@ -410,9 +410,9 @@ private void PdfViewer_FreeTextAnnotationRemoved(object sender, FreeTextAnnotati
 
 ### Render sticky notes annotation as free text annotation
 
-To avoid data loss, the sticky notes annotation will be rendered as free text annotation while importing or loading a document that has it. Though they are rendered as free text annotations in our `SfPdfViewer`, they will be preserved as sticky notes annotation on save and export. Only the change of text attribute will be preserved on save and export.
+To avoid data loss, the sticky notes annotation will be rendered as free-text annotation while importing or loading a document. Though the sticky notes annotations are rendered as free text annotations in the `SfPdfViewer`, they will be preserved as sticky notes annotation while saving and exporting. Only the change of text attribute will be preserved on save and export.
 
-N>The support to add, render, and edit sticky notes annotation as it is through UI or programmatically are not provided yet.
+N>The support to add, render, and edit sticky notes annotation through UI or programmatically is not provided yet.
 
 ## How to enable or disable free text annotation interaction?
 

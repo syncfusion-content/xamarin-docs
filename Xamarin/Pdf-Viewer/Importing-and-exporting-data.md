@@ -67,21 +67,21 @@ The `ExportAnnotations` method exports the current annotations added to the docu
 {% tabs %}
 {% highlight c# %}
 
-//Export annotations to "fdf" data format
+//Export annotations to "FDF" data format
 Stream fdfStreamToSave = pdfViewerControl.ExportAnnotations(AnnotationDataFormat.Fdf);
 
 {% endhighlight %}
 {% endtabs %}
 
-Using the `ExportAnnotations` overload method, the selective list of annotations can also be exported in the specified file format. The annotations list that needs to be exported and the data format should be passed as method arguments. The following code example illustrates the exporting of the list of annotations present only in the first page.
+A selective list of annotations can also be exported in the specified file format using the `ExportAnnotations` overload method . The annotations list needs to be exported, and the data format should be passed as method arguments. The following code example explains exporting the list of annotations present only on the first page.
 
 {% tabs %}
 {% highlight c# %}
 
-//Get the list of annotations present in the first page
+//Get the list of annotations present on the first page
 List<IAnnotation> firstPageAnnotations = pdfViewerControl.Annotations.Where(annotation => annotation.PageNumber == 1).ToList();
 
-//Export annotations to "fdf" data format
+//Export annotations to "FDF" data format
 Stream fdfStreamToSave = pdfViewerControl.ExportAnnotations(firstPageAnnotations, AnnotationDataFormat.Fdf);
 
 {% endhighlight %}
@@ -89,18 +89,18 @@ Stream fdfStreamToSave = pdfViewerControl.ExportAnnotations(firstPageAnnotations
 
 ### Export annotations asynchronously
 
-The PDF Viewer allows you to export the current annotations added to the document into a stream asynchronously using the [`ExportAnnotationsAsync`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_ExportAnnotationsAsync_Syncfusion_Pdf_Parsing_AnnotationDataFormat_System_Threading_CancellationToken_) method. You can also cancel the asynchronous annotation exporting when it is in progress.
+The PDF Viewer allows you to export the current annotations added to a document into a stream asynchronously using the [`ExportAnnotationsAsync`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_ExportAnnotationsAsync_Syncfusion_Pdf_Parsing_AnnotationDataFormat_System_Threading_CancellationToken_) method. You can also cancel the asynchronous annotation exporting when it is in progress.
 
 {% tabs %}
 {% highlight c# %}
 
-//Export the annotations asynchronously to the "fdf" data format 
+//Export the annotations asynchronously to the "FDF" data format 
 Stream fdfStreamToSave = await pdfViewerControl.ExportAnnotationsAsync(AnnotationDataFormat.Fdf, cancellationTokenSource);
 
 {% endhighlight %}
 {% endtabs %}
 
-Using the `ExportAnnotationsAsync` overload method, the selective list of annotations can also be exported asynchronously in the specified file format. The annotations list that needs to be exported and the data format should be passed as method arguments. The following code example illustrates the exporting of the list of annotations asynchronously present only in the first page.
+A selective list of annotations can also be exported asynchronously in the specified file format using the `ExportAnnotationsAsync` overload method. The annotations list needs to be exported, and the data format should be passed as method arguments. The following code example explains exporting the list of annotations asynchronously present only on the first page.
 
 {% tabs %}
 {% highlight c# %}
@@ -108,7 +108,7 @@ Using the `ExportAnnotationsAsync` overload method, the selective list of annota
 //Get the list of annotations present in the first page
 List<IAnnotation> firstPageAnnotations = pdfViewerControl.Annotations.Where(annotation => annotation.PageNumber == 1).ToList();
 
-//Export the annotations asynchronously to the "fdf" data format 
+//Export the annotations asynchronously to the "FDF" data format 
 Stream fdfStreamToSave = await pdfViewerControl.ExportAnnotationsAsync(firstPageAnnotations, AnnotationDataFormat.Fdf, cancellationTokenSource);
 
 {% endhighlight %}

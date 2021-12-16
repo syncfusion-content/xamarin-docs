@@ -175,3 +175,35 @@ stepProgress.Children.Add(step4);
 {% endtabs %} 
 
 ![Different status in StepProgressBar control](overview_images/style.png)
+
+### StatusChanged
+The ['StatusChangedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.SfStepProgressBar.html#Syncfusion_XForms_ProgressBar_SfStepProgressBar_StatusChanged) will be triggered when changing the [StepView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.StepView.html) status of [StepProgressBar](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.SfStepProgressBar.html). 
+
+{% tabs %}
+{% highlight c# %}
+SfStepProgressBar stepProgress = new SfStepProgressBar();
+stepProgress.StatusChanged += Step_StatusChanged; 
+this.Content = stepProgress;  
+
+private void Step_StatusChanged(object sender, Syncfusion.XForms.ProgressBar.StatusChangedEventArgs e)
+{
+    var status = e.NewStatus;
+}
+{% endhighlight %}
+{% endtabs %}
+
+### StepTapped
+The ['StepTappedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.SfStepProgressBar.html#Syncfusion_XForms_ProgressBar_SfStepProgressBar_StepTapped) will be triggered when marker in [StepView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.StepView.html) was tapped in [StepProgressBar](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.SfStepProgressBar.html).  
+
+{% tabs %}
+{% highlight c# %}
+SfStepProgressBar stepProgress = new SfStepProgressBar();
+stepProgress.StepTapped += Step_StepTapped;  
+this.Content = stepProgress; 
+
+private void Step_StepTapped(object sender, Syncfusion.XForms.ProgressBar.StepTappedEventArgs e)
+{
+    var stepindex = e.Index;
+}
+{% endhighlight %}
+{% endtabs %}

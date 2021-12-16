@@ -29,7 +29,7 @@ To install the required NuGet for the SfDataGrid control in the application, con
 
 Refer to the following KB to configure the NuGet packages of the Syncfusion components:
 
-[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
+[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing)
 
 The following NuGet package should be installed to use the SfDataGrid control in the application.
 
@@ -169,7 +169,7 @@ public MainWindow()
 
 ### Release mode issue in UWP platform
 
-The known Framework issue in UWP platform is the custom controls will not render when deployed the application in `Release Mode` or [.Net Native compilation](https://docs.microsoft.com/en-US/dotnet/framework/net-native/). It can be resolved by initializing the SfDataGrid assemblies in `App.xaml.cs` in UWP project as in the following code snippet.
+The known Framework issue in UWP platform is the custom controls will not render when deployed the application in `Release Mode` or [.Net Native compilation](https://docs.microsoft.com/en-us/windows/uwp/dotnet-native/). It can be resolved by initializing the SfDataGrid assemblies in `App.xaml.cs` in UWP project as in the following code snippet.
 
 {% highlight c# %}
 // In App.xaml.cs

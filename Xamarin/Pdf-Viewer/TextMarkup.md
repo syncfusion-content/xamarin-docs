@@ -154,6 +154,12 @@ pdfViewerControl.AddAnnotation(textMarkupAnnotation);
 {% endhighlight %}
 {% endtabs %}
 
+### Render squiggly annotation as an underline annotation
+
+To avoid data loss, the squiggly annotation will be rendered as an underline annotation while importing or loading a document. Though the squiggly annotation is rendered as underline annotations in the `SfPdfViewer`, it will be preserved as a squiggly annotation while saving and exporting. Attributes changes like color, the opacity will also be preserved on save and export.
+
+N>The support to add, render, and edit squiggly annotation through UI or programmatically is not provided yet.
+
 ## Strikethrough a text
 
 The two ways to strikethrough a text in the PDF document are: 

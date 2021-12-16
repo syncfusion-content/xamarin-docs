@@ -10,7 +10,7 @@ documentation: ug
 
 # Installation using Offline Installer
 
-You can refer to the [**Download**](https://help.syncfusion.com/xamarin/installation-and-upgrade/download) section to learn how to get the Xamarin trial or licensed installer.
+You can refer to the [**Download**](https://help.syncfusion.com/xamarin/installation/download) section to learn how to get the Xamarin trial or licensed installer.
 
 ## Installing with UI   
 

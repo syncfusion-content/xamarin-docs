@@ -9,7 +9,7 @@ documentation: ug
 
 # Select annotations programmatically in Image Editor (SfImageEditor)
 
-In ImageEditor, the Unique ID is generated for all annotations (Text, Shapes, Paths, and CustomViews) when they are added to the image editor and you can get this Unique ID from the ItemsSelected event arguments or from the serialized JSON. By passing this Unique ID to the `SelectShape` method of SfImageEditor, you can select the particular annotation programmatically.
+In ImageEditor, the Unique ID is generated for all annotations (Text, Shapes, Paths, and CustomViews) when they are added to the image editor and you can get this Unique ID from the ItemsSelected event arguments or from the serialized JSON. By passing this Unique ID to the [`SelectShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_SelectShape_System_Int32_) method of SfImageEditor, you can select the particular annotation programmatically.
 
 The following code sample demonstrates this.
 

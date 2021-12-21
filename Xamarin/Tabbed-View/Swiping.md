@@ -144,7 +144,7 @@ namespace TabView
 
 ## SwipingThreshold
 
-By setting the Swipe threshold you can set how far swipe before it is considered a swipe.
+By setting the [`Swipe threshold`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_SwipingThreshold) you can set how far swipe before it is considered a swipe.
 
 {% tabs %}
 
@@ -166,7 +166,7 @@ By setting the Swipe threshold you can set how far swipe before it is considered
 
 {% endtabs %}
 
-N> This swiping API value should be considered only for left to right swiping.
+N> This SwipingThreshold value should be considered only for left to right swiping.
 
 ## AnimationDuration
 

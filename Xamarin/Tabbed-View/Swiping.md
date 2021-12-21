@@ -1,15 +1,19 @@
 ---
 layout: post
-title: Handling of Overflow Tabs in Xamarin Tabbed View control | Syncfusion
-description: Learn here all about Handling of Overflow Tabs support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
+title: Swiping in Xamarin Tabbed View | Syncfusion
+description: Learn here all about swiping support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
 platform: Xamarin
 control: TabView
 documentation: ug
 ---
 
-# Handling of Overflow Tabs in Xamarin Tabbed View (SfTabView)
+# Swiping in Xamarin Tabbed View (SfTabView)
 
-When you have large number of tabs, by default, the scroller will be enabled to view the overflow of headers, if needed. It can be selected from the pop-up by setting the `OverflowMode` property of `SfTabView` to `DropDown`.
+By default, both the vertical swiping for list view and horizontal swiping for tab view will work.
+
+## Enable swiping
+
+Swiping can be customized by using the `EnableSwiping` property of SfTabView. By default, EnableSwiping is set to true.To restrict the user interaction, the `EnableSwiping` property of `SfTabView` can be set to `false`.
 
 {% tabs %}
 
@@ -20,7 +24,10 @@ When you have large number of tabs, by default, the scroller will be enabled to 
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
              x:Class="TabView.TabView">
     <ContentPage.Content>
-        <tabView:SfTabView OverflowMode="DropDown" VisibleHeaderCount="3" BackgroundColor="Aqua">
+         <tabView:SfTabView OverflowMode="DropDown"
+                            EnableSwiping="false" 
+                            VisibleHeaderCount="3" 
+                            BackgroundColor="Aqua">
             <tabView:SfTabItem Title="Call">
                 <tabView:SfTabItem.Content>
                     <StackLayout>
@@ -64,143 +71,6 @@ When you have large number of tabs, by default, the scroller will be enabled to 
 
 {% highlight C# %}
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Syncfusion.XForms.TabView;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace TabView
-{
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class TabView : ContentPage
-	{
-        SfTabView tabView;
-		public TabView ()
-		{
-			InitializeComponent ();
-            tabView = new SfTabView();
-            var allContactsGrid = new Grid { BackgroundColor = Color.Red };
-            var favoritesGrid = new Grid { BackgroundColor = Color.Green };
-            var contactsGrid = new Grid { BackgroundColor = Color.Blue };
-            var tabItems = new TabItemCollection
-            {
-                new SfTabItem()
-                {
-                    Title = "Calls",
-                    Content = allContactsGrid
-                },
-                new SfTabItem()
-                {
-                    Title = "Favorites",
-                    Content = favoritesGrid
-                },
-                new SfTabItem()
-                {
-                    Title = "Contacts",
-                    Content = contactsGrid
-                },
-                new SfTabItem()
-                {
-                    Title = "Location",
-                    Content = contactsGrid
-                },
-                new SfTabItem()
-                {
-                    Title = "Email",
-                    Content = contactsGrid
-                },
-                new SfTabItem()
-                {
-                    Title = "Alternative",
-                    Content = contactsGrid
-                }
-            };
-            tabView.Items = tabItems;
-            tabView.BackgroundColor = Color.Aqua;
-            tabView.OverflowMode = OverflowMode.DropDown;
-            this.Content = tabView;
-		}
-	}
-}			
-{% endhighlight %}
-
-{% endtabs %}
-
-By selecting the drop-down option for tab view control, The `“Overflow button”` (or `“More button”`) will be added to the header. When you click this button, a pop-up will be displayed to navigate the other indices.
-
-![OverFlowButton](images/Handling-of-Overflow-Tabs/OverFlowButtonSettings.png)
-
-N> The title of the corresponding tab item will be displayed in the pop-up. Set [TabHeaderBackgroundColor]("https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_TabHeaderBackgroundColor") in SfTabView to change the pop-up background color.
-
-## How to customize the more button?
-
-Appearance of the text can be customized through the APIs that are available on the `OverflowButtonSettings` property of `SfTabView`. This property has APIs to customize the both text and font icons available in the more button. 
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
-             x:Class="TabView.TabView">
-    <ContentPage.Content>
-        <tabView:SfTabView OverflowMode="DropDown" VisibleHeaderCount="3" BackgroundColor="Aqua">
-            <tabView:SfTabView.OverflowButtonSettings>
-                <tabView:OverflowButtonSettings 
-                    BackgroundColor="Yellow" 
-                    DisplayMode="Text"
-                    Title="OverFlow"
-                    TitleFontSize="10"
-                    TitleFontColor="Blue"/>
-            </tabView:SfTabView.OverflowButtonSettings>
-            <tabView:SfTabItem Title="Call">
-                <tabView:SfTabItem.Content>
-                    <StackLayout>
-                        <Grid BackgroundColor="Green" x:Name="CotactsGrid" />
-                        <Button Text="Contacts" WidthRequest="300" />
-                        <Button Text="Location" WidthRequest="300" />
-                        <Button Text="Email" WidthRequest="300" />
-                    </StackLayout>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Favorites">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Green" x:Name="FavoritesGrid"/>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Contacts">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Location">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Pink" x:Name="ConttsGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Email">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Navy" x:Name="Contactrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Alternative">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Blue" x:Name="ContGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-        </tabView:SfTabView>
-    </ContentPage.Content>
-</ContentPage>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
 using Syncfusion.XForms.TabView;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -225,6 +95,7 @@ namespace TabView
             overflowButtonSettings.TitleFontSize = 10;
             overflowButtonSettings.TitleFontColor = Color.Blue;
             tabView.OverflowButtonSettings = overflowButtonSettings;
+            tabView.EnableSwiping = false;
             var tabItems = new TabItemCollection
             {
                 new SfTabItem()
@@ -259,15 +130,141 @@ namespace TabView
                 }
             };
             tabView.Items = tabItems;
+            this.Content = tabView;
             tabView.BackgroundColor = Color.Aqua;
             tabView.OverflowMode = OverflowMode.DropDown;
             this.Content = tabView;
 		}
 	}
 }
-			
+
 {% endhighlight %}
 
 {% endtabs %}
 
-![Customisation image of OverFlowButton](images/Handling-of-Overflow-Tabs/OverFlowCustomization.png)
+## SwipingThreshold
+
+By setting the Swipe threshold you can set how far swipe before it is considered a swipe.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <tabView:SfTabView SwipingThreshold="30" EnableSwiping="True">
+    ...
+    </tabView:SfTabView>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+     ...
+     tabView.EnableSwiping = true;
+     tabView.SwipingThreshold = 30;
+     ...
+{% endhighlight %}
+
+{% endtabs %}
+
+N> This swiping API value should be considered only for left to right swiping.
+
+## AnimationDuration
+
+When the selected index of the control is changed, you can set the speed of the animation of SelectionIndicator by setting the `AnimationDuration` property in the [SelectionIndicatorSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SelectionIndicatorSettings.html).
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             x:Class="TabView.TabView">
+    <ContentPage.Content>
+        <tabView:SfTabView>
+            <tabView:SfTabView.SelectionIndicatorSettings>
+                <tabView:SelectionIndicatorSettings
+                    Color="Red" 
+                    Position="Top" 
+                    AnimationDuration="500"
+                    StrokeThickness="5"/>
+            </tabView:SfTabView.SelectionIndicatorSettings>
+            <tabView:SfTabItem Title="Call">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Green"/>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Favorites">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Green"/>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Contacts">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Blue" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+        </tabView:SfTabView>
+    </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+using Syncfusion.XForms.TabView;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace TabView
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class TabView : ContentPage
+	{
+        SfTabView tabView;
+		public TabView ()
+		{
+			InitializeComponent ();
+            tabView = new SfTabView();
+            var selectionIndicatorSettings = new SelectionIndicatorSettings();
+            selectionIndicatorSettings.Color = Color.Red;
+            selectionIndicatorSettings.Position = SelectionIndicatorPosition.Bottom;
+            selectionIndicatorSettings.StrokeThickness = 5;
+            selectionIndicatorSettings.AnimationDuration = 500;
+            tabView.SelectionIndicatorSettings = selectionIndicatorSettings;
+            tabView.TabHeaderPosition = TabHeaderPosition.Top;
+            tabView.OverflowMode = OverflowMode.Scroll;
+            var allContactsGrid = new Grid { BackgroundColor = Color.Aqua };
+            var favoritesGrid = new Grid { BackgroundColor = Color.Green };
+            var contactsGrid = new Grid { BackgroundColor = Color.Blue };
+            var tabItems = new TabItemCollection
+            {
+               new tabview.SfTabItem()
+                {
+                Title = "Calls",
+                Content = allContactsGrid
+                },
+                new tabview.SfTabItem()
+                {
+                    Title = "Favorites",
+                    Content = favoritesGrid
+                },
+                new tabview.SfTabItem()
+                {
+                    Title = "Contacts",
+                    Content = contactsGrid
+                }               
+            };
+            tabView.Items = tabItems;
+            this.Content = tabView;
+		}
+	}
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Animation Duration](images/Selection-Indicator/AnimationDuration.gif)
+
+

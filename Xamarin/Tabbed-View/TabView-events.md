@@ -68,9 +68,9 @@ The `SelectionChanging` event is used to notify, before the selection is going t
 
 ### SelectionChanging event args
 
-`Index` - Gets the value of the index, which is going to be selected.
+`Index` - Gets the value of the index that will be selected.
 
-`Cancel` - Gets or sets the bool value of the tab item, which is going to be selected or not.
+`Cancel`- Gets or sets the bool value of the tab item that will be selected or not.
 
 {% tabs %}
 

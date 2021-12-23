@@ -13,7 +13,8 @@ By default, both the vertical swiping for list view and horizontal swiping for t
 
 ## Enable swiping
 
-Swiping can be customized by using the `EnableSwiping` property of SfTabView. By default, EnableSwiping is set to true.To restrict the user interaction, the `EnableSwiping` property of `SfTabView` can be set to `false`.
+Swiping can be customized by using the [`EnableSwiping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_EnableSwiping) property of SfTabView. By default, [`EnableSwiping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_EnableSwiping) is set to true. To limit the user interaction, set the   
+[`EnableSwiping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_EnableSwiping) property of SfTabView to false.
 
 {% tabs %}
 
@@ -144,7 +145,7 @@ namespace TabView
 
 ## SwipingThreshold
 
-By setting the [`Swipe threshold`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_SwipingThreshold) you can set how far swipe before it is considered a swipe.
+By setting the [`SwipingThreshold`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_SwipingThreshold), you can set how far swipe before it is considered a swipe.
 
 {% tabs %}
 
@@ -166,7 +167,7 @@ By setting the [`Swipe threshold`](https://help.syncfusion.com/cr/xamarin/Syncfu
 
 {% endtabs %}
 
-N> This SwipingThreshold value should be considered only for left to right swiping.
+N> This SwipingThreshold value should only be considered for swiping from left to right.
 
 ## AnimationDuration
 

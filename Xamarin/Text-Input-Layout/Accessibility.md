@@ -34,7 +34,6 @@ The text input layout control has built-in AutomationId for inner elements. To k
 </tr>
 </table>
 
-
 The following code snippet demonstrates how to set the `AutomationId` to SfTextInputLayout.
 
 {% tabs %}

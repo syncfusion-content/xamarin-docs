@@ -7,7 +7,7 @@ control: SfTextInputLayout
 documentation: ug
 ---
 
-## AutomationId
+# Accessibility in SfTextInputLayout
 
 The text input layout control has built-in AutomationId for inner elements. To keep unique id for inner elements, AutomationId of inner elements are updated based on SfTextInputLayout's AutomationId. For example, if SfTextInputLayout's AutomationId is set as sfTextInputLayout.AutomationId = "textInputLayout", then AutomationId of inner elements will be updated as follows.
 
@@ -33,3 +33,51 @@ The text input layout control has built-in AutomationId for inner elements. To k
 <td>textInputLayout drop down</td>
 </tr>
 </table>
+
+The following code snippet demonstrates how to set the `AutomationId` to SfTextInputLayout.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<inputLayout:SfTextInputLayout
+    Hint="Name"
+    EnablePasswordVisibilityToggle="true"
+    AutomationId="textInputLayout">
+    <Entry Text="John" />
+</inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfTextInputLayout inputLayout = new SfTextInputLayout();
+inputLayout.Hint = "Name";
+inputLayout.EnablePasswordVisibilityToggle = true;
+inputLayout.InputView = new Entry() { Text = "John" };
+inputLayout.AutomationId = "textInputLayout";
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Refer to the following code snippet to access the inner elements of SfTextInputLayout from the automation script.
+
+{% tabs %}
+
+{% highlight c# %}
+
+[Test]
+[Description("SfTextInputLayout Automation Id")]
+public void SfTextInputLayout_AutomationId()
+{
+   // To tap the Password Toggle VisibleIcon
+   App.Tap("textInputLayout show password");
+
+   // To tap the Password Toggle CollapsedIcon
+   App.Tap("textInputLayout hide password");
+}
+
+{% endhighlight %}
+
+{% endtabs %}

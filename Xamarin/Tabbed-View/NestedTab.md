@@ -226,9 +226,11 @@ Lazy loading improves performance of SfTabView at initial loading. To enable thi
 
 {% highlight xaml %}
 
-    <tabview:SfTabView x:Name="tabView" EnableVirtualization="True"> 
-     ... 
-     </tabview:SfTabView> 
+<tabview:SfTabView x:Name="tabView" EnableVirtualization="True"> 
+    
+ ... 
+     
+</tabview:SfTabView> 
 
 {% endhighlight %}
 
@@ -236,7 +238,7 @@ Lazy loading improves performance of SfTabView at initial loading. To enable thi
 
 {% endhighlight %}
 
-    tabView.EnableVirtualization = true;
+tabView.EnableVirtualization = true;
 
 {% endtabs %}
 

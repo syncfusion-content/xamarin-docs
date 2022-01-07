@@ -87,7 +87,7 @@ The `SelectionChanging` event is used to notify, before the selection is going t
                            SelectionChanging="Tabview_SelectionChanging"
                            BackgroundColor="Aqua">
             <tabView:SfTabItem Title="Call">
-               <tabView:SfTabItem.Content>
+                <tabView:SfTabItem.Content>
                     <Grid BackgroundColor="Red"/>
                 </tabView:SfTabItem.Content>
             </tabView:SfTabItem>
@@ -124,60 +124,62 @@ The `SelectionChanging` event is used to notify, before the selection is going t
 
 {% highlight C# %}
 
+
 using Syncfusion.XForms.TabView;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace TabView
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
+	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class TabView : ContentPage
 	{
-        SfTabView tabView;
-        public TabView ()
+		SfTabView tabView;
+		public TabView()
 		{
-			InitializeComponent ();
-            var tabView = new SfTabView();
-            tabview.SelectionChanging += Tabview_SelectionChanging;
-            Grid allContactsGrid = new Grid {BackgroundColor = Color.Red};
-            Grid favoritesGrid = new Grid {BackgroundColor = Color.Green};
-            Grid contactsGrid = new Grid {BackgroundColor = Color.Blue};
-            var tabItems = new TabItemCollection
-            {
-                new SfTabItem()
-                {
-                    Title = "Calls",
-                    Content = allContactsGrid
-                },
-                new SfTabItem()
-                {
-                    Title = "Favorites",
-                    Content = favoritesGrid
-                },
-                new SfTabItem()
-                {
-                    Title = "Contacts",
-                    Content = contactsGrid
-                }
-            };
-            tabView.Items = tabItems;
-            this.Content = tabView;
+			InitializeComponent();
+			var tabView = new SfTabView();
+			tabview.SelectionChanging += Tabview_SelectionChanging;
+			Grid allContactsGrid = new Grid { BackgroundColor = Color.Red };
+			Grid favoritesGrid = new Grid { BackgroundColor = Color.Green };
+			Grid contactsGrid = new Grid { BackgroundColor = Color.Blue };
+			var tabItems = new TabItemCollection
+			{
+				new SfTabItem()
+				{
+					Title = "Calls",
+					Content = allContactsGrid
+				},
+				new SfTabItem()
+				{
+					Title = "Favorites",
+					Content = favoritesGrid
+				},
+				new SfTabItem()
+				{
+					Title = "Contacts",
+					Content = contactsGrid
+				}
+			};
+			tabView.Items = tabItems;
+			this.Content = tabView;
 		}
 
-        // Occurred when the index is going to be changed.
-        void Tabview_SelectionChanging(object sender, Syncfusion.XForms.TabView.SelectionChangingEventArgs e)
-        {
-             if (e.Index == 0 || e.Index == 1 || e.Index == 2 || e.Index==3)
-            {
-                e.Cancel = false;
-            }
-            else
-            {
-                e.Cancel = true;
-            }
-        }
+		// Occurred when the index is going to be changed.
+		void Tabview_SelectionChanging(object sender, Syncfusion.XForms.TabView.SelectionChangingEventArgs e)
+		{
+			if (e.Index == 0 || e.Index == 1 || e.Index == 2 || e.Index == 3)
+			{
+				e.Cancel = false;
+			}
+			else
+			{
+				e.Cancel = true;
+			}
+		}
 	}
 }
+
 
 {% endhighlight %}
 
@@ -252,19 +254,19 @@ using Xamarin.Forms.Xaml;
 namespace TabView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class TabView : ContentPage
-	{
-        public TabView ()
-		{
-			InitializeComponent ();
-		}
+    public partial class TabView : ContentPage
+    {
+        public TabView()
+        {
+            InitializeComponent();
+        }
 
         // Occurred when the selected index is changed
         void Handle_SelectionChanged(object sender, Syncfusion.XForms.TabView.SelectionChangedEventArgs e)
         {
             var selectedIndex = e.Index;
         }
-	}
+    }
 }
 
 {% endhighlight %}

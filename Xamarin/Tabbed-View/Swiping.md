@@ -20,53 +20,55 @@ Swiping can be customized by using the [`EnableSwiping`](https://help.syncfusion
 
 {% highlight xaml %}
 
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
              x:Class="TabView.TabView">
-    <ContentPage.Content>
-         <tabView:SfTabView OverflowMode="DropDown"
+        <ContentPage.Content>
+            <tabView:SfTabView OverflowMode="DropDown"
                             EnableSwiping="false" 
                             VisibleHeaderCount="3" 
                             BackgroundColor="Aqua">
-            <tabView:SfTabItem Title="Call">
-                <tabView:SfTabItem.Content>
-                    <StackLayout>
-                        <Grid BackgroundColor="Green" />
-                        <Button Text="Contacts" WidthRequest="300" />
-                        <Button Text="Location" WidthRequest="300" />
-                        <Button Text="Email" WidthRequest="300" />
-                    </StackLayout>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Favorites">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Green" x:Name="FavoritesGrid"/>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Contacts">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Location">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Pink" x:Name="LocationGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Email">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Navy" x:Name="EmailGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Alternative">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Blue" x:Name="AlternativeGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-        </tabView:SfTabView>
-    </ContentPage.Content>
-</ContentPage>
+                <tabView:SfTabItem Title="Call">
+                    <tabView:SfTabItem.Content>
+                        <StackLayout>
+                            <Grid BackgroundColor="Green" />
+                            <Button Text="Contacts" WidthRequest="300" />
+                            <Button Text="Location" WidthRequest="300" />
+                            <Button Text="Email" WidthRequest="300" />
+                        </StackLayout>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Favorites">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Green" x:Name="FavoritesGrid"/>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Contacts">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Location">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Pink" x:Name="LocationGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Email">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Navy" x:Name="EmailGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Alternative">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Blue" x:Name="AlternativeGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+            </tabView:SfTabView>
+        </ContentPage.Content>
+ </ContentPage>
+
 
 {% endhighlight %}
 

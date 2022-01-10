@@ -9,88 +9,6 @@ documentation: ug
 
 # TabView Header Customization in Xamarin Tabbed View (SfTabView)
 
-Tab items can be configured in tab view through the `Items` property of `SfTabView`, which holds the collection of `SfTabItem` through `TabItemsCollection`.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
-             x:Class="TabViewAutomationSample.TabViewAutomationSample">
-    <ContentPage.Content>
-        <tabView:SfTabView BackgroundColor="White">
-                    <tabView:SfTabItem Title="Call">
-                        <tabView:SfTabItem.Content>
-                            <Grid BackgroundColor="Gray" x:Name="AllContactsGrid" />
-                        </tabView:SfTabItem.Content>
-                    </tabView:SfTabItem>
-                    <tabView:SfTabItem Title="Favorites">
-                        <tabView:SfTabItem.Content>
-                            <Grid BackgroundColor="Green" x:Name="FavoritesGrid" />
-                        </tabView:SfTabItem.Content>
-                    </tabView:SfTabItem>
-                    <tabView:SfTabItem Title="Contacts">
-                        <tabView:SfTabItem.Content>
-                            <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
-                        </tabView:SfTabItem.Content>
-                    </tabView:SfTabItem>
-        </tabView:SfTabView>
-    </ContentPage.Content>
-</ContentPage>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-using Syncfusion.XForms.TabView;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace TabViewAutomationSample
-{
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class TabView : ContentPage
-	{
-        SfTabView tabView;
-		public TabView ()
-		{
-			InitializeComponent ();
-            var tabView = new SfTabView();
-            var allContactsGrid = new Grid {BackgroundColor = Color.Gray};
-            var favoritesGrid = new Grid {BackgroundColor = Color.Green};
-            var contactsGrid = new Grid {BackgroundColor = Color.Blue};
-            var tabItems = new TabItemCollection
-            {
-                new SfTabItem()
-                {
-                    Title = "Calls",
-                    Content = allContactsGrid
-                },
-                new SfTabItem()
-                {
-                    Title = "Favorites",
-                    Content = favoritesGrid
-                },
-                new SfTabItem()
-                {
-                    Title = "Contacts",
-                    Content = contactsGrid
-                }
-            };
-            tabView.Items = tabItems;
-            this.Content = tabView;
-		}
-	}
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![TabItems](images/TabItems/TabItems.png)
-
 ## Tab header arrangement
 
 ### Share the header space equally
@@ -105,31 +23,31 @@ To share the header space to the tabs equally, set the number of tabs that can b
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
              x:Class="TabViewAutomationSample.TabViewAutomationSample">
-    <ContentPage.Content>
-        <tabView:SfTabView BackgroundColor="White" VisibleHeaderCount="3">
-            <tabView:SfTabItem Title="Call">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Gray" x:Name="AllContactsGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Favorites">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Green" x:Name="FavoritesGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Contacts">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Email">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Olive" x:Name="EmailGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-        </tabView:SfTabView>
-    </ContentPage.Content>
-</ContentPage>
+        <ContentPage.Content>
+            <tabView:SfTabView BackgroundColor="White" VisibleHeaderCount="3">
+                <tabView:SfTabItem Title="Call">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Gray" x:Name="AllContactsGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Favorites">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Green" x:Name="FavoritesGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Contacts">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Email">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Olive" x:Name="EmailGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+            </tabView:SfTabView>
+        </ContentPage.Content>
+    </ContentPage>
 	
 {% endhighlight %}
 
@@ -142,17 +60,17 @@ using Xamarin.Forms.Xaml;
 namespace TabViewAutomationSample
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class TabView : ContentPage
-	{
+    public partial class TabView : ContentPage
+    {
         SfTabView tabView;
-		public TabView ()
-		{
-			InitializeComponent ();
+        public TabView()
+        {
+            InitializeComponent();
             var tabView = new SfTabView();
-            var allContactsGrid = new Grid {BackgroundColor = Color.Red};
-            var favoritesGrid = new Grid {BackgroundColor = Color.Green};
-            var contactsGrid = new Grid {BackgroundColor = Color.Blue};
-            var emailGrid = new Grid {BackgroundColor = Color.Olive};
+            var allContactsGrid = new Grid { BackgroundColor = Color.Red };
+            var favoritesGrid = new Grid { BackgroundColor = Color.Green };
+            var contactsGrid = new Grid { BackgroundColor = Color.Blue };
+            var emailGrid = new Grid { BackgroundColor = Color.Olive };
             tabView.VisibleHeaderCount = 3;
             var tabItems = new TabItemCollection
             {
@@ -179,8 +97,8 @@ namespace TabViewAutomationSample
             };
             tabView.Items = tabItems;
             this.Content = tabView;
-		}
-	}
+        }
+    }
 }
 
 {% endhighlight %}
@@ -197,45 +115,44 @@ When you set the [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syn
 
 {% highlight xaml %}
 
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+ <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
              x:Class="TabViewAutomationSample.TabViewAutomationSample">
-    <ContentPage.Content>
-        <tabView:SfTabView BackgroundColor="White" VisibleHeaderCount="-1">
-            <tabView:SfTabItem Title="Call">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Gray" x:Name="AllContactsGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Favorites">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Green" x:Name="FavoritesGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Contacts">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-             <tabView:SfTabItem Title="Location">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Aqua" x:Name="Location" />
-                </tabView:SfTabItem.Content>
-            <tabView:SfTabItem Title="Email">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Olive" x:Name="EmailGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Alternative">
-                <tabView:SfTabItem.Content>
-                     <Grid BackgroundColor="Blue" x:Name="AlternativeGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-        </tabView:SfTabView>
-    </ContentPage.Content>
-</ContentPage>
-	
+        <ContentPage.Content>
+            <tabView:SfTabView BackgroundColor="White" VisibleHeaderCount="-1">
+                <tabView:SfTabItem Title="Call">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Gray" x:Name="AllContactsGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Favorites">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Green" x:Name="FavoritesGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Contacts">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Location">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Aqua" x:Name="Location" />
+                    </tabView:SfTabItem.Content>
+                    <tabView:SfTabItem Title="Email">
+                        <tabView:SfTabItem.Content>
+                            <Grid BackgroundColor="Olive" x:Name="EmailGrid" />
+                        </tabView:SfTabItem.Content>
+                    </tabView:SfTabItem>
+                    <tabView:SfTabItem Title="Alternative">
+                        <tabView:SfTabItem.Content>
+                            <Grid BackgroundColor="Blue" x:Name="AlternativeGrid" />
+                        </tabView:SfTabItem.Content>
+                    </tabView:SfTabItem>
+            </tabView:SfTabView>
+        </ContentPage.Content>
+    </ContentPage>
 {% endhighlight %}
 
 {% highlight C# %}
@@ -246,17 +163,17 @@ using Xamarin.Forms.Xaml;
 
 namespace TabViewAutomationSample
 {
-	public partial class TabView : ContentPage
-	{
+    public partial class TabView : ContentPage
+    {
         SfTabView tabView;
-		public TabView ()
-		{
-			InitializeComponent ();
+        public TabView()
+        {
+            InitializeComponent();
             var tabView = new SfTabView();
-            var allContactsGrid = new Grid {BackgroundColor = Color.Red};
-            var favoritesGrid = new Grid {BackgroundColor = Color.Green};
-            var contactsGrid = new Grid {BackgroundColor = Color.Blue};
-            var emailGrid = new Grid {BackgroundColor = Color.Olive};
+            var allContactsGrid = new Grid { BackgroundColor = Color.Red };
+            var favoritesGrid = new Grid { BackgroundColor = Color.Green };
+            var contactsGrid = new Grid { BackgroundColor = Color.Blue };
+            var emailGrid = new Grid { BackgroundColor = Color.Olive };
             tabView.VisibleHeaderCount = -1;
             var tabItems = new TabItemCollection
             {
@@ -293,8 +210,8 @@ namespace TabViewAutomationSample
             };
             tabView.Items = tabItems;
             this.Content = tabView;
-		}
-	}
+        }
+    }
 }
 
 {% endhighlight %}
@@ -336,20 +253,20 @@ The default option of `TabWidthMode` property is `Default`.
                     <Grid BackgroundColor="Blue"/>
                 </tabView:SfTabItem.Content>
             </tabView:SfTabItem>
-             <tabView:SfTabItem Title="Location">
+            <tabView:SfTabItem Title="Location">
                 <tabView:SfTabItem.Content>
                     <Grid BackgroundColor="Aqua"/>
                 </tabView:SfTabItem.Content>
-            <tabView:SfTabItem Title="Email">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Olive"/>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Alternative">
-                <tabView:SfTabItem.Content>
-                     <Grid BackgroundColor="Blue" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Email">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Olive"/>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Alternative">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Blue" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
         </tabView:SfTabView>
     </ContentPage.Content>
 </ContentPage>
@@ -374,7 +291,7 @@ namespace TabViewAutomationSample
             var favoritesGrid = new Grid { BackgroundColor = Color.Green };
             var contactsGrid = new Grid { BackgroundColor = Color.Blue };
             var emailGrid = new Grid { BackgroundColor = Color.Olive };
-            tabView.TabWidthMode = TabWidthMode.BasedOnText ;
+            tabView.TabWidthMode = TabWidthMode.BasedOnText;
             var tabItems = new TabItemCollection
             {
                 new SfTabItem()
@@ -414,7 +331,6 @@ namespace TabViewAutomationSample
         }
     }
 }
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -468,7 +384,7 @@ Tab headers can be positioned either above the content or below the content. Thi
         </tabView:SfTabView>
     </ContentPage.Content>
 </ContentPage>
-			
+
 {% endhighlight %}
 
 {% highlight C# %}
@@ -480,12 +396,12 @@ using Xamarin.Forms.Xaml;
 namespace TabView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class TabView : ContentPage
-	{
+    public partial class TabView : ContentPage
+    {
         SfTabView tabView;
-		public TabView ()
-		{
-			InitializeComponent ();
+        public TabView()
+        {
+            InitializeComponent();
             tabView = new SfTabView();
             var allContactsGrid = new Grid { BackgroundColor = Color.Red };
             var favoritesGrid = new Grid { BackgroundColor = Color.Blue };
@@ -510,6 +426,8 @@ namespace TabView
                     Title = "Staff",
                     Content = contactsGrid
                 }
+
+
                 new SfTabItem()
                 {
                     Title = "Alternative",
@@ -518,10 +436,9 @@ namespace TabView
             };
             tabView.Items = tabItems;
             this.Content = tabView;
-		}
-	}
+        }
+    }
 }
-			
 {% endhighlight %}
 
 {% endtabs %}
@@ -539,29 +456,29 @@ When the header is not needed, set the `DisplayMode` property of `SfTabView` to 
 
 {% highlight xaml %}
    
-    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+     <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
              x:Class="TabView.TabView">
-    <ContentPage.Content>
-       <tabView:SfTabView TabHeaderBackgroundColor="SkyBlue">
-            <tabView:SfTabItem Title="Call">
-                 <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Red" x:Name="allContactsGrid"/>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Favorites">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Green"    x:Name="FavoritesGrid"/>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Contacts">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Blue" x:Name="ContactsGrid"/>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
+        <ContentPage.Content>
+            <tabView:SfTabView TabHeaderBackgroundColor="SkyBlue">
+                <tabView:SfTabItem Title="Call">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Red" x:Name="allContactsGrid"/>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Favorites">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Green"    x:Name="FavoritesGrid"/>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Contacts">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Blue" x:Name="ContactsGrid"/>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
             </tabView:SfTabView>
-      </ContentPage.Content>
+        </ContentPage.Content>
     </ContentPage>
 
 {% endhighlight %}
@@ -573,14 +490,14 @@ When the header is not needed, set the `DisplayMode` property of `SfTabView` to 
     using Xamarin.Forms.Xaml;
     
     namespace TabView
-    {
+{
     [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class TabView : ContentPage
-	{
+    public partial class TabView : ContentPage
+    {
         SfTabView tabView;
-		public TabView ()
-		{
-			InitializeComponent ();
+        public TabView()
+        {
+            InitializeComponent();
             tabView = new SfTabView();
             var allContactsGrid = new Grid { BackgroundColor = Color.Red };
             var favoritesGrid = new Grid { BackgroundColor = Color.Blue };
@@ -607,9 +524,9 @@ When the header is not needed, set the `DisplayMode` property of `SfTabView` to 
             tabView.TabHeaderBackgroundColor = Color.SkyBlue;
             tabView.Items = tabItems;
             this.Content = tabView;
-		}
-       }
+        }
     }
+}
 
 {% endhighlight %}
 
@@ -628,49 +545,49 @@ The selection indicator can be positioned below the title or above the title, or
 
 {% highlight xaml %}
 
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+  <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
              x:Class="TabView.TabView">
-    <ContentPage.Content>
-        <tabView:SfTabView VisibleHeaderCount="3"
+        <ContentPage.Content>
+            <tabView:SfTabView VisibleHeaderCount="3"
                            TabHeaderPosition="Bottom"  
                            OverflowMode="DropDown">
-			<tabView:SfTabView.SelectionIndicatorSettings>
-                <tabView:SelectionIndicatorSettings
+                <tabView:SfTabView.SelectionIndicatorSettings>
+                    <tabView:SelectionIndicatorSettings
                     Color="Aqua" 
                     Position="Top" 
                     StrokeThickness="10"/>
-            </tabView:SfTabView.SelectionIndicatorSettings>
-            <tabView:SfTabItem Title="CEO">
-                <tabView:SfTabItem.Content>
-                    <StackLayout>
-                        <Grid BackgroundColor="Green"/>
-                        <Button Text="Contacts" WidthRequest="300" />
-                        <Button Text="Location" WidthRequest="300" />
-                        <Button Text="Email" WidthRequest="300" />
-                    </StackLayout>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Patients">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Blue" x:Name="FavoritesGrid"/>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Staff">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Green" x:Name="ContactsGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Alternative">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Olive" x:Name="AlternativeGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-        </tabView:SfTabView>
-    </ContentPage.Content>
-</ContentPage>
-			
+                </tabView:SfTabView.SelectionIndicatorSettings>
+                <tabView:SfTabItem Title="CEO">
+                    <tabView:SfTabItem.Content>
+                        <StackLayout>
+                            <Grid BackgroundColor="Green"/>
+                            <Button Text="Contacts" WidthRequest="300" />
+                            <Button Text="Location" WidthRequest="300" />
+                            <Button Text="Email" WidthRequest="300" />
+                        </StackLayout>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Patients">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Blue" x:Name="FavoritesGrid"/>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Staff">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Green" x:Name="ContactsGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Alternative">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Olive" x:Name="AlternativeGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+            </tabView:SfTabView>
+        </ContentPage.Content>
+    </ContentPage>
+
 {% endhighlight %}
 
 {% highlight C# %}
@@ -682,18 +599,18 @@ using Xamarin.Forms.Xaml;
 namespace TabView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class TabView : ContentPage
-	{
+    public partial class TabView : ContentPage
+    {
         SfTabView tabView;
-		public TabView ()
-		{
-			InitializeComponent ();
+        public TabView()
+        {
+            InitializeComponent();
             tabView = new SfTabView();
             var allContactsGrid = new Grid { BackgroundColor = Color.Red };
             var favoritesGrid = new Grid { BackgroundColor = Color.Blue };
             var contactsGrid = new Grid { BackgroundColor = Color.Green };
             var alternativeGrid = new Grid { BackgroundColor = Color.Olive };
-			var selectionIndicatorSettings = new SelectionIndicatorSettings();
+            var selectionIndicatorSettings = new SelectionIndicatorSettings();
             selectionIndicatorSettings.Color = Color.Red;
             selectionIndicatorSettings.Position = SelectionIndicatorPosition.Top;
             selectionIndicatorSettings.StrokeThickness = 10;
@@ -725,8 +642,8 @@ namespace TabView
             };
             tabView.Items = tabItems;
             this.Content = tabView;
-		}
-	}
+        }
+    }
 }
 
 {% endhighlight %}
@@ -747,12 +664,12 @@ N> The `IsScrollEnabled` is working only when [OverFlowMode](https://help.syncfu
 
 {% highlight xaml %}
 
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+ <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
              x:Class="TabView.TabView">
-    <ContentPage.Content>
-       <tabView:SfTabView OverflowMode="Scroll" 
+        <ContentPage.Content>
+            <tabView:SfTabView OverflowMode="Scroll" 
                           IsScrollButtonEnabled="True">
                 <tabView:SfTabItem Title="Call">
                     <tabView:SfTabItem.Content>
@@ -785,9 +702,9 @@ N> The `IsScrollEnabled` is working only when [OverFlowMode](https://help.syncfu
                     </tabView:SfTabItem.Content>
                 </tabView:SfTabItem>
             </tabView:SfTabView>
-    </ContentPage.Content>
-</ContentPage>
-			
+        </ContentPage.Content>
+    </ContentPage>
+
 {% endhighlight %}
 
 {% highlight C# %}
@@ -846,7 +763,7 @@ namespace TabView
         }
     }
 }
-			
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -865,8 +782,8 @@ Change the color of the Scroll buttons foreground and background color by using 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
              x:Class="TabView.TabView">
-    <ContentPage.Content>
-       <tabView:SfTabView OverflowMode="Scroll"   
+        <ContentPage.Content>
+            <tabView:SfTabView OverflowMode="Scroll"   
                           IsScrollButtonEnabled="True"
                           ScrollButtonBackgroundColor="Gray" ScrollButtonForegroundColor="Blue">
                 <tabView:SfTabItem Title="Call">
@@ -900,8 +817,8 @@ Change the color of the Scroll buttons foreground and background color by using 
                     </tabView:SfTabItem.Content>
                 </tabView:SfTabItem>
             </tabView:SfTabView>
-    </ContentPage.Content>
-</ContentPage>
+        </ContentPage.Content>
+    </ContentPage>
 
 {% endhighlight %}
 
@@ -965,6 +882,7 @@ namespace TabView
 }
 	
 {% endhighlight %}
+
 {% endtabs %}
 ![ScrollButtonBackground-ScrollButtonForeground](images/ScrollButton-Header/ScrollButtonBackground-ScrollButtonForeground.jpg)
 
@@ -977,50 +895,50 @@ When you have large number of tabs, by default, the scroller will be enabled to 
 
 {% highlight xaml %}
 
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+ <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
              x:Class="TabView.TabView">
-    <ContentPage.Content>
-        <tabView:SfTabView OverflowMode="DropDown" VisibleHeaderCount="3" BackgroundColor="Aqua">
-            <tabView:SfTabItem Title="Call">
-                <tabView:SfTabItem.Content>
-                    <StackLayout>
-                        <Grid BackgroundColor="Green" />
-                        <Button Text="Contacts" WidthRequest="300" />
-                        <Button Text="Location" WidthRequest="300" />
-                        <Button Text="Email" WidthRequest="300" />
-                    </StackLayout>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Favorites">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Green" x:Name="FavoritesGrid"/>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Contacts">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Location">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Pink" x:Name="LocationGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Email">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Navy" x:Name="EmailGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Alternative">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Blue" x:Name="AlternativeGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-        </tabView:SfTabView>
-    </ContentPage.Content>
-</ContentPage>
+        <ContentPage.Content>
+            <tabView:SfTabView OverflowMode="DropDown" VisibleHeaderCount="3" BackgroundColor="Aqua">
+                <tabView:SfTabItem Title="Call">
+                    <tabView:SfTabItem.Content>
+                        <StackLayout>
+                            <Grid BackgroundColor="Green" />
+                            <Button Text="Contacts" WidthRequest="300" />
+                            <Button Text="Location" WidthRequest="300" />
+                            <Button Text="Email" WidthRequest="300" />
+                        </StackLayout>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Favorites">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Green" x:Name="FavoritesGrid"/>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Contacts">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Location">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Pink" x:Name="LocationGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Email">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Navy" x:Name="EmailGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Alternative">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Blue" x:Name="AlternativeGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+            </tabView:SfTabView>
+        </ContentPage.Content>
+    </ContentPage>
 
 {% endhighlight %}
 
@@ -1037,13 +955,13 @@ using Xamarin.Forms.Xaml;
 
 namespace TabView
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class TabView : ContentPage
-	{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class TabView : ContentPage
+    {
         SfTabView tabView;
-		public TabView ()
-		{
-			InitializeComponent ();
+        public TabView()
+        {
+            InitializeComponent();
             tabView = new SfTabView();
             var allContactsGrid = new Grid { BackgroundColor = Color.Red };
             var favoritesGrid = new Grid { BackgroundColor = Color.Green };
@@ -1085,9 +1003,9 @@ namespace TabView
             tabView.BackgroundColor = Color.Aqua;
             tabView.OverflowMode = OverflowMode.DropDown;
             this.Content = tabView;
-		}
-	}
-}			
+        }
+    }
+}
 {% endhighlight %}
 
 {% endtabs %}
@@ -1110,54 +1028,54 @@ Appearance of the text can be customized through the APIs that are available on 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
              x:Class="TabView.TabView">
-    <ContentPage.Content>
-        <tabView:SfTabView OverflowMode="DropDown" VisibleHeaderCount="3" BackgroundColor="Aqua">
-            <tabView:SfTabView.OverflowButtonSettings>
-                <tabView:OverflowButtonSettings 
+        <ContentPage.Content>
+            <tabView:SfTabView OverflowMode="DropDown" VisibleHeaderCount="3" BackgroundColor="Aqua">
+                <tabView:SfTabView.OverflowButtonSettings>
+                    <tabView:OverflowButtonSettings 
                     BackgroundColor="Yellow" 
                     DisplayMode="Text"
                     Title="OverFlow"
                     TitleFontSize="10"
                     TitleFontColor="Blue"/>
-            </tabView:SfTabView.OverflowButtonSettings>
-            <tabView:SfTabItem Title="Call">
-                <tabView:SfTabItem.Content>
-                    <StackLayout>
-                        <Grid BackgroundColor="Green" x:Name="CotactsGrid" />
-                        <Button Text="Contacts" WidthRequest="300" />
-                        <Button Text="Location" WidthRequest="300" />
-                        <Button Text="Email" WidthRequest="300" />
-                    </StackLayout>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Favorites">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Green" x:Name="FavoritesGrid"/>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Contacts">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Location">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Pink" x:Name="ConttsGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Email">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Navy" x:Name="Contactrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Alternative">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Blue" x:Name="ContGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-        </tabView:SfTabView>
-    </ContentPage.Content>
-</ContentPage>
+                </tabView:SfTabView.OverflowButtonSettings>
+                <tabView:SfTabItem Title="Call">
+                    <tabView:SfTabItem.Content>
+                        <StackLayout>
+                            <Grid BackgroundColor="Green" x:Name="CotactsGrid" />
+                            <Button Text="Contacts" WidthRequest="300" />
+                            <Button Text="Location" WidthRequest="300" />
+                            <Button Text="Email" WidthRequest="300" />
+                        </StackLayout>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Favorites">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Green" x:Name="FavoritesGrid"/>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Contacts">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Location">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Pink" x:Name="ConttsGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Email">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Navy" x:Name="Contactrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Alternative">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Blue" x:Name="ContGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+            </tabView:SfTabView>
+        </ContentPage.Content>
+    </ContentPage>
 
 {% endhighlight %}
 
@@ -1170,12 +1088,12 @@ using Xamarin.Forms.Xaml;
 namespace TabView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class TabView : ContentPage
-	{
+    public partial class TabView : ContentPage
+    {
         SfTabView tabView;
-		public TabView ()
-		{
-			InitializeComponent ();
+        public TabView()
+        {
+            InitializeComponent();
             tabView = new SfTabView();
             var allContactsGrid = new Grid { BackgroundColor = Color.Red };
             var favoritesGrid = new Grid { BackgroundColor = Color.Green };
@@ -1224,8 +1142,8 @@ namespace TabView
             tabView.BackgroundColor = Color.Aqua;
             tabView.OverflowMode = OverflowMode.DropDown;
             this.Content = tabView;
-		}
-	}
+        }
+    }
 }
 			
 {% endhighlight %}
@@ -1244,43 +1162,43 @@ N> The selection indicator setting properties will not work when using custom he
 
 {% highlight xaml %}
 
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+ <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
              x:Class="TabView.TabView">
-    <ContentPage.Content>
-         <tabView:SfTabView BackgroundColor="Aqua">
-            <tabView:SfTabItem Title="Call"
+        <ContentPage.Content>
+            <tabView:SfTabView BackgroundColor="Aqua">
+                <tabView:SfTabItem Title="Call"
                                SelectionColor="Aqua">
-                <tabView:SfTabItem.HeaderContent>
-                    <Button
+                    <tabView:SfTabItem.HeaderContent>
+                        <Button
                         Text="All Calls" 
                         BackgroundColor="Yellow"
                         FontSize="10"
                         Clicked="Handle_Clicked"/>
-                </tabView:SfTabItem.HeaderContent>
-                <tabView:SfTabItem.Content>
-                    <StackLayout>
-                        <Grid BackgroundColor="Green"/>
-                        <Button Text="Contacts" WidthRequest="300" />
-                        <Button Text="Location" WidthRequest="300" />
-                        <Button Text="Email" WidthRequest="300" />
-                    </StackLayout>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Favorites">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Green" x:Name="FavoritesGrid"/>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Contacts">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-        </tabView:SfTabView>
-    </ContentPage.Content>
-</ContentPage>
+                    </tabView:SfTabItem.HeaderContent>
+                    <tabView:SfTabItem.Content>
+                        <StackLayout>
+                            <Grid BackgroundColor="Green"/>
+                            <Button Text="Contacts" WidthRequest="300" />
+                            <Button Text="Location" WidthRequest="300" />
+                            <Button Text="Email" WidthRequest="300" />
+                        </StackLayout>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Favorites">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Green" x:Name="FavoritesGrid"/>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Contacts">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+            </tabView:SfTabView>
+        </ContentPage.Content>
+    </ContentPage>
 
 {% endhighlight %}
 
@@ -1293,12 +1211,12 @@ using Xamarin.Forms.Xaml;
 namespace TabView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class TabView : ContentPage
-	{
+    public partial class TabView : ContentPage
+    {
         SfTabView tabView;
-		public TabView ()
-		{
-			InitializeComponent ();
+        public TabView()
+        {
+            InitializeComponent();
             tabView = new SfTabView();
             var allContactsGrid = new Grid { BackgroundColor = Color.Red };
             var favoritesGrid = new Grid { BackgroundColor = Color.Green };
@@ -1311,11 +1229,11 @@ namespace TabView
             tabView.OverflowButtonSettings = overflowButtonSettings;
             tabView.EnableSwiping = false;
             var allCallsButton = new Button();
-            Xamarin.Forms.Button button = new Xamarin.Forms.Button() 
-            { 
+            Xamarin.Forms.Button button = new Xamarin.Forms.Button()
+            {
                 Text = "All Calls",
                 BackgroundColor = Color.Yellow,
-                FontSize = 10 
+                FontSize = 10
             };
 
             var tabItems = new TabItemCollection
@@ -1340,13 +1258,13 @@ namespace TabView
             tabView.Items = tabItems;
             tabView.BackgroundColor = Color.Aqua;
             this.Content = tabView;
-		}
+        }
         void Handle_Clicked(object sender, System.EventArgs e)
         {
         }
-	}
+    }
 }
-			
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -1354,7 +1272,8 @@ namespace TabView
 The following code sample demonstrates customizing the header by adding image and label as the header content of the tab view.
 
 {% highlight xaml %}
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+
+ <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:syncfusion="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
              x:Class="TabView.TabView">
@@ -1362,29 +1281,29 @@ The following code sample demonstrates customizing the header by adding image an
             <local:ContactsViewModel x:Name="viewModel"/>
         </ContentPage.BindingContext>
         <ContentPage.Content>
-           <syncfusion:SfTabView x:Name="tabView" 
+            <syncfusion:SfTabView x:Name="tabView" 
                               TabHeight="80" 
                               BackgroundColor="#BEBEBE" 
                               EnableSwiping="False" 
                               VisibleHeaderCount="3"
                               Margin="0,40,0,0">
-            <syncfusion:SfTabView.SelectionIndicatorSettings>
-                <syncfusion:SelectionIndicatorSettings Color="Green" Position="Fill" StrokeThickness="4"/>
-            </syncfusion:SfTabView.SelectionIndicatorSettings>
-            <syncfusion:SfTabItem>
-                <syncfusion:SfTabItem.HeaderContent>
-                    <Grid VerticalOptions="Center"
+                <syncfusion:SfTabView.SelectionIndicatorSettings>
+                    <syncfusion:SelectionIndicatorSettings Color="Green" Position="Fill" StrokeThickness="4"/>
+                </syncfusion:SfTabView.SelectionIndicatorSettings>
+                <syncfusion:SfTabItem>
+                    <syncfusion:SfTabItem.HeaderContent>
+                        <Grid VerticalOptions="Center"
                           BackgroundColor="#eea782" 
                           HeightRequest="400"
                           WidthRequest="500" 
                           x:Name="ChatsHeader" 
                           StyleId="ChatsHeader"
                           HorizontalOptions="Center">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <Label Text="James"
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Label Text="James"
                                TextColor="Black"
                                FontSize="23"
                                Grid.Row="0"
@@ -1392,31 +1311,31 @@ The following code sample demonstrates customizing the header by adding image an
                                HeightRequest="50"
                                VerticalOptions="Center"
                                HorizontalOptions="Center"/>
-                        <Grid Grid.Row="1">
-                            <Image HeightRequest="100"  
+                            <Grid Grid.Row="1">
+                                <Image HeightRequest="100"  
                                    WidthRequest="70" 
                                    Source="a0.png"/>
+                            </Grid>
                         </Grid>
-                    </Grid>
-                </syncfusion:SfTabItem.HeaderContent>
-                <syncfusion:SfTabItem.Content>
-                    <Grid BackgroundColor="Yellow" x:Name="FavoritesGrid" />
-                </syncfusion:SfTabItem.Content>
-            </syncfusion:SfTabItem>
-            <syncfusion:SfTabItem >
-                <syncfusion:SfTabItem.HeaderContent>
-                    <Grid VerticalOptions="Center" 
+                    </syncfusion:SfTabItem.HeaderContent>
+                    <syncfusion:SfTabItem.Content>
+                        <Grid BackgroundColor="Yellow" x:Name="FavoritesGrid" />
+                    </syncfusion:SfTabItem.Content>
+                </syncfusion:SfTabItem>
+                <syncfusion:SfTabItem >
+                    <syncfusion:SfTabItem.HeaderContent>
+                        <Grid VerticalOptions="Center" 
                           BackgroundColor="#C9EE82"
                           HeightRequest="400"
                           WidthRequest="500" 
                           x:Name="ChatsHeader2"
                           StyleId="ChatsHeader"
                           HorizontalOptions="Center">
-                        <Grid.RowDefinitions> 
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <Label Text="Jacob"
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Label Text="Jacob"
                                TextColor="Black"
                                FontSize="23"
                                Grid.Row="0"
@@ -1424,32 +1343,32 @@ The following code sample demonstrates customizing the header by adding image an
                                HeightRequest="50"
                                VerticalOptions="Center"
                                HorizontalOptions="Center"/>
-                        <Grid Grid.Row="1">
-                            <Image HeightRequest="100" 
+                            <Grid Grid.Row="1">
+                                <Image HeightRequest="100" 
                                    WidthRequest="70" 
                                    Source="a2.png"/>
+                            </Grid>
                         </Grid>
-                    </Grid>
                     </syncfusion:SfTabItem.HeaderContent>
-                <syncfusion:SfTabItem.Content>
-                    <Grid BackgroundColor="Blue"
+                    <syncfusion:SfTabItem.Content>
+                        <Grid BackgroundColor="Blue"
                           x:Name="ContactsGrid" />
-                </syncfusion:SfTabItem.Content>
-            </syncfusion:SfTabItem>
-            <syncfusion:SfTabItem>
-                <syncfusion:SfTabItem.HeaderContent>
-                    <Grid VerticalOptions="Center" 
+                    </syncfusion:SfTabItem.Content>
+                </syncfusion:SfTabItem>
+                <syncfusion:SfTabItem>
+                    <syncfusion:SfTabItem.HeaderContent>
+                        <Grid VerticalOptions="Center" 
                           BackgroundColor="#eedd82"
                           HeightRequest="400" 
                           WidthRequest="500"
                           x:Name="ChatsHeader3"
                           StyleId="ChatsHeader"
                           HorizontalOptions="Center">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <Label Text="John"  
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Label Text="John"  
                                TextColor="Black"
                                FontSize="23" 
                                Grid.Row="0"
@@ -1457,41 +1376,41 @@ The following code sample demonstrates customizing the header by adding image an
                                HeightRequest="50"
                                VerticalOptions="Center"
                                HorizontalOptions="Center"/>
-                        <Grid Grid.Row="1">
-                            <Image HeightRequest="100" 
+                            <Grid Grid.Row="1">
+                                <Image HeightRequest="100" 
                                    WidthRequest="70" 
                                    Source="a1.png"/>
+                            </Grid>
                         </Grid>
-                    </Grid>
-                </syncfusion:SfTabItem.HeaderContent>
-                <syncfusion:SfTabItem.Content>
-                    <ListView x:Name="ContactListView" 
+                    </syncfusion:SfTabItem.HeaderContent>
+                    <syncfusion:SfTabItem.Content>
+                        <ListView x:Name="ContactListView" 
                               ItemsSource="{Binding ContactList}"
                               BackgroundColor="#cfead9"
                               RowHeight="100">
-                        <ListView.BindingContext>
-                            <local:ContactsViewModel />
-                        </ListView.BindingContext>
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <ViewCell>
-                                    <StackLayout Orientation="Vertical">
-                                        <Label Text="{Binding Name}"
+                            <ListView.BindingContext>
+                                <local:ContactsViewModel />
+                            </ListView.BindingContext>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout Orientation="Vertical">
+                                            <Label Text="{Binding Name}"
                                                FontSize="24" 
                                                TextColor="Blue" />
-                                        <Label Text="{Binding Number}" 
+                                            <Label Text="{Binding Number}" 
                                                FontSize="20" 
                                                TextColor="LightSlateGray" />
-                                    </StackLayout>
-                                </ViewCell>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                </syncfusion:SfTabItem.Content>
-            </syncfusion:SfTabItem>
-        </syncfusion:SfTabView>
-    </ContentPage.Content>
-</ContentPage>
+                                        </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </syncfusion:SfTabItem.Content>
+                </syncfusion:SfTabItem>
+            </syncfusion:SfTabView>
+        </ContentPage.Content>
+    </ContentPage>
 
 {% endhighlight %}
 

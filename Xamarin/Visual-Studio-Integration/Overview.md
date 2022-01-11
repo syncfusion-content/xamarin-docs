@@ -24,10 +24,8 @@ The Syncfusion provides the following extension supports in Visual Studio:
 
 **Essential Studio for Xamarin in Visual Studio**
 
+![Choose Syncfusion Xamarin application from Visual Studio new project dialog via Syncfusion menu](Visual-Studio-Extensions/Syncfusion-Project-Templates_images/Syncfusion_Menu_ProjectTemplate_2019.png)
+
+N> In Visual Studio 2017 or lower, you can see the Syncfusion menu directly in the Visual Studio menu.
+
 ![Syncfusion Menu when No project selected in Visual Studio](Overview_images/Syncfusion_Menu_OverView1.png)
-
-N> From Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
-
-![Choose Syncfusion Xamarin application from Visual Studio new project dialog via Syncfusion menu](VS2019-Extensions/Syncfusion-Project-Templates_images/Syncfusion_Menu_ProjectTemplate_2019.png)
-
-

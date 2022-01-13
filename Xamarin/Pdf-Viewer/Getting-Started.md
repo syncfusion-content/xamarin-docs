@@ -216,6 +216,10 @@ The sample that illustrates loading a PDF in MVVM binding can be downloaded from
 
 <http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-2072455774> 
 
+On executing the above sample, you will get the output as shown in the following image.
+
+![SfPdfViewer](pdfviewer_images/pdfviewer.png)
+
 ## Loading a PDF in code-behind/programmatically
 
 In code-behind a PDF can be loaded to PdfViewer just by using the [LoadDocument](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_LoadDocument_System_IO_Stream_) method without the need of the "PdfViewerViewModel" class described in the previous section.  Use the following code snippet in the code-behind of the XAML page. 

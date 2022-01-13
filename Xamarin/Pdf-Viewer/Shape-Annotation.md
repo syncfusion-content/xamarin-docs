@@ -18,8 +18,6 @@ documentation: ug
 5. Polygon
 6. Cloud
 
-N>**Arrow** shape annotation is currently supported only in Android and iOS platforms.
-
 In all the code snippets, Rectangle shape annotation is used for illustration purpose.
 
 ## Adding shape annotations using toolbar

@@ -32,12 +32,10 @@ When providing password character, you can show the typed character with some de
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfMaskedEdit x:Name="maskedEdit" Mask="\w+" MaskType="RegEx" PasswordChar="*" EnablePasswordDelay="True" />
+<syncfusion:SfMaskedEdit x:Name="maskedEdit" PasswordChar="*" EnablePasswordDelay="True" />
 {% endhighlight %}
 {% highlight c# %}
 SfMaskedEdit maskedEdit = new SfMaskedEdit();
-maskedEdit.Mask = @"\w+";
-maskedEdit.MaskType = MaskType.RegEx;
 maskedEdit.PasswordChar = '*';
 maskedEdit.EnablePasswordDelay = true;
 {% endhighlight %}

@@ -835,17 +835,20 @@ public class Address
 
 ![Loading complex type property values for drop down editor in Xamarin.Forms DataForm](SfDataForm_images/ComplexPropertyComboBox.jpg)
 
-### Enable the MultiSelectMode in Custom DataFormDropDown editor
+### Enable the multi-selection mode in dropdown editor
 
-MultiSelectMode can be achieved in the DataFormDropDown editor with the help of the Custom DataFromDropDown editor class. Inside the custom class, override the comboBox MultiSelectMode. For the DropDown editor, this property is of type string or int, but while MultiSelection allows us to select more items from a list of items, these items cannot be stored in a single string property. To overcome this scenario, we should override the OnCommitValue, OnUpdateValue, and OnValidateValue methods and update the value manually.
+By default, the SfComboBox of drop down editor is supports single selection, you can also enable the multi-selection by using MultiSelectMode property of SfComboBox by adding custom editor.
+
+By using the OnInitializeView override method change the MultiSelectMode property to Token.
+For the DropDown editor, this property is of type string or int, but while MultiSelection allows us to select more items from a list of items, these items cannot be stored in a single string property.To overcome this, commit, data validation can be handled manually by using the OnCommitValue, OnUpdateValue, and OnValidateValue override methods.
 
 {% tabs %}
 {% highlight c# %}
-public class CustomDropDownEditor : DataFormDropDownEditor
+public class MultiSelectDropDownEditor : DataFormDropDownEditor
 {
     private Address Address;
     SfDataForm sfDataForm;
-    public CustomDropDownEditor(SfDataForm dataForm) : base(dataForm)
+    public MultiSelectDropDownEditor(SfDataForm dataForm) : base(dataForm)
     {
         this.sfDataForm = dataForm;
         this.Address = this.DataForm.DataObject as Address;

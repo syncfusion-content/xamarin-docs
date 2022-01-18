@@ -837,57 +837,57 @@ public class Address
 
 ### Enable the multi-selection mode in dropdown editor
 
-By default, the SfComboBox of drop down editor is supports single selection, you can also enable the multi-selection by using MultiSelectMode property of SfComboBox by adding custom editor.
+By default, the SfComboBox of drop down editor supports single selection; however, you can enable the multi-selection by using the MultiSelectMode property of the SfComboBox when adding a custom editor.
 
-By using the OnInitializeView override method change the MultiSelectMode property to Token.
-For the DropDown editor, this property is of type string or int, but while MultiSelection allows us to select more items from a list of items, these items cannot be stored in a single string property.To overcome this, commit, data validation can be handled manually by using the OnCommitValue, OnUpdateValue, and OnValidateValue override methods.
+By using the OnInitializeView override method, you can change the MultiSelectMode property to Token.
+For the DropDown editor, this property is of type string or int, but because MultiSelection allows us to select more items from a list of items, these items cannot be stored in a single string property. To overcome this, commit and data validation can be handled manually by using the OnCommitValue, OnUpdateValue, and OnValidateValue override methods.
 
 {% tabs %}
 {% highlight c# %}
 public class MultiSelectDropDownEditor : DataFormDropDownEditor
 {
-    private Address Address;
+    private ContactInfo Address;
     SfDataForm sfDataForm;
     public MultiSelectDropDownEditor(SfDataForm dataForm) : base(dataForm)
     {
         this.sfDataForm = dataForm;
-        this.Address = this.DataForm.DataObject as Address;
+        this.Address = this.DataForm.DataObject as ContactInfo;
     }
     protected override void OnInitializeView(DataFormItem dataFormItem, SfComboBox view)
     {
         base.OnInitializeView(dataFormItem, view);
         view.MultiSelectMode = MultiSelectMode.Token;
         view.TokensWrapMode = TokensWrapMode.Wrap;
-  }
- 
+    }
+
     protected override void OnCommitValue(SfComboBox view)
     {
         if (view.MultiSelectMode == MultiSelectMode.None)
         {
-            // Use existing method for single selection.
+            // Use existing method for single selection. 
             base.OnCommitValue(view);
         }
         else
         {
-            // Multi Selection needs to be updated with all selected items.
+            // Multi Selection needs to be updated with all selected items. 
             if (view != null && view.SelectedItem != null && view.SelectedItem is IList)
             {
                 string country = string.Empty;
-                foreach (TestData item in (IList)view.SelectedItem)
+                foreach (Address address in (IList)view.SelectedItem)
                 {
-                    if (country.Contains(item.label))
+                    if (country.Contains(address.City))
                     {
                         continue;
                     }
- 
-                    country = string.IsNullOrEmpty(country) ? item.label : country + "," + item.label;
+
+                    country = string.IsNullOrEmpty(country) ? address.City : country + "," + address.City;
                 }
- 
+
                 this.Address.Country = country;
             }
         }
     }
- 
+
     protected override void OnUpdateValue(DataFormItem dataFormItem, SfComboBox view)
     {
         if (view.MultiSelectMode == MultiSelectMode.None)
@@ -907,7 +907,7 @@ public class MultiSelectDropDownEditor : DataFormDropDownEditor
             }
         }
     }
- 
+
     protected override bool OnValidateValue(SfComboBox view)
     {
         if (view.MultiSelectMode == MultiSelectMode.None)
@@ -917,13 +917,13 @@ public class MultiSelectDropDownEditor : DataFormDropDownEditor
         else
         {
             this.OnCommitValue(view);
- 
-            // Here country is multi selection property.
+
+            // Here country is multi selection property. 
             if (string.IsNullOrEmpty(this.Address.Country))
             {
                 return false;
             }
- 
+
             return true;
         }
     }
@@ -931,7 +931,7 @@ public class MultiSelectDropDownEditor : DataFormDropDownEditor
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code [here] (https://github.com/SyncfusionExamples/multi-select-drop-down-editor-in-xamarin.forms-dataform)
+You can download the entire source code [here] (https://github.com/SyncfusionExamples/multi-select-drop-down-editor-in-xamarin.forms-dataform).
 
 ### See also
 

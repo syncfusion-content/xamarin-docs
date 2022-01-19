@@ -837,10 +837,10 @@ public class Address
 
 ### Enable the multi-selection mode in dropdown editor
 
-By default, the SfComboBox of drop down editor supports single selection; however, you can enable the multi-selection by using the MultiSelectMode property of the SfComboBox when adding a custom editor.
+By default, the `SfComboBox` of drop down editor supports single selection in data form; however, you can enable the multi-selection by using the [MultiSelectMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.MultiSelectMode.html) property of the `SfComboBox` when adding a custom editor.
 
-By using the OnInitializeView override method, you can change the MultiSelectMode property to Token.
-For the DropDown editor, this property is of type string or int, but because MultiSelection allows us to select more items from a list of items, these items cannot be stored in a single string property. To overcome this, commit and data validation can be handled manually by using the OnCommitValue, OnUpdateValue, and OnValidateValue override methods.
+By using the `OnInitializeView` override method, you can change the `MultiSelectMode` property to [Token](https://help.syncfusion.com/xamarin/combobox/multiple-selection#token-representation).
+For the DropDown editor, this property is of type string or int, but because MultiSelection allows us to select more items from a list of items, these items cannot be stored in a single string property. To overcome this, commit and data validation can be handled manually by using the `OnCommitValue`, `OnUpdateValue`, and `OnValidateValue` override methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -931,7 +931,7 @@ public class MultiSelectDropDownEditor : DataFormDropDownEditor
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code [here] (https://github.com/SyncfusionExamples/multi-select-drop-down-editor-in-xamarin.forms-dataform).
+N>[View sample in GitHub](https://github.com/SyncfusionExamples/multi-select-drop-down-editor-in-xamarin.forms-dataform).
 
 ### See also
 

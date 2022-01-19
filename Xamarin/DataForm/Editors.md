@@ -840,7 +840,7 @@ public class Address
 By default, the `SfComboBox` of drop down editor supports single selection in data form; however, you can enable the multi-selection by using the [MultiSelectMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.MultiSelectMode.html) property of the `SfComboBox` when adding a custom editor.
 
 By using the `OnInitializeView` override method, you can change the `MultiSelectMode` property to [Token](https://help.syncfusion.com/xamarin/combobox/multiple-selection#token-representation).
-For the DropDown editor, this property is of type string or int, but because MultiSelection allows us to select more items from a list of items, these items cannot be stored in a single string property. To overcome this, commit and data validation can be handled manually by using the `OnCommitValue`, `OnUpdateValue`, and `OnValidateValue` override methods.
+For the DropDown editor, this property is of type string or int, but because MultiSelection allows us to select more items from a list of items, these items cannot be stored in a single string property. To overcome this, commit and data validation can be handled manually by using the `OnCommitValue`, `OnUpdateValue`, and `OnValidateValue` override methods of `DataFormDropDownEditor.`
 
 {% tabs %}
 {% highlight c# %}

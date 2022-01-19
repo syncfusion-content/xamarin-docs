@@ -846,12 +846,10 @@ For the DropDown editor, this property is of type string or int, but because Mul
 {% highlight c# %}
 public class MultiSelectDropDownEditor : DataFormDropDownEditor
 {
-    private ContactInfo address;
-    SfDataForm dataForm;
+    private ContactInfo contactInfo;
     public MultiSelectDropDownEditor(SfDataForm dataForm) : base(dataForm)
     {
-        this.dataForm = dataForm;
-        this.address = this.DataForm.DataObject as ContactInfo;
+        this.contactInfo = this.DataForm.DataObject as ContactInfo;
     }
     protected override void OnInitializeView(DataFormItem dataFormItem, SfComboBox view)
     {
@@ -883,7 +881,7 @@ public class MultiSelectDropDownEditor : DataFormDropDownEditor
                     country = string.IsNullOrEmpty(country) ? address.City : country + "," + address.City;
                 }
 
-                this.address.Country = country;
+                this.contactInfo.Country = country;
             }
         }
     }
@@ -919,7 +917,7 @@ public class MultiSelectDropDownEditor : DataFormDropDownEditor
             this.OnCommitValue(view);
 
             // Here country is multi selection property. 
-            if (string.IsNullOrEmpty(this.address.Country))
+            if (string.IsNullOrEmpty(this.contactInfo.Country))
             {
                 return false;
             }

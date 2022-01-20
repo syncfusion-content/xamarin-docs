@@ -173,8 +173,7 @@ this.Content = richtexteditor;
 
 ### DefaultFont with Base64 TTF string
 
-The [`DefaultFont`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_DefaultFont) property accepts font
- as Base64 TTF string.
+The [`DefaultFont`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_DefaultFont) property accepts font as Base64 TTF string.
 
 {% tabs %} 
 

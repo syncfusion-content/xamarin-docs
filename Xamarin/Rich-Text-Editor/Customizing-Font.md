@@ -171,6 +171,33 @@ this.Content = richtexteditor;
 {% endhighlight %}
 {% endtabs %}
 
+### DefaultFont with Base64 TTF string
+
+The [`DefaultFont`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_DefaultFont) property accepts font
+ as Base64 TTF string.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<ContentPage.Content>
+    <StackLayout>
+        <richtexteditor:SfRichTextEditor x:Name="rte" DefaultFont="Sample.Fonts.Kaushan Script.ttf" VerticalOptions="FillAndExpand"/>
+    </StackLayout>
+</ContentPage.Content>
+ 
+{% endhighlight %}
+
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor()
+{
+    VerticalOptions = LayoutOptions.FillAndExpand,
+    DefaultFont = "Sample.Fonts.Kaushan Script.ttf"
+};
+this.Content = richtexteditor;
+{% endhighlight %}
+{% endtabs %}
+
 ## DefaultFontSize
 
 The SfRichTextEditor provides support to modify the default font size used in the Rich text editor control.The default font size of the Rich Text Editor can be changed using the DefaultFontSize property.

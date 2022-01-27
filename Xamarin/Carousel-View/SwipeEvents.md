@@ -146,3 +146,5 @@ namespace CarouselSample
 {% endtabs %}
 
 N> The `SwipeStarted` and `SwipeEnded` events are supported only on the Android and iOS platforms.
+
+![Carousel Swiping events](images/CarouselSwiping_GIF.gif)

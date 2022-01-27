@@ -53,7 +53,7 @@ The steps below illustrate how to download and install the Syncfusion Xamarin ex
 	
 	![Vsix Modify Window](Download-and-Installation-images/VSIXInstall.png)
 4.	Click the **Install** button.
-5.	After the installation is complete, open Visual Studio 2019. You can now use Syncfusion extensions from the Visual Studio under the Extensions menu.
+5.	After the installation is complete, open Visual Studio. You can now use Syncfusion extensions from the Visual Studio under the Extensions menu.
 	
 	![Syncfusion Xamarin Menu](Download-and-Installation-images/SyncfusionXamarinMenu.png)
 

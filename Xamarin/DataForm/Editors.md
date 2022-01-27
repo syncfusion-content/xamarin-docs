@@ -835,6 +835,102 @@ public class Address
 
 ![Loading complex type property values for drop down editor in Xamarin.Forms DataForm](SfDataForm_images/ComplexPropertyComboBox.jpg)
 
+### Enable the multi-selection mode in dropdown editor
+
+By default, the `SfComboBox` of drop down editor supports single selection in data form; however, you can enable the multi-selection by using the [MultiSelectMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.MultiSelectMode.html) property of the `SfComboBox` when adding a custom editor.
+
+By using the `OnInitializeView` override method, you can change the `MultiSelectMode` property to [Token](https://help.syncfusion.com/xamarin/combobox/multiple-selection#token-representation).
+For the DropDown editor, this property is of type string or int, but because MultiSelection allows us to select more items from a list of items, these items cannot be stored in a single string property. To overcome this, commit and data validation can be handled manually by using the `OnCommitValue`, `OnUpdateValue`, and `OnValidateValue` override methods of `DataFormDropDownEditor.`
+
+{% tabs %}
+{% highlight c# %}
+public class MultiSelectDropDownEditor : DataFormDropDownEditor
+{
+    private ContactInfo contactInfo;
+    public MultiSelectDropDownEditor(SfDataForm dataForm) : base(dataForm)
+    {
+        this.contactInfo = this.DataForm.DataObject as ContactInfo;
+    }
+    protected override void OnInitializeView(DataFormItem dataFormItem, SfComboBox view)
+    {
+        base.OnInitializeView(dataFormItem, view);
+        view.MultiSelectMode = MultiSelectMode.Token;
+        view.TokensWrapMode = TokensWrapMode.Wrap;
+    }
+
+    protected override void OnCommitValue(SfComboBox view)
+    {
+        if (view.MultiSelectMode == MultiSelectMode.None)
+        {
+            // Use existing method for single selection. 
+            base.OnCommitValue(view);
+        }
+        else
+        {
+            // Multi Selection needs to be updated with all selected items. 
+            if (view != null && view.SelectedItem != null && view.SelectedItem is IList)
+            {
+                string country = string.Empty;
+                foreach (Address address in (IList)view.SelectedItem)
+                {
+                    if (country.Contains(address.City))
+                    {
+                        continue;
+                    }
+
+                    country = string.IsNullOrEmpty(country) ? address.City : country + "," + address.City;
+                }
+
+                this.contactInfo.Country = country;
+            }
+        }
+    }
+
+    protected override void OnUpdateValue(DataFormItem dataFormItem, SfComboBox view)
+    {
+        if (view.MultiSelectMode == MultiSelectMode.None)
+        {
+            base.OnUpdateValue(dataFormItem, view);
+        }
+        else
+        {
+            var list = (dataFormItem as DataFormDropDownItem).ItemsSource;
+            if (list != null)
+            {
+                view.DataSource = list.OfType<object>().ToList();
+            }
+            else
+            {
+                view.DataSource = null;
+            }
+        }
+    }
+
+    protected override bool OnValidateValue(SfComboBox view)
+    {
+        if (view.MultiSelectMode == MultiSelectMode.None)
+        {
+            return base.OnValidateValue(view);
+        }
+        else
+        {
+            this.OnCommitValue(view);
+
+            // Here country is multi selection property. 
+            if (string.IsNullOrEmpty(this.contactInfo.Country))
+            {
+                return false;
+            }
+
+            return true;
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+N>[View sample in GitHub](https://github.com/SyncfusionExamples/multi-select-drop-down-editor-in-xamarin.forms-dataform).
+
 ### See also
 
 [How to make editable drop down in Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11272/)                                                                                                                                                                                                                                                                                                                                                                           

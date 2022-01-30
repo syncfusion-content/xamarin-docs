@@ -71,7 +71,7 @@ Nested Tab items can be configured in tab view through the `Items` property of `
                                                                        FontIconFontSize="22"
                                                                        FontIconFontFamily="{Binding Converter={StaticResource NestedTabFont}}">
                                                         <tabview:SfTabItem.Content>
-                                                                              <Grid BackgroundColor="Gray" x:Name="FavouritesGrid" />
+                                                            <Grid BackgroundColor="Gray" x:Name="FavouritesGrid" />
                                                         </tabview:SfTabItem.Content>
                                                     </tabview:SfTabItem>
                                                     <tabview:SfTabItem Title="Received Calls"
@@ -79,7 +79,7 @@ Nested Tab items can be configured in tab view through the `Items` property of `
                                                                        FontIconFontSize="22"
                                                                        FontIconFontFamily="{Binding Converter={StaticResource NestedTabFont}}">
                                                         <tabview:SfTabItem.Content>
-                                                             <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+                                                            <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
                                                         </tabview:SfTabItem.Content>
                                                     </tabview:SfTabItem>
                                                     <tabview:SfTabItem Title="Missed Calls"
@@ -131,7 +131,7 @@ Nested Tab items can be configured in tab view through the `Items` property of `
                                                                        IconFont="g"
                                                                        FontIconFontSize="22"
                                                                        FontIconFontFamily="{Binding Converter={StaticResource NestedTabFont}}">
-                                                        <tabview:SfTabItem.Content> 
+                                                        <tabview:SfTabItem.Content>
                                                             <Grid BackgroundColor="Olive" />
                                                         </tabview:SfTabItem.Content>
                                                     </tabview:SfTabItem>
@@ -208,7 +208,7 @@ namespace TabViewAutomationSample
     }
     public class CustomFrame : Frame
     {
-        
+
     }
 }
 
@@ -226,9 +226,11 @@ Lazy loading improves performance of SfTabView at initial loading. To enable thi
 
 {% highlight xaml %}
 
-    <tabview:SfTabView x:Name="tabView" EnableVirtualization="True"> 
-     ... 
-     </tabview:SfTabView> 
+<tabview:SfTabView x:Name = "tabView" EnableVirtualization = "True" >
+
+    ...
+
+</ tabview:SfTabView >
 
 {% endhighlight %}
 
@@ -236,7 +238,7 @@ Lazy loading improves performance of SfTabView at initial loading. To enable thi
 
 {% endhighlight %}
 
-    tabView.EnableVirtualization = true;
+tabView.EnableVirtualization = true;
 
 {% endtabs %}
 

@@ -64,7 +64,7 @@ N> To know more about obtaining our components, refer to these links for [Mac](
 
 I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
-## Launching the tab view on each platform
+## Launching the SfTabView on each platform
 
 To use the tab view inside an application, each platform application must initialize the tab view renderer. This initialization steps vary from platform to platform, and it is discussed in the following sections:
 
@@ -121,7 +121,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 }
 {% endhighlight %}
 
-## Create a simple tab view
+## Create a simple SfTabView
 
 This section explains how to create a tab view and configure it. The control can be configured entirely in C# code or by using XAML markup. The following screenshot illustrates the output of tab view on iOS, Android and UWP devices.
 
@@ -276,9 +276,9 @@ namespace TabViewAutomationSample
 
 {% endtabs %}
 
-## Adding ListView in tab view
+## Adding ListView in SfTabView
 
-## UseCase Sample with Contacts Information stored as a ListView in TabView Control
+## UseCase Sample with Contacts Information stored as a ListView in SfTabView Control
 
 Create a view model class with the `ContactsInfo` collection property, which is initialized with required number of data objects.
 
@@ -315,7 +315,7 @@ public class ContactsViewModel : INotifyPropertyChanged
 
 {% endhighlight %}
 
-## Binding data to list view
+## Binding data to ListView
 
 Bind the items source of the `ListView`, and set the required appearance in its `ItemTemplate` property in which the list view can be hosted within the content region of tab item. 
 

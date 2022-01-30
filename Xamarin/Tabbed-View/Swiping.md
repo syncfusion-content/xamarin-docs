@@ -1,68 +1,75 @@
 ---
 layout: post
-title: Selection Indicator in Xamarin Tabbed View control | Syncfusion
-description: Learn here all about Selection Indicator support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
+title: Swiping in Xamarin Tabbed View | Syncfusion
+description: Learn here all about swiping support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
 platform: Xamarin
 control: TabView
 documentation: ug
 ---
 
-# Selection Indicator in Xamarin Tabbed View (SfTabView)
+# Swiping in Xamarin Tabbed View (SfTabView)
 
-The selection indicator strip can be used to indicate the selected index of the tab view control. It can be customized with the built-in APIs that are available in the [SelectionIndicatorSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_SelectionIndicatorSettings) property of [SfTabView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html).
+By default, both the vertical swiping for list view and horizontal swiping for tab view will work.
 
-![Selection Indicator Strip](images/Selection-Indicator/tabstyle02.png)
+## Enable swiping
 
-
-The selection indicator can be positioned below the title or above the title, or else it can be filled in the entire selected header space.
+Swiping can be customized by using the [`EnableSwiping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_EnableSwiping) property of SfTabView. By default, [`EnableSwiping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_EnableSwiping) is set to true. To limit the user interaction, set the   
+[`EnableSwiping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_EnableSwiping) property of SfTabView to false.
 
 {% tabs %}
 
 {% highlight xaml %}
 
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
              x:Class="TabView.TabView">
-    <ContentPage.Content>
-        <tabView:SfTabView VisibleHeaderCount="3"
-                           TabHeaderPosition="Bottom"  
-                           OverflowMode="DropDown">
-			<tabView:SfTabView.SelectionIndicatorSettings>
-                <tabView:SelectionIndicatorSettings
-                    Color="Aqua" 
-                    Position="Top" 
-                    StrokeThickness="10"/>
-            </tabView:SfTabView.SelectionIndicatorSettings>
-            <tabView:SfTabItem Title="CEO">
-                <tabView:SfTabItem.Content>
-                    <StackLayout>
-                        <Grid BackgroundColor="Green"/>
-                        <Button Text="Contacts" WidthRequest="300" />
-                        <Button Text="Location" WidthRequest="300" />
-                        <Button Text="Email" WidthRequest="300" />
-                    </StackLayout>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Patients">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Blue" x:Name="FavoritesGrid"/>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Staff">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Green" x:Name="ContactsGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Alternative">
-                <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Olive" x:Name="AlternativeGrid" />
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-        </tabView:SfTabView>
-    </ContentPage.Content>
-</ContentPage>
-			
+        <ContentPage.Content>
+            <tabView:SfTabView OverflowMode="DropDown"
+                            EnableSwiping="false" 
+                            VisibleHeaderCount="3" 
+                            BackgroundColor="Aqua">
+                <tabView:SfTabItem Title="Call">
+                    <tabView:SfTabItem.Content>
+                        <StackLayout>
+                            <Grid BackgroundColor="Green" />
+                            <Button Text="Contacts" WidthRequest="300" />
+                            <Button Text="Location" WidthRequest="300" />
+                            <Button Text="Email" WidthRequest="300" />
+                        </StackLayout>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Favorites">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Green" x:Name="FavoritesGrid"/>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Contacts">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Location">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Pink" x:Name="LocationGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Email">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Navy" x:Name="EmailGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Alternative">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Blue" x:Name="AlternativeGrid" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+            </tabView:SfTabView>
+        </ContentPage.Content>
+ </ContentPage>
+
+
 {% endhighlight %}
 
 {% highlight C# %}
@@ -82,40 +89,53 @@ namespace TabView
 			InitializeComponent ();
             tabView = new SfTabView();
             var allContactsGrid = new Grid { BackgroundColor = Color.Red };
-            var favoritesGrid = new Grid { BackgroundColor = Color.Blue };
-            var contactsGrid = new Grid { BackgroundColor = Color.Green };
-            var alternativeGrid = new Grid { BackgroundColor = Color.Olive };
-			var selectionIndicatorSettings = new SelectionIndicatorSettings();
-            selectionIndicatorSettings.Color = Color.Red;
-            selectionIndicatorSettings.Position = SelectionIndicatorPosition.Top;
-            selectionIndicatorSettings.StrokeThickness = 10;
-            tabView.SelectionIndicatorSettings = selectionIndicatorSettings;
-            tabView.TabHeaderPosition = TabHeaderPosition.Bottom;
-            tabView.OverflowMode = OverflowMode.DropDown;
+            var favoritesGrid = new Grid { BackgroundColor = Color.Green };
+            var contactsGrid = new Grid { BackgroundColor = Color.Blue };
+            var overflowButtonSettings = new OverflowButtonSettings();
+            overflowButtonSettings.BackgroundColor = Color.Yellow;
+            overflowButtonSettings.DisplayMode = OverflowButtonDisplayMode.Text;
+            overflowButtonSettings.Title = "OverFlow";
+            overflowButtonSettings.TitleFontSize = 10;
+            overflowButtonSettings.TitleFontColor = Color.Blue;
+            tabView.OverflowButtonSettings = overflowButtonSettings;
+            tabView.EnableSwiping = false;
             var tabItems = new TabItemCollection
             {
                 new SfTabItem()
                 {
-                    Title = "CEO",
+                    Title = "Calls",
                     Content = allContactsGrid
                 },
                 new SfTabItem()
                 {
-                    Title = "Patients",
+                    Title = "Favorites",
                     Content = favoritesGrid
                 },
                 new SfTabItem()
                 {
-                    Title = "Staff",
+                    Title = "Contacts",
                     Content = contactsGrid
-                }
+                },
+                new SfTabItem()
+                {
+                    Title = "Location",
+                    Content = contactsGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Email",
+                    Content = contactsGrid
+                },
                 new SfTabItem()
                 {
                     Title = "Alternative",
-                    Content = alternativeGrid
+                    Content = contactsGrid
                 }
             };
             tabView.Items = tabItems;
+            this.Content = tabView;
+            tabView.BackgroundColor = Color.Aqua;
+            tabView.OverflowMode = OverflowMode.DropDown;
             this.Content = tabView;
 		}
 	}
@@ -125,9 +145,31 @@ namespace TabView
 
 {% endtabs %}
 
-N> Stroke thickness will not be applicable when the selection indicator’s position is set to "Fill".
+## SwipingThreshold
 
-![SelectionIndicator Settings Image](images/Selection-Indicator/SelectionIndicator.png)
+By setting the [`SwipingThreshold`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_SwipingThreshold), you can set how far swipe before it is considered a swipe.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <tabView:SfTabView SwipingThreshold="30" EnableSwiping="True">
+    ...
+    </tabView:SfTabView>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+     ...
+     tabView.EnableSwiping = true;
+     tabView.SwipingThreshold = 30;
+     ...
+{% endhighlight %}
+
+{% endtabs %}
+
+N> This SwipingThreshold value should only be considered for swiping from left to right.
 
 ## AnimationDuration
 
@@ -227,3 +269,5 @@ namespace TabView
 {% endtabs %}
 
 ![Animation Duration](images/Selection-Indicator/AnimationDuration.gif)
+
+

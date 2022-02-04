@@ -13,16 +13,16 @@ The Syncfusion Essential Studio allows you to create the Xamarin application in 
 
 ## How to download Xamarin Mac installer?
 
-1. Xamarin Mac installer can be downloaded from your account’s [download](https://help.syncfusion.com/common/essential-studio/download) section. You can download trial\licensed Mac installer based on your license.
+1. Essential Studio Xamarin Mac installer can be downloaded from your account’s [download](https://help.syncfusion.com/common/essential-studio/download) section. You can download trial\licensed Mac installer based on your license.
 
-2. In the downloads page, click the "Mac" button and download the required Xamarin Mac installer.
+2. In the downloads page, click the "Mac" button and download the required Essential Studio Xamarin Mac installer.
 
    ![Download Page](Mac-Installer_images/Mac_Download.png)  
 
 
 ## How to resolve the warning message in Catalina OS? 
 
-   While running Syncfusion Xamarin Mac Installer on Catalina MacOS or later, the below alert will be displayed.
+   While running Essential Studio Xamarin Mac Installer on Catalina MacOS or later, the below alert will be displayed.
 
    ![Alert Image](Mac-Installer_images/Mac_Catalina_MacOS_Alert.png)  
      
@@ -33,9 +33,9 @@ The Syncfusion Essential Studio allows you to create the Xamarin application in 
 
 ## Step-by-Step Installation
 
-The steps below show how to install the Xamarin Mac installer. 
+The steps below show how to install the Essential Studio Xamarin Mac installer. 
 
-1. Open Syncfusion Xamarin Mac Installer(.pkg) file. The Installer Wizard opens. Click Continue.
+1. Open Syncfusion Essential Studio Xamarin Mac Installer(.pkg) file. The Installer Wizard opens. Click Continue.
 
    ![continue](Images/continue.JPG)
 

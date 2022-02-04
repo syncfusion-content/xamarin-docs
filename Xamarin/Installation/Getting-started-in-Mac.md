@@ -7,11 +7,31 @@ control: Syncfusion Controls
 documentation: ug
 ---
 
-# Overview of Syncfusion components Installation in Mac
+# Syncfusion Xamarin Mac Installation
 
 The Syncfusion Essential Studio allows you to create the Xamarin application in Visual Studio for Mac with the Syncfusion components.
 
-## Mac Build and Installation
+## How to download Mac installer?
+
+1. Mac installers can be downloaded from your account’s [download](https://help.syncfusion.com/common/essential-studio/download) section. You can download trial\licensed Mac installer based on your license.
+
+2. In the downloads page, click the "Mac" button and download the required Mac installer.
+
+   ![Download Page](Mac-Installer_images/Mac_Download.png)  
+
+
+## How to resolve the warning message in Catalina OS? 
+
+   While running Syncfusion Mac Installers on Catalina MacOS or later, the below alert will be displayed.
+
+   ![Alert Image](Mac-Installer_images/Mac_Catalina_MacOS_Alert.png)  
+     
+   If you receive this alert, follow the below steps for the easiest solution.   
+
+   1.	Right-click the downloaded pkg file.
+   2.	Select the "Open With" option and choose "Installer (Default)".
+
+## Step-by-Step Installation
 
 The steps below show how to install the Xamarin Mac installer. 
 

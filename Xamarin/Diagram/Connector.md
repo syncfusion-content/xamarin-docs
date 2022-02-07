@@ -353,7 +353,6 @@ You can customize the appearance of a connector by changing its fill color and b
         </sfDiagram:ConnectorCollection>
     </sfDiagram:SfDiagram.Connectors>
 </sfDiagram:SfDiagram>
-
 {% endhighlight %}
 
 {% highlight c# %}

@@ -159,7 +159,7 @@ diagram.LoadFromJson(JsonText);
 {% endtabs %}
 
 ## SaveAsImage
-To save the output screen shot of the diagram control in image format using the [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage) method. It’s using default format image.png File Name - it’s generated automatically by using the Current Date and Time.Save the sfdiagram with Specific ImageFormat.
+To save the output screen shot of the diagram control in image format using the [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage) method. It’s using default format image.png File Name - it’s generated automatically by using the Current Date and Time.Save the diagram with Specific ImageFormat.
  The following code sample explains this.
 
 {% highlight c# %}
@@ -169,19 +169,19 @@ this.Content = diagram;
 {% endhighlight %}
 {% endtabs %}
 
-Save the sfdiagram as image in specific format.
+Save the diagram as image in specific format.
 diagram.SaveAsImage(ImageFormat.Png);
 
-Save the sfdiagram as image with padding.
+Save the diagram as image with padding.
 diagram.SaveAsImage(5);
 diagram.SaveAsImage(2,5,5,2);
 
-Save the sfdiagram as Stream.
+Save the diagram as Stream.
 Stream stream = new MemoryStream();
 diagram.SaveAsImage(stream);
 
 N> To save the image on UWP platform location -AppData\Local\Packages\90e15aa5-f034-42d8-9532-0f8ac8ab27cf_bkebv2yxxpdar\RoamingState
-To save the image on Android and IOS platform location- emulator (or)simulator\PhotoGallery
+To save the image on Android and iOS platform location- emulator (or)simulator\PhotoGallery
 
 ## Diagram style settings		
 It is easier to apply default rendering styles to all shapes, connectors, stencil symbol, and stencil header in a diagram. Pass the following arguments to diagram style setting constructor: 
@@ -405,7 +405,7 @@ this.Content = diagram;
 {% endtabs %}
 
 ## ZoomEnd
-The [ZoomEnd](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_ZoomEnd) event wil be triggered while zoom in or zoom out the ['Diagram'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.html) control. The following code example explains how to create a ZoomEnd Event. 
+The [ZoomEnd](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_ZoomEnd) event will be triggered while zoom in or zoom out the ['Diagram'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.html) control. The following code example explains how to create a ZoomEnd Event. 
 
 {% tabs %}
 {% highlight xml %}

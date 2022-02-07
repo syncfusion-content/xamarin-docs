@@ -330,4 +330,48 @@ private void Diagram_ConnectorClicked(object sender, ConnectorClickedEventArgs a
 {% endhighlight %}
 {% endtabs %}
 
+## Connector Style Customization
+You can customize the appearance of a connector by changing its fill color and border color of the connector. The following code explains how to customize the appearance of the connector style.
+
+{% tabs %}
+{% highlight xml %}
+<sfDiagram:SfDiagram  VerticalOptions="FillAndExpand" x:Name="diagram" >
+    <sfDiagram:SfDiagram.Connectors>
+        <sfDiagram:ConnectorCollection>
+            <sfDiagram:Connector SourcePoint="100,100" TargetPoint="300,300">
+                <sfDiagram:Connector.Style>
+                    <sfDiagram:Style>
+                        <sfDiagram:Style.Brush>
+                            <sfDiagram:SolidBrush FillColor="Red" />
+                        </sfDiagram:Style.Brush>
+                        <sfDiagram:Style.StrokeBrush>
+                            <sfDiagram:SolidBrush FillColor="Yellow" />
+                        </sfDiagram:Style.StrokeBrush>
+                    </sfDiagram:Style>
+                </sfDiagram:Connector.Style>
+            </sfDiagram:Connector>
+        </sfDiagram:ConnectorCollection>
+    </sfDiagram:SfDiagram.Connectors>
+</sfDiagram:SfDiagram>
+
+{% endhighlight %}
+
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
+var connector1 = new Connector()
+{
+    SourcePoint = new Point(100, 100),
+    TargetPoint = new Point(300, 300),
+    Style = new Syncfusion.SfDiagram.XForms.Style()
+    {
+        Brush = new SolidBrush(Color.Red),
+        StrokeBrush = new SolidBrush(Color.Green)
+    }
+};
+diagram.AddConnector(connector1);
+this.Content = diagram;
+
+{% endhighlight %}
+{% endtabs %}
+
 N> You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

@@ -113,6 +113,8 @@ EnableTextEditing
 EnableSelectors
 EnableZoomAndPan
 IsReadOnly
+EnableAutoScroll
+EnableVirtualization
 **Example**
 The following code illustrates how to disable the item dragging.
 {% tabs %}
@@ -155,6 +157,31 @@ string JsonText = diagram.SaveAsJson();
 diagram.LoadFromJson(JsonText);
 {% endhighlight %}
 {% endtabs %}
+
+## SaveAsImage
+To save the output screen shot of the diagram control in image format using the [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage) method. It’s using default format image.png File Name - it’s generated automatically by using the Current Date and Time.Save the sfdiagram with Specific ImageFormat.
+ The following code sample explains this.
+
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
+diagram.SaveAsImage();
+this.Content = diagram;
+{% endhighlight %}
+{% endtabs %}
+
+Save the sfdiagram as image in specific format.
+diagram.SaveAsImage(ImageFormat.Png);
+
+Save the sfdiagram as image with padding.
+diagram.SaveAsImage(5);
+diagram.SaveAsImage(2,5,5,2);
+
+Save the sfdiagram as Stream.
+Stream stream = new MemoryStream();
+diagram.SaveAsImage(stream);
+
+N> To save the image on UWP platform location -AppData\Local\Packages\90e15aa5-f034-42d8-9532-0f8ac8ab27cf_bkebv2yxxpdar\RoamingState
+To save the image on Android and IOS platform location- emulator (or)simulator\PhotoGallery
 
 ## Diagram style settings		
 It is easier to apply default rendering styles to all shapes, connectors, stencil symbol, and stencil header in a diagram. Pass the following arguments to diagram style setting constructor: 
@@ -288,6 +315,114 @@ this.Content = diagram;
 {% endtabs %}
 
 ![BringForward and SendBackward in Xamarin.forms diagram](Diagram_images/BringforwardandSendbackward.gif)
+
+## How to enable or disable the context menu?
+By default, Diagram comes with a context menu that will be displayed long press the node or connector in the diagram control, which as a button(option) to cut, copy, delete and paste option. The display of context menu can be disabled by setting Visibility property of the [ContextMenuSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_ContextMenuSettings) class to false. The below code illustrates the same. By default, value of context menu enable in diagram control.
+
+{% tabs %}
+{% highlight xml %}
+<sfDiagram:SfDiagram  VerticalOptions="FillAndExpand" x:Name="diagram" >
+     <sfDiagram:SfDiagram.ContextMenuSettings>
+          <sfDiagram:ContextMenuSettings Visibility="False">
+          </sfDiagram:ContextMenuSettings>
+      </sfDiagram:SfDiagram.ContextMenuSettings>
+</sfDiagram:SfDiagram>
+{% endhighlight %}
+
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
+diagram.ContextMenuSettings.Visibility = false;
+this.Content = diagram;
+{% endhighlight %}
+{% endtabs %}
+
+## ZoomFactor
+Supports customizing the zoom level of diagram control. You can set the [ZoomFactor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_ZoomFactor) of the diagram control. The following code example explains how to apply ZoomFactor.
+
+{% tabs %}
+{% highlight xml %}
+<sfDiagram:SfDiagram  VerticalOptions="FillAndExpand" x:Name="diagram" ZoomFactor="0.4"/>
+{% endhighlight %}
+
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
+diagram.ZoomFactor = 0.4f;
+this.Content = diagram;
+{% endhighlight %}
+{% endtabs %}
+
+## Cut
+To cut the select the node or connector items from the diagram using the [Cut](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_Cut) method. To cut the selected items in the diagram, use the following code snippet.
+
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
+Node node = new Node {Width = 200, Height = 200, OffsetX = 100, OffsetY = 100 };
+diagram.AddNode(node);
+diagram.Select(node);
+diagram.Cut();
+this.Content = diagram;
+{% endhighlight %}
+{% endtabs %}
+
+## Copy
+To copy the select the node or connector items from the diagram using the [Copy](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_Copy) method. To copy the selected items in the diagram, use the following code snippet.
+
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
+Node node = new Node {Width = 200, Height = 200, OffsetX = 100, OffsetY = 100 };
+diagram.AddNode(node);
+diagram.Select(node);
+diagram.Copy();
+this.Content = diagram;
+{% endhighlight %}
+{% endtabs %}
+
+## Paste
+To cut or copy the select the node or connector items to paste the diagram using the [Paste](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_Paste) method. To paste the cut or copy the selected items in the diagram, use the following code snippet.
+
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
+Node node = new Node {Width = 200, Height = 200, OffsetX = 100, OffsetY = 100 };
+diagram.AddNode(node);
+diagram.Select(node);
+diagram.Copy();
+diagram.Paste();
+this.Content = diagram;
+{% endhighlight %}
+{% endtabs %}
+
+## Delete 
+To delete the select the node or connector items from the diagram using the [Delete](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_Delete) method. To delete the selected items in the diagram, use the following code snippet.
+
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
+Node node = new Node {Width = 200, Height = 200, OffsetX = 100, OffsetY = 100 };
+diagram.AddNode(node);
+diagram.Select(node);
+diagram.Delete();
+this.Content = diagram;
+{% endhighlight %}
+{% endtabs %}
+
+## ZoomEnd
+The [ZoomEnd](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_ZoomEnd) event wil be triggered while zoom in or zoom out the ['Diagram'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.html) control. The following code example explains how to create a ZoomEnd Event. 
+
+{% tabs %}
+{% highlight xml %}
+<sfDiagram:SfDiagram  VerticalOptions="FillAndExpand" x:Name="diagram" ZoomEnd="diagram_ZoomEnd"/>
+{% endhighlight %}
+
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
+diagram.ZoomEnd += Diagram_ZoomEnd;
+this.Content = diagram;
+
+private void Diagram_ZoomEnd(object sender, ZoomEndEventArgs e)
+{
+    var items = e.IsPinching;
+}
+{% endhighlight %}
+{% endtabs %}
 
 ## DiagramClicked  
 The ['DiagramClickedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.DiagramClickedEventArgs.html) will be triggered when you click the ['Diagram'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.html) page. The following code example explains how to create a DiagramClickedEvent trigger.

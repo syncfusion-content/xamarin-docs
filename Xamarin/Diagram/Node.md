@@ -146,4 +146,49 @@ private void Diagram_RotateEnd(object sender, RotateEndEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
+## Node Style Customization
+You can customize the appearance of a node by changing its fill color and border color of the node. The following code explains how to customize the appearance of the node style.
+
+{% tabs %}
+{% highlight xml %}
+<sfDiagram:SfDiagram  VerticalOptions="FillAndExpand" x:Name="diagram" >
+    <sfDiagram:SfDiagram.Nodes>
+        <sfDiagram:NodeCollection>
+            <sfDiagram:Node Width="100" Height="100" OffsetX="200" OffsetY="200">
+                <sfDiagram:Node.Style>
+                    <sfDiagram:Style>
+                        <sfDiagram:Style.Brush>
+                            <sfDiagram:SolidBrush FillColor="Red" />
+                        </sfDiagram:Style.Brush>
+                        <sfDiagram:Style.StrokeBrush>
+                            <sfDiagram:SolidBrush FillColor="Yellow" />
+                        </sfDiagram:Style.StrokeBrush>
+                    </sfDiagram:Style>
+                </sfDiagram:Node.Style>
+            </sfDiagram:Node>
+        </sfDiagram:NodeCollection>
+    </sfDiagram:SfDiagram.Nodes>
+</sfDiagram:SfDiagram>
+{% endhighlight %}
+
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
+Node node = new Node 
+{ 
+    Width = 100, 
+    Height = 100, 
+    OffsetX = 200, 
+    OffsetY = 200,
+    Style=new Syncfusion.SfDiagram.XForms.Style()
+    {
+        Brush=new SolidBrush(Color.Red),
+        StrokeBrush=new SolidBrush(Color.Yellow)
+    }
+};
+diagram.AddNode(node);
+this.Content = diagram;
+
+{% endhighlight %}
+{% endtabs %} 
+
 N> You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

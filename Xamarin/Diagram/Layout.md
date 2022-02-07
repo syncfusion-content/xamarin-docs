@@ -308,4 +308,25 @@ private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs arg
 {% endtabs %}
 ![LayoutSpacing in Xamarin.Forms diagram](Layout_images/LayoutSpacing_img3.png)
 
+## EndNodeLayout
+The [EndNodeLayout](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_EndNodeLayout) event will be triggered when a node end to layout. The following code example explains how to create a EndNodeLayout event.
+
+{% tabs %}
+{% highlight xml %}
+<sfDiagram:SfDiagram  VerticalOptions="FillAndExpand" x:Name="diagram" EndNodeLayout="diagram_EndNodeLayout" />
+{% endhighlight %}
+
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
+diagram.EndNodeLayout += Diagram_EndNodeLayout;
+this.Content = diagram;
+
+private void Diagram_EndNodeLayout(object sender, EventArgs e)
+{
+  Node node = new Node { Width = 200, Height = 200, OffsetX = 100, OffsetY = 100 };
+  diagram.AddNode(node);  
+}
+{% endhighlight %}
+{% endtabs %}
+
 N> Diagram supports layout sibling with spacing in Xamarin.Forms.Android and Xamarin.Forms.iOS alone. You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

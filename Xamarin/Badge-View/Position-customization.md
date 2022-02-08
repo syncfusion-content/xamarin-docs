@@ -2,7 +2,7 @@
 
 layout: post
 title: Position customization of Syncfusion Badge view for Xamarin.Forms
-description: Learn how to set Syncfusion badge view position customization in Xamarin.Forms platform
+description: This section explain about how to set Syncfusion badge view position customization in Xamarin.Forms platform
 platform: xamarin
 control: SfBadgeView
 documentation: ug
@@ -52,7 +52,7 @@ Content = sfBadgeView;
 
 ## Setting badge offset
 
-You can adjust the badge text using the [`Offset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.BadgeSetting.html#Syncfusion_XForms_BadgeView_BadgeSetting_Offset) property.
+You can adjust the badge view using the [`Offset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.BadgeSetting.html#Syncfusion_XForms_BadgeView_BadgeSetting_Offset) property.
 
 {% tabs %}
 

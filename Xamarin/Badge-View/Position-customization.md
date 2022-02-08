@@ -52,7 +52,7 @@ Content = sfBadgeView;
 
 ## Setting badge offset
 
-You can adjust the badge text using the [`Offset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.BadgeSetting.html#Syncfusion_XForms_BadgeView_BadgeSetting_Offset) property.
+You can adjust the badge view using the [`Offset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.BadgeSetting.html#Syncfusion_XForms_BadgeView_BadgeSetting_Offset) property.
 
 {% tabs %}
 

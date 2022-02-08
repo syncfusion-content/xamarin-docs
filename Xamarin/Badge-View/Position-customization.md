@@ -2,7 +2,7 @@
 
 layout: post
 title: Position customization of Syncfusion Badge view for Xamarin.Forms
-description: Learn how to set Syncfusion badge view position customization in Xamarin.Forms platform
+description: This section explain about how to set Syncfusion badge view position customization in Xamarin.Forms platform
 platform: xamarin
 control: SfBadgeView
 documentation: ug

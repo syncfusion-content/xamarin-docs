@@ -20,7 +20,7 @@ The Syncfusion Essential Studio allows you to create the Xamarin application in 
    ![Download Page](Mac-Installer_images/Mac_Download.png)  
 
 
-## How to resolve the warning message in Catalina OS or later? 
+## Steps to resolve the warning message in Catalina OS or later
 
    While running Essential Studio Xamarin Mac Installer on Catalina MacOS or later, the below alert will be displayed.
 

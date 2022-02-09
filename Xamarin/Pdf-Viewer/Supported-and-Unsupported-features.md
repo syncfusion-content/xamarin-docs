@@ -446,10 +446,10 @@ The following table shows the various features available in the PDF Viewer and t
 			Yes**<br/>
 		</td>
 		<td>
-			No**<br/>
+			No<br/>
 		</td>
 		<td>
-			No**<br/>
+			No<br/>
 		</td>
 	</tr>
 	<tr>
@@ -1234,6 +1234,6 @@ The following table shows the various features available in the PDF Viewer and t
 	</tr>
 <table>
 
-* Mouse panning is not supported in XamarinForms.UWP platform.
-** To avoid data loss, the sticky notes annotation will be rendered as a **free-text annotation** while importing or loading a document in `SfPdfViewer` and will be preserved as a sticky notes annotation while saving and exporting. The Ssupport to add, render, and edit sticky notes annotation through UI or programmatically is not provided yet. 
-*** To avoid data loss, the squiggly line annotation will be rendered as an **underline text annotation** while importing or loading a document in `SfPdfViewer` and will be preserved as a squiggly line annotation while saving and exporting. The Ssupport to add, render, and edit squiggly line annotation through UI or programmatically is not provided yet.
+\* Mouse panning is not supported in XamarinForms.UWP platform.
+\*\* To avoid data loss, the sticky notes annotation will be rendered as a **free-text annotation** while importing or loading a document in `SfPdfViewer` and will be preserved as a sticky notes annotation while saving and exporting. The Ssupport to add, render, and edit sticky notes annotation through UI or programmatically is not provided yet. 
+\*\*\* To avoid data loss, the squiggly line annotation will be rendered as an **underline text annotation** while importing or loading a document in `SfPdfViewer` and will be preserved as a squiggly line annotation while saving and exporting. The Ssupport to add, render, and edit squiggly line annotation through UI or programmatically is not provided yet.

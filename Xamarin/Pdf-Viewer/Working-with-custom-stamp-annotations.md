@@ -275,6 +275,8 @@ The following code sample explains modifying the name of the custom stamp annota
 {% endhighlight %}
 {% endtabs %}
 
+N>Stamp annotations can be saved or preserved only by using the `SavedDocumentAsync` and  `ExportAnnotationsAsync` methods.
+
 N>For illustration purposes, we have only provided the sample for modifying the name of the custom stamp annotation in the [StampAnnotationAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_StampAnnotationAdded) event. But this can be done in all other events as well.
 
 N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

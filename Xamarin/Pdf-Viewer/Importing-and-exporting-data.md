@@ -87,6 +87,8 @@ Stream fdfStreamToSave = pdfViewerControl.ExportAnnotations(firstPageAnnotations
 {% endhighlight %}
 {% endtabs %}
 
+N>The `ExportAnnotations` method does not preserve the stamp annotations on export function. Instead, use the `ExportAnnotationsAsync` method to preserve them.
+
 ### Export annotations asynchronously
 
 The PDF Viewer allows you to export the current annotations added to a document into a stream asynchronously using the [`ExportAnnotationsAsync`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_ExportAnnotationsAsync_Syncfusion_Pdf_Parsing_AnnotationDataFormat_System_Threading_CancellationToken_) method. You can also cancel the asynchronous annotation exporting when it is in progress.

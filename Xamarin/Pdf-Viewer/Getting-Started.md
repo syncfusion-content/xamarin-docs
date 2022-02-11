@@ -339,6 +339,36 @@ pdfViewerControl.Unload();
 {% endhighlight %}
 {% endtabs %}
 
+## Saving a PDF document
+
+The `SaveDocument` method returns the PDF document along with the changes made (annotations addition and modification) as a stream, which can be saved as a file. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Save the PDF document
+Stream pdfDocumentStream = pdfViewerControl.SaveDocument();
+
+{% endhighlight %}
+{% endtabs %}
+
+Please refer [here]https://www.syncfusion.com/kb/9031/how-to-save-loaded-pdf-document-in-application-level for saving the PDF document as a file in the application level from the obtained stream.
+
+N> The `SaveDocument` method does not save the existing stamp annotations in the PDF document. Instead, use the `SaveDocumentAsync` method to save them.
+
+## Saving a PDF document asynchronously
+
+The PDF Viewer also allows you to save and return the PDF document with the changes as a stream asynchronously using the `SaveDocumentAsync` method. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Save the PDF document asynchronously 
+Task<Stream> pdfDocumentStream = pdfViewerControl.SaveDocumentAsync();
+
+{% endhighlight %}
+{% endtabs %}
+
 ## How to dispose the managed resources of SfPdfViewer
 
 The [`SfPdfViewer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html) control allows you to dispose the managed resources which are associated with the viewer. You need to call the [`Dispose`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_Dispose) method of the [`SfPdfViewer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html) control as shown in the following code sample to achieve the same.

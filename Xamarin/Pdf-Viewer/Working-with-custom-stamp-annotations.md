@@ -11,6 +11,8 @@ documentation: ug
 
 [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows you to include any form of Xamarin.Forms View that is Button, Entry, Label, Image and more anywhere in the pages of the PDF Viewer as custom stamp annotation. You can perform operations like add, move, resize, and delete the custom stamp annotations. Also, you can save and load the existing custom stamp annotation that is associated with the PDF document
 
+N>Stamp annotations can be saved or preserved only by using the `SavedDocumentAsync` and  `ExportAnnotationsAsync` methods.
+
 ## Add a custom stamp
 
 The custom stamps can be added using the `AddAnnotation` or `AddStamp` methods.
@@ -274,8 +276,6 @@ The following code sample explains modifying the name of the custom stamp annota
 
 {% endhighlight %}
 {% endtabs %}
-
-N>Stamp annotations can be saved or preserved only by using the `SavedDocumentAsync` and  `ExportAnnotationsAsync` methods.
 
 N>For illustration purposes, we have only provided the sample for modifying the name of the custom stamp annotation in the [StampAnnotationAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_StampAnnotationAdded) event. But this can be done in all other events as well.
 

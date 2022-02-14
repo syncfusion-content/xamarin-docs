@@ -203,7 +203,7 @@ We can able to add category of symbol group heading in stencil. The following ex
             </control:Node.Style>
         </control:Node>
         <control:Node Height="50" Width="50" ShapeType="Ellipse" >
-            control:Node.Style>
+            <control:Node.Style>
                 <control:Style>
                     <control:Style.Brush>
                         <control:SolidBrush FillColor="White" />
@@ -464,6 +464,100 @@ this.Content = grid;
 {% endtabs %}
 
 ![Add annotation into stencil in Xamarin.Forms diagram](Stencil_images/Stencil_img4.png)
+
+## Add stencil with Header Style
+You can customize the appearance of a Stencil with a Header style by changing its fill color and text color of the stencil header. 
+The following code explains how to customize the appearance of the stencil Header style.
+
+{% tabs %}
+{% highlight xml %}
+<ContentPage.Resources>
+        <ResourceDictionary>
+             <!--Add Symbols into SymbolCollection--> 
+            <control:SymbolCollection x:Key="collection">
+                <control:Node Height="50" Width="50" ShapeType="Rectangle" >
+                    <control:Node.Style>
+                        <control:Style>
+                            <control:Style.Brush>
+                                <control:SolidBrush FillColor="White" />
+                            </control:Style.Brush>
+                        </control:Style>
+                    </control:Node.Style>
+                </control:Node>
+                <control:Node Height="50" Width="50" ShapeType="Ellipse" >
+                    <control:Node.Style>
+                        <control:Style>
+                            <control:Style.Brush>
+                                <control:SolidBrush FillColor="White" />
+                            </control:Style.Brush>
+                        </control:Style>
+                    </control:Node.Style>
+                </control:Node>
+                <control:Node Height="50" Width="50" ShapeType="Triangle" >
+                    <control:Node.Style>
+                        <control:Style>
+                            <control:Style.Brush>
+                                <control:SolidBrush FillColor="White" />
+                            </control:Style.Brush>
+                        </control:Style>
+                    </control:Node.Style>
+                </control:Node>
+                <control:Node Height="50" Width="50" ShapeType="RightAngleTriangle" >
+                    <control:Node.Style>
+                        <control:Style>
+                            <control:Style.Brush>
+                                <control:SolidBrush FillColor="White" />
+                            </control:Style.Brush>
+                        </control:Style>
+                    </control:Node.Style>
+                </control:Node>
+            </control:SymbolCollection>
+             <!--Add collection into SymbolGroup--> 
+            <control:SymbolGroups x:Key="groups">
+                <control:SymbolGroup SymbolSource="{StaticResource collection}" HeaderName="BasicShapes" >
+                    <control:SymbolGroup.HeaderStyle>
+                        <control:HeaderStyle TextBrush="Red" Fill="SteelBlue" HorizontalAlignment="Center" FontStyle="Italic"/>
+                    </control:SymbolGroup.HeaderStyle>
+                </control:SymbolGroup>
+            </control:SymbolGroups>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid x:Name="grid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="150"/>
+            </Grid.ColumnDefinitions>
+            <!-- Add SfDiagram and stencil in xaml page -->
+            <control:SfDiagram x:Name="diagram">
+            </control:SfDiagram>
+            <control:Stencil x:Name="stencil" SymbolGroups="{StaticResource groups}" Grid.Column="1" >
+            </control:Stencil>
+        </Grid>
+    </ContentPage.Content>
+{% endhighlight %}
+{% highlight c# %}
+Grid grid = new Grid();
+var column = new ColumnDefinition() { Width = new GridLength(2, GridUnitType.Star) };
+var column1 = new ColumnDefinition() { Width = new GridLength(150) };
+grid.ColumnDefinitions.Add(column);
+grid.ColumnDefinitions.Add(column1);
+
+SfDiagram diagram = new SfDiagram();
+Stencil stencil = new Stencil();
+//Add Symbols into SymbolCollection
+SymbolCollection Collection = new SymbolCollection();
+Collection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Rectangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White) } });
+Collection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Ellipse, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White) } });
+Collection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Triangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White) } });
+Collection.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.RightAngleTriangle, Style = new Syncfusion.SfDiagram.XForms.Style() { Brush = new SolidBrush(Color.White) } });
+//Add collection into SymbolGroup
+stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = Collection, HeaderName = "BasicShapes",HeaderStyle=new HeaderStyle {TextBrush=Color.Red, Fill=Color.SteelBlue, HorizontalAlignment=HorizontalAlignment.Center, FontStyle=FontStyle.Italic } });
+grid.Children.Add(diagram, 0, 0);
+grid.Children.Add(stencil, 1, 0);
+this.Content = grid;
+{% endhighlight %}
+{% endtabs %} 
 
 ## DiagramObjectDropped
 The ['DiagramObjectDroppedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.DiagramObjectDroppedEventArgs.html) will be triggered when the node or connector is dragged and dropped from the ['Stencil'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.Stencil.html) to the [diagram](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.html) page. The following code example explains how to create a DiagramObjectDroppedEvent trigger.  

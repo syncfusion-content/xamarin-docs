@@ -352,7 +352,7 @@ Stream pdfDocumentStream = pdfViewerControl.SaveDocument();
 {% endhighlight %}
 {% endtabs %}
 
-Please refer [here]https://www.syncfusion.com/kb/9031/how-to-save-loaded-pdf-document-in-application-level for saving the PDF document as a file in the application level from the obtained stream.
+Please refer [here](https://www.syncfusion.com/kb/9031/how-to-save-loaded-pdf-document-in-application-level) for saving the PDF document as a file in the application level from the obtained stream.
 
 N> The `SaveDocument` method does not save the existing stamp annotations in the PDF document. Instead, use the `SaveDocumentAsync` method to save them.
 

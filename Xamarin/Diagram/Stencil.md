@@ -466,7 +466,7 @@ this.Content = grid;
 ![Add annotation into stencil in Xamarin.Forms diagram](Stencil_images/Stencil_img4.png)
 
 ## Add stencil with Header Style
-You can customize the appearance of a Stencil with Header style by changing its fill color and text color of the stencil header. 
+You can customize the appearance of a Stencil with a Header style by changing its fill color and text color of the stencil header. 
 The following code explains how to customize the appearance of the stencil Header style.
 
 {% tabs %}

@@ -331,7 +331,7 @@ private void Diagram_ConnectorClicked(object sender, ConnectorClickedEventArgs a
 {% endtabs %}
 
 ## Connector Style Customization
-You can customize the appearance of a connector by changing its fill color and border color of the connector. The following code explains how to customize the appearance of the connector style.
+You can customize the appearance of a connector by changing its fill color and border color. The following code explains how to customize the appearance of the connector style.
 
 {% tabs %}
 {% highlight xml %}

@@ -147,7 +147,7 @@ private void Diagram_RotateEnd(object sender, RotateEndEventArgs args)
 {% endtabs %}
 
 ## Node Style Customization
-You can customize the appearance of a node by changing its fill color and border color of the node. The following code explains how to customize the appearance of the node style.
+You can customize the appearance of a node by changing its fill color and border color. The following code explains how to customize the appearance of the node style.
 
 {% tabs %}
 {% highlight xml %}

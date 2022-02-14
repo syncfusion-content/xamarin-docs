@@ -309,7 +309,7 @@ private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs arg
 ![LayoutSpacing in Xamarin.Forms diagram](Layout_images/LayoutSpacing_img3.png)
 
 ## EndNodeLayout
-The [EndNodeLayout](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_EndNodeLayout) event will be triggered when a node end to layout. The following code example explains how to create a EndNodeLayout event.
+The [EndNodeLayout](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_EndNodeLayout) event will be triggered when a node ends to layout. The following code example explains how to create a EndNodeLayout event.
 
 {% tabs %}
 {% highlight xml %}

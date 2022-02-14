@@ -169,19 +169,38 @@ this.Content = diagram;
 {% endhighlight %}
 {% endtabs %}
 
-Save the diagram as image in specific format.
-diagram.SaveAsImage(ImageFormat.Png);
+### Save Diagram as image format with Padding.
+To save the diagram as image format using the [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage_Syncfusion_SfDiagram_XForms_ImageFormat_System_Int32_) method with the padding.
 
-Save the diagram as image with padding.
-diagram.SaveAsImage(5);
-diagram.SaveAsImage(2,5,5,2);
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
+diagram.SaveAsImage(ImageFormat.Png,50);
+this.Content = diagram;
+{% endhighlight %}
+{% endtabs %}
 
-Save the diagram as Stream.
+### Save the diagram as image format with Margin.
+To save the diagram as image format using the [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage_Syncfusion_SfDiagram_XForms_ImageFormat_System_Int32_System_Int32_System_Int32_System_Int32_) method with the margin.
+
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
+diagram.SaveAsImage(ImageFormat.Png,40,0,0,0);
+this.Content = diagram;
+{% endhighlight %}
+{% endtabs %}
+
+### Save the diagram as Stream.
+To save the diagram as Stream using the [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage_System_IO_Stream_) method by parsing empty stream.
+
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
 Stream stream = new MemoryStream();
 diagram.SaveAsImage(stream);
+this.Content = diagram;
+{% endhighlight %}
+{% endtabs %}
 
-N> To save the image on UWP platform location -AppData\Local\Packages\90e15aa5-f034-42d8-9532-0f8ac8ab27cf_bkebv2yxxpdar\RoamingState
-To save the image on Android and iOS platform location- emulator (or)simulator\PhotoGallery
+N> The saved image path location details, UWP - The saved image is stored in the ‘ApplicationData’ folder. You can get the application path using ‘ApplicationData.Current.LocalFolder’.(Ex:  C:\Users\AppData\Local\Packages\f653350b-351f-492a-abeb-5ec6cdc31367_2zq8t8r7s00mj\RoamingState). Android - The saved image is stored in the ‘Pictures’ location with an image name starts with “Diagram” and DateAndTime (i.e., "Diagram" and "yyyyMMddHHmmssfff") in the android device. iOS - The saved image is stored in the ‘Photos’ location with the image name ‘Diagram’ in the iPhone.
 
 ## Diagram style settings		
 It is easier to apply default rendering styles to all shapes, connectors, stencil symbol, and stencil header in a diagram. Pass the following arguments to diagram style setting constructor: 

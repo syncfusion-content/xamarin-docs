@@ -200,7 +200,7 @@ this.Content = diagram;
 {% endhighlight %}
 {% endtabs %}
 
-N> The saved image path location details, UWP - The saved image is stored in the ‘ApplicationData’ folder. You can get the application path using ‘ApplicationData.Current.LocalFolder’.(Ex:  C:\Users\AppData\Local\Packages\f653350b-351f-492a-abeb-5ec6cdc31367_2zq8t8r7s00mj\RoamingState). Android - The saved image is stored in the ‘Pictures’ location with an image name starts with “Diagram” and DateAndTime (i.e., "Diagram" and "yyyyMMddHHmmssfff") in the android device. iOS - The saved image is stored in the ‘Photos’ location with the image name ‘Diagram’ in the iPhone.
+N> The saved image path location details, UWP - The saved image is stored in the ‘ApplicationData’ folder. You can get the application path using ‘ApplicationData.Current.LocalFolder’.(Ex:  C:\Users\AppData\Local\Packages\90e15aa5-f034-42d8-9532-0f8ac8ab27cf_bkebv2yxxpdar\RoamingState). Android - The saved image is stored in the ‘Pictures’ location with an image name starts with “Diagram” and DateAndTime (i.e., "Diagram" and "yyyyMMddHHmmssfff") in the android device. iOS - The saved image is stored in the ‘Photos’ location with the image name ‘Diagram’ in the iPhone.
 
 ## Diagram style settings		
 It is easier to apply default rendering styles to all shapes, connectors, stencil symbol, and stencil header in a diagram. Pass the following arguments to diagram style setting constructor: 

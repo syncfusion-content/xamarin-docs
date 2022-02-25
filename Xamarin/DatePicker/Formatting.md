@@ -23,7 +23,7 @@ yyyy_MM_dd - Represents the year month day in yyyy/mm/dd format.
 
 dd_MMM_yyyy - Represents the day month year in dd/mmm/yyyy format.
 
-dd_MM_yyyy - Represents the day month year in dd/MM/yyyy format
+dd_MM_yyyy - Represents the day month year in dd/MM/yyyy format.
 
 dd_MM - Represents the day month in dd/MM format.
 

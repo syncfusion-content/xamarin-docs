@@ -273,6 +273,27 @@ The sample which illustrates loading a PDF in code-behind using LoadDocument met
 
 <http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-81946798> 
 
+## Loading a PDF from an URL
+
+PDF documents can be loaded from a given URL into the PdfViewer by downloading the PDF and then loading the stream of the downloaded file into the PdfViewer. In the following code sample, the `HttpClient.GetAsync( )` method sends a GET request to the specified Uri as an asynchronous operation and the `HttpContent.ReadAsStreamAsync( )` method will serialize the HTTP content and returns a stream that represents the content as an asynchronous operation. Finally, the obtained stream is passed to the `LoadDocument( )` method of SfPdfViewer.
+
+{% tabs %}
+{% highlight c# %}
+
+HttpClient httpClient = new HttpClient();
+HttpResponseMessage response = await httpClient.GetAsync("https://www.syncfusion.com/downloads/support/directtrac/general/pd/GIS_Succinctly1774404643.pdf");
+Stream pdfStream = await response.Content.ReadAsStreamAsync();
+pdfViewerControl.LoadDocument(pdfStream);
+
+{% endhighlight %}
+{% endtabs %}
+
+The sample that illustrates loading a PDF from an URL can be downloaded from the link below,
+ 
+<https://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadPDFFromURL-1204672622.zip> 
+
+N> An Internet connection is necessary to get the stream from an URL. Please ensure that the device has a proper internet connection before running the sample application.
+
 ## Loading a PDF asynchronously
 
 [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows you to load the PDF document from the specified stream asynchronously using the `LoadDocumentAsync` method. You can also cancel the asynchronous PDF loading when it is in progress.

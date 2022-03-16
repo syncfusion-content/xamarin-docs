@@ -563,7 +563,7 @@ pdfViewerControl.AnnotationSettings.Polygon.Settings.Constraints = ~AnnotationCo
 {% endhighlight %}
 {% endtabs %}
 
-Shape annotation selection will be allowed only if the `SfPdfViewer.AnnotationSettings.Constarints` API is set to `AnnotationConstraints.Selectable`. The following code prevents the shape annotations selection, even though the `Constraints` property of the shape annotation is set to `AnnotationConstraints.Selectable`.
+Shape annotation selection will be allowed only if the `SfPdfViewer.AnnotationSettings.Constraints` API is set to `AnnotationConstraints.Selectable`. The following code prevents the shape annotations selection, even though the `Constraints` property of the shape annotation is set to `AnnotationConstraints.Selectable`.
 
 {% tabs %}
 {% highlight c# %}

@@ -326,7 +326,7 @@ pdfViewerControl.AnnotationSettings.HandwrittenSignature.Constraints = ~Annotati
 {% endhighlight %}
 {% endtabs %}
 
-Handwritten signature selection will be allowed only if the `SfPdfViewer.AnnotationSettings.Constarints` API is set to `AnnotationConstraints.Selectable`. The following code prevents the handwritten signatures selection, even though the `Constraints` property of the handwritten signature annotation is set to `AnnotationConstraints.Selectable`.
+Handwritten signature selection will be allowed only if the `SfPdfViewer.AnnotationSettings.Constraints` API is set to `AnnotationConstraints.Selectable`. The following code prevents the handwritten signatures selection, even though the `Constraints` property of the handwritten signature annotation is set to `AnnotationConstraints.Selectable`.
 
 {% tabs %}
 {% highlight c# %}

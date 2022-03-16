@@ -452,7 +452,7 @@ pdfViewerControl.AnnotationSettings.FreeText.Constraints = ~AnnotationConstraint
 {% endhighlight %}
 {% endtabs %}
 
-Free text annotation selection will be allowed only if the `SfPdfViewer.AnnotationSettings.Constarints` API is set to `AnnotationConstraints.Selectable`. The following code prevents the free text annotations selection, even though the `Constraints` property of the free text annotation is set to `AnnotationConstraints.Selectable`.
+Free text annotation selection will be allowed only if the `SfPdfViewer.AnnotationSettings.Constraints` API is set to `AnnotationConstraints.Selectable`. The following code prevents the free text annotations selection, even though the `Constraints` property of the free text annotation is set to `AnnotationConstraints.Selectable`.
 
 {% tabs %}
 {% highlight c# %}

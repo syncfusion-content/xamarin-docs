@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with PDF coordinates in Xamarin Pdf Viewer control | Syncfusion
+title: PDF coordinates in Xamarin Pdf Viewer control | Syncfusion
 description: Learn here all about working with PDF coordinates and their conversions support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: Xamarin
 control: SfPdfViewer
@@ -32,7 +32,7 @@ pdfViewerControl.ScrollToOffset(m_currentHorizontalOffset+10, m_currentVerticalO
  
 ## PDF Viewer's coordinates or client coordinates
 
-![PDF Viewer's client coordinates](pdfviewer_images/ClientCoordinates.png)
+![PDF Viewer client coordinates](pdfviewer_images/ClientCoordinates.png)
  
 You can obtain the PDF Viewer's client area (viewport) coordinates using the `ClientRectangle` property and the following code sample explains the same. This property will return the coordinate value without the consideration of non-client elements like toolbars and scroll bars. 
 

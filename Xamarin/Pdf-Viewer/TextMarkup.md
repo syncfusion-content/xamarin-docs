@@ -485,27 +485,27 @@ To enable or disable the text markup annotation selection, set the `Constraints`
 {% highlight c# %}
 
 //Disable the selection of text markup highlight annotation 
-pdfViewerControl.AnnotationSettings.TextMarkup.Highlight.Constarints = ~AnnotationConstraints.Selectable;
+pdfViewerControl.AnnotationSettings.TextMarkup.Highlight.Constraints = ~AnnotationConstraints.Selectable;
 
 //Disable the selection of text markup underline annotation
-pdfViewerControl.AnnotationSettings.TextMarkup.Underline.Constarints = ~AnnotationConstraints.Selectable;
+pdfViewerControl.AnnotationSettings.TextMarkup.Underline.Constraints = ~AnnotationConstraints.Selectable;
 
 //Disable the selection of text markup strikethrough annotation
-pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.Constarints = ~AnnotationConstraints.Selectable;
+pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.Constraints = ~AnnotationConstraints.Selectable;
 
 {% endhighlight %}
 {% endtabs %}
 
-Text markup annotation selection will be allowed only if the `SfPdfViewer.AnnotationSettings.Constarints` API is set to `AnnotationConstraints.Selectable`. The following code prevents the text markup annotations selection, even though the `Constraints` property of the text markup annotation is set to `AnnotationConstraints.Selectable`.
+Text markup annotation selection will be allowed only if the `SfPdfViewer.AnnotationSettings.Constraints` API is set to `AnnotationConstraints.Selectable`. The following code prevents the text markup annotations selection, even though the `Constraints` property of the text markup annotation is set to `AnnotationConstraints.Selectable`.
 
 {% tabs %}
 {% highlight c# %}
 
 //Disable the text markup annotation selection, though its 'Constraints' property is set to ‘AnnotationConstraints.Selectable’ 
-pdfViewerControl.AnnotationSettings.IsLocked = ~AnnotationConstraints.Selectable;
-pdfViewerControl.AnnotationSettings.TextMarkup.Highlight.IsLocked = AnnotationConstraints.Selectable;
-pdfViewerControl.AnnotationSettings.TextMarkup.Underline.IsLocked = AnnotationConstraints.Selectable;
-pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.IsLocked = AnnotationConstraints.Selectable;
+pdfViewerControl.AnnotationSettings.Constraints = ~AnnotationConstraints.Selectable;
+pdfViewerControl.AnnotationSettings.TextMarkup.Highlight.Constraints = AnnotationConstraints.Selectable;
+pdfViewerControl.AnnotationSettings.TextMarkup.Underline.Constraints = AnnotationConstraints.Selectable;
+pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.Constraints = AnnotationConstraints.Selectable;
 
 {% endhighlight %}
 {% endtabs %}

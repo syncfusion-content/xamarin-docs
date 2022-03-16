@@ -659,7 +659,7 @@ pdfViewerControl.AnnotationSettings.Ink.Constraints = ~AnnotationConstraints.Sel
 {% endhighlight %}
 {% endtabs %}
 
-Ink annotation selection will be allowed only if the `SfPdfViewer.AnnotationSettings.Constarints` API is set to `AnnotationConstraints.Selectable`. The following code prevents the ink annotations selection, even though the `Constraints` property of the ink annotation is set to `AnnotationConstraints.Selectable`.
+Ink annotation selection will be allowed only if the `SfPdfViewer.AnnotationSettings.Constraints` API is set to `AnnotationConstraints.Selectable`. The following code prevents the ink annotations selection, even though the `Constraints` property of the ink annotation is set to `AnnotationConstraints.Selectable`.
 
 {% tabs %}
 {% highlight c# %}

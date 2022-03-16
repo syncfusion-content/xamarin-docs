@@ -11,24 +11,27 @@ documentation: ug
 
 ## Tapped 
 
-The [`Tapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html) event will be triggered when the user taps on the document display area of the PDF Viewer control. The event argument of this event contains the following information:
+The [`Tapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html) event is triggered when the user taps on the document display area of the PDF Viewer control. The event argument of this event contains the following information:
 
-* [`PageNumber`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs.html#Syncfusion_SfPdfViewer_XForms_TouchInteractionEventArgs_PageNumber)          : The page number in which the tap event occurred.
-* [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs.html#Syncfusion_SfPdfViewer_XForms_TouchInteractionEventArgs_Position) 			: The position of the tap event location with respect to the start of the page.
+* [`PageNumber`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs.html#Syncfusion_SfPdfViewer_XForms_TouchInteractionEventArgs_PageNumber)          : The page number where the tap event occurred.
+* [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs.html#Syncfusion_SfPdfViewer_XForms_TouchInteractionEventArgs_Position) 			: The tapped position with respect to the PDF Viewer's client area.
+* [`PagePosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs.html#Syncfusion_SfPdfViewer_XForms_TouchInteractionEventArgs_PagePosition) 			: The tapped position with respect to the PDF page.
 
 ## DoubleTapped
 
-The [`DoubleTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html) event will be triggered when the user double taps on the document display area of the PDF Viewer control. The event argument of this event contains the following information:
+The [`DoubleTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html) event is triggered when the user double taps on the document display area of the PDF Viewer control. The event argument of this event contains the following information:
 
-* [`PageNumber`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs.html#Syncfusion_SfPdfViewer_XForms_TouchInteractionEventArgs_PageNumber)          : The page number in which the double tap event occurred.
-* [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs.html#Syncfusion_SfPdfViewer_XForms_TouchInteractionEventArgs_Position) 			: The position of the double tap event location with respect to the start of the page.
+* [`PageNumber`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs.html#Syncfusion_SfPdfViewer_XForms_TouchInteractionEventArgs_PageNumber)          : The page number where the double tap event occurred.
+* [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs.html#Syncfusion_SfPdfViewer_XForms_TouchInteractionEventArgs_Position) 			: The double tapped position with respect to the PDF Viewer's client area.
+* [`PagePosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs.html#Syncfusion_SfPdfViewer_XForms_TouchInteractionEventArgs_PagePosition) 			: The double tapped position with respect to the PDF page.
 
 ## LongPressed
 
-The [`LongPressed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html) event triggered when the user long presses on the document display area of the PDF Viewer control. The event argument of this event contains the following information:
+The [`LongPressed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html) event is triggered when the user long presses on the document display area of the PDF Viewer control. The event argument of this event contains the following information:
 
-* [`PageNumber`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs.html#Syncfusion_SfPdfViewer_XForms_TouchInteractionEventArgs_PageNumber)          : The page number in which the double tap event occurred.
-* [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs.html#Syncfusion_SfPdfViewer_XForms_TouchInteractionEventArgs_Position) 			: The position of the double tap event location with respect to the start of the page.
+* [`PageNumber`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs.html#Syncfusion_SfPdfViewer_XForms_TouchInteractionEventArgs_PageNumber)          : The page number where the long press event occurred.
+* [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs.html#Syncfusion_SfPdfViewer_XForms_TouchInteractionEventArgs_Position) 			: The long pressed position with respect to the PDF Viewer's client area.
+* [`PagePosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs.html#Syncfusion_SfPdfViewer_XForms_TouchInteractionEventArgs_PagePosition) 			: The long pressed position with respect to the PDF page.
 
 {% tabs %}
 {% highlight xaml %}
@@ -55,24 +58,30 @@ private void PdfViewerControl_LongPressed(object sender, Syncfusion.SfPdfViewer.
 {
 //Gets the page number of the PDF Viewer where you tapped.
 int pageNumber = e.PageNumber;
-//Gets the position of the PDF Viewer where you tapped.
+//Gets the position of the PDF Viewer's client area where you tapped.
 Point position = e.Position;
+//Gets the position of the PDF page where you tapped.
+Point pagePosition = e.PagePosition;
 }
 
 private void PdfViewerControl_DoubleTapped(object sender, Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs e)
 {
 //Gets the page number of the PDF Viewer where you double tapped.
 int pageNumber = e.PageNumber;
-//Gets the position of the PDF Viewer where you double tapped.
+//Gets the position of the PDF Viewer's client area where you double tapped.
 Point position = e.Position;
+//Gets the position of the PDF page where you double tapped.
+Point pagePosition = e.PagePosition;
 }
 
 private void PdfViewerControl_Tapped(object sender, Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs e)
 {
 //Gets the page number of the PDF Viewer where you long pressed.
 int pageNumber = e.PageNumber;
-//Gets the position of the PDF Viewer where you long pressed.
+//Gets the position of the PDF Viewer's client area where you long pressed.
 Point position = e.Position;
+//Gets the position of the PDF page where you long pressed.
+Point pagePosition = e.PagePosition;
 }
 
 {% endhighlight %}

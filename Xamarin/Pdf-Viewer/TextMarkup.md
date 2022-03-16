@@ -479,6 +479,72 @@ pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.IsLocked = false;
 {% endhighlight %}
 {% endtabs %}
 
+## How to lock or unlock the text markup annotations?
+ 
+To lock or unlock all the text markup annotation, set the `IsLocked` API to `true` or `false` respectively, and the following sample explains the same. But other annotation types can be moved, resized, removed or their attributes can be changed. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the text markup highlight annotation interaction such as remove and attributes changes.
+pdfViewerControl.AnnotationSettings.TextMarkup.Highlight.IsLocked = true;
+
+//Disable the text markup underline annotation interaction such as remove and attributes changes.
+pdfViewerControl.AnnotationSettings.TextMarkup.Underline.IsLocked = true;
+
+//Disable the text markup strikethrough annotation interaction such as remove and attributes changes.
+pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.IsLocked = true;
+
+{% endhighlight %}
+{% endtabs %}
+ 
+Interactions with text markup annotation types such as remove or attribute changes will be allowed only if the `SfPdfViewer.AnnotationSettings.IsLocked` API is set to `false`. The following code prevents the unlocking of the text markup annotations, although the `IsLocked` property of the text markup annotation is set to `false`.
+ 
+{% tabs %}
+{% highlight c# %}
+
+//Disable the text markup annotation interaction, though its 'IsLocked' property is set to ‘false’ 
+pdfViewerControl.AnnotationSettings.IsLocked = true;
+pdfViewerControl.AnnotationSettings.TextMarkup.Highlight.IsLocked = false;
+pdfViewerControl.AnnotationSettings.TextMarkup.Underline.IsLocked = false;
+pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.IsLocked = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+## How to enable or disable the text markup annotation selection?
+
+To enable or disable the text markup annotation selection, set the `Constraints` API to `AnnotationConstraints.Selectable` or `~AnnotationConstraints.Selectable` respectively, and the following sample explains the same. But other annotation types can be selected, moved, resized, removed or their attributes can be changed. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the selection of text markup highlight annotation 
+pdfViewerControl.AnnotationSettings.TextMarkup.Highlight.Constarints = ~AnnotationConstraints.Selectable;
+
+//Disable the selection of text markup underline annotation
+pdfViewerControl.AnnotationSettings.TextMarkup.Underline.Constarints = ~AnnotationConstraints.Selectable;
+
+//Disable the selection of text markup strikethrough annotation
+pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.Constarints = ~AnnotationConstraints.Selectable;
+
+{% endhighlight %}
+{% endtabs %}
+
+Text markup annotation selection will be allowed only if the `SfPdfViewer.AnnotationSettings.Constarints` API is set to `AnnotationConstraints.Selectable`. The following code prevents the text markup annotations selection, even though the `Constraints` property of the text markup annotation is set to `AnnotationConstraints.Selectable`.
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the text markup annotation selection, though its 'Constraints' property is set to ‘AnnotationConstraints.Selectable’ 
+pdfViewerControl.AnnotationSettings.IsLocked = ~AnnotationConstraints.Selectable;
+pdfViewerControl.AnnotationSettings.TextMarkup.Highlight.IsLocked = AnnotationConstraints.Selectable;
+pdfViewerControl.AnnotationSettings.TextMarkup.Underline.IsLocked = AnnotationConstraints.Selectable;
+pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.IsLocked = AnnotationConstraints.Selectable;
+
+{% endhighlight %}
+{% endtabs %}
+
 ## How to get and set the name of the text markup annotations?
 
 The PDF Viewer allows the users to get and set the name of text markup annotations through the [Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.IAnnotation.html#Syncfusion_SfPdfViewer_XForms_IAnnotation_Name) API.

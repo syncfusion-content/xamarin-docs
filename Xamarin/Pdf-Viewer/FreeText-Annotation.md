@@ -414,29 +414,52 @@ To avoid data loss, the sticky notes annotation will be rendered as free-text an
 
 N>The support to add, render, and edit sticky notes annotation through UI or programmatically is not provided yet.
 
-## How to enable or disable free text annotation interaction?
-
-The interaction operation can be enabled or disabled for free text annotation alone by setting the `IsLocked` API to `false` or `true` respectively.
-
-For example, the following code disables the interaction operations for all free text annotations in the PDF. But other annotation types can be selected, moved, resized, or removed. 
+## How to lock or unlock the free text annotations?
+ 
+To lock or unlock all the free text annotation, set the `IsLocked` API to `true` or `false` respectively, and the following sample explains the same. But other annotation types can be moved, resized, removed or their attributes can be changed. 
 
 {% tabs %}
 {% highlight c# %}
 
-//Disable the free text annotation interaction
+//Disable the free text annotation interaction such as move, resize, remove, and attributes changes.
 pdfViewerControl.AnnotationSettings.FreeText.IsLocked = true;
 
 {% endhighlight %}
 {% endtabs %}
+ 
+Interactions with free text annotation types such as move, resize, remove or attribute changes will be allowed only if the `SfPdfViewer.AnnotationSettings.IsLocked` API is set to `false`. The following code prevents the unlocking of the free text annotations, although the `IsLocked` property of the free text annotation is set to `false`.
+ 
+{% tabs %}
+{% highlight c# %}
 
-The interaction with free text annotation types will be allowed only if the `SfPdfViewer.AnnotationSettings.IsLocked` API is set to `false`. The following code does not allow the interactions with free text annotations, although the `IsLocked` property of the free text annotation is set to `false`. 
+//Disable the free text annotation interaction, though its 'IsLocked' property is set to ‘false’ .
+pdfViewerControl.AnnotationSettings.IsLocked = true;
+pdfViewerControl.AnnotationSettings.FreeText.IsLocked = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+## How to enable or disable the free text annotation selection?
+
+To enable or disable the free text annotation selection, set the `Constraints` API to `AnnotationConstraints.Selectable` or `~AnnotationConstraints.Selectable` respectively, and the following sample explains the same. But other annotation types can be selected, moved, resized, removed or their attributes can be changed. 
 
 {% tabs %}
 {% highlight c# %}
 
-//Disables the free text annotation interaction, though its 'IsLocked' property is set to ‘false’ 
-pdfViewerControl.AnnotationSettings.IsLocked = true;
-pdfViewerControl.AnnotationSettings.FreeText.IsLocked = false;
+//Disable the selection of free text annotations.
+pdfViewerControl.AnnotationSettings.FreeText.Constraints = ~AnnotationConstraints.Selectable;
+
+{% endhighlight %}
+{% endtabs %}
+
+Free text annotation selection will be allowed only if the `SfPdfViewer.AnnotationSettings.Constarints` API is set to `AnnotationConstraints.Selectable`. The following code prevents the free text annotations selection, even though the `Constraints` property of the free text annotation is set to `AnnotationConstraints.Selectable`.
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the free text annotation selection, though its 'Constraints' property is set to ‘AnnotationConstraints.Selectable’ 
+pdfViewerControl.AnnotationSettings.Constraints= ~AnnotationConstraints.Selectable;
+pdfViewerControl.AnnotationSettings.FreeText.Constraints = AnnotationConstraints.Selectable;
 
 {% endhighlight %}
 {% endtabs %}

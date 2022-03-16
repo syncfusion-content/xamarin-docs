@@ -444,41 +444,6 @@ private void saveButton_Clicked(object sender, EventArgs e)
 
 N>The `CanUndo` property is used to identify whether a document loaded in the PDF viewer is edited or not. When this property is set to true, means that the document in the PDF viewer is edited. 
 
-## How to enable or disable text markup annotation interaction?
-
-The interaction operation can be enabled or disabled for text markup annotation alone by setting the `IsLocked` API to `false` or `true` respectively.
-
-For example, the following code disables the interaction operations for all text markup annotations in the PDF. But other annotation types can be selected, moved, resized, or removed. 
-
-{% tabs %}
-{% highlight c# %}
-
-//Disable the text markup highlight annotation interaction
-pdfViewerControl.AnnotationSettings.TextMarkup.Highlight.IsLocked = true;
-
-//Disable the text markup underline annotation interaction
-pdfViewerControl.AnnotationSettings.TextMarkup.Underline.IsLocked = true;
-
-//Disable the text markup strikethrough annotation interaction
-pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.IsLocked = true;
-
-{% endhighlight %}
-{% endtabs %}
-
-The interaction with text markup annotation types will be allowed only if the `SfPdfViewer.AnnotationSettings.IsLocked` API is set to `false`. The following code does not allow the interactions with text markup annotations, although the `IsLocked` property of the text markup annotation is set to `false`. 
-
-{% tabs %}
-{% highlight c# %}
-
-//Disables the text markup annotation interaction, though its 'IsLocked' property is set to ‘false’ 
-pdfViewerControl.AnnotationSettings.IsLocked = true;
-pdfViewerControl.AnnotationSettings.TextMarkup.Highlight.IsLocked = false;
-pdfViewerControl.AnnotationSettings.TextMarkup.Underline.IsLocked = false;
-pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.IsLocked = false;
-
-{% endhighlight %}
-{% endtabs %}
-
 ## How to lock or unlock the text markup annotations?
  
 To lock or unlock all the text markup annotation, set the `IsLocked` API to `true` or `false` respectively, and the following sample explains the same. But other annotation types can be moved, resized, removed or their attributes can be changed. 

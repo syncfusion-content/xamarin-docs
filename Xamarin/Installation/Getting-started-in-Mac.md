@@ -30,6 +30,7 @@ The Syncfusion Essential Studio allows you to create the Xamarin application in 
 
    1.	Right-click the downloaded pkg file.
    2.	Select the "Open With" option and choose "Installer (Default)".
+   3.	Installer window will be opened.
 
 ## Step-by-Step Installation
 

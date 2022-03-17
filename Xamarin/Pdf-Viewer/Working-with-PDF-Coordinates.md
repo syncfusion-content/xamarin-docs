@@ -9,7 +9,7 @@ documentation: ug
 
 # Working with PDF coordinates in Xamarin Pdf Viewer(SfPdfViewer)
 
-Xamarin PDF Viewer allows users to obtain the PDF page coordinates relative to the PDF Viewer's client coordinates and vice versa. It also allows you to obtain the scroll point relative to the PDF page coordinates and bring the given region into view.
+PDF Viewer allows users to obtain the PDF page coordinates relative to the PDF Viewer's client coordinates and vice versa. It also allows you to obtain the scroll point relative to the PDF page coordinates and bring the given region into view.
  
 ## Get and set scroll coordinates
  

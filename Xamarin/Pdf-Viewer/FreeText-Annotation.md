@@ -408,7 +408,7 @@ private void PdfViewer_FreeTextAnnotationRemoved(object sender, FreeTextAnnotati
 {% endhighlight %}
 {% endtabs %}
 
-### Render sticky notes annotation as free text annotation
+## Render sticky notes annotation as free text annotation
 
 To avoid data loss, the sticky notes annotation will be rendered as free-text annotation while importing or loading a document. Though the sticky notes annotations are rendered as free text annotations in the `SfPdfViewer`, they will be preserved as sticky notes annotation while saving and exporting. Only the change of text attribute will be preserved on save and export.
 

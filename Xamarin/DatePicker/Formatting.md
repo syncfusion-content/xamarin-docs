@@ -25,6 +25,12 @@ dd_MMM_yyyy - Represents the day month year in dd/mmm/yyyy format.
 
 dd_MM_yyyy - Represents the day month year in dd/MM/yyyy format.
 
+dd_MM - Represents the day month in dd/MM format.
+
+MM_yyyy - Represents the month year in MM/yyyy format.
+
+MMM_yyyy - Represents the month year in MMM/yyyy format.
+
 The following example demonstrates the DatePicker with the custom format DateFormat.yyyy-MM-dd.
 
 {% tabs %}

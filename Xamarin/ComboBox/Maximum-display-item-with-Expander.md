@@ -124,9 +124,8 @@ comboBox.LoadMore(5);
 
 ## Load more view customization
 
-SfComboBox allows customizing User Interface(UI) of Load More view.
-
-To customize the load more text, add the custom UI in the `LoadMoreTemplate` API in SfComboBox as shown in below code snippet.
+`SfComboBox` allows customizing User Interface(UI) of Load More view.
+To customize the load more text, add the custom UI in the `LoadMoreTemplate` API in SfComboBox, as shown in the following code snippet.
 
 {% tabs %}
 

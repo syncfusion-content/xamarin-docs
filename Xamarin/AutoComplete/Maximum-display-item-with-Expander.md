@@ -123,9 +123,8 @@ autoComplete.LoadMore(5);
 
 ## Load more view customization
 
-SfAutoComplete allows customizing User Interface(UI) of Load More view.
-
-To customize the load more text, add the custom UI in the `LoadMoreTemplate` API in SfAutoComplete as shown in below code snippet.
+`SfAutoComplete` allows customizing User Interface(UI) of Load More view.
+To customize the load more text, add the custom UI in the `LoadMoreTemplate` API in SfAutoComplete, as shown in the following code snippet.
 
 {% tabs %}
 

@@ -159,9 +159,8 @@ diagram.LoadFromJson(JsonText);
 {% endtabs %}
 
 ## SaveAsImage
-To save the output screen shot of the diagram control in image format using the [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage) method. It uses default format image.png File Name - it is generated automatically by using the Current Date and Time.Save the diagram in a Specific ImageFormat.
- The following code sample explains this.
-
+To save the output screen shot of the diagram control in image format using the [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage) method. It uses default format image.png File Name - it is generated automatically by using the Current Date and Time.Save the diagram in a Specific ImageFormat.The following code sample explains this.
+{% tabs %}
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
 diagram.SaveAsImage();
@@ -171,7 +170,7 @@ this.Content = diagram;
 
 ### Save Diagram as image format with Padding.
 To save the diagram as image format using the [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage_Syncfusion_SfDiagram_XForms_ImageFormat_System_Int32_) method with the padding.
-
+{% tabs %}
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
 diagram.SaveAsImage(ImageFormat.Png,50);
@@ -181,7 +180,7 @@ this.Content = diagram;
 
 ### Save the diagram as image format with Margin.
 To save the diagram as image format using the [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage_Syncfusion_SfDiagram_XForms_ImageFormat_System_Int32_System_Int32_System_Int32_System_Int32_) method with the margin.
-
+{% tabs %}
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
 diagram.SaveAsImage(ImageFormat.Png,40,0,0,0);
@@ -191,7 +190,7 @@ this.Content = diagram;
 
 ### Save the diagram as Stream.
 To save the diagram as Stream using the [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage_System_IO_Stream_) method by parsing empty stream.
-
+{% tabs %}
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
 Stream stream = new MemoryStream();
@@ -372,7 +371,7 @@ this.Content = diagram;
 
 ## Cut
 To cut the selected node or connector items from the diagram, use the [Cut](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_Cut) method. To cut the selected items in the diagram, use the following code snippet.
-
+{% tabs %}
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
 Node node = new Node {Width = 200, Height = 200, OffsetX = 100, OffsetY = 100 };
@@ -385,7 +384,7 @@ this.Content = diagram;
 
 ## Copy
 To copy the selected the node or connector items from the diagram, use the [Copy](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_Copy) method. To copy the selected items in the diagram, use the following code snippet.
-
+{% tabs %}
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
 Node node = new Node {Width = 200, Height = 200, OffsetX = 100, OffsetY = 100 };
@@ -398,7 +397,7 @@ this.Content = diagram;
 
 ## Paste
 To cut or copy the selected node or connector items, use the [Paste](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_Paste) method. To paste the cut or copy the selected items in the diagram, use the following code snippet.
-
+{% tabs %}
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
 Node node = new Node {Width = 200, Height = 200, OffsetX = 100, OffsetY = 100 };
@@ -412,7 +411,7 @@ this.Content = diagram;
 
 ## Delete 
 To delete the selected node or connector items from the diagram, use the [Delete](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_Delete) method. To delete the selected items in the diagram, use the following code snippet.
-
+{% tabs %}
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
 Node node = new Node {Width = 200, Height = 200, OffsetX = 100, OffsetY = 100 };

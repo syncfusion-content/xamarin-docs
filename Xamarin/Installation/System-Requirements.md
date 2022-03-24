@@ -59,35 +59,23 @@ The platforms supported by our Xamarin.Forms controls are listed in the table be
         </th>
     </tr>
     <tr>
-        <td rowspan="2">
+        <td>
             Android
             <br/>
             <br/>
         </td>
-        <td rowspan="2">
+        <td>
         Phone, Tablet
         <br/>
         <br/>
         </td>
         <td>
-            SfPdfViewer, SfCheckBox and Material theme support
+            All controls 
             <br/>
             <br/>
         </td>
          <td>
             API level 21 and later versions
-            <br/>
-            <br/>
-        </td>
-    </tr>
-     <tr>
-        <td>
-            All other controls 
-            <br/>
-            <br/>
-        </td>
-         <td>
-            API level 19 and later versions
             <br/>
             <br/>
         </td>

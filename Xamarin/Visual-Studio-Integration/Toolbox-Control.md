@@ -13,7 +13,7 @@ Syncfusion provides a Syncfusion **Visual Studio** Toolbox for the Xamarin platf
 
 I> The Syncfusion Xamarin Toolbox is available from Essential Studio 2018 Volume 2(v16.2.0.41).
 
-> Check whether the **Xamarin Extensions - Syncfusion** are installed or not in Visual Studio Extension Manager by navigating to **Tools -> Extensions and Updates -> Installed** for Visual Studio 2017, and **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 by navigating to **Extensions -> Manage Extensions -> Installed**. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://help.syncfusion.com/xamarin/visual-studio-integration/download-and-installation) help topic.
+> Check whether the **Xamarin Extensions - Syncfusion** are installed or not in Visual Studio Extension Manager by navigating to **Tools -> Extensions and Updates -> Installed** for Visual Studio 2017, and **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 by navigating to **Extensions -> Manage Extensions -> Installed**. If this extension not installed, please install the extension by follow the steps from the [download and installation](download-and-installation) help topic.
 
 ## Launching Syncfusion Xamarin Toolbox from Syncfusion menu
 

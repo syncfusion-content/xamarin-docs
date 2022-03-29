@@ -128,81 +128,15 @@ To customize the load more text, add the custom UI in the `LoadMoreTemplate` API
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xaml hl_lines="9 13" %}
 
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
-			 xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
-             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
-             x:Class="AutoComplete.MainPage">
-  <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <autocomplete:SfAutoComplete MaximumSuggestion="3"  HeightRequest="40" x:Name="autoComplete" Watermark="Enter Text">
-            <autocomplete:SfAutoComplete.LoadMoreTemplate>
-              <border:SfBorder BackgroundColor="#6200EE" BorderWidth="1" BorderColor="Lavender" CornerRadius="20,20,20,20">
-                    <Label  TextColor="White"  HorizontalTextAlignment="Center" FontSize="15" FontAttributes="Bold" Text="Load More Template"></Label>
-              </border:SfBorder>
-             
-            </autocomplete:SfAutoComplete.LoadMoreTemplate>
-            <autocomplete:SfAutoComplete.AutoCompleteSource>
-                <ListCollection:List x:TypeArguments="x:String">
-                    <x:String>Albania</x:String>
-                    <x:String>Algeria</x:String>
-                    <x:String>American Samoa</x:String>
-                    <x:String>Andorra</x:String>
-                    <x:String>Aruba</x:String>
-                    <x:String>Angola</x:String>
-                    <x:String>Argentina</x:String>
-                    <x:String>Armenia</x:String>
-                    <x:String>America</x:String>
-                </ListCollection:List>
-        </autocomplete:SfAutoComplete.AutoCompleteSource>
-       </autocomplete:SfAutoComplete>
-    </StackLayout>
- </ContentPage>
+{% include_relative code-snippet/load-more-template.xaml %}
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight C# hl_lines="33" %}
 
- StackLayout stackLayout = new StackLayout()
-            {
-                VerticalOptions = LayoutOptions.Start,
-                HorizontalOptions = LayoutOptions.Start,
-                Padding = new Thickness(30)
-            };
-            Syncfusion.XForms.Border.SfBorder border = new Syncfusion.XForms.Border.SfBorder();
-            border.BorderWidth = 1;
-            border.BackgroundColor = Color.FromHex("#6200EE");
-            border.BorderColor = Color.Lavender;
-            border.CornerRadius = new Thickness(20, 20, 20, 20);
-            var nameLabel = new Label { FontAttributes = FontAttributes.Bold, TextColor = Color.White, HorizontalTextAlignment = TextAlignment.Center, FontSize = 15, Text = "Load More Template" };
-            border.Content = nameLabel;
-
-            SfAutoComplete autoComplete = new SfAutoComplete()
-            {
-                HeightRequest = 40,
-                MaximumSuggestion = 3,
-                Watermark = "Enter Text",
-                AutoCompleteSource = new List<string>()
-                {
-                   "Albania",
-                   "Algeria",
-                   "American Samoa",
-                   "Andorra",
-                   "Aruba",
-                   "Angola",
-                   "Argentina",
-                   "Armenia",
-                   "America"
-                },
-
-                LoadMoreTemplate = border
-
-            };
-
-            stackLayout.Children.Add(autoComplete);
-            this.Content = stackLayout;
+{% include_relative code-snippet/load-more-template.cs %}
 
 {% endhighlight %}
 

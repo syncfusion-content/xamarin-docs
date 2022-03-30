@@ -128,7 +128,7 @@ Using `TitleAlignment` and `TitleSpace`, the description alignment and space bet
 ![StepProgressBar description customization](overview_images/title.png)
 
 ## StepProgressBar Image Customization
-The [StepProgressBar](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.SfStepProgressBar.html) control provides support for customizing the image in [StepView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.StepView.html). The following code example explains how to set image in step view.
+The [StepProgressBar](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.SfStepProgressBar.html) control provides support for customizing the image in [StepView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.StepView.html). The following code example explains how to set an image in step view.
 
 ### Initialize view model
 

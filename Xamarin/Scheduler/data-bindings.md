@@ -61,7 +61,7 @@ Schedule supports full data binding to any type of IEnumerable source. Specify t
 
 N> CustomAppointment class should contain two DateTime fields and a string field as mandatory.
 
-### Creating custom Appointments
+#### Creating custom Appointments
 You can create a custom class `Meeting` with mandatory fields `From`, `To` and `EventName`.
 
 {% tabs %}
@@ -185,7 +185,7 @@ schedule.DataSource=scheduleAppointmentCollection;
 * Appointment that lasts for an entire day (exact 24 hours) will be considered as an all-day appointment without setting the `IsAllDay` property. For example: From 06/29/2020 12:00AM to 06/30/2020 12:00AM.
 * In an all-day panel of the day, week and workweek views, span and all day appointments are ordered and rendered based on the start date-time of appointment that consists time duration of an appointment, followed by `IsSpanned`, `IsAllDay`, appointments respectively.
 
-### All-Day Appointment Panel
+#### All-Day Appointment Panel
 The all-day appointment and spanned appointment does not block out an entire-time slot in SfSchedule, rather it will render in separate layout exclusively for the all-day appointment. It can be enabled by setting the [ShowAllDay](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DayViewSettings.html#Syncfusion_SfSchedule_XForms_DayViewSettings_ShowAllDay) property of [DayViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DayViewSettings.html), [WeekViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.WeekViewSettings.html), and [WorkWeekViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.WorkWeekViewSettings.html) of `DayView`, `WeekView`, and `WorkWeekView` respectively.
 
 {% tabs %}
@@ -213,7 +213,7 @@ weekViewSeetings.AllDayAppointmentLayoutColor = Color.Silver;
 ## Recurrence Appointment
 Recurring appointment on a daily, weekly, monthly, or yearly interval. Recurring appointments can be created by setting `RecurrenceRule` property in Schedule appointments.
 
-### Recurrence Rule
+#### Recurrence Rule
 The `RecurrenceRule` is a string value, that contains the details of the recurrence appointments like repeat type - daily/weekly/monthly/yearly, how many times it needs to be repeated, the interval duration and also the time period to render the appointment, etc.
 [RecurrenceRule](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.RecurrenceProperties.html#Syncfusion_SfSchedule_XForms_RecurrenceProperties_RecurrenceRule) has the following properties and based on this property value, the recurrence appointments are rendered in the SfSchedule control with its respective time period.
 
@@ -228,7 +228,7 @@ The `RecurrenceRule` is a string value, that contains the details of the recurre
 | BYMONTH | This property is used to store the index value of the selected Month while creating the yearly appointments. For example, when you create the yearly appointment in the Month June, it means the index value for June month is 6 and it is stored in the BYMONTH field.  The appointment is created on every 6th month of a year. Example: FREQ=YEARLY;BYMONTHDAY=16;BYMONTH=6;INTERVAL=1;COUNT=10 |
 | BYSETPOS | This property is used to store the index value of the week. For example, when you create the monthly appointment in second week of the month, the index value of the second week (2) is stored in BYSETPOS. Example: FREQ=MONTHLY;BYDAY=MO;BYSETPOS=2;UNTIL=8/11/2014. **NOTE:** If the property value is set to -1,the appointment will be added to the last week of the month|
 
-### Recurrence Pattern
+#### Recurrence Pattern
 Recurrence pattern used in the control are in iCal standard. Schedule control supports all four types of [recurrence patterns](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.RecurrenceType.html). You can set the recurrence pattern using [RecurrenceType](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.RecurrenceProperties.html#Syncfusion_SfSchedule_XForms_RecurrenceProperties_RecurrenceType) property of `RecurrenceRule`.
 
 | RecurrenceType | RecurrenceProperties | Description                                                                                 |
@@ -277,7 +277,7 @@ Find the following `RecurrenceRule` possibilities available in the Schedule cont
 |  | Appointment is created with selected date and month Ends After | RecurrenceType = RecurrenceType.Yearly, Interval = 1, Month = 12, DayOfMonth = 10, RecurrenceRange = RecurrenceRange.Count, RecurrenceCount = 10 | FREQ=YEARLY; BYMONTHDAY=10; BYMONTH=12; INTERVAL=1; COUNT=10 |
 |  | Appointment is created with selected date and month Ends On | RecurrenceType = RecurrenceType.Yearly, Interval = 1, Month = 12, DayOfMonth = 12, RecurrenceRange = RecurrenceRange.EndDate, EndDate = new DateTime(2018, 06, 11) | FREQ=YEARLY; BYMONTHDAY=12; BYMONTH=12; INTERVAL=1; UNTIL=06/11//2018 |
 
-### Adding Recurrence Appointment using Recurrence Builder
+#### Adding Recurrence Appointment using Recurrence Builder
 Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointment.html#Syncfusion_SfSchedule_XForms_ScheduleAppointment_RecurrenceRule) is used to populate the required recurring appointment collection in a specific pattern. `RRULE` can be easily created through `RecurrenceBuilder` engine by using [RRuleGenerator](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_RRuleGenerator_Syncfusion_SfSchedule_XForms_RecurrenceProperties_System_DateTime_System_DateTime_) method in schedule.
 
 {% tabs %}
@@ -312,7 +312,7 @@ scheduleAppointment.RecurrenceRule = schedule.RRuleGenerator(recurrencePropertie
 
 ![Recurrence appointment support in schedule Xamarin Forms](PopulatingAppointments_images/recurrence.png)
 
-### Creating Custom Recurrence Appointment using Recurrence Builder
+#### Creating Custom Recurrence Appointment using Recurrence Builder
 For creating custom recurrence appointment you need to create a custom class `Meeting` with mandatory fields `From`, `To`, `EventName` and `RecurrenceRule`.
 
 {% tabs %}
@@ -412,7 +412,7 @@ In Schedule "Xamarin.Forms UWP", there is no need to set IsRecursive property fo
 
 ![Custom recurrence appointments support in schedule Xamarin Forms](PopulatingAppointments_images/RecurrenceAppointment.png)
 
-### How to get the Recurrence editor field values from RRULE?
+#### How to get the Recurrence editor field values from RRULE?
 You can get the Recurrence properties from `RRULE` using the [RRuleParser](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_RRuleParser_System_String_System_DateTime_) method of `SfSchedule`.
 
 {% tabs %}
@@ -428,7 +428,7 @@ recurrenceProperties.Interval = 1;
 recurrenceProperties.RecurrenceCount = 3;
 recurrenceProperties.RecurrenceRange = RecurrenceRange.Count;
 
-### How to get the occurrences date time list of recurring appointment from RRULE?
+#### How to get the occurrences date time list of recurring appointment from RRULE?
 You can get the occurrences date time list of recurring appointment from `RRULE` using the [GetRecurrenceDateTimeCollection](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_GetRecurrenceDateTimeCollection_System_String_System_DateTime_System_Nullable_System_DateTime__System_Nullable_System_DateTime__) method of `SfSchedule`.
 
 {% tabs %}
@@ -446,10 +446,10 @@ var date2 = 5/9/2018;
 ## Recurrence Pattern Exceptions 
 You can delete or change any recurrence pattern appointment by handling exception dates and exception appointments to that recurring appointment.
 
-### Recurrence Exception Dates
+#### Recurrence Exception Dates
 You can delete any occurrence appointment which is exception from the recurrence pattern appointment by adding exception dates to the recurring appointment.  
 
-### Recurrence Exception appointment
+#### Recurrence Exception appointment
 You can also change any occurrence appointment which is exception from recurrence pattern appointment by adding the recurrence exception appointment in the schedule `DataSource`.
 
 ### Create recurrence exceptions for schedule appointment
@@ -804,7 +804,7 @@ here [RecurrenceExceptions](https://github.com/SyncfusionExamples/Create-Recurre
 ## Get visible appointments
 You can get the list of visible appointments by using [GetVisibleAppointments](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_GetVisibleAppointments_System_DateTime_System_Nullable_System_DateTime__) method available in schedule. It is applicable for all schedule views.
 
-### Get visible appointments from given date time range
+#### Get visible appointments from given date time range
 You can get the visible appointments in schedule by passing the start and end `DateTime` range to `GetVisibleAppointments` method.
 
 {% tabs %}
@@ -813,7 +813,7 @@ List<ScheduleAppointment> visibleAppointments = schedule.GetVisibleAppointments(
 {% endhighlight %}
 {% endtabs %}
 
-### Get visible appointments from date time
+#### Get visible appointments from date time
 You can get the visible appointments in schedule by passing `DateTime` to `GetVisibleAppointments` method.
 
 {% tabs %}
@@ -879,7 +879,7 @@ The default appearance of the appointment can be customized by using the [Appoi
 * [Customize appearance using DataTemplate](https://help.syncfusion.com/xamarin/scheduler/date-navigations#customize-appearance-using-datatemplate)
 * [Customize appearance using DataTemplateSelector](https://help.syncfusion.com/xamarin/scheduler/date-navigations#customize-appearance-using-datatemplateselector)
 
-### Customize appearance using Style
+#### Customize appearance using Style
 Schedule appointment can be customized by setting appointment style properties such as [TextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentStyle.html#Syncfusion_SfSchedule_XForms_AppointmentStyle_TextColor), [FontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentStyle.html#Syncfusion_SfSchedule_XForms_AppointmentStyle_FontFamily), [FontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentStyle.html#Syncfusion_SfSchedule_XForms_AppointmentStyle_FontSize), [FontAttributes](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentStyle.html#Syncfusion_SfSchedule_XForms_AppointmentStyle_FontAttributes), [BorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentStyle.html#Syncfusion_SfSchedule_XForms_AppointmentStyle_BorderColor), [BorderCornerRadius](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentStyle.html#Syncfusion_SfSchedule_XForms_AppointmentStyle_BorderCornerRadius), [BorderWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentStyle.html#Syncfusion_SfSchedule_XForms_AppointmentStyle_BorderWidth) to the [AppointmentStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentStyle.html) property of `SfSchedule`.
 
 {% tabs %}
@@ -916,7 +916,7 @@ schedule.AppointmentStyle = appointmentStyle;
 
 ![Appointments styling support in schedule Xamarin Forms](PopulatingAppointments_images/style.png)
 
-### Customize appearance using Event
+#### Customize appearance using Event
 Schedule appointment can be customized during runtime using [OnAppointmentLoadedEvent](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html). `ScheduleAppointment` style can be customized using the `appointmentStyle` property.
 
 [AppointmentLoadedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs.html) has below properties,
@@ -957,7 +957,7 @@ private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedE
 >**NOTE**
 FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
 
-## Customize appearance using Custom View
+#### Customize appearance using Custom View
 Default appointment UI can be changed using `view` property passed through `AppointmentLoadedEventArgs`.
 
 
@@ -996,7 +996,7 @@ private void Schedule_OnAppointmentLoadedEvent(object sender, AppointmentLoadedE
 
 ![Custom view support for appointments in schedule Xamarin Forms](PopulatingAppointments_images/appointmentstyle_customview.png)
 
-## Customize appearance using DataTemplate
+#### Customize appearance using DataTemplate
 The default appearance of the Appointment can be customized by using the [AppointmentTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_AppointmentTemplate) property of the Schedule.
 
 {% tabs %}
@@ -1037,7 +1037,7 @@ public class DayAppointmentDataTemplate : DataTemplate
 
 ![DataTemplate support for appointments in schedule Xamarin Forms](PopulatingAppointments_images/dayappointmenttemplate.png)
 
-## Customize appearance using DataTemplateSelector
+#### Customize appearance using DataTemplateSelector
 `DataTemplateSelector` can be used to choose a `DataTemplate` at runtime based on the value of a data-bound to Schedule appointment property through `AppointmentTemplate`. It provides multiple DataTemplates to be enabled for Schedule appointments, to customize the appearance of particular Appointment.
 
 {% tabs %}
@@ -1060,7 +1060,7 @@ public class DayAppointmentDataTemplate : DataTemplate
 {% endhighlight %}
 {% endtabs %}
 
-### Creating a DataTemplateSelector
+#### Creating a DataTemplateSelector
 
 {% tabs %}
 {% highlight c# %}
@@ -1127,7 +1127,7 @@ Used button to display day appointment and Label to display all day appointment.
 
 ![DataTemplateSelector support for appointments in schedule Xamarin Forms](PopulatingAppointments_images/appointmenttemplate.png)
 
-### Customize Font Appearance
+#### Customize Font Appearance
 
 you can change the appearance of Font by setting the  [FontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentStyle.html#Syncfusion_SfSchedule_XForms_AppointmentStyle_FontFamily) property of [AppointmentStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentStyle.html) property in Schedule.
 
@@ -1182,7 +1182,7 @@ private void Schedule_CellLongPressed(object sender, CellTappedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### Commands
+#### Commands
 Schedule commands allow data bindings to make method calls directly to a ViewModel, which supports tapped, double tapped, long pressed touch actions and visible date changed action.
 
 •    [CellTappedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_CellTappedCommand)
@@ -1247,7 +1247,7 @@ public class ScheduleViewModel
 {% endhighlight %}
 {% endtabs %}
 
-### Selection customization
+#### Selection customization
 The default selection of an appointment can be customized by using [SelectionBorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentStyle.html#Syncfusion_SfSchedule_XForms_AppointmentStyle_SelectionBorderColor), [SelectionTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentStyle.html#Syncfusion_SfSchedule_XForms_AppointmentStyle_SelectionTextColor) properties in `AppointmentStyle` property of `SfSchedule`. The property is used to customize or override the default selection of the appointments.
 
 N> `BorderWidth` value must be set to highlight `SelectionBorderColor`.
@@ -1276,7 +1276,7 @@ schedule.AppointmentStyle = appointmentStyle;
 
 ![Selection customization in schedule Xamarin Forms](PopulatingAppointments_images/selection.png)
 
-### How to raise schedule events while using custom view for appointments?
+#### How to raise schedule events while using custom view for appointments?
 You can raise schedule events such as `CellTapped`, `CellDoubleTapped`, `CellLongPressed` by using the `InputTransparent` property of custom view.
 
 {% tabs %}

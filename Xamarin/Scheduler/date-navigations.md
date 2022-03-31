@@ -56,7 +56,7 @@ By default the date can be navigated to next and previous view using touch gestu
 *  	Forward
 *	Backward
 
-### Forward
+#### Forward
 You can use the `Forward` method for viewing the next immediate visible dates in the SfSchedule. It will move to next month if the schedule view is month, similarly it will move to next week for week view and next day for day view.
 
 {% tabs %}
@@ -70,7 +70,7 @@ schedule.Forward();
 Date can be navigated until it reaches the Min Max date.**
 
 
-### Backward
+#### Backward
 You can use the `Backward` method for viewing the previous immediate visible dates in the SfSchedule. It will move to previous month if the schedule view is month, similarly it will move to previous week for week view and previous day for day view.
 
 {% tabs %}
@@ -87,7 +87,7 @@ Date can be navigated until it reaches the Min Max date.**
 ## Range for visible dates
 Visible dates can be restricted between certain range of dates, using [MinDisplayDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_MinDisplayDate)  and [MaxDisplayDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_MaxDisplayDate)  property in `SfSchedule`. It is applicable in all the schedule views.
 
-### Minimum Display Date
+#### Minimum Display Date
 `MinDisplayDate` will restrict date navigations features of `Backward`, `MoveToDate` and also can’t swipe the control using touch gesture beyond the min max date range. Thus, Inline and selection feature in month view will works only within the min max date range.
 
 {% tabs %}
@@ -99,7 +99,7 @@ schedule.MinDisplayDate = minDate;
 {% endhighlight %}   
 {% endtabs %}
 
-### Maximum Display Date
+#### Maximum Display Date
 `MaxDisplayDate` will restrict date navigations features of `Forward`, `MoveToDate` and also can’t swipe the control using touch gesture beyond the max date range. Thus, Inline and selection in month view will works only within the max date range.
 
 

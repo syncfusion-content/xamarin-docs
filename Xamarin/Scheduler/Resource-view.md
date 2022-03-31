@@ -89,7 +89,7 @@ schedule.DataSource = scheduleAppointmentCollection;
 
 You can associate resources to the custom appointments using the equivalent field of `ResourceIds` in custom appointment class.
 
-### Creating custom events
+#### Creating custom events
 
 You can create a custom class `Event` with mandatory fields `From`, `To`, `EventName`, and `Resources`. 
 
@@ -176,7 +176,7 @@ Schedule supports full data binding to any type of `IEnumerable` source. Specify
 >**NOTE**
 Custom resource class should contain a mandatory field for resource `Id`.
 
-### Creating a custom resource
+#### Creating a custom resource
 
 You can create a custom class `Employee` with required fields such as `Name`, `Id`, `Color`, and `DisplayPicture`.
 
@@ -397,7 +397,7 @@ In timeline view, the `SelectedResources` becomes null on tapping an item when t
 
 ## Customization
 
-### Changing resource name label text color
+#### Changing resource name label text color
 
 You can customize the text color of the resource name using the [DisplayLabelTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ResourceViewSettings.html#Syncfusion_SfSchedule_XForms_ResourceViewSettings_DisplayLabelTextColor) property of `ResourceViewSettings` in `SfSchedule`.
 
@@ -416,7 +416,7 @@ schedule.ResourceViewSettings = resourceViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-### Data template
+#### Data template
 
 The default appearance of the resource can be customized using the [ResourceItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_ResourceItemTemplate) property of the schedule. You can handle the default touch action such as selection of resource item using the `InputTransparent` property of the `Xamarin.Forms.VisualElement`.
 
@@ -431,7 +431,7 @@ The default appearance of the resource can be customized using the [ResourceItem
 {% endhighlight %}
 {% endtabs %}
 
-### Creating a DataTemplate
+#### Creating a DataTemplate
 
 {% tabs %}
 {% highlight xaml %}
@@ -468,7 +468,7 @@ public class ResourceDataTemplate : DataTemplate
 
 ![Data template in xamarin forms Resource view](resource-view-images/xamarin-forms-resource-view-data-template.png)
 
-### Template selector
+#### Template selector
 
 `DataTemplateSelector` can be used to choose a `DataTemplate` at run time based on the value of data bound to the `ScheduleResource` property through `ResourceItemTemplate`. It provides multiple `DataTemplates` to be enabled for schedule resources to customize the appearance of a particular resource item. You can handle the default touch action such as selection of a resource item using the `InputTransparent` property of the `Xamarin.Forms.VisualElement`.
  
@@ -488,7 +488,7 @@ public class ResourceDataTemplate : DataTemplate
 {% endhighlight %}
 {% endtabs %}
 
-### Creating a DataTemplateSelector
+#### Creating a DataTemplateSelector
 
 {% tabs %}
 {% highlight c# %}

@@ -42,7 +42,7 @@ private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStar
 {% endhighlight %}
 {% endtabs %}
 
-### Disabling dragging when the appointment is AllDay appointment
+#### Disabling dragging when the appointment is AllDay appointment
 Using `Cancel` property in the `AppointmentDragStartingEventArgs` argument of Schedule `AppointmentDragStarting` event, you can enable/disable the appointment dragging based on the requirement. In the below code, appointment dragging is disabled when the appointment is AllDay appointment.
 
 {% tabs %}
@@ -85,7 +85,7 @@ private void Schedule_AppointmentDragOver(object sender, AppointmentDragEventArg
 {% endhighlight %}
 {% endtabs %}
 
-### Displaying alert while dragging appointment over the blocked time slots
+#### Displaying alert while dragging appointment over the blocked time slots
 By using the `draggingPoint` and `draggingTime` properties in the `AppointmentDragEventArgs` of Schedule `AppointmentDragOver` event you can get the current position and time of dragging appointment. In the below code, Indicating the message while dragging over the Schedule `NonAccessibleBlock`.
 
 {% tabs %}
@@ -128,7 +128,7 @@ private void Schedule_AppointmentDrop(object sender, AppointmentDropEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### Disabling dropping when dropping appointment within the Non-Accessible region
+#### Disabling dropping when dropping appointment within the Non-Accessible region
 Using `Cancel` property in the `AppointmentDropEventArgs` argument of Schedule `AppointmentDrop` event, you can enable/disable the appointment dropping based on the requirement. In the below code, appointment dropping is disabled while dropping in the Non-Accessible block region.
 
 {% tabs %}
@@ -173,7 +173,7 @@ schedule.DragDropSettings = dragDropSettings;
 {% endhighlight %}
 {% endtabs %}
 
-### Disabling navigation when dragging appointment
+#### Disabling navigation when dragging appointment
 Using [AllowNavigate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DragDropSettings.html#Syncfusion_SfSchedule_XForms_DragDropSettings_AllowNavigate) boolean property can handle the Appointment dragging, whether navigate to next/previous view or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowNavigate` property is true and  Schedule will navigate to next/previous view when dragging the appointment to the endpoint of the current view.
 
 {% tabs %}
@@ -182,7 +182,7 @@ dragDropSettings.AllowNavigate = false;
 {% endhighlight %}
 {% endtabs %}
 
-### Handling navigation delay while holding dragged appointment
+#### Handling navigation delay while holding dragged appointment
 Using [AutoNavigationDelay](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DragDropSettings.html#Syncfusion_SfSchedule_XForms_DragDropSettings_AutoNavigationDelay)  `TimeSpan` property you can handle the navigation time when navigating to next/previous view while holding the dragged appointment.
 
 {% tabs %}
@@ -192,7 +192,7 @@ dragDropSettings.AutoNavigationDelay = timeSpan;
 {% endhighlight %}
 {% endtabs %}
 
-### Disabling scroll when dragging appointment
+#### Disabling scroll when dragging appointment
 Using [AllowScroll](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DragDropSettings.html#Syncfusion_SfSchedule_XForms_DragDropSettings_AllowScroll) boolean property you can handle the Appointment dragging, whether scrolling (below/above) the Schedule or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowScroll` property is true.
 
 {% tabs %}
@@ -201,7 +201,7 @@ dragDropSettings.AllowScroll = false;
 {% endhighlight %}
 {% endtabs %}
 
-### Disabling dragging time indicator
+#### Disabling dragging time indicator
 [ShowTimeIndicator](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DragDropSettings.html#Syncfusion_SfSchedule_XForms_DragDropSettings_ShowTimeIndicator) - Using this boolean property can handle the time indicator whether it should visible or not, which shows the dragged appointment current position time in time text slots. Default value of the `ShowTimeIndicator` property is true.
 
 {% tabs %}

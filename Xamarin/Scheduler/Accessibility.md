@@ -352,7 +352,7 @@ Deletes the selected appointment from appointments collection.
 </tr>
 </table>
 
-### View navigations
+#### View navigations
 <table>
 <tr>
 <th>

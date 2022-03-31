@@ -393,7 +393,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ![Time slot customization in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-slot-customization.png)
 
-### Time label customization
+## Time label customization
 
 You can customize the format for the labels that mention the time by setting the [TimeFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.TimelineLabelSettings.html#Syncfusion_SfSchedule_XForms_TimelineLabelSettings_TimeFormat) property of [LabelSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.TimelineViewSettings.html#Syncfusion_SfSchedule_XForms_TimelineViewSettings_LabelSettings) in `TimelineViewSettings`.
 
@@ -453,7 +453,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ![Time label appearance in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-label-appearance.png)
 
-### Time Label size
+#### Time Label size
 
 You can customize the size of the labels that mention the time by setting the [TimeLabelSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.TimelineLabelSettings.html#Syncfusion_SfSchedule_XForms_TimelineLabelSettings_TimeLabelSize) property of `LabelSettings` in `TimelineViewSettings`.
 

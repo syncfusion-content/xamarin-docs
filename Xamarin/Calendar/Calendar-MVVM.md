@@ -170,7 +170,7 @@ public class MainViewModel
 
 ## Commands
  
-### Tap command
+#### Tap command
  
 The [TapCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_TapCommand) will be triggered whenever tapping the calendar cell and passing the [CalendarTappedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.CalendarTappedEventArgs.html) as parameter.
 
@@ -209,7 +209,7 @@ public class CalendarViewModel
 {% endhighlight %}
 {% endtabs %} 
 
-### Hold command
+#### Hold command
 
 The [HoldCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_HoldCommand) will be triggered whenever the calendar cell is long pressed and passing the [DayCellHoldingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.DayCellHoldingEventArgs.html) as parameter.
 
@@ -248,7 +248,7 @@ public class CalendarViewModel
 {% endhighlight %}
 {% endtabs %} 
 
-### Month changed command
+#### Month changed command
 
 The [MonthChangedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_MonthChangedCommand) will be triggered whenever the navigating between month and Forward()/backward() is called in calendar and passing the [MonthChangedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.MonthChangedEventArgs.html) as parameter.
 
@@ -285,7 +285,7 @@ public class CalendarViewModel
 {% endhighlight %}
 {% endtabs %} 
 
-### Selection changed command
+#### Selection changed command
 
 The [SelectionChangedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_SelectionChangedCommand) will be triggered whenever the selection is changed in calendar for the following selections and passing the [SelectionChangedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SelectionChangedEventArgs.html) as parameter.
 

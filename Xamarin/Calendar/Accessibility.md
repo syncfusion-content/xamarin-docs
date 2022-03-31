@@ -179,7 +179,7 @@ Moves the selection to the previous date of the date currently selected.
 </tr>
 </table>
 
-### Shift key combinations
+#### Shift key combinations
 <table>
 <tr>
 <th>

@@ -68,13 +68,13 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the tria
 
 To use `SfCalendar` inside an application, each platform application must initialize the `SfCalendar` renderer. This initialization step varies from platform to platform and is discussed in the following sections.
 
-### Android and  UWP
+#### Android and  UWP
 
 The Android and UWP launches the `SfCalendar` without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application
 
 N> If you are adding the references from toolbox, this step is not needed.
 
-### iOS
+#### iOS
 
 To launch `SfCalendar` in iOS, need to create an instance of SfCalendarRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below.
 
@@ -92,7 +92,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-### ReleaseMode issue in UWP platform
+#### ReleaseMode issue in UWP platform
 
 There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in `Release Mode`.
 

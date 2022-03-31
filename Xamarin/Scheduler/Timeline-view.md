@@ -98,11 +98,11 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 You can restrict user interaction such as selection and highlight specific region of time in `TimelineView` by adding `SpecialTimeRegion` in the [SpecialTimeRegions](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_SpecialTimeRegions) property of `SfSchedule`. You need to set the [StartHour](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.TimeRegionSettings.html#Syncfusion_SfSchedule_XForms_TimeRegionSettings_StartHour) and [EndHour](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.TimeRegionSettings.html#Syncfusion_SfSchedule_XForms_TimeRegionSettings_EndHour) properties of [TimeRegionSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.TimeRegionSettings.html) to create `SpecialTimeRegion`. You can also set `StartHour` and `EndHour` in double value, which will be converted to time to show the required time duration in minutes. By default, the values of `StartHour` and `EndHour` are 0.
 
-### Special time region appearance
+#### Special time region appearance
 
 You can customize the appearance of `SpecialTimeRegion` using the [Color](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.TimeRegionSettings.html#Syncfusion_SfSchedule_XForms_TimeRegionSettings_Color) and [TextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.TimeRegionSettings.html#Syncfusion_SfSchedule_XForms_TimeRegionSettings_TextColor) properties of `TimeRegionSettings`.
 
-### Selection restriction in time slots
+#### Selection restriction in time slots
 
 You can enable/disable the touch interaction of `SpecialTimeRegion` using [CanEdit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.TimeRegionSettings.html#Syncfusion_SfSchedule_XForms_TimeRegionSettings_CanEdit) property of `TimeRegionSettings`. By default, its value is true.
 
@@ -175,7 +175,7 @@ schedule.TimeIntervalHeight = 180;
 
 ![Time interval height in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-interval-height.png)
 
-### Full screen scheduler
+#### Full screen scheduler
 Schedule time interval height can be adjusted based on screen height by changing the value of `TimeIntervalHeight` property to -1. It will auto-fit to the screen height and width.
 
 {% tabs %}
@@ -329,7 +329,7 @@ schedule.ViewHeaderHeight = 50;
 
 ![View header height in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-view-header-height.png)
 
-### View header date format
+#### View header date format
 
 You can customize the date format of `ViewHeader` in `TimelineView` using the [DateFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.TimelineLabelSettings.html#Syncfusion_SfSchedule_XForms_TimelineLabelSettings_DateFormat) property of `TimelineLabelSettings`.
 
@@ -423,7 +423,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ![Time label format in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-label-format.png)
 
-### Time label appearance
+#### Time label appearance
 
 You can customize the color for the labels that mention the time by setting the [TimeLabelColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.TimelineLabelSettings.html#Syncfusion_SfSchedule_XForms_TimelineLabelSettings_TimeLabelColor) property of `LabelSettings` in `TimelineViewSettings`.
 
@@ -453,7 +453,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ![Time label appearance in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-label-appearance.png)
 
-### Time Label size
+#### Time Label size
 
 You can customize the size of the labels that mention the time by setting the [TimeLabelSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.TimelineLabelSettings.html#Syncfusion_SfSchedule_XForms_TimelineLabelSettings_TimeLabelSize) property of `LabelSettings` in `TimelineViewSettings`.
 
@@ -512,7 +512,7 @@ You can customize the default appearance of selection UI in the timeslots.
 * [Selection customization using custom View](#selection-customization-using-custom-view)
 * [Programmatic selection](#programmatic-selection)
 
-### Selection customization using style
+#### Selection customization using style
 You can customize the timeslot selection by using [SelectionStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_SelectionStyle) property of `SfSchedule`.
 
 {% tabs %}
@@ -542,7 +542,7 @@ schedule.SelectionStyle = selectionStyle;
 
 ![Selection style in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-selection-style.png)
 
-### Selection customization using custom View
+#### Selection customization using custom View
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_SelectionView) property of `SfSchedule`.
 
 {% tabs %}
@@ -569,7 +569,7 @@ schedule.SelectionView = customView;
 
 ![Custom selection view in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-custom-selection-view.png)
 
-### Programmatic selection
+#### Programmatic selection
 You can programmatically select the specific timeslot by setting corresponding date and time value to [SelectedDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_SelectedDate) property of `SfSchedule`. By default, it is null.
 
 {% tabs %}
@@ -618,4 +618,3 @@ N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-u
 [How to add multiple resource to Schedule (SfSchedule) in Xamarin.Forms](https://www.syncfusion.com/kb/11210/how-to-add-multiple-resource-to-schedule-sfschedule-in-xamarin-forms)
 
 [How to customize time label of schedule in Xamarin.Forms?](https://www.syncfusion.com/kb/10879/how-to-customize-time-label-of-schedule-in-xamarin-forms)
-

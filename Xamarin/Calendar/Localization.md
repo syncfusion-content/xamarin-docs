@@ -40,7 +40,7 @@ You can localize the custom strings (All Day, No Events) used in the calendar co
 {% endhighlight %}
 {% endtabs %}
 
-### Adding resx file
+#### Adding resx file
 You need to add the required resx files under the Resources folder in the PCL project and the filename should be `Syncfusion.SfCalendar.Forms.LanguageCode.resx`.
 
 Example: For Portuguese, `Syncfusion.SfCalendar.Forms.pt.resx`
@@ -60,7 +60,7 @@ You can localize the custom strings used in the calendar control. For that you n
 *	Localizing custom text in Android renderer.
 *	Localizing custom text in iOS renderer.
 
-### Localizing custom text in Android renderer
+#### Localizing custom text in Android renderer
 
 You can localize custom text available in the control by adding equivalent localized string in the string.xml file.
 
@@ -86,7 +86,7 @@ The procedure for creating strings.xml files is as follows:
 >**NOTE** 
 The corresponding Locale values folder updates only when the device language changes.
 
-### Localizing custom text in iOS renderer
+#### Localizing custom text in iOS renderer
 
 You can localize custom text available in the control by adding equivalent localized string in the Localizable.strings file, refer [here](https://developer.xamarin.com/guides/ios/advanced_topics/localization_and_internationalization/).
 

@@ -11,7 +11,7 @@ documentation: UG
 
 The `SfSchedule` control has built-in `AutomationId` for inner elements. Please find the following table of Automation IDs for inner elements. To keep unique `AutomationId`, these inner elements’ AutomationIds are updated based on the control’s `AutomationId`.  For example, if you set `SfSchedule` `AutomationId` as `SfSchedule.AutomationId = EventScheduler`, then the Automation framework will interact with the month header as `EventSchedulerAugust 2019`. The following screenshots denote the AutomationIds for inner elements.
 
-## Month view
+#### Month view
 
 <table>
 <tr>
@@ -76,7 +76,7 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 ![Month view Resources AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-month-view-resources.png)
 ![Month view No Events AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-month-view-no-events.png)
 
-### Day, week and workweek views
+#### Day, week and workweek views
 
 <table>
 <tr>
@@ -143,7 +143,7 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 
 ![Work week view Spanning appointment AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-workweek-view-spanning.png)
 
-### Timeline view
+#### Timeline view
 
 <table>
 <tr>
@@ -200,7 +200,7 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 >**NOTE**
 Keyboard interaction is applicable only for UWP and WPF platforms.
 
-### Day, Week and WorkWeek views
+#### Day, Week and WorkWeek views
 <table>
 <tr>
 <th>
@@ -244,7 +244,7 @@ Moves selection to the same time slot on the previous day.
 </tr>
 </table>
 
-### Timeline view
+#### Timeline view
 <table>
 <tr>
 <th>
@@ -272,7 +272,7 @@ Moves selection to the previous time slot of the currently selected time slot.
 </tr>
 </table>
 
-### Month view
+#### Month view
 <table>
 <tr>
 <th>
@@ -316,7 +316,7 @@ Moves selection to the previous date of the currently selected date.
 </tr>
 </table>
 
-### Appointments
+#### Appointments
 <table>
 <tr>
 <th>
@@ -352,7 +352,7 @@ Deletes the selected appointment from appointments collection.
 </tr>
 </table>
 
-### View navigations
+#### View navigations
 <table>
 <tr>
 <th>

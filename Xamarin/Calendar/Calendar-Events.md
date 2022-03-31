@@ -92,7 +92,6 @@ You can customize the number of appointment indicators displayed in month cell u
 N> If appointments count are lesser than the Appointment Indicator count value in the particular day, then according to number of appointments available, indicator will be displayed in the month cell.
 N> Appointment indicator will be shown on the basis of date meetings, usable month cell size and indicator count. For eg, if the month cell size is less (available for only 4 dots) and the indicator count is 10, then 4 indicators will be used.
 
-
 ## Customize inline/agenda view using DataTemplate
 
 The default appearance of the appointment can be customized by using the [InlineItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.MonthViewSettings.html#Syncfusion_SfCalendar_XForms_MonthViewSettings_InlineItemTemplate) property of the [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
@@ -139,7 +138,7 @@ Inline template selector can be used to choose a `DataTemplate` at runtime based
 {% endhighlight %}
 {% endtabs %} 
 
-### Customize agenda view height
+## Customize agenda view height
 
 You can customize the agenda view appointment height by setting the [AgendaViewHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_AgendaViewHeight) property in Calendar.
 
@@ -157,7 +156,7 @@ calendar.AgendaViewHeight = 300;
 
 ![SfCalendar AgendaViewHeight](images/AgendaViewHeight.png)
 
-### Creating a DataTemplateSelector
+## Creating a DataTemplateSelector
 {% tabs %}
 {% highlight c# %}
     public class AppointmentSelector : DataTemplateSelector

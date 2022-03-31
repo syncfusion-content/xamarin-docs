@@ -54,7 +54,7 @@ schedule.HeaderStyle = headerStyle;
 >**NOTE**
 FontAttributes and FontFamily are native to the  platform. Custom font and the font which are not available in the specified platform will not be applied.
 
-### Customize Font Appearance
+#### Customize Font Appearance
 
 You can change the appearance of Font by setting the  [FontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.HeaderStyle.html#Syncfusion_SfSchedule_XForms_HeaderStyle_FontFamilyProperty) property of [HeaderStyle](https://help.syncfusion.com/xamarin/sfschedule/headers#appearance) property in Schedule.
 

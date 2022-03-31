@@ -232,7 +232,7 @@ schedule.FirstDayOfWeek = (int)DayOfWeek.Tuesday;
     
 ![First Day of week](GettingStarted_images/xamarin.forms-schedule-first-day-of-week.png)   
 
-### Day View   
+#### Day View   
     
 DayView is used to display a single day, current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration.   
     
@@ -247,7 +247,7 @@ schedule.ScheduleView = ScheduleView.DayView;
     
 ![Day View](GettingStarted_images/xamarin.forms-schedule-day-view.png)   
 
-### Week View   
+#### Week View   
  
 `WeekView` is to view all days of a particular week. Appointments will be arranged based on the dates on the week in respective timeslots.  
     
@@ -262,7 +262,7 @@ schedule.ScheduleView = ScheduleView.WeekView;
     
 ![Week View](GettingStarted_images/xamarin.forms-schedule-week-view.png)  
 
-### Work Week View   
+#### Work Week View   
  
 `WorkWeekView` is to view only working days of a particular week. By default, Saturday and Sunday are the non-working days. You can be customize it with any days of a Week. Appointments arranged in timeslots based on its duration with respective day of the week.  
     
@@ -280,7 +280,7 @@ schedule.ScheduleView = ScheduleView.WorkWeekView;
 >**NOTE**
 Appointments in non-working days will not be displayed.
 
-### Timeline view   
+#### Timeline view   
  
 `TimelineView` displays the dates in horizontal time axis with the desired day's count. You can see the past or future dates by scrolling to the right or left. Each view displays events accurately across the time slots with an intuitive drag-and-drop feature.  
     
@@ -295,7 +295,7 @@ schedule.ScheduleView = ScheduleView.TimelineView;
     
 ![Timeline view in xamarin forms](GettingStarted_images/xamarin.forms-schedule-timeline-view.png)	
 
-### Month View   
+#### Month View   
     
 `MonthView` in Schedule control is to view entire dates of a particular month. Appointments can be viewed in inline by setting [ShowAppointmentsInline](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_ShowAppointmentsInline) property of `SfSchedule` as true.    
     
@@ -320,7 +320,7 @@ schedule.ShowAppointmentsInline = true;
   
 Schedule control has a built-in capability to handle the appointment arrangement internally based on the ScheduleAppointment collections. You need to assign the created collection to the [DataSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_DataSource) property of `SfSchedule`.  
   
-### Adding Appointments   
+#### Adding Appointments   
   
 [ScheduleAppointment](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointment.html) is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as [StartTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointment.html#Syncfusion_SfSchedule_XForms_ScheduleAppointment_StartTime), [EndTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointment.html#Syncfusion_SfSchedule_XForms_ScheduleAppointment_EndTime), [Subject](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointment.html#Syncfusion_SfSchedule_XForms_ScheduleAppointment_Subject) and some additional information about the appointment can be added using [Color](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointment.html#Syncfusion_SfSchedule_XForms_ScheduleAppointment_Color), [Notes](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointment.html#Syncfusion_SfSchedule_XForms_ScheduleAppointment_Notes), [Location](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointment.html#Syncfusion_SfSchedule_XForms_ScheduleAppointment_Location), [IsAllDay](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointment.html#Syncfusion_SfSchedule_XForms_ScheduleAppointment_IsAllDay), [IsRecursive](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointment.html#Syncfusion_SfSchedule_XForms_ScheduleAppointment_IsRecursive) properties.    
   
@@ -343,7 +343,7 @@ schedule.DataSource = appointmentCollection;
 
 You can download the entire source code of this demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/adding-appointments-schedule-xamarin)
 
-### Adding Custom Appointments   
+#### Adding Custom Appointments   
   
 You can also map custom appointments data to our schedule.   
   
@@ -357,7 +357,7 @@ Here steps to render `MeetingRoomScheduler` using SfSchedule control with respec
 * [Mapping custom class](#mapping-custom-class)  
 * [Setting data source for SfSchedule](#setting-data-source-for-sfschedule)  
 
-#### Creating custom class for appointments
+##### Creating custom class for appointments
  
 You can create a custom class `Meeting` with mandatory fields "From", "To" and "EventName". 
  

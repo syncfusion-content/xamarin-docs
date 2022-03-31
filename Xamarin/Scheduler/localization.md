@@ -48,7 +48,7 @@ You can localize the custom strings used in the schedule control. For that you n
 You can download the entire source code of this demo for Xamarin.Forms from
 [here](https://github.com/SyncfusionExamples/localize-custom-texts-schedule-xamarin)
 
-### Localizing custom text in Android renderer.
+#### Localizing custom text in Android renderer.
 
 You can localize custom text available in the control by adding equivalent localized string in the string.xml file.
 
@@ -75,7 +75,7 @@ The procedure for creating strings.xml files is as follows:
 >**NOTE** 
 The corresponding Locale values folder updates only when the device language changes.
 
-### Localizing custom text in iOS renderer.
+#### Localizing custom text in iOS renderer.
 
 You can localize custom text available in the control by adding equivalent localized string in the Localizable.strings file, refer [here](https://developer.xamarin.com/guides/ios/advanced_topics/localization_and_internationalization/).
 
@@ -92,7 +92,7 @@ If an application requires multiple languages you can follow the below steps:
 >**NOTE** 
 The corresponding `<Language>.lproj` folder updates only when the device language changes.
 
-### Localizing custom text in UWP renderer.
+#### Localizing custom text in UWP renderer.
 
 You can localize custom text available in the control by adding equivalent localized string in the Resources(.resw) file. 
 
@@ -138,7 +138,7 @@ if (schedule.Locale == "fr")
 You can download the entire source code of this demo for Xamarin.Forms from
 [here](https://github.com/SyncfusionExamples/localizing-custom-strings-from-pcl-schedule-xamarin)
 
-### Adding resx file
+#### Adding resx file
 You need to add the required resx files under the Resources folder in the PCL project and the filename should be `Syncfusion.SfSchedule.Forms.LanguageCode.resx`.
 
 Example: For French, `Syncfusion.SfSchedule.Forms.fr.resx`
@@ -159,7 +159,7 @@ Now, set the Build Action as EmbeddedResource for `Syncfusion.SfSchedule.Forms.f
 {% endhighlight %}
 {% endtabs %}
 
-### Adding ILocalize interface in PCL
+#### Adding ILocalize interface in PCL
 You need to add the ILocalize interface to convert the platform-specific locales to a value supported in .NET cultures in the PCL project.
 
 {% tabs %}
@@ -204,7 +204,7 @@ You need to add the ILocalize interface to convert the platform-specific locales
 {% endhighlight %}
 {% endtabs %}
 
-### Adding Localize class in Android and iOS project inheriting from ILocalize
+#### Adding Localize class in Android and iOS project inheriting from ILocalize
 You need to add the Localize class in Android and iOS project by inheriting from ILocalize. You can get the CultureInfo and set the same to Schedule Locale by using `GetCurrentCultureInfo` and `SetLocale`.
 
 Localize class for Android project,

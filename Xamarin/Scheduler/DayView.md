@@ -65,7 +65,7 @@ schedule.ViewHeaderHeight = 50;
 
 ![Schedule day veiw header](daymodule_images/xamarin.forms-schedule-viewheader-height.png)
 
-### Customize Font Appearance
+#### Customize Font Appearance
 
 you can change the appearance of Font by setting the  [DayFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderStyle.html#Syncfusion_SfSchedule_XForms_ViewHeaderStyle_DayFontFamilyProperty) and [DateFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderStyle.html#Syncfusion_SfSchedule_XForms_ViewHeaderStyle_DateFontFamilyProperty) property of [ViewHeaderStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_ViewHeaderStyle) property in Schedule.
 
@@ -89,7 +89,7 @@ viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-R
 Refer [this](https://help.syncfusion.com/xamarin/scheduler/monthview#custom-font-setting-in-xamarinforms-android) to configure the custom fonts in Xamarin.Forms.
 
 
-### ViewHeader Date Format
+#### ViewHeader Date Format
 You can customize the date and day format of `SfSchedule` ViewHeader by using [DateFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DayLabelSettings.html#Syncfusion_SfSchedule_XForms_DayLabelSettings_DateFormat) and [DayFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DayLabelSettings.html#Syncfusion_SfSchedule_XForms_DayLabelSettings_DayFormat) properties of `DayLabelSettings`.
 
 {% tabs %}
@@ -124,7 +124,7 @@ schedule.DayViewSettings = dayViewSettings;
 
 ![Schedule viewheader custom date format](daymodule_images/xamarin.forms-schedule-viewheader-dateformat.png)
 
-### ViewHeader Tapped Event
+#### ViewHeader Tapped Event
 You can handle single tap action of ViewHeader by using [ViewHeaderTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html#Syncfusion_SfSchedule_XForms_ViewHeaderTappedEventArgs_DateTime) details in it.
 
 {% tabs %}
@@ -184,7 +184,7 @@ schedule.TimeIntervalHeight = 180;
 
 ![Schedule customize time slot height day view](daymodule_images/xamarin.forms-schedule-timeintervalheight.png)
 
-### Full screen scheduler
+#### Full screen scheduler
 Schedule time interval height can be adjusted based on screen height by changing the value of `TimeIntervalHeight` property to -1. It will auto-fit to the screen height and width.
 
 {% tabs %}
@@ -283,7 +283,7 @@ You can customize the appearance of timeslots in `DayView`.
  * [Timeslot customization in Work hours](#timeslot-customization-in-work-hours)
 * [Timeslot customization in Non Working hours](#timeslot-customization-in-non-working-hours)
 
-### Timeslot customization in Work hours
+#### Timeslot customization in Work hours
 
 You can customize the appearance of the WorkingHourTimeslot by its color using [TimeSlotColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DayViewSettings.html#Syncfusion_SfSchedule_XForms_DayViewSettings_TimeSlotColor),[TimeSlotBorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DayViewSettings.html#Syncfusion_SfSchedule_XForms_DayViewSettings_TimeSlotBorderColor), [TimeSlotBorderStrokeWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DayViewSettings.html#Syncfusion_SfSchedule_XForms_DayViewSettings_TimeSlotBorderStrokeWidth), [VerticalLineColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DayViewSettings.html#Syncfusion_SfSchedule_XForms_DayViewSettings_VerticalLineColor) and [VerticalLineStrokeWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DayViewSettings.html#Syncfusion_SfSchedule_XForms_DayViewSettings_VerticalLineStrokeWidth) properties of `DayViewSettings`.
 
@@ -318,7 +318,7 @@ schedule.DayViewSettings = dayViewSettings;
 {% endtabs %}
 ![Schedule customizing time slot appearance day view](daymodule_images/xamarin.forms-schedule-timeslot-appearance.png)
 
-### Timeslot customization in Non Working hours
+#### Timeslot customization in Non Working hours
 
 You can customize the appearance of the Non-workingHourTimeslots by its color using [NonWorkingHoursTimeSlotBorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DayViewSettings.html#Syncfusion_SfSchedule_XForms_DayViewSettings_NonWorkingHoursTimeSlotBorderColor), [NonWorkingHoursTimeSlotColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DayViewSettings.html#Syncfusion_SfSchedule_XForms_DayViewSettings_NonWorkingHoursTimeSlotColor), [VerticalLineColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DayViewSettings.html#Syncfusion_SfSchedule_XForms_DayViewSettings_VerticalLineColor) and [VerticalLineStrokeWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DayViewSettings.html#Syncfusion_SfSchedule_XForms_DayViewSettings_VerticalLineStrokeWidth) properties of `DayViewSettings`.
 
@@ -486,7 +486,7 @@ You can customize the default appearance of selection UI in the timeslots.
 * [Selection customization using custom View](#selection-customization-using-custom-view)
 * [Programmatic selection](#programmatic-selection)
 
-### Selection customization using style
+#### Selection customization using style
 You can customize the timeslot selection by by setting the [BackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SelectionStyle.html#Syncfusion_SfSchedule_XForms_SelectionStyle_BackgroundColor), [BorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SelectionStyle.html#Syncfusion_SfSchedule_XForms_SelectionStyle_BorderColor), [BorderThickness](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SelectionStyle.html#Syncfusion_SfSchedule_XForms_SelectionStyle_BorderThickness), [BorderCornerRadius](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SelectionStyle.html#Syncfusion_SfSchedule_XForms_SelectionStyle_BorderCornerRadius) properties to the [SelectionStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_SelectionStyle) property of `SfSchedule`.
 
 {% tabs %}
@@ -516,7 +516,7 @@ schedule.SelectionStyle = selectionStyle;
 
 ![Schedule customizing selectin style day view](daymodule_images/xamarin.forms-schedule-selection-style.png)
 
-### Selection customization using custom View
+#### Selection customization using custom View
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_SelectionView) property of `SfSchedule`.
 
 {% tabs %}
@@ -543,7 +543,7 @@ schedule.SelectionView = customView;
 
 ![Schedule customizing selection view day view](daymodule_images/xamarin.forms-schedule-selection-customview.png)
 
-### Programmatic selection
+#### Programmatic selection
 You can programmatically select the specific timeslot by setting corresponding date and time value to [SelectedDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_SelectedDate) property of `SfSchedule`. By default, it is null.
 
 {% tabs %}

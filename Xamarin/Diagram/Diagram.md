@@ -199,6 +199,30 @@ this.Content = diagram;
 {% endhighlight %}
 {% endtabs %}
 
+N>To save the diagram as [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage_System_IO_Stream_) stream and [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage_System_IO_Stream_Syncfusion_SfDiagram_XForms_ImageFormat_) stream with image format methods are working in Android and iOS platform only.
+
+### Save the diagram as Stream Asynchronous.
+To save the diagram as Stream Asynchronous using the SaveAsImageAsync method by parsing empty stream.
+{% tabs %}
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
+Stream stream = new MemoryStream();
+diagram.SaveAsImageAsync(stream);
+this.Content = diagram;
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
+Stream stream = new MemoryStream();
+diagram.SaveAsImageAsync(stream, ImageFormat.Png);
+this.Content = diagram;
+{% endhighlight %}
+{% endtabs %}
+
+N>To save the diagram as SaveAsImageAsync stream and SaveAsImageAsync stream with image format methods are working in three platforms Android, iOS and UWP.
+
 N> The saved image path location details, UWP - The saved image is stored in the ‘ApplicationData’ folder. You can get the application path using ‘ApplicationData.Current.LocalFolder’.(Ex:  C:\Users\AppData\Local\Packages\90e15aa5-f034-42d8-9532-0f8ac8ab27cf_bkebv2yxxpdar\RoamingState). Android - The saved image is stored in the ‘Pictures’ location with an image name starts with “Diagram” and DateAndTime (i.e., "Diagram" and "Current Date and Time") in the android device. iOS - The saved image is stored in the ‘Photos’ location with the image name ‘Diagram’ in the iPhone.
 
 ## Diagram style settings		

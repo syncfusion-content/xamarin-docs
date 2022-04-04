@@ -495,39 +495,37 @@ private void PdfViewer_ShapeAnnotationRemoved(object sender, ShapeAnnotationRemo
 {% endhighlight %}
 {% endtabs %}
 
-## How to enable or disable shape annotation interaction?
-
-The interaction operation can be enabled or disabled for shape annotation alone by setting the `IsLocked` API to `false` or `true` respectively.
-
-For example, the following code disables the interaction operations for all shape annotations in the PDF. But other annotation types can be selected, moved, resized, or removed. 
+## How to lock or unlock the shape annotations?
+ 
+To lock or unlock all the shape annotation, set the `IsLocked` API to `true` or `false` respectively, and the following sample explains the same. But other annotation types can be moved, resized, removed or their attributes can be changed. 
 
 {% tabs %}
 {% highlight c# %}
 
-//Disable the arrow annotation interaction
+//Disable the arrow annotation interaction such as move, resize, remove, and attributes changes.
 pdfViewerControl.AnnotationSettings.Arrow.Settings.IsLocked = true;
-
-//Disable the line annotation interaction
+ 
+//Disable the line annotation interaction such as move, resize, remove, and attributes changes.
 pdfViewerControl.AnnotationSettings.Line.Settings.IsLocked = true;
-
-//Disable the rectangle annotation interaction
+ 
+//Disable the rectangle annotation interaction such as move, resize, remove, and attributes changes.
 pdfViewerControl.AnnotationSettings.Rectangle.Settings.IsLocked = true;
-
-//Disable the circle annotation interaction
+ 
+//Disable the circle annotation interaction such as move, resize, remove, and attributes changes.
 pdfViewerControl.AnnotationSettings.Circle.Settings.IsLocked = true;
-
-//Disable the polygon annotation interaction
+ 
+//Disable the polygon annotation interaction such as move, resize, remove, and attributes changes.
 pdfViewerControl.AnnotationSettings.Polygon.Settings.IsLocked = true;
 
 {% endhighlight %}
 {% endtabs %}
-
-The interaction with shape annotation types will be allowed only if the `SfPdfViewer.AnnotationSettings.IsLocked` API is set to `false`. The following code does not allow the interactions with shape annotations, although the `IsLocked` property of the shape annotation is set to `false`. 
-
+ 
+Interactions with shape annotation types such as move, resize, remove or attribute changes will be allowed only if the `SfPdfViewer.AnnotationSettings.IsLocked` API is set to `false`. The following code prevents the unlocking of the shape annotations, although the `IsLocked` property of the shape annotation is set to `false`.
+ 
 {% tabs %}
 {% highlight c# %}
 
-//Disables the shape annotation interaction, though its 'IsLocked' property is set to ‘false’ 
+//Disable the shape annotation interaction, though its 'IsLocked' property is set to ‘false’ .
 pdfViewerControl.AnnotationSettings.IsLocked = true;
 pdfViewerControl.AnnotationSettings.Arrow.Settings.IsLocked = false;
 pdfViewerControl.AnnotationSettings.Line.Settings.IsLocked = false;
@@ -539,6 +537,47 @@ pdfViewerControl.AnnotationSettings.Polygon.Settings.IsLocked = false;
 {% endtabs %}
 
 N> The `IsLocked` properties of the classes [RectangleAnnotation](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.RectangleAnnotation.html), [CircleAnnotation](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.CircleAnnotation.html), [LineAnnotation](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.LineAnnotation.html) and [ArrowAnnotation](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.ArrowAnnotation.html) have been marked as obsolete. Use the `RectangleAnnotation.Settings.IsLocked`, `CircleAnnotation.Settings.IsLocked`, `LineAnnotation.Settings.IsLocked` and `ArrowAnnotation.Settings.IsLocked` properties instead.
+
+## How to enable or disable the shape annotation selection?
+
+To enable or disable the shape annotation selection, set the `Constraints` API to `AnnotationConstraints.Selectable` or `~AnnotationConstraints.Selectable` respectively, and the following sample explains the same. But other annotation types can be selected, moved, resized, removed or their attributes can be changed. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the selection of arrow annotations.
+pdfViewerControl.AnnotationSettings.Arrow.Settings.Constraints = ~AnnotationConstraints.Selectable;
+ 
+//Disable the selection of line annotations.
+pdfViewerControl.AnnotationSettings.Line.Settings.Constraints = ~AnnotationConstraints.Selectable;
+ 
+//Disable the selection of rectangle annotations. 
+pdfViewerControl.AnnotationSettings.Rectangle.Settings.Constraints = ~AnnotationConstraints.Selectable;
+ 
+//Disable the selection of circle annotations.
+pdfViewerControl.AnnotationSettings.Circle.Settings.Constraints = ~AnnotationConstraints.Selectable;
+ 
+//Disable the selection of polygon annotations.
+pdfViewerControl.AnnotationSettings.Polygon.Settings.Constraints = ~AnnotationConstraints.Selectable;
+
+{% endhighlight %}
+{% endtabs %}
+
+Shape annotation selection will be allowed only if the `SfPdfViewer.AnnotationSettings.Constraints` API is set to `AnnotationConstraints.Selectable`. The following code prevents the shape annotations selection, even though the `Constraints` property of the shape annotation is set to `AnnotationConstraints.Selectable`.
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the shape annotation selection, though its 'Constraints' property is set to ‘AnnotationConstraints.Selectable’ 
+pdfViewerControl.AnnotationSettings.Constraints= ~AnnotationConstraints.Selectable;
+pdfViewerControl.AnnotationSettings.Arrow.Settings.Constraints = AnnotationConstraints.Selectable;
+pdfViewerControl.AnnotationSettings.Line.Settings.Constraints = AnnotationConstraints.Selectable;
+pdfViewerControl.AnnotationSettings.Rectangle.Settings.Constraints = AnnotationConstraints.Selectable;
+pdfViewerControl.AnnotationSettings.Circle.Settings.Constraints = AnnotationConstraints.Selectable;
+pdfViewerControl.AnnotationSettings.Polygon.Settings.Constraints = AnnotationConstraints.Selectable;
+
+{% endhighlight %}
+{% endtabs %}
 
 ## How to get and set the name of the shape annotations?
 

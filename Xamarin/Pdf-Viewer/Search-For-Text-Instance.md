@@ -170,6 +170,28 @@ When NoMatchFound is set to true, it means that the PDF viewer could not find an
 
 When NoMoreOccurrence is set to true, it means that the PDF viewer had completed one full cycle of search and has hit the first instance again.
 
+
+## How to initiate linear search?
+ 
+IsLinearSearchEnabled property is used to enable or disable the linear text search process. This linear search will help you  perform search operations in a sequential manner, avoiding the memory consumption issue that occurs when performing the normal text search process on the large document due to the simultaneous text extraction process. 
+ 
+Since the search operation occurs sequentially, the linear search process will have the following limitations:
+ 
+* There will be a delay in finding each instance of the searched text in a large document.
+* The built-in toolbar will not display instance counts.
+* Total search text occurrences and current search text instances will not be updated, both will be zero.
+ 
+The following code sample explains how to enable the linear search process.
+
+{% tabs %}
+{% highlight c# %}
+
+//Enable the linear text search process.
+pdfViewerControl.TextSearchSettings.IsLinearSearchEnabled = true;
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Implementing search bar with search features.
 
 With the continuation of the getting started sample, you can extend the UI design to perform the text search in the PDF Viewer. Design the search toolbar in parallel to the main toolbar, here when the main toolbar is visible, search bar will be invisible and vice versa.

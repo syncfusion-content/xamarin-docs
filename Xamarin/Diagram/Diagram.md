@@ -161,43 +161,121 @@ diagram.LoadFromJson(JsonText);
 ## SaveAsImage
 To save the output screen shot of the diagram control in image format using the [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage) method. It uses default format image.png File Name - it is generated automatically by using the Current Date and Time.Save the diagram in a Specific ImageFormat.The following code sample explains this.
 {% tabs %}
+{% highlight xml %}
+<synfusion:SfDiagram x:Name="diagram" Loaded="Diagram_Loaded">
+</syncfusion:SfDiagram>
+{% endhighlight %}
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
-diagram.SaveAsImage();
+diagram.Loaded += Diagram_Loaded;
 this.Content = diagram;
+
+private void Diagram_Loaded(object sender)
+{
+    diagram.SaveAsImage();   
+}
 {% endhighlight %}
 {% endtabs %}
 
 ### Save Diagram as image format with Padding.
 To save the diagram as image format using the [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage_Syncfusion_SfDiagram_XForms_ImageFormat_System_Int32_) method with the padding.
 {% tabs %}
+{% highlight xml %}
+<synfusion:SfDiagram x:Name="diagram" Loaded="Diagram_Loaded">
+</syncfusion:SfDiagram>
+{% endhighlight %}
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
-diagram.SaveAsImage(ImageFormat.Png,50);
+diagram.Loaded += Diagram_Loaded;
 this.Content = diagram;
+
+private void Diagram_Loaded(object sender)
+{
+    diagram.SaveAsImage(ImageFormat.Png,50); 
+}
 {% endhighlight %}
 {% endtabs %}
 
 ### Save the diagram as image format with Margin.
 To save the diagram as image format using the [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage_Syncfusion_SfDiagram_XForms_ImageFormat_System_Int32_System_Int32_System_Int32_System_Int32_) method with the margin.
 {% tabs %}
+{% highlight xml %}
+<synfusion:SfDiagram x:Name="diagram" Loaded="Diagram_Loaded">
+</syncfusion:SfDiagram>
+{% endhighlight %}
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
-diagram.SaveAsImage(ImageFormat.Png,40,0,0,0);
+diagram.Loaded += Diagram_Loaded;
 this.Content = diagram;
+
+private void Diagram_Loaded(object sender)
+{
+    diagram.SaveAsImage(ImageFormat.Png,40,0,0,0); 
+}
 {% endhighlight %}
 {% endtabs %}
 
 ### Save the diagram as Stream.
 To save the diagram as Stream using the [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage_System_IO_Stream_) method by parsing empty stream.
 {% tabs %}
+{% highlight xml %}
+<synfusion:SfDiagram x:Name="diagram" Loaded="Diagram_Loaded">
+</syncfusion:SfDiagram>
+{% endhighlight %}
 {% highlight c# %}
 SfDiagram diagram = new SfDiagram();
-Stream stream = new MemoryStream();
-diagram.SaveAsImage(stream);
+diagram.Loaded += Diagram_Loaded;
 this.Content = diagram;
+
+private void Diagram_Loaded(object sender)
+{
+    Stream stream = new MemoryStream();
+    diagram.SaveAsImage(stream);
+}
 {% endhighlight %}
 {% endtabs %}
+
+N>To save the diagram as [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage_System_IO_Stream_) stream and [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage_System_IO_Stream_Syncfusion_SfDiagram_XForms_ImageFormat_) stream with image format methods are working in Android and iOS platform only.
+
+### Save the diagram as Stream Asynchronous.
+To save the diagram as Stream Asynchronous using the [SaveAsImageAsync](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImageAsync_System_IO_Stream_) method by parsing empty stream.
+{% tabs %}
+{% highlight xml %}
+<synfusion:SfDiagram x:Name="diagram" Loaded="Diagram_Loaded">
+</syncfusion:SfDiagram>
+{% endhighlight %}
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
+diagram.Loaded += Diagram_Loaded;
+this.Content = diagram;
+
+private void Diagram_Loaded(object sender)
+{
+    Stream stream = new MemoryStream();
+    diagram.SaveAsImageAsync(stream);
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xml %}
+<synfusion:SfDiagram x:Name="diagram" Loaded="Diagram_Loaded">
+</syncfusion:SfDiagram>
+{% endhighlight %}
+{% highlight c# %}
+SfDiagram diagram = new SfDiagram();
+diagram.Loaded += Diagram_Loaded;
+this.Content = diagram;
+
+private void Diagram_Loaded(object sender)
+{
+    Stream stream = new MemoryStream();
+    diagram.SaveAsImageAsync(stream, ImageFormat.Png);
+}
+{% endhighlight %}
+{% endtabs %}
+
+N>To save the diagram as [SaveAsImageAsync](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImageAsync_System_IO_Stream_) stream and [SaveAsImageAsync](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImageAsync_System_IO_Stream_Syncfusion_SfDiagram_XForms_ImageFormat_) stream with image format methods are working in three platforms Android, iOS and UWP.
 
 N> The saved image path location details, UWP - The saved image is stored in the ‘ApplicationData’ folder. You can get the application path using ‘ApplicationData.Current.LocalFolder’.(Ex:  C:\Users\AppData\Local\Packages\90e15aa5-f034-42d8-9532-0f8ac8ab27cf_bkebv2yxxpdar\RoamingState). Android - The saved image is stored in the ‘Pictures’ location with an image name starts with “Diagram” and DateAndTime (i.e., "Diagram" and "Current Date and Time") in the android device. iOS - The saved image is stored in the ‘Photos’ location with the image name ‘Diagram’ in the iPhone.
 

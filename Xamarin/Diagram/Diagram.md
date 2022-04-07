@@ -172,7 +172,7 @@ this.Content = diagram;
 
 private void Diagram_Loaded(object sender)
 {
-    diagram.SaveAsImage();   
+    (sender as SfDiagram).SaveAsImage();   
 }
 {% endhighlight %}
 {% endtabs %}
@@ -191,7 +191,7 @@ this.Content = diagram;
 
 private void Diagram_Loaded(object sender)
 {
-    diagram.SaveAsImage(ImageFormat.Png,50); 
+    (sender as SfDiagram).SaveAsImage(ImageFormat.Png,50); 
 }
 {% endhighlight %}
 {% endtabs %}
@@ -210,7 +210,7 @@ this.Content = diagram;
 
 private void Diagram_Loaded(object sender)
 {
-    diagram.SaveAsImage(ImageFormat.Png,40,0,0,0); 
+    (sender as SfDiagram).SaveAsImage(ImageFormat.Png,40,0,0,0); 
 }
 {% endhighlight %}
 {% endtabs %}
@@ -230,7 +230,7 @@ this.Content = diagram;
 private void Diagram_Loaded(object sender)
 {
     Stream stream = new MemoryStream();
-    diagram.SaveAsImage(stream);
+    (sender as SfDiagram).SaveAsImage(stream);
 }
 {% endhighlight %}
 {% endtabs %}
@@ -238,7 +238,7 @@ private void Diagram_Loaded(object sender)
 N>To save the diagram as [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage_System_IO_Stream_) stream and [SaveAsImage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImage_System_IO_Stream_Syncfusion_SfDiagram_XForms_ImageFormat_) stream with image format methods are working in Android and iOS platform only.
 
 ### Save the diagram as Stream Asynchronous.
-To save the diagram as Stream Asynchronous using the [SaveAsImageAsync](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImageAsync_System_IO_Stream_) method by parsing empty stream.
+To save the diagram as Asynchronous Stream using the [SaveAsImageAsync](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImageAsync_System_IO_Stream_) method by parsing empty stream.And save the diagram as Asynchronous Stream using the [SaveAsImageAsync](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImageAsync_System_IO_Stream_Syncfusion_SfDiagram_XForms_ImageFormat_) with the image format.
 {% tabs %}
 {% highlight xml %}
 <synfusion:SfDiagram x:Name="diagram" Loaded="Diagram_Loaded">
@@ -252,7 +252,7 @@ this.Content = diagram;
 private void Diagram_Loaded(object sender)
 {
     Stream stream = new MemoryStream();
-    diagram.SaveAsImageAsync(stream);
+    (sender as SfDiagram).SaveAsImageAsync(stream);
 }
 {% endhighlight %}
 {% endtabs %}
@@ -270,12 +270,12 @@ this.Content = diagram;
 private void Diagram_Loaded(object sender)
 {
     Stream stream = new MemoryStream();
-    diagram.SaveAsImageAsync(stream, ImageFormat.Png);
+    (sender as SfDiagram).SaveAsImageAsync(stream, ImageFormat.Png);
 }
 {% endhighlight %}
 {% endtabs %}
 
-N>To save the diagram as [SaveAsImageAsync](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImageAsync_System_IO_Stream_) stream and [SaveAsImageAsync](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImageAsync_System_IO_Stream_Syncfusion_SfDiagram_XForms_ImageFormat_) stream with image format methods are working in three platforms Android, iOS and UWP.
+N>To save the diagram as [SaveAsImageAsync](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImageAsync_System_IO_Stream_) stream and [SaveAsImageAsync](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDiagram.XForms.SfDiagram.html#Syncfusion_SfDiagram_XForms_SfDiagram_SaveAsImageAsync_System_IO_Stream_Syncfusion_SfDiagram_XForms_ImageFormat_) stream with image format methods are working in Android, iOS and UWP platforms.
 
 N> The saved image path location details, UWP - The saved image is stored in the ‘ApplicationData’ folder. You can get the application path using ‘ApplicationData.Current.LocalFolder’.(Ex:  C:\Users\AppData\Local\Packages\90e15aa5-f034-42d8-9532-0f8ac8ab27cf_bkebv2yxxpdar\RoamingState). Android - The saved image is stored in the ‘Pictures’ location with an image name starts with “Diagram” and DateAndTime (i.e., "Diagram" and "Current Date and Time") in the android device. iOS - The saved image is stored in the ‘Photos’ location with the image name ‘Diagram’ in the iPhone.
 

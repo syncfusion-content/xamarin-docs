@@ -192,3 +192,4 @@ public MainPage()
 {% endtabs %} 
 
 The complete Getting Started sample is available in this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1516836824.zip).
+

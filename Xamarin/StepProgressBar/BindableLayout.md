@@ -110,7 +110,6 @@ BindableLayout.SetItemsSource(sfStepProgressBar, ShipmentViewModel.ShipmentInfoC
 
 ## Define the appearance of StepView
 
-
 {% highlight xaml %}
 
                <progressBar:SfStepProgressBar BindableLayout.ItemsSource="{Binding ShipmentInfoCollection}" TitleAlignment="Start" BackgroundColor="Transparent" TitleSpace="10" Orientation="Vertical" x:Name="stepProgress">

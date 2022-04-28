@@ -110,6 +110,8 @@ BindableLayout.SetItemsSource(sfStepProgressBar, ShipmentViewModel.ShipmentInfoC
 
 ## Define the appearance of StepView
 
+{% tabs %} 
+
 {% highlight xaml %}
 
                <progressBar:SfStepProgressBar BindableLayout.ItemsSource="{Binding ShipmentInfoCollection}" TitleAlignment="Start" BackgroundColor="Transparent" TitleSpace="10" Orientation="Vertical" x:Name="stepProgress">
@@ -138,6 +140,63 @@ BindableLayout.SetItemsSource(sfStepProgressBar, ShipmentViewModel.ShipmentInfoC
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ShipmentViewModel ShipmentViewModel = new ShipmentViewModel();
+this.BindingContext = ShipmentViewModel;
+SfStepProgressBar sfStepProgressBar = new SfStepProgressBar();
+sfStepProgressBar.TitleAlignment = StepTitleAlignment.Start;
+sfStepProgressBar.BackgroundColor = Color.Transparent;
+sfStepProgressBar.TitleSpace = 20;
+sfStepProgressBar.Orientation = StepOrientation.Vertical;
+
+var dataTemplate = new DataTemplate(() =>
+{
+    StepView stepView = new StepView();
+    stepView.SetBinding(StepView.ProgressValueProperty, "ProgressValue");
+    stepView.SetBinding(StepView.StatusProperty, "Status");
+    stepView.PrimaryFormattedText = new FormattedString();
+    Span span = new Span();
+    span.SetBinding(Span.TextProperty, "Title");
+    span.FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Span));
+    span.FontAttributes = FontAttributes.Bold;              
+    Span span1 = new Span();
+    span1.Text = "\n \n";
+    Span span2 = new Span();
+    span2.SetBinding(Span.TextProperty, "Description");
+    span2.FontSize = Device.GetNamedSize(NamedSize.Small, typeof(Span));
+    stepView.PrimaryFormattedText.Spans.Add(span);
+    stepView.PrimaryFormattedText.Spans.Add(span1);
+    stepView.PrimaryFormattedText.Spans.Add(span2);
+    stepView.SecondaryFormattedText = new FormattedString();
+    Span span3 = new Span();
+    span3.SetBinding(Span.TextProperty, "Date");
+    span3.FontSize = Device.GetNamedSize(NamedSize.Small, typeof(Span));
+    span3.FontAttributes = FontAttributes.Bold;
+    Span span4 = new Span();
+    span4.Text = "\n \n";
+    Span span5 = new Span();
+    span5.Text = "        ";
+    Span span6 = new Span();
+    span6.SetBinding(Span.TextProperty, "Time");
+    span6.FontSize = Device.GetNamedSize(NamedSize.Small, typeof(Span));
+    span6.TextColor = Color.FromHex("#b6b0b2");
+    stepView.SecondaryFormattedText.Spans.Add(span3);
+    stepView.SecondaryFormattedText.Spans.Add(span4);
+    stepView.SecondaryFormattedText.Spans.Add(span5);
+    stepView.SecondaryFormattedText.Spans.Add(span6);
+    return stepView;
+});
+
+BindableLayout.SetItemTemplate(sfStepProgressBar, dataTemplate);
+BindableLayout.SetItemsSource(sfStepProgressBar, ShipmentViewModel.ShipmentInfoCollection);
+
+Content = sfStepProgressBar;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![Xamarin Forms StepProgressBar with Bimdable Layout](overview_images/bindable_layout.png)
 
-You can download the entire source of this demo from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Shipment_Tracking-237228452.zip)
+You can download the entire source of this demo from here [Xaml](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Shipment_Tracking-237228452.zip) and [CS](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ProgressBar-414864132)

@@ -13,6 +13,25 @@ Duplicate axis can be added in the [`SfChart`](https://help.syncfusion.com/cr/xa
 
 The following code sample demonstrates this.
 
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+
+...
+
+    <chart:SfChart.Axes>
+        <chart:NumericalAxis Minimum="0" 
+                             Maximum="70" 
+                             IsVertical="True" 
+                             OpposedPosition="True" />
+    </chart:SfChart.Axes>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
 {% highlight c# %}
 
 SfChart chart = new SfChart();
@@ -28,6 +47,8 @@ chart.Axes.Add(new NumericalAxis()
 });
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 ![Duplicate axis support in Xamarin.Forms Chart](images/duplicate_axis.png)
 

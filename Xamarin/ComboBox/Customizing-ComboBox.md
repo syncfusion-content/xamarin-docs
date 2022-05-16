@@ -274,7 +274,7 @@ Content = layout;
 
 ![CustomView for ComboBox](images/Customizing-ComboBox/customview.png)
 
-N> When you are using Custom View,SfComboBox ClearButton will not be supported.So, you need add the ClearButton property.
+N> When you are using Custom View,SfComboBox ClearButton will not be supported.
 
 ## Custom template for suggestion items
 

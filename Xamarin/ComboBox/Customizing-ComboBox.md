@@ -274,6 +274,8 @@ Content = layout;
 
 ![CustomView for ComboBox](images/Customizing-ComboBox/customview.png)
 
+N> When you are using Custom View,SfComboBox ClearButton will not be supported.So, you need add the ClearButton property.
+
 ## Custom template for suggestion items
 
 The `ItemTemplate` property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.

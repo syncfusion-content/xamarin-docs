@@ -274,7 +274,7 @@ Content = layout;
 
 ![CustomView for ComboBox](images/Customizing-ComboBox/customview.png)
 
-N> SfComboBox ClearButton will not be supported when using Custom View.
+N> [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) ClearButton will not be supported when using Custom View.
 
 ## Custom template for suggestion items
 

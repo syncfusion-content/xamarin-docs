@@ -274,6 +274,8 @@ Content = layout;
 
 ![CustomView for ComboBox](images/Customizing-ComboBox/customview.png)
 
+N> [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) ClearButton will not be supported when using Custom View.
+
 ## Custom template for suggestion items
 
 The `ItemTemplate` property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.

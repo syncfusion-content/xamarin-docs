@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Xamarin products
-description: Describes about system requirements to install the Syncfusion Xamarin Components and list of supported platforms. 
+title: System Requirements in Xamarin - Syncfusion
+description: Checkout and learn here all about the system requirements needed to use Syncfusion Xamarin Components.
 platform: xamarin
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-# System Requirements for Xamarin.Forms
+# System requirements for Xamarin Components
 
 The system requirements for using our Syncfusion Xamarin platform are as follows
 

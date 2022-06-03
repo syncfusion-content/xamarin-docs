@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# System requirements for Xamarin Components
+# System Requirements for Xamarin Components
 
 The system requirements for using our Syncfusion Xamarin platform are as follows
 

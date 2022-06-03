@@ -7,7 +7,7 @@ control : SfSwitch
 documentation : ug
 ---
 
-## AutomationId 
+# AutomationId in Xamarin Switch
 
 The SfSwitch control has built-in `AutomationId` for inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the SfSwitch control. To keep unique AutomationId, these inner elements' AutomationIds are updated based on the control's `AutomationId`.
 
@@ -17,4 +17,4 @@ When you enable the Indeterminate state, then the Automation framework will inte
 
 N> AutomationId support works on Android only.
 
-![AutomationId Image](images/AutomationId.png)
+![Xamarin Switch AutomationId Image](images/AutomationId.png)

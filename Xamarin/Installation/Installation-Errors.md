@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation Errors of Essential Studio | Xamarin |Syncfusion
-description: Learn here some information about the essential studio installation errors and steps for resolving it.
+title: Install Syncfusion Xamarin NuGet packages - Syncfusion
+description: Learn here about the how to install Syncfusion Xamarin NuGet packages from Package manager and NuGet manager.
 platform: Xamarin
 control: Installation and Deployment
 documentation: ug

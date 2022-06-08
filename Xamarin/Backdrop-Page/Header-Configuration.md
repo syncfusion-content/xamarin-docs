@@ -48,7 +48,7 @@ When the backdrop page placed in the [MasterDetailPage](https://docs.microsoft.c
 
 ### Custom icons
 
-You can customize the default icons in the navigation header by setting the OpenIcon and CloseIcon properties in SfBackdropPage.
+You can customize the default icons in the navigation header by setting the OpenIconImageSource and CloseIconImageSource properties in SfBackdropPage.You may also change the image source formats FileImageSource, UriImageSource, FontImageSource, and StreamImageSource.
 
 {% tabs %} 
 
@@ -60,8 +60,8 @@ You can customize the default icons in the navigation header by setting the Open
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
     x:Class="BackdropGettingStarted.BackdropSamplePage"
-    OpenIcon="open.png"
-    CloseIcon="close.png">
+    OpenIconImageSource="open.png"
+    CloseIconImageSource="close.png">
 </backdrop:SfBackdropPage>
 
 {% endhighlight %}
@@ -76,8 +76,8 @@ namespace BackdropGettingStarted
         public BackdropSamplePage()
         {
             InitializeComponent();
-            this.OpenIcon = "open.png";
-            this.CloseIcon = "close.png";
+            this.OpenIconImageSource = "open.png";
+            this.CloseIconImageSource = "close.png";
         }
     }
 }
@@ -86,5 +86,4 @@ namespace BackdropGettingStarted
 
 {% endtabs %}
 
- ![Open Custom icons](Header-Configuration-images/Settings.png)
- 
+ ![Open Custom icons](Header-Configuration-images/CustomIconFile.png)

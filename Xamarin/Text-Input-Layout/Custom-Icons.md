@@ -144,7 +144,7 @@ inputLayout.InputView = new Entry();
 
 ## Leading and trailing view visibility customization
 
-The ShowLeadingView and ShowTrailingView properties in SfTextInputLayout may be used to control the visibility of the leading and trailing views. Even if the content is already loaded in their respective views, their visibility can be changed.
+The ShowLeadingView and ShowTrailingView properties in SfTextInputLayout can be used to control the visibility of the leading and trailing views. Even if the content is already loaded in their respective views, their visibility can be changed.
 
 {% tabs %}
 

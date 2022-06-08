@@ -7,10 +7,10 @@ control: Chips
 documentation: ug
 ---
 
-## DataTemplateSelector
+# DataTemplateSelector in Xamarin Chips
 You can customize the appearance of each chip with different templates based on specific constraints using the [`DataTemplateSelector`](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.DataTemplateSelector/).
 
-### Create and initialize business models 
+## Create and initialize business models 
 
 Define a simple model class ChipModel with fields Text, CanSelect, ImageSource, and populate chip model in ViewModel.
 

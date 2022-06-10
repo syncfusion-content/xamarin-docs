@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Header Configuration with Syncfusion Backdrop Page
-description: How to configure a header in backdrop page.
+description: This section explains how to configure a header on the backdrop page by setting specific icons while switching between layers and also customizing the text for open and close icons.
 platform: xamarin
 control: SfBackdropPage
 documentation: ug

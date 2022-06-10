@@ -102,8 +102,8 @@ You can customize the icon text in the navigation header by setting the OpenText
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
     x:Class="BackdropGettingStarted.BackdropSamplePage"
-    OpenText="open text"
-    CloseText="close text">
+    OpenText="Show Menu"
+    CloseText="Hide Menu">
 </backdrop:SfBackdropPage>
 
 {% endhighlight %}
@@ -118,8 +118,8 @@ namespace BackdropGettingStarted
         public BackdropSamplePage()
         {
             InitializeComponent();
-            this.OpenText = "open text";
-            this.CloseText = "close text";
+            this.OpenText = "Show Menu";
+            this.CloseText = "Hide Menu";
         }
     }
 }
@@ -128,5 +128,5 @@ namespace BackdropGettingStarted
 
 {% endtabs %}
 
- ![Icon text icons](Header-Configuration-images/openandcloseicontext.png)
+ ![Icon text icons](Header-Configuration-images/OpenIconCloseIconText.png)
  

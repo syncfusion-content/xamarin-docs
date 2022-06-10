@@ -187,7 +187,7 @@ inputLayout.ShowTrailingView = false;
 
 {% endtabs %}
 
-![Visibility customisation](Custom-Icons-images/textInput_icons_img6.png)
+![Visibility customisation](Custom-Icons-images/textInput_icons_img6.gif)
 
 ## See also
 

@@ -119,24 +119,21 @@ private void Richtexteditor_FormatChanged(object sender, FormatChangedEventArgs 
 
 {% endhighlight %}
 
-{% endtabs %}
-
 The following code example explains how to get Fontname in format changed event.
-
-{% tabs %} 
 
 {% highlight C# %} 
 SfRichTextEditor richtexteditor = new SfRichTextEditor();
 richtexteditor.FormatChanged += Richtexteditor_FormatChanged;
 this.Content = richtexteditor;
-			
+            
 private void Richtexteditor_FormatChanged(object sender, FormatChangedEventArgs e)
 {
-	string fontName = e.Formats.fontname;
+    string fontName = e.Formats.fontname;
 }
-
 {% endhighlight %}
 While changing the font format, we can able to get the font name because  we expose this property as public.
+
+
 {% endtabs %}
 
 
@@ -284,6 +281,6 @@ RichTextEditor. StyleSheetType= StyleSheetType.Internal;
 
 {% endhighlight %}
 
-N> It applies to UWP only. Since android and iOS, we can be able to load the WebView resources through an external style sheet.
-
 {% endtabs %}
+
+N> It applies to UWP only. Since android and iOS, we can be able to load the WebView resources through an external style sheet.

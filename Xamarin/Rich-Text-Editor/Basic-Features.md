@@ -151,7 +151,7 @@ private void Richtexteditor_HyperlinkSelected(object sender, HyperlinkSelectedEv
 
 ## Cursor Position
 
- Rich Text Editor provides the support to get or set the current cursor position based on the character count in the rich text editor. The following code example explains how to get or set a cursor position in the Rich Text Editor.
+ Rich Text Editor provides the support to get or set the current cursor position based on the character count in the rich text editor. The following code example explains how to get or set a cursor position in the Rich Text Editor .
  
  {% tabs %} 
 

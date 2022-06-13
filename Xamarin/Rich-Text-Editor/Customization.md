@@ -30,6 +30,7 @@ The [`ToolbarOptions`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.
 * `NumberList`
 * `ParagraphFormat`
 * `Redo`
+* `Strikethrough`
 * `SubScript`
 * `SuperScript`
 * `Underline`
@@ -237,7 +238,7 @@ this.Content = richtexteditor;
 
 ## ToggleUnderline
 
-Rich Text Editor provides ['ToggleUnderline'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_ToggleUnderline) support, which allows the users to toggle the text in underline format. The following code example explains how to set ToggleUnderline mode in Rich Text Editor.
+The Rich Text Editor provides ['ToggleUnderline'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_ToggleUnderline) support, which allows the users to toggle the text in underline format. The following code example explains how to set ToggleUnderline mode in Rich Text Editor.
 
 {% tabs %}
 {% highlight C# %} 
@@ -249,6 +250,19 @@ this.Content = richtexteditor;
 
 {% endtabs %}
 
+## ToggleStrikethrough
+
+Rich Text Editor provides ['ToggleStrikethrough'] support, which allows the users to toggle the text in Strikethrough format. The following code example explains how to set ToggleStrikethrough mode in Rich Text Editor.
+
+{% tabs %}
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.ToggleStrikethrough();
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}
 
 ## ToolbarPosition
 

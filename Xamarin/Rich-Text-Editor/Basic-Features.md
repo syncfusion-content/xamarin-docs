@@ -287,6 +287,3 @@ RichTextEditor. StyleSheetType= StyleSheetType.Internal;
 N> It applies to UWP only. Since android and iOS, we can be able to load the WebView resources through an external style sheet.
 
 {% endtabs %}
-
-
-

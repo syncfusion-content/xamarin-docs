@@ -90,7 +90,7 @@ namespace BackdropGettingStarted
  
 ## Icon text customization
 
-You can customize the icon text in the navigation header by setting the ['OpenText']() and ['CloseText']() properties in ['SfBackdropPage'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.SfBackdropPage.html).
+You can customize the icon text in the navigation header by setting the [`OpenText`]() and [`CloseText`]() properties in [`SfBackdropPage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.SfBackdropPage.html).
 
 {% tabs %} 
 

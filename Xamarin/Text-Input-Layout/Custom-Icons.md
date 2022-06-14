@@ -144,7 +144,7 @@ inputLayout.InputView = new Entry();
 
 ## Leading and trailing view visibility customization
 
-The ShowLeadingView and ShowTrailingView properties in SfTextInputLayout can be used to control the visibility of the leading and trailing views. Even if the content is already loaded in their respective views, their visibility can be changed.
+The [`ShowLeadingView`]() and [`ShowTrailingView`] properties in [`SfTextInputLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html) can be used to control the visibility of the leading and trailing views respectively.
 
 {% tabs %}
 
@@ -152,7 +152,6 @@ The ShowLeadingView and ShowTrailingView properties in SfTextInputLayout can be 
 
   <inputLayout:SfTextInputLayout
     Hint="Birth date"
-    LeadingViewPosition="Inside"
     ContainerType="Outlined"
     ShowLeadingView="False"
     ShowTrailingView="False" >
@@ -175,7 +174,6 @@ The ShowLeadingView and ShowTrailingView properties in SfTextInputLayout can be 
 
 var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Birth date";
-inputLayout.LeadingViewPosition = ViewPosition.Inside;
 inputLayout.LeadingView = new Label() { Text = "\U0001F5D3" };
 inputLayout.TrailingView = new Label() { Text = "\U0001F5D3" };
 inputLayout.InputView = new Entry();
@@ -187,7 +185,7 @@ inputLayout.ShowTrailingView = false;
 
 {% endtabs %}
 
-![Visibility customisation](Custom-Icons-images/textInput_icons_img6.gif)
+![Visibility customisation](Custom-Icons-images/ShowLeadingView_ShowTrailingView.gif)
 
 ## See also
 

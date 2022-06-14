@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Header Configuration with Syncfusion Backdrop Page
-description: This section explains how to configure a header on the backdrop page by setting icons and also customizing the text for open and close icons.
+description: How to configure and customize the header in the Syncfusion backdrop page control in Xamarin.Forms platform.
 platform: xamarin
 control: SfBackdropPage
 documentation: ug
@@ -90,7 +90,7 @@ namespace BackdropGettingStarted
  
 ## Icon text customization
 
-You can customize the icon text in the navigation header by setting the OpenText and CloseText properties in SfBackdropPage.
+You can customize the icon text in the navigation header by setting the ['OpenText']() and ['CloseText']() properties in ['SfBackdropPage'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.SfBackdropPage.html).
 
 {% tabs %} 
 

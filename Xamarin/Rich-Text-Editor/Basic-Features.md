@@ -24,7 +24,7 @@ The Xamarin Rich Text Editor control displays the text/formatted text(HTML strin
 {% highlight C# %} 
 richtexteditor = new SfRichTextEditor()
 {
-	VerticalOptions = LayoutOptions.FillAndExpand,			
+	VerticalOptions = LayoutOptions.FillAndExpand ,			
 	Text = "The <b>rich text editor</b> component is WYSIWYG editor that provides the best user experience to create and update the content";
 };
 this.Content = richtexteditor;

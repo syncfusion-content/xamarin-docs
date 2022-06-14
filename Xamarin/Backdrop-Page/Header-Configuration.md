@@ -48,7 +48,14 @@ When the backdrop page placed in the [MasterDetailPage](https://docs.microsoft.c
 
 ### Custom icons
 
-You can customize the default icons in the navigation header by setting the OpenIconImageSource and CloseIconImageSource properties in SfBackdropPage.You may also change the image source formats FileImageSource, UriImageSource, FontImageSource, and StreamImageSource.
+You can customize the default icons in the navigation header by setting the OpenIconImageSource and CloseIconImageSource properties in SfBackdropPage.
+It accepts following inputs
+* FileImageSource
+* UriImageSource
+* FontImageSource
+* StreamImageSource
+
+N> UriImageSource will not work in iOS platform. 
 
 {% tabs %} 
 

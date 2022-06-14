@@ -92,4 +92,4 @@ namespace BackdropGettingStarted
 
 {% endtabs %}
 
- ![Open Custom icons](Header-Configuration-images/CustomIconFile.png)
+ ![Open Custom icons](Header-Configuration-images/Settings.png)

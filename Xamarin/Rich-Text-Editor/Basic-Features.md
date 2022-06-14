@@ -11,7 +11,7 @@ documentation: ug
 
 ## Setting Text
 
-The Xamarin Rich Text Editor control displays the text /formatted text(HTML string) that can be set using the [`Text`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_Text) property.
+The Xamarin Rich Text Editor control displays the text/formatted text(HTML string) that can be set using the [`Text`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_Text) property.
 
 {% tabs %} 
 
@@ -24,7 +24,7 @@ The Xamarin Rich Text Editor control displays the text /formatted text(HTML stri
 {% highlight C# %} 
 richtexteditor = new SfRichTextEditor()
 {
-	VerticalOptions = LayoutOptions.FillAndExpand ,			
+	VerticalOptions = LayoutOptions.FillAndExpand,			
 	Text = "The <b>rich text editor</b> component is WYSIWYG editor that provides the best user experience to create and update the content";
 };
 this.Content = richtexteditor;
@@ -166,7 +166,7 @@ private void Richtexteditor_HyperlinkSelected(object sender, HyperlinkSelectedEv
 
 ## Cursor Position
 
- Rich Text Editor provides the support to get or set the current cursor position based on the character count in the rich text editor. The following code example explains how to get or set a cursor position in the Rich Text Editor .
+ Rich Text Editor provides the support to get or set the current cursor position based on the character count in the rich text editor. The following code example explains how to get or set a cursor position in the Rich Text Editor.
  
  {% tabs %} 
 

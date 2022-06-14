@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Header Configuration with Syncfusion Backdrop Page
-description: How to configure a header in backdrop page.
+description: How to configure and customize the header in the Syncfusion backdrop page control in Xamarin.Forms platform.
 platform: xamarin
 control: SfBackdropPage
 documentation: ug
@@ -48,13 +48,13 @@ When the backdrop page placed in the [MasterDetailPage](https://docs.microsoft.c
 
 ### Custom icons
 
-You can customize the default icons in the navigation header by setting the OpenIconImageSource and CloseIconImageSource properties in SfBackdropPage. It accepts following inputs:
+You can customize the default icons in the navigation header by setting the [`OpenIconImageSource`]() and [`CloseIconImageSource`]() properties in [`SfBackdropPage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.SfBackdropPage.html). It accepts following inputs:
 * FileImageSource
 * UriImageSource
 * FontImageSource
 * StreamImageSource
 
-N> UriImageSource will not work in iOS platform. 
+>**NOTE**  UriImageSource will not work in iOS platform. 
 
 {% tabs %} 
 

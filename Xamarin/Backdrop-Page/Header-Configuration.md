@@ -48,7 +48,7 @@ When the backdrop page placed in the [MasterDetailPage](https://docs.microsoft.c
 
 ### Custom icons
 
-You can customize the default icons in the navigation header by setting the [`OpenIconImageSource`]() and [`CloseIconImageSource`]() properties in [`SfBackdropPage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.SfBackdropPage.html). It accepts following inputs:
+Customize the default icons in the navigation header by setting the [`OpenIconImageSource`]() and [`CloseIconImageSource`]() properties in [`SfBackdropPage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.SfBackdropPage.html). It accepts following inputs:
 * FileImageSource
 * UriImageSource
 * FontImageSource

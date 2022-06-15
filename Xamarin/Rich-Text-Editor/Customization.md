@@ -263,6 +263,7 @@ this.Content = richtexteditor;
 {% endhighlight %}
 
 {% endtabs %}
+![Strikethrough support](SfRichTextEditor_Images/StrikeThrough.png)
 
 ## ToolbarPosition
 

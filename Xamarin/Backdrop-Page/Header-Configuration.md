@@ -128,5 +128,5 @@ namespace BackdropGettingStarted
 
 {% endtabs %}
 
- ![Icon text icons](Header-Configuration-images/OpenIconCloseIconText.png)
+ ![Open and Close icon text](Header-Configuration-images/OpenIconCloseIconText.png)
  

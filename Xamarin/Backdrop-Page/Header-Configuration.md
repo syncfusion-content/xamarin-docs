@@ -48,7 +48,13 @@ When the backdrop page placed in the [MasterDetailPage](https://docs.microsoft.c
 
 ### Custom icons
 
-You can customize the default icons in the navigation header by setting the OpenIcon and CloseIcon properties in SfBackdropPage.
+Customize the default icons in the navigation header by setting the [`OpenIconImageSource`]() and [`CloseIconImageSource`]() properties in [`SfBackdropPage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.SfBackdropPage.html). It accepts following inputs:
+* FileImageSource
+* UriImageSource
+* FontImageSource
+* StreamImageSource
+
+>**NOTE**  UriImageSource will not work in iOS platform. 
 
 {% tabs %} 
 
@@ -60,8 +66,8 @@ You can customize the default icons in the navigation header by setting the Open
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
     x:Class="BackdropGettingStarted.BackdropSamplePage"
-    OpenIcon="open.png"
-    CloseIcon="close.png">
+    OpenIconImageSource="open.png"
+    CloseIconImageSource="close.png">
 </backdrop:SfBackdropPage>
 
 {% endhighlight %}
@@ -76,8 +82,8 @@ namespace BackdropGettingStarted
         public BackdropSamplePage()
         {
             InitializeComponent();
-            this.OpenIcon = "open.png";
-            this.CloseIcon = "close.png";
+            this.OpenIconImageSource = "open.png";
+            this.CloseIconImageSource = "close.png";
         }
     }
 }
@@ -86,7 +92,7 @@ namespace BackdropGettingStarted
 
 {% endtabs %}
 
- ![Open Custom icons](Header-Configuration-images/Settings.png)
+![Open Custom icons](Header-Configuration-images/Settings.png)
  
 ## Icon text customization
 
@@ -128,5 +134,4 @@ namespace BackdropGettingStarted
 
 {% endtabs %}
 
- ![Open and Close icon text](Header-Configuration-images/OpenIconCloseIconText.png)
- 
+![Open and Close icon text](Header-Configuration-images/OpenIconCloseIconText.png)

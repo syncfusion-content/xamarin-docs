@@ -142,6 +142,51 @@ inputLayout.InputView = new Entry();
 
 ![customisation](Custom-Icons-images/textInput_icons_img5.png)
 
+## Leading and trailing view visibility customization
+
+The [`ShowLeadingView`]() and [`ShowTrailingView`]() properties in [`SfTextInputLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html) can be used to control the visibility of the leading and trailing views respectively.
+
+{% tabs %}
+
+{% highlight xaml %} 
+
+  <inputLayout:SfTextInputLayout
+    Hint="Birth date"
+    ContainerType="Outlined"
+    ShowLeadingView="False"
+    ShowTrailingView="False" >
+    <Entry />
+    <inputLayout:SfTextInputLayout.LeadingView>
+       <Label
+           Text="&#x1F5D3;">     
+       </Label>
+    </inputLayout:SfTextInputLayout.LeadingView>
+    <inputLayout:SfTextInputLayout.TrailingView>
+      <Label
+         Text="&#x1F5D3;">     
+      </Label>
+    </inputLayout:SfTextInputLayout.TrailingView>
+ </inputLayout:SfTextInputLayout> 
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+var inputLayout = new SfTextInputLayout();
+inputLayout.Hint = "Birth date";
+inputLayout.LeadingView = new Label() { Text = "\U0001F5D3" };
+inputLayout.TrailingView = new Label() { Text = "\U0001F5D3" };
+inputLayout.InputView = new Entry();
+inputLayout.ContainerType = ContainerType.Outlined;
+inputLayout.ShowLeadingView = false;
+inputLayout.ShowTrailingView = false;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Visibility customisation](Custom-Icons-images/ShowLeadingView_ShowTrailingView.gif)
+
 ## See also
 
 [How to align leading and trailing views](http://www.syncfusion.com/support/kb/11046/how-to-vertically-center-align-icons-in-leading-and-trailing-views)

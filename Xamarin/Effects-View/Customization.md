@@ -360,8 +360,6 @@ var effectsView = new SfEffectsView
 
 {% endtabs %}
 
-![Ripple Color Opacity customization](Customization_images/EffectsView_RippleEffectOpacity.png)
-
 ## SelectionColorOpacity
 
 The [`SelectionColorOpacity`]() property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to gets or sets a value that determines the opacity of the selection effect.

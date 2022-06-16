@@ -304,7 +304,7 @@ var effectsView = new SfEffectsView
 
 ## HighlightColorOpacity
 
-The [`HighlightColorOpacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_Angle) property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to gets or sets a value that determines the opacity of the highlight.
+The [`HighlightColorOpacity`]() property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to gets or sets a value that determines the opacity of the highlight effect.
 
 {% tabs %} 
 
@@ -330,9 +330,11 @@ var effectsView = new SfEffectsView
 
 {% endtabs %}
 
+![Highlight Color Opacity customization](Customization_images/EffectsView_HighlightEffect_Opacity.png)
+
 ## RippleColorOpacity
 
-The [`RippleColorOpacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_Angle) property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to gets or sets a value that determines the opacity of the ripple.
+The [`RippleColorOpacity`]() property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to gets or sets a value that determines the opacity of the ripple effect.
 
 {% tabs %} 
 
@@ -362,7 +364,7 @@ var effectsView = new SfEffectsView
 
 ## SelectionColorOpacity
 
-The [`SelectionColorOpacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_Angle) property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to gets or sets a value that determines the opacity of the selection.
+The [`SelectionColorOpacity`]() property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to gets or sets a value that determines the opacity of the selection effect.
 
 {% tabs %} 
 
@@ -388,7 +390,7 @@ var effectsView = new SfEffectsView
 
 {% endtabs %}
 
-![Selection Color Opacity customization](Customization_images/EffectsView_Selection_Opacity.png)
+![Selection Color Opacity customization](Customization_images/EffectsView_Selection_Effect_Opacity.png)
 
 ## See also
 

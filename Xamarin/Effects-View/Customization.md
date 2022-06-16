@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in Xamarin Effects View control | Syncfusion
-description: Learn here all about Customization support in the Syncfusion Xamarin Effects View (SfEffectsView) control and more.
+description: Learn here all about Customization support in Syncfusion Xamarin Effects View (SfEffectsView) control and more.
 platform: xamarin
 control: SfEffectsView
 documentation: ug
@@ -360,7 +360,7 @@ var effectsView = new SfEffectsView
 
 {% endtabs %}
 
-![Ripple Color Opacity customization](Customization_images/EffectsView_RippleEffect_Opacity.gif)
+![Ripple Color Opacity customization](Customization_images/EffectsView_RippleEffectOpacity.png)
 
 ## SelectionColorOpacity
 

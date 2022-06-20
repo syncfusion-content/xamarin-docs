@@ -330,7 +330,7 @@ var effectsView = new SfEffectsView
 
 {% endtabs %}
 
-![Highlight color opacity customization](Customization_images/EffectsView_HighlightEffect_Opacity.png)
+![Highlight color opacity customization](Customization_images/EffectsView_HighlightColorOpacity.png)
 
 ## RippleColorOpacity
 
@@ -362,7 +362,7 @@ var effectsView = new SfEffectsView
 
 ## SelectionColorOpacity
 
-The [`SelectionColorOpacity`]() property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) can be used to customise the opacity of the [`SelectionColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_SelectionColor).The default value is 0.12 and it ranges from 0 to 1.
+The [`SelectionColorOpacity`]() property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) can be used to customise the opacity of the [`SelectionColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_SelectionColor). The default value is 0.12 and it ranges from 0 to 1.
 
 {% tabs %} 
 
@@ -388,7 +388,7 @@ var effectsView = new SfEffectsView
 
 {% endtabs %}
 
-![Selection color opacity customization](Customization_images/EffectsView_Selection_Effect_Opacity.png)
+![Selection color opacity customization](Customization_images/EffectsView_SelectionColorOpacity.png)
 
 ## See also
 

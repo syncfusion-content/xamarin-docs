@@ -500,6 +500,21 @@ pdfViewerControl.AnnotationSettings.IsLocked = true;
 
 N>The lock operation can also be enabled or disabled for a particular annotation type such as shape, free text, text markup, etc. Please find the code samples to enable or disable interaction for particular annotation from their respective sections.
 
+### Customize the locked annotations selection border color
+
+By default, the selection border color for the locked annotations will be gray. You can customize the locked annotations selection border color by setting the required color to the `LockedStrokeColor` property. The following code illustrates the same:
+
+{% tabs %}
+{% highlight c# %}
+
+//Set the selection border color for the locked annotations
+pdfViewerControl.SelectorSettings.LockedStrokeColor = Color.Red;
+
+{% endhighlight %}
+{% endtabs %}
+
+N>It is not recommended to set both the `StrokeColor` and `LockedStrokeColor` properties with the same color.
+
 ## How to enable or disable the annotation selection?
 
 To enable or disable the annotation selection, set the `SfPdfViewer.AnnotationSettings.Constraints` API to `AnnotationConstraints.Selectable` or `~AnnotationConstraints.Selectable` respectively. Annotations will be selected by default, and when this API is set to `~AnnotationConstraints.Selectable`, annotation selection, moving, resizing, removing and attribute changes will be disabled. Only the tapped events of the annotations will be raised. The following code sample explains the same.

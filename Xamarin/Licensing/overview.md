@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Essential Studio Xamarin Licensing | Syncfusion
-description: Learn here about Syncfusion Essential Studio Xamarin license key, how to generate the license key, how to register the license key, and more details.
+title: Overview of Syncfusion license and unlock keys - Syncfusion
+description: Learn here about the Syncfusion license and unlock keys and difference between license and unlock keys.
 platform: Xamarin
 control: Essential Studio
 documentation: ug
@@ -17,7 +17,7 @@ margin-top: 1.5em;     margin-bottom: 1.5em;
 }
 </style>
 
-# Syncfusion Licensing in Xamarin
+# Syncfusion Licensing Overview
 
 We have introduced a new licensing system starting with version 16.2.0.x release of Essential Studio. These modifications apply to all evaluators and only to paid customers who use NuGet packages from [nuget.org](https://www.nuget.org/). Starting with v16.2.0.x, if you use the evaluation installer or the NuGet feed to reference Syncfusion assemblies, you must also include the corresponding platform and version license key in your projects.
 
@@ -33,7 +33,8 @@ This application was built using a trial version of Syncfusion Essential Studio.
 
 </div>
 
+
 ## See Also
 
 * [How to Generate Syncfusion Xamarin License Key?](https://help.syncfusion.com/xamarin/licensing/generating-license-keys)
-* [How to Register Syncfusion License Key in the Application?](https://help.syncfusion.com/xamarin/licensing/registering-license-keys)
+* [How to Register Syncfusion License Key in Xamarin Application?](https://help.syncfusion.com/xamarin/licensing/registering-license-keys)

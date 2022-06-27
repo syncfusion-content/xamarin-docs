@@ -398,6 +398,29 @@ schedule.DayViewSettings = dayViewSettings;
 >**NOTE**
 Selection and related events will not be working in this blocks.
 
+### Customize TimeLabelFont Appearance
+
+you can change the appearance of time ruler label font family and font attribute by setting the `TimeLabelFontFamily` and `TimeLabelFontAttributes` property of `DayLabelSettings` property in Schedule.
+
+{% tabs %}
+{% highlight XAML %}
+<schedule:DayViewSettings.DayLabelSettings>
+    <schedule:DayLabelSettings TimeLabelFontAttributes="Bold">
+        <schedule:DayLabelSettings.TimeLabelFontFamily>
+            <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+        </schedule:DayLabelSettings.TimeLabelFontFamily>
+    </schedule:DayLabelSettings>
+</schedule:DayViewSettings.DayLabelSettings>
+{% endhighlight %}
+{% highlight c# %}
+Schedule.DayViewSettings.DayLabelSettings.TimeLabelFontAttributes = FontAttributes.Bold;
+Schedule.DayViewSettings.DayLabelSettings.TimeLabelFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+{% endhighlight %}
+{% endtabs %}
+
+>**NOTE**
+FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
+
 ## Change first day of week
 [FirstDayOfWeek](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_FirstDayOfWeek) of `SfSchedule` is not applicable for `DayView` as it displays only one day.
 

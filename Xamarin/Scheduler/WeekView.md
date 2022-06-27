@@ -397,6 +397,29 @@ schedule.WeekViewSettings = weekViewSettings;
 >**NOTE**
 Selection and related events will not be working in this blocks.
 
+### Customize TimeLabelFont Appearance
+
+you can change the appearance of time ruler label font family and font attribute by setting the `TimeLabelFontFamily` and `TimeLabelFontAttributes` property of `WeekLabelSettings` property in Schedule.
+
+{% tabs %}
+{% highlight XAML %}
+<schedule:WeekViewSettings.WeekLabelSettings>
+    <schedule:WeekLabelSettings TimeLabelFontAttributes="Bold">
+        <schedule:WeekLabelSettings.TimeLabelFontFamily>
+            <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+        </schedule:WeekLabelSettings.TimeLabelFontFamily>
+    </schedule:WeekLabelSettings>
+</schedule:WeekViewSettings.WeekLabelSettings>
+{% endhighlight %}
+{% highlight c# %}
+Schedule.WeekViewSettings.WeekLabelSettings.TimeLabelFontAttributes = FontAttributes.Bold;
+Schedule.WeekViewSettings.WeekLabelSettings.TimeLabelFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+{% endhighlight %}
+{% endtabs %}
+
+>**NOTE**
+FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
+
 ## Change first day of week
 By default, schedule control will be rendered with Sunday as the first day of the week, it can be customized to any day of the week by using[FirstDayOfWeek](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_FirstDayOfWeek) property of `SfSchedule`.
 

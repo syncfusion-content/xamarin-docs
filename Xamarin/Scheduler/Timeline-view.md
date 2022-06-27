@@ -453,6 +453,29 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ![Time label appearance in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-label-appearance.png)
 
+### Customize TimeLabelFont Appearance
+
+you can change the appearance of time ruler label font family and font attribute by setting the `TimeLabelFontFamily` and `TimeLabelFontAttributes` property of `LabelSettings` property in `TimelineViewSettings`.
+
+{% tabs %}
+{% highlight XAML %}
+<schedule:TimelineViewSettings.LabelSettings>
+    <schedule:TimelineLabelSettings TimeLabelFontAttributes="Bold">
+        <schedule:TimelineLabelSettings.TimeLabelFontFamily>
+            <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+        </schedule:TimelineLabelSettings.TimeLabelFontFamily>
+    </schedule:TimelineLabelSettings>
+</schedule:TimelineViewSettings.LabelSettings>
+{% endhighlight %}
+{% highlight c# %}
+Schedule.WorkWeekViewSettings.LabelSettings.TimeLabelFontAttributes = FontAttributes.Bold;
+Schedule.WorkWeekViewSettings.LabelSettings.TimeLabelFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+{% endhighlight %}
+{% endtabs %}
+
+>**NOTE**
+FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
+
 ### Time Label size
 
 You can customize the size of the labels that mention the time by setting the [TimeLabelSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.TimelineLabelSettings.html#Syncfusion_SfSchedule_XForms_TimelineLabelSettings_TimeLabelSize) property of `LabelSettings` in `TimelineViewSettings`.

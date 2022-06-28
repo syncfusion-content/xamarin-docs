@@ -119,6 +119,10 @@ private void Richtexteditor_FormatChanged(object sender, FormatChangedEventArgs 
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %} 
+
 The following code example explains how to get Fontname in format changed event.
 
 {% highlight C# %} 
@@ -130,6 +134,7 @@ private void Richtexteditor_FormatChanged(object sender, FormatChangedEventArgs 
 {
     string fontName = e.Formats.fontname;
 }
+
 {% endhighlight %}
 
 While changing the font format, we can able to get the font name because  we expose this property as public.
@@ -258,10 +263,10 @@ N> It applies to android only. Since iOS and UWP do not have the limitation in a
 
  The Rich Text Editor provides the support to customize the style sheet type to load html file from an external or internal file path by using the StyleSheetTypebindable property in the RichTextEditor.
 
- ### Default
+### Default
  Loads the WebView resources through an external style sheet.
 
- ### Internal
+### Internal
  Loads the WebView resources through an internal style sheet.
  
  {% tabs %} 

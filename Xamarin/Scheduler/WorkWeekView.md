@@ -463,7 +463,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 
 ![Schedule customizing time label appearence work week view](workweekview_images/xamarin.forms-schedule-timelabel-appearance.png)
 
-### Customize time ruler label font appearance
+### Customize time ruler label font
 
 you can change the appearance of time ruler label font family and font attribute by setting the `TimeLabelFontFamily` and `TimeLabelFontAttributes` property of `WorkWeekLabelSettings` property in `WorkWeekViewSettings`.
 

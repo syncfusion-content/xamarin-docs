@@ -453,7 +453,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ![Time label appearance in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-label-appearance.png)
 
-### Customize time ruler label font appearance
+### Customize time ruler label font
 
 you can change the appearance of time ruler label font family and font attribute by setting the `TimeLabelFontFamily` and `TimeLabelFontAttributes` property of `LabelSettings` property in `TimelineViewSettings`.
 

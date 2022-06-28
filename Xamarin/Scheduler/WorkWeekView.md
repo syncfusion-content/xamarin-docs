@@ -412,29 +412,6 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 >**NOTE**
 Selection and related events will not be working in this blocks.
 
-### Customize TimeLabelFont Appearance
-
-you can change the appearance of time ruler label font family and font attribute by setting the `TimeLabelFontFamily` and `TimeLabelFontAttributes` property of `WorkWeekLabelSettings` property in Schedule.
-
-{% tabs %}
-{% highlight XAML %}
-<schedule:WorkWeekViewSettings.WorkWeekLabelSettings>
-    <schedule:WorkWeekLabelSettings TimeLabelFontAttributes="Bold">
-        <schedule:WorkWeekLabelSettings.TimeLabelFontFamily>
-            <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
-        </schedule:WorkWeekLabelSettings.TimeLabelFontFamily>
-    </schedule:WorkWeekLabelSettings>
-</schedule:WorkWeekViewSettings.WorkWeekLabelSettings>
-{% endhighlight %}
-{% highlight c# %}
-Schedule.WorkWeekViewSettings.WorkWeekLabelSettings.TimeLabelFontAttributes = FontAttributes.Bold;
-Schedule.WorkWeekViewSettings.WorkWeekLabelSettings.TimeLabelFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
-{% endhighlight %}
-{% endtabs %}
-
->**NOTE**
-FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
-
 ## Change first day of week
 By default, schedule control will be rendered with Sunday as the first day of the week, it can be customized to any day of the week by using[FirstDayOfWeek](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_FirstDayOfWeek) property of `SfSchedule`.
 
@@ -485,6 +462,29 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endtabs %}
 
 ![Schedule customizing time label appearence work week view](workweekview_images/xamarin.forms-schedule-timelabel-appearance.png)
+
+### Customize time ruler label font appearance
+
+you can change the appearance of time ruler label font family and font attribute by setting the `TimeLabelFontFamily` and `TimeLabelFontAttributes` property of `WorkWeekLabelSettings` property in `WorkWeekViewSettings`.
+
+{% tabs %}
+{% highlight XAML %}
+<schedule:WorkWeekViewSettings.WorkWeekLabelSettings>
+    <schedule:WorkWeekLabelSettings TimeLabelFontAttributes="Bold">
+        <schedule:WorkWeekLabelSettings.TimeLabelFontFamily>
+            <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+        </schedule:WorkWeekLabelSettings.TimeLabelFontFamily>
+    </schedule:WorkWeekLabelSettings>
+</schedule:WorkWeekViewSettings.WorkWeekLabelSettings>
+{% endhighlight %}
+{% highlight c# %}
+Schedule.WorkWeekViewSettings.WorkWeekLabelSettings.TimeLabelFontAttributes = FontAttributes.Bold;
+Schedule.WorkWeekViewSettings.WorkWeekLabelSettings.TimeLabelFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+{% endhighlight %}
+{% endtabs %}
+
+>**NOTE**
+FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
 
 ## Time Label Size
 

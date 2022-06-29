@@ -455,7 +455,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ### Customize time ruler label font
 
-you can change the appearance of time ruler label font family and font attribute by setting the `TimeLabelFontFamily` and `TimeLabelFontAttributes` property of `LabelSettings` property in `TimelineViewSettings`.
+Change the appearance of the time ruler label font family and font attribute by setting the `TimeLabelFontFamily` and `TimeLabelFontAttributes` property of the `LabelSettings` property in the `TimelineViewSettings.`
 
 {% tabs %}
 {% highlight XAML %}
@@ -474,11 +474,11 @@ Schedule.WorkWeekViewSettings.LabelSettings.TimeLabelFontFamily = Device.OnPlatf
 {% endtabs %}
 
 >**NOTE**
-FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
+The FontAttributes and FontFamily are native to the platform. The custom font and the font which is not available in the specified platform will not be applied.
 
 ### Time Label size
 
-You can customize the size of the labels that mention the time by setting the [TimeLabelSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.TimelineLabelSettings.html#Syncfusion_SfSchedule_XForms_TimelineLabelSettings_TimeLabelSize) property of `LabelSettings` in `TimelineViewSettings`.
+Customize the size of the labels that mention the time by setting the [TimeLabelSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.TimelineLabelSettings.html#Syncfusion_SfSchedule_XForms_TimelineLabelSettings_TimeLabelSize) property of `LabelSettings` in `TimelineViewSettings`.
 
 {% tabs %}
 {% highlight xaml %}

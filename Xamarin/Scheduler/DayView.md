@@ -439,7 +439,7 @@ schedule.DayViewSettings = dayViewSettings;
 
 ### Customize time ruler label font
 
-you can change the appearance of time ruler label font family and font attribute by setting the `TimeLabelFontFamily` and `TimeLabelFontAttributes` property of `DayLabelSettings` property in `DayViewSettings`.
+Change the appearance of the time ruler label font family and font attribute by setting the `TimeLabelFontFamily` and `TimeLabelFontAttributes` property of the `DayLabelSettings` property in the `DayViewSettings.`
 
 {% tabs %}
 {% highlight XAML %}
@@ -458,7 +458,7 @@ Schedule.DayViewSettings.DayLabelSettings.TimeLabelFontFamily = Device.OnPlatfor
 {% endtabs %}
 
 >**NOTE**
-FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
+The FontAttributes and FontFamily are native to the platform. The custom font and a font that is not available in the specified platform will not be applied.
 
 ## Time Label Size
 

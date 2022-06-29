@@ -437,6 +437,29 @@ schedule.DayViewSettings = dayViewSettings;
 
 ![Schedule customizing time label appearance day view](daymodule_images/xamarin.forms-schedule-timelabel-appearance.png)
 
+### Customize time ruler label font
+
+Change the appearance of the time ruler label font family and font attribute by setting the `TimeLabelFontFamily` and `TimeLabelFontAttributes` property of the `DayLabelSettings` property in the `DayViewSettings.`
+
+{% tabs %}
+{% highlight XAML %}
+<schedule:DayViewSettings.DayLabelSettings>
+    <schedule:DayLabelSettings TimeLabelFontAttributes="Bold">
+        <schedule:DayLabelSettings.TimeLabelFontFamily>
+            <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+        </schedule:DayLabelSettings.TimeLabelFontFamily>
+    </schedule:DayLabelSettings>
+</schedule:DayViewSettings.DayLabelSettings>
+{% endhighlight %}
+{% highlight c# %}
+Schedule.DayViewSettings.DayLabelSettings.TimeLabelFontAttributes = FontAttributes.Bold;
+Schedule.DayViewSettings.DayLabelSettings.TimeLabelFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+{% endhighlight %}
+{% endtabs %}
+
+>**NOTE**
+The FontAttributes and FontFamily are native to the platform. The custom font and a font that is not available in the specified platform will not be applied.
+
 ## Time Label Size
 
 You can customize the size of the labels which are mentioning the time, by setting [TimeLabelSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DayLabelSettings.html#Syncfusion_SfSchedule_XForms_DayLabelSettings_TimeLabelSize) property of `DayLabelSettings` in `DayViewSettings`.

@@ -448,9 +448,32 @@ schedule.WeekViewSettings = weekViewSettings;
 
 ![Time label appearance in schedule xamarin forms](weekview_images/xamarin.forms-schedule-timelabel-appearance.png)
 
+### Customize time ruler label font
+
+Change the appearance of the time ruler label font family and font attribute by setting the `TimeLabelFontFamily` and `TimeLabelFontAttributes` property of the `WeekLabelSettings` property in the `WeekViewSettings.`
+
+{% tabs %}
+{% highlight XAML %}
+<schedule:WeekViewSettings.WeekLabelSettings>
+    <schedule:WeekLabelSettings TimeLabelFontAttributes="Bold">
+        <schedule:WeekLabelSettings.TimeLabelFontFamily>
+            <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+        </schedule:WeekLabelSettings.TimeLabelFontFamily>
+    </schedule:WeekLabelSettings>
+</schedule:WeekViewSettings.WeekLabelSettings>
+{% endhighlight %}
+{% highlight c# %}
+Schedule.WeekViewSettings.WeekLabelSettings.TimeLabelFontAttributes = FontAttributes.Bold;
+Schedule.WeekViewSettings.WeekLabelSettings.TimeLabelFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+{% endhighlight %}
+{% endtabs %}
+
+>**NOTE**
+The FontAttributes and FontFamily are native to the platform. The custom font and the font that is not available in the specified platform will not be applied.
+
 ## Time Label Size
 
-You can customize the size of the labels which are mentioning the time, by setting [TimeLabelSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.WeekLabelSettings.html#Syncfusion_SfSchedule_XForms_WeekLabelSettings_TimeLabelSize) property of `WeekLabelSettings` in `WeekViewSettings`.
+Customize the size of the labels which are mentioning the time by setting the [TimeLabelSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.WeekLabelSettings.html#Syncfusion_SfSchedule_XForms_WeekLabelSettings_TimeLabelSize) property of the `WeekLabelSettings` in the `WeekViewSettings.`
 
 {% tabs %}
 {% highlight C# %}

@@ -17,6 +17,7 @@ documentation: ug
 4. Arrow
 5. Polygon
 6. Cloud
+7. Polyline
 
 In all the code snippets, Rectangle shape annotation is used for illustration purpose.
 
@@ -281,7 +282,7 @@ pdfViewer.AnnotationSettings.Arrow.Settings.MinimumLength = 10;
 {% endhighlight %}
 {% endtabs %}
 
-N> The value of `MinimumSize` property will does not affect line, arrow, and polygon annotations. Also, the value of `MinimumLength` property will does not affect rectangle, circle, and polygon annotations.
+N> The value of `MinimumSize` property will does not affect line, arrow, polyline and polygon annotations. Also, the value of `MinimumLength` property will does not affect rectangle, circle, polyline and polygon annotations.
 
 ### Setting the default border style
 
@@ -516,6 +517,9 @@ pdfViewerControl.AnnotationSettings.Circle.Settings.IsLocked = true;
  
 //Disable the polygon annotation interaction such as move, resize, remove, and attributes changes.
 pdfViewerControl.AnnotationSettings.Polygon.Settings.IsLocked = true;
+ 
+//Disable the polyline annotation interaction such as move, resize, remove, and attributes changes.
+pdfViewerControl.AnnotationSettings.Polyline.Settings.IsLocked = true;
 
 {% endhighlight %}
 {% endtabs %}
@@ -532,6 +536,7 @@ pdfViewerControl.AnnotationSettings.Line.Settings.IsLocked = false;
 pdfViewerControl.AnnotationSettings.Rectangle.Settings.IsLocked = false;
 pdfViewerControl.AnnotationSettings.Circle.Settings.IsLocked = false;
 pdfViewerControl.AnnotationSettings.Polygon.Settings.IsLocked = false;
+pdfViewerControl.AnnotationSettings.Polyline.Settings.IsLocked = false;
 
 {% endhighlight %}
 {% endtabs %}
@@ -559,6 +564,9 @@ pdfViewerControl.AnnotationSettings.Circle.Settings.Constraints = ~AnnotationCon
  
 //Disable the selection of polygon annotations.
 pdfViewerControl.AnnotationSettings.Polygon.Settings.Constraints = ~AnnotationConstraints.Selectable;
+ 
+//Disable the selection of polyline annotations.
+pdfViewerControl.AnnotationSettings.Polyline.Settings.Constraints = ~AnnotationConstraints.Selectable;
 
 {% endhighlight %}
 {% endtabs %}
@@ -575,6 +583,7 @@ pdfViewerControl.AnnotationSettings.Line.Settings.Constraints = AnnotationConstr
 pdfViewerControl.AnnotationSettings.Rectangle.Settings.Constraints = AnnotationConstraints.Selectable;
 pdfViewerControl.AnnotationSettings.Circle.Settings.Constraints = AnnotationConstraints.Selectable;
 pdfViewerControl.AnnotationSettings.Polygon.Settings.Constraints = AnnotationConstraints.Selectable;
+pdfViewerControl.AnnotationSettings.Polyline.Settings.Constraints = AnnotationConstraints.Selectable;
 
 {% endhighlight %}
 {% endtabs %}

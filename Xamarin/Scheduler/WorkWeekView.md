@@ -463,9 +463,32 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 
 ![Schedule customizing time label appearence work week view](workweekview_images/xamarin.forms-schedule-timelabel-appearance.png)
 
+### Customize time ruler label font
+
+Change the appearance of the time ruler label font family and font attribute by setting the `TimeLabelFontFamily` and `TimeLabelFontAttributes` property of the `WorkWeekLabelSettings` property in the `WorkWeekViewSettings.`
+
+{% tabs %}
+{% highlight XAML %}
+<schedule:WorkWeekViewSettings.WorkWeekLabelSettings>
+    <schedule:WorkWeekLabelSettings TimeLabelFontAttributes="Bold">
+        <schedule:WorkWeekLabelSettings.TimeLabelFontFamily>
+            <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+        </schedule:WorkWeekLabelSettings.TimeLabelFontFamily>
+    </schedule:WorkWeekLabelSettings>
+</schedule:WorkWeekViewSettings.WorkWeekLabelSettings>
+{% endhighlight %}
+{% highlight c# %}
+Schedule.WorkWeekViewSettings.WorkWeekLabelSettings.TimeLabelFontAttributes = FontAttributes.Bold;
+Schedule.WorkWeekViewSettings.WorkWeekLabelSettings.TimeLabelFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+{% endhighlight %}
+{% endtabs %}
+
+>**NOTE**
+The FontAttributes and FontFamily are native to the platform. The custom font and the font that is not available in the specified platform will not be applied.
+
 ## Time Label Size
 
-You can customize the size of the labels which are mentioning the time, by setting [TimeLabelSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.WorkWeekLabelSettings.html#Syncfusion_SfSchedule_XForms_WorkWeekLabelSettings_TimeLabelSize) property of `WorkWeekLabelSettings` in `WorkWeekViewSettings`.
+Customize the size of the labels which are mentioning the time by setting the [TimeLabelSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.WorkWeekLabelSettings.html#Syncfusion_SfSchedule_XForms_WorkWeekLabelSettings_TimeLabelSize) property of the `WorkWeekLabelSettings` in the `WorkWeekViewSettings.`
 
 {% tabs %}
 {% highlight C# %}

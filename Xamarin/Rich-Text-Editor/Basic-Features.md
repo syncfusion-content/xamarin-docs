@@ -121,6 +121,26 @@ private void Richtexteditor_FormatChanged(object sender, FormatChangedEventArgs 
 
 {% endtabs %}
 
+The following code example explains how to get Fontname in format changed event.
+
+{% tabs %} 
+
+{% highlight C# %} 
+SfRichTextEditor richtexteditor = new SfRichTextEditor();
+richtexteditor.FormatChanged += Richtexteditor_FormatChanged;
+this.Content = richtexteditor;
+            
+private void Richtexteditor_FormatChanged(object sender, FormatChangedEventArgs e)
+{
+    string fontName = e.Formats.fontname;
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+While changing the font format, we can able to get the font name because  we expose this property as public.
+
 ## HyperlinkSelected
 
 The ['HyperlinkSelectedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_HyperlinkSelected) will be triggered when a selected text contains a hyperlink. The following code example explains how to create a TextChangedEvent trigger.
@@ -238,3 +258,33 @@ N> It applies to android only. Since iOS and UWP do not have the limitation in a
 {% endhighlight %}
 
 {% endtabs %}
+
+## StyleSheet
+
+ The Rich Text Editor provides the support to customize the style sheet type to load html file from an external or internal file path by using the StyleSheetTypebindable property in the RichTextEditor.
+
+### Default
+ Loads the WebView resources through an external style sheet.
+
+### Internal
+ Loads the WebView resources through an internal style sheet.
+ 
+ {% tabs %} 
+
+ {% highlight xaml %} 
+
+  <richtexteditor:SfRichTextEditor x:Name="RichTextEditor" StyleSheetType="Internal"/>
+
+ {% endhighlight %}
+
+ {% highlight C# %} 
+
+SfRichTextEditor RichTextEditor = new SfRichTextEditor();
+            
+RichTextEditor. StyleSheetType= StyleSheetType.Internal;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N>It applies to UWP only for users in China and Korea locations. It is not applicable in android an iOS ,Since android and iOS, we can be able to load the WebView resources through an external style sheet.

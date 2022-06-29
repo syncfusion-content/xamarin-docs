@@ -30,6 +30,7 @@ The [`ToolbarOptions`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.
 * `NumberList`
 * `ParagraphFormat`
 * `Redo`
+* `Strikethrough`
 * `SubScript`
 * `SuperScript`
 * `Underline`
@@ -249,6 +250,20 @@ this.Content = richtexteditor;
 
 {% endtabs %}
 
+## ToggleStrikethrough
+
+The Rich Text Editor provides 'ToggleStrikethrough' support, which allows the users to toggle the text in Strikethrough format. The following code example explains how to set ToggleStrikethrough mode in Rich Text Editor.
+
+{% tabs %}
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.ToggleStrikethrough();
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}
+![Strikethrough support](SfRichTextEditor_Images/StrikeThrough.png)
 
 ## ToolbarPosition
 

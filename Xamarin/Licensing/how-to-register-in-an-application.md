@@ -1,14 +1,14 @@
 ---
 layout: post
-title: About Essential Studio Xamarin Licensing | Syncfusion
-description: Learn here about Syncfusion Essential Studio Xamarin license key, how to generate the license key, how to register the license key, and more details.
+title: Overview of Syncfusion license registration - Syncfusion
+description: Learn here about how to register Syncfusion Xamarin license key for Xamarin application for license validation.
 platform: Xamarin
 control: Essential Studio
 documentation: ug
 ---
 
 
-# License Key Registration
+# Register Syncfusion License key in Xamarin application
 
 The generated license key is just a string that needs to be registered before any Syncfusion control is initiated. The following code is used to register the license.
 

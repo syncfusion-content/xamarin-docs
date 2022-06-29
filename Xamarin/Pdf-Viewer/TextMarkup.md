@@ -154,11 +154,77 @@ pdfViewerControl.AddAnnotation(textMarkupAnnotation);
 {% endhighlight %}
 {% endtabs %}
 
-### Render squiggly annotation as an underline annotation
+## Underline a text with a squiggly style
 
-To avoid data loss, the squiggly annotation will be rendered as an underline annotation while importing or loading a document. Though the squiggly annotation is rendered as underline annotations in the `SfPdfViewer`, it will be preserved as a squiggly annotation while saving and exporting. Attributes changes like color, the opacity will also be preserved on save and export.
+The two ways to underline a text with a squiggly style in the PDF document are: 
 
-N>The support to add, render, and edit squiggly annotation through UI or programmatically is not provided yet.
+1. By selecting the text and squiggly option
+
+	* Select the text in the PDF document.
+    * Select “Squiggly” option in the context menu that appears.
+	
+2. Enabling the squiggly mode and selecting the text
+
+By default, the PDF viewer will be in the scrolling and text selection mode. Once squiggly annotation mode is activated, scrolling of the document will be frozen and squiggly annotations will be included when you swipe over the texts in the pages of the PDF document.
+
+XAML code to switch to squiggly annotation mode
+
+{% tabs %}
+{% highlight xaml %}
+
+<Button x:Name="squigglyAnnotationButton" BackgroundColor="Transparent" Image="TextSquigglyIcon.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Command="{Binding AnnotationModeCommand, Source={x:Reference Name=pdfViewerControl}}" CommandParameter=”Squiggly” />
+
+{% endhighlight %}
+{% endtabs %}
+
+C# code to switch to squiggly annotation mode
+
+{% tabs %}
+{% highlight c# %}
+
+pdfViewerControl.AnnotationMode = AnnotationMode.Squiggly;
+
+{% endhighlight %}
+{% endtabs %}
+
+XAML code to switch to normal mode from annotation mode.
+
+
+{% tabs %}
+{% highlight xaml %}
+
+<Button x:Name="resetAnnotationButton" BackgroundColor="Transparent" Image="resetIcon.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Command="{Binding AnnotationModeCommand, Source={x:Reference Name=pdfViewerControl}}" CommandParameter=”None” />
+
+{% endhighlight %}
+{% endtabs %}
+
+C# code to switch to normal mode from annotation mode.
+
+{% tabs %}
+{% highlight c# %}
+
+pdfViewerControl.AnnotationMode = AnnotationMode.None;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Underline a text with a squiggly style programmatically
+
+By `AddAnnotation` method , You can underline a text with a squiggly style programmatically. The created text markup annotation object passed as a parameter. The `TextMarkupAnnotation` instance acquires the `TextMarkupAnnotationType`, page number, start index and end index of the text as the parameters. 
+
+The following code sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Creates the text markup annotation             
+TextMarkupAnnotation textMarkupAnnotation = new TextMarkupAnnotation(TextMarkupAnnotationType.Squiggly, 2, 20, 200);        
+   
+//Add the text markup annotation to the specified page
+pdfViewerControl.AddAnnotation(textMarkupAnnotation);
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Strikethrough a text
 
@@ -357,6 +423,7 @@ You can alter the default color of the annotation to change the color while incl
 pdfViewerControl.AnnotationSettings.TextMarkup.Highlight.Color = Color.Red;
 pdfViewerControl.AnnotationSettings.TextMarkup.Underline.Color = Color.Magenta;
 pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.Color = Color.Yellow;
+pdfViewerControl.AnnotationSettings.TextMarkup.Squiggly.Color = Color.Blue;
 
 {% endhighlight %}
 {% endtabs %}
@@ -460,6 +527,9 @@ pdfViewerControl.AnnotationSettings.TextMarkup.Underline.IsLocked = true;
 //Disable the text markup strikethrough annotation interaction such as remove and attributes changes.
 pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.IsLocked = true;
 
+//Disable the text markup squiggly annotation interaction such as remove and attributes changes.
+pdfViewerControl.AnnotationSettings.TextMarkup.Squiggly.IsLocked = true;
+
 {% endhighlight %}
 {% endtabs %}
  
@@ -473,6 +543,7 @@ pdfViewerControl.AnnotationSettings.IsLocked = true;
 pdfViewerControl.AnnotationSettings.TextMarkup.Highlight.IsLocked = false;
 pdfViewerControl.AnnotationSettings.TextMarkup.Underline.IsLocked = false;
 pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.IsLocked = false;
+pdfViewerControl.AnnotationSettings.TextMarkup.Squiggly.IsLocked = false;
 
 {% endhighlight %}
 {% endtabs %}
@@ -493,6 +564,9 @@ pdfViewerControl.AnnotationSettings.TextMarkup.Underline.Constraints = ~Annotati
 //Disable the selection of text markup strikethrough annotation
 pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.Constraints = ~AnnotationConstraints.Selectable;
 
+//Disable the selection of text markup squiggly annotation
+pdfViewerControl.AnnotationSettings.TextMarkup.Squiggly.Constraints = ~AnnotationConstraints.Selectable;
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -506,6 +580,7 @@ pdfViewerControl.AnnotationSettings.Constraints = ~AnnotationConstraints.Selecta
 pdfViewerControl.AnnotationSettings.TextMarkup.Highlight.Constraints = AnnotationConstraints.Selectable;
 pdfViewerControl.AnnotationSettings.TextMarkup.Underline.Constraints = AnnotationConstraints.Selectable;
 pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.Constraints = AnnotationConstraints.Selectable;
+pdfViewerControl.AnnotationSettings.TextMarkup.Squiggly.Constraints = AnnotationConstraints.Selectable;
 
 {% endhighlight %}
 {% endtabs %}

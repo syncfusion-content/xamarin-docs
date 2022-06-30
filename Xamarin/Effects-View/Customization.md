@@ -302,6 +302,94 @@ var effectsView = new SfEffectsView
 
 ![Rotation Angle customization](Customization_images/EffectsView_Rotation.png)
 
+## HighlightColorOpacity
+
+The [`HighlightColorOpacity`]() property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) can be used to customise the opacity of the [`HighlightColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_HighlightColor). The default value is 0.04 and it ranges from 0 to 1.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<syncEffectsView:SfEffectsView
+    TouchDownEffects="Highlight"
+    HighlightColorOpacity="0.5">
+    ...
+</syncEffectsView:SfEffectsView>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+var effectsView = new SfEffectsView
+{
+    TouchDownEffects = SfEffects.Highlight,
+    HighlightColorOpacity = 0.5
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Highlight color opacity customization](Customization_images/EffectsView_HighlightColorOpacity.png)
+
+## RippleColorOpacity
+
+The [`RippleColorOpacity`]() property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) can be used to customise the opacity of the [`RippleColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_RippleColor). The default value is 0.12 and it ranges from 0 to 1.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<syncEffectsView:SfEffectsView
+    TouchDownEffects="Ripple"
+    RippleColorOpacity="0.5">
+    ...
+</syncEffectsView:SfEffectsView>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+var effectsView = new SfEffectsView
+{
+    TouchDownEffects = SfEffects.Ripple,
+    RippleColorOpacity = 0.5
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## SelectionColorOpacity
+
+The [`SelectionColorOpacity`]() property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) can be used to customise the opacity of the [`SelectionColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_SelectionColor). The default value is 0.12 and it ranges from 0 to 1.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<syncEffectsView:SfEffectsView
+    LongPressEffects="Selection"
+    SelectionColorOpacity="0.5">
+    ...
+</syncEffectsView:SfEffectsView>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+var effectsView = new SfEffectsView
+{
+    LongPressEffects = SfEffects.Selection,
+    SelectionColorOpacity = 0.5
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Selection color opacity customization](Customization_images/EffectsView_SelectionColorOpacity.png)
+
 ## See also
 
 [How to get the selected item from ListView while using SfEffectsView within ItemTemplate](https://www.syncfusion.com/kb/11661/how-to-get-the-selected-item-from-listview-while-using-effectsview-within-itemtemplate)

@@ -48,7 +48,7 @@ When the backdrop page placed in the [MasterDetailPage](https://docs.microsoft.c
 
 ### Custom icons
 
-Customize the default icons in the navigation header by setting the [`OpenIconImageSource`]() and [`CloseIconImageSource`]() properties in [`SfBackdropPage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.SfBackdropPage.html). It accepts following inputs:
+Customize the default icons in the navigation header by setting the [`OpenIconImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.SfBackdropPage.html#Syncfusion_XForms_Backdrop_SfBackdropPage_OpenIconImageSource) and [`CloseIconImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.SfBackdropPage.html#Syncfusion_XForms_Backdrop_SfBackdropPage_CloseIconImageSource) properties in [`SfBackdropPage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.SfBackdropPage.html). It accepts following inputs:
 * FileImageSource
 * UriImageSource
 * FontImageSource
@@ -96,7 +96,7 @@ namespace BackdropGettingStarted
  
 ## Icon text customization
 
-You can customize the icon text in the navigation header by setting the [`OpenText`]() and [`CloseText`]() properties in [`SfBackdropPage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.SfBackdropPage.html).
+You can customize the icon text in the navigation header by setting the [`OpenText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.SfBackdropPage.html#Syncfusion_XForms_Backdrop_SfBackdropPage_OpenText) and [`CloseText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.SfBackdropPage.html#Syncfusion_XForms_Backdrop_SfBackdropPage_CloseText) properties in [`SfBackdropPage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.SfBackdropPage.html).
 
 {% tabs %} 
 

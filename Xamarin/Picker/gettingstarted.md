@@ -237,7 +237,7 @@ this.Content = picker;
 
 ### Set header to the picker
 
-The Xamarin Picker control allows you to the define header text by setting the `SfPicker.HeaderText`, and enable SfPicker header by setting `SfPicker.ShowHeader` property to true. Default value of `SfPicker.ShowHeader` is true.
+The Xamarin Picker control allows you to the define header text by setting the [`SfPicker.HeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_HeaderText), and enable SfPicker header by setting [`SfPicker.ShowHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowHeader) property to true. Default value of [`SfPicker.ShowHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowHeader) is true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -306,7 +306,7 @@ Colors.Add("Pink");
 
 * Bind the Collection to picker
 
-Xamarin Picker control allows you to bind collection of data by setting the `SfPicker.ItemsSource` property. You can bind the collection of data in both XAML or C#.
+Xamarin Picker control allows you to bind collection of data by setting the [`SfPicker.ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ItemsSource) property. You can bind the collection of data in both XAML or C#.
 
 {% tabs %}
 {% highlight xaml %}
@@ -358,7 +358,7 @@ picker.ItemsSource = info.Colors;
 
 ### Set title to the items 
 
-picker control allows you to define title to the picker items by setting `SfPicker.ColumnHeaderText` and enable title of the picker items by setting `SfPicker.ShowColumnHeader` property to true. Default value of `SfPicker.ShowColumnHeader` is false.
+picker control allows you to define title to the picker items by setting [`SfPicker.ColumnHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ColumnHeaderText) and enable title of the picker items by setting [`SfPicker.ShowColumnHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowColumnHeader) property to true. Default value of [`SfPicker.ShowColumnHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowColumnHeader) is false.
 
 {% tabs %}
 {% highlight xaml %}
@@ -384,7 +384,7 @@ picker.ShowColumnHeader = true;
 
 ### Enable validation button in footer
 
-In Xamarin Picker control, validation buttons (OK and Cancel)can be enabled by setting `SfPicker.ShowFooter` property to true. Default value of `SfPicker.ShowFooter` property is false
+In Xamarin Picker control, validation buttons (OK and Cancel)can be enabled by setting [`SfPicker.ShowFooter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowFooter) property to true. Default value of [`SfPicker.ShowFooter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowFooter) property is false
 
 {% tabs %}
 {% highlight xaml %}
@@ -406,7 +406,7 @@ picker.ShowFooter = true;
 
 ### Open as dialog
 
- picker can be rendered as a dialog by setting the`SfPicker.PickerMode` property to Dialog. Default value of `SfPicker.PickerMode` property is Default. 
+ picker can be rendered as a dialog by setting the [`SfPicker.PickerMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_PickerMode) property to Dialog. Default value of [`SfPicker.PickerMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_PickerMode) property is Default. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -422,7 +422,7 @@ picker.PickerMode = PickerMode.Dialog;
 {% endhighlight %}
 {% endtabs %}
 
-The picker can be opened programmatically by setting  `SfPicker.IsOpen` property to true. Default value of `SfPicker.IsOpen` is false.
+The picker can be opened programmatically by setting  [`SfPicker.IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_IsOpen) property to true. Default value of [`SfPicker.IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_IsOpen) is false.
 
 Note: This property is automatically changed to false when you close the dialog by clicking outside of dialog.
 

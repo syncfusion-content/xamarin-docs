@@ -32,7 +32,7 @@ You can localize `Picker` in all the platforms by adding a.resx file in a.NET St
 
 {% endhighlight %} 
 
-4. Set the resource manager to `PickerResourceManager.Manager` as demonstrated in the following code to get the resource manager from the users. For more details, refer [`Localization`](https://blog.syncfusion.com/post/localization-made-easy-for-syncfusion-xamarin-forms-components.aspx).
+4. Set the resource manager to [`PickerResourceManager.Manager`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.PickerResourceManager.html#Syncfusion_SfPicker_XForms_PickerResourceManager_Manager) as demonstrated in the following code to get the resource manager from the users. For more details, refer [`Localization`](https://blog.syncfusion.com/post/localization-made-easy-for-syncfusion-xamarin-forms-components.aspx).
 
 {% highlight C# %}
 

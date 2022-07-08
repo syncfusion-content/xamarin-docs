@@ -82,7 +82,7 @@ N> The navigation drawer works with the value given for the properties inside th
 
 ### Default drawer header view
 
-The header content can be provided to the default drawer using the `DrawerHeaderView` property inside the DrawerSettings class of DefaultDrawerSettings. The following code demonstrates how to set header content for the default drawer.
+The header content can be provided to the default drawer using the [`DrawerHeaderView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeaderView) property inside the DrawerSettings class of DefaultDrawerSettings. The following code demonstrates how to set header content for the default drawer.
 
 {% tabs %}
 
@@ -143,7 +143,7 @@ namespace NaviSample
 
 ### Default drawer content view
 
-The drawer content can be provided to the default drawer using the `DrawerContentView` property inside the DrawerSettings class. The following code demonstrates how to set drawer content to the default drawer.
+The drawer content can be provided to the default drawer using the [`DrawerContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerContentView) property inside the DrawerSettings class. The following code demonstrates how to set drawer content to the default drawer.
 
 {% tabs %}
 
@@ -205,7 +205,7 @@ namespace NaviSample
 
 ### Default drawer footer view
 
-The footer content can be provided to the default drawer using the `DrawerFooterView` property inside the DrawerSettings class of DefaultDrawerSettings. The following code demonstrates how to set footer content to the default drawer.
+The footer content can be provided to the default drawer using the [`DrawerFooterView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerFooterView) property inside the DrawerSettings class of DefaultDrawerSettings. The following code demonstrates how to set footer content to the default drawer.
 
 {% tabs %}
 
@@ -335,7 +335,7 @@ N> When the default drawer and the secondary drawer are set to the same position
 
 ### Secondary drawer header view
 
-The header content can be provided to the secondary drawer using the `DrawerHeaderView` property inside the DrawerSettings class of SecondaryDrawerSettings. The following code demonstrates how to set the header content to the secondary drawer.
+The header content can be provided to the secondary drawer using the [`DrawerHeaderView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeaderView) property inside the DrawerSettings class of SecondaryDrawerSettings. The following code demonstrates how to set the header content to the secondary drawer.
 
 {% tabs %}
 
@@ -401,7 +401,7 @@ namespace NaviSample
 
 ### Secondary drawer content view
 
-The drawer content can be provided to the default drawer using the `DrawerContentView` property inside the DrawerSettings class of SecondaryDrawerSettings. The following code demonstrates how to set the drawer content to the secondary drawer.
+The drawer content can be provided to the default drawer using the [`DrawerContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerContentView) property inside the DrawerSettings class of SecondaryDrawerSettings. The following code demonstrates how to set the drawer content to the secondary drawer.
 
 {% tabs %}
 
@@ -463,7 +463,7 @@ namespace NaviSample
 
 ### Secondary drawer footer view
 
-The footer content can be provided to the secondary drawer using the `DrawerFooterView` property inside the DrawerSettings class of SecondaryDrawerSettings. The following code demonstrates how to set footer content to the secondary drawer.
+The footer content can be provided to the secondary drawer using the [`DrawerFooterView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerFooterView) property inside the DrawerSettings class of SecondaryDrawerSettings. The following code demonstrates how to set footer content to the secondary drawer.
 
 {% tabs %}
 
@@ -529,7 +529,7 @@ namespace NaviSample
 
 ## Toggling method
 
-Users can toggle the secondary drawer using the `ToggleSecondaryDrawer` method. 
+Users can toggle the secondary drawer using the [`ToggleSecondaryDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ToggleSecondaryDrawer) method. 
 
 {% highlight c# %} 
 

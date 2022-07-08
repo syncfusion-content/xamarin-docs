@@ -11,11 +11,11 @@ documentation: ug
 
 # Precision Mode in Xamarin Rating (SfRating)
 
-The Precision mode defines the accuracy level of the SfRating control. It has Standard, Half, and Exact options. The default precision mode of the SfRating control is `Standard`.
+The Precision mode defines the accuracy level of the SfRating control. It has Standard, Half, and Exact options. The default precision mode of the SfRating control is [`Standard`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.Precision.html#Syncfusion_SfRating_XForms_Precision_Standard).
 
 ## Standard
 
-When the precision mode of SfRating is set as `Standard`, the rating item will be filled completely based on the rating value.
+When the precision mode of SfRating is set as [`Standard`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.Precision.html#Syncfusion_SfRating_XForms_Precision_Standard), the rating item will be filled completely based on the rating value.
 
 {% tabs %}
 
@@ -43,7 +43,7 @@ public MainPage()
 
 ## Half
 
-When the precision mode of SfRating is set as `Half`, the rating item will be filled partially based on the rating value.
+When the precision mode of SfRating is set as [`Half`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.Precision.html#Syncfusion_SfRating_XForms_Precision_Half), the rating item will be filled partially based on the rating value.
 
 {% tabs %}
 
@@ -71,7 +71,7 @@ public MainPage()
 
 ## Exact
 
-When the precision mode of SfRating is set as `Exact`, the rating item will be filled exactly based on the rating value.
+When the precision mode of SfRating is set as [`Exact`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.Precision.html#Syncfusion_SfRating_XForms_Precision_Exact), the rating item will be filled exactly based on the rating value.
 
 {% tabs %}
 

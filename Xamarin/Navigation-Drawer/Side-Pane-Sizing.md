@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Setting Sliding Panel size in Xamarin Navigation Drawer
 
-The size of side pane can be adjusted using `DrawerHeight` and `DrawerWidth` properties.
+The size of side pane can be adjusted using [`DrawerHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeight) and [`DrawerWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerWidth) properties.
 
 ## Drawer Height
 
-`DrawerHeight` property is used to change the height of side pane when the Position is Top or Bottom.
+[`DrawerHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeight) property is used to change the height of side pane when the Position is Top or Bottom.
 
 {% tabs %}
 
@@ -62,7 +62,7 @@ Content = navigationDrawer;
 
 ## Drawer Width
 
-`DrawerWidth` property is used to change the width of side pane when the Position is Left or Right.
+[`DrawerWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerWidth) property is used to change the width of side pane when the Position is Left or Right.
 
 {% tabs %}
 

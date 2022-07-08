@@ -10,7 +10,7 @@ documentation: ug
 
 ## Animation Duration in SfNavigationDrawer
 
-The `Duration` property of SfNavigationDrawer indicates timeline for completing one animation cycle. Setting smaller duration value accelerates animation speed.
+The [`Duration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_Duration) property of SfNavigationDrawer indicates timeline for completing one animation cycle. Setting smaller duration value accelerates animation speed.
 
 {% tabs %}
 

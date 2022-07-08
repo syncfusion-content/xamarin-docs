@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Configuring The Drawer In Different Sides in Xamarin Navigation Drawer
 
-The supplemental pane can be drawn in and out from all four sides. `Position` property is used to change the side of pane and the values are
+The supplemental pane can be drawn in and out from all four sides. [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_Position) property is used to change the side of pane and the values are
 
 *	Left
 

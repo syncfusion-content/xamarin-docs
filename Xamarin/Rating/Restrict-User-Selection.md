@@ -11,7 +11,7 @@ documentation: ug
 
 # Restrict user Selection  in Xamarin Rating (SfRating)
 
-SfRating control provides support for changeable or unchangeable values for Rating control. This is achieved by the `ReadOnly` property. When this property is set to True, the Rating value becomes unchangeable. By default, this property value is set to False.
+SfRating control provides support for changeable or unchangeable values for Rating control. This is achieved by the [`ReadOnly`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_ReadOnly) property. When this property is set to True, the Rating value becomes unchangeable. By default, this property value is set to False.
 
 {% tabs %}
 

@@ -11,11 +11,11 @@ documentation: ug
 
 # ToolTip in Xamarin Rating (SfRating)
 
-Tooltip provides additional information about objects that are unfamiliar to users and are not directly displayed in UI. In the Xamarin.Forms SfRating control, tooltip shows the data of `Value`. It will be displayed when the mouse is hovered over the rating items and will be disappeared when a rating item is selected.
+Tooltip provides additional information about objects that are unfamiliar to users and are not directly displayed in UI. In the Xamarin.Forms SfRating control, tooltip shows the data of [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_Value). It will be displayed when the mouse is hovered over the rating items and will be disappeared when a rating item is selected.
 
 ## Set Tooltip Placement
 
-Using `ToolTipPlacement` property, We can define where the ToolTip need to be displayed. TooTipPlacement having the following three types of placement.
+Using [`ToolTipPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_TooltipPlacement) property, We can define where the ToolTip need to be displayed. TooTipPlacement having the following three types of placement.
 
 *BottomRight,
 *None,
@@ -81,7 +81,7 @@ public MainPage()
 
 ### None
 
-When we set `ToolTipPlacement` as None, The ToolTip will be disappear.
+When we set [`ToolTipPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_TooltipPlacement) as None, The ToolTip will be disappear.
 
 {% tabs %}
 
@@ -109,7 +109,7 @@ public MainPage()
 
 ## Set ToolTip Precision
 
-The `ToolTipPrecision` property sets the number precisions to be displayed after decimal point in ToolTip. 
+The [`ToolTipPrecision`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_TooltipPrecision) property sets the number precisions to be displayed after decimal point in ToolTip. 
 
 N> The default value of ToolTip precision is 1.
 

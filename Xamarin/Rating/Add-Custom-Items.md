@@ -17,7 +17,7 @@ N> To use custom views in Xamarin.Forms UWP platform, you need to set ItemCount 
 
 ## Add SfRating items
 
-To customize the view of rating items, create and set custom view as `SelectedView` and `UnSelectedView` of SfRatingItem. Refer to the following code snippet to create a custom view.
+To customize the view of rating items, create and set custom view as [`SelectedView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html#Syncfusion_SfRating_XForms_SfRatingItem_SelectedView) and [`UnSelectedView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html#Syncfusion_SfRating_XForms_SfRatingItem_UnSelectedView) of SfRatingItem. Refer to the following code snippet to create a custom view.
 
 {% tabs %}
 
@@ -44,7 +44,7 @@ rating.EnableCustomView = true;
 
 ## Set selected view
 
-The `SelectedView` property is used to apply the given SelectedView to selected rating item.
+The  [`SelectedView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html#Syncfusion_SfRating_XForms_SfRatingItem_SelectedView) property is used to apply the given SelectedView to selected rating item.
 
 {% tabs %}
 
@@ -68,7 +68,7 @@ ratingItem.SelectedView = new Image() { Source = "Angry_selected.png", Aspect = 
 
 ## Set unselected view
  
-The `UnSelectedView` property is used to apply the given UnSelectedView to unselected rating item.
+The [`UnSelectedView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html#Syncfusion_SfRating_XForms_SfRatingItem_UnSelectedView) property is used to apply the given UnSelectedView to unselected rating item.
 
 {% tabs %}
 
@@ -92,7 +92,7 @@ ratingItem.UnSelectedView = new Image() { Source = "Angry_Unselected.png", Aspec
 
 ## Add Items
 
-The `Items` property is used to hold the collection of SfRatingItem. 
+The [`Items`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_Items) property is used to hold the collection of SfRatingItem. 
 
 N> SfRatingItem keeps both selected and unselected view respectively.
 

@@ -15,7 +15,7 @@ When the default view is not needed, you can customize the view of Xamarin.Forms
 
 ## Set Size
 
-The `ItemSize` property sets the size of the rating items. 
+The [`ItemSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_ItemSize) property sets the size of the rating items. 
 
 N> By default, property value is 50.
 
@@ -45,7 +45,7 @@ public MainPage()
 
 ## Set Number of Items
 
-The `ItemCount` property sets the number of rating items to be displayed. 
+The [`ItemCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_ItemCount) property sets the number of rating items to be displayed. 
 
 N> The default property value is 5.
 
@@ -75,7 +75,7 @@ public MainPage()
  
 ## Set Space between Items
 
-The `ItemSpacing` property sets the spacing between the rating items. 
+The [`ItemSpacing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_ItemSpacing) property sets the spacing between the rating items. 
 
 N> By default, property value is 5.
 

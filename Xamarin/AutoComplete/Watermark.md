@@ -104,7 +104,7 @@ namespace AutocompleteSample
 
 ## Changing Watermark Text Color
 
-Text color of watermark can be customized using [`WatermarkColor`] property.
+Text color of watermark can be customized using [`WatermarkColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_Watermark) property.
 
 {% tabs %}
 
@@ -198,7 +198,7 @@ namespace AutocompleteSample
 
 ## Focus the control
 
-The autocomplete sets the user to focus the autocomplete textbox initially after the control gets rendered using `IsFocused` property.
+The autocomplete sets the user to focus the autocomplete textbox initially after the control gets rendered using [`IsFocused`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_IsFocused) property.
 
 {% tabs %}
 

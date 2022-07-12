@@ -195,7 +195,7 @@ We can populate the carousel's items by using any one of the following ways,
 
 ### Through SfCarouselItem
 
-By passing the list of `SfCarouselItem` , we can get the view of SfCarousel control. In that we can pass Images as well as Item content.
+By passing the list of [`SfCarouselItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarouselItem.html) , we can get the view of SfCarousel control. In that we can pass Images as well as Item content.
 
 The following code example illustrates to add list of Images in Carousel ,
 
@@ -298,7 +298,7 @@ namespace CarouselSample
 
 ### Through ItemTemplate
 
-`ItemTemplate` property of Xamarin Carousel View (SfCarousel) control is used to customize the contents of SfCarousel items.
+[`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_ItemTemplate) property of Xamarin Carousel View (SfCarousel) control is used to customize the contents of SfCarousel items.
 
 * Create a model view which holds image data
 
@@ -353,7 +353,7 @@ namespace CarouselSample
 
 {% endhighlight %}
 
-The following code illustrates the way to use `ItemTemplate` in both XAML as well as C#
+The following code illustrates the way to use [`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_ItemTemplate) in both XAML as well as C#
 
 {% tabs %}
 
@@ -468,7 +468,7 @@ N> In addition, carousel provides a support to load the Images from `URL` and `S
 
 ## Setting the height and width of the carousel item
 
-`ItemHeight` and `ItemWidth` properties are used to change the height and width of carouselItem in carousel panel.
+[`ItemHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_ItemHeight) and [`ItemWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_ItemWidth) properties are used to change the height and width of carouselItem in carousel panel.
 
 {% tabs %}
 
@@ -526,7 +526,7 @@ namespace CarouselSample
 
 ## Set Desire Item to be Selected
 
-We can bring particular item to the center of the screen using `SelectedIndex` property in SfCarousel control.
+We can bring particular item to the center of the screen using [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_SelectedIndex) property in SfCarousel control.
 
 The items can be populated as described [above](#add-carousel-items)
 
@@ -586,7 +586,7 @@ namespace CarouselSample
 
 {% endtabs %}
 
-N> The `SelectedIndex` property will be 0 by default.
+N> The [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_SelectedIndex) property will be 0 by default.
 
 ![OverView image for Carousel](images/gettingstarted.png)
 

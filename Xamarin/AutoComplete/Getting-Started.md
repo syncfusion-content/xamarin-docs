@@ -223,7 +223,7 @@ namespace AutocompleteSample
 
 ## Populating AutoComplete with Data
 
-Now, let us create a simple list of country names and set it as the `AutoCompleteSource` of AutoComplete.
+Now, let us create a simple list of country names and set it as the [`AutoCompleteSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_AutoCompleteSource) of AutoComplete.
 
 {% tabs %}
 
@@ -317,7 +317,7 @@ Refer [this](https://help.syncfusion.com/xamarin/autocomplete/populating-data) l
 
 By default, items are filtered in “StartsWith” case insensitive mode and the suggestions are displayed in a drop down popup. Autocomplete can now filter suggestions.
 
-Here in this example, let us configure it to “Contains” case sensitive filter mode. This can be achieved by setting `SuggestionMode` property.
+Here in this example, let us configure it to “Contains” case sensitive filter mode. This can be achieved by setting [`SuggestionMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SuggestionMode) property.
  
 {% tabs %}
 

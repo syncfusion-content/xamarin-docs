@@ -377,11 +377,11 @@ namespace ComboBox
 
 ## SelectedItem
 
-The `SelectedItem` property is used to select a particular item from the suggestion list. You can either get or set the SelectedItem.
+The [`SelectedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedItem) property is used to select a particular item from the suggestion list. You can either get or set the SelectedItem.
 
 ### How to set the SelectedItem
 
-The following code sample demonstrates how to set `SelectedItem`.
+The following code sample demonstrates how to set [`SelectedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedItem).
 
 {% tabs %}
 
@@ -472,7 +472,7 @@ namespace ComboBox
 
 When an item is selected from suggestion list, it can be retrieved using the [`SelectedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedItemProperty) property. 
 
-The `SelectedValuePath` API is used to retrieve the value of the selected item in drop-down when the item is selected. The `SelectedValue` property is updated based on the selection. For loading the default values in the control, use only the SelectedItem, and the SelectedValue is used for retrieving the value of our desired property[ID] based on the selection.
+The [`SelectedValuePath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedValuePath) API is used to retrieve the value of the selected item in drop-down when the item is selected. The [`SelectedValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedValue) property is updated based on the selection. For loading the default values in the control, use only the SelectedItem, and the SelectedValue is used for retrieving the value of our desired property[ID] based on the selection.
 
 There are scenarios in which SelectedValue can have duplicate items when DisplayMemberPath is loaded with Countries and SelectedValue is bound to Continent; it will be the same for many countries. In such scenarios, you cannot populate based on SelectedValue.
 
@@ -555,7 +555,7 @@ namespace ComboBox
 {% endhighlight %}
 {% endtabs %}
 
-Define a simple model class employee with fields ID and Name, and then populate employee data and `SelectedItem` in ViewModel.
+Define a simple model class employee with fields ID and Name, and then populate employee data and [`SelectedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedItem) in ViewModel.
 
 {% tabs %}
 {% highlight c# %}

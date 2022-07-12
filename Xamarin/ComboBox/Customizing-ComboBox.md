@@ -278,7 +278,7 @@ N> [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Combo
 
 ## Custom template for suggestion items
 
-The `ItemTemplate` property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
+The [`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ItemTemplate) property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
 
 {% tabs %}
 
@@ -327,7 +327,7 @@ public class PersonViewModel
 
 {% endtabs %}
 
-Now populate this PersonViewModel data in SfComboBox control by binding with [`DataSource`] property. 
+Now populate this PersonViewModel data in SfComboBox control by binding with [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DataSource) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -990,7 +990,7 @@ Text color of watermark can be customized using [`WatermarkColor`](https://help.
 
 ## Select text on focus
 
-The `SelectAllOnFocus` property specifies whether the text should be selected when the input field is focused.
+The [`SelectAllOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectAllOnFocus) property specifies whether the text should be selected when the input field is focused.
 {% tabs %}
 
 {% highlight xaml %}

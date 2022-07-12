@@ -135,7 +135,7 @@ N>Set the SoftInputMode to AdjustResize in MainActivity, to resolve the suggesti
 
 ## Maximum suggestion box height
 
-The maximum height of the suggestion box in the SfAutocomplete control can be varied using the `MaximumDropDownHeight` property.
+The maximum height of the suggestion box in the SfAutocomplete control can be varied using the [`MaximumDropDownHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_MaximumDropDownHeight) property.
 
 {% tabs %}
 
@@ -229,7 +229,7 @@ namespace AutocompleteSample
 
 ## Opening suggestion box on focus
 
-Suggestion box can be shown whenever the control receives focus using the `ShowSuggestionsOnFocus` property. At this time, suggestion list is the complete list of data source.
+Suggestion box can be shown whenever the control receives focus using the [`ShowSuggestionsOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ShowSuggestionsOnFocus) property. At this time, suggestion list is the complete list of data source.
 
 {% tabs %}
 
@@ -311,7 +311,7 @@ namespace AutocompleteSample
 
 ## Delay opening suggestion box
 
-The `PopupDelay` property is used to delay the suggestion box opening process. It gets milliseconds as input in integer data type.
+The [`PopupDelay`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_PopupDelay) property is used to delay the suggestion box opening process. It gets milliseconds as input in integer data type.
 In this example, a time duration of 3 seconds is set to popup delay.
 
 {% tabs %}
@@ -404,7 +404,7 @@ namespace AutocompleteSample
 
 ## Delay before searching algorithm starts
 
-The `SearchDelay` property is used to delay the searching algorithm process. It gets milliseconds as input in integer data type.
+The [`SearchDelay`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SearchDelay) property is used to delay the searching algorithm process. It gets milliseconds as input in integer data type.
 
 In this example, a time duration of 3 seconds is set to search delay.
 
@@ -498,7 +498,7 @@ namespace AutocompleteSample
 
 ## Avoid opening suggestion box
 
-To avoid opening the drop-down, you can set the `SuggestionBoxPlacement` API to None.
+To avoid opening the drop-down, you can set the [`SuggestionBoxPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SuggestionBoxPlacement) API to None.
 
 {% tabs %}
 

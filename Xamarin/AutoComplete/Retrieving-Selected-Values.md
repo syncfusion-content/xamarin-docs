@@ -487,7 +487,7 @@ namespace AutocompleteSample
 
 ## SelectedItem
 
-The `SelectedItem` property is used to select the particular item from the suggestion list. You can either get or set the SelectedItem.
+The [`SelectedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SelectedItem) property is used to select the particular item from the suggestion list. You can either get or set the SelectedItem.
 
 ### How to set the SelectedItem
 

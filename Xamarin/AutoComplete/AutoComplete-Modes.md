@@ -19,7 +19,7 @@ AutoComplete provides three different ways to display the filtered suggestions. 
 
 * SuggestAppend - Both of these
 
-`AutoCompleteMode` property is used to choose the suggestion display mode in SfAutoComplete control. The default value is Suggest.
+[`AutoCompleteMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_AutoCompleteMode) property is used to choose the suggestion display mode in SfAutoComplete control. The default value is Suggest.
 
 ## Suggesting Choices in List
 

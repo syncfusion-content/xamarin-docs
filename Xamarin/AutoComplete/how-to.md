@@ -11,7 +11,7 @@ documentation: ug
 
 ## How to perform an operation when selecting an item from drop-down list?
 
-You can perform an operation when selecting an item among the filtered suggestions using the [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SelectionChanged) event. The SelectionChanged event returns the following arguments:
+You can perform an operation when selecting an item among the filtered suggestions using the [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SelectionChanged) event. The [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SelectionChanged) event returns the following arguments:
 
 <table>
 <tr>

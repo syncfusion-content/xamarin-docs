@@ -9,7 +9,7 @@ documentation: ug
 
 # Enabling the AutoSizing API
 
-AutoSizing can be enabled in SfAutoComplete control so that the control will extend its layout based on the token size.
+AutoSizing can be enabled in [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control so that the control will extend its layout based on the token size.
 
 [`EnableAutoSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_EnableAutoSize) property is used to enable the AutoSizing in [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control. To enable the API, you need to set the [`MultiSelectMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_MultiSelectMode) as [`Token`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.MultiSelectMode.html#Syncfusion_SfAutoComplete_XForms_MultiSelectMode_Token) and [`TokensWrapMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_TokensWrapMode) as [`Wrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokensWrapMode.html#Syncfusion_SfAutoComplete_XForms_TokensWrapMode_Wrap). The default value of [`EnableAutoSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_EnableAutoSize) is false.
 

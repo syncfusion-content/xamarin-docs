@@ -11,9 +11,9 @@ documentation: ug
 ## Multiple Selection in Xamarin SfAutoComplete
 Select multiple items from a suggestion list. There are two ways to perform multi selection in autocomplete.
 
-* Token Representation
+* [`Token Representation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.MultiSelectMode.html#Syncfusion_SfAutoComplete_XForms_MultiSelectMode_Token)
 
-*  Delimiter
+*  [`Delimiter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.MultiSelectMode.html#Syncfusion_SfAutoComplete_XForms_MultiSelectMode_Delimiter)
 
 ## Token Representation
 
@@ -101,7 +101,7 @@ namespace AutocompleteSample
 
 ### Wrap Mode of Token
 
-The selected item can be displayed as token inside SfAutoComplete in two ways. They are
+The selected item can be displayed as token inside [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) in two ways. They are
 
 * [`Wrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokensWrapMode.html#Syncfusion_SfAutoComplete_XForms_TokensWrapMode_Wrap) - When [`TokensWrapMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_TokensWrapMode) is set to [`Wrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokensWrapMode.html#Syncfusion_SfAutoComplete_XForms_TokensWrapMode_Wrap) the selected items will be wrap to the next line of the SfAutoComplete.
 
@@ -300,7 +300,7 @@ Customization can be done for Token. There are various ways to customize the tok
 
 * [`DeleteButtonPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokenSettings.html#Syncfusion_SfAutoComplete_XForms_TokenSettings_DeleteButtonPlacement) - sets the placement of delete button. `Left` and `Right` are the placement options. By default, it is set placed at right side of the token. 
 
-N> SelectedBackgroundColor and CornerRadius support has enhanced only on iOS and Android platform.
+N> [`SelectedBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokenSettings.html#Syncfusion_SfAutoComplete_XForms_TokenSettings_SelectedBackgroundColor) and [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokenSettings.html#Syncfusion_SfAutoComplete_XForms_TokenSettings_CornerRadius) support has enhanced only on iOS and Android platform.
 
 {% tabs %}
 

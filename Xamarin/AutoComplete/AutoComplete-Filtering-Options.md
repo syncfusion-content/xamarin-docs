@@ -11,25 +11,25 @@ documentation: ug
 
 ## AutoComplete filtering options in Xamarin SfAutoComplete
 
-The phenomenon of string comparison for filtering suggestions can be changed using the [`SuggestionMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SuggestionMode) property. The default filtering strategy is “StartsWith” and it is case insensitive. The available filtering modes are
+The phenomenon of string comparison for filtering suggestions can be changed using the [`SuggestionMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SuggestionMode) property. The default filtering strategy is [`“StartsWith”`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionMode.html#Syncfusion_SfAutoComplete_XForms_SuggestionMode_StartsWith) and it is case insensitive. The available filtering modes are
 
-* StartsWith
+* [`StartsWith`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionMode.html#Syncfusion_SfAutoComplete_XForms_SuggestionMode_StartsWith)
 
-* StartsWithCaseSensitive
+* [`StartsWithCaseSensitive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionMode.html#Syncfusion_SfAutoComplete_XForms_SuggestionMode_StartsWithCaseSensitive)
 
-* Contains
+* [`Contains`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionMode.html#Syncfusion_SfAutoComplete_XForms_SuggestionMode_Contains)
 
-* ContainsWithCaseSensitive
+* [`ContainsWithCaseSensitive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionMode.html#Syncfusion_SfAutoComplete_XForms_SuggestionMode_ContainsWithCaseSensitive)
 
-* Equals
+* [`Equals`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionMode.html#Syncfusion_SfAutoComplete_XForms_SuggestionMode_Equals)
 
-* EqualsWithCaseSensitive
+* [`EqualsWithCaseSensitive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionMode.html#Syncfusion_SfAutoComplete_XForms_SuggestionMode_EqualsWithCaseSensitive)
 
-* EndsWith
+* [`EndsWith`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionMode.html#Syncfusion_SfAutoComplete_XForms_SuggestionMode_EndsWith)
 
-* EndsWithCaseSensitive
+* [`EndsWithCaseSensitive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionMode.html#Syncfusion_SfAutoComplete_XForms_SuggestionMode_EndsWithCaseSensitive)
 
-* Custom
+* [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionMode.html#Syncfusion_SfAutoComplete_XForms_SuggestionMode_Custom)
 
 ## Filtering Words that Starts with Input Text
 

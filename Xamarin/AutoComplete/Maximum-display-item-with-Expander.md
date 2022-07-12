@@ -10,7 +10,7 @@ documentation: ug
 
 ## Maximum display item with expander in Xamarin SfAutoComplete
 
-Restrict the number of suggestions displayed and have the remaining items loaded by selecting LoadMore.We can restrict maximum suggestion to be displayed with the [`MaximumSuggestion`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_MaximumSuggestion) property. We can set the desire text for the displaying the Load more text with the property [`LoadMoreText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_LoadMoreText).
+Restrict the number of suggestions displayed and have the remaining items loaded by selecting [`LoadMore`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_LoadMore).We can restrict maximum suggestion to be displayed with the [`MaximumSuggestion`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_MaximumSuggestion) property. We can set the desire text for the displaying the Load more text with the property [`LoadMoreText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_LoadMoreText).
 
 {% tabs %}
 
@@ -105,9 +105,9 @@ namespace AutocompleteSample
 
 ## Restricting the maximum display of item dynamically
 
-We can restrict the maximum display of items dynamically by calling [`LoadMore`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_LoadMore) method. The user can dynamically change the maximum suggestion count by calling LoadMore method by giving the maximum suggestion as the argument inside.
+We can restrict the maximum display of items dynamically by calling [`LoadMore`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_LoadMore) method. The user can dynamically change the maximum suggestion count by calling [`LoadMore`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_LoadMore) method by giving the maximum suggestion as the argument inside.
 
-N> LoadMore method has enhanced only on iOS and Android platform.
+N> [`LoadMore`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_LoadMore) method has enhanced only on iOS and Android platform.
 
 {% tabs %}
 {% highlight c# %}
@@ -123,8 +123,8 @@ autoComplete.LoadMore(5);
 
 ## Load more view customization
 
-`SfAutoComplete` allows customizing User Interface(UI) of Load More view.
-To customize the load more text, add the custom UI in the [`LoadMoreTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_LoadMoreTemplate) API in SfAutoComplete, as shown in the following code snippet.
+[`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) allows customizing User Interface(UI) of Load More view.
+To customize the load more text, add the custom UI in the [`LoadMoreTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_LoadMoreTemplate) API in [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html), as shown in the following code snippet.
 
 {% tabs %}
 

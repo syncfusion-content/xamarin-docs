@@ -10,7 +10,7 @@ documentation: ug
 
 ## No Results found in Xamarin SfAutoComplete
 
-When the entered item is not in the suggestion list, SfAutoComplete displays a text indicating there is no search results found. We can set the desire text to be displayed for indicating no results found with the [`NoResultsFoundText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_NoResultsFoundText) property.
+When the entered item is not in the suggestion list, [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) displays a text indicating there is no search results found. We can set the desire text to be displayed for indicating no results found with the [`NoResultsFoundText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_NoResultsFoundText) property.
 
 {% tabs %}
 

@@ -10,9 +10,9 @@ documentation: ug
 
 # Populating Data in Xamarin AutoComplete
 
-SfAutoComplete control can be populated with a list of string or business objects, which assists the user while typing. Users can choose one item from the filtered suggestion list.
+[`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control can be populated with a list of string or business objects, which assists the user while typing. Users can choose one item from the filtered suggestion list.
 
-[`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DataSource) property is used to populate data in SfAutoComplete control. This section explains populating AutoComplete with list of string and list of Employee details separately.
+[`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DataSource) property is used to populate data in [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control. This section explains populating AutoComplete with list of string and list of Employee details separately.
 
 ## Populating String Data
 
@@ -109,7 +109,7 @@ namespace AutocompleteSample
 
 ## Populating Business Objects
 
-Apart from string data, SfAutoComplete can deal with business object data also. Now let us create Model and ViewModel classes to populate AutoComplete with Employee details.
+Apart from string data, [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) can deal with business object data also. Now let us create Model and ViewModel classes to populate AutoComplete with Employee details.
 
 ### Create and Initialize Business Models 
 
@@ -167,7 +167,7 @@ namespace AutocompleteSample
 
 ### Populate data in AutoComplete and Setting DisplayMemberPath
 
-Now populate this EmployeeViewModel data in SfAutoComplete control by binding with [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DataSource) property. At this point, the control is populated with the list of employees. But the Employee model contains two properties ID and Name so it is necessary to intimate by which property it should filter suggestions. [`DisplayMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DisplayMemberPath) property specifies the property path with which filtering is done on business objects.
+Now populate this EmployeeViewModel data in [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control by binding with [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DataSource) property. At this point, the control is populated with the list of employees. But the Employee model contains two properties ID and Name so it is necessary to intimate by which property it should filter suggestions. [`DisplayMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DisplayMemberPath) property specifies the property path with which filtering is done on business objects.
 
 {% tabs %}
 
@@ -235,7 +235,7 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-N> Set the EmployeeViewModel instance as the BindingContext of your control; this is done to bind properties of EmployeeViewModel to SfAutoComplete.
+N> Set the EmployeeViewModel instance as the BindingContext of your control; this is done to bind properties of EmployeeViewModel to [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html).
 
 ![Populating data business object](images/Populating-Data/populating-data-business-object.png)
 
@@ -409,7 +409,7 @@ public class ViewModel
 
 {% endtabs %}
 
-Add the column name in the DisplayMemberPath property, to display all the data of the corresponding column, which is given as following code.   
+Add the column name in the [`DisplayMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DisplayMemberPath) property, to display all the data of the corresponding column, which is given as following code.   
 
 {% tabs %}
 

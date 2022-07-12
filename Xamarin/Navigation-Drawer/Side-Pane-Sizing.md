@@ -12,7 +12,7 @@ The size of side pane can be adjusted using [`DrawerHeight`](https://help.syncfu
 
 ## Drawer Height
 
-[`DrawerHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeight) property is used to change the height of side pane when the Position is Top or Bottom.
+[`DrawerHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeight) property is used to change the height of side pane when the Position is [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Top) or [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Bottom).
 
 {% tabs %}
 
@@ -62,7 +62,7 @@ Content = navigationDrawer;
 
 ## Drawer Width
 
-[`DrawerWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerWidth) property is used to change the width of side pane when the Position is Left or Right.
+[`DrawerWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerWidth) property is used to change the width of side pane when the Position is [`Left`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Left) or [`Right`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Right).
 
 {% tabs %}
 

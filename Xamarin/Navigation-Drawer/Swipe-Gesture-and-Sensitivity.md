@@ -8,7 +8,7 @@ documentation: ug
 ---
 # SwipeGesture and its Sensitivity in Xamarin Navigation Drawer
 
-NavigationDrawer supports swipe gesture for opening and closing the drawer. 
+[`NavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) supports swipe gesture for opening and closing the drawer. 
 
 ## Enabling Swipe Gesture
 

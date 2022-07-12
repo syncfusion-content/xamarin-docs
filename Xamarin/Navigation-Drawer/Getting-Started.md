@@ -288,7 +288,7 @@ N> For changing the side of navigation pane use Position property. Use DrawerHei
 
 ## Add Hamburger Menu for Toggling Drawer
 
-Create a button and set required image to the Image property of Button. Subscribe Clicked event of the button and invoke ToggleDrawer() method in it to toggle the drawer. Set this button as ContentView property of SfNavigationDrawer. Align the layout of ContentView properly to get the hamburger icon at top left as shown in following code:
+Create a button and set required image to the Image property of Button. Subscribe Clicked event of the button and invoke [`ToggleDrawer()`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ToggleDrawer) method in it to toggle the drawer. Set this button as ContentView property of [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html). Align the layout of [`ContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ContentView) properly to get the hamburger icon at top left as shown in following code:
 
 {% tabs %}	
 
@@ -373,7 +373,7 @@ N> Add the required images in drawable folder of Android project, Assets folder 
 
 ## Set ListView as Drawer Content
 
-Create a ListView with five items and set it as DrawerContentView. 
+Create a ListView with five items and set it as [`DrawerContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerContentView). 
 
 {% tabs %}	
 

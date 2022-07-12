@@ -8,15 +8,15 @@ documentation: ug
 ---
 # Setting Toggle Animations in Xamarin Navigation Drawer
 
-The drawer toggling animation can be changed using Transition property and it can be set to three different values. They are
+The drawer toggling animation can be changed using [`Transition`] property and it can be set to three different values. They are
 
-* SlideOnTop
+* [`SlideOnTop`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Transition.html#Syncfusion_SfNavigationDrawer_XForms_Transition_SlideOnTop)
 
-* Push
+* [`Push`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Transition.html#Syncfusion_SfNavigationDrawer_XForms_Transition_Push)
 
-* Reveal
+* [`Reveal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Transition.html#Syncfusion_SfNavigationDrawer_XForms_Transition_Reveal)
 
-N> The default animation is SlideOnTop.
+N> The default animation is [`SlideOnTop`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Transition.html#Syncfusion_SfNavigationDrawer_XForms_Transition_SlideOnTop).
 
 ## SlideOnTop
 
@@ -99,7 +99,7 @@ namespace NaviSample
 
 ## Push
 
-The navigation pane is hidden. It pushes the main content area in opposite side up to drawer width when opened. It can be set as shown below:
+The navigation pane is hidden. It pushes the main content area in opposite side up to [`drawer width`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerWidth) when opened. It can be set as shown below:
 
 {% tabs %}	
 
@@ -178,7 +178,7 @@ namespace NaviSample
 
 ## Reveal
 
-The navigation pane is hidden behind the main content. Main content moves away in opposite side up to drawer width to show the drawer content. It can be set as shown below:
+The navigation pane is hidden behind the main content. Main content moves away in opposite side up to [`drawer width`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerWidth) to show the drawer content. It can be set as shown below:
 
 {% tabs %}
 

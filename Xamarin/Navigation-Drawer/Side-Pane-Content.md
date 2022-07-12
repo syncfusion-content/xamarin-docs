@@ -98,7 +98,7 @@ namespace NaviSample
 
 Height of the drawer header content can be adjusted using [`DrawerHeaderHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeaderHeight) property.
 
-N> DrawerHeaderView will be disabled by setting DrawerHeaderHeight to zero 
+N> [`DrawerHeaderView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeaderView) will be disabled by setting[`DrawerHeaderHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeaderHeight) to zero 
 
 {% tabs %}
 
@@ -247,7 +247,7 @@ namespace NaviSample
 
 Height of the drawer footer content can be adjusted using [`DrawerFooterHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerFooterHeight) property.
 
-N> DrawerFooterView will be disabled by setting DrawerFooterHeight to zero 
+N> [`DrawerFooterView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerFooterView) will be disabled by setting [`DrawerFooterHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerFooterHeight) to zero 
 
 {% tabs %}
 

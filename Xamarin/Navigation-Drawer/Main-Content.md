@@ -10,7 +10,7 @@ documentation: ug
 
 # Setting Main Content in Xamarin Navigation Drawer (SfNavigationDrawer)
 
-Main content of NavigationDrawer is always visible and it can be set using [`ContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ContentView) property. In the following code example, ContentView is switched when selection changes in ListView.
+Main content of NavigationDrawer is always visible and it can be set using [`ContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ContentView) property. In the following code example, [`ContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ContentView) is switched when selection changes in ListView.
 
 {% tabs %}
 

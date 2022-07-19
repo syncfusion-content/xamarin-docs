@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Events in Syncfusion RangeSlider control for Xamarin.Forms
-description: Learn how to populate events in RangeSlider control
+description: Learn how to populate events in Syncfusion Essential Xamarin RangeSlider Control, its elements, and more.
 platform: xamarin
 control: RangeSlider 
 documentation: ug
 ---
 
-## How to Perform an Action while Selecting a Value?
+# How to Perform an Action while Selecting a Value?
 
 ValueChanging event will be triggered when value is changed with single thumb. ValueEventArgs has RangeSlider and RangeValue of the control.
 

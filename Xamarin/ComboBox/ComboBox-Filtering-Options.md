@@ -8,7 +8,8 @@ documentation : ug
 ---
 
 # ComboBox Filtering Options in Xamarin ComboBox (SfComboBox)
-The combo box enables the filer option for filtering the suggestions in the drop-down. 
+Filtering allows us to view particular records based on filter criteria. To enable filtering in the SfComboBox, set the AllowFiltering to true. The default value of the AllowFiltering property is false.
+ 
 
 {% tabs %}	
 

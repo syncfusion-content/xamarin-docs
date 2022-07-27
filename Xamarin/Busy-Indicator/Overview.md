@@ -16,7 +16,7 @@ The Essential [Xamarin BusyIndicator](https://www.syncfusion.com/xamarin-ui-cont
 ## Key Features
 
 * Provides 10 built-in busy indicator animations
-* Supports to show/hide busy indicator.
+* Supports to show/hide busy indicator.
 * Displays busy text with animation.
 * Provides simple and easy options to size the control.
 * Provides option to adjust the animation speed.

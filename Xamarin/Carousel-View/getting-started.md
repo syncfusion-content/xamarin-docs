@@ -21,7 +21,7 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## Adding SfCarousel reference
 
-You can add SfCarousel reference using one of the following methods:
+You can add [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) reference using one of the following methods:
 
 **Method 1: Adding SfCarousel reference from nuget.org**
 
@@ -29,11 +29,11 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 ![Adding SfCarousel reference from NuGet](images/Adding SfCarousel reference.png)
 
-N> Install the same version of SfCarousel NuGet in all the projects.
+N> Install the same version of [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) NuGet in all the projects.
 
 **Method 2: Adding SfCarousel reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfCarousel control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfCarousel assemblies manually from the installed location**
 
@@ -67,11 +67,11 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the tria
 
 ## Launching the SfCarousel on each platform
 
-To use SfCarousel inside an application, each platform application must initialize the SfCarousel renderer. This initialization step varies from platform to platform and is discussed in the following sections.
+To use [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) inside an application, each platform application must initialize the [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) renderer. This initialization step varies from platform to platform and is discussed in the following sections.
 
 ### Android and  UWP
 
-The Android and UWP launches the SfCarousel without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application
+The Android and UWP launches the [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application
 
 N> If you are adding the references from toolbox, this step is not needed.
 
@@ -195,7 +195,7 @@ We can populate the carousel's items by using any one of the following ways,
 
 ### Through SfCarouselItem
 
-By passing the list of [`SfCarouselItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarouselItem.html) , we can get the view of SfCarousel control. In that we can pass Images as well as Item content.
+By passing the list of [`SfCarouselItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarouselItem.html) , we can get the view of [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control. In that we can pass Images as well as Item content.
 
 The following code example illustrates to add list of Images in Carousel ,
 
@@ -298,7 +298,7 @@ namespace CarouselSample
 
 ### Through ItemTemplate
 
-[`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_ItemTemplate) property of Xamarin Carousel View (SfCarousel) control is used to customize the contents of SfCarousel items.
+[`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_ItemTemplate) property of Xamarin Carousel View (SfCarousel) control is used to customize the contents of [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) items.
 
 * Create a model view which holds image data
 
@@ -526,7 +526,7 @@ namespace CarouselSample
 
 ## Set Desire Item to be Selected
 
-We can bring particular item to the center of the screen using [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_SelectedIndex) property in SfCarousel control.
+We can bring particular item to the center of the screen using [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_SelectedIndex) property in [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control.
 
 The items can be populated as described [above](#add-carousel-items)
 

@@ -1,7 +1,7 @@
 ---
 layout : post
-title : interaction in Syncfusion Carousel Control in Xamarin.
-description : learn how to perform an operation while changing the carouselItem or Collection in Carousel for Xamarin.
+title : Interaction in Syncfusion Carousel Control in Xamarin.
+description : Learn how to perform an operation while changing the carouselItem or Collection in Carousel for Xamarin.
 platform : Xamarin
 control : Carousel
 documentation : ug
@@ -9,7 +9,7 @@ documentation : ug
 
 # How to perform an operation while changing the carouselItem?
 
-We can perform operation while changing the carouselItem using [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_SelectionChanged) event. SelectionChanged event returns the index and selected carouselItem
+We can perform operation while changing the carouselItem using [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_SelectionChanged) event. [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_SelectionChanged) event returns the index and selected carouselItem
 
 {% tabs %}
 

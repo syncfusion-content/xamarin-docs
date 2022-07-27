@@ -19,7 +19,7 @@ By default, the tab view control displays the title of each tab item. It can be 
 ![Image for DisplayMode](images/Display-Type/tabstyle01.png)
 
 
-The tab view can be changed by setting the `DisplayMode` property of `SfTabView`.
+The tab view can be changed by setting the [`DisplayMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_DisplayMode) property of [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html).
 
 {% tabs %}
 

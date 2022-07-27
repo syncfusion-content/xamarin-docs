@@ -11,7 +11,7 @@ documentation: ug
 
 ## TabItem Tapped in Xamarin Tabbed View (SfTabView)
 
-Whenever the TabItem is tapped, the `TabItemTapped` event will occur. Using this event, you can modify the selected Tab Item properties.
+Whenever the TabItem is tapped, the [`TabItemTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_TabItemTapped) event will occur. Using this event, you can modify the selected Tab Item properties.
 
 {% tabs %}
 
@@ -64,13 +64,13 @@ Note: Please refer to this [Link](https://www.syncfusion.com/kb/11562/how-to-tur
 
 ## SelectionChanging in Xamarin Tabbed View (SfTabView)
 
-The `SelectionChanging` event is used to notify, before the selection is going to change by swiping, tapping the tab header, and dynamically setting the `SelectedIndex` property of `SfTabView`.
+The [`SelectionChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_SelectionChanging) event is used to notify, before the selection is going to change by swiping, tapping the tab header, and dynamically setting the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_SelectedIndex) property of [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html).
 
 ### SelectionChanging event args
 
-`Index` - Gets the value of the index that will be selected.
+[`Index`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SelectionChangingEventArgs.html#Syncfusion_XForms_TabView_SelectionChangingEventArgs_Index) - Gets the value of the index that will be selected.
 
-`Cancel`- Gets or sets the bool value of the tab item that will be selected or not.
+[`Cancel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SelectionChangingEventArgs.html#Syncfusion_XForms_TabView_SelectionChangingEventArgs_Cancel)- Gets or sets the bool value of the tab item that will be selected or not.
 
 {% tabs %}
 
@@ -188,7 +188,7 @@ namespace TabView
 
 ## Selection Changed in Xamarin Tabbed View (SfTabView)
 
-The `SelectionChanged` event is used to notify when the selection is changed by swiping or dynamically setting the `SelectedIndex` property of `SfTabView`.
+The [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_SelectionChanged) event is used to notify when the selection is changed by swiping or dynamically setting the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_SelectedIndex) property of [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html).
 
 {% tabs %}
 

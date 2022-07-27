@@ -7,7 +7,7 @@ control: TimePicker
 documentation: ug
 ---
 
-# How to
+# How to section in Xamarin.Forms TimePicker
 
 ## How to show as a Dialog
 

@@ -13,7 +13,7 @@ The Signature Pad control supports to customize the stroke color and stroke widt
 
 ## Stroke color
 
-The color of the stroke drawn can be customized using the `StrokeColor` API.
+The color of the stroke drawn can be customized using the [`StrokeColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_StrokeColor) API.
 
 {% tabs %}
 
@@ -38,9 +38,9 @@ The color of the stroke drawn can be customized using the `StrokeColor` API.
 
 ## Stroke width
 
-The width of the stroke drawn can be customized by setting the `MinimumStrokeWidth` and `MaximumStrokeWidth` API. The `MinimumStrokeWidth` defines the minimum thickness of the stroke that can be drawn and the `MaximumStrokeWidth` defines the maximum thickness the stroke can draw based on the speed and impression we provide through gesture.
+The width of the stroke drawn can be customized by setting the [`MinimumStrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_MinimumStrokeWidth) and [`MaximumStrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_MaximumStrokeWidth) API. The [`MinimumStrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_MinimumStrokeWidth) defines the minimum thickness of the stroke that can be drawn and the [`MaximumStrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_MaximumStrokeWidth) defines the maximum thickness the stroke can draw based on the speed and impression we provide through gesture.
 
-N> The default value of `MinimumStrokeWidth` is 0.08 and `MaximumStrokeWidth` is 5.
+N> The default value of [`MinimumStrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_MinimumStrokeWidth) is 0.08 and [`MaximumStrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_MaximumStrokeWidth) is 5.
 
 {% tabs %}
 

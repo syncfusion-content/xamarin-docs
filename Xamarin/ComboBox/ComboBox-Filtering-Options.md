@@ -73,7 +73,7 @@ Content = layout;
 
 ## Filtering types
 
-The string comparison for filtering suggestions can be changed using the `SuggestionMode` property. The default filtering type is “StartsWith”, and it is case insensitive. The available filtering modes are,
+The string comparison for filtering suggestions can be changed using the [`SuggestionMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SuggestionMode) property. The default filtering type is “StartsWith”, and it is case insensitive. The available filtering modes are,
 
 * StartsWith
 
@@ -631,7 +631,7 @@ The combo box provides three different ways to display the filtered suggestions.
 
 * SuggestAppend - Both suggests and appends.
 
-The `ComboBoxMode` property is used to choose the suggestion display mode in SfComboBox control. The default value is Suggest.
+The [`ComboBoxMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ComboBoxMode) property is used to choose the suggestion display mode in SfComboBox control. The default value is Suggest.
 
 ## Suggesting choices in List
 

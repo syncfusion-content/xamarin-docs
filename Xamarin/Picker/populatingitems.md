@@ -16,7 +16,7 @@ This section explains the ways of populating items for [Xamarin Picker](https://
 
 Xamarin Picker control is bound to the external data source to display the data. It supports any collections that implements the `IEnumerable` interface.
 
-To bind the data source in picker, set the `SfPicker.ItemsSource` property as shown in the following code.
+To bind the data source in picker, set the [`SfPicker.ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ItemsSource) property as shown in the following code.
 
 {% tabs %}
 {% highlight xaml %}
@@ -211,7 +211,7 @@ Xamarin Picker control, both items text color and font can be selected and unsel
 
 ##### Text Color 
 
-Selected item's text color can be customized by setting `SfPicker.SelectedItemTextColor` property.
+Selected item's text color can be customized by setting [`SfPicker.SelectedItemTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_SelectedItemTextColor) property.
 {% tabs %}
 {% highlight xaml %}
 
@@ -238,7 +238,7 @@ This section explains about the customization of selected item's font.
 
 ###### 	FontFamily
 
-Selected item's text FontFamily can be customized by setting `SfPicker.SelectedItemFontFamily` property.
+Selected item's text FontFamily can be customized by setting [`SfPicker.SelectedItemFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_SelectedItemFontFamily) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -262,7 +262,7 @@ picker.SelectedItemFontFamily = "Arial";
 
 ###### 	FontSize
 
-Selected item's text FontSize can be customized by setting `SfPicker.SelectedItemFontSize` property.
+Selected item's text FontSize can be customized by setting [`SfPicker.SelectedItemFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_SelectedItemFontSize) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -286,7 +286,7 @@ picker.SelectedItemFontSize = 12;
 
 ###### 	FontAttribute
 
-Selected item's text FontAttribute can be customized by setting `SfPicker.SelectedItemFontAttribute` property.
+Selected item's text FontAttribute can be customized by setting [`SfPicker.SelectedItemFontAttribute`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_SelectedItemFontAttribute) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -312,7 +312,7 @@ picker.SelectedItemFontAttribute = FontAttributes.Bold;
 
 ##### Text Color
 
-Unselected item's text color can be customized by setting `SfPicker.UnSelectedItemTextColor` property.
+Unselected item's text color can be customized by setting [`SfPicker.UnSelectedItemTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_UnSelectedItemTextColor) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -340,7 +340,7 @@ This section explains about the customization of unselected item's font.
 
 ###### 	FontFamily
 
-Unselected item's text FontFamily can be customized by setting `SfPicker.UnSelectedItemFontFamily` property.
+Unselected item's text FontFamily can be customized by setting [`SfPicker.UnSelectedItemFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_UnSelectedItemFontFamily) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -364,7 +364,7 @@ picker.UnSelectedItemFontFamily = "Calibri";
 
 ###### 	FontSize
 
-Unselected item's text FontSize can be customized by setting `SfPicker.UnSelectedItemFontSize` property.
+Unselected item's text FontSize can be customized by setting [`SfPicker.UnSelectedItemFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_UnSelectedItemFontSize) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -388,7 +388,7 @@ picker.UnSelectedItemFontSize = 11;
 
 ###### 	FontAttribute
 
-Unselected item's text FontAttribute can be customized by setting `SfPicker.UnSelectedItemFontAttribute` property.
+Unselected item's text FontAttribute can be customized by setting [`SfPicker.UnSelectedItemFontAttribute`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_UnSelectedItemFontAttribute) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -412,7 +412,7 @@ picker.UnSelectedItemFontAttribute = FontAttributes.Italic;
 
 ## Adding custom view to items
 
-In picker control, the items can be customized with custom view of each item by hooking `SfPicker.OnPickerItemLoaded` event, and assign custom view in `PickerViewEventArgs.View` property to add the all the item with custom view.
+In picker control, the items can be customized with custom view of each item by hooking [`SfPicker.OnPickerItemLoaded`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_OnPickerItemLoaded) event, and assign custom view in [`PickerViewEventArgs.View`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.PickerViewEventArgs.html#Syncfusion_SfPicker_XForms_PickerViewEventArgs_View) property to add the all the item with custom view.
 
 {% tabs %}
 

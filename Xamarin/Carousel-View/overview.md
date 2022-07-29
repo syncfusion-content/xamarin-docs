@@ -16,6 +16,6 @@ It has been available in Xamarin.Forms,Xamarin.Android and Xamarin.iOS platforms
 
 ## Key Features:
 
-* `Offset` - Support to specify the space between the unselected items in SfCarousel.
-* `Rotation Angle` - Options to rotate all the items to a specified angle.
-* `Duration` - Support to specify the time taken to move an item to the selected item position.
+* [`Offset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_Offset) - Support to specify the space between the unselected items in SfCarousel.
+* [`Rotation Angle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_RotationAngle) - Options to rotate all the items to a specified angle.
+* [`Duration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_Duration) - Support to specify the time taken to move an item to the selected item position.

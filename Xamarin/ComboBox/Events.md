@@ -98,7 +98,7 @@ The [`DropDownOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Co
 
 ## DropDownClosing Event
 
-The `DropDownClosing` event occurs when the drop-down closes.
+The [`DropDownClosing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DropDownClosing) event occurs when the drop-down closes.
 
 ### DropDownClosing event args
 

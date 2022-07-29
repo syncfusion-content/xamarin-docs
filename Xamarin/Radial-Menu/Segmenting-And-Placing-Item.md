@@ -77,7 +77,7 @@ namespace RadialSample
 
 ## Custom
 
-The number of segments in the panel is determined using the `VisibleSegmentsCount` property. Since the segment count in all the hierarchical levels are same, radial menu items are arranged in any order based on the `SegmentIndex` property.
+The number of segments in the panel is determined using the [`VisibleSegmentsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenuItem_VisibleSegmentsCount) property. Since the segment count in all the hierarchical levels are same, radial menu items are arranged in any order based on the [`SegmentIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenuItem_SegmentIndex) property.
 
 {% tabs %}
 
@@ -138,7 +138,7 @@ namespace RadialSample
 
 ### VisibleSegmentsCount
 
-The `VisibleSegmentsCount` property is used to specify the number of segments available in circular panel. When children count is greater than the value given in the VisibleSegmentsCount property, the overflowing children are not arranged in the panel. When children count is lesser than the VisibleSegmentsCount property, then remaining segments are left free.
+The [`VisibleSegmentsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenuItem_VisibleSegmentsCount) property is used to specify the number of segments available in circular panel. When children count is greater than the value given in the VisibleSegmentsCount property, the overflowing children are not arranged in the panel. When children count is lesser than the VisibleSegmentsCount property, then remaining segments are left free.
 
 ![Image for before visible segment count](images/beforeVisbleSegment.png)
 
@@ -148,7 +148,7 @@ If number of item count is higher than VisibleItemCount, excessive items will no
 
 ### SegmentIndex
 
-`SegmentIndex` property is used to specify the index of the radial menu item in circular panel. Based on the index, the radial menu items are inserted in the segment. When the SegmentIndex is not specified for a RadialMenuItem the menu item is arranged in the next available free segment.
+[`SegmentIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenuItem_SegmentIndex) property is used to specify the index of the radial menu item in circular panel. Based on the index, the radial menu items are inserted in the segment. When the SegmentIndex is not specified for a RadialMenuItem the menu item is arranged in the next available free segment.
 
 ## Code snippet for VisibleSegmentCount and SegmentIndex
 

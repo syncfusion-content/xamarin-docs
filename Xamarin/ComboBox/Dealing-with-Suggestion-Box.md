@@ -15,13 +15,13 @@ Suggestion box is a drop-down list box, which displays the filtered suggestions 
  
 The drop-down that shows the filtered items will be placed automatically based on the available space and can also be customized using the [`SuggestionBoxPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html) property.
  
-`Top` - Drop-down will be placed above the text box.
+[`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html#Syncfusion_XForms_ComboBox_SuggestionBoxPlacement_Top) - Drop-down will be placed above the text box.
  
-`Bottom` - Drop-down will be placed below the text box.
+[`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html#Syncfusion_XForms_ComboBox_SuggestionBoxPlacement_Bottom) - Drop-down will be placed below the text box.
 
-`Auto` - Drop-down will be placed based on the available space either top or bottom of the text box.
+[`Auto`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html#Syncfusion_XForms_ComboBox_SuggestionBoxPlacement_Auto) - Drop-down will be placed based on the available space either top or bottom of the text box.
 
-`None` -  Drop-down will not be shown with the filtered items. 
+[`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html#Syncfusion_XForms_ComboBox_SuggestionBoxPlacement_None) -  Drop-down will not be shown with the filtered items. 
 
 {% tabs %}
 
@@ -136,7 +136,7 @@ Content = layout;
 
 ## Opening suggestion box on focus
 
-Suggestion box can be shown whenever the control receives focus using the `ShowSuggestionsOnFocus` property. Suggestion list is the complete list of data source.
+Suggestion box can be shown whenever the control receives focus using the [`ShowSuggestionsOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ShowSuggestionsOnFocus) property. Suggestion list is the complete list of data source.
 
 {% tabs %}
 
@@ -194,7 +194,7 @@ Content = layout;
 
 ## Delay opening suggestion box
 
-The `PopupDelay` property is used to delay the suggestion box opening process. It gets milliseconds as input in integer data type.
+The [`PopupDelay`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_PopupDelay) property is used to delay the suggestion box opening process. It gets milliseconds as input in integer data type.
 In this example, a time duration of 3 seconds is set to popup delay.
 
 {% tabs %}
@@ -246,7 +246,7 @@ Content = layout;
 
 ## Delay before searching algorithm starts
 
-The `SearchDelay` property is used to delay the searching algorithm process. It gets milliseconds as input in integer data type.
+The [`SearchDelay`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SearchDelay) property is used to delay the searching algorithm process. It gets milliseconds as input in integer data type.
 
 In this example, a time duration of 3 seconds is set to search delay.
 

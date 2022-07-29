@@ -221,7 +221,7 @@ button.BorderThickness = new Thickness (0,0,0,5);
 
 ### CornerRadius
 
-The `CornerRadius` property is used to customize the rounded edges in SfButton as demonstrated in the following code sample.
+The [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Border.SfBorder.html#Syncfusion_XForms_Border_SfBorder_CornerRadius) property is used to customize the rounded edges in SfButton as demonstrated in the following code sample.
 
 {% tabs %}
 {% highlight xaml %}
@@ -742,9 +742,9 @@ public class CommandDemoViewModel : INotifyPropertyChanged
 
 ## Shadow Effect
 
-The button control provides shadow effect support. To enable shadow effect, set the `HasShadow` property to true.
+The button control provides shadow effect support. To enable shadow effect, set the [`HasShadow`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Border.SfBorder.html#Syncfusion_XForms_Border_SfBorder_HasShadow) property to true.
 
-You can customize the color of shadow using the `ShadowColor` property. 
+You can customize the color of shadow using the [`ShadowColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Border.SfBorder.html#Syncfusion_XForms_Border_SfBorder_ShadowColor) property. 
 
 {% tabs %}
 

@@ -9,7 +9,7 @@ documentation : ug
 
 # Animation in Xamarin Carousel View (SfCarousel)
 
-The `Duration` property of the SfCarousel control is used to specify the time taken to move an item to the selected item position. The duration is specified in seconds.  The default value is 300 ms.
+The [`Duration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_Duration) property of the [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control is used to specify the time taken to move an item to the selected item position. The duration is specified in seconds.  The default value is 300 ms.
 
 {% tabs %}
 

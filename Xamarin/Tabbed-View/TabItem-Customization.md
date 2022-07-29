@@ -9,7 +9,7 @@ documentation: ug
 
 # TabView TabItem Customization in Xamarin Tabbed View (SfTabView)
 
-Tab items can be configured in tab view through the `Items` property of `SfTabView`, which holds the collection of `SfTabItem` through `TabItemsCollection`.
+Tab items can be configured in tab view through the [`Items`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_Items) property of [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html), which holds the collection of [`SfTabItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabItem.html) through [`TabItemsCollection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabItemCollection.html).
 
 {% tabs %}
 
@@ -94,7 +94,7 @@ namespace TabViewAutomationSample
 
 ##  Selection color for text and font icons
 
-The selected index can be differentiated by setting the `SelectionColor` property of `SfTabItem`.
+The selected index can be differentiated by setting the [`SelectionColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabItem.html#Syncfusion_XForms_TabView_SfTabItem_SelectionColor) property of [`SfTabItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabItem.html).
 
 {% tabs %}
 
@@ -589,7 +589,7 @@ You can refer this [link](https://github.com/SyncfusionExamples/tabview-font-sam
 
 ## ImageSource in Xamarin Tabbed View (SfTabView)
 
-The `ImageSource` property customizes the icon image of [Xamarin Tabbed View](https://www.syncfusion.com/xamarin-ui-controls/xamarin-tabbed-view) by adding a custom image.
+The [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabItem.html#Syncfusion_XForms_TabView_SfTabItem_ImageSource) property customizes the icon image of [Xamarin Tabbed View](https://www.syncfusion.com/xamarin-ui-controls/xamarin-tabbed-view) by adding a custom image.
 
 {% tabs %}
 

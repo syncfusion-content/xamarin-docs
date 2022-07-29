@@ -17,7 +17,7 @@ SfDatePicker allows customizing the header's background, text color, and fonts.
 
 ### Enable or disable header 
 
-SfDatePicker allows enabling or disabling the header section by setting the `SfDatePicker.ShowHeader` property to True or False. The default value of `SfDatePicker.ShowHeader` property is "True".
+SfDatePicker allows enabling or disabling the header section by setting the [`SfDatePicker.ShowHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowHeader) property to True or False. The default value of [`SfDatePicker.ShowHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowHeader) property is "True".
 
 {% tabs %}
 
@@ -65,7 +65,7 @@ namespace DatePickerSample
 
 ### Set header text
 
-SfDatePicker allows providing custom text to its header by setting the `SfDatePicker.HeaderText` property. The default value of `SfDatePicker.HeaderText` property is "Date Picker".
+SfDatePicker allows providing custom text to its header by setting the [`SfDatePicker.HeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_HeaderText) property. The default value of [`SfDatePicker.HeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_HeaderText) property is "Date Picker".
 
 {% tabs %}
 
@@ -113,7 +113,7 @@ namespace DatePickerSample
 
 ### Background
 
-Background color of the header can be customized by setting the `SfDatePicker.HeaderBackgroundColor` property.
+Background color of the header can be customized by setting the [`SfDatePicker.HeaderBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_HeaderBackgroundColor) property.
 
 {% tabs %}
 
@@ -161,7 +161,7 @@ namespace DatePickerSample
 
 ### Text color 
 
-Text color of the header can be customized by setting the `SfDatePicker.HeaderTextColor` property.
+Text color of the header can be customized by setting the [`SfDatePicker.HeaderTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_HeaderTextColor) property.
 
 {% tabs %}
 
@@ -213,7 +213,7 @@ This section explains the Font customization of header text.
 
 #### FontFamily
 
-FontFamily of the header text can be customized by setting the `SfDatePicker.HeaderFontFamily` property.
+FontFamily of the header text can be customized by setting the [`SfDatePicker.HeaderFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_HeaderFontFamily) property.
 
 {% tabs %}
 
@@ -261,7 +261,7 @@ namespace DatePickerSample
 
 #### FontSize
 
-FontSize of the header text can be customized by setting the `SfDatePicker.HeaderFontSize` property.
+FontSize of the header text can be customized by setting the [`SfDatePicker.HeaderFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_HeaderFontSize) property.
 
 {% tabs %}
 
@@ -309,7 +309,7 @@ namespace DatePickerSample
 
 #### FontAttribute
 
-FontAttribute of the header text can be customized by setting the `SfDatePicker.HeaderFontAttribute` property.
+FontAttribute of the header text can be customized by setting the [`SfDatePicker.HeaderFontAttribute`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_HeaderFontAttribute) property.
 
 {% tabs %}
 
@@ -412,7 +412,7 @@ SfDatePicker allows customizing the column header's background, text color, and 
 
 ### Enable or disable column header 
 
-SfDatePicker allows enabling or disabling the column header section by setting the `SfDatePicker.ShowColumnHeader` property to True or False. The default value of `SfDatePicker.ShowColumnHeader` property is "True".
+SfDatePicker allows enabling or disabling the column header section by setting the [`SfDatePicker.ShowColumnHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowColumnHeader) property to True or False. The default value of [`SfDatePicker.ShowColumnHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowColumnHeader) property is "True".
 
 {% tabs %}
 
@@ -460,7 +460,7 @@ namespace DatePickerSample
 
 ### Set custom column header 
 
-SfDatePicker allows providing custom text to its column header by setting the `SfDatePicker.DayHeaderText`, `SfDatePicker.MonthHeaderText`, and `SfDatePicker.YearHeaderText` properties. Default value of `SfDatePicker.DayHeaderText` property is "Day", `SfDatePicker.MonthHeaderText` is "Month", and `SfDatePicker.YearHeaderText` is "Year".
+SfDatePicker allows providing custom text to its column header by setting the [`SfDatePicker.DayHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_DayHeaderText), [`SfDatePicker.MonthHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_MonthHeaderText), and [`SfDatePicker.YearHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_YearHeaderText) properties. Default value of [`SfDatePicker.DayHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_DayHeaderText) property is "Day", [`SfDatePicker.MonthHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_MonthHeaderText) is "Month", and [`SfDatePicker.YearHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_YearHeaderText) is "Year".
 
 {% tabs %}
 
@@ -512,7 +512,7 @@ namespace DatePickerSample
 
 ### Background
 
-Background color of the column header can be customized by setting the `SfDatePicker.ColumnHeaderBackgroundColor` property.
+Background color of the column header can be customized by setting the [`SfDatePicker.ColumnHeaderBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ColumnHeaderBackgroundColor) property.
 
 {% tabs %}
 
@@ -560,7 +560,7 @@ namespace DatePickerSample
 
 ### Text color 
 
-Text color of the column header can be customized by setting the `SfDatePicker.ColumnHeaderTextColor` property.
+Text color of the column header can be customized by setting the [`SfDatePicker.ColumnHeaderTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ColumnHeaderTextColor) property.
 
 {% tabs %}
 
@@ -612,7 +612,7 @@ This section explains the Font customization of column header text.
 
 #### FontFamily
 
-FontFamily of the column header text can be customized by setting the `SfDatePicker.ColumnHeaderFontFamily` property.
+FontFamily of the column header text can be customized by setting the [`SfDatePicker.ColumnHeaderFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ColumnHeaderFontFamily) property.
 
 {% tabs %}
 
@@ -660,7 +660,7 @@ namespace DatePickerSample
 
 #### FontSize
 
-FontSize of the column header text can be customized by setting the `SfDatePicker.ColumnHeaderFontSize` property.
+FontSize of the column header text can be customized by setting the [`SfDatePicker.ColumnHeaderFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ColumnHeaderFontSize) property.
 
 {% tabs %}
 
@@ -708,7 +708,7 @@ namespace DatePickerSample
 
 #### FontAttribute
 
-FontAttribute of the column header text can be customized by setting the `SfDatePicker.ColumnHeaderFontAttribute` property.
+FontAttribute of the column header text can be customized by setting the [`SfDatePicker.ColumnHeaderFontAttribute`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ColumnHeaderFontAttribute) property.
 
 {% tabs %}
 
@@ -760,7 +760,7 @@ SfDatePicker allows customizing background, text color of the OK and Cancel butt
 
 ### Enable or disable footer 
 
-DatePicker allows enabling or disabling the footer section by setting the `SfDatePicker.ShowFooter` property to True or False. The default value of `SfDatePicker.ShowFooter` property is "False".
+DatePicker allows enabling or disabling the footer section by setting the [`SfDatePicker.ShowFooter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowFooter) property to True or False. The default value of [`SfDatePicker.ShowFooter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowFooter) property is "False".
 
 {% tabs %}
 
@@ -810,7 +810,7 @@ namespace DatePickerSample
 
 #### Background
 
-Background colors of the OK and Cancel buttons can be customized by setting the `SfDatePicker.OKButtonBackgroundColor` and `SfDatePicker.CancelButtonBackgroundColor` properties.
+Background colors of the OK and Cancel buttons can be customized by setting the [`SfDatePicker.OKButtonBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_OKButtonBackgroundColor) and [`SfDatePicker.CancelButtonBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_CancelButtonBackgroundColor)properties.
 
 {% tabs %}
 
@@ -861,7 +861,7 @@ namespace DatePickerSample
 
 #### Text-Color 
 
-Text colors of the OK and Cancel buttons can be customized by setting the `SfDatePicker.OKButtonTextColor` and `SfDatePicker.CancelButtonTextColor` properties.
+Text colors of the OK and Cancel buttons can be customized by setting the [`SfDatePicker.OKButtonTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_OKButtonTextColor) and [`SfDatePicker.CancelButtonTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_CancelButtonTextColor) properties.
 
 {% tabs %}
 
@@ -912,7 +912,7 @@ namespace DatePickerSample
 
 ### Perform validation with default validation button
 
-DatePicker allows performing validation based on the OK or Cancel button by using `SfDatePicker.OkCommand` and `SfDatePicker.CancelCommand`.
+DatePicker allows performing validation based on the OK or Cancel button by using [`SfDatePicker.OkCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_OkCommand) and [`SfDatePicker.CancelCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_CancelCommand).
 
 The following example shows how to use the OkCommand and the CancelCommand. When you click the OK button, the background color of the selected item will change to green. When you click the Cancel button, the background color of the selected item will change to red.
 
@@ -1064,7 +1064,7 @@ SfDatePicker allows customizing the SelectedItem's background, text color, and f
 
 ### Background
 
-The background color of the SelectedItem can be customized by setting the `SfDatePicker.SelectionBackgroundColor` property.
+The background color of the SelectedItem can be customized by setting the [`SfDatePicker.SelectionBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_SelectionBackgroundColor) property.
 
 {% tabs %}
 
@@ -1112,7 +1112,7 @@ namespace DatePickerSample
 
 ### Text color 
 
-Text color of the SelectedItem can be customized by setting the `SfDatePicker.SelectedItemTextColor` property.
+Text color of the SelectedItem can be customized by setting the [`SfDatePicker.SelectedItemTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_SelectedItemTextColor) property.
 
 {% tabs %}
 
@@ -1164,7 +1164,7 @@ This section explains the Font customization of SelectedItem text.
 
 #### FontFamily
 
-FontFamily of the SelectedItem text can be customized by setting the `SfDatePicker.SelectedItemFontFamily` property.
+FontFamily of the SelectedItem text can be customized by setting the [`SfDatePicker.SelectedItemFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_SelectedItemFontFamily) property.
 
 {% tabs %}
 
@@ -1212,7 +1212,7 @@ namespace DatePickerSample
 
 #### FontSize
 
-FontSize of the SelectedItem text can be customized by setting the `SfDatePicker.SelectedItemFontSize` property.
+FontSize of the SelectedItem text can be customized by setting the [`SfDatePicker.SelectedItemFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_SelectedItemFontSize) property.
 
 {% tabs %}
 
@@ -1260,7 +1260,7 @@ namespace DatePickerSample
 
 #### FontAttribute
 
-FontAttribute of the SelectedItem text can be customized by setting the `SfDatePicker.SelectedItemFontAttribute` property.
+FontAttribute of the SelectedItem text can be customized by setting the [`SfDatePicker.SelectedItemFontAttribute`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_SelectedItemFontAttribute) property.
 
 {% tabs %}
 
@@ -1312,7 +1312,7 @@ SfDatePicker allows customizing the Unselected item's text color and fonts.
 
 ### Text-Color 
 
-Text color of the Unselected item can be customized by setting the `SfDatePicker.UnselectedItemTextColor` property.
+Text color of the Unselected item can be customized by setting the [`SfDatePicker.UnselectedItemTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_UnselectedItemTextColor) property.
 
 {% tabs %}
 
@@ -1364,7 +1364,7 @@ This section explains about the Font customization of Unselected item text.
 
 #### FontFamily
 
-FontFamily of the Unselected item text can be customized by setting the `SfDatePicker.UnselectedItemFontFamily` property.
+FontFamily of the Unselected item text can be customized by setting the [`SfDatePicker.UnselectedItemFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_UnselectedItemFontFamily) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1411,7 +1411,7 @@ namespace DatePickerSample
 
 #### FontSize
 
-FontSize of the Unselected item text can be customized by setting the `SfDatePicker.UnselectedItemFontSize` property.
+FontSize of the Unselected item text can be customized by setting the [`SfDatePicker.UnselectedItemFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_UnselectedItemFontSize) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1458,7 +1458,7 @@ namespace DatePickerSample
 
 #### FontAttribute
 
-FontAttribute of the Unselected item text can be customized by setting the `SfDatePicker.UnselectedItemFontAttribute` property.
+FontAttribute of the Unselected item text can be customized by setting the [`SfDatePicker.UnselectedItemFontAttribute`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_UnselectedItemFontAttribute) property.
 
 {% tabs %}
 

@@ -15,8 +15,8 @@ Essential NavigationDrawer for Xamarin.Forms is a simpler component to create na
 
 ## Key Features
 
-* Pane positions – Supports pane position in all four directions such as Left, Right, Top and Bottom. 
+* [`Pane positions`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_Position) – Supports pane position in all four directions such as Left, Right, Top and Bottom. 
 
-* Animated transitions – Supports opening/closing of pane due to the transition SlideOnTop, Push and Reveal.
+* [`Animated transitions`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_Transition) – Supports opening/closing of pane due to the transition SlideOnTop, Push and Reveal.
 
-* Changeable swipe sensitivity – Flexible for the users to update touch threshold based on their device screen size.
+* [`Changeable swipe sensitivity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_TouchThreshold) – Flexible for the users to update touch threshold based on their device screen size.

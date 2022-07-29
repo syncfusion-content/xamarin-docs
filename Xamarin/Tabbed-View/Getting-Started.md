@@ -96,7 +96,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in `Release Mode`.
 
-The above problem can be resolved by initializing the SfTabView assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
+The above problem can be resolved by initializing the [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
 
 {% highlight C# %}
 
@@ -196,7 +196,7 @@ namespace GettingStarted
 
 ## Populating tab items
 
-Tab items can be configured in tab view through the `Items` property of `SfTabView`, which holds the collection of `SfTabItem` through `TabItemsCollection`.
+Tab items can be configured in tab view through the [`Items`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_Items) property of [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html), which holds the collection of [`SfTabItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabItem.html) through [`TabItemsCollection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabItemCollection.html).
 
 {% tabs %}
 
@@ -378,6 +378,6 @@ Similarly, content region for other tabs also can be configured.
 
 ## Swiping
 
-By default, both the vertical swiping for list view and horizontal swiping for tab view will work. If it is not required, it can be customized by using the `EnableSwiping` property of `SfTabView`.
+By default, both the vertical swiping for list view and horizontal swiping for tab view will work. If it is not required, it can be customized by using the [`EnableSwiping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_EnableSwiping) property of [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html).
 
 Note: Getting started sample can be downloaded from this [link](https://github.com/SyncfusionExamples/xamarin-forms-sftabview).

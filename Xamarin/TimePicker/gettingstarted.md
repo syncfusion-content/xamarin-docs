@@ -34,7 +34,7 @@ N> Install the same version of SfPicker NuGet in all the projects.
 
 **Method 2: Adding SfTimePicker reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfTimePicker control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfTimePicker assemblies manually from the installed location**
 
@@ -69,7 +69,7 @@ N> After adding the reference, an additional step is required for iOS and UWP pr
 
 ### Additional step for iOS
 
-To launch [`SfTimePicker`] in iOS, call the `SfTimePickerRenderer.Init()` in the FinishedLaunching overridden method of the `AppDelegate` class in iOS Project as demonstrated in the following code example.
+To launch [`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) in iOS, call the `SfTimePickerRenderer.Init()` in the FinishedLaunching overridden method of the `AppDelegate` class in iOS Project as demonstrated in the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -85,7 +85,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Additional step for UWP
 
-This step is required only if the application is deployed in Release mode with .NET native tool chain enabled. It is needed for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the [`SfTimePicker`] assembly at the `OnLaunched` overridden method of the `App` class in UWP project is the suggested work around. The following code example demonstrates initializing the [`SfTimePicker`] assembly.
+This step is required only if the application is deployed in Release mode with .NET native tool chain enabled. It is needed for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the [`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) assembly at the `OnLaunched` overridden method of the `App` class in UWP project is the suggested work around. The following code example demonstrates initializing the [`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) assembly.
 
 {% tabs %}
 {% highlight c# %}
@@ -106,7 +106,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ### Create a simple TimePicker
 
-The [`SfTimePicker`] control is configured entirely in C# code or in XAML markup. The following steps explain how to create a [`SfTimePIcker`] and configure its elements.
+The [`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) control is configured entirely in C# code or in XAML markup. The following steps explain how to create a [`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) and configure its elements.
 
 ### Adding namespace for referred assemblies
 
@@ -159,7 +159,7 @@ namespace TimePickerSample
 
 ### Set header to the TimePicker
 
-The SfTimePicker control allows you to the define header text by setting the `SfTimePicker.HeaderText`, and enable SfTimePicker header by setting the `SfTimePicker.ShowHeader` property to true. Default value of `SfTimePicker.ShowHeader` is "true".
+The [`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) control allows you to the define header text by setting the [`SfTimePicker.HeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_HeaderText), and enable SfTimePicker header by setting the [`SfTimePicker.ShowHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowHeader) property to true. Default value of [`SfTimePicker.ShowHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowHeader) is "true".
 
 {% tabs %}
 {% highlight xaml %}
@@ -204,7 +204,7 @@ namespace TimePickerSample
 
 ### Enable validation button in footer
 
-In SfTimePicker control, validation buttons (OK and Cancel) can be enabled by setting the `SfTimePicker.ShowFooter` property to true. Default value of `SfTimePicker.ShowFooter` property is "false".
+In [`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) control, validation buttons (OK and Cancel) can be enabled by setting the [`SfTimePicker.ShowFooter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowFooter) property to true. Default value of [`SfTimePicker.ShowFooter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowFooter) property is "false".
 
 {% tabs %}
 {% highlight xaml %}
@@ -248,7 +248,7 @@ namespace TimePickerSample
 
 ### PickerHeight and PickerWidth
 
-The SfTimePicker control allows you to the change the height and the width of the picker using the `SfTimePicker.PickerHeight` and `SfTimePicker.PickerWidth` properties.
+The [`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) control allows you to the change the height and the width of the picker using the [`SfTimePicker.PickerHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_PickerHeight) and [`SfTimePicker.PickerWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_PickerWidth) properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -330,7 +330,7 @@ namespace TimePickerSample
 
 ### Time
 
-The time can be selected by using the Time property. The default value of Time is current time.
+The time can be selected by using the [`Time`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_Time) property. The default value of [`Time`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_Time) is current time.
 
 {% tabs %}
 {% highlight xaml %}

@@ -9,15 +9,15 @@ documentation: ug
 
 # Customizations in Xamarin TimePicker (SfTimePicker)
 
-You can customize the header, column header, footer, selected item, and unselected item of the SfTimePicker.
+You can customize the header, column header, footer, selected item, and unselected item of the [`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html).
 
 ## Header customization
 
-SfTimePicker allows customizing the header's background, text color, and fonts.
+[`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) allows customizing the header's background, text color, and fonts.
 
 ### Enable or disable header 
 
-SfTimePicker allows enabling or disabling the header section by setting the `SfTimePicker.ShowHeader` property to true or false. The default value of the `SfTimePicker.ShowHeader` property is "true".
+[`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) allows enabling or disabling the header section by setting the [`SfTimePicker.ShowHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowHeader) property to true or false. The default value of the [`SfTimePicker.ShowHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowHeader) property is "true".
 
 {% tabs %}
 
@@ -65,7 +65,7 @@ namespace TimePickerSample
 
 ### Set header text
 
-SfTimePicker allows providing custom text to its header by setting the `SfTimePicker.HeaderText` property. The default value of the `SfTimePicker.HeaderText` property is "Time Picker".
+[`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) allows providing custom text to its header by setting the [`SfTimePicker.HeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_HeaderText) property. The default value of the [`SfTimePicker.HeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_HeaderText) property is "Time Picker".
 
 {% tabs %}
 
@@ -113,7 +113,7 @@ namespace TimePickerSample
 
 ### Background
 
-Background color of the header can be customized by setting the `SfTimePicker.HeaderBackgroundColor` property.
+Background color of the header can be customized by setting the [`SfTimePicker.HeaderBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_HeaderBackgroundColor) property.
 
 {% tabs %}
 
@@ -161,7 +161,7 @@ namespace TimePickerSample
 
 ### Text color 
 
-Text color of the header can be customized by setting the `SfTimePicker.HeaderTextColor` property.
+Text color of the header can be customized by setting the [`SfTimePicker.HeaderTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_HeaderTextColor) property.
 
 {% tabs %}
 
@@ -212,7 +212,7 @@ This section explains the Font customization of header text.
 
 #### FontFamily
 
-FontFamily of the header text can be customized by setting the `SfTimePicker.HeaderFontFamily` property.
+FontFamily of the header text can be customized by setting the [`SfTimePicker.HeaderFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_HeaderFontFamily) property.
 
 {% tabs %}
 
@@ -260,7 +260,7 @@ namespace TimePickerSample
 
 #### FontSize
 
-FontSize of the header text can be customized by setting the `SfTimePicker.HeaderFontSize` property.
+FontSize of the header text can be customized by setting the [`SfTimePicker.HeaderFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_HeaderFontSize) property.
 
 {% tabs %}
 
@@ -308,7 +308,7 @@ namespace TimePickerSample
 
 #### FontAttribute
 
-FontAttribute of the header text can be customized by setting the `SfTimePicker.HeaderFontAttribute` property.
+FontAttribute of the header text can be customized by setting the [`SfTimePicker.HeaderFontAttribute`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_HeaderFontAttribute) property.
 
 {% tabs %}
 
@@ -407,11 +407,11 @@ namespace Sample
 
 ## Column header customization
 
-SfTimePicker allows customizing the column header's background, text color, and fonts.
+[`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) allows customizing the column header's background, text color, and fonts.
 
 ### Enable or disable column header 
 
-SfTimePicker allows enabling or disabling the column header section by setting the `SfTimePicker.ShowColumnHeader` property to true or false. The default value of the `SfTimePicker.ShowColumnHeader` property is "true".
+[`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) allows enabling or disabling the column header section by setting the [`SfTimePicker.ShowColumnHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowColumnHeader) property to true or false. The default value of the [`SfTimePicker.ShowColumnHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowColumnHeader) property is "true".
 
 {% tabs %}
 
@@ -459,7 +459,7 @@ namespace TimePickerSample
 
 ### Set custom column header 
 
-SfTimePicker allows providing custom text to its column header by setting the `SfTimePicker.HourHeaderText`, `SfTimePicker.MinutesHeaderText`, and `SfTimePicker.SecondsHeaderText` properties. The default value of the `SfTimePicker.HourHeaderText` property is "Hour", `SfTimePicker.MinutesHeaderText` is "Minutes", and `SfTimePicker.SecondsHeaderText` is "Seconds".
+[`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) allows providing custom text to its column header by setting the [`SfTimePicker.HourHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_HourHeaderText), [`SfTimePicker.MinutesHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_MinutesHeaderText), and [`SfTimePicker.SecondsHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_SecondsHeaderText) properties. The default value of the [`SfTimePicker.HourHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_HourHeaderText) property is "Hour", [`SfTimePicker.MinutesHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_MinutesHeaderText) is "Minutes", and  [`SfTimePicker.SecondsHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_SecondsHeaderText) is "Seconds".
 
 {% tabs %}
 
@@ -511,7 +511,7 @@ namespace TimePickerSample
 
 ### Background
 
-Background color of the column header can be customized by setting the `SfTimePicker.ColumnHeaderBackgroundColor` property.
+Background color of the column header can be customized by setting the [`SfTimePicker.ColumnHeaderBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ColumnHeaderBackgroundColor) property.
 
 {% tabs %}
 
@@ -559,7 +559,7 @@ namespace TimePickerSample
 
 ### Text color 
 
-Text color of the column header can be customized by setting the `SfTimePicker.ColumnHeaderTextColor` property.
+Text color of the column header can be customized by setting the [`SfTimePicker.ColumnHeaderTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ColumnHeaderTextColor) property.
 
 {% tabs %}
 
@@ -611,7 +611,7 @@ This section explains the Font customization of the column header text.
 
 #### FontFamily
 
-FontFamily of the column header text can be customized by setting the `SfTimePicker.ColumnHeaderFontFamily` property.
+FontFamily of the column header text can be customized by setting the [`SfTimePicker.ColumnHeaderFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ColumnHeaderFontFamily) property.
 
 {% tabs %}
 
@@ -659,7 +659,7 @@ namespace TimePickerSample
 
 #### FontSize
 
-FontSize of the column header text can be customized by setting the `SfTimePicker.ColumnHeaderFontSize` property.
+FontSize of the column header text can be customized by setting the [`SfTimePicker.ColumnHeaderFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ColumnHeaderFontSize) property.
 
 {% tabs %}
 
@@ -707,7 +707,7 @@ namespace TimePickerSample
 
 #### FontAttribute
 
-FontAttribute of the column header text can be customized by setting the `SfTimePicker.ColumnHeaderFontAttribute` property.
+FontAttribute of the column header text can be customized by setting the [`SfTimePicker.ColumnHeaderFontAttribute`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ColumnHeaderFontAttribute) property.
 
 {% tabs %}
 
@@ -755,11 +755,11 @@ namespace TimePickerSample
 
 ## Footer customization
 
-SfTimePicker allows customizing background and text color of the OK and Cancel buttons of the footer.
+[`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) allows customizing background and text color of the OK and Cancel buttons of the footer.
 
 ### Enable or disable footer 
 
-TimePicker allows enabling or disabling the footer section by setting the `SfTimePicker.ShowFooter` property to true or false. The default value of `SfTimePicker.ShowFooter` property is "false".
+TimePicker allows enabling or disabling the footer section by setting the [`SfTimePicker.ShowFooter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowFooter) property to true or false. The default value of [`SfTimePicker.ShowFooter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowFooter) property is "false".
 
 {% tabs %}
 
@@ -809,7 +809,7 @@ namespace TimePickerSample
 
 #### Background
 
-Background colors of the OK and Cancel buttons can be customized by setting the `SfTimePicker.OKButtonBackgroundColor` and `SfTimePicker.CancelButtonBackgroundColor` properties.
+Background colors of the OK and Cancel buttons can be customized by setting the [`SfTimePicker.OKButtonBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_OKButtonBackgroundColor) and [`SfTimePicker.CancelButtonBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_CancelButtonBackgroundColor) properties.
 
 {% tabs %}
 
@@ -860,7 +860,7 @@ namespace TimePickerSample
 
 #### Text-Color 
 
-Text colors of the OK and Cancel buttons can be customized by setting the `SfTimePicker.OKButtonTextColor` and `SfTimePicker.CancelButtonTextColor` properties.
+Text colors of the OK and Cancel buttons can be customized by setting the [`SfTimePicker.OKButtonTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_OKButtonTextColor) and [`SfTimePicker.CancelButtonTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_CancelButtonTextColor) properties.
 
 {% tabs %}
 
@@ -911,9 +911,9 @@ namespace TimePickerSample
 
 ### Perform validation with default validation button
 
-TimePicker allows performing validation based on OK or Cancel button by using `SfTimePicker.OkCommand` and `SfTimePicker.CancelCommand`.
+TimePicker allows performing validation based on OK or Cancel button by using [`SfTimePicker.OkCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_OkCommand) and [`SfTimePicker.CancelCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_CancelCommand).
 
-The following example shows how to use the OkCommand and the CancelCommand. When you click the OK button, the background color of the selected item will change to green. When you click the Cancel button, the background color of the selected item will change to red.
+The following example shows how to use the [`OkCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_OkCommand) and the [`CancelCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_CancelCommand). When you click the OK button, the background color of the selected item will change to green. When you click the Cancel button, the background color of the selected item will change to red.
 
 {% tabs %}
 
@@ -1060,11 +1060,11 @@ namespace Sample
 
 ## Selected item customization
 
-SfTimePicker allows customizing the SelectedItems's background, text color, and fonts.
+[`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) allows customizing the SelectedItems's background, text color, and fonts.
 
 ### Background
 
-Background color of the SelectedItem can be customized by setting the `SfTimePicker.SelectionBackgroundColor` property.
+Background color of the SelectedItem can be customized by setting the [`SfTimePicker.SelectionBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_SelectionBackgroundColor) property.
 
 {% tabs %}
 
@@ -1112,7 +1112,7 @@ namespace TimePickerSample
 
 ### Text-Color 
 
-Text color of the SelectedItem can be customized by setting the `SfTimePicker.SelectedItemTextColor` property.
+Text color of the SelectedItem can be customized by setting the [`SfTimePicker.SelectedItemTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_SelectedItemTextColor) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1162,7 +1162,7 @@ This section explains about the Font customization of SelectedItem text.
 
 #### FontFamily
 
-FontFamily of the SelectedItem text can be customized by setting the `SfTimePicker.SelectedItemFontFamily` property.
+FontFamily of the SelectedItem text can be customized by setting the [`SfTimePicker.SelectedItemFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_SelectedItemFontFamily) property.
 
 {% tabs %}
 
@@ -1210,7 +1210,7 @@ namespace TimePickerSample
 
 #### FontSize
 
-FontSize of the SelectedItem text can be customized by setting the `SfTimePicker.SelectedItemFontSize` property.
+FontSize of the SelectedItem text can be customized by setting the [`SfTimePicker.SelectedItemFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_SelectedItemFontSize) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1257,7 +1257,7 @@ namespace TimePickerSample
 
 #### FontAttribute
 
-FontAttribute of the SelectedItem text can be customized by setting the `SfTimePicker.SelectedItemFontAttribute` property.
+FontAttribute of the SelectedItem text can be customized by setting the [`SfTimePicker.SelectedItemFontAttribute`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_SelectedItemFontAttribute) property.
 
 {% tabs %}
 
@@ -1309,7 +1309,7 @@ SfTimePicker allows customizing the Unselected item's text color, and fonts.
 
 ### Text-Color 
 
-Text color of the unselected item can be customized by setting the `SfTimePicker.UnselectedItemTextColor` property.
+Text color of the unselected item can be customized by setting the [`SfTimePicker.UnselectedItemTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_UnselectedItemTextColor) property.
 
 {% tabs %}
 
@@ -1361,7 +1361,7 @@ This section explains about the Font customization of unselected item text.
 
 #### FontFamily
 
-FontFamily of the unselected item text can be customized by setting the `SfTimePicker.UnselectedItemFontFamily` property.
+FontFamily of the unselected item text can be customized by setting the [`SfTimePicker.UnselectedItemFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_UnselectedItemFontFamily) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1408,7 +1408,7 @@ namespace TimePickerSample
 
 #### FontSize
 
-FontSize of the unselected item text can be customized by setting `SfTimePicker.UnselectedItemFontSize` property.
+FontSize of the unselected item text can be customized by setting [`SfTimePicker.UnselectedItemFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_UnselectedItemFontSize) property.
 
 {% tabs %}
 
@@ -1456,7 +1456,7 @@ namespace TimePickerSample
 
 #### FontAttribute
 
-FontAttribute of the unselected item text can be customized by setting the `SfTimePicker.UnselectedItemFontAttribute` property.
+FontAttribute of the unselected item text can be customized by setting the [`SfTimePicker.UnselectedItemFontAttribute`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_UnselectedItemFontAttribute) property.
 
 {% tabs %}
 

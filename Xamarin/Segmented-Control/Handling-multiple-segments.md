@@ -13,7 +13,7 @@ The segmented control handles segmented items with space distributed for the ite
 
 ## Visible segment counts
 
-The segmented control displays items for view based on the count that is given for `VisibleSegmentCount`. 
+The segmented control displays items for view based on the count that is given for [`VisibleSegmentCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_VisibleSegmentsCount). 
 
 {% tabs %}
 
@@ -73,7 +73,7 @@ this.Content = segmentedControl;
 
 ## Segment width
 
-Users can use the `SegmentWidth` property to display the segmented items within the given width instead `VisibleSegmentCount`.
+Users can use the [`SegmentWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SegmentWidth) property to display the segmented items within the given width instead [`VisibleSegmentCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_VisibleSegmentsCount).
 
 {% tabs %}
 

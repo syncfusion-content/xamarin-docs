@@ -7,6 +7,6 @@ control : SfRangeSlider
 documentation : ug
 ---
 
-## AutomationId
+# Accessibility in Xamarin Range Slider
 
 `SfRangeSlider` does not have support for `AutomationId` to access the thumb along track. Instead, you can change the `RangeStart`, `RangeEnd` using the co-ordinates and `Value` with the button click event with its `AutomationId`.

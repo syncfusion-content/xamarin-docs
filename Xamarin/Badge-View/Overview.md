@@ -9,7 +9,7 @@ documentation: ug
 
 ---
 
-# Overview
+# Overview of Xamarin.Forms SfBadgeView
 
 Badges are used to notify users of new or unread messages, notifications, or the status of something.
 

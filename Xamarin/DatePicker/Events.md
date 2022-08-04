@@ -9,25 +9,25 @@ documentation: ug
 
 # Events in Xamarin DatePicker (SfDatePicker)
 
-Three events are used when the `SfDatePicker` is in Dialog mode.
+Three events are used when the [`SfDatePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html) is in [`Dialog`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerMode.html#Syncfusion_XForms_Pickers_PickerMode_Dialog) mode.
 
- * Opened
- * Closing
- * Closed
+ * [`Opened`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_Opened)
+ * [`Closing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_Closing)
+ * [`Closed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_Closed)
 
 ## Opened event
 
-The `Opened` event occurs when the DatePicker is opened. 
+The [`Opened`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_Opened) event occurs when the DatePicker is opened. 
 
 ## Closing event 
 
-The `Closing` event occurs when the DatePicker closes.
+The [`Closing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_Closing) event occurs when the DatePicker closes.
 
 Drop-down close can be restricted by setting `e.cancel` to true.
 
 ## Closed event
 
-The `Closed` event was triggered, after the DatePicker was closed.
+The [`Closed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_Closed) event was triggered, after the DatePicker was closed.
 
 {% tabs %}
 

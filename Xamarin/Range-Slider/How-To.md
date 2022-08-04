@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Perform an Action while Selecting a Value?
 
-ValueChanging event will be triggered when value is changed with single thumb. ValueEventArgs has RangeSlider and RangeValue of the control.
+[`ValueChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ValueChanging) event will be triggered when value is changed with single thumb. [`ValueEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueEventArgs.html) has [`RangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueEventArgs.html#Syncfusion_SfRangeSlider_XForms_ValueEventArgs_RangeSlider) and [`RangeValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueEventArgs.html#Syncfusion_SfRangeSlider_XForms_ValueEventArgs_Value) of the control.
 
 <table>
 <tr>
@@ -42,7 +42,7 @@ ValueChanging event will be triggered when value is changed with single thumb. V
 
 ## How to Perform an Action when the Range Get Changing?
 
-RangeChanging event will be triggered when either RangeStart or RangeEnd values are changed. RangeEventArgs has RangeStart and RangeEnd value of SfRangeSlider.
+[`RangeChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_RangeChanging) event will be triggered when either [`RangeStart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_RangeStart) or [`RangeEnd`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_RangeEnd) values are changed. [`RangeEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.RangeEventArgs.html) has [`RangeStart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_RangeStart) and [`RangeEnd`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_RangeEnd) value of [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html).
 
 N> `ShowRange` value must be true.
 <table>
@@ -79,7 +79,7 @@ N> `ShowRange` value must be true.
 
 ## How to get notifications when a thumb drag is started and completed?
 
-The `DragStarted` event is raised when a thumb is dragged. After the thumb releases the pointer capture, the `DragCompleted` event is raised. The `IsStartThumb` property of the `DragThumbEventArgs` returns a boolean value, which indicates the thumb used for performing drag operations.
+The [`DragStarted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_DragStarted) event is raised when a thumb is dragged. After the thumb releases the pointer capture, the [`DragCompleted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_DragCompleted) event is raised. The [`IsStartThumb`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.DragThumbEventArgs.html#Syncfusion_SfRangeSlider_XForms_DragThumbEventArgs_IsStartThumb) property of the [`DragThumbEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.DragThumbEventArgs.html) returns a boolean value, which indicates the thumb used for performing drag operations.
 
 <table>
 <tr>
@@ -110,9 +110,9 @@ The `DragStarted` event is raised when a thumb is dragged. After the thumb relea
 
 ## How to trigger the ThumbTouchDown event?
 
-The `ThumbTouchDown` event occurs when touching the thumb. The argument contains the state of the thumb.
+The [`ThumbTouchDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ThumbTouchDown) event occurs when touching the thumb. The argument contains the state of the thumb.
 
-`IsStartThumb` - Gets the state whether thumb touch down position is start or end. If the thumb touch down position is start, then `IsStartThumb` state is true. If it's end, then `IsStartThumb` state is false. It is a read only property.
+[`IsStartThumb`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.DragThumbEventArgs.html#Syncfusion_SfRangeSlider_XForms_DragThumbEventArgs_IsStartThumb) - Gets the state whether thumb touch down position is start or end. If the thumb touch down position is start, then [`IsStartThumb`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.DragThumbEventArgs.html#Syncfusion_SfRangeSlider_XForms_DragThumbEventArgs_IsStartThumb) state is true. If it's end, then [`IsStartThumb`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.DragThumbEventArgs.html#Syncfusion_SfRangeSlider_XForms_DragThumbEventArgs_IsStartThumb) state is false. It is a read only property.
 
 {% highlight c# %}
         private void Rangeslider_ThumbTouchDown(object sender, Syncfusion.SfRangeSlider.XForms.DragThumbEventArgs e)
@@ -123,7 +123,7 @@ The `ThumbTouchDown` event occurs when touching the thumb. The argument contains
 
 ## How to trigger the ThumbTouchUp event?
 
-`IsStartThumb` - Gets the state whether thumb touch up position is start or end. If the thumb touch up position is start, then `IsStartThumb` state is true. If it's end, then IsStartThumb state is false. It is a read only property.
+[`IsStartThumb`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.DragThumbEventArgs.html#Syncfusion_SfRangeSlider_XForms_DragThumbEventArgs_IsStartThumb) - Gets the state whether thumb touch up position is start or end. If the thumb touch up position is start, then [`IsStartThumb`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.DragThumbEventArgs.html#Syncfusion_SfRangeSlider_XForms_DragThumbEventArgs_IsStartThumb) state is true. If it's end, then [`IsStartThumb`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.DragThumbEventArgs.html#Syncfusion_SfRangeSlider_XForms_DragThumbEventArgs_IsStartThumb) state is false. It is a read only property.
 
 {% highlight c# %}
         private void Rangeslider_ThumbTouchUp(object sender, Syncfusion.SfRangeSlider.XForms.DragThumbEventArgs e)
@@ -132,4 +132,4 @@ The `ThumbTouchDown` event occurs when touching the thumb. The argument contains
         }
 {% endhighlight %}
 
-N> `ThumbTouchDown` and `ThumbTouchUp` events applicable only for Android, iOS platform and not for UWP.
+N> [`ThumbTouchDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ThumbTouchDown) and [`ThumbTouchUp`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ThumbTouchUp) events applicable only for Android, iOS platform and not for UWP.

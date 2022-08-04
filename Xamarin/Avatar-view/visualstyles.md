@@ -10,11 +10,11 @@ documentation: ug
 # Visual Style in Xamarin Avatar View(SfAvatarView) 
 
 ## Visual styles in Xamarin Avatar View(SfAvatarView)
-The `SfAvatarView` control supports customization using the following built-in visual styles:
+The  [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control supports customization using the following built-in visual styles:
 
-* Custom
-* Circle
-* Square
+* [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.AvatarShape.html#Syncfusion_XForms_AvatarView_AvatarShape_Custom)
+* [`Circle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.AvatarShape.html#Syncfusion_XForms_AvatarView_AvatarShape_Circle)
+* [`Square`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.AvatarShape.html#Syncfusion_XForms_AvatarView_AvatarShape_Square)
 
 ## Custom
 
@@ -24,7 +24,7 @@ N> The default visual type is custom.
 
 ## Circle
 
-You can directly set value to the circle in the `SfAvatarView` using the following styles:
+You can directly set value to the circle in the [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) using the following styles:
 
 * ExtraLargeCircle
 * LargeCircle
@@ -210,7 +210,7 @@ The following code sample demonstrates how to define visual style of circle Avat
 
 ## Square
 
-You can directly set value to the square in the `SfAvatarView` using the following styles:
+You can directly set value to the square in the [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) using the following styles:
 
 * ExtraLargeSquare
 * LargeSquare

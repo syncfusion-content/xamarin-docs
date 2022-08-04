@@ -11,15 +11,15 @@ documentation: ug
 
 ## Customization in Xamarin Avatar View(SfAvatarView)
 
-The SfAvatarView control provides options to customize the color and size. The control can be customized using the following properties:
+The [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control provides options to customize the color and size. The control can be customized using the following properties:
 
 ## Colors
 
-Color in the SfAvatarView can be customized by the border color, the default background color, and automatic background color.
+Color in the [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) can be customized by the border color, the default background color, and automatic background color.
 
 ### Border color
 
-The border color is used for setting color to the border of SfAvatarView using the `BorderColor` property.
+The border color is used for setting color to the border of [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) using the [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Border.SfBorder.html#Syncfusion_XForms_Border_SfBorder_BorderColor) property.
 
 {% tabs %}
 
@@ -60,7 +60,7 @@ The border color is used for setting color to the border of SfAvatarView using t
 
 ### Default background color
 
-The background color for the SfAvatarView control can be set using the `AvatarColorMode` property. When the `AvatarColorMode` property is set to default, it displays the background color set in the `BackgroundColor` property.
+The background color for the [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control can be set using the [`AvatarColorMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_AvatarColorMode) property. When the [`AvatarColorMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_AvatarColorMode) property is set to default, it displays the background color set in the [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_BackgroundColor) property.
 
 {% tabs %}
 
@@ -106,14 +106,14 @@ The background color for the SfAvatarView control can be set using the `AvatarCo
 
 ### Automatic background color
 
-The `SfAvatarView` control allows automatic background color while initializing. It contains the following properties:
+The [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control allows automatic background color while initializing. It contains the following properties:
 
-* `DarkBackground`: Shows a dark color for the initials and background color.
-* `LightBackground`: Shows a light color for the initials and background color.
+* [`DarkBackground`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.AvatarColorMode.html#Syncfusion_XForms_AvatarView_AvatarColorMode_DarkBackground): Shows a dark color for the initials and background color.
+* [`LightBackground`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.AvatarColorMode.html#Syncfusion_XForms_AvatarView_AvatarColorMode_LightBackground): Shows a light color for the initials and background color.
 
 #### Dark color
 
-The dark background color can be set using `DarkBackground` in the `AvatarColorMode` property.
+The dark background color can be set using [`DarkBackground`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.AvatarColorMode.html#Syncfusion_XForms_AvatarView_AvatarColorMode_DarkBackground) in the [`AvatarColorMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_AvatarColorMode) property.
 
 {% tabs %}
 
@@ -160,7 +160,7 @@ The dark background color can be set using `DarkBackground` in the `AvatarColorM
 
 #### Light color
 
-The light background color can be set using `LightBackground` in the `AvatarColorMode` property.
+The light background color can be set using [`LightBackground`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.AvatarColorMode.html#Syncfusion_XForms_AvatarView_AvatarColorMode_LightBackground) in the [`AvatarColorMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_AvatarColorMode) property.
 
 {% tabs %}
 
@@ -205,7 +205,7 @@ The light background color can be set using `LightBackground` in the `AvatarColo
 
 ### Gradients
 
-You can also specify a range of colors using `BackgroundGradient` as demonstrated in the following code example.
+You can also specify a range of colors using [`BackgroundGradient`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_BackgroundGradient) as demonstrated in the following code example.
 
 {% tabs %}
 
@@ -265,23 +265,23 @@ You can also specify a range of colors using `BackgroundGradient` as demonstrate
 
 ![SfAvatarView conrol with gradient](images/Gradient_SfAvatarView.png)
 
-N> Here, the `BackgroundGradient` is a type of `SfGradientBrush`, so you can apply `SfLinearGradientBrush` on it. This `SfLinearGradientBrush` is available in [`Syncfusion.Xamarin.Core`](https://www.nuget.org/packages/Syncfusion.Xamarin.Core) from [`nuget.org`](https://www.nuget.org/). To know more about gradient view, refer to this [documentation](https://help.syncfusion.com/xamarin/sfgradientview/getting-started).
+N> Here, the [`BackgroundGradient`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_BackgroundGradient) is a type of [`SfGradientBrush`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Graphics.SfGradientBrush.html), so you can apply [`SfLinearGradientBrush`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Graphics.SfLinearGradientBrush.html) on it. This [`SfLinearGradientBrush`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Graphics.SfLinearGradientBrush.html) is available in [`Syncfusion.Xamarin.Core`](https://www.nuget.org/packages/Syncfusion.Xamarin.Core) from [`nuget.org`](https://www.nuget.org/). To know more about gradient view, refer to this [documentation](https://help.syncfusion.com/xamarin/sfgradientview/getting-started).
 
 ## Sizing
 
-In the `SfAvatarView` control, size of the view can be controlled using width, height, border width, and corner radius.
+In the [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control, size of the view can be controlled using width, height, border width, and corner radius.
 
 ### Width
 
-You can customize the width of the avatar view using the `WidthRequest` property.
+You can customize the width of the avatar view using the [`WidthRequest`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_WidthRequest) property.
 
 ### Height
 
-You can customize the height of the avatar view using the `HeightRequest` property.
+You can customize the height of the avatar view using the [`HeightRequest`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_HeightRequest) property.
 
 ### Border width
 
-You can customize the thickness of the avatar view using the `BorderWidth` property.
+You can customize the thickness of the avatar view using the [`BorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Border.SfBorder.html#Syncfusion_XForms_Border_SfBorder_BorderWidth) property.
 
 {% tabs %}
 
@@ -324,7 +324,7 @@ You can customize the thickness of the avatar view using the `BorderWidth` prope
 
 ### Corner radius
 
-You can customize the corner radius of the avatar view using the `CornerRadius` property.
+You can customize the corner radius of the avatar view using the [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_CornerRadius) property.
 
 {% tabs %}
 

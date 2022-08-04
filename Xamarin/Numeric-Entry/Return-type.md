@@ -48,7 +48,7 @@ The [`ReturnCommandParameter`](https://help.syncfusion.com/cr/xamarin/Syncfusion
     <local:ViewModel />
  </ContentPage.BindingContext>
 
-	<syncfusion:SfNumericTextBox ReturnType="Next" Value="123" ReturnCommand="{Binding CommandProperty}" />
+	<syncfusion:SfNumericTextBox ReturnType="Next" Value="123" ReturnCommand="{Binding CommandProperty}" ReturnCommandParameter="{x:Reference NumericTextBox}" />
 	
 {% endhighlight %}
 
@@ -60,20 +60,12 @@ The [`ReturnCommandParameter`](https://help.syncfusion.com/cr/xamarin/Syncfusion
         public ICommand CommandProperty { protected set; get; }
         public ViewModel()
         {
-            CommandProperty = new Command(
-                execute: () =>
-                {
-                    OnSubmit();
-                },
-                canExecute: () =>
-                {
-                    return true;
-                });
+            CommandProperty = new Command(ReturnButtonClicked);
         }
         
-        private void OnSubmit()
+        private void ReturnButtonClicked(object obj)
         {
-
+            var numericTextBox = obj as SfNumericTextBox;
         }
     }
 

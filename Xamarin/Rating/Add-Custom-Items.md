@@ -11,13 +11,13 @@ documentation: ug
 
 # Custom View in Xamarin Rating (SfRating)
 
-SfRating Items control provides support to add custom views.
+[`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) Items control provides support to add custom views.
 
 N> To use custom views in Xamarin.Forms UWP platform, you need to set ItemCount value.
 
 ## Add SfRating items
 
-To customize the view of rating items, create and set custom view as `SelectedView` and `UnSelectedView` of SfRatingItem. Refer to the following code snippet to create a custom view.
+To customize the view of rating items, create and set custom view as [`SelectedView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html#Syncfusion_SfRating_XForms_SfRatingItem_SelectedView) and [`UnSelectedView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html#Syncfusion_SfRating_XForms_SfRatingItem_UnSelectedView) of [`SfRatingItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html). Refer to the following code snippet to create a custom view.
 
 {% tabs %}
 
@@ -106,7 +106,7 @@ N> SfRatingItem keeps both selected and unselected view respectively.
 
 ## Enable custom items
 
-When the `EnableCustomItems` property is enabled, the custom items added in the rating items will be displayed.
+When the [`EnableCustomView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_EnableCustomView) property is enabled, the custom items added in the rating items will be displayed.
 
 {% tabs %}
 

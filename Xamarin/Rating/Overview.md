@@ -16,7 +16,7 @@ The Essential Xamarin Rating control provides the number of stars that represent
 
 ## Key Features
 
-* `Precision`: Options to decide the accuracy level of rating.
+* [`Precision`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_Precision): Options to decide the accuracy level of rating.
 
-* `Item Count`: Support to determine the number of Rating items to be displayed.
+* [`ItemCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_ItemCount): Support to determine the number of Rating items to be displayed.
 

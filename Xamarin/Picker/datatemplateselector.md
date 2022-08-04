@@ -10,7 +10,7 @@ documentation: ug
 
 # DataTemplateSelector in Xamarin Picker (SfPicker)
 
-SfPicker supports DataTemplateSelector which you can choose a DataTemplate based on the data object.
+[`SfPicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html) supports DataTemplateSelector which you can choose a DataTemplate based on the data object.
 
 {% tabs %}
 

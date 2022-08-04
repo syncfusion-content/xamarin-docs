@@ -9,11 +9,11 @@ documentation: ug
 
 # Looping in Xamarin Picker (SfPicker)
 
-The Looping support is used to automatically navigate the first item to repeat the list of items after reached the last item. Each forward iteration is followed by a backward iteration in the picker control. This can be achieved by `EnableLooping` property.
+The Looping support is used to automatically navigate the first item to repeat the list of items after reached the last item. Each forward iteration is followed by a backward iteration in the picker control. This can be achieved by [`EnableLooping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_EnableLooping) property.
 
 ## EnableLooping
 
-The looping support is achieved by setting the `EnableLooping` property to true.
+The looping support is achieved by setting the [`EnableLooping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_EnableLooping) property to true.
 
 {% tabs %}
 
@@ -64,7 +64,7 @@ You can find the complete Looping sample from this [link.](https://github.com/Sy
 
 ## How to restrict Looping in a particular column of the picker
 
-The looping support can be restricted in a particular column of the picker by setting the `EnableLooping` of ColumnLoaded event argument to false.
+The looping support can be restricted in a particular column of the picker by setting the[`EnableLooping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_EnableLooping) of ColumnLoaded event argument to false.
 
 {% tabs %}
 

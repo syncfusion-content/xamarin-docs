@@ -304,6 +304,31 @@ private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs arg
 {% endhighlight %}
 {% endtabs %}
 
+**Density Calculation**
+
+The following code snippets shows how to calculate the unit to get same size  for SfDiagram in Android and iOS platform.
+
+{% tabs %}
+{% highlight c# %}
+
+  //For Android
+   var mainDisplayInfo = DeviceDisplay.MainDisplayInfo;
+
+   float Density = (float)mainDisplayInfo.Density;
+
+  //For iOS
+   var mainDisplayInfo = DeviceDisplay.MainDisplayInfo;
+
+   float staticDensity = (float)mainDisplayInfo.Density;
+
+   float m_currentDensity = 1;
+
+   var factor = m_currentDensity / staticDensity;
+
+
+{% endhighlight %}
+{% endtabs %}
+
 The Employee data is displayed in the SfDiagram as follows
 
 ![Organizational chart demo in Xamarin.Forms diagram](Getting-Started_images/Getting-Started_img3.jpeg)

@@ -21,7 +21,7 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## Adding SfNavigationDrawer reference
 
-You can add SfNavigationDrawer reference using one of the following methods:
+You can add [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) reference using one of the following methods:
 
 **Method 1: Adding SfNavigationDrawer reference from nuget.org**
 
@@ -33,7 +33,7 @@ N> Install the same version of SfNavigationDrawer NuGet in all the projects.
 
 **Method 2: Adding SfNavigationDrawer reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfNavigationDrawer control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfNavigationDrawer assemblies manually from the installed location**
 
@@ -94,7 +94,7 @@ return base.FinishedLaunching(app, options);
 
 ### Additional Step for UWP
 
-This step is required only if application is deployed in Release mode with .NET native tool chain enabled and it is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the SfNavigationDrawer assembly at OnLaunched overridden method of App class in UWP project is the suggested workaround. And the code example is shown below: 
+This step is required only if application is deployed in Release mode with .NET native tool chain enabled and it is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) assembly at OnLaunched overridden method of App class in UWP project is the suggested workaround. And the code example is shown below: 
 
 {% tabs %}
 
@@ -231,7 +231,7 @@ namespace NaviSample
 
 {% endtabs %}
 
-N> It is mandatory to set ContentView for SfNavigationDrawer on initializing.
+N> It is mandatory to set [`ContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ContentView) for [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) on initializing.
 
 ## Adjust Drawer Size
 
@@ -284,11 +284,11 @@ namespace NaviSample
 {% endtabs %}
 
 
-N> For changing the side of navigation pane use Position property. Use DrawerHeight property to change the drawer height in Top and Bottom positions.
+N> For changing the side of navigation pane use Position property. Use [`DrawerHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerWidth) property to change the drawer height in Top and Bottom positions.
 
 ## Add Hamburger Menu for Toggling Drawer
 
-Create a button and set required image to the Image property of Button. Subscribe Clicked event of the button and invoke ToggleDrawer() method in it to toggle the drawer. Set this button as ContentView property of SfNavigationDrawer. Align the layout of ContentView properly to get the hamburger icon at top left as shown in following code:
+Create a button and set required image to the [`Image`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Image) property of Button. Subscribe Clicked event of the button and invoke ToggleDrawer() method in it to toggle the drawer. Set this button as [`ContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ContentView) property of SfNavigationDrawer. Align the layout of [`ContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ContentView) properly to get the hamburger icon at top left as shown in following code:
 
 {% tabs %}	
 
@@ -373,7 +373,7 @@ N> Add the required images in drawable folder of Android project, Assets folder 
 
 ## Set ListView as Drawer Content
 
-Create a ListView with five items and set it as DrawerContentView. 
+Create a ListView with five items and set it as [`DrawerContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerContentView). 
 
 {% tabs %}	
 

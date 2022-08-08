@@ -12,7 +12,7 @@ NavigationDrawer supports swipe gesture for opening and closing the drawer.
 
 ## Enabling Swipe Gesture
 
-It can be enabled/disabled using `EnableSwipeGesture` property.
+It can be enabled/disabled using [`EnableSwipeGesture`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_EnableSwipeGesture) property.
 
 {% tabs %}
 
@@ -51,7 +51,7 @@ navigationDrawer.EnableSwipeGesture = true;
 
 ## Swipe Sensitivity
 
-In smaller screens user may find it difficult to swipe the drawer from the edge in such cases we can increase the swipe region using `TouchThreshold` property. It can be set as below:
+In smaller screens user may find it difficult to swipe the drawer from the edge in such cases we can increase the swipe region using [`TouchThreshold`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_TouchThreshold) property. It can be set as below:
 
 {% tabs %}
 

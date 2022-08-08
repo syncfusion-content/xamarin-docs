@@ -10,7 +10,7 @@ documentation: ug
 
 # Date Restriction in Xamarin DatePicker (SfDatePicker)
 
-DatePicker provides an option to select a date value within a specified range by using the MinimumDate and MaximumDate properties. Always the MinimumDate value has to be lesser than the MaximumDate value.
+DatePicker provides an option to select a date value within a specified range by using the [`MinimumDate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_MinimumDate) and [`MaximumDate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_MaximumDate) properties. Always the [`MinimumDate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_MinimumDate) value has to be lesser than the [`MaximumDate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_MaximumDate) value.
 
 {% tabs %}
 

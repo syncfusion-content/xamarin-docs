@@ -1,15 +1,14 @@
 ---
-
 layout: post
-title: Badge animation with Syncfusion Badge View control for Xamarin.Forms
-description: Learn how to set Syncfusion badge view animation in Xamarin.Forms platform
+title: Badge animation in Xamarin.Forms SfBadgeView Control | Syncfusion
+description: Learn here about Badge animation in Syncfusion Essential Xamarin.Forms SfBadgeView Control, its elements, and more.
 platform: xamarin
 control: SfBadgeView
 documentation: ug
 
 ---
 
-# Animation
+# Animation in Xamarin.Forms SfBadgeView
 
 You can enable or disable the animation of the badge text using `Scale` or `None` properties of   [`BadgeAnimation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.BadgeSetting.html#Syncfusion_XForms_BadgeView_BadgeSetting_BadgeAnimation) property. You can see the animation when we change the badge text.
 

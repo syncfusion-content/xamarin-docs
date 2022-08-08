@@ -22,11 +22,11 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## Adding SfSwitch reference
 
-You can add SfSwitch reference using one of the below methods.
+You can add [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) reference using one of the below methods.
 
 **Method 1: Adding SfSwitch reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/#). To add SfSwitch to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/#). To add [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and then install it.
 
 ![Add Packages](images/Adding-SfSwitch-reference.png)
 
@@ -65,7 +65,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the tria
 
 ## Launching an application on each platform with SfSwitch
 
-To use the SfSwitch inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
+To use the [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
 
 N> If you are adding the references from toolbox, below steps are not needed.   
 
@@ -178,7 +178,7 @@ SfSwitch sfSwitch = new SfSwitch();
 
 ## Performing an action based on state
 
-You can switch between the states. When the state is changed the StateChanging and StateChanged event will be triggered where you can perform an action based on the current state.The StateChanging event allows you to cancel moving to a new state.
+You can switch between the states. When the state is changed the [`StateChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_StateChanging) and [`StateChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_StateChanged) event will be triggered where you can perform an action based on the current state.The [`StateChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_StateChanging) event allows you to cancel moving to a new state.
 
 The following code example displays a message box when switched to off state when work is completed.
 

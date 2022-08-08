@@ -61,7 +61,7 @@ sfSwitch.IsOn = false;
 
 ## Indeterminate
 
-The indeterminate state can be enabled when you need to display the work progress. The following code example demonstrates how to load the switch in indeterminate state by setting the IsOn property to null.
+The indeterminate state can be enabled when you need to display the work progress. The following code example demonstrates how to load the switch in indeterminate state by setting the [`IsOn`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_IsOn) property to null.
 
 {% tabs %}
 
@@ -89,7 +89,7 @@ N> By default, the switch control has only two states: on and off.
 
 ## Disabled On
 
-You can switch to disabled on state by setting the `IsOn` property as true and `IsEnabled` property as false.
+You can switch to disabled on state by setting the [`IsOn`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_IsOn) property as true and `IsEnabled` property as false.
 
 {% tabs %}
 
@@ -113,7 +113,7 @@ sfSwitch.IsEnabled = false;
 
 ## Disabled Off
 
-You can switch to disabled off state by setting the `IsOn` property as false and `IsEnabled` property as false.
+You can switch to disabled off state by setting the [`IsOn`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_IsOn) property as false and `IsEnabled` property as false.
 
 {% tabs %}
 
@@ -137,7 +137,7 @@ sfSwitch.IsEnabled = false;
 
 ## Disabled Indeterminate
 
-The disabled indeterminate state can be enabled when you need to display the work progress .The below code example demonstrates loading the switch in disabled indeterminate state by setting `IsOn` property value as null and `IsEnabled` property as false.
+The disabled indeterminate state can be enabled when you need to display the work progress .The below code example demonstrates loading the switch in disabled indeterminate state by setting [`IsOn`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_IsOn) property value as null and `IsEnabled` property as false.
 
 {% tabs %}
 

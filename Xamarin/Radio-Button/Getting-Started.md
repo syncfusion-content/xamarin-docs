@@ -11,7 +11,7 @@ keywords: button, SfRadioButton, RadioButton
 
 # Getting Started with Xamarin Radio Button (SfRadioButton)
 
-This section explains the steps required to configure the [Xamarin Radio Button](https://www.syncfusion.com/xamarin-ui-controls/xamarin-radio-button) (SfRadioButton) control in a real-time scenario and provides a walk-through on some of the customization features available in `SfRadioButton` control.
+This section explains the steps required to configure the [Xamarin Radio Button](https://www.syncfusion.com/xamarin-ui-controls/xamarin-radio-button) (SfRadioButton) control in a real-time scenario and provides a walk-through on some of the customization features available in [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html) control.
 
 ## Assembly deployment
 
@@ -23,7 +23,7 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## Adding SfRadioButton reference
 
-You can add SfRadioButton reference using one of the following methods:
+You can add [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html) reference using one of the following methods:
 
 **Method 1: Adding SfRadioButton reference from nuget.org**
 
@@ -75,7 +75,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the tria
 N> After adding the assembly reference, an additional step is required for iOS and UWP projects. If you are adding the references from toolbox, this step is not needed.
 
 ### Additional step for iOS
-To launch `SfRadioButton` in iOS, call the `SfRadioButtonRenderer.Init()` in `FinishedLaunching` overridden method of `AppDelegate` class in iOS Project, as demonstrated in the following code example.
+To launch [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html) in iOS, call the `SfRadioButtonRenderer.Init()` in `FinishedLaunching` overridden method of `AppDelegate` class in iOS Project, as demonstrated in the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -90,7 +90,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% endtabs %}
 
 ### Additional step for UWP
-This step is required only if the application is deployed in Release mode with .NET native tool chain enabled. It is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the `SfRadioButton` assembly at `OnLaunched` overridden method of the `App` class in UWP project is the suggested work around, as demonstrated in the following code example.
+This step is required only if the application is deployed in Release mode with .NET native tool chain enabled. It is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html) assembly at `OnLaunched` overridden method of the `App` class in UWP project is the suggested work around, as demonstrated in the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -187,7 +187,7 @@ namespace GettingStarted
 
 ## Setting caption
 
-The radio button caption can be defined using the `Text` property of `SfRadioButton`. This caption normally describes the meaning of the radio button and it displays next to radio button.
+The radio button caption can be defined using the [`Text`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_Text) property of [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html). This caption normally describes the meaning of the radio button and it displays next to radio button.
  
 {% tabs %}
 {% highlight xaml %}
@@ -205,12 +205,12 @@ This demo can be downloaded from this [link](http://www.syncfusion.com/downloads
 
 ## Change the radio button state
 
-The two different visual states of the `SfRadioButton` are:
+The two different visual states of the [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html) are:
 
 * Checked
 * Unchecked
 
-You can change the state of the radio button using the `IsChecked` property of `SfRadioButton`. In the checked state, an inner circle is added to the visualization of radio button.
+You can change the state of the radio button using the [`IsChecked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_IsChecked) property of [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html). In the checked state, an inner circle is added to the visualization of radio button.
 The radio buttons are used when there is a list of two or more options or group that are mutually exclusive and the user must select exactly one choice, such as “Select Gender” or “Choose the best option!”.
 
 {% tabs %}

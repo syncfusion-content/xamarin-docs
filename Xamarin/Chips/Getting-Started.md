@@ -272,7 +272,7 @@ namespace Chips
 
 ## Set layout for the control
 
-Any layout can be used to arrange the chips in the chips control using `ChipLayout` property.The chips control creates chip for each object and arranges chips in a StackLayout with horizontal orientation. Any layout can be used to arrange the chips in the chips control.In the following example, the `FlexLayout` has been used. 
+Any layout can be used to arrange the chips in the chips control using [`ChipLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipLayout) property.The chips control creates chip for each object and arranges chips in a StackLayout with horizontal orientation. Any layout can be used to arrange the chips in the chips control.In the following example, the `FlexLayout` has been used. 
 
 {% tabs %}
 
@@ -489,7 +489,7 @@ namespace Chips
 The functionality of chips control differ based on its [Type](https://help.syncfusion.com/xamarin/chips/types) property.
 By default type of chips control have Input type. Input chip types have close button, using it chip can be can removed dynamically from children and the layout. 
 
-The following code example uses the `Action` type. In Action type, `Command` property of SfChipGroup is executed when any chip in the group is tapped. Here the Employee name of corresponding chip is set as label text when the Command is executed.
+The following code example uses the `Action` type. In Action type, [`Command`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Command) property of SfChipGroup is executed when any chip in the group is tapped. Here the Employee name of corresponding chip is set as label text when the [`Command`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Command) is executed.
 
 {% tabs %}
 

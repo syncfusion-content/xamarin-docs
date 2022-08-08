@@ -14,7 +14,7 @@ By default, both the vertical swiping for list view and horizontal swiping for t
 ## Enable swiping
 
 Swiping can be customized by using the [`EnableSwiping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_EnableSwiping) property of SfTabView. By default, [`EnableSwiping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_EnableSwiping) is set to true. To limit the user interaction, set the   
-[`EnableSwiping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_EnableSwiping) property of SfTabView to false.
+[`EnableSwiping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_EnableSwiping) property of [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html) to false.
 
 {% tabs %}
 
@@ -169,11 +169,11 @@ By setting the [`SwipingThreshold`](https://help.syncfusion.com/cr/xamarin/Syncf
 
 {% endtabs %}
 
-N> This SwipingThreshold value should only be considered for swiping from left to right.
+N> This [`SwipingThreshold`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_SwipingThreshold) value should only be considered for swiping from left to right.
 
 ## AnimationDuration
 
-When the selected index of the control is changed, you can set the speed of the animation of SelectionIndicator by setting the `AnimationDuration` property in the [SelectionIndicatorSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SelectionIndicatorSettings.html).
+When the selected index of the control is changed, you can set the speed of the animation of SelectionIndicator by setting the [`AnimationDuration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SelectionIndicatorSettings.html#Syncfusion_XForms_TabView_SelectionIndicatorSettings_AnimationDuration) property in the [SelectionIndicatorSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SelectionIndicatorSettings.html).
 
 {% tabs %}
 

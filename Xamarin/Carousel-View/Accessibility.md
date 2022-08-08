@@ -9,7 +9,7 @@ documentation : ug
 
 # Accessibility in Xamarin Carousel View (SfCarousel)
 
-The SfCarousel control has built-in `AutomationId` for inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the SfCarousel control. To keep unique AutomationId, these inner elements' AutomationIds are updated based on the control's `AutomationId`.
+The [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control has built-in `AutomationId` for inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the SfCarousel control. To keep unique AutomationId, these inner elements' AutomationIds are updated based on the control's `AutomationId`.
 
  For example, if you set SfCarouselItem's `AutomationId` as "Person", then the automation framework will interact the fourth carousel item as "Person SfCarouselItem 4 of 6" (6 denotes the total count). 
  

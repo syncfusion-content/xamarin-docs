@@ -9,9 +9,9 @@ documentation: ug
 
 # AutoSizing in Xamarin ComboBox (SfComboBox)
 
-AutoSizing can be enabled in SfComboBox control so that the control will extend its layout based on the text input.
+AutoSizing can be enabled in [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) control so that the control will extend its layout based on the text input.
 
-`EnableAutoSize` property is used to enable the autoSizing in `SfComboBox` control. To enable the API, you need to set the `MultiSelectMode` as `Token` and `TokensWrapMode` as `Wrap`. The default value of `EnableAutoSize` is false.
+[`EnableAutoSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_EnableAutoSize) property is used to enable the autoSizing in [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) control. To enable the API, you need to set the [`MultiSelectMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_MultiSelectMode) as [`Token`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.MultiSelectMode.html#Syncfusion_XForms_ComboBox_MultiSelectMode_Token) and [`TokensWrapMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TokensWrapMode) as [`Wrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.TokensWrapMode.html#Syncfusion_XForms_ComboBox_TokensWrapMode_Wrap). The default value of [`EnableAutoSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_EnableAutoSize) is false.
 
 {% tabs %}
 {% highlight xaml %}

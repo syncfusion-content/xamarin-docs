@@ -10,15 +10,15 @@ documentation: ug
 
 You can highlight matching characters in a suggestion list to pick an item with more clarity by following two ways:
 
-* First Occurrence
+* [`First Occurrence`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.OccurrenceMode.html#Syncfusion_XForms_ComboBox_OccurrenceMode_FirstOccurrence)
 
-* Multiple Occurrence
+* [`Multiple Occurrence`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.OccurrenceMode.html#Syncfusion_XForms_ComboBox_OccurrenceMode_MultipleOccurrence)
 
 Highlighting can be indicated with various customizing styles by enabling the following properties.
 
-* HighlightedTextColor -  Sets the color of the highlighted text for differentiating the highlighted characters.
+* [`HighlightedTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_HighlightedTextColor) -  Sets the color of the highlighted text for differentiating the highlighted characters.
 
-* HighlightTextFontAttributes - Sets the FontAttributes of the highlighted text.
+* [`HighlightTextFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_HighlightedTextFontAttributes) - Sets the FontAttributes of the highlighted text.
 
 ## First occurrence
 
@@ -79,7 +79,7 @@ Content = layout;
 
 ## Multiple occurrence
 
-Highlights the matching characters that present everywhere in the suggestion list for Contains case in SuggestionMode.
+Highlights the matching characters that present everywhere in the suggestion list for Contains case in [`SuggestionMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SuggestionMode).
 
 {% tabs %}
 

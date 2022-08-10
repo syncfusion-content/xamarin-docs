@@ -11,7 +11,7 @@ documentation: ug
 
 ## Getting started with Xamarin Busy Indicator(SfBusyIndicator)
 
-This section explains you the steps to configure a SfBusyIndicator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfBusyIndicator control.
+This section explains you the steps to configure a [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) control.
 
 ## Assembly deployment
 
@@ -31,11 +31,11 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 ![Adding SfBusyIndicator reference](images/Adding SfBusyIndicator reference.png)
 
-N> Install the same version of SfBusyIndicator NuGet in all the projects.
+N> Install the same version of [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) NuGet in all the projects.
 
 **Method 2: Adding SfBusyIndicator reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfBusyIndicator control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfBusyIndicator assemblies manually from the installed location**
 
@@ -72,13 +72,13 @@ To use SfBusyIndicator inside an application, each platform application must ini
 
 ### Android and  UWP
 
-The Android and UWP launches the SfBusyIndicator without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application
+The Android and UWP launches the [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application
 
 N> If you are adding the references from toolbox, this step is not needed.
 
 ### iOS
 
-To launch SfBusyIndicator in iOS, need to create an instance of SfBusyIndicatorRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below.
+To launch [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) in iOS, need to create an instance of SfBusyIndicatorRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below.
 
 {% tabs %}
 
@@ -103,7 +103,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in `Release Mode`.
 
-The above problem can be resolved by initializing the SfBusyIndicator assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
+The above problem can be resolved by initializing the [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
 
 {% tabs %}
 
@@ -134,7 +134,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ## Create a Simple SfBusyIndicator 
 
-The SfBusyIndicator control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfBusyIndicator and configure its elements,
+The [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) and configure its elements,
 
 * Adding namespace for the added assemblies. 
 
@@ -197,9 +197,9 @@ namespace GettingStarted
 
 ## Setting Animation Type
 
-SfBusyIndicator provides 15 predefined animation types like Ball, Battery, Globe and so on. User can select any one of the animation types using `AnimationType`property.
+[`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) provides 15 predefined animation types like [`Ball`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.AnimationTypes.html#Syncfusion_SfBusyIndicator_XForms_AnimationTypes_Ball),[`Battery`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.AnimationTypes.html#Syncfusion_SfBusyIndicator_XForms_AnimationTypes_Battery), [`Globe`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.AnimationTypes.html#Syncfusion_SfBusyIndicator_XForms_AnimationTypes_Globe) and so on. User can select any one of the animation types using [`AnimationType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_AnimationType) property.
 
-Following example depicts the battery type animation for SfBusyIndicator. 
+Following example depicts the battery type animation for [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html). 
 
 {% tabs %}
 
@@ -253,7 +253,7 @@ namespace GettingStarted
 
 ## EnableAnimation
 
-SfBusyIndicator provides options to enable or disable animation of the Busy Indicator. Animation can be enabled or disabled using the [`EnableAnimation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_EnableAnimationProperty) property.
+[`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) provides options to enable or disable animation of the Busy Indicator. Animation can be enabled or disabled using the [`EnableAnimation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_EnableAnimationProperty) property.
 
 {% tabs %}
 

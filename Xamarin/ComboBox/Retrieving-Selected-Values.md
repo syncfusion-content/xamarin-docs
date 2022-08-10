@@ -9,14 +9,14 @@ documentation: ug
 
 # Retrieving Selected Values in Xamarin ComboBox (SfComboBox)
 
-SfComboBox provides a way to handle the selected item using the following properties:
-* SelectedIndex
-* SelectedIndices
-* SelectedItem
+[`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) provides a way to handle the selected item using the following properties:
+* [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedIndex)
+* [`SelectedIndices`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedIndices)
+* [`SelectedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedItem)
 
 ## SelectedIndex
 
-You can get or set the index of the selected item using the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedIndexProperty_) property. It is applicable only when [`MultiSelectMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_MultiSelectModeProperty) is set to None. SelectedIndex will accept integer values.
+You can get or set the index of the selected item using the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedIndex) property. It is applicable only when [`MultiSelectMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_MultiSelectMode) is set to None. SelectedIndex will accept integer values.
 
 ### Set the index of item to be selected
 
@@ -109,9 +109,9 @@ namespace ComboBox
 
 ### Retrieve the index of selected item
 
-When an item is selected from suggestion list, its index can be retrieved using the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedIndexProperty_) property. 
+When an item is selected from suggestion list, its index can be retrieved using the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedIndex) property. 
 
-The following code sample demonstrates how to retrieve [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedIndexProperty_) and display it in an alert.
+The following code sample demonstrates how to retrieve [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedIndex) and display it in an alert.
 
 {% tabs %}
 
@@ -205,11 +205,11 @@ namespace ComboBox
 
 ## SelectedIndices
 
-You can get or set the indices of the selected items using the [`SelectedIndices`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedIndicesProperty) property. It is applicable when [`MultiSelectMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_MultiSelectModeProperty) is set to either Token or Delimiter. SelectedIndices will accept collection of integer.
+You can get or set the indices of the selected items using the [`SelectedIndices`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedIndices) property. It is applicable when [`MultiSelectMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_MultiSelectMode) is set to either Token or Delimiter. SelectedIndices will accept collection of integer.
 
 ### Set the indices of items
 
-The [`SelectedIndices`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedIndicesProperty) property holds the indices of the selected items in suggestion list.
+The [`SelectedIndices`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedIndices) property holds the indices of the selected items in suggestion list.
 
 {% tabs %}
 
@@ -279,9 +279,9 @@ namespace ComboBox
 
 ### Retrieve the indices of selected item
 
-When an item is selected from suggestion list, its index can be retrieved using the [`SelectedIndices`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedIndicesProperty) property.
+When an item is selected from suggestion list, its index can be retrieved using the [`SelectedIndices`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedIndices) property.
 
-The following code sample demonstrates how to retrieve [`SelectedIndices`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedIndicesProperty) and display them in ListView.
+The following code sample demonstrates how to retrieve [`SelectedIndices`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedIndices) and display them in ListView.
 
 {% tabs %}
 
@@ -377,11 +377,11 @@ namespace ComboBox
 
 ## SelectedItem
 
-The `SelectedItem` property is used to select a particular item from the suggestion list. You can either get or set the SelectedItem.
+The [`SelectedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedItem) property is used to select a particular item from the suggestion list. You can either get or set the [`SelectedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedItem).
 
 ### How to set the SelectedItem
 
-The following code sample demonstrates how to set `SelectedItem`.
+The following code sample demonstrates how to set [`SelectedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedItem)`.
 
 {% tabs %}
 
@@ -470,13 +470,13 @@ namespace ComboBox
 
 ### Retrieve the selected item
 
-When an item is selected from suggestion list, it can be retrieved using the [`SelectedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedItemProperty) property. 
+When an item is selected from suggestion list, it can be retrieved using the [`SelectedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedItem) property. 
 
-The `SelectedValuePath` API is used to retrieve the value of the selected item in drop-down when the item is selected. The `SelectedValue` property is updated based on the selection. For loading the default values in the control, use only the SelectedItem, and the SelectedValue is used for retrieving the value of our desired property[ID] based on the selection.
+The [`SelectedValuePath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedValuePath) API is used to retrieve the value of the selected item in drop-down when the item is selected. The [`SelectedValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedValue) property is updated based on the selection. For loading the default values in the control, use only the [`SelectedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedItem), and the [`SelectedValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedValue) is used for retrieving the value of our desired property[ID] based on the selection.
 
-There are scenarios in which SelectedValue can have duplicate items when DisplayMemberPath is loaded with Countries and SelectedValue is bound to Continent; it will be the same for many countries. In such scenarios, you cannot populate based on SelectedValue.
+There are scenarios in which SelectedValue can have duplicate items when [`DisplayMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DisplayMemberPath) is loaded with Countries and [`SelectedValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedValue) is bound to Continent; it will be the same for many countries. In such scenarios, you cannot populate based on [`SelectedValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedValue).
 
-The following code sample demonstrates how to retrieve [`SelectedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedItemProperty) and display it in an alert.
+The following code sample demonstrates how to retrieve [`SelectedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedItem) and display it in an alert.
 
 {% tabs %}
 
@@ -555,7 +555,7 @@ namespace ComboBox
 {% endhighlight %}
 {% endtabs %}
 
-Define a simple model class employee with fields ID and Name, and then populate employee data and `SelectedItem` in ViewModel.
+Define a simple model class employee with fields ID and Name, and then populate employee data and [`SelectedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedItem) in ViewModel.
 
 {% tabs %}
 {% highlight c# %}

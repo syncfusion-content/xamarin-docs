@@ -9,9 +9,9 @@ documentation: ug
 
 # Populating Data  in Xamarin ComboBox (SfComboBox)
 
-SfComboBox control can be populated with a list of string or business objects, which assists the users when typing. Users can choose one item from the filtered suggestion list.
+[`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) control can be populated with a list of string or business objects, which assists the users when typing. Users can choose one item from the filtered suggestion list.
 
-The [`DataSource`] property is used to populate data in the combo box control. This section explains how to populate the combo box control with list of string and list of employee details separately.
+The [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DataSource) property is used to populate data in the combo box control. This section explains how to populate the combo box control with list of string and list of employee details separately.
 
 ## Populating string data
 
@@ -134,7 +134,7 @@ public EmployeeViewModel()
 
 ### Populate data in ComboBox
 
-Now populate this EmployeeViewModel data in SfComboBox control by binding with [`DataSource`] property. 
+Now populate this EmployeeViewModel data in [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) control by binding with [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DataSource) property. 
 
 {% tabs %}
 
@@ -181,7 +181,7 @@ N> Set the EmployeeViewModel instance as the BindingContext of your control; thi
 
 ### Setting DisplayMemberPath
 
-The combo box control is populated with a list of employees. But the employee model contains two properties ID and Name, So it is necessary to intimate by which property it should filter suggestions. The [`DisplayMemberPath`] property specifies the property path with type of filtering is done on business objects.
+The combo box control is populated with a list of employees. But the employee model contains two properties ID and Name, So it is necessary to intimate by which property it should filter suggestions. The [`DisplayMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DisplayMemberPath) property specifies the property path with type of filtering is done on business objects.
 
 {% highlight c# %}
 	
@@ -316,7 +316,7 @@ public class ViewModel
 
 {% endtabs %}
 
-Add the column name in the `DisplayMemberPath` property to display all the data's of the corresponding column which is given as following code.   
+Add the column name in the [`DisplayMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DisplayMemberPath) property to display all the data's of the corresponding column which is given as following code.   
 
 {% tabs %}
 

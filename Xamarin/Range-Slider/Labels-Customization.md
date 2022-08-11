@@ -69,7 +69,7 @@ public RangeSliderPage ()
 
 ## Value Placement
 
-The [`ValuePlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ValuePlacement) property describes the position of the Value respective to ticks. 
+The [`ValuePlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ValuePlacement) property describes the position of the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Value) respective to ticks. 
 
 Available options for this property are:
 

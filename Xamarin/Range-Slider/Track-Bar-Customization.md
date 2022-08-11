@@ -225,7 +225,7 @@ The [`KnobColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlide
 
 ### Customizing thumb size
 
-The `ThumbSize` property is used to change the thumb size of SfRangeSlider.
+The [`ThumbSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ThumbSize) property is used to change the thumb size of [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html).
 
 {% tabs %}
 

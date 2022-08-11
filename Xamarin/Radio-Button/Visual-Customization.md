@@ -126,7 +126,7 @@ stackLayout.Children.Add(radioButton);
 {% endhighlight %}
 {% endtabs %}
 
-N>`ControlSize` is not applicable for Android Platform.
+N>[`ControlSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_ControlSize) is not applicable for Android Platform.
 
 ## See also
 

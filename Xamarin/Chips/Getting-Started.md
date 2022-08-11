@@ -121,7 +121,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 #### For SfChip
 
-To deploy the [SfChip](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html) in `Release` mode, you need to initialize the SfChip assemblies in the App.xaml.cs file in the UWP project as shown in the following code sample.
+To deploy the [SfChip](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html) in `Release` mode, you need to initialize the[SfChip](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html) assemblies in the App.xaml.cs file in the UWP project as shown in the following code sample.
 
 {% highlight c# %}
 
@@ -149,7 +149,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 #### For SfChipGroup
 
-To deploy the [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html) in `Release` mode, you need to initialize the SfChipGroup assemblies in the App.xaml.cs file in the UWP project as shown in the following code sample.
+To deploy the [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html) in `Release` mode, you need to initialize the [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html) assemblies in the App.xaml.cs file in the UWP project as shown in the following code sample.
 
 {% highlight c# %}
 
@@ -225,7 +225,7 @@ using Syncfusion.XForms.Buttons;
 
 {% endtabs %}
 
-Then initialize an empty SfChipGroup as shown in the following code:
+Then initialize an empty [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html) as shown in the following code:
 
 {% tabs %}
 
@@ -486,10 +486,10 @@ namespace Chips
 ![ChipGroup sample with display member path and itemsSource demo](images/getting-started/getting_started.png)
 
 ## Set types of chip group
-The functionality of chips control differ based on its [Type](https://help.syncfusion.com/xamarin/chips/types) property.
+The functionality of chips control differ based on its [Type](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Type) property.
 By default type of chips control have Input type. Input chip types have close button, using it chip can be can removed dynamically from children and the layout. 
 
-The following code example uses the `Action` type. In Action type, [`Command`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Command) property of SfChipGroup is executed when any chip in the group is tapped. Here the Employee name of corresponding chip is set as label text when the [`Command`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Command) is executed.
+The following code example uses the [`Action`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipsType.html#Syncfusion_XForms_Buttons_SfChipsType_Action) type. In Action type, [`Command`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Command) property of [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html) is executed when any chip in the group is tapped. Here the Employee name of corresponding chip is set as label text when the [`Command`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Command) is executed.
 
 {% tabs %}
 

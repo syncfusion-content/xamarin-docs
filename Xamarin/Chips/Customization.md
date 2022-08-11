@@ -72,7 +72,7 @@ namespace ChipCustomization
 
 ![SfChip with CloseButton](images/customization-images/chip_showclosebutton_image.png)
 
-N> The default value of ShowCloseButton is [`false`].
+N> The default value of [`ShowCloseButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_ShowCloseButton) is [`false`].
 
 ## ShowSelectionIndicator
 

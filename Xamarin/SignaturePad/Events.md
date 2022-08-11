@@ -13,7 +13,7 @@ documentation: ug
 
 The [`StrokeStarted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_StrokeStarted) event will be triggered when drawing is started.
 
-CancelEventArgs - SignaturePad draw start action can be restricted by setting the e.cancel to true.
+[`CancelEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Core.CancelEventArgs.html) - SignaturePad draw start action can be restricted by setting the e.cancel to true.
 
 {% tabs %}
 

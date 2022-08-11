@@ -13,7 +13,7 @@ keywords: button, SfRadioButton, RadioButton
 # Visual Customization in Xamarin Radio Button (SfRadioButton)
 
 ## Customizing a state color
-The default state colors can be customized using the `CheckedColor` and `UncheckedColor `properties. The checked state color is updated to the `CheckedColor` property value when the state is changed to the checked. The unchecked state color is updated to the `UncheckedColor` property value when the state is changed to unchecked.
+The default state colors can be customized using the [`CheckedColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_CheckedColor) and [`UncheckedColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_UncheckedColor) properties. The checked state color is updated to the [`CheckedColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_CheckedColor) property value when the state is changed to the checked. The unchecked state color is updated to the [`UncheckedColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_UncheckedColor) property value when the state is changed to unchecked.
 
 {% tabs %}
 {% highlight xaml %}
@@ -39,7 +39,7 @@ radioGroup.Children.Add(uncheck);
 ![CheckedColor and UncheckedColor in RadioButton](Images/StateColor.png)
 
 ## BorderWidth
-The border thickness of the circle in the RadioButton control can be customized using the `BorderWidth` property.  
+The border thickness of the circle in the RadioButton control can be customized using the [`BorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_BorderWidth) property.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -68,13 +68,13 @@ N> BorderWidth support has not been provided for Android Platform.
 
 ## Setting a caption text appearance 
 
-You can customize the display text appearance of the `SfRadioButton` control using the following properties:
+You can customize the display text appearance of the [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html) control using the following properties:
 
-* `TextColor` : Changes the color of the text.
-* `HorizontalTextAlignment`: Changes the horizontal alignment of the caption text.
-* `FontFamily`: Changes the font family of the caption text.
-* `FontAttributes`: Sets font attributes(bold/italic/none) of the caption text.
-* `FontSize`: Sets font size of the caption text.
+* [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_TextColor) : Changes the color of the text.
+* [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_HorizontalTextAlignment): Changes the horizontal alignment of the caption text.
+* [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_FontFamily): Changes the font family of the caption text.
+* [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_FontAttributes): Sets font attributes(bold/italic/none) of the caption text.
+* [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_FontSize): Sets font size of the caption text.
 
 
 {% tabs %}
@@ -96,20 +96,20 @@ radioButton.FontSize = 20;
 ![RadioButton TextAppereance](Images/CaptionAppereance.png)
 
 ## LineBreakMode
-The [`LineBreakMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_LineBreakMode) allows you to wrap or truncate the text. The default value of this property is `NoWrap`. The following other options are available in `LineBreakMode`:
+The [`LineBreakMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_LineBreakMode) allows you to wrap or truncate the text. The default value of this property is [`NoWrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.LineBreakMode.html#Syncfusion_XForms_Buttons_LineBreakMode_NoWrap). The following other options are available in [`LineBreakMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_LineBreakMode):
 
- * `NoWrap` - Avoids the text wrap. 
- * `WordWrap` - Wraps the text by words.
- * `CharacterWrap` - Wraps the text by character.
- * `HeadTruncation` - Truncates the text at the start.
- * `MiddleTruncation` - Truncates the text at the center.
- * `TailTruncation` - Truncates the text at the end.
+ * [`NoWrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.LineBreakMode.html#Syncfusion_XForms_Buttons_LineBreakMode_NoWrap) - Avoids the text wrap. 
+ * [`WordWrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.LineBreakMode.html#Syncfusion_XForms_Buttons_LineBreakMode_WordWrap) - Wraps the text by words.
+ * [`CharacterWrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.LineBreakMode.html#Syncfusion_XForms_Buttons_LineBreakMode_CharacterWrap) - Wraps the text by character.
+ * [`HeadTruncation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.LineBreakMode.html#Syncfusion_XForms_Buttons_LineBreakMode_HeadTruncation) - Truncates the text at the start.
+ * [`MiddleTruncation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.LineBreakMode.html#Syncfusion_XForms_Buttons_LineBreakMode_MiddleTruncation) - Truncates the text at the center.
+ * [`TailTruncation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.LineBreakMode.html#Syncfusion_XForms_Buttons_LineBreakMode_TailTruncation) - Truncates the text at the end.
 
 This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_VisualCustomization1644131704).
 
 ## Size customization
 
-The `ControlSize` property is used to customize the `RadioButton` control size. 
+The [`ControlSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_ControlSize) property is used to customize the [`RadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html) control size. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -126,7 +126,7 @@ stackLayout.Children.Add(radioButton);
 {% endhighlight %}
 {% endtabs %}
 
-N>`ControlSize` is not applicable for Android Platform.
+N>[`ControlSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_ControlSize) is not applicable for Android Platform.
 
 ## See also
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Xamarin Range Slider (SfRangeSlider)
 
-This section explains you the steps to configure a [Xamarin Range Slider](https://www.syncfusion.com/xamarin-ui-controls/xamarin-range-slider) (SfRangeSlider) control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRangeSlider control.
+This section explains you the steps to configure a [Xamarin Range Slider](https://www.syncfusion.com/xamarin-ui-controls/xamarin-range-slider) (SfRangeSlider) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) control.
 
 ## Assembly deployment
 
@@ -25,11 +25,11 @@ You can add SfRangeSlider reference using one of the following methods:
 
 **Method 1: Adding SfRangeSlider reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfRangeSlider to your project, open the [NuGet package](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) manager in Visual Studio, search for [Syncfusion.Xamarin.SfRangeSlider](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRangeSlider), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) to your project, open the [NuGet package](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) manager in Visual Studio, search for [Syncfusion.Xamarin.SfRangeSlider](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRangeSlider), and then install it.
 
 ![Adding SfRangeSlider reference from nuget.org](images/Adding SfRangeSlider reference.png)
 
-N> Install the same version of SfRangeSlider NuGet in all the projects.
+N> Install the same version of [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) NuGet in all the projects.
 
 **Method 2: Adding SfRangeSlider reference from toolbox**
 
@@ -82,7 +82,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ## Additional step for UWP 
 
-This step is required only if the application is deployed in release mode with .NET native tool chain enabled. It is needed for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the `SfRangeSlider` assembly at the `OnLaunched` overridden method of the `App` class in UWP project is the suggested workaround. The following code example demonstrates how to initialize the `SfRangeSlider` assembly.
+This step is required only if the application is deployed in release mode with .NET native tool chain enabled. It is needed for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) assembly at the `OnLaunched` overridden method of the `App` class in UWP project is the suggested workaround. The following code example demonstrates how to initialize the [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html)` assembly.
 
 {% tabs %}
 
@@ -149,9 +149,9 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ## Set Range
 
-Xamarin Range Slider (SfRangeSlider) provides option to set single thumb and double thumb. While setting the double thumb, each thumb value can be set using `RangeStart` and `RangeEnd` properties.
+Xamarin Range Slider (SfRangeSlider) provides option to set single thumb and double thumb. While setting the double thumb, each thumb value can be set using [`RangeStart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_RangeStart) and [`RangeEnd`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_RangeEnd) properties.
 
-N> The `ShowRange` property is used to switch between a single thumb and double thumb. 
+N> The [`ShowRange`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ShowRange) property is used to switch between a single thumb and double thumb. 
 
 {% tabs %}
 
@@ -175,7 +175,7 @@ SfRangeSlider rangeSlider=new SfRangeSlider();
 
 ## Restricting Values
 
-SfRangeSlider provides option to restrict slider range between minimum and maximum values. Following code explains how to set the range using `Minimum` and `Maximum` properties in the SfRangeSlider.
+[`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) provides option to restrict slider range between minimum and maximum values. Following code explains how to set the range using [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Maximum) properties in the [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html).
 
 {% tabs %}
 
@@ -200,7 +200,7 @@ SfRangeSlider rangeSlider=new SfRangeSlider();
 
 ## Adding Snapping Mode
 
-The movement of the thumb can be varied in different ways. This is achieved by setting the `SnapsTo` property.
+The movement of the thumb can be varied in different ways. This is achieved by setting the [`SnapsTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_SnapsTo) property.
 
 {% tabs %}
 

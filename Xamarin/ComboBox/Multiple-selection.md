@@ -16,7 +16,7 @@ Select multiple items from a suggestion list. There are two ways to perform mult
 
 ## Token representation
 
-Selected items will be displayed with a customizable token representation. Users can remove each tokenized item with the close button. And IsSelectedItemsVisibleInDropDown property is used to restrict the selected items as visible or not in dropDown. 
+Selected items will be displayed with a customizable token representation. Users can remove each tokenized item with the close button. And [`IsSelectedItemsVisibleInDropDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_IsSelectedItemsVisibleInDropDown) property is used to restrict the selected items as visible or not in dropDown. 
 
 {% tabs %}
 
@@ -51,11 +51,11 @@ Selected items will be displayed with a customizable token representation. Users
 
 ### Wrap mode of token
 
-The selected item can be displayed as token inside the SfComboBox in two ways. They are
+The selected item can be displayed as token inside the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) in two ways. They are
 
-* `Wrap` - When the `TokensWrapMode` is set to `Wrap` the selected items will be wrapped to the next line of the SfComboBox.
+* [`Wrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.TokensWrapMode.html#Syncfusion_XForms_ComboBox_TokensWrapMode_Wrap) - When the [`TokensWrapMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TokensWrapMode) is set to [`Wrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.TokensWrapMode.html#Syncfusion_XForms_ComboBox_TokensWrapMode_Wrap) the selected items will be wrapped to the next line of the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html).
 
-* `None` - When the `TokensWrapMode` is set to `None` the selected item will be wrapped in horizontal orientation.
+* [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.TokensWrapMode.html#Syncfusion_XForms_ComboBox_TokensWrapMode_None) - When the [`TokensWrapMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TokensWrapMode) is set to [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.TokensWrapMode.html#Syncfusion_XForms_ComboBox_TokensWrapMode_None) the selected item will be wrapped in horizontal orientation.
 
 Define a simple model class Employee with fields ID, Name and populate employee data in ViewModel.
 
@@ -108,7 +108,7 @@ Define a simple model class Employee with fields ID, Name and populate employee 
 
     {% endhighlight %}
 
-Now populate this EmployeeViewModel data in SfComboBox control by binding with [`DataSource`] property. 
+Now populate this EmployeeViewModel data in [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) control by binding with [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DataSource) property. 
 
 {% tabs %}
 
@@ -164,25 +164,25 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
 
 Token can be customized in the following ways: 
 
-* `TextColor` - Sets the color of the text inside the token.
+* [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.TokenSettings.html#Syncfusion_XForms_ComboBox_TokenSettings_TextColor) - Sets the color of the text inside the token.
 
-* `FontSize` - Sets the size of the font inside the token.
+* [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.TokenSettings.html#Syncfusion_XForms_ComboBox_TokenSettings_FontSize) - Sets the size of the font inside the token.
 
-* `FontFamily` - Sets the font family for the text inside the token.
+* [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.TokenSettings.html#Syncfusion_XForms_ComboBox_TokenSettings_FontFamily) - Sets the font family for the text inside the token.
 
-* `BackgroundColor` - Sets the background color for token.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.TokenSettings.html#Syncfusion_XForms_ComboBox_TokenSettings_BackgroundColor) - Sets the background color for token.
 
-* `SelectedBackgroundColor` - Sets the background color of the token when it is selected.
+* [`SelectedBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.TokenSettings.html#Syncfusion_XForms_ComboBox_TokenSettings_SelectedBackgroundColor) - Sets the background color of the token when it is selected.
 
-* `IsCloseButtonVisible` - Enables and disables the close button inside the SfComboBox.
+* [`IsCloseButtonVisible`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.TokenSettings.html#Syncfusion_XForms_ComboBox_TokenSettings_IsCloseButtonVisible) - Enables and disables the close button inside the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html).
 
-* `DeleteButtonColor` - Sets the color of the close button inside the SfComboBox.
+* [`DeleteButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.TokenSettings.html#Syncfusion_XForms_ComboBox_TokenSettings_DeleteButtonColor) - Sets the color of the close button inside the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html).
 
-* `CornerRadius` - Sets the corner radius for the token.
+* [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.TokenSettings.html#Syncfusion_XForms_ComboBox_TokenSettings_CornerRadius) - Sets the corner radius for the token.
 
-* `DeleteButtonPlacement` - sets the placement of delete button. `Left` and `Right` are the placement options. By default, it is set placed at right side of the token. 
+* [`DeleteButtonPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.TokenSettings.html#Syncfusion_XForms_ComboBox_TokenSettings_DeleteButtonPlacement) - sets the placement of delete button. [`Left`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.DeleteButtonPlacement.html#Syncfusion_XForms_ComboBox_DeleteButtonPlacement_Left) and [`Right`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.DeleteButtonPlacement.html#Syncfusion_XForms_ComboBox_DeleteButtonPlacement_Right) are the placement options. By default, it is set placed at right side of the token. 
 
-N> CornerRadius support has enhanced only on iOS and Android platform.
+N> [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.TokenSettings.html#Syncfusion_XForms_ComboBox_TokenSettings_CornerRadius) support has enhanced only on iOS and Android platform.
 
 {% tabs %}
 
@@ -254,7 +254,7 @@ N> CornerRadius support has enhanced only on iOS and Android platform.
 
 ## Delimiter
 
-When selecting multiple items, the selected items can be divided with a desired character given for a delimiter. You can set delimiter character using the `Delimiter` property.
+When selecting multiple items, the selected items can be divided with a desired character given for a delimiter. You can set delimiter character using the [`Delimiter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_Delimiter) property.
 
 N> Delimiter support has enhanced only on iOS and Android platform.
 
@@ -318,7 +318,7 @@ N> Delimiter support has enhanced only on iOS and Android platform.
 
 ### Selection indicator
 
-The combobox enables the user to indicate the selected item from the datasource when selecting multiple items from the dropdown. It can be performed by enabling `EnableSelectionIndicator` property.
+The combobox enables the user to indicate the selected item from the datasource when selecting multiple items from the dropdown. It can be performed by enabling [`EnableSelectionIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_EnableSelectionIndicator) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -344,7 +344,7 @@ comboBox.EnableSelectionIndicator= true;
 
 ### Item padding
 
-The autocomplete enables the user to provide padding for the items inside dropdown using `ItemPadding` property.
+The autocomplete enables the user to provide padding for the items inside dropdown using [`ItemPadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ItemPadding) property.
 
 {% tabs %}
 {% highlight xaml %}

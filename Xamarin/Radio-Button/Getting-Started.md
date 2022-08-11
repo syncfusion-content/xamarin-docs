@@ -37,7 +37,7 @@ N>
 
 **Method 2: Adding SfRadioButton reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfRadioButton control to the XAML page. It will automatically install the required [NuGet packages](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html) control to the XAML page. It will automatically install the required [NuGet packages](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfRadioButton assemblies manually from the installed location**
 
@@ -134,7 +134,7 @@ public partial class MainWindow : FormsApplicationPage
 {% endtabs %}
 
 ## Create a Simple SfRadioButton
-The `SfRadioButton` control is configured entirely in C# code or by using XAML markup. The following steps explain how to create a `SfRadioButton` and configure its elements.
+The [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html) control is configured entirely in C# code or by using XAML markup. The following steps explain how to create a [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html) and configure its elements.
 
 ### Add namespace for referred assemblies
 
@@ -232,7 +232,7 @@ radioGroup.Children.Add(female);
 {% endhighlight %}
 {% endtabs %}
 
-N>`SfRadioButtons` are mutually exclusive among them when they are defined within `SfRadioGroup`.
+N>[`SfRadioButtons`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html) are mutually exclusive among them when they are defined within [`SfRadioGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroup.html).
 
 ![Xamarin.Forms Radio Button states](Images/StateChage.png)
 

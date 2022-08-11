@@ -15,7 +15,7 @@ The selection changed event occurs when there is a change from one segment item 
 
 When users navigate from one item to another, selection is changed, so that the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectedIndex) value is updated to the new index of the item. The segmented control provides the [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectionChanged) event, which is triggered when the selection is changed with the [`SelectionChangedEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SelectionChangedEventArgs.html).
 
-`Index` - Gets the current index value of the selected item.
+[`Index`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SelectionChangedEventArgs.html#Syncfusion_XForms_Buttons_SelectionChangedEventArgs_Index) - Gets the current index value of the selected item.
 
 {% tabs %}
 

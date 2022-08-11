@@ -100,7 +100,7 @@ private void TabView_CenterButtonTapped(object sender, EventArgs e)
 
 ## Custom CenterButton
 
-When built-in view is not needed, it can be overridden by adding custom views to the [`CenterButtonView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_CenterButtonView). The CenterButton view can be customized by adding images, labels, buttons inside the [`CenterButtonView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_CenterButtonView). Refer the following code sample to know about customizing the view of [`CenterButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_CenterButton).
+When built-in view is not needed, it can be overridden by adding custom views to the [`CenterButtonView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_CenterButtonView). The [`CenterButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_CenterButton) view can be customized by adding images, labels, buttons inside the [`CenterButtonView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_CenterButtonView). Refer the following code sample to know about customizing the view of [`CenterButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_CenterButton).
 
 {% tabs %}
 

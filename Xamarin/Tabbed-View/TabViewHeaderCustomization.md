@@ -218,7 +218,7 @@ namespace TabViewAutomationSample
 
 {% endtabs %}
 
-N> The nullable support for [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_VisibleHeaderCount) only works when [OverFlowMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_OverflowMode) is set to `Scroll` or `DropDown`. 
+N> The nullable support for [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_VisibleHeaderCount) only works when [OverFlowMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_OverflowMode) is set to [`Scroll`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_Scroll) or [`DropDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_DropDown). 
 
 ![VisibleHeaderCount](images/TabItems/NullVisibleHeaderCount.jpg)
 
@@ -338,7 +338,7 @@ namespace TabViewAutomationSample
 ![TabItems](images/TabItems/IsAutoTabWidth.gif)
 
 
-N> The [`TabWidthMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_TabWidthMode) for [`BasedOnText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabWidthMode.html#Syncfusion_XForms_TabView_TabWidthMode_BasedOnText) is supported only when the [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_VisibleHeaderCount) is not set and [OverFlowMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_OverflowMode) is set to [`Scroll`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_Scroll). 
+N> The [`TabWidthMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_TabWidthMode) for [`BasedOnText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabWidthMode.html#Syncfusion_XForms_TabView_TabWidthMode_BasedOnText) is supported only when the [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_VisibleHeaderCount) is not set and [`OverFlowMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_OverflowMode) is set to [`Scroll`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_Scroll). 
 
 ## Position of Header in Xamarin Tabbed View (SfTabView)
 
@@ -650,7 +650,7 @@ namespace TabView
 
 {% endtabs %}
 
-N> Stroke thickness will not be applicable when the selection indicator’s position is set to "Fill".
+N> Stroke thickness will not be applicable when the selection indicator’s position is set to [`"Fill"`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SelectionIndicatorPosition.html#Syncfusion_XForms_TabView_SelectionIndicatorPosition_Fill).
 
 ![SelectionIndicator Settings Image](images/Selection-Indicator/SelectionIndicator.png)
 
@@ -658,7 +658,7 @@ N> Stroke thickness will not be applicable when the selection indicator’s posi
 
 Buttons can be used to scroll the items in the header of the tab view by setting the [`IsScrollEnabled`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_IsScrollButtonEnabled) property of [SfTabView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html). This also helps to indicate that there are tabs beyond the visible area if more tabs are present.
 
-N> The `IsScrollEnabled` is working only when [OverFlowMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_OverflowMode) is set to [`Scroll`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_Scroll).
+N> The [`IsScrollEnabled`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_IsScrollButtonEnabled) is working only when [OverFlowMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_OverflowMode) is set to [`Scroll`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_Scroll).
 
 {% tabs %}
 

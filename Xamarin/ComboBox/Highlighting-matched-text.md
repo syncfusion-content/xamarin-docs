@@ -79,7 +79,7 @@ Content = layout;
 
 ## Multiple occurrence
 
-Highlights the matching characters that present everywhere in the suggestion list for Contains case in [`SuggestionMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SuggestionMode).
+Highlights the matching characters that present everywhere in the suggestion list for [`Contains`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_Contains) case in [`SuggestionMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SuggestionMode).
 
 {% tabs %}
 

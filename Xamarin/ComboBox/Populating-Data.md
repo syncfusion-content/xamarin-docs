@@ -83,7 +83,7 @@ Content = layout;
 
 ## Populating business objects
 
-Apart from string data, SfComboBox can deal business object data also. Now create Model and ViewModel classes to populate the combo box control with employee details. 
+Apart from string data, [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html)can deal business object data also. Now create Model and ViewModel classes to populate the combo box control with employee details. 
 
 ### Create and Initialize business models 
 
@@ -193,7 +193,7 @@ comboBox.DisplayMemberPath = "Name";
 
 ### Setting ItemTemplate
 
-The [`ItemTemplate`] property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
+The [`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ItemTemplate) property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
 
 {% tabs %}
 {% highlight xaml %}

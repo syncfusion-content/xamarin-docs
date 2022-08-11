@@ -1,10 +1,12 @@
 ---
+
 layout : post
 title: Accessibility in Xamarin Rating control | Syncfusion
 description: Learn here all about Accessibility support in Syncfusion Xamarin Rating (SfRating) control and more.
 platform : Xamarin.Forms
 control : SfRating
 documentation : ug
+
 ---
 
 ## AutomationId 

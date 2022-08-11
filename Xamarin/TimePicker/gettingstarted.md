@@ -22,7 +22,7 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## Adding SfTimePicker reference
 
-You can add SfTimePicker reference using one of the following methods:
+You can add [`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) reference using one of the following methods:
 
 **Method 1: Adding SfTimePicker reference from nuget.org**
 

@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with Xamarin Switch (SfSwitch)
 
-This section explains you the steps to add the SfSwitch control with basic functionalities in Xamarin.Forms.
+This section explains you the steps to add the [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) control with basic functionalities in Xamarin.Forms.
 
 ## Assembly deployment
 
@@ -32,7 +32,7 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.or
 
 **Method 2: Adding SfSwitch reference from toolbox**
 
-Syncfusion provides Xamarin Toolbox. Using this toolbox, you can drag the SfSwitch control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [`Toolbox`](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [`Toolbox`](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfSwitch assemblies manually from the installed location**
 

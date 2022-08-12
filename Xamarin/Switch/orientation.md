@@ -9,11 +9,11 @@ documentation: ug
 
 # Orientation in Xamarin Switch (SfSwitch)
 
-The switch control provides options to change the default orientation.
+The switch control provides options to change the default [`orientation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_Orientation).
 
 ## Horizontal 
 
-By default, it is displayed horizontally. You can also define the orientation as demonstrated in the following code example.
+By default, it is displayed horizontally. You can also define the [`orientation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_Orientation) as demonstrated in the following code example.
 
 {% tabs %}
 
@@ -37,7 +37,7 @@ sfSwitch.Orientation = SwitchOrientation.Horizontal;
 
 ## Vertical
 
-To view the switch control vertically, you can define the vertical orientation as demonstrated in the following code example.
+To view the switch control vertically, you can define the vertical [`orientation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_Orientation) as demonstrated in the following code example.
 
 {% tabs %}
 

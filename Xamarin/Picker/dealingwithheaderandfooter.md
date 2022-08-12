@@ -13,7 +13,7 @@ This section explains about the header and footer customization of picker contro
 
 ## Enable or disable header 
 
-SfPicker allows enabling or disabling the header section by setting `SfPicker.ShowHeader` property to True or False. Default value of `SfPicker.ShowHeader` property is True.
+[`SfPicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html) allows enabling or disabling the header section by setting [`SfPicker.ShowHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowHeader) property to True or False. Default value of [`SfPicker.ShowHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowHeader) property is True.
 
 {% tabs %}
 {% highlight xaml %}
@@ -35,7 +35,7 @@ picker.ShowHeader = false;
 
 ## Set custom header 
 
-SfPicker allows providing custom text to its header by setting `SfPicker.HeaderText` property. Default value of `SfPicker.HeaderText` property is Null.
+[`SfPicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html) allows providing custom text to its header by setting [`SfPicker.HeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_HeaderText) property. Default value of [`SfPicker.HeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_HeaderText) property is Null.
 
 {% tabs %}
 {% highlight xaml %}
@@ -71,7 +71,7 @@ SfPicker allows customizing background, text color, and fonts.
 
 ### Background
 
-Header's background color can be customized  by setting `SfPicker.HeaderBackgroundColor` property.
+Header's background color can be customized  by setting [`SfPicker.HeaderBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_HeaderBackgroundColor) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -95,7 +95,7 @@ picker.HeaderBackgroundColor = Color.SkyBlue;
 
 ## Customization for custom Header
 
-For custom header, you need to provide the BackgroundColor for the layout instead of Picker HeaderBackgroundColor.
+For custom header, you need to provide the BackgroundColor for the layout instead of Picker [`HeaderBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_HeaderBackgroundColor).
 
 {% tabs %}
 {% highlight xaml %}
@@ -133,7 +133,7 @@ picker.HeaderView = layout;
 
 ### Text-Color 
 
-Header text's color can be customized by setting `SfPicker.HeaderTextColor` property.
+Header text's color can be customized by setting [`SfPicker.HeaderTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_HeaderTextColor) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -161,7 +161,7 @@ This section explains about the customization of header text's of Font.
 
 #### 	FontFamily
 
-Header text's FontFamily can be customized by setting `SfPicker.HeaderFontFamily` property.
+Header text's FontFamily can be customized by setting [`SfPicker.HeaderFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_HeaderFontFamily) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -185,7 +185,7 @@ picker.HeaderFontFamily = "Arial";
 
 #### 	FontSize
 
-Header text's FontSize can be customized by setting `SfPicker.HeaderFontSize` property.
+Header text's FontSize can be customized by setting [`SfPicker.HeaderFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_HeaderFontSize) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -209,7 +209,7 @@ picker.HeaderFontSize = 18;
 
 #### 	FontAttribute
 
-Header text's FontAttribute can be customized by setting `SfPicker.HeaderFontAttribute` property.
+Header text's FontAttribute can be customized by setting [`SfPicker.HeaderFontAttribute`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_HeaderFontAttribute) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -233,7 +233,7 @@ picker.HeaderFontAttribute = FontAttributes.Italic;
 
 ## Set custom footer
 
-picker allows providing custom view to its footer by setting `SfPicker.FooterView` property. Default value of `SfPicker.FooterView` property is Null.
+picker allows providing custom view to its footer by setting [`SfPicker.FooterView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_FooterView) property. Default value of [`SfPicker.FooterView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_FooterView) property is Null.
 
 {% tabs %}
 {% highlight xaml %}
@@ -269,7 +269,7 @@ picker.FooterView = layout;
 
 ## Enable or disable footer 
 
-Picker allows enabling or disabling the footer section by setting `SfPicker.ShowFooter` property to True or False. Default value of `SfPicker.ShowFooter` property is False.
+Picker allows enabling or disabling the footer section by setting [`SfPicker.ShowFooter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowFooter) property to True or False. Default value of [`SfPicker.ShowFooter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowFooter) property is False.
 
 {% tabs %}
 {% highlight xaml %}
@@ -291,7 +291,7 @@ picker.ShowFooter = true;
 
 ## Perform validation with default validation button
 
-Picker allows performing validation based on OK or Cancel button by hooking `SfPicker.OkButtonClicked` and `SfPicker.CancelButtonClicked`. In this event, from the `SelectionChangedEvent` argument, current selected items can be obtained.
+Picker allows performing validation based on OK or Cancel button by hooking [`SfPicker.OkButtonClicked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_OkButtonClicked) and [`SfPicker.CancelButtonClicked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_CancelButtonClicked). In this event, from the [`SelectionChangedEvent`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_SelectionChanged) argument, current selected items can be obtained.
 
 
 {% tabs %}

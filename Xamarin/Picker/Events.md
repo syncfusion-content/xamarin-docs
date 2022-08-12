@@ -9,23 +9,23 @@ documentation: ug
 
 # Events in Xamarin Picker (SfPicker)
 
-Three events have been used for a picker when it is in the `Dialog` mode. They are,
+Three events have been used for a picker when it is in the [`Dialog`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.PickerMode.html#Syncfusion_SfPicker_XForms_PickerMode_Dialog) mode. They are,
 
-* Opened
-* Closing
-* Closed
+* [`Opened`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_Opened)
+* [`Closing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_Closing)
+* [`Closed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_Closed)
 
 ## Opened event
 
-The `Opened` event occurs when the picker is opened. 
+The [`Opened`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_Opened) event occurs when the picker is opened. 
 
 ## Closing event 
 
-The `Closing` event raises when the picker gets closing. You can stop the picker close action by setting the `e.cancel` to true.
+The [`Closing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_Closing) event raises when the picker gets closing. You can stop the picker close action by setting the `e.cancel` to true.
 
 ## Closed event
 
-The `Closed` event was raised after the picker is closed.
+The [`Closed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_Closed) event was raised after the picker is closed.
 
 {% tabs %} 
 

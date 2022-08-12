@@ -7,11 +7,11 @@ control: TimePicker
 documentation: ug
 ---
 
-# How to
+# How to section in Xamarin.Forms TimePicker
 
 ## How to show as a Dialog
 
-TimePicker can be rendered as a dialog by setting the`SfTimePicker.PickerMode` property to Dialog. Default value of the `SfTimePicker.PickerMode` property is "Default". 
+TimePicker can be rendered as a dialog by setting the [`SfTimePicker.PickerMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_PickerMode) property to Dialog. Default value of the [`SfTimePicker.PickerMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_PickerMode) property is "Default". 
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ namespace TimePickerSample
 
 {% endtabs %}
 
-The TimePicker can be opened programmatically by setting the `SfTimePicker.IsOpen` property to true. Default value of `SfTimePicker.IsOpen` is "false".
+The TimePicker can be opened programmatically by setting the [`SfTimePicker.IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_IsOpen) property to true. Default value of [`SfTimePicker.IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_IsOpen) is "false".
 
 Note: This property is automatically changed to false when you close the dialog by clicking outside of the dialog.
 
@@ -113,7 +113,7 @@ namespace TimePickerSample
 {% endtabs %}
 
 ## How to handle time changed using the TimeSelected event
-You can perform an operation when selecting time using the `TimeSelected` event. The TimeSelected event returns the following arguments:
+You can perform an operation when selecting time using the [`TimeSelected`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_TimeSelected) event. The TimeSelected event returns the following arguments:
 
 <table>
 <tr>
@@ -183,7 +183,7 @@ namespace TimePickerSample
 
 ### How to set an interval between hours
 
-TimePicker provides an option to give an interval between hours using the `SfTimePicker.HourInterval` property.
+TimePicker provides an option to give an interval between hours using the [`SfTimePicker.HourInterval`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_HourInterval) property.
 
 {% tabs %}
 
@@ -231,7 +231,7 @@ namespace TimePickerSample
 
 ### How to set an interval between minutes
 
-TimePicker provides an option to give an interval between minutes using the `SfTimePicker.MinuteInterval` property.
+TimePicker provides an option to give an interval between minutes using the [`SfTimePicker.MinuteInterval`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_MinuteInterval) property.
 
 {% tabs %}
 
@@ -279,7 +279,7 @@ namespace TimePickerSample
 
 ### How to set an interval between seconds
 
-TimePicker provides an option to give an interval between seconds using the `SfTimePicker.SecondInterval` property.
+TimePicker provides an option to give an interval between seconds using the [`SfTimePicker.SecondInterval`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_SecondInterval) property.
 
 {% tabs %}
 

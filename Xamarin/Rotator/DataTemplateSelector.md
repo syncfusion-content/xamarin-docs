@@ -9,7 +9,7 @@ documentation: ug
 
 # DataTemplateSelector in Xamarin Rotator (SfRotator)
 
-SfRotator supports DataTemplateSelector which you can choose a DataTemplate based on the data object.
+[`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html) supports DataTemplateSelector which you can choose a DataTemplate based on the data object.
 
 {% tabs %}
 

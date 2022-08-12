@@ -10,7 +10,7 @@ documentation: ug
 
 ### Customizing track height
 
-The thickness of track bar can be customized by setting the TrackThickness property of SfRangeSlider. 
+The thickness of track bar can be customized by setting the [`TrackThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_TrackThickness) property of  [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html). 
 
 {% tabs %}
 {% highlight xaml %}
@@ -58,7 +58,7 @@ namespace TrackCustomization
 
 ### Customizing dragged area height
 
-The thickness for the selected range or selected portion of track bar can be customized by setting the TrackSelectionThickness property of SfRangeSlider.
+The thickness for the selected range or selected portion of track bar can be customized by setting the [`TrackSelectionThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_TrackSelectionThickness) property of [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html).
 
 {% tabs %}
 
@@ -107,7 +107,7 @@ namespace TrackCustomization
 
 ### Customizing track color
 
-The color of track bar can be customized by setting the TrackColor property of SfRangeSlider.
+The color of track bar can be customized by setting the [`TrackColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_TrackColor) property of [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html).
 
 {% tabs %}
 
@@ -156,7 +156,7 @@ namespace TrackCustomization
 
 ### Customizing dragged area color
 
-The color for the selected range or selected portion of track bar can be customized by setting the TrackSelectionColor property of SfRangeSlider.
+The color for the selected range or selected portion of track bar can be customized by setting the [`TrackSelectionColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_TrackSelectionColor) property of [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html).
 
 {% tabs %}
 
@@ -205,7 +205,7 @@ namespace TrackCustomization
 
 ### Customizing knob color
 
-The `KnobColor` property is used to change the knob color of SfRangeSlider.
+The [`KnobColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_KnobColor) property is used to change the knob color of [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html).
 
 {% tabs %}
 
@@ -225,7 +225,7 @@ The `KnobColor` property is used to change the knob color of SfRangeSlider.
 
 ### Customizing thumb size
 
-The `ThumbSize` property is used to change the thumb size of SfRangeSlider.
+The [`ThumbSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ThumbSize) property is used to change the thumb size of [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html).
 
 {% tabs %}
 

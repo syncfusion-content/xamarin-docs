@@ -69,7 +69,7 @@ The [`CheckedChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.
 
 ## SfRadioGroup
 
-[`SfRadioGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroup.html) is a container that contains a set of radio buttons. When you select a radio button in a radio group, all other items will be deselected automatically. At a time, you can select only one radio button from the same radio group. It also contains the [`CheckedChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroup.html) event and the [`CheckedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroup.html#Syncfusion_XForms_Buttons_SfRadioGroup_CheckedItem) property.
+[`SfRadioGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroup.html) is a container that contains a set of radio buttons. When you select a radio button in a radio group, all other items will be deselected automatically. At a time, you can select only one radio button from the same radio group. It also contains the [`CheckedChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroup.html#Syncfusion_XForms_Buttons_SfRadioGroup_CheckedChanged) event and the [`CheckedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroup.html#Syncfusion_XForms_Buttons_SfRadioGroup_CheckedItem) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -99,7 +99,7 @@ radioGroup.Children.Add(creditCard);
 
 ### Orientation in SfRadioGroup
 
-`SfRadioGroup` supports horizontal and vertical orientations. By default, SfRadioGroup is rendered with vertical orientation. You can the change the orientation by using the `Orientation` property.
+[`SfRadioGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroup.html) supports horizontal and vertical orientations. By default, [`SfRadioGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroup.html) is rendered with vertical orientation. You can the change the orientation by using the [`Orientation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SwitchOrientation.html) property.
 
 {% tabs %}
 {% highlight xaml %}

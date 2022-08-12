@@ -406,7 +406,7 @@ picker.ShowFooter = true;
 
 ### Open as dialog
 
- picker can be rendered as a dialog by setting the [`SfPicker.PickerMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_PickerMode) property to [`Dialog`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.PickerMode.html#Syncfusion_SfPicker_XForms_PickerMode_Dialog). Default value of [`SfPicker.PickerMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_PickerMode property is [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.PickerMode.html#Syncfusion_SfPicker_XForms_PickerMode_Default). 
+ picker can be rendered as a dialog by setting the [`SfPicker.PickerMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_PickerMode) property to [`Dialog`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.PickerMode.html#Syncfusion_SfPicker_XForms_PickerMode_Dialog). Default value of [`SfPicker.PickerMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_PickerMode) property is [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.PickerMode.html#Syncfusion_SfPicker_XForms_PickerMode_Default). 
 
 {% tabs %}
 {% highlight xaml %}

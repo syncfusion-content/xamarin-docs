@@ -54,7 +54,7 @@ navigationDrawer.IsOpen = true;
 
 {% endtabs %}
 
-Using `ToggleDrawer` method,
+Using [`ToggleDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ToggleDrawer) method,
 
 {% highlight c# %} 
 
@@ -62,7 +62,7 @@ navigationDrawer.ToggleDrawer();
 
 {% endhighlight %}
 
-Toggling drawer by swipe gesture is explained in `Swipe Gesture and Sensitivity` section.
+Toggling drawer by swipe gesture is explained in [`Swipe Gesture and Sensitivity`](https://help.syncfusion.com/xamarin/navigation-drawer/swipe-gesture-and-sensitivity) section.
 
 ## Opening Drawer via Binding
 

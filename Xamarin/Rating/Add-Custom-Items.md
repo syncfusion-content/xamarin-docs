@@ -13,7 +13,7 @@ documentation: ug
 
 [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) Items control provides support to add custom views.
 
-N> To use custom views in Xamarin.Forms UWP platform, you need to set ItemCount value.
+N> To use custom views in Xamarin.Forms UWP platform, you need to set [`ItemCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_ItemCount) value.
 
 ## Add SfRating items
 
@@ -44,7 +44,7 @@ rating.EnableCustomView = true;
 
 ## Set selected view
 
-The `SelectedView` property is used to apply the given SelectedView to selected rating item.
+The [`SelectedView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html#Syncfusion_SfRating_XForms_SfRatingItem_SelectedView) property is used to apply the given [`SelectedView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html#Syncfusion_SfRating_XForms_SfRatingItem_SelectedView)  to selected rating item.
 
 {% tabs %}
 
@@ -68,7 +68,7 @@ ratingItem.SelectedView = new Image() { Source = "Angry_selected.png", Aspect = 
 
 ## Set unselected view
  
-The `UnSelectedView` property is used to apply the given UnSelectedView to unselected rating item.
+The [`UnSelectedView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html#Syncfusion_SfRating_XForms_SfRatingItem_UnSelectedView) property is used to apply the given [`UnSelectedView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html#Syncfusion_SfRating_XForms_SfRatingItem_UnSelectedView) to unselected rating item.
 
 {% tabs %}
 
@@ -92,9 +92,9 @@ ratingItem.UnSelectedView = new Image() { Source = "Angry_Unselected.png", Aspec
 
 ## Add Items
 
-The `Items` property is used to hold the collection of SfRatingItem. 
+The [`Items`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_Items) property is used to hold the collection of [`SfRatingItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html). 
 
-N> SfRatingItem keeps both selected and unselected view respectively.
+N> [`SfRatingItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html) keeps both selected and unselected view respectively.
 
 {% highlight C# %}
 

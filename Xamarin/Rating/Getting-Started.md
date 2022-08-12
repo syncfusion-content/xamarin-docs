@@ -12,7 +12,7 @@ documentation: ug
 # Getting Started with Xamarin Rating (SfRating)
 
 
-This section explains how to configure a SfRating control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRating control.
+This section explains how to configure a [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control.
 
 ## Assembly deployment
 
@@ -24,7 +24,7 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## Adding SfRating reference
 
-You can add SfRating reference using one of the following methods:
+You can add [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) reference using one of the following methods:
 
 **Method 1: Adding SfRating reference from nuget.org**
 
@@ -32,7 +32,7 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 ![Adding SfRating reference from nuget](images/Adding SfRating reference.png)
 
-N> Install the same version of SfRating NuGet in all the projects.
+N> Install the same version of [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) NuGet in all the projects.
 
 **Method 2: Adding SfRating reference from toolbox**
 

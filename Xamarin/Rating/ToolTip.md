@@ -11,7 +11,7 @@ documentation: ug
 
 # ToolTip in Xamarin Rating (SfRating)
 
-Tooltip provides additional information about objects that are unfamiliar to users and are not directly displayed in UI. In the Xamarin.Forms SfRating control, tooltip shows the data of [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_Value). It will be displayed when the mouse is hovered over the rating items and will be disappeared when a rating item is selected.
+Tooltip provides additional information about objects that are unfamiliar to users and are not directly displayed in UI. In the Xamarin.Forms [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control, tooltip shows the data of [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_Value). It will be displayed when the mouse is hovered over the rating items and will be disappeared when a rating item is selected.
 
 ## Set Tooltip Placement
 
@@ -81,7 +81,7 @@ public MainPage()
 
 ### None
 
-When we set [`ToolTipPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_TooltipPlacement) as None, The ToolTip will be disappear.
+When we set [`ToolTipPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_TooltipPlacement) as [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.TooltipPlacement.html#Syncfusion_SfRating_XForms_TooltipPlacement_None), The ToolTip will be disappear.
 
 {% tabs %}
 

@@ -26,7 +26,7 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## Adding SfAutoComplete reference
 
-You can add SfAutoComplete reference using one of the following methods:
+You can add [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) reference using one of the following methods:
 
 **Method 1: Adding SfAutoComplete reference from nuget.org**
 
@@ -145,7 +145,7 @@ Window.Current.Activate();
 
 ## Initializing AutoComplete 
 
-Import the SfAutoComplete namespace in respective Page as shown below:
+Import the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) namespace in respective Page as shown below:
 
 {% tabs %}
 

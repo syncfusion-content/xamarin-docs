@@ -25,7 +25,7 @@ You can add [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XFo
 
 **Method 1: Adding SfComboBox reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfComboBox to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfComboBox](https://www.nuget.org/packages/Syncfusion.Xamarin.SfComboBox), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfComboBox](https://www.nuget.org/packages/Syncfusion.Xamarin.SfComboBox), and then install it.
 
 ![Adding SfComboBox reference from NuGet](images/Getting-Started/Adding SfComboBox reference.png)
 
@@ -186,7 +186,7 @@ Content = layout;
 
 ## Populating ComboBox with data
 
-Now, a list of string with resolution list is created and added to the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) data source property. This list is populated as suggestion list by setting the 'DataSource' property based on text entry. You can customize the drop-down height using the [`MaximumDropDownHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_MaximumDropDownHeight) property. Add the DataSource for the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) as shown in the following code.
+Now, a list of string with resolution list is created and added to the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) data source property. This list is populated as suggestion list by setting the [   [`'DataSource'`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DataSource) property based on text entry. You can customize the drop-down height using the [`MaximumDropDownHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_MaximumDropDownHeight) property. Add the [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DataSource) for the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) as shown in the following code.
 
 {% tabs %}
 

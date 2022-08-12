@@ -346,7 +346,7 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-Refer [this](https://help.syncfusion.com/xamarin/sfautocomplete/customizing-autocomplete) link to learn more about the customizing options available in SfAutoComplete control.
+Refer [this](https://help.syncfusion.com/xamarin/sfautocomplete/customizing-autocomplete) link to learn more about the customizing options available in [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control.
 
 N> Add the required image in drawable folder(Android), Resources folder(iOS) and at project location for UWP.
 

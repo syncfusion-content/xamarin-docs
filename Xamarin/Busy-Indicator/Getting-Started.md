@@ -23,7 +23,7 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## Adding SfBusyIndicator reference
 
-You can add SfBusyIndicator reference using one of the following methods:
+You can add [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) reference using one of the following methods:
 
 **Method 1: Adding SfBusyIndicator reference from nuget.org**
 
@@ -68,7 +68,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the tria
 
 ## Launching the SfBusyIndicator on each platform
 
-To use SfBusyIndicator inside an application, each platform application must initialize the SfBusyIndicator renderer. This initialization step varies from platform to platform and is discussed in the following sections.
+To use [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) inside an application, each platform application must initialize the SfBusyIndicator renderer. This initialization step varies from platform to platform and is discussed in the following sections.
 
 ### Android and  UWP
 
@@ -154,7 +154,7 @@ The [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusy
 
 {% endtabs %}
 
-* Now add the SfBusyIndicator control with a required optimal name by using the included namespace.
+* Now add the [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) control with a required optimal name by using the included namespace.
 
 {% tabs %}
 

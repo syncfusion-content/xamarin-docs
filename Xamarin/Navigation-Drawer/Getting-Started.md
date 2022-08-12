@@ -25,7 +25,7 @@ You can add [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfu
 
 **Method 1: Adding SfNavigationDrawer reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfNavigationDrawer to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfNavigationDrawer](https://www.nuget.org/packages/Syncfusion.Xamarin.SfNavigationDrawer), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfNavigationDrawer](https://www.nuget.org/packages/Syncfusion.Xamarin.SfNavigationDrawer), and then install it.
 
 ![Adding SfNavigationDrawer reference from NuGet](Images/Adding SfNavigationDrawer reference.png)
 
@@ -170,7 +170,7 @@ Window.Current.Activate();
 
 ## Initialize SfNavigationDrawer
 
-Import the SfNavigationDrawer namespace in respective Page as shown below: 
+Import the [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) namespace in respective Page as shown below: 
 
 {% tabs %}
 
@@ -284,7 +284,7 @@ namespace NaviSample
 {% endtabs %}
 
 
-N> For changing the side of navigation pane use Position property. Use [`DrawerHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerWidth) property to change the drawer height in Top and Bottom positions.
+N> For changing the side of navigation pane use [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_Position) property. Use [`DrawerHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerWidth) property to change the drawer height in Top and Bottom positions.
 
 ## Add Hamburger Menu for Toggling Drawer
 

@@ -21,7 +21,7 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## Adding SfRangeSlider reference
 
-You can add SfRangeSlider reference using one of the following methods:
+You can add [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) reference using one of the following methods:
 
 **Method 1: Adding SfRangeSlider reference from nuget.org**
 
@@ -33,7 +33,7 @@ N> Install the same version of [`SfRangeSlider`](https://help.syncfusion.com/cr/
 
 **Method 2: Adding SfRangeSlider reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfRangeSlider control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfRangeSlider assemblies manually from the installed location**
 

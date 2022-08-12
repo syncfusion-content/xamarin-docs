@@ -123,7 +123,7 @@ autoComplete.LoadMore(5);
 
 ## Load more view customization
 
-[`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html)` allows customizing User Interface(UI) of Load More view.
+[`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) allows customizing User Interface(UI) of Load More view.
 To customize the load more text, add the custom UI in the [`LoadMoreTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_LoadMoreTemplate) API in [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html), as shown in the following code snippet.
 
 {% tabs %}

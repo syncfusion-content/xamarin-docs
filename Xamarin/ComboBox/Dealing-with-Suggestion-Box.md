@@ -13,7 +13,7 @@ Suggestion box is a drop-down list box, which displays the filtered suggestions 
 
 ## Suggestion box placement mode
  
-The drop-down that shows the filtered items will be placed automatically based on the available space and can also be customized using the [`SuggestionBoxPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html) property.
+The drop-down that shows the filtered items will be placed automatically based on the available space and can also be customized using the [`SuggestionBoxPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SuggestionBoxPlacement) property.
  
 [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html#Syncfusion_XForms_ComboBox_SuggestionBoxPlacement_Top) - Drop-down will be placed above the text box.
  
@@ -299,7 +299,7 @@ In this example, a time duration of 3 seconds is set to search delay.
 
 ## Avoid opening suggestion box
 
-To avoid the drop down open, you can set the [`SuggestionBoxPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SuggestionBoxPlacement) API to None.
+To avoid the drop down open, you can set the [`SuggestionBoxPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SuggestionBoxPlacement) API to [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html#Syncfusion_XForms_ComboBox_SuggestionBoxPlacement_None).
 
 {% tabs %}
 
@@ -563,7 +563,7 @@ namespace SfComboBox_Sample
 {% endhighlight %}
 {% endtabs %}
 
-The other way to get a filtered suggestion item is an event called [`FilterCollectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html). This event is triggered when the SfComboBox suggestions have been changed. You can get the filtered items from the [`FilterCollectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html)   event value argument.
+The other way to get a filtered suggestion item is an event called [`FilterCollectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html). This event is triggered when the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) suggestions have been changed. You can get the filtered items from the [`FilterCollectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) event value argument.
 
 <table>
 <tr>

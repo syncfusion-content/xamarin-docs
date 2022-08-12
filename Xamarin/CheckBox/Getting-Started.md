@@ -23,7 +23,7 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## Adding SfCheckBox reference
 
-You can add SfCheckBox reference using one of the following methods:
+You can add [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html) reference using one of the following methods:
 
 **Method 1: Adding SfCheckBox reference from nuget.org**
 
@@ -32,12 +32,12 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 ![Xamarin.Forms CheckBox NuGet](Images/Adding SfCheckBox reference.png)
 
 N> 
-* Install the same version of SfCheckBox NuGet in all the projects.
+* Install the same version of [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html) NuGet in all the projects.
 * In addition, you need to install the [Syncfusion.Xamarin.Buttons.WPF]() package for Xamarin.Forms WPF platform only.
 
 **Method 2: Adding SfCheckBox reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfCheckBox control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfCheckBox assemblies manually from the installed location**
 

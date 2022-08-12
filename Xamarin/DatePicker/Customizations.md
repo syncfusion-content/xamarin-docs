@@ -9,7 +9,7 @@ documentation: ug
 
 # Customizations in Xamarin DatePicker (SfDatePicker)
 
-You can customize the header, column header, footer, selected item, and unselected item of the SfDatePicker.
+You can customize the header, column header, footer, selected item, and unselected item of the [`SfDatePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html).
 
 ## Header customization
 

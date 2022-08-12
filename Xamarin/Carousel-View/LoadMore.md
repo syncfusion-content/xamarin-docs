@@ -9,21 +9,21 @@ documentation : ug
 
 # Load More in Xamarin Carousel View (SfCarousel)
 
-Virtualization can be achieved by using the Load more concept. This support is used to handle the numerous items in the carousel control. A particular items are maintained in the view port based on the `LoadMoreItemsCount` property. The LoadMore view is added after the last item in the collection of carousel view. When tapping the LoadMore view, the next set of items in the collection can be added to the carousel.
+Virtualization can be achieved by using the Load more concept. This support is used to handle the numerous items in the carousel control. A particular items are maintained in the view port based on the [`LoadMoreItemsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_LoadMoreItemsCount) property. The [`LoadMore`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_LoadMore) view is added after the last item in the collection of carousel view. When tapping the [`LoadMore`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_LoadMore) view, the next set of items in the collection can be added to the carousel.
 
 The following properties are used to achieve this support:
 
-*	`AllowLoadMore`
+*	[`AllowLoadMore`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_AllowLoadMore)
 
-*	`LoadMoreItemsCount`
+*	[`LoadMoreItemsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_LoadMoreItemsCount)
 
-*	`LoadMoreView`
+*	[`LoadMoreView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_LoadMoreView)
 
 ## AllowLoadMore
 
-By enabling the `AllowLoadMore` property, the LoadMore support works in the carousel view. 
+By enabling the [`AllowLoadMore`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_AllowLoadMore) property, the LoadMore support works in the carousel view. 
 
-N>The default value of the `AllowLoadMore` property is false.
+N>The default value of the [`AllowLoadMore`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_AllowLoadMore) property is false.
 
 {% tabs %}
 
@@ -140,9 +140,9 @@ namespace CarouselSample
 
 ## LoadMoreItemsCount
 
-Number of items can be maintained in the carousel control by using the `LoadMoreItemsCount` property. By using the `LoadMoreItemsCount` property, numerous items can be separated. 
+Number of items can be maintained in the carousel control by using the [`LoadMoreItemsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_LoadMoreItemsCount) property. By using the [`LoadMoreItemsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_LoadMoreItemsCount) property, numerous items can be separated. 
 
-N>The default value of the `LoadMoreItemsCount` property is 3.
+N>The default value of the [`LoadMoreItemsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_LoadMoreItemsCount) property is 3.
 
 {% tabs %}
 
@@ -268,7 +268,7 @@ namespace CarouselSample
 
 ## LoadMoreView
 
-Custom view can be passed instead of the LoadMore label by using the `LoadMoreView` property. 
+Custom view can be passed instead of the [`LoadMore`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_LoadMore) label by using the [`LoadMoreView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_LoadMoreView) property. 
 
 {% tabs %}
 
@@ -426,7 +426,7 @@ You can find the complete Load More sample from this [link.](https://github.com/
 
 ## LoadMore method
 
-To load more items programmatically, LoadMore method can be called which loads the items dynamically to the UI based on the [`LoadMoreItemsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_LoadMoreItemsCount) API value.
+To load more items programmatically, [`LoadMore`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_LoadMore) method can be called which loads the items dynamically to the UI based on the [`LoadMoreItemsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_LoadMoreItemsCount) API value.
 
 {% tabs %}
 

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Dealing with Suggestion Box in Xamarin SfAutoComplete
 
-Suggestion box is the drop-down list box, which displays the filtered suggestions inside a popup. This section explains the properties that deals with drop-down list in the SfAutoComplete control.
+Suggestion box is the drop-down list box, which displays the filtered suggestions inside a popup. This section explains the properties that deals with drop-down list in the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control.
 
 ## Suggestion box placement mode
  
@@ -498,7 +498,7 @@ namespace AutocompleteSample
 
 ## Avoid opening suggestion box
 
-To avoid opening the drop-down, you can set the [`SuggestionBoxPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SuggestionBoxPlacement) API to None.
+To avoid opening the drop-down, you can set the [`SuggestionBoxPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SuggestionBoxPlacement) API to [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html#Syncfusion_XForms_ComboBox_SuggestionBoxPlacement_None).
 
 {% tabs %}
 
@@ -590,7 +590,7 @@ namespace AutocompleteSample
 
 ## Retrieve the filter suggestion items
 
-There are two ways to get the filtered suggestion items from SfAutoComplete. 
+There are two ways to get the filtered suggestion items from [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html). 
 You can use the [`FilteredItems`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_FilteredItems) API in [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) to access filtered suggestions items.
 
 {% tabs %}

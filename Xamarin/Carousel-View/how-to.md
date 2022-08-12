@@ -1,7 +1,7 @@
 ---
 layout : post
-title : Interaction in Syncfusion Carousel Control in Xamarin.
-description : Learn how to perform an operation while changing the carouselItem or Collection in Carousel for Xamarin.
+title : Interaction in Syncfusion Carousel Control (SfCarousel) in Xamarin.
+description : Learn how to perform an operation while changing the carouselItem or Collection in Carousel in Syncfusion Carousel Control for Xamarin.
 platform : Xamarin
 control : Carousel
 documentation : ug

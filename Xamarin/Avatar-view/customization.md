@@ -7,7 +7,7 @@ control: AvatarView
 documentation: ug
 ---
 
-# Customization 
+# Customization in Xamarin Avatar View(SfAvatarView)
 
 ## Customization in Xamarin Avatar View(SfAvatarView)
 

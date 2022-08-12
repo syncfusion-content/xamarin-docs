@@ -11,7 +11,7 @@ documentation: ug
 
 ## Getting started with SfAvatarView
 
-This section explains the steps required to work with the SfAvatarView control for Xamarin.Forms.
+This section explains the steps required to work with the [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control for Xamarin.Forms.
 
 ## Assembly deployment
 
@@ -35,7 +35,7 @@ N> Install the same version of [`SfAvatarView`](https://help.syncfusion.com/cr/x
 
 **Method 2: Adding SfAvatarView reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfAvatarView control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfAvatarView assemblies manually from the installed location**
 

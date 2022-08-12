@@ -20,7 +20,7 @@ The  [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.A
 
 Custom type allows you to customize the control, where you can handle the size, colors, images, etc. of the control. Refer to this [documentation](https://help.syncfusion.com/xamarin/sfavatarview/customization).
 
-N> The default visual type is custom.
+N> The default visual type is [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.AvatarShape.html#Syncfusion_XForms_AvatarView_AvatarShape_Custom).
 
 ## Circle
 

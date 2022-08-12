@@ -40,7 +40,7 @@ public String Image
 
 {% endtabs %}
 
-Create and populate SfRotator collection as follows
+Create and populate [`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html) collection as follows
 
 {% tabs %}
 
@@ -183,7 +183,7 @@ namespace Rotator
 
 ## Through Rotator Item
 
-The ItemTemplate provides common template with different data, whereas if different views for every items is needed, it can also be provided using [`ItemContent`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotatorItem.html#Syncfusion_SfRotator_XForms_SfRotatorItem_ItemContent) property  in [`SfRotatorItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotatorItem.html) class.
+The [`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html#Syncfusion_SfRotator_XForms_SfRotator_ItemTemplate) provides common template with different data, whereas if different views for every items is needed, it can also be provided using [`ItemContent`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotatorItem.html#Syncfusion_SfRotator_XForms_SfRotatorItem_ItemContent) property  in [`SfRotatorItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotatorItem.html) class.
 
 {% tabs %}
 

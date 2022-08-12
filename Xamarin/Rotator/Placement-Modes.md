@@ -17,7 +17,7 @@ By default, the rotator control displays the dots of each rotator item. It can b
  
 ## DotsPlacement
 
-The Display Type of Rotator can be modified using the DotsPlacement Mode. The [`“None”`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.DotPlacement.html#Syncfusion_SfRotator_XForms_DotPlacement_None) type can be used when the dots are not needed for the rotator control.
+The Display Type of Rotator can be modified using the [`DotsPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html#Syncfusion_SfRotator_XForms_SfRotator_DotPlacement) Mode. The [`“None”`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.DotPlacement.html#Syncfusion_SfRotator_XForms_DotPlacement_None) type can be used when the dots are not needed for the rotator control.
 
 {% tabs %}
 

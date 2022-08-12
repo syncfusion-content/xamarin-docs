@@ -11,7 +11,7 @@ documentation: ug
 
 ## Show busy indicator to perform async action
 
-The busy indicator indicates users that something is on progress in the background. For instance, some data is being fetched from the back end. Here, when users about to switch the state, the StateChanging event occurs, and users can set the `IsBusy` property to true to show busy indicator and perform fetching the data from the server. After fetching the data, the `IsOn` property will be set to true or false based on validation. After validation, the `IsBusy` property is set to false.
+The busy indicator indicates users that something is on progress in the background. For instance, some data is being fetched from the back end. Here, when users about to switch the state, the [`StateChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_StateChanging) event occurs, and users can set the [`IsBusy`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_IsBusy) property to true to show busy indicator and perform fetching the data from the server. After fetching the data, the [`IsOn`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_IsOn) property will be set to true or false based on validation. After validation, the [`IsBusy`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_IsBusy) property is set to false.
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ The busy indicator indicates users that something is on progress in the backgrou
 
 ## Change thumb color alone based on its state and devices
 
-You can customize the thumb color using the `ThumbColor` property based on its visual state and devices.
+You can customize the thumb color using the [`ThumbColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_ThumbColor) property based on its visual state and devices.
 
 {% tabs %}
 
@@ -160,7 +160,7 @@ You can customize the thumb color using the `ThumbColor` property based on its v
 
 ## Change thumb color alone based on its state with Material theme for all devices
 
-By using the `MaterialSwitchSettings`, `CupertinoSwitchSettings`, and `FluentSwitchSettings` properties, you can change the thumb color based on its state for all devices.
+By using the [`MaterialSwitchSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.MaterialSwitchSettings-1.html), [`CupertinoSwitchSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.CupertinoSwitchSettings-1.html), and [`FluentSwitchSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.FluentSwitchSettings-1.html) properties, you can change the thumb color based on its state for all devices.
 
 {% tabs %}
 
@@ -360,7 +360,7 @@ this.Content = sfSwitch;
 
 ## Change busy indicator color
 
-You can customize the busy indicator color using the `BusyIndicatorColor` property based on its visual state and devices.
+You can customize the busy indicator color using the [`BusyIndicatorColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_BusyIndicatorColor) property based on its visual state and devices.
 
 {% tabs %}
 

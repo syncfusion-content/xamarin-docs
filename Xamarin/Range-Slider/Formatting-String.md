@@ -9,7 +9,7 @@ documentation: ug
 
 # Formatting String in Xamarin Range Slider (SfRangeSlider)
 
-The Value label of the SfRangeSlider can be configured to display different formats like currency format, percent format etc. We can also customize the Value label with string formatting. We can customize using [`LabelFormat`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_LabelFormat) property which determines the format specifier by which the display Value has to be formatted.
+The Value label of the [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) can be configured to display different formats like currency format, percent format etc. We can also customize the Value label with string formatting. We can customize using [`LabelFormat`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_LabelFormat) property which determines the format specifier by which the display Value has to be formatted.
 
 ## Formatting types
 

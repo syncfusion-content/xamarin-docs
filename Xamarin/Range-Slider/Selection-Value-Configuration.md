@@ -53,7 +53,7 @@ Gets or sets the maximum possible value of the range. The thumb could not move a
 
 ## Set Tick Frequency
 
-The [`TickFrequency`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_TickFrequency) property is used to decide the number of ticks to be displayed along the track based on Minimum and Maximum values.
+The [`TickFrequency`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_TickFrequency) property is used to decide the number of ticks to be displayed along the track based on [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Maximum) values.
 
 {% tabs %}
 

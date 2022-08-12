@@ -9,13 +9,13 @@ documentation: ug
 
 # Labels Customization in Xamarin Range Slider (SfRangeSlider)
 
-SfRangeSlider provides option to show or hide the label and position customization.
+[`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) provides option to show or hide the label and position customization.
 
 ## Show Value Label
 
-This property allows us to display labels for the ticks. When it sets to true, it displays the label for all the ticks based on the `ValuePlacement` property.
+This property allows us to display labels for the ticks. When it sets to true, it displays the label for all the ticks based on the [`ValuePlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ValuePlacement) property.
 
-N> The default value of the `ShowValueLabel` property is false.
+N> The default value of the [`ShowValueLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ShowValueLabel) property is false.
 
 {% tabs %}
 
@@ -35,7 +35,7 @@ N> The default value of the `ShowValueLabel` property is false.
 
 ## Set Custom Label
 
-To display custom labels, `ShowCustomLabel` property should be set to true and need to populate the `CustomLabels` property with observable collection of items by specifying the custom labels for corresponding values.
+To display custom labels, [`ShowCustomLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ShowCustomLabel) property should be set to true and need to populate the [`CustomLabels`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_CustomLabels) property with observable collection of items by specifying the custom labels for corresponding values.
 
 {% tabs %}
 
@@ -69,13 +69,13 @@ public RangeSliderPage ()
 
 ## Value Placement
 
-The `ValuePlacement` property describes the position of the Value respective to ticks. 
+The [`ValuePlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ValuePlacement) property describes the position of the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Value) respective to ticks. 
 
 Available options for this property are:
 
-* BottomRight
+* [`BottomRight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValuePlacement.html#Syncfusion_SfRangeSlider_XForms_ValuePlacement_BottomRight)
 
-* TopLeft
+* [`TopLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValuePlacement.html#Syncfusion_SfRangeSlider_XForms_ValuePlacement_TopLeft)
 
 {% tabs %}
 
@@ -115,13 +115,13 @@ Available options for this property are:
 
 ## Label Placement
 
-The `LabelPlacement` property describes the position of the custom labels respective to ticks. 
+The [`LabelPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_LabelPlacement) property describes the position of the custom labels respective to ticks. 
 
 Available options for this property are:
 
-* BottomRight
+* [`BottomRight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.LabelPlacement.html#Syncfusion_SfRangeSlider_XForms_LabelPlacement_BottomRight)
 
-* TopLeft
+* [`TopLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.LabelPlacement.html#Syncfusion_SfRangeSlider_XForms_LabelPlacement_TopLeft)
 
 {% tabs %}
 
@@ -141,7 +141,7 @@ Available options for this property are:
 
 ## Customizing label font
 
-The range slider control provides the `FontFamily`, `FontSize`, and `FontAttribute` properties to customize the value text and custom label text.
+The range slider control provides the [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_FontFamily), [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_FontSize), and [`FontAttribute`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_FontAttribute) properties to customize the value text and custom label text.
 
 {% tabs %}
 
@@ -234,7 +234,7 @@ namespace GettingStarted
 
 ## LabelColor
 
-The `LabelColor` property used to change the color of the label.
+The [`LabelColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_LabelColor) property used to change the color of the label.
 
 {% tabs %}
 

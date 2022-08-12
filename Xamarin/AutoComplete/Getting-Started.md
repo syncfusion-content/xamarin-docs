@@ -26,7 +26,7 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## Adding SfAutoComplete reference
 
-You can add SfAutoComplete reference using one of the following methods:
+You can add [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) reference using one of the following methods:
 
 **Method 1: Adding SfAutoComplete reference from nuget.org**
 
@@ -38,7 +38,7 @@ N> Install the same version of SfAutoComplete NuGet in all the projects.
 
 **Method 2: Adding SfAutoComplete reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfAutoComplete control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfAutoComplete assemblies manually from the installed location**
 
@@ -96,7 +96,7 @@ return base.FinishedLaunching(app, options);
 
 ### Additional Step for UWP
 
-This step is required only if the application is deployed in Release mode with .NET native tool chain enabled and it is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the SfAutoComplete assembly at OnLaunched overridden method of the App class in UWP project is the suggested workaround. And the code example is shown below:
+This step is required only if the application is deployed in Release mode with .NET native tool chain enabled and it is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) assembly at OnLaunched overridden method of the App class in UWP project is the suggested workaround. And the code example is shown below:
 
 {% tabs %}
 
@@ -145,7 +145,7 @@ Window.Current.Activate();
 
 ## Initializing AutoComplete 
 
-Import the SfAutoComplete namespace in respective Page as shown below:
+Import the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) namespace in respective Page as shown below:
 
 {% tabs %}
 
@@ -223,7 +223,7 @@ namespace AutocompleteSample
 
 ## Populating AutoComplete with Data
 
-Now, let us create a simple list of country names and set it as the `AutoCompleteSource` of AutoComplete.
+Now, let us create a simple list of country names and set it as the [`AutoCompleteSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_AutoCompleteSource) of AutoComplete.
 
 {% tabs %}
 
@@ -311,13 +311,13 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-Refer [this](https://help.syncfusion.com/xamarin/autocomplete/populating-data) link to learn more about the options available in SfAutoComplete to populate data.
+Refer [this](https://help.syncfusion.com/xamarin/autocomplete/populating-data) link to learn more about the options available in [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) to populate data.
 
 ## Configuring filter options
 
-By default, items are filtered in “StartsWith” case insensitive mode and the suggestions are displayed in a drop down popup. Autocomplete can now filter suggestions.
+By default, items are filtered in [`“StartsWith”`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionMode.html#Syncfusion_SfAutoComplete_XForms_SuggestionMode_StartsWith) case insensitive mode and the suggestions are displayed in a drop down popup. Autocomplete can now filter suggestions.
 
-Here in this example, let us configure it to “Contains” case sensitive filter mode. This can be achieved by setting `SuggestionMode` property.
+Here in this example, let us configure it to [`“Contains”`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionMode.html#Syncfusion_SfAutoComplete_XForms_SuggestionMode_Contains) case sensitive filter mode. This can be achieved by setting [`SuggestionMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SuggestionMode) property.
  
 {% tabs %}
 

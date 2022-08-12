@@ -21,7 +21,7 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## Adding SfSegmentedControl reference
 
-You can add SfSegmentedControl reference using one of the following methods:
+You can add [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html) reference using one of the following methods:
 
 **Method 1: Adding SfSegmentedControl reference from nuget.org**
 
@@ -76,7 +76,7 @@ To use the segmented control inside an application, each platform application mu
 
 ### Android and UWP
 
-The Android and UWP launches the SfSegmentedControl without any initialization, and it is enough to only initialize the Xamarin.Forms Framework to launch the application.
+The Android and UWP launches the [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html) without any initialization, and it is enough to only initialize the Xamarin.Forms Framework to launch the application.
 
 N> If you are adding the references from toolbox, this step is not needed.
 
@@ -387,11 +387,11 @@ You can add the data inside the segmented control in three different ways:
 2. SfSegmentItem
 3. Custom View
 
-Items inside the segmented control can be added using the `ItemsSource` property of `SfSegmentedControl`, which holds the collection/list of items.
+Items inside the segmented control can be added using the [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_ItemsSource) property of [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html), which holds the collection/list of items.
 
 ### Adding data as a String
 
-With the help of  Xamarin.Forms `System.Collections.Generic` you can add string data as `ItemsSource` to SfSegmentedControl.
+With the help of  Xamarin.Forms `System.Collections.Generic` you can add string data as [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_ItemsSource) to [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html).
 
 {% highlight c# %}
 
@@ -574,9 +574,9 @@ With the help of  Xamarin.Forms `System.Collections.Generic` you can add string 
 
 ### Adding data as a SfSegmentItem
 
-By using `SfSegmentItem` class, you can add data inside the segmented control.
+By using [`SfSegmentItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentItem.html) class, you can add data inside the segmented control.
 
-In ViewModel, add the following code to get the respective items in SfSegmentedControl.
+In ViewModel, add the following code to get the respective items in [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html).
 
 {% highlight C# %}
 
@@ -807,7 +807,7 @@ In ViewModel, add the following code to get the respective items in SfSegmentedC
 
 You can add any custom view to the segmented control.
 
-In ViewModel add the below given code to get the respective items/collection in SfSegmentedControl.
+In ViewModel add the below given code to get the respective items/collection in [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html).
 
 {% highlight C# %}
 
@@ -1102,7 +1102,7 @@ In ViewModel add the below given code to get the respective items/collection in 
 
 ### Share space equally to all the items
 
-To share the item space equally to the segmented control, set the number of segment item that has to be visible on the available screen width and that can be distributed in the available space using the `VisibleSegmentsCount` property of `SfSegmentedControl`.
+To share the item space equally to the segmented control, set the number of segment item that has to be visible on the available screen width and that can be distributed in the available space using the [`VisibleSegmentsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_VisibleSegmentsCount) property of [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html).
 
 {% tabs %}
 
@@ -1123,7 +1123,7 @@ To share the item space equally to the segmented control, set the number of segm
 
 ### Display mode
 
-You can change the appearance of the segmented control by using the `DisplayMode` property of SfSegmentedControl. You can set the `DisplayMode` to either Image or Text or ImageWithText.
+You can change the appearance of the segmented control by using the [`DisplayMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_DisplayMode) property of [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html). You can set the [`DisplayMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_DisplayMode) to either Image or Text or ImageWithText.
 
 {% tabs %}
 
@@ -1143,13 +1143,13 @@ You can change the appearance of the segmented control by using the `DisplayMode
 
 ## Customizing selection indicator appearance
 
-The Selection indicator can be used to indicate the selected index of the segmented control. It can be customized with the built-in APIs that are available in the `SelectionIndicatorSettings` property of SfSegmentedControl.
+The Selection indicator can be used to indicate the selected index of the segmented control. It can be customized with the built-in APIs that are available in the [`SelectionIndicatorSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectionIndicatorSettings) property of [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html).
 
 To learn more about customizing selection indicator, refer to this [feature link](https://help.syncfusion.com/xamarin/sfsegmentedcontrol/indicating-the-selected-item)
 
 ## Handle click events
 
-SfSegmentedControl has SelectionChanged event, using this, you can perform operation based on your needs.
+[`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html) has SelectionChanged event, using this, you can perform operation based on your needs.
 
 {% tabs %}
 

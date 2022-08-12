@@ -13,7 +13,7 @@ The chip control supports to customize the background color, border color, close
 
 ## ShowCloseButton
 
-The [`ShowCloseButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_ShowCloseButton) property sets the visible state of close button in SfChip.
+The [`ShowCloseButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_ShowCloseButton) property sets the visible state of close button in [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html).
 
 {% tabs %}
 
@@ -72,11 +72,11 @@ namespace ChipCustomization
 
 ![SfChip with CloseButton](images/customization-images/chip_showclosebutton_image.png)
 
-N> The default value of ShowCloseButton is [`false`].
+N> The default value of [`ShowCloseButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_ShowCloseButton) is [`false`].
 
 ## ShowSelectionIndicator
 
-The [`ShowSelectionIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_ShowSelectionIndicator) property sets the visible state of selection indicator in SfChip.
+The [`ShowSelectionIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_ShowSelectionIndicator) property sets the visible state of selection indicator in [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html).
 
 {% tabs %}
 
@@ -138,11 +138,11 @@ namespace ChipCustomization
 
 ![SfChip with ShowSelectionIndicator](images/customization-images/chip_showselectionindicator_image.png)
 
-N> The default value of ShowSelectionIndicator is [`false`].
+N> The default value of [`ShowSelectionIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_ShowSelectionIndicator) is [`false`].
 
 ## CloseButtonColor
 
-The [`CloseButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_CloseButtonColor) property customizes the color of the close button in SfChip.
+The [`CloseButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_CloseButtonColor) property customizes the color of the close button in [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html).
 
 {% tabs %}
 
@@ -204,11 +204,11 @@ namespace ChipCustomization
 
 ![SfChip with CloseButtonColor](images/customization-images/chip_closebuttoncolor_image.png)
 
-N> The default value of CloseButtonColor is [`Color.FromHex("#6b6b6b")`].
+N> The default value of [`CloseButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_CloseButtonColor) is [`Color.FromHex("#6b6b6b")`].
 
 ## SelectionIndicatorColor
 
-The [`SelectionIndicatorColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_SelectionIndicatorColor) property customizes the selection indicator color in SfChip.
+The [`SelectionIndicatorColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_SelectionIndicatorColor) property customizes the selection indicator color in [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html).
 
 {% tabs %}
 
@@ -274,11 +274,11 @@ namespace ChipCustomization
 
 ![SfChip with SelectionIndicatorColor](images/customization-images/chip_selectionindicatorcolor_image.png)
 
-N> The default value of SelectionIndicatorColor is [`Color.FromHex("#6b6b6b")`].
+N> The default value of [`SelectionIndicatorColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_SelectionIndicatorColor) is [`Color.FromHex("#6b6b6b")`].
 
 ## BackgroundColor
 
-The [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_BackgroundColor) property customizes the background color of SfChip.
+The [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_BackgroundColor) property customizes the background color of [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html).
 
 {% tabs %}
 
@@ -345,11 +345,11 @@ namespace ChipCustomization
 
 ![SfChip with BackgroundColor](images/customization-images/chip_chipbackgroundcolor_image.png)
 
-N> The default value of BackgroundColor is [`Color.Accent`].
+N> The default value of [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_BackgroundColor) is [`Color.Accent`].
 
 ## BorderColor
 
-The [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_BorderColor) property customizes the color of border in SfChip.
+The [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_BorderColor) property customizes the color of border in [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html).
 
 {% tabs %}
 
@@ -411,11 +411,11 @@ namespace ChipCustomization
 
 ![SfChip with BorderColor](images/customization-images/chip_bordercolor_image.png)
 
-N> The default value of BorderColor is [`Color.Transparent`].
+N> The default value of [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_BorderColor) is [`Color.Transparent`].
 
 ## BorderWidth
 
-The [`BorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_BorderWidth) property customizes the thickness of border in SfChip.
+The [`BorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_BorderWidth) property customizes the thickness of border in [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html).
 
 {% tabs %}
 
@@ -484,7 +484,7 @@ namespace ChipCustomization
 
 ## BorderThickness
 
-The [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Border.SfBorder.html#Syncfusion_XForms_Border_SfBorder_BorderThickness) property is used to customizes the border thickness of the SfChip on four sides.
+The [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Border.SfBorder.html#Syncfusion_XForms_Border_SfBorder_BorderThickness) property is used to customizes the border thickness of the [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html) on four sides.
 
 {% tabs %}
 
@@ -550,7 +550,7 @@ namespace ChipCustomization
 
 ## CornerRadius
 
-The `CornerRadius` property is used to customize the rounded edges in SfChip as demonstrated in the following code sample.
+The [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_CornerRadius) property is used to customize the rounded edges in [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html) as demonstrated in the following code sample.
 
 {% tabs %}
 
@@ -614,11 +614,11 @@ namespace ChipCustomization
 
 ![SfChip with CornerRadius](images/customization-images/chip_cornerradius_image.png)
 
-N> The default value of CornerRadius is [`Thickness(0)`].
+N> The default value of [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_CornerRadius) is [`Thickness(0)`].
 
 ## FontAttributes
 
-The [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_FontAttributes) property customizes the font style of text in SfChip.
+The [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_FontAttributes) property customizes the font style of text in [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html).
 
 {% tabs %}
 
@@ -686,7 +686,7 @@ namespace ChipCustomization
 
 ## FontFamily
 
-The [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_FontFamily) property customizes the font family of text in SfChip.
+The [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_FontFamily) property customizes the font family of text in [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html).
 
 {% tabs %}
 
@@ -755,7 +755,7 @@ namespace ChipCustomization
 
 ## FontSize
 
-The [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_FontSize) property customizes the size of text in SfChip.
+The [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_FontSize) property customizes the size of text in [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html).
 
 {% tabs %}
 
@@ -829,7 +829,7 @@ N> Default Value of FontSize
 
 ## TextColor
 
-The [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_TextColor) property customizes the color of text in SfChip.
+The [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_TextColor) property customizes the color of text in [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html).
 
 {% tabs %}
 
@@ -902,8 +902,7 @@ N> The default value of TextColor is [`Color.White`].
 
 ## TextAlignment
 
-The [`HorizontalTextAlignment `](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_HorizontalTextAlignment) and [`VerticalTextAlignment `](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_VerticalTextAlignment) properties customize the alignment of text in SfChip.
-
+The [`HorizontalTextAlignment `](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_HorizontalTextAlignment) and [`VerticalTextAlignment `](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_VerticalTextAlignment) properties customize the alignment of text in [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html)
 {% tabs %}
 
 {% highlight xaml %}
@@ -972,11 +971,11 @@ namespace ChipCustomization
 
 ![SfChip with TextAlignment](images/customization-images/chip_textalignment_image.png)
 
-N> The default values of HorizontalTextAlignment and VerticalTextAlignment are [`TextAlignment.Center`].
+N> The default values of [`HorizontalTextAlignment `](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_HorizontalTextAlignment) and [`VerticalTextAlignment `](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_VerticalTextAlignment) are [`TextAlignment.Center`].
 
 ## ShowIcon
 
-You can enable the icon image using the [`ShowIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ShowIcon) property to know whether any image appears to the SfChip.
+You can enable the icon image using the [`ShowIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ShowIcon) property to know whether any image appears to the [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html).
 
 {% tabs %}
 
@@ -1046,7 +1045,7 @@ N> The default value of ShowIcon is [`false`].
 
 ## Image
 
-The [`Image`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Image) property is used to customize the height, width, image source and aspect for the image of SfChip.
+The [`Image`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Image) property is used to customize the height, width, image source and aspect for the image of [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html).
 
 {% tabs %}
 
@@ -1119,7 +1118,7 @@ namespace ChipCustomization
 
 ## ImageSource
 
-The [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageSource) property customizes the icon image of SfChip by adding a custom image.
+The [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageSource) property customizes the icon image of[`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html) by adding a custom image.
 
 N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ShowIcon) property to enable the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageSource) property.
 
@@ -1260,7 +1259,7 @@ namespace ChipCustomization
 
 ![SfChip with ImageWidth](images/customization-images/chip_imagewidth_image.png)
 
-N> The default value of ImageWidth is [`32`].
+N> The default value of [`ImageWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageWidth) is [`32`].
 
 ## ImageAlignment 
 
@@ -1336,11 +1335,11 @@ namespace ChipCustomization
 
 ![SfChip with ImageAlignment](images/customization-images/chip_imagealignment_image.png)
 
-N> The default value of ImageAlignment is [`Alignment.Start`].
+N> The default value of [`ImageAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageAlignment) is [`Alignment.Start`].
 
 ## Command
 
-The [`Command`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Command) property associates a command with an instance of SfChip. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
+The [`Command`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Command) property associates a command with an instance of [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html). This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
 
 {% tabs %}
 
@@ -1423,7 +1422,7 @@ public class CommandDemoViewModel : INotifyPropertyChanged
 
 ![SfChip with Command](images/customization-images/chip_command_image.png)
 
-N> The default value of Command is [`null`].
+N> The default value of [`Command`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Command) is [`null`].
 
 ## Customization of SfChipGroup
 
@@ -1431,7 +1430,7 @@ The chip group supports to customize the chip's background color, border color, 
 
 ## InputView
 
-The [`InputView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_InputView) property allows to provide a view to the input chip. In this example, the input chip is used to add an employee at run time. To get the employee name as input, an entry is added as InputView.
+The [`InputView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_InputView) property allows to provide a view to the input chip. In this example, the input chip is used to add an employee at run time. To get the employee name as input, an entry is added as [`InputView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_InputView).
 
 {% tabs %}
 
@@ -1518,7 +1517,7 @@ namespace Chips
 
 ![SfChipGroup with InputView](images/customization-images/chipgroup_inputview_image.png)
 
-N> The InputView is visible only in the Input type. The default value of InputView is [`null`].
+N> The [`InputView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_InputView) is visible only in the Input type. The default value of [`InputView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_InputView) is [`null`].
 
 ## SelectedChipBackgroundColor
 
@@ -1596,7 +1595,7 @@ namespace ChipCustomization
 
 ![SfChipGroup with SelectedChipBackgroundColor](images/customization-images/chipgroup_selectedchipbackgroundcolor_image.png)
 
-N> The default value of SelectedChipBackgroundColor is [`Color.Accent`].
+N> The default value of [`SelectedChipBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_SelectedChipBackgroundColor) is [`Color.Accent`].
 
 ## SelectedChipTextColor
 
@@ -1676,11 +1675,11 @@ namespace ChipCustomization
 
 ![SfChipGroup with SelectedChipTextColor](images/customization-images/chipgroup_selectedchiptextcolor_image.png)
 
-N> The default value of SelectedChipTextColor is [`Color.White`].
+N> The default value of [`SelectedChipTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_SelectedChipTextColor) is [`Color.White`].
 
 ## ChipBackgroundColor
 
-The [`ChipBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipBackgroundColor) property customizes the background color of the SfChipGroup.
+The [`ChipBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipBackgroundColor) property customizes the background color of the [`SfChipGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html).
 
 {% tabs %}
 
@@ -1754,11 +1753,11 @@ namespace ChipCustomization
 
 ![SfChipGroup with ChipBackgroundColor](images/customization-images/chipgroup_chipbackgroundcolor_image.png)
 
-N> The default value of ChipBackgroundColor is [`Color.FromHex("#E0E0E0")`].
+N> The default value of [`ChipBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipBackgroundColor) is [`Color.FromHex("#E0E0E0")`].
 
 ## ChipBorderColor
 
-The [`ChipBorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipBorderColor) property customizes the border color of the SfChipGroup.
+The [`ChipBorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipBorderColor) property customizes the border color of the [`SfChipGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html).
 
 {% tabs %}
 
@@ -1834,11 +1833,11 @@ namespace ChipCustomization
 
 ![SfChipGroup with ChipBorderColor](images/customization-images/chipgroup_chipbordercolor_image.png)
 
-N> The default value of ChipBorderColor is [`Color.Transparent`].
+N> The default value of [`ChipBorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipBorderColor) is [`Color.Transparent`].
 
 ## ChipTextColor
 
-The [`ChipTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipTextColor) property customizes the text color of the SfChipGroup.
+The [`ChipTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipTextColor) property customizes the text color of the [`SfChipGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html).
 
 {% tabs %}
 
@@ -1920,11 +1919,11 @@ namespace ChipCustomization
 
 ![SfChipGroup with ChipTextColor](images/customization-images/chipgroup_chiptextcolor_image.png)
 
-N> The default value of ChipTextColor is [`Color.FromHex("#212121")`].
+N> The default value of [`ChipTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipTextColor) is [`Color.FromHex("#212121")`].
 
 ## ChipTextSize
 
-The [`ChipTextSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipTextSize) property customizes the text size of the SfChipGroup.
+The [`ChipTextSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipTextSize) property customizes the text size of the [`SfChipGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html).
 
 {% tabs %}
 
@@ -2006,7 +2005,7 @@ namespace ChipCustomization
 
 ![SfChipGroup with ChipTextSize](images/customization-images/chipgroup_chiptextsize_image.png)
 
-N> The default value of ChipTextSize is [`14d`].
+N> The default value of [`ChipTextSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipTextSize) is [`14d`].
 
 ## ChipPadding
 
@@ -2092,11 +2091,11 @@ namespace ChipCustomization
 
 ![SfChipGroup with ChipPadding](images/customization-images/chipgroup_chippadding_image.png)
 	
-N> The default value of ChipPadding is [`Thickness(5d, 0, 0, 0)`].
+N> The default value of [`ChipPadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipPadding) is [`Thickness(5d, 0, 0, 0)`].
 
 ## ChipBorderWidth
 
-The [`ChipBorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipBorderWidth) property customizes the border width of the SfChipGroup.
+The [`ChipBorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipBorderWidth) property customizes the border width of the [`SfChipGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html).
 
 {% tabs %}
 
@@ -2180,11 +2179,11 @@ namespace ChipCustomization
 
 ![SfChipGroup with ChipBorderWidth](images/customization-images/chipgroup_chipborderwidth_image.png)
 
-N> The default value of ChipBorderWidth is [`0d`].
+N> The default value of [`ChipBorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipBorderWidth) is [`0d`].
 
 ## ItemHeight
 
-The [`ItemHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ItemHeight) property customizes the height of the items in the SfChipGroup.
+The [`ItemHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ItemHeight) property customizes the height of the items in the [`SfChipGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html).
 
 {% tabs %}
 
@@ -2266,11 +2265,11 @@ namespace ChipCustomization
 
 ![SfChipGroup with ItemHeight](images/customization-images/chipgroup_itemheight_image.png)
 
-N> The default value of ItemHeight is [`double.NaN`].
+N> The default value of [`ItemHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ItemHeight) is [`double.NaN`].
 
 ## ShowIcon
 
-You can enable the icon image using the [`ShowIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ShowIcon) property to know whether any image appears on the SfChipGroup.
+You can enable the icon image using the [`ShowIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ShowIcon) property to know whether any image appears on the [`SfChipGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html).
 
 {% tabs %}
 
@@ -2411,7 +2410,7 @@ namespace ChipCustomization
 
 ## CloseButtonColor
 
-The [`CloseButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_CloseButtonColor) property customizes the color of close button in the SfChipGroup.
+The [`CloseButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_CloseButtonColor) property customizes the color of close button in the [`SfChipGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html).
 
 {% tabs %}
 
@@ -2502,11 +2501,11 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-N> The default value of CloseButtonColor is [`Color.Black`].
+N> The default value of [`CloseButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_CloseButtonColor) is [`Color.Black`].
 
 ## SelectionIndicatorColor
 
-The [`SelectionIndicatorColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_SelectionIndicatorColor) property customizes the selection indicator color of the SfChipGroup.
+The [`SelectionIndicatorColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_SelectionIndicatorColor) property customizes the selection indicator color of the [`SfChipGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html).
 
 {% tabs %}
 
@@ -2594,11 +2593,11 @@ namespace ChipCustomization
 
 ![SfChipGroup with SelectionIndicatorColor](images/customization-images/chipgroup_selectionindicatorcolor_image.png)
 
-N> The default value of SelectionIndicatorColor is [`Color.White`].
+N> The default value of [`SelectionIndicatorColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_SelectionIndicatorColor) is [`Color.White`].
 
 ## ChipImageWidth
 
-The [ChipImageWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipImageWidth) property customizes the width of icon image in the SfChipGroup.
+The [`ChipImageWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipImageWidth) property customizes the width of icon image in the [`SfChipGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html).
 
 {% tabs %}
 
@@ -2744,7 +2743,7 @@ namespace ChipCustomization
 
 ![SfChipGroup with ChipImageWidth](images/customization-images/chipgroup_chipimagewidth_image.png)
 
-N> The default value of ChipImageWidth is [`26`].
+N> The default value of [`ChipImageWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipImageWidth) is [`26`].
 
 ## See also
 

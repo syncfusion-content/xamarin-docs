@@ -18,7 +18,7 @@ Refer to this [documentation](https://help.syncfusion.com/xamarin/chips/getting-
 
 ## Populating SfChip as items
 
-Chips control also provides support to create and set SfChip as item. It can be achieved using the `Items` property.
+Chips control also provides support to create and set [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html) as item. It can be achieved using the [`Items`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Items) property.
 
 {% tabs %}
 

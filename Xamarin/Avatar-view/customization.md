@@ -9,8 +9,6 @@ documentation: ug
 
 # Customization in Xamarin Avatar View(SfAvatarView)
 
-## Customization in Xamarin Avatar View(SfAvatarView)
-
 The [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control provides options to customize the color and size. The control can be customized using the following properties:
 
 ## Colors

@@ -7,9 +7,7 @@ control: AvatarView
 documentation: ug
 ---
 
-# How to in Xamarin Avatar View(SfAvatarView)
-
-## Set badge view to avatar
+# How to set badge view to avatar
 
 The [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control provides support for [`BadgeView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.html) to notify users of new or unread messages, notifications, or the status of something.
 

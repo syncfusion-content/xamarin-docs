@@ -7,21 +7,21 @@ control: SfAvatarView
 documentation: ug
 ---
 
-# Content Types
+# Content Types in Xamarin Avatar View(SfAvatarView)
 
 ## Avatar Types
 
-The `SfAvatarView` control provides the following five different ways to display the view:
+The [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control provides the following five different ways to display the view:
 
-* `Default` - Adds the default image when initializing without any other source such as image and group.
+* [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.ContentType.html#Syncfusion_XForms_AvatarView_ContentType_Default) - Adds the default image when initializing without any other source such as image and group.
 
-* `AvatarName` - Set the initial value in SfAvatarView.
+* [`AvatarName`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.ContentType.html#Syncfusion_XForms_AvatarView_ContentType_Initials) - Set the initial value in [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html).
 
-* `Custom` - Adds the user custom image in SfAvatarView.
+* [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.ContentType.html#Syncfusion_XForms_AvatarView_ContentType_Custom) - Adds the user custom image in [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html).
 
-* `AvatarCharacter` - Sets the default image in SfAvatarView.
+* [`AvatarCharacter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.ContentType.html#Syncfusion_XForms_AvatarView_ContentType_AvatarCharacter) - Sets the default image in [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html).
 
-* `Group` - Adds maximum three images or initials in a single `SfAvatarView`.
+* [`Group`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.ContentType.html#Syncfusion_XForms_AvatarView_ContentType_Group) - Adds maximum three images or initials in a single [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html).
 
 ## Default
 
@@ -62,24 +62,24 @@ Automatic type avatar view is used for displaying the default vector image when 
 
 ## Initials 
 
-When using the SfAvatarType as initials, you need to set the initial character using the following properties:
+When using the [`SfAvatarType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) as initials, you need to set the initial character using the following properties:
 
-* `InitialsType` - Defines the type of characters to be displayed.
-* `AvatarName`- Gets or sets the value for the initials type, which displays the text in the avatar view.
-* `InitialsColor`- Gets or sets the color of the initial color value that defines color for the initial string.
+* [`InitialsType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_InitialsType) - Defines the type of characters to be displayed.
+* [`AvatarName`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_AvatarName)- Gets or sets the value for the initials type, which displays the text in the avatar view.
+* [`InitialsColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_InitialsColor)- Gets or sets the color of the initial color value that defines color for the initial string.
 
 ### InitialsType
 
-The `InitialsType` contains the following two types:
+The [`InitialsType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_InitialsType) contains the following two types:
 
-* SingleCharacter
-* DoubleCharacter
+* [`SingleCharacter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.InitialsType.html#Syncfusion_XForms_AvatarView_InitialsType_SingleCharacter)
+* [`DoubleCharacter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.InitialsType.html#Syncfusion_XForms_AvatarView_InitialsType_DoubleCharacter)
 
-You must set the `AvatarName` string property for displaying the initial value in the AvatarView.
+You must set the [`AvatarName`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_AvatarName) string property for displaying the initial value in the AvatarView.
 
 #### SingleCharacter
 
-The `SingleCharacter` is used for displaying the first character in the string you have set in the `Initials` property.
+The [`SingleCharacter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.InitialsType.html#Syncfusion_XForms_AvatarView_InitialsType_SingleCharacter) is used for displaying the first character in the string you have set in the [`Initials`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.ContentType.html#Syncfusion_XForms_AvatarView_ContentType_Initials) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -122,7 +122,7 @@ The `SingleCharacter` is used for displaying the first character in the string y
 
 ### DoubleCharacter
 
-The `DoubleCharacter` is used for displaying a two-characters text you have set in the `Initials` property. If the initials contain one word, it shows the first and last letters of the single string. If it contains two or more words, it displays the first letter of the first string and first letter of the last string.
+The [`DoubleCharacter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.InitialsType.html#Syncfusion_XForms_AvatarView_InitialsType_DoubleCharacter) is used for displaying a two-characters text you have set in the [`Initials`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.ContentType.html#Syncfusion_XForms_AvatarView_ContentType_Initials) property. If the initials contain one word, it shows the first and last letters of the single string. If it contains two or more words, it displays the first letter of the first string and first letter of the last string.
 
 {% tabs %}
 {% highlight xaml %}
@@ -163,11 +163,11 @@ The `DoubleCharacter` is used for displaying a two-characters text you have set 
 
 ## Custom image
 
-You can add a custom user image by setting the `ImageSource` property. Refer to this [`documentation`](https://help.syncfusion.com/xamarin/SfAvatarView/getting-started).
+You can add a custom user image by setting the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_ImageSource) property. Refer to this [`documentation`](https://help.syncfusion.com/xamarin/SfAvatarView/getting-started).
 
 ## Character avatars
 
-You can set the default vector images that already present in avatar view by setting the `AvatarCharacter` property.
+You can set the default vector images that already present in avatar view by setting the [`AvatarCharacter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_AvatarCharacter) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -205,7 +205,7 @@ You can set the default vector images that already present in avatar view by set
 
 You can add maximum three images or initials in the same view using a GroupView type.
 
-Set the `InitialsMemberPath` for displaying the initials in the group view. For image, set the `ImageSourcePath`. The following code sample demonstrates how to add images using the `GroupView` property.
+Set the [`InitialsMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_InitialsMemberPath) for displaying the initials in the group view. For image, set the `ImageSourcePath`. The following code sample demonstrates how to add images using the `GroupView` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -327,7 +327,7 @@ Set the `InitialsMemberPath` for displaying the initials in the group view. For 
 
 ## Add initials only in GroupView
 
-You can set the initials only in the group view by setting the `InitialsMemberPath` alone. It is demonstrated in the following code sample.
+You can set the initials only in the group view by setting the [`InitialsMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_InitialsMemberPath) alone. It is demonstrated in the following code sample.
 
 {% tabs %}
 
@@ -383,7 +383,7 @@ public partial class MainPage : ContentPage, INotifyPropertyChanged
 
 ## Add both image and initials in a GroupView
 
-You have to set both the image and initials based on what should be added in the collection. If the image needs to be added, set `ImageSourcePath`, or if initials need to be added, set `InitialsMemberPath`. This is demonstrated in the following code snippet.
+You have to set both the image and initials based on what should be added in the collection. If the image needs to be added, set `ImageSourcePath`, or if initials need to be added, set [`InitialsMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_InitialsMemberPath). This is demonstrated in the following code snippet.
 
 {% tabs %}
 {% highlight c# %}
@@ -409,7 +409,7 @@ You have to set both the image and initials based on what should be added in the
 
 ## Add GroupView using MVVM
 
-Create model and view model for initializing and assigning a value for adding image or initials in the `SfAvatarView`. The following code sample demonstrates how to use the `GroupView` property using MVVM pattern.
+Create model and view model for initializing and assigning a value for adding image or initials in the [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html). The following code sample demonstrates how to use the `GroupView` property using MVVM pattern.
 
 {% tabs %}
 {% highlight c# %}

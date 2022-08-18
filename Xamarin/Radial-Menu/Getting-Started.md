@@ -21,11 +21,11 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## Adding SfRadialMenu reference
 
-You can add SfRadialMenu reference using one of the following methods:
+You can add [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) reference using one of the following methods:
 
 **Method 1: Adding SfRadialMenu reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfRadialMenu to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfRadialMenu](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRadialMenu), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfRadialMenu](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRadialMenu), and then install it.
 
 ![Adding SfRadialMenu reference from NuGet](images/Adding SfRadialMenu reference.png)
 
@@ -33,7 +33,7 @@ N> Install the same version of SfRadialMenu NuGet in all the projects.
 
 **Method 2: Adding SfRadialMenu reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfRadialMenu control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfRadialMenu assemblies manually from the installed location**
 

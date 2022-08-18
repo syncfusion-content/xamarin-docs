@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Xamarin Segmented Control (SfSegmentedControl)
 
-This section provides an overview for working with the segmented control for Xamarin.Forms. Walk through the entire process of creating a real-world application with the SfSegmentedControl.
+This section provides an overview for working with the segmented control for Xamarin.Forms. Walk through the entire process of creating a real-world application with the [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html).
 
 ## Assembly deployment
 
@@ -25,17 +25,17 @@ You can add [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfu
 
 **Method 1: Adding SfSegmentedControl reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfSegmentedControl to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html) to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons), and then install it.
 
 ![Adding SfSegmentedControl reference from NuGet](images/getting-started/Adding SfSegmentedControl reference.png)
 
 N> 
-* Install the same version of SfSegmentedControl NuGet in all the projects.
+* Install the same version of [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html) NuGet in all the projects.
 * In addition, you need to install the [Syncfusion.Xamarin.Buttons.WPF]() package for Xamarin.Forms WPF platform only.
 
 **Method 2: Adding SfSegmentedControl reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfSegmentedControl control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfSegmentedControl assemblies manually from the installed location**
 
@@ -103,7 +103,7 @@ To launch the segmented control in iOS, call the SfSegmentedControlRenderer.Ini
 
 There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in `Release Mode`.
 
-The above problem can be resolved by initializing the SfSegmentedControl assemblies in `App.xaml.cs` in UWP project as in the following code snippet.
+The above problem can be resolved by initializing the [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html) assemblies in `App.xaml.cs` in UWP project as in the following code snippet.
 
 {% highlight C# %}
 
@@ -1149,7 +1149,7 @@ To learn more about customizing selection indicator, refer to this [feature link
 
 ## Handle click events
 
-[`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html) has SelectionChanged event, using this, you can perform operation based on your needs.
+[`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html) has [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectionChanged) event, using this, you can perform operation based on your needs.
 
 {% tabs %}
 

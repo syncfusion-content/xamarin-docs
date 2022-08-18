@@ -67,7 +67,7 @@ this.Content = segmentedControl;
 
 The segmented control customize the text or icons, or use other built-in customization options available for the segments. Segment item collections can also be used.
 
-The items inside the ItemsSource can be added in the code behind as below.
+The items inside the [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_ItemsSource) can be added in the code behind as below.
 
 {% highlight c# %}
 
@@ -134,7 +134,7 @@ this.Content = segmentedControl;
 
 Custom views or images can be added as segments in the segmented control.
 
-The items inside the ItemsSource can be added in the code behind as below.
+The items inside the [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_ItemsSource) can be added in the code behind as below.
 
 {% highlight c# %}
 public class ViewModel

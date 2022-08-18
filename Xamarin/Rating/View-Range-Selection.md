@@ -11,9 +11,9 @@ documentation: ug
 
 # Enable View Range Selection in Xamarin Rating (SfRating)
 
-When using CustomView in SfRating, Only one item will be rated. If you need to change the view of all rated CustomView items, Use the `EnableViewRangeSelection` boolean property.
+When using CustomView in [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html), Only one item will be rated. If you need to change the view of all rated CustomView items, Use the [`EnableViewRangeSelection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_EnableViewRangeSelection) boolean property.
 
-N> The EnableViewRangeSelection property is used only for CustomViews. 
+N> The [`EnableViewRangeSelection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_EnableViewRangeSelection) property is used only for CustomViews. 
 
 {% tabs %}
 

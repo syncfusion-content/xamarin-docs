@@ -330,7 +330,7 @@ This section explains about the column header's Background, TextColor, and Fonts
 
 ### Background
 
-Column header's background color can be customized by setting the [`SfPicker. ColumnHeaderBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ColumnHeaderBackgroundColor) property.
+Column header's background color can be customized by setting the [`SfPicker.ColumnHeaderBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ColumnHeaderBackgroundColor) property.
 
 {% tabs %}
 {% highlight xaml %}

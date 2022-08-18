@@ -22,7 +22,7 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## Adding SfPicker reference
 
-You can add SfPicker reference using one of the following methods:
+You can add [`SfPicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html) reference using one of the following methods:
 
 **Method 1: Adding SfPicker reference from nuget.org**
 
@@ -170,11 +170,11 @@ Create a new blank project (Xamarin.Forms portable) by using Visual Studio or Xa
 1. Add the required assembly reference in PCL, and other renderer projects as discussed in **Adding** **picker** **reference** section.
 2. Add picker control's two way XAML or C#.
 * XAML Page
-  * Set SfPicker control namespace as `xmlns:syncfusion="clr- namespace:Syncfusion.SfPicker.XForms;assembly=Syncfusion.SfPicker.XForms”` in XAML Content page.
-  * Set the SfPicker control in content property of contentPage.
+  * Set [`SfPicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html) control namespace as `xmlns:syncfusion="clr- namespace:Syncfusion.SfPicker.XForms;assembly=Syncfusion.SfPicker.XForms”` in XAML Content page.
+  * Set the [`SfPicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html) control in content property of contentPage.
 * C# Page
-  * Import SfPicker control namespace as `using Syncfusion.SfPicker.XForms;` in C# ContentPage.
-  * Create a new SfPicker instance in ContentPage constructor, and assign SfPicker instance to ContentPage content property.
+  * Import [`SfPicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html) control namespace as `using Syncfusion.SfPicker.XForms;` in C# ContentPage.
+  * Create a new [`SfPicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html) instance in ContentPage constructor, and assign SfPicker instance to ContentPage content property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -406,7 +406,7 @@ picker.ShowFooter = true;
 
 ### Open as dialog
 
- picker can be rendered as a dialog by setting the`SfPicker.PickerMode` property to Dialog. Default value of `SfPicker.PickerMode` property is Default. 
+ picker can be rendered as a dialog by setting the [`SfPicker.PickerMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_PickerMode) property to [`Dialog`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.PickerMode.html#Syncfusion_SfPicker_XForms_PickerMode_Dialog). Default value of [`SfPicker.PickerMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_PickerMode) property is [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.PickerMode.html#Syncfusion_SfPicker_XForms_PickerMode_Default). 
 
 {% tabs %}
 {% highlight xaml %}
@@ -422,7 +422,7 @@ picker.PickerMode = PickerMode.Dialog;
 {% endhighlight %}
 {% endtabs %}
 
-The picker can be opened programmatically by setting [`SfPicker.IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_IsOpen) property to true. Default value of `SfPicker.IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_IsOpen) is false.
+The picker can be opened programmatically by setting [`SfPicker.IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_IsOpen) property to true. Default value of [`SfPicker.IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_IsOpen) is false.
 
 Note: This property is automatically changed to false when you close the dialog by clicking outside of dialog.
 

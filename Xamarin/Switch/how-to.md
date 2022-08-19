@@ -1,13 +1,13 @@
 ---
 layout: post
 title: States in Syncfusion Switch control for Xamarin.Forms.
-description: Explaining about states in Syncfusion Switch Control (SfSwitch) for Xamarin.Forms.
+description: Explaining about different states in Syncfusion Switch Control (SfSwitch) for Xamarin.Forms and how it performs.
 platform: Xamarin
 control: Switch
 documentation: ug
 ---
 
-# How to Add  States in Xamarin Switch (SfSwitch)
+# How to Add States in Xamarin Switch (SfSwitch)
 
 ## Show busy indicator to perform async action
 

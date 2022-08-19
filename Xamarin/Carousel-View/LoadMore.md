@@ -9,7 +9,7 @@ documentation : ug
 
 # Load More in Xamarin Carousel View (SfCarousel)
 
-Virtualization can be achieved by using the Load more concept. This support is used to handle the numerous items in the carousel control. A particular items are maintained in the view port based on the [`LoadMoreItemsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_LoadMoreItemsCount) property. The [`LoadMore`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_LoadMore) view is added after the last item in the collection of carousel view. When tapping the [`LoadMore`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_LoadMore) view, the next set of items in the collection can be added to the carousel.
+Virtualization can be achieved by using the Load more concept. This support is used to handle the numerous items in the carousel control. A particular items are maintained in the view port based on the [`LoadMoreItemsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_LoadMoreItemsCount) property. The LoadMore view is added after the last item in the collection of carousel view. When tapping the LoadMore view, the next set of items in the collection can be added to the carousel.
 
 The following properties are used to achieve this support:
 

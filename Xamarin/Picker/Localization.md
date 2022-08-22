@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization in Xamarin Picker (SfPicker)
 
-You can localize `Picker` in all the platforms by adding a.resx file in a.NET Standard project alone. The following steps describe how to localize SfPicker in a project and you can download the complete sample from this [`link`](https://github.com/SyncfusionExamples/picker-localization).
+You can localize `Picker` in all the platforms by adding a.resx file in a.NET Standard project alone. The following steps describe how to localize [`SfPicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html) in a project and you can download the complete sample from this [`link`](https://github.com/SyncfusionExamples/picker-localization).
 
 > **NOTE**: Here, the resources have been already created for some cultures and shared them on [`Syncfusion GitHub`](https://github.com/syncfusion/xamarin-localized-texts) for your convenience.
 

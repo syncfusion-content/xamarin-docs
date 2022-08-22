@@ -9,7 +9,7 @@ documentation: ug
 
 # SfRadialMenuItems Customization in Xamarin Radial Menu (SfRadialMenu)
 
-The `SfRadialMenuItem` class provides various options to customize the items by giving `Custom Views`, `FontIcons`, and `Images`. You can add radial menu items by hierarchy. To add a SfRadialMenuItem with SfRadialMenu, create an instance of SfRadialMenuItem, and add it to the `Items` property, which is available in SfRadialMenu.
+The [`SfRadialMenuItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html) class provides various options to customize the items by giving `Custom Views`, `FontIcons`, and `Images`. You can add radial menu items by hierarchy. To add a [`SfRadialMenuItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html) with [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html), create an instance of [`SfRadialMenuItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html), and add it to the [`Items`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenuItem_ItemsProperty) property, which is available in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
 
 ## Items
 
@@ -850,7 +850,7 @@ namespace RadialSample
 
 ### Command for SfRadialMenu
 
-The `Command` property is used to associate a command with an instance of SfRadialMenu. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
+The [`Command`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_Command) property is used to associate a command with an instance of [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html). This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
 
 The following example shows how the command should be used. When you click [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) , the text color of the [`SfRadialMenuItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html) and the center button will be changed to green.
 
@@ -956,7 +956,7 @@ namespace RadialMenuCommandSample
 
 ### Command for SfRadialMenuItem
 
-The `Command` property is used to associate a command with an instance of [`SfRadialMenuItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html). This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
+The [`Command`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_Command) property is used to associate a command with an instance of [`SfRadialMenuItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html). This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
 
 When clicking the [`SfRadialMenuItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html), the tapped item will be displayed. The following example shows how the command should be used.
 
@@ -1034,7 +1034,7 @@ namespace RadailCommandSample
 {% endhighlight %}
 {% endtabs %}
 
-Define the `Command` in the RadialMenuItem, and then populate the action in ViewModel.
+Define the [`Command`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_Command) in the RadialMenuItem, and then populate the action in ViewModel.
 
 {% highlight c#%}
 

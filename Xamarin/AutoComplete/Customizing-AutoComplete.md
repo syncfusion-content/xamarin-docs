@@ -497,7 +497,7 @@ namespace AutocompleteSample
 
 ### Changing the border color of suggestion box
 
-The DropDownBorderColor property is used to change the border color of suggestion box. The following code example demonstrates how to change the border color of suggestion box.
+The [`DropDownBorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DropDownBorderColor) property is used to change the border color of suggestion box. The following code example demonstrates how to change the border color of suggestion box.
 
 
 {% tabs %}
@@ -771,7 +771,7 @@ namespace AutocompleteSample
 
 The user can customize the clear button color in the autocomplete using [`ClearButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ClearButtonColor) Property.
 
-N> `ClearButtonColor` property is available only on iOS and Android platform.
+N> [`ClearButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ClearButtonColor) property is available only on iOS and Android platform.
 
 {% tabs %}
 
@@ -941,7 +941,7 @@ N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamari
 
 ## Select text on focus
 
-The `SelectAllOnFocus` property specifies whether the text should be selected when the input field is focused.
+The [`SelectAllOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SelectAllOnFocus) property specifies whether the text should be selected when the input field is focused.
 {% tabs %}
 
 {% highlight xaml %}

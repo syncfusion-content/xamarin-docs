@@ -11,13 +11,13 @@ documentation: ug
 
 ## Swipe Start
 
-The `SwipeStarted` event will be triggered when swipe gesture is started.
+The [`SwipeStarted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_SwipeStarted) event will be triggered when swipe gesture is started.
 
-`SwipeStartedEventArgs` contains `IsLeftSwipe` value, which denotes whether the swipe direction is from left side or not.
+[`SwipeStartedEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SwipeStartedEventArgs.html) contains [`IsSwipeLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SwipeStartedEventArgs.html#Syncfusion_SfCarousel_XForms_SwipeStartedEventArgs_IsSwipedLeft) value, which denotes whether the swipe direction is from left side or not.
 
 ## Swipe End
 
-The `SwipeEnded` event can be triggered after the swiping completed in the carousel items.
+The [`SwipeEnded`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_SwipeEnded) event can be triggered after the swiping completed in the carousel items.
 
 {% tabs %}
 
@@ -145,6 +145,6 @@ namespace CarouselSample
 
 {% endtabs %}
 
-N> The `SwipeStarted` and `SwipeEnded` events are supported only on the Android and iOS platforms.
+N> The [`SwipeStarted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_SwipeStarted) and [`SwipeEnded`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_SwipeEnded) events are supported only on the Android and iOS platforms.
 
 ![Carousel Swiping events](images/CarouselSwiping_GIF.gif)

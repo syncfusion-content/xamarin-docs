@@ -9,11 +9,11 @@ documentation : ug
 
 # Transformation in Xamarin Carousel View (SfCarousel)
 
-The Offset between selected and unselected item can be customized in SfCarousel control. And also the items can be scaled to the specified value.
+The [`Offset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_Offset) between selected and unselected item can be customized in  [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control. And also the items can be scaled to the specified value.
 
 ## Tilt Non Selected Items
 
-The `RotationAngle` property in the SfCarousel control is used to tilt all the unselected items in a specified angle. 
+The [`RotationAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_RotationAngle) property in the  [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control is used to tilt all the unselected items in a specified angle. 
 
 N> If the angle value is positive, then the rotation is in the clockwise direction. If the angle value is negative, the rotation is in the counterclockwise direction. 
 
@@ -78,7 +78,7 @@ namespace CarouselSample
 
 ## Set Gap between Items
 
-The `Offset` property is used to specify the accurate distance between unselected items in SfCarousel panel.  
+The [`Offset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_Offset) property is used to specify the accurate distance between unselected items in  [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) panel.  
 
 N> The default value is 20.
 
@@ -143,7 +143,7 @@ namespace CarouselSample
 
 ## Set Gap between Selected and unselected Item
 
-Distance between the selected item and other items can be customized by using `SelectedItemOffset` property of the SfCarousel control.
+Distance between the selected item and other items can be customized by using [`SelectedItemOffset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_SelectedItemOffset) property of the  [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control.
 
 {% tabs %}
 
@@ -204,7 +204,7 @@ namespace CarouselSample
 
 ## Set Scaling for Carousel Items
 
-The `ScaleOffset` property in the SfCarousel control is used to scale all the items to the specified scale value.
+The [`ScaleOffset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_ScaleOffset) property in the  [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control is used to scale all the items to the specified scale value.
 
 {% tabs %}
 
@@ -317,7 +317,7 @@ namespace CarouselSample
 
 ## Spacing between the Items in Linear mode
 
-Spacing of all the items in Linear mode can be determined by using `ItemSpacing` property.
+Spacing of all the items in Linear mode can be determined by using [`ItemSpacing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_ItemSpacing) property.
 
 {% tabs %}
 

@@ -9,7 +9,7 @@ documentation : ug
 
 # Linear Arrangement in Xamarin Carousel View (SfCarousel)
 
-The Carousel items can be populated in the view in a stacked linear layout by setting the `ViewMode` property to Linear. The present option is `Default`.
+The Carousel items can be populated in the view in a stacked linear layout by setting the [`ViewMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_ViewMode) property to [`Linear`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.ViewMode.html#Syncfusion_SfCarousel_XForms_ViewMode_Linear). The present option is [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.ViewMode.html#Syncfusion_SfCarousel_XForms_ViewMode_Default).
 
 {% tabs %}
 

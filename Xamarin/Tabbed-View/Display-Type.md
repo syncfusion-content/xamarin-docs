@@ -19,7 +19,7 @@ By default, the tab view control displays the title of each tab item. It can be 
 ![Image for DisplayMode](images/Display-Type/tabstyle01.png)
 
 
-The tab view can be changed by setting the `DisplayMode` property of `SfTabView`.
+The tab view can be changed by setting the [`DisplayMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_DisplayMode) property of [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html).
 
 {% tabs %}
 
@@ -152,5 +152,5 @@ namespace TabView
 
 The "no header" type can be used when the header is not needed for the tab view control. So, the content space will be occupied to the entire available height.
 
-N> Image appearance in the header can be achieved through font icons.
+N> [`Image`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabDisplayMode.html#Syncfusion_XForms_TabView_TabDisplayMode_Image) appearance in the header can be achieved through font icons.
 

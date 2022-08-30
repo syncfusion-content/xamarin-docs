@@ -37,7 +37,7 @@ Year collection -Add years from  1990 to 2050.
 
 Date collection -Add all the three collections.
 
-Date Collection is the main collection, and this collection has been assigned to ItemsSource of picker control.
+Date Collection is the main collection, and this collection has been assigned to [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ItemsSource) of picker control.
 
 The following code demonstrates Date collection creation.
 
@@ -156,7 +156,7 @@ Date.Add(Year);
 
 {% endhighlight %}
 
-**Step** **3** **:** Update the day value based on month and year values by using Selection changed event of picker control. Since the days of each month differs, you should handle this collection.
+**Step** **3** **:** Update the day value based on month and year values by using [`Selection changed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_SelectionChanged) event of picker control. Since the days of each month differs, you should handle this collection.
 
 {% highlight c# %}
 public CustomDatePicker()
@@ -248,7 +248,7 @@ Device.BeginInvokeOnMainThread(() =>
 
 {% endhighlight %}
 
-**Step** **4** **:** Define each column headers “Day”, “Month”, and “Year” by using ColumnHeaderText property of picker control. The following code demonstrates how to define header for each column of picker control.
+**Step** **4** **:** Define each column headers “Day”, “Month”, and “Year” by using [`ColumnHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ColumnHeaderText) property of picker control. The following code demonstrates how to define header for each column of picker control.
 
 {% highlight c# %}
 public class CustomDatePicker : SfPicker
@@ -293,7 +293,7 @@ this.ColumnHeaderText = Headers;
 
 {% endhighlight %}
 
-**Step** **5** **:** Finally, enable the picker header, Column header, and footer by using ShowHeader,ShowFooter and ShowColumnHeader properties.
+**Step** **5** **:** Finally, enable the picker header, Column header, and footer by using [`ShowHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowHeader),[`ShowFooter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowFooter) and [`ShowColumnHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowColumnHeader) properties.
 
 {% highlight c# %}
 public CustomDatePicker()

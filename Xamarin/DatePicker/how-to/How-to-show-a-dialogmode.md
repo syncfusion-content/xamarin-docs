@@ -9,7 +9,7 @@ documentation: ug
 
 # How to show as a Dialog in Xamarin.Forms DatePicker(SfPicker)
 
-DatePicker can be rendered as a dialog by setting the`SfDatePicker.PickerMode` property to Dialog. The default value of `SfDatePicker.PickerMode` property is "Default". 
+DatePicker can be rendered as a dialog by setting the [`SfDatePicker.PickerMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_PickerMode) property to [`Dialog`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerMode.html#Syncfusion_XForms_Pickers_PickerMode_Dialog). The default value of [`SfDatePicker.PickerMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_PickerMode) property is [`"Default"`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerMode.html#Syncfusion_XForms_Pickers_PickerMode_Default). 
 
 {% tabs %}
 
@@ -55,7 +55,7 @@ namespace DatePickerSample
 
 {% endtabs %}
 
-The DatePicker can be opened programmatically by setting the `SfDatePicker.IsOpen` property to true. Default value of `SfDatePicker.IsOpen` is "false".
+The DatePicker can be opened programmatically by setting the [`SfDatePicker.IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_IsOpen) property to true. Default value of [`SfDatePicker.IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_IsOpen) is "false".
 
 Note: This property is automatically changed to false when you close the dialog by clicking outside of the dialog.
 

@@ -9,25 +9,25 @@ documentation: ug
 
 # Events in Xamarin TimePicker (SfTimePicker)
 
-Three events are used when the `SfTimePicker` is in Dialog mode.
+Three events are used when the [`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) is in [`Dialog`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerMode.html#Syncfusion_XForms_Pickers_PickerMode_Dialog) mode.
 
- * Opened
- * Closing
- * Closed
+ * [`Opened`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_Opened)
+ * [`Closing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_Closing)
+ * [`Closed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_Closed)
 
 ## Opened event
 
-The `Opened` event occurs when the SfTimePicker is opened. 
+The [`Opened`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_Opened) event occurs when the [`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) is opened. 
 
 ## Closing event 
 
-The `Closing` event occurs when the SfTimePicker closes.
+The [`Closing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_Closing) event occurs when the [`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) closes.
 
 Drop-down close can be restricted by setting `e.cancel` to true.
 
 ## Closed event
 
-The `Closed` event was triggered, after the `SfTimePicker` was closed.
+The [`Closed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_Closed) event was triggered, after the [`SfTimePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) was closed.
 
 {% tabs %}
 

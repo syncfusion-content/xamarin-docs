@@ -101,11 +101,11 @@ namespace AutocompleteSample
 
 ### Wrap Mode of Token
 
-The selected item can be displayed as token inside SfAutoComplete in two ways. They are
+The selected item can be displayed as token inside  [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) in two ways. They are
 
-* `Wrap` - When `TokensWrapMode` is set to `Wrap` the selected items will be wrap to the next line of the SfAutoComplete.
+* [`Wrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokensWrapMode.html#Syncfusion_SfAutoComplete_XForms_TokensWrapMode_Wrap) - When [`TokensWrapMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_TokensWrapMode) is set to [`Wrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokensWrapMode.html#Syncfusion_SfAutoComplete_XForms_TokensWrapMode_Wrap) the selected items will be wrap to the next line of the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html).
 
-* `None` - When `TokensWrapMode` is set to `None` the selected item will be wrap in horizontal orientation.
+* [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokensWrapMode.html#Syncfusion_SfAutoComplete_XForms_TokensWrapMode_None) - When [`TokensWrapMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_TokensWrapMode) is set to [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokensWrapMode.html#Syncfusion_SfAutoComplete_XForms_TokensWrapMode_None) the selected item will be wrap in horizontal orientation.
 
 {% tabs %}
 
@@ -282,25 +282,25 @@ namespace AutocompleteSample
 
 Customization can be done for Token. There are various ways to customize the tokens. They are as follows.
 
-* `TextColor` - sets the color of the text inside the token.
+* [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokenSettings.html#Syncfusion_SfAutoComplete_XForms_TokenSettings_TextColor) - sets the color of the text inside the token.
 
-* `FontSize` - sets the size of the Font inside the token.
+* [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokenSettings.html#Syncfusion_SfAutoComplete_XForms_TokenSettings_FontSize) - sets the size of the Font inside the token.
 
-* `FontFamily` - sets the Font family for the text inside the token.
+* [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokenSettings.html#Syncfusion_SfAutoComplete_XForms_TokenSettings_FontFamily) - sets the Font family for the text inside the token.
 
-* `BackgroundColor` - sets the background color of the token.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokenSettings.html#Syncfusion_SfAutoComplete_XForms_TokenSettings_BackgroundColor) - sets the background color of the token.
 
-* `SelectedBackgroundColor` - sets the background color of the token when it is selected.
+* [`SelectedBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokenSettings.html#Syncfusion_SfAutoComplete_XForms_TokenSettings_SelectedBackgroundColor) - sets the background color of the token when it is selected.
 
-* `IsCloseButtonVisible` - Enables and disables the close button inside SfAutoComplete.
+* [`IsCloseButtonVisible`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokenSettings.html#Syncfusion_SfAutoComplete_XForms_TokenSettings_IsCloseButtonVisible) - Enables and disables the close button inside SfAutoComplete.
 
-* `DeleteButtonColor` - sets the color of the close button inside SfAutoComplete.
+* [`DeleteButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokenSettings.html#Syncfusion_SfAutoComplete_XForms_TokenSettings_DeleteButtonColor) - sets the color of the close button inside [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) .
 
-* `CornerRadius` - sets the corner radius for the token.
+* [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokenSettings.html#Syncfusion_SfAutoComplete_XForms_TokenSettings_CornerRadius) - sets the corner radius for the token.
 
-* `DeleteButtonPlacement` - sets the placement of delete button. `Left` and `Right` are the placement options. By default, it is set placed at right side of the token. 
+* [`DeleteButtonPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokenSettings.html#Syncfusion_SfAutoComplete_XForms_TokenSettings_DeleteButtonPlacement) - sets the placement of delete button. [`Left`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.DeleteButtonPlacement.html#Syncfusion_SfAutoComplete_XForms_DeleteButtonPlacement_Left) and [`Right`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.DeleteButtonPlacement.html#Syncfusion_SfAutoComplete_XForms_DeleteButtonPlacement_Right) are the placement options. By default, it is set placed at right side of the token. 
 
-N> SelectedBackgroundColor and CornerRadius support has enhanced only on iOS and Android platform.
+N> [`SelectedBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokenSettings.html#Syncfusion_SfAutoComplete_XForms_TokenSettings_SelectedBackgroundColor) and [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokenSettings.html#Syncfusion_SfAutoComplete_XForms_TokenSettings_CornerRadius) support has enhanced only on iOS and Android platform.
 
 {% tabs %}
 
@@ -392,7 +392,7 @@ namespace AutocompleteSample
 
 ## Delimiter
 
-When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. We can set delimiter character with the `Delimiter` property.
+When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. We can set delimiter character with the [`Delimiter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.MultiSelectMode.html#Syncfusion_SfAutoComplete_XForms_MultiSelectMode_Delimiter) property.
 
 {% tabs %}
 
@@ -479,7 +479,7 @@ namespace AutocompleteSample
 
 ### Selection indicator
 
-The autocomplete enables the user to indicate the selected item from the datasource when selecting multiple items from the dropdown. It can be performed by enabling `EnableSelectionIndicator` property.
+The autocomplete enables the user to indicate the selected item from the datasource when selecting multiple items from the dropdown. It can be performed by enabling [`EnableSelectionIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_EnableSelectionIndicator) property.
 
 N> Selection Indicator support has enhanced only on iOS and Android platform.
 
@@ -572,9 +572,9 @@ namespace AutocompleteSample
 
 ### Item padding
 
-The autocomplete enables the user to provide padding for the items inside dropdown using `ItemPadding` property.
+The autocomplete enables the user to provide padding for the items inside dropdown using [`ItemPadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ItemPadding) property.
 
-N> `ItemPadding` property is available only on iOS and Android platform.
+N> [`ItemPadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ItemPadding) property is available only on iOS and Android platform.
 
 {% tabs %}
 

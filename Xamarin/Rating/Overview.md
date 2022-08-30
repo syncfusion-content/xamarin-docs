@@ -10,13 +10,13 @@ documentation: ug
 ---
 # Xamarin Rating (SfRating) Overview
 
-The Essential Xamarin Rating control provides the number of stars that represents a rating. And also used to configure the item size, item spacing and the number of displayed items in the SfRating control. Essential Xamarin Rating control can be used in various scenarios like movie rating, rating the application etc.
+The Essential Xamarin Rating control provides the number of stars that represents a rating. And also used to configure the item size, item spacing and the number of displayed items in the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control. Essential Xamarin Rating control can be used in various scenarios like movie rating, rating the application etc.
 
 ![Rating OverView](images/overview.png)
 
 ## Key Features
 
-* `Precision`: Options to decide the accuracy level of rating.
+* [`Precision`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_Precision): Options to decide the accuracy level of rating.
 
-* `Item Count`: Support to determine the number of Rating items to be displayed.
+* [`ItemCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_ItemCount): Support to determine the number of Rating items to be displayed.
 

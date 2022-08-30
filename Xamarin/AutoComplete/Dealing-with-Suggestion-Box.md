@@ -11,19 +11,19 @@ documentation: ug
 
 ## Dealing with Suggestion Box in Xamarin SfAutoComplete
 
-Suggestion box is the drop-down list box, which displays the filtered suggestions inside a popup. This section explains the properties that deals with drop-down list in the SfAutoComplete control.
+Suggestion box is the drop-down list box, which displays the filtered suggestions inside a popup. This section explains the properties that deals with drop-down list in the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control.
 
 ## Suggestion box placement mode
  
 The drop-down that shows the filtered items will be placed automatically based on the available space and can also be customized using the [`SuggestionBoxPlacement`]( https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionBoxPlacement.html) property.
  
-`Top` - Drop-down will be placed above the text box.
+[`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionBoxPlacement.html#Syncfusion_SfAutoComplete_XForms_SuggestionBoxPlacement_Top) - Drop-down will be placed above the text box.
  
-`Bottom` - Drop-down will be placed below the text box.
+[`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionBoxPlacement.html#Syncfusion_SfAutoComplete_XForms_SuggestionBoxPlacement_Bottom) - Drop-down will be placed below the text box.
 
-`Auto` - Drop-down will be placed based on the available space either top or bottom of the text box.
+[`Auto`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionBoxPlacement.html#Syncfusion_SfAutoComplete_XForms_SuggestionBoxPlacement_Auto) - Drop-down will be placed based on the available space either top or bottom of the text box.
 
-`None` -  Drop-down will not be shown with the filtered items. 
+[`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionBoxPlacement.html#Syncfusion_SfAutoComplete_XForms_SuggestionBoxPlacement_None) -  Drop-down will not be shown with the filtered items. 
 
 {% tabs %}
 
@@ -135,7 +135,7 @@ N>Set the SoftInputMode to AdjustResize in MainActivity, to resolve the suggesti
 
 ## Maximum suggestion box height
 
-The maximum height of the suggestion box in the SfAutocomplete control can be varied using the `MaximumDropDownHeight` property.
+The maximum height of the suggestion box in the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control can be varied using the [`MaximumDropDownHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_MaximumDropDownHeight) property.
 
 {% tabs %}
 
@@ -229,7 +229,7 @@ namespace AutocompleteSample
 
 ## Opening suggestion box on focus
 
-Suggestion box can be shown whenever the control receives focus using the `ShowSuggestionsOnFocus` property. At this time, suggestion list is the complete list of data source.
+Suggestion box can be shown whenever the control receives focus using the [`ShowSuggestionsOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ShowSuggestionsOnFocus) property. At this time, suggestion list is the complete list of data source.
 
 {% tabs %}
 
@@ -311,7 +311,7 @@ namespace AutocompleteSample
 
 ## Delay opening suggestion box
 
-The `PopupDelay` property is used to delay the suggestion box opening process. It gets milliseconds as input in integer data type.
+The [`PopupDelay`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_PopupDelay) property is used to delay the suggestion box opening process. It gets milliseconds as input in integer data type.
 In this example, a time duration of 3 seconds is set to popup delay.
 
 {% tabs %}
@@ -404,7 +404,7 @@ namespace AutocompleteSample
 
 ## Delay before searching algorithm starts
 
-The `SearchDelay` property is used to delay the searching algorithm process. It gets milliseconds as input in integer data type.
+The [`SearchDelay`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SearchDelay) property is used to delay the searching algorithm process. It gets milliseconds as input in integer data type.
 
 In this example, a time duration of 3 seconds is set to search delay.
 
@@ -498,7 +498,7 @@ namespace AutocompleteSample
 
 ## Avoid opening suggestion box
 
-To avoid opening the drop-down, you can set the `SuggestionBoxPlacement` API to None.
+To avoid opening the drop-down, you can set the [`SuggestionBoxPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SuggestionBoxPlacement) API to [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html#Syncfusion_XForms_ComboBox_SuggestionBoxPlacement_None).
 
 {% tabs %}
 
@@ -590,8 +590,8 @@ namespace AutocompleteSample
 
 ## Retrieve the filter suggestion items
 
-There are two ways to get the filtered suggestion items from SfAutoComplete. 
-You can use the [`FilteredItems`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_FilteredItems)  API in SfAutoComplete to access filtered suggestions items.
+There are two ways to get the filtered suggestion items from [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html). 
+You can use the [`FilteredItems`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_FilteredItems) API in [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) to access filtered suggestions items.
 
 {% tabs %}
 
@@ -986,13 +986,13 @@ N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamari
 
 ## DropDownClosing Event
 
-The `DropDownClosing` event occurs when the drop-down gets close.
+The [`DropDownClosing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DropDownClosing) event occurs when the drop-down gets close.
 
 ### DropDown Closing event args
 
-IsItemSelected - It returns the value indicating whether the  item is selected or not when the dropdown window closes.
+[`IsItemSelected`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.DropDownCancelEventArgs.html#Syncfusion_SfAutoComplete_XForms_DropDownCancelEventArgs_IsItemSelected) - It returns the value indicating whether the  item is selected or not when the dropdown window closes.
 
- Cancel - Closing of the dropdown can be handled by setting the e.Cancel.
+[`Cancel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Core.CancelEventArgs.html#Syncfusion_XForms_Core_CancelEventArgs_Cancel) - Closing of the dropdown can be handled by setting the e.Cancel.
 
 {% tabs %}
 

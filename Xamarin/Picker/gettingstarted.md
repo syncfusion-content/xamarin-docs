@@ -22,7 +22,7 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## Adding SfPicker reference
 
-You can add SfPicker reference using one of the following methods:
+You can add [`SfPicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html) reference using one of the following methods:
 
 **Method 1: Adding SfPicker reference from nuget.org**
 
@@ -30,11 +30,11 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 ![Adding SfPicker reference from NuGet](images/Adding SfPicker reference.png)
 
-N> Install the same version of SfPicker NuGet in all the projects.
+N> Install the same version of [`SfPicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html) NuGet in all the projects.
 
 **Method 2: Adding SfPicker reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfPicker control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfPicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfPicker assemblies manually from the installed location**
 
@@ -170,11 +170,11 @@ Create a new blank project (Xamarin.Forms portable) by using Visual Studio or Xa
 1. Add the required assembly reference in PCL, and other renderer projects as discussed in **Adding** **picker** **reference** section.
 2. Add picker control's two way XAML or C#.
 * XAML Page
-  * Set SfPicker control namespace as `xmlns:syncfusion="clr- namespace:Syncfusion.SfPicker.XForms;assembly=Syncfusion.SfPicker.XForms”` in XAML Content page.
-  * Set the SfPicker control in content property of contentPage.
+  * Set [`SfPicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html) control namespace as `xmlns:syncfusion="clr- namespace:Syncfusion.SfPicker.XForms;assembly=Syncfusion.SfPicker.XForms”` in XAML Content page.
+  * Set the [`SfPicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html) control in content property of contentPage.
 * C# Page
-  * Import SfPicker control namespace as `using Syncfusion.SfPicker.XForms;` in C# ContentPage.
-  * Create a new SfPicker instance in ContentPage constructor, and assign SfPicker instance to ContentPage content property.
+  * Import [`SfPicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html) control namespace as `using Syncfusion.SfPicker.XForms;` in C# ContentPage.
+  * Create a new [`SfPicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html) instance in ContentPage constructor, and assign SfPicker instance to ContentPage content property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -237,7 +237,7 @@ this.Content = picker;
 
 ### Set header to the picker
 
-The Xamarin Picker control allows you to the define header text by setting the `SfPicker.HeaderText`, and enable SfPicker header by setting `SfPicker.ShowHeader` property to true. Default value of `SfPicker.ShowHeader` is true.
+The Xamarin Picker control allows you to the define header text by setting the [`SfPicker.HeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_HeaderText), and enable SfPicker header by setting [`SfPicker.ShowHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowHeader) property to true. Default value of [`SfPicker.ShowHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowHeader) is true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -306,7 +306,7 @@ Colors.Add("Pink");
 
 * Bind the Collection to picker
 
-Xamarin Picker control allows you to bind collection of data by setting the `SfPicker.ItemsSource` property. You can bind the collection of data in both XAML or C#.
+Xamarin Picker control allows you to bind collection of data by setting the [`SfPicker.ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ItemsSource) property. You can bind the collection of data in both XAML or C#.
 
 {% tabs %}
 {% highlight xaml %}
@@ -358,7 +358,7 @@ picker.ItemsSource = info.Colors;
 
 ### Set title to the items 
 
-picker control allows you to define title to the picker items by setting `SfPicker.ColumnHeaderText` and enable title of the picker items by setting `SfPicker.ShowColumnHeader` property to true. Default value of `SfPicker.ShowColumnHeader` is false.
+picker control allows you to define title to the picker items by setting [`SfPicker.ColumnHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ColumnHeaderText) and enable title of the picker items by setting [`SfPicker.ShowColumnHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowColumnHeader) property to true. Default value of [`SfPicker.ShowColumnHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowColumnHeader) is false.
 
 {% tabs %}
 {% highlight xaml %}
@@ -384,7 +384,7 @@ picker.ShowColumnHeader = true;
 
 ### Enable validation button in footer
 
-In Xamarin Picker control, validation buttons (OK and Cancel)can be enabled by setting `SfPicker.ShowFooter` property to true. Default value of `SfPicker.ShowFooter` property is false
+In Xamarin Picker control, validation buttons (OK and Cancel)can be enabled by setting [`SfPicker.ShowFooter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowFooter) property to true. Default value of [`SfPicker.ShowFooter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowFooter) property is false
 
 {% tabs %}
 {% highlight xaml %}
@@ -406,7 +406,7 @@ picker.ShowFooter = true;
 
 ### Open as dialog
 
- picker can be rendered as a dialog by setting the`SfPicker.PickerMode` property to Dialog. Default value of `SfPicker.PickerMode` property is Default. 
+ picker can be rendered as a dialog by setting the [`SfPicker.PickerMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_PickerMode) property to [`Dialog`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.PickerMode.html#Syncfusion_SfPicker_XForms_PickerMode_Dialog). Default value of [`SfPicker.PickerMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_PickerMode) property is [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.PickerMode.html#Syncfusion_SfPicker_XForms_PickerMode_Default). 
 
 {% tabs %}
 {% highlight xaml %}
@@ -422,7 +422,7 @@ picker.PickerMode = PickerMode.Dialog;
 {% endhighlight %}
 {% endtabs %}
 
-The picker can be opened programmatically by setting  `SfPicker.IsOpen` property to true. Default value of `SfPicker.IsOpen` is false.
+The picker can be opened programmatically by setting [`SfPicker.IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_IsOpen) property to true. Default value of [`SfPicker.IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_IsOpen) is false.
 
 Note: This property is automatically changed to false when you close the dialog by clicking outside of dialog.
 

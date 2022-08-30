@@ -13,13 +13,13 @@ This section explains about the customization of picker columns
 
 ## Adjust column width
 
-Picker allows user to adjust the column width by hooking `SfPicker.OnColumnLoaded` event, and check the column by using the `ColumnLoadedEventArgs.Column` property, and then adjust width of column by setting the `ColumnLoadedEventArgs.ColumnWidth` property.
+Picker allows user to adjust the column width by hooking [`SfPicker.OnColumnLoaded`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_OnColumnLoaded) event, and check the column by using the [`ColumnLoadedEventArgs.Column`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.ColumnLoadedEventArgs.html#Syncfusion_SfPicker_XForms_ColumnLoadedEventArgs_Column) property, and then adjust width of column by setting the [`ColumnLoadedEventArgs.ColumnWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.ColumnLoadedEventArgs.html#Syncfusion_SfPicker_XForms_ColumnLoadedEventArgs_ColumnWidth) property.
 
-The following code snippets demonstrate the DateTimePicker sample by using `OnColumnLoaded` event.
+The following code snippets demonstrate the DateTimePicker sample by using [`OnColumnLoaded`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_OnColumnLoaded) event.
 
 *MainPage*
 
-Column width of the each column can be adjusted by using the OnColumnLoaded event in picker. That is implemented in the following code.
+Column width of the each column can be adjusted by using the [`OnColumnLoaded`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_OnColumnLoaded) event in picker. That is implemented in the following code.
 
 {% tabs %}
 {% highlight xaml %}
@@ -189,12 +189,12 @@ Sample link: [DateTimePicker](http://www.syncfusion.com/downloads/support/direct
 
 ## Add caption
 
-picker allows users to add header for each column by setting the `SfPicker.ColumnHeaderText` property and enabling the `SfPicker.ShowColumnHeader` property to True.
+picker allows users to add header for each column by setting the [`SfPicker.ColumnHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ColumnHeaderText) property and enabling the [`SfPicker.ShowColumnHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowColumnHeader) property to True.
 
-The `ColumnHeaderText` property is object type and user can assign string or collection. 
-If a string type is assigned in `SfPicker.ColumnHeaderText`, that string will be updated in all the column of picker.
+The [`ColumnHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ColumnHeaderText) property is object type and user can assign string or collection. 
+If a string type is assigned in [`SfPicker.ColumnHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ColumnHeaderText), that string will be updated in all the column of picker.
 
-To assign the collection in `SfPicker.ColumnHeaderText`, picker column header should be updated based on index with value or collection.
+To assign the collection in [`SfPicker.ColumnHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ColumnHeaderText), picker column header should be updated based on index with value or collection.
 
 The following code illustrates assigning the ColumnHeaderText for picker
 
@@ -330,7 +330,7 @@ This section explains about the column header's Background, TextColor, and Fonts
 
 ### Background
 
-Column header's background color can be customized by setting the `SfPicker. ColumnHeaderBackgroundColor` property.
+Column header's background color can be customized by setting the [`SfPicker.ColumnHeaderBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ColumnHeaderBackgroundColor) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -356,7 +356,7 @@ picker.ColumnHeaderBackgroundColor = Color.SkyBlue;
 
 ### Text-Color 
 
-Column header's text color can be customized by setting the `SfPicker.ColumnHeaderTextColor` property.
+Column header's text color can be customized by setting the [`SfPicker.ColumnHeaderTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ColumnHeaderTextColor) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -386,7 +386,7 @@ This section explains about the customization of column header's text or Font.
 
 #### 	FontFamily
 
-Column header's text FontFamily can be customized by setting the `SfPicker.ColumnHeaderFontFamily` property.
+Column header's text FontFamily can be customized by setting the [`SfPicker.ColumnHeaderFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ColumnHeaderFontFamily) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -412,7 +412,7 @@ picker.ColumnHeaderFontFamily = "Courier New";
 
 #### 	FontSize
 
-Column header's text FontSize can be customized  by setting the `SfPicker.ColumnHeaderFontSize` property.
+Column header's text FontSize can be customized  by setting the [`SfPicker.ColumnHeaderFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ColumnHeaderFontSize) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -438,7 +438,7 @@ picker.ColumnHeaderFontSize = 16;
 
 #### 	FontAttribute
 
- Column header's text FontAttribute can be customized by setting the `SfPicker.ColumnHeaderFontAttribute` property.
+ Column header's text FontAttribute can be customized by setting the [`SfPicker.ColumnHeaderFontAttribute`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ColumnHeaderFontAttribute) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -486,7 +486,7 @@ Sample:[MultiColumn-SelectedIndex](https://www.syncfusion.com/downloads/support/
 
 ## Cascading
 
-Picker allows users to get selection change intimation by setting the `SfPicker.SelectionChanged` event. 
+Picker allows users to get selection change intimation by setting the [`SfPicker.SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_SelectionChanged) event. 
 
 Refer the following code example to prepare cascading sample for change the picker's background color when change the selection of picker.
 

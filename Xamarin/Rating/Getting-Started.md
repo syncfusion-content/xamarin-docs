@@ -12,7 +12,7 @@ documentation: ug
 # Getting Started with Xamarin Rating (SfRating)
 
 
-This section explains how to configure a SfRating control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRating control.
+This section explains how to configure a [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control.
 
 ## Assembly deployment
 
@@ -24,19 +24,19 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## Adding SfRating reference
 
-You can add SfRating reference using one of the following methods:
+You can add [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) reference using one of the following methods:
 
 **Method 1: Adding SfRating reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfRating to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfRating](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRating), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfRating](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRating), and then install it.
 
 ![Adding SfRating reference from nuget](images/Adding SfRating reference.png)
 
-N> Install the same version of SfRating NuGet in all the projects.
+N> Install the same version of [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) NuGet in all the projects.
 
 **Method 2: Adding SfRating reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfRating control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfRating assemblies manually from the installed location**
 
@@ -113,7 +113,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-The SfRating control is configured entirely in C# code or by using XAML markup. The following steps explains how to create a SfRating and configure its elements.
+The [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control is configured entirely in C# code or by using XAML markup. The following steps explains how to create a [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) and configure its elements.
 
 ## Adding namespace
 
@@ -137,7 +137,7 @@ Add the following namespace.
 
 ## Initialize Rating
 
-Now, add the SfRating control with a required optimal name using the included namespace.
+Now, add the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control with a required optimal name using the included namespace.
 
 {% tabs %}
 
@@ -163,9 +163,9 @@ public MainPage()
 
 ## Set Number of Rating Items
 
-The number of rating items to be displayed can be customized in the SfRating control. Users can create a rating application with 5 items as follows. The `ItemCount` property is used to define the number of rating items.
+The number of rating items to be displayed can be customized in the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control. Users can create a rating application with 5 items as follows. The [`ItemCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_ItemCount) property is used to define the number of rating items.
 
-N> The default value of ItemCount is 5.
+N> The default value of [`ItemCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_ItemCount) is 5.
 
 {% tabs %}
 
@@ -191,7 +191,7 @@ public MainPage()
 
 ## Set Value
 
-The display value can be set in the SfRating control, which is selected among the items. The following code example shows the display value of 3 with 5 rating items. The `Value` property is used to set display value.
+The display value can be set in the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control, which is selected among the items. The following code example shows the display value of 3 with 5 rating items. The [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_Value) property is used to set display value.
 
 N> The default value of this property is 0.
 
@@ -219,7 +219,7 @@ public MainPage()
 
 ## Precision
 
-The SfRating control provides an option to rate the items in full, half, and exact values. This can be set using the `Precision` property. By default, the precision mode is `Standard`.
+The[`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control provides an option to rate the items in full, half, and exact values. This can be set using the [`Precision`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_Precision) property. By default, the precision mode is [`Standard`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.Precision.html#Syncfusion_SfRating_XForms_Precision_Standard).
 
 {% tabs %}
 

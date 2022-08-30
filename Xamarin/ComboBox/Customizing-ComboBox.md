@@ -230,7 +230,7 @@ The [`ShowBorder`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Comb
 
 ## CustomView for ComboBox
 
-CustomView property has used to provide the custom view instead of entry in ComboBox. It's default height and width has control height and width.
+[`CustomView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_CustomView) property has used to provide the custom view instead of entry in ComboBox. It's default height and width has control height and width.
 
 {% tabs %}
 
@@ -278,7 +278,7 @@ N> [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Combo
 
 ## Custom template for suggestion items
 
-The `ItemTemplate` property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
+The [`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ItemTemplate) property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
 
 {% tabs %}
 
@@ -327,7 +327,7 @@ public class PersonViewModel
 
 {% endtabs %}
 
-Now populate this PersonViewModel data in SfComboBox control by binding with [`DataSource`] property. 
+Now populate this PersonViewModel data in [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) control by binding with [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DataSource) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -607,7 +607,7 @@ The [`DropDownBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusio
 
 ### Changing the border color of suggestion box
 
-The DropDownBorderColor property is used to change the border color of suggestion box. The following code example demonstrates how to change the border color of suggestion box.
+The [`DropDownBorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DropDownBorderColor) property is used to change the border color of suggestion box. The following code example demonstrates how to change the border color of suggestion box.
 
 {% tabs %}
 
@@ -789,7 +789,7 @@ The [`SelectedDropDownItemColor`](https://help.syncfusion.com/cr/xamarin/Syncfus
 
 ## DropDown button customization
 
-This section explains various DropDown button settings available in SfComboBox control.
+This section explains various DropDown button settings available in [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) control.
 {% tabs %}
 
 {% highlight xaml %}
@@ -920,7 +920,7 @@ Content = layout;
 
 ## Watermark
 
-Watermark provides a short note about the type of input to enter in the editor control. Watermarks are visible only if the text is empty. It will reappear if the text is cleared. The following example, explains the usability of watermark that hints users to start with the character “U”.
+[`Watermark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_Watermark) provides a short note about the type of input to enter in the editor control. Watermarks are visible only if the text is empty. It will reappear if the text is cleared. The following example, explains the usability of watermark that hints users to start with the character “U”.
 
 {% tabs %}
 
@@ -990,7 +990,7 @@ Text color of watermark can be customized using [`WatermarkColor`](https://help.
 
 ## Select text on focus
 
-The `SelectAllOnFocus` property specifies whether the text should be selected when the input field is focused.
+The [`SelectAllOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectAllOnFocus) property specifies whether the text should be selected when the input field is focused.
 {% tabs %}
 
 {% highlight xaml %}

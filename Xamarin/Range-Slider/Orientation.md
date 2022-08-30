@@ -9,9 +9,9 @@ documentation: ug
 
 # Orientation in Xamarin Range Slider (SfRangeSlider)
 
-SfRangeSlider provides options to display values and slider to slide either horizontally or vertically.
+[`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) provides options to display values and slider to slide either horizontally or vertically.
 
-N> The default option is Vertical.
+N> The default option is [`Vertical`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.Orientation.html#Syncfusion_SfRangeSlider_XForms_Orientation_Vertical).
 
 ## Horizontal
 

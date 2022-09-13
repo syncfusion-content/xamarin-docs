@@ -27,7 +27,7 @@ State collection -Add state names.
 
 Area collection -Add above  2 collections.
 
-Area collection is the main collection, and this collection has been assigned to ItemsSource of picker Control.
+Area collection is the main collection, and this collection has been assigned to [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ItemsSource) of picker Control.
 
 The following code demonstrates Area collection creation.
 
@@ -42,7 +42,7 @@ public class PickerCascading:INotifyPropertyChanged
 
 /// <summary>
 
-/// Area is the actual DataSource for SfPicker control which will holds the collection of Country and State
+/// Area is the actual DataSource for [`SfPicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html) control which will holds the collection of Country and State
 
 /// </summary>
 
@@ -148,7 +148,7 @@ PropertyChanged(this, new PropertyChangedEventArgs(name));
 
 {% endhighlight %}
 
-**Step** **2** **:** Update the state collection  based on selected item of country name by using the Selection changed event of picker control.
+**Step** **2** **:** Update the state collection  based on selected item of country name by using the [`Selection changed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_SelectionChanged) event of picker control.
 
 {% highlight c# %}
 
@@ -167,7 +167,7 @@ if (picker.ItemsSource != null && e.NewValue is IList && (picker.ItemsSource as 
 
 {% endhighlight %}
 
-**Step** **3** **:** Define column headers as  “Country” and  “State” by using ColumnHeaderText property of picker control. The following code demonstrates how to define header for each column of picker control.
+**Step** **3** **:** Define column headers as  “Country” and  “State” by using [`ColumnHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ColumnHeaderText) property of picker control. The following code demonstrates how to define header for each column of picker control.
 
 {% highlight c# %}
 

@@ -146,7 +146,7 @@ Time.Add(Format);
 
 {% endhighlight %}
 
-**Step** **3** **:** Define each column headers “Hour”, “Minute”, and “Format” by using the ColumnHeaderText property of picker control. The following code demonstrates how to define header for each column of picker control.
+**Step** **3** **:** Define each column headers “Hour”, “Minute”, and “Format” by using the [`ColumnHeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ColumnHeaderText) property of picker control. The following code demonstrates how to define header for each column of picker control.
 
 {% highlight c# %}
 
@@ -212,7 +212,7 @@ this.ColumnHeaderText = Headers;
 
 {% endhighlight %}
 
-**Step** **4** **:** Finally, enable the picker header, column header, and footer by using the ShowHeader,ShowFooter, and ShowColumnHeader properties.
+**Step** **4** **:** Finally, enable the picker header, column header, and footer by using the [`ShowHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowHeader),[`ShowFooter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowFooter), and [`ShowColumnHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html#Syncfusion_SfPicker_XForms_SfPicker_ShowColumnHeader) properties.
 
 {% highlight c# %}
 

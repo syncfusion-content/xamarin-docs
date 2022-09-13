@@ -9,7 +9,7 @@ documentation: ug
 
 # Xamarin Rotator (SfRotator) Overview
 
-The Rotator is a data control used to display image data and navigate through them. The images can be selected either by Thumbnail or by Dots support.
+The Rotator is a data control used to display image data and navigate through them. The images can be selected either by [`Thumbnail`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.NavigationStripMode.html#Syncfusion_SfRotator_XForms_NavigationStripMode_Thumbnail) or by [`Dots`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.NavigationStripMode.html#Syncfusion_SfRotator_XForms_NavigationStripMode_Dots) support.
 
 ![Rotator OverView](images/overview.png)
  

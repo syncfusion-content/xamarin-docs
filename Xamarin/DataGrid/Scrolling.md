@@ -38,6 +38,8 @@ dataGrid.ScrollingMode = ScrollingMode.Line;
 
 ![DataGrid with line scrolling mode](SfDataGrid_images/Line.gif)
 
+N> When setting `SfDataGrid.ScrollingMode` to `ScrollingMode.Line`, the `SfDataGrid.QueryRowHeight` event is not supported. The `SfDataGrid.ColumnSizer.Auto` and `SfDataGrid.ColumnSizer.SizeToHeader` will not be supported, when `SfDataGrid.ScrollingMode` is `ScrollingMode.Line`.
+
 ### Pixel
 
 The `ScrollingMode.Pixel` allows you to scroll its contents based on pixel values i.e., the view will update each pixel change of the offsets, and row or column will appear clipped when offset exceeds the origin of the row or column.

@@ -7,10 +7,12 @@ control: SfPdfViewer
 documentation: ug
 ---
 
-# Popup Annotations in Xamarin Pdf Viewer (SfPdfViewer)
+# Popup annotations in Xamarin Pdf Viewer (SfPdfViewer)
+
 [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows you to include Popup or Sticky note annotations in a PDF document and provides options to modify or remove the existing ones.
 
 ## Adding Popup annotations using toolbar
+
 ### Enabling Popup annotation mode
 
 Set the `AnnotationMode` property of the PDF viewer to `Popup`. After setting the annotation mode, the zooming, panning, and scrolling will be disabled. Tap anywhere on the displayed PDF page, a popup will appear. Type the text in the popup and click "Ok" to add popup or sticky note to the page. Once the popup annotation is added, the zooming, panning, and scrolling will be enabled again.
@@ -31,14 +33,15 @@ pdfViewer.AnnotationMode = AnnotationMode.Popup;
 {% endhighlight %}
 {% endtabs %}
 
-### Disabling Popup annotation mode
+### Disabling popup annotation mode
 
-Setting the annotation mode to None disables the popup mode.
+Setting the annotation mode to `None` disables the popup mode.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfPdfViewer x:Name="pdfViewer"/> <Button x:Name="resetAnnotationButton" Command="{Binding AnnotationModeCommand, Source={x:Reference Name=pdfViewer}}" CommandParameter="None" />
+<syncfusion:SfPdfViewer x:Name="pdfViewer"/>
+<Button x:Name="resetAnnotationButton" Command="{Binding AnnotationModeCommand, Source={x:Reference Name=pdfViewer}}" CommandParameter="None" />
 
 {% endhighlight %}
 {% highlight c# %}
@@ -48,7 +51,7 @@ pdfViewer.AnnotationMode = AnnotationMode.None;
 {% endhighlight %}
 {% endtabs %}
 
-### Detecting the inclusion of Popup annotations
+### Detecting the inclusion of popup annotations
 
 The event `PopupAnnotationAdded` will be raised when a popup annotation is added to the PDF.
 
@@ -191,7 +194,7 @@ pdfViewer.DeselectAnnotation(popupAnnotation);
 {% endhighlight %}
 {% endtabs %}
 
-N>There is no effect in calling DeselectAnnotation method, if the given annotation is not selected. Once this method is called, the SelectedAnnotation property will return null until any other annotation gets selected.
+N> There is no effect in calling `DeselectAnnotation` method, if the given annotation is not selected. Once this method is called, the `SelectedAnnotation` property will return null until any other annotation gets selected.
 
 ##Customizing the appearance of popup annotations
 
@@ -206,13 +209,14 @@ pdfViewer.AnnotationSettings.Popup.Color = Color.Red;
 ### Setting the default popup appearance icon
 
 You can set the default popup appearance icon of the popup annotations by using the `SfPdfViewer.AnnotationSettings.Popup.Icon` property. The supported popup annotation appearance icons are:
-1.Note
-2.Insert
-3.Comment
-4.Key
-5.Help
-6.Paragraph
-7.NewParagraph 
+
+* Note
+* Insert
+* Comment
+* Key
+* Help
+* Paragraph
+* NewParagraph 
 
 Refer to the following code example.
 
@@ -307,20 +311,21 @@ Point newPosition = args.NewPosition;
 
 PDF viewer can remove a selected annotation or all annotations in the PDF document.
 
-###Removing a selected popup annotation
+### Removing a selected popup annotation
 
 The following code example illustrates removing a selected popup from the PDF document.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfPdfViewer x:Name="pdfViewer" PopupAnnotationSelected="PdfViewer_PopupAnnotationSelected"/> <Button x:Name="deletePopupAnnotationButton" Grid.Row="1" Clicked="deletePopupAnnotationButton_Clicked" />
+<syncfusion:SfPdfViewer x:Name="pdfViewer" PopupAnnotationSelected="PdfViewer_PopupAnnotationSelected"/> 
+<Button x:Name="deletePopupAnnotationButton" Grid.Row="1" Clicked="deletePopupAnnotationButton_Clicked" />
 
 {% endhighlight %}
-
 {% highlight c# %}
 
 PopupAnnotation selectedPopupAnnotation; 
+
 private void PdfViewer_PopupAnnotationSelected(object sender, EventArgs args) 
 { 
 
@@ -328,7 +333,8 @@ private void PdfViewer_PopupAnnotationSelected(object sender, EventArgs args)
 selectedPopupAnnotation = sender as PopupAnnotation; 
 
 }
- private void deletePopupAnnotationButton_Clicked(object sender, EventArgs e) 
+
+private void deletePopupAnnotationButton_Clicked(object sender, EventArgs e) 
 {
 
  //Delete the selected popup annotation
@@ -345,19 +351,24 @@ The `ClearAllAnnotations` method can be used to delete all annotations irrespect
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfPdfViewer x:Name="pdfViewer" /> <Button x:Name="deleteAllAnnotationsButton" Command="{Binding ClearAllAnnotationsCommand, Source={x:Reference Name=pdfViewer}} />
-{% endhighlight %}
 
+<syncfusion:SfPdfViewer x:Name="pdfViewer" /> 
+<Button x:Name="deleteAllAnnotationsButton" Command="{Binding ClearAllAnnotationsCommand, Source={x:Reference Name=pdfViewer}} />
+
+{% endhighlight %}
 {% highlight c# %}
+
 //Delete all the annotations from a button click
 private void deleteAllAnnotationsButton_Clicked(object sender, EventArgs e) 
 { 
-pdfViewer.ClearAllAnnotations(); 
+	pdfViewer.ClearAllAnnotations(); 
 }
+
 {% endhighlight %}
 {% endtabs %}
 
 ## Detecting the removal of a popup annotation
+
 The event `PopupAnnotationRemoved` will be raised when a Popup annotation is removed from the PDF.
 
 {% tabs %}
@@ -399,7 +410,7 @@ PopupIcon popupIcon = (sender as PopupAnnotation).Settings.Icon;
 
 ## How to open and edit the text of the popup annotation?
 
-The popup annotation can be opened and edited by selecting and double tapping on it from the UI. We can programmatically open the popup view and edit the popup annotation's text by calling the EditPopupAnnotationText method. 
+The popup annotation can be opened and edited by selecting and double tapping on it from the UI. We can programmatically open the popup view and edit the popup annotation's text by calling the `EditPopupAnnotationText` method. 
 
 The following code example illustrates the same.
 
@@ -412,7 +423,7 @@ pdfViewer.EditPopupAnnotationText();
 {% endhighlight %}
 {% endtabs %}
 
-N>There will be no effect in calling the `EditPopupAnnotationText` method, if the popup annotation is not selected.
+N> There will be no effect in calling the `EditPopupAnnotationText` method, if the popup annotation is not selected.
 
 ## How to lock or unlock the popup annotations?
 
@@ -481,9 +492,8 @@ private void PdfViewerControl_PopupAnnotationAdded(object sender, EventArgs args
 
 }
 
- {% endhighlight %}
- {% endtabs %}
+{% endhighlight %}
+{% endtabs %}
  
-N>For illustration purposes, we have only provided the example for modifying the name of the popup annotation in the PopupAnnotationAdded event. But this can be done in all other events as well.
-N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.
+N> For illustration purposes, we have only provided the example for modifying the name of the popup annotation in the `PopupAnnotationAdded` event. But this can be done in all other events as well.
 

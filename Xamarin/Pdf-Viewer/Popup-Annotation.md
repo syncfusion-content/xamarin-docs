@@ -196,9 +196,9 @@ pdfViewer.DeselectAnnotation(popupAnnotation);
 
 N> There is no effect in calling `DeselectAnnotation` method, if the given annotation is not selected. Once this method is called, the `SelectedAnnotation` property will return null until any other annotation gets selected.
 
-##Customizing the appearance of popup annotations
+## Customizing the appearance of popup annotations
 
-###Setting the default color
+### Setting the default color
 
 You can set the default color of the popup annotations by using the `SfPdfViewer.AnnotationSettings.Popup.Color` property. Refer to the following code example.
 
@@ -230,7 +230,7 @@ pdfViewer.AnnotationSettings.Popup.Icon = PopupIcon.Note;
 
 ### Changing the properties of a selected popup
 
-You can change the properties of the selected annotation by casting the sender parameter of the `PopupAnnotationSelected` event handler to PopupAnnotation and modify its properties. The following code example shows how to change the properties.
+You can change the properties of the selected annotation by casting the sender parameter of the `PopupAnnotationSelected` event handler to `PopupAnnotation` and modify its properties. The following code example shows how to change the properties.
 
 {% tabs %}
 {% highlight c# %}

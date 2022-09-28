@@ -408,23 +408,6 @@ private void PdfViewer_FreeTextAnnotationRemoved(object sender, FreeTextAnnotati
 {% endhighlight %}
 {% endtabs %}
 
-## Render sticky notes annotation as free text annotation
-
-To avoid data loss and by default, the sticky notes or popup annotation will be rendered as free-text annotation while importing or loading a document. Though the sticky notes annotations are rendered as free text annotations in the `SfPdfViewer`, they will be preserved as sticky notes annotation while saving and exporting. Only the change of text attribute will be preserved on save and export.
-
-You can also avoid or restrict the sticky notes from being rendered as free text annotation by setting the `AllowRenderingPopupAsFreeText` property to `false`. The following code illustrates the same:
-
-{% tabs %}
-{% highlight c# %}
-
-//Restrict the sticky notes or popup annotation from being rendered as free text annotation
-pdfViewerControl.AnnotationSettings.AllowRenderingPopupAsFreeText = false;
-
-{% endhighlight %}
-{% endtabs %}
-
-N>The support to add, render, and edit sticky notes annotation through UI or programmatically is not provided yet. Once the support is provided, the `AllowRenderingPopupAsFreeText` property will be deprecated.
-
 ## How to lock or unlock the free text annotations?
  
 To lock or unlock all the free text annotation, set the `IsLocked` API to `true` or `false` respectively, and the following sample explains the same. But other annotation types can be moved, resized, removed or their attributes can be changed. 

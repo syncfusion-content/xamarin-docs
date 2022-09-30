@@ -38,7 +38,7 @@ dataGrid.ScrollingMode = ScrollingMode.Line;
 
 ![DataGrid with line scrolling mode](SfDataGrid_images/Line.gif)
 
-N> When setting `SfDataGrid.ScrollingMode` to `ScrollingMode.Line`, the `SfDataGrid.QueryRowHeight` event is not supported. The `SfDataGrid.ColumnSizer.Auto` and `SfDataGrid.ColumnSizer.SizeToHeader` will not be supported, when `SfDataGrid.ScrollingMode` is `ScrollingMode.Line`.
+N> [ScrollingMode.Line](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.ScrollingMode.html#Syncfusion_SfDataGrid_XForms_ScrollingMode_Line) will not be worked as expected when row height is customized through [SfDataGrid.QueryRowHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_QueryRowHeight) event , applies width for the columns using the [SfDataGrid.ColumnSizer.Auto](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.ColumnSizer.html#Syncfusion_SfDataGrid_XForms_ColumnSizer_Auto) and [SfDataGrid.ColumnSizer.SizeToHeader](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.ColumnSizer.html#Syncfusion_SfDataGrid_XForms_ColumnSizer_SizeToHeader) options.
 
 ### Pixel
 

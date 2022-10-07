@@ -51,6 +51,7 @@ Schedule supports full data binding to any type of IEnumerable source. Specify t
 | [SubjectMapping](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.html#Syncfusion_SfSchedule_XForms_ScheduleAppointmentMapping_SubjectMapping) | This property is to map the property name of custom class which is equivalent for Subject of ScheduleAppointment. |
 | [IdMapping](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.html#Syncfusion_SfSchedule_XForms_ScheduleAppointmentMapping_IdMapping) | This property is to map the property name of custom class which is equivalent for Id of ScheduleAppointment. |
 | [ColorMapping](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.html#Syncfusion_SfSchedule_XForms_ScheduleAppointmentMapping_ColorMapping) | This property is to map the property name of custom class which is equivalent for Color of ScheduleAppointment. |
+| [TextColorMapping](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.html#Syncfusion_SfSchedule_XForms_ScheduleAppointmentMapping_TextColorMapping) | This property is to map the property name of custom class which is equivalent for TextColor of ScheduleAppointment. |
 | [IsAllDayMapping](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.html#Syncfusion_SfSchedule_XForms_ScheduleAppointmentMapping_IsAllDayMapping) | This property is to map the property name of custom class which is equivalent for IsAllDay of ScheduleAppointment. |
 | [RecurrenceRuleMapping](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.html#Syncfusion_SfSchedule_XForms_ScheduleAppointmentMapping_RecurrenceRuleMapping) | This property is to map the property name of custom class which is equivalent for RecurrenceRule of ScheduleAppointment. |
 | [NotesMapping](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.html#Syncfusion_SfSchedule_XForms_ScheduleAppointmentMapping_NotesMapping) | This property is to map the property name of custom class which is equivalent for Notes of ScheduleAppointment. |
@@ -75,6 +76,7 @@ public class Meeting
 	public DateTime From { get; set; }
 	public DateTime To { get; set; }
 	public Color Color { get; set; }
+	public Color TextColor { get; set; }
 } 
 {% endhighlight %}
 {% endtabs %}
@@ -90,7 +92,8 @@ You can map those properties of `Meeting` class with our SfSchedule control by u
 			SubjectMapping="EventName" 
 			ColorMapping="Color"
 			StartTimeMapping="From"
-			EndTimeMapping="To">
+			EndTimeMapping="To"
+			TextColorMapping="TextColor">
 		</syncfusion:ScheduleAppointmentMapping>
 	</syncfusion:SfSchedule.AppointmentMapping>
 </syncfusion:SfSchedule> 
@@ -102,6 +105,7 @@ dataMapping.SubjectMapping = "EventName";
 dataMapping.StartTimeMapping = "From";
 dataMapping.EndTimeMapping = "To";
 dataMapping.ColorMapping = "Color";
+dataMapping.TextColorMapping = "TextColor";
 schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
 {% endtabs %} 
@@ -120,6 +124,8 @@ meeting.To = meeting.From.AddHours(1);
 meeting.EventName = "Anniversary";
 // Setting color for an event
 meeting.Color = Color.Green; 
+// Setting text color for an event
+meeting.TextColor = Color.White;
 // Creating instance for collection of custom appointments
 var Meetings = new ObservableCollection<Meeting>();
 // Adding a custom appointment in CustomAppointmentCollection

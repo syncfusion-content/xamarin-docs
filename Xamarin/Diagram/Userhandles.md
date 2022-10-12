@@ -12,6 +12,7 @@ User handles are customizable handles which can be used to perform custom action
 * SfGraphicPath
 * Template
 The following code illustrates how to add custom user handle in diagram:
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 //Add graphic path into an user handle collection
@@ -67,6 +68,8 @@ diagram.UserHandles.Add(new Syncfusion.SfDiagram.XForms.UserHandle("plus", UserH
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 ## User handles clicked event
 The following code illustrate how to define use handles clicked event and its action.

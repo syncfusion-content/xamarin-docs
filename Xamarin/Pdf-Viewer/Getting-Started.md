@@ -187,11 +187,12 @@ namespace GettingStarted
 
 Add the following XAML code in the MainPage.xaml in the portable project.
 
-•	Includes the necessary namespace where the control class resides
-•	Set BindingContext of ContentPage to PdfViewerViewModel
-•	Includes PDF Viewer into the page
-•	Binds InputFileStream property of PDF Viewer control to PdfDocumentStream property of PdfViewerViewModel
+*	Includes the necessary namespace where the control class resides
+*	Set BindingContext of ContentPage to PdfViewerViewModel
+*	Includes PDF Viewer into the page
+*	Binds InputFileStream property of PDF Viewer control to PdfDocumentStream property of PdfViewerViewModel
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -211,6 +212,8 @@ Add the following XAML code in the MainPage.xaml in the portable project.
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 The sample that illustrates loading a PDF in MVVM binding can be downloaded from the link below. 
 
@@ -584,7 +587,6 @@ N>This API is only applicable for UWP desktop. Changing the value of this API do
 ## How to get the list of annotations present in the PDF?
 
 By using `Annotations` property, You can get the list of annotations present in the PDF document.
-  .
 Refer the following code sample.
 
 {% tabs %}

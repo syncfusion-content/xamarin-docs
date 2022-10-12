@@ -37,6 +37,7 @@ The [`ToolbarOptions`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.
 * `Undo`
 * `All` - default
 
+{% capture codesnippet1 %}
 {% tabs %} 
 
 {% highlight xaml %} 
@@ -57,6 +58,8 @@ this.Content = richtexteditor;
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 ## Customizing toolbar
 

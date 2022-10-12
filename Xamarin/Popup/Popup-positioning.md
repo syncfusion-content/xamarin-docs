@@ -424,6 +424,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
+{% highlight c# %}
 // ViewModel
 public class ViewModel: INotifyPropertyChanged
 {
@@ -448,6 +449,7 @@ public class ViewModel: INotifyPropertyChanged
 
     public event PropertyChangedEventHandler PropertyChanged;
 }
+{% endhiglight %}
 
 Executing the above codes renders the following output in Android device respectively.
 

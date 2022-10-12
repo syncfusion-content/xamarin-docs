@@ -310,7 +310,7 @@ public class CoreApp : MvvmCross.Core.ViewModels.MvxApplication
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Inherit ViewModel from the `MvxViewModel`.
-{% capture codesnipett2 %}
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 public class MvxFormsViewModel : MvxViewModel

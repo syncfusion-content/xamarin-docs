@@ -317,7 +317,7 @@ Operations such as deleting a row when swiping a data row from one extent to oth
 </sfgrid:SfDataGrid.RightSwipeTemplate>
 {% endhighlight %}
 
-Swiping.Xaml.cs
+**Swiping.xaml.cs**
 
 {% highlight c# %}
 

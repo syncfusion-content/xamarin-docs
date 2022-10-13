@@ -1014,6 +1014,8 @@ The [`ValueChangeStarted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfG
 
 * `Value` : This value will be the last value the pointer had before the changes began.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -1046,6 +1048,10 @@ The [`ValueChangeStarted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfG
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 ### Value changing event
 
@@ -1088,6 +1094,8 @@ The [`ValueChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.X
 
 * `Value` : Gets the updated value of the pointer.
 
+{% capture codesnippet2 %}
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -1111,6 +1119,10 @@ The [`ValueChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.X
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
+
 ### Value change completed event
 
 Called after a new value has been updated by terminating the dragging of the pointer. While dragging the pointer, other events (ValueChangeStarted, ValueChanging, and ValueChanged) will be called prior to the `ValueChangeCompleted` event.
@@ -1120,6 +1132,8 @@ This event will notify the completion of dragging with a new value being updated
 The [`ValueChangeCompleted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Pointer.html#Syncfusion_SfGauge_XForms_Pointer_ValueChangeCompleted) event contains the following argument.
 
 * `Value` : Gets the updated value of the pointer.
+
+{% capture codesnippet3 %}
 
 {% tabs %}
 
@@ -1143,6 +1157,10 @@ The [`ValueChangeCompleted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.S
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet3 | UnOrderList_Indent_Level_1 }} 
 
 ## See also
 

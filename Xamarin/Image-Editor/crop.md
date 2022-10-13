@@ -28,6 +28,8 @@ The [`ToggleCropping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImage
 
 * The following code shows cropping the image to any desired size.
 
+{% capture codesnippet1 %}
+
 {% highlight C# %}
 
 // For free hand cropping.
@@ -36,7 +38,13 @@ editor.ToggleCropping();
 
 {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 * The following code shows cropping an image based on its original width and height.
+
+{% capture codesnippet2 %}
 
 {% highlight C# %}
 
@@ -46,7 +54,13 @@ editor.ToggleCropping(float.NaN,float.NaN);
 
 {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
+
 * The following code shows cropping an image in square format.
+
+{% capture codesnippet3 %}
 
 {% highlight C# %}
 
@@ -56,7 +70,13 @@ editor.ToggleCropping(1,1);
 
 {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet3 | UnOrderList_Indent_Level_1 }} 
+
 * The following code shows cropping an image based on specific ratio.
+
+{% capture codesnippet4 %}
 
 {% highlight C# %}
 
@@ -66,7 +86,13 @@ editor.ToggleCropping(9,17);
 
 {% endhighlight %} 
 
+{% endcapture %}
+
+{{ codesnippet4 | UnOrderList_Indent_Level_1 }} 
+
 * To position the cropping window with custom location, pass the desired rectangle in [`ToggleCropping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_ToggleCropping_Xamarin_Forms_Rectangle_System_Boolean_) method. Each value in the rectangle should be in offset value(0 to 100).
+
+{% capture codesnippet5 %}
 
 {% highlight C# %}
 
@@ -75,6 +101,10 @@ Rectangle rect = new Rectangle(20,20,50,50);
 editor.ToggleCropping(rect);    
 
 {% endhighlight %} 
+
+{% endcapture %}
+
+{{ codesnippet5 | UnOrderList_Indent_Level_1 }} 
 
 After the cropping area has been selected, the [`Crop`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_Crop_Xamarin_Forms_Rectangle_System_Boolean_) method is called, which in turn crops the selected region and displays the cropped image on the image editor.
 
@@ -160,11 +190,17 @@ The following code sample will add the cropping preview on the image in square s
 
 * To crop an image in a circle or an ellipse with a specific ratio, use [`ToggleCropping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_ToggleCropping_System_Single_System_Single_System_Boolean_) with a ratio argument and an optional parameter of true, which specifies whether the cropping panel should be added in an elliptical or rectangle shape. The default value is false.
 
+{% capture codesnippet6 %}
+
 {% highlight C# %}
 
 editor.ToggleCropping(1, 1, true);    
 
 {% endhighlight %} 
+
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
 
 ## Tilt the image
 

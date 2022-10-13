@@ -127,6 +127,8 @@ The Android platform does not require any additional configuration to render the
 
 2. Set the SfImageEditor control as content to the ContentPage.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -166,6 +168,10 @@ The Android platform does not require any additional configuration to render the
     }
 {% endhighlight %}
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
 
 * If image is not set to the `Source` property, the appearance of the image will be shown as white canvas. You can perform editing action using built-in toolbar.
 

@@ -200,7 +200,7 @@ editor.ToggleCropping(1, 1, true);
 
 {% endcapture %}
 
-{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+{{ codesnippet6 | UnOrderList_Indent_Level_1 }} 
 
 ## Tilt the image
 

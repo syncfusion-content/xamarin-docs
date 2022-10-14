@@ -137,7 +137,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 **Adding SfDiagram in Xamarin.Forms**
 1. Import SfDiagram control namespace as xmlns:syncfusion="clr-namespace:Syncfusion.SfDiagram.XForms;assembly=Syncfusion.SfDiagram.XForms in XAML Page.
 2. Set the SfDiagram control as content to the ContentPage.
-{% capture codesnippet1 %}
+
 {% tabs %}
 {% highlight xml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -170,8 +170,6 @@ namespace GettingStarted
 }
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 The following code snippet illustrates the creation of Nodes and Connectors in the diagram.
 {% tabs %}
@@ -250,7 +248,7 @@ public class Employees : ObservableCollection<Employee>
 Define Employee Information as a Collection. The below code example shows an employee array whose,
 * Name is used as a unique identifier and
 * ParentId is used to identify the person to whom an employee report to, in the organization.
-{% capture codesnippet1 %}
+
 {% tabs %}
 {% highlight xml %}
 <!-- Initializes the employee collection--> 
@@ -288,8 +286,6 @@ DirectedTreeLayout treeLayout = new DirectedTreeLayout() { HorizontalSpacing = 8
 diagram.LayoutManager = new LayoutManager() { Layout = treeLayout };
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 **BeginNodeRender**
 

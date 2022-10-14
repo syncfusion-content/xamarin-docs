@@ -184,6 +184,7 @@ diagram.AddConnector(connector1);
 ## Remove connector
 Connector can be removed or detached from connection in two ways.
     1. passing the connector as parameter to Remove connector method in diagram.The following code example illustrates how to remove a connector from connection
+
 {% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
@@ -201,8 +202,10 @@ diagram.RemoveConnector(connector1);
 {% endtabs %}
 {% endcapture %}
 {{ codesnippet1 | UnOrderList_Indent_Level_1 }}
+
     2. passing the index value of the connector to connector collection (using RemoveAt method)
-    The following code example illustrates how to remove a connector from connection
+    The following code example illustrates how to remove a connector from connection.
+    
 {% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}

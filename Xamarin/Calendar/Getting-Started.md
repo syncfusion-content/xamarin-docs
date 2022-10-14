@@ -126,6 +126,7 @@ The `SfCalendar` control is configured entirely in C# code or by using XAML mark
 
 * Adding namespace for the added assemblies. 
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight xaml %}
@@ -141,9 +142,12 @@ using Syncfusion.SfCalendar.XForms;
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 * Now add the SfCalendar control with a required optimal name by using the included namespace.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight xaml %}
@@ -180,6 +184,8 @@ public partial class CalendarPage : ContentPage
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 ## Set Blackout Dates
 

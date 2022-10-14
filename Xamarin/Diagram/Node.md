@@ -108,12 +108,13 @@ Node node = new Node() { Width = 120, Height = 40, OffsetX = 300, OffsetY = 60, 
 
 ## Constraints
 The Node Constraints allow you to enable or disable the following behaviors of Node.
-•EnableDrag
-•EnableResize
-•EnableRotate
-•EnableTextEditing
-•IsLocked.
-Example
+  * EnableDrag
+  * EnableResize
+  * EnableRotate
+  * EnableTextEditing
+  * IsLocked.
+
+**Example**
 The following code illustrates how to disable node dragging.
 {% tabs %}
 {% highlight xml %}

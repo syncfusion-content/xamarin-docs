@@ -157,10 +157,10 @@ N> The values of [SelectedTextStartIndex](https://help.syncfusion.com/cr/xamarin
 By default, the text selection context menu contains built-in menu items such as Copy, Highlight, Underline, and Strikethrough. You can add additional items in the text selection context menu by creating an instance of type [TextSelectionMenuItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TextSelectionMenuItem.html) and add the item to the [TextSelectionSettings.MenuOptions.Items](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TextSelectionMenu.html#Syncfusion_SfPdfViewer_XForms_TextSelectionMenu_Items) property. 
 As the type of this property is ObservableCollection, the following operations can be performed on the text selection context menu items. 
 
-1.	Adding a new item
-2.	Clearing the menu items
-3.	Inserting a new item
-4.	Removing an existing item
+1. Adding a new item
+2. Clearing the menu items
+3. Inserting a new item
+4. Removing an existing item
 
 Below code illustrates adding a new menu item to the text selection context menu.
 

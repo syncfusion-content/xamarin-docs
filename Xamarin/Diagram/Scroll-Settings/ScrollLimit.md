@@ -15,7 +15,6 @@ The scroll limit allows you to define the scrollable region of the Diagram while
 * Diagram: Allows you to scroll within the Diagram content.
 * Limited: Allows you to scroll within the specified area.
 
-{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 <!--Initialize the Sfdiagram-->
@@ -36,8 +35,6 @@ diagram.ScrollSettings = new ScrollSettings()
 };
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 ## Scrollable area
 

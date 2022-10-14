@@ -168,7 +168,7 @@ The Android platform does not require any additional configuration to render the
 
 {% endcapture %}
 
-{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
 ## Add content to the parallax view
 

@@ -294,6 +294,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 The `SfListView` allows users work with `MVVMCross` Framework. Follow the below steps to work with MVVMCross Framework:
 
 1. Inherit App.cs from `MvxApplication` instead of your application.
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 public class CoreApp : MvvmCross.Core.ViewModels.MvxApplication
@@ -305,8 +306,11 @@ public class CoreApp : MvvmCross.Core.ViewModels.MvxApplication
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Inherit ViewModel from the `MvxViewModel`.
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 public class MvxFormsViewModel : MvxViewModel
@@ -318,8 +322,11 @@ public class MvxFormsViewModel : MvxViewModel
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. Connect view and view model instead of binding context by registering them.
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 public class CoreApp : MvvmCross.Core.ViewModels.MvxApplication
@@ -336,8 +343,11 @@ public class CoreApp : MvvmCross.Core.ViewModels.MvxApplication
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 4. Derive `MainActivity` and `AppDelegate` from `MvxFormsAppCompatActivity` and `MvxFormsApplicationDelegate` for initializing renderer.
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 public class MainActivity : MvxFormsAppCompatActivity
@@ -361,6 +371,8 @@ public partial class AppDelegate : MvxFormsApplicationDelegate
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 For more details, refer to this [documentation](https://www.mvvmcross.com/documentation/getting-started/mvvmcross-overview).
 

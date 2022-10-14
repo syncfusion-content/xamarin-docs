@@ -584,7 +584,7 @@ N>This API is only applicable for UWP desktop. Changing the value of this API do
 ## How to get the list of annotations present in the PDF?
 
 By using `Annotations` property, You can get the list of annotations present in the PDF document.
- .
+  .
 Refer the following code sample.
 
 {% tabs %}

@@ -251,6 +251,8 @@ Called when tapped on the maps. [`Tapped`](https://help.syncfusion.com/cr/xamari
 
 * `Position` : Gets the screen point (x, y) coordinates of maps on tapping. The following code sample adds the marker at the tapped location.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight xml %}
@@ -278,6 +280,10 @@ Called when tapped on the maps. [`Tapped`](https://help.syncfusion.com/cr/xamari
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
 
 ### Panning event
 

@@ -133,6 +133,8 @@ The [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNume
 
 * Adding namespace for the added assemblies. 
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -149,8 +151,13 @@ The [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNume
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
 
 * Now add the SfNumericUpDown control with a required optimal name by using the included namespace.
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -168,6 +175,10 @@ this.Content = numericUpDown;
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ![Show numeric updown control](images/Updown_Control.PNG)
 

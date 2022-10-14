@@ -134,6 +134,8 @@ The following steps explain how to create a [`SfNumericTextBox`](https://help.sy
 
 * Adding namespace for the added assemblies. 
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -150,7 +152,13 @@ The following steps explain how to create a [`SfNumericTextBox`](https://help.sy
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 * Now, add the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) control with a required optimal name by using the included namespace.
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -191,6 +199,10 @@ public partial class NumericControlPage : ContentPage
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ![Xamarin.Forms Numeric TextBox](images/numericTextBox.PNG)
 

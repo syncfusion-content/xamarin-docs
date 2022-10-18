@@ -17,9 +17,9 @@ Tooltip provides additional information about objects that are unfamiliar to use
 
 Using [`ToolTipPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_TooltipPlacement) property, We can define where the ToolTip need to be displayed. [`ToolTipPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_TooltipPlacement) having the following three types of placement.
 
-*[`BottomRight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.TooltipPlacement.html#Syncfusion_SfRating_XForms_TooltipPlacement_BottomRight),
-*[`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.TooltipPlacement.html#Syncfusion_SfRating_XForms_TooltipPlacement_None),
-*[`TopLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.TooltipPlacement.html#Syncfusion_SfRating_XForms_TooltipPlacement_TopLeft).
+* [`BottomRight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.TooltipPlacement.html#Syncfusion_SfRating_XForms_TooltipPlacement_BottomRight)
+* [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.TooltipPlacement.html#Syncfusion_SfRating_XForms_TooltipPlacement_None),
+* [`TopLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.TooltipPlacement.html#Syncfusion_SfRating_XForms_TooltipPlacement_TopLeft).
 
 N> By default, this property value is set to [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.TooltipPlacement.html#Syncfusion_SfRating_XForms_TooltipPlacement_None).
 

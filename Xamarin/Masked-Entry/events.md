@@ -20,7 +20,7 @@ Occurs when the value of the [`Value`](https://help.syncfusion.com/cr/xamarin/Sy
 * [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.ValueChangedEventArgs.html#Syncfusion_XForms_MaskedEdit_ValueChangedEventArgs_Value): The read only property contains the updated value of the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) property of SfMaskedEdit.
 
 > Your valid input character is updated to `Value` property based on the `ValidationMode` property.
-> Refer to this [link](validation.html#validation-mode) to know more about the `ValidationMode` property of `SfMaskedEdit` control.
+> Refer to this [link](validation#validation-mode) to know more about the `ValidationMode` property of `SfMaskedEdit` control.
 
 {% tabs %}
 {% highlight xaml %}

@@ -41,4 +41,4 @@ N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to work with swiping with RTL in Xamarin.Forms ListView (SfListview)](https://www.syncfusion.com/kb/11479/)
+[How to work with swiping with RTL in Xamarin.Forms ListView (SfListview)](https://www.syncfusion.com/kb/11479/how-to-work-with-swiping-with-rtl-in-xamarin-forms-listview-sflistview)

@@ -399,7 +399,7 @@ You can find the platforms supported by each Xamarin.Forms UI control as below.
 			EDITORS<br/>
 		</td>	
 		<td>
-			<a href="/xamarin/navigation-drawer/overview">Rich Text Editor</a><br/>
+			<a href="/xamarin/rich-text-editor/overview">Rich Text Editor</a><br/>
 		</td>
 		<td>
 		Yes<br/>

@@ -151,7 +151,7 @@ chart.Legend.LabelStyle.Margin = 5;
 
 ## Legend icons
 
-The legend icons are enabled by default. However, you can control its visibility using the [`IsIconVisible`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_IsIconVisible) property. The icon type also can be specified using the [`LegendIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_LegendIcon) property such as [`Rectangle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendIcon.html), [`Circle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendIcon.html) and [`Diamond`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendIcon.html), etc., The [`IconWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_IconWidth) and [`IconHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_IconHeight) properties are used to adjust the width and height of the legend icons, respectively.
+The legend icons are enabled by default. However, you can control its visibility using the [`IsIconVisible`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_IsIconVisible) property. The icon type also can be specified using the [`LegendIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_LegendIcon) property such as [`Rectangle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendIcon.html#Syncfusion_SfChart_XForms_ChartLegendIcon_Rectangle), [`Circle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendIcon.html#Syncfusion_SfChart_XForms_ChartLegendIcon_Circle) and [`Diamond`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendIcon.html#Syncfusion_SfChart_XForms_ChartLegendIcon_Diamond), etc., The [`IconWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_IconWidth) and [`IconHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_IconHeight) properties are used to adjust the width and height of the legend icons, respectively.
 
 {% tabs %} 
 
@@ -376,7 +376,7 @@ chart.Legend.ItemMargin = 20;
 
 ## Legend wrap
 
-The legend items can be placed in multiple rows using the [`OverflowMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_OverflowMode) property if size of the total legend exceeds the available size. The default value of the [`OverflowMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_OverflowMode) property is [`Scroll`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendOverflowMode.html).
+The legend items can be placed in multiple rows using the [`OverflowMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_OverflowMode) property if size of the total legend exceeds the available size. The default value of the [`OverflowMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_OverflowMode) property is [`Scroll`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendOverflowMode.html#Syncfusion_SfChart_XForms_ChartLegendOverflowMode_Scroll).
 
 {% tabs %}
 
@@ -405,7 +405,7 @@ chart.Legend = new ChartLegend()
 
 ### Legend width
 
-The legend width can be specified using the [`MaxWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_MaxWidth) property. This property works only  when the [`OverflowMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_OverflowMode) is [`Wrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendOverflowMode.html). The default value of the [`MaxWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_MaxWidth) property is double.NAN.
+The legend width can be specified using the [`MaxWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_MaxWidth) property. This property works only  when the [`OverflowMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_OverflowMode) is [`Wrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendOverflowMode.html#Syncfusion_SfChart_XForms_ChartLegendOverflowMode_Wrap). The default value of the [`MaxWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_MaxWidth) property is double.NAN.
 
 {% tabs %}
 
@@ -442,10 +442,10 @@ chart.Legend = new ChartLegend()
 
 You can position the legend anywhere inside the chart. The following properties are used to customize the position of legend:
 
-* [`DockPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_DockPosition) – used to position the legend relatively. The available options are [`Left`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LegendPlacement.html), [`Right`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LegendPlacement.html), [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LegendPlacement.html), [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LegendPlacement.html), and [`Floating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LegendPlacement.html). If the DockPosition is Floating, you can position the legend using the x and y-coordinates.
+* [`DockPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_DockPosition) – used to position the legend relatively. The available options are [`Left`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LegendPlacement.html#Syncfusion_SfChart_XForms_LegendPlacement_Left), [`Right`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LegendPlacement.html#Syncfusion_SfChart_XForms_LegendPlacement_Right), [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LegendPlacement.html#Syncfusion_SfChart_XForms_LegendPlacement_Top), [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LegendPlacement.html#Syncfusion_SfChart_XForms_LegendPlacement_Bottom), and [`Floating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LegendPlacement.html#Syncfusion_SfChart_XForms_LegendPlacement_Floating). If the DockPosition is Floating, you can position the legend using the x and y-coordinates.
 * [`OffsetX`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_OffsetX) – used to move the legend on x-coordinate by the given offset value.
 * [`OffsetY`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_OffsetY) - used to move the legend on y-coordinate by the given offset value.
-* [`Orientation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_Orientation) - used to change the orientation of the legend, the default value is Auto, orientation of the legend items will be changed based on its dock position. Also, you can manually set [`Horizontal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartOrientation.html) or [`Vertical`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartOrientation.html).
+* [`Orientation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_Orientation) - used to change the orientation of the legend, the default value is Auto, orientation of the legend items will be changed based on its dock position. Also, you can manually set [`Horizontal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartOrientation.html#Syncfusion_SfChart_XForms_ChartOrientation_Horizontal) or [`Vertical`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartOrientation.html#Syncfusion_SfChart_XForms_ChartOrientation_Vertical).
 
 {% tabs %} 
 
@@ -610,13 +610,13 @@ legend.ItemTemplate = new DataTemplate ( () =>
 
  **LegendItemClicked**
 
-The [`LegendItemClicked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) event is triggered when the chart legend item is clicked. This argument contains the following information.
+The [`LegendItemClicked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_LegendItemClicked) event is triggered when the chart legend item is clicked. This argument contains the following information.
 
 * [`LegendItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendItemClickedEventArgs.html#Syncfusion_SfChart_XForms_ChartLegendItemClickedEventArgs_LegendItem) – Used to customize the label and appearance of individual legend item. 
 
 **LegendItemCreated**
 
-The [`LegendItemCreated`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) event is triggered when the chart legend item is created. This argument contains the following information.
+The [`LegendItemCreated`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_LegendItemCreated) event is triggered when the chart legend item is created. This argument contains the following information.
 
 * [`LegendItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendItemCreatedEventArgs.html#Syncfusion_SfChart_XForms_ChartLegendItemCreatedEventArgs_LegendItem) – Used to customize the label and appearance of individual legend item.
 

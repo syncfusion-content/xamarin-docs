@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip in Xamarin Charts (SfChart)
 
-[`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) provides tooltip support for all series. It is used to show information about the segment, when you tap on the segment. To enable the tooltip, you need to set [`EnableTooltip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_EnableTooltipProperty) property as `true`.
+[`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) provides tooltip support for all series. It is used to show information about the segment, when you tap on the segment. To enable the tooltip, you need to set [`EnableTooltip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_EnableTooltip) property as `true`.
 
 {% tabs %} 
 
@@ -52,7 +52,7 @@ You can customize the tooltip label. For customizing, you need to add an instanc
 * [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTooltipBehavior.html#Syncfusion_SfChart_XForms_ChartTooltipBehavior_BackgroundColor) – used to change the label background color
 * [`Margin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTooltipBehavior.html#Syncfusion_SfChart_XForms_ChartTooltipBehavior_Margin) – used to change label border thickness
 * [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTooltipBehavior.html#Syncfusion_SfChart_XForms_ChartTooltipBehavior_TextColor) – used to change the text color.
-* [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTooltipBehavior.html#Syncfusion_SfChart_XForms_ChartTooltipBehavior_FontProperty) – used to change the text size, font family, and font weight. (This is deprecated API. Use FontSize, FontFamily, and FontAttributes properties instead of this.)
+* [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTooltipBehavior.html#Syncfusion_SfChart_XForms_ChartTooltipBehavior_Font) – used to change the text size, font family, and font weight. (This is deprecated API. Use FontSize, FontFamily, and FontAttributes properties instead of this.)
 * [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTooltipBehavior.html#Syncfusion_SfChart_XForms_ChartTooltipBehavior_FontFamily)- used to change the font family for the tooltip text.
 * [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTooltipBehavior.html#Syncfusion_SfChart_XForms_ChartTooltipBehavior_FontAttributes) - used to change the font style for the tooltip text.
 * [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTooltipBehavior.html#Syncfusion_SfChart_XForms_ChartTooltipBehavior_FontSize) - used to change the font size for the tooltip text.

@@ -423,14 +423,14 @@ N> You can also explore our [Xamarin Spline Area Chart example](https://github.c
 [`SplineType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineAreaSeries.html#Syncfusion_SfChart_XForms_SplineAreaSeries_SplineType) allows you to change the spline area curve in series. 
 The following types are used in [`SplineAreaSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineAreaSeries.html) as 
 
- * [`Natural`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html)
- * [`Monotonic`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html)
- * [`Cardinal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html)
- * [`Clamped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html)
+ * [`Natural`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html#Syncfusion_SfChart_XForms_SplineType_Natural)
+ * [`Monotonic`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html#Syncfusion_SfChart_XForms_SplineType_Monotonic)
+ * [`Cardinal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html#Syncfusion_SfChart_XForms_SplineType_Cardinal)
+ * [`Clamped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html#Syncfusion_SfChart_XForms_SplineType_Clamped)
 
-By default [`SplineType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineAreaSeries.html#Syncfusion_SfChart_XForms_SplineAreaSeries_SplineType) value is [`Natural`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html).
+By default [`SplineType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineAreaSeries.html#Syncfusion_SfChart_XForms_SplineAreaSeries_SplineType) value is [`Natural`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html#Syncfusion_SfChart_XForms_SplineType_Natural).
 
-The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineAreaSeries.html#Syncfusion_SfChart_XForms_SplineAreaSeries_SplineType) value as [`Cardinal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html)
+The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineAreaSeries.html#Syncfusion_SfChart_XForms_SplineAreaSeries_SplineType) value as [`Cardinal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html#Syncfusion_SfChart_XForms_SplineType_Cardinal)
 
 {% tabs %}
 
@@ -846,7 +846,7 @@ To render a [`Xamarin Column Chart`](https://www.syncfusion.com/xamarin-ui-contr
 * [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_StrokeWidth) – used to change the stroke width of the series.
 * [`StrokeColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html#Syncfusion_SfChart_XForms_ColumnSeries_StrokeColor) – used to change the stroke color of the series. 
 * [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html#Syncfusion_SfChart_XForms_ColumnSeries_CornerRadius) - used to add the rounded corners to the rectangle. The [`TopLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartCornerRadius.html#Syncfusion_SfChart_XForms_ChartCornerRadius_TopLeft), [`TopRight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartCornerRadius.html#Syncfusion_SfChart_XForms_ChartCornerRadius_TopRight), [`BottomLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartCornerRadius.html#Syncfusion_SfChart_XForms_ChartCornerRadius_BottomLeft) and [`BottomRight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartCornerRadius.html#Syncfusion_SfChart_XForms_ChartCornerRadius_BottomRight) of [`ChartCornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartCornerRadius.html) properties are used to set the radius value for each corner.
-* [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html#Syncfusion_SfChart_XForms_ColumnSeries_DataMarkerPosition) - used to position the data marker at [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html), [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html) and [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html) of the rectangle. 
+* [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html#Syncfusion_SfChart_XForms_ColumnSeries_DataMarkerPosition) - used to position the data marker at [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Bottom), [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Top) and [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Center) of the rectangle. 
 * [`Spacing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html#Syncfusion_SfChart_XForms_ColumnSeries_Spacing) - used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively.
 * [`Width`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html#Syncfusion_SfChart_XForms_ColumnSeries_Width) - used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available width, respectively. 
 
@@ -1084,7 +1084,7 @@ To render a [`Stacked Column chart`](https://www.syncfusion.com/xamarin-ui-contr
 * [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_StrokeWidth) – used to change the stroke width of the series.
 * [`StrokeColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingSeriesBase.html#Syncfusion_SfChart_XForms_StackingSeriesBase_StrokeColor) – used to change the stroke color of the series.
 * [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingColumnSeries.html#Syncfusion_SfChart_XForms_StackingColumnSeries_CornerRadius) - used to add the rounded corners to the rectangle. The [`TopLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartCornerRadius.html#Syncfusion_SfChart_XForms_ChartCornerRadius_TopLeft), [`TopRight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartCornerRadius.html#Syncfusion_SfChart_XForms_ChartCornerRadius_TopRight), [`BottomLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartCornerRadius.html#Syncfusion_SfChart_XForms_ChartCornerRadius_BottomLeft) and [`BottomRight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartCornerRadius.html#Syncfusion_SfChart_XForms_ChartCornerRadius_BottomRight) of [`ChartCornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartCornerRadius.html) properties are used to set the radius value for each corner.
-* [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingColumnSeries.html#Syncfusion_SfChart_XForms_StackingColumnSeries_DataMarkerPosition) - used to position the data marker at [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html), [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html) and [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html) of the rectangle. 
+* [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingColumnSeries.html#Syncfusion_SfChart_XForms_StackingColumnSeries_DataMarkerPosition) - used to position the data marker at [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Bottom), [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Top) and [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Center) of the rectangle. 
 * [`Spacing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingColumnSeries.html#Syncfusion_SfChart_XForms_StackingColumnSeries_Spacing) - used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively.
 * [`Width`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingColumnSeries.html#Syncfusion_SfChart_XForms_StackingColumnSeries_Width) - used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available width, respectively. 
 
@@ -1153,7 +1153,7 @@ To render a [`100% Stacked Column chart`](https://www.syncfusion.com/xamarin-ui-
 * [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_StrokeWidth) – used to change the stroke width of the series.
 * [`StrokeColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingSeriesBase.html#Syncfusion_SfChart_XForms_StackingSeriesBase_StrokeColor) – used to change the stroke color of the series.
 * [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingColumnSeries.html#Syncfusion_SfChart_XForms_StackingColumnSeries_CornerRadius) - used to add the rounded corners to the rectangle. The [`TopLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartCornerRadius.html#Syncfusion_SfChart_XForms_ChartCornerRadius_TopLeft), [`TopRight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartCornerRadius.html#Syncfusion_SfChart_XForms_ChartCornerRadius_TopRight), [`BottomLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartCornerRadius.html#Syncfusion_SfChart_XForms_ChartCornerRadius_BottomLeft) and [`BottomRight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartCornerRadius.html#Syncfusion_SfChart_XForms_ChartCornerRadius_BottomRight) of [`ChartCornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartCornerRadius.html) properties are used to set the radius value for each corner.
-* [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingColumnSeries.html#Syncfusion_SfChart_XForms_StackingColumnSeries_DataMarkerPosition) - used to position the data marker at [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html), [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html) and [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html) of the rectangle. 
+* [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingColumnSeries.html#Syncfusion_SfChart_XForms_StackingColumnSeries_DataMarkerPosition) - used to position the data marker at [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Bottom), [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Top) and [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Center) of the rectangle. 
 * [`Spacing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingColumnSeries.html#Syncfusion_SfChart_XForms_StackingColumnSeries_Spacing) -  used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively.
 * [`Width`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingColumnSeries.html#Syncfusion_SfChart_XForms_StackingColumnSeries_Width) - used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available width, respectively. 
 
@@ -1489,9 +1489,9 @@ The following types are used in [`SplineSeries`](https://help.syncfusion.com/cr/
  * Cardinal
  * Clamped
 
-By default [`SplineType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html) value is [`Natural`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html).
+By default [`SplineType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html) value is [`Natural`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html#Syncfusion_SfChart_XForms_SplineType_Natural).
 
-The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html) value as [`Cardinal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html)
+The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html) value as [`Cardinal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html#Syncfusion_SfChart_XForms_SplineType_Cardinal)
 
 {% tabs %}
 
@@ -1525,15 +1525,15 @@ chart.Series.Add(splineSeries);
 
 {% endtabs %}
 
-[`Cardinal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html) 
+[`Cardinal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html#Syncfusion_SfChart_XForms_SplineType_Cardinal) 
 
 ![SplineType support in Xamarin.Forms Chart](charttypes_images/CardinalSplineType.png)
 
-[`Monotonic`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html)
+[`Monotonic`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html#Syncfusion_SfChart_XForms_SplineType_Monotonic)
 
 ![SplineType support in Xamarin.Forms Chart](charttypes_images/MonotonicSplineType.png)
 
-[`Clamped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html)
+[`Clamped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineType.html#Syncfusion_SfChart_XForms_SplineType_Clamped)
 
 ![SplineType support in Xamarin.Forms Chart](charttypes_images/ClampedSplineType.png)
 
@@ -1741,7 +1741,7 @@ To render a [`Xamarin Scatter chart`](https://www.syncfusion.com/xamarin-ui-cont
 * [`StrokeColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ScatterSeries.html#Syncfusion_SfChart_XForms_ScatterSeries_StrokeColor) – used to change the stroke color of the series.
 * [`ScatterWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ScatterSeries.html#Syncfusion_SfChart_XForms_ScatterSeries_ScatterWidth) – used to change the width of the series.
 * [`ScatterHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ScatterSeries.html#Syncfusion_SfChart_XForms_ScatterSeries_ScatterHeight) – used to change the height of the series.
-* [`ShapeType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ScatterSeries.html#Syncfusion_SfChart_XForms_ScatterSeries_ShapeType) - used to change the rendering shape of scatter series. The available shapes are [`Cross`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Diamond`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Ellipse`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Hexagon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`InvertedTriangle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Pentagon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Plus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Rectangle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html) and [`Triangle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html).
+* [`ShapeType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ScatterSeries.html#Syncfusion_SfChart_XForms_ScatterSeries_ShapeType) - used to change the rendering shape of scatter series. The available shapes are [`Cross`]https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html#Syncfusion_SfChart_XForms_ChartScatterShapeType_Cross), [`Diamond`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html#Syncfusion_SfChart_XForms_ChartScatterShapeType_Diamond), [`Ellipse`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html#Syncfusion_SfChart_XForms_ChartScatterShapeType_Ellipse), [`Hexagon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html#Syncfusion_SfChart_XForms_ChartScatterShapeType_Hexagon), [`InvertedTriangle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html#Syncfusion_SfChart_XForms_ChartScatterShapeType_InvertedTriangle), [`Pentagon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html#Syncfusion_SfChart_XForms_ChartScatterShapeType_Pentagon), [`Plus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html#Syncfusion_SfChart_XForms_ChartScatterShapeType_Plus), [`Rectangle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html#Syncfusion_SfChart_XForms_ChartScatterShapeType_Rectangle) and [`Triangle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html#Syncfusion_SfChart_XForms_ChartScatterShapeType_Triangle).
 
 {% tabs %} 
 
@@ -1795,7 +1795,7 @@ The [`FastScatterSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCh
 * [`StrokeColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.FastScatterSeries.html#Syncfusion_SfChart_XForms_FastScatterSeries_StrokeColor) – used to change the stroke color of series.
 * [`ScatterWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.FastScatterSeries.html#Syncfusion_SfChart_XForms_FastScatterSeries_ScatterWidth) –  used to change the width of series.
 * [`ScatterHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.FastScatterSeries.html#Syncfusion_SfChart_XForms_FastScatterSeries_ScatterHeight) – used to change the height of series.
-* [`ShapeType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.FastScatterSeries.html#Syncfusion_SfChart_XForms_FastScatterSeries_ShapeType) – used to change the rendering shape of fast scatter series. The available shapes are [`Cross`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Diamond`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Ellipse`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Hexagon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`InvertedTriangle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Pentagon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Plus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Rectangle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html) and [`Triangle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html).
+* [`ShapeType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.FastScatterSeries.html#Syncfusion_SfChart_XForms_FastScatterSeries_ShapeType) – used to change the rendering shape of fast scatter series. The available shapes are [`Cross`]https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html#Syncfusion_SfChart_XForms_ChartScatterShapeType_Cross), [`Diamond`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html#Syncfusion_SfChart_XForms_ChartScatterShapeType_Diamond), [`Ellipse`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html#Syncfusion_SfChart_XForms_ChartScatterShapeType_Ellipse), [`Hexagon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html#Syncfusion_SfChart_XForms_ChartScatterShapeType_Hexagon), [`InvertedTriangle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html#Syncfusion_SfChart_XForms_ChartScatterShapeType_InvertedTriangle), [`Pentagon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html#Syncfusion_SfChart_XForms_ChartScatterShapeType_Pentagon), [`Plus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html#Syncfusion_SfChart_XForms_ChartScatterShapeType_Plus), [`Rectangle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html#Syncfusion_SfChart_XForms_ChartScatterShapeType_Rectangle) and [`Triangle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartScatterShapeType.html#Syncfusion_SfChart_XForms_ChartScatterShapeType_Triangle).
 * [`EnableAntiAliasing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.FastScatterSeries.html#Syncfusion_SfChart_XForms_FastScatterSeries_EnableAntiAliasing) – Enables or disables the smoothness of series. Default value of [`EnableAntiAliasing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.FastScatterSeries.html#Syncfusion_SfChart_XForms_FastScatterSeries_EnableAntiAliasing) property is true.
 
 {% tabs %} 
@@ -1840,7 +1840,7 @@ chart.Series.Add(fastScatterSeries);
 
 ## OHLC Chart
 
-To render an [`Xamarin OHLC chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/ohlc-chart), create an instance of [`HiLoOpenCloseSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.HiLoOpenCloseSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html).
+To render an [`Xamarin OHLC chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/ohlc-chart), create an instance of [`HiLoOpenCloseSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.HiLoOpenCloseSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html).
 
 OHLC chart requires five values (X, Open, High, Low and Close) to plot a point. 
 
@@ -2133,8 +2133,8 @@ To render a [`Xamarin Radar chart`](https://www.syncfusion.com/xamarin-ui-contro
 
 [`DrawType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PolarRadarSeriesBase.html#Syncfusion_SfChart_XForms_PolarRadarSeriesBase_DrawType) property is used to specify the radar series rendering type. Following are the two options you can set to this property,
 
-* [`Line`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PolarRadarSeriesDrawType.html) – data points are visualized using line series.
-* [`Area`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PolarRadarSeriesDrawType.html) – data points are visualized using area series.
+* [`Line`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PolarRadarSeriesDrawType.html#Syncfusion_SfChart_XForms_PolarRadarSeriesDrawType_Line) – data points are visualized using line series.
+* [`Area`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PolarRadarSeriesDrawType.html#Syncfusion_SfChart_XForms_PolarRadarSeriesDrawType_Area) – data points are visualized using area series.
 
 {% tabs %}
 {% highlight xaml %}
@@ -2208,7 +2208,7 @@ radar.IsClosed = false;
 
 ### Radar start angle for primary axis
 
-The start position of the radar series can be set by using [`PolarAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxis.html#Syncfusion_SfChart_XForms_ChartAxis_PolarAngle) property of axis. Default value of [`PolarAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxis.html#Syncfusion_SfChart_XForms_ChartAxis_PolarAngle) property is [`Rotate270`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPolarAngle.html). [`PolarAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxis.html#Syncfusion_SfChart_XForms_ChartAxis_PolarAngle) property can be set for primary axis, secondary axis, or both axes
+The start position of the radar series can be set by using [`PolarAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxis.html#Syncfusion_SfChart_XForms_ChartAxis_PolarAngle) property of axis. Default value of [`PolarAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxis.html#Syncfusion_SfChart_XForms_ChartAxis_PolarAngle) property is [`Rotate270`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPolarAngle.html#Syncfusion_SfChart_XForms_ChartPolarAngle_Rotate270). [`PolarAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxis.html#Syncfusion_SfChart_XForms_ChartAxis_PolarAngle) property can be set for primary axis, secondary axis, or both axes
 
 {% tabs %}
 
@@ -2314,8 +2314,8 @@ To render a [`Xamarin Polar chart`](https://www.syncfusion.com/xamarin-ui-contro
 
 [`DrawType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PolarRadarSeriesBase.html#Syncfusion_SfChart_XForms_PolarRadarSeriesBase_DrawType) property is used to specify the polar series rendering type. Following are the two options you can set to this property,
 
-* [`Line`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PolarRadarSeriesDrawType.html) – data points are visualized using line series.
-* [`Area`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PolarRadarSeriesDrawType.html) – data points are visualized using area series.
+* [`Line`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PolarRadarSeriesDrawType.html#Syncfusion_SfChart_XForms_PolarRadarSeriesDrawType_Line) – data points are visualized using line series.
+* [`Area`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PolarRadarSeriesDrawType.html#Syncfusion_SfChart_XForms_PolarRadarSeriesDrawType_Area) – data points are visualized using area series.
 
 {% tabs %}
 {% highlight xaml %}
@@ -2342,8 +2342,8 @@ You can use the following properties to customize the appearance.
 * [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Color) – used to change the color of the series.
 * [`Opacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Opacity) - used to control the transparency of the chart series.
 * [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_StrokeWidth) – used to change the stroke width of the series.
-* [`StrokeColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PolarRadarSeriesBase.html#Syncfusion_SfChart_XForms_PolarRadarSeriesBase_StrokeColor) – used to change the stroke color of the series when draw types is set to [`Area`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PolarRadarSeriesDrawType.html)
-* [`StrokeDashArray`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PolarRadarSeriesBase.html#Syncfusion_SfChart_XForms_PolarRadarSeriesBase_StrokeDashArray) – used to render lines with dashes when the draw type is set to [`Line`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PolarRadarSeriesDrawType.html)
+* [`StrokeColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PolarRadarSeriesBase.html#Syncfusion_SfChart_XForms_PolarRadarSeriesBase_StrokeColor) – used to change the stroke color of the series when draw types is set to [`Area`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PolarRadarSeriesDrawType.html#Syncfusion_SfChart_XForms_PolarRadarSeriesDrawType_Area)
+* [`StrokeDashArray`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PolarRadarSeriesBase.html#Syncfusion_SfChart_XForms_PolarRadarSeriesBase_StrokeDashArray) – used to render lines with dashes when the draw type is set to [`Line`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PolarRadarSeriesDrawType.html#Syncfusion_SfChart_XForms_PolarRadarSeriesDrawType_Line)
 
 {% tabs %}
 {% highlight xaml %}
@@ -2389,7 +2389,7 @@ polar.IsClosed = false;
 
 ### Polar start angle for primary axis
 
-The start position of the polar series can be set by using [`PolarAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxis.html#Syncfusion_SfChart_XForms_ChartAxis_PolarAngle) property of axis. Default value of [`PolarAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxis.html#Syncfusion_SfChart_XForms_ChartAxis_PolarAngle) property is [`Rotate270`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPolarAngle.html). [`PolarAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxis.html#Syncfusion_SfChart_XForms_ChartAxis_PolarAngle) property can be set for primary axis, secondary axis, or both axes.
+The start position of the polar series can be set by using [`PolarAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxis.html#Syncfusion_SfChart_XForms_ChartAxis_PolarAngle) property of axis. Default value of [`PolarAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxis.html#Syncfusion_SfChart_XForms_ChartAxis_PolarAngle) property is [`Rotate270`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPolarAngle.html#Syncfusion_SfChart_XForms_ChartPolarAngle_Rotate270). [`PolarAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxis.html#Syncfusion_SfChart_XForms_ChartAxis_PolarAngle) property can be set for primary axis, secondary axis, or both axes.
 
 {% tabs %}
 
@@ -2495,8 +2495,8 @@ To render a [`Xamarin Pie chart`](https://www.syncfusion.com/xamarin-ui-controls
 * [`Opacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Opacity) - used to control the transparency of the chart series.
 * [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_StrokeWidth) – used to change the stroke width of the series.
 * [`StrokeColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.AccumulationSeries.html#Syncfusion_SfChart_XForms_AccumulationSeries_StrokeColor) – used to change the stroke color of the series.
-* [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_DataMarkerPosition) - used to change the position of data marker at [`Inside`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeriesDataMarkerPosition.html), [`Outside`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeriesDataMarkerPosition.html) or [`OutsideExtended`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeriesDataMarkerPosition.html).
-* [`ConnectorLinePosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_ConnectorLinePosition) - used to change the position of the connector line at [`Auto`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ConnectorLinePosition.html) and [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ConnectorLinePosition.html).
+* [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_DataMarkerPosition) - used to change the position of data marker at [`Inside`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeriesDataMarkerPosition.html#Syncfusion_SfChart_XForms_CircularSeriesDataMarkerPosition_Inside), [`Outside`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeriesDataMarkerPosition.html#Syncfusion_SfChart_XForms_CircularSeriesDataMarkerPosition_Outside) or [`OutsideExtended`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeriesDataMarkerPosition.html#Syncfusion_SfChart_XForms_CircularSeriesDataMarkerPosition_OutsideExtended).
+* [`ConnectorLinePosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_ConnectorLinePosition) - used to change the position of the connector line at [`Auto`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ConnectorLinePosition.html#Syncfusion_SfChart_XForms_ConnectorLinePosition_Auto) and [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ConnectorLinePosition.html#Syncfusion_SfChart_XForms_ConnectorLinePosition_Center).
 
 N> ConnectorLinePosition provides better alignment to the straight connector lines with outside extended label position for the minimum number of data points. 
 
@@ -2663,7 +2663,7 @@ PieSeries pieSeries = new PieSeries()
 
 ### Group small data points into “others”
 
-The small segments in the pie chart can be grouped into “others” category using the [`GroupTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupTo) and [`GroupMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupMode) properties of PieSeries. The [`GroupMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupMode) property is used to specify the grouping type based on slice [`Angle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PieGroupMode.html), actual data point value, or [`Percentage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PieGroupMode.html), and the [`GroupTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupTo) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupTo) property and [`GroupMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupMode) property is Value.
+The small segments in the pie chart can be grouped into “others” category using the [`GroupTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupTo) and [`GroupMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupMode) properties of PieSeries. The [`GroupMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupMode) property is used to specify the grouping type based on slice [`Angle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PieGroupMode.html#Syncfusion_SfChart_XForms_PieGroupMode_Angle), actual data point value, or [`Percentage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PieGroupMode.html#Syncfusion_SfChart_XForms_PieGroupMode_Percentage), and the [`GroupTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupTo) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupTo) property and [`GroupMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_GroupMode) property is Value.
 
 ## Doughnut Chart
 
@@ -2673,8 +2673,8 @@ To render a [`Xamarin Doughnut Chart`](https://www.syncfusion.com/xamarin-ui-con
 * [`Opacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Opacity) - used to control the transparency of the chart series.
 * [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_StrokeWidth) – used to change the stroke width of the series.
 * [`StrokeColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.AccumulationSeries.html#Syncfusion_SfChart_XForms_AccumulationSeries_StrokeColor) – used to change the stroke color of the series.
-* [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_DataMarkerPosition) - used to change the position of data marker at [`Inside`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeriesDataMarkerPosition.html), [`Outside`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeriesDataMarkerPosition.html) or [`OutsideExtended`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeriesDataMarkerPosition.html).
-* [`ConnectorLinePosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_ConnectorLinePosition) - used to change the position of the connector line at [`Auto`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ConnectorLinePosition.html) and [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ConnectorLinePosition.html).
+* [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_DataMarkerPosition) - used to change the position of data marker at [`Inside`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeriesDataMarkerPosition.html#Syncfusion_SfChart_XForms_CircularSeriesDataMarkerPosition_Inside), [`Outside`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeriesDataMarkerPosition.html#Syncfusion_SfChart_XForms_CircularSeriesDataMarkerPosition_Outside) or [`OutsideExtended`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeriesDataMarkerPosition.html#Syncfusion_SfChart_XForms_CircularSeriesDataMarkerPosition_OutsideExtended).
+* [`ConnectorLinePosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_ConnectorLinePosition) - used to change the position of the connector line at [`Auto`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ConnectorLinePosition.html#Syncfusion_SfChart_XForms_ConnectorLinePosition_Auto) and [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ConnectorLinePosition.html#Syncfusion_SfChart_XForms_ConnectorLinePosition_Center).
 
 N> ConnectorLinePosition provides better alignment to the straight connector lines with outside extended label position for the minimum number of data points. 
 
@@ -2718,7 +2718,7 @@ N> You can also explore our [Xamarin Doughnut Chart example](https://github.com/
 
 Doughnut segments can be separated as individual circles using the [`IsStackedDoughnut`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DoughnutSeries.html#Syncfusion_SfChart_XForms_DoughnutSeries_IsStackedDoughnut) property. The following properties are used to customize the stacked doughnut chart:
 
-* [`CapStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DoughnutSeries.html#Syncfusion_SfChart_XForms_DoughnutSeries_CapStyle) - Specifies the shape of the start and end points of the circular segment. The supported values are `BothFlat`, `BothCurve`, `StartCurve`, and `EndCurve`. The default value of the this property is [`BothFlat`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DoughnutCapStyle.html).
+* [`CapStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DoughnutSeries.html#Syncfusion_SfChart_XForms_DoughnutSeries_CapStyle) - Specifies the shape of the start and end points of the circular segment. The supported values are `BothFlat`, `BothCurve`, `StartCurve`, and `EndCurve`. The default value of the this property is [`BothFlat`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DoughnutCapStyle.html#Syncfusion_SfChart_XForms_DoughnutCapStyle_BothFlat).
 * [`Spacing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DoughnutSeries.html#Syncfusion_SfChart_XForms_DoughnutSeries_Spacing) - Changes the spacing between two individual segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively.
 * [`MaximumValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DoughnutSeries.html#Syncfusion_SfChart_XForms_DoughnutSeries_MaximumValue) - Represents the entire span of an individual circle. The default value of the this property is `double.NaN`.
 * [`TrackColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DoughnutSeries.html#Syncfusion_SfChart_XForms_DoughnutSeries_TrackColor) - Changes the color of the track area.
@@ -3009,7 +3009,7 @@ N> . You can also explore our [Xamarin Pyramid Chart example](https://github.com
 
 ### Pyramid Mode
 
-You can render the pyramid series as linear or surface mode. In linear mode, height of the pyramid segment is based on the Y value and in surface mode, area of the pyramid segment is based on the Y values. The default value of [`PyramidMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PyramidSeries.html#Syncfusion_SfChart_XForms_PyramidSeries_PyramidMode) property is [`Linear`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPyramidMode.html).
+You can render the pyramid series as linear or surface mode. In linear mode, height of the pyramid segment is based on the Y value and in surface mode, area of the pyramid segment is based on the Y values. The default value of [`PyramidMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PyramidSeries.html#Syncfusion_SfChart_XForms_PyramidSeries_PyramidMode) property is [`Linear`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPyramidMode.html#Syncfusion_SfChart_XForms_ChartPyramidMode_Linear).
 
 {% tabs %} 
 
@@ -3332,13 +3332,13 @@ chart.Series.Add(boxPlotSeries);
 
 The series box plotting mode can be changed using the [`BoxPlotMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxAndWhiskerSeries.html#Syncfusion_SfChart_XForms_BoxAndWhiskerSeries_BoxPlotMode) property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxAndWhiskerSeries.html). The plotting mode of series can be calculated as follows:
 
-* [`Exclusive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxPlotMode.html) - The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and their index value starts from 1 in the list.
-* [`Inclusive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxPlotMode.html) - The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and their index value starts from 0 in the list.
+* [`Exclusive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxPlotMode.html#Syncfusion_SfChart_XForms_BoxPlotMode_Exclusive) - The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and their index value starts from 1 in the list.
+* [`Inclusive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxPlotMode.html#Syncfusion_SfChart_XForms_BoxPlotMode_Inclusive) - The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and their index value starts from 0 in the list.
 * [`Normal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxPlotMode.html) - The quartile values are calculated by splitting the list and getting the median values.
 
-By default, [`BoxPlotMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxAndWhiskerSeries.html#Syncfusion_SfChart_XForms_BoxAndWhiskerSeries_BoxPlotMode) value is [`Exclusive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxPlotMode.html). 
+By default, [`BoxPlotMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxAndWhiskerSeries.html#Syncfusion_SfChart_XForms_BoxAndWhiskerSeries_BoxPlotMode) value is [`Exclusive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxPlotMode.html#Syncfusion_SfChart_XForms_BoxPlotMode_Exclusive). 
 
-The following code shows how to set the [`BoxPlotMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxAndWhiskerSeries.html#Syncfusion_SfChart_XForms_BoxAndWhiskerSeries_BoxPlotMode) value as [`Inclusive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxPlotMode.html).
+The following code shows how to set the [`BoxPlotMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxAndWhiskerSeries.html#Syncfusion_SfChart_XForms_BoxAndWhiskerSeries_BoxPlotMode) value as [`Inclusive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxPlotMode.html#Syncfusion_SfChart_XForms_BoxPlotMode_Inclusive).
 
 {% tabs %}
 
@@ -3463,9 +3463,9 @@ chart.Series.Add(boxPlotSeries);
 
 ### SymbolType
 
-The [`SymbolType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxAndWhiskerSeries.html#Syncfusion_SfChart_XForms_BoxAndWhiskerSeries_SymbolType) is used to display the outlier point with different types of symbols. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxAndWhiskerSeries.html#Syncfusion_SfChart_XForms_BoxAndWhiskerSeries_SymbolType) value is [`Ellipse`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSymbolType.html).
+The [`SymbolType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxAndWhiskerSeries.html#Syncfusion_SfChart_XForms_BoxAndWhiskerSeries_SymbolType) is used to display the outlier point with different types of symbols. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxAndWhiskerSeries.html#Syncfusion_SfChart_XForms_BoxAndWhiskerSeries_SymbolType) value is [`Ellipse`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSymbolType.html#Syncfusion_SfChart_XForms_ChartSymbolType_Ellipse).
 
-The following code shows how to set the [`SymbolType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxAndWhiskerSeries.html#Syncfusion_SfChart_XForms_BoxAndWhiskerSeries_SymbolType) value as [`Cross`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSymbolType.html).
+The following code shows how to set the [`SymbolType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxAndWhiskerSeries.html#Syncfusion_SfChart_XForms_BoxAndWhiskerSeries_SymbolType) value as [`Cross`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSymbolType.html#Syncfusion_SfChart_XForms_ChartSymbolType_Cross).
 
 {% tabs %}
 
@@ -3574,7 +3574,7 @@ chart.Series.Add(errorBarSeries);
 
 ### Type
 
-The [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_Type) property is used to define the error bar type value in Fixed, Custom, Percentage, StandardDeviation, and StandardErrors. The default value of this property is [`Fixed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarType.html). For all types, You have to set the values for [`HorizontalErrorValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_HorizontalErrorValue) and [`VerticalErrorValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_VerticalErrorValue) except [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarType.html).
+The [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_Type) property is used to define the error bar type value in Fixed, Custom, Percentage, StandardDeviation, and StandardErrors. The default value of this property is [`Fixed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarType.html#Syncfusion_SfChart_XForms_ErrorBarType_Fixed). For all types, You have to set the values for [`HorizontalErrorValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_HorizontalErrorValue) and [`VerticalErrorValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_VerticalErrorValue) except [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarType.html#Syncfusion_SfChart_XForms_ErrorBarType_Custom).
 
 #### Fixed
 
@@ -3737,7 +3737,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 #### Custom
 
-If [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_Type) is [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarType.html), you have to set values for [`HorizontalErrorPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_HorizontalErrorPath) and [`VerticalErrorPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_VerticalErrorPath) as shown in the following code snippet.
+If [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_Type) is [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarType.html#Syncfusion_SfChart_XForms_ErrorBarType_Custom), you have to set values for [`HorizontalErrorPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_HorizontalErrorPath) and [`VerticalErrorPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_VerticalErrorPath) as shown in the following code snippet.
 
 {% tabs %}
 
@@ -3779,11 +3779,11 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 ### Mode
 
-The error value shown on the chart is based on the [`Mode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_Mode) property. It have the values of [`Both`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarMode.html), [`Horizontal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarMode.html), and [`Vertical`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarMode.html). The default value of this property is [`Both`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarMode.html). 
+The error value shown on the chart is based on the [`Mode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_Mode) property. It have the values of [`Both`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarMode.html#Syncfusion_SfChart_XForms_ErrorBarMode_Both), [`Horizontal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarMode.html#Syncfusion_SfChart_XForms_ErrorBarMode_Horizontal), and [`Vertical`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarMode.html#Syncfusion_SfChart_XForms_ErrorBarMode_Vertical). The default value of this property is [`Both`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarMode.html#Syncfusion_SfChart_XForms_ErrorBarMode_Both). 
 
 #### Both
 
-To display horizontal and vertical error values, you can set the [`Mode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_Mode) as [`Both`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarMode.html) as shown in the following code.
+To display horizontal and vertical error values, you can set the [`Mode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_Mode) as [`Both`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarMode.html#Syncfusion_SfChart_XForms_ErrorBarMode_Both) as shown in the following code.
 
 {% tabs %}
 
@@ -3825,7 +3825,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 #### Horizontal
 
-To display horizontal error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_Mode) as [`Horizontal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarMode.html) as shown in the following code.
+To display horizontal error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_Mode) as [`Horizontal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarMode.html#Syncfusion_SfChart_XForms_ErrorBarMode_Horizontal) as shown in the following code.
 
 {% tabs %}
 
@@ -3867,7 +3867,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 #### Vertical
 
-To display vertical error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_Mode) as [`Vertical`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarMode.html) as shown in the following code.
+To display vertical error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_Mode) as [`Vertical`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarMode.html#Syncfusion_SfChart_XForms_ErrorBarMode_Vertical) as shown in the following code.
 
 {% tabs %}
 
@@ -3909,11 +3909,11 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 ### Direction
 
-The [`HorizontalDirection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_HorizontalDirection) and [`VerticalDirection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_VerticalDirection) properties are used to set the direction of error bar lines. The default value is [`Both`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarDirection.html).
+The [`HorizontalDirection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_HorizontalDirection) and [`VerticalDirection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarSeries.html#Syncfusion_SfChart_XForms_ErrorBarSeries_VerticalDirection) properties are used to set the direction of error bar lines. The default value is [`Both`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarDirection.html#Syncfusion_SfChart_XForms_ErrorBarDirection_Both).
 
-* [`Both`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarDirection.html) - used to set error value in positive and negative directions.
-* [`Minus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarDirection.html) - used to set error value in a negative direction.
-* [`Plus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarDirection.html) - used to set error value in a positive direction.	
+* [`Both`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarDirection.html#Syncfusion_SfChart_XForms_ErrorBarDirection_Both) - used to set error value in positive and negative directions.
+* [`Minus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarDirection.html#Syncfusion_SfChart_XForms_ErrorBarDirection_Minus) - used to set error value in a negative direction.
+* [`Plus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ErrorBarDirection.html#Syncfusion_SfChart_XForms_ErrorBarDirection_Plus) - used to set error value in a positive direction.	
 
 {% tabs %}
 

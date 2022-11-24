@@ -70,7 +70,7 @@ Annotations can be positioned in plot area based on [`X1`](https://help.syncfusi
  
 ### Positioning based on CoordinateUnit as axis
 
-To position the annotation based on axis, set the [`X1`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotation.html#Syncfusion_SfChart_XForms_ChartAnnotation_X1) and [`Y1`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotation.html#Syncfusion_SfChart_XForms_ChartAnnotation_Y1), `X2` and `Y2` properties based on axis range values, if needed, set the [`CoordinateUnit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotation.html#Syncfusion_SfChart_XForms_ChartAnnotation_CoordinateUnit) value as [`Axis`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartCoordinateUnit.html).
+To position the annotation based on axis, set the [`X1`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotation.html#Syncfusion_SfChart_XForms_ChartAnnotation_X1) and [`Y1`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotation.html#Syncfusion_SfChart_XForms_ChartAnnotation_Y1), `X2` and `Y2` properties based on axis range values, if needed, set the [`CoordinateUnit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotation.html#Syncfusion_SfChart_XForms_ChartAnnotation_CoordinateUnit) value as [`Axis`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartCoordinateUnit.html#Syncfusion_SfChart_XForms_ChartCoordinateUnit_Axis).
 
 {% tabs %} 
 
@@ -120,7 +120,7 @@ chart.ChartAnnotations.Add(annotation);
 
 ### Positioning based on CoordinateUnit as pixels
 
-To position the annotation based on the pixel values, set the [`CoordinateUnit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotation.html#Syncfusion_SfChart_XForms_ChartAnnotation_CoordinateUnit) value as [`Pixels`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartCoordinateUnit.html), and the pixel values in [`X1`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotation.html#Syncfusion_SfChart_XForms_ChartAnnotation_X1) and [`Y1`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotation.html#Syncfusion_SfChart_XForms_ChartAnnotation_Y1), `X2` and `Y2` properties of annotation are shown in the following code snippet,
+To position the annotation based on the pixel values, set the [`CoordinateUnit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotation.html#Syncfusion_SfChart_XForms_ChartAnnotation_CoordinateUnit) value as [`Pixels`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartCoordinateUnit.html#Syncfusion_SfChart_XForms_ChartCoordinateUnit_Pixels), and the pixel values in [`X1`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotation.html#Syncfusion_SfChart_XForms_ChartAnnotation_X1) and [`Y1`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotation.html#Syncfusion_SfChart_XForms_ChartAnnotation_Y1), `X2` and `Y2` properties of annotation are shown in the following code snippet,
 
 {% tabs %} 
 
@@ -304,8 +304,8 @@ The [`TextAnnotation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart
 * [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontFamily) - used to change the font family of the text.
 * [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontAttributes) - used to change the font style of the text.
 * [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontSize) - used to change the font size of the text.
-*   [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationLabelStyle.html#Syncfusion_SfChart_XForms_ChartAnnotationLabelStyle_HorizontalTextAlignment) - Used to align the text horizontally at the [`Start`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationAlignment.html), [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationAlignment.html) and [`End`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationAlignment.html).
-*   [`VerticalTextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationLabelStyle.html#Syncfusion_SfChart_XForms_ChartAnnotationLabelStyle_VerticalTextAlignment) - Used to align the text vertically at the [`Start`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationAlignment.html), [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationAlignment.html) and [`End`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationAlignment.html).
+*   [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationLabelStyle.html#Syncfusion_SfChart_XForms_ChartAnnotationLabelStyle_HorizontalTextAlignment) - Used to align the text horizontally at the [`Start`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationAlignment.html#Syncfusion_SfChart_XForms_ChartAnnotationAlignment_Start), [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationAlignment.html#Syncfusion_SfChart_XForms_ChartAnnotationAlignment_Center) and [`End`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationAlignment.html#Syncfusion_SfChart_XForms_ChartAnnotationAlignment_End).
+*   [`VerticalTextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationLabelStyle.html#Syncfusion_SfChart_XForms_ChartAnnotationLabelStyle_VerticalTextAlignment) - Used to align the text vertically at the [`Start`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationAlignment.html#Syncfusion_SfChart_XForms_ChartAnnotationAlignment_Start), [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationAlignment.html#Syncfusion_SfChart_XForms_ChartAnnotationAlignment_Center) and [`End`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationAlignment.html#Syncfusion_SfChart_XForms_ChartAnnotationAlignment_End).
 
 {% tabs %} 
 
@@ -533,7 +533,7 @@ chart.ChartAnnotations.Add(annotation);
 
 **Adding arrow to line annotation**
 
-To display single headed arrow, set the [`LineCap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LineAnnotation.html#Syncfusion_SfChart_XForms_LineAnnotation_LineCap) property to [`Arrow`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLineCap.html). The default value of the [`LineCap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LineAnnotation.html#Syncfusion_SfChart_XForms_LineAnnotation_LineCap) property is [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLineCap.html).
+To display single headed arrow, set the [`LineCap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LineAnnotation.html#Syncfusion_SfChart_XForms_LineAnnotation_LineCap) property to [`Arrow`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLineCap.html#Syncfusion_SfChart_XForms_ChartLineCap_Arrow). The default value of the [`LineCap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LineAnnotation.html#Syncfusion_SfChart_XForms_LineAnnotation_LineCap) property is [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLineCap.html#Syncfusion_SfChart_XForms_ChartLineCap_None).
 
 {% tabs %} 
 
@@ -1113,7 +1113,7 @@ chart.ChartAnnotations.Add(annotation);
 
 ## Annotation Visibility
 
-The [`IsVisible`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotation.html#Syncfusion_SfChart_XForms_ChartAnnotation_IsVisible) property of [`ChartAnnotation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_ChartAnnotations) is used to toggle the visibility of annotation.
+The [`IsVisible`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotation.html#Syncfusion_SfChart_XForms_ChartAnnotation_IsVisible) property of [`ChartAnnotation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotation.html) is used to toggle the visibility of annotation.
 
 {% tabs %} 
 
@@ -1143,7 +1143,7 @@ chart.ChartAnnotations.Add(verticalLineAnnotation);
 
 **AnnotationClicked**
 
-The [`AnnotationClicked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) event is triggered when the user has clicked the annotation. The argument contains the following information.
+The [`AnnotationClicked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_AnnotationClicked) event is triggered when the user has clicked the annotation. The argument contains the following information.
 
 * [`Annotation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationClickedEventArgs.html#Syncfusion_SfChart_XForms_ChartAnnotationClickedEventArgs_Annotation) – used to get the instance of annotation which is clicked.
 * [`X`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationClickedEventArgs.html#Syncfusion_SfChart_XForms_ChartAnnotationClickedEventArgs_X) – used to get the x position of touch point on annotation.

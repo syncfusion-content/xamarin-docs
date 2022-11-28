@@ -60,7 +60,7 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
 I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
@@ -134,6 +134,8 @@ The following steps explain how to create a [`SfNumericTextBox`](https://help.sy
 
 * Adding namespace for the added assemblies. 
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -150,7 +152,13 @@ The following steps explain how to create a [`SfNumericTextBox`](https://help.sy
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 * Now, add the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) control with a required optimal name by using the included namespace.
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -191,6 +199,10 @@ public partial class NumericControlPage : ContentPage
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ![Xamarin.Forms Numeric TextBox](images/numericTextBox.PNG)
 

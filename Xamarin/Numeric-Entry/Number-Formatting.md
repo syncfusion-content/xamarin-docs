@@ -124,6 +124,8 @@ When the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.
 
 * [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.PercentDisplayMode.html#Syncfusion_SfNumericTextBox_XForms_PercentDisplayMode_Value): Displays the actual value with percentage symbol.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -144,10 +146,16 @@ this.content=numericTextBox;
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 ![Display the value with percent display mode is value](images/percentage.png)
 
 
 * [`Compute`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.PercentDisplayMode.html#Syncfusion_SfNumericTextBox_XForms_PercentDisplayMode_Compute): Displays the computed value with percentage symbol.
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -168,6 +176,10 @@ this.Content=numericTextBox;
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ![Display the value with percent display mode is compute](images/percentagevalue.png)
 

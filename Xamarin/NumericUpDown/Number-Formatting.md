@@ -94,6 +94,8 @@ When the control is in percentage format, the value can be displayed in two ways
 
 * [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Value) : Displays the actual value with percentage symbol.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -113,9 +115,15 @@ numericUpDown.PercentDisplayMode=PercentDisplayMode.Value;
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 ![Display the value with PercentageDisplayMode as Compute](images/PercentDisplayMode_Value.png)
 
 * [`Compute`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.PercentDisplayMode.html#Syncfusion_SfNumericUpDown_XForms_PercentDisplayMode_Compute) : Displays the value computed by 100 with percentage symbol.
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -137,6 +145,10 @@ numericUpDown.PercentDisplayMode=PercentDisplayMode.Compute;
 {% endtabs %}
 
 N> The control displays the percent value on lost focus. 
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ![Display the value with PercentageDisplayMode as Compute](images/PercentDisplayMode_Compute.png)
 

@@ -106,15 +106,16 @@ diagram.NodeTemplate = template;
 ## Diagram constraints
 The constraints property of Diagram allows you to enable/disable certain features.
 The Diagram Constraints allow you to enable or disable the following behaviors of Node.
-EnableDrag
-EnableResize
-EnableRotation
-EnableTextEditing
-EnableSelectors
-EnableZoomAndPan
-IsReadOnly
-EnableAutoScroll
-EnableVirtualization
+* EnableDrag
+* EnableResize
+* EnableRotation
+* EnableTextEditing
+* EnableSelectors
+* EnableZoomAndPan
+* IsReadOnly
+* EnableAutoScroll
+* EnableVirtualization
+
 **Example**
 The following code illustrates how to disable the item dragging.
 {% tabs %}
@@ -285,6 +286,7 @@ It is easier to apply default rendering styles to all shapes, connectors, stenci
  * DefaultConnectorStyle argument: Defines the connector style properties.
  * DefaultSymbolStyle argument: Defines the symbol style properties. 
  * DefaultHeaderStyle argument: Defines the header style properties. 
+
 The following code shows how to define the diagram style settings for the diagram object.
 
 {% tabs %}

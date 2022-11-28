@@ -118,6 +118,8 @@ The Android platform does not require any additional configuration to render the
 
 2. Set the SfParallaxView control as content to the ContentPage.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -164,6 +166,9 @@ The Android platform does not require any additional configuration to render the
 {% endhighlight %}
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
 ## Add content to the parallax view
 

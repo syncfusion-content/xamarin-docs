@@ -253,7 +253,7 @@ Content = layout;
 {% endhighlight %}
 {% endtabs %}
 
-Refer to [this](https://help.syncfusion.com/xamarin/sfcombobox/customizing-combobox) link to learn more about the customizing options available in the combo box control.
+Refer to [this](https://help.syncfusion.com/xamarin/combobox/customizing-combobox) link to learn more about the customizing options available in the combo box control.
 
 N> Add the required image in drawable folder(Android), Resources folder(iOS) and at project location for UWP.
 

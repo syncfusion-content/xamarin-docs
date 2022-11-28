@@ -87,6 +87,8 @@ N> The [`FillColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEd
 
 * To add a [`Rectangle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_Rectangle), [`Circle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_Circle), or [`Arrow`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_Arrow) over an image, specify the [`ShapeType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html) and the desired [`PenSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.PenSettings.html) as shown in the following code snippet.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight C# %}
@@ -97,9 +99,15 @@ N> The [`FillColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEd
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 ![SfImageEditor](ImageEditor_images/shapes.jpg)
 
 * You can annotate any path on an image using free hand drawing as shown in the following code snippet.
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -110,6 +118,10 @@ N> The [`FillColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEd
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ![SfImageEditor](ImageEditor_images/path.jpg)
 

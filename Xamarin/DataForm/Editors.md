@@ -1863,6 +1863,7 @@ Highlights matching characters in a suggestion list to pick an item with more cl
 
 * First occurrence
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
@@ -1888,11 +1889,14 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 ![You can highlights matching characters in a suggestion list by HighlightedTextColor property in Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete_Highlight_Color.png)
 
 * Multiple occurrence
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
@@ -1918,6 +1922,8 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 ![You can highlights matching characters in a suggestion list by HighlightedTextColor property in Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete_hightlght_multipleOccurance.png)
 

@@ -187,10 +187,10 @@ namespace GettingStarted
 
 Add the following XAML code in the MainPage.xaml in the portable project.
 
-•	Includes the necessary namespace where the control class resides
-•	Set BindingContext of ContentPage to PdfViewerViewModel
-•	Includes PDF Viewer into the page
-•	Binds InputFileStream property of PDF Viewer control to PdfDocumentStream property of PdfViewerViewModel
+* Includes the necessary namespace where the control class resides
+* Set BindingContext of ContentPage to PdfViewerViewModel
+* Includes PDF Viewer into the page
+* Binds InputFileStream property of PDF Viewer control to PdfDocumentStream property of PdfViewerViewModel
 
 {% tabs %}
 {% highlight xaml %}

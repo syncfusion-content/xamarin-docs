@@ -101,15 +101,11 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 {
      …
      rootFrame.NavigationFailed += OnNavigationFailed;
-
      //Add the assemblies `using System.Reflection;`
      List<Assembly> assembliesToInclude = new List<Assembly>();
-
      //Now, add all the assemblies that your app uses
      assembliesToInclude.Add(typeof(SfPdfDocumentViewRenderer).GetTypeInfo().Assembly);
-
      assembliesToInclude.Add(typeof(SfRangeSliderRenderer).GetTypeInfo().Assembly);
-
      //Replaces Xamarin.Forms.Forms.Init(e);
      Xamarin.Forms.Forms.Init(e, assembliesToInclude);
      …
@@ -199,8 +195,7 @@ Add the following XAML code in the MainPage.xaml in the portable project.
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GettingStarted"
              x:Class="GettingStarted.MainPage"
-             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
-             >
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms">
     <ContentPage.BindingContext>
         <local:PdfViewerViewModel></local:PdfViewerViewModel>
     </ContentPage.BindingContext>
@@ -241,7 +236,7 @@ namespace GettingStarted
         {
             base.OnAppearing();
             fileStream = typeof(App).GetTypeInfo().Assembly.GetManifestResourceStream("GettingStarted.Assets.GIS Succinctly.pdf");
-			//Load the PDF
+		    //Load the PDF
             pdfViewerControl.LoadDocument(fileStream);
         }
     }
@@ -259,8 +254,7 @@ In the XAML code described in the previous section, remove the binding of InputF
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GettingStarted"
              x:Class="GettingStarted.MainPage"
-             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
-             >
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms">
     <Grid x:Name="pdfViewGrid">
         <syncfusion:SfPdfViewer x:Name="pdfViewerControl" />
     </Grid> 
@@ -336,7 +330,6 @@ The cancellation of the PDF load operation can be detected by registering an eve
 
 EventArgs e = new EventArgs();
 cancellationTokenSource.Token.Register(() => LoadDocumentAsyncCancelled(this, e));
-
 private void LoadDocumentAsyncCancelled(object sender, EventArgs e)
 {
     // handle the cancellation event
@@ -388,7 +381,7 @@ The PDF Viewer also allows you to save and return the PDF document with the chan
 Task<Stream> pdfDocumentStream = pdfViewerControl.SaveDocumentAsync();
 
 {% endhighlight %}
-{% endtabs %}
+{% endtabs %}3
 
 ## How to dispose the managed resources of SfPdfViewer
 
@@ -452,7 +445,6 @@ PDF viewer has “GoToNextPageCommand” and “GoToPreviousPageCommand” which
 {% highlight xaml %}
 
 <Button x:Name="goToNextButton"  Grid.Column="3" BackgroundColor="Transparent" Image="PageDown.png" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding GoToNextPageCommand, Source={x:Reference Name=pdfViewerControl}}"/>
-
 <Button x:Name="goToPreviousButton" Grid.Column="4" BackgroundColor="Transparent" Image="PageUp.png" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding GoToPreviousPageCommand, Source={x:Reference Name=pdfViewerControl}}"/>
 
 {% endhighlight %}
@@ -553,13 +545,10 @@ Navigate to the specified vertical and horizontal offset values in PDF Viewer us
 
 //Retrieves the current horizontal offset of the PdfViewerControl
 m_currentHorizontalOffset = pdfViewerControl.HorizontalOffset;
-
 //Retrieves the current vertical offset of the PdfViewerControl
 m_currentVerticalOffset = pdfViewerControl.VerticalOffset;
-
 //Scrolls the content to the specified vertical offset position in the PdfViewerControl
 pdfViewerControl.ScrollToOffset(m_currentHorizontalOffset+10, m_currentVerticalOffset+10);
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -572,7 +561,6 @@ The PDF viewer uses the [ScrollViewer](https://docs.microsoft.com/en-us/uwp/api/
 
 //Sets the width of the vertical scrollbar in the PDF Viewer.
 pdfViewerControl.VerticalScrollBarWidth = 50;
-
 //Gets the width of the vertical scrollbar in the PDF Viewer.
 int verticalScrollBarWidth = pdfViewerControl.VerticalScrollBarWidth;
 
@@ -584,7 +572,6 @@ N>This API is only applicable for UWP desktop. Changing the value of this API do
 ## How to get the list of annotations present in the PDF?
 
 By using `Annotations` property, You can get the list of annotations present in the PDF document.
-  .
 Refer the following code sample.
 
 {% tabs %}
@@ -607,7 +594,6 @@ By default, the PDF Viewer does not render the appearance content of annotations
 
 //Sets a value whether the annotations should be flattened when the PDF is loaded or not.
 pdfViewerControl.AnnotationSettings.Flatten = true;
-
 //Loads the PDF. 
 pdfViewerControl.LoadDocument(stream);
 

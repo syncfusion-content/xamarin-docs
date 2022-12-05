@@ -23,11 +23,9 @@ By default, the built-in toolbar will be visible. It can be hidden by setting th
              xmlns:local="clr-namespace: PdfViewerGettingStarted "
              xmlns:syncfusion ="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
              x:Class=" PdfViewerGettingStarted.MainPage">
-
     <ContentPage.Content>
         <syncfusion:SfPdfViewer x:Name="pdfViewerControl" IsToolbarVisible="False" />
     </ContentPage.Content>
-
 </ContentPage>
 
 {% endhighlight %}
@@ -53,11 +51,9 @@ The toolbar can be shown by setting the `IsToolbarVisible` property to true.
              xmlns:local="clr-namespace: PdfViewerGettingStarted "
              xmlns:syncfusion ="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
              x:Class=" PdfViewerGettingStarted.MainPage">
-
     <ContentPage.Content>
         <syncfusion:SfPdfViewer x:Name="pdfViewerControl" IsToolbarVisible="True" />
     </ContentPage.Content>
-
 </ContentPage>
 
 {% endhighlight %}
@@ -86,16 +82,13 @@ The below code snippet illustrates how to show/hide the built-in toolbar dynamic
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace: PdfViewerGettingStarted "
              xmlns:syncfusion ="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
-             x:Class=" PdfViewerGettingStarted.MainPage">
-			 
+             x:Class=" PdfViewerGettingStarted.MainPage">			 
 	<ContentPage.BindingContext>
         <local:PdfViewerViewModel></local:PdfViewerViewModel>
     </ContentPage.BindingContext>
-
     <ContentPage.Content>
         <syncfusion:SfPdfViewer x:Name="pdfViewerControl" IsToolbarVisible={Binding ToolbarVisible} />
     </ContentPage.Content>
-
 </ContentPage>          
 
 {% endhighlight %}
@@ -113,11 +106,9 @@ By default, the bookmark button will be enabled. It can be disabled by setting t
              xmlns:local="clr-namespace: PdfViewerGettingStarted "
              xmlns:syncfusion ="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
              x:Class=" PdfViewerGettingStarted.MainPage">
-
     <ContentPage.Content>
         <syncfusion:SfPdfViewer x:Name="pdfViewerControl" BookmarkNavigationEnabled="False"/>
     </ContentPage.Content>
-
 </ContentPage>          
 
 {% endhighlight %}

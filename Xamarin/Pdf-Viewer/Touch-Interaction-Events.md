@@ -56,32 +56,32 @@ InitializeComponent();
 
 private void PdfViewerControl_LongPressed(object sender, Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs e)
 {
-//Gets the page number of the PDF Viewer where you tapped.
-int pageNumber = e.PageNumber;
-//Gets the position of the PDF Viewer's client area where you tapped.
-Point position = e.Position;
-//Gets the position of the PDF page where you tapped.
-Point pagePosition = e.PagePosition;
+    //Gets the page number of the PDF Viewer where you tapped.
+    int pageNumber = e.PageNumber;
+    //Gets the position of the PDF Viewer's client area where you tapped.
+    Point position = e.Position;
+    //Gets the position of the PDF page where you tapped.
+    Point pagePosition = e.PagePosition;
 }
 
 private void PdfViewerControl_DoubleTapped(object sender, Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs e)
 {
-//Gets the page number of the PDF Viewer where you double tapped.
-int pageNumber = e.PageNumber;
-//Gets the position of the PDF Viewer's client area where you double tapped.
-Point position = e.Position;
-//Gets the position of the PDF page where you double tapped.
-Point pagePosition = e.PagePosition;
+    //Gets the page number of the PDF Viewer where you double tapped.
+    int pageNumber = e.PageNumber;
+    //Gets the position of the PDF Viewer's client area where you double tapped.
+    Point position = e.Position;
+    //Gets the position of the PDF page where you double tapped.
+    Point pagePosition = e.PagePosition;
 }
 
 private void PdfViewerControl_Tapped(object sender, Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs e)
 {
-//Gets the page number of the PDF Viewer where you long pressed.
-int pageNumber = e.PageNumber;
-//Gets the position of the PDF Viewer's client area where you long pressed.
-Point position = e.Position;
-//Gets the position of the PDF page where you long pressed.
-Point pagePosition = e.PagePosition;
+    //Gets the page number of the PDF Viewer where you long pressed.
+    int pageNumber = e.PageNumber;
+    //Gets the position of the PDF Viewer's client area where you long pressed.
+    Point position = e.Position;
+    //Gets the position of the PDF page where you long pressed.
+    Point pagePosition = e.PagePosition;
 }
 
 {% endhighlight %}

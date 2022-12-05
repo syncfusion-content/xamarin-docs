@@ -22,13 +22,10 @@ The custom stamps can be added using the `AddAnnotation` or `AddStamp` methods.
 
 //Add custom stamp/view
 pdfViewer.AddAnnotation(StampAnnotation stampAnnotation)
-
 //Add custom stamp/view to the specified page
 pdfViewer.AddStamp(View view, int pageNumber)
-
 //Add custom stamp/view to the specified page and position as Point object
 pdfViewer.AddStamp(View view, int pageNumber, Point position)
-
 //Add custom stamp/view to the specified page and position as Rectangle object
 pdfViewer.AddStamp(View view, int pageNumber, Rectangle bounds)
 
@@ -47,10 +44,8 @@ private void Button_Clicked(object sender, EventArgs e)
     image.Source = ImageSource.FromResource("Sample.Assets.Logo.png", typeof(App).GetTypeInfo().Assembly);
     image.WidthRequest = 200;
     image.HeightRequest = 100;
-
     //Method 1: Add image as custom stamp to the first page using `AddStamp` method
     pdfViewer.AddStamp(image, 1);
-	
 	//Method 2: Create a stamp annotation instance and add using `AddAnnotation` method
 	//StampAnnotation stampAnnotation = new StampAnnotation(image, 1, new Rectangle(100, 100, 100, 100));
 	//pdfViewer.AddAnnotation(stampAnnotation);  	
@@ -90,7 +85,6 @@ private void PdfViewer_StampAnnotationSelected(object sender, StampAnnotationSel
 {
     //Gets the page number of selected stamp annotation
     int pageNumber = e.PageNumber;
-
     //Gets the bounds of selected stamp annotation
     Rectangle bounds = e.Bounds;
 }
@@ -175,10 +169,8 @@ private void PdfViewer_StampAnnotationMovedOrResized(object sender, StampAnnotat
 {
     //Get the page number of selected stamp annotation
     int pageNumber = e.PageNumber;
-
     //Get the old bounds of selected stamp annotation
     Rectangle oldBounds = e.OldBounds;
-
     //Get the new bounds of selected stamp annotation
     Rectangle newBounds = e.NewBounds;
 }
@@ -273,12 +265,11 @@ Refer to the following code example. The [`StampAnnotationSelected`](https://hel
 {% highlight c# %}
 
 pdfViewerControl.StampAnnotationSelected += PdfViewerControl_StampAnnotationSelected;
-
 private void PdfViewerControl_StampAnnotationSelected(object sender, StampAnnotationSelectedEventArgs e)
-        {
-            //Retrieves the actual view added as the stamp using the AddStamp method.
-            var customStamp = e.CustomStampView;
-        }
+{
+    //Retrieves the actual view added as the stamp using the AddStamp method.
+    var customStamp = e.CustomStampView;
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -292,9 +283,9 @@ The following code sample explains modifying the name of the custom stamp annota
 {% tabs %}
 {% highlight c# %}
 
- private void PdfViewerControl_StampAnnotationAdded(object sender, StampAnnotationAddedEventArgs e)
+private void PdfViewerControl_StampAnnotationAdded(object sender, StampAnnotationAddedEventArgs e)
 {
-(sender as StampAnnotation).Name = "StampAnnotation1";
+    (sender as StampAnnotation).Name = "StampAnnotation1";
 }
 
 {% endhighlight %}

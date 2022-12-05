@@ -80,7 +80,6 @@ A selective list of annotations can also be exported in the specified file forma
 
 //Get the list of annotations present on the first page
 List<IAnnotation> firstPageAnnotations = pdfViewerControl.Annotations.Where(annotation => annotation.PageNumber == 1).ToList();
-
 //Export annotations to "FDF" data format
 Stream fdfStreamToSave = pdfViewerControl.ExportAnnotations(firstPageAnnotations, AnnotationDataFormat.Fdf);
 
@@ -109,7 +108,6 @@ A selective list of annotations can also be exported asynchronously in the speci
 
 //Get the list of annotations present in the first page
 List<IAnnotation> firstPageAnnotations = pdfViewerControl.Annotations.Where(annotation => annotation.PageNumber == 1).ToList();
-
 //Export the annotations asynchronously to the "FDF" data format 
 Stream fdfStreamToSave = await pdfViewerControl.ExportAnnotationsAsync(firstPageAnnotations, AnnotationDataFormat.Fdf, cancellationTokenSource);
 

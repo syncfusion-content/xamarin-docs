@@ -99,10 +99,8 @@ You can navigate to a desired bookmark destination using the `GotoBookmark(PdfBo
 
 //Loads the PDF document in PdfLoadedDocument
 PdfLoadedDocument loadedDocument = new PdfLoadedDocument(documentStream);
-
 //Retrieves the bookmark collection from the loaded PDF document
 PdfBookmarkBase bookmark = loadedDocument.Bookmarks;
-
 //Navigate to the specified bookmark destination offset
 pdfViewerControl.GoToBookmark(bookmark[0]);
 
@@ -117,19 +115,14 @@ You can track the bookmark navigation operation using the `BookmarkNavigationOcc
 {% highlight c# %}
 
 pdfViewerControl.BookmarkNavigationOccurred += PdfViewerControl_BookmarkNavigationOccurred;
-
-
 private void PdfViewerControl_BookmarkNavigationOccurred(object sender, Syncfusion.SfPdfViewer.XForms.BookmarkNavigationOccurredEventArgs e)
 {
       //Retrieves the current bookmark
       PdfBookmark bookmark = e.Bookmark;
-
       //Gets the vertical offset of the bookmark
       double destinationOffset = e.Offset;
-
       //Gets the current page number in which the bookmark destination resides
       int pageNumber = e.PageNumber;
-
 }
 
 {% endhighlight %}

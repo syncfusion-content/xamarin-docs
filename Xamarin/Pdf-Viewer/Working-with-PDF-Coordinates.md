@@ -20,10 +20,8 @@ Navigate to the specified vertical and horizontal scroll offset coordinates in P
 
 //Retrieve the current horizontal offset of the PdfViewerControl.
 m_currentHorizontalOffset = pdfViewerControl.HorizontalOffset;
- 
 //Retrieve the current vertical offset of the PdfViewerControl.
 m_currentVerticalOffset = pdfViewerControl.VerticalOffset;
- 
 //Scroll the content to the specified vertical offset position in the PdfViewerControl.
 pdfViewerControl.ScrollToOffset(m_currentHorizontalOffset+10, m_currentVerticalOffset+10);
 
@@ -65,10 +63,8 @@ private void PdfViewerControl_Tapped(object sender, TouchInteractionEventArgs e)
 {
     //Retrieve the tapped client area position.
     Point clientPoint = e.Position;
- 
     //Retrieve the page number that corresponds to the client point.
     int pageNumber = pdfViewerControl.GetPageNumberFromClientPoint(clientPoint)
- 
     //Retrieve the page point.
     Point pagePoint = pdfViewerControl.ConvertClientPointToPagePoint(clientPoint, pageNumber);
 } 
@@ -85,16 +81,12 @@ You can obtain the PDF page coordinates using the `ConvertPagePointToClientPoint
 
 //Get a shape annotation from the Annotations collection.
 ShapeAnnotation shapeAnnotation = pdfViewerControl.Annotations[0] as ShapeAnnotation;
- 
 //Get the annotation’s page number.
 int pageNumber = shapeAnnotation.PageNumber;
- 
 //Get the annotation bounds.
 Rectangle annotationBounds = shapeAnnotation.Bounds;
- 
 //Find the position of the annotation in page coordinates.
 Point pagePoint = new Point(annotationBounds.X, annotationBounds.Y);
- 
 //Convert the page point to client point.
 Point clientPoint = pdfViewerControl.ConvertPagePointToClientPoint(pagePoint, pageNumber)
  
@@ -110,19 +102,14 @@ You can obtain the PDF Viewer's scroll coordinates using the `ConvertPagePointTo
 
 //Get a shape annotation from the Annotations collection.
 ShapeAnnotation shapeAnnotation = pdfViewerControl.Annotations[0] as ShapeAnnotation;
- 
 //Get the annotation bounds.
 Rectangle annotationBounds = shapeAnnotation.Bounds;
- 
 //Get the annotation’s page number.
 int pageNumber = shapeAnnotation.PageNumber;
- 
 //Find the position of the annotation in page coordinates.
 Point pagePoint = new Point(annotationBounds.X, annotationBounds.Y);
- 
 //Convert the page point to scroll point.
 Point scrollPoint = pdfViewerControl.ConvertPagePointToScrollPoint(pagePoint, pageNumber)
- 
 //Scrolling to the annotation’s position using the ScrollToOffset API.
 pdfViewerControl.ScrollToOffset((float)scrollPoint.X, (float)scrollPoint.Y);
  
@@ -138,27 +125,18 @@ You can bring the given rectangular region to view and zoom in the document to f
 
 //Get a shape annotation from the Annotations collection.
 ShapeAnnotation shapeAnnotation = pdfViewerControl.Annotations[0] as ShapeAnnotation;
- 
 //Get the annotation bounds.
 Rectangle annotationBounds = shapeAnnotation.Bounds;
- 
 //Convert the annotation bounds from the page coordinates to a rectangle in client coordinates. 
 Point topLeft = new Point(annotationBounds.Left, annotationBounds.Top);
-            
 Point rightBottom = new Point(annotationBounds.Right, annotationBounds.Bottom);
-            
 Point clientTopLeft = pdfViewerControl.ConvertPagePointToClientPoint(topLeft, pageNumber);
-            
 Point clientRightBottom = pdfViewerControl.ConvertPagePointToClientPoint(rightBottom, pageNumber);
-            
 double width = clientRightBottom.X - clientTopLeft.X;
-            
 double height = clientRightBottom.Y - clientTopLeft.Y;
-            
 Rectangle rectangleBounds = new Rectangle(clientTopLeft.X, clientTopLeft.Y, width, height);
- 
 //Pass the converted rectangle in client coordinates to the ZoomToRect method. 
 pdfViewerControl.ZoomToRect(rectangleBounds);
- 
+
 {% endhighlight %}
 {% endtabs %}

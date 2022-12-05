@@ -92,13 +92,10 @@ The following code sample illustrates the adding of rectangle annotation program
 
 //Bounds in which the rectangle shape annotation should be added
 Rectangle bounds = new Rectangle(100, 100, 200, 200);
-
 //Creates a new rectangle shape annotation
 ShapeAnnotation shapeAnnotation = new ShapeAnnotation(ShapeAnnotationType.Rectangle, 1, rectangle);         
-
 //Sets the stroke color for the rectangle shape annotation 
 shapeAnnotation.Settings.StrokeColor = Color.Red;
-
 //Add the rectangle shape annotation to the specified page
 pdfViewer.AddAnnotation(shapeAnnotation);
 
@@ -115,9 +112,7 @@ To draw a cloud shape annotation, you should set the `BorderEffect` property of 
 {% highlight c# %}
 
 SfPdfViewer pdfViewer = new SfPdfViewer();
-
 pdfViewer.AnnotationMode = AnnotationMode.Rectangle;
-
 pdfViewer.AnnotationSettings.Rectangle.Settings.BorderEffect = BorderEffect.Cloudy;
 
 {% endhighlight %}
@@ -159,7 +154,6 @@ private void PdfViewer_ShapeAnnotationSelected(object sender, ShapeAnnotationSel
 	AnnotationMode annotationMode = args.AnnotationType;
 	//Get the bounds of the rectangle
 	Rectangle bounds = args.Bounds;
-
 	//Get the page number in which the annotations are present
 	int pageNumber = args.PageNumber;
 }
@@ -269,13 +263,10 @@ Refer the following code example:
 
 //Sets the minimum size for the rectangle annotations
 pdfViewer.AnnotationSettings.Rectangle.Settings.MinimumSize = new Size(10, 10);
-
 //Sets the minimum size for the circle annotations
 pdfViewer.AnnotationSettings.Circle.Settings.MinimumSize = new Size(10, 10);
-
 //Sets the minimum length for the line annotations
 pdfViewer.AnnotationSettings.Line.Settings.MinimumLength = 10;
-
 //Sets the minimum length for the arrow annotations
 pdfViewer.AnnotationSettings.Arrow.Settings.MinimumLength = 10;
 
@@ -295,7 +286,6 @@ Refer the following code example:
 
 //Sets the cloud border style for rectangle annotation
 pdfViewer.AnnotationSettings.Rectangle.Settings.BorderEffect = BorderEffect.Cloudy;
-
 //Sets the cloud border style for polygon annotation 
 pdfViewer.AnnotationSettings.Polygon.Settings.BorderEffect = BorderEffect.Cloudy;
 
@@ -329,17 +319,13 @@ pdfViewer.ShapeAnnotationSelected += PdfViewer_ShapeAnnotationSelected;
 private void PdfViewer_ShapeAnnotationSelected(object sender, Syncfusion.SfPdfViewer.XForms.ShapeAnnotationSelectedEventArgs args)
 {
 	//Get the type of the annotation. Here it is Rectangle
-    AnnotationMode annotationMode = args.AnnotationType;
-
+	AnnotationMode annotationMode = args.AnnotationType;
 	//Cast the sender object as shape annotation.
 	ShapeAnnotation selectedShapeAnnotation = sender as ShapeAnnotation;
-
 	//Set the stroke color of the selected annotation using shape annotation settings.
 	selectedShapeAnnotation.Settings.StrokeColor = Color.Blue;
-
 	//Set the opacity of the selected annotation using shape annotation settings.
 	selectedShapeAnnotation.Settings.Opacity = 0.3f;
-
 	//Set the thickness of the selected annotation using shape annotation settings.
 	selectedShapeAnnotation.Settings.Thickness = 3;
 }
@@ -375,22 +361,19 @@ pdfViewer.AnnotationMovedOrResized += PdfViewer_AnnotationMovedOrResized;
 
 private void PdfViewer_AnnotationMovedOrResized(object sender, AnnotationMovedOrResizedEventArgs args) 
 {
-	 //Determine whether the moved or resized annotation is a shape or some other annotation. 
-	 
-	 if(sender as ShapeAnnotation == null)
-	 {
+	//Determine whether the moved or resized annotation is a shape or some other annotation. 
+	if(sender as ShapeAnnotation == null)
+	{
 		//The annotation is not a shape
-	 }
-	 else
-	 {
+	}
+	else
+	{
 		//The annotation is a shape
-	 }
-	 
-     //Retrieve the old bounds of the annotation
-     Rectangle oldBounds = args.OldBounds;
-
-     //Retrieve the new bounds of the annotation
-     Rectangle newBounds = args.NewBounds;
+	} 
+	//Retrieve the old bounds of the annotation
+	Rectangle oldBounds = args.OldBounds;
+	//Retrieve the new bounds of the annotation
+	Rectangle newBounds = args.NewBounds;
 }
 
 {% endhighlight %}
@@ -408,19 +391,17 @@ The following code snippet illustrates removing a selected annotation from the P
 {% highlight xaml %}
 
 <syncfusion:SfPdfViewer x:Name="pdfViewer" ShapeAnnotationSelected="PdfViewer_ShapeAnnotationSelected"/>
-<Button x:Name="deleteShapeAnnotationButton" Grid.Row="1" Clicked="deleteShapeAnnotationButton_Clicked" />
+<Button x:Name="deleteShapeAnnotationButton" Grid.Row="1" Clicked="deleteShapeAnnotationButton_Clicked"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 ShapeAnnotation selectedShapeAnnotation;
-
 private void PdfViewer_ShapeAnnotationSelected(object sender, ShapeAnnotationSelectedEventArgs args)
 {
 	//Cast the sender object as Shape annotation.
 	selectedShapeAnnotation = sender as ShapeAnnotation;
 }
-
 private void deleteShapeAnnotationButton_Clicked(object sender, EventArgs e)
 {
 	//Delete the selected shape annotation
@@ -470,25 +451,18 @@ private void PdfViewer_ShapeAnnotationRemoved(object sender, ShapeAnnotationRemo
 {
 	//Get the type of the annotation. Here it is rectangle
 	AnnotationMode annotationMode = args.AnnotationType;
-
 	//Get the bounds of the rectangle
 	Rectangle bounds = args.Bounds;
-
 	//Get the data points of the shape
 	List<Point> dataPoints = args.DataPoints;
-
 	//Get the opacity value
 	float opacity = args.Opacity;
-
 	//Get the page number in which the annotations are present
 	int pageNumber = args.PageNumber;
-
 	//Get the position of the shape within the page
 	Point position = args.Position;
-
 	//Get the stroke color of the shape 
 	Color strokeColor = args.StrokeColor;
-
 	//Get the thickness of the shape
 	float thickness = args.Thickness;
 }
@@ -505,19 +479,14 @@ To lock or unlock all the shape annotation, set the `IsLocked` API to `true` or 
 
 //Disable the arrow annotation interaction such as move, resize, remove, and attributes changes.
 pdfViewerControl.AnnotationSettings.Arrow.Settings.IsLocked = true;
- 
 //Disable the line annotation interaction such as move, resize, remove, and attributes changes.
-pdfViewerControl.AnnotationSettings.Line.Settings.IsLocked = true;
- 
+pdfViewerControl.AnnotationSettings.Line.Settings.IsLocked = true; 
 //Disable the rectangle annotation interaction such as move, resize, remove, and attributes changes.
 pdfViewerControl.AnnotationSettings.Rectangle.Settings.IsLocked = true;
- 
 //Disable the circle annotation interaction such as move, resize, remove, and attributes changes.
 pdfViewerControl.AnnotationSettings.Circle.Settings.IsLocked = true;
- 
 //Disable the polygon annotation interaction such as move, resize, remove, and attributes changes.
 pdfViewerControl.AnnotationSettings.Polygon.Settings.IsLocked = true;
- 
 //Disable the polyline annotation interaction such as move, resize, remove, and attributes changes.
 pdfViewerControl.AnnotationSettings.Polyline.Settings.IsLocked = true;
 
@@ -552,19 +521,14 @@ To enable or disable the shape annotation selection, set the `Constraints` API t
 
 //Disable the selection of arrow annotations.
 pdfViewerControl.AnnotationSettings.Arrow.Settings.Constraints = ~AnnotationConstraints.Selectable;
- 
 //Disable the selection of line annotations.
 pdfViewerControl.AnnotationSettings.Line.Settings.Constraints = ~AnnotationConstraints.Selectable;
- 
 //Disable the selection of rectangle annotations. 
 pdfViewerControl.AnnotationSettings.Rectangle.Settings.Constraints = ~AnnotationConstraints.Selectable;
- 
 //Disable the selection of circle annotations.
 pdfViewerControl.AnnotationSettings.Circle.Settings.Constraints = ~AnnotationConstraints.Selectable;
- 
 //Disable the selection of polygon annotations.
 pdfViewerControl.AnnotationSettings.Polygon.Settings.Constraints = ~AnnotationConstraints.Selectable;
- 
 //Disable the selection of polyline annotations.
 pdfViewerControl.AnnotationSettings.Polyline.Settings.Constraints = ~AnnotationConstraints.Selectable;
 
@@ -599,8 +563,8 @@ The following code sample explains modifying the name of the shape annotation in
 
 private void PdfViewerControl_ShapeAnnotationAdded(object sender, ShapeAnnotationAddedEventArgs args)
 {
-//Sets the name for the annotation.
-(sender as ShapeAnnotation).Name = "Shape1";           
+	//Sets the name for the annotation.
+	(sender as ShapeAnnotation).Name = "Shape1";           
 }
 
 {% endhighlight %}

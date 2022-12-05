@@ -41,16 +41,16 @@ You can acquire the details of the hyperlink that is tapped in the PDF viewer co
 
         public void pdfViewerControl_HyperlinkClicked(object sender,HyperlinkClickedEventArgs args)
         {
-			// Gets or sets a value indicating whether the hyperlink navigation was handled.
+            // Gets or sets a value indicating whether the hyperlink navigation was handled.
             args.Handled = false;
 
-			// Gets the hyperlink being clicked.
+            // Gets the hyperlink being clicked.
             string uri = args.Uri;
 
-			// Gets the current page index of the hyperlink.
+            // Gets the current page index of the hyperlink.
             int pageIndex = args.PageIndex;
 
-			//Gets the bounds of the hyperlink is being clicked.
+            //Gets the bounds of the hyperlink is being clicked.
             Rectangle hyperlinkBound = args.Bounds;
 
         }

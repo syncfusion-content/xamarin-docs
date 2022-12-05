@@ -315,7 +315,7 @@ N> It applies to android and iOS only and not supported in UWP.
 
 ## EnterKey Support
 
-The Rich Text Editor provides the support to `Paragraph` or `div` HTML tag inserted when pressing the Enter key. 
+The Rich Text Editor provides the support to Configure the HTML tag to insert the `Paragraph` or `div` tag when pressing the Enter key.
 
 {% tabs %} 
 

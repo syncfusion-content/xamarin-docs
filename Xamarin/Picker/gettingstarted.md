@@ -110,7 +110,7 @@ public MainPage()
 
 …
 
-SfPickerRenderer.Init();
+Syncfusion.SfPicker.XForms.UWP.SfPickerRenderer.Init();
 
 LoadApplication (new App ());
 
@@ -144,7 +144,7 @@ List<Assembly> assembliesToInclude = new List<Assembly>();
 
 //Now, add all the assemblies your app uses
 
-assembliesToInclude.Add(typeof(SfPickerRenderer).GetTypeInfo().Assembly);
+assembliesToInclude.Add(typeof(Syncfusion.SfPicker.XForms.UWP.SfPickerRenderer).GetTypeInfo().Assembly);
 
 // replaces Xamarin.Forms.Forms.Init(e);        
 

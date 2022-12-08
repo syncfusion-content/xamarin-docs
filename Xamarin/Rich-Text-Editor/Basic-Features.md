@@ -315,7 +315,7 @@ N> It applies to android and iOS only and not supported in UWP.
 
 ## Configure the HTML tag for enter key
 
-The Rich Text Editor provides the support to preserve the dictation text after comes with new paragraph and new line using `Paragraph` or `div` Html tag.
+The Rich Text Editor provides the support to preserve the dictation text after comes with new paragraph and new line using `div` Html tag.
 
 {% tabs %} 
 

@@ -289,7 +289,7 @@ RichTextEditor. StyleSheetType= StyleSheetType.Internal;
 
 N>It applies to UWP only for users in China and Korea locations. It is not applicable in android an iOS ,Since android and iOS, we can be able to load the WebView resources through an external style sheet.
 
-## EnableSystemKeyboard
+## Enable or disable system keyboard
 
 The Rich Text Editor provides the support to restrict the system keyborad visibility while focusing the Rich Text Editor control. The default value is true.
 
@@ -313,7 +313,7 @@ RichTextEditor.EnableSystemKeyboard = true;
 
 N> It applies to android and iOS only and not supported in UWP.
 
-## EnterKey Support
+## Configure the HTML tag for enter key
 
 The Rich Text Editor provides the support to Configure the HTML tag to insert the `Paragraph` or `div` tag when pressing the Enter key.
 
@@ -335,4 +335,4 @@ RichTextEditor.EnterKey = EnterKey.Div;
 
 {% endtabs %}
 
-N> It applies to iOS only and not supported in Android and UWP.
+N> This property works when loading the control only. It applies to iOS only and not supported in Android and UWP.

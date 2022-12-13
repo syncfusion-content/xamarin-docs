@@ -291,7 +291,7 @@ N>It applies to UWP only for users in China and Korea locations. It is not appli
 
 ## Enable or disable system keyboard
 
-The Rich Text Editor provides the support to restrict the system keyborad visibility while focusing the Rich Text Editor control. The default value is true.
+The RichTextEditor supports restricting the system keyborad visibility while focusing on the RichTextEditor control. The default value is true.
 
 {% tabs %} 
 
@@ -315,7 +315,7 @@ N> It applies to android and iOS only and not supported in UWP.
 
 ## Configure the HTML tag for enter key
 
-The Rich Text Editor provides the support to preserve the dictation text after comes with new paragraph and new line using `div` Html tag.
+The RichTextEditor supports preserving the dictation text after its comes with a new paragraph and a new line using `div` Html tag.
 
 {% tabs %} 
 

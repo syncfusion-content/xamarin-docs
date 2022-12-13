@@ -287,7 +287,7 @@ RichTextEditor. StyleSheetType= StyleSheetType.Internal;
 
 {% endtabs %}
 
-N>It applies to UWP only for users in China and Korea locations. It is not applicable in android an iOS ,Since android and iOS, we can be able to load the WebView resources through an external style sheet.
+N>It applies only to UWP users in China and Korea locations. It is not applicable in android an iOS ,Since android and iOS, can load the WebView resources using an external style sheet.
 
 ## Enable or disable system keyboard
 

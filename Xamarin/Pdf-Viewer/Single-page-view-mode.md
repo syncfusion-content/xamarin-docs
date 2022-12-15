@@ -93,3 +93,24 @@ pdfViewerControl.ShowPageFlipNavigationArrows = false;
 {% endtabs %}
 
 N>This API is only applicable for desktop device in UWP platform. Changing the value of this API does not have any effect on Android and iOS platforms.
+
+## How to retain the zoom percentage in page by page mode
+
+In the page-by-page view mode, when we zoom in a PDF page and navigate to another page, the new page will be loaded in its default zoom.  For instance, if we zoom in to 150% on the first page and then swipe to navigate to the second page, the second page will not load in 150% of zoom. Instead it will load in its default zoom. The default zoom will vary for each PDF based on its dimensions.
+
+To persist the zoom percentage in every page while navigating in the page-by-page view mode, set the `PersistZoomOnPageChange` property to true. Its default value is false. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfPdfViewer x:Name="pdfViewerControl" PersistZoomOnPageChange="True"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+pdfViewerControl.PersistZoomOnPageChange = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+N>This property is applicable only for the page-by-page view mode. Changing the value of this property does not have any effect in the continuous page view mode.

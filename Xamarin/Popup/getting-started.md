@@ -164,6 +164,8 @@ The known Framework issue in UWP platform is the custom controls will not render
 
 // In App.xaml.cs
 
+using Syncfusion.XForms.UWP.PopupLayout;
+
 protected override void OnLaunched(LaunchActivatedEventArgs e)
 {
     …
@@ -174,7 +176,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
     List<Assembly> assembliesToInclude = new List<Assembly>();
 
     //Now, add all the assemblies your app uses
-    assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.PopupLayout.SfPopupLayoutRenderer).GetTypeInfo().Assembly);
+    assembliesToInclude.Add(typeof(SfPopupLayoutRenderer).GetTypeInfo().Assembly);
 
     // replaces Xamarin.Forms.Forms.Init(e);        
     Xamarin.Forms.Forms.Init(e, assembliesToInclude);

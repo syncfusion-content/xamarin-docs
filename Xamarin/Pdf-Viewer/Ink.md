@@ -755,13 +755,13 @@ pdfViewerControl.AnnotationSettings.Ink.EnableSeparateAttributesForEachStroke = 
 {% endhighlight %}
 {% endtabs %}
 
-## How to erase ink annotations
+## How to erase ink annotations?
 
-You can erase ink annotation stokes using the eraser tool.
+You can erase ink annotation stokes using the eraser tool. You can also undo and redo the changes made by the erase operation. 
 
 ### Enabling ink eraser
 
-Set the AnnotationMode property of the PDF viewer  to InkEraser to enable the ink eraser. Refer to the following code.
+Set the `AnnotationMode` property of the PDF viewer  to `InkEraser` to enable the ink eraser. Refer to the following code.
 
 {% tabs %}
 {% highlight xaml %}
@@ -779,7 +779,7 @@ pdfViewer.AnnotationMode = AnnotationMode.InkEraser;
 
 ### Disabling ink eraser
 
-Setting the AnnotationMode property of the PDF viewer to None disables the ink eraser.
+Setting the `AnnotationMode` property of the PDF viewer to `None` disables the ink eraser.
 
 {% tabs %}
 {% highlight xaml %}
@@ -795,7 +795,7 @@ pdfViewer.AnnotationMode = AnnotationMode.None;
 {% endtabs %}
 
 ### Detecting the ink erase operation
-The event InkEdited will be raised when you erase an ink annotation. The ink points before the erase operation and the modified ink points after the erase operation can be obtained from the event arguments.
+The event `InkEdited` will be raised when you erase an ink annotation. The ink points before the erase operation and the modified ink points after the erase operation can be obtained from the event arguments.
 
 {% tabs %}
 {% highlight xaml %}
@@ -816,5 +816,5 @@ private void PdfViewer_InkEdited (object sender, InkEditedEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-After erasing the ink annotation, if its size or position is changed from the values before the erasing operation, the AnnotationMovedOrResized event will be raised. The old bounds before the erase operation and the new bounds after the eraser operation can be obtained from the event arguments. Refer this [section](https://help.syncfusion.com/xamarin/pdf-viewer/ink#how-to-identify-whether-the-ink-annotation-is-moved-or-resized)
+After erasing the ink annotation, if its size or position is changed from the values before the erasing operation, the `AnnotationMovedOrResized` event will be raised. The old bounds before the erase operation and the new bounds after the eraser operation can be obtained from the event arguments. Refer this [section](https://help.syncfusion.com/xamarin/pdf-viewer/ink#how-to-identify-whether-the-ink-annotation-is-moved-or-resized)
 

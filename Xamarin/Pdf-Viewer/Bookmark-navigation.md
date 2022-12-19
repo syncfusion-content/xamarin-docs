@@ -199,7 +199,7 @@ pdfViewerControl.GoToBookmark(customBookmark);
 {% endtabs %}
 
 ### Rename custom bookmarks using the bookmark context menu
-Tap the context menu button on the custom bookmark to be edited and choose "Rename" and enter the desired name. 
+Tap the context menu button on the custom bookmark to be edited and choose **Rename** and enter the desired name. 
 
 ![Bookmark context menu](pdfviewer_images/BookmarkContextMenu.png)
  
@@ -216,7 +216,7 @@ pdfViewerControl.CustomBookmarks[i].Name = "New custom bookmark name";
 {% endtabs %}
 
 ### Remove custom bookmarks using the bookmark context menu
-Tap the context menu button on the custom bookmark to be removed and tap “Delete”.
+Tap the context menu button on the custom bookmark to be removed and tap **Delete**.
 
 ### Remove custom bookmarks programmatically
 Custom bookmarks can be removed from the `CustomBookmarks` collection using the `Remove` method. Refer to the below code snippet.

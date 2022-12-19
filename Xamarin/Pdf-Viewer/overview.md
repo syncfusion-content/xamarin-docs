@@ -26,10 +26,10 @@ The following list shows the key features available in PDF Viewer control.
 * **Text selection**: Select the text presented in a PDF document.
 * **Text search**: Search for text and instantly navigate all its occurrences in a PDF document.
 * **Page navigation**: Navigate to the pages instantly.
-* **Bookmark navigation**: Bookmarks saved in a document are loaded and make easy navigation. This feature helps navigate between the topics bookmarked already within a PDF document.
+* **Bookmark navigation**: Navigate to bookmarks already present in a PDF document. Add, edit, remove, save and navigate to custom bookmarks added dynamically. 
 * **Document link navigation**: Navigate to the topic or position by tapping the document link annotation of the topics in the table of contents in a PDF document.
 * **Hyperlink navigation**: Detects hyperlinks, and tapping on the hyperlink will open the URL in a browser.
-* **Annotations**: Review and annotate a PDF document using the various annotations, such as highlight, underline, strikethrough, line, arrow, rectangle, circle, polygon, cloud, ink, and free text. 
+* **Annotations**: Review and annotate a PDF document using the various annotations, such as highlight, underline, strikethrough, squiggly, line, arrow, rectangle, circle, polygon, cloud, polyline ink, ink eraser, custom stamp and free text. 
 * **Custom views**: Add any form of Xamarin.Forms View like Button, Entry, Label, Image, and more anywhere in the pages as custom views.
 * **Handwritten signature**: Sign the documents quickly by adding your handwritten signature.
 * **Form filling**: Add and modify the existing forms fields content in a PDF document.

@@ -11,17 +11,17 @@ documentation: ug
 
 ## Apply palette for Chart
 
-[`ColorModel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_ColorModel) property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) is used to define the colors for each series. [`ColorModel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorModel.html) contains the following color palettes.
+[`ColorModel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_ColorModel) property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) is used to define the colors for each series. [`ColorModel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorModel.html#properties) contains the following color palettes.
 
 **Predefined Palettes**
 
-Currently, Chart supports only [`Metro`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorPalette.html) palette and it is the default palette for [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). The following screenshot shows the default appearance of multiple series.
+Currently, Chart supports only [`Metro`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorPalette.html#Syncfusion_SfChart_XForms_ChartColorPalette_Metro) palette and it is the default palette for [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). The following screenshot shows the default appearance of multiple series.
 
 ![Predefined palettes support in Xamarin.Forms Chart](appearance_images/appearance_img1.png)
 
 **Custom Palette**
 
-Chart will use the colors from [`CustomBrushes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorModel.html#Syncfusion_SfChart_XForms_ChartColorModel_CustomBrushes) property if [`ColorModel.Palette`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorModel.html#Syncfusion_SfChart_XForms_ChartColorModel_Palette) is set to [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorPalette.html).
+Chart will use the colors from [`CustomBrushes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorModel.html#Syncfusion_SfChart_XForms_ChartColorModel_CustomBrushes) property if [`ColorModel.Palette`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorModel.html#Syncfusion_SfChart_XForms_ChartColorModel_Palette) is set to [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorPalette.html#Syncfusion_SfChart_XForms_ChartColorPalette_Custom).
 
 Following code illustrates how to set the custom colors.
 
@@ -74,7 +74,7 @@ SfChart chart = new SfChart()
 
 **None Palette**
 
-[`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorPalette.html) palette will not apply any color to the series. So in order to define the color for any series, you can use the [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Color) property or the [`ColorModel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_ColorModel) property of [`ChartSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html) (The ColorModel of Series will be explained later in this document).
+[`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorPalette.html#Syncfusion_SfChart_XForms_ChartColorPalette_None) palette will not apply any color to the series. So in order to define the color for any series, you can use the [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Color) property or the [`ColorModel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_ColorModel) property of [`ChartSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html) (The ColorModel of Series will be explained later in this document).
 
 ## Apply palette for Series
 
@@ -82,7 +82,7 @@ SfChart chart = new SfChart()
 
 **Predefined Palettes**
 
-Currently, Chart supports only [`Metro`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorPalette.html) palette.
+Currently, Chart supports only [`Metro`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorPalette.html#Syncfusion_SfChart_XForms_ChartColorPalette_Metro) palette.
 
 {% tabs %} 
 
@@ -132,7 +132,7 @@ N> The single line segment rendered based on the two data points. Since, each co
 
 **Custom Palette**
 
-Series will use the colors from [`CustomBrushes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorModel.html#Syncfusion_SfChart_XForms_ChartColorModel_CustomBrushes) property if the [`ColorModel.Palette`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorModel.html#Syncfusion_SfChart_XForms_ChartColorModel_Palette) property of series is set to [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorPalette.html).
+Series will use the colors from [`CustomBrushes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorModel.html#Syncfusion_SfChart_XForms_ChartColorModel_CustomBrushes) property if the [`ColorModel.Palette`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorModel.html#Syncfusion_SfChart_XForms_ChartColorModel_Palette) property of series is set to [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorPalette.html#Syncfusion_SfChart_XForms_ChartColorPalette_Custom).
 
 Following code illustrates how to set the custom colors.
 
@@ -201,11 +201,11 @@ SfChart chart = new SfChart()
 
 **None Palette**
 
-[`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorPalette.html) palette will not apply any color to the data points. So in order to define the color for the data points, you can use the [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_ColorProperty) property of [`ChartSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html).
+[`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorPalette.html#Syncfusion_SfChart_XForms_ChartColorPalette_None) palette will not apply any color to the data points. So in order to define the color for the data points, you can use the [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Color) property of [`ChartSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html).
 
 ## Gradient Colors
 
-The [`CustomGradientColors`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorModel.html#Syncfusion_SfChart_XForms_ChartColorModel_CustomGradientColors) property of [`ChartColorModel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorModel.html) is used to define the gradient colors, the colors from this property is used for series or chart if the [`Palette`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorModel.html#Syncfusion_SfChart_XForms_ChartColorModel_Palette) property of ChartColorModel is [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorPalette.html) and the [`CustomBrushes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorModel.html#Syncfusion_SfChart_XForms_ChartColorModel_CustomBrushes) property is null. The following properties are used to define the gradient color for the chart.
+The [`CustomGradientColors`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorModel.html#Syncfusion_SfChart_XForms_ChartColorModel_CustomGradientColors) property of [`ChartColorModel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorModel.html) is used to define the gradient colors, the colors from this property is used for series or chart if the [`Palette`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorModel.html#Syncfusion_SfChart_XForms_ChartColorModel_Palette) property of ChartColorModel is [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorPalette.html#Syncfusion_SfChart_XForms_ChartColorPalette_Custom) and the [`CustomBrushes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorModel.html#Syncfusion_SfChart_XForms_ChartColorModel_CustomBrushes) property is null. The following properties are used to define the gradient color for the chart.
 
 The [`StartPoint`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartGradientColor.html#Syncfusion_SfChart_XForms_ChartGradientColor_StartPoint) and [`EndPoint`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartGradientColor.html#Syncfusion_SfChart_XForms_ChartGradientColor_EndPoint)  properties of [`ChartGradientColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartGradientColor.html) is used to configure the direction of gradient color, [`GradientStops`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartGradientColor.html#Syncfusion_SfChart_XForms_ChartGradientColor_GradientStops)  property is used to set the color based on the offset.
 

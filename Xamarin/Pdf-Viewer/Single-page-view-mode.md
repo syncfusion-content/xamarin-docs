@@ -96,7 +96,7 @@ N>This API is only applicable for desktop device in UWP platform. Changing the v
 
 ## How to retain the zoom percentage in page by page mode?
 
-To persist the zoom percentage in every page while navigating in the page-by-page view mode, set the `PersistZoomOnPageChange` property to true. Its default value is false. 
+To persist the zoom percentage on every page while navigating in the page-by-page view mode, set the `PersistZoomOnPageChange` property to true. Its default value is false. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -111,4 +111,4 @@ pdfViewerControl.PersistZoomOnPageChange = true;
 {% endhighlight %}
 {% endtabs %}
 
-N>This property is applicable only for the page-by-page view mode. Changing the value of this property does not have any effect in the continuous page view mode.
+N>This property is applicable only for the page-by-page view mode. Changing the value of this property does not have any effect on the continuous page view mode.

@@ -92,7 +92,7 @@ pdfViewerControl.BookmarkPaneVisible = true;
 
 ## Getting the bookmarks from the PDF
 
-The bookmarks existing in the PDF document can be obtained from the `Bookmarks` property. The `Bookmarks` collection is not supposed to be modified by adding new bookmarks or removing existing bookmarks. Changes made on the `Bookmarks` collection will not be reflected in the bookmark pane and in the PDF document.  
+The bookmarks existing in the PDF document can be obtained from the `Bookmarks` property. The `Bookmarks` collection is not supposed to be modified by adding new bookmarks or removing existing bookmarks. Changes made to the `Bookmarks` collection will not be reflected in the bookmark pane and in the PDF document.
 
 {% tabs %}
 {% highlight c# %}
@@ -149,7 +149,7 @@ private void PdfViewerControl_BookmarkNavigationOccurred(object sender, Syncfusi
 
 ## Custom bookmarks
 
-PDF viewer allows you to bookmark the current page dynamically. To bookmark a page, navigate to the page and bookmark it. These custom bookmarks can be saved with the document, but they will be only visible in the Syncfusion PDF viewer. They will not be visible in other 3rd party PDF viewer applications.
+PDF viewer allows you to bookmark the current page dynamically. To bookmark a page, navigate to the page and bookmark it. These custom bookmarks can be saved with the document, but they will only be visible in the Syncfusion PDF viewer. They will not be visible in other 3rd party PDF viewer applications.
 
 The custom bookmarks can be obtained using the `CustomBookmarks` property. 
 
@@ -219,13 +219,16 @@ pdfViewerControl.CustomBookmarks[i].Name = "New custom bookmark name";
 Tap the context menu button on the custom bookmark to be removed and tap “Delete”.
 
 ### Remove custom bookmarks programmatically
-Custom bookmarks can be removed from the `CustomBookmarks` collection. Refer to the below code snippet.
+Custom bookmarks can be removed from the `CustomBookmarks` collection using the `Remove` method. Refer to the below code snippet.
 
 {% tabs %}
 {% highlight c# %}
 
+//Get the custom bookmark at the ith index.
+CustomBookmark customBookmark = pdfViewerControl.CustomBookmarks[i];
+
 //Removes the custom bookmark at the ith index.
-pdfViewerControl.CustomBookmarks.RemoveAt(i);
+pdfViewerControl.CustomBookmarks.Remove(customBookmark);
 
 {% endhighlight %}
 {% endtabs %}

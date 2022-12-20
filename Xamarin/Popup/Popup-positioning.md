@@ -449,7 +449,7 @@ public class ViewModel: INotifyPropertyChanged
 
     public event PropertyChangedEventHandler PropertyChanged;
 }
-{% endhiglight %}
+{% endhighlight %}
 
 Executing the above codes renders the following output in Android device respectively.
 

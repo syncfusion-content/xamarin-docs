@@ -58,7 +58,7 @@ private void PdfViewerControl_PageViewModeChanged1(object sender, PageViewModeCh
 {% endhighlight %}
 {% endtabs %}
 
-## How to disable the page navigation by flipping in a single page view mode
+## How to disable the page navigation by flipping in a single page view mode?
 
 The page navigation by flipping the pages in a single page view mode can be enabled or disabled by setting the `IsPageFlipEnabled` API to `true` or `false` respectively.
 
@@ -75,7 +75,7 @@ pdfViewer.IsPageFlipEnabled= false;
 
 N>You can refer to our [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.
 
-## How to show and hide the page navigation buttons in the page by page view mode on desktop
+## How to show and hide the page navigation buttons in the page by page view mode on desktop?
 
 By default in the Xamarin.Forms.UWP platform, buttons to navigate to the next page and the previous page in the page by page view mode will be visible. It can be shown or hidden by setting the [ShowPageFlipNavigationArrows](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_ShowPageFlipNavigationArrows) property of PDF Viewer to `true` and `false` respectively.
 
@@ -93,3 +93,22 @@ pdfViewerControl.ShowPageFlipNavigationArrows = false;
 {% endtabs %}
 
 N>This API is only applicable for desktop device in UWP platform. Changing the value of this API does not have any effect on Android and iOS platforms.
+
+## How to retain the zoom percentage in page by page mode?
+
+To persist the zoom percentage on every page while navigating in the page-by-page view mode, set the `PersistZoomOnPageChange` property to true. Its default value is false. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfPdfViewer x:Name="pdfViewerControl" PersistZoomOnPageChange="True"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+pdfViewerControl.PersistZoomOnPageChange = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+N>This property is applicable only for the page-by-page view mode. Changing the value of this property does not have any effect on the continuous page view mode.

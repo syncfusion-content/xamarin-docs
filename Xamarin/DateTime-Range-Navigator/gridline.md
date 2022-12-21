@@ -14,7 +14,7 @@ The [`MinorScaleStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeN
 * [`ShowGridLines`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScaleStyle.html#Syncfusion_RangeNavigator_XForms_ScaleStyle_ShowGridLines) – used to set the visibility of grid lines.
 * [`GridLineWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScaleStyle.html#Syncfusion_RangeNavigator_XForms_ScaleStyle_GridLineWidth) – used to set the width for grid lines.
 * [`GridLineColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScaleStyle.html#Syncfusion_RangeNavigator_XForms_ScaleStyle_GridLineColor) – used to set the color for grid lines.
-* [`GridLineDashes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScaleStyle.html#Syncfusion_RangeNavigator_XForms_ScaleStyle_GridLineDashArray) – used to set dashes for grid lines.
+* [`GridLineDashArray`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScaleStyle.html#Syncfusion_RangeNavigator_XForms_ScaleStyle_GridLineDashArray) – used to set dashes for grid lines.
 
 
 {% tabs %}

@@ -164,6 +164,8 @@ The known Framework issue in UWP platform is the custom controls will not render
 
 // In App.xaml.cs
 
+using Syncfusion.XForms.UWP.PopupLayout;
+
 protected override void OnLaunched(LaunchActivatedEventArgs e)
 {
     …

@@ -214,9 +214,12 @@ The enum `Word Wrap` has two constants: Normal, BreakWord. The default value is 
 ### Normal 
 Specifies to break words only at allowed break points.
 
+![Word Wrap Normal Mode support](SfRichTextEditor_Images/NormalMode.png)
+
 ### BreakWord 
 Specifies the unbreakable words to be broken
 
+![Word Wrap Break Mode support](SfRichTextEditor_Images/BreakMode.png)
 
 The following code example explains how to set a word wrap in the Rich Text Editor. 
 

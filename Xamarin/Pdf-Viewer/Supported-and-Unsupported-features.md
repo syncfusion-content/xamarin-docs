@@ -437,13 +437,13 @@ The following table shows the various features available in the PDF Viewer and t
 			Squiggly line annotation<br/>
 		</td>
 		<td>
-			Yes**<br/>
+			Yes<br/>
 		</td>
 		<td>
-			Yes**<br/>
+			Yes<br/>
 		</td>
 		<td>
-			Yes**<br/>
+			Yes<br/>
 		</td>
 		<td>
 			No<br/>
@@ -577,13 +577,13 @@ The following table shows the various features available in the PDF Viewer and t
 			Polyline shape annotation<br/>
 		</td>
 		<td>
-			No<br/>
+			Yes<br/>
 		</td>
 		<td>
-			No<br/>
+			Yes<br/>
 		</td>
 		<td>
-			No<br/>
+			Yes<br/>
 		</td>
 		<td>
 			No<br/>
@@ -637,13 +637,13 @@ The following table shows the various features available in the PDF Viewer and t
 			Sticky notes annotation<br/>
 		</td>
 		<td>
-			Yes***<br/>
+			Yes<br/>
 		</td>
 		<td>
-			Yes***<br/>
+			Yes<br/>
 		</td>
 		<td>
-			Yes***<br/>
+			Yes<br/>
 		</td>
 		<td>
 			No<br/>
@@ -1097,13 +1097,13 @@ The following table shows the various features available in the PDF Viewer and t
 			Right-To-Left(RTL)<br/>
 		</td>
 		<td>
-			No<br/>
+			Yes<br/>
 		</td>
 		<td>
-			No<br/>
+			Yes<br/>
 		</td>
 		<td>
-			No<br/>
+			Yes<br/>
 		</td>
 		<td>
 			No<br/>
@@ -1117,13 +1117,13 @@ The following table shows the various features available in the PDF Viewer and t
 			Ink Eraser tool<br/>
 		</td>
 		<td>
-			No<br/>
+			Yes<br/>
 		</td>
 		<td>
-			No<br/>
+			Yes<br/>
 		</td>
 		<td>
-			No<br/>
+			Yes<br/>
 		</td>
 		<td>
 			No<br/>
@@ -1235,7 +1235,3 @@ The following table shows the various features available in the PDF Viewer and t
 <table>
 
 *Mouse panning is not supported in XamarinForms.UWP platform.<br/>
-<br/>
-**To avoid data loss, the sticky notes annotation will be rendered as a free-text annotation while importing or loading a document in `SfPdfViewer` and will be preserved as a sticky notes annotation while saving and exporting. Support to add, render, and edit sticky notes annotation through UI or programmatically is not provided yet.<br/>
-<br/>
-***To avoid data loss, the squiggly line annotation will be rendered as an underline text annotation while importing or loading a document in `SfPdfViewer` and will be preserved as a squiggly line annotation while saving and exporting. Support to add, render, and edit squiggly line annotation through UI or programmatically is not provided yet.<br/>

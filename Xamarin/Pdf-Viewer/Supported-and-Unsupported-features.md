@@ -1097,13 +1097,13 @@ The following table shows the various features available in the PDF Viewer and t
 			Right-To-Left(RTL)<br/>
 		</td>
 		<td>
-			No<br/>
+			Yes<br/>
 		</td>
 		<td>
-			No<br/>
+			Yes<br/>
 		</td>
 		<td>
-			No<br/>
+			Yes<br/>
 		</td>
 		<td>
 			No<br/>
@@ -1117,13 +1117,13 @@ The following table shows the various features available in the PDF Viewer and t
 			Ink Eraser tool<br/>
 		</td>
 		<td>
-			No<br/>
+			Yes<br/>
 		</td>
 		<td>
-			No<br/>
+			Yes<br/>
 		</td>
 		<td>
-			No<br/>
+			Yes<br/>
 		</td>
 		<td>
 			No<br/>

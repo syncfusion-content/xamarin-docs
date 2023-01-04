@@ -118,11 +118,11 @@ The completion of the text selection action would trigger TextSelectionCompleted
 private void PdfViewerControl_TextSelectionCompleted(object sender, TextSelectionCompletedEventArgs args)
 {
 	//The number of the page in which the selection is performed is acquired.
-    int pageNumber = args.PageNumber;		
+	int pageNumber = args.PageNumber;
 	//The bounds of the page in which the selection is performed is acquired.
-    Rectangle pageBounds= args.PageBounds;	
+	Rectangle pageBounds= args.PageBounds;
 	//The region of the text being selected is acquired.
-    Rectangle selectedRegion= args.SelectedRegion;
+	Rectangle selectedRegion= args.SelectedRegion;
 }
 
 {% endhighlight %}

@@ -50,8 +50,7 @@ InputFileStream="{Binding PdfDocumentStream}"/>
 
 public MainPage()
 {
-InitializeComponent();
-
+    InitializeComponent();
 }
 
 private void PdfViewerControl_LongPressed(object sender, Syncfusion.SfPdfViewer.XForms.TouchInteractionEventArgs e)

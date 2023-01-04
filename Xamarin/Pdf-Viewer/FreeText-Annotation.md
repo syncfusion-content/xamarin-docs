@@ -296,7 +296,7 @@ private void PdfViewer_FreeTextAnnotationMovedOrResized(object sender, FreeTextA
      //Retrieve the old bounds of the annotation
      Rectangle oldBounds = args.OldBounds;
      //Retrieve the new bounds of the annotation
-     Rectangle newBounds = args.NewBounds;	 
+     Rectangle newBounds = args.NewBounds;
 	 //Retrieve the page number in which the free text is
      int pageNumber = args.PageNumber;
 }

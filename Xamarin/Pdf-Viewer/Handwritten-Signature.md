@@ -178,10 +178,9 @@ pdfViewer.InkAdded += pdfViewer_InkAdded;
 
 private void pdfViewer_InkAdded(object sender, InkAddedEventArgs args)
 {
-     HandwrittenSignature handwrittenSignature = sender as HandwrittenSignature;
-     System.Drawing.Point  position = new System.Drawing.Point(200,200);
-	 pdfViewer.AddHandwrittenSignature(handwrittenSignature, position, 2);
-
+	HandwrittenSignature handwrittenSignature = sender as HandwrittenSignature;
+	System.Drawing.Point  position = new System.Drawing.Point(200,200);
+	pdfViewer.AddHandwrittenSignature(handwrittenSignature, position, 2);	 
 }
 
 {% endhighlight %}

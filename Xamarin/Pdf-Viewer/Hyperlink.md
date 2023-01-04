@@ -52,7 +52,6 @@ You can acquire the details of the hyperlink that is tapped in the PDF viewer co
 
             //Gets the bounds of the hyperlink is being clicked.
             Rectangle hyperlinkBound = args.Bounds;
-
         }
 
 

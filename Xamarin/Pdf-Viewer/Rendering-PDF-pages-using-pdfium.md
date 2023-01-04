@@ -78,7 +78,7 @@ internal class CustomPdfRenderer : ICustomPdfRenderer
       {
          throw new System.NullReferenceException("object reference is not set to an instance: inputStream");
       }
-	   //Initializes the PdfiumCore instance.
+      //Initializes the PdfiumCore instance.
       m_pdfiumCore = new PdfiumCore(context);
       byte[] byteArray = ReadBytes(inputStream);
       
@@ -88,19 +88,18 @@ internal class CustomPdfRenderer : ICustomPdfRenderer
       }         
       //Creates the PdfDocument instance from the PDF byte array.
       m_pdfDocument = m_pdfiumCore.NewDocument(byteArray);
-     
-	   if (m_pdfDocument == null)
+
+      if (m_pdfDocument == null)
       {
          throw new System.NullReferenceException("object reference is not set to an instance: m_pdfDocument");
       }
-  
       if (m_bitmapConfig == null)
       {
          m_bitmapConfig = Bitmap.Config.Rgb565;
       }
       //Gets the total number of pages in the PDF document.
-      m_pageCount = m_pdfiumCore.GetPageCount(m_pdfDocument);	    
-	}
+      m_pageCount = m_pdfiumCore.GetPageCount(m_pdfDocument);
+   }
      
    /// <summary>
    /// Converts the stream to byte array to render the PDF document using Pdfium renderer.
@@ -138,7 +137,6 @@ internal class CustomPdfRenderer : ICustomPdfRenderer
       {
          throw new System.NullReferenceException("object reference is not set to an instance: bitmap");
       }
-			
       if (m_pdfiumCore == null)
       {
          throw new System.NullReferenceException("object reference is not set to an instance: m_pdfiumCore");
@@ -205,8 +203,7 @@ internal class CustomPdfRenderer : ICustomPdfRenderer
       {
          throw new System.NullReferenceException("object reference is not set to an instance: bitmap");
       }
-        
-		if (m_pdfiumCore == null)
+      if (m_pdfiumCore == null)
       {
          throw new System.NullReferenceException("object reference is not set to an instance: m_pdfiumCore");
       }

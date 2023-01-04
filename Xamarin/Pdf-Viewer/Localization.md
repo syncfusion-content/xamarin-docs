@@ -436,7 +436,6 @@ public class Localize : ILocalize
                 // add more application-specific cases here (if required)
                 // ONLY use cultures that have been tested and known to work
         }
-
         return netLanguage;
     }
 }

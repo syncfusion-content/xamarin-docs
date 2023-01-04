@@ -303,7 +303,7 @@ The following code example illustrates removing a selected popup from the PDF do
 {% highlight xaml %}
 
 <syncfusion:SfPdfViewer x:Name="pdfViewer" PopupAnnotationSelected="PdfViewer_PopupAnnotationSelected"/> 
-<Button x:Name="deletePopupAnnotationButton" Grid.Row="1" Clicked="deletePopupAnnotationButton_Clicked" />
+<Button x:Name="deletePopupAnnotationButton" Grid.Row="1" Clicked="deletePopupAnnotationButton_Clicked"/>
 
 {% endhighlight %}
 {% highlight c# %}

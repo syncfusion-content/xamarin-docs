@@ -88,8 +88,8 @@ internal class CustomPdfRenderer : ICustomPdfRenderer
       }         
       //Creates the PdfDocument instance from the PDF byte array.
       m_pdfDocument = m_pdfiumCore.NewDocument(byteArray);
-     
-	   if (m_pdfDocument == null)
+
+      if (m_pdfDocument == null)
       {
          throw new System.NullReferenceException("object reference is not set to an instance: m_pdfDocument");
       }

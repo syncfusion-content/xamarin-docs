@@ -236,7 +236,7 @@ namespace GettingStarted
         {
             base.OnAppearing();
             fileStream = typeof(App).GetTypeInfo().Assembly.GetManifestResourceStream("GettingStarted.Assets.GIS Succinctly.pdf");
-		    //Load the PDF
+            //Load the PDF
             pdfViewerControl.LoadDocument(fileStream);
         }
     }
@@ -381,7 +381,7 @@ The PDF Viewer also allows you to save and return the PDF document with the chan
 Task<Stream> pdfDocumentStream = pdfViewerControl.SaveDocumentAsync();
 
 {% endhighlight %}
-{% endtabs %}3
+{% endtabs %}
 
 ## How to dispose the managed resources of SfPdfViewer
 

@@ -48,7 +48,6 @@ When the `PageViewMode` property changes, the `PageViewModeChanged` event is rai
 {% highlight c# %}
 
 pdfViewerControl.PageViewModeChanged += PdfViewerControl_PageViewModeChanged1;
-
 private void PdfViewerControl_PageViewModeChanged1(object sender, PageViewModeChangedEventArgs e)
 {
     PageViewMode oldViewMode = e.PreviousPageViewMode;

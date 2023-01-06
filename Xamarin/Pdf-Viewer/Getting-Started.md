@@ -44,19 +44,19 @@ Location: {Installed location}/{version}/Xamarin/lib
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/></td>
+<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/>Syncfusion.SfTabView.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.Android.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.Android.dll<br/>Syncfusion.SfBusyIndicator.Android.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/> Syncfusion.SfRangeSlider.XForms.Android.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/>Syncfusion.SfProgressBar.XForms.Android.dll<br/></td>
+<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.Android.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.Android.dll<br/>Syncfusion.SfBusyIndicator.Android.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/> Syncfusion.SfRangeSlider.XForms.Android.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/>Syncfusion.SfProgressBar.XForms.Android.dll<br/>Syncfusion.SfTabView.XForms.dll<br/>Syncfusion.SfTabView.XForms.Android.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.iOS.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.iOS.dll<br/>Syncfusion.SfBusyIndicator.iOS.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/>Syncfusion.SfRangeSlider.XForms.iOS.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/>Syncfusion.SfProgressBar.XForms.iOS.dll<br/></td>
+<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.iOS.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.iOS.dll<br/>Syncfusion.SfBusyIndicator.iOS.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/>Syncfusion.SfRangeSlider.XForms.iOS.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/>Syncfusion.SfProgressBar.XForms.iOS.dll<br/>Syncfusion.SfTabView.XForms.dll<br/>Syncfusion.SfTabView.XForms.iOS.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>
-<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.UWP.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/>Syncfusion.SfRangeSlider.XForms.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/>Syncfusion.SfProgressBar.XForms.UWP.dll<br/></td>
+<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.UWP.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/>Syncfusion.SfRangeSlider.XForms.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/>Syncfusion.SfProgressBar.XForms.UWP.dll<br/>Syncfusion.SfTabView.XForms.dll<br/>Syncfusion.SfTabView.XForms.UWP.dll<br/></td>
 </tr>
 </table>
 
@@ -70,7 +70,7 @@ Create a new cross platform application for Xamarin.Forms.Portable in the Visual
 
 N> If you are adding the references from toolbox, this step is not needed.
 
-An additional step is required to render the SfPdfViewer control in `iOS` project. You need to call the `Syncfusion.SfPdfViewer.XForms.iOS.SfPdfDocumentViewRenderer.Init()` and `Syncfusion.SfRangeSlider.XForms.iOS.SfRangeSliderRenderer.Init();` in the `FinishedLaunching` overridden method of the `AppDelegate` class after the Xamarin.Forms Framework has been initialized and before the `LoadApplication` is called, as demonstrated in the following code example.
+An additional step is required to render the SfPdfViewer control in `iOS` project. You need to call the `Syncfusion.SfPdfViewer.XForms.iOS.SfPdfDocumentViewRenderer.Init()`, `Syncfusion.SfRangeSlider.XForms.iOS.SfRangeSliderRenderer.Init()` and `Syncfusion.XForms.iOS.TabView.SfTabViewRenderer.Init()` methods in the `FinishedLaunching` overridden method of the `AppDelegate` class after the Xamarin.Forms Framework has been initialized and before the `LoadApplication` is called, as demonstrated in the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -80,6 +80,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
     global::Xamarin.Forms.Forms.Init();
     Syncfusion.SfPdfViewer.XForms.iOS.SfPdfDocumentViewRenderer.Init();
     Syncfusion.SfRangeSlider.XForms.iOS.SfRangeSliderRenderer.Init();
+    Syncfusion.XForms.iOS.TabView.SfTabViewRenderer.Init();
     LoadApplication(new App());
     return base.FinishedLaunching(app, options);
 }

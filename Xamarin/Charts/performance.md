@@ -11,7 +11,7 @@ documentation: ug
 
 Following are the key points that can be used to boost the performance of the chart when there is a need to plot high volume data.
 
-* When there are large number of points to load in line series, you can use [`FastLineSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.FastLineSeries.html#) series instead of [`LineSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LineSeries.html#). To renderer a fast line chart, create an instance of [`FastLineSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.FastLineSeries.html#) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeriesCollection.html#) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#).
+* When there are large number of points to load in line series, you can use [`FastLineSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.FastLineSeries.html#) series instead of [`LineSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LineSeries.html#). To renderer a fast line chart, create an instance of [`FastLineSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.FastLineSeries.html#) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#).
 
 {% tabs %} 
 

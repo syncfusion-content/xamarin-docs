@@ -214,9 +214,12 @@ The enum `Word Wrap` has two constants: Normal, BreakWord. The default value is 
 ### Normal 
 Specifies to break words only at allowed break points.
 
+![Word Wrap Normal Mode support](SfRichTextEditor_Images/NormalMode.png)
+
 ### BreakWord 
 Specifies the unbreakable words to be broken
 
+![Word Wrap Break Mode support](SfRichTextEditor_Images/BreakMode.png)
 
 The following code example explains how to set a word wrap in the Rich Text Editor. 
 
@@ -287,4 +290,52 @@ RichTextEditor. StyleSheetType= StyleSheetType.Internal;
 
 {% endtabs %}
 
-N>It applies to UWP only for users in China and Korea locations. It is not applicable in android an iOS ,Since android and iOS, we can be able to load the WebView resources through an external style sheet.
+N>It applies only to UWP users in China and Korea locations. It is not applicable in android an iOS ,Since android and iOS, can load the WebView resources using an external style sheet.
+
+## Enable or disable system keyboard
+
+The RichTextEditor supports restricting the system keyborad visibility while focusing on the RichTextEditor control. The default value is true.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<richtexteditor:SfRichTextEditor x:Name="RichTextEditor" EnableSystemKeyboard="True"/>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+SfRichTextEditor RichTextEditor = new SfRichTextEditor();
+            
+RichTextEditor.EnableSystemKeyboard = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> It applies to android and iOS only and not supported in UWP.
+
+## Configure the HTML tag for enter key
+
+The RichTextEditor supports preserving the dictation text after its comes with a new paragraph and a new line using `div` Html tag.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<richtexteditor:SfRichTextEditor x:Name="RichTextEditor" EnterKey="Div"/>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+SfRichTextEditor RichTextEditor = new SfRichTextEditor();
+            
+RichTextEditor.EnterKey = EnterKey.Div;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> This property works when loading the control only. It applies to iOS only and not supported in Android and UWP.

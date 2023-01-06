@@ -18,7 +18,7 @@ The two ways to highlight a text in the PDF document are:
 1. By selecting the text and highlight option
 
 	* Select the text in the PDF document.
-    * Select “Highlight” option in the context menu that appears.
+   * Select “Highlight” option in the context menu that appears.
 	
 2. Enabling the highlight mode and selecting the text
 
@@ -89,7 +89,7 @@ The two ways to underline a text in the PDF document are:
 1. By selecting the text and underline option
 
 	* Select the text in the PDF document.
-    * Select “Underline” option in the context menu that appears.
+   * Select “Underline” option in the context menu that appears.
 	
 2. Enabling the underline mode and selecting the text
 
@@ -161,7 +161,7 @@ The two ways to underline a text with a squiggly style in the PDF document are:
 1. By selecting the text and squiggly option
 
 	* Select the text in the PDF document.
-    * Select “Squiggly” option in the context menu that appears.
+   * Select “Squiggly” option in the context menu that appears.
 	
 2. Enabling the squiggly mode and selecting the text
 
@@ -218,8 +218,7 @@ The following code sample illustrates the same.
 {% highlight c# %}
 
 //Creates the text markup annotation             
-TextMarkupAnnotation textMarkupAnnotation = new TextMarkupAnnotation(TextMarkupAnnotationType.Squiggly, 2, 20, 200);        
-   
+TextMarkupAnnotation textMarkupAnnotation = new TextMarkupAnnotation(TextMarkupAnnotationType.Squiggly, 2, 20, 200);         
 //Add the text markup annotation to the specified page
 pdfViewerControl.AddAnnotation(textMarkupAnnotation);
 
@@ -233,7 +232,7 @@ The two ways to strikethrough a text in the PDF document are:
 1. By selecting the text and strikethrough option
 
 	* Select the text in the PDF document.
-    * Select “Strikethrough” option in the context menu that appears.
+   * Select “Strikethrough” option in the context menu that appears.
 	
 2. Enabling the strikethrough mode and selecting the text
 
@@ -290,7 +289,6 @@ The following code sample illustrates the same.
 
 //Creates the text markup annotation             
 TextMarkupAnnotation textMarkupAnnotation = new TextMarkupAnnotation(TextMarkupAnnotationType.Strikethrough, 2, 20, 200);        
-   
 //Add the text markup annotation to the specified page
 pdfViewerControl.AddAnnotation(textMarkupAnnotation);
 
@@ -382,6 +380,7 @@ private void clearAllAnnotationsButton_Clicked(object sender, EventArgs e)
 {
    pdfViewerControl.ClearAllAnnotations(pageNumber);
 }
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -472,7 +471,6 @@ Refer to the following code sample to perform undo and redo operations:
 {% highlight xaml %}
 
 <Button x:Name="undoButton" BackgroundColor="Transparent" Image="UndoIcon.png" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding PerformUndoCommand ,Source={x:Reference Name=pdfViewerControl}}"/>
-
 <Button x:Name="redoButton" BackgroundColor="Transparent" Image="RedoIcon.png" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding PerformRedoCommand ,Source={x:Reference Name=pdfViewerControl}}"/>
 
 {% endhighlight %}
@@ -520,13 +518,10 @@ To lock or unlock all the text markup annotation, set the `IsLocked` API to `tru
 
 //Disable the text markup highlight annotation interaction such as remove and attributes changes.
 pdfViewerControl.AnnotationSettings.TextMarkup.Highlight.IsLocked = true;
-
 //Disable the text markup underline annotation interaction such as remove and attributes changes.
 pdfViewerControl.AnnotationSettings.TextMarkup.Underline.IsLocked = true;
-
 //Disable the text markup strikethrough annotation interaction such as remove and attributes changes.
 pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.IsLocked = true;
-
 //Disable the text markup squiggly annotation interaction such as remove and attributes changes.
 pdfViewerControl.AnnotationSettings.TextMarkup.Squiggly.IsLocked = true;
 
@@ -557,13 +552,10 @@ To enable or disable the text markup annotation selection, set the `Constraints`
 
 //Disable the selection of text markup highlight annotation 
 pdfViewerControl.AnnotationSettings.TextMarkup.Highlight.Constraints = ~AnnotationConstraints.Selectable;
-
 //Disable the selection of text markup underline annotation
 pdfViewerControl.AnnotationSettings.TextMarkup.Underline.Constraints = ~AnnotationConstraints.Selectable;
-
 //Disable the selection of text markup strikethrough annotation
 pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.Constraints = ~AnnotationConstraints.Selectable;
-
 //Disable the selection of text markup squiggly annotation
 pdfViewerControl.AnnotationSettings.TextMarkup.Squiggly.Constraints = ~AnnotationConstraints.Selectable;
 
@@ -595,7 +587,7 @@ The following code sample explains modifying the name of the text markup annotat
 {% highlight c# %}
 private void PdfViewerControl_TextMarkupAdded(object sender, TextMarkupAddedEventArgs args)
 {
-(sender as TextMarkupAnnotation).Name = "TextMarkupAnnotation1";
+   (sender as TextMarkupAnnotation).Name = "TextMarkupAnnotation1";
 }
 {% endhighlight %}
 {% endtabs %}

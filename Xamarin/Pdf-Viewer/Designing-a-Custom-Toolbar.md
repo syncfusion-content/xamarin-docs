@@ -47,8 +47,7 @@ The MainPage.xaml would be as mentioned below.
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GettingStarted"
              x:Class="GettingStarted.MainPage"
-             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
-             >
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms">
     <ContentPage.BindingContext>
         <local:PdfViewerViewModel></local:PdfViewerViewModel>
     </ContentPage.BindingContext>

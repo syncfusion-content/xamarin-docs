@@ -20,7 +20,6 @@ The Print operation could be performed using the following APIs programmatically
 
 //Print the PDF
 pdfViewerControl.Print();
-
 //Print the PDF with given file name
 pdfViewerControl.Print(string filename);
 
@@ -34,7 +33,7 @@ The following example demonstrates the usage of print operation within a button 
 
 private void Button_Clicked(object sender, EventArgs e)
 {
-	//Print the PDF
+    //Print the PDF
     pdfViewerControl.Print("PdfFileName.pdf");
 }
 
@@ -82,7 +81,7 @@ The print previewer can be customized on desktop using the native UWP APIs such 
 
 private void PdfViewer_PrintTaskRequested(object sender, PdfViewerPrintTaskRequestedEventArgs e) 
 {
-     DependencyService.Get<IPrintRequestHandler>().PrintTaskRequested(sender, e)
+    DependencyService.Get<IPrintRequestHandler>().PrintTaskRequested(sender, e)
 }
 
 {% endhighlight %}
@@ -93,25 +92,21 @@ In the [PrintTaskRequested](https://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 {% tabs %}
 {% highlight c# %}
 
-void PrintTaskRequested (object sender, PdfViewerPrintTaskRequestedEventArgs e)
+void PrintTaskRequested(object sender, PdfViewerPrintTaskRequestedEventArgs e)
 {
-
-PrintTask printTask = null;
-printTask = (e.Request as PrintTaskRequest).CreatePrintTask("Printing", sourceRequested =>
-{
-
-PrintTaskOptionDetails printDetailedOptions = PrintTaskOptionDetails.GetFromPrintTaskOptions(printTask.Options);
-                IList<string> displayedOptions = printDetailedOptions.DisplayedOptions;
-displayedOptions.Add(Windows.Graphics.Printing.StandardPrintTaskOptions.CustomPageRanges);
-printTask.Options.PageRangeOptions.AllowCurrentPage = true;
-                printTask.Options.PageRangeOptions.AllowAllPages = true;
-                printTask.Options.PageRangeOptions.AllowCustomSetOfPages = true;
-
-// Set the pdfViewerControl’s print document source.
-sourceRequestedArgs.SetSource(e.PrintDocumentSource as IPrintDocumentSource);
-e.PrintTask = printTask;
-
-});
+	PrintTask printTask = null;
+	printTask = (e.Request as PrintTaskRequest).CreatePrintTask("Printing", sourceRequested =>
+	{
+		PrintTaskOptionDetails printDetailedOptions = PrintTaskOptionDetails.GetFromPrintTaskOptions(printTask.Options);
+		IList<string> displayedOptions = printDetailedOptions.DisplayedOptions;
+		displayedOptions.Add(Windows.Graphics.Printing.StandardPrintTaskOptions.CustomPageRanges);
+		printTask.Options.PageRangeOptions.AllowCurrentPage = true;
+		printTask.Options.PageRangeOptions.AllowAllPages = true;
+		printTask.Options.PageRangeOptions.AllowCustomSetOfPages = true;
+		// Set the pdfViewerControl’s print document source.
+		sourceRequestedArgs.SetSource(e.PrintDocumentSource as IPrintDocumentSource);
+		e.PrintTask = printTask;
+	});
 }
 
 {% endhighlight %}
@@ -124,18 +119,16 @@ The PDF Viewer allows the users to hide the preview of the pages and enable only
 {% tabs %}
 {% highlight c# %}
 
-void PrintTaskRequested (object sender, PdfViewerPrintTaskRequestedEventArgs e)
+void PrintTaskRequested(object sender, PdfViewerPrintTaskRequestedEventArgs e)
 {
-   PrintTask printTask = null;
-printTask = (e.Request as PrintTaskRequest).CreatePrintTask("Printing", sourceRequested =>
- {
- 
-// Set the SfPdfViewerControl’s print document source.
-sourceRequestedArgs.SetSource(e.PrintDocumentSource as IPrintDocumentSource);
-e.PrintTask = printTask;
-
-});
-printTask.IsPreviewEnabled = false;
+	PrintTask printTask = null;
+	printTask = (e.Request as PrintTaskRequest).CreatePrintTask("Printing", sourceRequested =>
+	{
+		// Set the SfPdfViewerControl’s print document source.
+		sourceRequestedArgs.SetSource(e.PrintDocumentSource as IPrintDocumentSource);
+		e.PrintTask = printTask;
+	});
+	printTask.IsPreviewEnabled = false;
 }
 
 {% endhighlight %}

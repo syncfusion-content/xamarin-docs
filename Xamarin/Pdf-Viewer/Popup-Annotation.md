@@ -81,10 +81,8 @@ The following code example illustrates the same.
 
 //Creates the popup annotation
 PopupAnnotation popupAnnotation = new PopupAnnotation(1, new Point(100, 100));
-
 //Add the popup text
 popupAnnotation.Settings.Text = "Syncfusion";
-
 //Add the popup annotation to the specified page and position
 pdfViewerControl.AddAnnotation(popupAnnotation);
 
@@ -126,16 +124,12 @@ private void PdfViewer_PopupAnnotationSelected(object sender, EventArgs args)
 
 //Get the page number of the selected popup annotation
 int pageNumber = (sender as PopupAnnotation).PageNumber; 
-
 //Get the position of the selected popup annotation
 Point position = (sender as PopupAnnotation).Position; 
-
 //Get the text of the popup annotation 
 string text = (sender as PopupAnnotation).Settings.Text; 
-
 //Get the icon color 
 Color iconColor = (sender as PopupAnnotation).Settings.Color; 
-
 //Get the icon type
 PopupIcon popupIcon = (sender as PopupAnnotation).Settings.Icon; 
 
@@ -237,12 +231,9 @@ You can change the properties of the selected annotation by casting the sender p
 
 Button changePopupPropertiesButton = new Button(); 
 changePopupPropertiesButton.Clicked+= changePopupPropertiesButton_Clicked; 
-
 PopupAnnotation selectedPopupAnnotation;
- 
 private void PdfViewer_PopupAnnotationSelected(object sender, EventArgs args) 
 { 
-
    //Cast the sender object to PopupAnnotation 
    selectedPopupAnnotation = sender as PopupAnnotation; 
 
@@ -250,16 +241,12 @@ private void PdfViewer_PopupAnnotationSelected(object sender, EventArgs args)
 
 private void changePopupPropertiesButton_Clicked(object sender, EventArgs e) 
 { 
-
    //Change the color
    selectedPopupAnnotation.Settings.Color = Color.Blue;
- 
    //Change the icon
    selectedPopupAnnotation.Settings.Icon = PopupIcon.Key;
-
    //Change the Text
    selectedPopupAnnotation.Settings.Text = "Text";
-
 }
  
 {% endhighlight %}
@@ -295,13 +282,10 @@ The properties of the moved popup can be obtained from the args parameter of the
 
 private void PdfViewer_PopupAnnotationMoved(object sender, PopupAnnotationMovedEventArgs args) 
 { 
-
-//Retrieve the old position of the annotation 
-Point oldPosition = args.OldPosition; 
-
-//Retrieve the new position of the annotation 
-Point newPosition = args.NewPosition; 
-
+   //Retrieve the old position of the annotation 
+   Point oldPosition = args.OldPosition; 
+   //Retrieve the new position of the annotation 
+   Point newPosition = args.NewPosition; 
 }
 
 {% endhighlight %}
@@ -319,7 +303,7 @@ The following code example illustrates removing a selected popup from the PDF do
 {% highlight xaml %}
 
 <syncfusion:SfPdfViewer x:Name="pdfViewer" PopupAnnotationSelected="PdfViewer_PopupAnnotationSelected"/> 
-<Button x:Name="deletePopupAnnotationButton" Grid.Row="1" Clicked="deletePopupAnnotationButton_Clicked" />
+<Button x:Name="deletePopupAnnotationButton" Grid.Row="1" Clicked="deletePopupAnnotationButton_Clicked"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -328,18 +312,14 @@ PopupAnnotation selectedPopupAnnotation;
 
 private void PdfViewer_PopupAnnotationSelected(object sender, EventArgs args) 
 { 
-
-//Cast the sender object to popup annotation. 
-selectedPopupAnnotation = sender as PopupAnnotation; 
-
+   //Cast the sender object to popup annotation. 
+   selectedPopupAnnotation = sender as PopupAnnotation; 
 }
 
 private void deletePopupAnnotationButton_Clicked(object sender, EventArgs e) 
 {
-
- //Delete the selected popup annotation
- pdfViewer.RemoveAnnotation(selectedPopupAnnotation); 
- 
+   //Delete the selected popup annotation
+   pdfViewer.RemoveAnnotation(selectedPopupAnnotation); 
 }
 
 {% endhighlight %}
@@ -361,7 +341,7 @@ The `ClearAllAnnotations` method can be used to delete all annotations irrespect
 //Delete all the annotations from a button click
 private void deleteAllAnnotationsButton_Clicked(object sender, EventArgs e) 
 { 
-	pdfViewer.ClearAllAnnotations(); 
+   pdfViewer.ClearAllAnnotations(); 
 }
 
 {% endhighlight %}
@@ -392,26 +372,22 @@ The properties of the removed Popup can be obtained from the sender parameter of
 
 private void PdfViewer_PopupAnnotationRemoved(object sender, EventArgs args) 
 { 
-//Get the page number of the selected popup annotation
-int pageNumber = (sender as PopupAnnotation).PageNumber; 
-
-//Get the text of the popup annotation 
-string text = (sender as PopupAnnotation).Settings.Text; 
-
-//Get the icon color 
-Color textColor = (sender as PopupAnnotation).Settings.Color; 
-
-//Get the icon type
-PopupIcon popupIcon = (sender as PopupAnnotation).Settings.Icon; 
-
+   //Get the page number of the selected popup annotation
+   int pageNumber = (sender as PopupAnnotation).PageNumber; 
+   //Get the text of the popup annotation 
+   string text = (sender as PopupAnnotation).Settings.Text; 
+   //Get the icon color 
+   Color textColor = (sender as PopupAnnotation).Settings.Color; 
+   //Get the icon type
+   PopupIcon popupIcon = (sender as PopupAnnotation).Settings.Icon; 
 }
+
 {% endhighlight %}
 {% endtabs %}
 
 ## How to open and edit the text of the popup annotation?
 
 The popup annotation can be opened and edited by selecting and double tapping on it from the UI. We can programmatically open the popup view and edit the popup annotation's text by calling the `EditPopupAnnotationText` method. 
-
 The following code example illustrates the same.
 
 {% tabs %}
@@ -469,7 +445,7 @@ Popup annotation selection will be allowed only if the `SfPdfViewer.AnnotationSe
 {% highlight c# %}
 
 //Disable the popup annotation selection, though its 'Constraints' property is set to ‘AnnotationConstraints.Selectable’
- pdfViewerControl.AnnotationSettings.Constraints= ~AnnotationConstraints.Selectable; 
+pdfViewerControl.AnnotationSettings.Constraints= ~AnnotationConstraints.Selectable; 
 pdfViewerControl.AnnotationSettings.Popup.Constraints = AnnotationConstraints.Selectable;
 
 {% endhighlight %}
@@ -486,14 +462,11 @@ The following code sample explains modifying the name of the popup annotation in
 
 private void PdfViewerControl_PopupAnnotationAdded(object sender, EventArgs args) 
 { 
-
-//Sets the name for the annotation. 
-(sender as PopupAnnotation).Name = "Popup_1";
-
+   //Sets the name for the annotation. 
+   (sender as PopupAnnotation).Name = "Popup_1";
 }
 
 {% endhighlight %}
 {% endtabs %}
  
 N> For illustration purposes, we have only provided the example for modifying the name of the popup annotation in the `PopupAnnotationAdded` event. But this can be done in all other events as well.
-

@@ -50,7 +50,6 @@ By default, the PDF viewer does not display the appearance content of signature 
 
 //Sets a value whether the signature form fields should be flattened when the PDF is loaded or not.
 pdfViewerControl.FormSettings.FlattenSignatureFields = true;
-
 //Loads the PDF. 
 pdfViewerControl.LoadDocument(stream);
 
@@ -102,21 +101,16 @@ The`FormFieldValueChanged` event will be raised when the values of the form fiel
 {% highlight c# %}
 
 privatevoidPdfViewerControl_FormFieldValueChanged(object sender, FormFieldValueChangedEventArgs args)
- { 
- 
- //Get the name of the form field          
- string fieldName = args.FormFieldName;
- 
- //Get the type of the form field   
- FormFieldType formFieldType= args.FormFieldType; 
- 
- //Get the value of the form field after the event occurs    
- object newValue = args.NewValue;     
- 
- //Get the value of the form field before the event occurs 
- object oldValue = args.OldValue;
-
- }
+{  
+  //Get the name of the form field          
+  string fieldName = args.FormFieldName;
+  //Get the type of the form field   
+  FormFieldType formFieldType= args.FormFieldType; 
+  //Get the value of the form field after the event occurs    
+  object newValue = args.NewValue;     
+  //Get the value of the form field before the event occurs 
+  object oldValue = args.OldValue;
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -136,15 +130,12 @@ The `FormFieldFocused` event will be raised when text or signature field is focu
 {% tabs %}
 {% highlight c# %}
 
-privatevoidPdfViewerControl_FormFieldFocused(object sender, FormFieldFocusedEventArgs args) 
-{  
-          
-//Get the name of the form field             
-string fieldName = args.FormFieldName;           
-
-//Get the type of the form field            
-FormFieldType formFieldType= args.FormFieldType; 
-
+privatevoidPdfViewerControl_FormFieldFocused(object sender, FormFieldFocusedEventArgs args)
+{          
+  //Get the name of the form field             
+  string fieldName = args.FormFieldName;           
+  //Get the type of the form field            
+  FormFieldType formFieldType= args.FormFieldType; 
 }
 
 {% endhighlight %}
@@ -171,10 +162,8 @@ privatevoidPdfViewerControl_FormFieldUnfocused(object sender, FormFieldUnfocused
 {          
   //Get the name of the form field             
   string fieldName = args.FormFieldName;       
-
   //Get the type of the form field       
   FormFieldType formFieldType= args.FormFieldType;
-  
 }
 
 {% endhighlight %}

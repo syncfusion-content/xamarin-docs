@@ -48,7 +48,7 @@ If the password provided with the `LoadDocument(Stream pdfStream, string passwor
 pdfViewerControl.PasswordErrorOccurred += PdfViewerControl_PasswordErrorOccurred;
 private void PdfViewerControl_PasswordErrorOccurred(object sender, PasswordErrorOccurredEventArgs args)
 {
-	//Get the details regarding the password error occurred. 
+    //Get the details regarding the password error occurred. 
     string title = args.Title;
     string description = args.Description;
 }
@@ -62,14 +62,13 @@ N>The event will also be raised when an encrypted PDF is loaded without providin
 
 The PDF viewer has a built-in view for entering the password of encrypted PDF document before display. 
 
-** Password UI View **
+**Password UI View**
 
 ![Password View](pdfviewer_images/PasswordView.png)
 
 The users can enable or disable the password UI view based on their requirement. The password UI view can be disabled by setting the `IsPasswordViewEnabled` API to false. The default value of this API is true. The code snippet for disabling the view is as follows, 
 
 {% highlight c# %}
-  
   
 //Disable the display of password UI view
 pdfViewer.IsPasswordViewEnabled = false;

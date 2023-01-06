@@ -78,11 +78,9 @@ The following code sample illustrates the same.
 {% tabs %}
 {% highlight c# %}
 
-string text = "Syncfusion";
-           
+string text = "Syncfusion";          
 //Creates the free text annotation
 FreeTextAnnotation freeTextAnnotation = new FreeTextAnnotation(text, 1, new Rectangle(100, 100, 100, 50));           
-
 //Add the free text annotation to the specified page 
 pdfViewer.AddAnnotation(freeTextAnnotation);
 
@@ -118,16 +116,12 @@ private void PdfViewer_FreeTextAnnotationSelected(object sender, FreeTextAnnotat
 {
 	//Get the bounds
 	Rectangle bounds = args.Bounds;
-
 	//Get the page number on which the deselected free text is
 	int pageNumber = args.PageNumber;
-
 	//Get the text of the free text annotation
 	string text = args.Text;
-
 	//Get the text color
 	Color textColor = args.TextColor;
-
 	//Get the text size
 	float textSize = args.TextSize;
 }
@@ -223,7 +217,6 @@ You can set the background color for the free text annotations using the `SfPdfV
 {% highlight c# %}
 
 //Setting the background color of the free text annotation
-
 pdfViewerControl.AnnotationSettings.FreeText.FillColor = Color.LightBlue;
 
 {% endhighlight %}
@@ -252,19 +245,17 @@ You can change the properties of the selected annotation by casting the `sender`
 {% highlight c# %}
 Button changeFreeTextPropertiesButton = new Button();
 changeFreeTextPropertiesButton.Clicked += changeFreeTextPropertiesButton_Clicked;
-
 FreeTextAnnotation selectedFreeTextAnnotation;
-
 private void PdfViewer_FreeTextAnnotationSelected(object sender, FreeTextAnnotationSelectedEventArgs args)
 {
 	//Cast the sender object to FreeTextAnnotation
-    selectedFreeTextAnnotation = sender as FreeTextAnnotation;
+	selectedFreeTextAnnotation = sender as FreeTextAnnotation;
 }
 
 private void changeFreeTextPropertiesButton_Clicked(object sender, EventArgs e)
 {
 	//Change the color of the text
-    selectedFreeTextAnnotation.Settings.TextColor = Color.Blue;
+	selectedFreeTextAnnotation.Settings.TextColor = Color.Blue;
 
 	//Change the size of the text
 	selectedFreeTextAnnotation.Settings.TextSize = 7;
@@ -304,10 +295,8 @@ private void PdfViewer_FreeTextAnnotationMovedOrResized(object sender, FreeTextA
 { 
      //Retrieve the old bounds of the annotation
      Rectangle oldBounds = args.OldBounds;
-
      //Retrieve the new bounds of the annotation
      Rectangle newBounds = args.NewBounds;
-	 
 	 //Retrieve the page number in which the free text is
      int pageNumber = args.PageNumber;
 }
@@ -469,8 +458,8 @@ The following code sample explains modifying the name of the free text annotatio
 
 private void PdfViewerControl_ FreeTextAnnotationAdded (object sender, FreeTextAnnotationAddedEventArgs args)
 {
-//Sets the name for the annotation.
-(sender as FreeTextAnnotation).Name = "FreeText1";           
+	//Sets the name for the annotation.
+	(sender as FreeTextAnnotation).Name = "FreeText1";           
 }
 
 {% endhighlight %}

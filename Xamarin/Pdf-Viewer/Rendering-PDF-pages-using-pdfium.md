@@ -16,22 +16,15 @@ The [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-
 To use Pdfium in your application, the Pdfium binding library is needed. The Pdfium binding project can be created from the scratch using the following steps.
 
 1.Download the pdfium-android-1.7.0.aar Android archive file from this link.
- 
 <https://mvnrepository.com/artifact/com.github.barteksc/pdfium-android/1.7.0>
-
 2.To create the binding project from this archive file refer to this link. 
 <https://developer.xamarin.com/guides/android/advanced_topics/binding-a-java-library/binding-an-aar/>
-
 3.Install the `Xamarin.Android.Support.Compat` dependency package in the project.
-
 4.Compile the project to generate the Pdfium library.
 
 ## Using Pdfium binding library in the application project
 
-Refer to the created binding library in your android project. 
-
-Add a new class named `CustomPdfRenderer` to the android application project. This class must implement the [ICustomPdfRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.ICustomPdfRendererService.html#Syncfusion_SfPdfViewer_XForms_ICustomPdfRendererService_AlternatePdfRenderer) interface defined in the `Syncfusion.SfPdfViewer.XForms.Droid` and `Syncfusion.SfPdfViewer.XForms` namespace.
-
+Refer to the created binding library in your android project. Add a new class named `CustomPdfRenderer` to the android application project. This class must implement the [ICustomPdfRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.ICustomPdfRendererService.html#Syncfusion_SfPdfViewer_XForms_ICustomPdfRendererService_AlternatePdfRenderer) interface defined in the `Syncfusion.SfPdfViewer.XForms.Droid` and `Syncfusion.SfPdfViewer.XForms` namespace.
 The entire CustomPdfRenderer class is given as follows. 
 
 {% tabs %}
@@ -49,14 +42,14 @@ internal class CustomPdfRenderer : ICustomPdfRenderer
    /// </summary>
    public int PageCount
    {
-    get
-    {
-     return m_pageCount;
-    }
-    set
-    {
-     m_pageCount = value;
-    }
+      get
+      {
+         return m_pageCount;
+      }
+      set
+      {
+         m_pageCount = value;
+      }
    }
    
    /// <summary>
@@ -64,197 +57,186 @@ internal class CustomPdfRenderer : ICustomPdfRenderer
    /// </summary>
    public Bitmap.Config BitmapConfig
    {
-    get
-    {
-     return m_bitmapConfig;
-    }
-    set
-    {
-     m_bitmapConfig = value;
-    }
+      get
+      {
+         return m_bitmapConfig;
+      }
+      set
+      {
+         m_bitmapConfig = value;
+      }
    }
 
-    /// <summary>
-    /// Initializes the required object.
-    /// </summary>
-    /// <param name="context">Context of the application.</param>
-    /// <param name="inputStream">PDF document stream.</param>
-    public void Initialize(Context context, Stream inputStream)
-    {
+   /// <summary>
+   /// Initializes the required object.
+   /// </summary>
+   /// <param name="context">Context of the application.</param>
+   /// <param name="inputStream">PDF document stream.</param>
+   public void Initialize(Context context, Stream inputStream)
+   {
       if (inputStream == null)
       {
          throw new System.NullReferenceException("object reference is not set to an instance: inputStream");
       }
-          
-	  //Initializes the PdfiumCore instance.
+      //Initializes the PdfiumCore instance.
       m_pdfiumCore = new PdfiumCore(context);
       byte[] byteArray = ReadBytes(inputStream);
       
-	  if (m_pdfiumCore == null)
+	   if (m_pdfiumCore == null)
       {
-       throw new System.NullReferenceException("object reference is not set to an instance: m_pdfiumCore");
-      }
-          
+         throw new System.NullReferenceException("object reference is not set to an instance: m_pdfiumCore");
+      }         
       //Creates the PdfDocument instance from the PDF byte array.
       m_pdfDocument = m_pdfiumCore.NewDocument(byteArray);
-     
-	  if (m_pdfDocument == null)
+
+      if (m_pdfDocument == null)
       {
-       throw new System.NullReferenceException("object reference is not set to an instance: m_pdfDocument");
+         throw new System.NullReferenceException("object reference is not set to an instance: m_pdfDocument");
       }
-  
       if (m_bitmapConfig == null)
       {
-       m_bitmapConfig = Bitmap.Config.Rgb565;
+         m_bitmapConfig = Bitmap.Config.Rgb565;
       }
-      
-	  //Gets the total number of pages in the PDF document.
-      m_pageCount = m_pdfiumCore.GetPageCount(m_pdfDocument);	    
-      
-	}
+      //Gets the total number of pages in the PDF document.
+      m_pageCount = m_pdfiumCore.GetPageCount(m_pdfDocument);
+   }
      
-	 /// <summary>
-     /// Converts the stream to byte array to render the PDF document using Pdfium renderer.
-     /// </summary>
-     /// <param name="inputStream">PDF document stream to convert into byte array.</param>
-     /// <returns>byte array of PDF document</returns>
-     private static byte[] ReadBytes(Stream input)
-     {
-        if (input.CanSeek)
-        {
+   /// <summary>
+   /// Converts the stream to byte array to render the PDF document using Pdfium renderer.
+   /// </summary>
+   /// <param name="inputStream">PDF document stream to convert into byte array.</param>
+   /// <returns>byte array of PDF document</returns>
+   private static byte[] ReadBytes(Stream input)
+   {
+      if (input.CanSeek)
+      {
          input.Position = 0;
-        }
-       
-	    byte[] buffer = new byte[16 * 1024];
-		
-        using (MemoryStream ms = new MemoryStream())
-        {
+      }
+	   byte[] buffer = new byte[16 * 1024];
+      using (MemoryStream ms = new MemoryStream())
+      {
          int read;
          while ((read = input.Read(buffer, 0, buffer.Length)) > 0)
          {
-           ms.Write(buffer, 0, read);
+            ms.Write(buffer, 0, read);
          }
          return ms.ToArray();     
-        }
       }
-	  
-      /// <summary>
-      /// Renders the PDF page as a bitmap with specified page index.
-      /// </summary>
-      /// <param name="bitmap">Bitmap to render the content of the PDF page. </param>
-      /// <param name="pageIndex">Index of the page in the PDF document being rendered.</param>
-      /// <param name="pageWidth">Width of the page to be drawn on to the bitmap.</param>
-      /// <param name="pageHeight">Height of the page to be drawn on to the bitmap.</param>
-      public void Render(Bitmap bitmap, int pageIndex, int pageWidth, int pageHeight)
+   }
+	   
+   /// <summary>
+   /// Renders the PDF page as a bitmap with specified page index.
+   /// </summary>
+   /// <param name="bitmap">Bitmap to render the content of the PDF page. </param>
+   /// <param name="pageIndex">Index of the page in the PDF document being rendered.</param>
+   /// <param name="pageWidth">Width of the page to be drawn on to the bitmap.</param>
+   /// <param name="pageHeight">Height of the page to be drawn on to the bitmap.</param>
+   public void Render(Bitmap bitmap, int pageIndex, int pageWidth, int pageHeight)
+   {
+      if (bitmap == null)
       {
-        if (bitmap == null)
-        {
-           throw new System.NullReferenceException("object reference is not set to an instance: bitmap");
-        }
-			
-        if (m_pdfiumCore == null)
-        {
-           throw new System.NullReferenceException("object reference is not set to an instance: m_pdfiumCore");
-        }
-        else if (m_pdfDocument == null)
-        {
-           throw new System.NullReferenceException("object reference is not set to an instance: m_pdfDocument");
-        }
-        else if (pageIndex < 0 && pageIndex > m_pageCount - 1)
-        {
-           throw new System.ArgumentOutOfRangeException("pageIndex", "Index was out of range. Must be non-negative and less than the size of the PageCount.");
-        }
-        else
-        {
-           //Sets the config of Bitmap format, we required to render the PDF pages.
-           bitmap.SetConfig(m_bitmapConfig);
-				
-           //Opens the PDF page with the specified page index to render the page as a bitmap.
-           m_pdfiumCore.OpenPage(m_pdfDocument, pageIndex);
-				
-           m_pdfiumCore.RenderPageBitmap(m_pdfDocument, bitmap, pageIndex, 0, 0, pageWidth, pageHeight);
-        }
-       }
+         throw new System.NullReferenceException("object reference is not set to an instance: bitmap");
+      }
+      if (m_pdfiumCore == null)
+      {
+         throw new System.NullReferenceException("object reference is not set to an instance: m_pdfiumCore");
+      }
+      else if (m_pdfDocument == null)
+      {
+         throw new System.NullReferenceException("object reference is not set to an instance: m_pdfDocument");
+      }
+      else if (pageIndex < 0 && pageIndex > m_pageCount - 1)
+      {
+         throw new System.ArgumentOutOfRangeException("pageIndex", "Index was out of range. Must be non-negative and less than the size of the PageCount.");
+      }
+      else
+      {
+         //Sets the config of Bitmap format, we required to render the PDF pages.
+         bitmap.SetConfig(m_bitmapConfig);
+         //Opens the PDF page with the specified page index to render the page as a bitmap.
+         m_pdfiumCore.OpenPage(m_pdfDocument, pageIndex);
+         m_pdfiumCore.RenderPageBitmap(m_pdfDocument, bitmap, pageIndex, 0, 0, pageWidth, pageHeight);
+      }
+   }
 		 
-      /// <summary>
-      /// Gets the size of the page with the provided index in the PDF document.
-      ///</summary>
-      /// <param name="pageIndex">Page index to the get page size.</param>
-      /// <returns>Size of the page of PDF document.</returns>
-      public Android.Util.Size GetPageSize(int pageIndex)
+   /// <summary>
+   /// Gets the size of the page with the provided index in the PDF document.
+   ///</summary>
+   /// <param name="pageIndex">Page index to the get page size.</param>
+   /// <returns>Size of the page of PDF document.</returns>
+   public Android.Util.Size GetPageSize(int pageIndex)
+   {
+      if (m_pdfiumCore == null)
       {
-        if (m_pdfiumCore == null)
-        {
-          throw new System.NullReferenceException("object reference is not set to an instance: m_pdfiumCore");
-        }
-        else if (m_pdfDocument == null)
-        {
-          throw new System.NullReferenceException("object reference is not set to an instance: m_pdfDocument");
-        }
-        else if (pageIndex < 0 && pageIndex > m_pageCount - 1)
-        {
-          throw new System.ArgumentOutOfRangeException("pageIndex", "Index was out of range. Must be non-negative and less than the size of the PageCount.");
-        }
-        else
-        {
-          //Opens the PDF page with specified index to get its size.
-          m_pdfiumCore.OpenPage(m_pdfDocument, pageIndex);
-				
-          int pageHeight = m_pdfiumCore.GetPageHeightPoint(m_pdfDocument, pageIndex);
-          int pageWidth = m_pdfiumCore.GetPageWidthPoint(m_pdfDocument, pageIndex);
-          return new Android.Util.Size(pageWidth, pageHeight);
-        }
-       }
-              
-	    /// <summary>
-        /// Renders the PDF page as a bitmap with the specified page index.
-        /// </summary>
-        /// <param name="bitmap">Bitmap to render the content of the PDF page. </param>
-        /// <param name="pageIndex">Index of the page in the PDF document being rendered.</param>
-        /// <param name="pageWidth">Width of the page to be drawn on to the bitmap.</param>
-        /// <param name="pageHeight">Height of the page to be drawn on to the bitmap.</param>
-        /// <param name="x">The x coordinate of the origin of the region to be rendered.</param>	
-        /// <param name="y">The y coordinate of the origin of the region to be rendered.</param>
-        public void Render(Bitmap bitmap, int pageIndex, int pageWidth, int pageHeight,  float xOffset= 0, float yOffset = 0)
-        {
-           if (bitmap == null)
-           {
-              throw new System.NullReferenceException("object reference is not set to an instance: bitmap");
-           }
-           
-		   if (m_pdfiumCore == null)
-           {
-               throw new System.NullReferenceException("object reference is not set to an instance: m_pdfiumCore");
-           }
-           else if (m_pdfDocument == null)
-           {
-               throw new System.NullReferenceException("object reference is not set to an instance: m_pdfDocument");
-           }
-           else if (pageIndex < 0 && pageIndex > m_pageCount - 1)
-           {
-               throw new System.ArgumentOutOfRangeException("pageIndex", "Index was out of range. Must be non-negative and less than the size of the PageCount.");
-           }
-           else
-           {
-               //Sets the config of Bitmap format, we required to render the PDF pages
-               bitmap.SetConfig(m_bitmapConfig);
-               //Opens the PDF page with the specified page index to render the page as a bitmap.
-               m_pdfiumCore.OpenPage(m_pdfDocument, pageIndex);
-               m_pdfiumCore.RenderPageBitmap(m_pdfDocument, bitmap, pageIndex, xOffset, yOffset, pageWidth, pageHeight);
-            }
-        }
+         throw new System.NullReferenceException("object reference is not set to an instance: m_pdfiumCore");
+      }
+      else if (m_pdfDocument == null)
+      {
+         throw new System.NullReferenceException("object reference is not set to an instance: m_pdfDocument");
+      }
+      else if (pageIndex < 0 && pageIndex > m_pageCount - 1)
+      {
+         throw new System.ArgumentOutOfRangeException("pageIndex", "Index was out of range. Must be non-negative and less than the size of the PageCount.");
+      }
+      else
+      {
+         //Opens the PDF page with specified index to get its size.
+         m_pdfiumCore.OpenPage(m_pdfDocument, pageIndex);
+         int pageHeight = m_pdfiumCore.GetPageHeightPoint(m_pdfDocument, pageIndex);
+         int pageWidth = m_pdfiumCore.GetPageWidthPoint(m_pdfDocument, pageIndex);
+         return new Android.Util.Size(pageWidth, pageHeight);
+      }
+   }
+   
+   /// <summary>
+   /// Renders the PDF page as a bitmap with the specified page index.
+   /// </summary>
+   /// <param name="bitmap">Bitmap to render the content of the PDF page. </param>
+   /// <param name="pageIndex">Index of the page in the PDF document being rendered.</param>
+   /// <param name="pageWidth">Width of the page to be drawn on to the bitmap.</param>
+   /// <param name="pageHeight">Height of the page to be drawn on to the bitmap.</param>
+   /// <param name="x">The x coordinate of the origin of the region to be rendered.</param>	
+   /// <param name="y">The y coordinate of the origin of the region to be rendered.</param>
+   public void Render(Bitmap bitmap, int pageIndex, int pageWidth, int pageHeight,  float xOffset= 0, float yOffset = 0)
+   {
+      if (bitmap == null)
+      {
+         throw new System.NullReferenceException("object reference is not set to an instance: bitmap");
+      }
+      if (m_pdfiumCore == null)
+      {
+         throw new System.NullReferenceException("object reference is not set to an instance: m_pdfiumCore");
+      }
+      else if (m_pdfDocument == null)
+      {
+         throw new System.NullReferenceException("object reference is not set to an instance: m_pdfDocument");
+      }
+      else if (pageIndex < 0 && pageIndex > m_pageCount - 1)
+      {
+         throw new System.ArgumentOutOfRangeException("pageIndex", "Index was out of range. Must be non-negative and less than the size of the PageCount.");
+      }
+      else
+      {
+         //Sets the config of Bitmap format, we required to render the PDF pages
+         bitmap.SetConfig(m_bitmapConfig);
+         //Opens the PDF page with the specified page index to render the page as a bitmap.
+         m_pdfiumCore.OpenPage(m_pdfDocument, pageIndex);
+         m_pdfiumCore.RenderPageBitmap(m_pdfDocument, bitmap, pageIndex, xOffset, yOffset, pageWidth, pageHeight);
+      }
+   }
 		
-        /// <summary>
-        /// Closes the initialized object to release memory.
-        /// </summary>
-        public void Close()
-        {
-           //Closes the created PdfDocument instance.
-           m_pdfiumCore.CloseDocument(m_pdfDocument);
-           //Disposes the PdfiumCore instance.
-           m_pdfiumCore.Dispose();	
-        }
-    }			
+   /// <summary>
+   /// Closes the initialized object to release memory.
+   /// </summary>
+   public void Close()
+   {
+      //Closes the created PdfDocument instance.
+      m_pdfiumCore.CloseDocument(m_pdfDocument);
+      //Disposes the PdfiumCore instance.
+      m_pdfiumCore.Dispose();	
+   }
+}
+			
 {% endhighlight %}
 {% endtabs %}
 

@@ -800,8 +800,7 @@ public class PlatformCulture
 	{
 		if (!String.IsNullOrEmpty(platformCultureString))
 		{
-
-			PlatformString = platformCultureString.Replace("_", "-"); // .NET expects dash, not underscore
+			PlatformString = platformCultureString.Replace("_", "-");// .NET expects dash, not underscore
 			var dashIndex = PlatformString.IndexOf("-", StringComparison.Ordinal);
 			if (dashIndex > 0)
 			{
@@ -847,9 +846,7 @@ Refer to the following code to implement the interface in Android renderer proje
 {% highlight c# %}
 
 public class Localize : ILocalize
-
 {
-
     public void SetLocale(CultureInfo cultureInfo)
     {
         Thread.CurrentThread.CurrentCulture = cultureInfo;
@@ -861,7 +858,6 @@ public class Localize : ILocalize
         var netLanguage = "en";
         var androidLocale = Java.Util.Locale.Default;
         netLanguage = AndroidToDotnetLanguage(androidLocale.ToString().Replace("_", "-"));
-
         // this gets called a lot - try/catch can be expensive so consider caching or something
         CultureInfo cultureInfo = null;
         try
@@ -883,16 +879,12 @@ public class Localize : ILocalize
                 cultureInfo = new CultureInfo("en");
             }
         }
-
         return cultureInfo;
     }
-
-
 
     private string AndroidToDotnetLanguage(string androidLanguage)
     {
         var netLanguage = androidLanguage;
-
         //certain languages need to be converted to CultureInfo equivalent
         switch (androidLanguage)
         {
@@ -910,14 +902,12 @@ public class Localize : ILocalize
                 // add more application-specific cases here (if required)
                 // ONLY use cultures that have been tested and known to work
         }
-
         return netLanguage;
     }
 
     private string ToDotnetFallbackLanguage(PlatformCulture platformCulture)
     {
         var netLanguage = platformCulture.LanguageCode; // use the first part of the identifier (two chars, usually);
-
         switch (platformCulture.LanguageCode)
         {
             case "gsw":
@@ -926,10 +916,8 @@ public class Localize : ILocalize
                 // add more application-specific cases here (if required)
                 // ONLY use cultures that have been tested and known to work
         }
-
         return netLanguage;
     }
-
 }
 {% endhighlight %}
 {% endtabs %}
@@ -953,7 +941,6 @@ public class Localize : ILocalize
         if (NSLocale.PreferredLanguages.Length > 0)
         {
             var pref = NSLocale.PreferredLanguages[0];
-
             netLanguage = iOSToDotnetLanguage(pref);
         }
 
@@ -978,13 +965,11 @@ public class Localize : ILocalize
                 cultureInfo = new CultureInfo("en");
             }
         }
-
         return cultureInfo;
     }
     private string iOSToDotnetLanguage(string iOSLanguage)
     {
         var netLanguage = iOSLanguage;
-
         //certain languages need to be converted to CultureInfo equivalent
         switch (iOSLanguage)
         {
@@ -998,14 +983,12 @@ public class Localize : ILocalize
                 // add more application-specific cases here (if required)
                 // ONLY use cultures that have been tested and known to work
         }
-
         return netLanguage;
     }
 
     private string ToDotnetFallbackLanguage(PlatformCulture platCulture)
     {
         var netLanguage = platCulture.LanguageCode; // use the first part of the identifier (two chars, usually);
-
         switch (platCulture.LanguageCode)
         {
             // 
@@ -1018,7 +1001,6 @@ public class Localize : ILocalize
                 // add more application-specific cases here (if required)
                 // ONLY use cultures that have been tested and known to work
         }
-
         return netLanguage;
     }
 }
@@ -1040,7 +1022,6 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
-
 		//The PDF is in the Assets folder of this project. Read it into a stream
 		Stream stream = typeof(App).GetTypeInfo().Assembly.GetManifestResourceStream("GettingStarted.Assets.Xamarin_Forms_Succinctly.pdf");
 		//Load the stream to PdfViewer

@@ -48,7 +48,6 @@ SearchTextCommand is used to initiate the text search, it takes the text to be s
 {% highlight xaml %}
 
 <Entry x:Name="textSearchEntry" FontSize="18" HorizontalTextAlignment="Center" HorizontalOptions="Fill" VerticalOptions="Center"/>
-
 <Button x:Name="searchTextButton" BackgroundColor="Transparent" Image="SearchIcon.png" HorizontalOptions="Start" Command="{Binding SearchTextCommand, Source={x:Reference Name=pdfViewerControl}}" CommandParameter="{Binding Source ={x:Reference textSearchEntry}, Path=Text}"/>
 
 {% endhighlight %}
@@ -87,7 +86,6 @@ SearchNextTextCommand is used to navigate to the next text instances in the PDF 
 {% highlight xaml %}
 
 <Entry x:Name="textSearchEntry" FontSize="18" HorizontalTextAlignment="Center" HorizontalOptions="Fill" VerticalOptions="Center"/>
-
 <Button x:Name="searchTextButton" BackgroundColor="Transparent" Image="SearchIcon.png" HorizontalOptions="Start" Command="{Binding SearchNextTextCommand, Source={x:Reference Name=pdfViewerControl}}" CommandParameter="{Binding Source ={x:Reference textSearchEntry}, Path=Text}"/>
 
 {% endhighlight %}
@@ -103,7 +101,6 @@ SearchPreviousTextCommand is used to navigate to the previous text instances in 
 {% highlight xaml %}
 
 <Entry x:Name="textSearchEntry" FontSize="18" HorizontalTextAlignment="Center" HorizontalOptions="Fill" VerticalOptions="Center"/>
-
 <Button x:Name="searchTextButton" BackgroundColor="Transparent" Image="SearchIcon.png" HorizontalOptions="Start" Command="{Binding SearchPreviousTextCommand, Source={x:Reference Name=pdfViewerControl}}" CommandParameter="{Binding Source ={x:Reference textSearchEntry}, Path=Text}"/>
 
 {% endhighlight %}
@@ -327,8 +324,7 @@ The complete XAML code after the design of the search bar will look like below
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GettingStarted"
              x:Class="GettingStarted.MainPage"
-             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
-             >
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms">
     <ContentPage.BindingContext>
         <local:PdfViewerViewModel></local:PdfViewerViewModel>
     </ContentPage.BindingContext>
@@ -396,8 +392,7 @@ pdfViewerControl.TextSearchSettings.CurrentInstanceColor = Color.FromRgba(255, 2
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GettingStarted"
              x:Class="GettingStarted.MainPage"
-             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
-             >
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms">
 	 <ContentPage.Resources>
         <ResourceDictionary>
             <sfpdfviewer:TextSearchSettings x:Key="SearchSettings">

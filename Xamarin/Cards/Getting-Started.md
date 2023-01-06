@@ -167,7 +167,7 @@ Run the project and check if you get following output to make sure that you have
 
 ## SwipeToDismiss
 
-The [`SwipeToDismiss`](https://help.syncfusion.com/cr/xamarin/) property is used to enable or disable swiping in SfCardView.
+The [`SwipeToDismiss`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html#Syncfusion_XForms_Cards_SfCardView_SwipeToDismiss) property is used to enable or disable swiping in SfCardView.
 
 {% tabs %} 
 

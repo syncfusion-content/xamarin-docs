@@ -33,8 +33,8 @@ dateTime.Intervals = DateTimeIntervalType.Year | DateTimeIntervalType. Month;
 
 The [`MajorScaleStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html#Syncfusion_RangeNavigator_XForms_SfDateTimeRangeNavigator_MajorScaleStyle) and [`MinorScaleStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html#Syncfusion_RangeNavigator_XForms_SfDateTimeRangeNavigator_MinorScaleStyle) properties of [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html) are used to customize the appearance of ticks and labels.
 
-* [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScaleStyle.html#Syncfusion_RangeNavigator_XForms_ScaleStyle_Position) – used to position the labels and ticks [`inside`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScalePosition.html) or [`outside`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScalePosition.html) of the range navigator.
-* [`LabelAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScaleStyle.html#Syncfusion_RangeNavigator_XForms_ScaleStyle_LabelAlignment) – used to align the label at [`Left`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.LabelAlignment.html), [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.LabelAlignment.html) and [`Right`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.LabelAlignment.html). 
+* [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScaleStyle.html#Syncfusion_RangeNavigator_XForms_ScaleStyle_Position) – used to position the labels and ticks [`Inside`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScalePosition.html#Syncfusion_RangeNavigator_XForms_ScalePosition_Inside) or [`Outside`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScalePosition.html#Syncfusion_RangeNavigator_XForms_ScalePosition_Outside) of the range navigator.
+* [`LabelAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScaleStyle.html#Syncfusion_RangeNavigator_XForms_ScaleStyle_LabelAlignment) – used to align the label at [`Left`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.LabelAlignment.html#Syncfusion_RangeNavigator_XForms_LabelAlignment_Left), [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.LabelAlignment.html#Syncfusion_RangeNavigator_XForms_LabelAlignment_Center) and [`Right`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.LabelAlignment.html#Syncfusion_RangeNavigator_XForms_LabelAlignment_Right). 
 * [`LabelTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScaleStyle.html#Syncfusion_RangeNavigator_XForms_ScaleStyle_LabelTextColor) – used to change the text color of the labels.
 * [`LabelFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScaleStyle.html#Syncfusion_RangeNavigator_XForms_ScaleStyle_LabelFontSize) – used to change the font size of the labels.
 * [`LabelFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScaleStyle.html#Syncfusion_RangeNavigator_XForms_ScaleStyle_LabelFontAttributes) – used to change the font attribute of the labels.
@@ -145,7 +145,7 @@ dateTime.MajorScaleStyle.IsVisible = false;
 
 This event occurs when the minor scale labels are created initially. The argument of this event contains the following information:
 
-* `MinorScaleLabels` - Gets the `Content` of the each minor scale label.
+* [`MinorScaleLabels`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.MinorScaleLabelsCreatedEventArgs.html#Syncfusion_RangeNavigator_XForms_MinorScaleLabelsCreatedEventArgs_MinorScaleLabels) - Gets the `Content` of the each minor scale label.
 
 {% tabs %} 
 
@@ -181,7 +181,7 @@ public MainPage()
 
 This event occurs when the major scale labels are created initially. The argument of this event contains the following information:
 
-* `MajorScaleLabels` - Gets the `Content` of the each major scale label.
+* [`MajorScaleLabels`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.MajorScaleLabelsCreatedEventArgs.html#Syncfusion_RangeNavigator_XForms_MajorScaleLabelsCreatedEventArgs_MajorScaleLabels) - Gets the `Content` of the each major scale label.
 
 {% tabs %} 
 

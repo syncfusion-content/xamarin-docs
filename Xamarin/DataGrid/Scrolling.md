@@ -99,7 +99,7 @@ dataGrid.ScrollToColumnIndex(7);
 
 ### Scroll a row/column to a specific position
 
-The SfDataGrid allows to position the scrolled row/column in the datagrid by passing [ScrollToPosition](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.scrolltoposition?view=xamarin-forms) as parameter to the `ScrollToRowColumnIndex`, `ScrollToRowIndex`, `ScrollToColumnIndex` methods. The scrolled row/column can take either of the four positions as explained below. The default position is `Start`.
+The SfDataGrid allows to position the scrolled row/column in the datagrid by passing [ScrollToPosition](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.scrolltoposition?view=xamarin-forms) as parameter to the `ScrollToRowColumnIndex`, `ScrollToRowIndex`, `ScrollToColumnIndex` methods. The scrolled row/column can take either of the four positions as explained below. The default position is `Start`.
 
 * MakeVisible: Scroll to make a specified row/column visible in datagrid. If the specified row/column is already in view, scrolling will not occur.
 * Start: Scroll to make the row/column positioned at the start of the datagrid.

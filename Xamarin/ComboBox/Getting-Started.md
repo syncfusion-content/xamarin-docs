@@ -265,7 +265,7 @@ Content = layout;
 
 {% endtabs %}
 
-Refer [this](https://help.syncfusion.com/xamarin/sfcombobox/populating-data) link to learn more about the options available in SfComboBox to populate data.
+Refer [this](https://help.syncfusion.com/xamarin/combobox/populating-data) link to learn more about the options available in SfComboBox to populate data.
 
 ![populate](images/Getting-Started/populateData.png)
 

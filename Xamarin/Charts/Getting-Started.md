@@ -704,7 +704,7 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 [How to solve application crashes due to privacy violation in iOS 10+ devices](https://www.syncfusion.com/kb/9300/how-to-solve-application-crashes-due-to-privacy-violation-in-ios-10-devices)
 
-[How to add the Xamarin.Forms chart in a ListView](https://www.syncfusion.com/kb/11341/how-to-add-the-xamarin-forms-chart-in-a-listview)
+[How to add the Xamarin.Forms chart in a ListView](https://www.syncfusion.com/kb/11341/how-to-add-the-xamarin-forms-charts-in-a-listview)
 
 [How to remove the default padding of Xamarin.Forms chart](https://www.syncfusion.com/kb/9606/how-to-remove-the-default-padding-of-xamarin-forms-chart)
 

@@ -450,9 +450,9 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 [How to add content in the center of DoughnutSeries in Xamarin.Forms](https://www.syncfusion.com/kb/7778/how-to-add-content-in-the-center-of-doughnutseries)
 
-[How to explode the pie series slice on touch](https://www.syncfusion.com/kb/5923/how-to-explode-the-pie-series-slice-on-touch)
+[How to explode the pie series slice on touch](https://www.syncfusion.com/kb/5923/how-to-explode-the-pie-chart-slice-on-touch-in-xamarin-forms)
 
-[How to set the opacity of the chart series](https://www.syncfusion.com/kb/5741/how-to-set-the-opacity-of-the-chart-series)
+[How to set the opacity of the chart series](https://www.syncfusion.com/kb/5741/how-to-set-the-opacity-of-the-xamarin-forms-charts)
 
 [How to show indicator when loading the large number of data points to series in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10680/how-to-show-indicator-when-loading-the-large-number-of-data-points-to-series-in-xamarin)
 

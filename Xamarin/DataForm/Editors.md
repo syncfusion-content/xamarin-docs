@@ -29,7 +29,7 @@ Text
 The String type property and any other type apart from the below specified cases.
 </td>
 <td>
-{{'[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
+{{'[Entry](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -44,7 +44,7 @@ The String type property with multi line text.
 [DataType(DataType.MultilineText)]
 </td>
 <td>
-{{'[Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms)'| markdownify }}
+{{'[Editor](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -58,7 +58,7 @@ Numeric
 The property of Int, Double, Float, Decimal, Long types and also its nullable property.
 </td>
 <td>
-{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -72,7 +72,7 @@ Percent
 The property of Int, Double, Float, Decimal, Long types and also its nullable property with [DataType(“Percent”)] attribute.
 </td>
 <td>
-{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -86,7 +86,7 @@ Currency
 The property of Int, Double, Float, Decimal, Long types and also its nullable property with [DataType(DataType.Currency)] attribute.
 </td>
 <td>
-{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ Date
 DateTime type property and the property with [DataType(DataType.Date)] and [DataType(DataType.DateTime)] attributes.
 </td>
 <td>
-{{'[DatePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.datepicker?view=xamarin-forms)'| markdownify }}
+{{'[DatePicker](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.datepicker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -114,7 +114,7 @@ Time
 The property with [DataType(DataType.Time)] attribute.
 </td>
 <td>
-{{'[TimePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.timepicker?view=xamarin-forms)'| markdownify }}
+{{'[TimePicker](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.timepicker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -128,7 +128,7 @@ NumericUpDown
 Int or Double type property.
 </td>
 <td>
-{{'[SfNumericUpDown](https://help.syncfusion.com/xamarin/sfnumericupdown/overview)'| markdownify }}
+{{'[SfNumericUpDown](https://help.syncfusion.com/xamarin/numericupdown/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -142,7 +142,7 @@ Segment
 Enum type property.
 </td>
 <td>
-{{'[SfSegmentedControl](https://help.syncfusion.com/xamarin/sfsegmentedcontrol/overview)'| markdownify }}
+{{'[SfSegmentedControl](https://help.syncfusion.com/xamarin/segmented-control/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -156,7 +156,7 @@ Bool
 Bool type property.
 </td>
 <td>
-{{'[SfCheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/overview)'| markdownify }}
+{{'[SfCheckBox](https://help.syncfusion.com/xamarin/checkbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ Switch
 Bool type property.
 </td>
 <td>
-{{'[Switch](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms)'| markdownify }}
+{{'[Switch](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -185,7 +185,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-{{'[Picker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.picker?view=xamarin-forms)'| markdownify }}
+{{'[Picker](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.picker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-{{'[SfComboBox](https://help.syncfusion.com/xamarin/sfcombobox/overview)'| markdownify }}
+{{'[SfComboBox](https://help.syncfusion.com/xamarin/combobox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -215,7 +215,7 @@ The String type property and property with
 [DataType(DataType.Password)] attribute.
 </td>
 <td>
-{{'[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
+{{'[Entry](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -292,7 +292,7 @@ public String Address { get; set; }
 
 ## Numeric editor
 
-In the numeric editor, the [SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview) is loaded.
+In the numeric editor, the [SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/overview) is loaded.
 
 ### Change maximum NumberDecimalDigits in the numeric editor
 

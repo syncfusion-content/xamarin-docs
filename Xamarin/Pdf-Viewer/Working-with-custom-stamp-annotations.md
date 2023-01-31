@@ -46,7 +46,7 @@ private void Button_Clicked(object sender, EventArgs e)
     image.HeightRequest = 100;
     //Method 1: Add image as custom stamp to the first page using `AddStamp` method
     pdfViewer.AddStamp(image, 1);
-
+    
     //Method 2: Create a stamp annotation instance and add using `AddAnnotation` method
     //StampAnnotation stampAnnotation = new StampAnnotation(image, 1, new Rectangle(100, 100, 100, 100));
     //pdfViewer.AddAnnotation(stampAnnotation);  	

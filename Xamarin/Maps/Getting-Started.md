@@ -62,7 +62,7 @@ Location: {Installed location}/{version}/Xamarin/lib
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching an application on each platform with SfMaps.
 
@@ -277,7 +277,7 @@ The maps control supports reading and loading the GeoJSON files. The GeoJSON fil
 
 Data can be bound to the shape file layer using the [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html#Syncfusion_SfMaps_XForms_ShapeFileLayer_ItemsSource), [`ShapeIDPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html#Syncfusion_SfMaps_XForms_ShapeFileLayer_ShapeIDPath), and [`ShapeIdTableField`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html#Syncfusion_SfMaps_XForms_ShapeFileLayer_ShapeIDTableField) properties.
 
-The [`Populate data`](https://help.syncfusion.com/xamarin/SfMaps/PopulateData) section gives the detailed explanation of data binding.
+The [`Populate data`](https://help.syncfusion.com/xamarin/maps/populatedata) section gives the detailed explanation of data binding.
 
 {% tabs %}
 
@@ -308,7 +308,7 @@ ShapeFileLayer layer = new ShapeFileLayer();
 
 Markers are used to identify the shapes. They can be added to the shape file layers as demonstrated in the following code sample. Markers can be customized using the [`MarkerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLayer.html#Syncfusion_SfMaps_XForms_MapLayer_MarkerSettings) property in the shape file layer.
 
-The detailed explanation of marker and its customization are provided under [`Markers`](https://help.syncfusion.com/xamarin/SfMaps/Markers) section.
+The detailed explanation of marker and its customization are provided under [`Markers`](https://help.syncfusion.com/xamarin/maps/markers) section.
 
 {% tabs %}
 
@@ -337,7 +337,7 @@ layer.Markers.Add(marker);
 
 The color mapping support allows you customize the shape colors based on the underlying value of shape received from the bound data. Both the range color mapping and equal color mapping are supported in maps.
 
-The detailed explanation of color mapping is provided in [`colorMapping`](https://help.syncfusion.com/xamarin/SfMaps/ColorMapping) section.
+The detailed explanation of color mapping is provided in [`colorMapping`](https://help.syncfusion.com/xamarin/maps/colormapping) section.
 
 {% tabs %}
 
@@ -374,7 +374,7 @@ The detailed explanation of color mapping is provided in [`colorMapping`](https:
 
 Legends interpret what the map displays. They can be added to the shape file layer as demonstrated in the following code sample. Legends will be displayed based on the data bound to the layer, and color mapping plays a major role in enabling legends. 
 
-The detailed explanation of legend is provided under [`Legend`](https://help.syncfusion.com/xamarin/SfMaps/Legend) section.
+The detailed explanation of legend is provided under [`Legend`](https://help.syncfusion.com/xamarin/maps/legend) section.
 
 {% tabs %}
 

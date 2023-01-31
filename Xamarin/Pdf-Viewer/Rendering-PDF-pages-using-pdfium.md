@@ -187,7 +187,7 @@ internal class CustomPdfRenderer : ICustomPdfRenderer
          return new Android.Util.Size(pageWidth, pageHeight);
       }
    }
-
+   
    /// <summary>
    /// Renders the PDF page as a bitmap with the specified page index.
    /// </summary>

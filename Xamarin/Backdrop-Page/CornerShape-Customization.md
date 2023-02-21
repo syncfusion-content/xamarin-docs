@@ -7,7 +7,7 @@ control: SfBackdropPage
 documentation: ug
 ---
 
-# Corner Shape Customization
+# Corner Shape Customization in Xamarin SfBackdropPage
 
 Backdrop allows to customize the shapes on the top corners of the front layer. Curved and cut (flat) shape options are available , it can be switched by setting [`EdgeShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.BackdropFrontLayer.html#Syncfusion_XForms_Backdrop_BackdropFrontLayer_EdgeShape) property of the front layer.
 

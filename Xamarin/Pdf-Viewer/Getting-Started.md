@@ -508,6 +508,34 @@ pdfViewerControl.SelectorSettings.LockedStrokeColor = Color.Red;
 
 N>It is not recommended to set both the `StrokeColor` and `LockedStrokeColor` properties with the same color.
 
+## How to add color to the annotation selector?
+
+By default, the selection border color for the annotations will be blue. You can customize the annotations selection border color by setting the required color to the StrokeColor property. The following code illustrates the same:
+
+{% tabs %}
+{% highlight c# %}
+
+//Set the selection border color for the annotations 
+pdfViewerControl.AnnotationSettings.Selector.StrokeColor = Color.Orange;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Customize the annotation selector padding
+
+To set the margin between annotations and the selector, set the PdfViewerControl.AnnotationSettings.Selector.Padding API to desire value. The default value is 10. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Set the Annotations selector padding
+pdfViewerControl.AnnotationSettings.Selector.Padding = 15;
+
+{% endhighlight %}
+{% endtabs %}
+
+N>This property is applicable for rectangle, circle, freetext, ink, handwritten, and custom stamp annotations. It accepts values in the range -20 to 20.
+
 ## How to enable or disable the annotation selection?
 
 To enable or disable the annotation selection, set the `SfPdfViewer.AnnotationSettings.Constraints` API to `AnnotationConstraints.Selectable` or `~AnnotationConstraints.Selectable` respectively. Annotations will be selected by default, and when this API is set to `~AnnotationConstraints.Selectable`, annotation selection, moving, resizing, removing and attribute changes will be disabled. Only the tapped events of the annotations will be raised. The following code sample explains the same.

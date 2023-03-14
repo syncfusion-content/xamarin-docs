@@ -1254,8 +1254,8 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to export Middle Eastern Languages (Arabic, Hebrew) from Xamarin.Forms DataGrid (SfDataGrid) to PDF](https://www.syncfusion.com/kb/11198)
+[How to export Middle Eastern Languages (Arabic, Hebrew) from Xamarin.Forms DataGrid (SfDataGrid) to PDF](https://www.syncfusion.com/kb/11198/how-to-export-middle-eastern-languages-arabic-hebrew-from-xamarin-forms-datagrid-sfdatagrid)
 
-[How to create Header and Footer in PDF document](https://www.syncfusion.com/kb/7386)
+[How to create Header and Footer in PDF document](https://www.syncfusion.com/kb/7386/how-to-create-header-and-footer-in-pdf-document)
 
-[How to export a SfDataGrid to excel or PDF using ToolBarItems of a Page](https://www.syncfusion.com/kb/7395)
+[How to export a SfDataGrid to excel or PDF using ToolBarItems of a Page](https://www.syncfusion.com/kb/7395/how-to-export-a-sfdatagrid-to-excel-or-pdf-using-toolbaritems-of-a-page)

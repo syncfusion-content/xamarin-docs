@@ -342,11 +342,11 @@ N> This property works when loading the control only. It applies to iOS only and
 
 ## Move to the Cursor at Start or End Position
 
-Rich Text Editor provides the support to move the cursor position to the beginning or end of the content. By default, the cursor position is set at the end of the content.
+The Rich Text Editor provides support to move the cursor position to the beginning or end of the content. By default, the cursor position is set at the end of the content.
 
 ### MoveCursorToStart
 
-Rich Text Editor provides the support to move the cursor position to the beginning of the content. The following code example explains how to set 'MoveCursorToStart' mode in Rich Text Editor.
+The Rich Text Editor provides support to move the cursor position to the beginning of the content. The following code example explains setting the 'MoveCursorToStart' mode in the Rich Text Editor.
 
 {% tabs %}
 {% highlight C# %} 
@@ -361,7 +361,7 @@ this.Content = richtexteditor;
 
 ### MoveCursorToEnd
 
-Rich Text Editor provides the support to move the cursor position to the end of the content. The following code example explains how to set 'MoveCursorToEnd' mode in Rich Text Editor.
+The Rich Text Editor provides support to move the cursor position to the end of the content. The following code example explains setting the 'MoveCursorToEnd' mode in the Rich Text Editor.
 
 {% tabs %}
 {% highlight C# %} 

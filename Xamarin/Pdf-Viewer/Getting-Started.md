@@ -501,7 +501,7 @@ By default, the selection border color for the locked annotations will be gray. 
 {% highlight c# %}
 
 //Set the selection border color for the locked annotations
-pdfViewerControl.SelectorSettings.LockedStrokeColor = Color.Red;
+pdfViewerControl.AnnotationSettings.Selector.LockedStrokeColor = Color.Red;
 
 {% endhighlight %}
 {% endtabs %}
@@ -510,8 +510,7 @@ N>It is not recommended to set both the `StrokeColor` and `LockedStrokeColor` pr
 
 ## How to add color to the annotation selector?
 
-By default, the selection border color for the annotations will be blue. You can customize the annotations selection border color by setting the required color to the StrokeColor property. The following code illustrates the same:
-
+By default, the selection border color for the annotations will be blue. You can customize the annotations selection border color by setting the required color to the `StrokeColor property`. The following code illustrates the same.
 {% tabs %}
 {% highlight c# %}
 
@@ -521,9 +520,9 @@ pdfViewerControl.AnnotationSettings.Selector.StrokeColor = Color.Orange;
 {% endhighlight %}
 {% endtabs %}
 
-### Customize the annotation selector padding
+### How to customize the annotations selector padding
 
-To set the margin between annotations and the selector, set the PdfViewerControl.AnnotationSettings.Selector.Padding API to desire value. The default value is 10. 
+By changing the value of the `PdfViewerControl.AnnotationSettings.Selector.Padding` API, you can adjust the spacing between the annotation and the selector, which has a range of -20 to 20. The padding between the annotation and the selection is 10 by default. The following code sample explains the same.
 
 {% tabs %}
 {% highlight c# %}
@@ -534,7 +533,7 @@ pdfViewerControl.AnnotationSettings.Selector.Padding = 15;
 {% endhighlight %}
 {% endtabs %}
 
-N>This property is applicable for rectangle, circle, freetext, ink, handwritten, and custom stamp annotations. It accepts values in the range -20 to 20.
+N>This property only applies to bounds-based annotations, such as rectangle, circle, freetext, ink, handwritten, and custom stamp annotations.
 
 ## How to enable or disable the annotation selection?
 

@@ -778,13 +778,14 @@ private void PdfViewer_InkEdited (object sender, InkEditedEventArgs args)
 After erasing the ink annotation, if its size or position is changed from the values before the erasing operation, the `AnnotationMovedOrResized` event will be raised. The old bounds before the erase operation and the new bounds after the eraser operation can be obtained from the event arguments. Refer to this [section](https://help.syncfusion.com/xamarin/pdf-viewer/ink#how-to-identify-whether-the-ink-annotation-is-moved-or-resized).
 
 ### Changing the thickness of ink eraser
-You can get or set the thickness of the ink annotation by using the `AnnotationSettings.InkEraserSettings.Thickness` property. Refer to the following code example.
+You can get or set the thickness of the ink eraser tool by using the `AnnotationSettings.InkEraserSettings.Thickness` property. Refer to the following code example.
 
 {% tabs %}
 {% highlight xaml %}
 
 //To set the Ink eraser thickness 
 pdfViewerControl.AnnotationMode = AnnotationMode.InkEraser; 
+//Set the thickness of the ink eraser
 pdfViewerControl.AnnotationSettings.InkEraserSettings.Thickness = 70;
 
 {% endhighlight %}

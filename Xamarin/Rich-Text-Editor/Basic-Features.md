@@ -121,7 +121,7 @@ private void Richtexteditor_FormatChanged(object sender, FormatChangedEventArgs 
 
 {% endtabs %}
 
-The following code example explains how to get Fontname in format changed event.
+The following code example explains how to get Font name in format changed event.
 
 {% tabs %} 
 
@@ -264,7 +264,7 @@ N> It applies to android only. Since iOS and UWP do not have the limitation in a
 
 ## StyleSheet
 
- The Rich Text Editor provides the support to customize the style sheet type to load html file from an external or internal file path by using the StyleSheetTypebindable property in the RichTextEditor.
+ The Rich Text Editor provides the support to customize the style sheet type to load html file from an external or internal file path by using the StyleSheetType bindable property in the RichTextEditor.
 
 ### Default
  Loads the WebView resources through an external style sheet.
@@ -294,7 +294,7 @@ N>It applies only to UWP users in China and Korea locations. It is not applicabl
 
 ## Enable or disable system keyboard
 
-The RichTextEditor supports restricting the system keyborad visibility while focusing on the RichTextEditor control. The default value is true.
+The RichTextEditor supports restricting the system keyboard visibility while focusing on the RichTextEditor control. The default value is true.
 
 {% tabs %} 
 
@@ -318,7 +318,7 @@ N> It applies to android and iOS only and not supported in UWP.
 
 ## Configure the HTML tag for enter key
 
-The RichTextEditor supports preserving the dictation text after its comes with a new paragraph and a new line using `div` Html tag.
+The RichTextEditor supports preserving the dictation text after its comes with a new paragraph and a new line using `div` HTML tag.
 
 {% tabs %} 
 

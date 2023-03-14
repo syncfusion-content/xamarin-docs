@@ -440,7 +440,7 @@ Each external method definition must be preceded by the DllImport attribute.
 {% endtabs %}
 #### Implement the LoadDocument method
 
-The following code sample shows implementation of LoadDocument method. It will be called every time when a PDF is Loaded.
+The following code sample shows implementation of `LoadDocument` method. It will be called every time when a PDF is Loaded.
 
 {% tabs %}
 {% highlight c# %}
@@ -569,7 +569,7 @@ public SoftwareBitmap RenderPageBitmap(IntPtr document, int pageIndex, int pageW
 
 #### Close the PDF document
 
-When a new PDF is to be loaded, the previous PDF must be closed, and the page count should be reset.
+When a new PDF is to be loaded, the previous PDF must be closed, implementation of `CloseDocument` method is shown below.
 
 {% tabs %}
 {% highlight c# %}

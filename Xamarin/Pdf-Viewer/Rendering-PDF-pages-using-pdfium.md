@@ -261,6 +261,6 @@ pdfViewer.CustomPdfRenderer = DependencyService.Get<ICustomPdfRendererService>()
 {% endhighlight %}
 {% endtabs %}
 
-N>At present, this feature is available on the Android and UWP Platforms.
+N>At present, this feature is available only on the Android Platform.
 
 N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

@@ -41,12 +41,12 @@ pdfViewerControl.SaveDocument(true);
 {% endhighlight %}
 {% endtabs %}
 
-## Editing the form field values
+## Editing the form field values programmatically
 
-We can edit the form fields that are present in the document using the collection `FormFields` in the pdf viewer. We can edit textbox field, checkbox field, radio button field, combo box field, list box field and signature field. 
+We can programmatically edit the form fields that are present in the document using the FormFields collection in the PdfViewer
 
 ### Editing Text Box form field
-We could edit the text of the text box form field by changing the Text property of the text box field. Also, we could set the CanEdit property to false to restrict editing of individual text boxes.
+You could programmatically edit the text of the text box form field by changing the `Text` property of the text box field. Also, we could set the `CanEdit` property to false to restrict editing of individual text boxes.
 
 {% tabs %}
 {% highlight c# %}
@@ -64,7 +64,7 @@ if (pdfViewerControl.FormFields.Where(x => x.Name == "name") is TextFormField na
 {% endtabs %}
 
 ### Editing Check box form field
-We could check or uncheck the check box form field by changing the IsChecked property. By default, this property is set false. Also, we could set the CanEdit property to false to restrict editing of individual text boxes
+You can programmatically check or uncheck the checkbox field by changing the `IsChecked` property. By default, this property is set to false. Also, you can set the `CanEdit` property to false to restrict editing of individual text boxes.
 
 {% tabs %}
 {% highlight c# %}
@@ -82,7 +82,7 @@ if (pdfViewerControl.FormFields.Where(x => x.Name == "newsletter") is CheckBoxFo
 {% endtabs %}
 
 ### Editing Combo box form field
-We could select an item of combo box by using the property SelectedItem of the combo box form field. Also, we could set the CanEdit property to false to restrict editing of combo box form fields.
+You can programmatically select an item from the combo box by using the property `SelectedItem` of the combo box form field. Also, you can set the `CanEdit` property to false to restrict editing of combo box fields.
 
 {% tabs %}
 {% highlight c# %}
@@ -100,7 +100,7 @@ comboBox.SelectedItem = comboBox.Items[4];
 {% endtabs %}
 
 ### Editing Radio button form field
-We could edit the text of the text box form field by changing the Text property of the text box field. Also, we could set the CanEdit property to false to restrict editing of individual text boxes.
+You can programmatically select an item of radio buttons by using the property `SelectedItem` of the radio button form field. Also, you can set the `CanEdit` property to false to restrict editing of radio button form fields.
 
 {% tabs %}
 {% highlight c# %}
@@ -118,7 +118,8 @@ if (pdfViewerControl.FormFields.Where(x => x.Name == "name") is TextFormField na
 {% endtabs %}
 
 ### Editing Signature form field
-We could add a handwritten signature to the signature form field by adding a handwritten signature to the HandwrittenSignature property in the signature form field. Also, we could set the CanEdit property to false to restrict adding the signature in the signature form field.
+You can programmatically add a signature to the signature form field by adding a handwritten signature to the `HandwrittenSignature` property. Also, you can set the `CanEdit` property to false to restrict adding the signature in the signature form field.
+
 {% tabs %}
 {% highlight c# %}
 
@@ -140,13 +141,30 @@ signature.HandwrittenSignature = sign;
 {% endhighlight %}
 {% endtabs %}
 
-## How to restrict Editing of form field data
+## How to restrict editing each form field’s data
 
-By setting the `EnableFormFilling property` of the PdfViewerControl instance to false, you can avoid modifying the values of the form field elements present in the loaded PDF document.
+You can restrict each field's editing by setting the `CanEdit` property on the individual form to false.
+
 {% tabs %}
 {% highlight c# %}
 
-//Does not allows form fields to edit in PDF Viewer 
+foreach (Syncfusion.SfPdfViewer.XForms.FormField form in pdfViewerControl.FormFields)
+{
+  //To restrict the editing each field
+  form.CanEdit = false;
+}               
+
+{% endhighlight %}
+{% endtabs %}
+
+## How to restrict editing of form field data
+
+By setting the `CanEdit` property of the `PdfViewerControl.FormSettings` instance to false, you can avoid modifying the values of the form field elements present in the loaded PDF document.
+
+{% tabs %}
+{% highlight c# %}
+
+//Does not allow form fields to edit in PDF Viewer 
 pdfViewerControl.FormSettings.CanEdit = false;
 
 {% endhighlight %}

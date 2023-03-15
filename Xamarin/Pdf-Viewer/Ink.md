@@ -753,6 +753,19 @@ pdfViewer.AnnotationMode = AnnotationMode.None;
 {% endhighlight %}
 {% endtabs %}
 
+### Changing the thickness of the ink eraser
+
+You can get or set the thickness of the ink eraser tool by using the `AnnotationSettings.InkEraserSettings.Thickness` property. The default value of ink eraser thickness is 40, and it ranges from 5 to 150. Refer to the following code example.
+
+{% tabs %}
+{% highlight xaml %}
+
+//Set the Ink eraser thickness 
+pdfViewerControl.AnnotationSettings.InkEraserSettings.Thickness = 75;
+
+{% endhighlight %}
+{% endtabs %}
+
 ### Detecting the ink erase operation
 The event `InkEdited` will be raised when you erase an ink annotation. The ink points before the erase operation and the modified ink points after the erase operation can be obtained from the event arguments.
 
@@ -776,17 +789,3 @@ private void PdfViewer_InkEdited (object sender, InkEditedEventArgs args)
 {% endtabs %}
 
 After erasing the ink annotation, if its size or position is changed from the values before the erasing operation, the `AnnotationMovedOrResized` event will be raised. The old bounds before the erase operation and the new bounds after the eraser operation can be obtained from the event arguments. Refer to this [section](https://help.syncfusion.com/xamarin/pdf-viewer/ink#how-to-identify-whether-the-ink-annotation-is-moved-or-resized).
-
-### Changing the thickness of the ink eraser
-You can get or set the thickness of the ink eraser tool by using the `AnnotationSettings.InkEraserSettings.Thickness` property. The default value of ink eraser thickness is 40, and it ranges from 5 to 150. Refer to the following code example.
-
-{% tabs %}
-{% highlight xaml %}
-
-//Set the Ink eraser thickness 
-pdfViewerControl.AnnotationSettings.InkEraserSettings.Thickness = 75;
-
-{% endhighlight %}
-{% endtabs %}
-N>The default value of ink eraser thickness is 40, and it ranges from 5 to 150.
-

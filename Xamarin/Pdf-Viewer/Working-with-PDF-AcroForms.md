@@ -133,7 +133,7 @@ signature.HandwrittenSignature = signature;
 
 ## How to restrict the editing of the form field data?
 
-By setting the ``PdfViewerControl.FormSettings.CanEdit` property to `false`, you can avoid editing the values of all the form field elements in the loaded PDF document.
+By setting the `PdfViewerControl.FormSettings.CanEdit` property to `false`, you can avoid editing the values of all the form field elements in the loaded PDF document.
 
 {% tabs %}
 {% highlight c# %}

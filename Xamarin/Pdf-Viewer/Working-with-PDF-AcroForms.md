@@ -41,19 +41,19 @@ pdfViewerControl.SaveDocument(true);
 {% endhighlight %}
 {% endtabs %}
 
-## Adding or editing the form field values programmatically
+## Adding or Editing the Form Field Values Programmatically
 
-We can programmatically add or edit the form fields in the document using the `FormFields` collection in the PdfViewer.
+Programmatically add or edit the form fields in the document using the `FormFields` collection in the PdfViewer.
 
 ### Adding or editing the Text Box form field
-You can programmatically add or edit the text of the text box form field by changing the `Text` property.
+Programmatically add or edit the text of the text box form field by changing the `Text` property.
 
 {% tabs %}
 {% highlight c# %}
 
 if (pdfViewerControl.FormFields.Where(x => x.Name == "name") is TextFormField nameTextBox) 
 {
-// Modify the text entered in the Text Box field
+// Modify the text entered in the Text Box field.
  nameTextBox.Text = "Jonathan"; 
 }
 
@@ -61,15 +61,14 @@ if (pdfViewerControl.FormFields.Where(x => x.Name == "name") is TextFormField na
 {% endtabs %}
 
 ### Adding or editing the Checkbox form field
-You can programmatically check or uncheck the checkbox field by changing the `IsChecked` property. By default, this property is `false`.
+Programmatically check or uncheck the checkbox field by changing the `IsChecked` property. By default, this property is `false`.
 
 {% tabs %}
 {% highlight c# %}
 
-// Take the Checkbox form field from the `FormFields` collection
 if (pdfViewerControl.FormFields.Where(x => x.Name == "newsletter") is CheckBoxFormField checkBox) 
 {
-// Mark the checkbox as checked
+// Mark the checkbox as checked.
  checkBox.IsChecked = true;
 }
 
@@ -77,7 +76,7 @@ if (pdfViewerControl.FormFields.Where(x => x.Name == "newsletter") is CheckBoxFo
 {% endtabs %}
 
 ### Editing the Combo Box form field
-You can programmatically select an item from the combo box using the `SelectedItem` property.
+Programmatically select an item from the combo box using the `SelectedItem` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -93,14 +92,14 @@ comboBox.SelectedItem = comboBox.Items[4];
 {% endtabs %}
 
 ### Editing the Radio button form field
-You can programmatically select an item from the radio buttons using the `SelectedItem` property. 
+Programmatically select an item from the radio buttons using the `SelectedItem` property. 
 
 {% tabs %}
 {% highlight c# %}
 
 if (pdfViewerControl.FormFields.Where(x => x.Name == "gender") is RadioButtonFormField radioButton) 
 {
-// Select the desired item from the radio buttons
+// Select the desired item from the radio buttons.
  radioButton.SelectedItem = radioButton.Items[0]; 
 
 }
@@ -109,7 +108,7 @@ if (pdfViewerControl.FormFields.Where(x => x.Name == "gender") is RadioButtonFor
 {% endtabs %}
 
 ### Adding or editing a Signature form field
-You can programmatically add a signature to the signature form field by creating and assigning a handwritten signature to the `HandwrittenSignature` property. 
+Programmatically add a signature to the signature form field by creating and assigning a handwritten signature to the `HandwrittenSignature` property. 
 
 {% tabs %}
 {% highlight c# %}
@@ -124,7 +123,7 @@ var signature = new HandwrittenSignature()
 }; 
 signature.Settings.Color = Color.Red; 
 signature.Settings.Thickness = 4; 
-// Add the created handwritten signature to the signature form field
+// Add the created handwritten signature to the signature form field.
 signature.HandwrittenSignature = signature; 
 }
 
@@ -133,12 +132,12 @@ signature.HandwrittenSignature = signature;
 
 ## How to restrict the editing of the form field data?
 
-By setting the `PdfViewerControl.FormSettings.CanEdit` property to `false`, you can avoid editing the values of all the form field elements in the loaded PDF document.
+By setting the `PdfViewerControl.FormSettings.CanEdit` property to `false`, avoid editing the values of all the form field elements in the loaded PDF document.
 
 {% tabs %}
 {% highlight c# %}
 
-// Restrict the editing of all the form fields elements 
+// Restrict the editing of all the form field elements. 
 pdfViewerControl.FormSettings.CanEdit = false;              
 
 {% endhighlight %}
@@ -155,25 +154,25 @@ pdfViewerControl.FormFields[0].CanEdit = false;
 {% endhighlight %}
 {% endtabs %}
 
-## How to clear form field data
+## How to clear form field data?
 
-The `ClearFormData` method can be used to remove or clear all the form field data in the PDF document. 
+The `ClearFormData` method can remove or clear all the form field data in a PDF document. 
 
 {% tabs %}
 {% highlight c# %}
 
-// Clear all the form field data 
+// Clear all the form field data.
 pdfViewerControl.ClearFormData();
 
 {% endhighlight %}
 {% endtabs %}
 
-The `ClearFormData` method passed with the page number can be used to remove or clear all the form field data on the mentioned page of the PDF document.
+The `ClearFormData` method passed with the page number can remove or clear all the form field data on the mentioned page of a PDF document.
 
 {% tabs %}
 {% highlight c# %}
 
-// Clear all the form field data on the 2nd page
+// Clear all the form field data on the 2nd page.
 pdfViewerControl.ClearFormData(2);
 
 {% endhighlight %}

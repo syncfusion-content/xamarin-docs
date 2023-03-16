@@ -66,7 +66,6 @@ Programmatically check or uncheck the checkbox field by changing the `IsChecked`
 {% tabs %}
 {% highlight c# %}
 
-// Take the Checkbox form field from the `FormFields` collection.
 if (pdfViewerControl.FormFields.Where(x => x.Name == "newsletter") is CheckBoxFormField checkBox) 
 {
 // Mark the checkbox as checked.

@@ -755,12 +755,12 @@ pdfViewer.AnnotationMode = AnnotationMode.None;
 
 ### Changing the thickness of the ink eraser
 
-You can get or set the thickness of the ink eraser tool by using the `AnnotationSettings.InkEraserSettings.Thickness` property. The default value of ink eraser thickness is 40, and it ranges from 5 to 150. Refer to the following code example.
+You can get or set the thickness of the ink eraser tool by using the `AnnotationSettings.InkEraserSettings.Thickness` property. The default value of the ink eraser thickness is 40, and it ranges from 5 to 150. Refer to the following code example.
 
 {% tabs %}
 {% highlight xaml %}
 
-//Set the Ink eraser thickness 
+//Set the Ink eraser thickness.
 pdfViewerControl.AnnotationSettings.InkEraserSettings.Thickness = 75;
 
 {% endhighlight %}

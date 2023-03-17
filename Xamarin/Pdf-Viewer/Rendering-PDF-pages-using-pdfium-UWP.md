@@ -8,16 +8,16 @@ documentation: UG
 ---
 # Render PDF Pages using the PDFium renderer in UWP
 
-The [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows users to render the PDF pages using the PDFium rendering engine. The ICustomPdfRenderer interface defines the methods and properties that provide the necessary values and perform the necessary operations to render the pages using the PDFium library. The user needs to add a class to their application that must implement this interface and assign an instance of this class to the CustomPdfRenderer property of the SfPdfViewer as explained [here](https://help.syncfusion.com/xamarin/pdf-viewer/rendering-pdf-pages-using-pdfium).
+The [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows users to render PDF pages using the PDFium rendering engine. The `ICustomPdfRenderer` interface defines the methods and properties that provide the necessary values and perform the necessary operations to render the pages using the PDFium library. The user needs to add a class to their application that must implement this interface and assign an instance of this class to the CustomPdfRenderer property of the SfPdfViewer as explained [here](https://help.syncfusion.com/xamarin/pdf-viewer/rendering-pdf-pages-using-pdfium).
 
-The PDF page rendering using the PDFium rendering engine is shown in detail as follows.
+The PDF page rendering using the PDFium rendering in UWP engine is shown in detail as follows.
 
 ## Loading the PDFium library
 
 To render the PDF pages using PDFium, the pdfium.dll library for the corresponding platform configuration (x86, x64, or arm64) must be loaded in the application project. The library can either be loaded from a file path or it can be added as an embedded resource in the application project.
 
 ### Loading the library from the file path
-The library files for each platform (x86, x64, or arm64) could be placed inside the application project in separate folders. Load the library from the file path using the `LoadLibrary` external method while initializing the custom renderer. 
+The library files for each platform (x86, x64, or arm64) could be placed inside the application project in separate folders. Load the library from the file path using the LoadLibrary external method while initializing the custom renderer.
 
 {% tabs %}
 {% highlight c# %}
@@ -107,7 +107,7 @@ Add a class to the application project and implement the `IPdfRenderer` interfac
 
 ### Add definitions of the external methods
 
-In the class, define the external methods for the necessary operations such as initializing the PDFium library, rendering the PDF pages, obtaining the page size, and more. The pdfium.dll library provides implementations for these external methods.
+In the class, define the external methods for the necessary operations, such as initializing the PDFium library, rendering the PDF pages, obtaining the page size, and more. The pdfium.dll library provides implementations for these external methods.
 
 Each external method definition must be preceded by the DllImport attribute.
 
@@ -186,7 +186,7 @@ Each external method definition must be preceded by the DllImport attribute.
 {% endtabs %}
 ### Implement the LoadDocument method
 
-The following code sample shows implementation of `LoadDocument` method. It will be called every time when a PDF is Loaded.
+The following code sample shows an implementation of the `LoadDocument` method. It will be called every time when a PDF is Loaded.
 
 {% tabs %}
 {% highlight c# %}
@@ -308,7 +308,7 @@ When a new PDF is to be loaded, the previous PDF must be closed, implementation 
 
 {% tabs %}
 {% highlight c# %}
-        // Closes the given PDF document.
+        // Close the given PDF document.
         public void CloseDocument(IntPtr document)
         {
             if (document != IntPtr.Zero)

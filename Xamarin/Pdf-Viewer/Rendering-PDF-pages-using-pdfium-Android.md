@@ -9,7 +9,7 @@ documentation: UG
 
 # Render PDF Pages using the PDFium renderer in Android
 
-The [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows users to render the PDF pages using the PDFium rendering engine. The ICustomPdfRenderer interface defines the methods and properties that provide the necessary values and perform the necessary operations to render the pages using the PDFium library. The user needs to add a class to their application that must implement this interface and assign an instance of this class to the CustomPdfRenderer property of the SfPdfViewer as explained [here](https://help.syncfusion.com/xamarin/pdf-viewer/rendering-pdf-pages-using-pdfium).
+The [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows users to render PDF pages using the PDFium rendering engine. The `ICustomPdfRenderer` interface defines the methods and properties that provide the necessary values and perform the necessary operations to render the pages using the PDFium library. The user needs to add a class to their application that must implement this interface and assign an instance of this class to the CustomPdfRenderer property of the SfPdfViewer as explained [here](https://help.syncfusion.com/xamarin/pdf-viewer/rendering-pdf-pages-using-pdfium).
 
 The PDF page rendering using the PDFium rendering in Android engine is shown in detail as follows.
 

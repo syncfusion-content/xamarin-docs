@@ -17,7 +17,7 @@ Set the `CustomPdfRenderer` property to an instance of a class that implements t
 
 If the `CustomPdfRenderer` property is not set, the pages are rendered using the default rendering of the SfPdfViewer control.
 
-The [CustomPdfRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_CustomPdfRenderer) property should be assigned to the [AlternatePdfRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.ICustomPdfRendererService.html#Syncfusion_SfPdfViewer_XForms_ICustomPdfRendererService_AlternatePdfRenderer) property of the `CustomPdfRenderer` class as like in the following code sample,
+The [CustomPdfRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_CustomPdfRenderer) property should be assigned to the [AlternatePdfRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.ICustomPdfRendererService.html#Syncfusion_SfPdfViewer_XForms_ICustomPdfRendererService_AlternatePdfRenderer) property of the `CustomPdfRenderer` class as in the following code sample,
 
 {% tabs %}
 {% highlight c# %}
@@ -30,7 +30,7 @@ The [CustomPdfRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfV
 ## PDFium renderer sample
 
 The sample that illustrates loading a PDF using the Pdfium renderer in Android and UWP can be downloaded from the link below.
-https://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfiumDemoSample-2002924505
+[https://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfiumDemoSample-2002924505](https://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfiumDemoSample-2002924505)
 
 N>At present, this feature is available on Android and UWP platforms.
 

@@ -101,9 +101,9 @@ N>The namespace name and resource path in the above code is provided for illustr
 
 Add the pdfium.dll file to the project with BuildAction as Embedded Resource.
 
-## Implementing the IPdfRenderer interface
+## Implementing the ICustomPdfRenderer interface
 
-Add a class to the application project and implement the `IPdfRenderer` interface in the class.
+Add a class to the application project and implement the `ICustomPdfRenderer` interface in the class.
 
 ### Add definitions of the external methods
 

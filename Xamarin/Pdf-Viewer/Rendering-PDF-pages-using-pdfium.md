@@ -32,6 +32,6 @@ The [CustomPdfRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfV
 The sample that illustrates loading a PDF using the Pdfium renderer in Android and UWP can be downloaded from the link below.
 [https://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfiumDemoSample-2002924505](https://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfiumDemoSample-2002924505)
 
-N>At present, this feature is available on Android and UWP platforms.
+N>At present, this feature is available on Android and UWP platforms only.
 
 N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

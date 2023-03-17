@@ -13,7 +13,7 @@ The [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-
 
 ## Setting the Renderer property
 
-Set the `CustomPdfRenderer` property to an instance of a class that implements the `ICustomPdfRenderer` implementation. Implementing this interface is explained in detail in the following sections. 
+Set the `CustomPdfRenderer` property to an instance of a class that implements the `ICustomPdfRenderer` interface. Implementing this interface is explained in detail in the following sections. 
 
 If the `CustomPdfRenderer` property is not set, the pages are rendered using the default rendering of the SfPdfViewer control.
 

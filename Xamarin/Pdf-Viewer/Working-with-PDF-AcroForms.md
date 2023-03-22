@@ -41,6 +41,143 @@ pdfViewerControl.SaveDocument(true);
 {% endhighlight %}
 {% endtabs %}
 
+## Adding or Editing the Form Field Values Programmatically
+
+Programmatically add or edit the form fields in the document using the `FormFields` collection in the PdfViewer.
+
+### Adding or editing the Text Box form field
+Programmatically add or edit the text of the text box form field by changing the `Text` property.
+
+{% tabs %}
+{% highlight c# %}
+
+if (pdfViewerControl.FormFields.Where(x => x.Name == "name") is TextFormField nameTextBox) 
+{
+// Modify the text entered in the Text Box field.
+ nameTextBox.Text = "Jonathan"; 
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Adding or editing the Checkbox form field
+Programmatically check or uncheck the checkbox field by changing the `IsChecked` property. By default, this property is `false`.
+
+{% tabs %}
+{% highlight c# %}
+
+if (pdfViewerControl.FormFields.Where(x => x.Name == "newsletter") is CheckBoxFormField checkBox) 
+{
+// Mark the checkbox as checked.
+ checkBox.IsChecked = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Editing the Combo Box form field
+Programmatically select an item from the combo box using the `SelectedItem` property.
+
+{% tabs %}
+{% highlight c# %}
+
+if (pdfViewerControl.FormFields.Where(x => x.Name == "state") is ComboBoxFormField comboBox) 
+{
+// Select the desire item from the combo box.
+comboBox.SelectedItem = comboBox.Items[4];
+
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Editing the Radio button form field
+Programmatically select an item from the radio buttons using the `SelectedItem` property. 
+
+{% tabs %}
+{% highlight c# %}
+
+if (pdfViewerControl.FormFields.Where(x => x.Name == "gender") is RadioButtonFormField radioButton) 
+{
+// Select the desired item from the radio buttons.
+ radioButton.SelectedItem = radioButton.Items[0]; 
+
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Adding or editing a Signature form field
+Programmatically add a signature to the signature form field by creating and assigning a handwritten signature to the `HandwrittenSignature` property. 
+
+{% tabs %}
+{% highlight c# %}
+
+SignatureFormField signature = pdfViewerControl.FormFields.Where(x => x.Name == "signature") as SignatureFormField;
+if (signature != null) 
+{
+var inkPointsCollection = new List<List<float>>(); inkPointsCollection.Add(new List<float> { 53f, 525f, 53f, 527f, 53f, 528f, 53f, 531f, 53f, 549f, 54f, 570f, 56f, 597f, 57f, 623f, 59f, 652f, 60f, 679f, 62f, 705f, 64f, 726f, 65f, 744f, 66f, 758f, 66f, 768f, 65f, 777f, 65f, 782f, 65f, 784f, 64f, 786f, 64f, 786f, 63f, 786f, 63f, 786f, 63f, 784f, 66f, 774f, 71f, 757f, 79f, 734f, 88f, 708f, 99f, 681f, 112f, 652f, 126f, 627f, 140f, 606f, 150f, 591f, 158f, 582f, 162f, 578f, 164f, 577f, 165f, 576f, 166f, 576f, 165f, 578f, 155f, 592f, 143f, 605f, 121f, 621f, 99f, 631f, 77f, 639f, 54f, 644f, 35f, 645f, 20f, 644f, 10f, 642f, 4f, 642f, 2f, 641f, 1f, 640f, 0f, 639f, 0f, 639f, 2f, 639f, 20f, 645f, 47f, 657f, 75f, 672f, 106f, 688f, 137f, 704f, 168f, 718f, 197f, 732f, 221f, 741f, 240f, 748f, 254f, 753f, 254f, 753f });
+var signature = new HandwrittenSignature() 
+{
+ InkPointsCollection = inkPointsCollection, 
+}; 
+signature.Settings.Color = Color.Red; 
+signature.Settings.Thickness = 4; 
+// Add the created handwritten signature to the signature form field.
+signature.HandwrittenSignature = signature; 
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## How to restrict the editing of the form field data?
+
+By setting the `PdfViewerControl.FormSettings.CanEdit` property to `false`, avoid editing the values of all the form field elements in the loaded PDF document.
+
+{% tabs %}
+{% highlight c# %}
+
+// Restrict the editing of all the form field elements. 
+pdfViewerControl.FormSettings.CanEdit = false;              
+
+{% endhighlight %}
+{% endtabs %}
+
+You could also restrict the editing of any individual form field by setting their instance’s `CanEdit` property to `false`. Refer to the following code example.
+
+{% tabs %}
+{% highlight c# %}
+
+// Restrict the editing of individual form field 
+pdfViewerControl.FormFields[0].CanEdit = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+## How to clear form field data?
+
+The `ClearFormData` method can remove or clear all the form field data in a PDF document. 
+
+{% tabs %}
+{% highlight c# %}
+
+// Clear all the form field data.
+pdfViewerControl.ClearFormData();
+
+{% endhighlight %}
+{% endtabs %}
+
+The `ClearFormData` method passed with the page number can remove or clear all the form field data on the mentioned page of a PDF document.
+
+{% tabs %}
+{% highlight c# %}
+
+// Clear all the form field data on the 2nd page.
+pdfViewerControl.ClearFormData(2);
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Rendering the appearance content of signature form fields
 
 By default, the PDF viewer does not display the appearance content of signature form fields. But the appearance can be displayed by flattening the signature form fields before loading the PDF. This can be achieved by setting the `FlattenSignatureFields` property as true. The default value of the property is set as false.

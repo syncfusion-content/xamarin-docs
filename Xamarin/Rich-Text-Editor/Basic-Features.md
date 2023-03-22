@@ -121,7 +121,7 @@ private void Richtexteditor_FormatChanged(object sender, FormatChangedEventArgs 
 
 {% endtabs %}
 
-The following code example explains how to get Fontname in format changed event.
+The following code example explains how to get Font name in format changed event.
 
 {% tabs %} 
 
@@ -264,7 +264,7 @@ N> It applies to android only. Since iOS and UWP do not have the limitation in a
 
 ## StyleSheet
 
- The Rich Text Editor provides the support to customize the style sheet type to load html file from an external or internal file path by using the StyleSheetTypebindable property in the RichTextEditor.
+ The Rich Text Editor provides the support to customize the style sheet type to load html file from an external or internal file path by using the StyleSheetType bindable property in the RichTextEditor.
 
 ### Default
  Loads the WebView resources through an external style sheet.
@@ -294,7 +294,7 @@ N>It applies only to UWP users in China and Korea locations. It is not applicabl
 
 ## Enable or disable system keyboard
 
-The RichTextEditor supports restricting the system keyborad visibility while focusing on the RichTextEditor control. The default value is true.
+The RichTextEditor supports restricting the system keyboard visibility while focusing on the RichTextEditor control. The default value is true.
 
 {% tabs %} 
 
@@ -318,7 +318,7 @@ N> It applies to android and iOS only and not supported in UWP.
 
 ## Configure the HTML tag for enter key
 
-The RichTextEditor supports preserving the dictation text after its comes with a new paragraph and a new line using `div` Html tag.
+The RichTextEditor supports preserving the dictation text after its comes with a new paragraph and a new line using `div` HTML tag.
 
 {% tabs %} 
 
@@ -339,3 +339,37 @@ RichTextEditor.EnterKey = EnterKey.Div;
 {% endtabs %}
 
 N> This property works when loading the control only. It applies to iOS only and not supported in Android and UWP.
+
+## Move to the Cursor at Start or End Position
+
+The Rich Text Editor provides support to move the cursor position to the beginning or end of the content. By default, the cursor position is set at the end of the content.
+
+### MoveCursorToStart
+
+The Rich Text Editor provides support to move the cursor position to the beginning of the content. The following code example explains setting the 'MoveCursorToStart' mode in the Rich Text Editor.
+
+{% tabs %}
+{% highlight C# %} 
+
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.MoveCursorToStart();
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}
+
+### MoveCursorToEnd
+
+The Rich Text Editor provides support to move the cursor position to the end of the content. The following code example explains setting the 'MoveCursorToEnd' mode in the Rich Text Editor.
+
+{% tabs %}
+{% highlight C# %} 
+
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.MoveCursorToEnd();
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}

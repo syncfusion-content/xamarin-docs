@@ -501,12 +501,40 @@ By default, the selection border color for the locked annotations will be gray. 
 {% highlight c# %}
 
 //Set the selection border color for the locked annotations
-pdfViewerControl.SelectorSettings.LockedStrokeColor = Color.Red;
+pdfViewerControl.AnnotationSettings.Selector.LockedStrokeColor = Color.Red;
 
 {% endhighlight %}
 {% endtabs %}
 
 N>It is not recommended to set both the `StrokeColor` and `LockedStrokeColor` properties with the same color.
+
+## How to Change the Color of the Annotation Selector?
+
+By default, the selection border color for the annotations will be blue. Customize the selection border color of the annotations by setting the required color to the `StrokeColor` property. The following code example illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Set the selection border color for the annotations.
+pdfViewerControl.AnnotationSettings.Selector.StrokeColor = Color.Orange;
+
+{% endhighlight %}
+{% endtabs %}
+
+### How to Customize the Annotation Selector Padding?
+
+By changing the value of the `Padding` property, adjust the spacing between the annotation and the selector, which ranges from -20 to 20. The default padding between the annotation and the selector is 10. The following code example explains the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Set the Annotations selector padding.
+pdfViewerControl.AnnotationSettings.Selector.Padding = 15;
+
+{% endhighlight %}
+{% endtabs %}
+
+N>This property only applies to bounds-based annotations such as rectangle, circle, free text, ink, handwritten, and custom stamp annotations.
 
 ## How to enable or disable the annotation selection?
 

@@ -532,7 +532,7 @@ The [GroupChangingEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 
  `Cancel`: Decides to cancel group expansion.
  
-Cancel group expansion by setting [GroupChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) to `true`.
+Cancel group expansion by setting [GroupChangingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -564,7 +564,7 @@ The [GroupChangingEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 
  `Cancel`: Decides to cancel the group collapsing.
 
-Cancel the group is being collapsed by using the [GroupChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) of `GroupCollapsing` event.
+Cancel the group is being collapsed by using the [GroupChangingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) of `GroupCollapsing` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -640,8 +640,8 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to customize the expander icon for each level of group in Xamarin.Forms DataGrid(SfDataGrid)](https://www.syncfusion.com/kb/11014)
+[How to customize the expander icon for each level of group in Xamarin.Forms DataGrid(SfDataGrid)](https://www.syncfusion.com/kb/11014/how-to-customize-the-expander-icon-for-each-level-of-group-in-xamarin-forms)
 
-[How to group a column in the actual order without sorting the data in SfDataGrid](https://www.syncfusion.com/kb/7852)
+[How to group a column in the actual order without sorting the data in SfDataGrid](https://www.syncfusion.com/kb/7852/how-to-group-a-column-in-the-actual-order-without-sorting-the-data-in-sfdatagrid)
 
-[How to group by a column that is not in Columns collection](https://www.syncfusion.com/kb/7396)
+[How to group by a column that is not in Columns collection](https://www.syncfusion.com/kb/7396/how-to-group-by-a-column-that-is-not-in-columns-collection)

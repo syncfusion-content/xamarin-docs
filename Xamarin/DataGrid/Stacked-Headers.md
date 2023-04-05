@@ -200,7 +200,7 @@ The appearance of stacked header row can be customized by returning a desired co
 
 {% tabs %}
 {% highlight xaml %}
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="https://dotnet.microsoft.com/en-us/apps/xamarin"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
              xmlns:local ="clr-namespace:DataGridSample;assembly=DataGridSample"

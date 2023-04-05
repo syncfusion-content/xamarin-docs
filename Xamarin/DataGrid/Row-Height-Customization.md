@@ -36,7 +36,7 @@ dataGrid.RowHeight = 60;
 
 ### QueryRowHeight
 
-The `SfDatagrid.QueryRowHeight` event returns row heights on demand. This event receives two arguments, namely the sender handles the data grid, and the [QueryRowHeightEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowHeightEventArgs.html). The `QueryRowHeightEventArgs` has the following properties:
+The `SfDatagrid.QueryRowHeight` event returns row heights on demand. This event receives two arguments, namely the sender handles the data grid, and the [QueryRowHeightEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowHeightEventArgs.html). The `QueryRowHeightEventArgs` has the following properties:
 
  * [RowIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowHeightEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryRowHeightEventArgs_RowIndex): This property helps to identify a particular row in the grid.
  * [Height](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowHeightEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryRowHeightEventArgs_RowIndex): This property sets and returns the height of a grid row on demand. Default line size of the rows is 50.
@@ -162,7 +162,7 @@ private void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs
 
 ## Customize header row height based on header content
 
-The data grid allows you to customize the height of the header row based on its content using the `SfDatagrid.QueryRowHeight` event and [SfDatagrid.GetRowHeight](http://help.syncfusion.com/cr/xamarin) method.
+The data grid allows you to customize the height of the header row based on its content using the `SfDatagrid.QueryRowHeight` event and [SfDatagrid.GetRowHeight](https://help.syncfusion.com/cr/xamarin) method.
 
 To hook the `SfDatagrid.QueryRowHeight` event and change the header row height based on the content, follow the code example:
 
@@ -256,4 +256,4 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to adjust row heights of each row based on their content](https://www.syncfusion.com/kb/7446)
+[How to adjust row heights of each row based on their content](https://www.syncfusion.com/kb/7446/how-to-adjust-row-heights-of-each-row-based-on-their-content)

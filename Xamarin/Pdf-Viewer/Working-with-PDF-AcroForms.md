@@ -143,7 +143,7 @@ pdfViewerControl.FormSettings.CanEdit = false;
 {% endhighlight %}
 {% endtabs %}
 
-You could also restrict the editing of any individual form field by setting their instance’s `CanEdit` property to `false`. Refer to the following code example.
+You could also restrict the editing of any individual form field by setting their instance's `CanEdit` property to `false`. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}

@@ -15,7 +15,7 @@ The [Xamarin DataForm](https://www.syncfusion.com/xamarin-ui-controls/xamarin-da
 * Caption customization: Supports loading the image as caption for the editor.
 * Editors: Built-in support for text, numeric, numeric up-down, picker, date picker, time picker, switch,drop-down,autoComplete and checkbox editors. 
 * Custom editor: Supports loading the custom editors.
-* Validation: Built-in support to validate the data based on the [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?redirectedfrom=MSDN&view=net-5.0) and data annotations. It also programmatically supports validation handling.
+* Validation: Built-in support to validate the data based on the [INotifyDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?redirectedfrom=MSDN&view=net-5.0) and data annotations. It also programmatically supports validation handling.
 
 # Getting Started with Xamarin DataForm (SfDataForm)
 
@@ -23,7 +23,7 @@ This section explains the quick overview to use the [Xamarin DataForm (SfDataFor
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin/confirm), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -485,7 +485,7 @@ Text
 The String type property and any other type apart from the following specified cases.
 </td>
 <td>
-{{'[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
+{{'[Entry](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -497,7 +497,7 @@ The String type property with multi line text.
 [DataType(DataType.Multiline)] 
 </td>
 <td>
-{{'[Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms)'| markdownify }}
+{{'[Editor](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -600,7 +600,7 @@ Switch
 Bool type property.
 </td>
 <td>
-{{'[Switch](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms)'| markdownify }}
+{{'[Switch](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -612,7 +612,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-{{'[Picker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.picker?view=xamarin-forms)'| markdownify }}
+{{'[Picker](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.picker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -647,7 +647,7 @@ Password
 The String type property with [DataType(DataType.Password)] attribute.
 </td>
 <td>
-{{'[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
+{{'[Entry](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -717,9 +717,9 @@ dataForm.ColumnCount = 2;
 
 ## Loading DataForm inside StackLayout
 
-StackLayout positions the child elements one after another either horizontally or vertically. Space of the [StackLayout](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) depends on the HorizontalOptions and VerticalOptions properties. Views in a stack layout can be sized based on space in the layout using layout options.
+StackLayout positions the child elements one after another either horizontally or vertically. Space of the [StackLayout](https://learn.microsoft.com/en-us/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) depends on the HorizontalOptions and VerticalOptions properties. Views in a stack layout can be sized based on space in the layout using layout options.
 
-The DataForm control can be loaded inside any layout such as [Grid](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.Grid?view=xamarin-forms), [StackLayout](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms), etc. When loading DataForm inside a `StackLayout`, set the [HorizontalOptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html) and [VerticalOptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html) properties of DataForm, and set parent(StackLayout) of DataForm to `LayoutOptions.FillAndExpand`.
+The DataForm control can be loaded inside any layout such as [Grid](https://learn.microsoft.com/en-us/dotnet/api/Xamarin.Forms.Grid?view=xamarin-forms), [StackLayout](https://learn.microsoft.com/en-us/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms), etc. When loading DataForm inside a `StackLayout`, set the [HorizontalOptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html) and [VerticalOptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html) properties of DataForm, and set parent(StackLayout) of DataForm to `LayoutOptions.FillAndExpand`.
 
 Refer to the following code example to load the DataForm control inside a `StackLayout`. Set the VerticalOptions and HorizontalOptions of the `StackLayout` and DataForm to `FillAndExpand`.
 
@@ -784,7 +784,7 @@ dataForm.HorizontalOptions = LayoutOptions.Center;
 
 ## Editing
 
-By default, the data form enables editing of the data field. You can disable editing by setting the [IsReadOnly](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_IsReadOnly) property of the data form. You can enable or disable editing for a particular data field by setting the [IsReadOnly](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html#Syncfusion_XForms_DataForm_DataFormItem_IsReadOnly) property of [DataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html) in the `AutoGeneratingDataFormItem` event. The data field editing behavior can also be defined by using [EditableAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.editableattribute?view=netframework-4.8Dip)
+By default, the data form enables editing of the data field. You can disable editing by setting the [IsReadOnly](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_IsReadOnly) property of the data form. You can enable or disable editing for a particular data field by setting the [IsReadOnly](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html#Syncfusion_XForms_DataForm_DataFormItem_IsReadOnly) property of [DataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html) in the `AutoGeneratingDataFormItem` event. The data field editing behavior can also be defined by using [EditableAttribute](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.editableattribute?view=net-7.0&viewFallbackFrom=netframework-4.8Dip)
 
 ## Additional Help Resources
 
@@ -794,11 +794,12 @@ Similar to the [`Knowledge Base`](https://www.syncfusion.com/kb/xamarin.forms/sf
 
 ## See also
 
-[How to render DataForm using MVVMCross in Xamarin.Forms](https://www.syncfusion.com/kb/10321/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-[How to render DataForm using RealmObject in Xamarin.Forms](https://www.syncfusion.com/kb/10313/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-[How to render DataForm using ReactiveUI in Xamarin.Forms](https://www.syncfusion.com/kb/10310/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-[How to bind data object in Xamarin.Forms DataForm (SfDataForm) using Fresh MVVM framework](https://www.syncfusion.com/kb/11241/)                                                                                                                                                                                                                                                                                   
-[How to bind data object in Xamarin.Forms DataForm(SfDataForm) using Prism framework](https://www.syncfusion.com/kb/11033/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-[How to import and export data objects from SQLite Offline database into Dataform (SfDataForm)](https://www.syncfusion.com/kb/11028/)                                                                                                                                                                                           
-[How to render DataForm using FSharp application in Xamarin.Forms](https://www.syncfusion.com/kb/10326/)                                                                                                                                                                                    
-[How to bind JSON data to Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11310/)
+[How to render DataForm using MVVMCross in Xamarin.Forms](https://www.syncfusion.com/kb/10321/how-to-render-dataform-using-mvvmcross-in-xamarin-forms)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+[How to render DataForm using RealmObject in Xamarin.Forms](https://www.syncfusion.com/kb/10313/how-to-render-dataform-using-realmobject-in-xamarin-forms)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+[How to render DataForm using ReactiveUI in Xamarin.Forms](https://www.syncfusion.com/kb/10310/how-to-render-dataform-using-reactiveui-in-xamarin-forms)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+[How to bind data object in Xamarin.Forms DataForm (SfDataForm) using Fresh MVVM framework](https://www.syncfusion.com/kb/11241/how-to-bind-data-object-in-xamarin-forms-dataform-sfdataform-using-fresh-mvvm-framework)                                                                                                                                                                                                                                                                                   
+[How to bind data object in Xamarin.Forms DataForm(SfDataForm) using Prism framework](https://www.syncfusion.com/kb/11033/how-to-bind-data-object-in-xamarin-forms-dataformsfdataform-using-prism-framework)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+[How to import and export data objects from SQLite Offline database into Dataform (SfDataForm)](https://www.syncfusion.com/kb/11028
+how-to-import-and-export-data-objects-from-sqlite-offline-database-into-dataform-sfdataform)                                                                                                                                                                                           
+[How to render DataForm using FSharp application in Xamarin.Forms](https://www.syncfusion.com/kb/10326/how-to-render-dataform-using-fsharp-application-in-xamarin-forms)                                                                                                                                                                                    
+[How to bind JSON data to Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11310/how-to-bind-json-data-to-xamarin-forms-dataform-sfdataform)

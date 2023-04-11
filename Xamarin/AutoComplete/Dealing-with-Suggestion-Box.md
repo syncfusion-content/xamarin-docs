@@ -30,7 +30,7 @@ The drop-down that shows the filtered items will be placed automatically based o
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="https://dotnet.microsoft.com/en-us/apps/xamarin"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
              xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
@@ -142,7 +142,7 @@ The maximum height of the suggestion box in the [`SfAutoComplete`](https://help.
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="https://dotnet.microsoft.com/en-us/apps/xamarin"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
              xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
@@ -236,7 +236,7 @@ Suggestion box can be shown whenever the control receives focus using the [`Show
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="https://dotnet.microsoft.com/en-us/apps/xamarin"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
              xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
@@ -319,7 +319,7 @@ In this example, a time duration of 3 seconds is set to popup delay.
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="https://dotnet.microsoft.com/en-us/apps/xamarin"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
              xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
@@ -413,7 +413,7 @@ In this example, a time duration of 3 seconds is set to search delay.
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="https://dotnet.microsoft.com/en-us/apps/xamarin"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
              xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
@@ -505,7 +505,7 @@ To avoid opening the drop-down, you can set the [`SuggestionBoxPlacement`](https
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="https://dotnet.microsoft.com/en-us/apps/xamarin"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
              xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
@@ -598,7 +598,7 @@ You can use the [`FilteredItems`](https://help.syncfusion.com/cr/xamarin/Syncfus
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="https://dotnet.microsoft.com/en-us/apps/xamarin"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AutoComplete"
              xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
@@ -829,7 +829,7 @@ The following code snippet describes how to trigger an event called [`FilterColl
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="https://dotnet.microsoft.com/en-us/apps/xamarin"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AutoComplete"
              xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"

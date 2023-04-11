@@ -135,7 +135,7 @@ using Syncfusion.XForms.SfRadialMenu;
 {% highlight xaml %}
 
     <?xml version="1.0" encoding="utf-8" ?>
-    <ContentPage xmlns="https://dotnet.microsoft.com/en-us/apps/xamarin"
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GettingStarted"
               xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
@@ -175,7 +175,7 @@ using Syncfusion.XForms.SfRadialMenu;
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="https://dotnet.microsoft.com/en-us/apps/xamarin"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:RadialSample"
              xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"

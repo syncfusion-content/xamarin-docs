@@ -9,7 +9,7 @@ documentation: UG
 
 # Data Binding in Xamarin DataGrid (SfDataGrid)
 
-The [Xamarin Datagrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) Control is bound to an external data source to display the data. It supports data sources such as [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-5.0), and so on. The [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ItemsSource) property helps to bind this control with collection of objects.
+The [Xamarin Datagrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) Control is bound to an external data source to display the data. It supports data sources such as [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-5.0), and so on. The [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ItemsSource) property helps to bind this control with collection of objects.
 
 In order to bind data source of the SfDataGrid, set the `SfDataGrid.ItemsSource` property as follows. Such that each row in the SfDataGrid would bind to an object in data source. Each column would bind to a property in the data model object.
 
@@ -41,16 +41,16 @@ dataGrid.ItemsSource = viewModel.OrderInfoCollection;
 
 If the data source implements `ICollectionChanged` interface, then the SfDataGrid will automatically refresh the view when an item is added, removed, or cleared. When you add or remove an item in `ObservableCollection`, it automatically refreshes the view as the `ObservableCollection`. That implements the [INotifyCollectionChanged](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-5.0). But when you do the same in `List`, it will not refresh the view automatically.
 
-If the data model implements the [INotifyPropertyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-5.0) interface, then the SfDataGrid responds to the property change at runtime to update the view.
+If the data model implements the [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-5.0) interface, then the SfDataGrid responds to the property change at runtime to update the view.
 
 N> The SfDataGrid does not supports `DataTable` binding in `Xamarin.Forms` since `System.Data` is inaccessible in `Portable Class Library`.
 
 ## Binding with IEnumerable
 
-The SfDataGrid control supports to bind any collection that implements the [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-5.0) interface. All the data operations such as sorting, grouping, and filtering are supported when binding collection derived from `IEnumerable`.
+The SfDataGrid control supports to bind any collection that implements the [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-5.0) interface. All the data operations such as sorting, grouping, and filtering are supported when binding collection derived from `IEnumerable`.
 
 ## Binding with DataTable
-`SfDataGrid` control supports to bind the [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=netframework-4.8). SfDataGrid control automatically refresh the UI when binding DataTable as `ItemsSource` when rows are added, removed or cleared.
+`SfDataGrid` control supports to bind the [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=netframework-4.8). SfDataGrid control automatically refresh the UI when binding DataTable as `ItemsSource` when rows are added, removed or cleared.
 
 {% tabs %}
 {% highlight xaml %}
@@ -72,7 +72,7 @@ Below are the limitations when binding DataTable as `ItemsSource` to SfDataGrid.
 * Advanced Filtering does not support Case Sensitive filtering.
 * [GridUnboundColumn.Expression](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridUnboundColumn.html#Syncfusion_SfDataGrid_XForms_GridUnboundColumn_Expression) is not supported. This can be achieved by using the [DataColumn](https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumn?redirectedfrom=MSDN&view=net-5.0) of DataTable by setting [DataColumn.Expression](https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumn.expression?redirectedfrom=MSDN&view=net-5.0#System_Data_DataColumn_Expression) property.
 * [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_LiveDataUpdateMode) is not supported.
-* Filtering with [TimeSpan](https://docs.microsoft.com/en-us/dotnet/api/system.timespan?redirectedfrom=MSDN&view=net-5.0) values is not supported.
+* Filtering with [TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/system.timespan?redirectedfrom=MSDN&view=net-5.0) values is not supported.
 * Filtering with sub second components in `DateTime` values is not supported.
 
 ## Binding complex properties
@@ -148,7 +148,7 @@ The [RecordPropertyChanged](https://help.syncfusion.com/cr/xamarin/) event is ra
 
 `PropertyChangedEventArgs` has the following property:
 
- [PropertyName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs.propertyname?view=net-5.0): It denotes the `PropertyName` of the changed value.
+ [PropertyName](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs.propertyname?view=net-5.0): It denotes the `PropertyName` of the changed value.
 
 ### CollectionChanged
 
@@ -156,11 +156,11 @@ The [CollectionChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.Data.C
 
 `NotifyCollectionChangedEventArgs` has the following properties:
 
- [Action](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?view=net-5.0): It contains the current action. (i.e.)` Add`, `Remove`, `Move`, `Replace`, `Reset`.
- [NewItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?view=net-5.0): It contains the list of new items involved in the change.
- [OldItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?view=net-5.0): It contains the list of old items affected by the `Action`.
- [NewStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?view=net-5.0): It contains the index at which the change occurred.
- [OldStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?view=net-5.0): It contains the index at which the `Action` occurred.
+ [Action](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?view=net-5.0): It contains the current action. (i.e.)` Add`, `Remove`, `Move`, `Replace`, `Reset`.
+ [NewItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?view=net-5.0): It contains the list of new items involved in the change.
+ [OldItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?view=net-5.0): It contains the list of old items affected by the `Action`.
+ [NewStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?view=net-5.0): It contains the index at which the change occurred.
+ [OldStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?view=net-5.0): It contains the index at which the `Action` occurred.
 
 ### SourceCollectionChanged
 
@@ -168,11 +168,11 @@ The [SourceCollectionChanged](https://help.syncfusion.com/cr/xamarin/) event is 
 
 `NotifyCollectionChangedEventArgs` has the following properties:
 
- [Action](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?view=net-5.0): It contains the current action. (i.e.) `Add`, `Remove`, `Move`, `Replace`, `Reset`.
- [NewItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?view=net-5.0): It contains the list of new items involved in the change.
- [OldItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?view=net-5.0): It contains the list of old items affected by the `Action`.
- [NewStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?view=net-5.0): It contains the index at which the change occurred.
- [OldStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?view=net-5.0): It contains the index at which the `Action` occurred.
+ [Action](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?view=net-5.0): It contains the current action. (i.e.) `Add`, `Remove`, `Move`, `Replace`, `Reset`.
+ [NewItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?view=net-5.0): It contains the list of new items involved in the change.
+ [OldItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?view=net-5.0): It contains the list of old items affected by the `Action`.
+ [NewStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?view=net-5.0): It contains the index at which the change occurred.
+ [OldStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?view=net-5.0): It contains the index at which the `Action` occurred.
 
 The following methods are associated with `View` which can be used to defer refresh the view:
 
@@ -544,42 +544,42 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to bind a column collection from view model in SfDataGrid Xamarin.Forms](https://www.syncfusion.com/kb/9787)
+[How to bind a column collection from view model in SfDataGrid Xamarin.Forms](https://www.syncfusion.com/kb/9787/how-to-bind-a-column-collection-from-view-model-in-sfdatagrid-xamarin-forms)
 
-[How to resolve "Cannot resolve reference `Xamarin.Android.Support.Interpolate'" in Xamarin.Forms Android projects](https://www.syncfusion.com/kb/10934)
+[How to resolve "Cannot resolve reference `Xamarin.Android.Support.Interpolate'" in Xamarin.Forms Android projects](https://www.syncfusion.com/kb/10934/how-to-resolve-cannot-resolve-reference-xamarin-android-support-interpolator-in-xamarin)
 
-[How to resolve SfDataGrid not rendering issue in iOS and UWP](https://www.syncfusion.com/kb/8334)
+[How to resolve SfDataGrid not rendering issue in iOS and UWP](https://www.syncfusion.com/kb/8334/how-to-resolve-sfdatagrid-not-rendering-issue-in-ios-and-uwp)
 
-[How to configure and install SfDataGrid NuGet package in Visual Studio](https://www.syncfusion.com/kb/8333)
+[How to configure and install SfDataGrid NuGet package in Visual Studio](https://www.syncfusion.com/kb/8333/how-to-configure-and-install-sfdatagrid-nuget-package-in-visual-studio)
 
-[How to make Syncfusion.Xamarin.SfDataGrid to work in release mode in UWP when .NET Native tool chain is enabled](https://www.syncfusion.com/kb/8332)
+[How to make Syncfusion.Xamarin.SfDataGrid to work in release mode in UWP when .NET Native tool chain is enabled](https://www.syncfusion.com/kb/8332/how-to-make-syncfusion-xamarin-sfdatagrid-to-work-in-release-mode-in-uwp-when-net-native)
 
-[How to apply the custom assemblies when configured the project with Syncfusion NuGet packages](https://www.syncfusion.com/kb/8279)
+[How to apply the custom assemblies when configured the project with Syncfusion NuGet packages](https://www.syncfusion.com/kb/8279/how-to-apply-the-custom-assemblies-when-configured-the-project-with-syncfusion-nuget)
 
-[How to bind button command to ViewModel from TemplateColumn of DataGrid](https://www.syncfusion.com/kb/9076)
+[How to bind button command to ViewModel from TemplateColumn of DataGrid](https://www.syncfusion.com/kb/9076/how-to-bind-button-command-to-viewmodel-from-templatecolumn-of-datagrid)
 
-[How to update the modified GridCell value for Dictionary](https://www.syncfusion.com/kb/8172)
+[How to update the modified GridCell value for Dictionary](https://www.syncfusion.com/kb/8172/how-to-update-the-modified-gridcell-value-for-dictionary)
 
-[How to use SfDataGrid in Prism](https://www.syncfusion.com/kb/8061)
+[How to use SfDataGrid in Prism](https://www.syncfusion.com/kb/8061/how-to-use-sfdatagrid-in-prism)
 
-[How to commit the edited values when binding Dictionary in SfDataGrid](https://www.syncfusion.com/kb/7853)
+[How to commit the edited values when binding Dictionary in SfDataGrid](https://www.syncfusion.com/kb/7853/how-to-commit-the-edited-values-when-binding-dictionary-in-sfdatagrid)
 
-[How to load SfDataGrid dynamically with JSON data without POCO classes](https://www.syncfusion.com/kb/7828)
+[How to load SfDataGrid dynamically with JSON data without POCO classes](https://www.syncfusion.com/kb/7828/how-to-load-sfdatagrid-dynamically-with-json-data-without-poco-classes)
 
-[How to retain the SfDataGrid properties when changing the data source](https://www.syncfusion.com/kb/7787)
+[How to retain the SfDataGrid properties when changing the data source](https://www.syncfusion.com/kb/7787/how-to-retain-the-sfdatagrid-properties-when-changing-the-data-source)
 
-[How to bind a view model property to header template](https://www.syncfusion.com/kb/7815)
+[How to bind a view model property to header template](https://www.syncfusion.com/kb/7815/how-to-bind-a-view-model-property-to-header-template)
 
-[How to overcome the DisplayBinding converter is not firing problem when XamlCompilation attribute is set as XamlCompilationOptions.Compile](https://www.syncfusion.com/kb/7561)
+[How to overcome the DisplayBinding converter is not firing problem when XamlCompilation attribute is set as XamlCompilationOptions.Compile](https://www.syncfusion.com/kb/7561/how-to-overcome-the-displaybinding-converter-is-not-firing-problem-when-xamlcompilation)
 
-[How to parse XML file and set as ItemsSource for SfDataGrid](https://www.syncfusion.com/kb/7439)
+[How to parse XML file and set as ItemsSource for SfDataGrid](https://www.syncfusion.com/kb/7439/how-to-parse-xml-file-and-set-as-itemssource-for-sfdatagrid)
 
-[How to configure package source and install Syncfusion NuGet packages in an existing project](https://www.syncfusion.com/kb/7441)
+[How to configure package source and install Syncfusion NuGet packages in an existing project](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing)
 
-[How to render SfDataGrid for Xamarin.Forms.UWP in release mode](https://www.syncfusion.com/kb/7445)
+[How to render SfDataGrid for Xamarin.Forms.UWP in release mode](https://www.syncfusion.com/kb/7445/how-to-render-sfdatagrid-for-xamarin-forms-uwp-in-release-mode)
 
-[How to get the X and Y coordinates when interacting with SfDataGrid](https://www.syncfusion.com/kb/7392)
+[How to get the X and Y coordinates when interacting with SfDataGrid](https://www.syncfusion.com/kb/7392/how-to-get-the-x-and-y-coordinates-when-interacting-with-sfdatagrid)
 
-[How to resolve "Expecting class path separator ';' before" error in Xamarin.Forms.Android](https://www.syncfusion.com/kb/7420)
+[How to resolve "Expecting class path separator ';' before" error in Xamarin.Forms.Android](https://www.syncfusion.com/kb/7420/how-to-resolve-expecting-class-path-separator-before-error-in-xamarin-forms-android)
 
-[How to display an animation while loading the data in the SfDataGrid](https://www.syncfusion.com/kb/7393)
+[How to display an animation while loading the data in the SfDataGrid](https://www.syncfusion.com/kb/7393/how-to-display-an-animation-while-loading-the-data-in-the-sfdatagrid)

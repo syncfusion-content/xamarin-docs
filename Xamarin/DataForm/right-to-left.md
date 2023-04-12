@@ -9,7 +9,7 @@ documentation: UG
 
 # Right to left (RTL) in Xamarin DataForm (SfDataForm)
 
-SfDataForm supports to change the layout direction of the control in the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft` or by changing the device language.
+SfDataForm supports to change the layout direction of the control in the right-to-left direction by setting the [FlowDirection](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft` or by changing the device language.
 
 {% tabs %}
 {% highlight xaml %}
@@ -22,7 +22,7 @@ dataForm.FlowDirection = FlowDirection.RightToLeft;
 {% endtabs %}
 
 >**Note**
-For implementing the `FlowDirection` in the control, Xamarin.Forms package version must be 3.0 and above. Please refer [RightToLeft](https://devblogs.microsoft.com/xamarin/right-to-left-localization-xamarin-forms) to get more details about `RightToLeft` flow direction in Xamarin.Forms.
+For implementing the `FlowDirection` in the control, Xamarin.Forms package version must be 3.0 and above. Please refer [RightToLeft](https://devblogs.microsoft.com/xamarin/right-to-left-localization-xamarin-forms/) to get more details about `RightToLeft` flow direction in Xamarin.Forms.
 
 ### Android
 For Android, add `android:supportsRtl="true"` in your application tag of `AndroidManifest.xml` file, and make sure your `MinSDKVersion` is 17+. By changing the device language / enabling the device's `Force RTL layout` can achieve the `RightToLeft` layout direction in DataForm.
@@ -75,4 +75,4 @@ LoadApplication (new App ());
 
 ## See also
 
-[How to customize the input direction of custom text editor in platform renderer](https://www.syncfusion.com/kb/9043/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+[How to customize the input direction of custom text editor in platform renderer](https://www.syncfusion.com/kb/9043/how-to-customize-the-input-direction-of-custom-text-editor-in-platform-renderer)                                                                                                                                                                                                                                                                                                                                                                                                        

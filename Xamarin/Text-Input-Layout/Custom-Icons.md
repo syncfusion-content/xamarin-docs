@@ -15,7 +15,7 @@ Unicode or font icons for the labels can be displayed as icons.
 
 N> Refer to the following links to learn more about font icons:
 * [How to create font icons using our metro studio and export as ttf?](https://help.syncfusion.com/metro-studio/export-icon-font)
-* [How to set font family for the custom fonts in labels?](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/fonts#using-a-custom-font)
+* [How to set font family for the custom fonts in labels?](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/fonts#using-a-custom-font)
 
 ## Leading view
 
@@ -189,4 +189,4 @@ inputLayout.ShowTrailingView = false;
 
 ## See also
 
-[How to align leading and trailing views](http://www.syncfusion.com/support/kb/11046/how-to-vertically-center-align-icons-in-leading-and-trailing-views)
+[How to align leading and trailing views](https://www.syncfusion.com/kb/11046/how-to-vertically-center-align-icons-in-leading-and-trailing-views-in-xamarin)

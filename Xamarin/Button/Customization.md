@@ -820,7 +820,7 @@ button.EnableRippleEffect = false;
 
 N> Ripple Effect support has not been provided for UWP and WPF Platform.
 
-The complete customization sample:[Customization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Customization-1070507783)
+The complete customization sample:[Customization](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Customization-1070507783)
 
 ## See also
 

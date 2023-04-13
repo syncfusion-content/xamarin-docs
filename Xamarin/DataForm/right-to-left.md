@@ -73,6 +73,7 @@ LoadApplication (new App ());
 
 ![RTL in Xamarin.Forms DataForm](SfDataForm_images/DataForm_RTL.png)
 
+
 ## See also
 
 [How to customize the input direction of custom text editor in platform renderer](https://www.syncfusion.com/kb/9043/how-to-customize-the-input-direction-of-custom-text-editor-in-platform-renderer)                                                                                                                                                                                                                                                                                                                                                                                                        

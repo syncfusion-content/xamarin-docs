@@ -365,8 +365,8 @@ Refer to [Formatting Summary](#formatting-summary) section to know more about ho
 
 {% highlight xaml %}
 <ContentPage x:Class="SummaryDemo.Summary"
-             xmlns="https://xamarin.com/schemas/2014/forms"
-             xmlns:x="https://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:SummaryDemo"
              xmlns:sfgrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms">
     <sfgrid:SfDataGrid x:Name="dataGrid" AllowResizingColumn="True" AllowGroupExpandCollapse="True"
@@ -447,8 +447,8 @@ In the following code snippet, summary is defined for `Salary` and `CustomerID` 
 {% tabs %}
 {% highlight xaml %}
 <ContentPage x:Class="SummaryDemo.Summary"
-             xmlns="https://xamarin.com/schemas/2014/forms"
-             xmlns:x="https://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:SummaryDemo"
              xmlns:sfgrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms">
 

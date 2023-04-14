@@ -135,7 +135,7 @@ The Android platform does not require any additional configuration to render the
 
             <?xml version="1.0" encoding="UTF-8"?>
             <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-                xmlns:x="https://schemas.microsoft.com/winfx/2009/xaml" x:Class="ImageEditor_GettingStarted.ImageEditor_GettingStartedPage"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ImageEditor_GettingStarted.ImageEditor_GettingStartedPage"
                 xmlns:imageeditor="clr-namespace:Syncfusion.SfImageEditor.XForms;assembly=Syncfusion.SfImageEditor.XForms">
                 <ContentPage.Content>
                     <imageeditor:SfImageEditor />
@@ -195,7 +195,7 @@ The following code shows adding an image to the image editor control with the fo
 
     <?xml version="1.0" encoding="UTF-8"?>
       <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-            xmlns:x="https://schemas.microsoft.com/winfx/2009/xaml" x:Class="ImageEditor_GettingStarted.ImageEditor_GettingStartedPage"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ImageEditor_GettingStarted.ImageEditor_GettingStartedPage"
             xmlns:imageeditor="clr-namespace:Syncfusion.SfImageEditor.XForms;assembly=Syncfusion.SfImageEditor.XForms">
             <ContentPage.Content>
                 <imageeditor:SfImageEditor Source="{Binding Image}" />

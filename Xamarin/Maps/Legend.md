@@ -14,7 +14,7 @@ Legends can be added using the [`LegendSettings`](https://help.syncfusion.com/cr
 
 ## Visibility
 
-The legends can be made visible by setting the [`ShowLegend`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#Syncfusion_SfMaps_XForms_MapLegendSetting_ShowLegend) property in [`MapLegendSetting`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#) to true.
+The legends can be made visible by setting the [`ShowLegend`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#Syncfusion_SfMaps_XForms_MapLegendSetting_ShowLegend) property in [`MapLegendSetting`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html) to true.
 
 {% tabs %}
 

@@ -241,7 +241,7 @@ treeView.ExpanderPosition = ExpanderPosition.End;;
 
 ## Level based styling
 
-The TreeView allows you to customize the style of `TreeViewItem` based on different levels by using [IValueConverter](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.ivalueconverter?view=xamarin-forms).
+The TreeView allows you to customize the style of `TreeViewItem` based on different levels by using [IValueConverter](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.ivalueconverter?view=xamarin-forms).
 
 {% tabs %}
 {% highlight xaml %}
@@ -316,8 +316,8 @@ treeView.IsAnimationEnabled = true;
 
 ## See also
 
-[How to show the separator in Xamarin.Forms TreeView (SfTreeView)](https://www.syncfusion.com/kb/11440)                                                                                                                                                                                                                 
-[How to customize TreeView ItemTemplate based on the node in Xamarin.Forms (SfTreeView)](https://www.syncfusion.com/kb/11397)                                                                                                                                                                                                                                                                                               
-[How to customize TreeView ItemTemplate based on the node expanded state in Xamarin.Forms (SfTreeView)](https://www.syncfusion.com/kb/11394)                                                                                                                                                                                                                                                                                                            
-[How to customize TreeView node based on the node level in Xamarin.Forms (SfTreeView)](https://www.syncfusion.com/kb/11393)                                                                                                                                                                                                                                         
-[How to show header for Xamarin.Forms TreeView (SfTreeView)](https://www.syncfusion.com/kb/11376)
+[How to show the separator in Xamarin.Forms TreeView (SfTreeView)](https://www.syncfusion.com/kb/11440/how-to-show-the-separator-in-xamarin-forms-treeview-sftreeview)                                                                                                                                                                                                                 
+[How to customize TreeView ItemTemplate based on the node in Xamarin.Forms (SfTreeView)](https://www.syncfusion.com/kb/11397/how-to-customize-treeview-itemtemplate-based-on-the-node-in-xamarin-forms-sftreeview)                                                                                                                                                                                                                                                                                               
+[How to customize TreeView ItemTemplate based on the node expanded state in Xamarin.Forms (SfTreeView)](https://www.syncfusion.com/kb/11394/how-to-customize-treeview-itemtemplate-based-on-the-node-expanded-state-in-xamarin-forms)                                                                                                                                                                                                                                                                                                            
+[How to customize TreeView node based on the node level in Xamarin.Forms (SfTreeView)](https://www.syncfusion.com/kb/11393/how-to-customize-treeview-node-based-on-the-node-level-in-xamarin-forms-sftreeview)                                                                                                                                                                                                                                         
+[How to show header for Xamarin.Forms TreeView (SfTreeView)](https://www.syncfusion.com/kb/11376/how-to-show-header-for-xamarin-forms-treeview-sftreeview)

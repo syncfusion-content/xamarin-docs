@@ -286,7 +286,7 @@ EndRefreshing method is used to ends the progress animation of `SfPullToRefresh`
 SfPullToRefresh controls provides support for loading any custom control as pullable content. To host SfDatagrid inside the SfPullToRefresh, follow the below steps.
 <ol>
 
-<li> Add the required assembly references to the pcl and renderer projects as discussed in the Assembly deployment section of <a href="https://help.syncfusion.com/xamarin/sfdatagrid/getting-started#assembly-deployment">SfDataGrid </a> and <a href="https://help.syncfusion.com/xamarin/sfpulltorefresh/getting-started#assembly-deployment">SfPullToRefresh </a>.</li>
+<li> Add the required assembly references to the pcl and renderer projects as discussed in the Assembly deployment section of <a href="https://help.syncfusion.com/xamarin/datagrid/getting-started#assembly-deployment">SfDataGrid </a> and <a href="https://help.syncfusion.com/xamarin/pull-to-refresh/getting-started#assembly-deployment">SfPullToRefresh </a>.</li>
 <li>	Import SfPullToRefresh and SfDataGrid control namespace as follows.</li>
 
 <br/>

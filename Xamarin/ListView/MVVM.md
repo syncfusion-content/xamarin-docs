@@ -83,7 +83,7 @@ N> When Command is binded to `ItemTemplate`, it must also define `Source` proper
 
 ## Event to command
 
-The ListView event can be converted into commands using [Behaviors](https://developer.xamarin.com/guides/xamarin-forms/behaviors/). To achieve this, create a command in the ViewModel class and associate it to the ListView event using `Behaviors`.
+The ListView event can be converted into commands using [Behaviors](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/behaviors/). To achieve this, create a command in the ViewModel class and associate it to the ListView event using `Behaviors`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -119,7 +119,7 @@ public class ContactsViewModel
 
 Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Load-xamarin.forms-listview-with-event-to-command-behavior).
 
-For more information regarding the event to command behavior in Xamarin.Forms, you can refer [this](https://developer.xamarin.com/samples/xamarin-forms/Behaviors/EventToCommandBehavior/) link.
+For more information regarding the event to command behavior in Xamarin.Forms, you can refer [this](https://learn.microsoft.com/en-us/samples/xamarin/xamarin-forms-samples/behaviors-eventtocommandbehavior/) link.
 
 ## Binding command of inner ListView to Model Command?
 
@@ -698,7 +698,7 @@ public class BookInfoRepository : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-Download the entire sample from GitHub [here]https://github.com/SyncfusionExamples/xamarin-forms-listview-itemtapped-mvvm).
+Download the entire sample from GitHub [here](https://github.com/SyncfusionExamples/xamarin-forms-listview-itemtapped-mvvm).
 
 ### Handling ItemHolding action
 

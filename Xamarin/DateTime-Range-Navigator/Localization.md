@@ -7,7 +7,7 @@ control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-## Localization 
+# Localization in Xamarin DateTime Range Navigator
 
 You can localize [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html) in all the platforms by adding a .resx file in a .NET Standard project alone. The following steps describe how to localize SfDateTimeRangeNavigator in a project.
 

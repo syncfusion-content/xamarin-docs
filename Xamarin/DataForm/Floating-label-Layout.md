@@ -159,7 +159,7 @@ Unicode or font icons for the labels can be displayed as icons. By setting the [
 
 N> Refer to the following links to learn more about font icons:
 * [How to create font icons using our metro studio and export as ttf?](https://help.syncfusion.com/metro-studio/export-icon-font)
-* [How to set font family for the custom fonts in labels?](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/fonts#using-a-custom-font)
+* [How to set font family for the custom fonts in labels?](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/fonts#using-a-custom-font)
 
 
 {% tabs %}
@@ -202,7 +202,7 @@ Unicode or font icons for the labels can be displayed as icons.By setting the [T
 
 N> Refer to the following links to learn more about font icons:
 * [How to create font icons using our metro studio and export as ttf?](https://help.syncfusion.com/metro-studio/export-icon-font)
-* [How to set font family for the custom fonts in labels?](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/fonts#using-a-custom-font)
+* [How to set font family for the custom fonts in labels?](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/fonts#using-a-custom-font)
 
 {% tabs %}
 {% highlight xaml %}  

@@ -126,11 +126,11 @@ Similarly, you can customize the expander view by using `ExpanderTemplate` prope
 
 ## ItemTemplate Selector
 
-The TreeView allows you to customize the appearance of each item with different templates based on specific constraints by using the [DataTemplateSelector](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.DataTemplateSelector?view=xamarin-forms). You can choose a [DataTemplate](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.datatemplate?view=xamarin-forms) for each item at runtime based on the value of data-bound property using `DataTemplateSelector`.
+The TreeView allows you to customize the appearance of each item with different templates based on specific constraints by using the [DataTemplateSelector](https://learn.microsoft.com/en-us/dotnet/api/Xamarin.Forms.DataTemplateSelector?view=xamarin-forms). You can choose a [DataTemplate](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.datatemplate?view=xamarin-forms) for each item at runtime based on the value of data-bound property using `DataTemplateSelector`.
 
 ### Create a data template selector
 
-Create custom class that inherits from [DataTemplateSelector](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.DataTemplateSelector?view=xamarin-forms), and override the [OnSelectTemplate](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.datatemplateselector.onselecttemplate?view=xamarin-forms#Xamarin_Forms_DataTemplateSelector_OnSelectTemplate_System_Object_Xamarin_Forms_BindableObject_) method to return the [DataTemplate](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.datatemplate?view=xamarin-forms) for that item. At runtime, the TreeView invokes the `OnSelectTemplate` method for each item and passes the data object as parameter.
+Create custom class that inherits from [DataTemplateSelector](https://learn.microsoft.com/en-us/dotnet/api/Xamarin.Forms.DataTemplateSelector?view=xamarin-forms), and override the [OnSelectTemplate](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.datatemplateselector.onselecttemplate?view=xamarin-forms#Xamarin_Forms_DataTemplateSelector_OnSelectTemplate_System_Object_Xamarin_Forms_BindableObject_) method to return the [DataTemplate](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.datatemplate?view=xamarin-forms) for that item. At runtime, the TreeView invokes the `OnSelectTemplate` method for each item and passes the data object as parameter.
 
 Create different templates and by using `DataTemplateSelector`, load those templates using `OnSelectTemplate` based on requirements.
 
@@ -161,7 +161,7 @@ public class ItemTemplateSelector : DataTemplateSelector
 
 ### Applying a data template selector 
 
-Assign custom [DataTemplateSelector](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.DataTemplateSelector?view=xamarin-forms) to the [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_ItemTemplate) either in XAML or C#.
+Assign custom [DataTemplateSelector](https://learn.microsoft.com/en-us/dotnet/api/Xamarin.Forms.DataTemplateSelector?view=xamarin-forms) to the [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_ItemTemplate) either in XAML or C#.
 
 Following code example illustrates to load the different templates for treeview items using `DataTemplateSelector` based on different levels.
 
@@ -241,7 +241,7 @@ treeView.ExpanderPosition = ExpanderPosition.End;;
 
 ## Level based styling
 
-The TreeView allows you to customize the style of `TreeViewItem` based on different levels by using [IValueConverter](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.ivalueconverter?view=xamarin-forms).
+The TreeView allows you to customize the style of `TreeViewItem` based on different levels by using [IValueConverter](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.ivalueconverter?view=xamarin-forms).
 
 {% tabs %}
 {% highlight xaml %}
@@ -316,8 +316,8 @@ treeView.IsAnimationEnabled = true;
 
 ## See also
 
-[How to show the separator in Xamarin.Forms TreeView (SfTreeView)](https://www.syncfusion.com/kb/11440)                                                                                                                                                                                                                 
-[How to customize TreeView ItemTemplate based on the node in Xamarin.Forms (SfTreeView)](https://www.syncfusion.com/kb/11397)                                                                                                                                                                                                                                                                                               
-[How to customize TreeView ItemTemplate based on the node expanded state in Xamarin.Forms (SfTreeView)](https://www.syncfusion.com/kb/11394)                                                                                                                                                                                                                                                                                                            
-[How to customize TreeView node based on the node level in Xamarin.Forms (SfTreeView)](https://www.syncfusion.com/kb/11393)                                                                                                                                                                                                                                         
-[How to show header for Xamarin.Forms TreeView (SfTreeView)](https://www.syncfusion.com/kb/11376)
+[How to show the separator in Xamarin.Forms TreeView (SfTreeView)](https://support.syncfusion.com/kb/article/9976/how-to-show-the-separator-in-xamarin-forms-treeview-sftreeview)                                                                                                                                                                                                                 
+[How to customize TreeView ItemTemplate based on the node in Xamarin.Forms (SfTreeView)](https://support.syncfusion.com/kb/article/10017/how-to-customize-treeview-itemtemplate-based-on-the-node-in-xamarin-forms-sftreeview)                                                                                                                                                                                                                                                                                               
+[How to customize TreeView ItemTemplate based on the node expanded state in Xamarin.Forms (SfTreeView)](https://support.syncfusion.com/kb/article/10006/how-to-customize-treeview-itemtemplate-based-on-the-node-expanded-state-in-xamarin-forms)                                                                                                                                                                                                                                                                                                            
+[How to customize TreeView node based on the node level in Xamarin.Forms (SfTreeView)](https://support.syncfusion.com/kb/article/10020/how-to-customize-treeview-node-based-on-the-node-level-in-xamarin-forms-sftreeview)                                                                                                                                                                                                                                         
+[How to show header for Xamarin.Forms TreeView (SfTreeView)](https://support.syncfusion.com/kb/article/10011/how-to-show-header-for-xamarin-forms-treeview-sftreeview)

@@ -9,10 +9,10 @@ documentation: ug
 
 # Paging in Xamarin DataGrid (SfDataGrid)
 
-The data grid interactively supports manipulation of data using [SfDataPager](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.html# “”) control. This provides built-in options to page data on demand when dealing with large volumes of data. `SfDataPager` can be placed above or below based on the requirement to easily manage data paging.
+The data grid interactively supports manipulation of data using [SfDataPager](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.html# “”) control. This provides built-in options to page data on demand when dealing with large volumes of data. `SfDataPager` can be placed above or below based on the requirement to easily manage data paging.
 
 To use paging functionality in the data grid, add the following namespace to the project:
-[Syncfusion.SfDataGrid.XForms.DataPager](http://help.syncfusion.com/cr/xamarin/sfdatagrid# “”)
+[Syncfusion.SfDataGrid.XForms.DataPager](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms.SfChip.html “”)
 
 There are two different modes in paging:
 
@@ -118,7 +118,7 @@ The following screenshot shows the outcome upon execution of the above code:
 
 ![DataGrid with paging](SfDataGrid_images/Paging_img1.jpeg)
 
-N> The `SfDataPager` provides scrolling animation while tapping the [FirstPageButton](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.NavigationButtons.html) or [LastPageButton](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.NavigationButtons.html).
+N> The `SfDataPager` provides scrolling animation while tapping the [FirstPageButton](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.NavigationButtons.html) or [LastPageButton](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.NavigationButtons.html).
 
 ## OnDemandPaging	
 
@@ -390,4 +390,4 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to have different page size in SfDataPager with SfDataGrid when the device is in horizontal and vertical orientation mode](https://www.syncfusion.com/kb/9299)
+[How to have different page size in SfDataPager with SfDataGrid when the device is in horizontal and vertical orientation mode](https://support.syncfusion.com/kb/article/7968/how-to-have-different-page-size-in-sfdatapager-with-sfdatagrid-when-the-device-is-in)

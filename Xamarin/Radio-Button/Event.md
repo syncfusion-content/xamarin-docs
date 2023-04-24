@@ -66,10 +66,10 @@ private void RadioButton_StateChanged(object sender, StateChangedEventArgs e)
 ![StateChanged event 1](Images/Event1.png)
 ![StateChanged event 2](Images/Event2.png)
 
-This demo can be downloaded from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_Event1787482656).
+This demo can be downloaded from this [link](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_IsChecked).
 
 ## See also
 
-[How to notify the selection changes in Xamarin.Forms radio button (SfRadioButton)](https://www.syncfusion.com/kb/11037/how-to-notify-the-selection-changes-in-xamarin-forms-radiobutton-sfradiobutton)
+[How to notify the selection changes in Xamarin.Forms radio button (SfRadioButton)](https://support.syncfusion.com/kb/article/9544/how-to-notify-the-selection-changes-in-xamarin-forms-radiobutton-sfradiobutton)
  
-[How to get the selected Xamarin.Forms radio button (SfRadioButton)](https://www.syncfusion.com/kb/10914/how-to-get-the-selected-xamarin-forms-radiobutton)
+[How to get the selected Xamarin.Forms radio button (SfRadioButton)](https://support.syncfusion.com/kb/article/9506/how-to-get-the-selected-xamarin-forms-radiobutton)

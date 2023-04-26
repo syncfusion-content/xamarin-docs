@@ -19,7 +19,7 @@ N> To update sorting for the newly added row or column, set the `SfDataGrid.View
 
 ## Programmatic sorting
 
-The data grid also sorts from the code. This requires to manually define the [SortColumnDescription](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SortColumnDescription.html) objects, and add it in the [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_SortColumnDescriptions) collection. The control sorts the data based on the `SortColumnDescription` objects added to this collection.
+The data grid also sorts from the code. This requires to manually define the [SortColumnDescription](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SortColumnDescription.html) objects, and add it in the [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_SortColumnDescriptions) collection. The control sorts the data based on the `SortColumnDescription` objects added to this collection.
 
 The `SortColumnDescription` object holds the following two properties:
 

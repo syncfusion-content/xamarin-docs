@@ -201,7 +201,7 @@ radioButton.Text = "RadioButton";
 
 ![Xamarin.Forms Radio Button caption text](Images/Caption.png)
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_GettingStarted1836860411).
+This demo can be downloaded from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_GettingStarted1836860411).
 
 ## Change the radio button state
 
@@ -236,7 +236,7 @@ N>[`SfRadioButtons`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Bu
 
 ![Xamarin.Forms Radio Button states](Images/StateChage.png)
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_StateChanging-1078509445).
+This demo can be downloaded from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_StateChanging-1078509445).
 
 ## See also
 

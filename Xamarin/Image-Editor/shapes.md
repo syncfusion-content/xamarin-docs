@@ -21,7 +21,7 @@ You can annotate any shapes over an image using the [`AddShape`](https://help.sy
 * DottedArrow
 * DottedDoubleArrow
 
-### Selecting a shape type
+## Selecting a shape type
 
 The [`ShapeType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html) is an enum property with values of [`Rectangle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_Rectangle), [`Circle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_Circle), [`Arrow`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_Arrow), [`Path`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_Path), [`Line`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_Line), [`Dotted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_Dotted), [`DoubleArrow`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_DoubleArrow), [`DottedArrow`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_DottedArrow), and [`DottedDoubleArrow`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_DottedDoubleArrow). You can give the desired shape type as an argument to the [`AddShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_AddShape_Syncfusion_SfImageEditor_XForms_ShapeType_Syncfusion_SfImageEditor_XForms_PenSettings_) method.
 
@@ -71,7 +71,7 @@ N> If you add the shape when the SfImageEditor loaded in a view without image, t
 
 You can customize the appearance of each shape using the [`PenSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.PenSettings.html) property:
 
-## PenSettings
+### PenSettings
 
 The [`PenSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.PenSettings.html) property consists of the following properties:
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # Supported Input Views in Xamarin Text Input Layout (SfTextInputLayout)
 
-Input views can be added to the text input layout control by setting the [InputView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_InputView) property. To reduce the XAML syntax, [InputView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_InputView) property is applied with [ContentPropertyAttribute](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.contentpropertyattribute?view=xamarin-forms).
+Input views can be added to the text input layout control by setting the [InputView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_InputView) property. To reduce the XAML syntax, [InputView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_InputView) property is applied with [ContentPropertyAttribute](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.contentpropertyattribute?view=xamarin-forms).
 
 ## Entry
 
-To enter a single line text input, add [Entry](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry).
+To enter a single line text input, add [Entry](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry).
 
 {% tabs %} 
 
@@ -43,7 +43,7 @@ inputLayout.InputView = new Entry();
 ## Editor
 
 
-To enter multi-line text input, add [Editor](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor), and then set the `AutoSize` property to `TextChanges`.
+To enter multi-line text input, add [Editor](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor), and then set the `AutoSize` property to `TextChanges`.
 
 
 {% tabs %} 
@@ -71,7 +71,7 @@ inputLayout.InputView = new Editor();
 
 ## Masked edit
 
-To initialize the masked edit control and launch it in each platform, refer to the [getting started with masked edit](https://help.syncfusion.com/xamarin/sfmaskededit/getting-started) documentation.
+To initialize the masked edit control and launch it in each platform, refer to the [getting started with masked edit](https://help.syncfusion.com/xamarin/masked-entry/getting-started) documentation.
 
 {% tabs %} 
 
@@ -102,7 +102,7 @@ inputLayout.InputView = new SfMaskedEdit() { Keyboard = Keyboard.Numeric, Mask =
 
 ## Numeric text box
 
-To initialize the numeric text box control and launch it in each platform, refer to the [getting started with numeric text box](https://help.syncfusion.com/xamarin/sfnumerictextbox/getting-started) documentation.
+To initialize the numeric text box control and launch it in each platform, refer to the [getting started with numeric text box](https://help.syncfusion.com/xamarin/numeric-entry/getting-started) documentation.
 
 {% tabs %} 
 
@@ -135,7 +135,7 @@ inputLayout.InputView = new SfNumericTextBox() { Value = 123.45, FormatString="c
 
 ## Numeric up down
 
-To initialize the numeric up down control and launch it in each platform, refer to the [getting started with numeric up down](https://help.syncfusion.com/xamarin/sfnumericupdown/getting-started) documentation.
+To initialize the numeric up down control and launch it in each platform, refer to the [getting started with numeric up down](https://help.syncfusion.com/xamarin/numericupdown/getting-started) documentation.
 
 {% tabs %} 
 
@@ -164,7 +164,7 @@ inputLayout.InputView = new SfNumericUpDown() { Value = 5};
 
 ## Autocomplete
 
-To initialize the Autocomplete control and launch it in each platform, refer to the [getting started with auto complete](https://help.syncfusion.com/xamarin/sfautocomplete/getting-started) documentation.
+To initialize the Autocomplete control and launch it in each platform, refer to the [getting started with auto complete](https://help.syncfusion.com/xamarin/autocomplete/getting-started) documentation.
 
 {% tabs %} 
 
@@ -206,7 +206,7 @@ inputLayout.InputView = autoComplete;
 
 ## Combo box
 
-To initialize the ComboBox control and launch it in each platform, refer to the [getting started with combo box](https://help.syncfusion.com/xamarin/sfcombobox/getting-started) documentation.
+To initialize the ComboBox control and launch it in each platform, refer to the [getting started with combo box](https://help.syncfusion.com/xamarin/combobox/getting-started) documentation.
 
 {% tabs %} 
 
@@ -249,7 +249,7 @@ N> Entry and Editor are the only input views supported by [`SfTextInputLayout`](
 
 ## Picker
 
-To pick an item from the list, add [Picker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/).
+To pick an item from the list, add [Picker](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/).
 
 {% tabs %} 
 
@@ -295,7 +295,7 @@ N> UWP and WPF will not support [`Xamarin.Forms Picker`](https://docs.microsoft.
 
 ## Date picker
 
-To select a date, add [DatePicker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/datepicker).
+To select a date, add [DatePicker](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/datepicker).
 
 {% tabs %} 
 

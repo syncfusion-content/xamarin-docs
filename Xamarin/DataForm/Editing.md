@@ -31,7 +31,7 @@ Text
 The String type property and any other type apart from the following specified cases.
 </td>
 <td>
-{{'[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
+{{'[Entry](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -46,7 +46,7 @@ The String type property with multi line text.
 [DataType(DataType.MultilineText)] 
 </td>
 <td>
-{{'[Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms)'| markdownify }}
+{{'[Editor](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -102,7 +102,7 @@ Date
 The DateTime type property and the property with [DataType(DataType.Date)] and [DataType(DataType.DateTime)] attributes.
 </td>
 <td>
-{{'[DatePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.datepicker?view=xamarin-forms)'| markdownify }}
+{{'[DatePicker](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.datepicker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -116,7 +116,7 @@ Time
 The property with [DataType(DataType.Time)] attribute.
 </td>
 <td>
-{{'[TimePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.timepicker?view=xamarin-forms)'| markdownify }}
+{{'[TimePicker](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.timepicker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -172,7 +172,7 @@ Switch
 Bool type property.
 </td>
 <td>
-{{'[Switch](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms)'| markdownify }}
+{{'[Switch](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -187,7 +187,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-{{'[Picker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.picker?view=xamarin-forms)'| markdownify }}
+{{'[Picker](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.picker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -232,7 +232,7 @@ The String type property and property with
 [DataType(DataType.Password)] attribute.
 </td>
 <td>
-{{'[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
+{{'[Entry](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>

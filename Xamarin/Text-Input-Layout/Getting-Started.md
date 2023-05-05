@@ -136,7 +136,7 @@ using Syncfusion.XForms.TextInputLayout;
 
 {% endtabs %}
 
-Add any input view control such as [Entry](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry), [Editor](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor), [SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/overview), [SfNumericUpDown](https://help.syncfusion.com/xamarin/numericupdown/overview), [SfMaskedEdit](https://help.syncfusion.com/xamarin/masked-entry/overview), [SfAutoComplete](https://help.syncfusion.com/xamarin/autocomplete/overview), [SfComboBox](https://help.syncfusion.com/xamarin/combobox/overview), [Picker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/),[DatePicker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/datepicker) or [TimePicker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/timepicker) and add hint label (floating label).
+Add any input view control such as [Entry](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry), [Editor](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor), [SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/overview), [SfNumericUpDown](https://help.syncfusion.com/xamarin/numericupdown/overview), [SfMaskedEdit](https://help.syncfusion.com/xamarin/masked-entry/overview), [SfAutoComplete](https://help.syncfusion.com/xamarin/autocomplete/overview), [SfComboBox](https://help.syncfusion.com/xamarin/combobox/overview), [Picker](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/),[DatePicker](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/datepicker) or [TimePicker](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/timepicker) and add hint label (floating label).
 
 {% tabs %} 
 
@@ -220,7 +220,7 @@ inputLayout.InputView = new Entry() { Text = "John" };
 ![Enable password toggling image](Getting-Started_images/textInput_getting_img4.png)
 ![Enable password toggling_input hidden](Getting-Started_images/textInput_getting_img5.png)
 
-N> Password visibility toggle can be enabled only for [Entry](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry) control.
+N> Password visibility toggle can be enabled only for [Entry](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry) control.
 
 You can find the complete getting started sample from this [link.]( https://github.com/SyncfusionExamples/Getting-started-SfTextInputLayout-Xamarin)
 

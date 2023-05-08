@@ -40,7 +40,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Century</p><br> 
 </td>
 <td align="center">
-{{'[ViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ViewMode.html)'| markdownify }}
+{{'[ViewMode](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.Enums.ViewMode.html)'| markdownify }}
 </td>
 </tr>
 
@@ -65,7 +65,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>MultiRange</p><br>
 </td>
 <td align="center">
-{{'[SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionMode.html)'| markdownify }}
+{{'[SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_SelectionMode)'| markdownify }}
 </td>
 </tr>
 
@@ -81,7 +81,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[BlackoutDates](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~BlackoutDates.html)'| markdownify }}
+{{'[BlackoutDates](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms.SfChip.html)'| markdownify }}
 </td>
 </tr>
 
@@ -97,7 +97,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[FirstDayofWeek](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~FirstDayofWeek.html)'| markdownify }}
+{{'[FirstDayofWeek](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_FirstDayofWeek)'| markdownify }}
 </td>
 </tr>
 
@@ -161,7 +161,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[ShowInlineEvents](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ShowInlineEvents.html)'| markdownify }}
+{{'[ShowInlineEvents](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_ShowInlineEvents)'| markdownify }}
 </td>
 </tr>
 
@@ -177,7 +177,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[MoveToDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MoveToDate.html)'| markdownify }} and {{'[MoveToDate(DateTime datetime)](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MoveToDate.html)'| markdownify }}
+{{'[MoveToDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_MoveToDate)'| markdownify }} and {{'[MoveToDate(DateTime datetime)](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_MoveToDate)'| markdownify }}
 </td>
 </tr>
 
@@ -225,7 +225,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[MinDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MinDate.html)'| markdownify }} and {{'[MaxDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MaxDate.html)'| markdownify }}
+{{'[MinDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_MinDate)'| markdownify }} and {{'[MaxDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_MaxDate)'| markdownify }}
 </td>
 </tr>
 

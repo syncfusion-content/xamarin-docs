@@ -156,6 +156,7 @@ To launch the SfListView in iOS, call the `SfListViewRenderer.Init()` in the `Fi
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.XForms.iOS.EffectsView;
+using Syncfusion.ListView.XForms.iOS;
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
     …

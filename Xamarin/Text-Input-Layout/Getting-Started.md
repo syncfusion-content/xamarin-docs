@@ -64,9 +64,9 @@ Location : {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching an application on each platform with text input layout
 
@@ -136,7 +136,7 @@ using Syncfusion.XForms.TextInputLayout;
 
 {% endtabs %}
 
-Add any input view control such as [Entry](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry), [Editor](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor), [SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/overview), [SfNumericUpDown](https://help.syncfusion.com/xamarin/numericupdown/overview), [SfMaskedEdit](https://help.syncfusion.com/xamarin/masked-entry/overview), [SfAutoComplete](https://help.syncfusion.com/xamarin/autocomplete/overview), [SfComboBox](https://help.syncfusion.com/xamarin/combobox/overview), [Picker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/),[DatePicker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/datepicker) or [TimePicker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/timepicker) and add hint label (floating label).
+Add any input view control such as [Entry](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry), [Editor](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor), [SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/overview), [SfNumericUpDown](https://help.syncfusion.com/xamarin/numericupdown/overview), [SfMaskedEdit](https://help.syncfusion.com/xamarin/masked-entry/overview), [SfAutoComplete](https://help.syncfusion.com/xamarin/autocomplete/overview), [SfComboBox](https://help.syncfusion.com/xamarin/combobox/overview), [Picker](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/),[DatePicker](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/datepicker) or [TimePicker](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/timepicker) and add hint label (floating label).
 
 {% tabs %} 
 
@@ -220,16 +220,16 @@ inputLayout.InputView = new Entry() { Text = "John" };
 ![Enable password toggling image](Getting-Started_images/textInput_getting_img4.png)
 ![Enable password toggling_input hidden](Getting-Started_images/textInput_getting_img5.png)
 
-N> Password visibility toggle can be enabled only for [Entry](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry) control.
+N> Password visibility toggle can be enabled only for [Entry](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry) control.
 
 You can find the complete getting started sample from this [link.]( https://github.com/SyncfusionExamples/Getting-started-SfTextInputLayout-Xamarin)
 
 ## See also
 
-[How to reduce the inner padding of SfTextInputLayout](https://www.syncfusion.com/kb/11039/how-to-reduce-the-inner-padding-of-xamarin-forms-text-input-layout)
+[How to reduce the inner padding of SfTextInputLayout](https://support.syncfusion.com/kb/article/9553/how-to-reduce-the-inner-padding-of-xamarin-forms-text-input-layout)
 
-[How to switch the focus from SfTextInputLayout to the next focusable control](https://www.syncfusion.com/kb/11786/how-to-switch-the-focus-from-xamarin-forms-text-input-layout-to-the-next-focusable-control) 
+[How to switch the focus from SfTextInputLayout to the next focusable control](https://support.syncfusion.com/kb/article/10285/how-to-switch-the-focus-from-xamarin-forms-text-input-layout-to-the-next-focusable-control) 
 
-[How to create a rounded corner SfTextInputLayout](https://www.syncfusion.com/kb/11649/how-to-create-a-rounded-corner-sftextinputlayout-in-xamarin-forms)
+[How to create a rounded corner SfTextInputLayout](https://support.syncfusion.com/kb/article/10202/how-to-create-a-rounded-corner-sftextinputlayout-in-xamarin-forms)
 
-[How to change the cursor color in SfTextInputLayout](https://www.syncfusion.com/kb/11608/how-to-change-the-cursor-color-in-xamarin-forms-text-input-layout)
+[How to change the cursor color in SfTextInputLayout](https://support.syncfusion.com/kb/article/10066/how-to-change-the-cursor-color-in-xamarin-forms-text-input-layout)

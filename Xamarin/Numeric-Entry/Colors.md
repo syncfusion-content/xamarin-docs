@@ -225,6 +225,6 @@ N> The focused visual state is only available in Android and iOS platforms.
 
 ## See also
 
-[How to customize the border of SfNumericTextBox](https://www.syncfusion.com/kb/7587/how-to-custom-the-border-of-numerictextbox)
+[How to customize the border of SfNumericTextBox](https://support.syncfusion.com/kb/article/6848/how-to-custom-the-border-of-numerictextbox)
 
 [How to customize the color appearance of SfNumericTextBox](https://www.syncfusion.com/kb/7586/how-to-customize-the-color-appearance-of-numeric-controls-in-xamarin-forms)

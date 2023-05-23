@@ -168,4 +168,4 @@ The [FocusBorderThickness](https://help.syncfusion.com/cr/xamarin/Syncfusion.XFo
 
 ## See also
 
-[How to change the TreeView selected node text color in Xamarin.Forms (SfTreeView)](https://www.syncfusion.com/kb/11362)
+[How to change the TreeView selected node text color in Xamarin.Forms (SfTreeView)](https://support.syncfusion.com/kb/article/9842/how-to-change-the-treeview-selected-node-text-color-in-xamarin-forms-sftreeview)

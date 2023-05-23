@@ -25,7 +25,7 @@ To install the required NuGet for the SfPullToRefresh control in the application
 
 Refer to the following KB to configure the NuGet package of the Syncfusion components:
 
-[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
+[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://support.syncfusion.com/kb/article/6565/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing)
 
 The following NuGet package should be installed to use the SfPullToRefresh control in the application.
 

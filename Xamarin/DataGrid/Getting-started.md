@@ -17,7 +17,7 @@ To get start quickly with Xamarin.Forms DataGrid, you can check on this video:
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin/confirm), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -29,7 +29,7 @@ To install the required NuGet for the SfDataGrid control in the application, con
 
 Refer to the following KB to configure the NuGet packages of the Syncfusion components:
 
-[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing)
+[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://support.syncfusion.com/kb/article/6565/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing)
 
 The following NuGet package should be installed to use the SfDataGrid control in the application.
 
@@ -93,9 +93,9 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching the SfDataGrid on each platform
 
@@ -627,18 +627,18 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to overcome the DisplayBinding converter is not firing problem when XamlCompilation attribute is set as XamlCompilationOptions.Compile](https://www.syncfusion.com/kb/7561)
+[How to overcome the DisplayBinding converter is not firing problem when XamlCompilation attribute is set as XamlCompilationOptions.Compile](https://support.syncfusion.com/kb/article/6906/how-to-overcome-the-displaybinding-converter-is-not-firing-problem-when-xamlcompilation)
 
-[What will be the best practice way to update Xamarin controls in an existing project](https://www.syncfusion.com/kb/7519)
+[What will be the best practice way to update Xamarin controls in an existing project](https://support.syncfusion.com/kb/article/6970/what-will-be-the-best-practice-way-to-update-xamarin-controls-in-an-existing-project)
 
-[How to solve the Android resources issue in Xamarin.Forms](https://www.syncfusion.com/kb/7481)
+[How to solve the Android resources issue in Xamarin.Forms](https://support.syncfusion.com/kb/article/6720/how-to-solve-the-android-resources-issue-in-xamarin-forms)
 
-[How to convert Point to Index and Index to Point in SfDataGrid](https://www.syncfusion.com/kb/7456)
+[How to convert Point to Index and Index to Point in SfDataGrid](https://support.syncfusion.com/kb/article/6751/how-to-convert-point-to-index-and-index-to-point-in-sfdatagrid)
 
-[How to load grid without borders](https://www.syncfusion.com/kb/7451)
+[How to load grid without borders](https://support.syncfusion.com/kb/article/6679/how-to-load-grid-without-borders)
 
-[How to parse XML file and set as ItemsSource for SfDataGrid](https://www.syncfusion.com/kb/7439)
+[How to parse XML file and set as ItemsSource for SfDataGrid](https://support.syncfusion.com/kb/article/6563/how-to-parse-xml-file-and-set-as-itemssource-for-sfdatagrid)
 
-[How to configure package source and install Syncfusion NuGet packages in an existing project](https://www.syncfusion.com/kb/7441)
+[How to configure package source and install Syncfusion NuGet packages in an existing project](https://support.syncfusion.com/kb/article/6565/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing)
 
-[How to render SfDataGrid for Xamarin.Forms.UWP in release mode](https://www.syncfusion.com/kb/7445)
+[How to render SfDataGrid for Xamarin.Forms.UWP in release mode](https://support.syncfusion.com/kb/article/6569/how-to-render-sfdatagrid-for-xamarin-forms-uwp-in-release-mode)

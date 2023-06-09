@@ -66,9 +66,9 @@ tr>
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 N> After adding the reference, an additional step is required for iOS and UWP projects. If you are adding the references from toolbox, this step is not needed.
 
@@ -288,6 +288,6 @@ button.CornerRadius = new Thickness(20);
 
 ## See also
 
-[How to create Xamarin.Forms image button](https://www.syncfusion.com/kb/10808/how-to-create-xamarin-forms-image-button)
+[How to create Xamarin.Forms image button](https://support.syncfusion.com/kb/article/9599/how-to-create-xamarin-forms-image-button)
 
-[How to disable Xamarin.Forms button](https://www.syncfusion.com/kb/11036/how-to-disable-xamarin-forms-button)
+[How to disable Xamarin.Forms button](https://support.syncfusion.com/kb/article/9594/how-to-disable-xamarin-forms-button)

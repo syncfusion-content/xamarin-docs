@@ -64,9 +64,9 @@ Location : {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching an application on each platform with text input layout
 
@@ -226,10 +226,10 @@ You can find the complete getting started sample from this [link.]( https://gith
 
 ## See also
 
-[How to reduce the inner padding of SfTextInputLayout](https://www.syncfusion.com/kb/11039/how-to-reduce-the-inner-padding-of-xamarin-forms-text-input-layout)
+[How to reduce the inner padding of SfTextInputLayout](https://support.syncfusion.com/kb/article/9553/how-to-reduce-the-inner-padding-of-xamarin-forms-text-input-layout)
 
-[How to switch the focus from SfTextInputLayout to the next focusable control](https://www.syncfusion.com/kb/11786/how-to-switch-the-focus-from-xamarin-forms-text-input-layout-to-the-next-focusable-control) 
+[How to switch the focus from SfTextInputLayout to the next focusable control](https://support.syncfusion.com/kb/article/10285/how-to-switch-the-focus-from-xamarin-forms-text-input-layout-to-the-next-focusable-control) 
 
-[How to create a rounded corner SfTextInputLayout](https://www.syncfusion.com/kb/11649/how-to-create-a-rounded-corner-sftextinputlayout-in-xamarin-forms)
+[How to create a rounded corner SfTextInputLayout](https://support.syncfusion.com/kb/article/10202/how-to-create-a-rounded-corner-sftextinputlayout-in-xamarin-forms)
 
-[How to change the cursor color in SfTextInputLayout](https://www.syncfusion.com/kb/11608/how-to-change-the-cursor-color-in-xamarin-forms-text-input-layout)
+[How to change the cursor color in SfTextInputLayout](https://support.syncfusion.com/kb/article/10066/how-to-change-the-cursor-color-in-xamarin-forms-text-input-layout)

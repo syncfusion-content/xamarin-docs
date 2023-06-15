@@ -637,7 +637,7 @@ pdfViewerControl.AnnotationSettings.Ink.Constraints = AnnotationConstraints.Sele
 
 ## How to draw the ink annotation using a stylus and scroll or zoom PDF page with the touch
 
-The ink annotation operation can be customized so that the ink strokes can be added only using a stylus by setting the `InkAnnotationSettings.TouchMode` API to `TouchMode.Stylus`. When the `TouchMode` is set to stylus, the PDF can be zoomed and scrolled using a finger. The default value of the `TouchMode` property is `TouchMode.Direct` in which the zooming will be disabled and scrolling can be performed using the scroll head or two-fingers to add ink strokes on multiple pages, and all other touch interactions will be considered as ink operations.
+The ink annotation operation can be customized so that the ink strokes can be added only using a stylus by setting the `InkAnnotationSettings.TouchMode` API to `TouchMode.Stylus`. When the `TouchMode` is set to the stylus, the PDF can be zoomed and scrolled using a finger. The default value of the `TouchMode` property is `TouchMode.Direct` in which the zooming will be disabled and scrolling can be performed using the scroll head or two-fingers to add ink strokes on multiple pages, and all other touch interactions will be considered as ink operations.
 
 {% tabs %}
 {% highlight c# %}

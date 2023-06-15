@@ -390,7 +390,7 @@ The [`SfPdfViewer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewe
 
 ### Document loaded event
 
-The [DocumentLoaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_DocumentLoaded) event triggers after the document are properly loaded in the `SfPdfViewer`. The following code example explains the same. 
+The [DocumentLoaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_DocumentLoaded) event triggers after the document is properly loaded in the `SfPdfViewer`. The following code example explains the same. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -406,7 +406,7 @@ The [DocumentLoaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfView
 private void PdfViewerControl_DocumentLoaded(object sender, EventArgs args)  
 {  
 
-        // Gets the total page count of the loaded PDF document. 
+        // Get the total page count of the loaded PDF document. 
         int pageCount = pdfViewer.PageCount; 
 
 } 
@@ -416,11 +416,11 @@ private void PdfViewerControl_DocumentLoaded(object sender, EventArgs args)
 
 ### Document load failed event
 
-The [UnhandledConditionOccurred](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_UnhandledConditionOccurred) event triggers when document loading fails in the `SfPdfViewer`. That is, 
+The [UnhandledConditionOccurred](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_UnhandledConditionOccurred) event triggers when document loading fails in the `SfPdfViewer`. That is: 
 
 * When any corrupted document is loaded. 
 * When any non-PDF document is loaded. 
-The [UnhandledConditionEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.UnhandledConditionEventArgs.html) will return the `Title` and `Description` message for the failure reason and the `Handled` option to enable/disable the default error alert view.  
+The [UnhandledConditionEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.UnhandledConditionEventArgs.html) will return the `Title` and `Description` message for the failure reason and the `Handled` option to enable or disable the default error alert view.  
 
 You can prevent displaying the default error alert view by setting the `Handled` value to `true`. The default value of `Handled` is `false`. 
 
@@ -443,10 +443,10 @@ private void pdfViewerControl_UnhandledConditionOccurred(object sender, Unhandle
             //Set the Handled value as "true" to indicate that the event is handled in the application and to prevent the default alert view. 
             args.Handled = true; 
 
-            // Gets the title of the unhandled condition. 
+            // Get the title of the unhandled condition. 
             string title = args.Title; 
 
-            // Gets the details of the unhandled condition. 
+            // Get the details of the unhandled condition. 
             string description = args.Description; 
 
             DisplayAlert(title, description, "OK"); 

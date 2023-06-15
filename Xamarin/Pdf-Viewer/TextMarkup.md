@@ -408,32 +408,53 @@ private void clearAllAnnotationsButton_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## Editing the color of the text markup annotation
+## Editing the color and opacity of the text markup annotation
 
-You can edit the color of the text markup annotation before including the annotation and after including the annotation. 
+You can edit the color and opacity of the text markup annotation before including the annotation and after including the annotation.  
 
-### Before inclusion of the annotation or Default color
+N>The default opacity value of the text markup annotation is 1 and its value ranges from 0 to 1.
 
-You can alter the default color of the annotation to change the color while including annotation. Refer to the following code sample. 
+### Before inclusion of the annotation or Default color and opacity
+
+You can change the default color or opacity of the text markup annotations using the `Color` and `Opacity` properties in their settings class. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
 
-pdfViewerControl.AnnotationSettings.TextMarkup.Highlight.Color = Color.Red;
-pdfViewerControl.AnnotationSettings.TextMarkup.Underline.Color = Color.Magenta;
-pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.Color = Color.Yellow;
-pdfViewerControl.AnnotationSettings.TextMarkup.Squiggly.Color = Color.Blue;
+/Sets the color of the highlight text markup annotation. 
+pdfViewerControl.AnnotationSettings.TextMarkup.Highlight.Color = Color.Red; 
+ 
+//Sets the color of the underline text markup annotation. 
+pdfViewerControl.AnnotationSettings.TextMarkup.Underline.Color = Color.Magenta; 
+
+//Sets the color of the strikethrough text markup annotation. 
+pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.Color = Color.Yellow; 
+
+//Sets the color of the squiggly text markup annotation. 
+pdfViewerControl.AnnotationSettings.TextMarkup.Squiggly.Color = Color.Blue; 
+
+//Sets the opacity of the highlight text markup annotation. 
+pdfViewerControl.AnnotationSettings.TextMarkup.Highlight.Opacity = 0.5f; 
+ 
+//Sets the opacity of the underline text markup annotation. 
+pdfViewerControl.AnnotationSettings.TextMarkup.Underline.Opacity = 0.5f; 
+
+//Sets the opacity of the strikethrough text markup annotation. 
+pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.Opacity = 0.5f;  
+
+//Sets the opacity of the squiggly text markup annotation. 
+pdfViewerControl.AnnotationSettings.TextMarkup.Squiggly.Opacity = 0.5f; 
 
 {% endhighlight %}
 {% endtabs %}
 
-N>Setting this property will not edit the color of annotations that are included in prior.
+N>Setting this property will not edit the color and opacity of annotations that are included in prior.
 
 ### After inclusion of the annotation
 
 * Select the annotation.
 * TextMarkupSelected event will be triggered and you will get a copy of selected annotation. 
-* Edit the copy of annotation, so that you can edit the color of the text markup annotation.          
+* Edit the copy of annotation, so that you can edit the color and opacity of the text markup annotation.        
 
 The following code snippet illustrates the same.    
                      
@@ -451,7 +472,10 @@ The following code snippet illustrates the same.
 private void PdfViewerControl_TextMarkupSelected(object sender, TextMarkupSelectedEventArgs args)
 {
    TextMarkupAnnotation selectedAnnotation = sender as TextMarkupAnnotation;
-   selectedAnnotation.Settings.Color = Color.Yellow;
+   //Sets the color of text markup annotation. 
+   selectedAnnotation.Settings.Color = Color.Yellow; 
+   //Sets the opacity of text markup annotation. 
+   selectedAnnotation.Settings.Opacity = 0.6f; 
 }
 
 {% endhighlight %}

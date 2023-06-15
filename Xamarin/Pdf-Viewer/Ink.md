@@ -17,7 +17,7 @@ This section describes how to include ink annotation in PDF viewer control Xamar
 
 ### Enabling ink annotation mode
 
-Set the `AnnotationMode` property of the PDF viewer object to ink to enable the ink annotation. By setting this, zooming and scrolling will be disabled and touch interactions will be converted into inks on the PDF pages. Refer to the following code. 
+Set the `AnnotationMode` property of the PDF viewer object to ink to enable the ink annotation. By setting this, zooming will be disabled whereas the scrolling can be performed using the scroll head or two-fingers to add ink strokes on multiple pages, and the touch interactions will be converted into inks on the PDF pages. Refer to the following code.
 
 {% tabs %}
 {% highlight c# %}
@@ -56,6 +56,8 @@ pdfViewer.AnnotationMode = AnnotationMode.None;
 
 {% endhighlight %}
 {% endtabs %}
+
+N>Two-fingers scrolling only works on mobile platforms. 
 
 ### Adding ink annotation using toolbar
 
@@ -635,7 +637,7 @@ pdfViewerControl.AnnotationSettings.Ink.Constraints = AnnotationConstraints.Sele
 
 ## How to draw the ink annotation using a stylus and scroll or zoom PDF page with the touch
 
-The ink annotation operation can be customized so that the ink strokes can be added only using a stylus by setting the `InkAnnotationSettings.TouchMode` API to `TouchMode.Stylus`. When the `TouchMode` is set to stylus, the PDF can be zoomed and scrolled using a finger. The default value of the `TouchMode` property is `TouchMode.Direct` in which all touch interactions will be considered as ink operations. So in the `TouchMode.Direct` mode, the page cannot be scrolled or zoomed when the ink annotation mode is on.
+The ink annotation operation can be customized so that the ink strokes can be added only using a stylus by setting the `InkAnnotationSettings.TouchMode` API to `TouchMode.Stylus`. When the `TouchMode` is set to stylus, the PDF can be zoomed and scrolled using a finger. The default value of the `TouchMode` property is `TouchMode.Direct` in which the zooming will be disabled and scrolling can be performed using the scroll head or two-fingers to add ink strokes on multiple pages, and all other touch interactions will be considered as ink operations.
 
 {% tabs %}
 {% highlight c# %}

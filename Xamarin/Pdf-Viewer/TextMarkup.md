@@ -410,7 +410,7 @@ private void clearAllAnnotationsButton_Clicked(object sender, EventArgs e)
 
 ## Editing the color and opacity of the text markup annotation
 
-You can edit the color and opacity of the text markup annotation before including the annotation and after including the annotation.  
+You can edit the color and opacity of the text markup annotation before including the annotation and after including the annotation.
 
 N>The default opacity value of the text markup annotation is 1, and its value ranges from 0 to 1.
 

@@ -384,6 +384,102 @@ Task<Stream> pdfDocumentStream = pdfViewerControl.SaveDocumentAsync();
 {% endhighlight %}
 {% endtabs %}
 
+## Events to track the loading and saving of PDFs
+
+The [`SfPdfViewer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html) control allows you to track the loading and saving of PDFs using the following events. 
+
+### Document loaded event
+
+The [DocumentLoaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_DocumentLoaded) event triggers after the document is properly loaded in the `SfPdfViewer`. The following code example explains the same. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfPdfViewer x:Name="pdfViewerControl" DocumentLoaded="pdfViewerControl_DocumentLoaded"/> 
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+private void PdfViewerControl_DocumentLoaded(object sender, EventArgs args)  
+{  
+
+        // Get the total page count of the loaded PDF document. 
+        int pageCount = pdfViewer.PageCount; 
+
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
+### Document load failed event
+
+The [UnhandledConditionOccurred](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_UnhandledConditionOccurred) event triggers when document loading fails in the `SfPdfViewer`. That is: 
+
+* When any corrupted document is loaded. 
+* When any non-PDF document is loaded. 
+The [UnhandledConditionEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.UnhandledConditionEventArgs.html) will return the `Title` and `Description` message for the failure reason and the `Handled` option to enable or disable the default error alert view.  
+
+You can prevent displaying the default error alert view by setting the `Handled` value to `true`. The default value of `Handled` is `false`. 
+
+The following code example explains the same.
+ 
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfPdfViewer x:Name="pdfViewerControl" UnhandledConditionOccurred="pdfViewerControl_UnhandledConditionOccurred"/> 
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+private void pdfViewerControl_UnhandledConditionOccurred(object sender, UnhandledConditionEventArgs args)  
+{  
+
+            //Set the Handled value as "true" to indicate that the event is handled in the application and to prevent the default alert view. 
+            args.Handled = true; 
+
+            // Get the title of the unhandled condition. 
+            string title = args.Title; 
+
+            // Get the details of the unhandled condition. 
+            string description = args.Description; 
+
+            DisplayAlert(title, description, "OK"); 
+
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
+### Document save initiated event
+
+The [DocumentSaveInitiated](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_DocumentSaveInitiated) event will be triggered when the document is saved in the `SfPdfViewer`. The [DocumentSaveInitiatedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.DocumentSaveInitiatedEventArgs.html) will return the saved document stream. The following code example explains the same.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfPdfViewer x:Name="pdfViewerControl" DocumentSaveInitiated="pdfViewerControl_DocumentSaveInitiated"/> 
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+private void PdfViewerControl_DocumentSaveInitiated(object sender, DocumentSaveInitiatedEventArgs args)  
+{  
+      //Returns the save stream. 
+      Stream saveStream = args.SaveStream; 
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
 ## How to dispose the managed resources of SfPdfViewer
 
 The [`SfPdfViewer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html) control allows you to dispose the managed resources which are associated with the viewer. You need to call the [`Dispose`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_Dispose) method of the [`SfPdfViewer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html) control as shown in the following code sample to achieve the same.

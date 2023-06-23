@@ -80,3 +80,24 @@ The text representing the Barcode can be customized by using the following prope
 
   _Barcode_ _with_ _text_ _customization_
 
+### QR code with logo
+
+The `QRCodeLogo` class serves as a representation of a logo image that can be utilized in a QR code, and the `Logo` property is employed to set the logo image in the QR barcode. By leveraging these functionalities, users gain the capability to generate QR codes that seamlessly incorporate custom logos or images, resulting in a visually appealing and branded QR code experience.
+
+{% highlight c# %}
+
+    //Get the image stream 
+    Stream imageStream = typeof(QRBarcodeLogo).GetTypeInfo().Assembly.GetManifestResourceStream("Sample.Assets.logo.png");
+    //Represents the logo image. 
+    QRCodeLogo logo = new QRCodeLogo(imageStream);
+    //Initialize the QR Barcode settings.
+    QRBarcodeSettings settings = new QRBarcodeSettings();
+    //Set the logo image.
+    settings.Logo = logo;
+    //Set the XDimension. 
+    settings.XDimension = 8;
+    //Assign the QR code settings. 
+    this.qrBarcode.SymbologySettings = settings;
+
+{% endhighlight %}
+

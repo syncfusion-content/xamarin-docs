@@ -98,7 +98,7 @@ The **Package Manager Console** saves NuGet packages installation time since you
 
     ```Install-Package Syncfusion.Xamarin.SfDataGrid -Version 19.3.0.44```
 
-    ![Package Manager Console Output in Xamarin NuGet Packages installation ](platform_images/xamarin-nuget-packages-console-installation-output.png)
+    ![Package Manager Console Output in Xamarin NuGet Packages installation](platform_images/xamarin-nuget-packages-console-installation-output.png)
 
 4. The NuGet package manager console will install the Syncfusion Xamarin NuGet package as well as the dependencies it has. When the installation is complete, the console will show that your Syncfusion Xamarin package has been successfully added to the application.
 

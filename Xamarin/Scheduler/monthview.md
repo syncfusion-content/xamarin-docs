@@ -590,7 +590,7 @@ schedule.MonthViewSettings = monthViewSettings;
 ![Month view header format in schedule xamarin forms](monthview_images/xamarin.forms-schedule-viewheader-dateformat.png)
 
 ### ViewHeader Tapped Event
-You can handle single tap action of ViewHeader by using [ViewHeaderTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html#Syncfusion_SfSchedule_XForms_ViewHeaderTappedEventArgs_DateTime) details in it.
+You can handle single tap action of ViewHeader by using [ViewHeaderTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html#Syncfusion_SfSchedule_XForms_ViewHeaderTappedEventArgs_DateTime) details in it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1289,10 +1289,10 @@ N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-u
 
 ## See also
 
-[How to customize AgendaView height based on schedule height?](https://www.syncfusion.com/kb/10913/how-to-customize-agendaview-height-based-on-schedule-height)
+[How to customize AgendaView height based on schedule height?](https://support.syncfusion.com/kb/article/9504/how-to-customize-agendaview-height-based-on-schedule-height)
 
-[How to show a custom agenda view besides the Xamarin.Forms scheduler in landscape mode](https://www.syncfusion.com/kb/10341/how-to-showa-custom-agenda-viewbesides-the-xamarin-forms-scheduler-in-landscape-mode)
+[How to show a custom agenda view besides the Xamarin.Forms scheduler in landscape mode](https://support.syncfusion.com/kb/article/8985/how-to-showa-custom-agenda-viewbesides-the-xamarin-forms-scheduler-in-landscape-mode)
 
-[How to customize the month inline appointments view in Xamarin.Forms scheduler?](https://www.syncfusion.com/kb/10337/how-to-customize-the-month-inline-appointments-view-in-xamarin-forms-scheduler)
+[How to customize the month inline appointments view in Xamarin.Forms scheduler?](https://support.syncfusion.com/kb/article/8974/how-to-customize-the-month-inline-appointments-view-in-xamarin-forms-scheduler)
 
-[How to show appointments in month cell using custom view in Xamarin.Forms schedule?](https://www.syncfusion.com/kb/10336/how-to-show-appointments-in-month-cell-using-custom-view-in-xamarin-forms-schedule)
+[How to show appointments in month cell using custom view in Xamarin.Forms schedule?](https://support.syncfusion.com/kb/article/8968/how-to-show-appointments-in-month-cell-using-custom-view-in-xamarin-forms-schedule)

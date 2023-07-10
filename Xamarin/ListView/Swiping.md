@@ -80,7 +80,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ![Right swiping functionalities](SfListView_images/SfListView-Swiping--2.png)
 
-N> To customize the appearance of each swipe item with different templates based on specific constraints by using the [DataTemplateSelector](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/). 
+N> To customize the appearance of each swipe item with different templates based on specific constraints by using the [DataTemplateSelector](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.datatemplateselector?view=xamarin-forms). 
 
 ## Working with multiple views in swipe template
 
@@ -655,7 +655,7 @@ N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui
 
 ## See Also
 
-[How to swipe an item programmatically in Xamarin.Forms ListView](https://www.syncfusion.com/kb/10021)                                        
-[How to swipe the item indefinitely and layout back on specified position when swipe end](https://www.syncfusion.com/kb/8026)                                                                           
-[How to swipe an item like Outlook or Gmail application in Xamarin.Forms listview](https://www.syncfusion.com/kb/9965)                                                                                                                                                                                                                          
-[How to conditionally handle the swiping in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11669/)
+[How to swipe an item programmatically in Xamarin.Forms ListView](https://support.syncfusion.com/kb/article/8743/how-to-swipe-an-item-programatically-in-xamarin-forms-listview)                                        
+[How to swipe the item indefinitely and layout back on specified position when swipe end](https://support.syncfusion.com/kb/article/7089/how-to-swipe-the-item-indefinitely-and-layout-back-on-specified-position-when-swipe-end)                                                                           
+[How to swipe an item like Outlook or Gmail application in Xamarin.Forms listview](https://support.syncfusion.com/kb/article/8799/how-to-swipe-an-item-like-outlook-or-gmail-application-in-xamarin-forms-listview)                                                                                                                                                                                                                          
+[How to conditionally handle the swiping in Xamarin.Forms ListView (SfListView)](https://support.syncfusion.com/kb/article/10231/how-to-conditionally-handle-the-swiping-in-xamarin-forms-listview-sflistview)

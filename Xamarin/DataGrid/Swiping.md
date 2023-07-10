@@ -9,7 +9,7 @@ documentation: ug
 
 # Swiping in Xamarin DataGrid (SfDataGrid)
 
-The [SfDataGrid](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html# “”) allows enabling the swiping option by setting the [SfDataGrid.AllowSwiping](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_AllowSwiping) property to `true`. Swipe views are displayed when swiping from ‘left to right’ or ‘right to left’ on a data row. The control provides customizable swipe templates for swiping on the left and right side. The swipe gesture can be restricted to a certain point on the row by setting the [SfDataGrid.MaxSwipeOffset](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_MaxSwipeOffset) property.
+The [SfDataGrid](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html# “”) allows enabling the swiping option by setting the [SfDataGrid.AllowSwiping](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_AllowSwiping) property to `true`. Swipe views are displayed when swiping from ‘left to right’ or ‘right to left’ on a data row. The control provides customizable swipe templates for swiping on the left and right side. The swipe gesture can be restricted to a certain point on the row by setting the [SfDataGrid.MaxSwipeOffset](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_MaxSwipeOffset) property.
 
 ## Swipe template
 
@@ -99,9 +99,9 @@ N> The `DataTemplateSelector` can also be directly assigned to the `SfDataGrid.R
 
 ## Swipe events
 
-[SwipeStarted](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html): Fired when the swipe offset changes from its initial value. The swipe action can be canceled by setting the [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue&view=net-5.0# “”) property of the [SwipeStartedEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SwipeStartedEventArgs.html# “”) to `true`. 
-[SwipeEnded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html): Fired when the swipe offset value reaches the `SfDataGrid.MaxSwipeOffset` indicating that the swipe action is completed. This event is triggered with [SwipeEndedEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SwipeEndedEventArgs.html# “”).
-[Swiping](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html): Raised while swiping a row is in progress. This event is triggered with [SwipingEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SwipingEventArgs.html# “”). 
+[SwipeStarted](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html): Fired when the swipe offset changes from its initial value. The swipe action can be canceled by setting the [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue&view=net-5.0# “”) property of the [SwipeStartedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SwipeStartedEventArgs.html# “”) to `true`. 
+[SwipeEnded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html): Fired when the swipe offset value reaches the `SfDataGrid.MaxSwipeOffset` indicating that the swipe action is completed. This event is triggered with [SwipeEndedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SwipeEndedEventArgs.html# “”).
+[Swiping](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html): Raised while swiping a row is in progress. This event is triggered with [SwipingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SwipingEventArgs.html# “”). 
 
 The swipe events provides the following properties in their arguments: 
 
@@ -510,7 +510,7 @@ private void Datagrid_SwipeEnded(object sender, SwipeEndedEventArgs e)
 
 {% endhighlight %}
 
-You can download the source code of swiping sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swiping-661295078).
+You can download the source code of swiping sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Swiping-661295078).
 
 ## How to set MaxSwipeOffset based on content size
 
@@ -726,4 +726,4 @@ When data grid is loaded in MasterDetailPage with `AllowSwiping` as true, it beh
 
 ## See also
 
-[How to cancel swipe programmatically](https://www.syncfusion.com/kb/7813)
+[How to cancel swipe programmatically](https://support.syncfusion.com/kb/article/7051/how-to-cancel-swipe-programmatically)

@@ -390,7 +390,7 @@ Run the application to render the following output.
 
 By default, the SfDataGrid automatically creates columns for all the properties in the data source. The type of the column generated depends on the type of data in the column. When the columns are auto-generated, handle the [SfDataGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event to customize or cancel the columns before they are added to the columns collection in the SfDataGrid.
  
-The columns can be manually defined by setting the [SfDataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_AutoGenerateColumns) property to false and by adding the [GridColumn](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html) objects to the [SfDataGrid.Columns](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_Columns) collection. It can be done from both XAML and code. The following code example illustrates this:
+The columns can be manually defined by setting the [SfDataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_AutoGenerateColumns) property to false and by adding the [GridColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html) objects to the [SfDataGrid.Columns](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_Columns) collection. It can be done from both XAML and code. The following code example illustrates this:
 
 {% tabs %}
 {% highlight xaml %}
@@ -627,18 +627,18 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to overcome the DisplayBinding converter is not firing problem when XamlCompilation attribute is set as XamlCompilationOptions.Compile](https://www.syncfusion.com/kb/7561)
+[How to overcome the DisplayBinding converter is not firing problem when XamlCompilation attribute is set as XamlCompilationOptions.Compile](https://support.syncfusion.com/kb/article/6906/how-to-overcome-the-displaybinding-converter-is-not-firing-problem-when-xamlcompilation)
 
-[What will be the best practice way to update Xamarin controls in an existing project](https://www.syncfusion.com/kb/7519)
+[What will be the best practice way to update Xamarin controls in an existing project](https://support.syncfusion.com/kb/article/6970/what-will-be-the-best-practice-way-to-update-xamarin-controls-in-an-existing-project)
 
-[How to solve the Android resources issue in Xamarin.Forms](https://www.syncfusion.com/kb/7481)
+[How to solve the Android resources issue in Xamarin.Forms](https://support.syncfusion.com/kb/article/6720/how-to-solve-the-android-resources-issue-in-xamarin-forms)
 
-[How to convert Point to Index and Index to Point in SfDataGrid](https://www.syncfusion.com/kb/7456)
+[How to convert Point to Index and Index to Point in SfDataGrid](https://support.syncfusion.com/kb/article/6751/how-to-convert-point-to-index-and-index-to-point-in-sfdatagrid)
 
-[How to load grid without borders](https://www.syncfusion.com/kb/7451)
+[How to load grid without borders](https://support.syncfusion.com/kb/article/6679/how-to-load-grid-without-borders)
 
-[How to parse XML file and set as ItemsSource for SfDataGrid](https://www.syncfusion.com/kb/7439)
+[How to parse XML file and set as ItemsSource for SfDataGrid](https://support.syncfusion.com/kb/article/6563/how-to-parse-xml-file-and-set-as-itemssource-for-sfdatagrid)
 
-[How to configure package source and install Syncfusion NuGet packages in an existing project](https://www.syncfusion.com/kb/7441)
+[How to configure package source and install Syncfusion NuGet packages in an existing project](https://support.syncfusion.com/kb/article/6565/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing)
 
-[How to render SfDataGrid for Xamarin.Forms.UWP in release mode](https://www.syncfusion.com/kb/7445)
+[How to render SfDataGrid for Xamarin.Forms.UWP in release mode](https://support.syncfusion.com/kb/article/6569/how-to-render-sfdatagrid-for-xamarin-forms-uwp-in-release-mode)

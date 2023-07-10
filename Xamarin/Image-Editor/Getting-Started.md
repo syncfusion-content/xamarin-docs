@@ -241,7 +241,7 @@ The following code shows adding an image to the image editor control with the fo
 {% endhighlight %}
 {% endtabs %}
 
-N> Refer to this [link](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/images?tabs=vswin#displaying-images) to know more about loading an image to the image editor source property in different formats.
+N> Refer to this [link](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/images?tabs=windows#displaying-images) to know more about loading an image to the image editor source property in different formats.
 
 * The following screenshot depicts loading an image to the image editor. You can edit the image using built-in toolbar.
 

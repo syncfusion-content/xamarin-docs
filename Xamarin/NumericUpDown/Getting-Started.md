@@ -25,7 +25,7 @@ You can add SfNumericUpDown reference using one of the following methods:
 
 **Method 1: Adding SfNumericUpDown reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfNumericUpDown to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfNumericUpDown](https://www.nuget.org/packages/Syncfusion.Xamarin.SfNumericUpDown), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org). To add SfNumericUpDown to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfNumericUpDown](https://www.nuget.org/packages/Syncfusion.Xamarin.SfNumericUpDown), and then install it.
 
 ![Adding SfNumericUpDown reference from NuGet](images/Adding SfNumericUpDown reference.png)
 
@@ -210,12 +210,12 @@ You can find the complete getting started sample from this [link.](https://githu
 
 ## See also
 
-[How to change border width of SfNumericUpDown by using custom renderer](https://www.syncfusion.com/kb/7633/how-to-change-borderwidth-of-numericupdown-by-using-custom-renderer)
+[How to change border width of SfNumericUpDown by using custom renderer](https://support.syncfusion.com/kb/article/6789/how-to-change-borderwidth-of-numericupdown-by-using-custom-renderer)
 
-[How to get the dynamic theme change effect in SfNumericUpDown inside the SfTextInputLayout](https://www.syncfusion.com/kb/11909/how-to-get-the-dynamic-theme-change-effect-in-numeric-control-inside-the-xamarin-forms-text)
+[How to get the dynamic theme change effect in SfNumericUpDown inside the SfTextInputLayout](https://support.syncfusion.com/kb/article/10537/how-to-get-the-dynamic-theme-change-effect-in-numeric-control-inside-the-xamarin-forms-text)
 
-[How to create a border less SfNumericUpDown](https://www.syncfusion.com/kb/11873/how-to-create-a-borderless-xamarin-forms-numeric-control-sfnumericupdown)
+[How to create a border less SfNumericUpDown](https://support.syncfusion.com/kb/article/10320/how-to-create-a-borderless-xamarin-forms-numeric-control-sfnumericupdown)
 
-[How to hide the increment or decrement button in SfNumericUpDown](https://www.syncfusion.com/kb/11647/how-to-hide-the-increment-or-decrement-button-in-xamarin-forms-numeric-control)
+[How to hide the increment or decrement button in SfNumericUpDown](https://support.syncfusion.com/kb/article/10200/how-to-hide-the-increment-or-decrement-button-in-xamarin-forms-numeric-control)
 
-[How to resolve the issue with decimal point and minus key on Samsung devices in SfNumericUpDown](https://www.syncfusion.com/kb/10435/how-to-resolve-the-issue-with-decimal-point-and-minus-key-on-samsung-devices-in)
+[How to resolve the issue with decimal point and minus key on Samsung devices in SfNumericUpDown](https://support.syncfusion.com/kb/article/9037/how-to-resolve-the-issue-with-decimal-point-and-minus-key-on-samsung-devices-in)

@@ -133,4 +133,4 @@ N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to display each row with different columns in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11236)                                                                                                                                                                                        
+[How to display each row with different columns in Xamarin.Forms ListView (SfListView)](https://support.syncfusion.com/kb/article/9683/how-to-display-each-row-with-different-columns-in-xamarin-forms-listview-sflistview)                                                                                                                                                                                        

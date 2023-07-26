@@ -25,7 +25,7 @@ You can add Rich Text Editor reference using one of the following methods:
 
 **Method 1: Adding SfRichTextEditor reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add Rich Text Editor to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfRichTextEditor](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRichTextEditor) and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org). To add Rich Text Editor to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfRichTextEditor](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRichTextEditor) and then install it.
 
 ![Adding SfRichTextEditor reference from NuGet](SfRichTextEditor_Images/RichTextEditor_reference.png)
 
@@ -202,7 +202,7 @@ public MainPage()
 
 {% endtabs %} 
 
-N> SfRichTextEditor is implemented in a WebView. So, the SfRichTextEditor should not be nested inside a ScrollView as mentioned [here](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/layouts/scroll-view#usage).
+N> SfRichTextEditor is implemented in a WebView. So, the SfRichTextEditor should not be nested inside a ScrollView as mentioned [here](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/layouts/scrollview#usage).
 
 
 The complete Getting Started sample is available in this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/RTE-206415396.zip)

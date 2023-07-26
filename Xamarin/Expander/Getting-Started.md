@@ -395,7 +395,7 @@ private void Expander_Expanding(object sender, ExpandingAndCollapsingEventArgs e
 
 ## See also
 
-[How to resolve SfExpander not rendering issue in iOS and UWP?](https://www.syncfusion.com/kb/11293/)                                                                                                                                   
-[How to work with Expander using C# in Xamarin.Forms (SfExpander)](https://www.syncfusion.com/kb/11367)    
-[How to autofit the Expander content in Xamarin.Forms (SfExpander)](https://www.syncfusion.com/kb/11431/)
+[How to resolve SfExpander not rendering issue in iOS and UWP?](https://support.syncfusion.com/kb/article/9832/how-to-resolve-sfexpander-not-rendering-issue-in-ios-and-uwp)                                                                                                                                   
+[How to work with Expander using C# in Xamarin.Forms (SfExpander)](https://support.syncfusion.com/kb/article/9876/how-to-work-with-expander-using-c-in-xamarin-forms-sfexpander)    
+[How to autofit the Expander content in Xamarin.Forms (SfExpander)](https://support.syncfusion.com/kb/article/9950/how-to-autofit-the-expander-content-in-xamarin-forms-sfexpander)
 

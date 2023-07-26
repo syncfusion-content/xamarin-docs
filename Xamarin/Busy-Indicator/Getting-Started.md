@@ -27,7 +27,7 @@ You can add [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusio
 
 **Method 1: Adding SfBusyIndicator reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfBusyIndicator to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfBusyIndicator](https://www.nuget.org/packages/Syncfusion.Xamarin.SfBusyIndicator), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org). To add SfBusyIndicator to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfBusyIndicator](https://www.nuget.org/packages/Syncfusion.Xamarin.SfBusyIndicator), and then install it.
 
 ![Adding SfBusyIndicator reference](images/Adding SfBusyIndicator reference.png)
 

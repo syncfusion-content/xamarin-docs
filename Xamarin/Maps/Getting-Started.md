@@ -13,7 +13,7 @@ This section explains the steps required to configure the maps control and custo
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin/confirm), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -511,6 +511,6 @@ N> You can refer to our [Xamarin Maps](https://www.syncfusion.com/xamarin-ui-con
 
 ## See also
 
-[How to make SfMaps to work in UWP in release mode when .NET Native tool chain is enabled](https://www.syncfusion.com/kb/8604/how-to-make-syncfusion-xamarin-forms-sfmaps-to-work-in-uwp-in-release-mode-when-net-native)
+[How to make SfMaps to work in UWP in release mode when .NET Native tool chain is enabled](https://support.syncfusion.com/kb/article/7516/how-to-make-syncfusion-xamarin-forms-sfmaps-to-work-in-uwp-in-release-mode-when-net-native)
 
-[How to resolve SfMaps not rendering issue in iOS and UWP](https://www.syncfusion.com/kb/8603/how-to-resolve-sfmaps-not-rendering-issue-in-ios-and-uwp)
+[How to resolve SfMaps not rendering issue in iOS and UWP](https://support.syncfusion.com/kb/article/7519/how-to-resolve-sfmaps-not-rendering-issue-in-ios-and-uwp)

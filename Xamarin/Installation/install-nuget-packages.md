@@ -22,13 +22,13 @@ The NuGet Package Manager UI allows you to search, install, uninstall, and updat
 
 1.  Right-click on the Xamarin app or solution in the Solution Explorer, and choose Manage NuGet Packages...
 
-    ![Manage NuGet Packages add-in](Platform_images/manage-nuget.png)
+    ![Manage NuGet Packages add-in for Xamarin Installation](platform_images/xamarin-nuget-packages-installation-add-in.png)
 
     As an alternative, after opening the Xamarin application in Visual Studio, go to the **Tools** menu and after hovering **NuGet Package Manager**, select **Manage NuGet Packages for Solution...**
 
 2. The Manage NuGet Packages window will open. Navigate to the Browse tab, then search for the Syncfusion Xamarin NuGet packages using a term like "**Syncfusion.Xamarin**" and select the appropriate Syncfusion Xamarin NuGet package for your development.
 
-    ![Xamarin NuGet Packages Search](Platform_images/NuGetsearch.png)
+    ![Xamarin NuGet Packages Search](platform_images/xamarin-nuget-packages-installation-search.png)
 
     > The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft documents](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#package-sources) to set up the nuget.org feed URL.
  
@@ -36,7 +36,7 @@ The NuGet Package Manager UI allows you to search, install, uninstall, and updat
 
 4.  By default, the package selected with latest version. You can choose the required version and click the Install button and accept the license terms. The package will be added to your Xamarin app.
 
-    ![Xamarin NuGet Packages Install](Platform_images/InstallNuGet.png)
+    ![Xamarin NuGet Packages Install](platform_images/xamarin-nuget-packages-installation-app.png)
 
 5.  At this point, your application has all the required Syncfusion assemblies, and you will be ready to start building high-performance, responsive app with  [Syncfusion Xamarin components](https://www.syncfusion.com/xamarin-ui-controls). Also, you can refer to the [Syncfusion Xamarin help document](https://help.syncfusion.com/xamarin/introduction/overview) for development.
 
@@ -58,7 +58,7 @@ Follow the below instructions to use the dotnet CLI command to install the Syncf
 
 3.  Examine the Syncfusion Xamarin project file after the command has completed to ensure that the Syncfusion Xamarin package was installed. To see the added reference, open the .csproj file.
 
-    ![Xamarin Package Entry ](Platform_images/packageentry.png)
+    ![Xamarin NuGet Package Installation Entry ](platform_images/xamarin-nuget-packages-installation-entry.png)
 
 4. Then run  [dotnet restore](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore2x) command to restores all the packages listed in the application file.
 
@@ -72,7 +72,7 @@ The **Package Manager Console** saves NuGet packages installation time since you
 
 1. To launch the Package Manager Console, open your Xamarin application in Visual Studio and navigate to **Tools -> NuGet Package Manager -> Package Manager Console**.
 
-    ![Package Manager Console ](Platform_images/console.png)
+    ![Package Manager Console in Xamarin NuGet Packages ](platform_images/xamarin-nuget-packages-installation-console.png)
 
 2. The **Package Manager Console** will be shown at the bottom of the screen. You can install the Syncfusion Xamarin NuGet packages by enter the following NuGet installation commands.
 
@@ -98,7 +98,7 @@ The **Package Manager Console** saves NuGet packages installation time since you
 
     ```Install-Package Syncfusion.Xamarin.SfDataGrid -Version 19.3.0.44```
 
-    ![Package Manager Console Output ](Platform_images/ConsoleInstallationOutput.png)
+    ![Package Manager Console Output in Xamarin NuGet Packages installation](platform_images/xamarin-nuget-packages-console-installation-output.png)
 
 4. The NuGet package manager console will install the Syncfusion Xamarin NuGet package as well as the dependencies it has. When the installation is complete, the console will show that your Syncfusion Xamarin package has been successfully added to the application.
 

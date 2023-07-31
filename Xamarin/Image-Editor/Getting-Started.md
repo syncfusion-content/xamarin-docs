@@ -251,30 +251,30 @@ You can find the complete getting started sample from this [link.](https://githu
 
 ## See also
 
-[How to create signature pad using SfImageEditor](https://www.syncfusion.com/kb/9811/how-to-create-signature-pad-using-imageeditor)
+[How to create signature pad using SfImageEditor](https://support.syncfusion.com/kb/article/8656/how-to-create-signature-pad-using-imageeditor)
 
-[How to refer the NuGet package from local directory in mac?](https://www.syncfusion.com/kb/9497/how-to-refer-the-nuget-package-from-local-directory-in-mac)
+[How to refer the NuGet package from local directory in mac?](https://support.syncfusion.com/kb/article/8376/how-to-refer-the-nuget-package-from-local-directory-in-mac)
 
-[How to resize the image with SfImageEditor](https://www.syncfusion.com/kb/9400/how-to-resize-the-image-with-imageeditor)
+[How to resize the image with SfImageEditor](https://support.syncfusion.com/kb/article/8338/how-to-resize-the-image-with-imageeditor)
 
-[How to load image from camera and gallery in SfImageEditor](https://www.syncfusion.com/kb/9368/how-to-load-image-from-camera-and-gallery-in-xamarin-image-editor-sfimageeditor)
+[How to load image from camera and gallery in SfImageEditor](https://support.syncfusion.com/kb/article/8283/how-to-load-image-from-camera-and-gallery-in-xamarin-image-editor-sfimageeditor)
 
-[How to override original image with edited image in Xamarin.Forms](https://www.syncfusion.com/kb/8910/how-to-override-original-image-with-edited-image-in-xamarin-forms)
+[How to override original image with edited image in Xamarin.Forms](https://support.syncfusion.com/kb/article/7784/how-to-override-original-image-with-edited-image-in-xamarin-forms)
 
-[How to convert images to stream and byte array](https://www.syncfusion.com/kb/8887/how-to-convert-images-to-stream-and-byte-array)
+[How to convert images to stream and byte array](https://support.syncfusion.com/kb/article/7781/how-to-convert-images-to-stream-and-byte-array)
 
-[How to load SVG images in SfImageEditor](https://www.syncfusion.com/kb/8881/how-to-load-svg-images-in-imageeditor)
+[How to load SVG images in SfImageEditor](https://support.syncfusion.com/kb/article/7810/how-to-load-svg-images-in-imageeditor)
 
-[How to include content for UseSafeArea for Xamarin.Forms.iOS project](https://www.syncfusion.com/kb/8879/how-to-include-content-for-usesafearea-for-forms-ios-project)
+[How to include content for UseSafeArea for Xamarin.Forms.iOS project](https://support.syncfusion.com/kb/article/7813/how-to-include-content-for-usesafearea-for-forms-ios-project)
 
-[How to customize the back button in SfImageEditor](https://www.syncfusion.com/kb/8873/how-to-customise-the-back-button-in-imageeditor)
+[How to customize the back button in SfImageEditor](https://support.syncfusion.com/kb/article/7822/how-to-customise-the-back-button-in-imageeditor)
 
-[How to resolve image is not appearing in Release mode in SfImageEditor Xamarin.Forms.UWP](https://www.syncfusion.com/kb/8869/how-to-resolve-image-is-not-appearing-in-release-mode-in-sfimageeditor-xforms-uwp)
+[How to resolve image is not appearing in Release mode in SfImageEditor Xamarin.Forms.UWP](https://support.syncfusion.com/kb/article/7815/how-to-resolve-image-is-not-appearing-in-release-mode-in-sfimageeditor-xforms-uwp)
 
-[How to use Xamarin.Forms as signature](https://www.syncfusion.com/kb/8303/how-to-use-image-editor-as-signature)
+[How to use Xamarin.Forms as signature](https://support.syncfusion.com/kb/article/7379/how-to-use-image-editor-as-signature)
 
-[How to resolve out of memory exception when loading large images in Android](https://www.syncfusion.com/kb/8301/how-to-resolve-out-of-memory-exception-when-loading-large-images-in-android)
+[How to resolve out of memory exception when loading large images in Android](https://support.syncfusion.com/kb/article/7349/how-to-resolve-out-of-memory-exception-when-loading-large-images-in-android)
 
-[How to resolve “UWP Getting Exception "Could not find Windows Runtime type 'Microsoft.Graphics.Canvas.CanvasDevice'" When trying to save in UWP](https://www.syncfusion.com/kb/8290/how-to-resolve-uwp-getting-exception-could-not-find-windows-runtime-type-microsoft-graphics)
+[How to resolve “UWP Getting Exception "Could not find Windows Runtime type 'Microsoft.Graphics.Canvas.CanvasDevice'" When trying to save in UWP](https://support.syncfusion.com/kb/article/7342/how-to-resolve-uwp-getting-exception-could-not-find-windows-runtime-type-microsoftgraphicscanvascanvasdevice-when-trying-to-save-in-uwp)
 
-[How to resolve SfImageEditor not rendering issue in Xamarin.Forms.iOS](https://www.syncfusion.com/kb/7772/how-to-resolve-sfimageeditor-not-rendering-issue-in-xamarin-forms-ios)
+[How to resolve SfImageEditor not rendering issue in Xamarin.Forms.iOS](https://support.syncfusion.com/kb/article/6910/how-to-resolve-sfimageeditor-not-rendering-issue-in-xamarin-forms-ios)

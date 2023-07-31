@@ -1354,20 +1354,20 @@ You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to get visible appointments in Xamarin.Forms Schedule (SfSchedule)](https://www.syncfusion.com/kb/11106/how-to-get-visible-appointments-in-xamarin-forms-schedule-sfschedule)
+[How to get visible appointments in Xamarin.Forms Schedule (SfSchedule)](https://support.syncfusion.com/kb/article/9734/how-to-get-visible-appointments-in-xamarin-forms-schedule-sfschedule)
 
-[How to add additional attributes for your appointments ?](https://www.syncfusion.com/kb/6695/how-to-add-additional-attributes-for-your-appointments)
+[How to add additional attributes for your appointments ?](https://support.syncfusion.com/kb/article/6098/how-to-add-additional-attributes-for-your-appointments)
 
-[How to design and configure your custom appointment editor ?](https://www.syncfusion.com/kb/6696/how-to-design-and-configure-your-custom-appointment-editor)* 
+[How to design and configure your custom appointment editor ?](https://support.syncfusion.com/kb/article/6097/how-to-design-and-configure-your-custom-appointment-editor)* 
 
-[How to bind appointments in Xamarin.Forms Schedule (SfSchedule) using Prism framework](https://www.syncfusion.com/kb/11038/how-to-bind-appointments-in-xamarin-forms-schedule-sfschedule-using-prism-framework)
+[How to bind appointments in Xamarin.Forms Schedule (SfSchedule) using Prism framework](https://support.syncfusion.com/kb/article/9548/how-to-bind-appointments-in-xamarin-forms-schedule-sfschedule-using-prism-framework)
 
-[How to get visible appointments in Xamarin.Forms Schedule (SfSchedule)](https://www.syncfusion.com/kb/11106/how-to-get-visible-appointments-in-xamarin-forms-schedule-sfschedule)
+[How to get visible appointments in Xamarin.Forms Schedule (SfSchedule)](https://support.syncfusion.com/kb/article/9734/how-to-get-visible-appointments-in-xamarin-forms-schedule-sfschedule)
 
-[How to import and export schedule appointments with Outlook calendar?](https://www.syncfusion.com/kb/9311/how-to-import-and-export-schedule-appointments-with-outlook-calendar)
+[How to import and export schedule appointments with Outlook calendar?](https://support.syncfusion.com/kb/article/8179/how-to-import-and-export-schedule-appointments-with-outlook-calendar)
 
-[How to load the data from SQLite offline database into SfSchedule?](https://www.syncfusion.com/kb/9125/how-to-load-the-data-from-sqlite-offline-database-into-sfschedule)
+[How to load the data from SQLite offline database into SfSchedule?](https://support.syncfusion.com/kb/article/8125/how-to-load-the-data-from-sqlite-offline-database-into-sfschedule)
 
-[How to bind JSON data to Schedule?](https://www.syncfusion.com/kb/9657/how-to-bind-json-data-to-schedule)
+[How to bind JSON data to Schedule?](https://support.syncfusion.com/kb/article/8453/how-to-bind-json-data-to-schedule)
 
-[How to bind appointments in Xamarin.Forms Schedule using MVVMCross	](https://www.syncfusion.com/kb/10081/how-to-bind-appointments-in-xamarin-forms-schedule-using-mvvmcross)
+[How to bind appointments in Xamarin.Forms Schedule using MVVMCross	](https://support.syncfusion.com/kb/article/8860/how-to-bind-appointments-in-xamarin-forms-schedule-using-mvvmcross)

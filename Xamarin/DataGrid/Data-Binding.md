@@ -156,11 +156,11 @@ The [CollectionChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.Data.C
 
 `NotifyCollectionChangedEventArgs` has the following properties:
 
- [Action](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?view=net-5.0): It contains the current action. (i.e.)` Add`, `Remove`, `Move`, `Replace`, `Reset`.
- [NewItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?view=net-5.0): It contains the list of new items involved in the change.
- [OldItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?view=net-5.0): It contains the list of old items affected by the `Action`.
- [NewStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?view=net-5.0): It contains the index at which the change occurred.
- [OldStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?view=net-5.0): It contains the index at which the `Action` occurred.
+ [Action](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?view=net-5.0): It contains the current action. (i.e.)` Add`, `Remove`, `Move`, `Replace`, `Reset`.
+ [NewItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?view=net-5.0): It contains the list of new items involved in the change.
+ [OldItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?view=net-5.0): It contains the list of old items affected by the `Action`.
+ [NewStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?view=net-5.0): It contains the index at which the change occurred.
+ [OldStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?view=net-5.0): It contains the index at which the `Action` occurred.
 
 ### SourceCollectionChanged
 
@@ -168,11 +168,11 @@ The [SourceCollectionChanged](https://help.syncfusion.com/cr/xamarin/) event is 
 
 `NotifyCollectionChangedEventArgs` has the following properties:
 
- [Action](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?view=net-5.0): It contains the current action. (i.e.) `Add`, `Remove`, `Move`, `Replace`, `Reset`.
- [NewItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?view=net-5.0): It contains the list of new items involved in the change.
- [OldItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?view=net-5.0): It contains the list of old items affected by the `Action`.
- [NewStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?view=net-5.0): It contains the index at which the change occurred.
- [OldStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?view=net-5.0): It contains the index at which the `Action` occurred.
+ [Action](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?view=net-5.0): It contains the current action. (i.e.) `Add`, `Remove`, `Move`, `Replace`, `Reset`.
+ [NewItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?view=net-5.0): It contains the list of new items involved in the change.
+ [OldItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?view=net-5.0): It contains the list of old items affected by the `Action`.
+ [NewStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?view=net-5.0): It contains the index at which the change occurred.
+ [OldStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?view=net-5.0): It contains the index at which the `Action` occurred.
 
 The following methods are associated with `View` which can be used to defer refresh the view:
 

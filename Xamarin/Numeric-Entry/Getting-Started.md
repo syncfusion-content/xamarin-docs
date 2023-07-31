@@ -234,26 +234,26 @@ You can find the complete getting started sample from this [link.](https://githu
 
 ## See also
 
-[How to disable the clear button in SfNumericTextBox]( https://www.syncfusion.com/kb/11874/how-to-disable-the-clear-button-in-numeric-textbox-in-xamarin-forms)
+[How to disable the clear button in SfNumericTextBox](https://support.syncfusion.com/kb/article/10319/how-to-disable-the-clear-button-in-numeric-textbox-in-xamarin-forms)
 
-[How to change the SfNumericTextBox style using its visual states]( https://www.syncfusion.com/kb/11785/how-to-change-the-xamarin-forms-numeric-textbox-style-using-its-visual-states)
+[How to change the SfNumericTextBox style using its visual states](https://support.syncfusion.com/kb/article/10286/how-to-change-the-xamarin-forms-numeric-textbox-style-using-its-visual-states)
 
-[How to define and apply a common style for SfNumericTextBox]( https://www.syncfusion.com/kb/11670/how-to-define-and-apply-a-common-style-for-sfnumerictextbox-in-xamarin-forms)
+[How to define and apply a common style for SfNumericTextBox](https://support.syncfusion.com/kb/article/10232/how-to-define-and-apply-a-common-style-for-sfnumerictextbox-in-xamarin-forms)
 
-[How to resolve the issue with decimal point and minus key on Samsung devices in SfNumericTextBox](https://www.syncfusion.com/kb/10419/how-to-resolve-the-issue-with-decimal-point-and-minus-key-on-samsung-devices-in) 
+[How to resolve the issue with decimal point and minus key on Samsung devices in SfNumericTextBox](https://support.syncfusion.com/kb/article/8944/how-to-resolve-the-issue-with-decimal-point-and-minus-key-on-samsung-devices-in) 
 
-[How to create SfNumericTextBox sample in Xamarin.Forms.Android platform](https://www.syncfusion.com/kb/7632/how-to-create-numerictextbox-sample-in-xamarin-forms-android-platform)
+[How to create SfNumericTextBox sample in Xamarin.Forms.Android platform](https://support.syncfusion.com/kb/article/6863/how-to-create-numerictextbox-sample-in-xamarin-forms-android-platform)
 
-[How to create a SfNumericTextBox control sample using Xaml](https://www.syncfusion.com/kb/7631/how-to-create-a-numerictextbox-control-sample-using-xaml)
+[How to create a SfNumericTextBox control sample using Xaml](https://support.syncfusion.com/kb/article/6861/how-to-create-a-numerictextbox-control-sample-using-xaml)
 
-[How to create SfNumericTextBox sample in Xamarin.Forms.UWP platform](https://www.syncfusion.com/kb/7591/how-to-create-numerictextbox-sample-in-xamarin-forms-uwp-platform)
+[How to create SfNumericTextBox sample in Xamarin.Forms.UWP platform](https://support.syncfusion.com/kb/article/6842/how-to-create-numerictextbox-sample-in-xamarinforms-platform)
 
-[How to create SfNumericTextBox sample in Xamarin.Forms.iOS platform](https://www.syncfusion.com/kb/7590/how-to-create-numerictextbox-sample-in-xamarin-forms-ios-platform)
+[How to create SfNumericTextBox sample in Xamarin.Forms.iOS platform](https://support.syncfusion.com/kb/article/6844/how-to-create-numerictextbox-sample-in-xamarin-forms-ios-platform)
 
-[How to bind the values of SfNumericTextBox with an Entry control in Xamarin.Forms](https://www.syncfusion.com/kb/7588/how-to-bind-the-values-of-numerictextbox-with-an-entry-control-in-xamarin-forms)
+[How to bind the values of SfNumericTextBox with an Entry control in Xamarin.Forms](https://support.syncfusion.com/kb/article/6847/how-to-bind-the-values-of-numerictextbox-with-an-entry-control-in-xamarin-forms)
 
-[How to bind two SfNumericTextBox in Xamarin.Forms](https://www.syncfusion.com/kb/7584/how-to-bind-two-numerictextboxes-in-xamarin-forms)
+[How to bind two SfNumericTextBox in Xamarin.Forms](https://support.syncfusion.com/kb/article/6853/how-to-bind-two-numerictextboxes-in-xamarin-forms)
 
-[What are the assemblies needed for SfNumericTextBox and how to add reference](https://www.syncfusion.com/kb/7583/what-are-the-assemblies-needed-for-numerictextbox-and-how-to-add-reference)
+[What are the assemblies needed for SfNumericTextBox and how to add reference](https://support.syncfusion.com/kb/article/6854/what-are-the-assemblies-needed-for-numerictextbox-and-how-to-add-reference)
 
-[How to bind value in SfNumericTextBox](https://www.syncfusion.com/kb/7064/how-to-bind-value-in-numerictextbox)
+[How to bind value in SfNumericTextBox](https://support.syncfusion.com/kb/article/6304/how-to-bind-value-in-xamarin-forms-numerictextbox)

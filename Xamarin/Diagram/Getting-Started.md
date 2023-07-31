@@ -83,7 +83,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% endhighlight %}
 {% endtabs %}
 
-I>We need to create an instance of the `SfDiagramRenderer` in iOS and UWP projects as shown in this [KB article](https://www.syncfusion.com/kb/8618).
+I>We need to create an instance of the `SfDiagramRenderer` in iOS and UWP projects as shown in this [KB article](https://support.syncfusion.com/kb/article/7619/how-to-resolve-sfdiagram-not-rendering-issue-in-ios-and-uwp).
 
 ### Additional step for UWP
 
@@ -110,7 +110,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-I> You can refer to the [KB article](https://www.syncfusion.com/kb/8617) for more details.
+I> You can refer to the [KB article](https://support.syncfusion.com/kb/article/7497/how-to-make-sfdiagram-to-work-in-uwp-in-release-mode-when-net-native-tool-chain-is-enabled) for more details.
 
 ## Basic building blocks of Diagram
 * **Diagram**- It represents the drawing surface where all the graphical elements like nodes and connectors resides, can be used to display various types of diagrams and it is the root instance of the diagram control. A Diagram instance contains a collection of nodes and  connectors to represent the  graphical diagram.

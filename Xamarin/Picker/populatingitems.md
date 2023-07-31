@@ -196,7 +196,7 @@ The following code example illustrates how to populate Month, Day, and Year valu
 
 You can download the multi column sample from the following link.
 
-Sample link: [MultiColumn](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MultiColumnSample-223331644.zip)
+Sample link: [MultiColumn](https://www.syncfusion.com/downloads/support/directtrac/general/ze/MultiColumnSample-223331644.zip)
 
 The following screenshot illustrates the output of the above code.
 

@@ -284,7 +284,7 @@ To format values displayed in the GridColumn, use the [GridColumn.Format](https:
 
 #### Format column using StringFormat
 
-Assign the format of string to the `GridColumn.Format` property based on the bound data type of the property, the GridColumn is associated to format the value. You can use different [StringFormats](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/fbxft59x(v=vs.90)) to customize values displayed in the record cells.
+Assign the format of string to the `GridColumn.Format` property based on the bound data type of the property, the GridColumn is associated to format the value. You can use different [StringFormats](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/fbxft59x(v=vs.90)) to customize values displayed in the record cells.
 
 To apply formatting for a GridTextColumn, follow the code example:
 
@@ -604,7 +604,7 @@ public class ViewModel
 
 ### Aspect
 
-SfDataGrid allows you to set the `Aspect` to size the loaded images within the bounds of the grid cell (whether to stretch, crop or letterbox) using the [GridImageColumn.Aspect](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.image.aspect?view=xamarin-forms#Xamarin_Forms_Image_Aspect) property. The supported aspects are described below, the default value is AspectFit.
+SfDataGrid allows you to set the `Aspect` to size the loaded images within the bounds of the grid cell (whether to stretch, crop or letterbox) using the [GridImageColumn.Aspect](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.image.aspect?view=xamarin-forms#Xamarin_Forms_Image_Aspect) property. The supported aspects are described below, the default value is AspectFit.
 
 AspectFill: Clips the image so that it fills the display area while preserving the aspect (no distortion).
 
@@ -928,7 +928,7 @@ N> The row index of the row can also be retrieved by using the [GridTapped](http
 
 Currently Xamarin.Forms does not provide a view that combines both the [DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/) and the [TimePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.TimePicker/) as one control. However, the two controls are available individually. 
 
-The SfDataGrid supports `DatePicker` and `TimePicker` in the same column. It can be achieved by loading the `DatePicker` and `TimePicker` in [StackLayout](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) in the `GridTemplateColumn`.
+The SfDataGrid supports `DatePicker` and `TimePicker` in the same column. It can be achieved by loading the `DatePicker` and `TimePicker` in [StackLayout](https://learn.microsoft.com/en-us/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) in the `GridTemplateColumn`.
 
 To load `DatePicker` and `TimePicker` together, follow the code example:
 

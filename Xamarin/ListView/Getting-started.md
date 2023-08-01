@@ -68,7 +68,7 @@ Location: {Installed location}/{version}/Xamarin/lib
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 N> After adding the reference, an additional step is required for [iOS](https://help.syncfusion.com/xamarin/listview/getting-started#ios) and [UWP](https://help.syncfusion.com/xamarin/listview/getting-started#universal-windows-platform-uwp) projects. For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain is enabled. You can refer to this [KB article](https://support.syncfusion.com/kb/article/7557/how-to-overcome-the-crash-system-reflection-missingmetadataexception-when1) for more details. If you are adding the references from toolbox, this step is not needed.
 
@@ -255,7 +255,7 @@ In this walk through, you will create a new application with the SfListView that
 
 ## Creating the Project
 
-Create a new blank [(Xamarin.Forms.NET Standard) application](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/get-started/first-app/?pivots=windows) in Xamarin Studio or Visual Studio for Xamarin.Forms.
+Create a new blank [(Xamarin.Forms.NET Standard) application](https://learn.microsoft.com/en-us/xamarin/get-started/first-app/?pivots=windows-vs2022) in Xamarin Studio or Visual Studio for Xamarin.Forms.
 
 ## Adding the SfListView in Xamarin.Forms 
 

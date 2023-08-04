@@ -240,4 +240,4 @@ This demo can be downloaded from this [link](https://www.syncfusion.com/download
 
 ## See also
 
-[How to create a Xamarin.Forms radio button (SfRadioButton)](https://www.syncfusion.com/kb/10918/how-to-create-a-xamarin-forms-radiobutton)
+[How to create a Xamarin.Forms radio button (SfRadioButton)](https://support.syncfusion.com/kb/article/9512/how-to-create-a-xamarinforms-radiobutton-sfradiobutton)

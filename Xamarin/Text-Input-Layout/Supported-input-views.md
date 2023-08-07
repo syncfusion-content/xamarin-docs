@@ -9,11 +9,11 @@ documentation: ug
 
 # Supported Input Views in Xamarin Text Input Layout (SfTextInputLayout)
 
-Input views can be added to the text input layout control by setting the [InputView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_InputView) property. To reduce the XAML syntax, [InputView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_InputView) property is applied with [ContentPropertyAttribute](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.contentpropertyattribute?view=xamarin-forms).
+Input views can be added to the text input layout control by setting the [InputView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_InputView) property. To reduce the XAML syntax, [InputView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_InputView) property is applied with [ContentPropertyAttribute](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.contentpropertyattribute?view=xamarin-forms).
 
 ## Entry
 
-To enter a single line text input, add [Entry](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry).
+To enter a single line text input, add [Entry](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry).
 
 {% tabs %} 
 
@@ -43,7 +43,7 @@ inputLayout.InputView = new Entry();
 ## Editor
 
 
-To enter multi-line text input, add [Editor](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor), and then set the `AutoSize` property to `TextChanges`.
+To enter multi-line text input, add [Editor](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor), and then set the `AutoSize` property to `TextChanges`.
 
 
 {% tabs %} 
@@ -249,7 +249,7 @@ N> Entry and Editor are the only input views supported by [`SfTextInputLayout`](
 
 ## Picker
 
-To pick an item from the list, add [Picker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/).
+To pick an item from the list, add [Picker](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/).
 
 {% tabs %} 
 
@@ -291,11 +291,11 @@ inputLayout.InputView = picker;
 
 {% endtabs %}
 
-N> UWP and WPF will not support [`Xamarin.Forms Picker`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/) as input view of the text input layout. 
+N> UWP and WPF will not support [`Xamarin.Forms Picker`](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/) as input view of the text input layout. 
 
 ## Date picker
 
-To select a date, add [DatePicker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/datepicker).
+To select a date, add [DatePicker](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/datepicker).
 
 {% tabs %} 
 
@@ -327,11 +327,11 @@ inputLayout.InputView = datePicker;
 
 {% endtabs %}
 
-N> UWP and WPF will not support [`Xamarin.Forms DatePicker`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/datepicker) as input view of the text input layout.
+N> UWP and WPF will not support [`Xamarin.Forms DatePicker`](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/datepicker) as input view of the text input layout.
 
 ## Time picker
 
-To select a time, add [TimePicker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/timepicker).
+To select a time, add [TimePicker](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/timepicker).
 
 {% tabs %} 
 
@@ -358,4 +358,4 @@ inputLayout.InputView = timePicker;
 
 {% endtabs %}
 
-N> UWP and WPF will not support [`Xamarin.Forms TimePicker`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/timepicker) as input view of the text input layout.
+N> UWP and WPF will not support [`Xamarin.Forms TimePicker`](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/timepicker) as input view of the text input layout.

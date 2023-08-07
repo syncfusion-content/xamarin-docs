@@ -288,6 +288,6 @@ button.CornerRadius = new Thickness(20);
 
 ## See also
 
-[How to create Xamarin.Forms image button](https://www.syncfusion.com/kb/10808/how-to-create-xamarin-forms-image-button)
+[How to create Xamarin.Forms image button](https://support.syncfusion.com/kb/article/9599/how-to-create-image-button-in-xamarinforms-button)
 
-[How to disable Xamarin.Forms button](https://www.syncfusion.com/kb/11036/how-to-disable-xamarin-forms-button)
+[How to disable Xamarin.Forms button](https://support.syncfusion.com/kb/article/9594/how-to-disable-xamarin-forms-button)

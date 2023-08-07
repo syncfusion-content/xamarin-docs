@@ -508,6 +508,6 @@ namespace NaviSample
 
 ![OverView Image for NavigationDrawer](Images/GettingStarted.png)
 
-We have created knowledge base document by creating SfNavigationDrawer sample fully in code behind. Please refer the same in this [link.](https://www.syncfusion.com/kb/8020/how-to-create-sfnavigationdrawer-sample-in-code-behind)
+We have created knowledge base document by creating SfNavigationDrawer sample fully in code behind. Please refer the same in this [link.](https://support.syncfusion.com/kb/article/7087/how-to-create-sfnavigationdrawer-sample-in-code-behind)
 
 You can find the Getting Started Sample from this [link.](https://github.com/SyncfusionExamples/xamarin-forms-sfnavigationdrawer)

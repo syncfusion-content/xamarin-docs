@@ -698,20 +698,20 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to resolve the rendering issue with chart in iOS and macOS](https://www.syncfusion.com/kb/7144/how-to-resolve-chart-not-rendering-issue-in-ios-and-macos)
+[How to resolve the rendering issue with chart in iOS and macOS](https://support.syncfusion.com/kb/article/6658/how-to-resolve-chart-not-rendering-issue-in-ios-and-macos)
 
-[How to make Syncfusion Xamarin.Forms chart to work in UWP in release mode when .NET Native tool chain is enabled](https://www.syncfusion.com/kb/7149/how-to-make-syncfusion-xamarin-forms-chart-to-work-in-uwp-in-release-mode-when-net-native)
+[How to make Syncfusion Xamarin.Forms chart to work in UWP in release mode when .NET Native tool chain is enabled](https://support.syncfusion.com/kb/article/6664/how-to-make-syncfusion-xamarin-forms-chart-to-work-in-uwp-in-release-mode-when-net-native)
 
-[How to solve application crashes due to privacy violation in iOS 10+ devices](https://www.syncfusion.com/kb/9300/how-to-solve-application-crashes-due-to-privacy-violation-in-ios-10-devices)
+[How to solve application crashes due to privacy violation in iOS 10+ devices](https://support.syncfusion.com/kb/article/7971/how-to-solve-privacy-violation-in-devices-in-xamarinforms-chart)
 
-[How to add the Xamarin.Forms chart in a ListView](https://www.syncfusion.com/kb/11341/how-to-add-the-xamarin-forms-charts-in-a-listview)
+[How to add the Xamarin.Forms chart in a ListView](https://support.syncfusion.com/kb/article/10079/how-to-add-the-xamarin-forms-charts-in-a-listview)
 
-[How to remove the default padding of Xamarin.Forms chart](https://www.syncfusion.com/kb/9606/how-to-remove-the-default-padding-of-xamarin-forms-chart)
+[How to remove the default padding of Xamarin.Forms chart](https://support.syncfusion.com/kb/article/8532/how-to-remove-the-default-padding-of-xamarin-forms-chart)
 
-[How to make animation work on Android chart in release mode](https://www.syncfusion.com/kb/10729/how-to-make-animation-work-on-chart-in-release-mode-with-android-proguard)
+[How to make animation work on Android chart in release mode](https://support.syncfusion.com/kb/article/9373/how-to-make-animation-work-on-chart-in-release-mode-with-android-proguard)
 
-[How to add the chart inside StackLayout/ScrollView](https://www.syncfusion.com/kb/5722/how-to-add-the-chart-inside-stacklayout-scrollview)
+[How to add the chart inside StackLayout/ScrollView](https://support.syncfusion.com/kb/article/5299/how-to-add-the-chart-inside-stacklayout-scrollview)
 
-[How to upgrade to newer versions of NuGet Package](https://www.syncfusion.com/kb/6939/upgrading-to-newer-versions-of-nuget-package)
+[How to upgrade to newer versions of NuGet Package](https://support.syncfusion.com/kb/article/6374/upgrading-to-newer-versions-of-nuget-package)
 
-[How to view corner segments without cutting in edge of Xamarin.Forms chart](https://www.syncfusion.com/kb/10785/how-to-view-corner-segments-without-cutting-in-edge-of-xamarin-forms-chart)
+[How to view corner segments without cutting in edge of Xamarin.Forms chart](https://support.syncfusion.com/kb/article/9516/how-to-view-corner-segments-without-cutting-in-edge-of-xamarin-forms-chart)

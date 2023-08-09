@@ -562,7 +562,7 @@ namespace RadialSample
 
 {% endtabs %}
 
-You can download the sample for reference from the following link: [Sample for adding BackgroundImage](http://www.syncfusion.com/downloads/support/directtrac/general/ze/sample550939797.zip).
+You can download the sample for reference from the following link: [Sample for adding BackgroundImage](https://www.syncfusion.com/downloads/support/directtrac/general/ze/sample550939797.zip).
 
 ## FontIconText
 

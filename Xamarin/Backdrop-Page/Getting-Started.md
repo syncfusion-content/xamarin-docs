@@ -111,7 +111,7 @@ Android platform does not require any additional configuration to render the bac
 
 ## Initialize backdrop page
 
-Create a page and import the SfBackdropPage namespace along with [XAML namespaces](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/namespaces) in Xamarin.Forms.
+Create a page and import the SfBackdropPage namespace along with [XAML namespaces](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/xaml/namespaces) in Xamarin.Forms.
 
 {% tabs %} 
 
@@ -148,7 +148,7 @@ namespace BackdropGettingStarted
 {% endtabs %}
 
 >**NOTE**
-[`Title`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.page.title?view=xamarin-forms) and [`ToolBarItems`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.page.toolbaritems?view=xamarin-forms) properties of the [`Page`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.page?view=xamarin-forms) can used to customize the  appearance of header.
+[`Title`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.page.title?view=xamarin-forms) and [`ToolBarItems`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.page.toolbaritems?view=xamarin-forms) properties of the [`Page`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.page?view=xamarin-forms) can used to customize the  appearance of header.
 
 ### Configure header
 
@@ -276,4 +276,4 @@ You can find the complete getting started sample from this [link.](https://githu
 
 ## See also
 
-[How to reveal a back layer based on a gesture in a Xamarin.Forms application]( https://www.syncfusion.com/kb/11658/how-to-reveal-a-back-layer-based-on-a-gesture-in-a-xamarin-forms-application)
+[How to reveal a back layer based on a gesture in a Xamarin.Forms application](https://support.syncfusion.com/kb/article/10211/how-to-reveal-a-back-layer-based-on-a-gesture-in-a-xamarin-forms-application)

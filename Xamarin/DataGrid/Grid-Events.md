@@ -339,7 +339,7 @@ Refer to the following GIF for final rendering on execution of above code exampl
 
 ### GridTapped command
 
-The [SfDataGrid.GridTappedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_GridTappedCommand) will be executed when tapping the SfDataGrid. You can directly assign any [ICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.7.2) type property to the `SfDataGrid.GridTappedCommand` or write a class derived from `ICommand` interface, and assign your CustomClass type property to the `SfDataGrid.GridTappedCommand` property. By configuring this, the data grid comes handy if you have your own logics determining whether to execute the command or not.
+The [SfDataGrid.GridTappedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_GridTappedCommand) will be executed when tapping the SfDataGrid. You can directly assign any [ICommand](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.7.2) type property to the `SfDataGrid.GridTappedCommand` or write a class derived from `ICommand` interface, and assign your CustomClass type property to the `SfDataGrid.GridTappedCommand` property. By configuring this, the data grid comes handy if you have your own logics determining whether to execute the command or not.
 
 The parameter of command holds the value of [SfDataGrid.GridTappedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridTappedEventArgs.html) through which you can get the value of tapped RowData and RowColumnIndex. 
 
@@ -414,11 +414,11 @@ The parameter of command holds the value of [SfDataGrid.GridTappedEventArgs](htt
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TappedCommand1824531900).
+You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/TappedCommand1824531900).
 
 ### GridDoubleTapped command
 
-The [SfDataGrid.GridDoubleTappedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_GridDoubleTappedCommand) will be executed when double tapping the SfDataGrid. You can directly assign any [ICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.7.2) type property to the `SfDataGrid.GridTappedCommand` or write a class derived from `ICommand` interface, and assign your CustomClass type property to the `SfDataGrid.GridTappedCommand` property. By configuring this, the data gird comes handy if you have your own logics determining whether to execute the command or not.
+The [SfDataGrid.GridDoubleTappedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_GridDoubleTappedCommand) will be executed when double tapping the SfDataGrid. You can directly assign any [ICommand](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.7.2) type property to the `SfDataGrid.GridTappedCommand` or write a class derived from `ICommand` interface, and assign your CustomClass type property to the `SfDataGrid.GridTappedCommand` property. By configuring this, the data gird comes handy if you have your own logics determining whether to execute the command or not.
 
 {% tabs %}
 {% highlight xaml %}
@@ -489,11 +489,11 @@ The [SfDataGrid.GridDoubleTappedCommand](https://help.syncfusion.com/cr/xamarin/
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DoubleTappedSample2052249746).
+You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DoubleTappedSample2052249746).
 
 ### GridLongPressed command
 
-The [SfDataGrid.GridLongPressedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_GridLongPressedCommand) will be executed when long pressing the SfDataGrid. You can directly assign any [ICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.7.2) type property to the `SfDataGrid.GridTappedCommand` or write a class derived from `ICommand` interface, and assign your CustomClass type property to the `SfDataGrid.GridTappedCommand` property. By configuring this, the data gird comes handy if you have your own logics determining whether to execute the command or not.
+The [SfDataGrid.GridLongPressedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_GridLongPressedCommand) will be executed when long pressing the SfDataGrid. You can directly assign any [ICommand](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.7.2) type property to the `SfDataGrid.GridTappedCommand` or write a class derived from `ICommand` interface, and assign your CustomClass type property to the `SfDataGrid.GridTappedCommand` property. By configuring this, the data gird comes handy if you have your own logics determining whether to execute the command or not.
 
 {% tabs %}
 {% highlight xaml %}
@@ -573,12 +573,12 @@ The [SfDataGrid.GridLongPressedCommand](https://help.syncfusion.com/cr/xamarin/S
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LongPressedCommand1698940749).
+You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/LongPressedCommand1698940749).
 
 N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
 
 ## See also
 
-[How to navigate to an URL when tapping on a cell in SfDataGrid](https://www.syncfusion.com/kb/7443)
+[How to navigate to an URL when tapping on a cell in SfDataGrid](https://support.syncfusion.com/kb/article/6567/how-to-navigate-to-an-url-when-tapping-on-a-cell-in-xamarinforms-datagrid)
 
-[How to get the column name on tapping a row in SfDataGrid](https://www.syncfusion.com/kb/7432)
+[How to get the column name on tapping a row in SfDataGrid](https://support.syncfusion.com/kb/article/6754/how-to-get-the-column-name-on-tapping-a-row-in-xamarinforms-datagrid)

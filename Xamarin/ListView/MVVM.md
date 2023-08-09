@@ -83,7 +83,7 @@ N> When Command is binded to `ItemTemplate`, it must also define `Source` proper
 
 ## Event to command
 
-The ListView event can be converted into commands using [Behaviors](https://developer.xamarin.com/guides/xamarin-forms/behaviors/). To achieve this, create a command in the ViewModel class and associate it to the ListView event using `Behaviors`.
+The ListView event can be converted into commands using [Behaviors](https://learn.microsoft.com/en-gb/xamarin/xamarin-forms/app-fundamentals/behaviors/). To achieve this, create a command in the ViewModel class and associate it to the ListView event using `Behaviors`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -119,7 +119,7 @@ public class ContactsViewModel
 
 Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Load-xamarin.forms-listview-with-event-to-command-behavior).
 
-For more information regarding the event to command behavior in Xamarin.Forms, you can refer [this](https://developer.xamarin.com/samples/xamarin-forms/Behaviors/EventToCommandBehavior/) link.
+For more information regarding the event to command behavior in Xamarin.Forms, you can refer [this](https://learn.microsoft.com/en-gb/samples/xamarin/xamarin-forms-samples/behaviors-eventtocommandbehavior/) link.
 
 ## Binding command of inner ListView to Model Command?
 
@@ -285,7 +285,7 @@ public partial class App : PrismApplication
 {% endhighlight %}
 {% endtabs %}
 
-For more details, refer to [https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1](https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1).
+For more details, refer to [https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1](https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1/).
 
 Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Using-xamarin.forms-listview-in-prism).
 
@@ -541,7 +541,7 @@ Download the entire sample from GitHub [here](https://github.com/SyncfusionExamp
 
 In `SfListView`, the [SelectionChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectionChanged) event is raised once the selection process has been completed. MVVM for the `SelectionChanged` event can be achieved by binding through the event to command converter. 
 
-Refer [event to command](https://www.syncfusion.com/kb/7523/how-to-turn-events-into-commands-with-behaviors-in-sflistview) knowledge base to create the command for event using behavior.
+Refer [event to command](https://support.syncfusion.com/kb/article/6878/how-to-turn-events-into-commands-with-behaviors-in-sflistview) knowledge base to create the command for event using behavior.
 
 {% tabs %}
 {% highlight xaml %}
@@ -596,7 +596,7 @@ Download the entire sample from GitHub [here](https://github.com/SyncfusionExamp
 
 In ListView, the [SelectionChanging](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectionChanging) event will be raised when selecting an item at the execution time. MVVM for the `SelectionChanging` event can be achieved by binding through the event to command converter.
 
-Refer [event to command](https://www.syncfusion.com/kb/7523/how-to-turn-events-into-commands-with-behaviors-in-sflistview) knowledge base to create the command for event using behavior.
+Refer [event to command](https://support.syncfusion.com/kb/article/6878/how-to-turn-events-into-commands-with-behaviors-in-sflistview) knowledge base to create the command for event using behavior.
 
 {% tabs %}
 {% highlight xaml %}
@@ -939,15 +939,15 @@ N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to bind command from ViewModel to external ItemTemplate of Xamarin.Forms ListView](https://www.syncfusion.com/kb/11029/how-to-bind-command-from-viewmodel-to-external-itemtemplate-of-xamarin-forms-listview)                                                                                                                                        
-[Working with ListView in Reactive MVVM](https://www.syncfusion.com/kb/9319/working-with-listview-in-reactive-mvvm)
-[Working with SfListView and Prism for Xamarin.Forms](https://www.syncfusion.com/kb/8763/working-with-sflistview-and-prism-for-xamarin-forms)                                                                                                                                                             
-[How to navigate page from ViewModel using button in ListViewItem](https://www.syncfusion.com/kb/7520/how-to-navigate-page-from-viewmodel-using-button-in-listviewitem)                                                                                                                                                                                                                            
-[How to turn Events into Commands with Behaviors in SfListView](https://www.syncfusion.com/kb/7523/how-to-turn-events-into-commands-with-behaviors-in-sflistview)          
-[How to handle touch interaction using MR.Gesture in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11351/how-to-handle-touch-interaction-using-mr-gesture-in-xamarin-forms-listview-sflistview)                                                                                                                                                                                                                                                                                                                                                  
-[How to update ListView on property change in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11419/how-to-update-listview-on-property-change-in-xamarin-forms-sflistview)                                                                                                                                                                          
-[How to show time in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11438/how-to-show-time-in-xamarin-forms-listview-sflistview)                                                                                                                                                                     
-[How to filter Xamarin.Forms ListView (SfListView) using MVVM](https://www.syncfusion.com/kb/11478/how-to-filter-xamarin-forms-listview-sflistview-using-mvvm)                                                                                                                                                                                                                                                        
+[How to bind command from ViewModel to external ItemTemplate of Xamarin.Forms ListView](https://support.syncfusion.com/kb/article/9562/how-to-bind-command-from-viewmodel-to-external-itemtemplate-of-xamarin-forms-listview)                                                                                                                                        
+[Working with ListView in Reactive MVVM](https://support.syncfusion.com/kb/article/8272/working-with-listview-in-reactive-mvvm)
+[Working with SfListView and Prism for Xamarin.Forms](https://support.syncfusion.com/kb/article/7694/working-with-sflistview-and-prism-for-xamarin-forms)                                                                                                                                                             
+[How to navigate page from ViewModel using button in ListViewItem](https://support.syncfusion.com/kb/article/6962/how-to-navigate-page-from-viewmodel-using-button-in-listviewitem)                                                                                                                                                                                                                            
+[How to turn Events into Commands with Behaviors in SfListView](https://support.syncfusion.com/kb/article/6878/how-to-turn-events-into-commands-with-behaviors-in-sflistview)          
+[How to handle touch interaction using MR.Gesture in Xamarin.Forms ListView (SfListView)](https://support.syncfusion.com/kb/article/9886/how-to-handle-touch-interaction-using-mr-gesture-in-xamarin-forms-listview-sflistview)                                                                                                                                                                                                                                                                                                                                                  
+[How to update ListView on property change in Xamarin.Forms (SfListView)](https://support.syncfusion.com/kb/article/10033/how-to-update-listview-on-property-change-in-xamarin-forms-sflistview)                                                                                                                                                                          
+[How to show time in Xamarin.Forms ListView (SfListView)](https://support.syncfusion.com/kb/article/9979/how-to-show-time-in-xamarin-forms-listview-sflistview)                                                                                                                                                                     
+[How to filter Xamarin.Forms ListView (SfListView) using MVVM](https://support.syncfusion.com/kb/article/9867/how-to-filter-xamarin-forms-listview-sflistview-using-mvvm)                                                                                                                                                                                                                                                        
 [How to use ListView events using Prism Framework in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11681/how-to-use-listview-events-using-prism-framework-in-xamarin-forms-sflistview)                                                                                                                                                                                                                                                                                          
-[How to work with Prism using the EventToCommandBehavior in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11680/how-to-work-with-prism-using-the-eventtocommandbehavior-in-xamarin-forms-listview)                                                                                                                                                                                                                                              
-[How to make navigation for a corresponding tapped item named page in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11668/how-to-make-navigation-for-a-corresponding-tapped-item-named-page-in-xamarin-forms-listview)                                                                                                                                                                                                                        
+[How to work with Prism using the EventToCommandBehavior in Xamarin.Forms ListView (SfListView)](https://support.syncfusion.com/kb/article/10116/how-to-work-with-prism-using-the-eventtocommandbehavior-in-xamarin-forms-listview)                                                                                                                                                                                                                                              
+[How to make navigation for a corresponding tapped item named page in Xamarin.Forms ListView (SfListView)](https://support.syncfusion.com/kb/article/10230/how-to-make-navigation-for-a-corresponding-tapped-item-named-page-in-xamarin-forms-listview)                                                                                                                                                                                                                        

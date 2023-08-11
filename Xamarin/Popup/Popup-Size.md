@@ -347,4 +347,4 @@ Executing the above codes renders the following output in Android devices.
 
 ![Auto-height in Xamarin.Forms Popup](PopupLayout_images/PopupView_AutoSize_Height.png)
 
-You can download the above sample code by clicking the following link: [Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoSize_SfPopuplayout1703576210).
+You can download the above sample code by clicking the following link: [Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoSize_SfPopuplayout1703576210).

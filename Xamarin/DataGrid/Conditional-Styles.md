@@ -290,5 +290,5 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to apply the row background color when mouse hover on SfDataGrid in UWP](https://support.syncfusion.com/kb/article/9779)
+[How to apply the row background color when mouse hover on SfDataGrid in UWP](https://support.syncfusion.com/kb/article/9779/how-to-apply-the-row-background-color-when-mouse-hover-on-sfdatagrid-in-uwp)
 

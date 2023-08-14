@@ -331,4 +331,4 @@ public class CalendarViewModel
 
 ## See also
 
-[How to bind SelectedDates of Calendar in MVVM?](https://support.syncfusion.com/kb/article/8866)
+[How to bind SelectedDates of Calendar in MVVM?](https://support.syncfusion.com/kb/article/8866/how-to-bind-selecteddates-of-calendar-in-mvvm)

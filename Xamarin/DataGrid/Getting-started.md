@@ -29,7 +29,7 @@ To install the required NuGet for the SfDataGrid control in the application, con
 
 Refer to the following KB to configure the NuGet packages of the Syncfusion components:
 
-[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing)
+[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://support.syncfusion.com/kb/article/6565/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing)
 
 The following NuGet package should be installed to use the SfDataGrid control in the application.
 
@@ -93,9 +93,9 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching the SfDataGrid on each platform
 

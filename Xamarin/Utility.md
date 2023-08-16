@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Xamarin Forms Extension| Syncfusion
-description: Xamarin Forms Extension
+title: Utility in Xamarin Forms Extension| Syncfusion
+description: Learn here all about utility support in Syncfusion Essential Xamarin platforms, it's elements and more.
 platform: xamarin
 control: Common 
 documentation: ug

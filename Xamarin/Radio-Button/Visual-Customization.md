@@ -105,7 +105,7 @@ The [`LineBreakMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.B
  * [`MiddleTruncation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.LineBreakMode.html#Syncfusion_XForms_Buttons_LineBreakMode_MiddleTruncation) - Truncates the text at the center.
  * [`TailTruncation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.LineBreakMode.html#Syncfusion_XForms_Buttons_LineBreakMode_TailTruncation) - Truncates the text at the end.
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_VisualCustomization1644131704).
+This demo can be downloaded from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_VisualCustomization1644131704).
 
 ## Size customization
 
@@ -130,5 +130,5 @@ N>[`ControlSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Butto
 
 ## See also
 
-[How to wrap text in Xamarin.Forms radio button (SfRadioButton)](https://www.syncfusion.com/kb/11871/how-to-wrap-text-in-xamarin-forms-radiobutton)
+[How to wrap text in Xamarin.Forms radio button (SfRadioButton)](https://support.syncfusion.com/kb/article/10289/how-to-wrap-text-in-xamarin-forms-radiobutton)
 

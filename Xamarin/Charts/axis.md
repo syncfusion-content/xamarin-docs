@@ -2012,40 +2012,40 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to remove comma in CategoryAxis labels in Xamarin.Forms Chart](https://www.syncfusion.com/kb/11317/how-to-remove-comma-in-categoryaxis-labels-in-xamarin-forms-chart)
+[How to remove comma in CategoryAxis labels in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/10021/how-to-remove-comma-in-categoryaxis-labels-in-xamarin-forms-chart)
 
-[How to customize the axis label format based on the culture in Xamarin.Forms SfChart](https://www.syncfusion.com/kb/11289/how-to-customize-the-axis-label-format-based-on-the-culture-in-xamarin-forms-chart-sfchart)
+[How to customize the axis label format based on the culture in Xamarin.Forms SfChart](https://support.syncfusion.com/kb/article/9780/how-to-customize-the-axis-label-format-based-on-the-culture-in-xamarin-forms-chart-sfchart)
 
-[How to view corner segments without cutting in edge of Xamarin.Forms Chart](https://www.syncfusion.com/kb/10785/how-to-view-corner-segments-without-cutting-in-edge-of-xamarin-forms-chart)
+[How to view corner segments without cutting in edge of Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/9516/how-to-view-corner-segments-without-cutting-in-edge-of-xamarin-forms-chart)
 
-[How to replace the axis labels with image in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10676/how-to-replace-the-axis-labels-with-image-in-xamarin-forms-chart)
+[How to replace the axis labels with image in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/9201/how-to-replace-the-axis-labels-with-image-in-xamarin-forms-chart)
 
-[How to add prefix and suffix for axis labels in Chart](https://www.syncfusion.com/kb/5925/how-to-add-prefix-and-suffix-for-axis-labels-in-chart)
+[How to add prefix and suffix for axis labels in Chart](https://support.syncfusion.com/kb/article/5613/how-to-add-prefix-and-suffix-for-axis-labels-in-xamarinforms-chart)
 
-[How to show all the axis labels](https://www.syncfusion.com/kb/8242/how-to-show-all-the-axis-labels)
+[How to show all the axis labels](https://support.syncfusion.com/kb/article/7335/how-to-show-all-the-axis-labels)
 
-[How to customize each label of the axis in different format](https://www.syncfusion.com/kb/5560/how-to-customize-each-label-of-the-axis-in-different-format)
+[How to customize each label of the axis in different format](https://support.syncfusion.com/kb/article/5356/how-to-customize-each-label-of-the-axis-in-different-format)
 
-[How to change the position of the axis](https://www.syncfusion.com/kb/4814/how-to-change-the-position-of-the-axis)
+[How to change the position of the axis](https://support.syncfusion.com/kb/article/4599/how-to-change-the-position-of-the-axis)
 
-[How to plot date-time values in vertical axes](https://www.syncfusion.com/kb/8732/how-to-plot-date-time-values-in-vertical-axes)
+[How to plot date-time values in vertical axes](https://support.syncfusion.com/kb/article/7686/how-to-plot-date-time-values-in-vertical-axes)
 
-[How to change the color of axis elements](https://www.syncfusion.com/kb/5780/how-to-change-the-color-of-axis-elements)
+[How to change the color of axis elements](https://support.syncfusion.com/kb/article/5287/how-to-change-the-color-of-axis-elements)
 
-[How to inverse the chart axis](https://www.syncfusion.com/kb/5742/how-to-inverse-the-chart-axis)
+[How to inverse the chart axis](https://support.syncfusion.com/kb/article/5395/how-to-inverse-the-chart-axis-in-xamarinforms)
 
-[How to add custom axis labels in numerical axis](https://www.syncfusion.com/kb/5926/how-to-add-custom-axis-labels-in-numerical-axis)
+[How to add custom axis labels in numerical axis](https://support.syncfusion.com/kb/article/5614/how-to-display-the-modified-axis-labels-in-xamarin-forms-charts)
 
-[How to zoom y axis or x axis alone](https://www.syncfusion.com/kb/5549/how-to-zoom-y-axis-or-x-axis-alone)
+[How to zoom y axis or x axis alone](https://support.syncfusion.com/kb/article/5220/how-to-zoom-y-axis-or-x-axis-alone)
 
-[How to customize the axis range based on condition](https://www.syncfusion.com/kb/5546/how-to-customize-the-axis-range-based-on-condition)
+[How to customize the axis range based on condition](https://support.syncfusion.com/kb/article/5234/how-to-customize-the-axis-range-based-on-condition)
 
-[How to customize the axis labels](https://www.syncfusion.com/kb/5545/how-to-customize-the-axis-labels)
+[How to customize the axis labels](https://support.syncfusion.com/kb/article/5238/how-to-customize-the-axis-labels)
 
-[How to customize the range of chart axis](https://www.syncfusion.com/kb/4811/how-to-customize-the-range-of-chart-axis)
+[How to customize the range of chart axis](https://support.syncfusion.com/kb/article/4644/how-to-customize-the-range-of-chart-axis)
 
-[How to display chart axis labels between the ticks](https://www.syncfusion.com/kb/5037/how-to-display-chart-axis-labels-between-the-ticks)
+[How to display chart axis labels between the ticks](https://support.syncfusion.com/kb/article/4971/how-to-display-chart-axis-labels-between-the-ticks)
 
-[How to show/hide grid lines](https://www.syncfusion.com/kb/5520/how-to-show-hide-grid-lines)
+[How to show/hide grid lines](https://support.syncfusion.com/kb/article/5161/how-to-remove-the-axis-gridlines-from-xamarin-forms-charts)
 
-[How to customize the minor gridline style](https://www.syncfusion.com/kb/5720/how-to-customize-the-minor-gridline-style)
+[How to customize the minor gridline style](https://support.syncfusion.com/kb/article/5298/how-to-customize-the-minor-gridline-style)

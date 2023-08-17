@@ -70,9 +70,9 @@ Below are the limitations when binding DataTable as `ItemsSource` to SfDataGrid.
 * Custom sorting is not supported.
 * [SfDataGrid.View.Filter](https://help.syncfusion.com/cr/xamarin/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_Filter) is not supported.
 * Advanced Filtering does not support Case Sensitive filtering.
-* [GridUnboundColumn.Expression](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridUnboundColumn.html#Syncfusion_SfDataGrid_XForms_GridUnboundColumn_Expression) is not supported. This can be achieved by using the [DataColumn](https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumn?redirectedfrom=MSDN&view=net-5.0) of DataTable by setting [DataColumn.Expression](https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumn.expression?redirectedfrom=MSDN&view=net-5.0#System_Data_DataColumn_Expression) property.
+* [GridUnboundColumn.Expression](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridUnboundColumn.html#Syncfusion_SfDataGrid_XForms_GridUnboundColumn_Expression) is not supported. This can be achieved by using the [DataColumn](https://learn.microsoft.com/en-us/dotnet/api/system.data.datacolumn?redirectedfrom=MSDN&view=net-5.0) of DataTable by setting [DataColumn.Expression](https://learn.microsoft.com/en-us/dotnet/api/system.data.datacolumn.expression?redirectedfrom=MSDN&view=net-5.0#System_Data_DataColumn_Expression) property.
 * [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_LiveDataUpdateMode) is not supported.
-* Filtering with [TimeSpan](https://docs.microsoft.com/en-us/dotnet/api/system.timespan?redirectedfrom=MSDN&view=net-5.0) values is not supported.
+* Filtering with [TimeSpan](https://learn.microsoft.com/en-us/dotnet/api/system.timespan?redirectedfrom=MSDN&view=net-5.0) values is not supported.
 * Filtering with sub second components in `DateTime` values is not supported.
 
 ## Binding complex properties
@@ -144,7 +144,7 @@ The following events are associated with `View`.
 
 ### RecordPropertyChanged
 
-The [RecordPropertyChanged](https://help.syncfusion.com/cr/xamarin/) event is raised when `DataModel` property value is changed, if `DataModel` implements the [INotifyPropertyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-5.0) interface. The event receives with two arguments namely sender that handles the `DataModel` and the [PropertyChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs?view=net-5.0) as argument.
+The [RecordPropertyChanged](https://help.syncfusion.com/cr/xamarin/) event is raised when `DataModel` property value is changed, if `DataModel` implements the [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-5.0) interface. The event receives with two arguments namely sender that handles the `DataModel` and the [PropertyChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs?view=net-5.0) as argument.
 
 `PropertyChangedEventArgs` has the following property:
 
@@ -156,11 +156,11 @@ The [CollectionChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.Data.C
 
 `NotifyCollectionChangedEventArgs` has the following properties:
 
- [Action](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?view=net-5.0): It contains the current action. (i.e.)` Add`, `Remove`, `Move`, `Replace`, `Reset`.
- [NewItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?view=net-5.0): It contains the list of new items involved in the change.
- [OldItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?view=net-5.0): It contains the list of old items affected by the `Action`.
- [NewStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?view=net-5.0): It contains the index at which the change occurred.
- [OldStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?view=net-5.0): It contains the index at which the `Action` occurred.
+ [Action](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?view=net-5.0): It contains the current action. (i.e.)` Add`, `Remove`, `Move`, `Replace`, `Reset`.
+ [NewItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?view=net-5.0): It contains the list of new items involved in the change.
+ [OldItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?view=net-5.0): It contains the list of old items affected by the `Action`.
+ [NewStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?view=net-5.0): It contains the index at which the change occurred.
+ [OldStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?view=net-5.0): It contains the index at which the `Action` occurred.
 
 ### SourceCollectionChanged
 
@@ -168,11 +168,11 @@ The [SourceCollectionChanged](https://help.syncfusion.com/cr/xamarin/) event is 
 
 `NotifyCollectionChangedEventArgs` has the following properties:
 
- [Action](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?view=net-5.0): It contains the current action. (i.e.) `Add`, `Remove`, `Move`, `Replace`, `Reset`.
- [NewItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?view=net-5.0): It contains the list of new items involved in the change.
- [OldItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?view=net-5.0): It contains the list of old items affected by the `Action`.
- [NewStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?view=net-5.0): It contains the index at which the change occurred.
- [OldStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?view=net-5.0): It contains the index at which the `Action` occurred.
+ [Action](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?view=net-5.0): It contains the current action. (i.e.) `Add`, `Remove`, `Move`, `Replace`, `Reset`.
+ [NewItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?view=net-5.0): It contains the list of new items involved in the change.
+ [OldItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?view=net-5.0): It contains the list of old items affected by the `Action`.
+ [NewStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?view=net-5.0): It contains the index at which the change occurred.
+ [OldStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?view=net-5.0): It contains the index at which the `Action` occurred.
 
 The following methods are associated with `View` which can be used to defer refresh the view:
 
@@ -538,7 +538,7 @@ Refer the below code to bind the command property of Button loaded inside the Gr
 
 {% endhighlight %}
 
-You can download the source code of binding the SfDataGrid properties sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfGrid_Sample788022149)
+You can download the source code of binding the SfDataGrid properties sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfGrid_Sample788022149)
 
 N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
 

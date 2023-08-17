@@ -83,6 +83,29 @@ this.Content = richtexteditor;
 
 {% endtabs %}
 
+### Scroll button support on toolbar
+
+The Rich Text Editor provides support to scroll the benind the Toolbar visible items .The IsScrollButtonVisible Property help to enable and disable the scroll on Toolbar. The default value is false.The following code example explains how to customize the toolbar appearance.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+<richtexteditor:SfRichTextEditor x:Name="richtexteditor" VerticalOptions="FillAndExpand">
+    <richtexteditor:SfRichTextEditor.ToolbarSettings>
+        <richtexteditor:ToolbarSettings IsScrollButtonVisible="True"/>
+    </richtexteditor:SfRichTextEditor.ToolbarSettings>
+</richtexteditor:SfRichTextEditor>      
+{% endhighlight %}
+
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.ToolbarSettings.IsScrollButtonVisible = true;
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Placeholder
 
 Specifies the placeholder for the RichTextEditor’s content, which is displayed when the RichTextEditor text is empty. The following code example explains how to set a placeholder for Rich Text Editor.

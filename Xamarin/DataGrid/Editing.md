@@ -134,15 +134,15 @@ N> Currently this property is only applicable to the [GridNumericColumn](https:/
 
 ## Support for IEditableObject
 
-The SfDataGrid supports to commit and roll back the changes in row level when underlying data object implements the [IEditableObject](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0) interface.
+The SfDataGrid supports to commit and roll back the changes in row level when underlying data object implements the [IEditableObject](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0) interface.
 
 The editing changes in a row will be committed only when tapping on next row.
 
 The `IEditableObject` has the following methods to capture editing:
 
- * [BeginEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.beginedit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_BeginEdit): Gets called to begin edit on underlying data object when cells in a row enters into edit mode.
- * [CancelEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_CancelEdit): Gets called when you cancel editing to discard the changes in a row since last BeginEdit call.
- * [EndEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.endedit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_EndEdit): Gets called when you move to the next row by tapping to commit changes in underlying data object since last BeginEdit call.
+ * [BeginEdit](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.beginedit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_BeginEdit): Gets called to begin edit on underlying data object when cells in a row enters into edit mode.
+ * [CancelEdit](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_CancelEdit): Gets called when you cancel editing to discard the changes in a row since last BeginEdit call.
+ * [EndEdit](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.endedit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_EndEdit): Gets called when you move to the next row by tapping to commit changes in underlying data object since last BeginEdit call.
 
 The following code snippet explains the simple implementation of `IEditableObject`:
 
@@ -350,7 +350,7 @@ The SfDataGrid triggers the following events while editing:
 
 The [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event occurs when the CurrentCell enters into edit mode. The [GridCurrentCellBeginEditEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCurrentCellBeginEditEventArgs.html) has the following members which provides information for `SfDataGrid.CurrentCellBeginEdit` event:
 
- * [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0): When this member set to ‘true’, the event is canceled and the CurrentCell does not enter into the edit mode.
+ * [Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0): When this member set to ‘true’, the event is canceled and the CurrentCell does not enter into the edit mode.
  * [RowColumnIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.GridCommon.ScrollAxis.RowColumnIndex.html): Gets the current row and column index of the DataGrid.
  * [Column](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html): Gets the Grid Column of the SfDataGrid.
 
@@ -372,7 +372,7 @@ private void DataGrid_CurrentCellBeginEdit(object sender, GridCurrentCellBeginEd
 The [CurrentCellEndEdit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event occurs when the CurrentCell exits the edit mode. The [GridCurrentCellEndEditEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCurrentCellEndEditEventArgs.html) has following members which provides information for `SfDataGrid.CurrentCellEndEdit` event:
 
  * [RowColumnIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCurrentCellEndEditEventArgs.html#Syncfusion_SfDataGrid_XForms_GridCurrentCellEndEditEventArgs_RowColumnIndex): Gets the current row and column index of the DataGrid.
- * [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0): When this member set to ‘true’, the event is canceled and the edited value is not committed in the underlying collection.
+ * [Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0): When this member set to ‘true’, the event is canceled and the edited value is not committed in the underlying collection.
 
 To hook the `SfDataGrid.CurrentCellEndEdit` event, follow the code example:
 
@@ -476,6 +476,6 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to commit the Edited cell values in SfDataGrid view](https://www.syncfusion.com/kb/8223/how-to-commit-the-edited-cell-values-in-sfdatagrid-view)
+[How to commit the Edited cell values in SfDataGrid view](https://support.syncfusion.com/kb/article/7484/how-to-commit-the-edited-cell-values-in-xamarinfoprms-datagrid-view)
 
-[How to commit the edited values when binding Dictionary in SfDataGrid](https://www.syncfusion.com/kb/7853/how-to-commit-the-edited-values-when-binding-dictionary-in-sfdatagrid)
+[How to commit the edited values when binding Dictionary in SfDataGrid](https://support.syncfusion.com/kb/article/7181/how-to-commit-the-edited-values-when-binding-dictionary-in-sfdatagrid)

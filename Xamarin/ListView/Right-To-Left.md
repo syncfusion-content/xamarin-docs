@@ -9,9 +9,9 @@ documentation: ug
 
 # Right To Left in Xamarin ListView (SfListView)
 
-`SfListView` supports to change the flow of text to the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft` in both `Vertical` and `Horizontal` orientations. ListView supports RTL in Xamarin.Forms version 3.0 and above. It also supports RTL when device's flow direction is changed.
+`SfListView` supports to change the flow of text to the right-to-left direction by setting the [FlowDirection](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft` in both `Vertical` and `Horizontal` orientations. ListView supports RTL in Xamarin.Forms version 3.0 and above. It also supports RTL when device's flow direction is changed.
 
-N> Specific platform setup is required to enable right-to-left localization. For platform settings you can refer [here](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/right-to-left#platform-setup).
+N> Specific platform setup is required to enable right-to-left localization. For platform settings you can refer [here](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/right-to-left#platform-setup).
 
 {% tabs %}
 {% highlight xaml %}
@@ -41,4 +41,4 @@ N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to work with swiping with RTL in Xamarin.Forms ListView (SfListview)](https://www.syncfusion.com/kb/11479/how-to-work-with-swiping-with-rtl-in-xamarin-forms-listview-sflistview)
+[How to work with swiping with RTL in Xamarin.Forms ListView (SfListview)](https://support.syncfusion.com/kb/article/9866/how-to-work-with-swiping-with-rtl-in-xamarin-forms-listview-sflistview)

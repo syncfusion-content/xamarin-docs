@@ -125,7 +125,7 @@ schedule.DayViewSettings = dayViewSettings;
 ![Schedule viewheader custom date format](daymodule_images/xamarin.forms-schedule-viewheader-dateformat.png)
 
 ### ViewHeader Tapped Event
-You can handle single tap action of ViewHeader by using [ViewHeaderTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html#Syncfusion_SfSchedule_XForms_ViewHeaderTappedEventArgs_DateTime) details in it.
+You can handle single tap action of ViewHeader by using [ViewHeaderTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html#Syncfusion_SfSchedule_XForms_ViewHeaderTappedEventArgs_DateTime) details in it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -615,4 +615,4 @@ N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-u
 
 ## See also
 
-[How to get date and appointment details while tapping view header ?](https://www.syncfusion.com/kb/6203/how-to-get-date-and-appointment-details-while-tapping-view-header)
+[How to get date and appointment details while tapping view header ?](https://support.syncfusion.com/kb/article/5981/how-to-get-date-and-appointment-details-while-tapping-view-header)

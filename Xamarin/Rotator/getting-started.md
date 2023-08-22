@@ -25,7 +25,7 @@ You can add [`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRo
 
 **Method 1: Adding SfRotator reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org). To add SfRotator to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfRotator](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRotator), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfRotator to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfRotator](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRotator), and then install it.
 
 ![Adding SfRotator reference from nuget](images/Adding SfRotator reference.png)
 

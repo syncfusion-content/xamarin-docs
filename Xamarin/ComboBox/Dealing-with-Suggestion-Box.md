@@ -792,3 +792,5 @@ namespace SfComboBox_Sample
 {% endtabs %}
 
 ![Filtered_Items_Image](images/ComboBox-Filtering-Options/Filtered_Items_SfComboBox.png)
+
+N> Retrieve the filter suggestion items sample is available in this [link](https://github.com/SyncfusionExamples/xamarin-forms-sfcombobox).

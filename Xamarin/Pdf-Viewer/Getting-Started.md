@@ -107,6 +107,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
      //Now, add all the assemblies that your app uses
      assembliesToInclude.Add(typeof(SfPdfDocumentViewRenderer).GetTypeInfo().Assembly);
      assembliesToInclude.Add(typeof(SfRangeSliderRenderer).GetTypeInfo().Assembly);
+	 assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.TabView.SfTabViewRenderer).GetTypeInfo().Assembly);
      //Replaces Xamarin.Forms.Forms.Init(e);
      Xamarin.Forms.Forms.Init(e, assembliesToInclude);
      …

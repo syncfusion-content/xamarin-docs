@@ -9,7 +9,7 @@ documentation: ug
 
 # Search for a Text Instance in Xamarin Pdf Viewer (SfPdfViewer)
 
-[Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) provides support to find and highlight texts in the PDF document and it provides the following commands to perform text search operation.
+[Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) provides support to find and highlight texts in the PDF document and you can also perform text search on rotated documents and rotated texts as well. The following commands are used to perform text search operations.
 
 <table>
 
@@ -39,6 +39,8 @@ documentation: ug
 </tr>
 
 </table>
+
+N>[Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) does not support diagonal text search.
 
 ## How to initiate text search?
 

@@ -189,4 +189,4 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
  
 ## See also
 
-[How to AutoFit the nodes based on the content in Xamarin.Forms TreeView (SfTreeView)](https://www.syncfusion.com/kb/11418/)
+[How to AutoFit the nodes based on the content in Xamarin.Forms TreeView (SfTreeView)](https://support.syncfusion.com/kb/article/10035/how-to-autofit-the-nodes-based-on-the-content-in-xamarin-forms-treeview-sftreeview)

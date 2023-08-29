@@ -11,7 +11,7 @@ documentation: ug
 
 You can customize the appearance (size, attributes, and family) of font by setting the FontFamily, FontSize, and FontAttributes properties of the LabelStyle property.
 
-Refer to this [documentation](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/fonts#use-a-custom-font) to configure the custom fonts in Xamarin.Forms.
+Refer to this [documentation](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/fonts#use-a-custom-font) to configure the custom fonts in Xamarin.Forms.
 
 ## Hint
 
@@ -191,9 +191,9 @@ inputLayout.InputView = new Entry();
 
 ## See also
 
-[How to customize the properties of outline border colors, hint name, helper text, error text, and char count](https://www.syncfusion.com/kb/11659/how-to-customize-the-properties-of-outline-border-colors-hint-name-helper-text-error-text)
+[How to customize the properties of outline border colors, hint name, helper text, error text, and char count](https://support.syncfusion.com/kb/article/10194/how-to-customize-the-properties-of-outline-border-colors-hint-name-helper-text-error-text)
 
-[How to apply LineBreakMode for labels in SfTextInputLayout](https://www.syncfusion.com/kb/11043/how-to-apply-linebreakmode-for-labels-in-sftextinputlayout)
+[How to apply LineBreakMode for labels in SfTextInputLayout](https://support.syncfusion.com/kb/article/9518/how-to-apply-linebreakmode-for-labels-in-xamarin-text-input-layout)
 
-[How to customize the color of border and labels in SfTextInputLayout](https://www.syncfusion.com/kb/10466/how-to-customize-the-color-of-border-and-labels-in-sftextinputlayout)
+[How to customize the color of border and labels in SfTextInputLayout](https://support.syncfusion.com/kb/article/9248/how-to-customize-the-color-of-border-and-labels-in-sftextinputlayout)
 

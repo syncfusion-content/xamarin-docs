@@ -59,5 +59,5 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 
 ## See also
 
-[How to get the values of selected checkboxes in a group using Xamarin.Forms](https://www.syncfusion.com/kb/10915/how-to-get-the-values-of-selected-checkboxes-in-a-group-using-xamarin-forms)
+[How to get the values of selected checkboxes in a group using Xamarin.Forms](https://support.syncfusion.com/kb/article/9507/how-to-get-the-values-of-selected-checkboxes-in-a-group-using-xamarin-forms)
 

@@ -7,7 +7,7 @@ control: SfParallaxView
 documentation: ug
 ---
 
-## Scrolling support for custom controls
+# Custom controls in Xamarin Parallax View Control
 
 The Parallax view supports custom scrollable controls using the `IParallaxView` interface. This interface implements the `ScrollableContentSize` property and the `Scrolling` event. 
 
@@ -142,4 +142,4 @@ The `ParallaxScrollingEventArgs` has the following three arguments:
 
 By default, ParallaxView control supports `Xamarin.Forms ScrollView`. For custom controls you need to implement the `IParallaxView` interface.
 
-You can achieve the parallax scroll support to the custom controls using the native renderers to calculate the total size of the scrollable content. Refer to this [KB article](https://www.syncfusion.com/kb/10067/how-to-provide-parallax-scrolling-support-to-any-custom-control-using-sfparallaxview) for more details.
+You can achieve the parallax scroll support to the custom controls using the native renderers to calculate the total size of the scrollable content. Refer to this [KB article](https://support.syncfusion.com/kb/article/8887/how-to-provide-parallax-scrolling-support-to-any-custom-control-using-sfparallaxview) for more details.

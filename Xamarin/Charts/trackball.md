@@ -571,10 +571,10 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to add multiple trackballs in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10400/how-to-add-multiple-trackballs-in-xamarin-forms-chart)
+[How to add multiple trackballs in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/8930/how-to-add-multiple-trackballs-in-xamarin-forms-chart)
 
-[How to activate the trackball on touch in Xamarin.Forms](https://www.syncfusion.com/kb/8620/how-to-activate-the-trackball-on-touch)
+[How to activate the trackball on touch in Xamarin.Forms](https://support.syncfusion.com/kb/article/7615/how-to-activate-the-trackball-on-touch)
 
-[How to format the trackball labels](https://www.syncfusion.com/kb/5779/how-to-format-the-trackball-labels)
+[How to format the trackball labels](https://support.syncfusion.com/kb/article/5304/how-to-format-the-trackball-labels)
 
-[How to set the milliseconds label format for axis and trackball label in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10812/how-to-set-the-milliseconds-label-format-for-axis-and-trackball-label-in-xamarin-forms)
+[How to set the milliseconds label format for axis and trackball label in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/9617/how-to-set-the-milliseconds-label-format-for-axis-and-trackball-label-in-xamarin-forms)

@@ -7,7 +7,7 @@ control: SfParallaxView
 documentation: ug
 ---
 
-# Custom controls in Xamarin Parallax View Control
+# Scrolling support for custom controls in Xamarin Parallax View
 
 The Parallax view supports custom scrollable controls using the `IParallaxView` interface. This interface implements the `ScrollableContentSize` property and the `Scrolling` event. 
 

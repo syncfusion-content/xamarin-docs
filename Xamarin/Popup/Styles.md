@@ -243,6 +243,65 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ![Popup with border customization](PopupLayout_images/BorderCustomization.png)
 
+### Show or hide separator lines
+
+The `SfPopupLayout` allows to show or hide the separator lines using `ShowSeparator` property, which are presented below the header and above the footer in android, and above the footer in iOS, when the SfPopupLayout has a border. The default value is true.
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GettingStarted.MainPage"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+    <sfPopup:SfPopupLayout x:Name="popupLayout">
+        <sfPopup:SfPopupLayout.PopupView>
+            <sfPopup:PopupView>
+                <sfPopup:PopupView.PopupStyle>
+                    <sfPopup:PopupStyle BorderColor="LightBlue"
+                                        BorderThickness="3" 
+                                        ShowSeparator="False" />
+                </sfPopup:PopupView.PopupStyle>
+            </sfPopup:PopupView>
+        </sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:SfPopupLayout.Content>
+            <StackLayout x:Name="mainLayout">
+                <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" 
+                        VerticalOptions="Start" HorizontalOptions="FillAndExpand"
+                        Clicked="ClickToShowPopup_Clicked"/>
+            </StackLayout>
+        </sfPopup:SfPopupLayout.Content>
+    </sfPopup:SfPopupLayout>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+using Syncfusion.XForms.PopupLayout;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        SfPopupLayout popupLayout;
+        public MainPage()
+        {
+            InitializeComponent();
+            popupLayout = new SfPopupLayout();
+            popupLayout.PopupView.PopupStyle.BorderColor = Color.LightBlue;
+            popupLayout.PopupView.PopupStyle.BorderThickness = 3;
+            popupLayout.PopupView.PopupStyle.ShowSeparator = false;
+        }
+
+        private void ClickToShowPopup_Clicked(object sender, System.EventArgs e)
+        {
+            popupLayout.Show();
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Blurred background](PopupLayout_images/separator_lines_customization.png)
+
 ## Styling overlay background
 
 The SfPopupLayout allows to customize the opacity and the background color of overlay using the `SfPopupLayout.PopupView.PopupStyle.OverlayOpacity` and `SfPopupLayout.PopupView.PopupStyle.OverlayColor` properties, respectively.
@@ -357,3 +416,4 @@ namespace GettingStarted
 Executing the above codes renders the following output in Android devices
 
 ![Blurred background](PopupLayout_images/Blurred_Background.jpg)
+

@@ -7,7 +7,7 @@ control: SfMaps
 documentation: ug
 ---
 
-# Load map shapefiles as a stream in Xamarin SfMaps
+# Load map shapefiles as a stream in Xamarin Maps
 
 You can convert shape file into stream and load to maps using the [`ReadAsStream`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html#Syncfusion_SfMaps_XForms_ShapeFileLayer_ReadAsStream_System_IO_Stream_) method instead of referring the shape files directly to maps using the Uri property.
 

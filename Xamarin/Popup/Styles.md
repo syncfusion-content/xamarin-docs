@@ -245,7 +245,7 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ### Show or hide separator lines
 
-The `SfPopupLayout` allows to show or hide the separator lines using `ShowSeparator` property, which are presented below the header and above the footer in android, and above the footer in iOS, when the SfPopupLayout has a border. The default value is true.
+You can customize the visibility of the separator line between the header, footer and the popup content using the `ShowSeparator` property. The default value is `true`.
 
 {% tabs %}
 {% highlight xaml %}

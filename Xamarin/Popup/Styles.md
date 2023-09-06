@@ -248,7 +248,7 @@ Executing the above codes renders the following output in iOS, Android and Windo
 You can customize the visibility of the separator line between the header, footer and the popup content using the `ShowSeparator` property. The default value is `true`.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight xaml hl_lines="12"%}
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -274,7 +274,7 @@ You can customize the visibility of the separator line between the header, foote
     </sfPopup:SfPopupLayout>
 </ContentPage>
 {% endhighlight %}
-{% highlight c# %}
+{% highlight c# hl_lines="14" %}
 using Syncfusion.XForms.PopupLayout;
 
 namespace GettingStarted

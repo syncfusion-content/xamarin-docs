@@ -245,7 +245,7 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ### Show or hide separator lines
 
-You can customize the visibility of the separator line between the header, footer and the popup content using the `ShowSeparator` property. The default value is `true`.
+Customize the visibility of the separator line between the header, footer and the popup content using the `ShowSeparator` property. The default value is `true`.
 
 {% tabs %}
 {% highlight xaml hl_lines="12"%}

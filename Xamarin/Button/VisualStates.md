@@ -93,5 +93,5 @@ this.Content = stackLayout;
 
 ## See also
 
-[How to change Xamarin.Forms button style using its visual states](https://www.syncfusion.com/kb/11003/how-to-change-xamarin-forms-button-style-using-its-visual-states)
+[How to change Xamarin.Forms button style using its visual states](https://support.syncfusion.com/kb/article/9580/how-to-change-xamarinforms-button-style-using-its-visual-states)
 

@@ -18,7 +18,7 @@ To get start quickly with Xamarin.Forms SfChart, you can check on this video:
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin/confirm), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -125,7 +125,7 @@ Syncfusion.Licensing.dll<br/>
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/offline-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching the application on each platform with chart
 
@@ -241,7 +241,7 @@ using Syncfusion.SfChart.XForms;
 
 {% endtabs %} 
 
-I>To render chart inside the StackLayout/ScrollView, please refer this [KB](https://www.syncfusion.com/kb/5722/how-to-add-the-chart-inside-stacklayout-scrollview).
+I>To render chart inside the StackLayout/ScrollView, please refer this [KB](https://support.syncfusion.com/kb/article/5299/how-to-add-the-chart-inside-stacklayout-scrollview).
 
 Then initialize an empty chart with [`PrimaryAxis`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_PrimaryAxis) and [`SecondaryAxis`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_SecondaryAxis) as shown below,
 
@@ -698,20 +698,20 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to resolve the rendering issue with chart in iOS and macOS](https://www.syncfusion.com/kb/7144/how-to-resolve-chart-not-rendering-issue-in-ios-and-macos)
+[How to resolve the rendering issue with chart in iOS and macOS](https://support.syncfusion.com/kb/article/6658/how-to-resolve-chart-not-rendering-issue-in-ios-and-macos)
 
-[How to make Syncfusion Xamarin.Forms chart to work in UWP in release mode when .NET Native tool chain is enabled](https://www.syncfusion.com/kb/7149/how-to-make-syncfusion-xamarin-forms-chart-to-work-in-uwp-in-release-mode-when-net-native)
+[How to make Syncfusion Xamarin.Forms chart to work in UWP in release mode when .NET Native tool chain is enabled](https://support.syncfusion.com/kb/article/6664/how-to-make-syncfusion-xamarin-forms-chart-to-work-in-uwp-in-release-mode-when-net-native)
 
-[How to solve application crashes due to privacy violation in iOS 10+ devices](https://www.syncfusion.com/kb/9300/how-to-solve-application-crashes-due-to-privacy-violation-in-ios-10-devices)
+[How to solve application crashes due to privacy violation in iOS 10+ devices](https://support.syncfusion.com/kb/article/7971/how-to-solve-privacy-violation-in-devices-in-xamarinforms-chart)
 
-[How to add the Xamarin.Forms chart in a ListView](https://www.syncfusion.com/kb/11341/how-to-add-the-xamarin-forms-charts-in-a-listview)
+[How to add the Xamarin.Forms chart in a ListView](https://support.syncfusion.com/kb/article/10079/how-to-add-the-xamarin-forms-charts-in-a-listview)
 
-[How to remove the default padding of Xamarin.Forms chart](https://www.syncfusion.com/kb/9606/how-to-remove-the-default-padding-of-xamarin-forms-chart)
+[How to remove the default padding of Xamarin.Forms chart](https://support.syncfusion.com/kb/article/8532/how-to-remove-the-default-padding-of-xamarin-forms-chart)
 
-[How to make animation work on Android chart in release mode](https://www.syncfusion.com/kb/10729/how-to-make-animation-work-on-chart-in-release-mode-with-android-proguard)
+[How to make animation work on Android chart in release mode](https://support.syncfusion.com/kb/article/9373/how-to-make-animation-work-on-chart-in-release-mode-with-android-proguard)
 
-[How to add the chart inside StackLayout/ScrollView](https://www.syncfusion.com/kb/5722/how-to-add-the-chart-inside-stacklayout-scrollview)
+[How to add the chart inside StackLayout/ScrollView](https://support.syncfusion.com/kb/article/5299/how-to-add-the-chart-inside-stacklayout-scrollview)
 
-[How to upgrade to newer versions of NuGet Package](https://www.syncfusion.com/kb/6939/upgrading-to-newer-versions-of-nuget-package)
+[How to upgrade to newer versions of NuGet Package](https://support.syncfusion.com/kb/article/6374/upgrading-to-newer-versions-of-nuget-package)
 
-[How to view corner segments without cutting in edge of Xamarin.Forms chart](https://www.syncfusion.com/kb/10785/how-to-view-corner-segments-without-cutting-in-edge-of-xamarin-forms-chart)
+[How to view corner segments without cutting in edge of Xamarin.Forms chart](https://support.syncfusion.com/kb/article/9516/how-to-view-corner-segments-without-cutting-in-edge-of-xamarin-forms-chart)

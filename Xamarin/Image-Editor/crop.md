@@ -232,15 +232,15 @@ After tilt preview, cropping can be performed using the available cropping optio
 
 ## See also
 
-[How to detect cropping window is enabled or not](https://www.syncfusion.com/kb/9750/how-to-detect-cropping-window-is-enabled-or-not)
+[How to detect cropping window is enabled or not](https://support.syncfusion.com/kb/article/8447/how-to-detect-cropping-window-is-enabled-or-not)
 
-[How to save the image after cropping in SfImageEditor](https://www.syncfusion.com/kb/9734/how-to-save-the-image-after-cropping-in-imageeditor)
+[How to save the image after cropping in SfImageEditor](https://support.syncfusion.com/kb/article/8440/how-to-save-the-image-after-cropping-in-imageeditor)
 
-[How to include custom cropping aspect in toolbar](https://www.syncfusion.com/kb/8854/how-to-include-custom-cropping-aspect-in-toolbar)
+[How to include custom cropping aspect in toolbar](https://support.syncfusion.com/kb/article/7828/how-to-include-custom-cropping-aspect-in-toolbar)
 
-[How to avoid crop sluggishness in MasterDetailPage](https://www.syncfusion.com/kb/9634/how-to-avoid-crop-sluggishness-in-masterdetailpage)
+[How to avoid crop sluggishness in MasterDetailPage](https://support.syncfusion.com/kb/article/8548/how-to-avoid-crop-sluggishness-in-masterdetailpage)
 
-[How can we set default cropping in SfImageEditor](https://www.syncfusion.com/kb/9369/how-can-we-set-default-cropping-in-image-editor)
+[How can we set default cropping in SfImageEditor](https://support.syncfusion.com/kb/article/7933/how-can-we-set-default-cropping-in-image-editor)
 
-[How to enable toggle cropping in ImageLoaded event](https://www.syncfusion.com/kb/8933/how-to-enable-toggle-cropping-in-imageloaded-event)
+[How to enable toggle cropping in ImageLoaded event](https://support.syncfusion.com/kb/article/7795/how-to-enable-toggle-cropping-in-xamarinforms-imageeditor-loading)
 

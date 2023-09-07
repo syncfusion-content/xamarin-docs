@@ -18,9 +18,9 @@ The data grid supports to display the concise information about the bound data o
 
 ![DataGrid with summary rows](SfDataGrid_images/Summary.png)
 
-Summary rows are represented by using the [GridSummaryRow](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridSummaryRow.html) that hold summary information of columns in the [SummaryColumns](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridSummaryRow.html#Syncfusion_SfDataGrid_XForms_GridSummaryRow_SummaryColumns) property . The `SummaryColumns` contains the collection of [GridSummaryColumn](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridSummaryColumn.html) which carries name, format, and summary aggregate type of the column.
+Summary rows are represented by using the [GridSummaryRow](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridSummaryRow.html) that hold summary information of columns in the [SummaryColumns](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridSummaryRow.html#Syncfusion_SfDataGrid_XForms_GridSummaryRow_SummaryColumns) property . The `SummaryColumns` contains the collection of [GridSummaryColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridSummaryColumn.html) which carries name, format, and summary aggregate type of the column.
 
-Derive additional information from the data like sum, average, maximum, minimum, and count using summaries in the data grid. These summary values can be computed for groups or for the entire control using `GridSummaryRow` and `GridSummaryColumn` that implements [ISummaryRow](http://help.syncfusion.com/cr/xamarin/Syncfusion.Data.ISummaryRow.html) and [ISummaryColumn](http://help.syncfusion.com/cr/xamarin/Syncfusion.Data.ISummaryColumn.html) interfaces.
+Derive additional information from the data like sum, average, maximum, minimum, and count using summaries in the data grid. These summary values can be computed for groups or for the entire control using `GridSummaryRow` and `GridSummaryColumn` that implements [ISummaryRow](https://help.syncfusion.com/cr/xamarin/Syncfusion.Data.ISummaryRow.html) and [ISummaryColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.Data.ISummaryColumn.html) interfaces.
 
 N> The Summary does not refresh with data. To update the summary for the newly added row, or for the modified summary column, set the [SfDataGrid.View.LiveDataUpdateMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_LiveDataUpdateMode) to `LiveDataUpdateMode.AllowDataShaping` or `LiveDataUpdateMode.AllowSummaryUpdate`.
 
@@ -715,7 +715,7 @@ Refer the below code example in which a label is loaded in the template of group
 
 The data grid provides built-in support for table summaries. The table summary value is calculated based on all records in the control.
 
-You can add table summary row in the data grid by adding the [GridTableSummaryRow](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridTableSummaryRow.html) to the [SfDataGrid.TableSummaryRows](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_TableSummaryRows) collection.
+You can add table summary row in the data grid by adding the [GridTableSummaryRow](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridTableSummaryRow.html) to the [SfDataGrid.TableSummaryRows](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_TableSummaryRows) collection.
 
 The following screenshot illustrates table summary rows in the data grid:
 
@@ -1198,7 +1198,7 @@ sfGrid.CaptionSummaryRow= summaryRow;
 
 Format the summary value by setting the appropriate format after the aggregate function followed by a colon(:) in the `GridSummaryColumn.Format` property.
 
-In the following code snippet `Salary` column summary is formatted using `c` format specifier. Refer to [here](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings?redirectedfrom=MSDN) to know about how to set different formats.
+In the following code snippet `Salary` column summary is formatted using `c` format specifier. Refer to [here](https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings?redirectedfrom=MSDN) to know about how to set different formats.
 
 {% tabs %}
 {% highlight xaml%}
@@ -1692,10 +1692,10 @@ public class GridGroupSummaryCellRendererExt : GridGroupSummaryCellRenderer
 
 ![Customize group summary using custom cell renderer](SfDataGrid_images/CustomizingGroupSummary.jpg)
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SummaryDemo_Forms1739363115) .
+You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SummaryDemo_Forms1739363115) .
 
 N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
 
 ## See also
 
-[How to update the summaries when a row is dragged and dropped between groups](https://www.syncfusion.com/kb/7806)
+[How to update the summaries when a row is dragged and dropped between groups](https://support.syncfusion.com/kb/article/7046/how-to-update-the-summaries-when-a-row-is-dragged-and-dropped-between-groups-in-xamarinforms-)

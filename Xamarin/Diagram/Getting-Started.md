@@ -61,9 +61,9 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 N> If you are adding the references from toolbox, this step is not needed.
 
@@ -83,7 +83,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% endhighlight %}
 {% endtabs %}
 
-I>We need to create an instance of the `SfDiagramRenderer` in iOS and UWP projects as shown in this [KB article](https://www.syncfusion.com/kb/8618).
+I>We need to create an instance of the `SfDiagramRenderer` in iOS and UWP projects as shown in this [KB article](https://support.syncfusion.com/kb/article/7619/how-to-resolve-sfdiagram-not-rendering-issue-in-ios-and-uwp).
 
 ### Additional step for UWP
 
@@ -110,7 +110,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-I> You can refer to the [KB article](https://www.syncfusion.com/kb/8617) for more details.
+I> You can refer to the [KB article](https://support.syncfusion.com/kb/article/7497/how-to-make-sfdiagram-to-work-in-uwp-in-release-mode-when-net-native-tool-chain-is-enabled) for more details.
 
 ## Basic building blocks of Diagram
 * **Diagram**- It represents the drawing surface where all the graphical elements like nodes and connectors resides, can be used to display various types of diagrams and it is the root instance of the diagram control. A Diagram instance contains a collection of nodes and  connectors to represent the  graphical diagram.

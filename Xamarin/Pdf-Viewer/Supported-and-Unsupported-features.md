@@ -1236,4 +1236,4 @@ The following table shows the various features available in the PDF Viewer and t
 
 * Mouse panning is not supported in XamarinForms.UWP platform.<br/>
 <br/>
-** To avoid data loss, the digital signature is rendered in flatten form while loading a document in SfPdfViewer and the flatten can be removed while saving. Support for adding and editing digital signatures is not yet provided..<br/>
+** To avoid data loss, the digital signature will be rendered in flat form (editing can't be done) while loading a document in SfPdfViewer, and it won't be preserved when saving. Support for adding and editing digital signatures is not yet provided.

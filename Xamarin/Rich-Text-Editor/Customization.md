@@ -85,7 +85,7 @@ this.Content = richtexteditor;
 
 ### Scroll button support on toolbar
 
-The Rich Text Editor provides support to scroll the benind the Toolbar visible items .The IsScrollButtonVisible Property help to enable and disable the scroll button on the Toolbar. The default value of IsScrollButtonVisible is false.The following code example explains how to customize the toolbar appearance.
+The Rich Text Editor provides support to scroll behind the Toolbar visible items. The IsScrollButtonVisible Property helps to enable and disable the scroll button on the Toolbar. The default value of IsScrollButtonVisible is false. The following code example explains how to customize the toolbar appearance.
 
 {% tabs %} 
 

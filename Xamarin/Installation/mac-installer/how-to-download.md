@@ -63,7 +63,7 @@ You should initiate an evaluation if you have already obtained our components th
 
 ## Download the License Version
 
-1. Syncfusion licensed products will be available in the [License & Downloads](https://www.syncfusion.com/account/downloads) page under your registered Syncfusion account.
+1. Syncfusion licensed products will be available in the [License & Downloads](https://www.syncfusion.com/account/login) page under your registered Syncfusion account.
 2. You can view all the licenses (both active and expired) associated with your account.
 3. You can download Xamarin Mac licensed installer by going to More Downloads Options (element 3 in the screenshot below).
 4. Unlock key is not required to install the Syncfusion Xamarin Mac trial installer.

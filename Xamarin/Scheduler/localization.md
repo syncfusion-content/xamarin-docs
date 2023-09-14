@@ -62,7 +62,7 @@ You can localize custom text available in the control by adding equivalent local
 {% endhighlight %}  
 {% endtabs %} 
 
-Android can select and load resources from different directories, based on the current device configuration and locale, refer [here](https://developer.xamarin.com/guides/android/advanced_topics/localization/). For an example, if an application requires multiple languages you can follow the below steps.
+Android can select and load resources from different directories, based on the current device configuration and locale, refer [here](https://learn.microsoft.com/en-us/xamarin/android/app-fundamentals/localization). For an example, if an application requires multiple languages you can follow the below steps.
 
 The procedure for creating strings.xml files is as follows:
 
@@ -77,7 +77,7 @@ The corresponding Locale values folder updates only when the device language cha
 
 ### Localizing custom text in iOS renderer.
 
-You can localize custom text available in the control by adding equivalent localized string in the Localizable.strings file, refer [here](https://developer.xamarin.com/guides/ios/advanced_topics/localization_and_internationalization/).
+You can localize custom text available in the control by adding equivalent localized string in the Localizable.strings file, refer [here](https://learn.microsoft.com/en-us/xamarin/ios/app-fundamentals/localization/).
 
 ![Localization iOS](Localization_images/xamarin.forms-schedule-localization-iOS-renderer.png) 
 
@@ -370,4 +370,4 @@ You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to localize inline strings in schedule month view without changing locale in device ?](https://www.syncfusion.com/kb/9397/how-to-localize-inline-strings-in-schedule-month-view-without-changing-locale-in-device)
+[How to localize inline strings in schedule month view without changing locale in device ?](https://support.syncfusion.com/kb/article/8316/how-to-localize-inline-strings-in-schedule-month-view-without-changing-locale-in-device)

@@ -250,10 +250,10 @@ Agenda view mode
 
 ## See also
 
-[How to filter the events in the Xamarin.Forms Calendar by searching the subject?](https://www.syncfusion.com/kb/10324/how-to-filter-the-events-in-the-xamarin-forms-calendar-by-searching-the-subject)
+[How to filter the events in the Xamarin.Forms Calendar by searching the subject?](https://support.syncfusion.com/kb/article/8926/how-to-filter-calendar-events-in-xamarinforms)
 
-[How to show events in custom agenda view using list view in Xamarin.Forms Calendar?](https://www.syncfusion.com/kb/10325/how-to-show-events-in-custom-agenda-view-using-list-view-in-xamarin-forms-calendar)
+[How to show events in custom agenda view using list view in Xamarin.Forms Calendar?](https://support.syncfusion.com/kb/article/8912/how-to-show-events-in-custom-agenda-view-using-list-view-in-xamarin-forms-calendar)
 
-[How to show the calendar agenda view events using SfDataGrid in Xamarin.Forms?](https://www.syncfusion.com/kb/10323/how-to-show-the-calendar-agenda-view-events-using-sfdatagrid-in-xamarin-forms)
+[How to show the calendar agenda view events using SfDataGrid in Xamarin.Forms?](https://support.syncfusion.com/kb/article/8923/how-to-show-the-calendar-agenda-view-events-using-sfdatagrid-in-xamarin-forms)
 
-[How to load the data from SQLite offline database into SfCalendar?](https://www.syncfusion.com/kb/9380/how-to-load-the-data-from-sqlite-offline-database-into-sfcalendar)
+[How to load the data from SQLite offline database into SfCalendar?](https://support.syncfusion.com/kb/article/8263/how-to-load-the-data-from-sqlite-offline-database-into-sfcalendar)

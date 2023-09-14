@@ -742,17 +742,17 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to add a custom data marker in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10922/how-to-add-a-custom-data-marker-in-xamarin-forms-chart)
+[How to add a custom data marker in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/9467/how-to-add-a-custom-data-marker-in-xamarin-forms-chart)
 
-[How to rotate the data marker labels](https://www.syncfusion.com/kb/5740/how-to-rotate-the-data-marker-labels)
+[How to rotate the data marker labels](https://support.syncfusion.com/kb/article/5393/how-to-rotate-the-data-marker-labels)
 
-[How to change the data marker connector type of pie and doughnut series to Bezier](https://www.syncfusion.com/kb/5526/how-to-change-the-data-marker-connector-type-of-pie-and-doughnut-series-to-bezier)
+[How to change the data marker connector type of pie and doughnut series to Bezier](https://support.syncfusion.com/kb/article/5185/how-to-change-the-data-marker-connector-type-of-pie-and-doughnut-series-to-bezier)
 
-[How to change the data marker symbol type in Chart](https://www.syncfusion.com/kb/5866/how-to-change-the-data-marker-symbol-type-in-chart)
+[How to change the data marker symbol type in Chart](https://support.syncfusion.com/kb/article/5480/how-to-change-the-data-marker-symbol-type-in-chart)
 
-[How to add the icons on top of each column/bar segment in Xamarin.Forms Chart](https://www.syncfusion.com/kb/9313/how-to-add-the-icons-on-top-of-each-column-bar-segment-in-xamarin-forms-chart)
+[How to add the icons on top of each column/bar segment in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/8167/how-to-add-the-icons-on-top-of-each-column-bar-segment-in-xamarin-forms-chart)
 
-[How to display underlying model values in Xamarin.Forms Chart data marker](https://www.syncfusion.com/kb/8714/how-to-display-underlying-model-values-in-xamarin-forms-chart-data-marker)
+[How to display underlying model values in Xamarin.Forms Chart data marker](https://support.syncfusion.com/kb/article/7684/how-to-display-underlying-model-values-in-xamarin-forms-chart-data-marker)
 
-[How to place the Xamarin.Forms Chart DataMarker label at the top and bottom of the marker alternatively](https://www.syncfusion.com/kb/10683/how-to-place-the-xamarin-forms-chart-datamarker-label-at-the-top-and-bottom-of-the-marker)
+[How to place the Xamarin.Forms Chart DataMarker label at the top and bottom of the marker alternatively](https://support.syncfusion.com/kb/article/9269/how-to-place-the-xamarin-forms-chart-datamarker-label-at-the-top-and-bottom-of-the-marker)
 

@@ -573,7 +573,7 @@ The [SfListView.GroupExpanding](https://help.syncfusion.com/cr/xamarin/Syncfusio
 The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs.html) of the `GroupExpanding` event provides the information about the expanding group and it has the following members:
 
 [Groups](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs.html#Syncfusion_ListView_XForms_GroupExpandCollapseChangingEventArgs_Groups): Gets a list of groups being expanded.
-[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%3FappId%3DDev14IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue&view=net-5.0): Decides whether to cancel the group expansion or not.
+[Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%253FappId%3DDev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true&view=net-5.0): Decides whether to cancel the group expansion or not.
 
 The `GroupExpanding` event used for the following use case.
 
@@ -616,7 +616,7 @@ The [SfListView.GroupCollapsing](https://help.syncfusion.com/cr/xamarin/Syncfusi
 The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs.html) of the `GroupCollapsing` event provides the information about the collapsing group and it contains the following members:
 
 [Groups](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs.html#Syncfusion_ListView_XForms_GroupExpandCollapseChangingEventArgs_Groups): Gets a list of groups being collapsed.
-[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%3FappId%3DDev14IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue&view=net-5.0): Decides whether to cancel the group collapsing or not.
+[Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%253FappId%3DDev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true&view=net-5.0): Decides whether to cancel the group collapsing or not.
 
 You can cancel the group is being collapsed by setting the `GroupExpandCollapseChangingEventArgs.Cancel` to `true`.
 
@@ -1085,7 +1085,7 @@ N> The binding context for `GroupHeaderTemplate` is `GroupResult`.
 
 ### Providing Indentation for GroupHeader items
 
-ListView allows you to provide space between the group header items by using the [Margin](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.view.margin?view=xamarin-forms#Xamarin_Forms_View_Margin) property of parent view in the [GroupHeaderTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_GroupHeaderTemplate) property. For example, in the following code snippet, StackLayout is considered as parent view and spacing is provided by setting its margin.
+ListView allows you to provide space between the group header items by using the [Margin](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.view.margin?view=xamarin-forms#Xamarin_Forms_View_Margin) property of parent view in the [GroupHeaderTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_GroupHeaderTemplate) property. For example, in the following code snippet, StackLayout is considered as parent view and spacing is provided by setting its margin.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1254,18 +1254,18 @@ N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui
 
 ### Customize group header
 
-[How to customize Xamarin.Forms listview group header template in MVVM](https://www.syncfusion.com/kb/9663/)                                                
-[How to display the items count of group in the group header item in SfListView](https://www.syncfusion.com/kb/8019/)                                                                                                                                                                                                                                                                                      
-[How to bind multiple field in the group header](https://www.syncfusion.com/kb/9484/)    
-[How to display multiple data in the group header template using converter](https://www.syncfusion.com/kb/9491/)                                                                                                                                                     
-[How to display group header without items and add items in the group at run-time](https://www.syncfusion.com/kb/8491/)                                                                                                                                            
-[How to add expand or collapse icon in group header of SfListView](https://www.syncfusion.com/kb/7518/)                                                                                                                
+[How to customize Xamarin.Forms listview group header template in MVVM](https://support.syncfusion.com/kb/article/8459/how-to-customize-xamarin-forms-listview-group-header-template-in-mvvm)                                                
+[How to display the items count of group in the group header item in SfListView](https://support.syncfusion.com/kb/article/7088/how-to-display-the-items-count-of-group-in-the-group-header-item-in-sflistview)                                                                                                                                                                                                                                                                                      
+[How to bind multiple field in the group header](https://support.syncfusion.com/kb/article/8396/how-to-bind-multiple-field-in-the-group-header)    
+[How to display multiple data in the group header template using converter](https://support.syncfusion.com/kb/article/8420/how-to-display-multiple-data-in-the-group-header-template-using-converter)                                                                                                                                                     
+[How to display group header without items and add items in the group at run-time](https://support.syncfusion.com/kb/article/7514/how-to-display-group-header-without-items-and-add-items-in-the-group-at-run-time)                                                                                                                                            
+[How to add expand or collapse icon in group header of SfListView](https://support.syncfusion.com/kb/article/6977/how-to-add-expand-or-collapse-icon-in-group-header-of-sflistview)                                                                                                                
 
 ### Customize grouping
 
-[How to customize the ListView grouping with grid columns in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11172/)                                                                              
-[How to add a jump list with Xamarin.Forms ListView](https://www.syncfusion.com/kb/11021/)                                                                                                               
-[How to maintain only one group in expand state in SfListView](https://www.syncfusion.com/kb/8495/)  
-[How to show group and grouped items within a frame Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11274/)                                                                                                                                                                                                                                                                                                                                                                                                                          
-[How to format the group header for different levels of grouping in Xamarin.Forms ListView(SfListView)?](https://www.syncfusion.com/kb/11685/)                                                                                                                                                                                                                                                                                                                                                          
-[How to hide the line separator in Xamarin.Forms ListView with grouping (SfListView)](https://www.syncfusion.com/kb/11707/)
+[How to customize the ListView grouping with grid columns in Xamarin.Forms (SfListView)](https://support.syncfusion.com/kb/article/9648/how-to-customize-the-listview-grouping-with-grid-columns-in-xamarin-forms-sflistview)                                                                              
+[How to add a jump list with Xamarin.Forms ListView](https://support.syncfusion.com/kb/article/9584/how-to-add-a-jump-list-with-xamarinforms-listview)                                                                                                               
+[How to maintain only one group in expand state in SfListView](https://support.syncfusion.com/kb/article/7517/how-to-maintain-only-one-group-in-expand-state-in-sflistview)  
+[How to show group and grouped items within a frame Xamarin.Forms ListView (SfListView)](https://support.syncfusion.com/kb/article/9837/how-to-show-group-and-grouped-items-within-a-frame-xamarin-forms-listview-sflistview)                                                                                                                                                                                                                                                                                                                                                                                                                          
+[How to format the group header for different levels of grouping in Xamarin.Forms ListView(SfListView)?](https://support.syncfusion.com/kb/article/10121/how-to-format-the-group-header-for-different-levels-of-grouping-in-xamarin-forms)                                                                                                                                                                                                                                                                                                                                                          
+[How to hide the line separator in Xamarin.Forms ListView with grouping (SfListView)](https://support.syncfusion.com/kb/article/10233/how-to-hide-the-line-separator-in-xamarin-forms-listview-with-grouping-sflistview)

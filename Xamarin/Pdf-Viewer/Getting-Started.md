@@ -60,9 +60,9 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Creating a simple PDF Viewer application
 
@@ -210,7 +210,7 @@ Add the following XAML code in the MainPage.xaml in the portable project.
 
 The sample that illustrates loading a PDF in MVVM binding can be downloaded from the link below. 
 
-<http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-2072455774> 
+<https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-2072455774> 
 
 On executing the above sample, you will get the output as shown in the following image.
 
@@ -266,7 +266,7 @@ In the XAML code described in the previous section, remove the binding of InputF
 
 The sample which illustrates loading a PDF in code-behind using LoadDocument method can be downloaded from the link below.
 
-<http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-81946798> 
+<https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-81946798> 
 
 ## Loading a PDF from an URL
 
@@ -367,7 +367,7 @@ Stream pdfDocumentStream = pdfViewerControl.SaveDocument();
 {% endhighlight %}
 {% endtabs %}
 
-Please refer [here](https://www.syncfusion.com/kb/9031/how-to-save-loaded-pdf-document-in-application-level) for saving the PDF document as a file in the application level from the obtained stream.
+Please refer [here](https://support.syncfusion.com/kb/article/8173/how-to-save-loaded-pdf-document-in-application-level) for saving the PDF document as a file in the application level from the obtained stream.
 
 N> The `SaveDocument` method does not save the existing stamp annotations in the PDF document. Instead, use the `SaveDocumentAsync` method to save them.
 
@@ -679,7 +679,7 @@ pdfViewerControl.ScrollToOffset(m_currentHorizontalOffset+10, m_currentVerticalO
 
 ## How to modify the width of the vertical scrollbar in the UWP platform?
 
-The PDF viewer uses the [ScrollViewer](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-19041) control to scroll the pages of the PDF. The width of the vertical scrollbar of the [ScrollViewer](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-19041) can be modified by using the [VerticalScrollBarWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_VerticalScrollBarWidth) property. The default value of the API is the default width of the [ScrollViewer](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-19041) control.
+The PDF viewer uses the [ScrollViewer](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-19041) control to scroll the pages of the PDF. The width of the vertical scrollbar of the [ScrollViewer](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-19041) can be modified by using the [VerticalScrollBarWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_VerticalScrollBarWidth) property. The default value of the API is the default width of the [ScrollViewer](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-19041) control.
 
 {% tabs %}
 {% highlight c# %}

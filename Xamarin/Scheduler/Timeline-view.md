@@ -638,7 +638,7 @@ N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-u
 
 ## See also
 
-[How to add multiple resource to Schedule (SfSchedule) in Xamarin.Forms](https://www.syncfusion.com/kb/11210/how-to-add-multiple-resource-to-schedule-sfschedule-in-xamarin-forms)
+[How to add multiple resource to Schedule (SfSchedule) in Xamarin.Forms](https://support.syncfusion.com/kb/article/9679/how-to-add-multiple-resource-to-schedule-sfschedule-in-xamarin-forms)
 
-[How to customize time label of schedule in Xamarin.Forms?](https://www.syncfusion.com/kb/10879/how-to-customize-time-label-of-schedule-in-xamarin-forms)
+[How to customize time label of schedule in Xamarin.Forms?](https://support.syncfusion.com/kb/article/9593/how-to-customize-time-label-of-schedule-in-xamarinforms-application)
 

@@ -66,7 +66,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the tria
 
 ![Xamarin.Forms datasource getting started](DataSource-GettingStarted_images/gettingstarted.png)
 
-* Create a new blank [(Xamarin.Forms.NET Standard) application](https://learn.microsoft.com/en-us/xamarin/get-started/first-app/?pivots=windows) in Xamarin Studio or Visual Studio for Xamarin.Forms.
+* Create a new blank [(Xamarin.Forms.NET Standard) application](https://learn.microsoft.com/en-us/xamarin/get-started/first-app/?pivots=windows-vs2022) in Xamarin Studio or Visual Studio for Xamarin.Forms.
 * Now, create a simple data source as shown in the following code example. Add the following code example in a newly created class file and save it as **Contacts.cs** file.
 
 {% tabs %}

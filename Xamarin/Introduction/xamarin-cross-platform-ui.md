@@ -1117,7 +1117,7 @@ You can find the platforms supported by each Xamarin.Forms UI control as below.
 	    VIEWER/EDITOR<br/>
 		</td>
 		<td>
-			<a href="/xamarin/Image Editor/overview">image-editor</a><br/>
+			<a href="/xamarin/image-editor/overview">image-editor</a><br/>
 		</td>
 		<td>
 		Yes<br/>

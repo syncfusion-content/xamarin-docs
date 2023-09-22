@@ -112,7 +112,7 @@ private void ListView_ScrollStateChanged(object sender, ScrollStateChangedEventA
 
 ## Identify when end of the list is reached on scrolling
 
-The `SfListView` allows notifying when scrolling using the [Changed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ScrollAxis.ScrollAxisBase.html#Syncfusion_UI_Xaml_ScrollAxis_ScrollAxisBase_Changed) event of [ScrollAxisBase](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ScrollAxis.ScrollAxisBase.html) in [VisualContainer](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.VisualContainer.html) of the `SfListView`. By using this event, you can find whether reached the last item in the list in the `SfListView` based on the [LastBodyVisibleLineIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.GridCommon.ScrollAxis.ScrollAxisBase.html#Syncfusion_GridCommon_ScrollAxis_ScrollAxisBase_LastBodyVisibleLineIndex) property and underlying collection count.
+The `SfListView` allows notifying when scrolling using the [Changed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ScrollAxis.ScrollAxisBase.html#Syncfusion_UI_Xaml_ScrollAxis_ScrollAxisBase_Changed) event of [ScrollAxisBase](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ScrollAxis.ScrollAxisBase.html) in [VisualContainer](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.VisualContainer.html) of the `SfListView`. By using this event, you can find whether reached the last item in the list in the `SfListView` based on the [LastBodyVisibleLineIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.GridCommon.ScrollAxis.ScrollAxisBase.html#Syncfusion_GridCommon_ScrollAxis_ScrollAxisBase_LastBodyVisibleLineIndex) property and underlying collection count.
 
 {% tabs %}
 {% highlight c# %}
@@ -185,7 +185,7 @@ The `SfListView` have scrolled to top automatically when changing the `ItemsSour
 
 For `Horizontal` orientation, use the `ScrollX` value of `ExtendedScrollView`.
 
- By using [Reflection](https://docs.microsoft.com/en-us/dotnet/api/system.reflection?redirectedfrom=MSDN&view=net-5.0), get the value of `ScrollOwner` from `VisualContainer` and use it.
+ By using [Reflection](https://learn.microsoft.com/en-us/dotnet/api/system.reflection?redirectedfrom=MSDN&view=net-5.0), get the value of `ScrollOwner` from `VisualContainer` and use it.
 
 {% tabs %}
 {% highlight c# %}
@@ -259,12 +259,12 @@ N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui
 
 ## See Also
 
-[How to detect listview scrolling direction in Xamarin.Forms](https://www.syncfusion.com/kb/11019)                                                                                
-[How to maintain the same scroll position of ListView while updating ItemsSource at runtime](https://www.syncfusion.com/kb/8029)                                                                                
-[How to add a jump list with Xamarin.Forms ListView](https://www.syncfusion.com/kb/11021)                                                                                                   
-[How to load more items when scroll reached the end of list](https://www.syncfusion.com/kb/7792)                                                                                      
-[How to automatically scroll to bring a selected item into the view](https://www.syncfusion.com/kb/8190)                                                                                
-[How to maintain the scroll position of ListView after clearing the filter at runtime](https://www.syncfusion.com/kb/9535)                                                                                                                          
-[How to bring the item into view when adding at runtime in the listview](https://www.syncfusion.com/kb/9957)                                                                                                                                                                                                                                                            
-[How to update the header height on scrolling in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11830/)
+[How to detect listview scrolling direction in Xamarin.Forms](https://support.syncfusion.com/kb/article/9589/how-to-detect-scrolling-direction-in-xamarin-forms-listview-sflistview)                                                                                
+[How to maintain the same scroll position of ListView while updating ItemsSource at runtime](https://support.syncfusion.com/kb/article/7092)                                                                                
+[How to add a jump list with Xamarin.Forms ListView](https://support.syncfusion.com/kb/article/9584/how-to-add-a-jump-list-with-xamarin-forms-listview)                                                                                                   
+[How to load more items when scroll reached the end of list](https://support.syncfusion.com/kb/article/7200/how-to-load-more-items-when-scroll-reached-the-end-of-listview-in-xamarinforms-application)                                                                                      
+[How to automatically scroll to bring a selected item into the view](https://support.syncfusion.com/kb/article/7267/how-to-automatically-scroll-to-bring-a-selected-item-into-the-view)                                                                                
+[How to maintain the scroll position of ListView after clearing the filter at runtime](https://support.syncfusion.com/kb/article/8365/how-to-maintain-the-scroll-position-of-listview-after-clearing-the-filter-at-runtime)                                                                                                                          
+[How to bring the item into view when adding at runtime in the listview](https://support.syncfusion.com/kb/article/8791/how-to-bring-the-item-into-view-when-adding-at-runtime-in-the-listview)                                                                                                                                                                                                                                                            
+[How to update the header height on scrolling in Xamarin.Forms ListView (SfListView)](https://support.syncfusion.com/kb/article/10309/how-to-update-the-header-height-on-scrolling-in-xamarin-forms-listview-sflistview)
 

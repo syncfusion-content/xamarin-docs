@@ -129,4 +129,4 @@ radioGroup.Children.Add(creditCard);
 
 ## See also
 
-[How to get the selected Xamarin.Forms radio button (SfRadioButton)](https://www.syncfusion.com/kb/10914/how-to-get-the-selected-xamarin-forms-radiobutton)
+[How to get the selected Xamarin.Forms radio button (SfRadioButton)](https://support.syncfusion.com/kb/article/9506/how-to-get-the-selected-xamarin-forms-radiobutton)

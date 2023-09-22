@@ -154,12 +154,12 @@ You can restrict the shape resizing using the [`IsResizable`](https://help.syncf
 
 ## See also
 
-[How to add shapes to the image editor on initial loading](https://www.syncfusion.com/kb/11273/how-to-add-shapes-to-the-xamarin-forms-image-editor-on-initial-loading)
+[How to add shapes to the image editor on initial loading](https://support.syncfusion.com/kb/article/9833/how-to-add-shapes-to-the-xamarin-forms-image-editor-on-initial-loading)
 
-[How to add custom toolbar to add shapes or text dynamically in Xamarin.Forms SfImageEditor](https://www.syncfusion.com/kb/10621/how-to-add-custom-toolbar-to-add-shapes-or-text-dynamically-in-xamarin-forms-sfimageeditor)
+[How to add custom toolbar to add shapes or text dynamically in Xamarin.Forms SfImageEditor](https://support.syncfusion.com/kb/article/9151/how-to-add-custom-toolbar-to-add-shapes-or-text-dynamically-in-xamarin-forms-sfimageeditor)
 
-[How to show dimension of shapes while resizing](https://www.syncfusion.com/kb/8880/how-to-show-dimension-of-shapes-while-resizing)
+[How to show dimension of shapes while resizing](https://support.syncfusion.com/kb/article/7812/how-to-show-dimension-of-shapes-while-resizing)
 
-[How to update the color, stroke thickness for selected shape programmatically](https://www.syncfusion.com/kb/8870/how-to-update-the-color-stroke-thickness-for-selected-shape-programmatically)
+[How to update the color, stroke thickness for selected shape programmatically](https://support.syncfusion.com/kb/article/7818/how-to-update-the-color-stroke-thickness-for-selected-shape-programmatically)
 
-[How to load shapes with custom bounds](https://www.syncfusion.com/kb/8857/how-to-load-shapes-with-custom-bounds)
+[How to load shapes with custom bounds](https://support.syncfusion.com/kb/article/7804/how-to-load-shapes-with-custom-bounds)

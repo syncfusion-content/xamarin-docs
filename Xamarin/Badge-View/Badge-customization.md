@@ -328,4 +328,4 @@ Content = sfBadgeView;
 
 ## See also
 
-[How to add a custom icon to the badge in Xamarin.Forms badge view (SfBadgeView)](https://www.syncfusion.com/kb/11338/how-to-add-a-custom-icon-to-the-badge-in-xamarin-forms-badge-view-sfbadgeview)
+[How to add a custom icon to the badge in Xamarin.Forms badge view (SfBadgeView)](https://support.syncfusion.com/kb/article/10046/how-to-add-a-custom-icon-to-the-badge-in-xamarin-forms-badge-view-sfbadgeview?isInternalRefresh=False)

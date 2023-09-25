@@ -11,7 +11,7 @@ documentation: ug
 
 ## BackLayerStateChanged event
 
-The `BackLayerStateChanged` event occurs when the backdrop page back layer is revealed and concealed. The event occurs in the cases mentioned in this [documentation](https://help.syncfusion.com/xamarin/sfbackdroppage/getting-started#reveal-and-conceal-the-back-layer).
+The `BackLayerStateChanged` event occurs when the backdrop page back layer is revealed and concealed. The event occurs in the cases mentioned in this [documentation](https://help.syncfusion.com/xamarin/backdrop-page/getting-started#reveal-and-conceal-the-back-layer).
 
 {% tabs %} 
 

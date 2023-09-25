@@ -65,9 +65,9 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching the application on each platform with badge view
 
@@ -309,4 +309,4 @@ You can find the complete getting started sample from this [`link`](https://gith
 
 ## See also
 
-[How to add a custom icon to the badge in Xamarin.Forms badge view (SfBadgeView)](https://www.syncfusion.com/kb/11338/how-to-add-a-custom-icon-to-the-badge-in-xamarin-forms-badge-view-sfbadgeview)
+[How to add a custom icon to the badge in Xamarin.Forms badge view (SfBadgeView)](https://support.syncfusion.com/kb/article/10046/how-to-add-a-custom-icon-to-the-badge-in-xamarin-forms-badge-view-sfbadgeview?isInternalRefresh=False)

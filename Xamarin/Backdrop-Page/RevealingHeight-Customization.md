@@ -13,9 +13,9 @@ When revealing the [`back layer`](https://help.syncfusion.com/xamarin/sfbackdrop
 
 The following options are provided to move the front layer:
 
-[`Fill`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.RevealOption.html) – Moves the front layer downwards to the entire height of the page excluding the [`RevealedHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.BackdropFrontLayer.html#Syncfusion_XForms_Backdrop_BackdropFrontLayer_RevealedHeight).
+[`Fill`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.RevealOption.html#Syncfusion_XForms_Backdrop_RevealOption_Fill) – Moves the front layer downwards to the entire height of the page excluding the [`RevealedHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.BackdropFrontLayer.html#Syncfusion_XForms_Backdrop_BackdropFrontLayer_RevealedHeight).
 
-[`Auto`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.RevealOption.html) – Moves the front layer downwards to the height of the back layer content.
+[`Auto`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.RevealOption.html#Syncfusion_XForms_Backdrop_RevealOption_Auto) – Moves the front layer downwards to the height of the back layer content.
 
 {% tabs %} 
 

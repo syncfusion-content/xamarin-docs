@@ -35,4 +35,4 @@ The following image shows the AutomationIds of inner elements.
 
 ## See also
 
-[How to get an AccordionItem in Xamarin.Forms (SfAccordion)](https://www.syncfusion.com/kb/11439/)
+[How to get an AccordionItem in Xamarin.Forms (SfAccordion)](https://support.syncfusion.com/kb/article/9978/how-to-get-an-accordionitem-in-xamarin-forms-sfaccordion?isInternalRefresh=False)

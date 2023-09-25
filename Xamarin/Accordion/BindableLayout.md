@@ -225,5 +225,5 @@ private void Accordion_Expanding(object sender, ExpandingAndCollapsingEventArgs 
 
 ## See also
 
-[How to bind ViewModel data to Accordion in Xamarin.Forms (SfAccordion)](https://www.syncfusion.com/kb/11404/)                                                                                                                                                                                                                              
-[How to work with Accordion with SfListView in Xamarin.Forms (SfAccordion)](https://www.syncfusion.com/kb/11448/)`                                                                                                                                                             
+[How to bind ViewModel data to Accordion in Xamarin.Forms (SfAccordion)](https://support.syncfusion.com/kb/article/10004/how-to-bind-viewmodel-data-to-accordion-in-xamarin-forms-sfaccordion?isInternalRefresh=False)                                                                                                                                                                                                                              
+[How to work with Accordion with SfListView in Xamarin.Forms (SfAccordion)](https://support.syncfusion.com/kb/article/9966/how-to-work-with-accordion-with-sflistview-in-xamarin-forms-sfaccordion?isInternalRefresh=False)`                                                                                                                                                             

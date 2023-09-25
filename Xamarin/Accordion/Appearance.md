@@ -192,6 +192,6 @@ N> When effects view is applied to the accordion by adding Visual as `Material`,
 
 ## See also
 
-[How to customize the Accordion icon color in Xamarin.Forms (SfAccordion)](https://www.syncfusion.com/kb/11443/)                                                                                                                                        
-[How to work with RTL in Xamarin.Forms Accordion (SfAccordion)](https://www.syncfusion.com/kb/11444/)                                                                                                               
-[How to customize the appearance of Accordion using VisualStateManager in Xamarin.Forms (SfAccordion)](https://www.syncfusion.com/kb/11497/)
+[How to customize the Accordion icon color in Xamarin.Forms (SfAccordion)](https://support.syncfusion.com/kb/article/9973/how-to-customize-the-accordion-icon-color-in-xamarin-forms-sfaccordion?isInternalRefresh=False)                                                                                                                                        
+[How to work with RTL in Xamarin.Forms Accordion (SfAccordion)](https://support.syncfusion.com/kb/article/9970/how-to-work-with-rtl-in-xamarin-forms-accordion-sfaccordion?isInternalRefresh=False)                                                                                                               
+[How to customize the appearance of Accordion using VisualStateManager in Xamarin.Forms (SfAccordion)](https://support.syncfusion.com/kb/article/9927/how-to-customize-the-appearance-of-accordion-in-xamarinforms-sfaccordion?isInternalRefresh=False)

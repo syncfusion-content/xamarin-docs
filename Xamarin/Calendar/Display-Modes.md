@@ -593,16 +593,16 @@ calendar.CollapseInlineView(DateTime.Now.Date);
 
 ## See also
 
-[How to Identify the current month day cell in SfCalendar?](https://www.syncfusion.com/kb/8563/how-to-identify-the-current-month-day-cell-in-sfcalendar)
+[How to Identify the current month day cell in SfCalendar?](https://support.syncfusion.com/kb/article/7584/how-to-identify-the-current-month-day-cell-in-sfcalendar?isInternalRefresh=False)
 
-[How to customize the month cell of SfCalendar?](https://www.syncfusion.com/kb/8583/how-to-customize-the-month-cell-of-sfcalendar)
+[How to customize the month cell of SfCalendar?](https://support.syncfusion.com/kb/article/7528/how-to-customize-the-month-cell-of-sfcalendar?isInternalRefresh=False)
 
-[How to customize the month cell of SfCalendar with custom object?](https://www.syncfusion.com/kb/8588/how-to-customize-the-month-cell-of-sfcalendar-with-custom-object)
+[How to customize the month cell of SfCalendar with custom object?](https://support.syncfusion.com/kb/article/7507/how-to-customize-the-month-cell-of-calendar-with-custom-object-in-xamarin-forms-sfcalendar?isInternalRefresh=False)
 
-[How to customize the month cell border lines of SfCalendar?](https://www.syncfusion.com/kb/8595/how-to-customize-the-month-cell-border-lines-of-sfcalendar)
+[How to customize the month cell border lines of SfCalendar?](https://support.syncfusion.com/kb/article/7498/how-to-customize-the-month-cell-border-lines-of-sfcalendar?isInternalRefresh=False)
 
-[How to restrict the year view move while tapping calendar’s month header?](https://www.syncfusion.com/kb/8607/how-to-restrict-the-year-view-move-while-tapping-calendars-month-header)
+[How to restrict the year view move while tapping calendar’s month header?](https://support.syncfusion.com/kb/article/7632/how-to-restrict-the-year-view-move-while-tapping-calendars-month-header?isInternalRefresh=False)
 
-[How to change the selection shape of calendar’s date cell selection?](https://www.syncfusion.com/kb/8610/how-to-change-the-selection-shape-of-calendars-date-cell-selection)
+[How to change the selection shape of calendar’s date cell selection?](https://support.syncfusion.com/kb/article/7636/how-to-change-the-selection-shape-of-calendars-date-cell-selection?isInternalRefresh=False)
 
-[How to customize the selected month cell in Xamarin.Forms Calendar (SfCalendar)](https://www.syncfusion.com/kb/11202/how-to-customize-the-selected-month-cell-in-xamarin-forms-calendar-sfcalendar)
+[How to customize the selected month cell in Xamarin.Forms Calendar (SfCalendar)](https://support.syncfusion.com/kb/article/9670/how-to-customize-the-selected-month-cell-in-xamarin-forms-calendar-sfcalendar?isInternalRefresh=False)

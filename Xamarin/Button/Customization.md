@@ -824,8 +824,8 @@ The complete customization sample:[Customization](http://www.syncfusion.com/down
 
 ## See also
 
-[How to create a different shape of Xamarin.Forms button](https://www.syncfusion.com/kb/11850/how-to-create-a-different-shape-of-xamarin-forms-button)
+[How to create a different shape of Xamarin.Forms button](https://support.syncfusion.com/kb/article/10315/how-to-create-a-different-shape-of-xamarin-forms-button?isInternalRefresh=False)
 
-[How to create a round or circle button in Xamarin.Forms](https://www.syncfusion.com/kb/10938/how-to-create-a-round-or-circle-button-in-xamarin-forms)
+[How to create a round or circle button in Xamarin.Forms](https://support.syncfusion.com/kb/article/9456/how-to-create-a-round-or-circle-button-in-xamarin-forms?isInternalRefresh=False)
 
-[How to add the SVG images in Xamarin.Forms button](https://www.syncfusion.com/kb/11682/how-to-add-the-svg-images-in-xamarin-forms-button)
+[How to add the SVG images in Xamarin.Forms button](https://support.syncfusion.com/kb/article/10118/how-to-add-the-svg-images-in-xamarin-forms-button?isInternalRefresh=False)

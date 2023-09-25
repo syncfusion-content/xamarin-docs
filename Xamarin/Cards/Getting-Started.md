@@ -60,9 +60,9 @@ Location : {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching the application on each platform with cards
 
@@ -114,7 +114,7 @@ The Android platform does not require any additional configuration to render the
 
 ## Initialize cards
 
-Import the [`Cards`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html) namespace as shown in the following code in your respective page.
+Import the [`Cards`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.html) namespace as shown in the following code in your respective page.
 
 {% tabs %} 
 
@@ -161,7 +161,7 @@ this.Content = cardView;
 
 {% endtabs %} 
 
-Run the project and check if you get following output to make sure that you have configured your project properly to add [`Cards`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardLayout.html).
+Run the project and check if you get following output to make sure that you have configured your project properly to add [`Cards`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.html).
 
 ![Initializing Xamarin.Forms SfCardView](getting-started_images/img1.png)
 
@@ -269,11 +269,11 @@ N> You can find the complete getting started sample from this [link](https://git
 
 ## See also
 
-[[How to remove cards from card view collection in Xamarin.Forms](https://www.syncfusion.com/kb/11655/how-to-remove-cards-from-card-view-collection-in-xamarin-forms)
+[[How to remove cards from card view collection in Xamarin.Forms](https://support.syncfusion.com/kb/article/10208/how-to-remove-cards-from-card-view-collection-in-xamarinforms-cardlayout?isInternalRefresh=False)
 
-[How to set shadow effect to the cards in Xamarin.Forms](https://www.syncfusion.com/kb/11651/how-to-set-shadow-effect-to-the-cards-in-xamarin-forms)
+[How to set shadow effect to the cards in Xamarin.Forms](https://support.syncfusion.com/kb/article/10204/how-to-set-shadow-effect-to-the-cards-in-xamarin-forms?isInternalRefresh=False)
 
-[How to add cards to the ListView in Xamarin.Forms](https://www.syncfusion.com/kb/11650/how-to-add-cards-to-the-listview-in-xamarin-forms)
+[How to add cards to the ListView in Xamarin.Forms](https://support.syncfusion.com/kb/article/10203/how-to-add-cards-to-the-listview-in-xamarin-forms?isInternalRefresh=False)
 	
-[How to reuse the dismissed cards in Xamarin.Forms SfCardView](https://www.syncfusion.com/kb/11648/how-to-reuse-the-dismissed-cards-in-xamarin-forms-sfcardview)
+[How to reuse the dismissed cards in Xamarin.Forms SfCardView](https://support.syncfusion.com/kb/article/10201/how-to-reuse-the-dismissed-cards-in-xamarin-forms-sfcardview?isInternalRefresh=False)
 

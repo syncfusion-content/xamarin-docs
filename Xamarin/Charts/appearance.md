@@ -11,7 +11,7 @@ documentation: ug
 
 ## Apply palette for Chart
 
-[`ColorModel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_ColorModel) property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) is used to define the colors for each series. [`ColorModel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartColorModel.html#properties) contains the following color palettes.
+[`ColorModel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_ColorModel) property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) is used to define the colors for each series. [`ColorModel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_ColorModels) contains the following color palettes.
 
 **Predefined Palettes**
 
@@ -369,4 +369,4 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to apply custom fonts in Xamarin.Forms Chart](https://www.syncfusion.com/kb/9388/how-to-apply-custom-fonts-in-xamarin-forms-chart)
+[How to apply custom fonts in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/8209/how-to-apply-custom-fonts-in-xamarin-forms-chart?isInternalRefresh=False)

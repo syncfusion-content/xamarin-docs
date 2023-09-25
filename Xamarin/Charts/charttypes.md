@@ -887,7 +887,7 @@ N> You can also explore our [Xamarin Column Chart example](https://github.com/sy
 
 ### Overlapped placement
 
-By default, all the column series which has the same x and y axes are placed side by side in a chart. If you want place the series one over the other (overlapped), set the [`SideBySideSeriesPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_SideBySideSeriesPlacement) property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#) to false and configure the [`Width`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html#Syncfusion_SfChart_XForms_ColumnSeries_Width) property to differentiate the series. The following code snippet and screenshot illustrate the overlapped placement of column series.
+By default, all the column series which has the same x and y axes are placed side by side in a chart. If you want place the series one over the other (overlapped), set the [`SideBySideSeriesPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_SideBySideSeriesPlacement) property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to false and configure the [`Width`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html#Syncfusion_SfChart_XForms_ColumnSeries_Width) property to differentiate the series. The following code snippet and screenshot illustrate the overlapped placement of column series.
 
 {% tabs %} 
 
@@ -4029,12 +4029,12 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to draw dotted line using FastLineSeries in Chart](https://www.syncfusion.com/kb/5924/how-to-draw-dotted-line-using-fastlineseries-in-chart)
+[How to draw dotted line using FastLineSeries in Chart](https://support.syncfusion.com/kb/article/5612/how-to-create-a-dotted-line-chart-in-xamarin-forms?isInternalRefresh=False)
 
-[How to visualize the Xamarin.Forms Pie Chart in linear form](https://www.syncfusion.com/kb/11285/how-to-visualize-the-xamarin-forms-pie-chart-in-linear-form)
+[How to visualize the Xamarin.Forms Pie Chart in linear form](https://support.syncfusion.com/kb/article/9813/how-to-visualize-the-xamarin-forms-pie-chart-in-linear-form?isInternalRefresh=False)
 
-[How to achieve the Tornado chart in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10684/how-to-achieve-the-tornado-chart-in-xamarin-forms-chart)
+[How to achieve the Tornado chart in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/9311/how-to-create-a-tornado-chart-in-xamarin-forms?isInternalRefresh=False)
 
-[How to use the drill-down functionality in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10662/how-to-use-the-drill-down-functionality-in-xamarin-forms-chart)
+[How to use the drill-down functionality in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/9388/how-to-use-the-drill-down-functionality-in-xamarin-forms-chart?isInternalRefresh=False)
 
-[How to set size of pie/doughnut](https://www.syncfusion.com/kb/5525/how-to-set-size-of-pie-doughnut)
+[How to set size of pie/doughnut](https://support.syncfusion.com/kb/article/5221/how-to-set-size-of-piedoughnut-in-xamarinforms-charts?isInternalRefresh=False)

@@ -1183,4 +1183,4 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to add benchmark line in Xamarin.Forms Chart](https://www.syncfusion.com/kb/9304/how-to-add-benchmark-line-in-xamarin-forms-chart)
+[How to add benchmark line in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/8073/how-to-add-benchmark-line-in-xamarin-forms-chart?isInternalRefresh=False)

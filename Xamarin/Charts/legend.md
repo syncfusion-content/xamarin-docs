@@ -634,14 +634,14 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to apply custom fonts in Xamarin.Forms Chart](https://www.syncfusion.com/kb/9388/how-to-apply-custom-fonts-in-xamarin-forms-chart)
+[How to apply custom fonts in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/8209/how-to-apply-custom-fonts-in-xamarin-forms-chart?isInternalRefresh=False)
 
-[How to customize the individual legend item based on a condition in Xamarin.Forms Chart](https://www.syncfusion.com/kb/9375/how-to-customize-the-individual-legend-item-based-on-a-condition-in-xamarin-forms-chart)
+[How to customize the individual legend item based on a condition in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/8323/how-to-customize-the-individual-legend-item-based-on-a-condition-in-xamarin-forms-chart?isInternalRefresh=False)
 
-[How to collapse the series through legend](https://www.syncfusion.com/kb/5724/how-to-collapse-the-series-through-legend)
+[How to collapse the series through legend](https://support.syncfusion.com/kb/article/5300/how-to-collapse-the-series-through-legend?isInternalRefresh=False)
 
-[How to float the legend on chart](https://www.syncfusion.com/kb/5723/how-to-float-the-legend-on-chart)
+[How to float the legend on chart](https://support.syncfusion.com/kb/article/5404/how-to-float-the-legend-on-chart?isInternalRefresh=False)
 
-[How to change the legend icons](https://www.syncfusion.com/kb/5528/how-to-change-the-legend-icons)
+[How to change the legend icons](https://support.syncfusion.com/kb/article/5219/how-to-change-the-legend-icons?isInternalRefresh=False)
 
-[How to change the legend position](https://www.syncfusion.com/kb/5527/how-to-change-the-legend-position)
+[How to change the legend position](https://support.syncfusion.com/kb/article/5228/how-to-change-the-legend-position?isInternalRefresh=False)

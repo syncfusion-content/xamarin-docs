@@ -12,7 +12,7 @@ documentation: ug
 
 ## Export as an image
 
-You can export the Chart as a JPG image using [`SaveAsImage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_SaveAsImage_System_String_) method of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#).
+You can export the Chart as a JPG image using [`SaveAsImage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_SaveAsImage_System_String_) method of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html).
 
 {% tabs %} 
 
@@ -83,7 +83,7 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to export the Chart to the PDF document in Xamarin.Forms](https://www.syncfusion.com/kb/9404/how-to-export-the-chart-to-the-pdf-document-in-xamarin-forms)
+[How to export the Chart to the PDF document in Xamarin.Forms](https://support.syncfusion.com/kb/article/8342/how-to-export-the-chart-to-the-pdf-document-in-xamarin-forms?isInternalRefresh=False)
 
-[How to apply the PDF document size to Xamarin.Forms Chart](https://www.syncfusion.com/kb/8705/how-to-apply-the-pdf-document-size-to-xamarin-forms-chart)
+[How to apply the PDF document size to Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/7771/how-to-apply-the-pdf-document-size-to-xamarin-forms-chart?isInternalRefresh=False)
 

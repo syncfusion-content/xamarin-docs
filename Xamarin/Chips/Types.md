@@ -515,9 +515,9 @@ Download the complete sample [here](https://github.com/SyncfusionExamples/How-to
 
 ## See also
 
-[How to remove the indicator icon from Xamarin.Forms chip group (SfChipGroup)](https://www.syncfusion.com/kb/11270/how-to-remove-the-indicator-icon-from-xamarin-forms-chip-group-sfchipgroup)
+[How to remove the indicator icon from Xamarin.Forms chip group (SfChipGroup)](https://support.syncfusion.com/kb/article/9826/how-to-remove-the-indicator-icon-from-xamarin-forms-chip-group-sfchipgroup?isInternalRefresh=False)
 
-[How to restrict chip selection in Xamarin](https://www.syncfusion.com/kb/11205/how-to-restrict-chip-selection-in-xamarin)
+[How to restrict chip selection in Xamarin](https://support.syncfusion.com/kb/article/9678/how-to-restrict-chip-selection-in-xamarin?isInternalRefresh=False)
 
-[How to select a multiple chips from the Xamarin ChipGroup [SfChipGroup]](https://www.syncfusion.com/kb/11155/how-to-select-a-multiple-chips-from-the-xamarin-chipgroup-sfchipgroup)
+[How to select a multiple chips from the Xamarin ChipGroup [SfChipGroup]](https://support.syncfusion.com/kb/article/9657/how-to-select-a-multiple-chips-from-the-xamarin-chipgroup-sfchipgroup?isInternalRefresh=False)
 

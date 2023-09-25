@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # DataTemplateSelector in Xamarin Chips
-You can customize the appearance of each chip with different templates based on specific constraints using the [`DataTemplateSelector`](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.DataTemplateSelector/).
+You can customize the appearance of each chip with different templates based on specific constraints using the [`DataTemplateSelector`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.datatemplateselector?view=xamarin-forms).
 
 ## Create and initialize business models 
 
@@ -52,7 +52,7 @@ Define a simple model class ChipModel with fields Text, CanSelect, ImageSource, 
 
 ### Create a data template selector
 
-Create a custom class by inheriting [`DataTemplateSelector`](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.DataTemplateSelector/), and override the `OnSelectTemplate` method to return the `DataTemplate` for that item. At runtime, the SfChipGroup invokes the `OnSelectTemplate` method for each item and passes the data object as parameter.
+Create a custom class by inheriting [`DataTemplateSelector`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.datatemplateselector?view=xamarin-forms), and override the `OnSelectTemplate` method to return the `DataTemplate` for that item. At runtime, the SfChipGroup invokes the `OnSelectTemplate` method for each item and passes the data object as parameter.
 
 {% tabs %}
 {% highlight c# %}
@@ -73,7 +73,7 @@ public class ChipDataTemplateSelector : DataTemplateSelector
 
 ### Applying the data template selector
 
-Assign the already defined [`DataTemplateSelector`](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.DataTemplateSelector/) to the [`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ItemTemplate) of the SfChipGroup in either XAML or C#.
+Assign the already defined [`DataTemplateSelector`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.datatemplateselector?view=xamarin-forms) to the [`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ItemTemplate) of the SfChipGroup in either XAML or C#.
 
 {% tabs %}
 {% highlight xaml %}

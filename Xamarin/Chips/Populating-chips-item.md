@@ -79,4 +79,4 @@ namespace Chips
 
 ## See also
 
-[How to bind remote JSON data to Xamarin.Forms chip group (SfChipGroup)](https://www.syncfusion.com/kb/11370/how-to-bind-remote-json-data-to-xamarin-forms-chip-group-sfchipgroup)
+[How to bind remote JSON data to Xamarin.Forms chip group (SfChipGroup)](https://support.syncfusion.com/kb/article/9880/how-to-bind-remote-json-data-to-xamarin-forms-chip-group-sfchipgroup?isInternalRefresh=False)

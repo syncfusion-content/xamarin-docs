@@ -38,6 +38,6 @@ N> The [ItemRemoved](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.X
 
 ## See also
 
-[How to remove the indicator icon from Xamarin.Forms chip group (SfChipGroup)](https://www.syncfusion.com/kb/11270/how-to-remove-the-indicator-icon-from-xamarin-forms-chip-group-sfchipgroup)
+[How to remove the indicator icon from Xamarin.Forms chip group (SfChipGroup)](https://support.syncfusion.com/kb/article/9826/how-to-remove-the-indicator-icon-from-xamarin-forms-chip-group-sfchipgroup?isInternalRefresh=False)
 
-[How to restrict chip selection in Xamarin](https://www.syncfusion.com/kb/11205/how-to-restrict-chip-selection-in-xamarin)
+[How to restrict chip selection in Xamarin](https://support.syncfusion.com/kb/article/9678/how-to-restrict-chip-selection-in-xamarin?isInternalRefresh=False)

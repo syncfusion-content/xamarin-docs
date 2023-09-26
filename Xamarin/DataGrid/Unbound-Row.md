@@ -10,7 +10,7 @@ documentation: ug
 
 # Unbound Row in Xamarin DataGrid (SfDataGrid)
 
-The Xamarin.Forms DataGrid allows you to add **additional rows** at top and also bottom of the DataGrid which are **not bound with data object** of underlying data source. You can add unbound rows using [SfDataGrid.UnboundRows](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.UnboundRows.html) collection property. You can add any no of unbound rows to the DataGrid. Unbound rows can also be exported to pdf and excel documents.
+The Xamarin.Forms DataGrid allows you to add **additional rows** at top and also bottom of the DataGrid which are **not bound with data object** of underlying data source. You can add unbound rows using [SfDataGrid.UnboundRows](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.UnboundRows.html) collection property. You can add any no of unbound rows to the DataGrid. Unbound rows can also be exported to pdf and excel documents.
 
 {% tabs %}
 {% highlight xaml %}
@@ -250,7 +250,7 @@ N> You can also apply style to the unbound row using the `SfDataGrid.QueryCellSt
 
 ## Changing unbound row height
 
-You can change the height of unbound row using [SfDataGrid.QueryRowHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event.
+You can change the height of unbound row using [SfDataGrid.QueryRowHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_QueryRowHeight) event.
 
 
 {% tabs %}

@@ -139,24 +139,24 @@ public class RowTemplate : Grid
 
 ![Drag and drop pop-up with customized apperance](SfDataGrid_images/CustomizedTemplate.jpg)
 
-N> Currently, the row drag-and-drop features cannot be used if different rows sets with different heights using the [QueryRowHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event. 
+N> Currently, the row drag-and-drop features cannot be used if different rows sets with different heights using the [QueryRowHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_QueryRowHeight) event. 
 
-You can download the customizing row drag-and-drop template sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RowDragandDrop865318434).
+You can download the customizing row drag-and-drop template sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/RowDragandDrop865318434).
 
 ## Events in row drag-and-drop
 
-The `QueryRowDragging` event is fired upon starting to drag a row and will be continuously fired until the dragging ends. By handling the [SfDataGrid.QueryRowDragging](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event, you can also cancel the dragging of a particular row.
+The `QueryRowDragging` event is fired upon starting to drag a row and will be continuously fired until the dragging ends. By handling the [SfDataGrid.QueryRowDragging](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_QueryRowDragging) event, you can also cancel the dragging of a particular row.
 
-The `QueryRowDragging` event provides the following properties in [QueryRowDraggingEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs.html):
+The `QueryRowDragging` event provides the following properties in [QueryRowDraggingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs.html):
 
  * [From](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryRowDraggingEventArgs_From): Returns index of the currently being dragged row.
  * [To](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryRowDraggingEventArgs_To): Returns the dragging index where you try to drop the row.
  * [Position](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryRowDraggingEventArgs_Position): Returns current x and y coordinates of the RowDragView.
- * [Reason](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryRowDraggingEventArgs_Reason): Returns row dragging details as [QueryRowDraggingReason](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowDraggingReason.html).
+ * [Reason](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryRowDraggingEventArgs_Reason): Returns row dragging details as [QueryRowDraggingReason](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowDraggingReason.html).
  * [RowData](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryRowDraggingEventArgs_RowData): Returns the underlying data associated with the dragged row.
  * [CurrentRowData](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryRowDraggingEventArgs_CurrentRowData): Returns the corresponding row data over which the row drag view is currently placed.
   * [CanAutoScroll](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryRowDraggingEventArgs_CanAutoScroll): Returns whether auto-scrolling should happen when row drag view reaches the top or bottom of the `SfDataGrid`.
- * [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs?view=net-5.0): Returns the Boolean property to cancel the event.
+ * [Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs?view=net-5.0): Returns the Boolean property to cancel the event.
 
 ## Cancel dragging of a particular row
 
@@ -460,5 +460,5 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to update the summaries when a row is dragged and dropped between groups](https://www.syncfusion.com/kb/7806)
+[How to update the summaries when a row is dragged and dropped between groups](https://support.syncfusion.com/kb/article/7046/how-to-update-the-summaries-when-a-row-is-dragged-and-dropped-between-groups-in-xamarinforms-?isInternalRefresh=False)
 

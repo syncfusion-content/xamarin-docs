@@ -84,7 +84,7 @@ dataGrid.ScrollToRowIndex(20);
 
 ### Scroll to column index
 
-Scroll programmatically to a particular column using the [SfDataGrid.ScrollToColumnIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ScrollToColumnIndex_System_Int32_System_Boolean_Xamarin_Forms_ScrollToPosition_) method by passing the column index.
+Scroll programmatically to a particular column using the [SfDataGrid.ScrollToColumnIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ScrollToRowIndex_System_Int32_System_Boolean_Xamarin_Forms_ScrollToPosition_) method by passing the column index.
 
 {% highlight C# %}
 
@@ -99,7 +99,7 @@ dataGrid.ScrollToColumnIndex(7);
 
 ### Scroll a row/column to a specific position
 
-The SfDataGrid allows to position the scrolled row/column in the datagrid by passing [ScrollToPosition](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.scrolltoposition?view=xamarin-forms) as parameter to the `ScrollToRowColumnIndex`, `ScrollToRowIndex`, `ScrollToColumnIndex` methods. The scrolled row/column can take either of the four positions as explained below. The default position is `Start`.
+The SfDataGrid allows to position the scrolled row/column in the datagrid by passing [ScrollToPosition](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.scrolltoposition?view=xamarin-forms) as parameter to the `ScrollToRowColumnIndex`, `ScrollToRowIndex`, `ScrollToColumnIndex` methods. The scrolled row/column can take either of the four positions as explained below. The default position is `Start`.
 
 * MakeVisible: Scroll to make a specified row/column visible in datagrid. If the specified row/column is already in view, scrolling will not occur.
 * Start: Scroll to make the row/column positioned at the start of the datagrid.
@@ -256,9 +256,9 @@ N> These properties does not have any effect when the datagrid has no scrollable
 
 ## Identifying scroll state changes
 
-The `SfDataGrid` will notify the scrolling state changes via the [ScrollStateChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event.
+The `SfDataGrid` will notify the scrolling state changes via the [ScrollStateChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ScrollStateChanged) event.
 
-Following states will be notified through the [ScrollState](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.ScrollStateChangedEventArgs.html#Syncfusion_SfDataGrid_XForms_ScrollStateChangedEventArgs__ctor_Syncfusion_SfDataGrid_XForms_ScrollState_) property in the event argument.
+Following states will be notified through the [ScrollState](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.ScrollState.html) property in the event argument.
 
 * Dragging: Specifies that `SfDataGrid` is currently being dragged in the view.
 * Fling: Specifies that fling action is performed on the `SfDataGrid`.

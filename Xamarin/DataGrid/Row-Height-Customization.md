@@ -256,4 +256,4 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to adjust row heights of each row based on their content](https://www.syncfusion.com/kb/7446/how-to-adjust-row-heights-of-each-row-based-on-their-content)
+[How to adjust row heights of each row based on their content](https://support.syncfusion.com/kb/article/6570/how-to-adjust-row-heights-of-each-row-based-on-their-content?isInternalRefresh=False)

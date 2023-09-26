@@ -552,7 +552,7 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 [How to configure and install SfDataGrid NuGet package in Visual Studio](https://support.syncfusion.com/kb/article/7356/how-to-configure-and-install-sfdatagrid-nuget-package-in-visual-studio)
 
-[How to make Syncfusion.Xamarin.SfDataGrid to work in release mode in UWP when .NET Native tool chain is enabled](https://www.syncfusion.com/kb/8332)
+[How to make Syncfusion.Xamarin.SfDataGrid to work in release mode in UWP when .NET Native tool chain is enabled](https://support.syncfusion.com/kb/article/7355/how-to-make-syncfusion-xamarin-sfdatagrid-to-work-in-release-mode-in-uwp-when-net-native?isInternalRefresh=False)
 
 [How to apply the custom assemblies when configured the project with Syncfusion NuGet packages](https://support.syncfusion.com/kb/article/7355/how-to-make-syncfusion-xamarin-sfdatagrid-to-work-in-release-mode-in-uwp-when-net-native)
 

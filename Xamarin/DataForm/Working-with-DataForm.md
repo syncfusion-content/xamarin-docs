@@ -127,11 +127,11 @@ Bool type
 </tr>
 </table>
 
-You can customize the property settings or cancel the generation of `DataFormItem` by handling the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html) event.
+You can customize the property settings or cancel the generation of `DataFormItem` by handling the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_AutoGeneratingDataFormItem) event.
 
 ## Customize auto generated fields
 
-You can customize or cancel the generated `DataFormItem` by handling the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html) event. This event occurs when the field is auto-generated for public and non-static property of the data object.
+You can customize or cancel the generated `DataFormItem` by handling the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_AutoGeneratingDataFormItem) event. This event occurs when the field is auto-generated for public and non-static property of the data object.
 
 {% tabs %}
 {% highlight xaml %}
@@ -166,7 +166,7 @@ You can cancel the specific [DataFormItem](https://help.syncfusion.com/cr/xamari
 
 ### Using attributes
 
-You can set [AutoGenerateField](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.autogeneratefield?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_DataAnnotations_DisplayAttribute_AutoGenerateField) to `false` for canceling the `DataFormItem` generation.
+You can set [AutoGenerateField](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.autogeneratefield?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_DataAnnotations_DisplayAttribute_AutoGenerateField) to `false` for canceling the `DataFormItem` generation.
 
 {% tabs %}
 {% highlight c# %}
@@ -338,7 +338,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Changing DataFormItem
 
-You can change the created [DataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html) and assign new `DataFormItem` in the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html) event.
+You can change the created [DataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html) and assign new `DataFormItem` in the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_AutoGeneratingDataFormItem) event.
 
 Here, [DataFormTextItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormTextItem.html) with number keyboard is loaded for numeric value instead of `DataFormNumericItem`.
 
@@ -576,7 +576,7 @@ You can also load the dynamic object in SfDataForm `DataObject` and by default t
 DynamicObject supports only in Xamarin.Forms Android and data form item will be created for each dynamic object property. Currently Dynamic object is not supported in UWP and iOS platform and you can find more details about this for iOS platform under the following links.
 
 https://forums.xamarin.com/discussion/53941/expandoobject-crashing-ios 
-https://developer.xamarin.com/guides/ios/advanced_topics/limitations/
+https://learn.microsoft.com/en-us/xamarin/ios/internals/limitations
 
 {% tabs %}
 {% highlight c# %}

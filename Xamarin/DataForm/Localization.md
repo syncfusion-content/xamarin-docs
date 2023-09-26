@@ -9,9 +9,9 @@ documentation: ug
 
 # Localization in Xamarin DataForm (SfDataForm)
 
-You can localize the DataFormItem [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute values and validation ([Required](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.RequiredAttribute.html) ,[StringLength](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.StringLengthAttribute.html) ) attributes values by using `ResourceType` display attribute or using the `AutoGeneratingDataFormItem` event.
+You can localize the DataFormItem [Display](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute values and validation ([Required](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.RequiredAttribute.html) ,[StringLength](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.StringLengthAttribute.html) ) attributes values by using `ResourceType` display attribute or using the `AutoGeneratingDataFormItem` event.
  
-Please refer the [Localization]( https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/text?tabs=vswin) document  to localize the application.
+Please refer the [Localization](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/text?tabs=vswin&pivots=windows) document  to localize the application.
  
 Based on the culture specifies the corresponding culture string value of display attribute in Resource (.Resx) file as mentioned in document.
 
@@ -36,7 +36,7 @@ public String FirstName { get; set; }
 
 You can also localize the DataFormItem `LabelText`, `PlaceHolderText`, `GroupName` in the `AutoGeneratingDataFormItem` event of SfDataForm by using the Resources (.Resx) file.
 
-Here, string member of .resx file will be accessed through the class (in resxFilename.Designer.cs) which was auto-generated when .resx file created and static string members get localized using [ResourceManager](https://docs.microsoft.com/en-us/dotnet/api/system.resources.resourcemanager.getstring?redirectedfrom=MSDN&view=net-5.0#System_Resources_ResourceManager_GetString_System_String_) based on culture.
+Here, string member of .resx file will be accessed through the class (in resxFilename.Designer.cs) which was auto-generated when .resx file created and static string members get localized using [ResourceManager](https://learn.microsoft.com/en-us/dotnet/api/system.resources.resourcemanager.getstring?redirectedfrom=MSDN&view=net-5.0#System_Resources_ResourceManager_GetString_System_String_) based on culture.
 
 {% tabs %}
 {% highlight c# %}
@@ -70,7 +70,7 @@ Here, the validation (`Required`,`StringLength`) attributes or data form error m
 
 ### Using attribute
 
-The `Required` and `StringLength` attributes error message can be localized using [ErrorMessageResourceType](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.validationattribute.errormessageresourcetype?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_DataAnnotations_ValidationAttribute_ErrorMessageResourceType ) and [ErrorMessageResourceName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.validationattribute.errormessageresourcetype?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_DataAnnotations_ValidationAttribute_ErrorMessageResourceType ) properties which are used to get a localized error messages from Localization Resource File (.Resx) based on culture.
+The `Required` and `StringLength` attributes error message can be localized using [ErrorMessageResourceType](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.validationattribute.errormessageresourcetype?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_DataAnnotations_ValidationAttribute_ErrorMessageResourceType) and [ErrorMessageResourceName](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.validationattribute.errormessageresourcetype?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_DataAnnotations_ValidationAttribute_ErrorMessageResourceType) properties which are used to get a localized error messages from Localization Resource File (.Resx) based on culture.
 
 {% tabs %}
 {% highlight c# %}
@@ -86,7 +86,7 @@ public String FirstName { get; set; }
 
 You can also localize the data form error message in the ` Validating` event of SfDataForm by using the Resources (.Resx) file.
 
-Here, string member of .resx file will be accessed through the class (in resxFilename.Designer.cs) which was auto-generated when .resx file created and static string members get localized using [ResourceManager](https://docs.microsoft.com/en-us/dotnet/api/system.resources.resourcemanager.getstring?redirectedfrom=MSDN&view=net-5.0#System_Resources_ResourceManager_GetString_System_String_) based on culture.
+Here, string member of .resx file will be accessed through the class (in resxFilename.Designer.cs) which was auto-generated when .resx file created and static string members get localized using [ResourceManager](https://learn.microsoft.com/en-us/dotnet/api/system.resources.resourcemanager.getstring?redirectedfrom=MSDN&view=net-5.0#System_Resources_ResourceManager_GetString_System_String_) based on culture.
 
 {% tabs %}
 {% highlight c# %}

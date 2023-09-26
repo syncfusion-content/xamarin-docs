@@ -51,4 +51,4 @@ this.Content = NumericUpDown;
 
 ## See also
 
-[How to customize the text in the SfNumericUpDown](https://www.syncfusion.com/kb/7672/how-to-customise-the-text-present-in-the-sfnumericupdown)
+[How to customize the text in the SfNumericUpDown](https://support.syncfusion.com/kb/article/6894/how-to-customise-the-text-present-in-the-sfnumericupdown?isInternalRefresh=False)

@@ -116,4 +116,4 @@ namespace ParallaxView_GettingStarted
 
 ## See also
 
-[How to provide parallax scrolling support to any custom control using SfParallaxView](https://www.syncfusion.com/kb/10067/how-to-provide-parallax-scrolling-support-to-any-custom-control-using-sfparallaxview)
+[How to provide parallax scrolling support to any custom control using SfParallaxView](https://support.syncfusion.com/kb/article/8887/how-to-provide-parallax-scrolling-support-to-any-custom-control-using-sfparallaxview?isInternalRefresh=False)

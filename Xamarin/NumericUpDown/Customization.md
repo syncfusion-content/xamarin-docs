@@ -272,6 +272,6 @@ this.Content = NumericUpDown;
 
 ## See also
 
-[How to restrict the values of SfNumericUpDown within certain range](https://www.syncfusion.com/kb/7687/how-to-restrict-the-values-of-sfnumericupdown-within-certain-range)
+[How to restrict the values of SfNumericUpDown within certain range](https://support.syncfusion.com/kb/article/6983/how-to-restrict-the-values-of-sfnumericupdown-within-certain-range?isInternalRefresh=False)
 
-[How to set AutoReverse property in SfNumericUpDown](https://www.syncfusion.com/kb/7686/how-to-set-autoreverse-property-in-sfnumericupdown)
+[How to set AutoReverse property in SfNumericUpDown](https://support.syncfusion.com/kb/article/6985/how-to-set-autoreverse-property-in-sfnumericupdown?isInternalRefresh=False)

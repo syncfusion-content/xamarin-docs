@@ -79,4 +79,4 @@ The [`ReturnCommandParameter`](https://help.syncfusion.com/cr/xamarin/Syncfusion
 
 ## See also
 
-[How to get the localized return key on the iOS keyboard in SfNumericTextBox](https://www.syncfusion.com/kb/11630/how-to-get-the-localized-return-key-on-the-ios-keyboard-in-xamarin-forms-numeric-controls)
+[How to get the localized return key on the iOS keyboard in SfNumericTextBox](https://support.syncfusion.com/kb/article/10234/how-to-get-the-localized-return-key-on-the-ios-keyboard-in-xamarin-forms-numeric-controls?isInternalRefresh=False)

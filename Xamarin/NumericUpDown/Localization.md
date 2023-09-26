@@ -33,12 +33,12 @@ N> You cannot set value to the Culture property in XAML.
 
 ## See also
 
-[How to change the culture of SfNumericUpDown](https://www.syncfusion.com/kb/7689/does-sfnumericupdown-responds-change-in-culture)
+[How to change the culture of SfNumericUpDown](https://support.syncfusion.com/kb/article/6971/does-sfnumericupdown-responds-change-in-culture?isInternalRefresh=False)
 
-[How to set customized currency symbol in SfNumericUpDown](https://www.syncfusion.com/kb/10446/how-to-set-customized-currency-symbol-in-xamarin-forms-numeric-controls)
+[How to set customized currency symbol in SfNumericUpDown](https://support.syncfusion.com/kb/article/9119/how-to-configure-a-certain-currency-symbol-in-xamarincontrols-with-numbers-on-forms?isInternalRefresh=False)
 
-[How to display the value with currency symbol in SfNumericUpDown](https://www.syncfusion.com/kb/10444/how-to-display-the-value-with-currency-symbol-in-xamarin-forms-numeric-controls)
+[How to display the value with currency symbol in SfNumericUpDown](https://support.syncfusion.com/kb/article/9141/how-to-display-the-value-with-currency-symbol-in-xamarinforms-numeric-controls?isInternalRefresh=False)
 
-[How to get the localized return key on the iOS keyboard in SfNumericUpDown](https://www.syncfusion.com/kb/8074/how-to-get-the-localized-return-key-on-the-ios-keyboard-in-xamarin-forms-numeric-controls)
+[How to get the localized return key on the iOS keyboard in SfNumericUpDown](https://support.syncfusion.com/kb/article/7039/how-to-get-the-localized-return-key-on-the-ios-keyboard-in-xamarinforms-numeric-controls?isInternalRefresh=False)
 
 

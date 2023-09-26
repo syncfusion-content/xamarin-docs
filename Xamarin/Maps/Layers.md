@@ -361,8 +361,8 @@ N> You can also explore our [Xamarin.Forms Maps example](https://github.com/Sync
 
 ## See Also
 
-[How to load shape files as stream in maps](https://www.syncfusion.com/kb/10555/how-to-load-shape-files-as-stream-in-maps)
+[How to load shape files as stream in maps](https://support.syncfusion.com/kb/article/9303/how-to-load-shape-files-as-stream-in-maps?isInternalRefresh=False)
 
-[How to add sub shape file layer for ImageryLayer in Xamarin.Forms SfMaps](https://www.syncfusion.com/kb/10579/how-to-add-sub-shape-file-layer-for-imagerylayer-in-xamarin-forms-sfmaps)
+[How to add sub shape file layer for ImageryLayer in Xamarin.Forms SfMaps](https://support.syncfusion.com/kb/article/9180/how-to-add-sub-shape-file-layer-for-imagerylayer-in-xamarinforms-sfmaps?isInternalRefresh=False)
 
-[How to draw a line (route) between two terminals in SfMaps](https://www.syncfusion.com/kb/10619/how-to-draw-a-line-route-between-two-terminals-in-sfmaps)
+[How to draw a line (route) between two terminals in SfMaps](https://support.syncfusion.com/kb/article/9149/how-to-draw-a-line-route-between-two-terminals-in-sfmaps?isInternalRefresh=False)

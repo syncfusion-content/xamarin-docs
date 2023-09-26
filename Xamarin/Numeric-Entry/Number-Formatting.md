@@ -241,10 +241,10 @@ N> [`EnableGroupSeparator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 
 ## See also
 
-[How to truncate the trailing zero's in SfNumericTextBox]( https://www.syncfusion.com/kb/11749/how-to-truncate-the-trailing-zeros-in-xamarin-forms-numeric-control-sfnumerictextbox)
+[How to truncate the trailing zero's in SfNumericTextBox](https://support.syncfusion.com/kb/article/10127/how-to-truncate-the-trailing-zeros-in-xamarin-forms-numeric-control-sfnumerictextbox?isInternalRefresh=False)
 
-[How to set customized currency symbol in SfNumericTextBox](https://www.syncfusion.com/kb/10445/how-to-set-customized-currency-symbol-in-xamarin-forms-numeric-controls)
+[How to set customized currency symbol in SfNumericTextBox](https://support.syncfusion.com/kb/article/9131/how-to-set-customized-currency-symbol-in-xamarinforms-numeric-controls?isInternalRefresh=False)
 
-[How to display the value with currency symbol in SfNumericTextBox](https://www.syncfusion.com/kb/10443/how-to-display-the-value-with-currency-symbol-in-xamarin-forms-numeric-controls)
+[How to display the value with currency symbol in SfNumericTextBox](https://support.syncfusion.com/kb/article/9143/how-to-display-the-value-with-currency-symbol-in-xamarinforms-numeric-controls?isInternalRefresh=False)
 
 

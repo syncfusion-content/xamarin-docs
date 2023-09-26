@@ -30,7 +30,7 @@ The [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNum
 
 ## See also
 
-[How to change the culture of SfNumericTextBox](https://www.syncfusion.com/kb/7589/how-to-change-the-culture-of-numerictextbox)
+[How to change the culture of SfNumericTextBox](https://support.syncfusion.com/kb/article/6845/how-to-change-the-culture-of-numerictextbox?isInternalRefresh=False)
 
-[How to get the localized return key on the iOS keyboard in Xamarin.Forms numeric controls](https://www.syncfusion.com/kb/11630/how-to-get-the-localized-return-key-on-the-ios-keyboard-in-xamarin-forms-numeric-controls)
+[How to get the localized return key on the iOS keyboard in Xamarin.Forms numeric controls](https://support.syncfusion.com/kb/article/10234/how-to-get-the-localized-return-key-on-the-ios-keyboard-in-xamarin-forms-numeric-controls?isInternalRefresh=False)
 

@@ -20,7 +20,7 @@ You can get or set the index of the selected item using the [`SelectedIndex`](ht
 
 ### Set the index of item to be selected
 
-The [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedIndexProperty_) property holds the index of selected item in suggestion list. 
+The [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedIndex) property holds the index of selected item in suggestion list. 
 
 {% tabs %}
 

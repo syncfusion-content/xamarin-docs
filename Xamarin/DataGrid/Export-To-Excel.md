@@ -1058,7 +1058,7 @@ workBook.SaveAs(stream);
 
 ### Performance improvement
 
-Using [ExcelExportingOptions.CellsExportingEventHandler](http://help.syncfusion.com/cr/xamarin/sfgridconverter/Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellExcelExportingEventHandler.html) to customize settings of each cell will consume more memory and time. So, avoid using `CellsExportingEventHandler` when customizing large number of cells and instead of you can do the required customizations in the exported sheet. 
+Using [ExcelExportingOptions.CellsExportingEventHandler](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellExcelExportingEventHandler.html) to customize settings of each cell will consume more memory and time. So, avoid using `CellsExportingEventHandler` when customizing large number of cells and instead of you can do the required customizations in the exported sheet. 
 
 ### Formatting column without using CellsExportingEventHandler
 
@@ -1066,7 +1066,7 @@ You can perform cell level customization such as row-level styling and formattin
 
 In the following code snippet, NumberFormat for GridNumericColumn column is changed in the exported sheet after exporting without using `CellsExportingEventHandler`.
 
-Reference: http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting
+Reference: https://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting
 
 {% tabs %}
 {% highlight c# %}
@@ -1083,7 +1083,7 @@ workBook.ActiveSheet.Columns[4].NumberFormat = "0.0";
 
 In the following code snippet, the background color of the rows in Excel is changed based on the row index using conditional formatting for better performance.
 
-Reference: http://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting
+Reference: https://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting
 
 {% tabs %}
 {% highlight c# %}
@@ -1138,4 +1138,4 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to export a SfDataGrid to excel or PDF using ToolBarItems of a Page](https://www.syncfusion.com/kb/7395)
+[How to export a SfDataGrid to excel or PDF using ToolBarItems of a Page](https://support.syncfusion.com/kb/article/6526/how-to-export-a-sfdatagrid-to-excel-or-pdf-using-toolbaritems-of-a-page?isInternalRefresh=False)

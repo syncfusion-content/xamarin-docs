@@ -57,7 +57,7 @@ dataGrid.ColumnSizer = ColumnSizer.LastColumnFill;
 
 ## ColumnSizer.Star
 
-When the [SfDataGrid.ColumnSizer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ColumnSizer) is [Star](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.ColumnSizer.html), all the `GridColumns` are adjusted to an equal column width to fit within the view. Setting `ColumnSizer` to `Star` will disable the `HorizontalScrolling` in the SfDataGrid.
+When the [SfDataGrid.ColumnSizer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ColumnSizer) is [Star](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.ColumnSizer.html#Syncfusion_SfDataGrid_XForms_ColumnSizer_Star), all the `GridColumns` are adjusted to an equal column width to fit within the view. Setting `ColumnSizer` to `Star` will disable the `HorizontalScrolling` in the SfDataGrid.
 
 {% tabs %}
 {% highlight xaml %}
@@ -74,7 +74,7 @@ dataGrid.ColumnSizer = ColumnSizer.Star;
 
 ## ColumnSizer.Auto
 
-When the [SfDataGrid.ColumnSizer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ColumnSizer) is [Auto](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.ColumnSizer.html), the width of the `GridColumns` are adjusted based on the header text or cell contents.
+When the [SfDataGrid.ColumnSizer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ColumnSizer) is [Auto](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.ColumnSizer.html#Syncfusion_SfDataGrid_XForms_ColumnSizer_Auto), the width of the `GridColumns` are adjusted based on the header text or cell contents.
 
 {% tabs %}
 {% highlight xaml %}
@@ -120,7 +120,7 @@ textColumn.ColumnSizer = ColumnSizer.Auto;
 
 The `SfDataGrid` allows to fill the remaining width in view for any column using [GridColumn.ColumnSizer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html#Syncfusion_SfDataGrid_XForms_GridColumn_ColumnSizer) property.
 
-The `GridColumn.ColumnSizer` has higher priority than the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.ColumnSizer.html) property. Hence, individual columns having the `GridColumn.ColumnSizer` property set will not be included in the column sizer calculations of the `SfDataGrid`. To fill the column with remaining width in view, set the `GridColumn.ColumnSizer` property as [ColumnSizer.LastColumnFill](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.ColumnSizer.html#). Refer to the following code example to achieve the same:
+The `GridColumn.ColumnSizer` has higher priority than the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.ColumnSizer.html) property. Hence, individual columns having the `GridColumn.ColumnSizer` property set will not be included in the column sizer calculations of the `SfDataGrid`. To fill the column with remaining width in view, set the `GridColumn.ColumnSizer` property as [ColumnSizer.LastColumnFill](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.ColumnSizer.html#Syncfusion_SfDataGrid_XForms_ColumnSizer_LastColumnFill). Refer to the following code example to achieve the same:
 
 In the below code snippet, the SfDataGrid is applied with `ColumnSizer.Star` and the second column is applied with `ColumnSizer.LastColumnFill`. Hence the second column will take up the remaining space after other columns are rendered with star size.
 

@@ -331,10 +331,10 @@ private void ImageEditor_ImageEdited(object sender, ImageEditedEventArgs e)
 
 ## See also
 
-[How to import and export image from SQL DB](https://www.syncfusion.com/kb/9633/how-to-import-and-export-image-from-sql-db)
+[How to import and export image from SQL DB](https://support.syncfusion.com/kb/article/8547/how-to-import-and-export-image-from-sql-db?isInternalRefresh=False)
 
-[How to retrieve image from saved location](https://www.syncfusion.com/kb/8871/how-to-retrieve-image-from-saved-location)
+[How to retrieve image from saved location](https://support.syncfusion.com/kb/article/7821/how-to-retrieve-image-from-saved-location?isInternalRefresh=False)
 
-[How to change the image saving location](https://www.syncfusion.com/kb/8827/how-to-change-the-image-saving-location)
+[How to change the image saving location](https://support.syncfusion.com/kb/article/7930/how-to-change-the-image-saving-location?isInternalRefresh=False)
 
-[How to resolve application crash while saving images to device gallery](https://www.syncfusion.com/kb/8304/how-to-resolve-application-crash-while-saving-images-to-device-gallery)
+[How to resolve application crash while saving images to device gallery](https://support.syncfusion.com/kb/article/7371/how-to-resolve-application-crash-while-saving-images-to-device-gallery?isInternalRefresh=False)

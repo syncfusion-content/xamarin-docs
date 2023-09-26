@@ -179,8 +179,8 @@ You can restrict the text resizing using the [`IsResizable`](https://help.syncfu
 
 ## See also
 
-[How to add text after image is loaded in SfImageEditor](https://www.syncfusion.com/kb/10034/how-to-add-text-after-image-is-loaded-in-sfimageeditor)
+[How to add text after image is loaded in SfImageEditor](https://support.syncfusion.com/kb/article/8834/how-to-add-text-after-image-is-loaded-in-xamarinforms-image-editor-sfimageeditor?isInternalRefresh=False)
 
-[How to add custom toolbar to add shapes or text dynamically in Xamarin.Forms SfImageEditor](https://www.syncfusion.com/kb/10621/how-to-add-custom-toolbar-to-add-shapes-or-text-dynamically-in-xamarin-forms-sfimageeditor)
+[How to add custom toolbar to add shapes or text dynamically in Xamarin.Forms SfImageEditor](https://support.syncfusion.com/kb/article/9151/how-to-add-custom-toolbar-to-add-shapes-or-text-dynamically-in-xamarin-forms-sfimageeditor?isInternalRefresh=False)
 
-[How to rotate the text programmatically in SfImageEditor](https://www.syncfusion.com/kb/9735/how-to-rotate-the-text-programmatically-in-image-editor)
+[How to rotate the text programmatically in SfImageEditor](https://support.syncfusion.com/kb/article/8433/how-to-rotate-the-text-programmatically-in-image-editor?isInternalRefresh=False)

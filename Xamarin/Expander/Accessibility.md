@@ -34,4 +34,4 @@ The following image denotes the AutomationIds of inner elements.
 
 ## See also
 
-[How to access a named Expander inside a XAML DataTemplate in Xamarin.Forms (SfExpander)](https://www.syncfusion.com/kb/11374/)
+[How to access a named Expander inside a XAML DataTemplate in Xamarin.Forms (SfExpander)](https://support.syncfusion.com/kb/article/10071/how-to-access-a-named-expander-inside-a-xaml-datatemplate-in-xamarin-forms-sfexpander?isInternalRefresh=False)

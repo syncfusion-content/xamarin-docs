@@ -185,7 +185,7 @@ e.ColumnWidth = 130;
 
 You can download the sample for reference from the following link.
 
-Sample link: [DateTimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DateTimePickerSample1186467030)
+Sample link: [DateTimePicker](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DateTimePickerSample1186467030)
 
 ## Add caption
 

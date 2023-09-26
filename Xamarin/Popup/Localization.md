@@ -336,4 +336,4 @@ public MainPage()
 
 ![Pop-up with localized text](PopupLayout_images/PopUpLocalization.png)
 
-You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PopUpLocalization-329547354).
+You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/PopUpLocalization-329547354).

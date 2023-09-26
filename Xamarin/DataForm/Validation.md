@@ -20,7 +20,7 @@ The supported built in validations are as follows:
 
 ### Using INotifyDataErrorInfo
 
-You can validate the data by implementing the [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?redirectedfrom=MSDN&view=net-5.0) interface in the data object class.
+You can validate the data by implementing the [INotifyDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?redirectedfrom=MSDN&view=net-5.0) interface in the data object class.
 
 {% tabs %}
 {% highlight c# %}
@@ -107,7 +107,7 @@ You can download the entire source code [here](https://github.com/SyncfusionExam
 
 You can validate the data using data annotation attributes.
 
-The numeric type like Int, Double, Decimal properties can be validated using the [Range](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.rangeattribute?view=netframework-4.8) attribute.
+The numeric type like Int, Double, Decimal properties can be validated using the [Range](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.rangeattribute?view=netframework-4.8) attribute.
 
 {% tabs %}
 {% highlight c# %}
@@ -125,7 +125,7 @@ public int EmployeeID
 {% endhighlight %}
 {% endtabs %}
 
-The String type property can be validated using [Required](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute?view=netframework-4.8) and [StringLength](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.stringlengthattribute?view=netframework-4.8) attributes.
+The String type property can be validated using [Required](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute?view=netframework-4.8) and [StringLength](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.stringlengthattribute?view=netframework-4.8) attributes.
 
 {% tabs %}
 {% highlight c# %}
@@ -354,7 +354,7 @@ public string Name
 
 ## How to validate the property value based on another value
 
-To validate one property value based on another property value, use the [property changed event](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged.propertychanged?redirectedfrom=MSDN&view=net-5.0) and [Validate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Validate(String).html) methods.
+To validate one property value based on another property value, use the [property changed event](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged.propertychanged?redirectedfrom=MSDN&view=net-5.0) and [Validate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Validate(String).html) methods.
 
 Here, AccountNumber and AccountNumber1 fields are validated.
 
@@ -546,5 +546,5 @@ Used **Button** inside a **Grid** to display the valid and invalid message in th
 
 ## See also
 
-[How to validate SfDataForm on page loading](https://www.syncfusion.com/kb/9058/)                                                                                                                                                                                                                       
-[How to commit and validate the custom editor value to corresponding DataObject property in Xamarin.Forms SfDataForm](https://www.syncfusion.com/kb/10224/)
+[How to validate SfDataForm on page loading](https://support.syncfusion.com/kb/article/7934/how-to-validate-sfdataform-on-page-loading?isInternalRefresh=False)                                                                                                                                                                                                                       
+[How to commit and validate the custom editor value to corresponding DataObject property in Xamarin.Forms SfDataForm](https://support.syncfusion.com/kb/article/9041/how-to-commit-and-validate-the-custom-editor-value-to-corresponding-dataobject-property-in?isInternalRefresh=False)

@@ -31,7 +31,7 @@ Text
 The String type property and any other type apart from the following specified cases.
 </td>
 <td>
-{{'[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
+{{'[Entry](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -46,7 +46,7 @@ The String type property with multi line text.
 [DataType(DataType.MultilineText)] 
 </td>
 <td>
-{{'[Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms)'| markdownify }}
+{{'[Editor](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -102,7 +102,7 @@ Date
 The DateTime type property and the property with [DataType(DataType.Date)] and [DataType(DataType.DateTime)] attributes.
 </td>
 <td>
-{{'[DatePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.datepicker?view=xamarin-forms)'| markdownify }}
+{{'[DatePicker](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.datepicker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -116,7 +116,7 @@ Time
 The property with [DataType(DataType.Time)] attribute.
 </td>
 <td>
-{{'[TimePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.timepicker?view=xamarin-forms)'| markdownify }}
+{{'[TimePicker](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.timepicker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -172,7 +172,7 @@ Switch
 Bool type property.
 </td>
 <td>
-{{'[Switch](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms)'| markdownify }}
+{{'[Switch](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -187,7 +187,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-{{'[Picker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.picker?view=xamarin-forms)'| markdownify }}
+{{'[Picker](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.picker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -232,7 +232,7 @@ The String type property and property with
 [DataType(DataType.Password)] attribute.
 </td>
 <td>
-{{'[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
+{{'[Entry](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -427,7 +427,7 @@ dataForm.ValidationMode = ValidationMode.LostFocus;
 
 You should manually commit the custom DataFormItem editor value by using [OnCommitValue](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.Editors.DataFormEditor-1.html#Syncfusion_XForms_DataForm_Editors_DataFormEditor_1_OnCommitValue__0_) override method of [DataFormEditor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.Editors.DataFormEditor-1.html) class on custom editor `Value` or `Focus changed` event which is used to update the custom editor value in respective property in [DataObject](https://help.syncfusion.com/xamarin/dataform/getting-started#setting-data-object) based on dataform [commit mode](https://help.syncfusion.com/xamarin/dataform/editing#commit-mode) set. 
 
-Also , you should manually validate the custom editor value in by using [OnValidateValue](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.Editors.DataFormEditor-1.html#Syncfusion_XForms_DataForm_Editors_DataFormEditor_1_OnValidateValue__0_) override method of `DataFormEditor` class on custom editor `Value` or `Focus changed` event which is used to validate the custom editor value based on data form [validation mode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_ValidationMode) set . In the override method for OnValidateValue, you need to return [DataForm.Validate(string)](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Validate) method in order to validate the particular data item.
+Also , you should manually validate the custom editor value in by using [OnValidateValue](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.Editors.DataFormEditor-1.html#Syncfusion_XForms_DataForm_Editors_DataFormEditor_1_OnValidateValue__0_) override method of `DataFormEditor` class on custom editor `Value` or `Focus changed` event which is used to validate the custom editor value based on data form [validation mode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_ValidationMode) set . In the override method for OnValidateValue, you need to return [DataForm.Validate(string)](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Validate_System_String_) method in order to validate the particular data item.
 
 Also, you should manually update the value to the custom editor by using [OnUpdateValue](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.Editors.DataFormEditor-1.html#Syncfusion_XForms_DataForm_Editors_DataFormEditor_1_OnUpdateValue_Syncfusion_XForms_DataForm_DataFormItem__0_) override method of `DataFormEditor` class on custom editor while bound the value from the Model class.
 
@@ -435,7 +435,7 @@ Also, you should manually update the value to the custom editor by using [OnUpda
 
 ## Support for Email editor
 
-You can load the Email editor by changing `KeyBoard` type in the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html) event.
+You can load the Email editor by changing `KeyBoard` type in the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_AutoGeneratingDataFormItem) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -452,7 +452,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Commit mode
 
-The [CommitMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Commit) determines when the value should be committed to the data object.
+The [CommitMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.CommitMode.html) determines when the value should be committed to the data object.
 
 The supported commit modes are as follows:
 
@@ -489,7 +489,7 @@ The value will be committed immediately when it is changed.
 
 ### Explicit
 
-The value should be committed manually by calling the [SfDataForm.Commit](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Commit().html) or [SfDataForm.Commit(propertyName)](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Commit(String).html) method.
+The value should be committed manually by calling the [SfDataForm.Commit](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Commit) or [SfDataForm.Commit(propertyName)](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Commit(String).html) method.
 
 The following code commits the value of all the properties in the data object:
 
@@ -719,8 +719,8 @@ You can download the entire source code of this demo from here [Two-wayDataBindi
 
 ## See also
 
-[How to save or cancel the edited DataForm data in Xamarin.Forms (SfDataForm)](https://www.syncfusion.com/kb/11312/)                                                                                                                                                                                                                                                                    
-[How to programmatically implement converter to Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11541/)                                                                                                                                                                                          
-[How to register common editor for same data type properties in Xamarin.Forms DataForm business object](https://www.syncfusion.com/kb/10322/)                                                                                                                                                                                   
-[How to change the editor visibility based on another editor in Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11189/)                                                                                                                                                                  
-[How to update editor value based on another editor in Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11192/)
+[How to save or cancel the edited DataForm data in Xamarin.Forms (SfDataForm)](https://support.syncfusion.com/kb/article/9831/how-to-save-or-cancel-the-edited-dataform-data-in-xamarin-forms-sfdataform?isInternalRefresh=False)                                                                                                                                                                                                                                                                    
+[How to programmatically implement converter to Xamarin.Forms DataForm (SfDataForm)](https://support.syncfusion.com/kb/article/9933/how-to-programmatically-implement-converter-to-xamarin-forms-dataform-sfdataform?isInternalRefresh=False)                                                                                                                                                                                          
+[How to register common editor for same data type properties in Xamarin.Forms DataForm business object](https://support.syncfusion.com/kb/article/8921/how-to-register-common-editor-for-same-data-type-properties-in-xamarin-forms-dataform?isInternalRefresh=False)                                                                                                                                                                                   
+[How to change the editor visibility based on another editor in Xamarin.Forms DataForm (SfDataForm)](https://support.syncfusion.com/kb/article/9748/how-to-change-the-editor-visibility-based-on-another-editor-in-xamarin-forms-dataform?isInternalRefresh=False)                                                                                                                                                                  
+[How to update editor value based on another editor in Xamarin.Forms DataForm (SfDataForm)](https://support.syncfusion.com/kb/article/9745/how-to-update-editor-value-based-on-another-editor-in-xamarin-forms-dataform-sfdataform?isInternalRefresh=False)

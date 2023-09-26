@@ -313,12 +313,12 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### See also
 
-[How to remove a thousand separators in the numeric text field in Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11527/)                                                                                                                                                                                                
-[How to resolve missing decimal point issue on Samsung Devices (S6, S8) numeric keyboard in DataForm ?](https://www.syncfusion.com/kb/10068/)
+[How to remove a thousand separators in the numeric text field in Xamarin.Forms DataForm (SfDataForm)](https://support.syncfusion.com/kb/article/9912/how-to-remove-a-thousand-separators-in-the-numeric-text-field-in-xamarin-forms-dataform?isInternalRefresh=False)                                                                                                                                                                                                
+[How to resolve missing decimal point issue on Samsung Devices (S6, S8) numeric keyboard in DataForm ?](https://support.syncfusion.com/kb/article/8892/how-to-resolve-missing-decimal-point-issue-on-samsung-devices-s6-s8-numeric-keyboard-in?isInternalRefresh=False)
 
 ## Date editor
 
-In the date editor, the [DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/) will be loaded.
+In the date editor, the [DatePicker](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.datepicker?view=xamarin-forms) will be loaded.
 
 ### Setting null value in date editor
 
@@ -933,12 +933,12 @@ N>[View sample in GitHub](https://github.com/SyncfusionExamples/multi-select-dro
 
 ### See also
 
-[How to make editable drop down in Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11272/)                                                                                                                                                                                                                                                                                                                                                                           
-[How to add entered text to the dropdown collection in Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11402/)
+[How to make editable drop down in Xamarin.Forms DataForm (SfDataForm)](https://support.syncfusion.com/kb/article/9818/how-to-make-editable-drop-down-in-xamarin-forms-dataform-sfdataform?isInternalRefresh=False)                                                                                                                                                                                                                                                                                                                                                                           
+[How to add entered text to the dropdown collection in Xamarin.Forms DataForm (SfDataForm)](https://support.syncfusion.com/kb/article/10076/how-to-add-entered-text-to-the-dropdown-collection-in-xamarin-forms-dataform-sfdataform?isInternalRefresh=False)
 
 ## Picker editor
 
-In the picker editor, the [Picker](https://developer.xamarin.com/api/type/Xamarin.Forms.Picker/) will be loaded.
+In the picker editor, the [Picker](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.picker?view=xamarin-forms) will be loaded.
 
 ### Changing title in the Picker
 
@@ -1108,11 +1108,11 @@ N> `PickerEditor` not supported in `Xamarin.Forms.UWP`.
 
 ### See also
 
-[How to load the picker editor ItemsSource asynchronously in Xamarin DataForm ?](https://www.syncfusion.com/kb/9748/)                                                                                                                                                                                           
-[How to load the picker editor ItemsSource from SQLite offline database in Xamarin.Forms DataForm?](https://www.syncfusion.com/kb/9771/)                                                                                                                        
-[How to add SfDatePicker to Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11199/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
-[How to set a blank value to a picker editor in Xamarin.Forms DataForm](https://www.syncfusion.com/kb/10349/)                                                                                                                                                                                                                                                                                                                                                                                                                               
-[How to add custom picker editor using SfPicker in Xamarin.Forms DataForm?](https://www.syncfusion.com/kb/10347/)
+[How to load the picker editor ItemsSource asynchronously in Xamarin DataForm ?](https://support.syncfusion.com/kb/article/8445/how-to-load-the-picker-editor-itemssource-asynchronously-in-xamarin-dataform?isInternalRefresh=False)                                                                                                                                                                                           
+[How to load the picker editor ItemsSource from SQLite offline database in Xamarin.Forms DataForm?](https://support.syncfusion.com/kb/article/8626/how-to-load-the-picker-editor-itemssource-from-sqlite-offline-database-in-xamarin-forms?isInternalRefresh=False)                                                                                                                        
+[How to add SfDatePicker to Xamarin.Forms DataForm (SfDataForm)](https://support.syncfusion.com/kb/article/9673/how-to-add-sfdatepicker-to-xamarin-forms-dataform-sfdataform?isInternalRefresh=False)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+[How to set a blank value to a picker editor in Xamarin.Forms DataForm](https://support.syncfusion.com/kb/article/8993/how-to-set-a-blank-value-to-a-picker-editor-in-xamarin-forms-dataform?isInternalRefresh=False)                                                                                                                                                                                                                                                                                                                                                                                                                               
+[How to add custom picker editor using SfPicker in Xamarin.Forms DataForm?](https://support.syncfusion.com/kb/article/8995/how-to-add-custom-picker-editor-in-xamarinforms-dataform?isInternalRefresh=False)
 
 ## NumericUpDown editor
 
@@ -1248,7 +1248,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Password editor
 
-In the password editor, the [Entry](https://developer.xamarin.com/guides/xamarin-forms/user-interface/text/entry/) is loaded.
+In the password editor, the [Entry](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry) is loaded.
 
 {% tabs %}
 {% highlight c# %}
@@ -1273,7 +1273,7 @@ public string Password
 
 ### See also
 
-[How to add custom Password editor in SfDataForm?](https://www.syncfusion.com/kb/9649/)
+[How to add custom Password editor in SfDataForm?](https://support.syncfusion.com/kb/article/8571/how-to-add-custom-password-editor-in-sfdataform?isInternalRefresh=False)
 
 ## RadioGroup editor
 
@@ -1449,7 +1449,7 @@ When `PasswordDelay` is enabled, you can handle the duration of the displaying t
 
 ### See also
 
-[How to mask credit card number in Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11542/)
+[How to mask credit card number in Xamarin.Forms DataForm (SfDataForm)](https://support.syncfusion.com/kb/article/9931/how-to-mask-credit-card-number-in-xamarin-forms-dataform-sfdataform?isInternalRefresh=False)
 
 ## AutoComplete editor
 

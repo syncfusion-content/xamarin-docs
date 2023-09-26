@@ -698,7 +698,7 @@ public class BookInfoRepository : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-Download the entire sample from GitHub [here]https://github.com/SyncfusionExamples/xamarin-forms-listview-itemtapped-mvvm).
+Download the entire sample from GitHub [here](https://github.com/SyncfusionExamples/xamarin-forms-listview-itemtapped-mvvm).
 
 ### Handling ItemHolding action
 

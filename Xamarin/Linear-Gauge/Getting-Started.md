@@ -60,9 +60,9 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching an application on each platform with SfLinearGauge.
 
@@ -455,7 +455,7 @@ You can find the complete getting started sample from this [`link`](https://gith
 
 ## See also
 
-[How to resolve gauge not rendering issue in Xamarin.Forms for iOS](https://www.syncfusion.com/kb/7994/how-to-resolve-sfgauge-not-rendering-issue-in-xamarin-forms-for-ios)
+[How to resolve gauge not rendering issue in Xamarin.Forms for iOS](https://support.syncfusion.com/kb/article/7075/how-to-resolve-sfgauge-not-rendering-issue-in-xamarinforms-for-ios-lineargauge-?isInternalRefresh=False)
 
-[How to design a thermometer using the linear gauge](https://www.syncfusion.com/kb/11384/how-to-design-a-thermometer-using-the-xamarin-forms-linear-gauge-sflineargauge)
+[How to design a thermometer using the linear gauge](https://support.syncfusion.com/kb/article/10007/how-to-design-thermometer-using-the-xamarin-linear-gauge?isInternalRefresh=False)
 

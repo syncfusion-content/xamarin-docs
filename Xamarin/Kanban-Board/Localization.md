@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization in Xamarin Kanban Board (SfKanban)
 
-You can localize [`SfKanban`](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html) in all the platforms by adding a .resx file in a .NET Standard project alone. The following steps describe how to localize SfKanban in a project and you can download the complete sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PCL_Local1653220814.zip).
+You can localize [`SfKanban`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html) in all the platforms by adding a .resx file in a .NET Standard project alone. The following steps describe how to localize SfKanban in a project and you can download the complete sample from this [`link`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/PCL_Local1653220814.zip).
  
 N> Here, the resources have been already created for some cultures and shared them on [`Syncfusion GitHub`](https://github.com/syncfusion/xamarin-localized-texts) for your convenience. 
 

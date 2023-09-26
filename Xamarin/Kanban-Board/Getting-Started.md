@@ -61,9 +61,9 @@ Location : {Installed location}/{version}/Xamarin/lib
 </table>
 
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching an application on each platform with kanban
 
@@ -116,7 +116,7 @@ Android platform does not require any additional configuration to render the kan
 
 ## Initialize Kanban
 
-Import ['SfKanban'](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html) namespace as shown below in your respective page,
+Import ['SfKanban'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html) namespace as shown below in your respective page,
 
 {% tabs %}
 
@@ -132,7 +132,7 @@ using Syncfusion.SfKanban.XForms;
 
 {% endtabs %}
 
-Create an instance of ['SfKanban'](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html) control and set to Content property of a Page.
+Create an instance of ['SfKanban'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html) control and set to Content property of a Page.
 
 {% tabs %}
 
@@ -154,7 +154,7 @@ this.Content = kanban;
 
 ## Initialize view model
 
-Create a ViewModel class with a collection property to hold a collection of [`KanbanModel`](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanModel.html) instances as shown below. Each [`KanbanModel`](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanModel.html) instance represent a card in Kanban control.
+Create a ViewModel class with a collection property to hold a collection of [`KanbanModel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanModel.html) instances as shown below. Each [`KanbanModel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanModel.html) instance represent a card in Kanban control.
 
 {% highlight C# %}
 
@@ -209,7 +209,7 @@ public class ViewModel
 
 {% endhighlight %}
 
-Set the `ViewModel` instance as the `BindingContext` of your Page; this is done to bind properties of `ViewModel` to [`SfKanban`](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html).
+Set the `ViewModel` instance as the `BindingContext` of your Page; this is done to bind properties of `ViewModel` to [`SfKanban`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html).
 
 N> Add namespace of ViewModel class in your XAML page if you prefer to set BindingContext in XAML.
 
@@ -240,7 +240,7 @@ this.BindingContext = new ViewModel();
 
 ## Binding data to SfKanban
 
-Bind the above data to [`SfKanban`](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html) using [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html#Syncfusion_SfKanban_XForms_SfKanban_ItemsSource) property.
+Bind the above data to [`SfKanban`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html) using [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html#Syncfusion_SfKanban_XForms_SfKanban_ItemsSource) property.
 
 {% tabs %}
 
@@ -261,7 +261,7 @@ kanban.SetBinding(SfKanban.ItemsSourceProperty, "Cards");
 
 ## Defining columns
 
-The columns are generated automatically based on the distinct values of ['KanbanModel.Category'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanModel.html#Syncfusion_SfKanban_XForms_KanbanModel_Category) from ['ItemsSource'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html#Syncfusion_SfKanban_XForms_SfKanban_ItemsSource). But, you can also define the columns by setting ['AutoGenerateColumns'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html#Syncfusion_SfKanban_XForms_SfKanban_AutoGenerateColumns) property to false and adding ['KanbanColumn'](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanColumn.html) instance to ['Columns'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html#Syncfusion_SfKanban_XForms_SfKanban_Columns) property of ['SfKanban'](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html).
+The columns are generated automatically based on the distinct values of ['KanbanModel.Category'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanModel.html#Syncfusion_SfKanban_XForms_KanbanModel_Category) from ['ItemsSource'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html#Syncfusion_SfKanban_XForms_SfKanban_ItemsSource). But, you can also define the columns by setting ['AutoGenerateColumns'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html#Syncfusion_SfKanban_XForms_SfKanban_AutoGenerateColumns) property to false and adding ['KanbanColumn'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanColumn.html) instance to ['Columns'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html#Syncfusion_SfKanban_XForms_SfKanban_Columns) property of ['SfKanban'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html).
 {% tabs %}
 
 {% highlight xaml %}
@@ -313,7 +313,7 @@ kanban.Columns.Add(doneColumn);
 
 {% endtabs %}
 
-Define the categories of column using [`Categories`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanColumn.html#Syncfusion_SfKanban_XForms_KanbanColumn_Categories) property of [`KanbanColumn`](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanColumn.html) and cards will be added to the respective columns.
+Define the categories of column using [`Categories`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanColumn.html#Syncfusion_SfKanban_XForms_KanbanColumn_Categories) property of [`KanbanColumn`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanColumn.html) and cards will be added to the respective columns.
 
 {% highlight C# %}
 
@@ -330,6 +330,6 @@ This is how the final output will look like on iOS, Android and Windows devices.
 
 ## See also
 
-[How to resolve SfKanban not rendering issue in iOS and UWP](https://www.syncfusion.com/kb/7171/how-to-resolve-sfkanban-not-rendering-issue-in-ios-and-uwp)
+[How to resolve SfKanban not rendering issue in iOS and UWP](https://support.syncfusion.com/kb/article/6632/how-to-resolve-kanban-not-rendering-issue-in-ios-and-uwp?isInternalRefresh=False)
 
-[How to make Syncfusion Xamarin.Forms SfKanban to work in UWP in release mode when .NET Native tool chain is enabled](https://www.syncfusion.com/kb/7170/how-to-make-syncfusion-xamarin-forms-sfkanban-to-work-in-uwp-in-release-mode-when-net)
+[How to make Syncfusion Xamarin.Forms SfKanban to work in UWP in release mode when .NET Native tool chain is enabled](https://support.syncfusion.com/kb/article/6631/how-to-make-syncfusion-xamarin-forms-sfkanban-to-work-in-uwp-in-release-mode-when-net?isInternalRefresh=False)

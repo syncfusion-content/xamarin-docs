@@ -9,11 +9,11 @@ documentation: ug
 
 # Placeholder in Xamarin Kanban Board (SfKanban)
 
-The placeholder is to denote a card's new position in the [`KanbanColumn`](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanColumn.html). It will appear while dragging a card over the column.
+The placeholder is to denote a card's new position in the [`KanbanColumn`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanColumn.html). It will appear while dragging a card over the column.
 
 ### Placeholder style
 
-[`PlaceholderStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html#Syncfusion_SfKanban_XForms_SfKanban_PlaceholderStyle) property is used to customize the placeholder. Following [`KanbanPlaceholderStyle`](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.html) properties are used to customize its appearance.
+[`PlaceholderStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html#Syncfusion_SfKanban_XForms_SfKanban_PlaceholderStyle) property is used to customize the placeholder. Following [`KanbanPlaceholderStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.html) properties are used to customize its appearance.
 
 * [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.html#Syncfusion_SfKanban_XForms_KanbanPlaceholderStyle_BackgroundColor)  	 - This property is used to change the background color of the placeholder.
 * [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanPlaceholderStyle.html#Syncfusion_SfKanban_XForms_KanbanPlaceholderStyle_BorderColor) 	 	 - This property is used to change the border color of the placeholder.

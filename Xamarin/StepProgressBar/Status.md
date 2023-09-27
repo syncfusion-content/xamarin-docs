@@ -193,7 +193,7 @@ private void Step_StatusChanged(object sender, Syncfusion.XForms.ProgressBar.Sta
 {% endtabs %}
 
 ### StepTapped
-The ['StepTappedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.SfStepProgressBar.html#Syncfusion_XForms_ProgressBar_SfStepProgressBar_StepTapped) will be triggered when marker in [StepView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.StepView.html) was tapped in [StepProgressBar](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.SfStepProgressBar.html).  
+The ['StepTappedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.SfStepProgressBar.html#Syncfusion_XForms_ProgressBar_SfStepProgressBar_StepTapped) will be triggered when marker in [StepView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.StepView.html) was tapped in [StepProgressBar](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.StepView.html).  
 
 {% tabs %}
 {% highlight c# %}

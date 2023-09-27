@@ -167,9 +167,9 @@ The size of the legend icon can be customized using the [`IconHeight`](https://h
 
 Legend label can be customized using the following properties available in [`LabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstChartLegend.html#Syncfusion_SfSunburstChart_XForms_SunburstChartLegend_LabelStyle):
 
-* [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.html#Syncfusion_SfSunburstChart_XForms_SunburstLegendLabelStyle_TextColor): Customizes the text color of the label.
+* [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.html#Syncfusion_SfSunburstChart_XForms_SunburstLegendLabelStyle_FontSize): Customizes the text color of the label.
 * [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.html#Syncfusion_SfSunburstChart_XForms_SunburstLegendLabelStyle_FontSize): Customizes the font size of the label.
-* [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.html#Syncfusion_SfSunburstChart_XForms_SunburstLegendLabelStyle_FontAttributes): Customizes the font attributes such as Bold or Italic.
+* [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.html#Syncfusion_SfSunburstChart_XForms_SunburstLegendLabelStyle_FontSize): Customizes the font attributes such as Bold or Italic.
 * [`Margin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.html#Syncfusion_SfSunburstChart_XForms_SunburstLegendLabelStyle_Margin): Sets the specified margin for legend labels.
 * [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.html#Syncfusion_SfSunburstChart_XForms_SunburstLegendLabelStyle_FontFamily): Sets the specified font family for labels.
 

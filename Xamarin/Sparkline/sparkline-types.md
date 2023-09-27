@@ -54,7 +54,7 @@ SfLineSparkline lineSparkline = new SfLineSparkline()
 * [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfSparklineBase.html#Syncfusion_SfSparkline_XForms_SfSparklineBase_StrokeWidth) - used to change the stroke width of the sparkline.
 * [`StrokeColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfSparklineBase.html#Syncfusion_SfSparkline_XForms_SfSparklineBase_StrokeColor) - used to change the stroke color of the sparkline.
 
-* [`MinimumYValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfSparklineBase.html#Syncfusion_SfSparkline_XForms_SfSparklineBase_MinimumYValue) - used to set the minimum value of the y-axis in sparkline.
+* [`MinimumYValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfSparklineBase.html#Syncfusion_SfSparkline_XForms_SfSparklineBase_MaximumYValue) - used to set the minimum value of the y-axis in sparkline.
 
 * [`MaximumYValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfSparklineBase.html#Syncfusion_SfSparkline_XForms_SfSparklineBase_MaximumYValue) - used to set the maximum value of the y-axis in sparkline.
 
@@ -131,16 +131,16 @@ SfAreaSparkline areaSparkline = new SfAreaSparkline()
 
 [`SfWinLossSparkline`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfWinLossSparkline.html) is used to show whether each value is positive or negative visualizing a Win/Loss scenario. You can use the following properties to customize the appearance.
 
-* [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfSparklineBase.html#Syncfusion_SfSparkline_XForms_SfSparklineBase_StrokeWidth) - used to change the stroke width of the sparkline.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfSparklineBase.html#Syncfusion_SfSparkline_XForms_SfSparklineBase_StrokeColor) - used to change the stroke width of the sparkline.
 * [`StrokeColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfSparklineBase.html#Syncfusion_SfSparkline_XForms_SfSparklineBase_StrokeColor) - used to change the stroke color of the sparkline.
 
 * [`MinimumYValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfSparklineBase.html#Syncfusion_SfSparkline_XForms_SfSparklineBase_MinimumYValue) - used to set the minimum value of the y-axis in sparkline.
 
-* [`MaximumYValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfSparklineBase.html#Syncfusion_SfSparkline_XForms_SfSparklineBase_MaximumYValue) - used to set the maximum value of the y-axis in sparkline.
+* [`MaximumYValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfSparklineBase.html#Syncfusion_SfSparkline_XForms_SfSparklineBase_MinimumYValue) - used to set the maximum value of the y-axis in sparkline.
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfWinLossSparkline.html#Syncfusion_SfSparkline_XForms_SfWinLossSparkline_Color) - used to change the interior color of the positive columns.
 
-* [`NeutralPointColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfWinLossSparkline.html#Syncfusion_SfSparkline_XForms_SfWinLossSparkline_NeutralPointColor) - used to change the interior color of the neutral columns.
+* [`NeutralPointColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfWinLossSparkline.html#Syncfusion_SfSparkline_XForms_SfWinLossSparkline_Color) - used to change the interior color of the neutral columns.
 
 The following code is used to create the [`SfWinLossSparkline`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfWinLossSparkline.html).
 

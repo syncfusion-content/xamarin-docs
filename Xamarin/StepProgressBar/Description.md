@@ -86,7 +86,7 @@ To customize the description with different formatting style, PrimaryFormattedTe
 {% endhighlight %}
 
 {% endtabs %}
-N> To learn more about defining formats for different span in a text, refer to [FormattedString](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.formattedstring?view=xamarin-forms).
+N> To learn more about defining formats for different span in a text, refer to [FormattedString](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.formattedstring?view=xamarin-forms).
 
 ![StepProgressBar stepview formatted text](overview_images/formatted.png)
 
@@ -270,4 +270,4 @@ namespace StepProgressBar
 
 ![StepProgressBar image customization](overview_images/Steps-Image.png)
 
-You can download the entire source of this demo from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/StepProgressBar-1354258111)
+You can download the entire source of this demo from [here](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.StepView.html)

@@ -9,9 +9,9 @@ documentation: ug
 
 # Right to left(RTL) in Xamarin TreeView (SfTreeView)
 
-TreeView supports to change the flow of text to the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft`. TreeView supports RTL in Xamarin.Forms version 3.0 and above.
+TreeView supports to change the flow of text to the right-to-left direction by setting the [FlowDirection](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft`. TreeView supports RTL in Xamarin.Forms version 3.0 and above.
 
-N> Specific platform setup is required to enable right-to-left localization. For platform settings you can refer [here](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/right-to-left#platform-setup).
+N> Specific platform setup is required to enable right-to-left localization. For platform settings you can refer [here](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/right-to-left#platform-setup).
 
 {% tabs %}
 {% highlight xaml %}
@@ -31,7 +31,7 @@ treeView.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-TreeView also supports RTL when device's flow direction is changed, it is achieved by setting the `FlowDirection` to [Device.FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.device.flowdirection?view=xamarin-forms#Xamarin_Forms_Device_FlowDirection).
+TreeView also supports RTL when device's flow direction is changed, it is achieved by setting the `FlowDirection` to [Device.FlowDirection](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.device.flowdirection?view=xamarin-forms#Xamarin_Forms_Device_FlowDirection).
 
 {% tabs %}
 {% highlight xaml %}
@@ -78,4 +78,4 @@ N> When a label is loaded in the `ItemTemplate`, the right-to-left direction is 
 
 ## See also
 
-[How to work with RTL in Xamarin.Forms TreeView (SfTreeView)](https://www.syncfusion.com/kb/11414/how-to-work-with-rtl-in-xamarin-forms-treeview-sftreeview)
+[How to work with RTL in Xamarin.Forms TreeView (SfTreeView)](https://support.syncfusion.com/kb/article/9984/how-to-work-with-rtl-in-xamarin-forms-treeview-sftreeview?isInternalRefresh=False)

@@ -19,7 +19,7 @@ SfTreeView supports to check multiple items through binding the [CheckedItems](h
 
 N> Set [ItemTemplateContextType](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_ItemTemplateContextType) as `Node` to bind the `TreeViewNode.IsChecked` property to `CheckBox` in `ItemTemplate`. To know more about `ItemTemplateContextType` click [here](https://help.syncfusion.com/xamarin/treeview/appearance#bindingcontext-for-itemtemplate). 
 
-N> TreeView process and sets [TreeViewNode.IsChecked]((https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_IsChecked)) based on `CheckedItems` only when you are binding `ItemsSource`.
+N> TreeView process and sets [TreeViewNode.IsChecked](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_IsChecked) based on `CheckedItems` only when you are binding `ItemsSource`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -171,7 +171,7 @@ public class FileManagerViewModel
 {% endhighlight %}
 {% endtabs %}
 
-Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/checkbox_bound_mode)
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/xamarin-treeview-checkbox-in-mvvm)
 
 ![Xamarin Forms BoundMode TreeView with CheckBox](TreeView_images/BoundMode_CheckBox.png)
 
@@ -296,13 +296,13 @@ You can directly set the checkbox state by setting the [TreeViewNode.IsChecked](
 {% endhighlight %}
 {% endtabs %}
 
-Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/checkbox_unbound_mode)
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/xamarin-forms-treeview-with-checkbox)
 
 ![Xamarin Forms UnboundMode TreeView with CheckBox](TreeView_images/UnboundMode_CheckBox.png)
 
 ## CheckBox State
 
-SfTreeView process [IsChecked]((https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_IsChecked)) property (checkbox state) of `TreeViewNode` based on [CheckBoxMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_CheckBoxMode) property. `CheckBoxMode` defines how parent and child node's checkbox state updates when user check or un-check the node. By default, its value is `None`. Checkbox contains the following three states:
+SfTreeView process [IsChecked](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_IsChecked) property (checkbox state) of `TreeViewNode` based on [CheckBoxMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_CheckBoxMode) property. `CheckBoxMode` defines how parent and child node's checkbox state updates when user check or un-check the node. By default, its value is `None`. Checkbox contains the following three states:
 
 * `None`: Check and uncheck are updates only in the view, but it will not affect the CheckedItems collection.
 * `Individual`: Checkbox state affect individual node only, and it does not affect the parent node or child nodes checkbox state or `IsChecked` property value.

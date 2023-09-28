@@ -13,7 +13,7 @@ This section provides a quick overview for getting started with the TreeView for
 
 ## Assembly Deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/account/manage-trials/downloads), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -62,9 +62,9 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching the TreeView on Each Platform
 
@@ -160,7 +160,7 @@ In this walk through, you will create a new application with the TreeView that i
 
 ## Creating the Project
 
-Create a new blank [(Xamarin.Forms.NET Standard) application](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/get-started/first-app/?pivots=windows) in Xamarin Studio or Visual Studio for Xamarin.Forms.
+Create a new blank [(Xamarin.Forms.NET Standard) application](https://learn.microsoft.com/en-us/xamarin/get-started/first-app/?pivots=windows-vs2022) in Xamarin Studio or Visual Studio for Xamarin.Forms.
 
 ## Adding the tree view in Xamarin.Forms 
 
@@ -967,9 +967,9 @@ treeView.RefreshView();
 
 ## See also
 
-[How to resolve SfTreeView not rendering issue in iOS and UWP](https://www.syncfusion.com/kb/11260)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-[How to sort TreeView nodes in Xamarin.Forms (SfTreeView)](https://www.syncfusion.com/kb/11315)                                                                                                                                                                                                                                                                                                                                                                                 
-[How to filter Xamarin.Forms TreeView (SfTreeView)](https://www.syncfusion.com/kb/11350)                                                                                                                                                                                                                                                                                                                    
-[How to add nodes to bound mode TreeView in Xamarin.Forms (SfTreeView)](https://www.syncfusion.com/kb/11487)                                                                                                                                                                                                                                                                                                                                                                                            
-[How to hide expander in Xamarin.Forms TreeView (SfTreeView)](https://www.syncfusion.com/kb/11422)                                                                                                                                                                                                                                      
-[How to show Xamarin.Forms TreeView (SfTreeView) in popup using Rg.Plugin.Popup framework](https://www.syncfusion.com/kb/11316)
+[How to resolve SfTreeView not rendering issue in iOS and UWP](https://support.syncfusion.com/kb/article/9688/how-to-resolve-xamarin-renderer-assemblies-issues-in-treeview?isInternalRefresh=False)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+[How to sort TreeView nodes in Xamarin.Forms (SfTreeView)](https://support.syncfusion.com/kb/article/9794/how-to-sort-treeview-nodes-in-xamarin-forms-sftreeview?isInternalRefresh=False)                                                                                                                                                                                                                                                                                                                                                                                 
+[How to filter Xamarin.Forms TreeView (SfTreeView)](https://support.syncfusion.com/kb/article/9888/how-to-filter-xamarin-forms-treeview-sftreeview?isInternalRefresh=False)                                                                                                                                                                                                                                                                                                                    
+[How to add nodes to bound mode TreeView in Xamarin.Forms (SfTreeView)](https://support.syncfusion.com/kb/article/9910/how-to-add-nodes-to-bound-mode-treeview-in-xamarin-forms-sftreeview?isInternalRefresh=False)                                                                                                                                                                                                                                                                                                                                                                                            
+[How to hide expander in Xamarin.Forms TreeView (SfTreeView)](https://support.syncfusion.com/kb/article/10040/how-to-hide-expander-in-xamarinforms-treeview?isInternalRefresh=False)                                                                                                                                                                                                                                      
+[How to show Xamarin.Forms TreeView (SfTreeView) in popup using Rg.Plugin.Popup framework](https://support.syncfusion.com/kb/article/9800/how-to-show-xamarin-forms-treeview-sftreeview-in-popup-using-rg-plugin-popup-framework?isInternalRefresh=False)

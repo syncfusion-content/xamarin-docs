@@ -33,7 +33,7 @@ TreeView.SelectionMode = SelectionMode.Multiple;
 
 ## Programmatic Selection
 
-When the [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_SelectionMode) is other than `None`, the item or items in the TreeView can be selected from the code by setting the [SelectedItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_SelectedItem), or adding items to the [SelectedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_SelectedItems) property based on the `SelectionMode`.
+When the [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_SelectionMode) is other than `None`, the item or items in the TreeView can be selected from the code by setting the [SelectedItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_SelectedItems), or adding items to the [SelectedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_SelectedItems) property based on the `SelectionMode`.
 
 When the selection mode is `Single` or `SingleDeselect`, programmatically select an item by setting the underlying object to the [SelectedItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_SelectedItem) property.
 
@@ -159,7 +159,7 @@ The TreeView allows to select the items through keyboard interactions. Behavior 
 The [FocusBorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_FocusBorderColor) property is used to set the border color for the current focused item. For Android and iOS platform, the default color is `Color.Transparent` and for UWP platform, the default color is `Color.FromRgb(213, 213, 213)`.
 
 ## FocusBorderThickness
-The [FocusBorderThickness](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_FocusBorderThickness) property is used to set the border thickness for the current focused item. For Android and iOS platform, the default thickness is `0` and for UWP platform, the default thickness is `1`.
+The [FocusBorderThickness](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_FocusBorderColor) property is used to set the border thickness for the current focused item. For Android and iOS platform, the default thickness is `0` and for UWP platform, the default thickness is `1`.
 
 ## Limitation
 
@@ -168,4 +168,4 @@ The [FocusBorderThickness](https://help.syncfusion.com/cr/xamarin/Syncfusion.XFo
 
 ## See also
 
-[How to change the TreeView selected node text color in Xamarin.Forms (SfTreeView)](https://www.syncfusion.com/kb/11362)
+[How to change the TreeView selected node text color in Xamarin.Forms (SfTreeView)](https://support.syncfusion.com/kb/article/9842/how-to-change-the-treeview-selected-node-text-color-in-xamarin-forms-sftreeview?isInternalRefresh=False)

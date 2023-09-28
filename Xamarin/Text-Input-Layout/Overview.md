@@ -9,7 +9,7 @@ documentation: ug
 
 # Xamarin Text Input Layout (SfTextInputLayout) Overview
 
-The text input layout control for Xamarin.Forms adds decorative elements such as floating labels, icons, and assistive labels on the top of input views such as [SfMaskedEdit](https://www.syncfusion.com/xamarin-ui-controls/masked-input-text), [SfNumericUpDown](https://www.syncfusion.com/xamarin-ui-controls/xamarin-numericupdown), [SfNumericTextBox](https://www.syncfusion.com/xamarin-ui-controls/numerictextbox), [SfAutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete), [SfComboBox](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete), [Entry](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry), and [Editor](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor) controls.
+The text input layout control for Xamarin.Forms adds decorative elements such as floating labels, icons, and assistive labels on the top of input views such as [SfMaskedEdit](https://www.syncfusion.com/xamarin-ui-controls/xamarin-masked-entry), [SfNumericUpDown](https://www.syncfusion.com/xamarin-ui-controls/xamarin-numericupdown), [SfNumericTextBox](https://www.syncfusion.com/xamarin-ui-controls/xamarin-numeric-entry), [SfAutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete), [SfComboBox](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete), [Entry](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry), and [Editor](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor) controls.
 
 ![The customizable text input layout control for Xamarin.Forms](Overview_images/inputlayout_forms.png)
 

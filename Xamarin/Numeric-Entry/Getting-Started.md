@@ -25,7 +25,7 @@ You can add SfNumericTextBox reference using one of the following methods:
 
 **Method 1: Adding SfNumericTextBox reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org). To add SfNumericTextBox to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfNumericTextBox](https://www.nuget.org/packages/Syncfusion.Xamarin.SfNumericTextBox), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfNumericTextBox to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfNumericTextBox](https://www.nuget.org/packages/Syncfusion.Xamarin.SfNumericTextBox), and then install it.
 
 ![Adding SfNumericTextBox reference from NuGet](images/Adding SfNumericTextBox reference.png)
 

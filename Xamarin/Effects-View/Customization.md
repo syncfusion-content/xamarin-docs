@@ -394,4 +394,4 @@ var effectsView = new SfEffectsView
 
 [How to get the selected item from ListView while using SfEffectsView within ItemTemplate](https://support.syncfusion.com/kb/article/10193/how-to-get-the-selected-item-from-listview-while-using-effectsview-within-itemtemplate?isInternalRefresh=False)
 
-[How to use SfEffectsView in SfListView](https://support.syncfusion.com/kb/article/9569/how-to-use-the-effects-view-in-xamarinforms-listview-sflistview?isInternalRefresh=False)
+[How to use SfEffectsView in SfListView](https://support.syncfusion.com/kb/article/9569/how-to-use-the-effects-view-in-xamarinforms-listview-sflistview)

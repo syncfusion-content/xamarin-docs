@@ -72,4 +72,4 @@ This demo can be downloaded from this [link](https://www.syncfusion.com/download
 
 [How to notify the selection changes in Xamarin.Forms radio button (SfRadioButton)](https://support.syncfusion.com/kb/article/9544/how-to-notify-the-selection-changes-in-xamarin-forms-radiobutton-sfradiobutton?isInternalRefresh=False)
  
-[How to get the selected Xamarin.Forms radio button (SfRadioButton)](https://support.syncfusion.com/kb/article/9506/how-to-get-the-selected-xamarinforms-radio-button?isInternalRefresh=False)
+[How to get the selected Xamarin.Forms radio button (SfRadioButton)](https://support.syncfusion.com/kb/article/9506/how-to-get-the-selected-xamarinforms-radio-button)

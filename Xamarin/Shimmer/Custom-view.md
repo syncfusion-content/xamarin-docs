@@ -711,4 +711,4 @@ You can also customize the shimmer using `ShimmerView` using the [`CustomView`](
 
 ## See also
 
-[How to set the custom view in SfShimmer using style](https://support.syncfusion.com/kb/article/10316/how-to-set-the-custom-view-in-xamarin-forms-shimmer-using-style?isInternalRefresh=False)
+[How to set the custom view in SfShimmer using style](https://support.syncfusion.com/kb/article/10316/how-to-set-the-custom-view-in-xamarin-forms-shimmer-using-style)

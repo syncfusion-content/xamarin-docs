@@ -179,4 +179,4 @@ this.Content = NumericUpDown;
 
 ## See also
 
-[How to provide string formats support in SfNumericUpDown](https://support.syncfusion.com/kb/article/6976/does-sfnumericupdown-supports-other-formats?isInternalRefresh=False)
+[How to provide string formats support in SfNumericUpDown](https://support.syncfusion.com/kb/article/6976/does-sfnumericupdown-supports-other-formats)

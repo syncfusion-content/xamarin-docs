@@ -122,4 +122,4 @@ this.Content = NumericUpDown;
 
 ## See also
 
-[How to customize the color appearance of SfNumericUpDown](https://support.syncfusion.com/kb/article/10060/how-to-customize-the-color-appearance-of-numeric-entry-in-xamarinforms?isInternalRefresh=False)
+[How to customize the color appearance of SfNumericUpDown](https://support.syncfusion.com/kb/article/10060/how-to-customize-the-color-appearance-of-numeric-entry-in-xamarinforms)

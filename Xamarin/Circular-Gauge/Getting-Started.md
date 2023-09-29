@@ -492,22 +492,22 @@ You can find the complete getting started sample from this [`link`](https://gith
 
 ## See also
 
-[How to achieve doughnut chart requirement in circular gauge](https://support.syncfusion.com/kb/article/7338/how-to-achieve-doughnut-chart-requirement-in-circulargauge?isInternalRefresh=False)
+[How to achieve doughnut chart requirement in circular gauge](https://support.syncfusion.com/kb/article/7338/how-to-achieve-doughnut-chart-requirement-in-circulargauge)
 
-[How to customize a circular gauge control as a time line gauge](https://support.syncfusion.com/kb/article/7337/how-to-customize-a-circular-gauge-control-as-a-timeline-gauge?isInternalRefresh=False)
+[How to customize a circular gauge control as a time line gauge](https://support.syncfusion.com/kb/article/7337/how-to-customize-a-circular-gauge-control-as-a-timeline-gauge)
 	
-[How to make circular gauge to work in UWP in release mode when .NET Native tool chain is enabled](https://support.syncfusion.com/kb/article/7330/how-to-make-syncfusion-xamarin-forms-sfcirculargauge-to-work-in-uwp-in-release-mode-when?isInternalRefresh=False)
+[How to make circular gauge to work in UWP in release mode when .NET Native tool chain is enabled](https://support.syncfusion.com/kb/article/7330/how-to-make-syncfusion-xamarin-forms-sfcirculargauge-to-work-in-uwp-in-release-mode-when)
 
-[How to resolve circular gauge not rendering issue in iOS and UWP](https://support.syncfusion.com/kb/article/7334/how-to-resolve-sfcirculargauge-not-rendering-issue-in-ios-and-uwp?isInternalRefresh=False)
+[How to resolve circular gauge not rendering issue in iOS and UWP](https://support.syncfusion.com/kb/article/7334/how-to-resolve-sfcirculargauge-not-rendering-issue-in-ios-and-uwp)
 
-[How to resolve circular gauge not rendering issue in Xamarin.Forms for iOS](https://support.syncfusion.com/kb/article/7074/how-to-resolve-sfgauge-not-rendering-issue-in-xamarinforms-for-ios-in-circulargauge-?isInternalRefresh=False)
+[How to resolve circular gauge not rendering issue in Xamarin.Forms for iOS](https://support.syncfusion.com/kb/article/7074/how-to-resolve-sfgauge-not-rendering-issue-in-xamarinforms-for-ios-in-circulargauge)
 
-[How to use a circular gauge control as a quarter gauge](https://support.syncfusion.com/kb/article/7156/how-to-use-a-circular-gauge-control-as-a-quarter-gauge-in-xamarinforms-application?isInternalRefresh=False)
+[How to use a circular gauge control as a quarter gauge](https://support.syncfusion.com/kb/article/7156/how-to-use-a-circular-gauge-control-as-a-quarter-gauge-in-xamarinforms-application)
 
-[How to use a circular gauge control as a circular progress bar](https://support.syncfusion.com/kb/article/6014/how-to-use-a-circular-gauge-control-as-a-circular-progress-bar?isInternalRefresh=False)
+[How to use a circular gauge control as a circular progress bar](https://support.syncfusion.com/kb/article/6014/how-to-use-a-circular-gauge-control-as-a-circular-progress-bar)
 
-[How to design a fuel meter using circular gauge](https://support.syncfusion.com/kb/article/6175/how-to-design-a-fuel-meter-using-circular-gauge-in-xamarinforms?isInternalRefresh=False)
+[How to design a fuel meter using circular gauge](https://support.syncfusion.com/kb/article/6175/how-to-design-a-fuel-meter-using-circular-gauge-in-xamarinforms)
 
-[How to create circular gauge with a graphical image as the background](https://support.syncfusion.com/kb/article/4713/how-to-create-circular-gauge-with-a-graphical-image-as-the-background?isInternalRefresh=False)
+[How to create circular gauge with a graphical image as the background](https://support.syncfusion.com/kb/article/4713/how-to-create-circular-gauge-with-a-graphical-image-as-the-background)
 
-[How can you use data binding in gauge with the MVVM pattern](https://support.syncfusion.com/kb/article/4025/how-can-you-use-data-binding-in-gauge-with-the-mvvm-pattern?isInternalRefresh=False)
+[How can you use data binding in gauge with the MVVM pattern](https://support.syncfusion.com/kb/article/4025/how-can-you-use-data-binding-in-gauge-with-the-mvvm-pattern)

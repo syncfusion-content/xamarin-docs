@@ -118,4 +118,4 @@ You can restrict the custom view resizing using the [`IsResizable`](https://help
 
 ## See also
 
-[How to add custom view with bounds in the Xamarin.Forms SfImageEditor control](https://support.syncfusion.com/kb/article/9150/how-to-add-custom-view-with-bounds-in-the-xamarin-forms-sfimageeditor-control?isInternalRefresh=False)
+[How to add custom view with bounds in the Xamarin.Forms SfImageEditor control](https://support.syncfusion.com/kb/article/9150/how-to-add-custom-view-with-bounds-in-the-xamarin-forms-sfimageeditor-control)

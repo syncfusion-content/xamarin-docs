@@ -49,4 +49,4 @@ editor.Flip(FlipDirection.Horizontal);
 
 ## See also
 
-[How to resolve image rotated when loading image / after saving image in iOS device](https://support.syncfusion.com/kb/article/8546/how-to-resolve-image-rotated-when-loading-image-after-saving-image-in-ios-device?isInternalRefresh=False)
+[How to resolve image rotated when loading image / after saving image in iOS device](https://support.syncfusion.com/kb/article/8546/how-to-resolve-image-rotated-when-loading-image-after-saving-image-in-ios-device)

@@ -446,16 +446,16 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to group stacking series in the Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/10156/how-to-group-stacking-series-in-the-xamarin-forms-chart?isInternalRefresh=False)
+[How to group stacking series in the Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/10156/how-to-group-stacking-series-in-the-xamarin-forms-chart)
 
-[How to add content in the center of DoughnutSeries in Xamarin.Forms](https://support.syncfusion.com/kb/article/6901/how-to-add-a-custom-view-to-a-hole-in-the-xamarin-forms-doughnut-charts?isInternalRefresh=False)
+[How to add content in the center of DoughnutSeries in Xamarin.Forms](https://support.syncfusion.com/kb/article/6901/how-to-add-a-custom-view-to-a-hole-in-the-xamarin-forms-doughnut-charts)
 
-[How to explode the pie series slice on touch](https://support.syncfusion.com/kb/article/5611/how-to-explode-the-pie-chart-slice-on-touch-in-xamarin-forms?isInternalRefresh=False)
+[How to explode the pie series slice on touch](https://support.syncfusion.com/kb/article/5611/how-to-explode-the-pie-chart-slice-on-touch-in-xamarin-forms)
 
-[How to set the opacity of the chart series](https://support.syncfusion.com/kb/article/5394/how-to-set-the-opacity-of-the-xamarin-forms-charts?isInternalRefresh=False)
+[How to set the opacity of the chart series](https://support.syncfusion.com/kb/article/5394/how-to-set-the-opacity-of-the-xamarin-forms-charts)
 
-[How to show indicator when loading the large number of data points to series in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/9202/how-to-seriesrendered-event-and-sfbusyindicator-in-xamarin-chart?isInternalRefresh=False)
+[How to show indicator when loading the large number of data points to series in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/9202/how-to-seriesrendered-event-and-sfbusyindicator-in-xamarin-chart)
 
-[How to increase or decrease the width of Column series](https://support.syncfusion.com/kb/article/4906/how-to-increase-or-decrease-the-width-of-column-series?isInternalRefresh=False)
+[How to increase or decrease the width of Column series](https://support.syncfusion.com/kb/article/4906/how-to-increase-or-decrease-the-width-of-column-series)
 
-[How to visualize the Xamarin.Forms Pie Chart in linear form](https://support.syncfusion.com/kb/article/9813/how-to-visualize-the-xamarin-forms-pie-chart-in-linear-form?isInternalRefresh=False)
+[How to visualize the Xamarin.Forms Pie Chart in linear form](https://support.syncfusion.com/kb/article/9813/how-to-visualize-the-xamarin-forms-pie-chart-in-linear-form)

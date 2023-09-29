@@ -31,7 +31,7 @@ treeView.ItemHeight = 40;
 The `SfTreeView.QueryNodeSize` event provides the following arguments:
  
  * [Node](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.QueryNodeSizeEventArgs.html#Syncfusion_XForms_TreeView_QueryNodeSizeEventArgs_Node): This argument contains the [TreeViewNode](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html) and data associated with it.
- * [Height](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.QueryNodeSizeEventArgs.html#Syncfusion_XForms_TreeView_QueryNodeSizeEventArgs_Node): This argument contains the default item height of the queried item and can be set with desired size.
+ * [Height](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.QueryNodeSizeEventArgs.html#Syncfusion_XForms_TreeView_QueryNodeSizeEventArgs_Height): This argument contains the default item height of the queried item and can be set with desired size.
  * [Handled](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.QueryNodeSizeEventArgs.html#Syncfusion_XForms_TreeView_QueryNodeSizeEventArgs_Handled): Decides whether the specified or measured height can be set to the item or not. The default value is `false`. When this property is not set, the decided height will not set to the item.
  * [GetActualNodeHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.QueryNodeSizeEventArgs.html#Syncfusion_XForms_TreeView_QueryNodeSizeEventArgs_GetActualNodeHeight): This method will return the measured height of the node item based on content loaded in it.
 

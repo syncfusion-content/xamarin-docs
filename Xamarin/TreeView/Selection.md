@@ -159,7 +159,7 @@ The TreeView allows to select the items through keyboard interactions. Behavior 
 The [FocusBorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_FocusBorderColor) property is used to set the border color for the current focused item. For Android and iOS platform, the default color is `Color.Transparent` and for UWP platform, the default color is `Color.FromRgb(213, 213, 213)`.
 
 ## FocusBorderThickness
-The [FocusBorderThickness](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_FocusBorderColor) property is used to set the border thickness for the current focused item. For Android and iOS platform, the default thickness is `0` and for UWP platform, the default thickness is `1`.
+The [FocusBorderThickness](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_FocusBorderThickness) property is used to set the border thickness for the current focused item. For Android and iOS platform, the default thickness is `0` and for UWP platform, the default thickness is `1`.
 
 ## Limitation
 

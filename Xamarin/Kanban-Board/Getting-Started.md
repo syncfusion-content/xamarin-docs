@@ -330,6 +330,6 @@ This is how the final output will look like on iOS, Android and Windows devices.
 
 ## See also
 
-[How to resolve SfKanban not rendering issue in iOS and UWP](https://support.syncfusion.com/kb/article/6632/how-to-resolve-kanban-not-rendering-issue-in-ios-and-uwp?isInternalRefresh=False)
+[How to resolve SfKanban not rendering issue in iOS and UWP](https://support.syncfusion.com/kb/article/6632/how-to-resolve-kanban-not-rendering-issue-in-ios-and-uwp)
 
-[How to make Syncfusion Xamarin.Forms SfKanban to work in UWP in release mode when .NET Native tool chain is enabled](https://support.syncfusion.com/kb/article/6631/how-to-make-syncfusion-xamarin-forms-sfkanban-to-work-in-uwp-in-release-mode-when-net?isInternalRefresh=False)
+[How to make Syncfusion Xamarin.Forms SfKanban to work in UWP in release mode when .NET Native tool chain is enabled](https://support.syncfusion.com/kb/article/6631/how-to-make-syncfusion-xamarin-forms-sfkanban-to-work-in-uwp-in-release-mode-when-net)

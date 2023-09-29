@@ -455,7 +455,7 @@ You can find the complete getting started sample from this [`link`](https://gith
 
 ## See also
 
-[How to resolve gauge not rendering issue in Xamarin.Forms for iOS](https://support.syncfusion.com/kb/article/7075/how-to-resolve-sfgauge-not-rendering-issue-in-xamarinforms-for-ios-lineargauge-?isInternalRefresh=False)
+[How to resolve gauge not rendering issue in Xamarin.Forms for iOS](https://support.syncfusion.com/kb/article/7075/how-to-resolve-sfgauge-not-rendering-issue-in-xamarinforms-for-ios-lineargauge-)
 
-[How to design a thermometer using the linear gauge](https://support.syncfusion.com/kb/article/10007/how-to-design-thermometer-using-the-xamarin-linear-gauge?isInternalRefresh=False)
+[How to design a thermometer using the linear gauge](https://support.syncfusion.com/kb/article/10007/how-to-design-thermometer-using-the-xamarin-linear-gauge)
 

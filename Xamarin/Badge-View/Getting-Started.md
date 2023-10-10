@@ -216,7 +216,7 @@ Content = sfBadgeView;
 
 ## Adding content
 
-You can add an image, button, or label to the badge view using the [`Content`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.SfBadgeView.html) property.
+You can add an image, button, or label to the badge view using the [`Content`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Content) property.
 
 {% tabs %}
 
@@ -309,4 +309,4 @@ You can find the complete getting started sample from this [`link`](https://gith
 
 ## See also
 
-[How to add a custom icon to the badge in Xamarin.Forms badge view (SfBadgeView)](https://support.syncfusion.com/kb/article/10046/how-to-add-a-custom-icon-to-the-badge-in-xamarin-forms-badge-view-sfbadgeview?isInternalRefresh=False)
+[How to add a custom icon to the badge in Xamarin.Forms badge view (SfBadgeView)](https://support.syncfusion.com/kb/article/10046/how-to-add-a-custom-icon-to-the-badge-in-xamarin-forms-badge-view-sfbadgeview)

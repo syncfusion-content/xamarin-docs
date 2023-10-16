@@ -224,7 +224,7 @@ N> The nullable support for [VisibleHeaderCount](https://help.syncfusion.com/cr/
 
 ### Add tab items at auto size
 
-When setting the [`TabWidthMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_TabWidthMode) property as [`BasedOnText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabWidthMode.html#Syncfusion_XForms_TabView_TabWidthMode_BasedOnText) option, tab width is calculated based on the length of the tab item [`Title`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_TabWidthMode) string.
+When setting the [`TabWidthMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_TabWidthMode) property as [`BasedOnText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabWidthMode.html#Syncfusion_XForms_TabView_TabWidthMode_BasedOnText) option, tab width is calculated based on the length of the tab item [`Title`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabItem.html#Syncfusion_XForms_TabView_SfTabItem_Title) string.
 
 The default option of [`TabWidthMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_TabWidthMode) property is [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabWidthMode.html#Syncfusion_XForms_TabView_TabWidthMode_Default). 
 

@@ -83,7 +83,7 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to export the Chart to the PDF document in Xamarin.Forms](https://support.syncfusion.com/kb/article/8342/how-to-export-the-chart-to-the-pdf-document-in-xamarin-forms?isInternalRefresh=False)
+[How to export the Chart to the PDF document in Xamarin.Forms](https://support.syncfusion.com/kb/article/8342/how-to-export-the-chart-to-the-pdf-document-in-xamarin-forms)
 
-[How to apply the PDF document size to Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/7771/how-to-apply-the-pdf-document-size-to-xamarin-forms-chart?isInternalRefresh=False)
+[How to apply the PDF document size to Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/7771/how-to-apply-the-pdf-document-size-to-xamarin-forms-chart)
 

@@ -546,5 +546,5 @@ Used **Button** inside a **Grid** to display the valid and invalid message in th
 
 ## See also
 
-[How to validate SfDataForm on page loading](https://support.syncfusion.com/kb/article/7934/how-to-validate-sfdataform-on-page-loading?isInternalRefresh=False)                                                                                                                                                                                                                       
-[How to commit and validate the custom editor value to corresponding DataObject property in Xamarin.Forms SfDataForm](https://support.syncfusion.com/kb/article/9041/how-to-commit-and-validate-the-custom-editor-value-to-corresponding-dataobject-property-in?isInternalRefresh=False)
+[How to validate SfDataForm on page loading](https://support.syncfusion.com/kb/article/7934/how-to-validate-sfdataform-on-page-loading)                                                                                                                                                                                                                       
+[How to commit and validate the custom editor value to corresponding DataObject property in Xamarin.Forms SfDataForm](https://support.syncfusion.com/kb/article/9041/how-to-commit-and-validate-the-custom-editor-value-to-corresponding-dataobject-property-in)

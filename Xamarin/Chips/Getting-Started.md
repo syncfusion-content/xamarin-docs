@@ -622,6 +622,6 @@ You can find the complete getting started sample from this [link.](http://www.sy
 
 ## See also
 
-[How to select a multiple chips from the Xamarin ChipGroup [SfChipGroup]](https://support.syncfusion.com/kb/article/9657/how-to-select-a-multiple-chips-from-the-xamarin-chipgroup-sfchipgroup?isInternalRefresh=False)
+[How to select a multiple chips from the Xamarin ChipGroup [SfChipGroup]](https://support.syncfusion.com/kb/article/9657/how-to-select-a-multiple-chips-from-the-xamarin-chipgroup-sfchipgroup)
 
-[How to display each chip in different colors in the Xamarin.Forms ChipGroup](https://support.syncfusion.com/kb/article/9644/how-to-display-each-chip-in-different-colors-in-the-xamarin-forms-chipgroup?isInternalRefresh=False)
+[How to display each chip in different colors in the Xamarin.Forms ChipGroup](https://support.syncfusion.com/kb/article/9644/how-to-display-each-chip-in-different-colors-in-the-xamarin-forms-chipgroup)

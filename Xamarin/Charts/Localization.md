@@ -70,4 +70,4 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to localize the labels in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/8311/how-to-localize-the-labels-in-xamarin-forms-chart?isInternalRefresh=False)
+[How to localize the labels in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/8311/how-to-localize-the-labels-in-xamarin-forms-chart)

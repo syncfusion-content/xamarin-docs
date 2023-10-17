@@ -369,4 +369,4 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to apply custom fonts in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/8209/how-to-apply-custom-fonts-in-xamarin-forms-chart?isInternalRefresh=False)
+[How to apply custom fonts in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/8209/how-to-apply-custom-fonts-in-xamarin-forms-chart)

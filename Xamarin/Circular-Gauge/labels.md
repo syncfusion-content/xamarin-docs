@@ -391,4 +391,4 @@ Content = circularGauge;
 
 ## See Also
 
-[How to show labels and ticks outside the rim in Xamarin.Forms Radial Gauge](https://support.syncfusion.com/kb/article/9787/how-to-show-labels-and-ticks-outside-the-rim-in-xamarin-forms-radial-gauge?isInternalRefresh=False)
+[How to show labels and ticks outside the rim in Xamarin.Forms Radial Gauge](https://support.syncfusion.com/kb/article/9787/how-to-show-labels-and-ticks-outside-the-rim-in-xamarin-forms-radial-gauge)

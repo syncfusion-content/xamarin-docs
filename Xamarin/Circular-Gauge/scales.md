@@ -512,26 +512,26 @@ N> Default value of the IsCenterAligned property is false.
 
 ## See also
 
-[How to design a compass that always points to a specific place in SfCircularGauge](https://support.syncfusion.com/kb/article/9844/how-to-design-a-compass-that-always-points-to-a-specific-place-in-xamarin-forms-circular?isInternalRefresh=False)
+[How to design a compass that always points to a specific place in SfCircularGauge](https://support.syncfusion.com/kb/article/9844/how-to-design-a-compass-that-always-points-to-a-specific-place-in-xamarin-forms-circular)
 
-[How to show the direction by latitude and longitude values in SfCircularGauge using direction compass](https://support.syncfusion.com/kb/article/9146/how-to-show-the-direction-by-latitude-and-longitude-values-in-sfcirculargauge-using?isInternalRefresh=False)
+[How to show the direction by latitude and longitude values in SfCircularGauge using direction compass](https://support.syncfusion.com/kb/article/9146/how-to-show-the-direction-by-latitude-and-longitude-values-in-sfcirculargauge-using)
 
-[How to bind scale collection to SfCircularGauge](https://support.syncfusion.com/kb/article/9281/how-to-bind-scale-collection-to-sfcirculargauge?isInternalRefresh=False)
+[How to bind scale collection to SfCircularGauge](https://support.syncfusion.com/kb/article/9281/how-to-bind-scale-collection-to-sfcirculargauge)
 
-[How to set start and sweep angles for scale](https://support.syncfusion.com/kb/article/9272/how-to-set-start-and-sweep-angles-for-xamarin-circulargauge-scale?isInternalRefresh=False)
+[How to set start and sweep angles for scale](https://support.syncfusion.com/kb/article/9272/how-to-set-start-and-sweep-angles-for-xamarin-circulargauge-scale)
 
-[How to bind range collection to scale in Xamarin.Forms SfCircularGauge](https://support.syncfusion.com/kb/article/9267/how-to-bind-range-collection-to-scale-in-xamarin-forms-sfcirculargauge?isInternalRefresh=False)
+[How to bind range collection to scale in Xamarin.Forms SfCircularGauge](https://support.syncfusion.com/kb/article/9267/how-to-bind-range-collection-to-scale-in-xamarin-forms-sfcirculargauge)
 
-[How to customize rim position for Scale](https://support.syncfusion.com/kb/article/7340/how-to-customize-rim-position-for-scale?isInternalRefresh=False)
+[How to customize rim position for Scale](https://support.syncfusion.com/kb/article/7340/how-to-customize-rim-position-for-scale)
 
-[How to achieve doughnut chart requirement in SfCircularGauge](https://support.syncfusion.com/kb/article/7338/how-to-achieve-doughnut-chart-requirement-in-circulargauge?isInternalRefresh=False)
+[How to achieve doughnut chart requirement in SfCircularGauge](https://support.syncfusion.com/kb/article/7338/how-to-achieve-doughnut-chart-requirement-in-circulargauge)
 
-[How to customize a circular gauge control as a time line gauge](https://support.syncfusion.com/kb/article/7337/how-to-customize-a-circular-gauge-control-as-a-timeline-gauge?isInternalRefresh=False)
+[How to customize a circular gauge control as a time line gauge](https://support.syncfusion.com/kb/article/7337/how-to-customize-a-circular-gauge-control-as-a-timeline-gauge)
 
-[How to use a circular gauge control as a quarter gauge](https://support.syncfusion.com/kb/article/7156/how-to-use-a-circular-gauge-control-as-a-quarter-gauge-in-xamarinforms-application?isInternalRefresh=False)
+[How to use a circular gauge control as a quarter gauge](https://support.syncfusion.com/kb/article/7156/how-to-use-a-circular-gauge-control-as-a-quarter-gauge-in-xamarinforms-application)
 
-[How to use a circular gauge control as a circular progress bar](https://support.syncfusion.com/kb/article/6014/how-to-use-a-circular-gauge-control-as-a-circular-progress-bar?isInternalRefresh=False)
+[How to use a circular gauge control as a circular progress bar](https://support.syncfusion.com/kb/article/6014/how-to-use-a-circular-gauge-control-as-a-circular-progress-bar)
 
-[How to design a fuel meter using SfCircularGauge](https://support.syncfusion.com/kb/article/6175/how-to-design-a-fuel-meter-using-circular-gauge-in-xamarinforms?isInternalRefresh=False)
+[How to design a fuel meter using SfCircularGauge](https://support.syncfusion.com/kb/article/6175/how-to-design-a-fuel-meter-using-circular-gauge-in-xamarinforms)
 
-[How to create SfCircularGauge with a graphical image as the background](https://support.syncfusion.com/kb/article/4713/how-to-create-circular-gauge-with-a-graphical-image-as-the-background?isInternalRefresh=False)
+[How to create SfCircularGauge with a graphical image as the background](https://support.syncfusion.com/kb/article/4713/how-to-create-circular-gauge-with-a-graphical-image-as-the-background)

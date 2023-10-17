@@ -460,5 +460,5 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to update the summaries when a row is dragged and dropped between groups](https://support.syncfusion.com/kb/article/7046/how-to-update-the-summaries-when-a-row-is-dragged-and-dropped-between-groups-in-xamarinforms-?isInternalRefresh=False)
+[How to update the summaries when a row is dragged and dropped between groups](https://support.syncfusion.com/kb/article/7046/how-to-update-the-summaries-when-a-row-is-dragged-and-dropped-between-groups-in-xamarinforms-)
 

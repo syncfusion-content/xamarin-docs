@@ -809,14 +809,14 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to enable the MultiSelection in GridComboBoxColumn of DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/9714/how-to-enable-the-multiselection-in-gridcomboboxcolumn-of-datagrid-?isInternalRefresh=False)
+[How to enable the MultiSelection in GridComboBoxColumn of DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/9714/how-to-enable-the-multiselection-in-gridcomboboxcolumn-of-datagrid-)
 
-[How to apply animation for the selected rows in SfDataGrid](https://support.syncfusion.com/kb/article/7206/how-to-apply-animation-for-the-selected-rows-in-xamarinforms-datagrid?isInternalRefresh=False)
+[How to apply animation for the selected rows in SfDataGrid](https://support.syncfusion.com/kb/article/7206/how-to-apply-animation-for-the-selected-rows-in-xamarinforms-datagrid)
 
-[How to change selected index of one picker in other pickers selection changed event in SfDataGrid](https://support.syncfusion.com/kb/article/6637/change-selected-index-of-one-picker-in-other-pickers-selection-changed-event-in-datagrid?isInternalRefresh=False)
+[How to change selected index of one picker in other pickers selection changed event in SfDataGrid](https://support.syncfusion.com/kb/article/6637/change-selected-index-of-one-picker-in-other-pickers-selection-changed-event-in-datagrid)
 
-[How to get the cell value of specific row and column](https://support.syncfusion.com/kb/article/6559/how-to-get-the-cell-value-of-specific-row-and-column-in-xamarinforms-datagrid?isInternalRefresh=False)
+[How to get the cell value of specific row and column](https://support.syncfusion.com/kb/article/6559/how-to-get-the-cell-value-of-specific-row-and-column-in-xamarinforms-datagrid)
 
-[How to pass selected row's data to a command](https://support.syncfusion.com/kb/article/6521/how-to-pass-selected-rows-xamarinforms-datagrid-to-a-command?isInternalRefresh=False)
+[How to pass selected row's data to a command](https://support.syncfusion.com/kb/article/6521/how-to-pass-selected-rows-xamarinforms-datagrid-to-a-command)
 
-[How to apply multiple selection colors in SfDataGrid](https://support.syncfusion.com/kb/article/6520/how-to-apply-multiple-selection-colors-in-xamarinforms-datagrid?isInternalRefresh=False)
+[How to apply multiple selection colors in SfDataGrid](https://support.syncfusion.com/kb/article/6520/how-to-apply-multiple-selection-colors-in-xamarinforms-datagrid)

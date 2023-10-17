@@ -390,4 +390,4 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to have different page size in SfDataPager with SfDataGrid when the device is in horizontal and vertical orientation mode](https://support.syncfusion.com/kb/article/7968/how-to-have-different-page-size-in-sfdatapager-with-sfdatagrid-when-the-device-is-in?isInternalRefresh=False)
+[How to have different page size in SfDataPager with SfDataGrid when the device is in horizontal and vertical orientation mode](https://support.syncfusion.com/kb/article/7968/how-to-have-different-page-size-in-sfdatapager-with-sfdatagrid-when-the-device-is-in)

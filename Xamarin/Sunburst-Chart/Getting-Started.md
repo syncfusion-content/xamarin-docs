@@ -13,7 +13,7 @@ This section explains the steps required to configure the [`SfSunburstChart`](ht
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/account/manage-trials/downloads), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -895,6 +895,6 @@ You can find the complete getting started sample from this [`link`](https://gith
 
 ## See also
 
-[How to make SfSunburstChart to work in UWP in release mode when .NET Native tool chain is enabled](https://support.syncfusion.com/kb/article/6815/how-to-make-syncfusion-xamarin-forms-sfsunburstchart-to-work-in-uwp-in-release-mode-when?isInternalRefresh=False)
+[How to make SfSunburstChart to work in UWP in release mode when .NET Native tool chain is enabled](https://support.syncfusion.com/kb/article/6815/how-to-make-syncfusion-xamarin-forms-sfsunburstchart-to-work-in-uwp-in-release-mode-when)
 
-[How to resolve SfSunburstChart not rendering issue in iOS and UWP](https://support.syncfusion.com/kb/article/6816/how-to-resolve-sfsunburstchart-not-rendering-issue-in-ios-and-uwp?isInternalRefresh=False)
+[How to resolve SfSunburstChart not rendering issue in iOS and UWP](https://support.syncfusion.com/kb/article/6816/how-to-resolve-sfsunburstchart-not-rendering-issue-in-ios-and-uwp)

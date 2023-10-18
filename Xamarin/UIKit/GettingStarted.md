@@ -17,7 +17,7 @@ The UI Kit screens can be added in your application by the following two ways:
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/account/manage-trials/downloads), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -59,7 +59,7 @@ N> The **Essential UI Kit for Xamarin.Forms** add-in will be shown when the proj
 
 1.	Download the UI Kit extension file from [here](https://cdn.syncfusion.com/essential-ui-kit-for-xamarin.forms/Syncfusion.Xamarin.Mac.UIKit_2.5.0.0.mpack).
 
-2.	Install the extension file in Visual Studio for MAC by following [this](https://support.syncfusion.com/kb/article/9491/how-to-install-extension-in-visual-studio-for-mac?isInternalRefresh=False) article. 
+2.	Install the extension file in Visual Studio for MAC by following [this](https://support.syncfusion.com/kb/article/9491/how-to-install-extension-in-visual-studio-for-mac) article. 
 
 3.	Right-click the Xamarin.Forms [NETStandard] project, and you can see the Essential UI Kit for Xamarin.Forms option.
 

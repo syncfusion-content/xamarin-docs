@@ -270,4 +270,4 @@ namespace StepProgressBar
 
 ![StepProgressBar image customization](overview_images/Steps-Image.png)
 
-You can download the entire source of this demo from [here](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.StepView.html)
+You can download the entire source of this demo from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/StepProgressBar-1354258111)

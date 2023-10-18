@@ -13,7 +13,7 @@ This section explains you the steps required to populate the Sparkline with data
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/account/manage-trials/downloads), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -154,7 +154,7 @@ N> Add namespace of `ViewModel` class in your XAML page if you prefer to set `Bi
 {% tabs %} 
 
 {% highlight xaml %} 
-<ContentPage xmlns="https://dotnet.microsoft.com/en-us/apps/xamarin"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 
@@ -223,4 +223,4 @@ You can find the complete getting started sample from this [link.](https://githu
 
 ## See also
 
-[How to resolve SfSparkline not rendering issue in iOS and UWP](https://support.syncfusion.com/kb/article/6818/how-to-resolve-sfsparkline-not-rendering-issue-in-ios-and-uwp?isInternalRefresh=False)
+[How to resolve SfSparkline not rendering issue in iOS and UWP](https://support.syncfusion.com/kb/article/6818/how-to-resolve-sfsparkline-not-rendering-issue-in-ios-and-uwp)

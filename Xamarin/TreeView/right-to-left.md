@@ -78,4 +78,4 @@ N> When a label is loaded in the `ItemTemplate`, the right-to-left direction is 
 
 ## See also
 
-[How to work with RTL in Xamarin.Forms TreeView (SfTreeView)](https://support.syncfusion.com/kb/article/9984/how-to-work-with-rtl-in-xamarin-forms-treeview-sftreeview?isInternalRefresh=False)
+[How to work with RTL in Xamarin.Forms TreeView (SfTreeView)](https://support.syncfusion.com/kb/article/9984/how-to-work-with-rtl-in-xamarin-forms-treeview-sftreeview)

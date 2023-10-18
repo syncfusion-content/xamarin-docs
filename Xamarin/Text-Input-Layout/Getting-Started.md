@@ -13,7 +13,7 @@ This section explains the steps required to configure the [Xamarin Text Input La
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/account/manage-trials/downloads), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -226,10 +226,10 @@ You can find the complete getting started sample from this [link.]( https://gith
 
 ## See also
 
-[How to reduce the inner padding of SfTextInputLayout](https://support.syncfusion.com/kb/article/9553/how-to-reduce-the-inner-padding-of-xamarin-forms-text-input-layout?isInternalRefresh=False)
+[How to reduce the inner padding of SfTextInputLayout](https://support.syncfusion.com/kb/article/9553/how-to-reduce-the-inner-padding-of-xamarin-forms-text-input-layout)
 
-[How to switch the focus from SfTextInputLayout to the next focusable control](https://support.syncfusion.com/kb/article/10285/how-to-switch-the-focus-from-xamarin-forms-text-input-layout-to-the-next-focusable-control?isInternalRefresh=False) 
+[How to switch the focus from SfTextInputLayout to the next focusable control](https://support.syncfusion.com/kb/article/10285/how-to-switch-the-focus-from-xamarin-forms-text-input-layout-to-the-next-focusable-control) 
 
-[How to create a rounded corner SfTextInputLayout](https://support.syncfusion.com/kb/article/10202/how-to-create-a-rounded-corner-sftextinputlayout-in-xamarin-forms?isInternalRefresh=False)
+[How to create a rounded corner SfTextInputLayout](https://support.syncfusion.com/kb/article/10202/how-to-create-a-rounded-corner-sftextinputlayout-in-xamarin-forms)
 
-[How to change the cursor color in SfTextInputLayout](https://support.syncfusion.com/kb/article/10066/how-to-change-the-cursor-color-in-xamarinforms-text-input-layout?isInternalRefresh=False)
+[How to change the cursor color in SfTextInputLayout](https://support.syncfusion.com/kb/article/10066/how-to-change-the-cursor-color-in-xamarinforms-text-input-layout)

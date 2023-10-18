@@ -189,4 +189,4 @@ inputLayout.ShowTrailingView = false;
 
 ## See also
 
-[How to align leading and trailing views](https://support.syncfusion.com/kb/article/9713/how-to-vertically-center-align-icons-in-leading-and-trailing-views-in-xamarin?isInternalRefresh=False)
+[How to align leading and trailing views](https://support.syncfusion.com/kb/article/9713/how-to-vertically-center-align-icons-in-leading-and-trailing-views-in-xamarin)

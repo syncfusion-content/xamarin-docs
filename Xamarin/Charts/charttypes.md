@@ -4029,12 +4029,12 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to draw dotted line using FastLineSeries in Chart](https://www.syncfusion.com/kb/5924/how-to-draw-dotted-line-using-fastlineseries-in-chart)
+[How to draw dotted line using FastLineSeries in Chart](https://support.syncfusion.com/kb/article/5612/how-to-create-a-dotted-line-chart-in-xamarin-forms)
 
-[How to visualize the Xamarin.Forms Pie Chart in linear form](https://www.syncfusion.com/kb/11285/how-to-visualize-the-xamarin-forms-pie-chart-in-linear-form)
+[How to visualize the Xamarin.Forms Pie Chart in linear form](https://support.syncfusion.com/kb/article/9813/how-to-visualize-the-xamarin-forms-pie-chart-in-linear-form)
 
-[How to achieve the Tornado chart in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10684/how-to-achieve-the-tornado-chart-in-xamarin-forms-chart)
+[How to achieve the Tornado chart in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/9311/how-to-create-a-tornado-chart-in-xamarin-forms)
 
-[How to use the drill-down functionality in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10662/how-to-use-the-drill-down-functionality-in-xamarin-forms-chart)
+[How to use the drill-down functionality in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/9388/how-to-use-the-drill-down-functionality-in-xamarin-forms-chart)
 
-[How to set size of pie/doughnut](https://www.syncfusion.com/kb/5525/how-to-set-size-of-pie-doughnut)
+[How to set size of pie/doughnut](https://support.syncfusion.com/kb/article/5221/how-to-set-size-of-piedoughnut-in-xamarinforms-charts)

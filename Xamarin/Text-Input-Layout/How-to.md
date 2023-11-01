@@ -53,11 +53,11 @@ You can customize the font for the input view inside SfTextInputLayout using its
 
 * [Editor](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms#properties)
 
-* [SfMaskedEdit](https://help.syncfusion.com/xamarin/sfmaskededit/visual-customization#setting-appearance-of-text) 
+* [SfMaskedEdit](https://help.syncfusion.com/xamarin/masked-entry/visual-customization#setting-appearance-of-text) 
 
-* [SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/font-settings)
+* [SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/font-settings)
 
-* [SfAutoComplete](https://help.syncfusion.com/xamarin/sfautocomplete/customizing-autocomplete)
+* [SfAutoComplete](https://help.syncfusion.com/xamarin/autocomplete/customizing-autocomplete)
 
-* [SfComboBox](https://help.syncfusion.com/xamarin/sfcombobox/customizing-combobox)
+* [SfComboBox](https://help.syncfusion.com/xamarin/combobox/customizing-combobox)
 

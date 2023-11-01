@@ -71,7 +71,7 @@ inputLayout.InputView = new Editor();
 
 ## Masked edit
 
-To initialize the masked edit control and launch it in each platform, refer to the [getting started with masked edit](https://help.syncfusion.com/xamarin/sfmaskededit/getting-started) documentation.
+To initialize the masked edit control and launch it in each platform, refer to the [getting started with masked edit](https://help.syncfusion.com/xamarin/masked-entry/getting-started) documentation.
 
 {% tabs %} 
 
@@ -102,7 +102,7 @@ inputLayout.InputView = new SfMaskedEdit() { Keyboard = Keyboard.Numeric, Mask =
 
 ## Numeric text box
 
-To initialize the numeric text box control and launch it in each platform, refer to the [getting started with numeric text box](https://help.syncfusion.com/xamarin/sfnumerictextbox/getting-started) documentation.
+To initialize the numeric text box control and launch it in each platform, refer to the [getting started with numeric text box](https://help.syncfusion.com/xamarin/numeric-entry/getting-started) documentation.
 
 {% tabs %} 
 

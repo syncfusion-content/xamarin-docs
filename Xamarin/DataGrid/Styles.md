@@ -310,7 +310,7 @@ Following are the list of options available to customize the grid borders:
 
 ### Both
 
-The [GridLinesVisibility.Both](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) displays the data grid with both horizontal and vertical borders.
+The [GridLinesVisibility.Both](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html#Syncfusion_SfDataGrid_XForms_GridLinesVisibility_Both) displays the data grid with both horizontal and vertical borders.
 
 To customize the grid lines visibility in xaml, follow the code example:
 
@@ -349,7 +349,7 @@ The following screenshot shows the outcome upon execution of the above code:
 
 ### Horizontal
 
-The [GridLinesVisibility.Horizontal](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows displays the data grid with horizontal border only.
+The [GridLinesVisibility.Horizontal](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html#Syncfusion_SfDataGrid_XForms_GridLinesVisibility_Horizontal) allows displays the data grid with horizontal border only.
 
 To customize the grid lines visibility in xaml, follow the code example:
 
@@ -388,7 +388,7 @@ The following screenshot shows the outcome upon execution of the above code:
 
 ### Vertical
 
-The [GridLinesVisibility.Vertical](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) displays the data grid with vertical border only.
+The [GridLinesVisibility.Vertical](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html#Syncfusion_SfDataGrid_XForms_GridLinesVisibility_Vertical) displays the data grid with vertical border only.
 
 To customize the grid lines visibility in xaml, follow the code example:
 
@@ -427,7 +427,7 @@ The following screenshot shows the outcome upon execution of the above code:
 
 ### None
 
-[GridLinesVisibility.None](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html) allows you to display the data grid without borders.
+[GridLinesVisibility.None](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridLinesVisibility.html#Syncfusion_SfDataGrid_XForms_GridLinesVisibility_None) allows you to display the data grid without borders.
 
 To customize the grid lines visibility in xaml, follow the code example:
 

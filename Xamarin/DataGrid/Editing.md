@@ -348,7 +348,7 @@ The SfDataGrid triggers the following events while editing:
 
 ### CurrentCellBeginEdit
 
-The [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event occurs when the CurrentCell enters into edit mode. The [GridCurrentCellBeginEditEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCurrentCellBeginEditEventArgs.html) has the following members which provides information for `SfDataGrid.CurrentCellBeginEdit` event:
+The [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_CurrentCellBeginEdit) event occurs when the CurrentCell enters into edit mode. The [GridCurrentCellBeginEditEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCurrentCellBeginEditEventArgs.html) has the following members which provides information for `SfDataGrid.CurrentCellBeginEdit` event:
 
  * [Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0): When this member set to ‘true’, the event is canceled and the CurrentCell does not enter into the edit mode.
  * [RowColumnIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.GridCommon.ScrollAxis.RowColumnIndex.html): Gets the current row and column index of the DataGrid.
@@ -369,7 +369,7 @@ private void DataGrid_CurrentCellBeginEdit(object sender, GridCurrentCellBeginEd
 
 ### CurrentCellEndEdit
 
-The [CurrentCellEndEdit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event occurs when the CurrentCell exits the edit mode. The [GridCurrentCellEndEditEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCurrentCellEndEditEventArgs.html) has following members which provides information for `SfDataGrid.CurrentCellEndEdit` event:
+The [CurrentCellEndEdit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_CurrentCellEndEdit) event occurs when the CurrentCell exits the edit mode. The [GridCurrentCellEndEditEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCurrentCellEndEditEventArgs.html) has following members which provides information for `SfDataGrid.CurrentCellEndEdit` event:
 
  * [RowColumnIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCurrentCellEndEditEventArgs.html#Syncfusion_SfDataGrid_XForms_GridCurrentCellEndEditEventArgs_RowColumnIndex): Gets the current row and column index of the DataGrid.
  * [Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0): When this member set to ‘true’, the event is canceled and the edited value is not committed in the underlying collection.
@@ -422,7 +422,7 @@ this.dataGrid.CancelEdit();
 
 ### Cancel editing
 
-The [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event can be used to cancel the editing operation for the corresponding cell. To cancel the editing operation using the `SfDataGrid.CurrentCellBeginEdit` event, follow the code example:
+The [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_CurrentCellBeginEdit) event can be used to cancel the editing operation for the corresponding cell. To cancel the editing operation using the `SfDataGrid.CurrentCellBeginEdit` event, follow the code example:
 
 {% highlight c# %}
 this.dataGrid.CurrentCellBeginEdit += DataGrid_CurrentCellBeginEdit;
@@ -435,7 +435,7 @@ private void DataGrid_CurrentCellBeginEdit(object sender, GridCurrentCellBeginEd
 
 ### Cancel edited value from getting committed
 
-To prevent the edited value from getting committed, use the [CurrentCellEndEdit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event. To prevent the edited values from getting committed in the underlying collection, follow the code example:
+To prevent the edited value from getting committed, use the [CurrentCellEndEdit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_CurrentCellEndEdit) event. To prevent the edited values from getting committed in the underlying collection, follow the code example:
 
 {% highlight c# %}
 this.dataGrid.CurrentCellEndEdit += DataGrid_CurrentCellEndEdit;
@@ -452,7 +452,7 @@ private void DataGrid_CurrentCellEndEdit(object sender, GridCurrentCellEndEditEv
 By default in Android platform, when entering edit mode for a text column in landscape orientation, the editor view loads in full width and height of the screen like below.
 ![DataGrid with ImeOptions is Done ](SfDataGrid_images/ImeOptions_Done.png)
 
-If in case when entering edit mode you want to load the editor just like in portrait orientation, where the editor is loaded within the cells and the grid rows are visible in the background, set the [SfDataGrid.ImeOptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ImeOptions) property as [GridImeOptions.NoExtractUi](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridImeOptions.html). The default value of `SfDataGrid.ImeOptions` is `GridImeOptions.Done`.
+If in case when entering edit mode you want to load the editor just like in portrait orientation, where the editor is loaded within the cells and the grid rows are visible in the background, set the [SfDataGrid.ImeOptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ImeOptions) property as [GridImeOptions.NoExtractUi](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridImeOptions.html#Syncfusion_SfDataGrid_XForms_GridImeOptions_NoExtractUi). The default value of `SfDataGrid.ImeOptions` is `GridImeOptions.Done`.
 
 {% tabs %}
 {% highlight xaml %}

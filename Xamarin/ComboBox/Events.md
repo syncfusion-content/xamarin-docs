@@ -94,7 +94,7 @@ For more information regarding this refer to [`this`](https://help.syncfusion.co
 
 ## DropDownOpen Event
 
-The [`DropDownOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.DropDownOpenEventHandler.html) event occurs when the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) drop-down is opened.
+The [`DropDownOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DropDownOpen) event occurs when the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) drop-down is opened.
 
 ## DropDownClosing Event
 

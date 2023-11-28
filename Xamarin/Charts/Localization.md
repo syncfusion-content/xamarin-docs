@@ -37,7 +37,7 @@ N> Here, the resources have been already created for some cultures and shared th
 {% endcapture %}
 {{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
-* Set the resource manager to [‘ChartResourceManager.Manager’](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartResourceManager.html#Syncfusion_SfChart_XForms_ChartResourceManager_Manager) as demonstrated in the following code to get the resource manager from the users. For more details, refer [`Localization`](https://blog.syncfusion.com/post/localization-made-easy-for-syncfusion-xamarin-forms-components.aspx).
+* Set the resource manager to [‘ChartResourceManager.Manager’](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartResourceManager.html#Syncfusion_SfChart_XForms_ChartResourceManager_Manager) as demonstrated in the following code to get the resource manager from the users. For more details, refer [`Localization`](https://www.syncfusion.com/blogs/post/localization-made-easy-for-syncfusion-xamarin-forms-components.aspx).
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -52,7 +52,7 @@ ChartResourceManager.Manager = new ResourceManager("GettingStarted.Resources.Syn
 
 ## Localize at application level
 
-You can also localize the text at application-level regardless of the language selected on the device. The following platform-specific codes are needed to localize the text at application-level. Use the [`DependencyServices`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/dependency-service/introduction) to set this from .NET Standard project.
+You can also localize the text at application-level regardless of the language selected on the device. The following platform-specific codes are needed to localize the text at application-level. Use the [`DependencyServices`](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/dependency-service/introduction) to set this from .NET Standard project.
 
 {% highlight C# %}
 
@@ -70,4 +70,4 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to localize the labels in Xamarin.Forms Chart](https://www.syncfusion.com/kb/9415/how-to-localize-the-labels-in-xamarin-forms-chart)
+[How to localize the labels in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/8311/how-to-localize-the-labels-in-xamarin-forms-chart)

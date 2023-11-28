@@ -12,7 +12,7 @@ documentation: ug
 
 ## Export as an image
 
-You can export the Chart as a JPG image using [`SaveAsImage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_SaveAsImage_System_String_) method of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#).
+You can export the Chart as a JPG image using [`SaveAsImage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_SaveAsImage_System_String_) method of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html).
 
 {% tabs %} 
 

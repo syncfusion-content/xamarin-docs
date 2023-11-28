@@ -87,6 +87,6 @@ The final output will look like the below on iOS, Android and Windows (UWP) devi
 
 This demo can be downloaded from the below link.
 
-<http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1533352385>
+<https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1533352385>
 
 N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

@@ -887,7 +887,7 @@ N> You can also explore our [Xamarin Column Chart example](https://github.com/sy
 
 ### Overlapped placement
 
-By default, all the column series which has the same x and y axes are placed side by side in a chart. If you want place the series one over the other (overlapped), set the [`SideBySideSeriesPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_SideBySideSeriesPlacement) property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#) to false and configure the [`Width`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html#Syncfusion_SfChart_XForms_ColumnSeries_Width) property to differentiate the series. The following code snippet and screenshot illustrate the overlapped placement of column series.
+By default, all the column series which has the same x and y axes are placed side by side in a chart. If you want place the series one over the other (overlapped), set the [`SideBySideSeriesPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_SideBySideSeriesPlacement) property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to false and configure the [`Width`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html#Syncfusion_SfChart_XForms_ColumnSeries_Width) property to differentiate the series. The following code snippet and screenshot illustrate the overlapped placement of column series.
 
 {% tabs %} 
 

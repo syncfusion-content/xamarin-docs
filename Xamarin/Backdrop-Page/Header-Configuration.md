@@ -9,7 +9,7 @@ documentation: ug
 
 # Header Configuration
 
-Add backdrop page as a children of [`NavigationPage`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms) in App.xaml.cs class. Also, [`BarBackgroundColor`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage.barbackgroundcolor?view=xamarin-forms), [`BarTextColor`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage.bartextcolor?view=xamarin-forms) and other properties of [`NavigationPage`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms) can be set to customize the default appearance of header.
+Add backdrop page as a children of [`NavigationPage`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms) in App.xaml.cs class. Also, [`BarBackgroundColor`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage.barbackgroundcolor?view=xamarin-forms), [`BarTextColor`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage.bartextcolor?view=xamarin-forms) and other properties of [`NavigationPage`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms) can be set to customize the default appearance of header.
  
 {% highlight C# %} 
 
@@ -28,7 +28,7 @@ public App()
 {% endhighlight %}
 
 >**NOTE**
-Page header for the backdrop will appear only when adding backdrop as a children of [`NavigationPage`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms).
+Page header for the backdrop will appear only when adding backdrop as a children of [`NavigationPage`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms).
  
 ## Icon customization
 
@@ -36,13 +36,13 @@ The default icons in the navigation header can be customized using the following
 
 ### Default icons in NavigationPage
 
-When the backdrop page contained within the [NavigationPage](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms) , hamburger icon and close icon (X mark ) will be used by default.
+When the backdrop page contained within the [NavigationPage](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms) , hamburger icon and close icon (X mark ) will be used by default.
 
 ![Hamburger icon](Header-Configuration-images/Hamburger.png)
 
 ### Default icons in MasterDetailsPage
 
-When the backdrop page placed in the [MasterDetailPage](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.masterdetailpage?view=xamarin-forms), down arrow icon and up arrow icon will be used by default.
+When the backdrop page placed in the [MasterDetailPage](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.masterdetailpage?view=xamarin-forms), down arrow icon and up arrow icon will be used by default.
 
 ![Arrow icon](Header-Configuration-images/Arrow.png)
 

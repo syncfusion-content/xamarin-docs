@@ -9,7 +9,7 @@ documentation: UG
 
 # Accessibility in Xamarin StepProgressBar (Step Progress Bar)
 
-StepProgressBar supports built-in [AutomationId](https://docs.microsoft.com/en-gb/dotnet/api/xamarin.forms.element.automationid?view=xamarin-forms#Xamarin_Forms_Element_AutomationId) for its markers element. These `AutomationId` values allow the automation framework to find and interact with the marker element when the test scripts are run. A unique `AutomationId` is maintained for each marker element by prefixing the StepView's `AutomationId` with the marker element's Id.
+StepProgressBar supports built-in [AutomationId](https://learn.microsoft.com/en-gb/dotnet/api/xamarin.forms.element.automationid?view=xamarin-forms#Xamarin_Forms_Element_AutomationId) for its markers element. These `AutomationId` values allow the automation framework to find and interact with the marker element when the test scripts are run. A unique `AutomationId` is maintained for each marker element by prefixing the StepView's `AutomationId` with the marker element's Id.
 
 ## StepProgressBar
 

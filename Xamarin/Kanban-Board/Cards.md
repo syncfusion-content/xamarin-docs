@@ -9,13 +9,13 @@ documentation: ug
 
 # Cards in Xamarin Kanban Board (SfKanban)
 
-The default elements of a card can be customized using the below properties of [`KanbanModel`](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanModel.html).
+The default elements of a card can be customized using the below properties of [`KanbanModel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanModel.html).
 
 * [`Title`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanModel.html#Syncfusion_SfKanban_XForms_KanbanModel_Title)         - Used to set the title of a card.
 * [`ImageURL`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanModel.html#Syncfusion_SfKanban_XForms_KanbanModel_ImageURL)      - Used to set the image URL of a card. The image will be displayed at right side in default card template.
 * [`Category`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanModel.html#Syncfusion_SfKanban_XForms_KanbanModel_Category)      - Used to set the category of a card. Based on the category the cards will be added to the respective columns. 
 * [`Description`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanModel.html#Syncfusion_SfKanban_XForms_KanbanModel_Description)   - Used to set the description text of a card.
-* [`ColorKey`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanModel.html#Syncfusion_SfKanban_XForms_KanbanModel_ColorKey)      - Used to specify the indicator color key. The [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanColorMapping.html#Syncfusion_SfKanban_XForms_KanbanColorMapping__ctor_System_Object_Xamarin_Forms_Color_) value of the corresponding [`Key`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanColorMapping.html#Syncfusion_SfKanban_XForms_KanbanColorMapping_Key) should be added in [`ColorModel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html#Syncfusion_SfKanban_XForms_SfKanban_ColorModel) collection of [`SfKanban`](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html).
+* [`ColorKey`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanModel.html#Syncfusion_SfKanban_XForms_KanbanModel_ColorKey)      - Used to specify the indicator color key. The [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanColorMapping.html#Syncfusion_SfKanban_XForms_KanbanColorMapping__ctor_System_Object_Xamarin_Forms_Color_) value of the corresponding [`Key`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanColorMapping.html#Syncfusion_SfKanban_XForms_KanbanColorMapping_Key) should be added in [`ColorModel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html#Syncfusion_SfKanban_XForms_SfKanban_ColorModel) collection of [`SfKanban`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html).
 * [`Tags`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanModel.html#Syncfusion_SfKanban_XForms_KanbanModel_Tags)          - Used to specify the tags of a card. The tags will be displayed at bottom in default card template.
 * [`ID`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanModel.html#Syncfusion_SfKanban_XForms_KanbanModel_ID)            - Used to set the ID of a card.
 
@@ -143,7 +143,7 @@ kanban.CardTemplate = cardTemplate;
 
 ## Data template selector
 
-You can customize the appearance of each card with different templates based on specific constraints using [`DataTemplateSelector`](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.DataTemplateSelector/).
+You can customize the appearance of each card with different templates based on specific constraints using [`DataTemplateSelector`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.datatemplateselector?view=xamarin-forms).
 
 ### Create a data template selector
 

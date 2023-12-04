@@ -11,7 +11,7 @@ documentation: ug
 
 ## CardTapped
 
-The [`CardTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardLayout.html) event occurs when any card view is tapped. The argument contains the following information:
+The [`CardTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardLayout.html#Syncfusion_XForms_Cards_SfCardLayout_CardTapped) event occurs when any card view is tapped. The argument contains the following information:
 
 * [`CardView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html) - Gets the details of a particular card view.
 
@@ -57,7 +57,7 @@ The default value of the [`CardTappedCommandParameter`](https://help.syncfusion.
 
 ## VisibleCardIndexChanging
 
-The [`VisibleCardIndexChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardLayout.html) event occurs when the visible card index is changing. The argument contains the following information:
+The [`VisibleCardIndexChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardLayout.html#Syncfusion_XForms_Cards_SfCardLayout_VisibleCardIndexChanging) event occurs when the visible card index is changing. The argument contains the following information:
 
 * [`OldCard`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.VisibleCardIndexChangingEventArgs.html#Syncfusion_XForms_Cards_VisibleCardIndexChangingEventArgs_OldCard) - Gets the details of the previous index card.
 
@@ -108,7 +108,7 @@ private void VisibleCardIndexChanging(object sender, Syncfusion.XForms.Cards.Vis
 
 ## VisibleCardIndexChanged
 
-The [`VisibleCardIndexChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardLayout.html) event occurs when the visible card index is changed. The argument contains the following information:
+The [`VisibleCardIndexChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardLayout.html#Syncfusion_XForms_Cards_SfCardLayout_VisibleCardIndexChanged) event occurs when the visible card index is changed. The argument contains the following information:
 
 * [`OldCard`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.VisibleCardIndexChangedEventArgs.html#Syncfusion_XForms_Cards_VisibleCardIndexChangedEventArgs_OldCard) - Gets the details of the previous card.
 
@@ -152,7 +152,7 @@ private void VisibleCardIndexChanged(object sender Syncfusion.XForms.Cards.Visib
 
 ## Dismissing event
 
-The [`Dismissing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html) event fires when dismissing the card by swiping with enables `SwipeToDismiss` property. The argument contains the following information:
+The [`Dismissing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html#Syncfusion_XForms_Cards_SfCardView_Dismissing) event fires when dismissing the card by swiping with enables `SwipeToDismiss` property. The argument contains the following information:
 
 * [`DismissDirection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.DismissingEventArgs.html#Syncfusion_XForms_Cards_DismissingEventArgs_DismissDirection) - Gets a dismissing direction of the card view.
 
@@ -189,7 +189,7 @@ N> This event will not work when adding the `SfCardView` as a child of `SfCardLa
 
 ## Dismissed event
 
-The [`Dismissed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html) event fires when dismisses the card by swiping with enables `SwipeToDismiss` property. The argument contains the following information.
+The [`Dismissed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html#Syncfusion_XForms_Cards_SfCardView_Dismissed) event fires when dismisses the card by swiping with enables `SwipeToDismiss` property. The argument contains the following information.
 
 * [`DismissDirection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.DismissedEventArgs.html#Syncfusion_XForms_Cards_DismissedEventArgs_DismissDirection) - Gets a dismissed direction of the card view.
 

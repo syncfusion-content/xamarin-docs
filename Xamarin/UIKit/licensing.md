@@ -24,7 +24,7 @@ For more details about the Essential UI Kit license, please refer to the followi
 
 Regarding the Syncfusion licenses, please refer to the following link.
 
-[https://www.syncfusion.com/sales/licensing](https://www.syncfusion.com/sales/licensing)
+[https://www.syncfusion.com/sales/licensing](https://www.syncfusion.com/sales/teamlicense)
 
 To know more about the Syncfusion community licenses, please refer to the following link.
 

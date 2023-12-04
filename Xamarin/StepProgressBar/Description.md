@@ -86,7 +86,7 @@ To customize the description with different formatting style, PrimaryFormattedTe
 {% endhighlight %}
 
 {% endtabs %}
-N> To learn more about defining formats for different span in a text, refer to [FormattedString](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.formattedstring?view=xamarin-forms).
+N> To learn more about defining formats for different span in a text, refer to [FormattedString](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.formattedstring?view=xamarin-forms).
 
 ![StepProgressBar stepview formatted text](overview_images/formatted.png)
 

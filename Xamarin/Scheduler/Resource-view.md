@@ -554,4 +554,4 @@ N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-u
 
 ## See also
 
-[How to handle appointments for multiple resources in Schedule?](https://www.syncfusion.com/kb/6694/how-to-handle-appointments-for-multiple-resources-in-schedule)
+[How to handle appointments for multiple resources in Schedule?](https://support.syncfusion.com/kb/article/6101/how-to-handle-appointments-for-multiple-resources-in-xamarinforms-schedule)

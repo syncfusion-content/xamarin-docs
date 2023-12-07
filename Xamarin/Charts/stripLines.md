@@ -31,7 +31,7 @@ Following properties are used to configure the strip line.
 
 **Numerical StripLine**
 
-[`NumericalStripLine`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalStripLine.html#) are used to draw strip lines for [`NumericalAxis`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalAxis.html#) and [`CategoryAxis`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CategoryAxis.html). To add a strip line, create an instance of [`NumericalStripLine`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalStripLine.html#) and add to the [`StripLines`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalAxis.html#Syncfusion_SfChart_XForms_NumericalAxis_StripLines) collection property of the respective axis.
+[`NumericalStripLine`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalStripLine.html) are used to draw strip lines for [`NumericalAxis`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalAxis.html) and [`CategoryAxis`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CategoryAxis.html). To add a strip line, create an instance of [`NumericalStripLine`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalStripLine.html) and add to the [`StripLines`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalAxis.html#Syncfusion_SfChart_XForms_NumericalAxis_StripLines) collection property of the respective axis.
 
 {% tabs %} 
 

@@ -373,3 +373,41 @@ this.Content = richtexteditor;
 {% endhighlight %}
 
 {% endtabs %}
+
+## WebView2 Support for SfRichTextEditor UWP
+
+The Rich Text Editor provides support for to implement a common interface that allowing users to switch between the UWP Renderer class WebView and WebView2 at the sample level. At default the control load with WebView.. It will be helpful to overcome the issues in the default native renderer WebView.
+
+Please find the below to steps to create the sample to pass the WebView2 instance from sample:
+
+1. Install **MicroSoft.UI.Xaml** NuGet Package on UWP platform.
+
+2. Need to create WebView2Container Class and it’s inherited from the common interface “IWebViewContainer”.
+
+3. To create the two private field of the class. “Webview2” is an instance of the WebView2 Class, and “renderer” is an instance of the SfRichTextEditorRenderer Class.
+
+4. Create the Constructor and get the SfRichTextEditor instance as a parameter and it’s used to pass the WebView2 values to the source. Raised the necessary WebView2 events.
+
+5. Need to create common interface below Properties and method to use to load the WebView2 control.
+
+object WebView { get; } – To get the WebView2 instance to replace WebView with WebView2.
+
+Uri Source { get; set; } –get and Set the WebView2 Script file.
+
+void ExcecuteScript(string script); - To used to pass the input values to script.
+
+6. Need to call the below methods on corresponding events.
+
+WebView2Ext_NavigationCompleted event – To call renderer class NotifyNavigationCompleted method.
+
+CoreWebView2_WebMessageReceived event - To call renderer class NotifyWebMessageReceived(scriptContent) method.
+
+7. Need to get the SfRichTextEditorRenderer instance from the UWP sample MainPage.Xaml.cs. And since a direct reference to it is not available, this is achieved by using FindSfRichTextEditorRenderer() method.
+
+8. After getting the SfRichTextEditorRenderer instance to switch the WebView with WebView2 using sfRichTextEditorRenderer.ReplaceWebView(webview2); method.
+
+### WebView2 Limitation :
+
+The WebView2 Unfocused event does not trigger properly, it’s a issue from the WebView2. So, we are overcome the issue to send the MessagingCenter on once unfcosed the control on WebView2Container class. And subscribes MessagingCenter on Forms MainPage.Xaml.cs class.
+
+To do any unfocused related activities on the subscribes MessagingCenter. Need to UnSubscribe the MessaginCenter on OnDisappearing override method.

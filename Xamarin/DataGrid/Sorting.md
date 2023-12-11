@@ -336,4 +336,4 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to change the size of the sort icon in Xamarin DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/11216)
+[How to change the size of the sort icon in Xamarin DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/9829/how-to-change-the-size-of-the-sort-icon-in-xamarin-datagrid-sfdatagrid)

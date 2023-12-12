@@ -9,9 +9,9 @@ documentation: ug
 
 # Fix cursor behaviour in SfRichTextEditor UWP Platform
 
-In some cases the cursor behaviour does not working properly on the RichTextEditor UWP platform. We have implemented the RichTextEditor control using the WebView for rendering the HTML content. Upon the further analysis we have found that the issue from the WebView control. 
+In some cases the cursor does not work properly on the RichTextEditor UWP platform. RichTextEditor control was implemented using the WebView control for rendering the HTML content. The cursor behavior issue was due to this WebView control.
 
-To overcome the issue by using the WebView2 Control on the RichTextEditor UWP platform. We provided the support for change WebView control to WebView2 control at the sample level. At default the control load with WebView.
+In order to overcome this issue, the RichTextEditor UWP platform have provided support to change [WebView](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.webview) control to [WebView2](https://learn.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.webview2) control at the sample level. At default the control load with WebView.
 
 Follow the steps below to create the sample to pass the WebView2 instance from the sample:
 
@@ -47,4 +47,5 @@ The WebView2 Unfocused event does not trigger properly, it’s an issue from the
 
 To do any unfocused related activities on the subscribes MessagingCenter. Need to UnSubscribe the MessaginCenter on OnDisappearing override method.
 
-N>The WebView2 control does not support the **Any CPU** architecture, but our source project as implemented by Any CPU architecture.So we could not able to implement the WebView2 directly on source. It applies to UWP only. Since iOS and Android working properly.
+N>The WebView2 control does not support the **Any CPU** architecture, hence RichTextEditor control provide support to change the renderer element at runtime, Instead of directly implement using WebView2 control.
+N>It applies to UWP only. Since iOS and Android working properly.

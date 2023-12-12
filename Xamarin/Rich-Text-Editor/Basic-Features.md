@@ -373,4 +373,3 @@ this.Content = richtexteditor;
 {% endhighlight %}
 
 {% endtabs %}
-

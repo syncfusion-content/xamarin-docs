@@ -180,6 +180,8 @@ The [TextSelectionMenuItemClicked](https://help.syncfusion.com/cr/xamarin/Syncfu
 {% tabs %}
 {% highlight c# %}
 
+pdfViewer.TextSelectionSettings.MenuOptions.TextSelectionMenuItemClicked += PdfViewerControl_TextSelectionMenuItemClicked;
+
 private void PdfViewerControl_TextSelectionMenuItemClicked(object sender, TextSelectionMenuItemClickedEventArgs args) 
 {
 	TextSelectionMenuItem menuItem = sender as TextSelectionMenuItem;

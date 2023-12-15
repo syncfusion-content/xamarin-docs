@@ -773,7 +773,7 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to apply the row background color when mouse hover on SfDataGrid in UWP](https://support.syncfusion.com/kb/article/9779)
+[How to apply the row background color when mouse hover on SfDataGrid in UWP](https://support.syncfusion.com/kb/article/9779/how-to-apply-the-background-color-when-mouse-hover-on-sfdatagrid-in-xamarinforms-)
 
 [How to customize the expander icon for each level of group in Xamarin.Forms DataGrid(SfDataGrid)](https://support.syncfusion.com/kb/article/9600/how-to-customize-the-expander-icon-for-each-level-of-group-in-xamarin-forms)
 
@@ -787,11 +787,11 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 [How to bind a view model property to header template](https://support.syncfusion.com/kb/article/7054/how-to-bind-a-view-model-property-to-header-template)
 
-[How to load grid without borders](https://support.syncfusion.com/kb/article/6679/how-to-load-grid-without-borders)
+[How to load grid without borders](https://support.syncfusion.com/kb/article/6679/how-to-load-xamarinforms-datagrid-without-borders)
 
 [How to load a button in Header using HeaderTemplate in code-behind](https://support.syncfusion.com/kb/article/6564/how-to-load-a-button-in-header-using-headertemplate-in-code-behind)
 
-[How to add multiple views in a grid cell in SfDataGrid](https://support.syncfusion.com/kb/article/6562/how-to-add-multiple-views-in-a-grid-cell-in-sfdatagrid)
+[How to add multiple views in a grid cell in SfDataGrid](https://support.syncfusion.com/kb/article/6562/how-to-add-multiple-views-in-a-grid-cell-in-datagrid)
 
 [How to set different background color for each column header in SfDataGrid](https://support.syncfusion.com/kb/article/6708/how-to-set-different-background-color-for-each-column-header-in-xamarinforms-datagrid)
 

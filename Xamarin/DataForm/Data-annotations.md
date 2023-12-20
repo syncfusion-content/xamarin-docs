@@ -20,7 +20,7 @@ The data form supports the following attribute, and these attributes can be acce
 </tr>
 <tr>
 <td>
-{{'[Name](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.name?view=netframework-4.8)'| markdownify }}
+{{'[Name](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.name?view=netframework-4.8)'| markdownify }}
 </td>
 <td>
 Specifies the label text.
@@ -28,7 +28,7 @@ Specifies the label text.
 </tr>
 <tr>
 <td>
-{{'[GroupName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.groupname?view=netframework-4.8)'| markdownify }}
+{{'[GroupName](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.groupname?view=netframework-4.8)'| markdownify }}
 </td>
 <td>
 Specifies the group name which groups the fields in the data form. Refer to {{'[here](https://help.syncfusion.com/xamarin/dataform/layout#grouping-data-fields)'| markdownify }} for more details.
@@ -36,7 +36,7 @@ Specifies the group name which groups the fields in the data form. Refer to {{'[
 </tr>
 <tr>
 <td>
-{{'[ShortName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.shortname?view=netframework-4.8)'| markdownify }}
+{{'[ShortName](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.shortname?view=netframework-4.8)'| markdownify }}
 </td>
 <td>
 Specifies the label text. It takes higher priority than Name.
@@ -44,7 +44,7 @@ Specifies the label text. It takes higher priority than Name.
 </tr>
 <tr>
 <td>
-{{'[AutoGenerateField](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.autogeneratefield?view=netframework-4.8)'| markdownify }}
+{{'[AutoGenerateField](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.autogeneratefield?view=netframework-4.8)'| markdownify }}
 </td>
 <td>
 Specifies whether the field should be auto generated or not. Refer to {{'[here](https://help.syncfusion.com/xamarin/dataform/working-with-dataform#cancel-dataformitem-generation-of-data-field)'| markdownify }} for more details.
@@ -60,7 +60,7 @@ Specifies watermark text for the editor. Refer to {{'[here](https://help.syncfus
 </tr>
 <tr>
 <td>
-{{'[Order](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.order?view=netframework-4.8)'| markdownify }}
+{{'[Order](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.order?view=netframework-4.8)'| markdownify }}
 </td>
 <td>
 Specifies the order of field in the data form. Refer to {{'[here](https://help.syncfusion.com/xamarin/dataform/layout#changing-order-of-the-dataformitem	)'| markdownify }} for more details.

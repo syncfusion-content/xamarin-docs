@@ -238,7 +238,7 @@ private void DataForm_AutoGeneratingDataFormItem1(object sender, AutoGeneratingD
 
 ## Enable password visibility toggle for password editor
 
-Password toggle visibility in floating label layout is used to show or hide the visibility of characters in the dataform password editor. You can enable this toggle by setting the [EnablePasswordVisibilityToggle](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormTextItem.html) property to true in [DataFormTextItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormTextItem.html).
+Password toggle visibility in floating label layout is used to show or hide the visibility of characters in the dataform password editor. You can enable this toggle by setting the [EnablePasswordVisibilityToggle](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormTextItem.html#Syncfusion_XForms_DataForm_DataFormTextItem_EnablePasswordVisibilityToggle) property to true in [DataFormTextItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormTextItem.html).
 
 {% tabs %}
 {% highlight xaml %}      

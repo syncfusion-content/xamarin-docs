@@ -139,7 +139,7 @@ dataGrid.HeaderRowHeight = 50;
 {% endhighlight %}
 {% endtabs %}
 
-You can also change the height of stacked header rows using the [SfDataGrid.QueryRowHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event.
+You can also change the height of stacked header rows using the [SfDataGrid.QueryRowHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_QueryRowHeight) event.
 
 {% tabs %}
 {% highlight c# %}

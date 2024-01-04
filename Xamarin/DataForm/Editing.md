@@ -435,7 +435,7 @@ Also, you should manually update the value to the custom editor by using [OnUpda
 
 ## Support for Email editor
 
-You can load the Email editor by changing `KeyBoard` type in the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html) event.
+You can load the Email editor by changing `KeyBoard` type in the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_AutoGeneratingDataFormItem) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -719,8 +719,8 @@ You can download the entire source code of this demo from here [Two-wayDataBindi
 
 ## See also
 
-[How to save or cancel the edited DataForm data in Xamarin.Forms (SfDataForm)](https://www.syncfusion.com/kb/11312/)                                                                                                                                                                                                                                                                    
-[How to programmatically implement converter to Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11541/)                                                                                                                                                                                          
-[How to register common editor for same data type properties in Xamarin.Forms DataForm business object](https://www.syncfusion.com/kb/10322/)                                                                                                                                                                                   
-[How to change the editor visibility based on another editor in Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11189/)                                                                                                                                                                  
-[How to update editor value based on another editor in Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11192/)
+[How to save or cancel the edited DataForm data in Xamarin.Forms (SfDataForm)](https://support.syncfusion.com/kb/article/9831/how-to-save-or-cancel-the-edited-dataform-data-in-xamarin-forms-sfdataform)                                                                                                                                                                                                                                                                    
+[How to programmatically implement converter to Xamarin.Forms DataForm (SfDataForm)](https://support.syncfusion.com/kb/article/9933/how-to-programmatically-implement-converter-to-xamarin-forms-dataform-sfdataform)                                                                                                                                                                                          
+[How to register common editor for same data type properties in Xamarin.Forms DataForm business object](https://support.syncfusion.com/kb/article/8921/how-to-register-common-editor-for-same-data-type-properties-in-xamarin-forms-dataform)                                                                                                                                                                                   
+[How to change the editor visibility based on another editor in Xamarin.Forms DataForm (SfDataForm)](https://support.syncfusion.com/kb/article/9748/how-to-change-the-editor-visibility-based-on-another-editor-in-xamarin-forms-dataform)                                                                                                                                                                  
+[How to update editor value based on another editor in Xamarin.Forms DataForm (SfDataForm)](https://support.syncfusion.com/kb/article/9745/how-to-update-editor-value-based-on-another-editor-in-xamarin-forms-dataform-sfdataform)

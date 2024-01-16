@@ -17,7 +17,7 @@ A template can be used to present the data in a way that makes sense for the app
 
 ## Data template selector
 
-The `SfListView` allows customizing appearance of each item with different templates based on specific constraints by using the [DataTemplateSelector](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/). You can choose a `DataTemplate` for each item at runtime based on the value of data-bound property using `DataTemplateSelector`.
+The `SfListView` allows customizing appearance of each item with different templates based on specific constraints by using the [DataTemplateSelector](https://learn.microsoft.com/en-gb/dotnet/api/xamarin.forms.datatemplateselector?view=xamarin-forms). You can choose a `DataTemplate` for each item at runtime based on the value of data-bound property using `DataTemplateSelector`.
 
 Here, an [ItemsCacheLimit](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.LayoutBase.html#Syncfusion_ListView_XForms_LayoutBase_ItemsCacheLimit) property maintains number of items reusing in the view. This cache limit is used to create and reuse the [ListViewItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ListViewItem.html) if different templates are used in `DataTemplateSelector` for better scrolling performance. Based on this value, `SfListView` creates number of `ListViewItem` for different templates in the view if new template is created while scrolling, and reuses it if same template is used for improving the scrolling performance.
 
@@ -827,7 +827,7 @@ internal class SfListViewAccordionBehavior : Behavior<ContentPage>
 
 The `IsVisible` model property which is bound to the second template will be enabled when tapping the item and disabled when tapping again the same item.
 
-Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/listview_autofit).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/xamarin-forms-expandable-listview).
 
 ![Xamarin.Forms listview with Accordion](SfListView_images/SfListView-AccordImage.png)
 

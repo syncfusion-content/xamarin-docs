@@ -62,7 +62,7 @@ segmentedControl.SelectedIndex = 2;
 
 ## Event to command
 
-The SegmentedControl event can be converted into commands using [`Behaviors`](https://developer.xamarin.com/guides/xamarin-forms/behaviors/). To achieve this, create a command in the ViewModel class and use [`Behaviors`](https://developer.xamarin.com/guides/xamarin-forms/behaviors/) to associate it to the SegmentedControl event.
+The SegmentedControl event can be converted into commands using [`Behaviors`](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/behaviors/). To achieve this, create a command in the ViewModel class and use [`Behaviors`](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/behaviors/) to associate it to the SegmentedControl event.
 
 {% tabs %}
 
@@ -127,6 +127,6 @@ The SegmentedControl event can be converted into commands using [`Behaviors`](ht
 
 Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/xamarin.forms-segmentedcontrol-with-event-to-command-behavior).
 
-For more information about the event to command behavior in Xamarin.Forms, please refer to [this](https://developer.xamarin.com/samples/xamarin-forms/Behaviors/EventToCommandBehavior/) link.
+For more information about the event to command behavior in Xamarin.Forms, please refer to [this](https://learn.microsoft.com/en-us/samples/xamarin/xamarin-forms-samples/behaviors-eventtocommandbehavior/) link.
 
 

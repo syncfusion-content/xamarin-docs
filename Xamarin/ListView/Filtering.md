@@ -157,5 +157,5 @@ N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to filter Xamarin.Forms ListView (SfListView) using MVVM](https://www.syncfusion.com/kb/11478/how-to-filter-xamarin-forms-listview-sflistview-using-mvvm)
+[How to filter Xamarin.Forms ListView (SfListView) using MVVM](https://support.syncfusion.com/kb/article/9867/how-to-filter-xamarin-forms-listview-sflistview-using-mvvm)
 

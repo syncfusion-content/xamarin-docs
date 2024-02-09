@@ -26,4 +26,4 @@ N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-u
 
 ## See also
 
-[Feature comparison between Calendar and Schedule control](https://www.syncfusion.com/kb/6977/feature-comparison-between-calendar-and-schedule-control)
+[Feature comparison between Calendar and Schedule control](https://support.syncfusion.com/kb/article/6276/feature-comparison-between-calendar-and-schedule-control-in-winforms)

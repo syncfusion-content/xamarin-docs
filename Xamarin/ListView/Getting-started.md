@@ -255,7 +255,7 @@ In this walk through, you will create a new application with the SfListView that
 
 ## Creating the Project
 
-Create a new blank [(Xamarin.Forms.NET Standard) application](https://learn.microsoft.com/en-us/xamarin/get-started/first-app/?pivots=windows) in Xamarin Studio or Visual Studio for Xamarin.Forms.
+Create a new blank [(Xamarin.Forms.NET Standard) application](https://learn.microsoft.com/en-us/xamarin/get-started/first-app/?pivots=windows-vs2022) in Xamarin Studio or Visual Studio for Xamarin.Forms.
 
 ## Adding the SfListView in Xamarin.Forms 
 

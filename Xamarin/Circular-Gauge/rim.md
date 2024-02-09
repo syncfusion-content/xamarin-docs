@@ -221,10 +221,10 @@ The [`ShowRim`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms
 
 ## See Also
 
-[How to customize rim position for scale](https://www.syncfusion.com/kb/8296/how-to-customize-rim-position-for-scale)
+[How to customize rim position for scale](https://support.syncfusion.com/kb/article/7340/how-to-customize-rim-position-for-scale)
 
-[How to achieve doughnut chart requirement in circular gauge](https://www.syncfusion.com/kb/8295/how-to-achieve-doughnut-chart-requirement-in-circulargauge)
+[How to achieve doughnut chart requirement in circular gauge](https://support.syncfusion.com/kb/article/7338/how-to-achieve-doughnut-chart-requirement-in-circulargauge)
 
-[How to customize a circular gauge control as a time line gauge](https://www.syncfusion.com/kb/8294/how-to-customize-a-circular-gauge-control-as-a-timeline-gauge)
+[How to customize a circular gauge control as a time line gauge](https://support.syncfusion.com/kb/article/7337/how-to-customize-a-circular-gauge-control-as-a-timeline-gauge)
 
-[How to customize gauge position with Offset](https://www.syncfusion.com/kb/8293/how-to-customize-gauge-position-with-offset)
+[How to customize gauge position with Offset](https://support.syncfusion.com/kb/article/7390/how-to-customize-gauge-position-with-offset)

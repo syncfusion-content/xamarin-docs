@@ -152,7 +152,7 @@ N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-u
 
 ## See also
 
-[How to create custom header and view header in Xamarin.Forms Schedule?](https://www.syncfusion.com/kb/10083/how-to-create-custom-header-and-view-header-in-xamarin-forms-schedule)
+[How to create custom header and view header in Xamarin.Forms Schedule?](https://support.syncfusion.com/kb/article/8862/how-to-create-custom-header-and-view-header-in-xamarin-forms-schedule)
 
 
 

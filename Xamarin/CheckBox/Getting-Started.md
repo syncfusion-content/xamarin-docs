@@ -68,9 +68,9 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 N> If you are adding the references from toolbox, this step is not needed.
 
@@ -372,10 +372,10 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 
 ![Xamarin.Forms CheckBox intermediate state](Images/Inter1.jpg) ![Xamarin.Forms CheckBox intermediate Image2](Images/Inter2.jpg)
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox_IndeterminateState-1420370588).
+This demo can be downloaded from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox_IndeterminateState-1420370588).
 
 ## See also
 
-[How to create a Xamarin.Forms check box](https://www.syncfusion.com/kb/10888/how-to-create-a-xamarin-forms-checkbox)
+[How to create a Xamarin.Forms check box](https://support.syncfusion.com/kb/article/9401/how-to-create-a-xamarin-forms-checkbox)
 
-[How to create a collection of Xamarin.Forms check box](https://www.syncfusion.com/kb/10837/how-to-create-a-collection-of-xamarin-checkbox)
+[How to create a collection of Xamarin.Forms check box](https://support.syncfusion.com/kb/article/9502/how-to-create-a-collection-of-xamarin-checkbox)

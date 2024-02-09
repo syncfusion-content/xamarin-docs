@@ -32,7 +32,7 @@ The system requirements for using our Syncfusion Xamarin platform are as follows
 
 See the link below for the recommended Xamarin development environments
 
-[https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements](https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements)
+[https://learn.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements](https://learn.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements)
 
 ### Supported Platforms
 
@@ -173,4 +173,4 @@ The platforms supported by our Xamarin.Forms controls are listed in the table be
 
 The target framework or compile SDK version of the application for the Android platform should be equal to or greater than the latest API available at the time of our release. More information on setting the target framework can be found at the following link.
 
- [https://docs.microsoft.com/en-us/xamarin/android/app-fundamentals/android-api-levels?tabs=windows#target-framework](https://docs.microsoft.com/en-us/xamarin/android/app-fundamentals/android-api-levels?tabs=windows#target-framework)
+ [https://learn.microsoft.com/en-us/xamarin/android/app-fundamentals/android-api-levels?tabs=windows#target-framework](https://learn.microsoft.com/en-us/xamarin/android/app-fundamentals/android-api-levels?tabs=windows#target-framework)

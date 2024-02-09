@@ -147,10 +147,10 @@ inputLayout.InputView = new Entry();
 
 ## See also
 
-[How to remove the space at the bottom of SfTextInputLayout](https://www.syncfusion.com/kb/11040/how-to-remove-the-space-at-the-bottom-of-textinputlayout)
+[How to remove the space at the bottom of SfTextInputLayout](https://support.syncfusion.com/kb/article/9557/how-to-remove-the-space-at-the-bottom-of-textinputlayout)
 
-[How to apply LineBreakMode for labels in SfTextInputLayout](https://www.syncfusion.com/kb/11043/how-to-apply-linebreakmode-for-labels-in-sftextinputlayout)
+[How to apply LineBreakMode for labels in SfTextInputLayout](https://support.syncfusion.com/kb/article/9518/how-to-apply-linebreakmode-for-labels-in-xamarin-text-input-layout)
 
-[How to customize the properties of outline border colors, hint name, helper text, error text, and char count](https://www.syncfusion.com/kb/11659/how-to-customize-the-properties-of-outline-border-colors-hint-name-helper-text-error-text)
+[How to customize the properties of outline border colors, hint name, helper text, error text, and char count](https://support.syncfusion.com/kb/article/10194/how-to-customize-the-properties-of-outline-border-colors-hint-name-helper-text-error-text)
 
-[How to customize the color of border and labels in SfTextInputLayout](https://www.syncfusion.com/kb/10466/how-to-customize-the-color-of-border-and-labels-in-sftextinputlayout)
+[How to customize the color of border and labels in SfTextInputLayout](https://support.syncfusion.com/kb/article/9248/how-to-customize-the-color-of-border-and-labels-in-sftextinputlayout)

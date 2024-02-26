@@ -332,8 +332,8 @@ More information for popup positioning is in this [link](https://help.syncfusion
 
 By default, you can choose a layout from the following available layouts in the SfPopupLayout by using the property [SfPopupLayout.AppearanceMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AppearanceMode.html).
 
-* [OneButton](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AppearanceMode.html): Shows the SfPopupLayout with one button in the footer view. This is the default value.
-* [TwoButton](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AppearanceMode.html): Shows the SfPopupLayout with two buttons in the footer view.
+* [OneButton](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AppearanceMode.html#Syncfusion_XForms_PopupLayout_AppearanceMode_OneButton): Shows the SfPopupLayout with one button in the footer view. This is the default value.
+* [TwoButton](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AppearanceMode.html#Syncfusion_XForms_PopupLayout_AppearanceMode_TwoButton): Shows the SfPopupLayout with two buttons in the footer view.
 
 You can also customize the entire view of the popup by loading the templates or custom views for the header, body, and footer.
 
@@ -424,13 +424,13 @@ N> Setting the content view is same for both cases i.e. displaying the popup whe
 
 Available built-in animations will be applied to the SfPopupLayout when the PopupView opens and closes in the screen. By default, you can choose from the following animations available in the SfPopupLayout by using the property [SfPopupLayout.AnimationMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AnimationMode.html):
 
-* [Zoom](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AnimationMode.html): Zoom-out animation will be applied when the PopupView opens and zoom-in animation will be applied when the PopupView closes. This is the default AnimationMode.
-* [Fade](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AnimationMode.html): Fade-out animation will be applied when the PopupView opens and fade-in animation will be applied when the PopupView closes.
-* [SlideOnLeft](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AnimationMode.html): PopupView will be animated from left-to-right when it opens and from right-to-left when the PopupView closes.
-* [SlideOnRight](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AnimationMode.html): PopupView will be animated from right-to-left when it opens and from left-to-right when the PopupView closes.
-* [SlideOnTop](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AnimationMode.html): PopupView will be animated from top-to-bottom when it opens and from bottom-to-top when the PopupView closes.
-* [SlideOnBottom](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AnimationMode.html): PopupView will be animated from bottom-to-top when it opens and from top-to-bottom when the PopupView closes
-* [None](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AnimationMode.html): Animations will not be applied.
+* [Zoom](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AnimationMode.html#Syncfusion_XForms_PopupLayout_AnimationMode_Zoom): Zoom-out animation will be applied when the PopupView opens and zoom-in animation will be applied when the PopupView closes. This is the default AnimationMode.
+* [Fade](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AnimationMode.html#Syncfusion_XForms_PopupLayout_AnimationMode_Fade): Fade-out animation will be applied when the PopupView opens and fade-in animation will be applied when the PopupView closes.
+* [SlideOnLeft](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AnimationMode.html#Syncfusion_XForms_PopupLayout_AnimationMode_SlideOnLeft): PopupView will be animated from left-to-right when it opens and from right-to-left when the PopupView closes.
+* [SlideOnRight](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AnimationMode.html#Syncfusion_XForms_PopupLayout_AnimationMode_SlideOnRight): PopupView will be animated from right-to-left when it opens and from left-to-right when the PopupView closes.
+* [SlideOnTop](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AnimationMode.html#Syncfusion_XForms_PopupLayout_AnimationMode_SlideOnTop): PopupView will be animated from top-to-bottom when it opens and from bottom-to-top when the PopupView closes.
+* [SlideOnBottom](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AnimationMode.html#Syncfusion_XForms_PopupLayout_AnimationMode_SlideOnBottom): PopupView will be animated from bottom-to-top when it opens and from top-to-bottom when the PopupView closes
+* [None](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AnimationMode.html#Syncfusion_XForms_PopupLayout_AnimationMode_None): Animations will not be applied.
 
 More information for popup animations is in this [link](https://help.syncfusion.com/xamarin/popup/popup-animations).
 

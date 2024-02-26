@@ -45,7 +45,7 @@ N> Both the [`ShapeFileLayer`](https://help.syncfusion.com/cr/xamarin/Syncfusion
 
 ## Bing Maps
 
-The [`Bing Maps`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html#Syncfusion_SfMaps_XForms_LayerType_Bing) is a world map owned by Microsoft. As OSM, Bing Maps also provides the map tile images based on your requests and combines them into a single image to display the map area. To use [`Bing maps`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html#Syncfusion_SfMaps_XForms_LayerType_Bing), set the [`LayerType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html) property of ImageryLayer to “Bing”. Then, set the Bing Maps key, which is obtained from [Bing Maps Key](https://www.microsoft.com/en-us/maps/create-a-bing-maps-key).
+The [`Bing Maps`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html#Syncfusion_SfMaps_XForms_LayerType_Bing) is a world map owned by Microsoft. As OSM, Bing Maps also provides the map tile images based on your requests and combines them into a single image to display the map area. To use [`Bing maps`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html#Syncfusion_SfMaps_XForms_LayerType_Bing), set the [`LayerType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html) property of ImageryLayer to “Bing”. Then, set the Bing Maps key, which is obtained from [Bing Maps Key](https://www.microsoft.com/en-us/maps/bing-maps/create-a-bing-maps-key).
 
 {% tabs %}
 
@@ -313,7 +313,7 @@ The detailed explanation of marker and its customization have been provided in M
 
 ## Load custom map
 
-You can load the custom map providers map such as Google Maps, TomTom using the [`RequestTileUri`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html) event of ImageryLayer. For more details about  [`RequestTileUri`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html), refer the [`Events`](https://help.syncfusion.com/xamarin/maps/mapsprovider#events) of ImageryLayer.
+You can load the custom map providers map such as Google Maps, TomTom using the [`RequestTileUri`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html) event of ImageryLayer. For more details about  [`RequestTileUri`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html#Syncfusion_SfMaps_XForms_ImageryLayer_RequestTileUri), refer the [`Events`](https://help.syncfusion.com/xamarin/maps/mapsprovider#events) of ImageryLayer.
 
 {% tabs %}
 
@@ -344,7 +344,7 @@ You can load the custom map providers map such as Google Maps, TomTom using the 
 
 {% endtabs %}
 
-See also this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control) to load the google map.
+See also this [`KB article`](https://support.syncfusion.com/kb/article/7765/how-to-use-google-maps-api-to-show-google-maps-in-xamarin-forms-sfmaps-control) to load the google map.
 
 ![Xamarin custom map provider image](Images/custom_map_provider.jpg)
 
@@ -564,7 +564,7 @@ The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/xamarin/Syncfusion.S
 
 The [`RequestTileUriArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TileUriArgs.html) event is triggered whenever new tile required for map(such as zooming, panning and initial time).
 
-The following arguments can be obtained from the  [ `RequestTileUri` ](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html) event:
+The following arguments can be obtained from the  [ `RequestTileUri` ](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html#Syncfusion_SfMaps_XForms_ImageryLayer_RequestTileUri) event:
 
 * [`Uri`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TileUriArgs.html#Syncfusion_SfMaps_XForms_TileUriArgs_Uri) – Provide the option to set the desired Uri to load the custom map.
 
@@ -603,7 +603,7 @@ private void ImageryLayer_RequestTileUri(object sender, Syncfusion.SfMaps.XForms
 
 {% endtabs %}
 
-The [`ZoomLevelChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs.html) event triggers when zoom level changed. Following arguments can be get from the ZoomLevelChanging event .
+The [`ZoomLevelChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html#Syncfusion_SfMaps_XForms_ImageryLayer_ZoomLevelChanging) event triggers when zoom level changed. Following arguments can be get from the ZoomLevelChanging event .
 
 * [`Cancel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs.html#Syncfusion_SfMaps_XForms_ZoomLevelChangingEventArgs_Cancel) : Used to cancel the zooming.
 
@@ -638,7 +638,7 @@ The [`ZoomLevelChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMa
 
 {% endtabs %}
 
-The [`GeoCoordinateChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html) event is triggered while zooming and panning the maps.
+The [`GeoCoordinateChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html#Syncfusion_SfMaps_XForms_ImageryLayer_GeoCoordinateChanged) event is triggered while zooming and panning the maps.
 
 The following arguments can be gotten from the `ImageryLayer_GeoCoordinateChanged` event: 
 

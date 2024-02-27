@@ -313,7 +313,7 @@ The detailed explanation of marker and its customization have been provided in M
 
 ## Load custom map
 
-You can load the custom map providers map such as Google Maps, TomTom using the [`RequestTileUri`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html) event of ImageryLayer. For more details about  [`RequestTileUri`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html#Syncfusion_SfMaps_XForms_ImageryLayer_RequestTileUri), refer the [`Events`](https://help.syncfusion.com/xamarin/maps/mapsprovider#events) of ImageryLayer.
+You can load the custom map providers map such as Google Maps, TomTom using the [`RequestTileUri`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html#Syncfusion_SfMaps_XForms_ImageryLayer_RequestTileUri) event of ImageryLayer. For more details about  [`RequestTileUri`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html#Syncfusion_SfMaps_XForms_ImageryLayer_RequestTileUri), refer the [`Events`](https://help.syncfusion.com/xamarin/maps/mapsprovider#events) of ImageryLayer.
 
 {% tabs %}
 

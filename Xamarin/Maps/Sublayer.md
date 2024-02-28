@@ -13,7 +13,7 @@ Sublayer in the [Xamarin maps](https://www.syncfusion.com/xamarin-ui-controls/xa
 
 ## Adding sublayers in ShapeFileLayer
 
-You can add multiple shape files in the [`ShapeFileLayer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html) using the [`Sublayers`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html) property.
+You can add multiple shape files in the [`ShapeFileLayer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html) using the [`Sublayers`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLayer.html#Syncfusion_SfMaps_XForms_MapLayer_Sublayers) property.
 
 {% tabs %}
 

@@ -304,6 +304,27 @@ Localization is the process of configuring the application to a specific languag
 </tr>
 
 <tr>
+<td>SfPdfViewerXFAErrorAlertTitle</td>
+<td>XFA Forms PDF</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerXFAErrorAlertMessage</td>
+<td>The PDF contains XFA Forms which cannot be viewed in PDF Viewer.</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerUnhandledConditionErrorAlertTitle</td>
+<td>Error loading PDF</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerUnhandledConditionErrorAlertMessage</td>
+<td>There was an error in loading the PDF</td>
+</tr>
+
+<tr>
+
 <td>Sfpdfviewer_hinttext</td>
 <td>Double Tap to activate</td>
 </tr>

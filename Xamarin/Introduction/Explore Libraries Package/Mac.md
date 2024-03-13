@@ -7,7 +7,7 @@ control: Explore Libraries Package
 documentation: ug
 ---
 
-# Mac
+# Explore Libraries Package in Mac with Xamarin Forms
 
 ## Explore the libraries package
 

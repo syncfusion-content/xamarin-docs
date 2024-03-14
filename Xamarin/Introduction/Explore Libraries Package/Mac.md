@@ -7,9 +7,7 @@ control: Explore Libraries Package
 documentation: ug
 ---
 
-# Explore Libraries Package in Mac with Xamarin Forms
-
-## Explore the libraries package
+# Explore Libraries Package in Mac 
 
 You can find the Syncfusion libraries, samples and NuGet from the installed location in Mac.
 

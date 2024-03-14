@@ -62,7 +62,7 @@ flexLayout.Children.Add(volvo);
 
 ### CheckedChanged event
 
-The [`CheckedChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroupKey.html) event of [`SfRadioGroupKey`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroupKey.html) occurs when a checked item is changed. The argument contains the following information:
+The [`CheckedChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroupKey.html#Syncfusion_XForms_Buttons_SfRadioGroupKey_CheckedChanged) event of [`SfRadioGroupKey`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroupKey.html) occurs when a checked item is changed. The argument contains the following information:
 
 * [`PreviousItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.CheckedChangedEventArgs.html#Syncfusion_XForms_Buttons_CheckedChangedEventArgs_PreviousItem) – Gets the previously checked radio button from group.
 * [`CurrentItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.CheckedChangedEventArgs.html#Syncfusion_XForms_Buttons_CheckedChangedEventArgs_CurrentItem) – Gets the currently checked radio button from group.

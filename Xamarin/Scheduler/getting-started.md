@@ -556,4 +556,4 @@ N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-u
 
 [How to resolve SfSchedule not rendering issue in iOS and UWP ?](https://support.syncfusion.com/kb/article/6539/how-to-resolve-sfschedule-not-rendering-issue-in-ios-and-uwp)
 
-[How to switch between schedule views ?](https://support.syncfusion.com/kb/article/7435/how-to-switch-between-schedule-views)
+[How to switch between schedule views ?](https://support.syncfusion.com/kb/article/7435/how-to-switch-between-xamarinforms-schedule-views)

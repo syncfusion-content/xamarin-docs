@@ -278,7 +278,7 @@ If the active current cell is in edit mode, changes will be committed and select
 <kbd>Esc</kbd>
 </td>
 <td>
-If the current cell is in edit mode, reverts the changes done in the current cell. If the underlying source implements the {{'[IEditableObject](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0#"")'| markdownify }}, pressing Esc key for the second time will cancel the edit mode for the entire row.
+If the current cell is in edit mode, reverts the changes done in the current cell. If the underlying source implements the {{'[IEditableObject](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0)'| markdownify }}, pressing Esc key for the second time will cancel the edit mode for the entire row.
 </td>
 </tr>
 <tr>
@@ -809,14 +809,14 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to enable the MultiSelection in GridComboBoxColumn of DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/11045)
+[How to enable the MultiSelection in GridComboBoxColumn of DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/9714/how-to-enable-the-multiselection-in-gridcomboboxcolumn-of-datagrid)
 
-[How to apply animation for the selected rows in SfDataGrid](https://www.syncfusion.com/kb/7793)
+[How to apply animation for the selected rows in SfDataGrid](https://support.syncfusion.com/kb/article/7206/how-to-apply-animation-for-the-selected-rows-in-xamarinforms-datagrid)
 
-[How to change selected index of one picker in other pickers selection changed event in SfDataGrid](https://www.syncfusion.com/kb/7449)
+[How to change selected index of one picker in other pickers selection changed event in SfDataGrid](https://support.syncfusion.com/kb/article/6637/change-selected-index-of-one-picker-in-other-pickers-selection-changed-event-in-datagrid)
 
-[How to get the cell value of specific row and column](https://www.syncfusion.com/kb/7435)
+[How to get the cell value of specific row and column](https://support.syncfusion.com/kb/article/6559/how-to-get-the-cell-value-of-specific-row-and-column-in-xamarinforms-datagrid)
 
-[How to pass selected row's data to a command](https://www.syncfusion.com/kb/7388)
+[How to pass selected row's data to a command](https://support.syncfusion.com/kb/article/6521/how-to-pass-selected-rows-xamarinforms-datagrid-to-a-command)
 
-[How to apply multiple selection colors in SfDataGrid](https://www.syncfusion.com/kb/7387)
+[How to apply multiple selection colors in SfDataGrid](https://support.syncfusion.com/kb/article/6520/how-to-apply-multiple-selection-colors-in-xamarinforms-datagrid)

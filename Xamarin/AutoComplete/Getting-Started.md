@@ -311,7 +311,7 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-N> When you have an AutoComplete control in a Xamarin Shell Application and you want to focus the AutoComplete on page load, you need to add a delay before calling the focus method on the AutoComplete. This delay should be added before invoking the Focus() method in the OnAppearing event handler because the page and the control need to be visible before focusing.
+N> When you have an AutoComplete control in a Xamarin Shell Application and want to focus the AutoComplete on page load, add a delay before calling the focus method on the AutoComplete. This delay should be added before invoking the Focus() method in the OnAppearing event handler because the page and the control need to be visible before focusing.
 
 {% tabs %}
 

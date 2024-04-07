@@ -311,25 +311,6 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-N> When you have an AutoComplete control in a Xamarin Shell Application and want to focus the AutoComplete on page load, add a delay before calling the focus method on the AutoComplete. This delay should be added before invoking the Focus() method in the OnAppearing event handler because the page and the control need to be visible before focusing.
-
-{% tabs %}
-
-{% highlight c# %}
-
-  protected async override void OnAppearing()
-  {
-      await Task.Delay(500);
-      await Device.InvokeOnMainThreadAsync(() =>
-      {
-          autoComplete.Focus();
-      });
-  }
-
-{% endhighlight %}
-
-{% endtabs %}
-
 Refer [this](https://help.syncfusion.com/xamarin/autocomplete/populating-data) link to learn more about the options available in [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) to populate data.
 
 ## Configuring filter options

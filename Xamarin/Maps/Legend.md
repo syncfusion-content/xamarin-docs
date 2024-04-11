@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Legend in Xamarin.Forms Maps control | Syncfusion
-description: Learn here all about Legend support in Syncfusion Xamarin Maps (SfMaps) control, its elements and more.
+title: Legend in Xamarin.Forms Maps Control | Syncfusion
+description: Learn here all about legend support in Syncfusion Xamarin Maps (SfMaps) control, its elements and more.
 platform: xamarin
 control: SfMaps
 documentation: ug
@@ -14,7 +14,7 @@ Legends can be added using the [`LegendSettings`](https://help.syncfusion.com/cr
 
 ## Visibility
 
-The legends can be made visible by setting the [`ShowLegend`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#Syncfusion_SfMaps_XForms_MapLegendSetting_ShowLegend) property in [`MapLegendSetting`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#) to true.
+The legends can be made visible by setting the [`ShowLegend`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#Syncfusion_SfMaps_XForms_MapLegendSetting_ShowLegend) property in [`MapLegendSetting`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html) to true.
 
 {% tabs %}
 
@@ -51,7 +51,7 @@ The [`LegendType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XFor
 
 ## Legend position
 
-Based on the values of x (in the range of 0 to 100) and y (in the range of 0 to 100), the legends can be positioned using the  [`LegendPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#Syncfusion_SfMaps_XForms_MapLegendSetting_LegendPosition)property of the [`MapLegendSetting`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#) class. Legends will be positioned in the range of 0 to 100 (screen size ratio). By default, the *LegendPosition* is (50,10).
+Based on the values of x (in the range of 0 to 100) and y (in the range of 0 to 100), the legends can be positioned using the  [`LegendPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#Syncfusion_SfMaps_XForms_MapLegendSetting_LegendPosition)property of the [`MapLegendSetting`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html) class. Legends will be positioned in the range of 0 to 100 (screen size ratio). By default, the *LegendPosition* is (50,10).
 
 The legend items will be placed in multiple rows if size of the total legend exceeds the available size. 
 

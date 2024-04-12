@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Setting Main Content in Xamarin Navigation Drawer control | Syncfusion
-description: Learn here all about Setting Main Content support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
+title: Setting Main Content in Xamarin Navigation Drawer Control | Syncfusion
+description: Learn here all about setting main content support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control, it's elements and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug
@@ -208,6 +208,6 @@ namespace NaviSample
 
 N> It is mandatory to set [`ContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ContentView) for [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) on initializing.
 
-![contentview](Images/MainContent.png)
+![Main content view in Xamarin Navigation Drawer](images/xamarin-navigation-drawer-main-content-view.png)
 
 You can find the complete Sample from this [link.](https://github.com/SyncfusionExamples/navigation-drawer-main-content)

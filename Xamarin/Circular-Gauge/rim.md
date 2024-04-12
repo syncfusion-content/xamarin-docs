@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Rim in Xamarin Circular Gauge control | Syncfusion
-description: Learn here all about Rim support in Syncfusion Xamarin Circular Gauge (SfCircularGauge) control and more.
+title: Rim in Xamarin Circular Gauge Control | Syncfusion
+description: Learn here all about rim support in Syncfusion Xamarin Circular Gauge (SfCircularGauge) control, it's elements and more.
 platform: xamarin
 control: SfCircularGauge
 documentation: ug
@@ -49,7 +49,7 @@ The [`StartValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XFo
 
 {% endtabs %}
 
-![Circular Gauge Rim](rim_images/rim.png)
+![Rim in Xamarin.Forms Circular Gauge](rim_images/xamarin-forms-circular-gauge-rim.png)
 
 ## Rim customization
 
@@ -99,7 +99,7 @@ The color and thickness of rim can be set by using the [`RimColor`](https://help
 
 {% endtabs %}
 
-![Circular Gauge Rim Customization](rim_images/rim-customization.png)
+![Rim customization in Xamarin.Forms Circular Gauge](rim_images/xamarin-forms-circular-gauge-rim-customization.png)
 
 ## Setting position for rim
 
@@ -144,7 +144,7 @@ This approach is used to define the rim size from its starting location in logic
 
 {% endtabs %}
 
-![Circular Gauge Rim Offset](rim_images/rim-offset.png)
+![Rim offset in Xamarin.Forms Circular Gauge](rim_images/xamarin-forms-circular-gauge-rim-offset.png)
 
 ### Setting scale start and end offsets for rim
 
@@ -183,7 +183,7 @@ The [`ScaleStartOffset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGau
 
 {% endtabs %}
 
-![Scale start and end offset for rim in Xamarin.Forms Circular Gauge](rim_images/rim-start-end-offset.png)
+![Scale start and end offset for rim in Xamarin.Forms Circular Gauge](rim_images/xamarin-forms-circular-gauge-rim-start-end-offset.png)
 
 ## Show rim
 
@@ -217,7 +217,7 @@ The [`ShowRim`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms
 
 {% endtabs %}
 
-![Show rim support in Xamarin.Forms Circular Gauge](rim_images/show-rim.png)
+![Show rim support in Xamarin.Forms Circular Gauge](rim_images/xamarin-forms-circular-gauge-show-rim.png)
 
 ## See Also
 

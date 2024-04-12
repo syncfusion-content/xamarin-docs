@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Date Picker in Xamarin Picker control | Syncfusion
-description: Learn here all about Date Picker support in Syncfusion Xamarin Picker (SfPicker) control, its elements and more.
-platform: Xamarin
+title: Date Picker in Xamarin Picker Control | Syncfusion
+description: Learn here all about date picker support in Syncfusion Xamarin Picker (SfPicker) control, its elements and more.
+platform: xamarin
 control: Picker
 documentation: ug
 ---
@@ -409,7 +409,7 @@ date.IsOpen = !date.IsOpen;
 
 The following screenshot illustrates the output of above code snippets.
 
-![DatePicker image](images/datepicker_img1.jpeg)
+![DatePicker image in Xamarin Picker](images/xamarin-picker-datepicker-image.jpeg)
 
 
 You can download the DatePicker sample for reference from the following link.

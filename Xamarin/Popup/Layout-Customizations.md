@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Layout Customizations in Xamarin Popup control | Syncfusion
+title: Layout Customizations in Xamarin Popup Control | Syncfusion
 description: Learn here all about Layout Customizations support in Syncfusion Xamarin Popup (SfPopupLayout) control and more.
-platform: Xamarin
+platform: xamarin
 control: SfPopupLayout
 documentation: ug
 --- 
@@ -78,7 +78,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in Android, iOS and Windows Phone devices respectively.
 
-![Popup with one button](GettingStarted_images/AppearanceMode_OneButton.png)
+![Popup with one button in Xamarin.Forms](gettingstarted_images/xamarin.forms-popup-with-one-button.png)
 
 ## Popup with two buttons in the footer
 
@@ -132,7 +132,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in Android, iOS and Windows Phone devices respectively.
 
-![Popup with two button](GettingStarted_images/AppearanceMode_TwoButton.png)
+![Popup with two button in Xamarin.Forms](gettingstarted_images/xamarin-forms-with-two-button.png)
 
 ## Popup without header
 
@@ -182,7 +182,7 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-![Popup without header](PopupLayout_images/ShowHeader_False.png)
+![Popup without header in Xamarin.Forms](popuplayout_images/xamarin.forms-popup-without-header.png)
 
 ## Popup without Footer
 
@@ -231,7 +231,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-![Popup without footer](PopupLayout_images/ShowFooter_False.png)
+![Popup without footer in Xamarin.Forms](popuplayout_images/xamarin-forms-popup-without-footer.png)
 
 ## Popup without header and footer
 
@@ -367,7 +367,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in Android, iOS and Windows Phone devices respectively.
 
-![Popup with header template](PopupLayout_images/HeaderTemplate.png)
+![Popup with header template in Xamarin.Forms](popuplayout_images/xamarin.forms-popup-header-template.png)
 
 ## Customizing popup footer
 
@@ -454,7 +454,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in Android, iOS and Windows Phone devices respectively.
 
-![Popup with footer template](PopupLayout_images/FooterTemplate.png)
+![Popup with footer template in Xamarin.Forms](popuplayout_images/xamarin-forms-popup-footer-template.png)
 
 ## Customizing popup content
 
@@ -531,6 +531,6 @@ namespace GettingStarted
 
 {% endtabs %}
 
-![Popup with custom content](GettingStarted_images/ContentView.png)
+![Popup with custom content in Xamarin.Forms](gettingstarted_images/xamarin.forms-popup-custom-content.png)
 
 To display ListView as content of the Popup, refer to this [documentation](https://help.syncfusion.com/xamarin/popup/faq#show-listview-as-a-popup).

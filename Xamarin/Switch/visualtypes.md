@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Visual Types in Xamarin Switch control | Syncfusion
-description: Learn here all about Visual Types support in Syncfusion Xamarin Switch (SfSwitch) control, its elements and more.
-platform: Xamarin
+title: Visual Types in Xamarin Switch Control | Syncfusion
+description: Learn here all about visual types support in Syncfusion Xamarin Switch (SfSwitch) control, its elements and more.
+platform: xamarin
 control: Switch
 documentation: ug
 ---
@@ -19,7 +19,7 @@ documentation: ug
 
 This is the default value set for visual type.
 
-![switch conrol is having default visual type](images/default.png)
+![Switch control is having default visual type in Xamarin.Forms](images/xamarin.forms-switch-default-visual-type.png)
 
 N> If you set [`default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Default), the visual type will be internally changed based on the device platform.
 
@@ -45,7 +45,7 @@ sfSwitch.VisualType = VisualType.Material;
 
 {% endtabs %}
 
-![switch conrol is having material visual type](images/material.png)
+![Switch control is having material visual type in Xamarin.Forms](images/xamarin.forms-switch-material-visual-type.png)
 
 ## Cupertino
 
@@ -69,7 +69,7 @@ sfSwitch.VisualType = VisualType.Cupertino;
 
 {% endtabs %}
 
-![switch conrol is having cupertino visual type](images/cupertino.png)
+![Switch control is having cupertino visual type in Xamarin.Forms](images/xamarin.forms-switch-cupertino-visual-type.png)
 
 ## Fluent
 
@@ -93,7 +93,7 @@ sfSwitch.VisualType = VisualType.Fluent;
 
 {% endtabs %}
 
-![switch conrol is having fluent visual type](images/fluent.png)
+![Switch control is having fluent visual type in Xamarin.Forms](images/xamarin.forms-switch-fluent-visual-type.png)
 
 ## Custom
 

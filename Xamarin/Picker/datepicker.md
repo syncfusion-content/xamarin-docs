@@ -2,7 +2,7 @@
 layout: post
 title: Date Picker in Xamarin Picker Control | Syncfusion
 description: Learn here all about date picker support in Syncfusion Xamarin Picker (SfPicker) control, its elements and more.
-platform: Xamarin
+platform: xamarin
 control: Picker
 documentation: ug
 ---

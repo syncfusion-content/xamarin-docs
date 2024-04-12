@@ -18,4 +18,4 @@ The radio button is a selection control that allows users to select one option f
 * Allow users to select and clear the control by tapping.
 * Supports radio button color and label text customization.
 
-![Radio button image in Xamarin.Forms Overview.](images/xamarin.forms-radio-Button-Overview.png)
+![Radio button image in Xamarin.Forms Overview.](workspace\Content\xamarin-docs\Spell-Checker\Xamarin/Radio-Button/Overview.md)

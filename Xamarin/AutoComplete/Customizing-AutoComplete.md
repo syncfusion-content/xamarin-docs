@@ -1025,9 +1025,46 @@ namespace AutocompleteSample
 
 ## Customizing the autocomplete control focus on page load
 
-When you have an AutoComplete control in a Xamarin Shell Application and want to focus the AutoComplete on page load, add a delay before calling the focus method on the AutoComplete. This delay should be added before invoking the Focus() method in the OnAppearing event handler because the page and the control need to be visible before focusing.
+The focus method in SfAutoComplete allows users to set focus programmatically, either during the component's initial loading or dynamically during runtime. 
+
+When working with an AutoComplete control within a Xamarin Shell Application or a Xamarin Blank Application, if you wish to focus the AutoComplete upon page load, it is advisable to include a delay before invoking the Focus() method. This delay should be added within the OnAppearing event handler, ensuring that both the page and the control are fully visible before focusing.
+
+The following code demonstrates how to focus the SfAutoComplete during its initial loading.
+
 
 {% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout 
+        VerticalOptions="Start" 
+        HorizontalOptions="Start"
+        Padding="30">
+        <autocomplete:SfAutoComplete x:Name="autoComplete"
+                                     HeightRequest="40"
+                                     ClearButtonColor="Red">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
+
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -1043,4 +1080,6 @@ When you have an AutoComplete control in a Xamarin Shell Application and want to
 {% endhighlight %}
 
 {% endtabs %}
+
+
 

@@ -1048,8 +1048,7 @@ The following code demonstrates how to focus the SfAutoComplete during its initi
         HorizontalOptions="Start"
         Padding="30">
         <autocomplete:SfAutoComplete x:Name="autoComplete"
-                                     HeightRequest="40"
-                                     ClearButtonColor="Red">
+                                     HeightRequest="40">                                   
             <autocomplete:SfAutoComplete.AutoCompleteSource>
                 <ListCollection:List x:TypeArguments="x:String">
                     <x:String>India</x:String>

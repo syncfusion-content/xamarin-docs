@@ -1027,7 +1027,7 @@ namespace AutocompleteSample
 
 The focus method in SfAutoComplete allows users to set focus programmatically, either during the component's initial loading or dynamically during runtime. 
 
-When working with an AutoComplete control within a Xamarin Shell Application or a Xamarin Blank Application, if you wish to focus the AutoComplete upon page load, it is advisable to include a delay before invoking the Focus() method. This delay should be added within the OnAppearing event handler, ensuring that both the page and the control are fully visible before focusing.
+N> When working with an AutoComplete control within a Xamarin Shell Application or a Xamarin Blank Application, if you wish to focus the AutoComplete upon page load, it is advisable to include a delay before invoking the Focus() method. This delay should be added within the OnAppearing event handler, ensuring that both the page and the control are fully visible before focusing.
 
 The following code demonstrates how to focus the SfAutoComplete during its initial loading.
 

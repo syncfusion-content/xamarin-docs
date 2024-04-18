@@ -2,7 +2,6 @@
 layout: post
 title: Markers in Xamarin.Forms Maps control | Syncfusion
 description: Learn here all about Xamarin.Forms Maps (SfMaps) Markers in Syncfusion control, its elements and more.
-platform: xamarin
 control: SfMaps
 documentation: ug
 ---

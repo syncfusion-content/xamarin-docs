@@ -749,6 +749,6 @@ You can also explore our [Xamarin.Forms Maps example](https://github.com/Syncfus
 
 ## See also
 
-[How to add Polygon shape in SfMaps](https://www.syncfusion.com/kb/11783/how-to-add-ploygon-shape-in-xamarin-forms-maps-sfmaps)
+[How to add Polygon shape in SfMaps](https://support.syncfusion.com/kb/article/10305/how-to-add-ploygon-shape-in-xamarin-forms-maps-sfmaps)
 
-[How to draw a line (route) between two terminals in SfMaps](https://www.syncfusion.com/kb/10619/how-to-draw-a-line-route-between-two-terminals-in-sfmaps)
+[How to draw a line (route) between two terminals in SfMaps](https://support.syncfusion.com/kb/article/9149/how-to-draw-a-line-route-between-two-terminals-in-sfmaps)

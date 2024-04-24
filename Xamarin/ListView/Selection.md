@@ -258,7 +258,7 @@ listView.SelectedItemTemplate = new DataTemplate(() =>
 
 Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Show-checked-circle-on-selected-items-in-xamarin.forms-listview).
 
-![Multiple item selection in listview](SfListView_images/SfListView-Selection-2.png)
+![Multiple item selection in listview.](SfListView_images/SfListView-Selection-2.png)
 
 ## Selected item style
 
@@ -276,7 +276,7 @@ listView.SelectionBackgroundColor = Color.Khaki;
 {% endhighlight %}
 {% endtabs %}
 
-![Selection background color in listview](SfListView_images/SfListView-SelectionBackground.png)
+![Selection background color in listview.](SfListView_images/SfListView-SelectionBackground.png)
 
 ### Programmatic animation
 
@@ -304,7 +304,7 @@ public class SelectionControllerExt : SelectionController
 
 Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Animate-items-programmatically-on-selection-in-xamarin.forms-listview).
 
-![Selection animation in listview](SfListView_images/SfListView-SelectionAnimation.gif)
+![Selection animation in listview.](SfListView_images/SfListView-SelectionAnimation.gif)
 
 ## Events
 
@@ -577,6 +577,6 @@ N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui
 [How to disable selection for particular items in SfListView](https://support.syncfusion.com/kb/article/7731/how-to-disable-selection-for-particular-items-in-sflistview)                                                                                        
 [How to notify item selection using MVVM in Xamarin.Forms ListView](https://support.syncfusion.com/kb/article/8795/how-to-notify-item-selection-using-mvvm-in-xamarin-forms-listview)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 [How to change the ListView selected item text color in Xamarin.Forms (SfListView)](https://support.syncfusion.com/kb/article/9904/how-to-change-the-listview-selected-item-text-color-in-xamarin-forms-sflistview)                                                                                                                                                                                                                                                                                                                                                                                                                                   
-[How to change selected image in Xamarin.Forms ListView (SfListView)](https://support.syncfusion.com/kb/article/9891/how-to-change-selected-image-in-xamarin-forms-listview-sflistview)                                                                                                                                                                                 
+[How to change selected image in Xamarin.Forms ListView (SfListView)](https://support.syncfusion.com/kb/article/9891/how-to-change-selected-image-in-xamarinforms-listview-sflistview?isInternalRefresh=False)                                                                                                                                                                                 
 [How to apply ListView selected item color in Xamarin.Forms navigation (SfListView)?](https://support.syncfusion.com/kb/article/10120/how-to-apply-listview-selected-item-color-in-xamarin-forms-navigation-sflistview)                                                                                                                                                                                                                 
 [How to achieve SingleDeSelect when use ListView with Rg.Plugin.Popup in Xamarin.Forms (SfListView)](https://support.syncfusion.com/kb/article/10170/how-to-achieve-singledeselect-when-use-listview-with-rg-plugin-popup-in-xamarin-forms)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Export To PDF in Xamarin DataGrid control | Syncfusion
-description: Learn here all about export to PDF support in Syncfusion Xamarin DataGrid (SfDataGrid) control,its elements and more
+description: Learn here all about export to PDF support in Syncfusion Xamarin DataGrid (SfDataGrid) control, its elements and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
@@ -962,7 +962,7 @@ void pdfExport_RowExporting (object sender, DataGridRowPdfExportingEventArgs e)
 
 The [DataGridCellPdfExportingEventHandler](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellPdfExportingEventhandler.html) delegate allows customizing the styles for the header cells, record cells, group caption cells, and group summary cells. The `CellExporting` event is triggered with [DataGridCellPdfExportingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellPdfExportingEventArgs.html) that contains the following properties:
 
-The [DataGridCellPdfExportingEventHandler]https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellPdfExportingEventhandler.html) delegate allows customizing the styles for header cells, record cells, and group caption cells. The `CellExporting` event is triggered with [DataGridCellPdfExportingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellPdfExportingEventArgs.html) that contains the following properties:
+The [DataGridCellPdfExportingEventHandler](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellPdfExportingEventhandler.html) delegate allows customizing the styles for header cells, record cells, and group caption cells. The `CellExporting` event is triggered with [DataGridCellPdfExportingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellPdfExportingEventArgs.html) that contains the following properties:
 
 * [CellType](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellPdfExportingEventArgs.html#Syncfusion_SfDataGrid_XForms_Exporting_DataGridCellPdfExportingEventArgs_CellType): Specifies the cell type using `ExportCellType` enum. Checks the cell type and applies different cell styles based on the cell type.
 * [CellValue](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.Exporting.DataGridCellPdfExportingEventArgs.html#Syncfusion_SfDataGrid_XForms_Exporting_DataGridCellPdfExportingEventArgs_CellValue): Contains the exported actual value to format the PDF using the `Range` property.

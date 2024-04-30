@@ -2,7 +2,7 @@
 layout: post
 title: ToolTip Support in Xamarin Range Slider control | Syncfusion
 description: Learn here all about ToolTip Support in Syncfusion Xamarin Range Slider (SfRangeSlider) control and more.
-platform: Xamarin
+platform: Xamarin.Forms
 control: RangeSlider
 documentation: ug
 ---

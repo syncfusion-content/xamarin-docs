@@ -3,7 +3,7 @@
 layout: post
 title: ToolTip in Xamarin Rating control | Syncfusion
 description: Learn here all about ToolTip support in Syncfusion Xamarin Rating (SfRating) control, its elements and more.
-platform: Xamarin
+platform: xamarin
 control: Rating
 documentation: ug
 
@@ -49,7 +49,7 @@ public MainPage()
 
 {% endtabs %}
 
-![SfRating right bottom ToolTip](images/rightBottom.jpg)
+![SfRating right bottom ToolTip.](images/rightBottom.jpg)
 
 ### TopLeft 
 
@@ -77,7 +77,7 @@ public MainPage()
 
 {% endtabs %}
 
-![SfRating top left ToolTip](images/topLeft.jpg) 
+![SfRating top left ToolTip.](images/topLeft.jpg) 
 
 ### None
 
@@ -135,4 +135,4 @@ public MainPage()
 
 {% endtabs %}
 
-![SfRating ToolTip precision](images/toolTipPrecision.jpg)
+![SfRating ToolTip precision.](images/toolTipPrecision.jpg)

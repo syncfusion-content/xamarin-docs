@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in Xamarin ListView control | Syncfusion
-description: Learn here all about Sorting support in Syncfusion Xamarin ListView (SfListView) control, its elements and more.
+title: Sorting in Xamarin ListView Control | Syncfusion
+description: Learn here all about sorting support in Syncfusion Xamarin ListView (SfListView) control, it's elements and more.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -52,7 +52,7 @@ listView.RefreshView();
 
 N> It is mandatory to specify the `PropertyName` of `SortDescriptor`.
 
-![Sort items in listview](SfListView_images/SfListView-Sorting.png)
+![Sort items in Xamarin ListView.](sfListView_images/xamarin-listview-sorting.png)
 
 ## Custom sorting
 
@@ -250,7 +250,7 @@ this.listView.DataSource.SortDescriptors.Add(new SortDescriptor()
 
 The following screenshot shows the output when items are sorted by year. Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Using-sorting-and-grouping-xamarin.forms-listview)
 
-![Custom sort by year in listview](SfListView_images/SfListView-Sorting1.png)
+![Custom sort by year in Xamarin ListView.](sfListView_images/xamarin-listview-custom-sort-by-year.png)
 
 ## Sorting with grouping by month and year
 
@@ -304,6 +304,6 @@ public partial class MainPage : ContentPage
 
 The following screenshot shows the output when items are sorted by month and year.
 
-![Custom sort by month in listview](SfListView_images/SfListView-Sorting2.png)
+![Custom sort by month in Xamarin ListView.](sfListView_images/xamarin-listview-custom-sort-by-month.png)
 
 N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms ListView example](https://github.com/SyncfusionExamples/ListView-GettingStarted-in-Xamarin-Forms) to know how to render set of data items with Xamarin.Forms views or custom templates.

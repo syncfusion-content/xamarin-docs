@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Xamarin Numeric Entry Control | Syncfusion
 description: Learn here all about overview of Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control, it's elements and more.
-platform: Xamarin
+platform: xamarin
 control: NumericTextBox
 documentation: ug
 ---

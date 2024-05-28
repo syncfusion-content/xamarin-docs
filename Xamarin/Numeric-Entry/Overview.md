@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin Numeric Entry control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control, its elements and more.
+title: Overview of Xamarin Numeric Entry Control | Syncfusion
+description: Learn here all about overview of Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control, it's elements and more.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug
@@ -13,7 +13,7 @@ The Essential Xamarin.Forms NumericTextBox is an advanced version of the Entry c
 
 Also provides, a gesture friendly UI culture and can be configured to display different formats like currency format, scientific format etc.
 
-![overview](images/overview.png)
+![Overview of Xamarin Numeric Entry.](images/xamarin-numeric-entry-overview.png)
 
 ## Key Features
 

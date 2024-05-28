@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Editing support in Syncfusion Xamarin DataGrid (SfDataGrid) control, its elements and more.
+description: Learn here all about editing support in Syncfusion Xamarin DataGrid (SfDataGrid) control, its elements, and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug

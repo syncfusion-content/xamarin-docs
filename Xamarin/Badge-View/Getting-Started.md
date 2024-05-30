@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion Badge View control for Xamarin.Forms
-description: Learn here about getting started with Syncfusion in Xamarin Badge View control, its elements, and more.
+description: Learn here about getting started with Syncfusion in Xamarin Badge View control, its elements and more.
 platform: xamarin
 control: SfBadgeView
 documentation: ug

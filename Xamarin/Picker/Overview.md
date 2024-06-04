@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Xamarin Picker control | Syncfusion
+title: Overview About Xamarin Picker Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Xamarin Picker (SfPicker) control, its elements and more.
 platform: Xamarin
 control: Picker

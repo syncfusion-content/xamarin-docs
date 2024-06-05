@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Xamarin Digital Gauge Control | Syncfusion
 description: Learn here about getting started with Syncfusion Xamarin Digital Gauge (SfDigitalGauge) control, its elements and more.
-platform: Xamarin
+platform: xamarin
 control: DigitalGauge
 documentation: ug
 ---

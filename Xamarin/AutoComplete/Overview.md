@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of  Xamarin.Forms AutoComplete Control | Syncfusion
+title: Overview of Xamarin.Forms AutoComplete Control | Syncfusion
 description: Learn here all about overview of Syncfusion Xamarin.Forms AutoComplete control, its elements, and more.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
 ---
 
-#  Overview of Xamarin AutoComplete (SfAutoComplete)
+# Overview of Xamarin AutoComplete (SfAutoComplete)
 
 Essential [AutoComplete for Xamarin.Forms](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) provides a simpler way to complete the text based on the characters that the user has entered before. It also provides option to choose a suggestion from drop down or append a suggestion to the text directly.
 
@@ -15,7 +15,7 @@ Essential [AutoComplete for Xamarin.Forms](https://www.syncfusion.com/xamarin-ui
 
 ## Key Features
 
-* AutoComplete modes - AutoComplete provides 3 different ways to display the filtered suggestions. They are displaying suggestion through drop down list, appending the first suggestion to text and both of these.  
+* AutoComplete modes - AutoComplete provides 3 different ways to display the filtered suggestions. They are displaying suggestion through drop down list, appending the first suggestion to text and both of these.
 
 * Suggestion modes - Suggestions can be filtered in 9 different modes, like StartsWith, EndWith, Contains, Equals, Custom etc. AutoComplete provides both case sensitive and insensitive modes.
 
@@ -23,7 +23,7 @@ Essential [AutoComplete for Xamarin.Forms](https://www.syncfusion.com/xamarin-ui
 
 * Popup delay & Minimum prefix characters - Filtering process can be delayed by providing the minimum character count, after which AutoComplete starts giving suggestions. Displaying the filtered suggestions through drop down list can also be delayed for some time duration.
 
-* Customization support -  AutoComplete provide options to customize both the Entry and Suggestion drop down.
+* Customization support - AutoComplete provide options to customize both the Entry and Suggestion drop down.
 
 * Multiple Selection - AutoComplete provides 2 different ways to select multiple items from the suggestion list. They are using Token representation and Delimiter. In Token mode, the text can be wrapped in two ways. They are Wrap and None. In Wrap mode text will be wrap to next line. When using None, the text will be wrapped horizontally.
 

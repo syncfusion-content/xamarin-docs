@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Charts control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Charts (SfChart) control, its elements and more.
+title: Getting Started with Xamarin Charts Control | Syncfusion
+description: Learn here all about getting started with Syncfusion Xamarin Charts control, its elements and more details.
 platform: xamarin
 control: Chart
 documentation: ug

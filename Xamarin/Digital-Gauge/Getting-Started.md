@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Xamarin Digital Gauge control | Syncfusion
+title: Getting Started with Xamarin Digital Gauge Control | Syncfusion
 description: Learn here about getting started with Syncfusion Xamarin Digital Gauge (SfDigitalGauge) control, its elements and more.
-platform: Xamarin
+platform: xamarin
 control: DigitalGauge
 documentation: ug
 ---
@@ -319,7 +319,7 @@ namespace GaugeGettingStarted
 
 The following screenshot illustrates the result of the previous codes.
 
-![Xamarin digital gauge getting started](Getting-Started_images/Getting_Started_img1.png)
+![Xamarin Digital Gauge getting started.](getting-started_images/xamarin-digital-gauge-getting-started.png)
 
 
 You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Digital-Gauge).

@@ -9,7 +9,7 @@ documentation: ug
 
 # Syncfusion Xamarin Toolbox
 
-Syncfusion provides a Syncfusion **Visual Studio** Toolbox for the Xamarin platform to include the Syncfusion Xamarin (Xamarin.Forms) components in Xamarin application. It supports from Visual Studio 2017. The Syncfusion Xamarin toolbox allows you to add a Syncfusion Xamarin component code to the application effortlessly at the appropriate place in the XAML design file.
+Syncfusion provides a Syncfusion **Visual Studio** Toolbox for the Xamarin platform to include the Syncfusion Xamarin (Xamarin.Forms) components in Xamarin application. It supports from Visual Studio 2017. The Syncfusion Xamarin toolbox allows you to add a Syncfusion Xamarin component code to the application effortlessly at the appropriate place in the XAML design file. 
 
 I> The Syncfusion Xamarin Toolbox is available from Essential Studio 2018 Volume 2(v16.2.0.41).
 

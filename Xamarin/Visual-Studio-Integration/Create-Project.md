@@ -9,7 +9,7 @@ documentation: ug
 
 # Creating Syncfusion Xamarin Application
 
-Syncfusion provides Visual Studio Project Templates for the Syncfusion Xamarin platform, allowing you to quickly develop a Syncfusion Xamarin application by just adding the needed Syncfusion NuGet packages for the control you want to use.
+Syncfusion provides Visual Studio Project Templates for the Syncfusion Xamarin platform, allowing you to quickly develop a Syncfusion Xamarin application by just adding the needed Syncfusion NuGet packages for the control you want to use. 
 
 I> The Syncfusion Xamarin Project Templates are available from v16.2.0.41.
 

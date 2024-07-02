@@ -13,7 +13,7 @@ Syncfusion provides Extensions to update the most recent version of the Essentia
 
 I> The Syncfusion Check for updates is available from v17.1.0.32.
 
-You can check updates availability in Visual Studio, and then install the update version if required.
+You can check updates availability in Visual Studio, and then install the update version if required. 
 
 1. Choose **Extensions->Syncfusion -> Check for Updates…** in the Visual Studio menu
 

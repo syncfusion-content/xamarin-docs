@@ -2,7 +2,7 @@
 layout: post
 title: Data Binding in Xamarin DataGrid control | Syncfusion
 description: Learn here all about Data Binding support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
-platform: xamarin
+platform: Xamarin
 control: SfDataGrid
 documentation: UG
 ---

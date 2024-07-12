@@ -137,7 +137,7 @@ The data grid allows you to customize the height of a grid row on demand by hand
   
 ## Auto fit the grid rows based on content
 
-The data grid supports the AutoRowHeight feature. The height of a row can be customized based on the content. This can be achieved using the `SfDatagrid.QueryRowHeight` event and the [SfDatagrid.GetRowHeight](https://help.syncfusion.com/cr/xamarin) method. The `SfDatagrid.QueryRowHeight` event returns the row height on demand. The `SfDatagrid.GetRowHeight` method returns the height of the row based on the content.
+The data grid supports the AutoRowHeight feature. The height of a row can be customized based on the content. This can be achieved using the `SfDatagrid.QueryRowHeight` event and the [SfDatagrid.GetRowHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms.SfChip.html) method. The `SfDatagrid.QueryRowHeight` event returns the row height on demand. The `SfDatagrid.GetRowHeight` method returns the height of the row based on the content.
 
 N> The row drag and drop operation is not supported while customizing the row height based on content.
 

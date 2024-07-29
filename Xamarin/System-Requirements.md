@@ -19,6 +19,7 @@ The system requirements for using our Syncfusion Xamarin platform are as follows
 * Windows 7 SP1
 * Windows 8, 8.1
 * Windows 10
+* Windows 11
 * Android 4.1 & later
 * iOS 9 & later
 
@@ -119,7 +120,7 @@ The platforms supported by our Xamarin.Forms controls are listed in the table be
             <br/>
         </td>
         <td>
-            Windows 10 devices
+            Windows 10 and later
             <br/>
             <br/>
         </td>
@@ -161,7 +162,7 @@ The platforms supported by our Xamarin.Forms controls are listed in the table be
             <br/>
         </td>
         <td>
-            Windows 10
+            Windows 10 and later
             <br/>
             <br/>
         </td>

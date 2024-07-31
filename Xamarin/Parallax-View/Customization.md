@@ -7,7 +7,7 @@ control: SfParallaxView
 documentation: ug
 ---
 
-## Customization
+# Customization in Xamarin Parallax View
 
 ## Speed Customization
 

@@ -62,7 +62,7 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
 I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
@@ -143,7 +143,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 This section explains how to create a TreeView and configure it. The TreeView control can be configured entirely in C# code, or by using XAML markup. This is how the control will look like on iOS, Android, and Windows devices.
 
-![Xamarin Forms TreeView Create](TreeView_images/TreeView_TreeView.png)
+![Xamarin Forms TreeView Create.](TreeView_images/TreeView_TreeView.png)
 
 In this walk through, you will create a new application with the TreeView that includes the following topics:
 
@@ -280,7 +280,7 @@ namespace GettingStarted
 
 Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/xamarin-treeview-unbound-mode).
 
-![Xamarin Forms TreeView Unbound](TreeView_images/TreeView_UnBound.png)
+![Xamarin Forms TreeView Unbound.](TreeView_images/TreeView_UnBound.png)
 
 ## Creating Data Model for the tree view
 
@@ -860,7 +860,7 @@ MainPage = new ContentPage { Content = treeView };
 
 Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/xamarin-treeview-databinding).
 
-![Xamarin Forms TreeView Bound](TreeView_images/TreeView_Templating.png)
+![Xamarin Forms TreeView Bound.](TreeView_images/TreeView_Templating.png)
 
 ## Interacting with a tree view
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion Essential Studio Xamarin Forms products
-description: Basic overview about the list of available features on Syncfusion Xamarin.Forms  components and steps to use the guide.
+title: Overview of Essential Studio Xamarin Forms | Syncfusion
+description: Learn here all about basic overview about the list of available features on Syncfusion Xamarin.Forms  components, its elements, and more.
 platform: xamarin
 control: Overview
 documentation: ug

@@ -47,116 +47,100 @@ You can customize the shimmer using your own view using the [`CustomView`](https
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
                     
-                    <BoxView BackgroundColor="Gray"
-                             Grid.Row="0"
+                    <BoxView Grid.Row="0"
                              Grid.ColumnSpan="2"
                              HorizontalOptions="Start"
                              WidthRequest="300" />
 
-                    <BoxView BackgroundColor="Gray"
-                             Grid.Row="1"
+                    <BoxView Grid.Row="1"
                              Grid.ColumnSpan="2"
                              HorizontalOptions="Start"
                              WidthRequest="250" />
 
-                    <BoxView BackgroundColor="Gray"
-                             Grid.Row="2"
+                    <BoxView Grid.Row="2"
                              Grid.ColumnSpan="2"
                              HeightRequest="10"
                              HorizontalOptions="Start"
                              VerticalOptions="Start"
                              WidthRequest="280" />
                     
-                    <BoxView BackgroundColor="Gray"
-                             Grid.Row="3"
+                    <BoxView Grid.Row="3"
                              Grid.ColumnSpan="2"
                              HeightRequest="10"
                              HorizontalOptions="Start"
                              VerticalOptions="Start"
                              WidthRequest="260" />
 
-                    <BoxView BackgroundColor="Gray"
-                             Grid.Row="5"
+                    <BoxView Grid.Row="5"
                              Grid.RowSpan="8" />
                     
-                    <BoxView BackgroundColor="Gray"
-                             Grid.Row="5"
+                    <BoxView Grid.Row="5"
                              Grid.Column="1"
                              HeightRequest="10"
                              HorizontalOptions="Start"
                              VerticalOptions="Start"
                              WidthRequest="180" />
 
-                    <BoxView BackgroundColor="Gray"
-                             Grid.Row="6"
+                    <BoxView Grid.Row="6"
                              Grid.Column="1"
                              HeightRequest="10"
                              HorizontalOptions="Start"
                              VerticalOptions="Start"
                              WidthRequest="190" />
                     
-                    <BoxView BackgroundColor="Gray"
-                             Grid.Row="7"
+                    <BoxView Grid.Row="7"
                              Grid.Column="1"
                              HeightRequest="10"
                              HorizontalOptions="Start"
                              VerticalOptions="Start"
                              WidthRequest="170" />
 
-                    <BoxView BackgroundColor="Gray"
-                             Grid.Row="8"
+                    <BoxView Grid.Row="8"
                              Grid.Column="1"
                              HeightRequest="10"
                              HorizontalOptions="Start"
                              VerticalOptions="Start"
                              WidthRequest="180" />
 
-                    <BoxView BackgroundColor="Gray"
-                             Grid.Row="9"
+                    <BoxView Grid.Row="9"
                              Grid.Column="1"
                              HeightRequest="10"
                              HorizontalOptions="Start"
                              VerticalOptions="Start"
                              WidthRequest="150" />
                         
-                    <BoxView BackgroundColor="Gray"
-                             Grid.Row="10"
+                    <BoxView Grid.Row="10"
                              Grid.Column="1"
                              HeightRequest="10"
                              HorizontalOptions="Start"
                              VerticalOptions="Start"
                              WidthRequest="160" />
                         
-                    <BoxView BackgroundColor="Gray"
-                             Grid.Row="11"
+                    <BoxView Grid.Row="11"
                              Grid.Column="1"
                              HeightRequest="10"
                              HorizontalOptions="Start"
                              VerticalOptions="Start"
                              WidthRequest="175" />
                         
-                    <BoxView BackgroundColor="Gray"
-                             Grid.Row="13"
+                    <BoxView Grid.Row="13"
                              Grid.RowSpan="3"
                              Grid.Column="1"
                              Margin="0,5,0,0" />
                     
-                    <BoxView BackgroundColor="Gray"
-                             Grid.Row="13"
+                    <BoxView Grid.Row="13"
                              HeightRequest="10"
                              HorizontalOptions="Start"
                              VerticalOptions="Start"
                              WidthRequest="150" />
                         
-                    <BoxView BackgroundColor="Gray"
-                             Grid.Row="14"
+                    <BoxView Grid.Row="14"
                              HeightRequest="10"
                              HorizontalOptions="Start"
                              VerticalOptions="Start"
                              WidthRequest="160" />
                         
-                    <BoxView BackgroundColor="Gray"
-                             Grid.Row="15"
+                    <BoxView Grid.Row="15"
                              HeightRequest="10"
                              HorizontalOptions="Start"
                              VerticalOptions="Start"
@@ -200,14 +184,12 @@ You can customize the shimmer using your own view using the [`CustomView`](https
             var boxView1 = new BoxView
             {
                 HorizontalOptions = LayoutOptions.Start,
-                BackgroundColor = Color.Gray,
                 WidthRequest = 300
             };
 
             var boxView2 = new BoxView
             {
                 HorizontalOptions = LayoutOptions.Start,
-                BackgroundColor = Color.Gray,
                 WidthRequest = 250
             };
 
@@ -215,7 +197,6 @@ You can customize the shimmer using your own view using the [`CustomView`](https
             {
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Start,
-                BackgroundColor = Color.Gray,
                 HeightRequest = 10,
                 WidthRequest = 280
             };
@@ -224,21 +205,19 @@ You can customize the shimmer using your own view using the [`CustomView`](https
             {
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Start,
-                BackgroundColor = Color.Gray,
                 WidthRequest = 260,
                 HeightRequest = 10,
             };
 
             var boxView5 = new BoxView
             {
-                BackgroundColor = Color.Gray
+
             };
 
             var boxView6 = new BoxView
             {
                 HorizontalOptions = LayoutOptions.Start,
                 HeightRequest = 10,
-                BackgroundColor = Color.Gray,
                 VerticalOptions = LayoutOptions.Start,
                 WidthRequest = 180
             };
@@ -247,7 +226,6 @@ You can customize the shimmer using your own view using the [`CustomView`](https
             {
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Start,
-                BackgroundColor = Color.Gray,
                 HeightRequest = 10,
                 WidthRequest = 190
             };
@@ -256,7 +234,6 @@ You can customize the shimmer using your own view using the [`CustomView`](https
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Start,
                 HeightRequest = 10,
-                BackgroundColor = Color.Gray,
                 WidthRequest = 170
             };
             
@@ -264,7 +241,6 @@ You can customize the shimmer using your own view using the [`CustomView`](https
             {
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Start,
-                BackgroundColor = Color.Gray,
                 HeightRequest = 10,
                 WidthRequest = 180
             };
@@ -273,7 +249,6 @@ You can customize the shimmer using your own view using the [`CustomView`](https
             {
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Start,
-                BackgroundColor = Color.Gray,
                 HeightRequest = 10,
                 WidthRequest = 150
             };
@@ -282,7 +257,6 @@ You can customize the shimmer using your own view using the [`CustomView`](https
             {
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Start,
-                BackgroundColor = Color.Gray,
                 HeightRequest = 10,
                 WidthRequest = 160
             };
@@ -291,14 +265,12 @@ You can customize the shimmer using your own view using the [`CustomView`](https
             {
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Start,
-                BackgroundColor = Color.Gray,
                 HeightRequest = 10,
                 WidthRequest = 175
             };
             
-            var boxView3 = new BoxView
+            var boxView13 = new BoxView
             {
-                BackgroundColor = Color.Gray,
                 Margin = new Thickness(0, 5, 0, 0)
             };
             
@@ -306,7 +278,6 @@ You can customize the shimmer using your own view using the [`CustomView`](https
             {
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Start,
-                BackgroundColor = Color.Gray,
                 HeightRequest = 10,
                 WidthRequest = 150
             };
@@ -315,7 +286,6 @@ You can customize the shimmer using your own view using the [`CustomView`](https
             {
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Start,
-                BackgroundColor = Color.Gray,
                 HeightRequest = 10,
                 WidthRequest = 160
             };
@@ -324,7 +294,6 @@ You can customize the shimmer using your own view using the [`CustomView`](https
             {
                 HorizontalOptions = LayoutOptions.Start,
                 VerticalOptions = LayoutOptions.Start,
-                BackgroundColor = Color.Gray,
                 HeightRequest = 10,
                 WidthRequest = 175
             };

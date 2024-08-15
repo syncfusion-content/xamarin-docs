@@ -2,7 +2,7 @@
 layout: post
 title: Popup Events And Commands in Xamarin Popup control | Syncfusion
 description: Learn here all about Popup Events And Commands support in Syncfusion Xamarin Popup (SfPopupLayout) control and more.
-platform: Xamarin
+platform: xamarin
 control: SfPopupLayout
 documentation: ug
 --- 

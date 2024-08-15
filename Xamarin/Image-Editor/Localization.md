@@ -113,7 +113,7 @@ The following screenshot shows localizing the text to Japanese language.
 
 ![SfImageEditor](ImageEditor_images/ResourcesFileForms.png)
 
-Please refer the KB from this [`link`](https://www.syncfusion.com/kb/10602/how-to-set-localized-string-to-xamarin-forms-sfimageeditor).
+Please refer the KB from this [`link`](https://support.syncfusion.com/kb/article/9208/how-to-set-localized-string-to-xamarin-forms-sfimageeditor).
 
 You can download complete sample [`here`](https://github.com/SyncfusionExamples/How-to-set-localizad-string-to-SfImageEditor).
 
@@ -175,4 +175,4 @@ The following screenshot shows localizing the text to French language in image e
 
 ## See also
 
-[How to set localized string to Xamarin.Forms SfImageEditor](https://www.syncfusion.com/kb/10602/how-to-set-localized-string-to-xamarin-forms-sfimageeditor)
+[How to set localized string to Xamarin.Forms SfImageEditor](https://support.syncfusion.com/kb/article/9208/how-to-set-localized-string-to-xamarin-forms-sfimageeditor)

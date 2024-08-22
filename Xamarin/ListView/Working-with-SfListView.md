@@ -404,7 +404,7 @@ Defining the `SfListView`
     
 You can download the entire source code of this demo [here](https://github.com/SyncfusionExamples/How-to-display-context-menu-when-tapping-in-Xamarin.Forms-ListView).
 
-![Xamarin.Forms listview with Context menu.](SfListView_images/context-menu.jpg)
+![Xamarin.Forms ListView with Context Menu.](sflistview_images/context-menu-in-xamarin-listview.jpg)
 
 ## Paging
 
@@ -535,7 +535,7 @@ public class SfListViewPagingBehavior : Behavior<ContentPage>
 
 Download the entire source code form GitHub [here](https://github.com/SyncfusionExamples/xamarin.forms-listview-paging).
 
-![Xamarin.Forms listview with paging.](SfListView_images/paging.png)
+![Xamarin.Forms ListView with Paging.](sflistview_images/paging-in-xamarin-listview.png)
  
 ## Loading data from SQLite online database
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Markers in Xamarin.Forms Maps control | Syncfusion
-description: Learn here all about Markers support in Syncfusion Xamarin Maps (SfMaps) control, its elements and more.
-platform: xamarin
+description: Learn here all about Xamarin.Forms Maps (SfMaps) Markers in Syncfusion control, its elements and more.
 control: SfMaps
 documentation: ug
 ---
@@ -72,7 +71,7 @@ Any number of markers can be added to the shape file layers using the [`Markers`
 
 {% endtabs %}
 
-![Marker Image](Images/Markers_img1.jpeg)
+![Marker image in Xamarin.Forms Maps.](images/xamarin-forms-maps-markers.jpeg)
 
 ## Customizing markers
 
@@ -154,7 +153,7 @@ The shape of a marker icons can be customized using the [`MarkerIcon`](https://h
 
 {% endtabs %}
 
-![Marker Icon Image](Images/Marker_icon_type.png)
+![Marker icon image in Xamarin.Forms Maps.](images/xamarin-forms-maps-marker-icon-image.png)
 
 ### Setting a contrast color
 
@@ -297,7 +296,7 @@ Based on the background color of the shapes, contrast color will be applied to m
 
 {% endtabs %}
 
-![Marker icon color change based on background color support in Xamarin.Forms Maps](Images/MarkerIconContrastColor.jpg) 
+![Marker icon color change based on background color support in Xamarin.Forms.](images/xamarin-forms-maps-marker-icon-Contrast-Color.jpg) 
 
 ### Setting a image marker icon
 
@@ -379,7 +378,7 @@ You can pin an image as marker icon by setting the icon type as `Image`. Set [`I
 
 {% endtabs %}
 
-![Marker Icon Types](Images/Marker_icon_type_image.png)
+![Marker icon types image in Xamarin.Forms Maps.](images/xamarin-forms-map-marker-icon-type.png)
 
 ### Customizing labels
 
@@ -453,7 +452,7 @@ SfMaps map = new SfMaps();
 
 {% endtabs %}
 
-![Marker customization](Images/Markers_img4.jpeg)
+![Marker customization image in Xamarin.Forms Maps.](images/xamarin-forms-map-markers-customirization.jpeg)
 
 ## Add custom marker
 
@@ -606,7 +605,7 @@ ImageName = ImageSource.FromResource("MapsSample.pin.png");
 
 {% endtabs %}
 
-![Custom Marker Image](Images/Markers_img5.jpeg)
+![Custom marker image in Xamarin.Forms Maps.](images/xamarin-forms-map-marker-custorm.jpeg)
 
 ## Marker Alignment
 
@@ -668,7 +667,7 @@ this.Content = map;
 
 {% endtabs %}
 
-![HorizontalAlignment](Images/Horizontal_Alignment.png)
+![Horizontal alignment image in Xamarin.Forms Maps.](images/xamarin-forms-maps-marker-horizontal-alignment.png)
 
 ### Setting a vertical alignment
 
@@ -726,7 +725,7 @@ this.Content = map;
 
 {% endtabs %}
 
-![VerticalAlignment](Images/Vertical_Alignment.png)
+![Vertical alignment image in Xamarin.Forms Maps.](images/xamarin-forms-maps- marker-vertical-alignment.png)
 
 N> The default marker icon position for VerticalAlignment and HorizontalAlignment is Center.
 
@@ -783,7 +782,7 @@ If you add any view for marker using `CustomView` property from `MarkerSelected`
 
 {% endtabs %}
 
-![Reset the previously selected marker](Images/ResetMarker.gif)
+![Reset the previously selected in marker in Xamarin.Forms Map.](images/xamain-forms-maps-marker-reset-marker.gif)
 
 N> You can use [`MarkerItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLayer.html#Syncfusion_SfMaps_XForms_MapLayer_MarkerItemsSource) property when using the custom map markers that are inherited from [`MapMarker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapMarker.html) and can only be used to assign markers in code behind. We have recommended using [`Markers`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLayer.html#Syncfusion_SfMaps_XForms_MapLayer_Markers) property for the layer to add markers from XAML page.
 
@@ -849,7 +848,7 @@ private void Layer_MarkerSelected(object sender, MarkerSelectedEventArgs e)
 
 {% endtabs %}
 
-![Marker Selected Image](Images/MarkerSelected.png)
+![Marker selected image in Xamarin.Forms Maps.](images/xamarin-forms-marker-selected.png)
 
 N> You can refer to our [Xamarin Maps](https://www.syncfusion.com/xamarin-ui-controls/xamarin-maps) feature tour page for its groundbreaking feature representations.
 You can also explore our [Xamarin.Forms Maps example](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Maps) to knows the functionalities of each feature.

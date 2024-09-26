@@ -18,7 +18,7 @@ To get start quickly with [Xamarin Image Editor](https://www.syncfusion.com/xama
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin/confirm), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -30,7 +30,7 @@ You can add SfImageEditor reference using one of the following methods:
 
 **Method 1: Adding SfImageEditor reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfImageEditor to your project, open the [NuGet package](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) manager in Visual Studio, search for [Syncfusion.Xamarin.SfImageEditor](https://www.nuget.org/packages/Syncfusion.Xamarin.SfImageEditor), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org). To add SfImageEditor to your project, open the [NuGet package](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) manager in Visual Studio, search for [Syncfusion.Xamarin.SfImageEditor](https://www.nuget.org/packages/Syncfusion.Xamarin.SfImageEditor), and then install it.
 
 ![Adding SfImageEditor reference from NuGet](ImageEditor_images/Adding SfImageEditor reference.png)
 

@@ -25,7 +25,7 @@ You can add SfNumericUpDown reference using one of the following methods:
 
 **Method 1: Adding SfNumericUpDown reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfNumericUpDown to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfNumericUpDown](https://www.nuget.org/packages/Syncfusion.Xamarin.SfNumericUpDown), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org). To add SfNumericUpDown to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfNumericUpDown](https://www.nuget.org/packages/Syncfusion.Xamarin.SfNumericUpDown), and then install it.
 
 ![Adding SfNumericUpDown reference from NuGet](images/Adding SfNumericUpDown reference.png)
 

@@ -344,7 +344,7 @@ You can load the custom map providers map such as Google Maps, TomTom using the 
 
 {% endtabs %}
 
-See also this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control) to load the google map.
+See also this [`KB article`](https://support.syncfusion.com/kb/article/7765/how-to-use-google-maps-api-to-show-google-maps-in-xamarin-forms-sfmaps-control) to load the google map.
 
 ![Xamarin custom map provider image](Images/custom_map_provider.jpg)
 
@@ -679,10 +679,10 @@ N> You can also explore our [Xamarin.Forms Maps example](https://github.com/Sync
 
 ## See Also
 
-[How to show the current GPS location in Xamarin.Forms SfMaps](https://www.syncfusion.com/kb/11379/how-to-show-the-current-gps-location-in-xamarin-forms-maps-sfmaps)
+[How to show the current GPS location in Xamarin.Forms SfMaps](https://support.syncfusion.com/kb/article/10045/how-to-show-the-current-gps-location-in-xamarin-forms-maps-sfmaps)
 
-[How to use Google Maps API to show Google Maps in Xamarin.Forms SfMaps control](https://www.syncfusion.com/kb/8913/how-to-use-google-maps-api-to-show-google-maps-in-xamarin-forms-sfmaps-control)
+[How to use Google Maps API to show Google Maps in Xamarin.Forms SfMaps control](https://support.syncfusion.com/kb/article/7765/how-to-use-google-maps-api-to-show-google-maps-in-xamarin-forms-sfmaps-control)
 
-[How to group the markers based on zoom level in the imagery layer of the SfMaps control](https://www.syncfusion.com/kb/10200/how-to-group-the-markers-based-on-zoom-level-in-the-imagery-layer-of-the-sfmaps-control)
+[How to group the markers based on zoom level in the imagery layer of the SfMaps control](https://support.syncfusion.com/kb/article/9102/how-to-group-the-markers-based-on-zoom-level-in-the-imagery-layer-of-the-sfmaps-control)
 
-[How to add sub shape file layer for ImageryLayer in Xamarin.Forms SfMaps](https://www.syncfusion.com/kb/10579/how-to-add-sub-shape-file-layer-for-imagerylayer-in-xamarin-forms-sfmaps)
+[How to add sub shape file layer for ImageryLayer in Xamarin.Forms SfMaps](https://support.syncfusion.com/kb/article/9180/how-to-add-sub-shape-file-layer-for-imagerylayer-in-xamarin-forms-sfmaps)

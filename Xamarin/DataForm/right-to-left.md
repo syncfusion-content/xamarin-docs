@@ -9,7 +9,7 @@ documentation: UG
 
 # Right to left (RTL) in Xamarin DataForm (SfDataForm)
 
-SfDataForm supports to change the layout direction of the control in the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft` or by changing the device language.
+SfDataForm supports to change the layout direction of the control in the right-to-left direction by setting the [FlowDirection](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft` or by changing the device language.
 
 {% tabs %}
 {% highlight xaml %}
@@ -75,4 +75,4 @@ LoadApplication (new App ());
 
 ## See also
 
-[How to customize the input direction of custom text editor in platform renderer](https://www.syncfusion.com/kb/9043/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+[How to customize the input direction of custom text editor in platform renderer](https://support.syncfusion.com/kb/article/8166/how-to-customize-the-input-direction-of-custom-text-editor-in-platform-renderer)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  

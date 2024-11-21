@@ -3,7 +3,7 @@ layout: post
 title: Upgrade Syncfusion Xamarin NuGet packages to a latest version
 description: Learn here about the how to upgrading Syncfusion Xamarin NuGet packages to a latest version using NuGet manager and package manager UI.
 platform: Xamarin
-control: Essential Studio
+control: Essential Studio®
 documentation: ug
 ---
 

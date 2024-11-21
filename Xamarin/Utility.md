@@ -14,7 +14,7 @@ The Syncfusion Xamarin Extension provides quick access, so that you can easily c
 * Syncfusion Project Template for Xamarin.Forms
 * Syncfusion Toolbox for Xamarin.Forms
 
-The Syncfusion Xamarin Visual Studio Extensions are installed along with the Essential Studio for Xamarin setup.
+The Syncfusion Xamarin Visual Studio Extensions are installed along with the Essential Studio® for Xamarin setup.
 
 N> *Refer to the [installation guideline](https://help.syncfusion.com/common/essential-studio/installation/install-using-the-web-installer)*.
 
@@ -91,7 +91,7 @@ Choose the Syncfusion controls that need to be added to the created project.
 
    ![Assembly references in XForms.UWP](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img10.jpeg)
 
-6.Then, Syncfusion licensing registration required message box will be shown as follow, if you have installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
+6.Then, Syncfusion licensing registration required message box will be shown as follow, if you have installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio®.
 
    ![Syncfusion License warning message](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img11.jpeg)
 

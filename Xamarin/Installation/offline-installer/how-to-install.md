@@ -13,7 +13,7 @@ documentation: ug
 
 ## Installing with UI   
 
-The steps below show how to install the Essential Studio Xamarin installer.
+The steps below show how to install the Essential Studio®® Xamarin installer.
 
 1.	Open the Syncfusion Xamarin offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
 
@@ -97,11 +97,11 @@ The steps below show how to install the Essential Studio Xamarin installer.
 7.  After installing, click the **Launch Control Panel** link to open the Syncfusion Control Panel.
 
 
-8.  Click the Finish button. Your system has been installed with the Syncfusion Essential Studio Xamarin product.
+8.  Click the Finish button. Your system has been installed with the Syncfusion Essential Studio® Xamarin product.
 
 ## Installing in silent mode
 
-The Syncfusion Essential Studio Xamarin Installer supports installation and uninstallation via the command line.
+The Syncfusion Essential Studio® Xamarin Installer supports installation and uninstallation via the command line.
 
 ### Command Line Installation
 
@@ -123,9 +123,9 @@ To install through the Command Line in Silent mode, follow the steps below.
     **Example:** “D:\Temp\syncfusionessentialxamarin_x.x.x.x.exe” /Install silent /UNLOCKKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Product.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true /CreateShortcut:true /CreateStartMenuShortcut:true
 
 	
-7.  Essential Studio for Xamarin is installed.
+7.  Essential Studio® for Xamarin is installed.
 
-    N> x.x.x.x should be replaced with the Essential Studio version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
+    N> x.x.x.x should be replaced with the Essential Studio® version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
    
 
 ### Command Line Uninstallation
@@ -145,7 +145,7 @@ Syncfusion Essential Xamarin can be uninstalled silently using the Command Line.
     **Example:** “D:\Temp\syncfusionessentialxamarin_x.x.x.x.exe" /uninstall silent
 
 
-7.  Essential Studio for Xamarin is uninstalled.
+7.  Essential Studio® for Xamarin is uninstalled.
 
 ### Add reference to the project
 

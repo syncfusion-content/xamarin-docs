@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Apply the Patch for Major\Service Pack Version | Syncfusion
-description: Learn here about how to apply the patch for major or service pack version of Syncfusion Essential Studio.
+description: Learn here about how to apply the patch for major or service pack version of Syncfusion Essential Studio®.
 platform: xamarin
-control: Essential Studio
+control: Essential Studio®
 documentation: ug
 ---
 
@@ -17,11 +17,11 @@ Syncfusion provides patch installer for major version or service pack version, e
 The steps below show how to install a patch.
 
 
-I> Before installing the patch, ensure that corresponding Essential Studio version platform has been installed in your machine.
+I> Before installing the patch, ensure that corresponding Essential Studio® version platform has been installed in your machine.
 
 
 
-1. Double-click the Syncfusion Essential Studio patch installer. The Syncfusion Essential Studio Service Pack opens.
+1. Double-click the Syncfusion Essential Studio® patch installer. The Syncfusion Essential Studio® Service Pack opens.
    
    ![Welcome Wizard](Patches_images/Installing-a-Patch-Setup_img2.png)
 

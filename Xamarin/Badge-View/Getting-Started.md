@@ -79,7 +79,7 @@ N> If you are adding the references from toolbox, this step is not needed.
 
 To launch the badge view in iOS, call the SfBadgeViewRenderer.Init() in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication is called as demonstrated in the following code sample.
 
-{% highlight C# %} 
+{% highlight c# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
 { 
@@ -99,7 +99,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 You need to initialize the badge view assemblies in App.xaml.cs in UWP project as demonstrated in the following code samples. This is required to deploy the application with badge view in `Release` mode in UWP platform.
 
-{% highlight C# %} 
+{% highlight c# %}
 
 // In App.xaml.cs 
 protected override void OnLaunched(LaunchActivatedEventArgs e)
@@ -123,7 +123,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 To launch the badge view in WPF, call the SfBadgeViewRenderer.Init() in the constructor of the MainWindow class after the Xamarin.Forms framework has been initialized and before the LoadApplication is called as demonstrated in the following code sample.
 
-{% highlight C# %} 
+{% highlight c# %}
 
         public MainWindow()
         {

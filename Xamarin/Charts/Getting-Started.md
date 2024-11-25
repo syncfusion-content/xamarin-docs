@@ -137,7 +137,7 @@ To launch the chart in iOS, call the SfChartRenderer.Init() method in the Finish
 
 N> If you are adding the references from toolbox, this step is not needed.
 
-{% highlight C# %} 
+{% highlight c# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
 { 
@@ -156,7 +156,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 To launch the chart in macOS, call the SfChartRenderer.Init() method in the DidFinishLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and LoadApplication method as demonstrated in the following code sample:
 
-{% highlight C# %} 
+{% highlight c# %}
 
 public override void DidFinishLaunching(NSNotification notification)
 { 
@@ -175,7 +175,7 @@ public override void DidFinishLaunching(NSNotification notification)
 
 To launch the chart in WPF, call the SfChartRenderer.Init() method in the MainWindow constructor of the MainWindow class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample.
 
-{% highlight C# %} 
+{% highlight c# %}
 
 public partial class MainWindow : FormsApplicationPage
 {
@@ -197,7 +197,7 @@ public partial class MainWindow : FormsApplicationPage
 
 To deploy the chart in `Release` mode, you need to initialize the chart assemblies in App.xaml.cs in UWP project as shown in the below code snippets.
 
-{% highlight C# %} 
+{% highlight c# %}
 
 // In App.xaml.cs 
 protected override void OnLaunched(LaunchActivatedEventArgs e)
@@ -225,29 +225,29 @@ The Android platform does not require any additional configuration to render the
 
 Import the [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) namespace as shown below in your respective Page,
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms" 
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 
 using Syncfusion.SfChart.XForms;
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 I>To render chart inside the StackLayout/ScrollView, please refer this [KB](https://support.syncfusion.com/kb/article/5299/how-to-add-the-chart-inside-stacklayout-scrollview).
 
 Then initialize an empty chart with [`PrimaryAxis`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_PrimaryAxis) and [`SecondaryAxis`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_SecondaryAxis) as shown below,
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 <chart:SfChart>
 
     <chart:SfChart.PrimaryAxis>
@@ -269,7 +269,7 @@ Then initialize an empty chart with [`PrimaryAxis`](https://help.syncfusion.com/
 </chart:SfChart>
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 SfChart chart = new SfChart();
 
  //Initializing Primary Axis
@@ -285,7 +285,7 @@ chart.SecondaryAxis = secondaryAxis;
 this.Content = chart;
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 Run the project and check if you get following output to make sure you have configured your project properly to add [`SfChart`.](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html)
 
@@ -328,9 +328,9 @@ Set the `ViewModel` instance as the `BindingContext` of your Page; this is done 
  
 N> Add namespace of `ViewModel` class in your XAML page if you prefer to set `BindingContext` in XAML.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -350,11 +350,11 @@ N> Add namespace of `ViewModel` class in your XAML page if you prefer to set `Bi
 </ContentPage>
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 this.BindingContext = new ViewModel();
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ## Populate Chart with data
 
@@ -439,7 +439,7 @@ chart.Series.Add(series);
 
 You can add title to chart to provide quick information to the user about the data being plotted in the chart. You can set title using [`SfChart.Title`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Title) property as shown below.
 
-{% tabs %} 
+{% tabs %}
 
 {% highlight xaml %}
 <chart:SfChart>
@@ -457,11 +457,11 @@ You can add title to chart to provide quick information to the user about the da
 </chart:SfChart>
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 chart.Title.Text = "Chart";
 {% endhighlight %}
 
-{% endtabs %}  
+{% endtabs %}
 
 Refer this [link](https://help.syncfusion.com/xamarin/charts/charttitle) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize chart title.
 
@@ -469,7 +469,7 @@ Refer this [link](https://help.syncfusion.com/xamarin/charts/charttitle) to lear
 
 You can add data labels to improve the readability of the chart. This can be achieved using [`ChartSeries.DataMarkers`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_DataMarker) property as shown below.
 
-{% tabs %} 
+{% tabs %}
 
 {% highlight xaml %}
 <chart:SfChart>
@@ -491,11 +491,11 @@ You can add data labels to improve the readability of the chart. This can be ach
 </chart:SfChart>
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 series.DataMarker = new ChartDataMarker();
 {% endhighlight %}
 
-{% endtabs %}  
+{% endtabs %}
 
 Refer this [link](https://help.syncfusion.com/xamarin/charts/datamarker) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize data markers.
 
@@ -503,7 +503,7 @@ Refer this [link](https://help.syncfusion.com/xamarin/charts/datamarker) to lear
 
 You can enable legend using [`SfChart.Legend`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Legend) property as shown below,
 
-{% tabs %} 
+{% tabs %}
 
 {% highlight xaml %}
 <chart:SfChart>
@@ -521,15 +521,15 @@ You can enable legend using [`SfChart.Legend`](https://help.syncfusion.com/cr/xa
 </chart:SfChart>
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 chart.Legend = new ChartLegend (); 
 {% endhighlight %}
 
-{% endtabs %}  
+{% endtabs %}
 
 Additionally, you need to set label for each series using [`ChartSeries.Label`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Label) property, which will be displayed in corresponding legend.
 
-{% tabs %} 
+{% tabs %}
 
 {% highlight xaml %}
 <chart:SfChart>
@@ -549,11 +549,11 @@ Additionally, you need to set label for each series using [`ChartSeries.Label`](
 </chart:SfChart>
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 series.Label = "Heights";
 {% endhighlight %}
 
-{% endtabs %}  
+{% endtabs %}
 
 Refer this [link](https://help.syncfusion.com/xamarin/charts/legend) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize legend.
 
@@ -561,7 +561,7 @@ Refer this [link](https://help.syncfusion.com/xamarin/charts/legend) to learn mo
 
 Tooltips are used to show information about the segment, when you tap on the segment. You can enable tooltip by setting [`ChartSeries.EnableTooltip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_EnableTooltip) property to true.
 
-{% tabs %} 
+{% tabs %}
 
 {% highlight xaml %}
 <chart:SfChart>
@@ -581,7 +581,7 @@ Tooltips are used to show information about the segment, when you tap on the seg
  </chart:SfChart> 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 series.EnableTooltip = true;
 {% endhighlight %}
 
@@ -591,7 +591,7 @@ Refer this [link](https://help.syncfusion.com/xamarin/charts/tooltip) to learn m
 
 The following code example gives you the complete code of above configurations.
 
-{% tabs %} 
+{% tabs %}
 
 {% highlight xaml %}
 <ContentPage xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
@@ -643,7 +643,7 @@ The following code example gives you the complete code of above configurations.
  
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 
 using Syncfusion.SfChart.XForms;
 

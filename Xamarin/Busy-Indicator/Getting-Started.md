@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Xamarin Busy Indicator control | Syncfusion
 description: Learn here about getting started with Syncfusion Xamarin Busy Indicator (SfBusyIndicator) control, its elements and more.
-platform: Xamarin
+platform: xamarin
 control: BusyIndicator
 documentation: ug
 ---

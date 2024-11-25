@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Xamarin Carousel View control | Syncfusion
 description: Learn here about getting started with Syncfusion Xamarin Carousel View (SfCarousel) control, its elements and more.
-platform: Xamarin
+platform: xamarin
 control: Carousel
 documentation: ug
 ---

@@ -246,7 +246,7 @@ You can add ranges to [`SfCircularGauge`](https://help.syncfusion.com/cr/xamarin
 
 {% tabs %}
 
-{% highlight xaml %}  
+{% highlight xaml %}
           
     <gauge:SfCircularGauge>
      <gauge:SfCircularGauge.Scales>
@@ -316,7 +316,7 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 
 {% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
     <gauge:SfCircularGauge>
     <gauge:SfCircularGauge.Scales>
@@ -330,7 +330,7 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 	 
 {% endhighlight %}
 
-{% highlight c# %}    
+{% highlight c# %}
 
     ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
     Scale scale = new Scale();
@@ -350,7 +350,7 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 
 {% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
     <gauge:SfCircularGauge>
       <gauge:SfCircularGauge.Scales>
@@ -364,7 +364,7 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 	 
 {% endhighlight %}
 
-{% highlight c# %}  
+{% highlight c# %}
    
     ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
     Scale scale=new Scale();
@@ -382,7 +382,7 @@ The following code example gives you the complete code of above configurations.
 
 {% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
     <?xml version="1.0" encoding="utf-8" ?>
     <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -421,7 +421,7 @@ The following code example gives you the complete code of above configurations.
 	 
 {% endhighlight %}
 
-{% highlight c# %}  
+{% highlight c# %}
    
 using Syncfusion.SfGauge.XForms;
 

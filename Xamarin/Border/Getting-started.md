@@ -124,7 +124,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 To launch the border in WPF, call the SfBorderRenderer.Init() method in the MainWindow constructor of the MainWindow class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample.
 
-{% highlight C# %} 
+{% highlight c# %}
 
 public partial class MainWindow : FormsApplicationPage
 {
@@ -148,15 +148,15 @@ The `SfBorder` control is configured entirely in C# code or in XAML markup. The 
 
 ### Adding namespace for referred assemblies
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms" 
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 
 using Syncfusion.XForms.Border; 
 

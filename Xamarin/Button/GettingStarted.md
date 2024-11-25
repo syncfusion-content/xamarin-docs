@@ -116,7 +116,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 To launch the button in WPF, call the SfButtonRenderer.Init() method in the MainWindow constructor of the MainWindow class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample.
 
 {% tabs %}
-{% highlight C# %} 
+{% highlight c# %}
 
 public partial class MainWindow : FormsApplicationPage
 {

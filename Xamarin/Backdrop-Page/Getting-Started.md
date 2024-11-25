@@ -71,7 +71,7 @@ N> If you are adding the references from toolbox, below steps are not needed.
 To launch the backdrop page in iOS, call the `SfBackdropPageRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the `LoadApplication` method is called as demonstrated in the following code sample.
 
 
-{% highlight C# %} 
+{% highlight c# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
@@ -88,7 +88,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 To deploy the backdrop page in `Release` mode, initialize the backdrop page assemblies in the App.xaml.cs file in the UWP project as demonstrated in the following code sample.
 
-{% highlight C# %} 
+{% highlight c# %}
 
 // In App.xaml.cs 
 protected override void OnLaunched(LaunchActivatedEventArgs e)
@@ -157,9 +157,9 @@ Page header for the backdrop appears only when adding backdrop as a child of Nav
 ## Add back layer content
 The back layer holds actionable content (navigation or filtration), which is relevant to the front layer. The back layer will either fill the entire background or occupy the background based on the content height.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <backdrop:SfBackdropPage.BackLayer>
         <backdrop:BackdropBackLayer>
@@ -180,7 +180,7 @@ The back layer holds actionable content (navigation or filtration), which is rel
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 
 this.BackLayer = new BackdropBackLayer
 {
@@ -204,9 +204,9 @@ this.BackLayer = new BackdropBackLayer
 ## Add front layer content
 The front layer always appears in front of the back layer. It is displayed to the full width and holds primary content.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <backdrop:SfBackdropPage.FrontLayer>
         <backdrop:BackdropFrontLayer>
@@ -216,7 +216,7 @@ The front layer always appears in front of the back layer. It is displayed to th
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 
 this.FrontLayer = new BackdropFrontLayer()
 {
@@ -243,9 +243,9 @@ To know more information about reveal height customization ,refer this [link](ht
 
 ![Reveal and conceal back layer](Getting-Started_images/Backdrop_reveal.gif)
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <backdrop:SfBackdropPage
     xmlns="http://xamarin.com/schemas/2014/forms"
@@ -257,7 +257,7 @@ To know more information about reveal height customization ,refer this [link](ht
  
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 
 #region Constructor
 

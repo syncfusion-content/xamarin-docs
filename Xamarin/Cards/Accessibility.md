@@ -15,9 +15,9 @@ For example, if you set SfCardLayouts' AutomationId as "CardLayout" and also ena
 
 N> Accessibility support works on Android and iOS platform only.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <cards:SfCardLayout SwipeDirection="Left" HeightRequest="500" BackgroundColor="#F0F0F0">
 
@@ -37,7 +37,7 @@ N> Accessibility support works on Android and iOS platform only.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 
 SfCardLayout cardLayout = new SfCardLayout();
 

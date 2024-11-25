@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Xamarin Calendar control | Syncfusion
 description: Learn here about getting started with Syncfusion Xamarin Calendar (SfCalendar) control, its elements and more.
-platform: Xamarin
+platform: xamarin
 control: Calendar
 documentation: ug
 ---

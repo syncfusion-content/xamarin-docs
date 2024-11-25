@@ -2,7 +2,7 @@
 layout: post
 title: Events (Appointments) in Xamarin Calendar control | Syncfusion
 description: Learn here all about Events (Appointments) support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
-platform: Xamarin
+platform: xamarin
 control: Calendar
 documentation: ug
 ---

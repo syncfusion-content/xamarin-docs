@@ -74,7 +74,7 @@ N> If you are adding the references from toolbox, below steps are not needed.
 
 To launch the cards in iOS, call the SfCardViewRenderer.Init() method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample:
 
-{% highlight C# %} 
+{% highlight c# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
 { 
@@ -91,7 +91,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 To deploy the cards in `Release` mode, you need to initialize the cards assemblies in App.xaml.cs in the UWP project as shown in the below code snippets.
 
-{% highlight C# %} 
+{% highlight c# %}
 
 // In App.xaml.cs 
 protected override void OnLaunched(LaunchActivatedEventArgs e)
@@ -116,9 +116,9 @@ The Android platform does not require any additional configuration to render the
 
 Import the [`Cards`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.html) namespace as shown in the following code in your respective page.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
     xmlns:cards="clr-namespace:Syncfusion.XForms.Cards;assembly=Syncfusion.Cards.XForms" 
 
@@ -130,15 +130,15 @@ Import the [`Cards`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Ca
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ### SfCardView
 
 Initialize a card view with [`Content`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html#Syncfusion_XForms_Cards_SfCardView_Content) as shown in the following code.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <cards:SfCardView>
 
@@ -148,7 +148,7 @@ Initialize a card view with [`Content`](https://help.syncfusion.com/cr/xamarin/S
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 
 SfCardView cardView = new SfCardView();
 
@@ -159,7 +159,7 @@ this.Content = cardView;
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 Run the project and check if you get following output to make sure that you have configured your project properly to add [`Cards`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.html).
 
@@ -224,9 +224,9 @@ N> This property won't work when adding the SfCardView as a child of SfCardLayou
 
 Initialize a card layout with card view as shown in the following code.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <cards:SfCardLayout SwipeDirection="Left" HeightRequest="500" BackgroundColor="#F0F0F0">
 
@@ -246,7 +246,7 @@ Initialize a card layout with card view as shown in the following code.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 
 SfCardLayout cardLayout = new SfCardLayout();
 
@@ -261,7 +261,7 @@ this.Content = cardLayout;
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ![Initializing Xamarin.Forms SfCardLayout](getting-started_images/layout.gif)
 

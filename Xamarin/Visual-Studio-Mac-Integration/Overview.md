@@ -19,6 +19,6 @@ The Syncfusion provides the following extension supports in Visual Studio for Ma
 
 ## Syncfusion Menu
 
-![Syncfusion Menu in Visual Studio Mac](Overview_images/Syncfusion_Menu_OverView.PNG)
+![Syncfusion Menu in Visual Studio Mac](Overview_images/Syncfusion_Menu_OverView.PNG) 
 
 

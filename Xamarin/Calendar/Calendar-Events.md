@@ -34,7 +34,7 @@ You can handle the calendar month view appointment display by using [InlineViewM
 * AgendaView - Show the selected date’s events below the month.
 
 {% tabs %}
-{% highlight xaml %} 
+{% highlight xaml %}
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:CalendarSample" x:Class="CalendarSample.MainPage" xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms">
     <syncfusion:SfCalendar.BindingContext>
@@ -74,7 +74,7 @@ namespace CalendarSample
     }
 }
 {% endhighlight %}
-{% endtabs %} 
+{% endtabs %}
 
 You can download the entire source code of this demo for Xamarin.Forms from
 here [CalendarEvents](https://github.com/SyncfusionExamples/creating-events-in-xamarin.forms-sfcalendar)

@@ -13,7 +13,7 @@ documentation: ug
 
 ## Installing with UI   
 
-The steps below show how to install the Essential Studio®® Xamarin installer.
+The steps below show how to install the Essential Studio® Xamarin installer.
 
 1.	Open the Syncfusion Xamarin offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
 

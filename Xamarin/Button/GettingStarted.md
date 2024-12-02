@@ -13,7 +13,7 @@ This section explains the steps required to work with the [Xamarin.Forms Button]
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -116,7 +116,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 To launch the button in WPF, call the SfButtonRenderer.Init() method in the MainWindow constructor of the MainWindow class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample.
 
 {% tabs %}
-{% highlight C# %} 
+{% highlight c# %}
 
 public partial class MainWindow : FormsApplicationPage
 {

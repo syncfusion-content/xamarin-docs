@@ -2,7 +2,7 @@
 layout: post
 title: Display Modes in Xamarin Calendar control | Syncfusion
 description: Learn here all about Display Modes support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
-platform: Xamarin
+platform: xamarin
 control: Calendar
 documentation: ug
 ---

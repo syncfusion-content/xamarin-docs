@@ -3,7 +3,7 @@ layout: post
 title: Overview of Syncfusion license validation in CI services - Syncfusion
 description: Learn here about how to register Syncfusion license key for Syncfusion application for license validation.
 platform: xamarin
-control: Essential Studio
+control: Essential Studio®
 documentation: ug
 ---
 
@@ -19,7 +19,7 @@ margin-top: 1.5em;     margin-bottom: 1.5em;
 
 # Syncfusion license key validation in CI services
 
-Syncfusion license key validation in CI services ensures that Syncfusion Essential Studio components are properly licensed during CI processes. Validating the license key at the CI level can prevent licensing errors during deployment. Set up the continuous integration process to fail in case the license key validation fails. Validate the passed parameters and the registered license key again to resolve the issue.
+Syncfusion license key validation in CI services ensures that Syncfusion Essential Studio® components are properly licensed during CI processes. Validating the license key at the CI level can prevent licensing errors during deployment. Set up the continuous integration process to fail in case the license key validation fails. Validate the passed parameters and the registered license key again to resolve the issue.
 
 The following section shows how to validate the Syncfusion license key in CI services.
 
@@ -47,7 +47,7 @@ Write-Host $result
   
   **License Key:** Replace the value for /licensekey: with your actual license key (e.g., "Your License Key"). 
   
-  N> This feature is supported only from the 16.2.0.41 version of the Essential Studio.
+  N> This feature is supported only from the 16.2.0.41 version of the Essential Studio®.
 
 ## Azure Pipelines (YAML)
 

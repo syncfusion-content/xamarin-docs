@@ -2,7 +2,7 @@
 layout: post
 title: Feature Comparison in Xamarin Calendar control | Syncfusion
 description: Learn here all about Feature Comparison support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
-platform: Xamarin
+platform: xamarin
 control: Calendar
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Accessibility in Xamarin Calendar control | Syncfusion
 description: Learn here all about Accessibility support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
-platform: Xamarin
+platform: xamarin
 control: SfCalendar
 documentation: UG
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Xamarin Chips control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio Xamarin Chips control, its elements and more.
+description: Learn here about getting started with Syncfusion Essential Studio® Xamarin Chips control, its elements and more.
 platform: xamarin
 control: Chips
 documentation: ug
@@ -13,7 +13,7 @@ This section explains the steps required to create chips and arrange them in a l
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -179,7 +179,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 To launch the chip group and chip in WPF, call the SfChipGroupRenderer.Init() and SfChipRenderer.Init() methods in the MainWindow constructor of the MainWindow class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample.
 
-{% highlight C# %} 
+{% highlight c# %}
 
 public partial class MainWindow : FormsApplicationPage
 {

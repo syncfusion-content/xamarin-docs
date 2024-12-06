@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Xamarin Syncfusion Extensions control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio Xamarin Extensions control, its elements and more.
+description: Learn here all about introduction of Syncfusion Essential Studio® Xamarin Extensions control, its elements and more.
 platform: xamarin
 control: Syncfusion Extensions
 documentation: ug
@@ -22,7 +22,7 @@ The Syncfusion provides the following extension supports in Visual Studio:
 3.	[Toolbox](toolbox-control): Add the Syncfusion Xamarin components in Xamarin.Forms designer from Syncfusion Toolbox.
 
 
-**Essential Studio for Xamarin in Visual Studio**
+**Essential Studio® for Xamarin in Visual Studio**
 
 ![Choose Syncfusion Xamarin application from Visual Studio new project dialog via Syncfusion menu](Syncfusion_Project_Templates_images/xamarin-visual-studio-intergration-new-project.png)
 

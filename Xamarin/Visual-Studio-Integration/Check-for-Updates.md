@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Check for Updates | Xamarin | Syncfusion
-description: Syncfusion Check for Updates provides Extensions to update most recent version of the Essential Studio release.
+description: Syncfusion Check for Updates provides Extensions to update most recent version of the Essential Studio® release.
 platform: xamarin
 control: Visual Studio Extensions
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Check for Updates in Syncfusion Xamarin
 
-Syncfusion provides Extensions to update the most recent version of the Essential Studio release. Installing the most recent version ensures that you always have the most up-to-date features, fixes, and improvements.
+Syncfusion provides Extensions to update the most recent version of the Essential Studio® release. Installing the most recent version ensures that you always have the most up-to-date features, fixes, and improvements.
 
 I> The Syncfusion Check for updates is available from v17.1.0.32.
 
@@ -27,4 +27,4 @@ You can check updates availability in Visual Studio, and then install the update
 
    ![Syncfusion check for updates wizard](Check_for_Updates_images/Check-for-Updates_images-img2.png)
 
-3. You can download the Syncfusion Essential Studio from the Syncfusion website by selecting **Download**.
+3. You can download the Syncfusion Essential Studio® from the Syncfusion website by selecting **Download**.

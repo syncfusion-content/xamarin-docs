@@ -74,6 +74,7 @@ N> If you are adding the references from toolbox, this step is not needed.
 
 To launch the progress bar in iOS, call the SfLinearProgressBarRenderer.Init() or SfCircularProgressBarRenderer.Init() in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication is called as demonstrated in the following code sample.
 
+{% tabs %}
 {% highlight C# %} 
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
@@ -90,7 +91,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
     LoadApplication(new App()); 
     …
 }
-
+{% endtabs %}
 {% endhighlight %}
 
 ### Universal Windows Platform (UWP)

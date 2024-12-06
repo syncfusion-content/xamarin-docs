@@ -13,7 +13,7 @@ This section explains the steps required to work with the StepProgressBar contro
 
 ## Assembly deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio&reg; Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -25,7 +25,7 @@ You can add SfStepProgressBar reference using one of the following methods:
 
 **Method 1: Adding SfStepProgressBar reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfStepProgressBar to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfProgressBar](https://www.nuget.org/packages/Syncfusion.Xamarin.SfProgressBar), and then install it.
+Syncfusion&reg; Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfStepProgressBar to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfProgressBar](https://www.nuget.org/packages/Syncfusion.Xamarin.SfProgressBar), and then install it.
 
 ![Adding SfStepProgressBar reference from NuGet](overview_images/Adding SfStepProgressBar reference.png)
 
@@ -33,7 +33,7 @@ N> Install the same version of SfProgressBar NuGet in all the projects.
 
 **Method 2: Adding SfStepProgressBar reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the StepProgressBar control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion&reg; also provides Xamarin Toolbox. Using this toolbox, you can drag the StepProgressBar control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion&reg; Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfStepProgressBar assemblies manually from the installed location**
 
@@ -60,9 +60,9 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To learn more about obtaining Syncfusion components, refer to [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download/).
+N> To learn more about obtaining Syncfusion&reg; components, refer to [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download/).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer the [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your Xamarin application to use Syncfusion components.
+I> Starting with v16.2.0.x, if you reference Syncfusion&reg; assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer the [Syncfusion® license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion&reg; license key in your Xamarin application to use Syncfusion&reg; components.
 
 ## Launching the application on each platform with StepProgressBar
 

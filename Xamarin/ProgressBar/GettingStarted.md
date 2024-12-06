@@ -75,7 +75,7 @@ N> If you are adding the references from toolbox, this step is not needed.
 To launch the progress bar in iOS, call the SfLinearProgressBarRenderer.Init() or SfCircularProgressBarRenderer.Init() in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication is called as demonstrated in the following code sample.
 
 {% tabs %}
-{% highlight C# %} 
+{% highlight c# %} 
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
 { 
@@ -91,14 +91,15 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
     LoadApplication(new App()); 
     …
 }
-{% endtabs %}
+
 {% endhighlight %}
+{% endtabs %}
 
 ### Universal Windows Platform (UWP)
 
 To launch the progress bar in UWP, initialize the progress bar assemblies in App.xaml.cs in UWP project as demonstrated in the following code samples. This is required to deploy the application with progress bar in `Release` mode in UWP platform.
-
-{% highlight C# %} 
+{% tabs %}
+{% highlight c# %} 
 
 // In App.xaml.cs 
 protected override void OnLaunched(LaunchActivatedEventArgs e)
@@ -119,8 +120,8 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 … 
 }
 
-
 {% endhighlight %}
+{% endtabs %}
 
 ### Android
 
@@ -131,8 +132,7 @@ The Android platform does not require any additional configuration to render the
 
 Import the progress bar namespace as demonstrated in the following code sample in your respective page.
 
-{% tabs %} 
-
+{% tabs %}
 {% highlight xaml %} 
 xmlns:progressBar="clr-namespace:Syncfusion.XForms.ProgressBar;assembly=Syncfusion.SfProgressBar.XForms"
 

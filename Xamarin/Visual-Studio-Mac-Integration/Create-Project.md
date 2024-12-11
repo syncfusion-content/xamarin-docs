@@ -16,7 +16,7 @@ The following steps illustrates you how to create the Syncfusion Xamarin Applica
 1.	In Visual Studio for Mac, choose one of the options below to create a Syncfusion Xamarin project.
 
 	Option 1:
-	Click **Syncfusion Menu** and choose **Essential Studio for Xamarin > Create New Syncfusion Project**.
+	Click **Syncfusion Menu** and choose **Essential Studio® for Xamarin > Create New Syncfusion Project**.
 
 	![Create New Project from Syncfusion Menu](ProjectTemplate_Images/Syncfusion_Menu.PNG)
 

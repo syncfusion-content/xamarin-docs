@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Overview of Syncfusion Essential Studio Xamarin Forms products
+title: Overview of Syncfusion Essential Studio® Xamarin Forms products
 description: Basic overview about the list of available features on Syncfusion Xamarin.Forms  components and steps to use the guide.
 platform: xamarin
 control: Overview
 documentation: ug
 ---
 
-# Welcome to Syncfusion Essential Studio for Xamarin.Forms
+# Welcome to Syncfusion Essential Studio® for Xamarin.Forms
 
-Essential Studio for Xamarin.Forms is a comprehensive collection of enterprise-grade Xamarin.Forms components for building modern Mobile applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Charts, Gauge, Maps and much more.
+Essential Studio® for Xamarin.Forms is a comprehensive collection of enterprise-grade Xamarin.Forms components for building modern Mobile applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Charts, Gauge, Maps and much more.
 
 ## How to best read this user guide
 

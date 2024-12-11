@@ -2,7 +2,7 @@
 layout: post
 title: Set Header in Xamarin Busy Indicator control | Syncfusion
 description: Learn here all about Set Header support in Syncfusion Xamarin Busy Indicator (SfBusyIndicator) control and more.
-platform: Xamarin
+platform: xamarin
 control: BusyIndicator
 documentation: ug
 ---

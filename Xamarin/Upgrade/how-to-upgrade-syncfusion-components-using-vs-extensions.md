@@ -3,7 +3,7 @@ layout: post
 title: Upgrading Syncfusion Xamarin components to a latest version
 description: Learn here about the how upgrade Syncfusion Xamarin components to a latest version from NuGet manager and migrate.
 platform: Xamarin
-control: Essential Studio
+control: Essential Studio®
 documentation: ug
 ---
 

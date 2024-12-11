@@ -2,7 +2,7 @@
 layout: post
 title: Animation Duration in Xamarin Busy Indicator control | Syncfusion
 description: Learn here all about Animation Duration support in Syncfusion Xamarin Busy Indicator (SfBusyIndicator) control and more.
-platform: Xamarin
+platform: xamarin
 control: BusyIndicator
 documentation: ug
 ---

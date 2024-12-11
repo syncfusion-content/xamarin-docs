@@ -13,7 +13,7 @@ This section explains the steps required to configure the [Xamarin Badge View](h
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -79,7 +79,7 @@ N> If you are adding the references from toolbox, this step is not needed.
 
 To launch the badge view in iOS, call the SfBadgeViewRenderer.Init() in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication is called as demonstrated in the following code sample.
 
-{% highlight C# %} 
+{% highlight c# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
 { 
@@ -99,7 +99,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 You need to initialize the badge view assemblies in App.xaml.cs in UWP project as demonstrated in the following code samples. This is required to deploy the application with badge view in `Release` mode in UWP platform.
 
-{% highlight C# %} 
+{% highlight c# %}
 
 // In App.xaml.cs 
 protected override void OnLaunched(LaunchActivatedEventArgs e)
@@ -123,7 +123,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 To launch the badge view in WPF, call the SfBadgeViewRenderer.Init() in the constructor of the MainWindow class after the Xamarin.Forms framework has been initialized and before the LoadApplication is called as demonstrated in the following code sample.
 
-{% highlight C# %} 
+{% highlight c# %}
 
         public MainWindow()
         {

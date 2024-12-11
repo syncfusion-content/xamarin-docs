@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Xamarin Carousel View control | Syncfusion
 description: Learn here about getting started with Syncfusion Xamarin Carousel View (SfCarousel) control, its elements and more.
-platform: Xamarin
+platform: xamarin
 control: Carousel
 documentation: ug
 ---
@@ -13,7 +13,7 @@ This section explains how to showcase a Gallery of photos along with a Title usi
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 

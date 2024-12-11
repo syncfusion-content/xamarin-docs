@@ -22,7 +22,7 @@ This article describes the most common installation errors, as well as the cause
 
 ### Problem
 
-**Error Message:** Sorry, the provided unlock key is a trial unlock key and cannot be used to unlock the licensed version of our Essential Studio for Xamarin installer.
+**Error Message:** Sorry, the provided unlock key is a trial unlock key and cannot be used to unlock the licensed version of our Essential Studio® for Xamarin installer.
 
 ![Alert Message](Errors/Installation_Errors_img1.png)
 
@@ -39,7 +39,7 @@ Only a licensed unlock key can unlock a licensed installer. So, to unlock the Li
 
 ### Problem
 
-**Error Message:** Your license for Syncfusion Essential Studio for Xamarin has been expired since {date}. Please renew your subscription and try again.
+**Error Message:** Your license for Syncfusion Essential Studio® for Xamarin has been expired since {date}. Please renew your subscription and try again.
 
 **Online Installer**
 
@@ -63,7 +63,7 @@ You can choose from the options listed below.
 
 ### Problem
 
-**Error Message:** Sorry, we are unable to find a valid license or trial for Essential Studio for Xamarin under your account.
+**Error Message:** Sorry, we are unable to find a valid license or trial for Essential Studio® for Xamarin under your account.
 
 <em>**Offline installer**</em>
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: About Essential Studio Licensing | Syncfusion
-description: Learn here about Syncfusion Essential Studio license key, how to generate the license key, how to register the license key, and more details.
+title: About Essential Studio® Licensing | Syncfusion
+description: Learn here about Syncfusion Essential Studio® license key, how to generate the license key, how to register the license key, and more details.
 platform: Xamarin
-control: Essential Studio
+control: Essential Studio®
 documentation: ug
 ---
 

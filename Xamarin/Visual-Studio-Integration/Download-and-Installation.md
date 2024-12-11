@@ -10,7 +10,7 @@ documentation: ug
 
 # Download and Installation
 
-In below Visual Studio marketplace link, Syncfusion publishing the Xamarin Visual Studio extension. You can either use the Visual Studio to install it or go to the Visual Studio marketplace to download and install it. 
+In below Visual Studio marketplace link, Syncfusion® publishing the Xamarin Visual Studio extension. You can either use the Visual Studio to install it or go to the Visual Studio marketplace to download and install it. 
 
 [Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.XamarinVSExtension)
 
@@ -18,7 +18,7 @@ In below Visual Studio marketplace link, Syncfusion publishing the Xamarin Visua
 
 ## Install through the Visual Studio Manage Extensions
 
-The steps below assist you to how to install the Syncfusion Xamarin extensions from Visual Studio **Manage Extensions**.
+The steps below assist you to how to install the Syncfusion® Xamarin extensions from Visual Studio **Manage Extensions**.
 
 1.	Open the Visual Studio.
 2.	Navigate to **Extension -> Manage Extensions** and open the Manage Extensions.

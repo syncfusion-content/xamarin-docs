@@ -7,19 +7,19 @@ control: Syncfusion Extensions
 documentation: ug
 ---
 
-# Xamarin Syncfusion Extensions Overview
+# Xamarin Syncfusion® Extensions Overview
 
-The Syncfusion Xamarin Visual Studio extensions allow you to create a Xamarin application with Syncfusion components along with required NuGet packages in Visual Studio.
+The Syncfusion® Xamarin Visual Studio extensions allow you to create a Xamarin application with Syncfusion® components along with required NuGet packages in Visual Studio.
 
-N> Syncfusion Extension is published in Visual Studio Marketplace. You can download Xamarin Extensions [here](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.XamarinExtension).
+N> Syncfusion® Extension is published in Visual Studio Marketplace. You can download Xamarin Extensions [here](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.XamarinExtension).
 
-I> The Syncfusion Xamarin  menu option is available from v17.1.0.32.
+I> The Syncfusion® Xamarin  menu option is available from v17.1.0.32.
 
-The Syncfusion provides the following extension supports in Visual Studio:
+The Syncfusion® provides the following extension supports in Visual Studio:
 
-1.	[Create Project](create-project): To create a Syncfusion Xamarin application by adding the required Syncfusion NuGet based on the control chosen.
-2.	[Essential UI Kit](essential-ui-kit): Add the predefined Syncfusion Xamarin templates in Xamarin.Form and install the required Syncfusion NuGet packages.
-3.	[Toolbox](toolbox-control): Add the Syncfusion Xamarin components in Xamarin.Forms designer from Syncfusion Toolbox.
+1.	[Create Project](create-project): To create a Syncfusion® Xamarin application by adding the required Syncfusion® NuGet based on the control chosen.
+2.	[Essential UI Kit](essential-ui-kit): Add the predefined Syncfusion® Xamarin templates in Xamarin.Form and install the required Syncfusion® NuGet packages.
+3.	[Toolbox](toolbox-control): Add the Syncfusion® Xamarin components in Xamarin.Forms designer from Syncfusion® Toolbox.
 
 
 **Essential Studio® for Xamarin in Visual Studio**

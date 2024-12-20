@@ -138,7 +138,7 @@ xmlns:progressBar="clr-namespace:Syncfusion.XForms.ProgressBar;assembly=Syncfusi
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %} 
 
 using Syncfusion.XForms.ProgressBar;
 
@@ -158,7 +158,7 @@ The progress bar control has two variants: SfLinearProgressBar and SfCircularPro
 <progressBar:SfCircularProgressBar Progress="75"/>
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %} 
 
 // Using linear progress bar. 
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar { Progress = 75 };
@@ -192,7 +192,7 @@ When the progress of a task cannot be shown determinately, you can enable the in
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %} 
 
 // Using linear progress bar.
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar { IsIndeterminate = true };
@@ -217,7 +217,7 @@ To visualize the progress of a multiple sequential task, split the progress bar 
 <progressBar:SfCircularProgressBar SegmentCount="4" Progress="75"/>
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %} 
 
 // Using linear progress bar.
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar { Progress = 75, SegmentCount = 4 };
@@ -246,7 +246,7 @@ You can customize the color of the progress indicator and track by defining the 
 <progressBar:SfCircularProgressBar Progress="75" TrackColor="#3390a84e" ProgressColor="#FF90a84e"/>
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %} 
 
 // Using linear progress bar.
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar{Progress = 75,TrackColor = Color.FromHex("#33ffbe06"),ProgressColor = Color.FromHex("#FFffbe06")};

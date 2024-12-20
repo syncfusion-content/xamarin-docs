@@ -1,6 +1,6 @@
 ---
-title: Diagram in Xamarin Diagram control | Syncfusion
-description: Learn here all about Diagram support in Syncfusion Xamarin Diagram (SfDiagram) control, its elements and more.
+title: Diagram in Xamarin Diagram control | Syncfusion&reg;
+description: Learn here all about Diagram support in Syncfusion&reg; Xamarin Diagram (SfDiagram) control, its elements and more.
 platform: xamarin
 control: SfDiagram
 documentation: ug

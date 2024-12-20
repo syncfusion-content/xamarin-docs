@@ -1,6 +1,6 @@
 ---
-title: Drawing Mode in Xamarin Diagram control | Syncfusion
-description: Learn here all about Drawing Mode support in Syncfusion Xamarin Diagram (SfDiagram) control and more.
+title: Drawing Mode in Xamarin Diagram control | Syncfusion&reg;
+description: Learn here all about Drawing Mode support in Syncfusion&reg; Xamarin Diagram (SfDiagram) control and more.
 platform: Xamarin
 control: Diagram
 documentation: ug

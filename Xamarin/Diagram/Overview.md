@@ -1,7 +1,7 @@
 ---
 title: About Xamarin Diagram (SfDiagram) control | Syncfusion&reg;
 description: Learn here all about introduction of Syncfusion&reg; Xamarin Diagram (SfDiagram) control, its elements and more.
-platform: Xamarin
+platform: xamarin
 control: SfDiagram
 documentation: Ug
 keywords: Diagram, org chart, flowchart, shape, use case, workflow.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Loading & saving RTF content in Xamarin Rich Text Editor | Syncfusion
-description: Learn here all about Loading and saving RTF content support in Syncfusion Xamarin Rich Text Editor (SfRichTextEditor) control and more.
+title: Loading & saving RTF content in Xamarin Rich Text Editor | Syncfusion&reg;
+description: Learn here all about Loading and saving RTF content support in Syncfusion&reg; Xamarin Rich Text Editor (SfRichTextEditor) control and more.
 platform: xamarin
 control: Rich Text Editor
 documentation: ug

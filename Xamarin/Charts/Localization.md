@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in Xamarin Charts control | Syncfusion
-description: Learn here all about Localization support in Syncfusion Xamarin Charts (SfChart) control, its elements and more.
+title: Localization in Xamarin Charts control | Syncfusion®
+description: Learn here all about Localization support in Syncfusion® Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: SfChart
 documentation: ug
@@ -11,11 +11,11 @@ documentation: ug
 
 You can localize [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) in all the platforms by adding a .resx file in a .NET Standard project alone. The following steps describe how to localize SfChart in a project and you can download the complete sample from this [`link`](https://github.com/SyncfusionExamples/how-to-localize-the-labels-in-xamarin-forms-sfchart).
 
-N> Here, the resources have been already created for some cultures and shared them on [`Syncfusion GitHub`](https://github.com/syncfusion/xamarin-localized-texts) for your convenience.
+N> Here, the resources have been already created for some cultures and shared them on [`Syncfusion® GitHub`](https://github.com/syncfusion/xamarin-localized-texts) for your convenience.
 
 * Add a new folder in the .NET Standard project named Resources.
 
-* Add resource files for the languages you wish to support, and set their Build Action to EmbeddedResource. The name of the resource file should be $name of the Syncfusion component$+$language code$+.resx. For example, if you add a resource file for the French culture, add the Syncfusion.SfChart.XForms.fr-FR.resx file to Resources folder as illustrated in the following screenshot.
+* Add resource files for the languages you wish to support, and set their Build Action to EmbeddedResource. The name of the resource file should be $name of the Syncfusion® component$+$language code$+.resx. For example, if you add a resource file for the French culture, add the Syncfusion.SfChart.XForms.fr-FR.resx file to Resources folder as illustrated in the following screenshot.
 
 ![Localization support in Xamarin.Forms Chart](localization_images/LocalizationResource.png)
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started in Xamarin DateTime Range Navigator | Syncfusion
-description: Learn here all about Getting Started support in Syncfusion Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator) control and more.
+title: Getting Started in Xamarin DateTime Range Navigator | Syncfusion®
+description: Learn here all about Getting Started support in Syncfusion® Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator) control and more.
 platform: xamarin
 control: SfDateTimeRangeNavigator
 documentation: ug
@@ -25,7 +25,7 @@ You can add SfDateTimeRangeNavigator reference in one of the following methods:
 
 **Method 1: Adding SfDateTimeRangeNavigator reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDateTimeRangeNavigator to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfChart](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it.
+Syncfusion® Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDateTimeRangeNavigator to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfChart](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it.
 
 ![Adding Xamarin.Forms date-time range navigator reference](gettingstarted_images/img3.png)
 
@@ -33,7 +33,7 @@ N> Install the same version of the SfChart NuGet in all the projects.
 
 **Method 2: Adding SfDateTimeRangeNavigator reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfDateTimeRangeNavigator control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion® also provides Xamarin Toolbox. Using this toolbox, you can drag the SfDateTimeRangeNavigator control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfDateTimeRangeNavigator assemblies manually from the installed location**
 
@@ -93,7 +93,7 @@ Syncfusion.Licensing.dll<br/>
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/offline-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion® assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion® license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion® license key in your Xamarin application to use our components.
 
 ## Launching the application on each platform with range navigator 
 

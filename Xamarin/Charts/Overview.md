@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin Charts control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin Charts (SfChart) control, its elements and more.
+title: About Xamarin Charts control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart
 documentation: ug

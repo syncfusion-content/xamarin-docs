@@ -9,7 +9,7 @@ documentation: ug
 
 # Loading and saving RTF content in Xamarin Rich Text Editor
 
-The Xamarin Rich Text Editor control provides support to load and save RTF content with help of [Essential® DocIO](https://help.syncfusion.com/file-formats/docio/overview).
+The Xamarin Rich Text Editor control provides support to load and save RTF content with help of [Essential&reg; DocIO](https://help.syncfusion.com/file-formats/docio/overview).
 
 ## Prerequisite
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Technical Indicators in Xamarin Charts control | Syncfusion®
-description: Learn here all about Technical Indicators support in Syncfusion® Xamarin Charts (SfChart) control and more.
+title: Technical Indicators in Xamarin Charts control | Syncfusion
+description: Learn here all about Technical Indicators support in Syncfusion Xamarin Charts (SfChart) control and more.
 platform: xamarin
 control: Chart
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grid Lines in Xamarin DateTime Range Navigator control | Syncfusion®
-description: Learn here all about Grid Lines support in Syncfusion® Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator) control and more.
+title: Grid Lines in Xamarin DateTime Range Navigator control | Syncfusion
+description: Learn here all about Grid Lines support in Syncfusion Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator) control and more.
 platform: xamarin
 control: SfDateTimeRangeNavigator
 documentation: ug

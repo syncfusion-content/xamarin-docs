@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview of Xamarin AutoComplete (SfAutoComplete)
 
-Essential [AutoComplete for Xamarin.Forms](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) provides a simpler way to complete the text based on the characters that the user has entered before. It also provides option to choose a suggestion from drop down or append a suggestion to the text directly.
+Essential® [AutoComplete for Xamarin.Forms](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) provides a simpler way to complete the text based on the characters that the user has entered before. It also provides option to choose a suggestion from drop down or append a suggestion to the text directly.
 
 ![SfAutocomplete OverView](images/Overview/overview.png)
 

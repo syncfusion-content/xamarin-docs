@@ -2,7 +2,7 @@
 layout: post
 title: About Xamarin Navigation Drawer control | Syncfusion
 description: Learn here all about introduction of Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control, its elements and more.
-platform: Xamarin
+platform: xamarin
 control: NavigationDrawer
 documentation: ug
 ---

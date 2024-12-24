@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Xamarin NumericUpDown control | Syncfusion
 description: Learn here about getting started with Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control, its elements and more.
-platform: Xamarin
+platform: xamarin
 control: NumericUpDown
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Xamarin Range Slider control | Syncfusion
 description: Learn here about getting started with Syncfusion Xamarin Range Slider (SfRangeSlider) control, its elements and more.
-platform: Xamarin
+platform: xamarin
 control: RangeSlider
 documentation: ug
 ---

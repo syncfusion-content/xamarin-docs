@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Xamarin Masked Entry control | Syncfusion
 description: Learn here about getting started with Syncfusion Xamarin Masked Entry (SfMaskedEdit) control, its elements and more.
-platform: Xamarin
+platform: xamarin
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit

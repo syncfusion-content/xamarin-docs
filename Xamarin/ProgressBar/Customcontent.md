@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Content in Xamarin ProgressBar control | Syncfusion
-description: Learn here all about customcontent support in Syncfusion Xamarin ProgressBar control, its elements and more.
+title: Custom Content in Xamarin ProgressBar control | Syncfusion&reg;
+description: Learn here all about customcontent support in Syncfusion&reg; Xamarin ProgressBar control, its elements and more.
 platform: xamarin
 control: ProgressBar
 documentation: ug

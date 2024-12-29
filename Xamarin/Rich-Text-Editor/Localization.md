@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in Xamarin Rich Text Editor control | Syncfusion
-description: Learn here all about Localization support in Syncfusion Xamarin Rich Text Editor (SfRichTextEditor) control and more.
+title: Localization in Xamarin Rich Text Editor control | Syncfusion&reg;
+description: Learn here all about Localization support in Syncfusion&reg; Xamarin Rich Text Editor (SfRichTextEditor) control and more.
 platform: xamarin
 control: SfRichTextEditor
 documentation: UG
@@ -38,7 +38,7 @@ To localize the SfRichTextEditor, follow the steps in application level:
 
 ## Add a .resx file
 
-In the portable project of your application, add a `.resx` file inside the resources folder with **Build Action -> EmbeddedResource**. File name should be `Syncfusion control's Namespace + language code` format.
+In the portable project of your application, add a `.resx` file inside the resources folder with **Build Action -> EmbeddedResource**. File name should be `Syncfusion&reg; control's Namespace + language code` format.
 
 For example, to set the culture to French, the file should be named as **Syncfusion.SfRichTextEditor.XForms.fr-FR.resx**.
 

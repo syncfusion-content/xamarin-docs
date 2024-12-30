@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Get the data point collection based on region in Syncfusion SfChart
+title: Get the data point collection based on region in Syncfusion® SfChart
 description: Get the data point collection based on region in SfChart
 platform: xamarin
 control: Chart

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding custom labels to SfChart axis | Syncfusion
+title: Adding custom labels to SfChart axis | Syncfusion®
 description: Add, remove or modify the labels of SfChart axis
 platform: xamarin
 control: Chart

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Get the touch position in Syncfusion SfChart
+title: Get the touch position in Syncfusion® SfChart
 description: Get the touch position in SfChart
 platform: xamarin
 control: Chart

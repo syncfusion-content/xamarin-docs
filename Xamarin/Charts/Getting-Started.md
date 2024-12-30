@@ -700,7 +700,7 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 [How to resolve the rendering issue with chart in iOS and macOS](https://support.syncfusion.com/kb/article/6658/how-to-resolve-chart-not-rendering-issue-in-ios-and-macos)
 
-[How to make Syncfusion® Xamarin.Forms chart to work in UWP in release mode when .NET Native tool chain is enabled](https://support.syncfusion.com/kb/article/6664/how-to-make-syncfusion-xamarin-forms-chart-to-work-in-uwp-in-release-mode-when-net-native)
+[How to make Syncfusion Xamarin.Forms chart to work in UWP in release mode when .NET Native tool chain is enabled](https://support.syncfusion.com/kb/article/6664/how-to-make-syncfusion-xamarin-forms-chart-to-work-in-uwp-in-release-mode-when-net-native)
 
 [How to solve application crashes due to privacy violation in iOS 10+ devices](https://support.syncfusion.com/kb/article/7971/how-to-solve-privacy-violation-in-devices-in-xamarinforms-chart)
 

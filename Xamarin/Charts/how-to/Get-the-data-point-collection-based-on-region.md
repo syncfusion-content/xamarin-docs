@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Get the data point collection based on region in Syncfusion® SfChart
-description: Get the data point collection based on region in SfChart
+description: This section how to get the data point collection based on a region in Xamarin.Forms SfChart, use the VisibleRange or hit-test support to identify points.
 platform: xamarin
 control: Chart
 documentation: ug

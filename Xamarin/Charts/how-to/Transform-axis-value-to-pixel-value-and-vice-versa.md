@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Transform axis value to pixel value and vice-versa | Syncfusion®
-description: This section how to transform axis values to pixel values and vice-versa in Xamarin.Forms SfChart, use the Axis.ValueToPoint and PointToValue methods.
+description: This section explains how to transform axis values to pixel values and vice-versa in Xamarin.Forms SfChart. Use the axis ValueToPoint and PointToValue methods.
 platform: xamarin
 control: Chart
 documentation: ug

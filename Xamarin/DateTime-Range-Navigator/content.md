@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Content in Xamarin DateTime Range Navigator control | Syncfusion®
+title: Content in Xamarin DateTime Range Navigator control | Syncfusion
 description: Learn here all about Content support in Syncfusion® Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator) control and more.
 platform: xamarin
 control: SfDateTimeRangeNavigator

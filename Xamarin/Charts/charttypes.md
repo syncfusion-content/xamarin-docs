@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Types in Xamarin Charts control | Syncfusion®
+title: Chart Types in Xamarin Charts control | Syncfusion
 description: Learn here all about Chart Types support in Syncfusion® Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart

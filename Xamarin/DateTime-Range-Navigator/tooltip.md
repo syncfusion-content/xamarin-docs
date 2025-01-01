@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip in Xamarin DateTime Range Navigator control | Syncfusion®
+title: Tooltip in Xamarin DateTime Range Navigator control | Syncfusion
 description: Learn here all about Tooltip support in Syncfusion® Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator) control and more.
 platform: xamarin
 control: SfDateTimeRangeNavigator

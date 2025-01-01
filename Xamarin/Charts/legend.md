@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in Xamarin Charts control | Syncfusion®
+title: Legend in Xamarin Charts control | Syncfusion
 description: Learn here all about Legend support in Syncfusion® Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart

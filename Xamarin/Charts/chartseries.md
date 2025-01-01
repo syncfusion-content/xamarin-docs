@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Series in Xamarin Charts control | Syncfusion®
+title: Chart Series in Xamarin Charts control | Syncfusion
 description: Learn here all about Chart Series support in Syncfusion® Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart

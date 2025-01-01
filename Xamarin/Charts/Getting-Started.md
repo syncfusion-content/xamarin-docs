@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Xamarin Charts Control | Syncfusion®
+title: Getting Started with Xamarin Charts Control | Syncfusion
 description: Learn here all about getting started with Syncfusion® Xamarin Charts control, its elements and more details.
 platform: xamarin
 control: Chart

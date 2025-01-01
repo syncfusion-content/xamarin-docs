@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Zooming and Panning in Xamarin Charts control | Syncfusion®
+title: Zooming and Panning in Xamarin Charts control | Syncfusion
 description: Learn here all about Zooming and Panning support in Syncfusion® Xamarin Charts (SfChart) control and more.
 platform: xamarin
 control: Chart

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Annotations in Xamarin Charts control | Syncfusion®
+title: Annotations in Xamarin Charts control | Syncfusion
 description: Learn here all about Annotations support in Syncfusion® Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart

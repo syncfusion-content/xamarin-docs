@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populating Data in Xamarin Charts control | Syncfusion®
+title: Populating Data in Xamarin Charts control | Syncfusion
 description: Learn here all about Populating Data support in Syncfusion® Xamarin Charts (SfChart) control and more.
 platform: xamarin
 control: Chart

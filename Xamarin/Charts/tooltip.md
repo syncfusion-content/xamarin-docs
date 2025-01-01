@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip in Xamarin Charts control | Syncfusion®
+title: Tooltip in Xamarin Charts control | Syncfusion
 description: Learn here all about Tooltip support in Syncfusion® Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart

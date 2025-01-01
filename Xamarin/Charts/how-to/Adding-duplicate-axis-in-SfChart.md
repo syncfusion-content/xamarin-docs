@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding duplicate axis in Syncfusion® SfChart
+title: Adding duplicate axis in Syncfusion SfChart
 description: This section describes how to add duplicate axis with specified range in the Xamarin.Forms SfChart control.
 platform: xamarin
 control: Chart

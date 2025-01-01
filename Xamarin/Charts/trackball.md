@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Trackball in Xamarin Charts control | Syncfusion®
+title: Trackball in Xamarin Charts control | Syncfusion
 description: Learn here all about Trackball support in Syncfusion® Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart

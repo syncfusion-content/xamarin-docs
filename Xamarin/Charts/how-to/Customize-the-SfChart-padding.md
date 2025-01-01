@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize the Syncfusion® SfChart padding
+title: Customize the Syncfusion SfChart padding
 description: This section describes how to customize the Xamarin.Forms Syncfusion® SfChart by applying padding to avoid crossing of axis labels.
 platform: xamarin
 control: Chart

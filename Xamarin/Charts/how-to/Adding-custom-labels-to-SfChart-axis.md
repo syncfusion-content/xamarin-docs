@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adding custom labels to SfChart axis | Syncfusion
-description: Add, remove or modify the labels of SfChart axis
+description: This section explains how to add, remove, or modify axis labels in Xamarin.Forms SfChart by programmatically managing them using the Axis Labels property.
 platform: xamarin
 control: Chart
 documentation: ug

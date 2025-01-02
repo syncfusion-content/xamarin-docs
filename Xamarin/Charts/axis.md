@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Axis in Xamarin Charts control | Syncfusion
-description: Learn here all about Axis support in Syncfusion Xamarin Charts (SfChart) control, its elements and more.
+description: Learn here all about Axis support in Syncfusion® Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -543,7 +543,7 @@ chart.PrimaryAxis = new DateTimeAxis() {
 
 Date time intervals can be customized using [`Interval`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DateTimeAxis.html#Syncfusion_SfChart_XForms_DateTimeAxis_Interval) and [`IntervalType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DateTimeAxis.html#Syncfusion_SfChart_XForms_DateTimeAxis_IntervalType) properties of the [`DateTimeAxis`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DateTimeAxis.html). For example, setting [`Interval`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DateTimeAxis.html#Syncfusion_SfChart_XForms_DateTimeAxis_Interval) as 2 and [`IntervalType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DateTimeAxis.html#Syncfusion_SfChart_XForms_DateTimeAxis_IntervalType) as [`Years`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DateTimeIntervalType.html#Syncfusion_SfChart_XForms_DateTimeIntervalType_Years) will consider 2 years as interval.
 
-Essential Chart supports the following types of interval for date time axis
+Essential® Chart supports the following types of interval for date time axis
 
 * Years
 * Months

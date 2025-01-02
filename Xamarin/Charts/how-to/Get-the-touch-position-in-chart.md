@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Get the touch position in Syncfusion SfChart
-description: This section how to get the touch position in Xamarin.Forms SfChart. Handle the ChartTapped event and use the event arguments to retrieve touch coordinates.
+description: This section explains how to get the touch position in Xamarin.Forms SfChart by handling the ChartTapped event and using its event arguments.
 platform: xamarin
 control: Chart
 documentation: ug

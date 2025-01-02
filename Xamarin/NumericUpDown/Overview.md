@@ -2,14 +2,14 @@
 layout: post
 title: About Xamarin NumericUpDown control | Syncfusion
 description: Learn here all about introduction of Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control, its elements and more.
-platform: Xamarin
+platform: xamarin
 control: NumericUpDown
 documentation: ug
 ---
 
 # Xamarin NumericUpDown (SfNumericUpDown) Overview
 
-The Essential Xamarin.Forms NumericUpDown control provides up and down repeat buttons to increase and decrease values. The control respects UI culture and can be configured to display different formats like currency, scientific, etc.
+The Essential® Xamarin.Forms NumericUpDown control provides up and down repeat buttons to increase and decrease values. The control respects UI culture and can be configured to display different formats like currency, scientific, etc.
 
 ![Xamarin NumericUpDown](images/overview.png)
 

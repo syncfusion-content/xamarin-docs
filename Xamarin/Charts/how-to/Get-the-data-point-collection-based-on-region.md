@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Get the data point collection based on region in Syncfusion SfChart
-description: This section explains how to retrieve the data point collection for a specific region in Xamarin.Forms SfChart using the GetDataPoints methods in the CartesianSeries.
+description: This section explains how to retrieve data point collections for specific regions in Xamarin.Forms SfChart using the GetDataPoints method in CartesianSeries.
 platform: xamarin
 control: Chart
 documentation: ug

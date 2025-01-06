@@ -2,7 +2,7 @@
 layout: post
 title: States in Syncfusion® AvatarView control for Xamarin.Forms.
 description: This section will explain about how to use the different states that exist in Xamarin.Forms SfAvatarView.
-platform: Xamarin
+platform: xamarin
 control: AvatarView
 documentation: ug
 ---

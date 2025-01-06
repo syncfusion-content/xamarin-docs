@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Getting Started with Xamarin Rating Control | Syncfusion
-description: Learn here all about how to getting started with Syncfusion Xamarin Rating control, its elements and more.
+title: Getting Started with Xamarin Rating Control | Syncfusion®
+description: Learn here all about how to getting started with Syncfusion® Xamarin Rating control, its elements and more.
 platform: xamarin
 control: Rating
 documentation: ug

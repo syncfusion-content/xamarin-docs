@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Container Type in Xamarin Text Input Layout control | Syncfusion
-description: Learn here all about Container Type support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
+title: Container Type in Xamarin Text Input Layout control | Syncfusion®
+description: Learn here all about Container Type support in Syncfusion® Xamarin Text Input Layout (SfTextInputLayout) control and more.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug

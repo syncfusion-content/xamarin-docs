@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Font Customization  in Xamarin Text Input Layout control | Syncfusion
-description: Learn here all about Font Customization  support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
+title: Font Customization  in Xamarin Text Input Layout control | Syncfusion®
+description: Learn here all about Font Customization  support in Syncfusion® Xamarin Text Input Layout (SfTextInputLayout) control and more.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug

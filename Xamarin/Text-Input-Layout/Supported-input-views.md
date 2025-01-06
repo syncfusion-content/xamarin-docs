@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Supported Input Views in Xamarin Text Input Layout | Syncfusion
-description: Learn here all about Supported Input Views support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
+title: Supported Input Views in Xamarin Text Input Layout | Syncfusion®
+description: Learn here all about Supported Input Views support in Syncfusion® Xamarin Text Input Layout (SfTextInputLayout) control and more.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug

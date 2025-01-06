@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visual Customization in Xamarin Radio Button control | Syncfusion
-description: Learn here all about Visual Customization support in Syncfusion Xamarin Radio Button (SfRadioButton) control and more.
+title: Visual Customization in Xamarin Radio Button control | Syncfusion®
+description: Learn here all about Visual Customization support in Syncfusion® Xamarin Radio Button (SfRadioButton) control and more.
 platform: xamarin
 control: SfRadioButton
 documentation: ug 

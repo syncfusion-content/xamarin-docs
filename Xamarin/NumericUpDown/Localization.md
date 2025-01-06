@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in Xamarin NumericUpDown control | Syncfusion
-description: Learn here all about Localization support in Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control and more.
+title: Localization in Xamarin NumericUpDown control | Syncfusion®
+description: Learn here all about Localization support in Syncfusion® Xamarin NumericUpDown (SfNumericUpDown) control and more.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug

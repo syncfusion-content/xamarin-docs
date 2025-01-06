@@ -1,7 +1,7 @@
 ---
 layout: post
-title: NestedTab in Xamarin Tabbed View control | Syncfusion
-description: Learn here all about NestedTab support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
+title: NestedTab in Xamarin Tabbed View control | Syncfusion®
+description: Learn here all about NestedTab support in Syncfusion® Xamarin Tabbed View (SfTabView) control and more.
 platform: Xamarin
 control: TabView
 documentation: ug

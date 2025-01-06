@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection Value configuration in Xamarin Range Slider | Syncfusion
-description: Learn here all about Selection Value configuration support in Syncfusion Xamarin Range Slider (SfRangeSlider) control and more.
+title: Selection Value configuration in Xamarin Range Slider | Syncfusion®
+description: Learn here all about Selection Value configuration support in Syncfusion® Xamarin Range Slider (SfRangeSlider) control and more.
 platform: Xamarin
 control: RangeSlider
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multiple selection in Xamarin ComboBox control | Syncfusion
-description: Learn here all about Multiple selection support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
+title: Multiple selection in Xamarin ComboBox control | Syncfusion®
+description: Learn here all about Multiple selection support in Syncfusion® Xamarin ComboBox (SfComboBox) control and more.
 platform: xamarin
 control: SfComboBox
 documentation: ug

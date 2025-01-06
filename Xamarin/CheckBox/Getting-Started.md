@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin CheckBox control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin CheckBox (SfCheckBox) control, its elements and more.
+title: Getting Started with Xamarin CheckBox control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Xamarin CheckBox (SfCheckBox) control, its elements and more.
 platform: xamarin
 control: SfCheckBox
 documentation: ug 

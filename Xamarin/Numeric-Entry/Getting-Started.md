@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Numeric Entry control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control, its elements and more.
+title: Getting Started with Xamarin Numeric Entry control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Xamarin Numeric Entry (SfNumericTextBox) control, its elements and more.
 platform: xamarin
 control: SfNumericTextBox
 documentation: ug

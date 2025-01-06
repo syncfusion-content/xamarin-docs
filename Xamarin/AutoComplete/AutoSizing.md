@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AutoSizing in Syncfusion SfAutoComplete control in Xamarin.Forms
+title: AutoSizing in Syncfusion® SfAutoComplete control in Xamarin.Forms
 description: Learn how to enable the AutoSizing feature in SfAutoComplete control to extend the layout based on the input token size available.
 platform: Xamarin
 control: SfAutoComplete

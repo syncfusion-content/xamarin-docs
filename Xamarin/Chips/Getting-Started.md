@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Chips control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio Xamarin Chips control, its elements and more.
+title: Getting Started with Xamarin Chips control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Essential Studio® Xamarin Chips control, its elements and more.
 platform: xamarin
 control: Chips
 documentation: ug

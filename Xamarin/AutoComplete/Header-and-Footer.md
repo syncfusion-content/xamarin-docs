@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header and Footer in Xamarin AutoComplete control | Syncfusion
-description: Learn about Header and Footer support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more details.
+title: Header and Footer in Xamarin AutoComplete control | Syncfusion®
+description: Learn about Header and Footer support in Syncfusion® Xamarin AutoComplete (SfAutoComplete) control and more details.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug

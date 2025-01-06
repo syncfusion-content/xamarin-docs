@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Effects View control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Effects View (SfEffectsView) control, its elements and more.
+title: Getting Started with Xamarin Effects View control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Xamarin Effects View (SfEffectsView) control, its elements and more.
 platform: xamarin
 control: SfEffectsView
 documentation: ug

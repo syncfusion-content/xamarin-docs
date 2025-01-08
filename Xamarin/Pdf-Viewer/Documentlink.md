@@ -2,7 +2,7 @@
 layout: post
 title: Table of content navigation in Xamarin Pdf Viewer | Syncfusion
 description: Learn here all about Table of content navigation support in Syncfusion<sup>®</sup> Xamarin Pdf Viewer (SfPdfViewer) control and more.
-platform: Xamarin
+platform: xamarin
 control: SfPdfViewer
 documentation: ug
 ---

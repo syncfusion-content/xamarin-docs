@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Xamarin Pdf Viewer control | Syncfusion
 description: Learn here about getting started with Syncfusion<sup>®</sup> Xamarin Pdf Viewer (SfPdfViewer) control, its elements and more.
-platform: Xamarin
+platform: xamarin
 control: SfPdfViewer
 documentation: ug
 ---
@@ -13,7 +13,7 @@ This section demonstrates how to create an application that displays a PDF file 
  
 ## Assembly deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio<sup>®</sup> for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 

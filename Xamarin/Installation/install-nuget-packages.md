@@ -2,7 +2,7 @@
 layout: post
 title: Install Syncfusion<sup>®</sup> Xamarin NuGet packages - Syncfusion<sup>®</sup>
 description: Learn here about the how to install Syncfusion<sup>®</sup> Xamarin NuGet packages from Package manager and NuGet manager.
-platform: Xamarin
+platform: xamarin
 control: Extension
 documentation: ug
 

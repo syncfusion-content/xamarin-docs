@@ -27,11 +27,11 @@ You can resolve this issue by using anyone of the following steps.
 
 1. If you are facing this issue while building the application, change the OutputPath and IntermediateOutputPath to a shorter path in the respective project’s .csproj under the required configuration.
 
-   ![](images/img1.png)
+   ![Image1](images/img1.png)
 
 2. You can also change the samples location while installing Syncfusion<sup>®</sup> setup. The window, which allows you to change the installation path during installation is illustrated in the following screenshot. 
 
-   ![](images/img2.png)
+   ![Image2](images/img2.png)
 
 3. If the above steps did not resolve the error, move the Xamarin folder to a shorter path, manually. You can find the folder under (if you have not moved the samples folder during installation),
    

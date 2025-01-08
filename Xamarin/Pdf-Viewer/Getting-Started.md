@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Xamarin Pdf Viewer control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control, its elements and more.
+description: Learn here about getting started with Syncfusion<sup>®</sup> Xamarin Pdf Viewer (SfPdfViewer) control, its elements and more.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
@@ -33,7 +33,7 @@ N> Install the same version of SfPdfViewer NuGet in all the projects.
 
 **Method 2: Adding SfPdfViewer reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfPdfViewer control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion<sup>®</sup> also provides Xamarin Toolbox. Using this toolbox, you can drag the SfPdfViewer control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion<sup>®</sup> Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfPdfViewer assemblies manually from the installed location**
 
@@ -62,7 +62,7 @@ Location: {Installed location}/{version}/Xamarin/lib
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion<sup>®</sup> assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion<sup>®</sup> license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion<sup>®</sup> license key in your Xamarin application to use our components.
 
 ## Creating a simple PDF Viewer application
 

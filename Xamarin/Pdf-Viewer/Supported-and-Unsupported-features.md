@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Supported and Unsupported features in Xamarin Pdf Viewer | Syncfusion
-description: Learn here all about the list of supported and unsupported features in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control.
+description: Learn here all about the list of supported and unsupported features in Syncfusion<sup>®</sup> Xamarin Pdf Viewer (SfPdfViewer) control.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with ScrollHead in Xamarin Pdf Viewer control | Syncfusion
-description: Learn here all about Working with ScrollHead support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
+description: Learn here all about Working with ScrollHead support in Syncfusion<sup>®</sup> Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug

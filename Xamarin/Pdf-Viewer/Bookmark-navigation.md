@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bookmark Navigation in Xamarin Pdf Viewer control | Syncfusion
-description: Learn here all about Bookmark Navigation support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
+description: Learn here all about Bookmark Navigation support in Syncfusion<sup>®</sup> Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
@@ -142,7 +142,7 @@ private void PdfViewerControl_BookmarkNavigationOccurred(object sender, Syncfusi
 
 ## Custom bookmarks
 
-PDF viewer allows you to bookmark the current page dynamically. To bookmark a page, navigate to the page and bookmark it. These custom bookmarks can be saved with the document, but they will only be visible in the Syncfusion PDF viewer. They will not be visible in other 3rd party PDF viewer applications.
+PDF viewer allows you to bookmark the current page dynamically. To bookmark a page, navigate to the page and bookmark it. These custom bookmarks can be saved with the document, but they will only be visible in the Syncfusion<sup>®</sup> PDF viewer. They will not be visible in other 3rd party PDF viewer applications.
 
 The custom bookmarks can be obtained using the `CustomBookmarks` property. 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Switch control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Switch (SfSwitch) control, its elements and more.
+title: Getting Started with Xamarin Switch control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Xamarin Switch (SfSwitch) control, its elements and more.
 platform: Xamarin
 control: Switch
 documentation: ug
@@ -26,13 +26,13 @@ You can add [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForm
 
 **Method 1: Adding SfSwitch reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/#). To add [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and then install it.
+Syncfusion® Xamarin components are available in [nuget.org](https://www.nuget.org/#). To add [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and then install it.
 
 ![Add Packages](images/Adding-SfSwitch-reference.png)
 
 **Method 2: Adding SfSwitch reference from toolbox**
 
-Syncfusion provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [`Toolbox`](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion® provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion® Xamarin Toolbox, refer to [`Toolbox`](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfSwitch assemblies manually from the installed location**
 
@@ -61,7 +61,7 @@ Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.UWP.dll<br/>Syncfusi
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion® assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion® license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion® license key in your Xamarin application to use our components.
 
 ## Launching an application on each platform with SfSwitch
 

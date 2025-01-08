@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Date Restriction in Xamarin DatePicker control | Syncfusion
-description: Learn here all about Date Restriction support in Syncfusion Xamarin DatePicker (SfDatePicker) control and more.
+title: Date Restriction in Xamarin DatePicker control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Date Restriction support in Syncfusion<sup>&reg;</sup> Xamarin DatePicker (SfDatePicker) control and more.
 platform: Xamarin
 control: SfdatePicker
 documentation: ug

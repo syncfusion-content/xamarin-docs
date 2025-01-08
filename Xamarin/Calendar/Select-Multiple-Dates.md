@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Select Multiple Dates in Xamarin Calendar control | Syncfusion
-description: Learn here all about Select Multiple Dates support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
+title: Select Multiple Dates in Xamarin Calendar control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Select Multiple Dates support in Syncfusion<sup>&reg;</sup> Xamarin Calendar (SfCalendar) control and more.
 platform: xamarin
 control: Calendar
 documentation: ug

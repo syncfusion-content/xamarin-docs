@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Enable Looping in Xamarin DatePicker control | Syncfusion
-description: Learn here all about Enable Looping support in Syncfusion Xamarin DatePicker (SfDatePicker) control and more.
+title: Enable Looping in Xamarin DatePicker control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Enable Looping support in Syncfusion<sup>&reg;</sup> Xamarin DatePicker (SfDatePicker) control and more.
 platform: Xamarin
 control: SfDatePicker
 documentation: ug

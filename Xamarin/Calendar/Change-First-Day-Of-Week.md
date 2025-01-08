@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change First Day Of Week in Xamarin Calendar control | Syncfusion
-description: Learn here all about Change First Day Of Week support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
+title: Change First Day Of Week in Xamarin Calendar control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Change First Day Of Week support in Syncfusion<sup>&reg;</sup> Xamarin Calendar (SfCalendar) control and more.
 platform: xamarin
 control: Calendar
 documentation: ug

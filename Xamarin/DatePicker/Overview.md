@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin DatePicker control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin DatePicker (SfDatePicker) control, its elements and more.
+title: About Xamarin DatePicker control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about introduction of Syncfusion<sup>&reg;</sup> Xamarin DatePicker (SfDatePicker) control, its elements and more.
 platform: Xamarin
 control: DatePicker
 documentation: ug

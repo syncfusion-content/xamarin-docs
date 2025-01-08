@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editors in Xamarin DataForm control | Syncfusion
-description: Learn here all about Editors support in Syncfusion Xamarin DataForm (SfDataForm) control, its elements and more.
+title: Editors in Xamarin DataForm control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Editors support in Syncfusion<sup>&reg;</sup> Xamarin DataForm (SfDataForm) control, its elements and more.
 platform: xamarin
 control: SfDataForm
 documentation: UG

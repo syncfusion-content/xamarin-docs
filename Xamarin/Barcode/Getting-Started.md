@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Syncfusion SfBarcode control Getting Started for Xamarin.Forms
-description: This section describes about quick tour to initial users on Syncfusion Barcode control for Xamarin.Forms platform
+title: Syncfusion<sup>&reg;</sup> SfBarcode control Getting Started for Xamarin.Forms
+description: This section describes about quick tour to initial users on Syncfusion<sup>&reg;</sup> Barcode control for Xamarin.Forms platform
 platform: xamarin
 control: SfBarcode
 documentation: ug
@@ -31,7 +31,7 @@ You can add SfBarcode reference using one of the following methods:
 
 **Method 1: Adding SfBarcode reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfBarcode to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfBarCode](https://www.nuget.org/packages/Syncfusion.Xamarin.SfBarCode), and then install it.
+Syncfusion<sup>&reg;</sup> Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfBarcode to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfBarCode](https://www.nuget.org/packages/Syncfusion.Xamarin.SfBarCode), and then install it.
 
 ![Adding SfBarcode reference from nuget](Getting-Started_images/getting-started/Adding SfBarcode reference.png)
 
@@ -39,7 +39,7 @@ N> Install the same version of SfBarcode NuGet in all the projects.
 
 **Method 2: Adding SfBarcode reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfBarcode control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion<sup>&reg;</sup> also provides Xamarin Toolbox. Using this toolbox, you can drag the SfBarcode control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfBarcode assemblies manually from the installed location**
 

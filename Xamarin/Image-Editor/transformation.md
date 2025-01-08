@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transformation in Xamarin Image Editor control | Syncfusion
-description: Learn here all about Transformation support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
+title: Transformation in Xamarin Image Editor control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Transformation support in Syncfusion<sup>&reg;</sup> Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: ImageEditor
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Time Picker in Xamarin Picker control | Syncfusion
-description: Learn here all about Time Picker support in Syncfusion Xamarin Picker (SfPicker) control, its elements and more.
+title: Time Picker in Xamarin Picker control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Time Picker support in Syncfusion<sup>&reg;</sup> Xamarin Picker (SfPicker) control, its elements and more.
 platform: Xamarin
 control: Picker
 documentation: ug

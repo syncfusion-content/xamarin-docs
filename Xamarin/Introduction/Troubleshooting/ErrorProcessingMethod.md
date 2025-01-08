@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Build error occurs during Syncfusion core project compilation
+title: Build error occurs during Syncfusion<sup>®</sup> core project compilation
 description: Error processing method occurs during core projects compilation
 platform: xamarin
 control: Troubleshooting

@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  Syncfusion Xamarin.Forms Cross Platform UI  | Syncfusion
-description: The Syncfusion Xamarin.Forms cross platform UI controls are an ideal choice for developing cross platform applications in Android, iOS, UWP, WPF, and macOS.
+title:  Syncfusion<sup>®</sup> Xamarin.Forms Cross Platform UI  | Syncfusion<sup>®</sup>
+description: The Syncfusion<sup>®</sup> Xamarin.Forms cross platform UI controls are an ideal choice for developing cross platform applications in Android, iOS, UWP, WPF, and macOS.
 platform: xamarin
 control: Xamarin
 documentation: ug
 ---
 
-# Syncfusion Xamarin.Forms cross platform UI controls
+# Syncfusion<sup>®</sup> Xamarin.Forms cross platform UI controls
 
-The Syncfusion Xamarin.Forms cross platform UI controls are an ideal choice for developing rich cross platform applications with .NET from a single shared code base. You can build more responsive, interactive, and creative application that run on multiple platforms and devices with various form factors. Some of the cool features like theming and customization options makes the controls a perfect one for your cross-platform application.
+The Syncfusion<sup>®</sup> Xamarin.Forms cross platform UI controls are an ideal choice for developing rich cross platform applications with .NET from a single shared code base. You can build more responsive, interactive, and creative application that run on multiple platforms and devices with various form factors. Some of the cool features like theming and customization options makes the controls a perfect one for your cross-platform application.
 
-Syncfusion Xamarin.Forms controls support following platforms,
+Syncfusion<sup>®</sup> Xamarin.Forms controls support following platforms,
 
 * Android
 * iOS

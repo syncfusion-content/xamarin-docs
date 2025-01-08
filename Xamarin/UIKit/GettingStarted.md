@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin UI Kit control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio® Xamarin UI Kit control, its elements and more.
+title: Getting Started with Xamarin UI Kit control | Syncfusion<sup>®</sup>
+description: Learn here about getting started with Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> Xamarin UI Kit control, its elements and more.
 platform: xamarin
 control: Xamarin UI Kit
 documentation: ug
@@ -11,19 +11,19 @@ documentation: ug
 
 The UI Kit screens can be added in your application by the following two ways:
 
-1. Using **Essential UI Kit for Xamarin.Forms** Visual Studio extension.
+1. Using **Essential<sup>®</sup> UI Kit for Xamarin.Forms** Visual Studio extension.
 
 2. Copying the files from our open source [GitHub repository](https://github.com/syncfusion/essential-ui-kit-for-xamarin.forms).
 
 ## Assembly deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio<sup>®</sup> for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
 N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
-## Essential UI Kit for Xamarin.Forms Extension
+## Essential<sup>®</sup> UI Kit for Xamarin.Forms Extension
 
 This is the easiest way to add the pre-defined screens to your application. The following steps explain how to add screens to an application with our extension: 
 
@@ -35,7 +35,7 @@ This is the easiest way to add the pre-defined screens to your application. The 
 
    ![Visual Studio Extensions](UI-Kit-images/VS_Extensions.png)
 
-3. Search for **Essential UI Kit for Xamarin.Forms**, and then install it.
+3. Search for **Essential<sup>®</sup> UI Kit for Xamarin.Forms**, and then install it.
 
    ![Visual Studio Extensions and Updates](UI-Kit-images/Extension_Update.png)
 
@@ -43,9 +43,9 @@ This is the easiest way to add the pre-defined screens to your application. The 
 
 5. Now, open an existing Xamarin.Forms application or create a new application as per your requirements.
  
-6. Right-click the Xamarin.Forms [NETStandard] project, and you can see the **Essential UI Kit for Xamarin.Forms** option.
+6. Right-click the Xamarin.Forms [NETStandard] project, and you can see the **Essential<sup>®</sup> UI Kit for Xamarin.Forms** option.
 
-N> The **Essential UI Kit for Xamarin.Forms** add-in will be shown when the project have the **Xamarin.Forms** NuGet package as a reference and also, Xamarin.Forms project should be a NETStandard project.
+N> The **Essential<sup>®</sup> UI Kit for Xamarin.Forms** add-in will be shown when the project have the **Xamarin.Forms** NuGet package as a reference and also, Xamarin.Forms project should be a NETStandard project.
 
 7. Select the category and pages you need to add in your application. In the following screenshot, the **Login Page with Gradient** screen has been selected from the **Login** category. 
 
@@ -61,11 +61,11 @@ N> The **Essential UI Kit for Xamarin.Forms** add-in will be shown when the proj
 
 2.	Install the extension file in Visual Studio for MAC by following [this](https://support.syncfusion.com/kb/article/9491/how-to-install-extension-in-visual-studio-for-mac) article. 
 
-3.	Right-click the Xamarin.Forms [NETStandard] project, and you can see the Essential UI Kit for Xamarin.Forms option.
+3.	Right-click the Xamarin.Forms [NETStandard] project, and you can see the Essential<sup>®</sup> UI Kit for Xamarin.Forms option.
 
 	![Visual Studio UIkit Category](UI-Kit-images/MAC_Extension.png)
 
-N> The **Essential UI Kit for Xamarin.Forms** add-in will be shown when the project have the **Xamarin.Forms** NuGet package as a reference and also, Xamarin.Forms project should be a NETStandard project.
+N> The **Essential<sup>®</sup> UI Kit for Xamarin.Forms** add-in will be shown when the project have the **Xamarin.Forms** NuGet package as a reference and also, Xamarin.Forms project should be a NETStandard project.
 
 4.	Select the category and pages you need to add in your application and click Add. In the following screenshot, the Simple Login Page screen has been selected from the Forms category.
     

@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Upgrading Syncfusion Xamarin components to a latest version
-description: Learn here about the how upgrade Syncfusion Xamarin components to a latest version from NuGet manager and migrate.
+title: Upgrading Syncfusion<sup>®</sup> Xamarin components to a latest version
+description: Learn here about the how upgrade Syncfusion<sup>®</sup> Xamarin components to a latest version from NuGet manager and migrate.
 platform: Xamarin
-control: Essential Studio®
+control: Essential Studio<sup>®</sup>
 documentation: ug
 ---
 
-# Upgrading Syncfusion Xamarin components to latest version
+# Upgrading Syncfusion<sup>®</sup> Xamarin components to latest version
 
-Syncfusion publishes the Visual Studio extension in [Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.XamarinExtension) for every Syncfusion Volume release, with exciting new features and Service Pack release with major bug fixes in the volume releases. You can upgrade to our latest version from any installed Syncfusion version.
+Syncfusion<sup>®</sup> publishes the Visual Studio extension in [Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.XamarinExtension) for every Syncfusion<sup>®</sup> Volume release, with exciting new features and Service Pack release with major bug fixes in the volume releases. You can upgrade to our latest version from any installed Syncfusion<sup>®</sup> version.
 
 ## Upgrading to the latest version
 
-1. In Visual Studio go to **Extensions -> Manage Extensions -> Updates** and find the Syncfusion Xamarin extension.
+1. In Visual Studio go to **Extensions -> Manage Extensions -> Updates** and find the Syncfusion<sup>®</sup> Xamarin extension.
 
     N> In Visual Studio 2017 or lower, go to Tools -> Extensions and Updates.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Xamarin.Forms Material Visual for Syncfusion controls
-description: This section discusses about Xamarin.Forms material visual and how to apply it for Syncfusion controls
+title: Xamarin.Forms Material Visual for Syncfusion<sup>®</sup> controls
+description: This section discusses about Xamarin.Forms material visual and how to apply it for Syncfusion<sup>®</sup> controls
 platform: xamarin
 control: General
 documentation: ug
@@ -35,9 +35,9 @@ To achieve this, we need to set the ['Visual'](https://learn.microsoft.com/en-us
 
 ![MaterialVisualOverride](Images/Overriding-Visual.png)
 
-## Xamarin.Forms material visual for Syncfusion controls
+## Xamarin.Forms material visual for Syncfusion<sup>®</sup> controls
 
-You do not need to make any additional modifications to use this feature with Syncfusion controls. The method is exactly the same as the one mentioned above. By simply setting the ['Visual'](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.visual?view=xamarin-forms#Xamarin_Forms_VisualElement_Visual) property as ['Material'](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.visualmarker.material?view=xamarin-forms) to either Syncfusion control or any of its parent views, the UI will be updated. In Volume 3, 2019, we have provided this support for the following controls. 
+You do not need to make any additional modifications to use this feature with Syncfusion<sup>®</sup> controls. The method is exactly the same as the one mentioned above. By simply setting the ['Visual'](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.visual?view=xamarin-forms#Xamarin_Forms_VisualElement_Visual) property as ['Material'](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.visualmarker.material?view=xamarin-forms) to either Syncfusion<sup>®</sup> control or any of its parent views, the UI will be updated. In Volume 3, 2019, we have provided this support for the following controls. 
 
 * Calendar
 * Button

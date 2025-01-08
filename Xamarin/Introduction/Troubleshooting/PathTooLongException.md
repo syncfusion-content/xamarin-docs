@@ -29,7 +29,7 @@ You can resolve this issue by using anyone of the following steps.
 
    ![](images/img1.png)
 
-2. You can also change the samples location while installing Syncfusion setup. The window, which allows you to change the installation path during installation is illustrated in the following screenshot. 
+2. You can also change the samples location while installing Syncfusion<sup>®</sup> setup. The window, which allows you to change the installation path during installation is illustrated in the following screenshot. 
 
    ![](images/img2.png)
 

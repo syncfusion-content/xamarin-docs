@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Explore Libraries Package in Mac | Xamarin Forms | Syncfusion
-description: Describes the steps about download and installation of Syncfusion Xamarin.Forms components in MAC machine. 
+title: Explore Libraries Package in Mac | Xamarin Forms | Syncfusion<sup>®</sup>
+description: Describes the steps about download and installation of Syncfusion<sup>®</sup> Xamarin.Forms components in MAC machine. 
 platform: xamarin
 control: Explore Libraries Package 
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Explore Libraries Package in Mac 
 
-You can find the Syncfusion libraries, samples and NuGet from the installed location in Mac.
+You can find the Syncfusion<sup>®</sup> libraries, samples and NuGet from the installed location in Mac.
 
 
 * **"lib"** folder - e.g., /Users/labuser/Documents/Syncfusion/16.3.0.21/Xamarin/lib

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Xamarin Forms UI Design | Syncfusion
-description: Essential UI Kit contains elegantly designed XAML templates for Xamarin.Forms apps. These templates are compatible with Android, iOS, and UWP platforms.
+title: Xamarin Forms UI Design | Syncfusion<sup>®</sup>
+description: Essential<sup>®</sup> UI Kit contains elegantly designed XAML templates for Xamarin.Forms apps. These templates are compatible with Android, iOS, and UWP platforms.
 platform: xamarin
 control: Xamarin UI Kit
 documentation: ug
 ---
 
-# Syncfusion Xamarin.Forms UI Designs 
+# Syncfusion<sup>®</sup> Xamarin.Forms UI Designs 
 
-The Essential UI Kit includes 101 screens which is under the following categories. 
+The Essential<sup>®</sup> UI Kit includes 101 screens which is under the following categories. 
 
 ## Forms	
 

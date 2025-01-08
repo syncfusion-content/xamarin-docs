@@ -1,7 +1,7 @@
 ---
 layout: post
-title: System Requirements in Xamarin Components | Syncfusion
-description: Checkout and learn here all about the system requirements needed to use Syncfusion Xamarin Components.
+title: System Requirements in Xamarin Components | Syncfusion<sup>®</sup>
+description: Checkout and learn here all about the system requirements needed to use Syncfusion<sup>®</sup> Xamarin Components.
 platform: xamarin
 control: Installation and Deployment
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 # System Requirements for Xamarin Components
 
-The system requirements for using our Syncfusion Xamarin platform are as follows
+The system requirements for using our Syncfusion<sup>®</sup> Xamarin platform are as follows
 
 ### Operating Systems
 

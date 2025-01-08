@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Utility in Xamarin Forms Extension| Syncfusion
-description: Learn here all about utility support in Syncfusion Essential Xamarin platforms, it's elements and more.
+title: Utility in Xamarin Forms Extension| Syncfusion<sup>®</sup>
+description: Learn here all about utility support in Syncfusion<sup>®</sup> Essential<sup>®</sup> Xamarin platforms, it's elements and more.
 platform: xamarin
 control: Common 
 documentation: ug
@@ -9,33 +9,33 @@ documentation: ug
 
 # Utilities
 
-The Syncfusion Xamarin Extension provides quick access, so that you can easily create or configure the Syncfusion Xamarin projects. The Syncfusion Xamarin Extensions provides the following features.
+The Syncfusion<sup>®</sup> Xamarin Extension provides quick access, so that you can easily create or configure the Syncfusion<sup>®</sup> Xamarin projects. The Syncfusion<sup>®</sup> Xamarin Extensions provides the following features.
 
-* Syncfusion Project Template for Xamarin.Forms
-* Syncfusion Toolbox for Xamarin.Forms
+* Syncfusion<sup>®</sup> Project Template for Xamarin.Forms
+* Syncfusion<sup>®</sup> Toolbox for Xamarin.Forms
 
-The Syncfusion Xamarin Visual Studio Extensions are installed along with the Essential Studio® for Xamarin setup.
+The Syncfusion<sup>®</sup> Xamarin Visual Studio Extensions are installed along with the Essential Studio<sup>®</sup> for Xamarin setup.
 
 N> *Refer to the [installation guideline](https://help.syncfusion.com/common/essential-studio/installation/install-using-the-web-installer)*.
 
 
 ## Project Template
 
-Syncfusion provides the **Visual** **Studio** **Project** **Templates** for the Syncfusion Xamarin platform to easily create a Syncfusion Xamarin Application.
+Syncfusion<sup>®</sup> provides the **Visual** **Studio** **Project** **Templates** for the Syncfusion<sup>®</sup> Xamarin platform to easily create a Syncfusion<sup>®</sup> Xamarin Application.
 
-I> Syncfusion Xamarin Project Templates are available from v16.2.0.41.
+I> Syncfusion<sup>®</sup> Xamarin Project Templates are available from v16.2.0.41.
 
-### Create Syncfusion Xamarin Application
+### Create Syncfusion<sup>®</sup> Xamarin Application
 
-The following steps direct you to create a **Syncfusion** **Xamarin** **Application** using  **Visual** **Studio** **2017:**
+The following steps direct you to create a **Syncfusion<sup>®</sup>** **Xamarin** **Application** using  **Visual** **Studio** **2017:**
 
-1. To create a **Syncfusion Xamarin project**, choose **New** **Project****->****Syncfusion****->** **Cross-Platform****->****Syncfusion** **Xamarin** **Application** in **Visual** **Studio** **2017**.
+1. To create a **Syncfusion<sup>®</sup> Xamarin project**, choose **New** **Project****->****Syncfusion<sup>®</sup>****->** **Cross-Platform****->****Syncfusion<sup>®</sup>** **Xamarin** **Application** in **Visual** **Studio** **2017**.
 
      ![Add New Project Window](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img1.jpeg)
 
 2. Name the **Project**, choose the destination location, and set the Framework of the project, and then click **OK**. The Project Configuration Wizard appears.
    
-3. Choose the options to configure the Syncfusion Xamarin Application by using the following Project Configuration dialog.
+3. Choose the options to configure the Syncfusion<sup>®</sup> Xamarin Application by using the following Project Configuration dialog.
 
 ### Project Configuration:
 
@@ -43,9 +43,9 @@ Choose the required Project platforms: Android, iOS, and UWP.
 
 ![New Project Configuration Wizard](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img2.jpeg)
 
-**Assemblies From:** Specify where the Syncfusion Xamarin assemblies need to be loaded from: either NuGet or Installed Location.
+**Assemblies From:** Specify where the Syncfusion<sup>®</sup> Xamarin assemblies need to be loaded from: either NuGet or Installed Location.
 
-N> *Installed location option will be available only when the Syncfusion Xamarin setup has been installed*.
+N> *Installed location option will be available only when the Syncfusion<sup>®</sup> Xamarin setup has been installed*.
 
 **Android:**
 
@@ -59,13 +59,13 @@ N> *Installed location option will be available only when the Syncfusion Xamarin
 
 **Choose controls**
 
-Choose the Syncfusion controls that need to be added to the created project. 
+Choose the Syncfusion<sup>®</sup> controls that need to be added to the created project. 
 
-4.Click **Create** and the Syncfusion Xamarin Application will be created.
+4.Click **Create** and the Syncfusion<sup>®</sup> Xamarin Application will be created.
 
    N> *Choose any one of the project types and controls from the Project Configuration Wizard.*
 
-5.Required Syncfusion NuGet/Assemblies and configuration have been added to the project based on the control(s) chosen.
+5.Required Syncfusion<sup>®</sup> NuGet/Assemblies and configuration have been added to the project based on the control(s) chosen.
 
    **Net Standard /PCL:**
 
@@ -91,33 +91,33 @@ Choose the Syncfusion controls that need to be added to the created project.
 
    ![Assembly references in XForms.UWP](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img10.jpeg)
 
-6.Then, Syncfusion licensing registration required message box will be shown as follow, if you have installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio®.
+6.Then, Syncfusion<sup>®</sup> licensing registration required message box will be shown as follow, if you have installed the trial setup or NuGet packages since Syncfusion<sup>®</sup> introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio<sup>®</sup> release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion<sup>®</sup> license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio<sup>®</sup>.
 
-   ![Syncfusion License warning message](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img11.jpeg)
+   ![Syncfusion<sup>®</sup> License warning message](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img11.jpeg)
 
 ## Toolbox
 
-Syncfusion provides the **Visual** **Studio** **Toolbox** for the Syncfusion Xamarin platform to help add the Syncfusion Xamarin (Xamarin.Forms) controls in your project. It supports Microsoft Visual Studio 2015 and 2017. The Syncfusion Xamarin Toolbox enables easy drag and drop of Syncfusion controls without XAML coding in the Visual Studio designer.
+Syncfusion<sup>®</sup> provides the **Visual** **Studio** **Toolbox** for the Syncfusion<sup>®</sup> Xamarin platform to help add the Syncfusion<sup>®</sup> Xamarin (Xamarin.Forms) controls in your project. It supports Microsoft Visual Studio 2015 and 2017. The Syncfusion<sup>®</sup> Xamarin Toolbox enables easy drag and drop of Syncfusion<sup>®</sup> controls without XAML coding in the Visual Studio designer.
 
-I> The Syncfusion Xamarin Toolbox is available from v16.2.0.41.
+I> The Syncfusion<sup>®</sup> Xamarin Toolbox is available from v16.2.0.41.
 
-N> *Syncfusion Xamarin Toolbox will get installed when installed the Syncfusion Xamarin setup with Additional Settings (Configure Syncfusion Extensions in Visual Studio). In any case, if toolbox not installed, please run the [VSIX Installer utility](https://help.syncfusion.com/common/essential-studio/utilities#vsix-installer) to configure it in Visual Studio*.
+N> *Syncfusion<sup>®</sup> Xamarin Toolbox will get installed when installed the Syncfusion<sup>®</sup> Xamarin setup with Additional Settings (Configure Syncfusion<sup>®</sup> Extensions in Visual Studio). In any case, if toolbox not installed, please run the [VSIX Installer utility](https://help.syncfusion.com/common/essential-studio/utilities#vsix-installer) to configure it in Visual Studio*.
 
-### Add Syncfusion Xamarin (Xamarin.Forms) Controls in your Project
+### Add Syncfusion<sup>®</sup> Xamarin (Xamarin.Forms) Controls in your Project
 
-Create the Xamarin or Syncfusion Xamarin project. The following steps direct you to add the Syncfusion controls through the Visual Studio Toolbox:
+Create the Xamarin or Syncfusion<sup>®</sup> Xamarin project. The following steps direct you to add the Syncfusion<sup>®</sup> controls through the Visual Studio Toolbox:
 
-1. Choose **View** **->** **Other** **Windows** **->** **Syncfusion** **Toolbox** from **Visual** **Studio.**
+1. Choose **View** **->** **Other** **Windows** **->** **Syncfusion<sup>®</sup>* **Toolbox** from **Visual** **Studio.**
 
-    ![Enable Syncfusion Xamarin Toolbox](Toolbox_images/Toolbox_img1.jpeg)
+    ![Enable Syncfusion<sup>®</sup> Xamarin Toolbox](Toolbox_images/Toolbox_img1.jpeg)
 
-2. Click **Syncfusion** **Toolbox** menu item, the Syncfusion Toolbox wizard has been appeared. The Syncfusion control will be enabled when opening the Xamarin.Forms designer page. There is no Syncfusion control appears till open the appropriate .xaml file from the Xamarin shared/.NET Standard /PCL project.
+2. Click **Syncfusion<sup>®</sup>** **Toolbox** menu item, the Syncfusion<sup>®</sup> Toolbox wizard has been appeared. The Syncfusion<sup>®</sup> control will be enabled when opening the Xamarin.Forms designer page. There is no Syncfusion<sup>®</sup> control appears till open the appropriate .xaml file from the Xamarin shared/.NET Standard /PCL project.
 
-    ![Syncfusion Xamarin Toolbox](Toolbox_images/Toolbox_img2.jpeg)
+    ![Syncfusion<sup>®</sup> Xamarin Toolbox](Toolbox_images/Toolbox_img2.jpeg)
 
-3. The required Syncfusion controls design (.xaml) snippet and namespace will be added by drag and drop the required control from the toolbox to the designer.
+3. The required Syncfusion<sup>®</sup> controls design (.xaml) snippet and namespace will be added by drag and drop the required control from the toolbox to the designer.
 
-    ![Required Syncfusion control code snippet and namespace in design page](Toolbox_images/Toolbox-img3.jpg)
+    ![Required Syncfusion<sup>®</sup> control code snippet and namespace in design page](Toolbox_images/Toolbox-img3.jpg)
 
-   Also, the required control Syncfusion Xamarin NuGet packages will be installed automatically when drag and drop the control to the designer to render the Syncfusion control.
+   Also, the required control Syncfusion<sup>®</sup> Xamarin NuGet packages will be installed automatically when drag and drop the control to the designer to render the Syncfusion<sup>®</sup> control.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Control Dependencies of Syncfusion Xamarin.Forms
+title: Control Dependencies of Syncfusion<sup>®</sup> Xamarin.Forms
 description: Contains Xamarin.Forms control dependencies for each control to be referred in each platform project.
 platform: xamarin
 control: Introduction

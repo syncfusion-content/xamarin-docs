@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Overview of Syncfusion<sup>&reg;</sup> SfBarcode control for Xamarin.Forms
+title: Overview of Syncfusion SfBarcode control for Xamarin.Forms
 description: Overview of SfBarcode control
 platform: xamarin
 control: SfBarcode

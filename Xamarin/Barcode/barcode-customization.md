@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Barcode Customization in Syncfusion<sup>&reg;</sup> SfBarcode control for Xamarin.Forms
+title: Barcode Customization in Syncfusion SfBarcode control for Xamarin.Forms
 description: Learn how to Customize Barcode in SfBarcode control
 platform: xamarin
 control: SfBarcode

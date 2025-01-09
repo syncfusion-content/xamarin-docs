@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Filtering support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
+title: Filtering in Xamarin DataGrid control | Syncfusion®
+description: Learn here all about Filtering support in Syncfusion® Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG

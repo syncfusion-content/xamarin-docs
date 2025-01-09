@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Summaries in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Summaries support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
+title: Summaries in Xamarin DataGrid control | Syncfusion®
+description: Learn here all about Summaries support in Syncfusion® Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG

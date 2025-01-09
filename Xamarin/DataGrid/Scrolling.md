@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scrolling in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Scrolling support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
+title: Scrolling in Xamarin DataGrid control | Syncfusion®
+description: Learn here all about Scrolling support in Syncfusion® Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug

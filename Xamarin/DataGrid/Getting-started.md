@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin DataGrid control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin DataGrid (SfDataGrid) control, its elements and more.
+title: Getting Started with Xamarin DataGrid control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Xamarin DataGrid (SfDataGrid) control, its elements and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
@@ -17,7 +17,7 @@ To get start quickly with Xamarin.Forms DataGrid, you can check on this video:
 
 ## Assembly deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion® Essential Studio® Installed location} \Essential Studio®\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -25,11 +25,11 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## NuGet configuration
 
-To install the required NuGet for the SfDataGrid control in the application, configure the NuGet packages of the Syncfusion components.
+To install the required NuGet for the SfDataGrid control in the application, configure the NuGet packages of the Syncfusion® components.
 
-Refer to the following KB to configure the NuGet packages of the Syncfusion components:
+Refer to the following KB to configure the NuGet packages of the Syncfusion® components:
 
-[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://support.syncfusion.com/kb/article/6565/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing)
+[How to configure package source and install Syncfusion® NuGet packages in an existing project?](https://support.syncfusion.com/kb/article/6565/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing)
 
 The following NuGet package should be installed to use the SfDataGrid control in the application.
 
@@ -50,7 +50,7 @@ You can add SfDataGrid reference using one of the following methods:
 
 **Method 1: Adding SfDataGrid reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataGrid to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfDataGrid](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataGrid), and then install it.
+Syncfusion® Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataGrid to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfDataGrid](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataGrid), and then install it.
 
 ![Adding SfDataGrid reference from NuGet](Getting-started_images/Adding SfDataGrid reference.png)
 
@@ -58,7 +58,7 @@ N> Install the same version of SfDataGrid NuGet in all the projects.
 
 **Method 2: Adding SfDataGrid reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfDataGrid control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion® also provides Xamarin Toolbox. Using this toolbox, you can drag the SfDataGrid control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion® Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfDataGrid assemblies manually from the installed location**
 
@@ -95,7 +95,7 @@ Location: {Installed location}/{version}/Xamarin/lib
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion® assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion® license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion® license key in your Xamarin application to use our components.
 
 ## Launching the SfDataGrid on each platform
 
@@ -639,6 +639,6 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 [How to parse XML file and set as ItemsSource for SfDataGrid](https://support.syncfusion.com/kb/article/6563/how-to-parse-xml-file-and-set-as-itemssource-for-sfdatagrid)
 
-[How to configure package source and install Syncfusion NuGet packages in an existing project](https://support.syncfusion.com/kb/article/6565/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing)
+[How to configure package source and install Syncfusion® NuGet packages in an existing project](https://support.syncfusion.com/kb/article/6565/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing)
 
 [How to render SfDataGrid for Xamarin.Forms.UWP in release mode](https://support.syncfusion.com/kb/article/6569/how-to-render-sfdatagrid-for-xamarin-forms-uwp-in-release-mode)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column Drag and Drop in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Column Drag and Drop support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
+title: Column Drag and Drop in Xamarin DataGrid control | Syncfusion®
+description: Learn here all about Column Drag and Drop support in Syncfusion® Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG

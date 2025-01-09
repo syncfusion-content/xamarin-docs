@@ -99,7 +99,7 @@ If the application is registered with another platform's license key, the follow
 
 If the application is registered with another version's license key, the following error message will pop up when launching the application.
 
-**Error Message:**The included Syncfusion license ({Registered Version}) is invalid for version {Required version}. Please refer to this [help topic](https://help.syncfusion.com/xamarin-android/licensing/licensing-errors#version-mismatch) for more information.
+**Error Message:**The included Syncfusion<sup>®</sup> license ({Registered Version}) is invalid for version {Required version}. Please refer to this [help topic](https://help.syncfusion.com/xamarin-android/licensing/licensing-errors#version-mismatch) for more information.
 
 **Solution:**
 

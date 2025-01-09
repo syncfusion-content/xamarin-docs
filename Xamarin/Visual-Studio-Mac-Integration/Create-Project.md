@@ -9,7 +9,7 @@ documentation: ug
 
 # Create Xamarin Project in Visual Studio for Mac
 
-Syncfusion<sup>®</sup> provides the Visual Studio for Mac Project Templates for Xamarin platform to create the Syncfusion Xamarin application with required Syncfusion<sup>®</sup> NuGet packages based on the control chosen.
+Syncfusion<sup>®</sup> provides the Visual Studio for Mac Project Templates for Xamarin platform to create the Syncfusion<sup>®</sup> Xamarin application with required Syncfusion<sup>®</sup> NuGet packages based on the control chosen.
 
 The following steps illustrates you how to create the Syncfusion<sup>®</sup> Xamarin Application through the Visual Studio 2019 for Mac:
 

@@ -12,7 +12,7 @@ documentation: ug
 
 ## Overview
 
-**NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion<sup>®</sup> publishing all Xamarin  NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tags%3A%22xamarin%22+syncfusion). The Syncfusion<sup>®</sup> Xamarin NuGet packages can be used without installing the Syncfusion Essential Studio<sup>®</sup> setup. To create with the Syncfusion<sup>®</sup> Xamarin components, just use the Syncfusion<sup>®</sup> Xamarin NuGet packages in a Xamarin application.
+**NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion<sup>®</sup> publishing all Xamarin  NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tags%3A%22xamarin%22+syncfusion). The Syncfusion<sup>®</sup> Xamarin NuGet packages can be used without installing the Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> setup. To create with the Syncfusion<sup>®</sup> Xamarin components, just use the Syncfusion<sup>®</sup> Xamarin NuGet packages in a Xamarin application.
 
 > From v16.2.0.46 (2018 Volume 2 Service Pack 1) onwards, all the Syncfusion<sup>®</sup> Xamarin components are available as NuGet packages at [nuget.org](https://www.nuget.org/packages?q=Tags%3A%22xamarin%22+syncfusion).
 

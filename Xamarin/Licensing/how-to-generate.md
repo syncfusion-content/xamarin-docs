@@ -10,7 +10,7 @@ documentation: ug
 
 # Generate Syncfusion<sup>®</sup> Xamarin License key
 
-License keys for Xamarin can be generated from the [License & Downloads](https://syncfusion.com/account/downloads) or [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section from your Syncfusion account. 
+License keys for Xamarin can be generated from the [License & Downloads](https://syncfusion.com/account/downloads) or [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section from your Syncfusion<sup>®</sup> account. 
 
 ![Get License Key](licensing-images/generate-license.png)
 

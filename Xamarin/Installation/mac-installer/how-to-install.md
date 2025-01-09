@@ -67,7 +67,7 @@ I> After adding the reference, currently, an additional step is required for iOS
 
 You can find the Syncfusion<sup>®</sup> libraries, samples and NuGet from the installed location in Mac.
 
-{Essential Studio<sup>®</sup> installed location}\Syncfusion\Essential Studio<sup>®</sup>{version}\Xamarin
+{Essential Studio installed location}\Syncfusion\Essential Studio{version}\Xamarin
 
 * “ Lib ” folder - eg, /Users/labuser/Documents/Syncfusion/16.2.0.41/Xamarin/lib
 It contains all the required libraries for Xamarin.iOS, Xamarin.Android, and Xamarin.Forms projects.
@@ -110,7 +110,7 @@ You can then add the assembly references to the respective projects such as PCL,
 
 5. **Option 1:** Right click solution -> Click Manage NuGet packages.
 
-   N> You can follow the [NuGet Packages](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) to use the NuGet-Syncfusion Xamarin Controls/Components.
+   N> You can follow the [NuGet Packages](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) to use the NuGet-Syncfusion<sup>®</sup> Xamarin Controls/Components.
 
 
     ![Add Package](Images/addpackages.PNG)
@@ -132,7 +132,7 @@ You can then add the assembly references to the respective projects such as PCL,
    
    You can find the Syncfusion<sup>®</sup> libraries, samples and NuGet from the installed location in Mac.
 
-   {Essential Studio<sup>®</sup> installed location}\Syncfusion\Essential Studio<sup>®</sup>{version}\Xamarin
+   {Essential Studio installed location}\Syncfusion\Essential Studio{version}\Xamarin
 
    “Lib ” folder - e.g., /Users/labuser/Documents/Syncfusion/16.2.0.41/Xamarin/lib
 

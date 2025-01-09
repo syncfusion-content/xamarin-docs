@@ -7,7 +7,7 @@ control: Syncfusion<sup>®</sup> Extensions
 documentation: ug
 ---
 
-# Syncfusionv Notifications
+# Syncfusion<sup>®</sup> Notifications
 
 Syncfusion<sup>®</sup> enhances the user experience in Xamarin applications through notification messages. These notifications cover various aspects, including alerts for trial applications when utilizing Syncfusion<sup>®</sup> trial assemblies, updates regarding the availability of the latest Syncfusion<sup>®</sup> NuGet package, and notifications regarding newer releases of Essential Studio<sup>®</sup>. By keeping users informed, Syncfusion<sup>®</sup> ensures that developers stay updated with Syncfusion<sup>®</sup> latest features and enhancements.
 

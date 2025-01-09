@@ -53,7 +53,7 @@ The steps below illustrate how to download and install the Syncfusion<sup>®</su
 	
 	![Vsix Modify Window in Syncfusion<sup>®</sup> Xamarin](Download_and_Installation_images/syncfusion-xamarin-vsix-modify-window.png)
 4.	Click the **Install** button.
-5.	After the installation is complete, open Visual Studio. You can now use Syncfusion extensions from the Visual Studio under the Extensions menu.
+5.	After the installation is complete, open Visual Studio. You can now use Syncfusion<sup>®</sup> extensions from the Visual Studio under the Extensions menu.
 	
 	![Syncfusion<sup>®</sup> Xamarin Menu](Download_and_Installation_images/syncfusion-xamarin-menu.png)
 

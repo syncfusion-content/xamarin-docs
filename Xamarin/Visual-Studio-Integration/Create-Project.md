@@ -61,7 +61,7 @@ To create the **Syncfusion<sup>®</sup> Xamarin Application** in Visual Studio, 
 
 	**Choose controls:** To create the Syncfusion<sup>®</sup> Xamarin application, choose at least one Syncfusion<sup>®</sup> control. 
 
-	N> If you want to add other Syncfusion<sup>®</sup> Xamarin controls in the created Syncfusion® Xamarin application, you can use our [Syncfusion Xamarin toolbox](https://help.syncfusion.com/xamarin/visual-studio-integration/toolbox-control)
+	N> If you want to add other Syncfusion<sup>®</sup> Xamarin controls in the created Syncfusion<sup>®</sup> Xamarin application, you can use our [Syncfusion Xamarin toolbox](https://help.syncfusion.com/xamarin/visual-studio-integration/toolbox-control)
 
 	![Choose Syncfusion Xamarin control](Syncfusion_Project_Templates_images/xamarin-project-creation-control-selection.png)
 

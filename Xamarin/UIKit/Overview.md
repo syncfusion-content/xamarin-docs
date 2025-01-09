@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin UI Kit control | Syncfusion<sup>®</sup>
-description: Learn here all about introduction of Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> Xamarin UI Kit control, its elements and more.
+title: About Xamarin UI Kit control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Essential Studio® Xamarin UI Kit control, its elements and more.
 platform: xamarin
 control: Xamarin UI Kit
 documentation: ug

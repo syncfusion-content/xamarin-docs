@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Downloading Syncfusion<sup>®</sup> Xamarin Mac installer - Syncfusion<sup>®</sup>
-description: Learn here about the how to download Syncfusion<sup>®</sup> Xamarin mac installer packages from syncfusion<sup>®</sup> website.
+title: Downloading Syncfusion® Xamarin Mac installer - Syncfusion®
+description: Learn here about the how to download Syncfusion® Xamarin mac installer packages from syncfusion® website.
 platform: xamarin
 control: Installation and Deployment
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Upgrading Syncfusion<sup>®</sup> Xamarin installer to latest version - Syncfusion<sup>®</sup>
-description: Learn here about the how upgrade Syncfusion<sup>®</sup> Xamarin installer to a latest version from website and control panel.
+title: Upgrading Syncfusion® Xamarin installer to latest version - Syncfusion®
+description: Learn here about the how upgrade Syncfusion® Xamarin installer to a latest version from website and control panel.
 platform: xamarin
 control: Essential Studio<sup>®</sup>
 documentation: ug

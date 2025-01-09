@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Essential<sup>®</sup> UI Kit | Xamarin | Syncfusion<sup>®</sup>
-description: The Syncfusion<sup>®</sup> Xamarin Essential<sup>®</sup> UI Kit extension provides the predefined design for the Xamarin.Forms.
+title: Essential® UI Kit | Xamarin | Syncfusion®
+description: The Syncfusion® Xamarin Essential® UI Kit extension provides the predefined design for the Xamarin.Forms.
 platform: xamarin
 control: Syncfusion<sup>®</sup> Extensions
 documentation: ug

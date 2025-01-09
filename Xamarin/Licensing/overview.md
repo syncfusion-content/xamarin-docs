@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion<sup>®</sup> license and unlock keys - Syncfusion<sup>®</sup>
-description: Learn here about the Syncfusion<sup>®</sup> license and unlock keys and difference between license and unlock keys.
+title: Overview of Syncfusion® license and unlock keys - Syncfusion®
+description: Learn here about the Syncfusion® license and unlock keys and difference between license and unlock keys.
 platform: xamarin
 control: Essential Studio<sup>®</sup>
 documentation: ug

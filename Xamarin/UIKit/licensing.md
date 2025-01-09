@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion<sup>®</sup> UI Kit Xamarin.Forms license details
-description: How to resolve the license related problem for Xamarin.Forms Syncfusion<sup>®</sup> Essential<sup>®</sup> UI Kit pages and templates.
+description: How to resolve the license related problem for Xamarin.Forms Syncfusion® Essential® UI Kit pages and templates.
 platform: xamarin
 control: UI Kit
 documentation: ug

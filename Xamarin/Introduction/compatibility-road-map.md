@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xamarin.Forms compatibility road map | Syncfusion<sup>®</sup>
+title: Xamarin.Forms compatibility road map | Syncfusion®
 description: Xamarin.Forms compatibility road map
 platform: xamarin
 control: Introduction

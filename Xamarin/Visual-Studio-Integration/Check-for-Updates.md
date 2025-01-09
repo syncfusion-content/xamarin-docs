@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Check for Updates | Xamarin | Syncfusion<sup>®</sup>
-description: Syncfusion<sup>®</sup> Check for Updates provides Extensions to update most recent version of the Essential Studio<sup>®</sup> release.
+title: Check for Updates | Xamarin | Syncfusion®
+description: Syncfusion® Check for Updates provides Extensions to update most recent version of the Essential Studio® release.
 platform: xamarin
 control: Visual Studio Extensions
 documentation: ug

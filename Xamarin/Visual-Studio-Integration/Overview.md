@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin Syncfusion<sup>®</sup> Extensions control | Syncfusion<sup>®</sup>
-description: Learn here all about introduction of Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> Xamarin Extensions control, its elements and more.
+title: About Xamarin Syncfusion® Extensions control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Essential Studio® Xamarin Extensions control, its elements and more.
 platform: xamarin
 control: Syncfusion<sup>®</sup> Extensions
 documentation: ug

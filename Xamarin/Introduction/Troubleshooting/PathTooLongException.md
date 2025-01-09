@@ -1,6 +1,6 @@
 ---
 layout: post
-title: System.IO.PathTooLongException occurs during sample browser compilation | Syncfusion<sup>®</sup>
+title: System.IO.PathTooLongException occurs during sample browser compilation | Syncfusion®
 description: System.IO.PathTooLongException occurs during sample browser compilation
 platform: xamarin
 control: Troubleshooting

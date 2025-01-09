@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xamarin Forms Licensing | Syncfusion<sup>®</sup>
+title: Xamarin Forms Licensing | Syncfusion®
 description: Licensing
 platform: xamarin
 control: Licensing

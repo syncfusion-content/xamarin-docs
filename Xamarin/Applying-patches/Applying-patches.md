@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Apply the Patch for Major\Service Pack Version | Syncfusion<sup>®</sup>
-description: Learn here about how to apply the patch for major or service pack version of Syncfusion<sup>®</sup> Essential Studio<sup>®</sup>.
+title: Apply the Patch for Major\Service Pack Version | Syncfusion®
+description: Learn here about how to apply the patch for major or service pack version of Syncfusion® Essential Studio®.
 platform: xamarin
 control: Essential Studio<sup>®</sup>
 documentation: ug

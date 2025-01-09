@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Xamarin.Forms Material Visual for Syncfusion<sup>®</sup> controls
-description: This section discusses about Xamarin.Forms material visual and how to apply it for Syncfusion<sup>®</sup> controls
+title: Xamarin.Forms Material Visual for Syncfusion® controls
+description: This section discusses about Xamarin.Forms material visual and how to apply it for Syncfusion® controls
 platform: xamarin
 control: General
 documentation: ug

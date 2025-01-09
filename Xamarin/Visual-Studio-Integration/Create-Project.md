@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Create Project | xamarin | Syncfusion<sup>®</sup>
-description: Syncfusion<sup>®</sup> Project Templates Extension creates the Syncfusion<sup>®</sup> Xamarin Application by adding the required Syncfusion<sup>®</sup> NuGet packages.
+title: Create Project | xamarin | Syncfusion®
+description: Syncfusion® Project Templates Extension creates the Syncfusion® Xamarin Application by adding the required Syncfusion® NuGet packages.
 platform: xamarin
 control: Syncfusion<sup>®</sup> Extensions
 documentation: ug

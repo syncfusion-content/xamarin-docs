@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Applying themes in Xamarin Controls | Syncfusion<sup>®</sup>
-description: This section explains about theming in Syncfusion<sup>®</sup> Xamarin controls and how to override the key values for further customization.
+title: Applying themes in Xamarin Controls | Syncfusion®
+description: This section explains about theming in Syncfusion® Xamarin controls and how to override the key values for further customization.
 platform: xamarin
 control: General
 documentation: ug

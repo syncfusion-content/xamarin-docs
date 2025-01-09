@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Downloading Syncfusion<sup>®</sup> Xamarin web installer - Syncfusion<sup>®</sup>
-description: Learn here about the how to download Syncfusion<sup>®</sup> Xamarin web installer from our syncfusion<sup>®</sup> website with license.
+title: Downloading Syncfusion® Xamarin web installer - Syncfusion®
+description: Learn here about the how to download Syncfusion® Xamarin web installer from our syncfusion® website with license.
 platform: xamarin
 control: Installation and Deployment
 documentation: ug

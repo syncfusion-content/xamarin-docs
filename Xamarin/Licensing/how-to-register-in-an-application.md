@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion<sup>®</sup> license registration - Syncfusion<sup>®</sup>
-description: Learn here about how to register Syncfusion<sup>®</sup> Xamarin license key for Xamarin application for license validation.
+title: Overview of Syncfusion® license registration - Syncfusion®
+description: Learn here about how to register Syncfusion® Xamarin license key for Xamarin application for license validation.
 platform: xamarin
 control: Essential Studio<sup>®</sup>
 documentation: ug

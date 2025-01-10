@@ -160,7 +160,7 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn()
     SummaryType = SummaryType.DoubleAggregate
 });
 sfGrid.CaptionSummaryRow= summaryRow;
-{% endhighlight c# %}
+{% endhighlight %}
 {% endtabs %}
 
 ![DataGrid with caption summary cells customized](SfDataGrid_images/Displayingsummaryforcolumn.png)
@@ -882,7 +882,7 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn()
     SummaryType = SummaryType.DoubleAggregate
 });
 sfGrid.TableSummaryRows.Add(summaryRow);
-{% endhighlight c# %}
+{% endhighlight %}
 {% endtabs %}
 
 The following screenshot shows the table summary row if `ShowSummaryInRow` is `false`.
@@ -1188,7 +1188,7 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn()
     SummaryType = SummaryType.DoubleAggregate
 });
 sfGrid.CaptionSummaryRow= summaryRow;
-{% endhighlight c# %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Formatting summary in a DataGrid](SfDataGrid_images/Definingsummaryfunction.png)

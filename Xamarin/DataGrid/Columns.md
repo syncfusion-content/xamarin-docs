@@ -162,7 +162,7 @@ void GridAutoGeneratingColumns(object sender,AutoGeneratingColumnEventArgs e)
         e.Column.IsHidden = true;
     }
 }
-{% endhighlight c# %}
+{% endhighlight %}
 
 You can also customize header text, sorting, alignment, padding, etc., of a column by handling the `SfDataGrid.AutoGeneratingEvent`.
 

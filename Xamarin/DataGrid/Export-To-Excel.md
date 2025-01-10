@@ -130,7 +130,7 @@ DataGridExcelExportingOption options = new DataGridExcelExportingOption ();
 options.ExportMode = ExportMode.Text;
 var excelEngine = excelExport.ExportToExcel(dataGrid, options);
 var workBook = excelEngine.Excel.Workbooks[0];
-{% endhighlight c# %}
+{% endhighlight %}
 {% endtabs %}
 
 ### Getting RowIndex, ColumnIndex and GridColumns for customization

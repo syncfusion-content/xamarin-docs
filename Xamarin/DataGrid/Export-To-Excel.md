@@ -1005,7 +1005,7 @@ private void ExcelExport_CellExporting(object sender, DataGridCellExcelExporting
 {% endhighlight %}
 {% endtabs %}
 
-![[Export DataGrid to Excel format with customized borders](SfDataGrid_images/Excel/CellEvent.png)
+![Export DataGrid to Excel format with customized borders](SfDataGrid_images/Excel/CellEvent.png)
 
 #### Enabling filters
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PDF to image conversion in Xamarin Pdf Viewer control | Syncfusion
-description: Learn here all about PDF to image conversion support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
+description: Learn here all about PDF to image conversion support in Syncfusion<sup>®</sup> Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: xamarin
 control: SfPdfViewer
 documentation: ug

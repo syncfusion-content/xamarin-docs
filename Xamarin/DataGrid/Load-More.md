@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load More in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Load More support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
+title: Load More in Xamarin DataGrid control | Syncfusion®
+description: Learn here all about Load More support in Syncfusion® Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG

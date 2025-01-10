@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Selection support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
+title: Selection in Xamarin DataGrid control | Syncfusion®
+description: Learn here all about Selection support in Syncfusion® Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG

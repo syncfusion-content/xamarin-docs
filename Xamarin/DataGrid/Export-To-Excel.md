@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export To Excel in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Export To Excel support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
+title: Export To Excel in Xamarin DataGrid control | Syncfusion®
+description: Learn here all about Export To Excel support in Syncfusion® Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
@@ -130,7 +130,7 @@ DataGridExcelExportingOption options = new DataGridExcelExportingOption ();
 options.ExportMode = ExportMode.Text;
 var excelEngine = excelExport.ExportToExcel(dataGrid, options);
 var workBook = excelEngine.Excel.Workbooks[0];
-{% endhighlight c# %}
+{% endhighlight %}
 {% endtabs %}
 
 ### Getting RowIndex, ColumnIndex and GridColumns for customization
@@ -1005,7 +1005,7 @@ private void ExcelExport_CellExporting(object sender, DataGridCellExcelExporting
 {% endhighlight %}
 {% endtabs %}
 
-![[Export DataGrid to Excel format with customized borders](SfDataGrid_images/Excel/CellEvent.png)
+![Export DataGrid to Excel format with customized borders](SfDataGrid_images/Excel/CellEvent.png)
 
 #### Enabling filters
 

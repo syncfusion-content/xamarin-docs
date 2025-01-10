@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Xamarin Charts Control | Syncfusion
-description: Learn here all about getting started with Syncfusion Xamarin Charts control, its elements and more details.
+description: Learn here all about getting started with Syncfusion® Xamarin Charts control, its elements and more details.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -30,7 +30,7 @@ You can add SfChart reference using one of the following methods:
 
 **Method 1: Adding SfChart reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add chart to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfChart](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it.
+Syncfusion® Xamarin components are available in [nuget.org](https://www.nuget.org/). To add chart to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfChart](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it.
 
 ![Adding Xamarin.Forms Chart reference](Getting-Started_images/img3.png)
 
@@ -40,7 +40,7 @@ N>
 
 **Method 2: Adding SfChart reference from toolbox**
 
-Syncfusion provides Xamarin Toolbox. Using this toolbox, you can drag the SfChart control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion® provides Xamarin Toolbox. Using this toolbox, you can drag the SfChart control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion® Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfChart assemblies manually from the installed location**
 
@@ -125,7 +125,7 @@ Syncfusion.Licensing.dll<br/>
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/offline-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion® assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion® license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion® license key in your Xamarin application to use our components.
 
 ## Launching the application on each platform with chart
 

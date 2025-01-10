@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Applying themes in Xamarin Controls | Syncfusion
-description: This section explains about theming in Syncfusion Xamarin controls and how to override the key values for further customization.
+title: Applying themes in Xamarin Controls | Syncfusion®
+description: This section explains about theming in Syncfusion® Xamarin controls and how to override the key values for further customization.
 platform: xamarin
 control: General
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Applying Themes in Xamarin Controls
 
-Syncfusion themes allow you apply colors across all the Syncfusion controls with a uniform approach and provide consistent look and feel to your applications. This section covers the following topics: 
+Syncfusion<sup>®</sup> themes allow you apply colors across all the Syncfusion<sup>®</sup> controls with a uniform approach and provide consistent look and feel to your applications. This section covers the following topics: 
 
 * Applying light and dark themes
 * Overriding the default theme
@@ -17,7 +17,7 @@ Syncfusion themes allow you apply colors across all the Syncfusion controls with
 
 ## Applying light and dark themes
 
-By default, Syncfusion provides support for light and dark themes. As names suggest, these themes will have colors with light and dark color contrasts, respectively.
+By default, Syncfusion<sup>®</sup> provides support for light and dark themes. As names suggest, these themes will have colors with light and dark color contrasts, respectively.
 
 To apply themes to your application, merge the following items:
 
@@ -26,14 +26,14 @@ To apply themes to your application, merge the following items:
 
 #### Theme resource dictionary
 
-This resource dictionary contains *keys* and their respective color codes for all the Syncfusion controls. Currently, the following two theme resource dictionaries are available:
+This resource dictionary contains *keys* and their respective color codes for all the Syncfusion<sup>®</sup> controls. Currently, the following two theme resource dictionaries are available:
 
 1. Light theme resource dictionary
 2. Dark theme resource dictionary
 
 #### Control style resource dictionaries
 
-Each Syncfusion control has a separate control style resource dictionary, whose styles are mapped to the keys declared in [theme resource dictionary](https://help.syncfusion.com/xamarin/themes/themes#theme-resource-dictionary) as a ['DynamicResource'](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/styles/xaml/dynamic).
+Each Syncfusion<sup>®</sup> control has a separate control style resource dictionary, whose styles are mapped to the keys declared in [theme resource dictionary](https://help.syncfusion.com/xamarin/themes/themes#theme-resource-dictionary) as a ['DynamicResource'](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/styles/xaml/dynamic).
 
 {% highlight xaml %}
 <Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
@@ -91,7 +91,7 @@ xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Butto
 
 #### Automatic merging
 
-When using more number of Syncfusion controls in an application, to make the process easier for merging the control style dictionaries of the controls, the SyncfusionThemeDictionary class has been provided for automatic merging. When the theme resource dictionary is merged to this dictionary, control style resource dictionaries will be merged automatically. However, only the styles for the controls used in the application will be merged.
+When using more number of Syncfusion<sup>®</sup> controls in an application, to make the process easier for merging the control style dictionaries of the controls, the SyncfusionThemeDictionary class has been provided for automatic merging. When the theme resource dictionary is merged to this dictionary, control style resource dictionaries will be merged automatically. However, only the styles for the controls used in the application will be merged.
 
 {% highlight xaml %}
 

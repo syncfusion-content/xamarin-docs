@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column Types in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Column Types support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
+title: Column Types in Xamarin DataGrid control | Syncfusion®
+description: Learn here all about Column Types support in Syncfusion® Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG

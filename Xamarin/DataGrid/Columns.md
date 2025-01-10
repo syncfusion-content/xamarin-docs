@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Columns in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Columns support in Syncfusion Xamarin DataGrid (SfDataGrid) control, its elements and more.
+title: Columns in Xamarin DataGrid control | Syncfusion®
+description: Learn here all about Columns support in Syncfusion® Xamarin DataGrid (SfDataGrid) control, its elements and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -162,7 +162,7 @@ void GridAutoGeneratingColumns(object sender,AutoGeneratingColumnEventArgs e)
         e.Column.IsHidden = true;
     }
 }
-{% endhighlight c# %}
+{% endhighlight %}
 
 You can also customize header text, sorting, alignment, padding, etc., of a column by handling the `SfDataGrid.AutoGeneratingEvent`.
 

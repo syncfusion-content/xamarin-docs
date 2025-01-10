@@ -95,7 +95,7 @@ Location: {Installed location}/{version}/Xamarin/lib
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion® assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion® license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion® license key in your Xamarin application to use our components.
 
 ## Launching the SfDataGrid on each platform
 
@@ -639,6 +639,6 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 [How to parse XML file and set as ItemsSource for SfDataGrid](https://support.syncfusion.com/kb/article/6563/how-to-parse-xml-file-and-set-as-itemssource-for-sfdatagrid)
 
-[How to configure package source and install Syncfusion NuGet packages in an existing project](https://support.syncfusion.com/kb/article/6565/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing)
+[How to configure package source and install Syncfusion® NuGet packages in an existing project](https://support.syncfusion.com/kb/article/6565/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing)
 
 [How to render SfDataGrid for Xamarin.Forms.UWP in release mode](https://support.syncfusion.com/kb/article/6569/how-to-render-sfdatagrid-for-xamarin-forms-uwp-in-release-mode)

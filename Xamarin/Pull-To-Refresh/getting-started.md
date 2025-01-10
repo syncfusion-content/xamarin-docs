@@ -21,9 +21,9 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## NuGet configuration
 
-To install the required NuGet for the SfPullToRefresh control in the application, configure the NuGet packages of the Syncfusion components.
+To install the required NuGet for the SfPullToRefresh control in the application, configure the NuGet packages of the Syncfusion<sup>®</sup> components.
 
-Refer to the following KB to configure the NuGet package of the Syncfusion components:
+Refer to the following KB to configure the NuGet package of the Syncfusion<sup>®</sup> components:
 
 [How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
 
@@ -46,15 +46,15 @@ You can add SfPullToRefresh reference using one of the following methods:
 
 **Method 1: Adding SfPullToRefresh reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfPullToRefresh to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfPullToRefresh](https://www.nuget.org/packages/Syncfusion.Xamarin.SfPullToRefresh), and then install it.
+Syncfusion<sup>®</sup> Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfPullToRefresh to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfPullToRefresh](https://www.nuget.org/packages/Syncfusion.Xamarin.SfPullToRefresh), and then install it.
 
 ![Adding SfPullToRefresh reference from NuGet](SfPullToRefresh_images/Adding SfPullToRefresh reference.png)
 
-N> When there is a mismatch between Syncfusion NuGet packages among your projects, `System.IO.FileLoadException` will occur. To overcome this exception, install the same version of SfPullToRefresh assemblies in all your projects. 
+N> When there is a mismatch between Syncfusion<sup>®</sup> NuGet packages among your projects, `System.IO.FileLoadException` will occur. To overcome this exception, install the same version of SfPullToRefresh assemblies in all your projects. 
 
 **Method 2: Adding SfPullToRefresh reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfPullToRefresh control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion<sup>®</sup> also provides Xamarin Toolbox. Using this toolbox, you can drag the SfPullToRefresh control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion<sup>®</sup> Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfPullToRefresh assemblies manually from the installed location**
 
@@ -83,9 +83,9 @@ Location: {Installed location}/{version}/Xamarin/lib
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion<sup>®</sup> assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion<sup>®</sup> license key in your Xamarin application to use our components.
 
-N> When there is a mismatch of Xamarin NuGet packages between your sample and SfPullToRefresh assemblies, an error `Could not load type Xamarin.Forms.ElementTemplate` will occur. Please refer to `ReadMe` to know the software requirements of Syncfusion controls.
+N> When there is a mismatch of Xamarin NuGet packages between your sample and SfPullToRefresh assemblies, an error `Could not load type Xamarin.Forms.ElementTemplate` will occur. Please refer to `ReadMe` to know the software requirements of Syncfusion<sup>®</sup> controls.
 
 ## Launching the SfPullToRefresh on each platform
 

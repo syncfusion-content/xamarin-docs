@@ -25,7 +25,7 @@ You can add SfAccordion reference using one of the following methods:
 
 **Method 1: Adding SfAccordion reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfAccordion to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Expander](https://www.nuget.org/packages/Syncfusion.Xamarin.Expander), and then install it. 
+Syncfusion<sup>®</sup>  Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfAccordion to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Expander](https://www.nuget.org/packages/Syncfusion.Xamarin.Expander), and then install it. 
 
 ![Adding SfAccordion reference from NuGet](accordion_images/adding-sfaccordion-reference.png)
 
@@ -33,7 +33,7 @@ N> Install the same version of Expander NuGet in all the projects.
 
 **Method 2: Adding SfAccordion reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfAccordion control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox). 
+Syncfusion<sup>®</sup>  also provides Xamarin Toolbox. Using this toolbox, you can drag the SfAccordion control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion<sup>®</sup> Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox). 
 
 **Method 3: Adding SfAccordion assemblies manually from the installed location**
 
@@ -81,9 +81,9 @@ Syncfusion.Licensing.dll<br/>
 </tr>
 </table>
 
-N> To learn more about obtaining Syncfusion components, refer to these links:  [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
+N> To learn more about obtaining Syncfusion<sup>®</sup>  components, refer to these links:  [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your Xamarin application to use Syncfusion components.
+I> Starting with v16.2.0.x, if you reference Syncfusion<sup>®</sup> assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion<sup>®</sup> license key in your Xamarin application to use Syncfusion<sup>®</sup> components.
 
 ## Launching the accordion on each platform
 

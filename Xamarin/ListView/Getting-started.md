@@ -27,7 +27,7 @@ You can add SfListView reference using one of the following methods:
 
 **Method 1: Adding SfListView reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfListView to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfListView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfListView), and then install it.
+Syncfusion<sup>®</sup> Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfListView to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfListView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfListView), and then install it.
 
 ![Adding SfListView reference from NuGet](SfListView_images/Adding SfListView reference.png)
 
@@ -35,7 +35,7 @@ N> Install the same version of SfListView NuGet in all the projects.
 
 **Method 2: Adding SfListView reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfListView control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion<sup>®</sup> also provides Xamarin Toolbox. Using this toolbox, you can drag the SfListView control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion<sup>®</sup> Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfListView assemblies manually from the installed location**
 
@@ -68,7 +68,7 @@ Location: {Installed location}/{version}/Xamarin/lib
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion<sup>®</sup> assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion<sup>®</sup> license key in your Xamarin application to use our components.
 
 N> After adding the reference, an additional step is required for [iOS](https://help.syncfusion.com/xamarin/listview/getting-started#ios) and [UWP](https://help.syncfusion.com/xamarin/listview/getting-started#universal-windows-platform-uwp) projects. For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain is enabled. You can refer to this [KB article](https://support.syncfusion.com/kb/article/7557/how-to-overcome-the-crash-system-reflection-missingmetadataexception-when) for more details. If you are adding the references from toolbox, this step is not needed.
 

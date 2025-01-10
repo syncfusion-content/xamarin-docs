@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Localization support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
+title: Localization in Xamarin DataGrid control | Syncfusion®
+description: Learn here all about Localization support in Syncfusion® Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -24,7 +24,7 @@ To localize the SfDataGrid, follow the steps in application level:
 
 ## Add a .resx file
 
-In the portable project of your application, add a `.resx` file inside the resources folder with **Build Action -> EmbeddedResource**. The file name should be `Syncfusion control's Namespace + language code` format.
+In the portable project of your application, add a `.resx` file inside the resources folder with **Build Action -> EmbeddedResource**. The file name should be `Syncfusion® control's Namespace + language code` format.
 
 For example, to set the culture as French, the file should be named as **Syncfusion.SfDataGrid.XForms.fr-FR.resx**.
 

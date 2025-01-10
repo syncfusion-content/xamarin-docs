@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Text markup annotations in Xamarin Pdf Viewer | Syncfusion
-description: Learn here all about Text markup annotations support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
-platform: Xamarin
+description: Learn here all about Text markup annotations support in Syncfusion<sup>®</sup> Xamarin Pdf Viewer (SfPdfViewer) control and more.
+platform: xamarin
 control: SfPdfViewer
 documentation: ug
 ---

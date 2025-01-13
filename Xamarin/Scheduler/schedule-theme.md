@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Theming in Xamarin Scheduler control | Syncfusion
+title: Theming in Xamarin Scheduler control | Syncfusion<sup>&reg;</sup>
 description: This topic explains how to add the default theme (Light theme), Dark theme, and its customization in the schedule.
 platform: Xamarin
 control: SfSchedule

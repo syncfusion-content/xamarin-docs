@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Date Navigation in Xamarin Calendar control | Syncfusion
-description: Learn here all about Date Navigation support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
+title: Date Navigation in Xamarin Calendar control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Date Navigation support in Syncfusion<sup>&reg;</sup> Xamarin Calendar (SfCalendar) control and more.
 platform: xamarin
 control: Calendar
 documentation: ug

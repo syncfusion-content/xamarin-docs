@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Ranges in Xamarin Linear Gauge control | Syncfusion
-description: Learn here all about Ranges support in Syncfusion Xamarin Linear Gauge (SfLinearGauge) control and more.
+title: Ranges in Xamarin Linear Gauge control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Ranges support in Syncfusion<sup>&reg;</sup> Xamarin Linear Gauge (SfLinearGauge) control and more.
 platform: Xamarin
 control: LinearGauge
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Cards control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio® Xamarin Cards control, its elements and more.
+title: Getting Started with Xamarin Cards control | Syncfusion<sup>&reg;</sup>
+description: Learn here about getting started with Syncfusion<sup>&reg;</sup> Essential Studio<sup>&reg;</sup> Xamarin Cards control, its elements and more.
 platform: xamarin
 control: Cards
 documentation: ug

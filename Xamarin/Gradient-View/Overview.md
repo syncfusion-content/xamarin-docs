@@ -1,7 +1,7 @@
 ---
 layout : post
-title: About Xamarin Gradient View control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin Gradient View (SfGradientView) control, its elements and more.
+title: About Xamarin Gradient View control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about introduction of Syncfusion<sup>&reg;</sup> Xamarin Gradient View (SfGradientView) control, its elements and more.
 platform : xamarin
 control : SfGradientView
 documentation : ug

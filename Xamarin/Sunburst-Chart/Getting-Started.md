@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Sunburst Chart control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Sunburst Chart (SfSunburstChart) control and more.
+title: Getting Started with Xamarin Sunburst Chart control | Syncfusion<sup>&reg;</sup>
+description: Learn here about getting started with Syncfusion<sup>&reg;</sup> Xamarin Sunburst Chart (SfSunburstChart) control and more.
 platform: xamarin
 control: SfSunburstChart
 documentation: ug

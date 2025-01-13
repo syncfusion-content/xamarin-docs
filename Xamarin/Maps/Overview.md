@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin.Forms Maps control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin.Forms Maps (SfMaps) control, its elements and more.
+title: About Xamarin.Forms Maps control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about introduction of Syncfusion<sup>&reg;</sup> Xamarin.Forms Maps (SfMaps) control, its elements and more.
 platform: xamarin
 control: SfMaps
 documentation: ug

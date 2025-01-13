@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Right to left (RTL) in Xamarin DataForm control | Syncfusion
-description: Learn here all about Right to left (RTL) support in Syncfusion Xamarin DataForm (SfDataForm) control and more.
+title: Right to left (RTL) in Xamarin DataForm control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Right to left (RTL) support in Syncfusion<sup>&reg;</sup> Xamarin DataForm (SfDataForm) control and more.
 platform: xamarin
 control: SfDataForm
 documentation: UG

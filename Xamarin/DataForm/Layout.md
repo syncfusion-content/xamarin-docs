@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layout in Xamarin DataForm control | Syncfusion
-description: Learn here all about Layout support in Syncfusion Xamarin DataForm (SfDataForm) control, its elements and more.
+title: Layout in Xamarin DataForm control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Layout support in Syncfusion<sup>&reg;</sup> Xamarin DataForm (SfDataForm) control, its elements and more.
 platform: xamarin
 control: SfDataForm
 documentation: UG

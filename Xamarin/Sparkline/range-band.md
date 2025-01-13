@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Range Band in Xamarin Sparkline control | Syncfusion
-description: Learn here all about Range Band support in Syncfusion Xamarin Sparkline (SfSparkline) control and more.
+title: Range Band in Xamarin Sparkline control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Range Band support in Syncfusion<sup>&reg;</sup> Xamarin Sparkline (SfSparkline) control and more.
 platform: xamarin
 control: Sparkline
 documentation: ug

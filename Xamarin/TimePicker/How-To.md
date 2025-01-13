@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events using Syncfusion TimePicker for Xamarin.Forms
-description: Learn how to show TimePicker as dialog using button and perform an operation while changing its time in Syncfusion TimePicker for Xamarin.Forms.
+title: Events using Syncfusion<sup>&reg;</sup> TimePicker for Xamarin.Forms
+description: Learn how to show TimePicker as dialog using button and perform an operation while changing its time in Syncfusion<sup>&reg;</sup> TimePicker for Xamarin.Forms.
 platform: Xamarin
 control: TimePicker
 documentation: ug

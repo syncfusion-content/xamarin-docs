@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data annotations in Xamarin DataForm control | Syncfusion
-description: Learn here all about Data annotations support in Syncfusion Xamarin DataForm (SfDataForm) control and more.
+title: Data annotations in Xamarin DataForm control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Data annotations support in Syncfusion<sup>&reg;</sup> Xamarin DataForm (SfDataForm) control and more.
 platform: Xamarin
 control: SfDataForm
 documentation: UG

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Backdrop Page
-description: How to initialze the Syncfusion backdrop page control in Xamarin.Forms platform and it's customization.
+title: Getting Started with Syncfusion<sup>&reg;</sup> Backdrop Page
+description: How to initialze the Syncfusion<sup>&reg;</sup> backdrop page control in Xamarin.Forms platform and it's customization.
 platform: xamarin
 control: SfBackdropPage
 documentation: ug

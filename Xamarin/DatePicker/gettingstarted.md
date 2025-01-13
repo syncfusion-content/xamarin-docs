@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin DatePicker control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin DatePicker (SfDatePicker) control, its elements and more.
+title: Getting Started with Xamarin DatePicker control | Syncfusion<sup>&reg;</sup>
+description: Learn here about getting started with Syncfusion<sup>&reg;</sup> Xamarin DatePicker (SfDatePicker) control, its elements and more.
 platform: Xamarin
 control: DatePicker
 documentation: ug
@@ -26,7 +26,7 @@ You can add SfDatePicker reference using one of the following methods:
 
 **Method 1: Adding SfDatePicker reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDatePicker to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfPicker](https://www.nuget.org/packages/Syncfusion.Xamarin.SfPicker), and then install it.
+Syncfusion<sup>&reg;</sup> Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDatePicker to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfPicker](https://www.nuget.org/packages/Syncfusion.Xamarin.SfPicker), and then install it.
 
 ![Adding SfDatePicker reference from NuGet](images/Adding SfPicker reference.png)
 
@@ -34,7 +34,7 @@ N> Install the same version of [`SfPicker`](https://help.syncfusion.com/cr/xamar
 
 **Method 2: Adding SfDatePicker reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfDatePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion<sup>&reg;</sup> also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfDatePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfDatePicker assemblies manually from the installed location**
 

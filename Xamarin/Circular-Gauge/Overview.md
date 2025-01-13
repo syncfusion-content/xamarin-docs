@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: About Xamarin Circular Gauge control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin Circular Gauge (SfCircularGauge) control, its elements and more.
+title: About Xamarin Circular Gauge control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about introduction of Syncfusion<sup>&reg;</sup> Xamarin Circular Gauge (SfCircularGauge) control, its elements and more.
 platform: xamarin
 control: SfCircularGauge
 documentation: ug

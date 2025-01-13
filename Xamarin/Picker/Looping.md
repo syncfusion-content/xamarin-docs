@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Looping in Xamarin Picker control | Syncfusion
-description: Learn here all about Looping support in Syncfusion Xamarin Picker (SfPicker) control, its elements and more.
+title: Looping in Xamarin Picker control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Looping support in Syncfusion<sup>&reg;</sup> Xamarin Picker (SfPicker) control, its elements and more.
 platform: Xamarin
 control: Picker
 documentation: ug

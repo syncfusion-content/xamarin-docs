@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TreeMap Events in Xamarin TreeMap control | Syncfusion
-description: Learn here all about TreeMap Events support in Syncfusion Xamarin TreeMap (SfTreeMap) control and more.
+title: TreeMap Events in Xamarin TreeMap control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about TreeMap Events support in Syncfusion<sup>&reg;</sup> Xamarin TreeMap (SfTreeMap) control and more.
 platform: xamarin
 control: TreeMap
 documentation: ug

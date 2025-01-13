@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sublayer in Xamarin.Forms Maps control | Syncfusion
-description: Learn here all about Sublayer support in Syncfusion Xamarin Maps (SfMaps) control, its elements and more.
+title: Sublayer in Xamarin.Forms Maps control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Sublayer support in Syncfusion<sup>&reg;</sup> Xamarin Maps (SfMaps) control, its elements and more.
 platform: xamarin
 control: SfMaps
 documentation: ug

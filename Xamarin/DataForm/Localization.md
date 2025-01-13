@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in Xamarin DataForm control | Syncfusion
-description: Learn here all about Localization support in Syncfusion Xamarin DataForm (SfDataForm) control and more.
+title: Localization in Xamarin DataForm control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Localization support in Syncfusion<sup>&reg;</sup> Xamarin DataForm (SfDataForm) control and more.
 platform: xamarin
 control: SfDataForm
 documentation: ug

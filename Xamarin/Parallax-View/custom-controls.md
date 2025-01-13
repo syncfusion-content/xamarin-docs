@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom controls in Xamarin Parallax View Control | Syncfusion
-description: Learn here all about Scrolling support for custom controls support in Syncfusion Xamarin Parallax View (SfParallaxView) control and more.
+title: Custom controls in Xamarin Parallax View Control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Scrolling support for custom controls support in Syncfusion<sup>&reg;</sup> Xamarin Parallax View (SfParallaxView) control and more.
 platform: xamarin
 control: SfParallaxView
 documentation: ug

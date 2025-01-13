@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin Linear Gauge control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin Linear Gauge (SfLinearGauge) control, its elements and more.
+title: About Xamarin Linear Gauge control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about introduction of Syncfusion<sup>&reg;</sup> Xamarin Linear Gauge (SfLinearGauge) control, its elements and more.
 platform: Xamarin
 control: LinearGauge
 documentation: ug

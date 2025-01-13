@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Floating label layout in Xamarin DataForm control | Syncfusion
-description: Learn here all about Floating label layout support in Syncfusion Xamarin DataForm (SfDataForm) control and more.
+title: Floating label layout in Xamarin DataForm control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Floating label layout support in Syncfusion<sup>&reg;</sup> Xamarin DataForm (SfDataForm) control and more.
 platform: xamarin
 control: SfDataForm
 documentation: UG

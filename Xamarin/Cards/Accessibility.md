@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in Xamarin Cards control | Syncfusion
-description: Learn about Accessibility support in Syncfusion Essential Studio® Xamarin Cards control, its elements and more.
+title: Accessibility in Xamarin Cards control | Syncfusion<sup>&reg;</sup>
+description: Learn about Accessibility support in Syncfusion<sup>&reg;</sup> Essential Studio<sup>&reg;</sup> Xamarin Cards control, its elements and more.
 platform: xamarin
 control: SfCardLayout
 documentation : ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in Xamarin TreeMap control | Syncfusion
-description: Learn here all about Data Binding support in Syncfusion Xamarin TreeMap (SfTreeMap) control and more.
+title: Data Binding in Xamarin TreeMap control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Data Binding support in Syncfusion<sup>&reg;</sup> Xamarin TreeMap (SfTreeMap) control and more.
 platform:  xamarin
 control: TreeMap
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Formatting in Xamarin TimePicker control | Syncfusion
-description: Learn here all about Formatting support in Syncfusion Xamarin TimePicker (SfTimePicker) control and more.
+title: Formatting in Xamarin TimePicker control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Formatting support in Syncfusion<sup>&reg;</sup> Xamarin TimePicker (SfTimePicker) control and more.
 platform: Xamarin
 control: TimePicker
 documentation: ug

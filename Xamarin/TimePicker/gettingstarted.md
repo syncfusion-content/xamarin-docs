@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin TimePicker control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin TimePicker (SfTimePicker) control, its elements and more.
+title: Getting Started with Xamarin TimePicker control | Syncfusion<sup>&reg;</sup>
+description: Learn here about getting started with Syncfusion<sup>&reg;</sup> Xamarin TimePicker (SfTimePicker) control, its elements and more.
 platform: Xamarin
 control: TimePicker
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating Items in Xamarin Picker control | Syncfusion
-description: Learn here all about Populating Items support in Syncfusion Xamarin Picker (SfPicker) control and more.
+title: Populating Items in Xamarin Picker control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Populating Items support in Syncfusion<sup>&reg;</sup> Xamarin Picker (SfPicker) control and more.
 platform: Xamarin
 control: Picker
 documentation: ug

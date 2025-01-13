@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Pointers in Xamarin Circular Gauge control | Syncfusion
-description: Learn here all about Pointers support in Syncfusion Xamarin Circular Gauge (SfCircularGauge) control and more.
+title: Pointers in Xamarin Circular Gauge control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Pointers support in Syncfusion<sup>&reg;</sup> Xamarin Circular Gauge (SfCircularGauge) control and more.
 platform: xamarin
 control: SfCircularGauge
 documentation: ug

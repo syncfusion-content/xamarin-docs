@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Save and Events in Xamarin Image Editor control | Syncfusion
-description: Learn here all about Save and Events support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
+title: Save and Events in Xamarin Image Editor control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Save and Events support in Syncfusion<sup>&reg;</sup> Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: ImageEditor
 documentation: ug

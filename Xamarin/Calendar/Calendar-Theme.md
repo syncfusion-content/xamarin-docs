@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Theming in Xamarin Calendar control | Syncfusion
-description: Learn here all about Theming support in Syncfusion Xamarin Calendar (SfCalendar) control, its elements and more.
+title: Theming in Xamarin Calendar control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Theming support in Syncfusion<sup>&reg;</sup> Xamarin Calendar (SfCalendar) control, its elements and more.
 platform: xamarin
 control: Calendar
 documentation: ug

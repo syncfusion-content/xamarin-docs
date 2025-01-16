@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DatePicker Events in Xamarin DatePicker control | Syncfusion
-description: Learn here all about DatePicker Events support in Syncfusion Xamarin Date Picker (SfDatePicker) control and more.
+title: DatePicker Events in Xamarin DatePicker control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about DatePicker Events support in Syncfusion<sup>&reg;</sup> Xamarin Date Picker (SfDatePicker) control and more.
 platform: Xamarin
 control: SfDatePicker
 documentation: ug

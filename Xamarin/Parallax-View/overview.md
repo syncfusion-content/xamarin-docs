@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin Parallax View control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin Parallax View (SfParallaxView) control, its elements and more.
+title: About Xamarin Parallax View control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about introduction of Syncfusion<sup>&reg;</sup> Xamarin Parallax View (SfParallaxView) control, its elements and more.
 platform: xamarin
 control: SfParallaxView
 documentation: ug

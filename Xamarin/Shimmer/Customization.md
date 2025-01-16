@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in Xamarin Shimmer control | Syncfusion
-description: Learn here all about Customization support in Syncfusion Xamarin Shimmer (SfShimmer) control and more.
+title: Customization in Xamarin Shimmer control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Customization support in Syncfusion<sup>&reg;</sup> Xamarin Shimmer (SfShimmer) control and more.
 platform: xamarin
 control: SfShimmer
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Color Mapping in Xamarin.Forms Maps control | Syncfusion
-description: Learn here all about color mapping feature in Syncfusion Xamarin.Forms Maps control such as Equal color mapping, and Range Color mapping.
+title: Color Mapping in Xamarin.Forms Maps control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about color mapping feature in Syncfusion<sup>&reg;</sup> Xamarin.Forms Maps control such as Equal color mapping, and Range Color mapping.
 platform: xamarin
 control: SfMaps
 documentation: ug

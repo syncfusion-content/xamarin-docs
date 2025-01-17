@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started | SfBorder | Xamarin | Syncfusion<sup>®</sup>
-description: This section describes about quick tour to initial users on Syncfusion<sup>®</sup> Border control for Xamarin.Forms platform.
+title: Getting started | SfBorder | Xamarin | Syncfusion®
+description: This section describes about quick tour to initial users on Syncfusion® Border control for Xamarin.Forms platform.
 platform: xamarin
 control: SfBorder
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visual Customization in Xamarin Masked Entry control | Syncfusion<sup>®</sup>
-description: Learn here all about Visual Customization support in Syncfusion<sup>®</sup> Xamarin Masked Entry (SfMaskedEdit) control and more.
+title: Visual Customization in Xamarin Masked Entry control | Syncfusion®
+description: Learn here all about Visual Customization support in Syncfusion® Xamarin Masked Entry (SfMaskedEdit) control and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 

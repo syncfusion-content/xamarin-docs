@@ -1,7 +1,7 @@
 ---
 layout : post
-title: Accessibility in Xamarin Switch control | Syncfusion<sup>®</sup>
-description: Learn here all about Accessibility support in Syncfusion<sup>®</sup> Xamarin Switch (SfSwitch) control and more.
+title: Accessibility in Xamarin Switch control | Syncfusion®
+description: Learn here all about Accessibility support in Syncfusion® Xamarin Switch (SfSwitch) control and more.
 platform : Xamarin.Forms
 control : SfSwitch
 documentation : ug

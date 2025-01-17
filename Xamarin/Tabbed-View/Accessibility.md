@@ -1,7 +1,7 @@
 ---
 layout : post
-title: Accessibility in Xamarin Tabbed View control | Syncfusion<sup>®</sup>
-description: Learn here all about Accessibility support in Syncfusion<sup>®</sup> Xamarin Tabbed View (SfTabView) control and more.
+title: Accessibility in Xamarin Tabbed View control | Syncfusion®
+description: Learn here all about Accessibility support in Syncfusion® Xamarin Tabbed View (SfTabView) control and more.
 platform : Xamarin
 control : SfTabView
 documentation : ug

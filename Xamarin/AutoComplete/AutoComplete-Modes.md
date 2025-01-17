@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AutoComplete Modes in Xamarin AutoComplete control | Syncfusion<sup>®</sup>
-description: Learn about AutoComplete Modes support in Syncfusion<sup>®</sup> Xamarin AutoComplete (SfAutoComplete) control and more details.
+title: AutoComplete Modes in Xamarin AutoComplete control | Syncfusion®
+description: Learn about AutoComplete Modes support in Syncfusion® Xamarin AutoComplete (SfAutoComplete) control and more details.
 platform: xamarin
 control: AutoComplete
 documentation: ug

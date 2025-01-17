@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Various customization in Syncfusion<sup>®</sup> border control for Xamarin.Forms
-description: This section describes how to provide various customization to the Syncfusion<sup>®</sup> Border control in Xamarin.Forms.
+title: Various customization in Syncfusion® border control for Xamarin.Forms
+description: This section describes how to provide various customization to the Syncfusion® Border control in Xamarin.Forms.
 platform: Xamarin
 control: SfBorder
 documentation: ug

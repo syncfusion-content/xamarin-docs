@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Icons in Xamarin Text Input Layout control | Syncfusion<sup>®</sup>
-description: Learn here all about Custom Icons support in Syncfusion<sup>®</sup> Xamarin Text Input Layout (SfTextInputLayout) control and more.
+title: Custom Icons in Xamarin Text Input Layout control | Syncfusion®
+description: Learn here all about Custom Icons support in Syncfusion® Xamarin Text Input Layout (SfTextInputLayout) control and more.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug

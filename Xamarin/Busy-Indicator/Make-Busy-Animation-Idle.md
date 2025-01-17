@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Make Busy Animation Idle in Xamarin Busy Indicator | Syncfusion<sup>®</sup>
-description: Learn here all about Make Busy Animation Idle support in Syncfusion<sup>®</sup> Xamarin Busy Indicator (SfBusyIndicator) control and more.
+title: Make Busy Animation Idle in Xamarin Busy Indicator | Syncfusion®
+description: Learn here all about Make Busy Animation Idle support in Syncfusion® Xamarin Busy Indicator (SfBusyIndicator) control and more.
 platform: xamarin
 control: BusyIndicator
 documentation: ug

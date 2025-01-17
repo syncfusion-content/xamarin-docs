@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Event in Xamarin Button control | Syncfusion<sup>®</sup>
-description: Learn here all about Event support in Syncfusion<sup>®</sup> Xamarin Button (SfButton) control, its elements and more.
+title: Event in Xamarin Button control | Syncfusion®
+description: Learn here all about Event support in Syncfusion® Xamarin Button (SfButton) control, its elements and more.
 platform: xamarin
 control: SfButton
 documentation: ug 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events and Interactivity in Xamarin Numeric Entry control | Syncfusion<sup>®</sup>
-description: Learn here all about Events and Interactivity support in Syncfusion<sup>®</sup> Xamarin Numeric Entry (SfNumericTextBox) control and more.
+title: Events and Interactivity in Xamarin Numeric Entry control | Syncfusion®
+description: Learn here all about Events and Interactivity support in Syncfusion® Xamarin Numeric Entry (SfNumericTextBox) control and more.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug

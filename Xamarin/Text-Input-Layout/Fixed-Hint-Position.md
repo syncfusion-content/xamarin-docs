@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Fixed Hint Position in Xamarin Text Input Layout control | Syncfusion<sup>®</sup>
-description: Learn here all about Fixed Hint Position support in Syncfusion<sup>®</sup> Xamarin Text Input Layout (SfTextInputLayout) control and more.
+title: Fixed Hint Position in Xamarin Text Input Layout control | Syncfusion®
+description: Learn here all about Fixed Hint Position support in Syncfusion® Xamarin Text Input Layout (SfTextInputLayout) control and more.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug

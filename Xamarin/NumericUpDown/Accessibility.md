@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in Xamarin NumericUpDown control | Syncfusion<sup>®</sup>
-description: Learn here all about Accessibility support in Syncfusion<sup>®</sup> Xamarin NumericUpDown (SfNumericUpDown) control and more.
+title: Accessibility in Xamarin NumericUpDown control | Syncfusion®
+description: Learn here all about Accessibility support in Syncfusion® Xamarin NumericUpDown (SfNumericUpDown) control and more.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug

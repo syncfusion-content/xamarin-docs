@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Custom View in Xamarin Rating control | Syncfusion<sup>®</sup>
-description: Learn here all about Custom View support in Syncfusion<sup>®</sup> Xamarin Rating (SfRating) control, its elements and more.
+title: Custom View in Xamarin Rating control | Syncfusion®
+description: Learn here all about Custom View support in Syncfusion® Xamarin Rating (SfRating) control, its elements and more.
 platform: Xamarin
 control: Rating 
 documentation: ug

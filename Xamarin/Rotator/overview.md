@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin Rotator control | Syncfusion<sup>®</sup>
-description: Learn here all about introduction of Syncfusion<sup>®</sup> Xamarin Rotator (SfRotator) control, its elements and more.
+title: About Xamarin Rotator control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Xamarin Rotator (SfRotator) control, its elements and more.
 platform: xamarin 
 control: Rotator 
 documentation: ug

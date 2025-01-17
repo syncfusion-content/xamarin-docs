@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion<sup>®</sup> Badge View control for Xamarin.Forms
+title: Getting Started with Syncfusion® Badge View control for Xamarin.Forms
 description: This section explains how to add SfBadgeView reference, lanching the control in each platform, and initializing the control
 platform: xamarin
 control: SfBadgeView

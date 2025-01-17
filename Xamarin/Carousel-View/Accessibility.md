@@ -1,7 +1,7 @@
 ---
 layout : post
-title: Accessibility in Xamarin Carousel View control | Syncfusion<sup>®</sup>
-description: Learn here all about Accessibility support in Syncfusion<sup>®</sup> Xamarin Carousel View (SfCarousel) control and more.
+title: Accessibility in Xamarin Carousel View control | Syncfusion®
+description: Learn here all about Accessibility support in Syncfusion® Xamarin Carousel View (SfCarousel) control and more.
 platform : xamarin.Forms
 control : SfCarousel
 documentation : ug

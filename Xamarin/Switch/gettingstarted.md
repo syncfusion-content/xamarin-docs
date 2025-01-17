@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Switch control | Syncfusion<sup>®</sup>
-description: Learn here about getting started with Syncfusion<sup>®</sup> Xamarin Switch (SfSwitch) control, its elements and more.
+title: Getting Started with Xamarin Switch control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Xamarin Switch (SfSwitch) control, its elements and more.
 platform: Xamarin
 control: Switch
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visual Types in Xamarin Switch control | Syncfusion<sup>®</sup>
-description: Learn here all about Visual Types support in Syncfusion<sup>®</sup> Xamarin Switch (SfSwitch) control, its elements and more.
+title: Visual Types in Xamarin Switch control | Syncfusion®
+description: Learn here all about Visual Types support in Syncfusion® Xamarin Switch (SfSwitch) control, its elements and more.
 platform: Xamarin
 control: Switch
 documentation: ug

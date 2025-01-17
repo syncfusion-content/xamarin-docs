@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Highlighting matched text in Xamarin ComboBox control | Syncfusion<sup>®</sup>
-description: Learn here all about Highlighting matched text support in Syncfusion<sup>®</sup> Xamarin ComboBox (SfComboBox) control and more.
+title: Highlighting matched text in Xamarin ComboBox control | Syncfusion®
+description: Learn here all about Highlighting matched text support in Syncfusion® Xamarin ComboBox (SfComboBox) control and more.
 platform: xamarin
 control: SfComboBox
 documentation: ug

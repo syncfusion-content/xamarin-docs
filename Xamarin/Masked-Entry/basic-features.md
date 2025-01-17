@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Basic Features in Xamarin Masked Entry control | Syncfusion<sup>®</sup>
-description: Learn here all about Basic Features support in Syncfusion<sup>®</sup> Xamarin Masked Entry (SfMaskedEdit) control and more.
+title: Basic Features in Xamarin Masked Entry control | Syncfusion®
+description: Learn here all about Basic Features support in Syncfusion® Xamarin Masked Entry (SfMaskedEdit) control and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 

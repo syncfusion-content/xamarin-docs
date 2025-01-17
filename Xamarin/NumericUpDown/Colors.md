@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Colors in Syncfusion<sup>®</sup> NumericUpDown control for Xamarin.Forms
-description: This section explains, different color customization supports in Syncfusion<sup>®</sup> NumericUpDown control for Xamarin.Forms.
+title: Colors in Syncfusion® NumericUpDown control for Xamarin.Forms
+description: This section explains, different color customization supports in Syncfusion® NumericUpDown control for Xamarin.Forms.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug

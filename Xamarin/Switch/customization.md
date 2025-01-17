@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in Xamarin Switch control | Syncfusion<sup>®</sup>
-description: Learn here all about Customization support in Syncfusion<sup>®</sup> Xamarin Switch (SfSwitch) control and more.
+title: Customization in Xamarin Switch control | Syncfusion®
+description: Learn here all about Customization support in Syncfusion® Xamarin Switch (SfSwitch) control and more.
 platform: Xamarin
 control: Switch
 documentation: ug

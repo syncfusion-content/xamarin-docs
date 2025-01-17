@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Setting Main Content in Xamarin Navigation Drawer control | Syncfusion<sup>®</sup>
-description: Learn here all about Setting Main Content support in Syncfusion<sup>®</sup> Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
+title: Setting Main Content in Xamarin Navigation Drawer control | Syncfusion®
+description: Learn here all about Setting Main Content support in Syncfusion® Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug

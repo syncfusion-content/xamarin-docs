@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin Radial Menu control | Syncfusion<sup>®</sup>
-description: Learn here all about introduction of Syncfusion<sup>®</sup> Xamarin Radial Menu (SfRadialMenu) control, its elements and more.
+title: About Xamarin Radial Menu control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Xamarin Radial Menu (SfRadialMenu) control, its elements and more.
 platform: xamarin
 control: SfRadialMenu
 documentation: ug

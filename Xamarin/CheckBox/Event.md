@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Event in Xamarin CheckBox control | Syncfusion<sup>®</sup>
-description: Learn here all about Event support in Syncfusion<sup>®</sup> Xamarin CheckBox (SfCheckBox) control, its elements and more.
+title: Event in Xamarin CheckBox control | Syncfusion®
+description: Learn here all about Event support in Syncfusion® Xamarin CheckBox (SfCheckBox) control, its elements and more.
 platform: xamarin
 control: SfCheckBox
 documentation: ug 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to | SfTextInputLayout |Xamarin | Syncfusion<sup>®</sup>
+title: How to | SfTextInputLayout |Xamarin | Syncfusion®
 description: Explains the text input layout customization
 platform: Xamarin
 control: SfTextInputLayout

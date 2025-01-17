@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin Radio Button control | Syncfusion<sup>®</sup>
-description: Learn here all about introduction of Syncfusion<sup>®</sup> Xamarin Radio Button (SfRadioButton) control, its elements and more.
+title: About Xamarin Radio Button control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Xamarin Radio Button (SfRadioButton) control, its elements and more.
 platform: xamarin
 control: SfRadioButton
 documentation: ug 

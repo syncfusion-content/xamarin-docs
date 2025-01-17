@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Setting Sliding Panel Content in Xamarin NavigationDrawer | Syncfusion<sup>®</sup>
-description: Learn here all about Setting Sliding Panel Content support in Syncfusion<sup>®</sup> Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
+title: Setting Sliding Panel Content in Xamarin NavigationDrawer | Syncfusion®
+description: Learn here all about Setting Sliding Panel Content support in Syncfusion® Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug

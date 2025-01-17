@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin UI Kit control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio® Xamarin UI Kit control, its elements and more.
+title: About Xamarin UI Kit control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Essential Studio® Xamarin UI Kit control, its elements and more.
 platform: xamarin
 control: Xamarin UI Kit
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Xamarin UI Kit Overview
 
-The [Syncfusion Essential UI Kit](https://www.syncfusion.com/essential-xamarin-ui-kit) is a collection of easy-to-use, extendable, and adaptable XAML pages that allows you to quickly create a Xamarin.Forms application by providing generic pre-defined screens. Now, the UI Kit has screens for the following categories:
+The [Syncfusion<sup>®</sup> Essential<sup>®</sup> UI Kit](https://www.syncfusion.com/essential-xamarin-ui-kit) is a collection of easy-to-use, extendable, and adaptable XAML pages that allows you to quickly create a Xamarin.Forms application by providing generic pre-defined screens. Now, the UI Kit has screens for the following categories:
 
 * Forms
 * Catalog
@@ -41,4 +41,4 @@ The screens are developed with MVVM pattern, which separates the UI and business
 
 N> The required minimum version of Xamarin.Forms is 4.3.0.991250.
 
-To get started with Syncfusion XAML Pages for Xamarin.Forms, refer to [Getting Started](https://help.syncfusion.com/xamarin/uikit/gettingstarted)
+To get started with Syncfusion<sup>®</sup> XAML Pages for Xamarin.Forms, refer to [Getting Started](https://help.syncfusion.com/xamarin/uikit/gettingstarted)

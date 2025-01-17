@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Stacked Headers in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Stacked Headers support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
+title: Stacked Headers in Xamarin DataGrid control | Syncfusion®
+description: Learn here all about Stacked Headers support in Syncfusion® Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG

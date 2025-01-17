@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Enable Looping in Xamarin TimePicker control | Syncfusion
-description: Learn here all about Enable Looping support in Syncfusion Xamarin TimePicker (SfTimePicker) control and more.
+title: Enable Looping in Xamarin TimePicker control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Enable Looping support in Syncfusion<sup>&reg;</sup> Xamarin TimePicker (SfTimePicker) control and more.
 platform: Xamarin
 control: SfTimePicker
 documentation: ug

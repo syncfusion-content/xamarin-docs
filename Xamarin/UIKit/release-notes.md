@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion | Xamarin XAML UI Kit Release notes History
-description: Syncfusion | Xamarin XAML UI Kit Release notes History
+title: Syncfusion® | Xamarin XAML UI Kit Release notes History
+description: Syncfusion® | Xamarin XAML UI Kit Release notes History
 platform: xamarin
 control: Xamarin UI Kit
 documentation: ug

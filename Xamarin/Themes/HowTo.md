@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to customize theming in Syncfusion controls
-description: Learn here about how to switch between light and dark themes in Syncfusion Xamarin controls and more details.
+title: How to customize theming in Syncfusion® controls
+description: Learn here about how to switch between light and dark themes in Syncfusion® Xamarin controls and more details.
 platform: xamarin
 control: General
 documentation: ug

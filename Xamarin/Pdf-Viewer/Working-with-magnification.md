@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Working with magnification in Xamarin Pdf Viewer control | Syncfusion
-description: Learn here all about Working with magnification support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
-platform: Xamarin
+description: Learn here all about Working with magnification support in Syncfusion<sup>®</sup> Xamarin Pdf Viewer (SfPdfViewer) control and more.
+platform: xamarin
 control: SfPdfViewer
 documentation: ug
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Unbound Row in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Unbound Row support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
+title: Unbound Row in Xamarin DataGrid control | Syncfusion®
+description: Learn here all about Unbound Row support in Syncfusion® Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Character Types in Xamarin Digital Gauge control | Syncfusion
-description: Learn here all about Character Types support in Syncfusion Xamarin Digital Gauge (SfDigitalGauge) control and more.
+title: Character Types in Xamarin Digital Gauge control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Character Types support in Syncfusion<sup>&reg;</sup> Xamarin Digital Gauge (SfDigitalGauge) control and more.
 platform: Xamarin
 control: DigitalGauge
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin DataGrid control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin DataGrid (SfDataGrid) control, its elements and more.
+title: Getting Started with Xamarin DataGrid control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Xamarin DataGrid (SfDataGrid) control, its elements and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
@@ -25,11 +25,11 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## NuGet configuration
 
-To install the required NuGet for the SfDataGrid control in the application, configure the NuGet packages of the Syncfusion components.
+To install the required NuGet for the SfDataGrid control in the application, configure the NuGet packages of the Syncfusion® components.
 
-Refer to the following KB to configure the NuGet packages of the Syncfusion components:
+Refer to the following KB to configure the NuGet packages of the Syncfusion® components:
 
-[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://support.syncfusion.com/kb/article/6565/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing)
+[How to configure package source and install Syncfusion® NuGet packages in an existing project?](https://support.syncfusion.com/kb/article/6565/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing)
 
 The following NuGet package should be installed to use the SfDataGrid control in the application.
 
@@ -50,7 +50,7 @@ You can add SfDataGrid reference using one of the following methods:
 
 **Method 1: Adding SfDataGrid reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataGrid to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfDataGrid](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataGrid), and then install it.
+Syncfusion® Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataGrid to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfDataGrid](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataGrid), and then install it.
 
 ![Adding SfDataGrid reference from NuGet](Getting-started_images/Adding SfDataGrid reference.png)
 
@@ -58,7 +58,7 @@ N> Install the same version of SfDataGrid NuGet in all the projects.
 
 **Method 2: Adding SfDataGrid reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfDataGrid control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion® also provides Xamarin Toolbox. Using this toolbox, you can drag the SfDataGrid control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion® Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfDataGrid assemblies manually from the installed location**
 

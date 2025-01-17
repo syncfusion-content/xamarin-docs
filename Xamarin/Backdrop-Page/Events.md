@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reveal and conceal event of Syncfusion Backdrop Page
+title: Reveal and conceal event of Syncfusion<sup>&reg;</sup> Backdrop Page
 description: How to hook the event when backdrop page is revealed and concealed.
 platform: xamarin
 control: SfBackdropPage

@@ -1,31 +1,31 @@
 ---
 layout: post
-title: Xamarin-Mac Overview | xamarin | Syncfusion
-description: The Syncfusion Xamarin Extensions provide quick access to create or configure the Syncfusion Xamarin projects
+title: Xamarin-Mac Overview | xamarin | Syncfusion<sup>®</sup>
+description: The Syncfusion<sup>®</sup> Xamarin Extensions provide quick access to create or configure the Syncfusion<sup>®</sup> Xamarin projects
 platform: xamarin
-control: Syncfusion Mac Extensions
+control: Syncfusion<sup>®</sup> Mac Extensions
 documentation: ug
 ---
 
 # Create Xamarin Project in Visual Studio for Mac
 
-Syncfusion provides the Visual Studio for Mac Project Templates for Xamarin platform to create the Syncfusion Xamarin application with required Syncfusion NuGet packages based on the control chosen.
+Syncfusion<sup>®</sup> provides the Visual Studio for Mac Project Templates for Xamarin platform to create the Syncfusion<sup>®</sup> Xamarin application with required Syncfusion<sup>®</sup> NuGet packages based on the control chosen.
 
-The following steps illustrates you how to create the Syncfusion Xamarin Application through the Visual Studio 2019 for Mac:
+The following steps illustrates you how to create the Syncfusion<sup>®</sup> Xamarin Application through the Visual Studio 2019 for Mac:
 
-1.	In Visual Studio for Mac, choose one of the options below to create a Syncfusion Xamarin project.
+1.	In Visual Studio for Mac, choose one of the options below to create a Syncfusion<sup>®</sup> Xamarin project.
 
 	Option 1:
-	Click **Syncfusion Menu** and choose **Essential Studio® for Xamarin > Create New Syncfusion Project**.
+	Click **Syncfusion<sup>®</sup> Menu** and choose **Essential Studio<sup>®</sup> for Xamarin > Create New Syncfusion<sup>®</sup> Project**.
 
-	![Create New Project from Syncfusion Menu](ProjectTemplate_Images/Syncfusion_Menu.PNG)
+	![Create New Project from Syncfusion<sup>®</sup> Menu](ProjectTemplate_Images/Syncfusion_Menu.PNG)
 
 	Option 2:
-	Choose **File > New > Project** and navigate to **Syncfusion > App > Syncfusion Xamarin Project Template**.
+	Choose **File > New > Project** and navigate to **Syncfusion<sup>®</sup> > App > Syncfusion<sup>®</sup> Xamarin Project Template**.
 
 	![Create New Project](ProjectTemplate_Images/CreateNewProject.PNG)
 
-2.	Choose the options to configure the Syncfusion Xamarin Application by using the following Project Configuration dialog and choose the Project, Android, and iOS by toggling respective checkboxes.
+2.	Choose the options to configure the Syncfusion<sup>®</sup> Xamarin Application by using the following Project Configuration dialog and choose the Project, Android, and iOS by toggling respective checkboxes.
 
 	![Project Configuration](ProjectTemplate_Images/ProjectConfiguration.PNG)
 
@@ -43,7 +43,7 @@ The following steps illustrates you how to create the Syncfusion Xamarin Applica
 
 	## Choose controls:
 
-	To create the Syncfusion Xamarin application, choose at least one Syncfusion control.
+	To create the Syncfusion<sup>®</sup> Xamarin application, choose at least one Syncfusion<sup>®</sup> control.
 
 	![Choose Controls](ProjectTemplate_Images/ChooseControls.png)
 
@@ -51,7 +51,7 @@ The following steps illustrates you how to create the Syncfusion Xamarin Applica
 
 	![New Project](ProjectTemplate_Images/NewProject.png)
 
-4.  Required Syncfusion NuGet and configuration have been added to the project based on the Syncfusion component chosen.
+4.  Required Syncfusion<sup>®</sup> NuGet and configuration have been added to the project based on the Syncfusion<sup>®</sup> component chosen.
 
 	**Net Standard:**
 
@@ -65,4 +65,4 @@ The following steps illustrates you how to create the Syncfusion Xamarin Applica
 
 	![iOS References](ProjectTemplate_Images/iOSReferences.png)
 
-Now, you can follow the [user guide documentation](https://help.syncfusion.com/xamarin/introduction/overview) to use the Syncfusion Xamarin components.
+Now, you can follow the [user guide documentation](https://help.syncfusion.com/xamarin/introduction/overview) to use the Syncfusion<sup>®</sup> Xamarin components.

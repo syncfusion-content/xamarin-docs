@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in Xamarin Picker control | Syncfusion
-description: Learn here all about Accessibility support in Syncfusion Xamarin Picker (SfPicker) control and more.
+title: Accessibility in Xamarin Picker control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Accessibility support in Syncfusion<sup>&reg;</sup> Xamarin Picker (SfPicker) control and more.
 platform: Xamarin
 control: SfPicker
 documentation: ug

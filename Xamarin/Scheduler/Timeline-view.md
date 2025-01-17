@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Timeline View in Xamarin Scheduler control | Syncfusion
-description: Learn here all about Timeline View support in Syncfusion Xamarin Scheduler (SfSchedule) control and more.
+title: Timeline View in Xamarin Scheduler control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Timeline View support in Syncfusion<sup>&reg;</sup> Xamarin Scheduler (SfSchedule) control and more.
 platform: xamarin
 control: SfScheduler
 documentation: ug

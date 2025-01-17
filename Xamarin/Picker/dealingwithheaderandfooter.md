@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dealing with Header and Footer in Xamarin Picker control | Syncfusion
-description: Learn here all about Dealing with Header and Footer support in Syncfusion Xamarin Picker (SfPicker) control and more.
+title: Dealing with Header and Footer in Xamarin Picker control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Dealing with Header and Footer support in Syncfusion<sup>&reg;</sup> Xamarin Picker (SfPicker) control and more.
 platform: Xamarin
 control: Picker
 documentation: ug

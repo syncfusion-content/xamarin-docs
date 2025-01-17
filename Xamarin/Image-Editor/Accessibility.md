@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in Xamarin Image Editor control | Syncfusion
-description: Learn here all about Accessibility support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
+title: Accessibility in Xamarin Image Editor control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Accessibility support in Syncfusion<sup>&reg;</sup> Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: SfImageEditor
 documentation : ug

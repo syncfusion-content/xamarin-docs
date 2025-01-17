@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customizations in Xamarin TimePicker control | Syncfusion
-description: Learn here all about Customizations support in Syncfusion Xamarin TimePicker (SfTimePicker) control and more.
+title: Customizations in Xamarin TimePicker control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Customizations support in Syncfusion<sup>&reg;</sup> Xamarin TimePicker (SfTimePicker) control and more.
 platform: Xamarin
 control: TimePicker
 documentation: ug

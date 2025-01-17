@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Loading password protected PDFs in Xamarin Pdf Viewer | Syncfusion
-description: Learn here all about Loading password protected PDFs support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
-platform: Xamarin
+description: Learn here all about Loading password protected PDFs support in Syncfusion<sup>®</sup> Xamarin Pdf Viewer (SfPdfViewer) control and more.
+platform: xamarin
 control: SfPdfViewer
 documentation: ug
 ---

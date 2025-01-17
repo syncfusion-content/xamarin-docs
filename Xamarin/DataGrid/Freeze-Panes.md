@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Freeze Panes in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Freeze Panes support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
+title: Freeze Panes in Xamarin DataGrid control | Syncfusion®
+description: Learn here all about Freeze Panes support in Syncfusion® Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG

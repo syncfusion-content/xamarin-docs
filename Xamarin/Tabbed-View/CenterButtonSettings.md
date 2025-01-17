@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CenterButton Customization in Xamarin Tabbed View control | Syncfusion
-description: Learn here all about CenterButton Customization support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
+title: CenterButton Customization in Xamarin Tabbed View control | Syncfusion®
+description: Learn here all about CenterButton Customization support in Syncfusion® Xamarin Tabbed View (SfTabView) control and more.
 control: TabView
 documentation: ug
 ---

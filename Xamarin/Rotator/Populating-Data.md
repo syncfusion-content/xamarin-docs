@@ -1,7 +1,7 @@
 ---
 layout : post
-title: Populating Data in Xamarin Rotator control | Syncfusion
-description: Learn here all about Populating Data support in Syncfusion Xamarin Rotator (SfRotator) control and more.
+title: Populating Data in Xamarin Rotator control | Syncfusion®
+description: Learn here all about Populating Data support in Syncfusion® Xamarin Rotator (SfRotator) control and more.
 platform : Xamarin
 control : Rotator 
 documentation : ug

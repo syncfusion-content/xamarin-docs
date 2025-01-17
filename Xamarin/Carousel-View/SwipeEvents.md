@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Swipe Events in Xamarin Carousel View control | Syncfusion
-description: Learn here all about Swipe Events support in Syncfusion Xamarin Carousel View (SfCarousel) control and more.
+title: Swipe Events in Xamarin Carousel View control | Syncfusion®
+description: Learn here all about Swipe Events support in Syncfusion® Xamarin Carousel View (SfCarousel) control and more.
 platform: xamarin
 control: Carousel
 documentation: ug

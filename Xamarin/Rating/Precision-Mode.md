@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Precision Mode in Xamarin Rating control | Syncfusion
-description: Learn here all about Precision Mode support in Syncfusion Xamarin Rating (SfRating) control and more.
+title: Precision Mode in Xamarin Rating control | Syncfusion®
+description: Learn here all about Precision Mode support in Syncfusion® Xamarin Rating (SfRating) control and more.
 platform: Xamarin
 control: Rating
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Setting Sliding Panel size in Xamarin Navigation Drawer | Syncfusion
-description: Learn here all about Setting Sliding Panel size support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
+title: Setting Sliding Panel size in Xamarin Navigation Drawer | Syncfusion®
+description: Learn here all about Setting Sliding Panel size support in Syncfusion® Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug

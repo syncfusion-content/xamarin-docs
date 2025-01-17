@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Display Type in Xamarin Tabbed View control | Syncfusion
-description: Learn here all about Display Type support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
+title: Display Type in Xamarin Tabbed View control | Syncfusion®
+description: Learn here all about Display Type support in Syncfusion® Xamarin Tabbed View (SfTabView) control and more.
 platform: Xamarin
 control: TabView
 documentation: ug

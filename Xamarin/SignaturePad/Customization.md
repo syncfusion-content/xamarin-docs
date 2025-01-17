@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in Xamarin SignaturePad control | Syncfusion
-description: Learn here all about Customization support in Syncfusion Xamarin SignaturePad (SfSignaturePad) control and more.
+title: Customization in Xamarin SignaturePad control | Syncfusion®
+description: Learn here all about Customization support in Syncfusion® Xamarin SignaturePad (SfSignaturePad) control and more.
 platform: xamarin
 control: SfSignaturePad
 documentation: ug

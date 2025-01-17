@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Xamarin.Forms AutoComplete Control | Syncfusion
-description: Learn here all about overview of Syncfusion Xamarin.Forms AutoComplete control, its elements, and more.
+title: Overview of Xamarin.Forms AutoComplete Control | Syncfusion®
+description: Learn here all about overview of Syncfusion® Xamarin.Forms AutoComplete control, its elements, and more.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview of Xamarin AutoComplete (SfAutoComplete)
 
-Essential® [AutoComplete for Xamarin.Forms](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) provides a simpler way to complete the text based on the characters that the user has entered before. It also provides option to choose a suggestion from drop down or append a suggestion to the text directly.
+Essential<sup>®</sup> [AutoComplete for Xamarin.Forms](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) provides a simpler way to complete the text based on the characters that the user has entered before. It also provides option to choose a suggestion from drop down or append a suggestion to the text directly.
 
 ![SfAutocomplete OverView](images/Overview/overview.png)
 

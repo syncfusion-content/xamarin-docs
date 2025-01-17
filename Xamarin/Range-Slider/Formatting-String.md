@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Formatting String in Xamarin Range Slider control | Syncfusion
-description: Learn here all about Formatting String support in Syncfusion Xamarin Range Slider (SfRangeSlider) control and more.
+title: Formatting String in Xamarin Range Slider control | Syncfusion®
+description: Learn here all about Formatting String support in Syncfusion® Xamarin Range Slider (SfRangeSlider) control and more.
 platform: Xamarin
 control: RangeSlider
 documentation: ug

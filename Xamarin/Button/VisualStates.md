@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visual States in Xamarin Button control | Syncfusion
-description: Learn here all about Visual States support in Syncfusion Xamarin Button (SfButton) control and more.
+title: Visual States in Xamarin Button control | Syncfusion®
+description: Learn here all about Visual States support in Syncfusion® Xamarin Button (SfButton) control and more.
 platform: xamarin
 control: sfbutton
 documentation: ug

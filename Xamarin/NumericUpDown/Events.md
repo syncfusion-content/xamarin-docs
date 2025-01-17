@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events and Interactivity in Xamarin NumericUpDown control | Syncfusion
-description: Learn here all about Events and Interactivity support in Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control and more.
+title: Events and Interactivity in Xamarin NumericUpDown control | Syncfusion®
+description: Learn here all about Events and Interactivity support in Syncfusion® Xamarin NumericUpDown (SfNumericUpDown) control and more.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DropDown in Syncfusion SfAutoComplete control for Xamarin.Forms
+title: DropDown in Syncfusion® SfAutoComplete control for Xamarin.Forms
 description: This section describes about the placement of the drop-down suggestion and how to get the filtered SfAutoComplete items.
 platform: xamarin
 control: SfAutoComplete

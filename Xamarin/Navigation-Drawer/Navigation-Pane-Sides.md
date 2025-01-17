@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Configuring The Drawer In Xamarin Navigation Drawer | Syncfusion
-description: Learn here all about Configuring The Drawer In Different Sides support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
+title: Configuring The Drawer In Xamarin Navigation Drawer | Syncfusion®
+description: Learn here all about Configuring The Drawer In Different Sides support in Syncfusion® Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in Xamarin SignaturePad control | Syncfusion®
-description: Learn here all about SignaturePad Events support in Syncfusion® Xamarin SignaturePad (SfSignaturePad) control and more.
+title: Events in Xamarin SignaturePad control | Syncfusion<sup>®</sup>
+description: Learn here all about SignaturePad Events support in Syncfusion<sup>®</sup> Xamarin SignaturePad (SfSignaturePad) control and more.
 platform: Xamarin
 control: SignaturePad
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin CheckBox control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Xamarin CheckBox (SfCheckBox) control, its elements and more.
+title: About Xamarin CheckBox control | Syncfusion<sup>®</sup>
+description: Learn here all about introduction of Syncfusion<sup>®</sup> Xamarin CheckBox (SfCheckBox) control, its elements and more.
 platform: xamarin
 control: SfCheckBox
 documentation: ug 

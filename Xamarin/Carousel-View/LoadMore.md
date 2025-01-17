@@ -1,7 +1,7 @@
 ---
 layout : post
-title: Load More in Xamarin Carousel View control | Syncfusion®
-description: Learn here all about Load More support in Syncfusion® Xamarin Carousel View (SfCarousel) control and more.
+title: Load More in Xamarin Carousel View control | Syncfusion<sup>®</sup>
+description: Learn here all about Load More support in Syncfusion<sup>®</sup> Xamarin Carousel View (SfCarousel) control and more.
 platform : xamarin
 control : Carousel
 documentation : ug

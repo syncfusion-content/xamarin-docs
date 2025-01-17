@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in Xamarin AutoComplete control | Syncfusion®
-description: Learn about Accessibility support in Syncfusion® Xamarin AutoComplete (SfAutoComplete) control and more details.
+title: Accessibility in Xamarin AutoComplete control | Syncfusion<sup>®</sup>
+description: Learn about Accessibility support in Syncfusion<sup>®</sup> Xamarin AutoComplete (SfAutoComplete) control and more details.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug

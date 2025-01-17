@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SwipGesture and Sensitivity in Xamarin Navigation Drawer | Syncfusion®
-description: Learn here all about SwipGesture and its Sensitivity support in Syncfusion® Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
+title: SwipGesture and Sensitivity in Xamarin Navigation Drawer | Syncfusion<sup>®</sup>
+description: Learn here all about SwipGesture and its Sensitivity support in Syncfusion<sup>®</sup> Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug

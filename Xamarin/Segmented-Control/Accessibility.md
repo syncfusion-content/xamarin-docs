@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in Xamarin Segmented Control | Syncfusion®
-description: Learn here all about Accessibility support in Syncfusion® Xamarin Segmented Control (SfSegmentedControl) and more.
+title: Accessibility in Xamarin Segmented Control | Syncfusion<sup>®</sup>
+description: Learn here all about Accessibility support in Syncfusion<sup>®</sup> Xamarin Segmented Control (SfSegmentedControl) and more.
 platform: Xamarin
 control: SfSegmentedControl
 documentation: ug

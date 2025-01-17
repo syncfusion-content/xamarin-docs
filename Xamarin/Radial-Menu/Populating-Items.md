@@ -1,7 +1,7 @@
 ---
 layout : post
-title: Populating Items in Xamarin Radial Menu control | Syncfusion®
-description: Learn here all about Populating Items support in Syncfusion® Xamarin Radial Menu (SfRadialMenu) control and more.
+title: Populating Items in Xamarin Radial Menu control | Syncfusion<sup>®</sup>
+description: Learn here all about Populating Items support in Syncfusion<sup>®</sup> Xamarin Radial Menu (SfRadialMenu) control and more.
 platform : xamarin
 control : SfRadialMenu
 documentation : ug

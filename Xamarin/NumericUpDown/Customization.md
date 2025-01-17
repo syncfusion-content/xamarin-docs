@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Different customization in Xamarin NumericUpDown control | Syncfusion®
-description: Learn here different customization support in Syncfusion® Xamarin NumericUpDown (SfNumericUpDown) control and more.
+title: Different customization in Xamarin NumericUpDown control | Syncfusion<sup>®</sup>
+description: Learn here different customization support in Syncfusion<sup>®</sup> Xamarin NumericUpDown (SfNumericUpDown) control and more.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug

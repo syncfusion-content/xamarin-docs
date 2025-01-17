@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visual Customization in Xamarin CheckBox control | Syncfusion®
-description: Learn here all about Visual Customization support in Syncfusion® Xamarin CheckBox (SfCheckBox) control and more.
+title: Visual Customization in Xamarin CheckBox control | Syncfusion<sup>®</sup>
+description: Learn here all about Visual Customization support in Syncfusion<sup>®</sup> Xamarin CheckBox (SfCheckBox) control and more.
 platform: xamarin
 control: SfCheckBox
 documentation: ug 

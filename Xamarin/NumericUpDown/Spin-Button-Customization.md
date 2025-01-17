@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Spin Button Customization in Xamarin NumericUpDown | Syncfusion®
-description: Learn here all about Spin Button Customization support in Syncfusion® Xamarin NumericUpDown (SfNumericUpDown) control and more.
+title: Spin Button Customization in Xamarin NumericUpDown | Syncfusion<sup>®</sup>
+description: Learn here all about Spin Button Customization support in Syncfusion<sup>®</sup> Xamarin NumericUpDown (SfNumericUpDown) control and more.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug

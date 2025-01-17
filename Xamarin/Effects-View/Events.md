@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in Xamarin Effects View control | Syncfusion®
-description: Learn here all about Events support in Syncfusion® Xamarin Effects View (SfEffectsView) control and more.
+title: Events in Xamarin Effects View control | Syncfusion<sup>®</sup>
+description: Learn here all about Events support in Syncfusion<sup>®</sup> Xamarin Effects View (SfEffectsView) control and more.
 platform: xamarin
 control: SfEffectsView
 documentation: ug

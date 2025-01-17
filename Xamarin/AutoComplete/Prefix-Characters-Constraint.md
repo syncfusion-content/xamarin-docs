@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Colors in Syncfusion® SfAutoComplete control for Xamarin.Forms
+title: Colors in Syncfusion<sup>®</sup> SfAutoComplete control for Xamarin.Forms
 description: This section will describe about how to set minimum Prefix Characters in Xamarin.Forms SfAutoComplete.
 platform: xamarin
 control: SfAutoComplete

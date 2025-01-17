@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Maximum display item with Expander in Xamarin ComboBox | Syncfusion®
-description: Learn here all about Maximum display item with Expander support in Syncfusion® Xamarin ComboBox (SfComboBox) control and more.
+title: Maximum display item with Expander in Xamarin ComboBox | Syncfusion<sup>®</sup>
+description: Learn here all about Maximum display item with Expander support in Syncfusion<sup>®</sup> Xamarin ComboBox (SfComboBox) control and more.
 platform: xamarin
 control: SfComboBox
 documentation: ug

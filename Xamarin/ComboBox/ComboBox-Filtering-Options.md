@@ -1,7 +1,7 @@
 ---
 layout : post
-title: ComboBox Filtering Options in Xamarin ComboBox control | Syncfusion®
-description: Learn here all about ComboBox Filtering Options support in Syncfusion® Xamarin ComboBox (SfComboBox) control and more.
+title: ComboBox Filtering Options in Xamarin ComboBox control | Syncfusion<sup>®</sup>
+description: Learn here all about ComboBox Filtering Options support in Syncfusion<sup>®</sup> Xamarin ComboBox (SfComboBox) control and more.
 platform : Xamarin.Forms
 control : SfComboBox
 documentation : ug

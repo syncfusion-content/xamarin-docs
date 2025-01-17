@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Nullable selection in Syncfusion® segmented control for Xamarin.Forms
-description: Learn how to clear the default selection in Syncfusion® segmented control (SfSegmentedControl) for Xamarin.Forms
+title: Nullable selection in Syncfusion<sup>®</sup> segmented control for Xamarin.Forms
+description: Learn how to clear the default selection in Syncfusion<sup>®</sup> segmented control (SfSegmentedControl) for Xamarin.Forms
 platform: Xamarin
 control: SegmentedControl
 documentation: ug

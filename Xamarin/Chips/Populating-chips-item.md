@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating Items in Xamarin Chips control | Syncfusion®
-description: Learn about Populating Items support in Syncfusion® Essential Studio® Xamarin Chips control, its elements and more.
+title: Populating Items in Xamarin Chips control | Syncfusion<sup>®</sup>
+description: Learn about Populating Items support in Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> Xamarin Chips control, its elements and more.
 platform: xamarin
 control: Chips
 documentation: ug

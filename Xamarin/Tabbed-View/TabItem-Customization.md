@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TabItem Customization in Xamarin Tabbed View | Syncfusion®
-description: Learn here all about Tabitem Customization support in Syncfusion® Xamarin Tabbed View (SfTabView) control and more.
+title: TabItem Customization in Xamarin Tabbed View | Syncfusion<sup>®</sup>
+description: Learn here all about Tabitem Customization support in Syncfusion<sup>®</sup> Xamarin Tabbed View (SfTabView) control and more.
 platform: Xamarin
 control: TabView
 documentation: ug

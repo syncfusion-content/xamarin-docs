@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin Masked Entry control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Xamarin Masked Entry (SfMaskedEdit) control, its elements and more.
+title: About Xamarin Masked Entry control | Syncfusion<sup>®</sup>
+description: Learn here all about introduction of Syncfusion<sup>®</sup> Xamarin Masked Entry (SfMaskedEdit) control, its elements and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug

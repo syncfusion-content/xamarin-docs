@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Return Type in Xamarin Numeric Entry control | Syncfusion®
-description: Learn here all about Return Type support in Syncfusion® Xamarin Numeric Entry (SfNumericTextBox) control and more.
+title: Return Type in Xamarin Numeric Entry control | Syncfusion<sup>®</sup>
+description: Learn here all about Return Type support in Syncfusion<sup>®</sup> Xamarin Numeric Entry (SfNumericTextBox) control and more.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug

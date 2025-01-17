@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in Xamarin Button control | Syncfusion®
-description: Learn here all about Customization support in Syncfusion® Xamarin Button (SfButton) control and more.
+title: Customization in Xamarin Button control | Syncfusion<sup>®</sup>
+description: Learn here all about Customization support in Syncfusion<sup>®</sup> Xamarin Button (SfButton) control and more.
 platform: xamarin
 control: sfbutton
 documentation: ug

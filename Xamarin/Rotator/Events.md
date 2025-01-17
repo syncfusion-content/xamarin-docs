@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in Xamarin Rotator control | Syncfusion®
-description: Learn here all about Events support in Syncfusion® Xamarin Rotator (SfRotator) control, its elements and more.
+title: Events in Xamarin Rotator control | Syncfusion<sup>®</sup>
+description: Learn here all about Events support in Syncfusion<sup>®</sup> Xamarin Rotator (SfRotator) control, its elements and more.
 platform: xamarin 
 control: Rotator 
 documentation: ug

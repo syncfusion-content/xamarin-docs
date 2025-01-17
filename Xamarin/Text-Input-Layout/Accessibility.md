@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in Xamarin Text Input Layout control | Syncfusion®
-description: Learn here all about Accessibility support in Syncfusion® Xamarin Text Input Layout (SfTextInputLayout) control and more.
+title: Accessibility in Xamarin Text Input Layout control | Syncfusion<sup>®</sup>
+description: Learn here all about Accessibility support in Syncfusion<sup>®</sup> Xamarin Text Input Layout (SfTextInputLayout) control and more.
 platform: Xamarin
 control: SfTextInputLayout
 documentation: ug

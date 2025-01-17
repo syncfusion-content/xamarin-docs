@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating data source in Xamarin Segmented Control | Syncfusion®
-description: Learn here all about Populating data source support in Syncfusion® Xamarin Segmented Control (SfSegmentedControl) and more.
+title: Populating data source in Xamarin Segmented Control | Syncfusion<sup>®</sup>
+description: Learn here all about Populating data source support in Syncfusion<sup>®</sup> Xamarin Segmented Control (SfSegmentedControl) and more.
 platform: Xamarin
 control: SegmentedControl
 documentation: ug

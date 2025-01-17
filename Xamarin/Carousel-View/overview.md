@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin Carousel View control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Xamarin Carousel View (SfCarousel) control, its elements and more.
+title: About Xamarin Carousel View control | Syncfusion<sup>®</sup>
+description: Learn here all about introduction of Syncfusion<sup>®</sup> Xamarin Carousel View (SfCarousel) control, its elements and more.
 platform: xamarin
 control: Carousel
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Xamarin Carousel View (SfCarousel) Overview
 
-The Essential® Xamarin Carousel control allows navigating through image data in an interactive way so that they can be viewed or selected. Also, provides various customization options for its item arrangements.
+The Essential<sup>®</sup> Xamarin Carousel control allows navigating through image data in an interactive way so that they can be viewed or selected. Also, provides various customization options for its item arrangements.
 It has been available in Xamarin.Forms,Xamarin.Android and Xamarin.iOS platforms also.
 
 ![Carousel OverView](images/carousel.png)

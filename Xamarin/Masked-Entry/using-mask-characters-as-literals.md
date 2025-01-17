@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Using Mask Characters as Literals in Xamarin Masked Entry | Syncfusion®
-description: Learn here all about Using Mask Characters as Literals support in Syncfusion® Xamarin Masked Entry (SfMaskedEdit) control and more.
+title: Using Mask Characters as Literals in Xamarin Masked Entry | Syncfusion<sup>®</sup>
+description: Learn here all about Using Mask Characters as Literals support in Syncfusion<sup>®</sup> Xamarin Masked Entry (SfMaskedEdit) control and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 

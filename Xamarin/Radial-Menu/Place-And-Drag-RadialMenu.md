@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Placing and Dragging RadialMenu in Xamarin Radial Menu | Syncfusion®
-description: Learn here all about Placing and Dragging RadialMenu support in Syncfusion® Xamarin Radial Menu (SfRadialMenu) control and more.
+title: Placing and Dragging RadialMenu in Xamarin Radial Menu | Syncfusion<sup>®</sup>
+description: Learn here all about Placing and Dragging RadialMenu support in Syncfusion<sup>®</sup> Xamarin Radial Menu (SfRadialMenu) control and more.
 platform: Xamarin
 control: SfRadialMenu
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Rich Text Editor control | Syncfusion&reg;
-description: Learn here about getting started with Syncfusion&reg; Xamarin Rich Text Editor (SfRichTextEditor) control, its elements and more.
+title: Getting Started with Xamarin Rich Text Editor control | Syncfusion<sup>&reg;</sup>;
+description: Learn here about getting started with Syncfusion<sup>&reg;</sup>; Xamarin Rich Text Editor (SfRichTextEditor) control, its elements and more.
 platform: xamarin
 control: Rich Text Editor
 documentation: ug
@@ -25,7 +25,7 @@ You can add Rich Text Editor reference using one of the following methods:
 
 **Method 1: Adding SfRichTextEditor reference from nuget.org**
 
-Syncfusion&reg; Xamarin components are available in [nuget.org](https://www.nuget.org/). To add Rich Text Editor to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfRichTextEditor](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRichTextEditor) and then install it.
+Syncfusion<sup>&reg;</sup>; Xamarin components are available in [nuget.org](https://www.nuget.org/). To add Rich Text Editor to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfRichTextEditor](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRichTextEditor) and then install it.
 
 ![Adding SfRichTextEditor reference from NuGet](SfRichTextEditor_Images/RichTextEditor_reference.png)
 
@@ -33,7 +33,7 @@ N> Install the same version of SfRichTextEditor NuGet in all the projects.
 
 **Method 2: Adding SfRichTextEditor reference from toolbox**
 
-Syncfusion&reg; also provides Xamarin Toolbox. Using this toolbox, you can drag the Rich Text Editor control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion&reg; Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion<sup>&reg;</sup>; also provides Xamarin Toolbox. Using this toolbox, you can drag the Rich Text Editor control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion&reg; Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfRichTextEditor assemblies manually from the installed location**
 
@@ -61,9 +61,9 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To learn more about obtaining Syncfusion&reg; components, refer to [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
+N> To learn more about obtaining Syncfusion<sup>&reg;</sup>; components, refer to [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion&reg; assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to the [Syncfusion® license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion&reg; license key in your Xamarin application to use Syncfusion&reg; components.
+I> Starting with v16.2.0.x, if you reference Syncfusion<sup>&reg;</sup>; assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to the [Syncfusion® license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion&reg; license key in your Xamarin application to use Syncfusion&reg; components.
 
 ## Launching the application on each platform with Rich Text Editor
 

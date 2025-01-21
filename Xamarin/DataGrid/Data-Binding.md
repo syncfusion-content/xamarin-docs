@@ -144,7 +144,7 @@ The following events are associated with `View`.
 
 ### RecordPropertyChanged
 
-The [RecordPropertyChanged](https://help.syncfusion.com/cr/xamarin/) event is raised when `DataModel` property value is changed, if `DataModel` implements the [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-5.0) interface. The event receives with two arguments namely sender that handles the `DataModel` and the [PropertyChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs?view=net-5.0) as argument.
+The [RecordPropertyChanged](https://help.syncfusion.com/xamarin/datagrid/data-binding#recordpropertychanged) event is raised when `DataModel` property value is changed, if `DataModel` implements the [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-5.0) interface. The event receives with two arguments namely sender that handles the `DataModel` and the [PropertyChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs?view=net-5.0) as argument.
 
 `PropertyChangedEventArgs` has the following property:
 
@@ -164,7 +164,7 @@ The [CollectionChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.Data.C
 
 ### SourceCollectionChanged
 
-The [SourceCollectionChanged](https://help.syncfusion.com/cr/xamarin/) event is raised when making changes in `SourceCollection`. For example, adding or removing the collection. The event receives two arguments namely sender that handles `GridQueryableCollectionViewWrapper` object and the [NotifyCollectionChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs?view=net-5.0) as argument.
+The [SourceCollectionChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_SourceCollectionChanged) event is raised when making changes in `SourceCollection`. For example, adding or removing the collection. The event receives two arguments namely sender that handles `GridQueryableCollectionViewWrapper` object and the [NotifyCollectionChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs?view=net-5.0) as argument.
 
 `NotifyCollectionChangedEventArgs` has the following properties:
 

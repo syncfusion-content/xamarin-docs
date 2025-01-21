@@ -1,6 +1,6 @@
 ---
-title: Connector in Xamarin Diagram control | Syncfusion&reg;
-description: Learn here all about Connector support in Syncfusion&reg; Xamarin Diagram (SfDiagram) control, its elements and more.
+title: Connector in Xamarin Diagram control | Syncfusion<sup>&reg;</sup>;
+description: Learn here all about Connector support in Syncfusion<sup>&reg;</sup>; Xamarin Diagram (SfDiagram) control, its elements and more.
 platform: xamarin
 control: Diagram
 documentation: UG

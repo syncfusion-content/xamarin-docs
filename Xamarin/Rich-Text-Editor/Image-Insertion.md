@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Image Insertion in Xamarin Rich Text Editor control | Syncfusion&reg;
-description: Learn here all about Image Insertion support in Syncfusion&reg; Xamarin Rich Text Editor (SfRichTextEditor) control and more.
+title: Image Insertion in Xamarin Rich Text Editor control | Syncfusion<sup>&reg;</sup>;
+description: Learn here all about Image Insertion support in Syncfusion<sup>&reg;</sup>; Xamarin Rich Text Editor (SfRichTextEditor) control and more.
 platform: xamarin
 control: SfRichTextEditor
 documentation: UG

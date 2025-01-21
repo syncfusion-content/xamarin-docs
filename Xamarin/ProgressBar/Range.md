@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Define Range in Xamarin ProgressBar control | Syncfusion;
+title: Define Range in Xamarin ProgressBar control | Syncfusion&reg;
 description: Learn here all about Range support in Syncfusion<sup>&reg;</sup>; Xamarin ProgressBar control, its elements and more.
 platform: xamarin
 control: ProgressBar

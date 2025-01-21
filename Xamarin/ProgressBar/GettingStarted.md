@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Xamarin ProgressBar control | Syncfusion;
+title: Getting Started with Xamarin ProgressBar control | Syncfusion&reg;
 description: Learn here about getting started with Syncfusion<sup>&reg;</sup>; Xamarin ProgressBar (Progress Bar) control, its elements and more.
 platform: xamarin
 control: ProgressBar

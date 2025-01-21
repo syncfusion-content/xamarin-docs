@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization in Xamarin Rich Text Editor control | Syncfusion;
+title: Customization in Xamarin Rich Text Editor control | Syncfusion&reg;
 description: Learn here all about Customization support in Syncfusion<sup>&reg;</sup>; Xamarin Rich Text Editor (SfRichTextEditor) control and more.
 platform: xamarin
 control: Rich Text Editor

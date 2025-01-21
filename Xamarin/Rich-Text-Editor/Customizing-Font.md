@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing Font in Xamarin Rich Text Editor control | Syncfusion<sup>&reg;</sup>;
+title: Customizing Font in Xamarin Rich Text Editor control | Syncfusion;
 description: Learn here all about Customizing Font support in Syncfusion<sup>&reg;</sup>; Xamarin Rich Text Editor (SfRichTextEditor) control and more.
 platform: xamarin
 control: SfRichTextEditor

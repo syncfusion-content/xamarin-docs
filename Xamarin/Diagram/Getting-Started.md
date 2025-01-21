@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Xamarin Diagram control | Syncfusion<sup>&reg;</sup>;
+title: Getting Started with Xamarin Diagram control | Syncfusion;
 description: Learn here about getting started with Syncfusion<sup>&reg;</sup>; Xamarin Diagram (SfDiagram) control, its elements and more.
 platform: xamarin
 control: SfDiagram

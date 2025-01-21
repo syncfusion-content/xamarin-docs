@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin StepProgressBar control | Syncfusion&reg;
-description: Learn here all about introduction of Syncfusion&reg; Xamarin StepProgressBar (Step Progress Bar) control, its elements and more.
+title: About Xamarin StepProgressBar control | Syncfusion<sup>&reg;</sup>;
+description: Learn here all about introduction of Syncfusion<sup>&reg;</sup>; Xamarin StepProgressBar (Step Progress Bar) control, its elements and more.
 platform: xamarin
 control: StepProgressBar
 documentation: ug

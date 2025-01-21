@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in Xamarin StepProgressBar control | Syncfusion&reg;
-description: Learn here all about Accessibility support in Syncfusion&reg; Xamarin StepProgressBar (Step Progress Bar) control and more.
+title: Accessibility in Xamarin StepProgressBar control | Syncfusion<sup>&reg;</sup>;
+description: Learn here all about Accessibility support in Syncfusion<sup>&reg;</sup>; Xamarin StepProgressBar (Step Progress Bar) control and more.
 platform: xamarin
 control: StepProgressBar
 documentation: UG

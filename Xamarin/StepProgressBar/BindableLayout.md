@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bindable Layout in Xamarin StepProgressBar control | Syncfusion&reg;
-description: Learn here all about Bindable Layout support in Syncfusion&reg; Xamarin StepProgressBar (Step Progress Bar) control and more.
+title: Bindable Layout in Xamarin StepProgressBar control | Syncfusion<sup>&reg;</sup>;
+description: Learn here all about Bindable Layout support in Syncfusion<sup>&reg;</sup>; Xamarin StepProgressBar (Step Progress Bar) control and more.
 platform: xamarin
 control: StepProgressBar
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scroll Limit in Xamarin Diagram control | Syncfusion&reg;
-description: Learn here all about Scroll Limit support in Syncfusion&reg; Xamarin Diagram (SfDiagram) control, its elements and more.
+title: Scroll Limit in Xamarin Diagram control | Syncfusion<sup>&reg;</sup>;
+description: Learn here all about Scroll Limit support in Syncfusion<sup>&reg;</sup>; Xamarin Diagram (SfDiagram) control, its elements and more.
 platform: xamarin
 control: SfDiagram
 documentation: ug

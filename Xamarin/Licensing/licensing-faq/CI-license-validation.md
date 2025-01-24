@@ -1,6 +1,6 @@
 ---
 layout: post
-title: License Validation in CI Services - Syncfusion®
+title: License Validation in CI Services | Syncfusion®
 description: Learn here about how to register Syncfusion® license key for Syncfusion® application for license validation.
 platform: xamarin
 control: Essential Studio<sup>®</sup>

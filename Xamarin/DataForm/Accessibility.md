@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in Xamarin DataForm control | Syncfusion
-description: Learn here all about Accessibility support in Syncfusion Xamarin DataForm (SfDataForm) control and more.
+title: Accessibility in Xamarin DataForm control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Accessibility support in Syncfusion<sup>&reg;</sup> Xamarin DataForm (SfDataForm) control and more.
 platform: Xamarin
 control: SfDataForm
 documentation: UG

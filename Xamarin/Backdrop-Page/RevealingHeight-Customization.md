@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reveal height customization of Syncfusion Backdrop Page
+title: Reveal height customization of Syncfusion<sup>&reg;</sup> Backdrop Page
 description: How to customize a reveal height
 platform: xamarin
 control: SfBackdropPage

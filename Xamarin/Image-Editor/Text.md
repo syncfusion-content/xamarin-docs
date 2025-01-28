@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Text in Xamarin Image Editor control | Syncfusion
-description: Learn here all about Text support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
+title: Text in Xamarin Image Editor control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Text support in Syncfusion<sup>&reg;</sup> Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: ImageEditor
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Shape Types in Xamarin.Forms Maps control | Syncfusion
-description: Learn here all about Shape Types support in Syncfusion Xamarin Maps (SfMaps) control, its elements and more.
+title: Shape Types in Xamarin.Forms Maps control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Shape Types support in Syncfusion<sup>&reg;</sup> Xamarin Maps (SfMaps) control, its elements and more.
 platform: xamarin
 control: SfMaps
 documentation: ug

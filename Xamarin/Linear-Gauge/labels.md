@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Labels in Xamarin Linear Gauge control | Syncfusion
-description: Learn here all about Labels support in Syncfusion Xamarin Linear Gauge (SfLinearGauge) control and more.
+title: Labels in Xamarin Linear Gauge control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Labels support in Syncfusion<sup>&reg;</sup> Xamarin Linear Gauge (SfLinearGauge) control and more.
 platform: xamarin
 control: LinearGauge
 documentation: ug

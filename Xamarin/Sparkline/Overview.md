@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin Sparkline control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin Sparkline (SfSparkline) control, its elements and more.
+title: About Xamarin Sparkline control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about introduction of Syncfusion<sup>&reg;</sup> Xamarin Sparkline (SfSparkline) control, its elements and more.
 platform: xamarin
 control: Sparkline
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MVVM in Xamarin Calendar control | Syncfusion
-description: Learn here all about MVVM support in Syncfusion Xamarin Calendar (SfCalendar) control, its elements and more.
+title: MVVM in Xamarin Calendar control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about MVVM support in Syncfusion<sup>&reg;</sup> Xamarin Calendar (SfCalendar) control, its elements and more.
 platform: xamarin
 control: SfCalendar
 documentation: ug

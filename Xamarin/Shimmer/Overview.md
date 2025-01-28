@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin Shimmer control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin Shimmer (SfShimmer) control, its elements and more.
+title: About Xamarin Shimmer control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about introduction of Syncfusion<sup>&reg;</sup> Xamarin Shimmer (SfShimmer) control, its elements and more.
 platform: xamarin
 control: SfShimmer
 documentation: ug

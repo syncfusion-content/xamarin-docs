@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin Segmented Control | Syncfusion<sup>®</sup>
-description: Learn here about introduction of Syncfusion<sup>®</sup> Xamarin Segmented Control (SfSegmentedControl) its elements and more.
+title: About Xamarin Segmented Control | SyncfusionÂ®
+description: Learn here about introduction of SyncfusionÂ® Xamarin Segmented Control (SfSegmentedControl) its elements and more.
 platform: xamarin
 control: SfSegmentedControl
 documentation: ug

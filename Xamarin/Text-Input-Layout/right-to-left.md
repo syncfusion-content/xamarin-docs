@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Right-to-Left in Xamarin Text Input Layout control | Syncfusion
-description: Learn here all about Right-to-Left support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
+title: Right-to-Left in Xamarin Text Input Layout control | Syncfusion®
+description: Learn here all about Right-to-Left support in Syncfusion® Xamarin Text Input Layout (SfTextInputLayout) control and more.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug

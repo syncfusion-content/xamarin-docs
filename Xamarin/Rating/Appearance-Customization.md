@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Appearance Customization in Xamarin Rating control | Syncfusion
-description: Learn here all about Appearance Customization support in Syncfusion Xamarin Rating (SfRating) control and more.
+title: Appearance Customization in Xamarin Rating control | Syncfusion®
+description: Learn here all about Appearance Customization support in Syncfusion® Xamarin Rating (SfRating) control and more.
 platform: Xamarin
 control: Rating
 documentation: ug

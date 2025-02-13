@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Methods in Xamarin Effects View control | Syncfusion
-description: Learn here all about Methods support in Syncfusion Xamarin Effects View (SfEffectsView) control and more.
+title: Methods in Xamarin Effects View control | Syncfusion®
+description: Learn here all about Methods support in Syncfusion® Xamarin Effects View (SfEffectsView) control and more.
 platform: xamarin
 control: SfEffectsView
 documentation: ug

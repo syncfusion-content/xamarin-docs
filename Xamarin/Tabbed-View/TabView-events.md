@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TabView Events in Xamarin Tabbed View control | Syncfusion
-description: Learn here all about TabView Events support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
+title: TabView Events in Xamarin Tabbed View control | Syncfusion®
+description: Learn here all about TabView Events support in Syncfusion® Xamarin Tabbed View (SfTabView) control and more.
 platform: Xamarin
 control: TabView
 documentation: ug

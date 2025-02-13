@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation in Xamarin Masked Entry control | Syncfusion
-description: Learn here all about Validation support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
+title: Validation in Xamarin Masked Entry control | Syncfusion®
+description: Learn here all about Validation support in Syncfusion® Xamarin Masked Entry (SfMaskedEdit) control and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 

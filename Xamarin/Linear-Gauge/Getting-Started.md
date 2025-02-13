@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Linear Gauge control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Linear Gauge (SfLinearGauge) control, its elements and more.
+title: Getting Started with Xamarin Linear Gauge control | Syncfusion<sup>&reg;</sup>
+description: Learn here about getting started with Syncfusion<sup>&reg;</sup> Xamarin Linear Gauge (SfLinearGauge) control, its elements and more.
 platform: Xamarin
 control: LinearGauge
 documentation: ug
@@ -25,7 +25,7 @@ You can add SfLinearGauge reference using one of the following methods:
 
 **Method 1: Adding SfLinearGauge reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfLinearGauge to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfGauge](https://www.nuget.org/packages/Syncfusion.Xamarin.SfGauge), and then install it.
+Syncfusion<sup>&reg;</sup> Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfLinearGauge to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfGauge](https://www.nuget.org/packages/Syncfusion.Xamarin.SfGauge), and then install it.
 
 ![Adding SfLinearGauge reference from NuGet](getting-started_images/Adding SfLinearGauge reference.png)
 
@@ -33,7 +33,7 @@ N> Install the same version of SfLinearGauge NuGet in all the projects.
 
 **Method 2: Adding SfLinearGauge reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfLinearGauge control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion<sup>&reg;</sup> also provides Xamarin Toolbox. Using this toolbox, you can drag the SfLinearGauge control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfLinearGauge assemblies manually from the installed location**
 

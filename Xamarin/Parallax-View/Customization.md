@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in Xamarin Parallax View control | Syncfusion
-description: Learn here all about Customization support in Syncfusion Xamarin Parallax View (SfParallaxView) control and more.
+title: Customization in Xamarin Parallax View control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Customization support in Syncfusion<sup>&reg;</sup> Xamarin Parallax View (SfParallaxView) control and more.
 platform: xamarin
 control: SfParallaxView
 documentation: ug

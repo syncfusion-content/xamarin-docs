@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Right to left(RTL) in Xamarin Calendar control | Syncfusion
-description: Learn here all about Right to left(RTL) support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
+title: Right to left(RTL) in Xamarin Calendar control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Right to left(RTL) support in Syncfusion<sup>&reg;</sup> Xamarin Calendar (SfCalendar) control and more.
 platform: xamarin
 control: SfCalendar
 documentation: UG

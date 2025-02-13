@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customizations in Xamarin DatePicker control | Syncfusion
-description: Learn here all about Customizations support in Syncfusion Xamarin DatePicker (SfDatePicker) control and more.
+title: Customizations in Xamarin DatePicker control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Customizations support in Syncfusion<sup>&reg;</sup> Xamarin DatePicker (SfDatePicker) control and more.
 platform: Xamarin
 control: Picker
 documentation: ug

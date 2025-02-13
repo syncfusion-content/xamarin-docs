@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin Rich Text Editor control | Syncfusion&reg;
-description: Learn here all about introduction of Syncfusion&reg; Xamarin Rich Text Editor (SfRichTextEditor) control, its elements and more.
+title: About Xamarin Rich Text Editor control | Syncfusion<sup>&reg;</sup>;
+description: Learn here all about introduction of Syncfusion<sup>&reg;</sup>; Xamarin Rich Text Editor (SfRichTextEditor) control, its elements and more.
 platform: xamarin
 control: Rich Text Editor
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in Xamarin Gradient View control | Syncfusion
-description: Learn here all about Customization support in Syncfusion Xamarin Gradient View (SfGradientView) control and more.
+title: Customization in Xamarin Gradient View control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Customization support in Syncfusion<sup>&reg;</sup> Xamarin Gradient View (SfGradientView) control and more.
 platform: Xamarin
 control: SfGradientView
 documentation: ug

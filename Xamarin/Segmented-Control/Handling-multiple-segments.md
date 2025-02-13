@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Handling multiple segments in Xamarin Segmented Control | Syncfusion<sup>®</sup>
-description: Learn here all about Handling multiple segments support in Syncfusion<sup>®</sup> Xamarin Segmented Control (SfSegmentedControl) and more.
+title: Handling multiple segments in Xamarin Segmented Control | Syncfusion®
+description: Learn here all about Handling multiple segments support in Syncfusion® Xamarin Segmented Control (SfSegmentedControl) and more.
 platform: Xamarin
 control: SegmentedControl
 documentation: ug

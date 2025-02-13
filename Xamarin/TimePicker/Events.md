@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TimePicker Events in Xamarin TimePicker control | Syncfusion
-description: Learn here all about TimePicker Events support in Syncfusion Xamarin Time Picker (SfTimePicker) control and more.
+title: TimePicker Events in Xamarin TimePicker control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about TimePicker Events support in Syncfusion<sup>&reg;</sup> Xamarin Time Picker (SfTimePicker) control and more.
 platform: Xamarin
 control: SfTimePicker
 documentation: ug

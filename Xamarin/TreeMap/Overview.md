@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin TreeMap control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin TreeMap (SfTreeMap) control, its elements and more.
+title: About Xamarin TreeMap control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about introduction of Syncfusion<sup>&reg;</sup> Xamarin TreeMap (SfTreeMap) control, its elements and more.
 platform: xamarin
 control: SfTreeMap
 documentation: ug

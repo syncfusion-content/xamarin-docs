@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Customizations in Syncfusion SfCircularGauge control for Xamarin.Forms
-description: This section explains the steps required to customize the Syncfusion Circular Gauge control for Xamarin.Forms
+title: Customizations in Syncfusion<sup>&reg;</sup> SfCircularGauge control for Xamarin.Forms
+description: This section explains the steps required to customize the Syncfusion<sup>&reg;</sup> Circular Gauge control for Xamarin.Forms
 platform: xamarin
 control: SfCircularGauge
 documentation: ug

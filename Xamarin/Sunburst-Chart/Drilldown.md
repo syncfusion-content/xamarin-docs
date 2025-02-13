@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drill Down in Xamarin Sunburst Chart control | Syncfusion
-description: Learn here all about Drill Down support in Syncfusion Xamarin Sunburst Chart (SfSunburstChart) control and more.
+title: Drill Down in Xamarin Sunburst Chart control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Drill Down support in Syncfusion<sup>&reg;</sup> Xamarin Sunburst Chart (SfSunburstChart) control and more.
 platform: xamarin
 control: SfSunburstChart
 documentation: ug

@@ -1,6 +1,6 @@
 ---
-title: Getting Started with Xamarin Diagram control | Syncfusion&reg;
-description: Learn here about getting started with Syncfusion&reg; Xamarin Diagram (SfDiagram) control, its elements and more.
+title: Getting Started with Xamarin Diagram control | Syncfusion;
+description: Learn here about getting started with Syncfusion<sup>&reg;</sup>; Xamarin Diagram (SfDiagram) control, its elements and more.
 platform: xamarin
 control: SfDiagram
 documentation: UG
@@ -26,7 +26,7 @@ You can add SfDiagram reference using one of the following methods:
 
 **Method 1: Adding SfDiagram reference from nuget.org**
 
-Syncfusion&reg; Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDiagram to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfDiagram](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDiagram), and then install it.
+Syncfusion<sup>&reg;</sup>; Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDiagram to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfDiagram](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDiagram), and then install it.
 
 ![Adding SfDiagram reference from NuGet](Getting-Started_images/Adding SfDiagram reference.png)
 
@@ -34,7 +34,7 @@ N> Install the same version of SfDiagram NuGet in all the projects.
 
 **Method 2: Adding SfDiagram reference from toolbox**
 
-Syncfusion&reg; also provides Xamarin Toolbox. Using this toolbox, you can drag the SfDiagram control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion&reg; Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion<sup>&reg;</sup>; also provides Xamarin Toolbox. Using this toolbox, you can drag the SfDiagram control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion&reg; Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfDiagram assemblies manually from the installed location**
 
@@ -63,7 +63,7 @@ Location: {Installed location}/{version}/Xamarin/lib
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion&reg; assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion® license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion&reg; license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion<sup>&reg;</sup>; assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion® license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion&reg; license key in your Xamarin application to use our components.
 
 N> If you are adding the references from toolbox, this step is not needed.
 

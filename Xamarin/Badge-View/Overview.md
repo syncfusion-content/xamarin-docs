@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Overview of Syncfusion Badge View control for Xamarin.Forms
-description: This section explains the key features and quick overview about Syncfusion Badge view control for Xamarin.Forms
+title: Overview of Syncfusion® Badge View control for Xamarin.Forms
+description: This section explains the key features and quick overview about Syncfusion® Badge view control for Xamarin.Forms
 platform: xamarin
 control: SfBadgeView
 documentation: ug

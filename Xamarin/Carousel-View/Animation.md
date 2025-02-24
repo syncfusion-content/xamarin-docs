@@ -1,7 +1,7 @@
 ---
 layout : post
-title: Animation in Xamarin Carousel View control | Syncfusion
-description: Learn here all about Animation support in Syncfusion Xamarin Carousel View (SfCarousel) control and more.
+title: Animation in Xamarin Carousel View control | Syncfusion®
+description: Learn here all about Animation support in Syncfusion® Xamarin Carousel View (SfCarousel) control and more.
 platform : xamarin
 control : Carousel
 documentation : ug

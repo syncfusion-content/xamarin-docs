@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to add the custom view for Syncfusion SfButton
+title: How to add the custom view for Syncfusion® SfButton
 description: How to add the custom view for SfButton.
 platform: xamarin.forms
 control: sfbutton

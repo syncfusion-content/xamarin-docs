@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in Xamarin Masked Entry control | Syncfusion
-description: Learn here all about Events support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
+title: Events in Xamarin Masked Entry control | Syncfusion®
+description: Learn here all about Events support in Syncfusion® Xamarin Masked Entry (SfMaskedEdit) control and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 

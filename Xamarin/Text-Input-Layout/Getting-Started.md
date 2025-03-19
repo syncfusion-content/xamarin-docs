@@ -90,7 +90,6 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endhighlight %}
 
-
 ### Universal Windows Platform (UWP)
 
 To deploy the text input layout in `Release` mode, initialize the core assemblies in the App.xaml.cs file in the UWP project as demonstrated in the following code samples.
@@ -184,7 +183,6 @@ inputLayout.InputView = new Entry();
 When focusing the input view, the hint label will be moved to the top position; it will be returned to the original position when proceeding further (on unfocused) without entering any value.
 
 The default translate animation for the hint can be disabled by setting the [EnableHintAnimation](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_EnableHintAnimation) property to `false`. Instead translate animation in hint, you can use the alpha animation by setting the [EnableFloating](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_EnableFloating) property to `false`.
-
 
 Run the project, and check if you get following output to make sure that the project has been configured properly to add the text input layout control.
 

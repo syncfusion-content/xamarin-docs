@@ -1,7 +1,7 @@
 ---
 layout : post
-title: Accessibility in Xamarin ComboBox control | Syncfusion
-description: Learn here all about Accessibility support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
+title: Accessibility in Xamarin ComboBox control | Syncfusion®
+description: Learn here all about Accessibility support in Syncfusion® Xamarin ComboBox (SfComboBox) control and more.
 platform : Xamarin.Forms
 control : SfComboBox
 documentation : ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customizing AutoComplete in Xamarin AutoComplete | Syncfusion
-description: Learn about Customizing AutoComplete support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more details.
+title: Customizing AutoComplete in Xamarin AutoComplete | Syncfusion®
+description: Learn about Customizing AutoComplete support in Syncfusion® Xamarin AutoComplete (SfAutoComplete) control and more details.
 platform: xamarin
 control: AutoComplete
 documentation: ug

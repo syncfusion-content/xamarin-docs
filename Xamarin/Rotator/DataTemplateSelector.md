@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DataTemplateSelector in Xamarin Rotator control | Syncfusion
-description: Learn here all about DataTemplateSelector support in Syncfusion Xamarin Rotator (SfRotator) control and more.
+title: DataTemplateSelector in Xamarin Rotator control | Syncfusion®
+description: Learn here all about DataTemplateSelector support in Syncfusion® Xamarin Rotator (SfRotator) control and more.
 platform: xamarin 
 control: Rotator 
 documentation: ug

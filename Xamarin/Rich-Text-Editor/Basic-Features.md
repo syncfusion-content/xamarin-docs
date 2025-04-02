@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Basic Features in Xamarin Rich Text Editor control | Syncfusion
-description: Learn here all about Basic Features support in Syncfusion Xamarin Rich Text Editor (SfRichTextEditor) control and more.
+title: Basic Features in Xamarin Rich Text Editor control | Syncfusion&reg;
+description: Learn here all about Basic Features support in Syncfusion<sup>&reg;</sup>; Xamarin Rich Text Editor (SfRichTextEditor) control and more.
 platform: xamarin
 control: Rich Text Editor
 documentation: ug
@@ -121,6 +121,26 @@ private void Richtexteditor_FormatChanged(object sender, FormatChangedEventArgs 
 
 {% endtabs %}
 
+The following code example explains how to get Font name in format changed event.
+
+{% tabs %} 
+
+{% highlight C# %} 
+SfRichTextEditor richtexteditor = new SfRichTextEditor();
+richtexteditor.FormatChanged += Richtexteditor_FormatChanged;
+this.Content = richtexteditor;
+            
+private void Richtexteditor_FormatChanged(object sender, FormatChangedEventArgs e)
+{
+    string fontName = e.Formats.fontname;
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+While changing the font format, we can able to get the font name because  we expose this property as public.
+
 ## HyperlinkSelected
 
 The ['HyperlinkSelectedEvent'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_HyperlinkSelected) will be triggered when a selected text contains a hyperlink. The following code example explains how to create a TextChangedEvent trigger.
@@ -194,9 +214,12 @@ The enum `Word Wrap` has two constants: Normal, BreakWord. The default value is 
 ### Normal 
 Specifies to break words only at allowed break points.
 
+![Word Wrap Normal Mode support](SfRichTextEditor_Images/NormalMode.png)
+
 ### BreakWord 
 Specifies the unbreakable words to be broken
 
+![Word Wrap Break Mode support](SfRichTextEditor_Images/BreakMode.png)
 
 The following code example explains how to set a word wrap in the Rich Text Editor. 
 
@@ -235,6 +258,118 @@ N> It applies to android only. Since iOS and UWP do not have the limitation in a
     </StackLayout>
 </ScrollView>
 
+{% endhighlight %}
+
+{% endtabs %}
+
+## StyleSheet
+
+ The Rich Text Editor provides the support to customize the style sheet type to load html file from an external or internal file path by using the StyleSheetType bindable property in the RichTextEditor.
+
+### Default
+ Loads the WebView resources through an external style sheet.
+
+### Internal
+ Loads the WebView resources through an internal style sheet.
+ 
+ {% tabs %} 
+
+ {% highlight xaml %} 
+
+  <richtexteditor:SfRichTextEditor x:Name="RichTextEditor" StyleSheetType="Internal"/>
+
+ {% endhighlight %}
+
+ {% highlight C# %} 
+
+SfRichTextEditor RichTextEditor = new SfRichTextEditor();
+            
+RichTextEditor. StyleSheetType= StyleSheetType.Internal;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N>It applies only to UWP users in China and Korea locations. It is not applicable in android an iOS ,Since android and iOS, can load the WebView resources using an external style sheet.
+
+## Enable or disable system keyboard
+
+The RichTextEditor supports restricting the system keyboard visibility while focusing on the RichTextEditor control. The default value is true.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<richtexteditor:SfRichTextEditor x:Name="RichTextEditor" EnableSystemKeyboard="True"/>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+SfRichTextEditor RichTextEditor = new SfRichTextEditor();
+            
+RichTextEditor.EnableSystemKeyboard = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> It applies to android and iOS only and not supported in UWP.
+
+## Configure the HTML tag for enter key
+
+The RichTextEditor supports preserving the dictation text after its comes with a new paragraph and a new line using `div` HTML tag.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<richtexteditor:SfRichTextEditor x:Name="RichTextEditor" EnterKey="Div"/>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+SfRichTextEditor RichTextEditor = new SfRichTextEditor();
+            
+RichTextEditor.EnterKey = EnterKey.Div;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> This property works when loading the control only. It applies to iOS only and not supported in Android and UWP.
+
+## Move to the Cursor at Start or End Position
+
+The Rich Text Editor provides support to move the cursor position to the beginning or end of the content. By default, the cursor position is set at the end of the content.
+
+### MoveCursorToStart
+
+The Rich Text Editor provides support to move the cursor position to the beginning of the content. The following code example explains setting the 'MoveCursorToStart' mode in the Rich Text Editor.
+
+{% tabs %}
+{% highlight C# %} 
+
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.MoveCursorToStart();
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}
+
+### MoveCursorToEnd
+
+The Rich Text Editor provides support to move the cursor position to the end of the content. The following code example explains setting the 'MoveCursorToEnd' mode in the Rich Text Editor.
+
+{% tabs %}
+{% highlight C# %} 
+
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.MoveCursorToEnd();
+this.Content = richtexteditor;
 {% endhighlight %}
 
 {% endtabs %}

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Restrict Dates From Selection in Xamarin Calendar | Syncfusion
-description: Learn here all about Restrict Dates From Selection support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
-platform: Xamarin
+title: Restrict Dates From Selection in Xamarin Calendar | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Restrict Dates From Selection support in Syncfusion<sup>&reg;</sup> Xamarin Calendar (SfCalendar) control and more.
+platform: xamarin
 control: Calendar
 documentation: ug
 ---

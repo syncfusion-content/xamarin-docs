@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Loading & saving RTF content in Xamarin Rich Text Editor | Syncfusion
-description: Learn here all about Loading and saving RTF content support in Syncfusion Xamarin Rich Text Editor (SfRichTextEditor) control and more.
+title: Loading & saving RTF content in Xamarin Rich Text Editor | Syncfusion<sup>&reg;</sup>;
+description: Learn here all about Loading and saving RTF content support in Syncfusion<sup>&reg;</sup>; Xamarin Rich Text Editor (SfRichTextEditor) control and more.
 platform: xamarin
 control: Rich Text Editor
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Loading and saving RTF content in Xamarin Rich Text Editor
 
-The Xamarin Rich Text Editor control provides support to load and save RTF content with help of [Essential DocIO](https://help.syncfusion.com/file-formats/docio/overview).
+The Xamarin Rich Text Editor control provides support to load and save RTF content with help of [Essential&reg; DocIO](https://help.syncfusion.com/file-formats/docio/overview).
 
 ## Prerequisite
 
@@ -17,7 +17,7 @@ To manipulate RTF content in your application, the [Syncfusion.Xamarin.DocIO.nup
 
 ### Loading the RTF content into the Rich Text Editor.
 
-The RTF content must be converted to HTML using the Essential DocIO and then, converted HTML need to be loaded into the Rich Text Editor. The following code example shows how to load the RTF content into a Rich Text Editor control.
+The RTF content must be converted to HTML using the Essential&reg; DocIO and then, converted HTML need to be loaded into the Rich Text Editor. The following code example shows how to load the RTF content into a Rich Text Editor control.
 
 {% tabs %} 
 
@@ -61,7 +61,7 @@ private string IgnoreVoidElementsInHTML(string inputString)
 
 ## Save Rich Text Editor content as RTF
 
-The SfRichTextEditor does not directly retrieves the content as RTF. Instead, the HTML content must be converted as RTF using the Essential DocIO. The following code example shows how to retrieve the RTF content from the Rich Text Editor.
+The SfRichTextEditor does not directly retrieves the content as RTF. Instead, the HTML content must be converted as RTF using the Essential&reg; DocIO. The following code example shows how to retrieve the RTF content from the Rich Text Editor.
 
 {% tabs %} 
 

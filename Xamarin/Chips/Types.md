@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chips Types in Xamarin Chips control | Syncfusion
-description: Learn about Chips Types support in Syncfusion Essential Studio Xamarin Chips control, its elements and more.
+description: Learn about Chips Types support in Syncfusion Essential Studio® Xamarin Chips control, its elements and more.
 platform: xamarin
 control: Chips
 documentation: ug
@@ -9,12 +9,12 @@ documentation: ug
 
 # Chips Types in Xamarin Chips
 
-The functionality of chips control differs based on the [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Type) property. No operation can be performed in a chip group unless the [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Type) property is set. The chips control provides four different types, and each has its own functionality. Default value of [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Type) is `Input`. The types are,
+The functionality of chips control differs based on the [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Type) property. No operation can be performed in a chip group unless the [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Type) property is set. The chips control provides four different types, and each has its own functionality. Default value of [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Type) is [`Input`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipsType.html#Syncfusion_XForms_Buttons_SfChipsType_Input). The types are,
 
-* Input
-* Choice
-* Filter
-* Action
+* [`Input`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipsType.html#Syncfusion_XForms_Buttons_SfChipsType_Input)
+* [`Choice`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipsType.html#Syncfusion_XForms_Buttons_SfChipsType_Choice)
+* [`Filter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipsType.html#Syncfusion_XForms_Buttons_SfChipsType_Filter)
+* [`Action`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipsType.html#Syncfusion_XForms_Buttons_SfChipsType_Action)
 
 N> Chips are arranged in [ChipLayout](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipLayout), which is a type of [layout](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/layouts#layouts-with-multiple-children). StackLayout with horizontal orientation is a default type of [ChipLayout](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipLayout).
 
@@ -22,7 +22,7 @@ N> Chips are arranged in [ChipLayout](https://help.syncfusion.com/cr/xamarin/Syn
 
 Arranges the chips in a layout and enables the close button for each chip. Using the close button, a chip can be removed from children and layout as well. Additionally, it has support to add an option [`InputView`](https://help.syncfusion.com/xamarin/chips/customization#inputview) at the end of the layout, from which users can obtain the chip text for creating a chip at run time.
 
-N> The [`InputView`](https://help.syncfusion.com/xamarin/chips/customization#inputview) is supported only in `Input` type.
+N> The [`InputView`](https://help.syncfusion.com/xamarin/chips/customization#inputview) is supported only in [`Input`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipsType.html#Syncfusion_XForms_Buttons_SfChipsType_Input) type.
 
 The following code illustrates how to get an input type chip.
 
@@ -131,7 +131,7 @@ Allows users to select a single chip from a group of items. Selecting a chip wil
 
 This selection changes are notified by using [SelectionChanging](https://help.syncfusion.com/xamarin/chips/events#selectionchanging-event) and [SelectionChanged](https://help.syncfusion.com/xamarin/chips/events#selectionchanged-event) events.
 
-You can customize the chip view using [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ItemTemplate) of `SfChipGroup`.
+You can customize the chip view using [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ItemTemplate) of [`SfChipGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html).
 
 The following code illustrates how to get choice typed ChipGroup.
 
@@ -283,11 +283,11 @@ Download the complete sample [here](https://github.com/SyncfusionExamples/How-to
 
 ### ChoiceMode
 
-The `ChoiceMode` property allows user to set the selection mode for Choice type `SfChipGroup`. The default value of `ChoiceMode` property is `Single`. The `ChoiceMode` supports the following types of selection mode:
+The [`ChoiceMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChoiceMode) property allows user to set the selection mode for Choice type [`SfChipGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html). The default value of [`ChoiceMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChoiceMode) property is [`Single`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ChoiceMode.html#Syncfusion_XForms_Buttons_ChoiceMode_Single). The [`ChoiceMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChoiceMode) supports the following types of selection mode:
 
-`Single` - At least, one item must be in selected state and the selected item cannot be deselected, if `ChoiceMode` is Single.
+[`Single`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ChoiceMode.html#Syncfusion_XForms_Buttons_ChoiceMode_Single) - At least, one item must be in selected state and the selected item cannot be deselected, if [`ChoiceMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChoiceMode) is Single.
 
-`SingleOrNone` - Unlike `Single`, it is possible to deselect the selected item and keep all the items in deselected state.
+[`SingleOrNone`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ChoiceMode.html#Syncfusion_XForms_Buttons_ChoiceMode_SingleOrNone) - Unlike [`Single`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ChoiceMode.html#Syncfusion_XForms_Buttons_ChoiceMode_Single), it is possible to deselect the selected item and keep all the items in deselected state.
 
 {% tabs %}
 
@@ -421,9 +421,9 @@ Download the complete sample [here](https://github.com/SyncfusionExamples/How-to
 
 ## Action
 
-Action type of `SfChipGroup`, executes the [`Command`](https://help.syncfusion.com/xamarin/chips/customization#command) when clicking the chip in `SfChipGroup`. On its [`Command`](https://help.syncfusion.com/xamarin/chips/customization#command) action, you can do our desired action.
+Action type of [`SfChipGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html), executes the [`Command`](https://help.syncfusion.com/xamarin/chips/customization#command) when clicking the chip in [`SfChipGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html). On its [`Command`](https://help.syncfusion.com/xamarin/chips/customization#command) action, you can do our desired action.
 
-The [`Command`](https://help.syncfusion.com/xamarin/chips/customization#command) will execute only for action typed `SfChipGroup`.
+The [`Command`](https://help.syncfusion.com/xamarin/chips/customization#command) will execute only for action typed [`SfChipGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html).
 
 The following code illustrates how to get action typed ChipGroup.
 
@@ -515,9 +515,9 @@ Download the complete sample [here](https://github.com/SyncfusionExamples/How-to
 
 ## See also
 
-[How to remove the indicator icon from Xamarin.Forms chip group (SfChipGroup)](https://www.syncfusion.com/kb/11270/how-to-remove-the-indicator-icon-from-xamarin-forms-chip-group-sfchipgroup)
+[How to remove the indicator icon from Xamarin.Forms chip group (SfChipGroup)](https://support.syncfusion.com/kb/article/9826/how-to-remove-the-indicator-icon-from-xamarin-forms-chip-group-sfchipgroup)
 
-[How to restrict chip selection in Xamarin](https://www.syncfusion.com/kb/11205/how-to-restrict-chip-selection-in-xamarin)
+[How to restrict chip selection in Xamarin](https://support.syncfusion.com/kb/article/9678/how-to-restrict-chip-selection-in-xamarin)
 
-[How to select a multiple chips from the Xamarin ChipGroup [SfChipGroup]](https://www.syncfusion.com/kb/11155/how-to-select-a-multiple-chips-from-the-xamarin-chipgroup-sfchipgroup)
+[How to select a multiple chips from the Xamarin ChipGroup [SfChipGroup]](https://support.syncfusion.com/kb/article/9657/how-to-select-a-multiple-chips-from-the-xamarin-chipgroup-sfchipgroup)
 

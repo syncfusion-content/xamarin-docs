@@ -1,7 +1,7 @@
 ---
 layout: post
-title: BindableLayout in Xamarin Cards control | Syncfusion
-description: Learn about BindableLayout support in Syncfusion Essential Studio Xamarin Cards control, its elements and more.
+title: BindableLayout in Xamarin Cards control | Syncfusion<sup>&reg;</sup>
+description: Learn about BindableLayout support in Syncfusion<sup>&reg;</sup> Essential Studio<sup>&reg;</sup> Xamarin Cards control, its elements and more.
 platform: xamarin
 control: Cards
 documentation: ug
@@ -155,10 +155,10 @@ this.Content = cardLayout;
 
 ## See also
 
-[How to remove cards from card view collection in Xamarin.Forms](https://www.syncfusion.com/kb/11655/how-to-remove-cards-from-card-view-collection-in-xamarin-forms)
+[How to remove cards from card view collection in Xamarin.Forms](https://support.syncfusion.com/kb/article/10208/how-to-remove-cards-from-card-view-collection-in-xamarinforms-cardlayout)
 
-[How to set shadow effect to the cards in Xamarin.Forms](https://www.syncfusion.com/kb/11651/how-to-set-shadow-effect-to-the-cards-in-xamarin-forms)
+[How to set shadow effect to the cards in Xamarin.Forms](https://support.syncfusion.com/kb/article/10204/how-to-set-shadow-effect-to-the-cards-in-xamarin-forms)
 
-[How to add cards to the ListView in Xamarin.Forms](https://www.syncfusion.com/kb/11650/how-to-add-cards-to-the-listview-in-xamarin-forms)
+[How to add cards to the ListView in Xamarin.Forms](https://support.syncfusion.com/kb/article/10203/how-to-add-cards-to-the-listview-in-xamarin-forms)
 
-[How to reuse the dismissed cards in Xamarin.Forms SfCardView](https://www.syncfusion.com/kb/11648/how-to-reuse-the-dismissed-cards-in-xamarin-forms-sfcardview)
+[How to reuse the dismissed cards in Xamarin.Forms SfCardView](https://support.syncfusion.com/kb/article/10201/how-to-reuse-the-dismissed-cards-in-xamarin-forms-sfcardview)

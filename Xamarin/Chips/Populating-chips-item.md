@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Populating Items in Xamarin Chips control | Syncfusion
-description: Learn about Populating Items support in Syncfusion Essential Studio Xamarin Chips control, its elements and more.
+description: Learn about Populating Items support in Syncfusion Essential Studio® Xamarin Chips control, its elements and more.
 platform: xamarin
 control: Chips
 documentation: ug
@@ -18,7 +18,7 @@ Refer to this [documentation](https://help.syncfusion.com/xamarin/chips/getting-
 
 ## Populating SfChip as items
 
-Chips control also provides support to create and set SfChip as item. It can be achieved using the `Items` property.
+Chips control also provides support to create and set [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html) as item. It can be achieved using the [`Items`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Items) property.
 
 {% tabs %}
 
@@ -79,4 +79,4 @@ namespace Chips
 
 ## See also
 
-[How to bind remote JSON data to Xamarin.Forms chip group (SfChipGroup)](https://www.syncfusion.com/kb/11370/how-to-bind-remote-json-data-to-xamarin-forms-chip-group-sfchipgroup)
+[How to bind remote JSON data to Xamarin.Forms chip group (SfChipGroup)](https://support.syncfusion.com/kb/article/9880/how-to-bind-remote-json-data-to-xamarin-forms-chip-group-sfchipgroup)

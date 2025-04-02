@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Built-In Toolbar in Xamarin Pdf Viewer Control | Syncfusion
-description: Learn here all about Working with Built-In Toolbar support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
-platform: Xamarin
+description: Learn here all about Working with Built-In Toolbar support in Syncfusion<sup>®</sup> Xamarin Pdf Viewer (SfPdfViewer) control and more.
+platform: xamarin
 control: SfPdfViewer
 documentation: ug
 ---
@@ -23,11 +23,9 @@ By default, the built-in toolbar will be visible. It can be hidden by setting th
              xmlns:local="clr-namespace: PdfViewerGettingStarted "
              xmlns:syncfusion ="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
              x:Class=" PdfViewerGettingStarted.MainPage">
-
     <ContentPage.Content>
         <syncfusion:SfPdfViewer x:Name="pdfViewerControl" IsToolbarVisible="False" />
     </ContentPage.Content>
-
 </ContentPage>
 
 {% endhighlight %}
@@ -53,11 +51,9 @@ The toolbar can be shown by setting the `IsToolbarVisible` property to true.
              xmlns:local="clr-namespace: PdfViewerGettingStarted "
              xmlns:syncfusion ="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
              x:Class=" PdfViewerGettingStarted.MainPage">
-
     <ContentPage.Content>
         <syncfusion:SfPdfViewer x:Name="pdfViewerControl" IsToolbarVisible="True" />
     </ContentPage.Content>
-
 </ContentPage>
 
 {% endhighlight %}
@@ -86,16 +82,13 @@ The below code snippet illustrates how to show/hide the built-in toolbar dynamic
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace: PdfViewerGettingStarted "
              xmlns:syncfusion ="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
-             x:Class=" PdfViewerGettingStarted.MainPage">
-			 
+             x:Class=" PdfViewerGettingStarted.MainPage">			 
 	<ContentPage.BindingContext>
         <local:PdfViewerViewModel></local:PdfViewerViewModel>
     </ContentPage.BindingContext>
-
     <ContentPage.Content>
         <syncfusion:SfPdfViewer x:Name="pdfViewerControl" IsToolbarVisible={Binding ToolbarVisible} />
     </ContentPage.Content>
-
 </ContentPage>          
 
 {% endhighlight %}
@@ -113,11 +106,9 @@ By default, the bookmark button will be enabled. It can be disabled by setting t
              xmlns:local="clr-namespace: PdfViewerGettingStarted "
              xmlns:syncfusion ="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
              x:Class=" PdfViewerGettingStarted.MainPage">
-
     <ContentPage.Content>
         <syncfusion:SfPdfViewer x:Name="pdfViewerControl" BookmarkNavigationEnabled="False"/>
     </ContentPage.Content>
-
 </ContentPage>          
 
 {% endhighlight %}
@@ -303,6 +294,11 @@ Similarly, the other items can be hidden by mentioning the appropriate key names
 </tr>
 
 <tr>
+<td>Text squiggly button</td>
+<td><i><b>text-squiggly</b></i></td>
+</tr>
+
+<tr>
 <td>Shapes annotation button</td>
 <td><i><b>shapes</b></i></td>
 </tr>
@@ -330,6 +326,21 @@ Similarly, the other items can be hidden by mentioning the appropriate key names
 <tr>
 <td>Arrow shape button</td>
 <td><i><b>arrow</b></i></td>
+</tr>
+
+<tr>
+<td>Polygon shape button</td>
+<td><i><b>polygon</b></i></td>
+</tr>
+
+<tr>
+<td>Polyline shape button</td>
+<td><i><b>polyline</b></i></td>
+</tr>
+
+<tr>
+<td>Cloud shape button</td>
+<td><i><b>cloud</b></i></td>
 </tr>
 
 <tr>
@@ -500,6 +511,76 @@ Similarly, the other items can be hidden by mentioning the appropriate key names
 <tr>
 <td>Edited annotation delete button</td>
 <td><i><b>edited-annotation-delete</b></i></td>
+</tr>
+
+<tr>
+<td>Page count separator</td>
+<td><i><b>pagecount-separator</b></i></td>
+</tr>
+
+<tr>
+<td>Popup annotation button</td>
+<td><i><b>popup</b></i></td>
+</tr>
+
+<tr>
+<td>Popup icon selector button</td>
+<td><i><b>popup-iconselector</b></i></td>
+</tr>
+
+<tr>
+<td>Selected popup icon selector button</td>
+<td><i><b>selected-popup-iconselector</b></i></td>
+</tr>
+
+<tr>
+<td>Popup comment icon button</td>
+<td><i><b>popup-comment</b></i></td>
+</tr>
+
+<tr>
+<td>Popup note icon button</td>
+<td><i><b>popup-note</b></i></td>
+</tr>
+
+<tr>
+<td>Popup help icon button</td>
+<td><i><b>popup-help</b></i></td>
+</tr>
+
+<tr>
+<td>Popup insert icon button</td>
+<td><i><b>popup-insert</b></i></td>
+</tr>
+
+<tr>
+<td>Popup key icon button</td>
+<td><i><b>popup-key</b></i></td>
+</tr>
+
+<tr>
+<td>Popup new paragraph icon button</td>
+<td><i><b>popup-newparagraph</b></i></td>
+</tr>
+
+<tr>
+<td>Popup paragraph icon button</td>
+<td><i><b>popup-paragraph</b></i></td>
+</tr>
+
+<tr>
+<td>Ink eraser button</td>
+<td><i><b>ink-eraser</b></i></td>
+</tr>
+
+<tr>
+<td>Ink eraser undo button</td>
+<td><i><b>undo-eraser</b></i></td>
+</tr>
+
+<tr>
+<td>Ink eraser redo button</td>
+<td><i><b>redo-eraser</b></i></td>
 </tr>
 
 </table>

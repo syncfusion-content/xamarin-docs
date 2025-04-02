@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Labels in Xamarin Circular Gauge control | Syncfusion
-description: Learn here all about Labels support in Syncfusion Xamarin Circular Gauge (SfCircularGauge) control and more.
+title: Labels in Xamarin Circular Gauge control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Labels support in Syncfusion<sup>&reg;</sup> Xamarin Circular Gauge (SfCircularGauge) control and more.
 platform: xamarin
 control: SfCircularGauge
 documentation: ug
@@ -391,4 +391,4 @@ Content = circularGauge;
 
 ## See Also
 
-[How to show labels and ticks outside the rim in Xamarin.Forms Radial Gauge](https://www.syncfusion.com/kb/11283/how-to-show-labels-and-ticks-outside-the-rim-in-xamarin-forms-radial-gauge)
+[How to show labels and ticks outside the rim in Xamarin.Forms Radial Gauge](https://support.syncfusion.com/kb/article/9787/how-to-show-labels-and-ticks-outside-the-rim-in-xamarin-forms-radial-gauge)

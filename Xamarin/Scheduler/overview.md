@@ -1,6 +1,6 @@
 ---
-title: About Xamarin Scheduler control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin Scheduler (SfSchedule) control, its elements and more.
+title: Overview of Xamarin Scheduler Control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about introduction of Syncfusion<sup>&reg;</sup> Xamarin Scheduler (SfSchedule) control, its elements and more.
 platform: xamarin
 control: SfSchedule
 documentation: ug
@@ -26,4 +26,4 @@ N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-u
 
 ## See also
 
-[Feature comparison between Calendar and Schedule control](https://www.syncfusion.com/kb/6977/feature-comparison-between-calendar-and-schedule-control)
+[Feature comparison between Calendar and Schedule control](https://support.syncfusion.com/kb/article/6276/feature-comparison-between-calendar-and-schedule-control-in-winforms)

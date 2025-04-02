@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Orientation in Xamarin StepProgressBar control | Syncfusion
-description: Learn here all about Orientation support in Syncfusion Xamarin StepProgressBar (Step Progress Bar) control and more.
+title: Orientation in Xamarin StepProgressBar control | Syncfusion<sup>&reg;</sup>;
+description: Learn here all about Orientation support in Syncfusion<sup>&reg;</sup>; Xamarin StepProgressBar (Step Progress Bar) control and more.
 platform: Xamarin
 control: StepProgressBar
 documentation: ug

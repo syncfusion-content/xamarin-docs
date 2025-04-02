@@ -13,15 +13,15 @@ documentation: ug
 Highlight matching characters in a suggestion list to pick an item with more clarity. There are two ways to highlight the matching text:
 
 
-* First Occurrence
+* [`First Occurrence`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.OccurrenceMode.html#Syncfusion_SfAutoComplete_XForms_OccurrenceMode_FirstOccurrence)
 
-* Multiple Occurrence
+* [`Multiple Occurrence`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.OccurrenceMode.html#Syncfusion_SfAutoComplete_XForms_OccurrenceMode_MultipleOccurrence)
 
 The text highlight can be indicated with various customizing styles by enabling the below properties. They are
 
-* HighlightedTextColor -  sets the color of the highlighted text for differentiating the highlighted characters.
+* [`HighlightedTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_HighlightedTextColor) -  sets the color of the highlighted text for differentiating the highlighted characters.
 
-* HighlightTextFontAttributes - sets the FontAttributes of the highlighted text.
+* [`HighlightTextFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_HighlightedTextFontAttributes) - sets the FontAttributes of the highlighted text.
 
 ## First Occurrence
 
@@ -110,7 +110,7 @@ namespace AutocompleteSample
 
 ## Multiple Occurrence
 
-It highlights the matching character that are present everywhere in the suggestion list for Contains case in SuggestionMode.
+It highlights the matching character that are present everywhere in the suggestion list for [`Contains`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionMode.html#Syncfusion_SfAutoComplete_XForms_SuggestionMode_Contains) case in [`SuggestionMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SuggestionMode).
 
 {% tabs %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Sliding Direction in Xamarin Rotator (SfRotator)
 
-The `NavigationDirection` property specifies the direction in which items should be navigated in SfRotator control.
+The [`NavigationDirection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html#Syncfusion_SfRotator_XForms_SfRotator_NavigationDirection) property specifies the direction in which items should be navigated in [`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html) control.
 
 ## Horizontal
 

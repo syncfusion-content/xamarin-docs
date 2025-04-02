@@ -11,11 +11,11 @@ documentation: ug
 
 # Appearance and Styling in Xamarin Rating (SfRating)
 
-When the default view is not needed, you can customize the view of Xamarin.Forms SfRating control. The SfRating control provides support to customize the size, item count, and space between rating items.
+When the default view is not needed, you can customize the view of Xamarin.Forms [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control. The [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control provides support to customize the size, item count, and space between rating items.
 
 ## Set Size
 
-The `ItemSize` property sets the size of the rating items. 
+The [`ItemSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_ItemSize) property sets the size of the rating items. 
 
 N> By default, property value is 50.
 
@@ -45,7 +45,7 @@ public MainPage()
 
 ## Set Number of Items
 
-The `ItemCount` property sets the number of rating items to be displayed. 
+The [`ItemCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_ItemCount) property sets the number of rating items to be displayed. 
 
 N> The default property value is 5.
 
@@ -75,7 +75,7 @@ public MainPage()
  
 ## Set Space between Items
 
-The `ItemSpacing` property sets the spacing between the rating items. 
+The [`ItemSpacing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_ItemSpacing) property sets the spacing between the rating items. 
 
 N> By default, property value is 5.
 
@@ -105,7 +105,7 @@ public MainPage()
 
 ## Rating Settings
 
-This section explains about various rating settings available in the SfRating control.
+This section explains about various rating settings available in the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control.
 
 {% tabs %}
 

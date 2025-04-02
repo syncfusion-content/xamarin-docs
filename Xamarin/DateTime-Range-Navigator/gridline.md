@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grid Lines in Xamarin DateTime Range Navigator control | Syncfusion
-description: Learn here all about Grid Lines support in Syncfusion Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator) control and more.
+description: Learn here all about Grid Lines support in Syncfusion® Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator) control and more.
 platform: xamarin
 control: SfDateTimeRangeNavigator
 documentation: ug
@@ -14,7 +14,7 @@ The [`MinorScaleStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeN
 * [`ShowGridLines`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScaleStyle.html#Syncfusion_RangeNavigator_XForms_ScaleStyle_ShowGridLines) – used to set the visibility of grid lines.
 * [`GridLineWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScaleStyle.html#Syncfusion_RangeNavigator_XForms_ScaleStyle_GridLineWidth) – used to set the width for grid lines.
 * [`GridLineColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScaleStyle.html#Syncfusion_RangeNavigator_XForms_ScaleStyle_GridLineColor) – used to set the color for grid lines.
-* [`GridLineDashes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScaleStyle.html#Syncfusion_RangeNavigator_XForms_ScaleStyle_GridLineDashArray) – used to set dashes for grid lines.
+* [`GridLineDashArray`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.ScaleStyle.html#Syncfusion_RangeNavigator_XForms_ScaleStyle_GridLineDashArray) – used to set dashes for grid lines.
 
 
 {% tabs %}

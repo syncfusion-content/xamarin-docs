@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MVVM in Xamarin Calendar control | Syncfusion
-description: Learn here all about MVVM support in Syncfusion Xamarin Calendar (SfCalendar) control, its elements and more.
+title: MVVM in Xamarin Calendar control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about MVVM support in Syncfusion<sup>&reg;</sup> Xamarin Calendar (SfCalendar) control, its elements and more.
 platform: xamarin
 control: SfCalendar
 documentation: ug
@@ -331,4 +331,4 @@ public class CalendarViewModel
 
 ## See also
 
-[How to bind SelectedDates of Calendar in MVVM?](https://www.syncfusion.com/kb/10087/how-to-bind-selecteddates-of-calendar-in-mvvm)
+[How to bind SelectedDates of Calendar in MVVM?](https://support.syncfusion.com/kb/article/8866/how-to-bind-the-selected-dates-of-calendar-in-xamarinforms-mvvm-)

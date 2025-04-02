@@ -9,7 +9,7 @@ documentation: ug
 
 # DataTemplateSelector in Xamarin ComboBox (SfComboBox)
 
-SfComboBox supports DataTemplateSelector, which is used to choose a DataTemplate based on data object.
+[`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) supports DataTemplateSelector, which is used to choose a DataTemplate based on data object.
  
 
 {% tabs %}

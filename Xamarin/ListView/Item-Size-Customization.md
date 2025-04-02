@@ -268,5 +268,5 @@ private void ListView_Loaded(object sender, Syncfusion.ListView.XForms.ListViewL
 
 ## See Also
 
-[How to autofit the content based on the property change in Xamarin.Forms listview using MVVM](https://www.syncfusion.com/kb/9856/)                                                                                            
-[How to set different row height for each row in listview](https://www.syncfusion.com/kb/9478/)                                                                                                                                                                    
+[How to autofit the content based on the property change in Xamarin.Forms listview using MVVM](https://support.syncfusion.com/kb/article/8630/how-to-autofit-the-content-based-on-the-property-change-in-xamarin-forms-listview-using)                                                                                            
+[How to set different row height for each row in listview](https://support.syncfusion.com/kb/article/8195/how-to-set-different-row-height-for-each-row-in-listview)                                                                                                                                                                    

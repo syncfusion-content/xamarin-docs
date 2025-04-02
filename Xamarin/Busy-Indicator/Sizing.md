@@ -2,7 +2,7 @@
 layout: post
 title: Sizing in Xamarin Busy Indicator control | Syncfusion
 description: Learn here all about Sizing support in Syncfusion Xamarin Busy Indicator (SfBusyIndicator) control and more.
-platform: Xamarin
+platform: xamarin
 control: BusyIndicator
 documentation: ug
 ---
@@ -10,7 +10,7 @@ documentation: ug
 
 ## Sizing in Xamarin BusyIndicator (SfBusyIndicator)
 
-Drawing size can be customized in SfBusyIndicator. `ViewBoxHeight` and `ViewBoxWidth` properties can be used to set height and width of the Indicator.
+Drawing size can be customized in [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html). [`ViewBoxHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_ViewBoxHeight) and [`ViewBoxWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_ViewBoxWidth) properties can be used to set height and width of the Indicator.
 
 {% tabs %}
 

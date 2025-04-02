@@ -13,7 +13,7 @@ The ToolTip shows the current value based on thumb position.
 
 ## Set ToolTip Precision
 
-The `ToolTipPrecision` property is used to define the precision of the value displayed in the ToolTip.
+The [`ToolTipPrecision`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ToolTipPrecision) property is used to define the precision of the value displayed in the ToolTip.
 
 {% tabs %}
 
@@ -33,11 +33,11 @@ The `ToolTipPrecision` property is used to define the precision of the value dis
 
 ## Set ToolTip Placement
 
-The position of the ToolTip in relation to the thumb can be controlled by the `ToolTipPlacement` property. It has the following options.
+The position of the ToolTip in relation to the thumb can be controlled by the [`ToolTipPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ToolTipPlacement) property. It has the following options.
 
-1. BottomRight
-2. TopLeft
-3. None
+1. [`BottomRight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ToolTipPlacement.html#Syncfusion_SfRangeSlider_XForms_ToolTipPlacement_BottomRight)
+2. [`TopLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ToolTipPlacement.html#Syncfusion_SfRangeSlider_XForms_ToolTipPlacement_TopLeft)
+3. [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ToolTipPlacement.html#Syncfusion_SfRangeSlider_XForms_ToolTipPlacement_None)
 
 ### BottomRight
 
@@ -101,8 +101,8 @@ ToolTip will be collapsed.
 
 ## Tooltip color
 
-`TooltipTextColor` - Changes the text color of tooltip.
-`TooltipBackgroundColor` - Changes the background color of tooltip.
+[`TooltipTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ToolTipTextColor) - Changes the text color of tooltip.
+[`TooltipBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ToolTipBackgroundColor) - Changes the background color of tooltip.
 
 ![SfRangeSlider Tooltip color Xamarin.Forms](images/Tooltip-color.jpg)
 

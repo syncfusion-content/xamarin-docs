@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column Types in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Column Types support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
+title: Column Types in Xamarin DataGrid control | Syncfusion®
+description: Learn here all about Column Types support in Syncfusion® Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -40,13 +40,13 @@ The following table describes the types of columns and its usage:
 <td>To customize the column based on the requirements.</td>
 </tr>
 <tr>
-<td>{{'[GridNumericColumn](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridNumericColumn.html)'| markdownify }}</td>
-<td>{{'[GridCellNumericRenderer](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.Renderers.GridCellNumericRenderer.html)'| markdownify }}</td>
+<td>{{'[GridNumericColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridNumericColumn.html)'| markdownify }}</td>
+<td>{{'[GridCellNumericRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.Renderers.GridCellNumericRenderer.html)'| markdownify }}</td>
 <td>To display a numeric data.</td>
 </tr>
 <tr>
 <td>{{'[GridPickerColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridPickerColumn.html)'| markdownify }}</td>
-<td>{{'[GridCellPickerRenderer](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.Renderers.GridCellPickerRenderer.html)'| markdownify }}</td>
+<td>{{'[GridCellPickerRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.Renderers.GridCellPickerRenderer.html)'| markdownify }}</td>
 <td>To display the IEnumerable data using Picker.</td>
 </tr>
 <tr>
@@ -56,7 +56,7 @@ The following table describes the types of columns and its usage:
 </tr>
 <tr>
 <td>{{'[GridDateTimeColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html)'| markdownify }}</td>
-<td>{{'[GridDateTimeColumn](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.Renderers.GridCellDateTimeRenderer.html)'| markdownify }}</td>
+<td>{{'[GridDateTimeColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.Renderers.GridCellDateTimeRenderer.html)'| markdownify }}</td>
 <td>To display the date and time value.</td>
 </tr>
 <tr>
@@ -228,7 +228,7 @@ dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID", IsHidden = 
 The [GridColumn.LoadUIView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html#Syncfusion_SfDataGrid_XForms_GridColumn_LoadUIView) property indicates whether to load `UIElement` inside the `GridCell` or to draw cell value directly in the `canvas` of the `GridCell` in Android platform. 
 
  * When `LoadUIView` is set to `false`, cell value of the column is directly drawn in the `canvas` of the grid cells to improve performance. 
- * While setting the `LoadUIView` to `true`, a `UIElement` ([SfLabel](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfLabel.html)) is loaded in the `GridCells`.  
+ * While setting the `LoadUIView` to `true`, a `UIElement` ([SfLabel](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfLabel.html)) is loaded in the `GridCells`.  
 
 The default value of the `LoadUIView` is `false` for Xamarin.Forms.Android, and `true` for other platforms in Xamarin.Forms. 
 
@@ -284,7 +284,7 @@ To format values displayed in the GridColumn, use the [GridColumn.Format](https:
 
 #### Format column using StringFormat
 
-Assign the format of string to the `GridColumn.Format` property based on the bound data type of the property, the GridColumn is associated to format the value. You can use different [StringFormats](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/fbxft59x(v=vs.90)) to customize values displayed in the record cells.
+Assign the format of string to the `GridColumn.Format` property based on the bound data type of the property, the GridColumn is associated to format the value. You can use different [StringFormats](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/fbxft59x(v=vs.90)) to customize values displayed in the record cells.
 
 To apply formatting for a GridTextColumn, follow the code example:
 
@@ -604,7 +604,7 @@ public class ViewModel
 
 ### Aspect
 
-SfDataGrid allows you to set the `Aspect` to size the loaded images within the bounds of the grid cell (whether to stretch, crop or letterbox) using the [GridImageColumn.Aspect](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.image.aspect?view=xamarin-forms#Xamarin_Forms_Image_Aspect) property. The supported aspects are described below, the default value is AspectFit.
+SfDataGrid allows you to set the `Aspect` to size the loaded images within the bounds of the grid cell (whether to stretch, crop or letterbox) using the [GridImageColumn.Aspect](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.image.aspect?view=xamarin-forms#Xamarin_Forms_Image_Aspect) property. The supported aspects are described below, the default value is AspectFit.
 
 AspectFill: Clips the image so that it fills the display area while preserving the aspect (no distortion).
 
@@ -736,7 +736,7 @@ The following code example illustrates how template column can be used to load a
 </ContentPage.ContentView>
 {% endhighlight %}
 
-In order to get the above code example working, write a converter to load images inside the [GridCell](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCell.html) based on the CellValue. The images that have to be loaded in the `GridCell` must be added as EmbeddedResource.
+In order to get the above code example working, write a converter to load images inside the [GridCell](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCell.html) based on the CellValue. The images that have to be loaded in the `GridCell` must be added as EmbeddedResource.
 
 The converter code for loading images in a template column is shown in the following code:
 
@@ -928,7 +928,7 @@ N> The row index of the row can also be retrieved by using the [GridTapped](http
 
 Currently Xamarin.Forms does not provide a view that combines both the [DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/) and the [TimePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.TimePicker/) as one control. However, the two controls are available individually. 
 
-The SfDataGrid supports `DatePicker` and `TimePicker` in the same column. It can be achieved by loading the `DatePicker` and `TimePicker` in [StackLayout](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) in the `GridTemplateColumn`.
+The SfDataGrid supports `DatePicker` and `TimePicker` in the same column. It can be achieved by loading the `DatePicker` and `TimePicker` in [StackLayout](https://learn.microsoft.com/en-us/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) in the `GridTemplateColumn`.
 
 To load `DatePicker` and `TimePicker` together, follow the code example:
 
@@ -951,7 +951,7 @@ The following screenshot shows that how `DatePicker` and `TimePicker` are viewed
 
 ## GridDateTimeColumn
 
-The [SfDataGrid.GridDateTimeColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html) inherits all the properties of the [SfDataGrid.GridColumn](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html). It displays the date information as the content of a column. To create the `SfDataGrid.GridDateTimeColumn`, the property corresponding to the column in the underlying collection must be of type DateTime. To enable or disable editing for the particular column, set the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html#Syncfusion_SfDataGrid_XForms_GridColumn_AllowEditing) property to true or false. In the editing mode it displays a customized `DatePicker` element which is derived from the [Xamarin.Forms.DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/). The `SfDatePicker` enables to scroll through a list of dates between the [GridDateTimeColumn.MinimumDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html#Syncfusion_SfDataGrid_XForms_GridDateTimeColumn_MinimumDate) and [GridDateTimeColumn.MaximumDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html#Syncfusion_SfDataGrid_XForms_GridDateTimeColumn_MaximumDate) and selects one from it.
+The [SfDataGrid.GridDateTimeColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html) inherits all the properties of the [SfDataGrid.GridColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html). It displays the date information as the content of a column. To create the `SfDataGrid.GridDateTimeColumn`, the property corresponding to the column in the underlying collection must be of type DateTime. To enable or disable editing for the particular column, set the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html#Syncfusion_SfDataGrid_XForms_GridColumn_AllowEditing) property to true or false. In the editing mode it displays a customized `DatePicker` element which is derived from the [Xamarin.Forms.DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/). The `SfDatePicker` enables to scroll through a list of dates between the [GridDateTimeColumn.MinimumDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html#Syncfusion_SfDataGrid_XForms_GridDateTimeColumn_MinimumDate) and [GridDateTimeColumn.MaximumDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html#Syncfusion_SfDataGrid_XForms_GridDateTimeColumn_MaximumDate) and selects one from it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1747,7 +1747,7 @@ dataGrid.RowHeaderWidth = 50;
 
 ## Bind a view model property inside header template?
 
-The SfDataGrid allows binding the view model property to the [HeaderTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html#Syncfusion_SfDataGrid_XForms_GridColumn_HeaderTemplateProperty) by setting the BindingContext of the the [GridColumn](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html) as `ViewModel`.
+The SfDataGrid allows binding the view model property to the [HeaderTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html#Syncfusion_SfDataGrid_XForms_GridColumn_HeaderTemplateProperty) by setting the BindingContext of the the [GridColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html) as `ViewModel`.
 
 To bind a view model property inside `HeaderTemplate`, follow the code example:
 
@@ -1781,20 +1781,20 @@ To bind a view model property inside `HeaderTemplate`, follow the code example:
 
 ## See also
 
-[How to enable the MultiSelection in GridComboBoxColumn of DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/11045/how-to-enable-the-multiselection-in-gridcomboboxcolumn-of-datagrid-sfdatagrid)
+[How to enable the MultiSelection in GridComboBoxColumn of DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/9714/how-to-enable-the-multiselection-in-gridcomboboxcolumn-of-datagrid-sfdatagrid)
 
-[How to bind a column collection from view model in SfDataGrid Xamarin.Forms](https://www.syncfusion.com/kb/9787/how-to-bind-a-column-collection-from-view-model-in-sfdatagrid-xamarin-forms)
+[How to bind a column collection from view model in SfDataGrid Xamarin.Forms](https://support.syncfusion.com/kb/article/8477/how-to-bind-a-column-collection-from-view-model-in-sfdatagrid-xamarin-forms)
 
-[How to create a custom GridColumn](https://www.syncfusion.com/kb/9533/how-to-create-a-custom-gridcolumn)
+[How to create a custom GridColumn](https://support.syncfusion.com/kb/article/8423/how-to-create-a-custom-gridcolumn)
 
-[How to bind button command to ViewModel from TemplateColumn of DataGrid](https://www.syncfusion.com/kb/9076/how-to-bind-button-command-to-viewmodel-from-templatecolumn-of-datagrid)
+[How to bind button command to ViewModel from TemplateColumn of DataGrid](https://support.syncfusion.com/kb/article/7976/how-to-bind-button-command-to-viewmodel-from-templatecolumn-of-datagrid)
 
-[How to get the row index of a row in SfDataGrid when using GridTemplateColumn](https://www.syncfusion.com/kb/7804/how-to-get-the-row-index-of-a-row-in-sfdatagrid-when-using-gridtemplatecolumn)
+[How to get the row index of a row in SfDataGrid when using GridTemplateColumn](https://support.syncfusion.com/kb/article/7230/how-to-get-the-row-index-of-a-row-in-sfdatagrid-when-using-gridtemplatecolumn)
 
-[How to display the DatePicker and TimePicker combined in a GridColumn in SfDataGrid](https://www.syncfusion.com/kb/7780/how-to-display-the-datepicker-and-timepicker-combined-in-a-gridcolumn-in-sfdatagrid)
+[How to display the DatePicker and TimePicker combined in a GridColumn in SfDataGrid](https://support.syncfusion.com/kb/article/7182/how-to-display-the-datepicker-and-timepicker-combined-in-a-gridcolumn-in-sfdatagrid)
 
-[How to set the different color for each column header in SfDataGrid](https://www.syncfusion.com/kb/7536/how-to-set-the-different-color-for-each-column-header-in-sfdatagrid)
+[How to set the different color for each column header in SfDataGrid](https://support.syncfusion.com/kb/article/6769/how-to-set-the-different-color-for-each-column-header-in-sfdatagrid)
 
-[How to customize the header text of a grid column with different colors](https://www.syncfusion.com/kb/7517/how-to-customize-the-header-text-of-a-grid-column-with-different-colors)
+[How to customize the header text of a grid column with different colors](https://support.syncfusion.com/kb/article/6979/how-to-customize-the-header-text-of-a-grid-column-with-different-colors)
 
-[How to create GridTemplateColumn in code-behind](https://www.syncfusion.com/kb/7521/how-to-create-gridtemplatecolumn-in-code-behind)
+[How to create GridTemplateColumn in code-behind](https://support.syncfusion.com/kb/article/6994/how-to-create-gridtemplatecolumn-in-code-behind)

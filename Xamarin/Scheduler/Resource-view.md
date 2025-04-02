@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resource View in Xamarin Scheduler control | Syncfusion
-description: Learn here all about Resource View support in Syncfusion Xamarin Scheduler (SfSchedule) control and more.
+title: Resource View in Xamarin Scheduler control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Resource View support in Syncfusion<sup>&reg;</sup> Xamarin Scheduler (SfSchedule) control and more.
 platform: xamarin
 control: SfScheduler
 documentation: ug
@@ -554,4 +554,4 @@ N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-u
 
 ## See also
 
-[How to handle appointments for multiple resources in Schedule?](https://www.syncfusion.com/kb/6694/how-to-handle-appointments-for-multiple-resources-in-schedule)
+[How to handle appointments for multiple resources in Schedule?](https://support.syncfusion.com/kb/article/6101/how-to-handle-appointments-for-multiple-resources-in-xamarinforms-schedule)

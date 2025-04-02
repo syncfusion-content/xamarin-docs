@@ -1,17 +1,15 @@
 ---
 layout: post
-title: Explore Libraries Package in Mac | Xamarin Forms | Syncfusion
-description: Describes the steps about download and installation of Syncfusion Xamarin.Forms components in MAC machine. 
+title: Explore Libraries Package in Mac | Xamarin Forms | Syncfusion®
+description: Describes the steps about download and installation of Syncfusion® Xamarin.Forms components in MAC machine. 
 platform: xamarin
 control: Explore Libraries Package 
 documentation: ug
 ---
 
-# Mac
+# Explore Libraries Package in Mac 
 
-## Explore the libraries package
-
-You can find the Syncfusion libraries, samples and NuGet from the installed location in Mac.
+You can find the Syncfusion<sup>®</sup> libraries, samples and NuGet from the installed location in Mac.
 
 
 * **"lib"** folder - e.g., /Users/labuser/Documents/Syncfusion/16.3.0.21/Xamarin/lib
@@ -36,4 +34,4 @@ The "Forms" directory includes,
 
 You can then add the assembly references to the respective projects such as PCL, XForms.Droid, XForms.iOS. You can find the dependencies for each control from this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies).
 
-I> After adding the reference, currently, an additional step is required for iOS and UWP projects. For example, if we are using SfKanban, we need to call the Init method of SfKanbanRenderer as shown in this [KB article](https://www.syncfusion.com/kb/7171).
+I> After adding the reference, currently, an additional step is required for iOS and UWP projects. For example, if we are using SfKanban, we need to call the Init method of SfKanbanRenderer as shown in this [KB article](https://support.syncfusion.com/kb/article/6632/how-to-resolve-kanban-not-rendering-issue-in-ios-and-uwp).

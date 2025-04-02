@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Date Navigations in Xamarin Scheduler control | Syncfusion
-description: Learn here all about Date Navigations support in Syncfusion Xamarin Scheduler (SfSchedule) control and more.
+title: Date Navigations in Xamarin Scheduler control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Date Navigations support in Syncfusion<sup>&reg;</sup> Xamarin Scheduler (SfSchedule) control and more.
 platform: xamarin
 control: SfSchedule
 documentation: ug
@@ -114,7 +114,7 @@ schedule.MaxDisplayDate = maxDate;
 
 
 ## VisibleDatesChanged event
-You can get the visible dates of the Schedule using [VisibleDatesChangedEvent](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html) in `SfSchedule`. It is applicable in all the schedule views.The event handler receives an argument of type [VisibleDatesChangedEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.VisibleDatesChangedEventArgs.html) containing [visibleDates](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.VisibleDatesChangedEventArgs.html#Syncfusion_SfSchedule_XForms_VisibleDatesChangedEventArgs_visibleDates) and [Schedule](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.VisibleDatesChangedEventArgs.html#Syncfusion_SfSchedule_XForms_VisibleDatesChangedEventArgs_Schedule).
+You can get the visible dates of the Schedule using [VisibleDatesChangedEvent](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html) in `SfSchedule`. It is applicable in all the schedule views.The event handler receives an argument of type [VisibleDatesChangedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.VisibleDatesChangedEventArgs.html) containing [visibleDates](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.VisibleDatesChangedEventArgs.html#Syncfusion_SfSchedule_XForms_VisibleDatesChangedEventArgs_visibleDates) and [Schedule](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.VisibleDatesChangedEventArgs.html#Syncfusion_SfSchedule_XForms_VisibleDatesChangedEventArgs_Schedule).
 
 
 {% tabs %}

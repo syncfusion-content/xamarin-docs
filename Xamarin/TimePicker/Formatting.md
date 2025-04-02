@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Formatting in Xamarin TimePicker control | Syncfusion
-description: Learn here all about Formatting support in Syncfusion Xamarin TimePicker (SfTimePicker) control and more.
+title: Formatting in Xamarin TimePicker control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Formatting support in Syncfusion<sup>&reg;</sup> Xamarin TimePicker (SfTimePicker) control and more.
 platform: Xamarin
 control: TimePicker
 documentation: ug
@@ -10,11 +10,11 @@ documentation: ug
 
 # Formatting in Xamarin TimePicker (SfTimePicker)
 
-Format is a way to represent the value of the time in a different string format.
+[`Format`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html#Syncfusion_XForms_Pickers_SfTimePicker_Format) is a way to represent the value of the time in a different string format.
 
-By default, the TimePicker’s format is "TimeFormat.HH_mm_ss".
+By default, the TimePicker’s format is [`"TimeFormat.HH_mm_ss"`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.TimeFormat.html#Syncfusion_XForms_Pickers_TimeFormat_HH_mm_ss).
 
-The following example demonstrates the TimePicker with the custom format TimeFormat.hh_mm_ss_tt
+The following example demonstrates the TimePicker with the custom format [`TimeFormat.hh_mm_ss_tt`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.TimeFormat.html#Syncfusion_XForms_Pickers_TimeFormat_hh_mm_ss_tt)
 
 {% tabs %}
 

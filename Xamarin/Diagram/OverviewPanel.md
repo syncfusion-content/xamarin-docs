@@ -1,7 +1,7 @@
 ---
-title: About Xamarin Diagram control | Syncfusion
-description: Learn here all about Overview Panel support in Syncfusion Xamarin Diagram (SfDiagram) control and more.
-platform: Xamarin
+title: About Xamarin Diagram control | Syncfusion<sup>&reg;</sup>;
+description: Learn here all about Overview Panel support in Syncfusion<sup>&reg;</sup>; Xamarin Diagram (SfDiagram) control and more.
+platform: xamarin
 control: SfDiagram
 documentation: UG
 keywords: 

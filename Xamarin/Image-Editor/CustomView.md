@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom View in Xamarin Image Editor control | Syncfusion
-description: Learn here all about Custom View support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
+title: Custom View in Xamarin Image Editor control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Custom View support in Syncfusion<sup>&reg;</sup> Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: ImageEditor
 documentation: ug
@@ -118,4 +118,4 @@ You can restrict the custom view resizing using the [`IsResizable`](https://help
 
 ## See also
 
-[How to add custom view with bounds in the Xamarin.Forms SfImageEditor control](https://www.syncfusion.com/kb/10620/how-to-add-custom-view-with-bounds-in-the-xamarin-forms-sfimageeditor-control)
+[How to add custom view with bounds in the Xamarin.Forms SfImageEditor control](https://support.syncfusion.com/kb/article/9150/how-to-add-custom-view-with-bounds-in-the-xamarin-forms-sfimageeditor-control)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Animation in Xamarin ProgressBar control | Syncfusion
-description: Learn here all about animation support in Syncfusion Xamarin ProgressBar control, its elements and more.
+title: Animation in Xamarin ProgressBar control | Syncfusion<sup>&reg;</sup>;
+description: Learn here all about animation support in Syncfusion<sup>&reg;</sup>; Xamarin ProgressBar control, its elements and more.
 platform: xamarin
 control: ProgressBar
 documentation: ug

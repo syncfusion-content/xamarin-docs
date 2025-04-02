@@ -112,17 +112,18 @@ caption.FontSize = 20;
 ![CheckBox TextAppearance](Images/CaptionAppearance.png)
 
 ## LineBreakMode
-The [`LineBreakMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_LineBreakMode) allows you to wrap or truncate the text. The default value of this property is [`NoWrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.LineBreakMode.html). The following other options are available in [`LineBreakMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_LineBreakMode):
+The [`LineBreakMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_LineBreakMode) allows you to wrap or truncate the text. The default value of this property is [`NoWrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.LineBreakMode.html#Syncfusion_XForms_Buttons_LineBreakMode_NoWrap). The following other options are available in [`LineBreakMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_LineBreakMode):
 
- * `NoWrap` - Avoids the text wrap. 
- * `WordWrap` - Wraps the text by words.
- * `CharacterWrap` - Wraps the text by character.
- * `HeadTruncation` - Truncates the text at the start.
- * `MiddleTruncation` - Truncates the text at the center.
- * `TailTruncation` - Truncates the text at the end.
+ * [`NoWrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.LineBreakMode.html#Syncfusion_XForms_Buttons_LineBreakMode_NoWrap) - Avoids the text wrap. 
+ * [`WordWrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.LineBreakMode.html#Syncfusion_XForms_Buttons_LineBreakMode_WordWrap) - Wraps the text by words.
+ * [`CharacterWrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.LineBreakMode.html#Syncfusion_XForms_Buttons_LineBreakMode_CharacterWrap) - Wraps the text by character.
+ * [`HeadTruncation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.LineBreakMode.html#Syncfusion_XForms_Buttons_LineBreakMode_HeadTruncation) - Truncates the text at the start.
+ * [`MiddleTruncation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.LineBreakMode.html#Syncfusion_XForms_Buttons_LineBreakMode_MiddleTruncation) - Truncates the text at the center.
+ * [`TailTruncation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.LineBreakMode.html#Syncfusion_XForms_Buttons_LineBreakMode_TailTruncation) - Truncates the text at the end.
  
 ## TickColor Customization
-The [`TickColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html#Syncfusion_XForms_Buttons_SfCheckBox_TickColor) property customizes the color of the tick in SfCheckBox.
+The [`TickColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html#Syncfusion_XForms_Buttons_SfCheckBox_TickColor) property customizes the color of the tick in [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html) control using the following properties:
+.
 
 {% tabs %}
 {% highlight xaml %}
@@ -182,4 +183,4 @@ stackLayout.Children.Add(sfCheckBox);
 
 ## See also
 
-[How to get the values of selected checkboxes in a group using Xamarin.Forms](https://www.syncfusion.com/kb/10915/how-to-get-the-values-of-selected-checkboxes-in-a-group-using-xamarin-forms)
+[How to get the values of selected checkboxes in a group using Xamarin.Forms](https://support.syncfusion.com/kb/article/9507/how-to-get-the-values-of-selected-checkboxes-in-a-group-using-xamarin-forms)

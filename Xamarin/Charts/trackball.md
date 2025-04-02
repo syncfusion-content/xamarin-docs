@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Trackball in Xamarin Charts control | Syncfusion
-description: Learn here all about Trackball support in Syncfusion Xamarin Charts (SfChart) control, its elements and more.
+description: Learn here all about Trackball support in Syncfusion® Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Trackball in Xamarin Charts (SfChart)
 
-Trackball feature displays the tooltip for the data points that are closer to the point where you touch on the chart area. This feature, especially, can be used instead of data label feature when you cannot show data labels for all data points due to space constraint. To enable this feature, add an instance of [`ChartTrackballBehavior`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballBehavior.html#) to the [`ChartBehaviors`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartBehavior.html#) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#). Trackball will be activated once you long-press anywhere on the chart area. Once it is activated, it will appear in the UI and move based on your touch movement until you stop touching on the chart.
+Trackball feature displays the tooltip for the data points that are closer to the point where you touch on the chart area. This feature, especially, can be used instead of data label feature when you cannot show data labels for all data points due to space constraint. To enable this feature, add an instance of [`ChartTrackballBehavior`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballBehavior.html) to the [`ChartBehaviors`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_ChartBehaviors) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). Trackball will be activated once you long-press anywhere on the chart area. Once it is activated, it will appear in the UI and move based on your touch movement until you stop touching on the chart.
 
 You can use the following properties to show/hide the line and labels.
 
@@ -57,9 +57,9 @@ chart.ChartBehaviors.Add(trackballBehavior);
 
 [`TrackballLabelDisplayMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballBehavior.html#Syncfusion_SfChart_XForms_ChartTrackballBehavior_LabelDisplayMode) property is used to specify whether to display label for all the data points along the vertical line or display only single label. Following are the two options you can set to this property,
 
-* [`FloatAllPoints`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.TrackballLabelDisplayMode.html#) – Displays label for all the data points along the vertical line.
-* [`NearestPoint`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.TrackballLabelDisplayMode.html#) – Displays label for single data point that is nearer to the touch contact position.
-* [`GroupAllPoints`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.TrackballLabelDisplayMode.html#) – Displays label for all the data points grouped and positioned at the top of the chart area.
+* [`FloatAllPoints`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.TrackballLabelDisplayMode.html#Syncfusion_SfChart_XForms_TrackballLabelDisplayMode_FloatAllPoints) – Displays label for all the data points along the vertical line.
+* [`NearestPoint`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.TrackballLabelDisplayMode.html#Syncfusion_SfChart_XForms_TrackballLabelDisplayMode_NearestPoint) – Displays label for single data point that is nearer to the touch contact position.
+* [`GroupAllPoints`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.TrackballLabelDisplayMode.html#Syncfusion_SfChart_XForms_TrackballLabelDisplayMode_GroupAllPoints) – Displays label for all the data points grouped and positioned at the top of the chart area.
 
 {% tabs %} 
 
@@ -87,15 +87,15 @@ In the following screenshot, trackball label is shown for only single data point
 
 ## Activation mode
 
-The [`ActivationMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballBehavior.html#Syncfusion_SfChart_XForms_ChartTrackballBehavior_ActivationMode) property is used to restrict the visibility of trackball based on the touch actions. The default value of this property is [`ChartTrackballActivationMode.LongPress`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html).
+The [`ActivationMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballBehavior.html#Syncfusion_SfChart_XForms_ChartTrackballBehavior_ActivationMode) property is used to restrict the visibility of trackball based on the touch actions. The default value of this property is [`ChartTrackballActivationMode.LongPress`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html#Syncfusion_SfChart_XForms_ChartTrackballActivationMode_LongPress).
 
 The ChartTrackballActivationMode enum contains the following values:
 
-* [`LongPress`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html) – Activates trackball only when performing the long press action.
-* [`TouchMove`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html) – Activates trackball only when performing touch move action.
-* [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html) – Hides the visibility of trackball when setting activation mode to [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html). It will be activated when calling the [`Show`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballBehavior.html#Syncfusion_SfChart_XForms_ChartTrackballBehavior_Show_System_Single_System_Single_) method.
+* [`LongPress`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html#Syncfusion_SfChart_XForms_ChartTrackballActivationMode_LongPress) – Activates trackball only when performing the long press action.
+* [`TouchMove`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html#Syncfusion_SfChart_XForms_ChartTrackballActivationMode_TouchMove) – Activates trackball only when performing touch move action.
+* [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html#Syncfusion_SfChart_XForms_ChartTrackballActivationMode_None) – Hides the visibility of trackball when setting activation mode to [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html#Syncfusion_SfChart_XForms_ChartTrackballActivationMode_None). It will be activated when calling the [`Show`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballBehavior.html#Syncfusion_SfChart_XForms_ChartTrackballBehavior_Show_System_Single_System_Single_) method.
 
-N> The default value of [`ActivationMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballBehavior.html#Syncfusion_SfChart_XForms_ChartTrackballBehavior_ActivationMode) property is [`ChartTrackballActivationMode.LongPress`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html) for Android and iOS platform and default value for MacOS and UWP platform is [`ChartTrackballActivationMode.TouchMove`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html).
+N> The default value of [`ActivationMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballBehavior.html#Syncfusion_SfChart_XForms_ChartTrackballBehavior_ActivationMode) property is [`ChartTrackballActivationMode.LongPress`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html#Syncfusion_SfChart_XForms_ChartTrackballActivationMode_LongPress) for Android and iOS platform and default value for MacOS and UWP platform is [`ChartTrackballActivationMode.TouchMove`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html#Syncfusion_SfChart_XForms_ChartTrackballActivationMode_TouchMove).
 
 ## Customizing appearance
 
@@ -314,9 +314,9 @@ chart.PrimaryAxis.ShowTrackballInfo = true;
 
 The position of trackball's axis label can be changed using the [`AxisLabelAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballAxisLabelStyle.html#Syncfusion_SfChart_XForms_ChartTrackballAxisLabelStyle_AxisLabelAlignment) property of [`ChartTrackballAxisLabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballAxisLabelStyle.html). The following options are available in [`AxisLabelAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballAxisLabelStyle.html#Syncfusion_SfChart_XForms_ChartTrackballAxisLabelStyle_AxisLabelAlignment).
 
-*	[`Far`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelAlignment.html) -  The label will be positioned below the tick in vertical axis and right of the tick in horizontal axis.
-*	[`Near`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelAlignment.html) -  The label will be positioned above the tick in vertical axis and left of the tick in horizontal axis.
-*   [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelAlignment.html) - The label will be positioned at the center of tick. This is the default value.
+*	[`Far`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelAlignment.html#Syncfusion_SfChart_XForms_ChartLabelAlignment_Far) -  The label will be positioned below the tick in vertical axis and right of the tick in horizontal axis.
+*	[`Near`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelAlignment.html#Syncfusion_SfChart_XForms_ChartLabelAlignment_Near) -  The label will be positioned above the tick in vertical axis and left of the tick in horizontal axis.
+*   [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelAlignment.html#Syncfusion_SfChart_XForms_ChartLabelAlignment_Center) - The label will be positioned at the center of tick. This is the default value.
 
 The following code snippet and screenshot demonstrate the placement of label at the left to tick line.
 
@@ -555,7 +555,7 @@ trackball.HitTest(pointX, pointY);
 
 ### TrackballCreated
 
-The [`TrackballCreated`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~TrackballCreated_EV.html) event occurs when the trackball moves from one data point to another. This argument contains object of [`ChartPointsInfo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballCreatedEventArgs.html#Syncfusion_SfChart_XForms_ChartTrackballCreatedEventArgs_ChartPointsInfo). The following properties are available in ChartPointInfo class to customize the appearance of trackball label based on condition.
+The [`TrackballCreated`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_TrackballCreated) event occurs when the trackball moves from one data point to another. This argument contains object of [`ChartPointsInfo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballCreatedEventArgs.html#Syncfusion_SfChart_XForms_ChartTrackballCreatedEventArgs_ChartPointsInfo). The following properties are available in ChartPointInfo class to customize the appearance of trackball label based on condition.
 
 * [`Label`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPointInfo.html#Syncfusion_SfChart_XForms_ChartPointInfo_Label) - Gets or sets the text of trackball label.
 * [`IsVisible`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPointInfo.html#Syncfusion_SfChart_XForms_ChartPointInfo_IsVisible) - Gets or sets the visibility of trackball.
@@ -571,10 +571,10 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to add multiple trackballs in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10400/how-to-add-multiple-trackballs-in-xamarin-forms-chart)
+[How to add multiple trackballs in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/8930/how-to-add-multiple-trackballs-in-xamarin-forms-chart)
 
-[How to activate the trackball on touch in Xamarin.Forms](https://www.syncfusion.com/kb/8620/how-to-activate-the-trackball-on-touch)
+[How to activate the trackball on touch in Xamarin.Forms](https://support.syncfusion.com/kb/article/7615/how-to-activate-the-trackball-on-touch)
 
-[How to format the trackball labels](https://www.syncfusion.com/kb/5779/how-to-format-the-trackball-labels)
+[How to format the trackball labels](https://support.syncfusion.com/kb/article/5304/how-to-format-the-trackball-labels)
 
-[How to set the milliseconds label format for axis and trackball label in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10812/how-to-set-the-milliseconds-label-format-for-axis-and-trackball-label-in-xamarin-forms)
+[How to set the milliseconds label format for axis and trackball label in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/9617/how-to-set-the-milliseconds-label-format-for-axis-and-trackball-label-in-xamarin-forms)

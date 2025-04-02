@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Designing a Custom Toolbar in Xamarin Pdf Viewer | Syncfusion
-description: Learn here all about Designing a Custom Toolbar support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
-platform: Xamarin
+description: Learn here all about Designing a Custom Toolbar support in Syncfusion<sup>®</sup> Xamarin Pdf Viewer (SfPdfViewer) control and more.
+platform: xamarin
 control: SfPdfViewer
 documentation: ug
 ---
@@ -47,8 +47,7 @@ The MainPage.xaml would be as mentioned below.
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GettingStarted"
              x:Class="GettingStarted.MainPage"
-             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
-             >
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms">
     <ContentPage.BindingContext>
         <local:PdfViewerViewModel></local:PdfViewerViewModel>
     </ContentPage.BindingContext>
@@ -88,6 +87,6 @@ The final output will look like the below on iOS, Android and Windows (UWP) devi
 
 This demo can be downloaded from the below link.
 
-<http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1533352385>
+<https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1533352385>
 
 N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

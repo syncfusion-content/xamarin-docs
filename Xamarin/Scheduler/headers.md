@@ -1,7 +1,7 @@
 ---     
 layout: post     
-title: Headers in Xamarin Scheduler control | Syncfusion
-description: Learn here all about Headers support in Syncfusion Xamarin Scheduler (SfSchedule) control, its elements and more.
+title: Headers in Xamarin Scheduler control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Headers support in Syncfusion<sup>&reg;</sup> Xamarin Scheduler (SfSchedule) control, its elements and more.
 platform: xamarin    
 control: SfSchedule     
 documentation: ug   
@@ -126,7 +126,7 @@ schedule.ScheduleHeaderDateFormat = "LLL yy";
 
 ## Header Tapped Event
 
-You can handle single tap action of Header by using [HeaderTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html) event of `SfSchedule`. This event will be triggered when the Header is Tapped. This event contains [HeaderTappedEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.HeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.HeaderTappedEventArgs.html#Syncfusion_SfSchedule_XForms_HeaderTappedEventArgs_DateTime) details in it.
+You can handle single tap action of Header by using [HeaderTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_HeaderTapped) event of `SfSchedule`. This event will be triggered when the Header is Tapped. This event contains [HeaderTappedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.HeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.HeaderTappedEventArgs.html#Syncfusion_SfSchedule_XForms_HeaderTappedEventArgs_DateTime) details in it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -152,7 +152,7 @@ N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-u
 
 ## See also
 
-[How to create custom header and view header in Xamarin.Forms Schedule?](https://www.syncfusion.com/kb/10083/how-to-create-custom-header-and-view-header-in-xamarin-forms-schedule)
+[How to create custom header and view header in Xamarin.Forms Schedule?](https://support.syncfusion.com/kb/article/8862/how-to-create-custom-header-and-view-header-in-xamarin-forms-schedule)
 
 
 

@@ -11,11 +11,11 @@ documentation: ug
 
 ## Getting started with SfAvatarView
 
-This section explains the steps required to work with the SfAvatarView control for Xamarin.Forms.
+This section explains the steps required to work with the [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control for Xamarin.Forms.
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -23,7 +23,7 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## Adding SfAvatarView reference
 
-You can add SfAvatarView reference using one of the following methods:
+You can add [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) reference using one of the following methods:
 
 **Method 1: Adding SfAvatarView reference from nuget.org**
 
@@ -31,11 +31,11 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 ![Xamarin Forms SfAvatarView Nuget reference](images/Adding SfAvatarView reference.png)
 
-N> Install the same version of SfAvatarView NuGet in all the projects.
+N> Install the same version of [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) NuGet in all the projects.
 
 **Method 2: Adding SfAvatarView reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfAvatarView control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfAvatarView assemblies manually from the installed location**
 
@@ -66,23 +66,23 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching an application on each platform with SfAvatarView
 
-To use the SfAvatarView control inside an application, each platform application must initialize the SfAvatarView renderer. This initialization step varies from platform to platform and is discussed in the following sections:
+To use the [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control inside an application, each platform application must initialize the SfAvatarView renderer. This initialization step varies from platform to platform and is discussed in the following sections:
 
 N> If you are adding the references from toolbox, the following steps are not needed.
 
 ### Android and UWP
 
-The Android and UWP launch the SfAvatarView without any initialization, and it is enough to only initialize the Xamarin.Forms Framework to launch the application.
+The Android and UWP launch the [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) without any initialization, and it is enough to only initialize the Xamarin.Forms Framework to launch the application.
 
 ### iOS
 
-To launch the SfAvatarView in iOS, call the `SfAvatarView.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework has been initialized and before the LoadApplication is called as demonstrated in the following code example.
+To launch the [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) in iOS, call the `SfAvatarView.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework has been initialized and before the LoadApplication is called as demonstrated in the following code example.
 
 {% tabs %}
 
@@ -103,7 +103,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Release mode issue in UWP platform
 
-The known Framework issue in UWP platform is that the custom controls will not be rendered when deploying an application in `Release Mode`. It can be resolved by initializing the SfBorder assemblies in the `App.xaml.cs` file in the UWP project as demonstrated in the following code example.
+The known Framework issue in UWP platform is that the custom controls will not be rendered when deploying an application in `Release Mode`. It can be resolved by initializing the [`SfBorder`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Border.SfBorder.html) assemblies in the `App.xaml.cs` file in the UWP project as demonstrated in the following code example.
 
 {% tabs %}
 
@@ -134,7 +134,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 To launch the border in WPF, call the SfBorderRenderer.Init() method in the MainWindow constructor of the MainWindow class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample.
 
-{% highlight C# %} 
+{% highlight c# %}
 
 public partial class MainWindow : FormsApplicationPage
 {
@@ -154,22 +154,22 @@ public partial class MainWindow : FormsApplicationPage
 
 ## Creating an SfAvatarView control
 
-The `SfAvatarView` control is configured entirely in C# or in XAML. The following steps explain how to create an `SfAvatarView` control and configure its elements.
+The [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control is configured entirely in C# or in XAML. The following steps explain how to create an [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control and configure its elements.
 
 ### Adding namespace for referred assemblies
 
-{% tabs %} 
-{% highlight xaml %} 
+{% tabs %}
+{% highlight xaml %}
 xmlns:sfavatar="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms"
 {% endhighlight %}
-{% highlight C# %} 
+{% highlight c# %}
 using Syncfusion.XForms.AvatarView;
 {% endhighlight %}
 {% endtabs %}
 
 ### Adding the SfAvatarView control as the content of ContentPage
 
-You can add a custom image for displaying in SfAvatarView using the `ImageSource` property.
+You can add a custom image for displaying in [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) using the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_ImageSource) property.
 
 {% tabs %}
 {% highlight xaml %}

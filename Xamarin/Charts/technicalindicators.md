@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Technical Indicators in Xamarin Charts control | Syncfusion
-description: Learn here all about Technical Indicators support in Syncfusion Xamarin Charts (SfChart) control and more.
+description: Learn here all about Technical Indicators support in Syncfusion® Xamarin Charts (SfChart) control and more.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -727,7 +727,7 @@ SfChart chart = new SfChart()
 ## MACD indicator
 
 This is mostly using indicator having [`ShortPeriod`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.MACDIndicator.html#Syncfusion_SfChart_XForms_MACDIndicator_ShortPeriod) and [`LongPeriod`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.MACDIndicator.html#Syncfusion_SfChart_XForms_MACDIndicator_LongPeriod) for defining the motion of the indicator.
-Also you can draw [`Line`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.MACDType.html), [`Histogram`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.MACDType.html) MACD or [`Both`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.MACDType.html) using the [`MACDType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.MACDIndicator.html#Syncfusion_SfChart_XForms_MACDIndicator_MACDType) property, which defines the type of MACD to be drawn.
+Also you can draw [`Line`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.MACDType.html#Syncfusion_SfChart_XForms_MACDType_Line), [`Histogram`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.MACDType.html#Syncfusion_SfChart_XForms_MACDType_Histogram) MACD or [`Both`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.MACDType.html#Syncfusion_SfChart_XForms_MACDType_Both) using the [`MACDType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.MACDIndicator.html#Syncfusion_SfChart_XForms_MACDIndicator_MACDType) property, which defines the type of MACD to be drawn.
 
 The [`MACDLineColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.MACDIndicator.html#Syncfusion_SfChart_XForms_MACDIndicator_MACDLineColor) property is used to define the color for the MACD line  and the  [`HistogramLineColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.MACDIndicator.html#Syncfusion_SfChart_XForms_MACDIndicator_HistogramColor) property is used to define the color for the MACD histogram.
 You can specify the MACD indicator using the following code example.

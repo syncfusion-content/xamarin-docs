@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row Height Customization in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Row Height Customization support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
+title: Row Height Customization in Xamarin DataGrid control | Syncfusion®
+description: Learn here all about Row Height Customization support in Syncfusion® Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
@@ -36,11 +36,11 @@ dataGrid.RowHeight = 60;
 
 ### QueryRowHeight
 
-The `SfDatagrid.QueryRowHeight` event returns row heights on demand. This event receives two arguments, namely the sender handles the data grid, and the [QueryRowHeightEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowHeightEventArgs.html). The `QueryRowHeightEventArgs` has the following properties:
+The `SfDatagrid.QueryRowHeight` event returns row heights on demand. This event receives two arguments, namely the sender handles the data grid, and the [QueryRowHeightEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowHeightEventArgs.html). The `QueryRowHeightEventArgs` has the following properties:
 
  * [RowIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowHeightEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryRowHeightEventArgs_RowIndex): This property helps to identify a particular row in the grid.
- * [Height](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowHeightEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryRowHeightEventArgs_RowIndex): This property sets and returns the height of a grid row on demand. Default line size of the rows is 50.
- * [Handled](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowHeightEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryRowHeightEventArgs_RowIndex): This property decides whether the specified height can be set to the row or not. The default value is `false`. When this property is not set, the decided height is not set to the row.
+ * [Height](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowHeightEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryRowHeightEventArgs_Height): This property sets and returns the height of a grid row on demand. Default line size of the rows is 50.
+ * [Handled](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridHandledEventArgs.html#Syncfusion_SfDataGrid_XForms_GridHandledEventArgs_Handled): This property decides whether the specified height can be set to the row or not. The default value is `false`. When this property is not set, the decided height is not set to the row.
 
 To hook the `SfDatagrid.QueryRowHeight` event, and customize height of a row, follow the code example:
 
@@ -133,11 +133,11 @@ To calculate the height including hidden columns, follow the code example:
 
 ## Reset row height at runtime
 
-The data grid allows you to customize the height of a grid row on demand by handling the [SfDataGrid.QueryRowHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event. This event is raised for the grid rows whenever they come into view. So the height of a particular row can be customized on demand using the row index. Setting the height to zero will collapse all rows in the grid. 
+The data grid allows you to customize the height of a grid row on demand by handling the [SfDataGrid.QueryRowHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_QueryRowHeight) event. This event is raised for the grid rows whenever they come into view. So the height of a particular row can be customized on demand using the row index. Setting the height to zero will collapse all rows in the grid. 
   
 ## Auto fit the grid rows based on content
 
-The data grid supports the AutoRowHeight feature. The height of a row can be customized based on the content. This can be achieved using the `SfDatagrid.QueryRowHeight` event and the [SfDatagrid.GetRowHeight](http://help.syncfusion.com/cr/xamarin/) method. The `SfDatagrid.QueryRowHeight` event returns the row height on demand. The `SfDatagrid.GetRowHeight` method returns the height of the row based on the content.
+The data grid supports the AutoRowHeight feature. The height of a row can be customized based on the content. This can be achieved using the `SfDatagrid.QueryRowHeight` event and the [SfDatagrid.GetRowHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms.SfChip.html) method. The `SfDatagrid.QueryRowHeight` event returns the row height on demand. The `SfDatagrid.GetRowHeight` method returns the height of the row based on the content.
 
 N> The row drag and drop operation is not supported while customizing the row height based on content.
 
@@ -162,7 +162,7 @@ private void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs
 
 ## Customize header row height based on header content
 
-The data grid allows you to customize the height of the header row based on its content using the `SfDatagrid.QueryRowHeight` event and [SfDatagrid.GetRowHeight](http://help.syncfusion.com/cr/xamarin) method.
+The data grid allows you to customize the height of the header row based on its content using the `SfDatagrid.QueryRowHeight` event and [SfDatagrid.GetRowHeight](https://help.syncfusion.com/cr/xamarin) method.
 
 To hook the `SfDatagrid.QueryRowHeight` event and change the header row height based on the content, follow the code example:
 
@@ -256,4 +256,4 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to adjust row heights of each row based on their content](https://www.syncfusion.com/kb/7446)
+[How to adjust row heights of each row based on their content](https://support.syncfusion.com/kb/article/6570/how-to-adjust-row-heights-of-each-row-based-on-their-content)

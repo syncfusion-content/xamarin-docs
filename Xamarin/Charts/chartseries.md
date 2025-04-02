@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Series in Xamarin Charts control | Syncfusion
-description: Learn here all about Chart Series support in Syncfusion Xamarin Charts (SfChart) control, its elements and more.
+description: Learn here all about Chart Series support in Syncfusion® Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -215,7 +215,7 @@ chart.Series.Add(lineSeries);
 * Bar, StackingBar, and StackingBar100 cannot be combined with the other Cartesian type series.
 * Cartesian type series cannot be combined with Accumulation series (pie, doughnut, funnel, and pyramid).
 
-When the combination of Cartesian and Accumulation series types are added to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html) property, the series which are similar to the first series will be rendered and other series will be ignored. Following code snippet illustrates this.
+When the combination of Cartesian and Accumulation series types are added to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) property, the series which are similar to the first series will be rendered and other series will be ignored. Following code snippet illustrates this.
 
 {% tabs %} 
 
@@ -347,7 +347,7 @@ chart.Series.Add(stackingColumnSeries4);
 
 ## Animation
 
-[`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) provides animation support for data series. [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) will be animated whenever the items source changes. Animation can be enabled by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_EnableAnimation) property to `true`. You can also control the duration of the animation using [`AnimationDuration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_AnimationDuration) property.
+[`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) provides animation support for data series. [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html) will be animated whenever the items source changes. Animation can be enabled by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_EnableAnimation) property to `true`. You can also control the duration of the animation using [`AnimationDuration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_AnimationDuration) property.
 
 {% tabs %} 
 
@@ -446,16 +446,16 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to group stacking series in the Xamarin.Forms Chart](https://www.syncfusion.com/kb/11724/how-to-group-stacking-series-in-the-xamarin-forms-chart)
+[How to group stacking series in the Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/10156/how-to-group-stacking-series-in-the-xamarin-forms-chart)
 
-[How to add content in the center of DoughnutSeries in Xamarin.Forms](https://www.syncfusion.com/kb/7778/how-to-add-content-in-the-center-of-doughnutseries)
+[How to add content in the center of DoughnutSeries in Xamarin.Forms](https://support.syncfusion.com/kb/article/6901/how-to-add-a-custom-view-to-a-hole-in-the-xamarin-forms-doughnut-charts)
 
-[How to explode the pie series slice on touch](https://www.syncfusion.com/kb/5923/how-to-explode-the-pie-series-slice-on-touch)
+[How to explode the pie series slice on touch](https://support.syncfusion.com/kb/article/5611/how-to-explode-the-pie-chart-slice-on-touch-in-xamarin-forms)
 
-[How to set the opacity of the chart series](https://www.syncfusion.com/kb/5741/how-to-set-the-opacity-of-the-chart-series)
+[How to set the opacity of the chart series](https://support.syncfusion.com/kb/article/5394/how-to-set-the-opacity-of-the-xamarin-forms-charts)
 
-[How to show indicator when loading the large number of data points to series in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10680/how-to-show-indicator-when-loading-the-large-number-of-data-points-to-series-in-xamarin)
+[How to show indicator when loading the large number of data points to series in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/9202/how-to-seriesrendered-event-and-sfbusyindicator-in-xamarin-chart)
 
-[How to increase or decrease the width of Column series](https://www.syncfusion.com/kb/5104/how-to-increase-or-decrease-the-width-of-column-series)
+[How to increase or decrease the width of Column series](https://support.syncfusion.com/kb/article/4906/how-to-increase-or-decrease-the-width-of-column-series)
 
-[How to visualize the Xamarin.Forms Pie Chart in linear form](https://www.syncfusion.com/kb/11285/how-to-visualize-the-xamarin-forms-pie-chart-in-linear-form)
+[How to visualize the Xamarin.Forms Pie Chart in linear form](https://support.syncfusion.com/kb/article/9813/how-to-visualize-the-xamarin-forms-pie-chart-in-linear-form)

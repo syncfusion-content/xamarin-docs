@@ -9,7 +9,7 @@ documentation: ug
 
 # DataTemplateSelector in Xamarin AutoComplete (SfAutoComplete)
 
-SfAutoComplete supports DataTemplateSelector, which is used to choose a DataTemplate based on data object.
+[`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) supports DataTemplateSelector, which is used to choose a DataTemplate based on data object.
  
 
 {% tabs %}

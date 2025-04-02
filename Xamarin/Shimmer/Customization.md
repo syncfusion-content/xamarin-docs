@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in Xamarin Shimmer control | Syncfusion
-description: Learn here all about Customization support in Syncfusion Xamarin Shimmer (SfShimmer) control and more.
+title: Customization in Xamarin Shimmer control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Customization support in Syncfusion<sup>&reg;</sup> Xamarin Shimmer (SfShimmer) control and more.
 platform: xamarin
 control: SfShimmer
 documentation: ug
@@ -201,4 +201,4 @@ You can control the duration of wave animation using the [`AnimationDuration`](h
 
 ## See also
 
-[How to set the custom view in SfShimmer using style](https://www.syncfusion.com/kb/11851/how-to-set-the-custom-view-in-xamarin-forms-shimmer-using-style)
+[How to set the custom view in SfShimmer using style](https://support.syncfusion.com/kb/article/10316/how-to-set-the-custom-view-in-xamarin-forms-shimmer-using-style)

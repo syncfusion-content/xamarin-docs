@@ -17,7 +17,7 @@ A template can be used to present the data in a way that makes sense for the app
 
 ## Data template selector
 
-The `SfListView` allows customizing appearance of each item with different templates based on specific constraints by using the [DataTemplateSelector](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/). You can choose a `DataTemplate` for each item at runtime based on the value of data-bound property using `DataTemplateSelector`.
+The `SfListView` allows customizing appearance of each item with different templates based on specific constraints by using the [DataTemplateSelector](https://learn.microsoft.com/en-gb/dotnet/api/xamarin.forms.datatemplateselector?view=xamarin-forms). You can choose a `DataTemplate` for each item at runtime based on the value of data-bound property using `DataTemplateSelector`.
 
 Here, an [ItemsCacheLimit](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.LayoutBase.html#Syncfusion_ListView_XForms_LayoutBase_ItemsCacheLimit) property maintains number of items reusing in the view. This cache limit is used to create and reuse the [ListViewItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ListViewItem.html) if different templates are used in `DataTemplateSelector` for better scrolling performance. Based on this value, `SfListView` creates number of `ListViewItem` for different templates in the view if new template is created while scrolling, and reuses it if same template is used for improving the scrolling performance.
 
@@ -827,7 +827,7 @@ internal class SfListViewAccordionBehavior : Behavior<ContentPage>
 
 The `IsVisible` model property which is bound to the second template will be enabled when tapping the item and disabled when tapping again the same item.
 
-Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/listview_autofit).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/xamarin-forms-expandable-listview).
 
 ![Xamarin.Forms listview with Accordion](SfListView_images/SfListView-AccordImage.png)
 
@@ -1220,7 +1220,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ### Right to left(RTL)
 
-`SfListView` supports to change the flow of text to the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) property. ListView supports RTL in Xamarin.Forms version 3.0 and above.
+`SfListView` supports to change the flow of text to the right-to-left direction by setting the [FlowDirection](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) property. ListView supports RTL in Xamarin.Forms version 3.0 and above.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1262,8 +1262,8 @@ N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to set background color alternatively in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11295)                                                                                                                                                                                                                                                                 
-[How to work with Material Visual for custom ListView in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11468/)                                                                                                                                                                                                                                      
-[How to display URI images in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11485/)                                                                                                                                                            
-[How to change selected image in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11486/)                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-[How to handle click action with tap command in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11713/)
+[How to set background color alternatively in Xamarin.Forms ListView (SfListView)](https://support.syncfusion.com/kb/article/9791/how-to-set-background-color-alternatively-in-xamarin-forms-listview-sflistview)                                                                                                                                                                                                                                                                 
+[How to work with Material Visual for custom ListView in Xamarin.Forms (SfListView)](https://support.syncfusion.com/kb/article/9851/how-to-work-with-material-visual-for-custom-listview-in-xamarin-forms-sflistview)                                                                                                                                                                                                                                      
+[How to display URI images in Xamarin.Forms ListView (SfListView)](https://support.syncfusion.com/kb/article/9858/how-to-display-uri-images-in-xamarin-forms-listview-sflistview)                                                                                                                                                            
+[How to change selected image in Xamarin.Forms ListView (SfListView)](https://support.syncfusion.com/kb/article/9891/how-to-change-selected-image-in-xamarin-forms-listview-sflistview)                                                                   
+[How to handle click action with tap command in Xamarin.Forms ListView (SfListView)](https://support.syncfusion.com/kb/article/10221/how-to-handle-click-action-with-tap-command-in-xamarin-forms-listview-sflistview)

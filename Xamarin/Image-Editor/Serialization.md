@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serialization in Xamarin Image Editor control | Syncfusion
-description: Learn here all about Serialization support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
+title: Serialization in Xamarin Image Editor control | Syncfusion®
+description: Learn here all about Serialization support in Syncfusion® Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: ImageEditor
 documentation: ug
@@ -46,8 +46,6 @@ The SaveEdits() method is used to serialize the current edits of shapes. The ser
 {% endtabs %}
 
 You can save stream into .txt format file. If you save stream as .txt format file to deserialize the shapes, then set the Build action to `Embedded resource` in project.
-
-Sample text file: [ImageEditor.txt](http://www.syncfusion.com/downloads/support/directtrac/general/txt/Chart677841499.txt).
 
 ## Deserialization
 

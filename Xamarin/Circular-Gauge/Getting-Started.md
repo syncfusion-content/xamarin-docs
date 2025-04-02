@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Getting Started with Xamarin Circular Gauge control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Circular Gauge (SfCircularGauge) control, its elements and more.
+title: Getting Started with Xamarin Circular Gauge control | Syncfusion<sup>&reg;</sup>
+description: Learn here about getting started with Syncfusion<sup>&reg;</sup> Xamarin Circular Gauge (SfCircularGauge) control, its elements and more.
 platform: xamarin
 control: SfCircularGauge
 documentation: ug
@@ -20,7 +20,7 @@ To get start quickly with Xamarin Circular Gauge control, you can check on this 
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -67,9 +67,9 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching an application on each platform with SfCircularGauge.
 
@@ -246,7 +246,7 @@ You can add ranges to [`SfCircularGauge`](https://help.syncfusion.com/cr/xamarin
 
 {% tabs %}
 
-{% highlight xaml %}  
+{% highlight xaml %}
           
     <gauge:SfCircularGauge>
      <gauge:SfCircularGauge.Scales>
@@ -316,7 +316,7 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 
 {% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
     <gauge:SfCircularGauge>
     <gauge:SfCircularGauge.Scales>
@@ -330,7 +330,7 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 	 
 {% endhighlight %}
 
-{% highlight c# %}    
+{% highlight c# %}
 
     ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
     Scale scale = new Scale();
@@ -350,7 +350,7 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 
 {% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
     <gauge:SfCircularGauge>
       <gauge:SfCircularGauge.Scales>
@@ -364,7 +364,7 @@ Create a [`Needle Pointer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 	 
 {% endhighlight %}
 
-{% highlight c# %}  
+{% highlight c# %}
    
     ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
     Scale scale=new Scale();
@@ -382,7 +382,7 @@ The following code example gives you the complete code of above configurations.
 
 {% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
     <?xml version="1.0" encoding="utf-8" ?>
     <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -421,7 +421,7 @@ The following code example gives you the complete code of above configurations.
 	 
 {% endhighlight %}
 
-{% highlight c# %}  
+{% highlight c# %}
    
 using Syncfusion.SfGauge.XForms;
 
@@ -492,22 +492,22 @@ You can find the complete getting started sample from this [`link`](https://gith
 
 ## See also
 
-[How to achieve doughnut chart requirement in circular gauge](https://www.syncfusion.com/kb/8295/how-to-achieve-doughnut-chart-requirement-in-circulargauge)
+[How to achieve doughnut chart requirement in circular gauge](https://support.syncfusion.com/kb/article/7338/how-to-achieve-doughnut-chart-requirement-in-circulargauge)
 
-[How to customize a circular gauge control as a time line gauge](https://www.syncfusion.com/kb/8294/how-to-customize-a-circular-gauge-control-as-a-timeline-gauge)
+[How to customize a circular gauge control as a time line gauge](https://support.syncfusion.com/kb/article/7337/how-to-customize-a-circular-gauge-control-as-a-timeline-gauge)
 	
-[How to make circular gauge to work in UWP in release mode when .NET Native tool chain is enabled](https://www.syncfusion.com/kb/8272/how-to-make-syncfusion-xamarin-forms-sfcirculargauge-to-work-in-uwp-in-release-mode-when)
+[How to make circular gauge to work in UWP in release mode when .NET Native tool chain is enabled](https://support.syncfusion.com/kb/article/7330/how-to-make-syncfusion-xamarin-forms-sfcirculargauge-to-work-in-uwp-in-release-mode-when)
 
-[How to resolve circular gauge not rendering issue in iOS and UWP](https://www.syncfusion.com/kb/8271/how-to-resolve-sfcirculargauge-not-rendering-issue-in-ios-and-uwp)
+[How to resolve circular gauge not rendering issue in iOS and UWP](https://support.syncfusion.com/kb/article/7334/how-to-resolve-sfcirculargauge-not-rendering-issue-in-ios-and-uwp)
 
-[How to resolve circular gauge not rendering issue in Xamarin.Forms for iOS](https://www.syncfusion.com/kb/7992/how-to-resolve-sfgauge-not-rendering-issue-in-xamarin-forms-for-ios)
+[How to resolve circular gauge not rendering issue in Xamarin.Forms for iOS](https://support.syncfusion.com/kb/article/7074/how-to-resolve-sfgauge-not-rendering-issue-in-xamarinforms-for-ios-in-circulargauge)
 
-[How to use a circular gauge control as a quarter gauge](https://www.syncfusion.com/kb/7873/how-to-use-a-circular-gauge-control-as-a-quarter-gauge)
+[How to use a circular gauge control as a quarter gauge](https://support.syncfusion.com/kb/article/7156/how-to-use-a-circular-gauge-control-as-a-quarter-gauge-in-xamarinforms-application)
 
-[How to use a circular gauge control as a circular progress bar](https://www.syncfusion.com/kb/6620/how-to-use-a-circular-gauge-control-as-a-circular-progress-bar)
+[How to use a circular gauge control as a circular progress bar](https://support.syncfusion.com/kb/article/6014/how-to-use-a-circular-gauge-control-as-a-circular-progress-bar)
 
-[How to design a fuel meter using circular gauge](https://www.syncfusion.com/kb/6617/how-to-design-a-fuel-meter-using-circular-gauge)
+[How to design a fuel meter using circular gauge](https://support.syncfusion.com/kb/article/6175/how-to-design-a-fuel-meter-using-circular-gauge-in-xamarinforms)
 
-[How to create circular gauge with a graphical image as the background](https://www.syncfusion.com/kb/4958/how-to-create-sfcirculargauge-with-a-graphical-image-as-the-background)
+[How to create circular gauge with a graphical image as the background](https://support.syncfusion.com/kb/article/4713/how-to-create-circular-gauge-with-a-graphical-image-as-the-background)
 
-[How can you use data binding in gauge with the MVVM pattern](https://www.syncfusion.com/kb/4138/how-can-you-use-data-binding-in-gauge-with-the-mvvm-pattern)
+[How can you use data binding in gauge with the MVVM pattern](https://support.syncfusion.com/kb/article/4025/how-can-you-use-data-binding-in-gauge-with-the-mvvm-pattern)

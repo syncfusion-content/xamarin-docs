@@ -19,7 +19,7 @@ The button visual can be customized through `VisualStates`. The [`SfButton`](htt
 
 N>
 * In addition, `MouseOver` VisualState is available only in the UWP platform. 
-* The visual states `Checked` and `Unchecked` are only updated when enabling the [`IsChecked`](https://help.syncfusion.com/xamarin/button/gettingstarted#toggle-button) property in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
+* The visual states `Checked` and `Unchecked` are only updated when enabling the [`IsChecked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_IsChecked) property in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -93,5 +93,5 @@ this.Content = stackLayout;
 
 ## See also
 
-[How to change Xamarin.Forms button style using its visual states](https://www.syncfusion.com/kb/11003/how-to-change-xamarin-forms-button-style-using-its-visual-states)
+[How to change Xamarin.Forms button style using its visual states](https://support.syncfusion.com/kb/article/9580/how-to-change-xamarinforms-button-style-using-its-visual-states)
 

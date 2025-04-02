@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  Syncfusion Xamarin.Forms Cross Platform UI  | Syncfusion
-description: The Syncfusion Xamarin.Forms cross platform UI controls are an ideal choice for developing cross platform applications in Android, iOS, UWP, WPF, and macOS.
+title:  Syncfusion® Xamarin.Forms Cross Platform UI  | Syncfusion®
+description: The Syncfusion® Xamarin.Forms cross platform UI controls are an ideal choice for developing cross platform applications in Android, iOS, UWP, WPF, and macOS.
 platform: xamarin
 control: Xamarin
 documentation: ug
 ---
 
-# Syncfusion Xamarin.Forms cross platform UI controls
+# Syncfusion<sup>®</sup> Xamarin.Forms cross platform UI controls
 
-The Syncfusion Xamarin.Forms cross platform UI controls are an ideal choice for developing rich cross platform applications with .NET from a single shared code base. You can build more responsive, interactive, and creative application that run on multiple platforms and devices with various form factors. Some of the cool features like theming and customization options makes the controls a perfect one for your cross-platform application.
+The Syncfusion<sup>®</sup> Xamarin.Forms cross platform UI controls are an ideal choice for developing rich cross platform applications with .NET from a single shared code base. You can build more responsive, interactive, and creative application that run on multiple platforms and devices with various form factors. Some of the cool features like theming and customization options makes the controls a perfect one for your cross-platform application.
 
-Syncfusion Xamarin.Forms controls support following platforms,
+Syncfusion<sup>®</sup> Xamarin.Forms controls support following platforms,
 
 * Android
 * iOS
@@ -399,7 +399,7 @@ You can find the platforms supported by each Xamarin.Forms UI control as below.
 			EDITORS<br/>
 		</td>	
 		<td>
-			<a href="/xamarin/navigation-drawer/overview">Rich Text Editor</a><br/>
+			<a href="/xamarin/rich-text-editor/overview">Rich Text Editor</a><br/>
 		</td>
 		<td>
 		Yes<br/>
@@ -694,7 +694,7 @@ You can find the platforms supported by each Xamarin.Forms UI control as below.
 		Yes<br/>
 		</td>
 		<td>
-		No<br/>
+		Yes<br/>
 		</td>
 		<td>
 		No<br/>
@@ -714,7 +714,7 @@ You can find the platforms supported by each Xamarin.Forms UI control as below.
 		Yes<br/>
 		</td>
 		<td>
-		Yes<br/>
+		No<br/>
 		</td>
 		<td>
 		No<br/>
@@ -1117,7 +1117,7 @@ You can find the platforms supported by each Xamarin.Forms UI control as below.
 	    VIEWER/EDITOR<br/>
 		</td>
 		<td>
-			<a href="/xamarin/Image Editor/overview">image-editor</a><br/>
+			<a href="/xamarin/image-editor/overview">image-editor</a><br/>
 		</td>
 		<td>
 		Yes<br/>

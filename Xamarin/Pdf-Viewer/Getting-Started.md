@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Getting Started with Xamarin Pdf Viewer control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control, its elements and more.
-platform: Xamarin
+description: Learn here about getting started with Syncfusion<sup>®</sup> Xamarin Pdf Viewer (SfPdfViewer) control, its elements and more.
+platform: xamarin
 control: SfPdfViewer
 documentation: ug
 ---
@@ -13,7 +13,7 @@ This section demonstrates how to create an application that displays a PDF file 
  
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio<sup>®</sup> for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -33,7 +33,7 @@ N> Install the same version of SfPdfViewer NuGet in all the projects.
 
 **Method 2: Adding SfPdfViewer reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfPdfViewer control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion<sup>®</sup> also provides Xamarin Toolbox. Using this toolbox, you can drag the SfPdfViewer control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion<sup>®</sup> Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfPdfViewer assemblies manually from the installed location**
 
@@ -44,25 +44,25 @@ Location: {Installed location}/{version}/Xamarin/lib
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/></td>
+<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/>Syncfusion.SfTabView.XForms.dll<br/></td>
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.Android.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.Android.dll<br/>Syncfusion.SfBusyIndicator.Android.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/> Syncfusion.SfRangeSlider.XForms.Android.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/>Syncfusion.SfProgressBar.XForms.Android.dll<br/></td>
+<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.Android.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.Android.dll<br/>Syncfusion.SfBusyIndicator.Android.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/> Syncfusion.SfRangeSlider.XForms.Android.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/>Syncfusion.SfProgressBar.XForms.Android.dll<br/>Syncfusion.SfTabView.XForms.dll<br/>Syncfusion.SfTabView.XForms.Android.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.iOS.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.iOS.dll<br/>Syncfusion.SfBusyIndicator.iOS.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/>Syncfusion.SfRangeSlider.XForms.iOS.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/>Syncfusion.SfProgressBar.XForms.iOS.dll<br/></td>
+<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.iOS.dll<br/>Syncfusion.SfBusyIndicator.XForms.dll<br/>Syncfusion.SfBusyIndicator.XForms.iOS.dll<br/>Syncfusion.SfBusyIndicator.iOS.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/>Syncfusion.SfRangeSlider.XForms.iOS.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/>Syncfusion.SfProgressBar.XForms.iOS.dll<br/>Syncfusion.SfTabView.XForms.dll<br/>Syncfusion.SfTabView.XForms.iOS.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>
-<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.UWP.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/>Syncfusion.SfRangeSlider.XForms.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/>Syncfusion.SfProgressBar.XForms.UWP.dll<br/></td>
+<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.XForms.dll<br/>Syncfusion.SfPdfViewer.XForms.UWP.dll<br/>Syncfusion.SfRangeSlider.XForms.dll<br/>Syncfusion.SfRangeSlider.XForms.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/>Syncfusion.SfProgressBar.XForms.dll<br/>Syncfusion.SfProgressBar.XForms.UWP.dll<br/>Syncfusion.SfTabView.XForms.dll<br/>Syncfusion.SfTabView.XForms.UWP.dll<br/></td>
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion<sup>®</sup> assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion<sup>®</sup> license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion<sup>®</sup> license key in your Xamarin application to use our components.
 
 ## Creating a simple PDF Viewer application
 
@@ -70,7 +70,7 @@ Create a new cross platform application for Xamarin.Forms.Portable in the Visual
 
 N> If you are adding the references from toolbox, this step is not needed.
 
-An additional step is required to render the SfPdfViewer control in `iOS` project. You need to call the `Syncfusion.SfPdfViewer.XForms.iOS.SfPdfDocumentViewRenderer.Init()` and `Syncfusion.SfRangeSlider.XForms.iOS.SfRangeSliderRenderer.Init();` in the `FinishedLaunching` overridden method of the `AppDelegate` class after the Xamarin.Forms Framework has been initialized and before the `LoadApplication` is called, as demonstrated in the following code example.
+An additional step is required to render the SfPdfViewer control in `iOS` project. You need to call the `Syncfusion.SfPdfViewer.XForms.iOS.SfPdfDocumentViewRenderer.Init()`, `Syncfusion.SfRangeSlider.XForms.iOS.SfRangeSliderRenderer.Init()` and `Syncfusion.XForms.iOS.TabView.SfTabViewRenderer.Init()` methods in the `FinishedLaunching` overridden method of the `AppDelegate` class after the Xamarin.Forms Framework has been initialized and before the `LoadApplication` is called, as demonstrated in the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -80,6 +80,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
     global::Xamarin.Forms.Forms.Init();
     Syncfusion.SfPdfViewer.XForms.iOS.SfPdfDocumentViewRenderer.Init();
     Syncfusion.SfRangeSlider.XForms.iOS.SfRangeSliderRenderer.Init();
+    Syncfusion.XForms.iOS.TabView.SfTabViewRenderer.Init();
     LoadApplication(new App());
     return base.FinishedLaunching(app, options);
 }
@@ -101,15 +102,12 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 {
      …
      rootFrame.NavigationFailed += OnNavigationFailed;
-
      //Add the assemblies `using System.Reflection;`
      List<Assembly> assembliesToInclude = new List<Assembly>();
-
      //Now, add all the assemblies that your app uses
      assembliesToInclude.Add(typeof(SfPdfDocumentViewRenderer).GetTypeInfo().Assembly);
-
      assembliesToInclude.Add(typeof(SfRangeSliderRenderer).GetTypeInfo().Assembly);
-
+     assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.TabView.SfTabViewRenderer).GetTypeInfo().Assembly);
      //Replaces Xamarin.Forms.Forms.Init(e);
      Xamarin.Forms.Forms.Init(e, assembliesToInclude);
      …
@@ -187,10 +185,10 @@ namespace GettingStarted
 
 Add the following XAML code in the MainPage.xaml in the portable project.
 
-•	Includes the necessary namespace where the control class resides
-•	Set BindingContext of ContentPage to PdfViewerViewModel
-•	Includes PDF Viewer into the page
-•	Binds InputFileStream property of PDF Viewer control to PdfDocumentStream property of PdfViewerViewModel
+* Includes the necessary namespace where the control class resides
+* Set BindingContext of ContentPage to PdfViewerViewModel
+* Includes PDF Viewer into the page
+* Binds InputFileStream property of PDF Viewer control to PdfDocumentStream property of PdfViewerViewModel
 
 {% tabs %}
 {% highlight xaml %}
@@ -199,8 +197,7 @@ Add the following XAML code in the MainPage.xaml in the portable project.
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GettingStarted"
              x:Class="GettingStarted.MainPage"
-             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
-             >
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms">
     <ContentPage.BindingContext>
         <local:PdfViewerViewModel></local:PdfViewerViewModel>
     </ContentPage.BindingContext>
@@ -214,7 +211,7 @@ Add the following XAML code in the MainPage.xaml in the portable project.
 
 The sample that illustrates loading a PDF in MVVM binding can be downloaded from the link below. 
 
-<http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-2072455774> 
+<https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-2072455774> 
 
 On executing the above sample, you will get the output as shown in the following image.
 
@@ -241,7 +238,7 @@ namespace GettingStarted
         {
             base.OnAppearing();
             fileStream = typeof(App).GetTypeInfo().Assembly.GetManifestResourceStream("GettingStarted.Assets.GIS Succinctly.pdf");
-			//Load the PDF
+            //Load the PDF
             pdfViewerControl.LoadDocument(fileStream);
         }
     }
@@ -259,8 +256,7 @@ In the XAML code described in the previous section, remove the binding of InputF
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GettingStarted"
              x:Class="GettingStarted.MainPage"
-             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
-             >
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms">
     <Grid x:Name="pdfViewGrid">
         <syncfusion:SfPdfViewer x:Name="pdfViewerControl" />
     </Grid> 
@@ -271,7 +267,7 @@ In the XAML code described in the previous section, remove the binding of InputF
 
 The sample which illustrates loading a PDF in code-behind using LoadDocument method can be downloaded from the link below.
 
-<http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-81946798> 
+<https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-81946798> 
 
 ## Loading a PDF from an URL
 
@@ -336,7 +332,6 @@ The cancellation of the PDF load operation can be detected by registering an eve
 
 EventArgs e = new EventArgs();
 cancellationTokenSource.Token.Register(() => LoadDocumentAsyncCancelled(this, e));
-
 private void LoadDocumentAsyncCancelled(object sender, EventArgs e)
 {
     // handle the cancellation event
@@ -373,7 +368,7 @@ Stream pdfDocumentStream = pdfViewerControl.SaveDocument();
 {% endhighlight %}
 {% endtabs %}
 
-Please refer [here](https://www.syncfusion.com/kb/9031/how-to-save-loaded-pdf-document-in-application-level) for saving the PDF document as a file in the application level from the obtained stream.
+Please refer [here](https://support.syncfusion.com/kb/article/8173/how-to-save-loaded-pdf-document-in-application-level) for saving the PDF document as a file in the application level from the obtained stream.
 
 N> The `SaveDocument` method does not save the existing stamp annotations in the PDF document. Instead, use the `SaveDocumentAsync` method to save them.
 
@@ -386,6 +381,102 @@ The PDF Viewer also allows you to save and return the PDF document with the chan
 
 //Save the PDF document asynchronously 
 Task<Stream> pdfDocumentStream = pdfViewerControl.SaveDocumentAsync();
+
+{% endhighlight %}
+{% endtabs %}
+
+## Events to track the loading and saving of PDFs
+
+The [`SfPdfViewer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html) control allows you to track the loading and saving of PDFs using the following events. 
+
+### Document loaded event
+
+The [DocumentLoaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_DocumentLoaded) event triggers after the document is properly loaded in the `SfPdfViewer`. The following code example explains the same. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfPdfViewer x:Name="pdfViewerControl" DocumentLoaded="pdfViewerControl_DocumentLoaded"/> 
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+private void PdfViewerControl_DocumentLoaded(object sender, EventArgs args)  
+{  
+
+        // Get the total page count of the loaded PDF document. 
+        int pageCount = pdfViewer.PageCount; 
+
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
+### Document load failed event
+
+The [UnhandledConditionOccurred](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_UnhandledConditionOccurred) event triggers when document loading fails in the `SfPdfViewer`. That is: 
+
+* When any corrupted document is loaded. 
+* When any non-PDF document is loaded. 
+The [UnhandledConditionEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.UnhandledConditionEventArgs.html) will return the `Title` and `Description` message for the failure reason and the `Handled` option to enable or disable the default error alert view.  
+
+You can prevent displaying the default error alert view by setting the `Handled` value to `true`. The default value of `Handled` is `false`. 
+
+The following code example explains the same.
+ 
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfPdfViewer x:Name="pdfViewerControl" UnhandledConditionOccurred="pdfViewerControl_UnhandledConditionOccurred"/> 
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+private void pdfViewerControl_UnhandledConditionOccurred(object sender, UnhandledConditionEventArgs args)  
+{  
+
+            //Set the Handled value as "true" to indicate that the event is handled in the application and to prevent the default alert view. 
+            args.Handled = true; 
+
+            // Get the title of the unhandled condition. 
+            string title = args.Title; 
+
+            // Get the details of the unhandled condition. 
+            string description = args.Description; 
+
+            DisplayAlert(title, description, "OK"); 
+
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
+### Document save initiated event
+
+The [DocumentSaveInitiated](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_DocumentSaveInitiated) event will be triggered when the document is saved in the `SfPdfViewer`. The [DocumentSaveInitiatedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.DocumentSaveInitiatedEventArgs.html) will return the saved document stream. The following code example explains the same.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfPdfViewer x:Name="pdfViewerControl" DocumentSaveInitiated="pdfViewerControl_DocumentSaveInitiated"/> 
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+private void PdfViewerControl_DocumentSaveInitiated(object sender, DocumentSaveInitiatedEventArgs args)  
+{  
+      //Returns the save stream. 
+      Stream saveStream = args.SaveStream; 
+} 
 
 {% endhighlight %}
 {% endtabs %}
@@ -452,7 +543,6 @@ PDF viewer has “GoToNextPageCommand” and “GoToPreviousPageCommand” which
 {% highlight xaml %}
 
 <Button x:Name="goToNextButton"  Grid.Column="3" BackgroundColor="Transparent" Image="PageDown.png" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding GoToNextPageCommand, Source={x:Reference Name=pdfViewerControl}}"/>
-
 <Button x:Name="goToPreviousButton" Grid.Column="4" BackgroundColor="Transparent" Image="PageUp.png" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding GoToPreviousPageCommand, Source={x:Reference Name=pdfViewerControl}}"/>
 
 {% endhighlight %}
@@ -500,6 +590,49 @@ pdfViewerControl.AnnotationSettings.IsLocked = true;
 
 N>The lock operation can also be enabled or disabled for a particular annotation type such as shape, free text, text markup, etc. Please find the code samples to enable or disable interaction for particular annotation from their respective sections.
 
+### Customize the locked annotations selection border color
+
+By default, the selection border color for the locked annotations will be gray. You can customize the locked annotations selection border color by setting the required color to the `LockedStrokeColor` property. The following code illustrates the same:
+
+{% tabs %}
+{% highlight c# %}
+
+//Set the selection border color for the locked annotations
+pdfViewerControl.AnnotationSettings.Selector.LockedStrokeColor = Color.Red;
+
+{% endhighlight %}
+{% endtabs %}
+
+N>It is not recommended to set both the `StrokeColor` and `LockedStrokeColor` properties with the same color.
+
+## How to Change the Color of the Annotation Selector?
+
+By default, the selection border color for the annotations will be blue. Customize the selection border color of the annotations by setting the required color to the `StrokeColor` property. The following code example illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Set the selection border color for the annotations.
+pdfViewerControl.AnnotationSettings.Selector.StrokeColor = Color.Orange;
+
+{% endhighlight %}
+{% endtabs %}
+
+### How to Customize the Annotation Selector Padding?
+
+By changing the value of the `Padding` property, adjust the spacing between the annotation and the selector, which ranges from -20 to 20. The default padding between the annotation and the selector is 10. The following code example explains the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Set the Annotations selector padding.
+pdfViewerControl.AnnotationSettings.Selector.Padding = 15;
+
+{% endhighlight %}
+{% endtabs %}
+
+N>This property only applies to bounds-based annotations such as rectangle, circle, free text, ink, handwritten, and custom stamp annotations.
+
 ## How to enable or disable the annotation selection?
 
 To enable or disable the annotation selection, set the `SfPdfViewer.AnnotationSettings.Constraints` API to `AnnotationConstraints.Selectable` or `~AnnotationConstraints.Selectable` respectively. Annotations will be selected by default, and when this API is set to `~AnnotationConstraints.Selectable`, annotation selection, moving, resizing, removing and attribute changes will be disabled. Only the tapped events of the annotations will be raised. The following code sample explains the same.
@@ -538,26 +671,22 @@ Navigate to the specified vertical and horizontal offset values in PDF Viewer us
 
 //Retrieves the current horizontal offset of the PdfViewerControl
 m_currentHorizontalOffset = pdfViewerControl.HorizontalOffset;
-
 //Retrieves the current vertical offset of the PdfViewerControl
 m_currentVerticalOffset = pdfViewerControl.VerticalOffset;
-
 //Scrolls the content to the specified vertical offset position in the PdfViewerControl
 pdfViewerControl.ScrollToOffset(m_currentHorizontalOffset+10, m_currentVerticalOffset+10);
-
 {% endhighlight %}
 {% endtabs %}
 
 ## How to modify the width of the vertical scrollbar in the UWP platform?
 
-The PDF viewer uses the [ScrollViewer](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-19041) control to scroll the pages of the PDF. The width of the vertical scrollbar of the [ScrollViewer](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-19041) can be modified by using the [VerticalScrollBarWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_VerticalScrollBarWidth) property. The default value of the API is the default width of the [ScrollViewer](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-19041) control.
+The PDF viewer uses the [ScrollViewer](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-19041) control to scroll the pages of the PDF. The width of the vertical scrollbar of the [ScrollViewer](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-19041) can be modified by using the [VerticalScrollBarWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_VerticalScrollBarWidth) property. The default value of the API is the default width of the [ScrollViewer](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-19041) control.
 
 {% tabs %}
 {% highlight c# %}
 
 //Sets the width of the vertical scrollbar in the PDF Viewer.
 pdfViewerControl.VerticalScrollBarWidth = 50;
-
 //Gets the width of the vertical scrollbar in the PDF Viewer.
 int verticalScrollBarWidth = pdfViewerControl.VerticalScrollBarWidth;
 
@@ -569,7 +698,6 @@ N>This API is only applicable for UWP desktop. Changing the value of this API do
 ## How to get the list of annotations present in the PDF?
 
 By using `Annotations` property, You can get the list of annotations present in the PDF document.
-  .
 Refer the following code sample.
 
 {% tabs %}
@@ -592,7 +720,6 @@ By default, the PDF Viewer does not render the appearance content of annotations
 
 //Sets a value whether the annotations should be flattened when the PDF is loaded or not.
 pdfViewerControl.AnnotationSettings.Flatten = true;
-
 //Loads the PDF. 
 pdfViewerControl.LoadDocument(stream);
 

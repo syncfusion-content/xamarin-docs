@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Bookmark Navigation in Xamarin Pdf Viewer control | Syncfusion
-description: Learn here all about Bookmark Navigation support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
-platform: Xamarin
+description: Learn here all about Bookmark Navigation support in Syncfusion<sup>®</sup> Xamarin Pdf Viewer (SfPdfViewer) control and more.
+platform: xamarin
 control: SfPdfViewer
 documentation: ug
 ---
@@ -90,6 +90,18 @@ pdfViewerControl.BookmarkPaneVisible = true;
 {% endhighlight %}
 {% endtabs %}
 
+## Getting the bookmarks from the PDF
+
+The bookmarks existing in the PDF document can be obtained from the `Bookmarks` property. The `Bookmarks` collection is not supposed to be modified by adding new bookmarks or removing existing bookmarks. Changes made to the `Bookmarks` collection will not be reflected in the bookmark pane and in the PDF document.
+
+{% tabs %}
+{% highlight c# %}
+
+List<PdfBookmark> bookmarks = pdfViewer.Bookmarks;
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Programmatically navigate to a bookmark destination
 
 You can navigate to a desired bookmark destination using the `GotoBookmark(PdfBookmark)` method. The target/destination bookmark should be provided as the argument to this method. Refer to the following code sample.
@@ -99,10 +111,8 @@ You can navigate to a desired bookmark destination using the `GotoBookmark(PdfBo
 
 //Loads the PDF document in PdfLoadedDocument
 PdfLoadedDocument loadedDocument = new PdfLoadedDocument(documentStream);
-
 //Retrieves the bookmark collection from the loaded PDF document
 PdfBookmarkBase bookmark = loadedDocument.Bookmarks;
-
 //Navigate to the specified bookmark destination offset
 pdfViewerControl.GoToBookmark(bookmark[0]);
 
@@ -117,24 +127,103 @@ You can track the bookmark navigation operation using the `BookmarkNavigationOcc
 {% highlight c# %}
 
 pdfViewerControl.BookmarkNavigationOccurred += PdfViewerControl_BookmarkNavigationOccurred;
-
-
 private void PdfViewerControl_BookmarkNavigationOccurred(object sender, Syncfusion.SfPdfViewer.XForms.BookmarkNavigationOccurredEventArgs e)
 {
       //Retrieves the current bookmark
       PdfBookmark bookmark = e.Bookmark;
-
       //Gets the vertical offset of the bookmark
       double destinationOffset = e.Offset;
-
       //Gets the current page number in which the bookmark destination resides
       int pageNumber = e.PageNumber;
-
 }
 
 {% endhighlight %}
 {% endtabs %}
 
-![SfPdfViewer](pdfviewer_images/bookmark.png)
+## Custom bookmarks
+
+PDF viewer allows you to bookmark the current page dynamically. To bookmark a page, navigate to the page and bookmark it. These custom bookmarks can be saved with the document, but they will only be visible in the Syncfusion<sup>®</sup> PDF viewer. They will not be visible in other 3rd party PDF viewer applications.
+
+The custom bookmarks can be obtained using the `CustomBookmarks` property. 
+
+{% tabs %}
+{% highlight c# %}
+
+ObservableCollection<CustomBookmark> bookmarks = pdfViewer.CustomBookmarks;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Add custom bookmarks using the bookmark pane
+                        
+Custom bookmarks can be added using the floating button in the bookmark pane.
+
+![Add custom bookmark](pdfviewer_images/CustomBookmarks.png)
+
+### Add custom bookmarks programmatically
+You can add a new custom bookmark by creating a `CustomBookmark` instance and adding to the `CustomBookmarks` collection.
+  
+{% tabs %}
+{% highlight c# %}
+
+//initializes new custom bookmark with name and page number
+CustomBookmark customBookmark = new CustomBookmark("Custom Bookmark 1", 1);
+       
+//Adds a new custom bookmark
+pdfViewerControl.CustomBookmarks.Add(customBookmark);
+
+{% endhighlight %}
+{% endtabs %}
+
+### Navigating to custom bookmarks
+
+You can navigate to the desired custom bookmark destination using the `GoToBookmark` method. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Get the ith bookmark from the collection.
+CustomBookmark customBookmark = pdfViewerControl.CustomBookmarks[i];
+
+//Navigate to the bookmark
+pdfViewerControl.GoToBookmark(customBookmark);
+
+{% endhighlight %}
+{% endtabs %}
+
+### Rename custom bookmarks using the bookmark context menu
+Tap the context menu button on the custom bookmark to be edited and choose **Rename** and enter the desired name. 
+
+![Bookmark context menu](pdfviewer_images/BookmarkContextMenu.png)
+ 
+### Rename custom bookmarks programmatically
+Custom bookmarks can be renamed using the `Name` property.
+   
+{% tabs %}
+{% highlight c# %}
+
+//Rename the custom bookmark at the ith index.
+pdfViewerControl.CustomBookmarks[i].Name = "New custom bookmark name";
+
+{% endhighlight %}
+{% endtabs %}
+
+### Remove custom bookmarks using the bookmark context menu
+Tap the context menu button on the custom bookmark to be removed and tap **Delete**.
+
+### Remove custom bookmarks programmatically
+Custom bookmarks can be removed from the `CustomBookmarks` collection using the `Remove` method. Refer to the below code snippet.
+
+{% tabs %}
+{% highlight c# %}
+
+//Get the custom bookmark at the ith index.
+CustomBookmark customBookmark = pdfViewerControl.CustomBookmarks[i];
+
+//Removes the custom bookmark at the ith index.
+pdfViewerControl.CustomBookmarks.Remove(customBookmark);
+
+{% endhighlight %}
+{% endtabs %}
 
 N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

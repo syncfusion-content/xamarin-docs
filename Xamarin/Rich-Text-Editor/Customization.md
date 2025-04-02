@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in Xamarin Rich Text Editor control | Syncfusion
-description: Learn here all about Customization support in Syncfusion Xamarin Rich Text Editor (SfRichTextEditor) control and more.
+title: Customization in Xamarin Rich Text Editor control | Syncfusion&reg;
+description: Learn here all about Customization support in Syncfusion<sup>&reg;</sup>; Xamarin Rich Text Editor (SfRichTextEditor) control and more.
 platform: xamarin
 control: Rich Text Editor
 documentation: ug
@@ -30,6 +30,7 @@ The [`ToolbarOptions`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.
 * `NumberList`
 * `ParagraphFormat`
 * `Redo`
+* `Strikethrough`
 * `SubScript`
 * `SuperScript`
 * `Underline`
@@ -77,6 +78,29 @@ richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
 richtexteditor.ToolbarSettings.BackgroundColor = Color.Orange;
 richtexteditor.ToolbarSettings.TextColor = Color.DarkBlue;
 richtexteditor.ToolbarSettings.ToolbarBackgroundColor = Color.DarkBlue;
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}
+
+### Scroll button support on toolbar
+
+The Rich Text Editor allows scrolling behind the toolbar's visible items. You can enable or disable the scroll button on the toolbar using the IsScrollButtonVisible Property. By default, the value of IsScrollButtonVisible is set to false. The code example below shows how to customize the appearance of the toolbar.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+<richtexteditor:SfRichTextEditor x:Name="richtexteditor" VerticalOptions="FillAndExpand">
+    <richtexteditor:SfRichTextEditor.ToolbarSettings>
+        <richtexteditor:ToolbarSettings IsScrollButtonVisible="True"/>
+    </richtexteditor:SfRichTextEditor.ToolbarSettings>
+</richtexteditor:SfRichTextEditor>      
+{% endhighlight %}
+
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.ToolbarSettings.IsScrollButtonVisible = true;
 this.Content = richtexteditor;
 {% endhighlight %}
 
@@ -249,6 +273,20 @@ this.Content = richtexteditor;
 
 {% endtabs %}
 
+## ToggleStrikethrough
+
+The Rich Text Editor provides 'ToggleStrikethrough' support, which allows the users to toggle the text in Strikethrough format. The following code example explains how to set ToggleStrikethrough mode in Rich Text Editor.
+
+{% tabs %}
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.ToggleStrikethrough();
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}
+![Strikethrough support](SfRichTextEditor_Images/StrikeThrough.png)
 
 ## ToolbarPosition
 

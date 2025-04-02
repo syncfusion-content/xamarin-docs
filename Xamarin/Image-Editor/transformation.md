@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transformation in Xamarin Image Editor control | Syncfusion
-description: Learn here all about Transformation support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
+title: Transformation in Xamarin Image Editor control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Transformation support in Syncfusion<sup>&reg;</sup> Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: ImageEditor
 documentation: ug
@@ -49,4 +49,4 @@ editor.Flip(FlipDirection.Horizontal);
 
 ## See also
 
-[How to resolve image rotated when loading image / after saving image in iOS device](https://www.syncfusion.com/kb/9632/how-to-resolve-image-rotated-when-loading-image-after-saving-image-in-ios-device)
+[How to resolve image rotated when loading image / after saving image in iOS device](https://support.syncfusion.com/kb/article/8546/how-to-resolve-image-rotated-when-loading-image-after-saving-image-in-ios-device)

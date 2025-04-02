@@ -13,13 +13,13 @@ documentation: ug
 
 AutoComplete provides three different ways to display the filtered suggestions. They are 
 
-* Suggest - displaying suggestion in drop down list
+* [`Suggest`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.AutoCompleteMode.html#Syncfusion_SfAutoComplete_XForms_AutoCompleteMode_Suggest) - displaying suggestion in drop down list
 
-* Append - appending the first suggestion to text
+* [`Append`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.AutoCompleteMode.html#Syncfusion_SfAutoComplete_XForms_AutoCompleteMode_Append) - appending the first suggestion to text
 
-* SuggestAppend - Both of these
+* [`SuggestAppend`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.AutoCompleteMode.html#Syncfusion_SfAutoComplete_XForms_AutoCompleteMode_SuggestAppend) - Both of these
 
-`AutoCompleteMode` property is used to choose the suggestion display mode in SfAutoComplete control. The default value is Suggest.
+[`AutoCompleteMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_AutoCompleteMode) property is used to choose the suggestion display mode in SfAutoComplete control. The default value is [`Suggest`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.AutoCompleteMode.html#Syncfusion_SfAutoComplete_XForms_AutoCompleteMode_Suggest).
 
 ## Suggesting Choices in List
 
@@ -120,7 +120,7 @@ namespace AutocompleteSample
 
 ## Appending Suggestion to Text
 
-The first item in filtered suggestions is appended to SfAutoComplete text. In this mode, drop down remains closed.
+The first item in filtered suggestions is appended to [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) text. In this mode, drop down remains closed.
 
 {% tabs %}
 

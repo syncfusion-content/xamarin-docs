@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Populating Data in Xamarin Charts control | Syncfusion
-description: Learn here all about Populating Data support in Syncfusion Xamarin Charts (SfChart) control and more.
+description: Learn here all about Populating Data support in Syncfusion® Xamarin Charts (SfChart) control and more.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -13,7 +13,7 @@ documentation: ug
 
 ## Chart Data Point	
 
-One way is to create a collection of [ChartDataPoint](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataPoint.html#) objects and assign this collection to [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_ItemsSource) property. Here, each [`ChartDataPoint`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataPoint.html#) object represents a data point in a chart series.
+One way is to create a collection of [ChartDataPoint](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataPoint.html) objects and assign this collection to [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_ItemsSource) property. Here, each [`ChartDataPoint`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataPoint.html) object represents a data point in a chart series.
 
 N> [`ChartDataPoint`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataPoint.html) class has few overloaded constructors depending on the number of y-values required to plot a data point for a particular series type. For example, you can use a constructor with two parameters to instantiate data point for [`XYDataSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.XyDataSeries.html) like Line, Spline, and Pie etc.
 
@@ -179,12 +179,12 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to bind the Xamarin.Forms pie chart tooltip to “Others” category values](https://www.syncfusion.com/kb/11861/how-to-bind-the-xamarin-forms-pie-chart-tooltip-to-others-category-values)
+[How to bind the Xamarin.Forms pie chart tooltip to “Others” category values](https://support.syncfusion.com/kb/article/10323/how-to-bind-the-xamarin-forms-pie-chart-tooltip-to-others-category-values)
 
-[How to pass a JSON array to Xamarin.Forms Chart](https://www.syncfusion.com/kb/10727/how-to-pass-a-json-array-to-xamarin-forms-chart)
+[How to pass a JSON array to Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/9371/how-to-pass-a-json-array-to-xamarin-forms-chart)
 
-[How to bind Series from MVVM pattern in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10702/how-to-bind-series-from-mvvm-pattern-in-xamarin-forms-chart)
+[How to bind Series from MVVM pattern in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/9369/how-to-bind-series-from-mvvm-pattern-in-xamarin-forms-chart)
 
-[How to bind array collection to Xamarin.Forms Chart](https://www.syncfusion.com/kb/10599/how-to-bind-array-collection-to-xamarin-forms-chart)
+[How to bind array collection to Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/9224/how-to-bind-array-collection-to-xamarin-forms-chart)
 
-[How to bind the SQLite Database to the Xamarin.Forms Chart](https://www.syncfusion.com/kb/11267/how-to-bind-the-sqlite-database-to-the-xamarin-forms-chart)
+[How to bind the SQLite Database to the Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/9815/how-to-bind-the-sqlite-database-to-the-xamarin-forms-chart)

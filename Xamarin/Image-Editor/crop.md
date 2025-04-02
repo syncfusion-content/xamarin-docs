@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Crop in Xamarin Image Editor control | Syncfusion
-description: Learn here all about Crop support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
+title: Crop in Xamarin Image Editor control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Crop support in Syncfusion<sup>&reg;</sup> Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: ImageEditor
 documentation: ug
@@ -28,6 +28,8 @@ The [`ToggleCropping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImage
 
 * The following code shows cropping the image to any desired size.
 
+{% capture codesnippet1 %}
+
 {% highlight C# %}
 
 // For free hand cropping.
@@ -36,7 +38,13 @@ editor.ToggleCropping();
 
 {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 * The following code shows cropping an image based on its original width and height.
+
+{% capture codesnippet2 %}
 
 {% highlight C# %}
 
@@ -46,7 +54,13 @@ editor.ToggleCropping(float.NaN,float.NaN);
 
 {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
+
 * The following code shows cropping an image in square format.
+
+{% capture codesnippet3 %}
 
 {% highlight C# %}
 
@@ -56,7 +70,13 @@ editor.ToggleCropping(1,1);
 
 {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet3 | UnOrderList_Indent_Level_1 }} 
+
 * The following code shows cropping an image based on specific ratio.
+
+{% capture codesnippet4 %}
 
 {% highlight C# %}
 
@@ -66,7 +86,13 @@ editor.ToggleCropping(9,17);
 
 {% endhighlight %} 
 
+{% endcapture %}
+
+{{ codesnippet4 | UnOrderList_Indent_Level_1 }} 
+
 * To position the cropping window with custom location, pass the desired rectangle in [`ToggleCropping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_ToggleCropping_Xamarin_Forms_Rectangle_System_Boolean_) method. Each value in the rectangle should be in offset value(0 to 100).
+
+{% capture codesnippet5 %}
 
 {% highlight C# %}
 
@@ -75,6 +101,10 @@ Rectangle rect = new Rectangle(20,20,50,50);
 editor.ToggleCropping(rect);    
 
 {% endhighlight %} 
+
+{% endcapture %}
+
+{{ codesnippet5 | UnOrderList_Indent_Level_1 }} 
 
 After the cropping area has been selected, the [`Crop`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_Crop_Xamarin_Forms_Rectangle_System_Boolean_) method is called, which in turn crops the selected region and displays the cropped image on the image editor.
 
@@ -160,11 +190,17 @@ The following code sample will add the cropping preview on the image in square s
 
 * To crop an image in a circle or an ellipse with a specific ratio, use [`ToggleCropping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_ToggleCropping_System_Single_System_Single_System_Boolean_) with a ratio argument and an optional parameter of true, which specifies whether the cropping panel should be added in an elliptical or rectangle shape. The default value is false.
 
+{% capture codesnippet6 %}
+
 {% highlight C# %}
 
 editor.ToggleCropping(1, 1, true);    
 
 {% endhighlight %} 
+
+{% endcapture %}
+
+{{ codesnippet6 | UnOrderList_Indent_Level_1 }} 
 
 ## Tilt the image
 
@@ -196,15 +232,15 @@ After tilt preview, cropping can be performed using the available cropping optio
 
 ## See also
 
-[How to detect cropping window is enabled or not](https://www.syncfusion.com/kb/9750/how-to-detect-cropping-window-is-enabled-or-not)
+[How to detect cropping window is enabled or not](https://support.syncfusion.com/kb/article/8447/how-to-detect-cropping-window-is-enabled-or-not)
 
-[How to save the image after cropping in SfImageEditor](https://www.syncfusion.com/kb/9734/how-to-save-the-image-after-cropping-in-imageeditor)
+[How to save the image after cropping in SfImageEditor](https://support.syncfusion.com/kb/article/8440/how-to-save-the-image-after-cropping-in-imageeditor)
 
-[How to include custom cropping aspect in toolbar](https://www.syncfusion.com/kb/8854/how-to-include-custom-cropping-aspect-in-toolbar)
+[How to include custom cropping aspect in toolbar](https://support.syncfusion.com/kb/article/7828/how-to-include-custom-cropping-aspect-in-toolbar)
 
-[How to avoid crop sluggishness in MasterDetailPage](https://www.syncfusion.com/kb/9634/how-to-avoid-crop-sluggishness-in-masterdetailpage)
+[How to avoid crop sluggishness in MasterDetailPage](https://support.syncfusion.com/kb/article/8548/how-to-avoid-crop-sluggishness-in-masterdetailpage)
 
-[How can we set default cropping in SfImageEditor](https://www.syncfusion.com/kb/9369/how-can-we-set-default-cropping-in-image-editor)
+[How can we set default cropping in SfImageEditor](https://support.syncfusion.com/kb/article/7933/how-can-we-set-default-cropping-in-image-editor)
 
-[How to enable toggle cropping in ImageLoaded event](https://www.syncfusion.com/kb/8933/how-to-enable-toggle-cropping-in-imageloaded-event)
+[How to enable toggle cropping in ImageLoaded event](https://support.syncfusion.com/kb/article/7795/how-to-enable-toggle-cropping-in-xamarinforms-imageeditor-loading)
 

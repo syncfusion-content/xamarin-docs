@@ -1,6 +1,6 @@
 ---
-title: User Handles in Xamarin Diagram control | Syncfusion
-description: Learn here all about User Handles support in Syncfusion Xamarin Diagram (SfDiagram) control and more.
+title: User Handles in Xamarin Diagram control | Syncfusion<sup>&reg;</sup>;
+description: Learn here all about User Handles support in Syncfusion<sup>&reg;</sup>; Xamarin Diagram (SfDiagram) control and more.
 platform: xamarin
 control: SfDiagram
 documentation: UG
@@ -11,7 +11,9 @@ keywords:
 User handles are customizable handles which can be used to perform custom actions and also default clipboard actions. You can able to customize the user handles using:
 * SfGraphicPath
 * Template
+
 The following code illustrates how to add custom user handle in diagram:
+
 {% tabs %}
 {% highlight c# %}
 //Add graphic path into an user handle collection

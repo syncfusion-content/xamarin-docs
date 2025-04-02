@@ -1,7 +1,7 @@
 ---
-title: Stencil in Xamarin Diagram control | Syncfusion
-description: Learn here all about Stencil support in Syncfusion Xamarin Diagram (SfDiagram) control, its elements and more.
-platform: Xamarin
+title: Stencil in Xamarin Diagram control | Syncfusion<sup>&reg;</sup>;
+description: Learn here all about Stencil support in Syncfusion<sup>&reg;</sup>; Xamarin Diagram (SfDiagram) control, its elements and more.
+platform: xamarin
 control: Diagram
 documentation: ug
 keywords: 

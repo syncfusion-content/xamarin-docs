@@ -507,6 +507,7 @@ The SfChat allows to show a list of options as suggestions at the bottom of chat
                     <sfChat:SfChat x:Name="sfChat"
                            Messages="{Binding Messages}"
                            CurrentUser="{Binding CurrentUser}"
+                           Suggestions="{Binding ChatSuggestions}"
                            ShowOutgoingMessageAvatar="True" />
 	<ContentPage.Content>
 </ContentPage>
@@ -529,6 +530,7 @@ namespace GettingStarted
             this.viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.Suggestions= viewModel.ChatSuggestions;
             this.sfChat.ShowOutgoingMessageAvatar = true;
             this.Content = sfChat;
         }
@@ -569,7 +571,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         suggestions.Add(new Suggestion("Airways 5", "Flight5.png"));
         suggestions.Add(new Suggestion("Airways 6", "Flight6.png"));
 
-        ChatSuggestions.Orientation = SuggestionsOrientation.Vertical;
+        ChatSuggestions.Orientation = SuggestionsOrientation.Horizontal;
 
         ChatSuggestions.Items = suggestions;
         this.GenerateMessages();
@@ -650,7 +652,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = new Author() { Avatar = "Aeroplane.png", Name = "Travel Bot" },
             Text = "Here's my suggestion",
-            Suggestions = chatSuggestions,
         });   
     }
 }

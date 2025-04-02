@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Indicating the selected item in Xamarin Segmented Control | Syncfusion
-description: Learn here all about Indicating the selected item support in Syncfusion Xamarin Segmented Control (SfSegmentedControl) and more.
+title: Indicating the selected item in Xamarin Segmented Control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Indicating the selected item support in Syncfusion<sup>&reg;</sup> Xamarin Segmented Control (SfSegmentedControl) and more.
 platform: Xamarin
 control: SegmentedControl
 documentation: ug
@@ -13,7 +13,7 @@ The segmented control indicates the selected item by differentiating it with tex
 
 ## Selection text color
 
-You can change the text color of the selected item to desired color. The selected item's text color can be customized using the `SelectionTextColor` property.
+You can change the text color of the selected item to desired color. The selected item's text color can be customized using the [`SelectionTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectionTextColor) property.
 
 {% tabs %}
 
@@ -155,7 +155,7 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 #### Color
 
-The background color of the selection strip can be customized using the `Color` property of `SelectionIndicatorSettings`.
+The background color of the selection strip can be customized using the [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_Color) property of [`SelectionIndicatorSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectionIndicatorSettings).
 
 {% tabs %}
 
@@ -183,7 +183,7 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 #### Thickness
 
-The border thickness of the selection strip can be customized using the `Thickness` property of `SelectionIndicatorSettings`.
+The border thickness of the selection strip can be customized using the [`Thickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_BorderThickness) property of [`SelectionIndicatorSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectionIndicatorSettings).
 
 {% tabs %}
 

@@ -49,9 +49,9 @@ inputLayout.InputView = new Entry();
 
 You can customize the font for the input view inside SfTextInputLayout using its properties.
 
-* [Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms#properties)
+* [Entry](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms#properties)
 
-* [Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms#properties)
+* [Editor](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms#properties)
 
 * [SfMaskedEdit](https://help.syncfusion.com/xamarin/sfmaskededit/visual-customization#setting-appearance-of-text) 
 

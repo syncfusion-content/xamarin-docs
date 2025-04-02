@@ -13,7 +13,7 @@ This section provides overview for working with Essential SfNumericUpDown for Xa
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -60,9 +60,9 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching the SfNumericUpDown on each platform
 
@@ -133,6 +133,8 @@ The [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNume
 
 * Adding namespace for the added assemblies. 
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -149,8 +151,13 @@ The [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNume
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
 
 * Now add the SfNumericUpDown control with a required optimal name by using the included namespace.
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -168,6 +175,10 @@ this.Content = numericUpDown;
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ![Show numeric updown control](images/Updown_Control.PNG)
 
@@ -199,12 +210,12 @@ You can find the complete getting started sample from this [link.](https://githu
 
 ## See also
 
-[How to change border width of SfNumericUpDown by using custom renderer](https://www.syncfusion.com/kb/7633/how-to-change-borderwidth-of-numericupdown-by-using-custom-renderer)
+[How to change border width of SfNumericUpDown by using custom renderer](https://support.syncfusion.com/kb/article/6789/how-to-change-borderwidth-of-numericupdown-by-using-custom-renderer)
 
-[How to get the dynamic theme change effect in SfNumericUpDown inside the SfTextInputLayout](https://www.syncfusion.com/kb/11909/how-to-get-the-dynamic-theme-change-effect-in-numeric-control-inside-the-xamarin-forms-text)
+[How to get the dynamic theme change effect in SfNumericUpDown inside the SfTextInputLayout](https://support.syncfusion.com/kb/article/10537/how-to-get-the-dynamic-theme-change-effect-in-numeric-control-inside-the-xamarin-forms-text)
 
-[How to create a border less SfNumericUpDown](https://www.syncfusion.com/kb/11873/how-to-create-a-borderless-xamarin-forms-numeric-control-sfnumericupdown)
+[How to create a border less SfNumericUpDown](https://support.syncfusion.com/kb/article/10320/how-to-create-a-borderless-xamarin-forms-numeric-control-sfnumericupdown)
 
-[How to hide the increment or decrement button in SfNumericUpDown](https://www.syncfusion.com/kb/11647/how-to-hide-the-increment-or-decrement-button-in-xamarin-forms-numeric-control)
+[How to hide the increment or decrement button in SfNumericUpDown](https://support.syncfusion.com/kb/article/10200/how-to-hide-the-increment-or-decrement-button-in-xamarin-forms-numeric-control)
 
-[How to resolve the issue with decimal point and minus key on Samsung devices in SfNumericUpDown](https://www.syncfusion.com/kb/10435/how-to-resolve-the-issue-with-decimal-point-and-minus-key-on-samsung-devices-in)
+[How to resolve the issue with decimal point and minus key on Samsung devices in SfNumericUpDown](https://support.syncfusion.com/kb/article/9037/how-to-resolve-the-issue-with-decimal-point-and-minus-key-on-samsung-devices-in)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Shapes in Xamarin Image Editor control | Syncfusion
-description: Learn here all about Shapes support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
+title: Shapes in Xamarin Image Editor control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Shapes support in Syncfusion<sup>&reg;</sup> Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: ImageEditor
 documentation: ug
@@ -21,7 +21,7 @@ You can annotate any shapes over an image using the [`AddShape`](https://help.sy
 * DottedArrow
 * DottedDoubleArrow
 
-### Selecting a shape type
+## Selecting a shape type
 
 The [`ShapeType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html) is an enum property with values of [`Rectangle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_Rectangle), [`Circle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_Circle), [`Arrow`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_Arrow), [`Path`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_Path), [`Line`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_Line), [`Dotted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_Dotted), [`DoubleArrow`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_DoubleArrow), [`DottedArrow`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_DottedArrow), and [`DottedDoubleArrow`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_DottedDoubleArrow). You can give the desired shape type as an argument to the [`AddShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_AddShape_Syncfusion_SfImageEditor_XForms_ShapeType_Syncfusion_SfImageEditor_XForms_PenSettings_) method.
 
@@ -71,7 +71,7 @@ N> If you add the shape when the SfImageEditor loaded in a view without image, t
 
 You can customize the appearance of each shape using the [`PenSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.PenSettings.html) property:
 
-## PenSettings
+### PenSettings
 
 The [`PenSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.PenSettings.html) property consists of the following properties:
 
@@ -87,6 +87,8 @@ N> The [`FillColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEd
 
 * To add a [`Rectangle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_Rectangle), [`Circle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_Circle), or [`Arrow`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html#Syncfusion_SfImageEditor_XForms_ShapeType_Arrow) over an image, specify the [`ShapeType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ShapeType.html) and the desired [`PenSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.PenSettings.html) as shown in the following code snippet.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight C# %}
@@ -97,9 +99,15 @@ N> The [`FillColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEd
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 ![SfImageEditor](ImageEditor_images/shapes.jpg)
 
 * You can annotate any path on an image using free hand drawing as shown in the following code snippet.
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -110,6 +118,10 @@ N> The [`FillColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEd
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ![SfImageEditor](ImageEditor_images/path.jpg)
 
@@ -142,12 +154,12 @@ You can restrict the shape resizing using the [`IsResizable`](https://help.syncf
 
 ## See also
 
-[How to add shapes to the image editor on initial loading](https://www.syncfusion.com/kb/11273/how-to-add-shapes-to-the-xamarin-forms-image-editor-on-initial-loading)
+[How to add shapes to the image editor on initial loading](https://support.syncfusion.com/kb/article/9833/how-to-add-shapes-to-the-xamarin-forms-image-editor-on-initial-loading)
 
-[How to add custom toolbar to add shapes or text dynamically in Xamarin.Forms SfImageEditor](https://www.syncfusion.com/kb/10621/how-to-add-custom-toolbar-to-add-shapes-or-text-dynamically-in-xamarin-forms-sfimageeditor)
+[How to add custom toolbar to add shapes or text dynamically in Xamarin.Forms SfImageEditor](https://support.syncfusion.com/kb/article/9151/how-to-add-custom-toolbar-to-add-shapes-or-text-dynamically-in-xamarin-forms-sfimageeditor)
 
-[How to show dimension of shapes while resizing](https://www.syncfusion.com/kb/8880/how-to-show-dimension-of-shapes-while-resizing)
+[How to show dimension of shapes while resizing](https://support.syncfusion.com/kb/article/7812/how-to-show-dimension-of-shapes-while-resizing)
 
-[How to update the color, stroke thickness for selected shape programmatically](https://www.syncfusion.com/kb/8870/how-to-update-the-color-stroke-thickness-for-selected-shape-programmatically)
+[How to update the color, stroke thickness for selected shape programmatically](https://support.syncfusion.com/kb/article/7818/how-to-update-the-color-stroke-thickness-for-selected-shape-programmatically)
 
-[How to load shapes with custom bounds](https://www.syncfusion.com/kb/8857/how-to-load-shapes-with-custom-bounds)
+[How to load shapes with custom bounds](https://support.syncfusion.com/kb/article/7804/how-to-load-shapes-with-custom-bounds)

@@ -9,11 +9,11 @@ documentation: ug
 
 # Range in Xamarin Range Slider (SfRangeSlider)
 
-The SfRangeSlider control supports to select range of value by using two Thumbs.
+The [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) control supports to select range of value by using two Thumbs.
 
 ## Set Show Range
 
-The `ShowRange` property should be set to true for displaying two thumbs in track with range of values.
+The [`ShowRange`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ShowRange) property should be set to true for displaying two thumbs in track with range of values.
 
 N> When this property is set to false, single thumb is displayed without any range 
 
@@ -80,12 +80,12 @@ Gets and sets the end value of the range.
 
 ## ValueChangeMode
 
-The ValueChangeMode property changes the value based on the touch of the `SfRangeSlider` control. It consists of the following two types
+The [`ValueChangeMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueChangeMode.html) property changes the value based on the touch of the [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) control. It consists of the following two types
 
-* Default
-* OnThumbPress
+* [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueChangeMode.html#Syncfusion_SfRangeSlider_XForms_ValueChangeMode_Default)
+* [`OnThumbPress`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueChangeMode.html#Syncfusion_SfRangeSlider_XForms_ValueChangeMode_OnThumb)
 
-N> The default value of the ValueChangeMode property is `Default`.
+N> The default value of the [`ValueChangeMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueChangeMode.html) property is [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueChangeMode.html#Syncfusion_SfRangeSlider_XForms_ValueChangeMode_Default).
 
 
 ### Default
@@ -131,7 +131,7 @@ The value is updated when you touch or move the thumb/knob.
 
 ## Value
 
-Gets or sets the range value, which ranges between Minimum and Maximum. The default value of RangeSlider is 0.
+Gets or sets the range value, which ranges between [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Maximum). The default value of RangeSlider is 0.
 
 {% tabs %}
 
@@ -154,7 +154,7 @@ Gets or sets the range value, which ranges between Minimum and Maximum. The defa
 
 ## Allow drag range.
 
-Enable or disable the drag options to change a value of the ranges by using the `AllowDragRange` property.
+Enable or disable the drag options to change a value of the ranges by using the [`AllowDragRange`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_AllowDragRange) property.
 
 {% tabs %}
 

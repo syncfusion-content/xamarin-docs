@@ -9,7 +9,7 @@ documentation: ug
 
 # Loading Online Images in Xamarin Rotator (SfRotator)
 
-This section describes how to load the online images in SfRotator Control.
+This section describes how to load the online images in [`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html) Control.
 
 {% tabs %}
 {% highlight xaml %}

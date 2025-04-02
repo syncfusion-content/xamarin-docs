@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Ranges in Xamarin Circular Gauge control | Syncfusion
-description: Learn here all about Ranges support in Syncfusion Xamarin Circular Gauge (SfCircularGauge) control and more.
+title: Ranges in Xamarin Circular Gauge control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Ranges support in Syncfusion<sup>&reg;</sup> Xamarin Circular Gauge (SfCircularGauge) control and more.
 platform: xamarin
 control: SfCircularGauge
 documentation: ug
@@ -130,6 +130,8 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 1.The [`Offset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Range.html#Syncfusion_SfGauge_XForms_Range_Offset) property with the [`Thickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Range.html#Syncfusion_SfGauge_XForms_Range_Thickness) property.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -170,9 +172,15 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
+
 ![Range positioning in Xamarin.Forms Circular Gauge](ranges_images/range-offset.png)
 
 2.The [`InnerStartOffset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Range.html#Syncfusion_SfGauge_XForms_Range_InnerStartOffset), [`InnerEndOffset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Range.html#Syncfusion_SfGauge_XForms_Range_InnerEndOffset), [`OuterStartOffset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Range.html#Syncfusion_SfGauge_XForms_Range_OuterStartOffset), and [`OuterEndOffset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Range.html#Syncfusion_SfGauge_XForms_Range_OuterEndOffset) properties.
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -216,6 +224,10 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
 ![Range with inner offset in Xamarin.Forms Circular Gauge](ranges_images/range-inner-outer-offset.png)
 
@@ -498,6 +510,6 @@ You can give smooth color transition to range by specifying the different colors
 
 ## See Also
 
-[How to apply gradient color for ranges in Xamarin.Forms SfCircularGauge](https://www.syncfusion.com/kb/10505/how-to-apply-gradient-color-for-ranges-in-xamarin-forms-sfcirculargauge)
+[How to apply gradient color for ranges in Xamarin.Forms SfCircularGauge](https://support.syncfusion.com/kb/article/9266/how-to-apply-gradient-color-for-ranges-in-xamarin-forms-sfcirculargauge)
 
-[How to bind range collection to scale in Xamarin.Forms SfCircularGauge](https://www.syncfusion.com/kb/10506/how-to-bind-range-collection-to-scale-in-xamarin-forms-sfcirculargauge)
+[How to bind range collection to scale in Xamarin.Forms SfCircularGauge](https://support.syncfusion.com/kb/article/9267/how-to-bind-range-collection-to-scale-in-xamarin-forms-sfcirculargauge)

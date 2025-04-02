@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in Xamarin Pdf Viewer control | Syncfusion
-description: Learn here all about Localization support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
+description: Learn here all about Localization support in Syncfusion<sup>®</sup> Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: xamarin
 control: SfPdfViewer
 documentation: UG
@@ -193,6 +193,592 @@ Localization is the process of configuring the application to a specific languag
 <td>Submit</td>
 </tr>
 
+<tr>
+<td>SfPdfViewer_PageNavigationDialog_OfPages</td>
+<td>of pages</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerPageNumberEntryMessageTitleMaterial</td>
+<td>Go to Page</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerBookmarkToolbarTitleMaterial</td>
+<td>Bookmark</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerSignaturePadTitleMaterial</td>
+<td>Create Signature</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerDoneMaterial</td>
+<td>DONE</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerClearMaterial</td>
+<td>CLEAR</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerSubmitMaterial</td>
+<td>SUBMIT</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerCancelMaterial</td>
+<td>CANCEL</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerPrintAlertErrorTitle</td>
+<td>Error</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerPrintAlertErrorMessage</td>
+<td>Password protected document cannot be printed.</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerClose</td>
+<td>Close</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerSquiggly</td>
+<td>Squiggly</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerApply</td>
+<td>Apply</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerNoBookmarksText</td>
+<td>No Bookmarks</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerEditLabelHeaderText</td>
+<td>Rename</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerLoadingBookmarksText</td>
+<td>Loading....</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerOkButton</td>
+<td>OK</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerCancelButton</td>
+<td>Cancel</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerPasswordDialogerrorMessage</td>
+<td>Invalid Password!</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerPasswordDialogTitle</td>
+<td>Enter Password</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerPasswordDialogMessage</td>
+<td>Enter the password to open this PDF File.</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerPasswordDialogPlaceholderText</td>
+<td> Password </td>
+</tr>
+
+<tr>
+<td>SfPdfViewerXFAErrorAlertTitle</td>
+<td>XFA Forms PDF</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerXFAErrorAlertMessage</td>
+<td>The PDF contains XFA Forms which cannot be viewed in PDF Viewer.</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerUnhandledConditionErrorAlertTitle</td>
+<td>Error loading PDF</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerUnhandledConditionErrorAlertMessage</td>
+<td>There was an error in loading the PDF</td>
+</tr>
+
+<tr>
+
+<td>Sfpdfviewer_hinttext</td>
+<td>Double Tap to activate</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_signaturebutton</td>
+<td>Signature</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_textmarkupsbutton</td>
+<td>Text mark-ups</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_inkbutton</td>
+<td>Ink</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_freetextbutton</td>
+<td>Text</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_shapesbutton</td>
+<td>Shapes</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_annotationsbackbutton</td>
+<td>Annotations Back</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_fontsizebutton</td>
+<td>Font Size</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_textbackbutton</td>
+<td>Text Back</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_inkbackbutton</td>
+<td>Ink Back</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_thicknessbutton</td>
+<td>Thickness</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_colorbutton</td>
+<td>Color</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_nextlevelbookmarksbutton</td>
+<td>Next level bookmarks</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_previouslevelbookmarksbutton</td>
+<td>Previous level bookmarks</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_bookmarksbackbutton</td>
+<td>Bookmarks Back</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_annotationsbutton</td>
+<td>Annotations</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_opacitybutton</td>
+<td>Opacity</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_cyancolorbutton</td>
+<td>Cyan</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_magentacolorbutton</td>
+<td>Magenta</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_blackcolorbutton</td>
+<td>Black</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_redcolorbutton</td>
+<td>Red</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_greencolorbutton</td>
+<td>Green</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_yellowcolorbutton</td>
+<td>Yellow</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_deletebutton</td>
+<td>Delete</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_undobutton</td>
+<td>Undo</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_continuouspagebutton</td>
+<td>Continuous Page</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_singlepagebutton</td>
+<td>Single Page</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_redobutton</td>
+<td>Redo</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_savebutton</td>
+<td>Save</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_printbutton</td>
+<td>Print</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_searchnextbutton</td>
+<td>Search Next</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_searchpreviousbutton</td>
+<td>Search Previous</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_cancelsearchbutton</td>
+<td>Cancel Search</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_searchbackbutton</td>
+<td>Search Back</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_searchbarplaceholdertext</td>
+<td>Search Bar</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_clearsearchbutton</td>
+<td>Clear Search</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_rectanglebutton</td>
+<td>Rectangle</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_ellipsebutton</td>
+<td>Ellipse</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_polygonbutton</td>
+<td>Polygon</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_polylinebutton</td>
+<td>Polyline</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_cloudbutton</td>
+<td>Cloud</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_linebutton</td>
+<td>Line</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_arrowbutton</td>
+<td>Arrow</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_shapesbackbutton</td>
+<td>Shapes Back</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_rectanglebackbutton</td>
+<td>Rectangle Back</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_arrowbackbutton</td>
+<td>Arrow back</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_linebackbutton</td>
+<td>Line back</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_ellipsebackbutton</td>
+<td>Ellipse back</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_highlightbutton</td>
+<td>Highlight Text</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_underlinebutton</td>
+<td>Underline Text</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_squigglybutton</td>
+<td>Squiggly Text</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_textmarkupsbackbutton</td>
+<td>Text Markups Back</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_strikethroughbutton</td>
+<td>Strikethrough Text</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_highlighttextbackbutton</td>
+<td>Text Highlight Back</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_underlinetextbackbutton</td>
+<td>Text Underline back</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_strikethroughtextbackbutton</td>
+<td>Text strikethrough back</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_searchbutton</td>
+<td>Search</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_moreoptionsbutton</td>
+<td>More Options</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_bookmarksbutton</td>
+<td>Bookmarks</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_viewmodebutton</td>
+<td>View Mode</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_redoinkbutton</td>
+<td>Redo Ink</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_undoinkbutton</td>
+<td>Undo Ink</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_UndoEraserButton</td>
+<td>Undo Eraser</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_RedoEraserButton</td>
+<td>Redo Eraser</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_done</td>
+<td>Done</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_thicknessonebutton</td>
+<td>Thickness One</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_thicknesthreebutton</td>
+<td>Thickness Three</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_thicknessfivebutton</td>
+<td>Thickness Five</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_thicknesssevenbutton</td>
+<td>Thickness Seven</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_thicknessninebutton</td>
+<td>Thickness Nine</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_cancel</td>
+<td>Cancel</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_signaturepad_done</td>
+<td>Done</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_signaturepad_cancel</td>
+<td>Cancel</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_signaturepad_clear</td>
+<td>Clear</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_backbutton</td>
+<td>Back</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_bookmarksclosebutton</td>
+<td>Close Bookmarks</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_pageupbutton</td>
+<td>Previous Page</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_pagedownbutton</td>
+<td>Next Page</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_continuousButton</td>
+<td>continuous ViewMode</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_singlePageViewButton</td>
+<td>SinglePage ViewMode</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_popupbutton</td>
+<td>Popup</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_eraserbutton</td>
+<td>Eraser</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_popupiconselectorbutton</td>
+<td>Popup Icon Selector</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_commentbutton</td>
+<td>Comment Icon</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_notebutton</td>
+<td>Note Icon</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_insertbutton</td>
+<td>Insert Icon</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_keybutton</td>
+<td>Key Icon</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_paragraphbutton</td>
+<td>Paragraph Icon</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_newparagraphbutton</td>
+<td>New Paragraph Icon</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_helpbutton</td>
+<td>Help Icon</td>
+</tr>
+
+<tr>
+<td>Sfpdfviewer_custombookmarkoptionbutton</td>
+<td>Custom bookmark option</td>
+</tr>
+
 </table>
 
 To localize the SfPdfViewer, follow the steps in application level:
@@ -235,8 +821,7 @@ public class PlatformCulture
 	{
 		if (!String.IsNullOrEmpty(platformCultureString))
 		{
-
-			PlatformString = platformCultureString.Replace("_", "-"); // .NET expects dash, not underscore
+			PlatformString = platformCultureString.Replace("_", "-");// .NET expects dash, not underscore
 			var dashIndex = PlatformString.IndexOf("-", StringComparison.Ordinal);
 			if (dashIndex > 0)
 			{
@@ -282,9 +867,7 @@ Refer to the following code to implement the interface in Android renderer proje
 {% highlight c# %}
 
 public class Localize : ILocalize
-
 {
-
     public void SetLocale(CultureInfo cultureInfo)
     {
         Thread.CurrentThread.CurrentCulture = cultureInfo;
@@ -296,7 +879,6 @@ public class Localize : ILocalize
         var netLanguage = "en";
         var androidLocale = Java.Util.Locale.Default;
         netLanguage = AndroidToDotnetLanguage(androidLocale.ToString().Replace("_", "-"));
-
         // this gets called a lot - try/catch can be expensive so consider caching or something
         CultureInfo cultureInfo = null;
         try
@@ -318,16 +900,12 @@ public class Localize : ILocalize
                 cultureInfo = new CultureInfo("en");
             }
         }
-
         return cultureInfo;
     }
-
-
 
     private string AndroidToDotnetLanguage(string androidLanguage)
     {
         var netLanguage = androidLanguage;
-
         //certain languages need to be converted to CultureInfo equivalent
         switch (androidLanguage)
         {
@@ -345,14 +923,12 @@ public class Localize : ILocalize
                 // add more application-specific cases here (if required)
                 // ONLY use cultures that have been tested and known to work
         }
-
         return netLanguage;
     }
 
     private string ToDotnetFallbackLanguage(PlatformCulture platformCulture)
     {
         var netLanguage = platformCulture.LanguageCode; // use the first part of the identifier (two chars, usually);
-
         switch (platformCulture.LanguageCode)
         {
             case "gsw":
@@ -361,10 +937,8 @@ public class Localize : ILocalize
                 // add more application-specific cases here (if required)
                 // ONLY use cultures that have been tested and known to work
         }
-
         return netLanguage;
     }
-
 }
 {% endhighlight %}
 {% endtabs %}
@@ -388,7 +962,6 @@ public class Localize : ILocalize
         if (NSLocale.PreferredLanguages.Length > 0)
         {
             var pref = NSLocale.PreferredLanguages[0];
-
             netLanguage = iOSToDotnetLanguage(pref);
         }
 
@@ -413,13 +986,11 @@ public class Localize : ILocalize
                 cultureInfo = new CultureInfo("en");
             }
         }
-
         return cultureInfo;
     }
     private string iOSToDotnetLanguage(string iOSLanguage)
     {
         var netLanguage = iOSLanguage;
-
         //certain languages need to be converted to CultureInfo equivalent
         switch (iOSLanguage)
         {
@@ -433,14 +1004,12 @@ public class Localize : ILocalize
                 // add more application-specific cases here (if required)
                 // ONLY use cultures that have been tested and known to work
         }
-
         return netLanguage;
     }
 
     private string ToDotnetFallbackLanguage(PlatformCulture platCulture)
     {
         var netLanguage = platCulture.LanguageCode; // use the first part of the identifier (two chars, usually);
-
         switch (platCulture.LanguageCode)
         {
             // 
@@ -453,7 +1022,6 @@ public class Localize : ILocalize
                 // add more application-specific cases here (if required)
                 // ONLY use cultures that have been tested and known to work
         }
-
         return netLanguage;
     }
 }
@@ -475,7 +1043,6 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
-
 		//The PDF is in the Assets folder of this project. Read it into a stream
 		Stream stream = typeof(App).GetTypeInfo().Assembly.GetManifestResourceStream("GettingStarted.Assets.Xamarin_Forms_Succinctly.pdf");
 		//Load the stream to PdfViewer

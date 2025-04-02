@@ -126,7 +126,7 @@ You can restrict the dynamic editing of the numeric entry using the [`IsReadOnly
 	
 ## Visual states
 
-The [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.html) has been customized based on the [VisualStates](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/visual-state-manager). 
+The [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.html) has been customized based on the [VisualStates](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/visual-state-manager). 
 
 The [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.html) control has the following three basic visual states:
 
@@ -225,6 +225,6 @@ N> The focused visual state is only available in Android and iOS platforms.
 
 ## See also
 
-[How to customize the border of SfNumericTextBox](https://www.syncfusion.com/kb/7587/how-to-custom-the-border-of-numerictextbox)
+[How to customize the border of SfNumericTextBox](https://support.syncfusion.com/kb/article/6848/how-to-custom-the-border-of-numerictextbox)
 
-[How to customize the color appearance of SfNumericTextBox](https://www.syncfusion.com/kb/7586/how-to-customize-the-color-appearance-of-numeric-controls-in-xamarin-forms)
+[How to customize the color appearance of SfNumericTextBox](https://support.syncfusion.com/kb/article/10060/how-to-customize-the-color-appearance-of-numeric-entry-in-xamarinforms)

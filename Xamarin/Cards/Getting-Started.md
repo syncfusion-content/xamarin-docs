@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Cards control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio Xamarin Cards control, its elements and more.
+title: Getting Started with Xamarin Cards control | Syncfusion<sup>&reg;</sup>
+description: Learn here about getting started with Syncfusion<sup>&reg;</sup> Essential Studio<sup>&reg;</sup> Xamarin Cards control, its elements and more.
 platform: xamarin
 control: Cards
 documentation: ug
@@ -13,7 +13,7 @@ This section explains you the steps required to add content to [Xamarin Cards](h
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -60,9 +60,9 @@ Location : {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching the application on each platform with cards
 
@@ -74,7 +74,7 @@ N> If you are adding the references from toolbox, below steps are not needed.
 
 To launch the cards in iOS, call the SfCardViewRenderer.Init() method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample:
 
-{% highlight C# %} 
+{% highlight c# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
 { 
@@ -91,7 +91,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 To deploy the cards in `Release` mode, you need to initialize the cards assemblies in App.xaml.cs in the UWP project as shown in the below code snippets.
 
-{% highlight C# %} 
+{% highlight c# %}
 
 // In App.xaml.cs 
 protected override void OnLaunched(LaunchActivatedEventArgs e)
@@ -114,11 +114,11 @@ The Android platform does not require any additional configuration to render the
 
 ## Initialize cards
 
-Import the [`Cards`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html) namespace as shown in the following code in your respective page.
+Import the [`Cards`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.html) namespace as shown in the following code in your respective page.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
     xmlns:cards="clr-namespace:Syncfusion.XForms.Cards;assembly=Syncfusion.Cards.XForms" 
 
@@ -130,15 +130,15 @@ Import the [`Cards`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Ca
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ### SfCardView
 
 Initialize a card view with [`Content`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html#Syncfusion_XForms_Cards_SfCardView_Content) as shown in the following code.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <cards:SfCardView>
 
@@ -148,7 +148,7 @@ Initialize a card view with [`Content`](https://help.syncfusion.com/cr/xamarin/S
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 
 SfCardView cardView = new SfCardView();
 
@@ -159,15 +159,15 @@ this.Content = cardView;
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
-Run the project and check if you get following output to make sure that you have configured your project properly to add [`Cards`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardLayout.html).
+Run the project and check if you get following output to make sure that you have configured your project properly to add [`Cards`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.html).
 
 ![Initializing Xamarin.Forms SfCardView](getting-started_images/img1.png)
 
 ## SwipeToDismiss
 
-The [`SwipeToDismiss`](https://help.syncfusion.com/cr/xamarin/) property is used to enable or disable swiping in SfCardView.
+The [`SwipeToDismiss`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html#Syncfusion_XForms_Cards_SfCardView_SwipeToDismiss) property is used to enable or disable swiping in SfCardView.
 
 {% tabs %} 
 
@@ -224,9 +224,9 @@ N> This property won't work when adding the SfCardView as a child of SfCardLayou
 
 Initialize a card layout with card view as shown in the following code.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <cards:SfCardLayout SwipeDirection="Left" HeightRequest="500" BackgroundColor="#F0F0F0">
 
@@ -246,7 +246,7 @@ Initialize a card layout with card view as shown in the following code.
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 
 SfCardLayout cardLayout = new SfCardLayout();
 
@@ -261,7 +261,7 @@ this.Content = cardLayout;
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ![Initializing Xamarin.Forms SfCardLayout](getting-started_images/layout.gif)
 
@@ -269,11 +269,11 @@ N> You can find the complete getting started sample from this [link](https://git
 
 ## See also
 
-[[How to remove cards from card view collection in Xamarin.Forms](https://www.syncfusion.com/kb/11655/how-to-remove-cards-from-card-view-collection-in-xamarin-forms)
+[[How to remove cards from card view collection in Xamarin.Forms](https://support.syncfusion.com/kb/article/10208/how-to-remove-cards-from-card-view-collection-in-xamarinforms-cardlayout)
 
-[How to set shadow effect to the cards in Xamarin.Forms](https://www.syncfusion.com/kb/11651/how-to-set-shadow-effect-to-the-cards-in-xamarin-forms)
+[How to set shadow effect to the cards in Xamarin.Forms](https://support.syncfusion.com/kb/article/10204/how-to-set-shadow-effect-to-the-cards-in-xamarin-forms)
 
-[How to add cards to the ListView in Xamarin.Forms](https://www.syncfusion.com/kb/11650/how-to-add-cards-to-the-listview-in-xamarin-forms)
+[How to add cards to the ListView in Xamarin.Forms](https://support.syncfusion.com/kb/article/10203/how-to-add-cards-to-the-listview-in-xamarin-forms)
 	
-[How to reuse the dismissed cards in Xamarin.Forms SfCardView](https://www.syncfusion.com/kb/11648/how-to-reuse-the-dismissed-cards-in-xamarin-forms-sfcardview)
+[How to reuse the dismissed cards in Xamarin.Forms SfCardView](https://support.syncfusion.com/kb/article/10201/how-to-reuse-the-dismissed-cards-in-xamarin-forms-sfcardview)
 

@@ -15,7 +15,7 @@ This section explains the steps required to configure the [Xamarin CheckBox](htt
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -23,7 +23,7 @@ N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Ve
 
 ## Adding SfCheckBox reference
 
-You can add SfCheckBox reference using one of the following methods:
+You can add [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html) reference using one of the following methods:
 
 **Method 1: Adding SfCheckBox reference from nuget.org**
 
@@ -32,12 +32,12 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 ![Xamarin.Forms CheckBox NuGet](Images/Adding SfCheckBox reference.png)
 
 N> 
-* Install the same version of SfCheckBox NuGet in all the projects.
+* Install the same version of [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html) NuGet in all the projects.
 * In addition, you need to install the [Syncfusion.Xamarin.Buttons.WPF]() package for Xamarin.Forms WPF platform only.
 
 **Method 2: Adding SfCheckBox reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfCheckBox control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfCheckBox assemblies manually from the installed location**
 
@@ -68,9 +68,9 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 N> If you are adding the references from toolbox, this step is not needed.
 
@@ -114,7 +114,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 To launch the check box in WPF, call the SfCheckBoxRenderer.Init() method in the MainWindow constructor of the MainWindow class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample.
 
 {% tabs %}
-{% highlight C# %} 
+{% highlight c# %}
 
 public partial class MainWindow : FormsApplicationPage
 {
@@ -372,10 +372,10 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 
 ![Xamarin.Forms CheckBox intermediate state](Images/Inter1.jpg) ![Xamarin.Forms CheckBox intermediate Image2](Images/Inter2.jpg)
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox_IndeterminateState-1420370588).
+This demo can be downloaded from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox_IndeterminateState-1420370588).
 
 ## See also
 
-[How to create a Xamarin.Forms check box](https://www.syncfusion.com/kb/10888/how-to-create-a-xamarin-forms-checkbox)
+[How to create a Xamarin.Forms check box](https://support.syncfusion.com/kb/article/9401/how-to-create-a-xamarin-forms-checkbox)
 
-[How to create a collection of Xamarin.Forms check box](https://www.syncfusion.com/kb/10837/how-to-create-a-collection-of-xamarin-checkbox)
+[How to create a collection of Xamarin.Forms check box](https://support.syncfusion.com/kb/article/9502/how-to-create-a-collection-of-xamarin-checkbox)

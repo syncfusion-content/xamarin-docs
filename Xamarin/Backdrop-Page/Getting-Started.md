@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Backdrop Page
-description: How to initialze the Syncfusion backdrop page control in Xamarin.Forms platform and it's customization.
+title: Getting Started with Syncfusion<sup>&reg;</sup> Backdrop Page
+description: How to initialze the Syncfusion<sup>&reg;</sup> backdrop page control in Xamarin.Forms platform and it's customization.
 platform: xamarin
 control: SfBackdropPage
 documentation: ug
@@ -13,7 +13,7 @@ This section explains the steps required to configure the backdrop page.
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -56,9 +56,9 @@ Location : {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launch an application on each platform with backdrop page
 
@@ -71,7 +71,7 @@ N> If you are adding the references from toolbox, below steps are not needed.
 To launch the backdrop page in iOS, call the `SfBackdropPageRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the `LoadApplication` method is called as demonstrated in the following code sample.
 
 
-{% highlight C# %} 
+{% highlight c# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
@@ -88,7 +88,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 To deploy the backdrop page in `Release` mode, initialize the backdrop page assemblies in the App.xaml.cs file in the UWP project as demonstrated in the following code sample.
 
-{% highlight C# %} 
+{% highlight c# %}
 
 // In App.xaml.cs 
 protected override void OnLaunched(LaunchActivatedEventArgs e)
@@ -111,11 +111,11 @@ Android platform does not require any additional configuration to render the bac
 
 ## Initialize backdrop page
 
-Create a page and import the SfBackdropPage namespace along with [XAML namespaces](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/namespaces) in Xamarin.Forms.
+Create a page and import the SfBackdropPage namespace along with [XAML namespaces](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/xaml/namespaces) in Xamarin.Forms.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <?xml version="1.0" encoding="UTF-8"?>
 <backdrop:SfBackdropPage
@@ -128,7 +128,7 @@ Create a page and import the SfBackdropPage namespace along with [XAML namespace
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 
 using Syncfusion.XForms.Backdrop;	
 namespace BackdropGettingStarted
@@ -148,7 +148,7 @@ namespace BackdropGettingStarted
 {% endtabs %}
 
 >**NOTE**
-[`Title`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.page.title?view=xamarin-forms) and [`ToolBarItems`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.page.toolbaritems?view=xamarin-forms) properties of the [`Page`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.page?view=xamarin-forms) can used to customize the  appearance of header.
+[`Title`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.page.title?view=xamarin-forms) and [`ToolBarItems`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.page.toolbaritems?view=xamarin-forms) properties of the [`Page`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.page?view=xamarin-forms) can used to customize the  appearance of header.
 
 ### Configure header
 
@@ -157,9 +157,9 @@ Page header for the backdrop appears only when adding backdrop as a child of Nav
 ## Add back layer content
 The back layer holds actionable content (navigation or filtration), which is relevant to the front layer. The back layer will either fill the entire background or occupy the background based on the content height.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <backdrop:SfBackdropPage.BackLayer>
         <backdrop:BackdropBackLayer>
@@ -180,7 +180,7 @@ The back layer holds actionable content (navigation or filtration), which is rel
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 
 this.BackLayer = new BackdropBackLayer
 {
@@ -204,9 +204,9 @@ this.BackLayer = new BackdropBackLayer
 ## Add front layer content
 The front layer always appears in front of the back layer. It is displayed to the full width and holds primary content.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <backdrop:SfBackdropPage.FrontLayer>
         <backdrop:BackdropFrontLayer>
@@ -216,7 +216,7 @@ The front layer always appears in front of the back layer. It is displayed to th
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 
 this.FrontLayer = new BackdropFrontLayer()
 {
@@ -243,9 +243,9 @@ To know more information about reveal height customization ,refer this [link](ht
 
 ![Reveal and conceal back layer](Getting-Started_images/Backdrop_reveal.gif)
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 <backdrop:SfBackdropPage
     xmlns="http://xamarin.com/schemas/2014/forms"
@@ -257,7 +257,7 @@ To know more information about reveal height customization ,refer this [link](ht
  
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 
 #region Constructor
 
@@ -276,4 +276,4 @@ You can find the complete getting started sample from this [link.](https://githu
 
 ## See also
 
-[How to reveal a back layer based on a gesture in a Xamarin.Forms application]( https://www.syncfusion.com/kb/11658/how-to-reveal-a-back-layer-based-on-a-gesture-in-a-xamarin-forms-application)
+[How to reveal a back layer based on a gesture in a Xamarin.Forms application](https://support.syncfusion.com/kb/article/10211/how-to-reveal-a-back-layer-based-on-a-gesture-in-a-xamarin-forms-application)

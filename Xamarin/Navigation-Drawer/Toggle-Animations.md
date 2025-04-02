@@ -8,15 +8,15 @@ documentation: ug
 ---
 # Setting Toggle Animations in Xamarin Navigation Drawer
 
-The drawer toggling animation can be changed using Transition property and it can be set to three different values. They are
+The drawer toggling animation can be changed using [`Transition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_Transition) property and it can be set to three different values. They are
 
-* SlideOnTop
+* [`SlideOnTop`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Transition.html#Syncfusion_SfNavigationDrawer_XForms_Transition_SlideOnTop)
 
-* Push
+* [`Push`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Transition.html#Syncfusion_SfNavigationDrawer_XForms_Transition_Push)
 
-* Reveal
+* [`Reveal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Transition.html#Syncfusion_SfNavigationDrawer_XForms_Transition_Reveal)
 
-N> The default animation is SlideOnTop.
+N> The default animation is [`SlideOnTop`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Transition.html#Syncfusion_SfNavigationDrawer_XForms_Transition_SlideOnTop).
 
 ## SlideOnTop
 

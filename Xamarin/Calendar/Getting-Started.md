@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Xamarin Calendar control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Calendar (SfCalendar) control, its elements and more.
-platform: Xamarin
+title: Getting Started with Xamarin Calendar control | Syncfusion<sup>&reg;</sup>
+description: Learn here about getting started with Syncfusion<sup>&reg;</sup> Xamarin Calendar (SfCalendar) control, its elements and more.
+platform: xamarin
 control: Calendar
 documentation: ug
 ---
@@ -13,7 +13,7 @@ This section explains how to implement simple holiday indicator application whic
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -60,9 +60,9 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching the SfCalendar on each platform
 
@@ -126,6 +126,7 @@ The `SfCalendar` control is configured entirely in C# code or by using XAML mark
 
 * Adding namespace for the added assemblies. 
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight xaml %}
@@ -141,9 +142,12 @@ using Syncfusion.SfCalendar.XForms;
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 * Now add the SfCalendar control with a required optimal name by using the included namespace.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight xaml %}
@@ -180,6 +184,8 @@ public partial class CalendarPage : ContentPage
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 ## Set Blackout Dates
 
@@ -248,10 +254,10 @@ here [CalendarGettingStarted](https://github.com/SyncfusionExamples/xamarin-cale
 
 ## See also
 
-[Feature comparison between Calendar and Schedule control](https://www.syncfusion.com/kb/6976/feature-comparison-between-calendar-and-schedule-control)
+[Feature comparison between Calendar and Schedule control](https://support.syncfusion.com/kb/article/6277/feature-comparison-between-calendar-and-schedule-control-in-xamarinforms)
 
-[How to customize the Header view of SfCalendar control?](https://www.syncfusion.com/kb/8609/how-to-customize-the-header-view-of-sfcalendar-control)
+[How to customize the Header view of SfCalendar control?](https://support.syncfusion.com/kb/article/7635/how-to-customize-the-header-view-of-calendar-in-xamarin-forms-sfcalendar)
 
-[How to refresh the Xamarin.Forms Calendar using MVVM pattern?](https://www.syncfusion.com/kb/9754/how-to-refresh-the-xamarin-forms-calendar-using-mvvm-pattern)
+[How to refresh the Xamarin.Forms Calendar using MVVM pattern?](https://support.syncfusion.com/kb/article/8471/how-to-refresh-the-xamarin-forms-calendar-using-mvvm-pattern)
 
-[How to restrict the year view move while tapping calendar’s month header?](https://www.syncfusion.com/kb/8607/how-to-restrict-the-year-view-move-while-tapping-calendars-month-header)
+[How to restrict the year view move while tapping calendar’s month header?](https://support.syncfusion.com/kb/article/7632/how-to-restrict-the-year-view-move-while-tapping-calendars-month-header)

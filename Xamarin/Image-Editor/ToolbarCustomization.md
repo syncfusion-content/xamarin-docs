@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Toolbar Customization in Xamarin Image Editor control | Syncfusion
-description: Learn here all about Toolbar Customization support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
+title: Toolbar Customization in Xamarin Image Editor control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Toolbar Customization support in Syncfusion<sup>&reg;</sup> Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: ImageEditor
 documentation : ug
@@ -397,10 +397,10 @@ Border color of the toolbar can be customized with the help of [`BorderColor`](h
 
 ## See also
 
-[How to add custom toolbar to add shapes or text dynamically in SfImageEditor](https://www.syncfusion.com/kb/10621/how-to-add-custom-toolbar-to-add-shapes-or-text-dynamically-in-xamarin-forms-sfimageeditor)
+[How to add custom toolbar to add shapes or text dynamically in SfImageEditor](https://support.syncfusion.com/kb/article/9151/how-to-add-custom-toolbar-to-add-shapes-or-text-dynamically-in-xamarin-forms-sfimageeditor)
 
-[How to get toolbar item and change icon using name in SfImageEditor](https://www.syncfusion.com/kb/9367/how-to-get-toolbar-item-and-change-icon-using-name-in-sfimageeditor)
+[How to get toolbar item and change icon using name in SfImageEditor](https://support.syncfusion.com/kb/article/8285/how-to-get-toolbar-item-and-change-icon-using-name-in-sfimageeditor)
 	
-[How to disable toolbar menu in SfImageEditor](https://www.syncfusion.com/kb/8277/how-to-disable-toolbar-menu)
+[How to disable toolbar menu in SfImageEditor](https://support.syncfusion.com/kb/article/7325/how-to-disable-toolbar-menu)
 
-[How to show or hide SfImageEditor toolbar items](https://www.syncfusion.com/kb/8258/how-to-show-or-hide-image-editor-toolbar-items)
+[How to show or hide SfImageEditor toolbar items](https://support.syncfusion.com/kb/article/7374/how-to-show-or-hide-image-editor-toolbar-items)

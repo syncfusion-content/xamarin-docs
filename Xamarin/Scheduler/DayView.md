@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Day View in Xamarin Scheduler control | Syncfusion
-description: Learn here all about Day View support in Syncfusion Xamarin Scheduler (SfSchedule) control and more.
+title: Day View in Xamarin Scheduler control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Day View support in Syncfusion<sup>&reg;</sup> Xamarin Scheduler (SfSchedule) control and more.
 platform: xamarin
 control: SfSchedule
 documentation: ug
@@ -125,7 +125,7 @@ schedule.DayViewSettings = dayViewSettings;
 ![Schedule viewheader custom date format](daymodule_images/xamarin.forms-schedule-viewheader-dateformat.png)
 
 ### ViewHeader Tapped Event
-You can handle single tap action of ViewHeader by using [ViewHeaderTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html#Syncfusion_SfSchedule_XForms_ViewHeaderTappedEventArgs_DateTime) details in it.
+You can handle single tap action of ViewHeader by using [ViewHeaderTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html#Syncfusion_SfSchedule_XForms_ViewHeaderTappedEventArgs_DateTime) details in it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -437,6 +437,29 @@ schedule.DayViewSettings = dayViewSettings;
 
 ![Schedule customizing time label appearance day view](daymodule_images/xamarin.forms-schedule-timelabel-appearance.png)
 
+### Customize time ruler label font
+
+Change the appearance of the time ruler label font family and font attribute by setting the `TimeLabelFontFamily` and `TimeLabelFontAttributes` property of the `DayLabelSettings` property in the `DayViewSettings.`
+
+{% tabs %}
+{% highlight XAML %}
+<schedule:DayViewSettings.DayLabelSettings>
+    <schedule:DayLabelSettings TimeLabelFontAttributes="Bold">
+        <schedule:DayLabelSettings.TimeLabelFontFamily>
+            <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+        </schedule:DayLabelSettings.TimeLabelFontFamily>
+    </schedule:DayLabelSettings>
+</schedule:DayViewSettings.DayLabelSettings>
+{% endhighlight %}
+{% highlight c# %}
+Schedule.DayViewSettings.DayLabelSettings.TimeLabelFontAttributes = FontAttributes.Bold;
+Schedule.DayViewSettings.DayLabelSettings.TimeLabelFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+{% endhighlight %}
+{% endtabs %}
+
+>**NOTE**
+The FontAttributes and FontFamily are native to the platform. The custom font and a font that is not available in the specified platform will not be applied.
+
 ## Time Label Size
 
 You can customize the size of the labels which are mentioning the time, by setting [TimeLabelSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DayLabelSettings.html#Syncfusion_SfSchedule_XForms_DayLabelSettings_TimeLabelSize) property of `DayLabelSettings` in `DayViewSettings`.
@@ -592,4 +615,4 @@ N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-u
 
 ## See also
 
-[How to get date and appointment details while tapping view header ?](https://www.syncfusion.com/kb/6203/how-to-get-date-and-appointment-details-while-tapping-view-header)
+[How to get date and appointment details while tapping view header ?](https://support.syncfusion.com/kb/article/5981/how-to-get-date-and-appointment-details-while-tapping-view-header)

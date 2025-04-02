@@ -9,7 +9,7 @@ documentation: ug
 
 # How to handle date changed using the DateSelected event
 
-You can perform an operation when selecting a date using the `DateSelected` event. The DateSelected event returns the following arguments:
+You can perform an operation when selecting a date using the [`DateSelected`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_DateSelected) event. The [`DateSelected`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_DateSelected) event returns the following arguments:
 
 <table>
 <tr>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Markers in Xamarin Charts control | Syncfusion
-description: Learn here all about Data Markers support in Syncfusion Xamarin Charts (SfChart) control, its elements and more.
+description: Learn here all about Data Markers support in Syncfusion® Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -114,8 +114,8 @@ lineSeries.DataMarker.LabelStyle.FontAttributes = FontAttributes.Italic;
 
 You can customize the content of the label using [`LabelContent`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarker.html#Syncfusion_SfChart_XForms_ChartDataMarker_LabelContent) property. Following are the two options that are supported now,
 
-* [`Percentage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LabelContent.html) – This will show the percentage value of corresponding data point Y value, this is often used in pie, doughnut, funnel and pyramid series types.
-* [`YValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LabelContent.html) – This will show the corresponding Y value.
+* [`Percentage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LabelContent.html#Syncfusion_SfChart_XForms_LabelContent_Percentage) – This will show the percentage value of corresponding data point Y value, this is often used in pie, doughnut, funnel and pyramid series types.
+* [`YValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LabelContent.html#Syncfusion_SfChart_XForms_LabelContent_YValue) – This will show the corresponding Y value.
 
 {% tabs %} 
 
@@ -181,7 +181,7 @@ series.DataMarker = chartDataMarker;
 
 ## Label position
 
-The [`LabelPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerLabelStyle.html#Syncfusion_SfChart_XForms_DataMarkerLabelStyle_LabelPosition) property is used to position the data marker labels at [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerLabelPosition.html), [`Inner`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerLabelPosition.html) and [`Outer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerLabelPosition.html) position of the actual data point position. By default, labels are positioned based on the series types for better readability. You can move the labels horizontally and vertically using [`OffsetX`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerLabelStyle.html#Syncfusion_SfChart_XForms_DataMarkerLabelStyle_OffsetX) and [`OffsetY`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerLabelStyle.html#Syncfusion_SfChart_XForms_DataMarkerLabelStyle_OffsetY) properties respectively.
+The [`LabelPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerLabelStyle.html#Syncfusion_SfChart_XForms_DataMarkerLabelStyle_LabelPosition) property is used to position the data marker labels at [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerLabelPosition.html#Syncfusion_SfChart_XForms_DataMarkerLabelPosition_Center), [`Inner`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerLabelPosition.html#Syncfusion_SfChart_XForms_DataMarkerLabelPosition_Inner) and [`Outer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerLabelPosition.html#Syncfusion_SfChart_XForms_DataMarkerLabelPosition_Outer) position of the actual data point position. By default, labels are positioned based on the series types for better readability. You can move the labels horizontally and vertically using [`OffsetX`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerLabelStyle.html#Syncfusion_SfChart_XForms_DataMarkerLabelStyle_OffsetX) and [`OffsetY`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerLabelStyle.html#Syncfusion_SfChart_XForms_DataMarkerLabelStyle_OffsetY) properties respectively.
 
 The following screenshot illustrates the default position of data marker labels,
 
@@ -502,7 +502,7 @@ ColumnSeries series = new ColumnSeries()
 
 ## Customizing marker shapes
 
-Shapes can be added to chart data marker by setting the [`ShowMarker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarker.html#Syncfusion_SfChart_XForms_ChartDataMarker_ShowMarker) property to `true`. There are different shapes you can set to the chart using [`MarkerType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarker.html#Syncfusion_SfChart_XForms_ChartDataMarker_MarkerType) property such as [`Triangle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerType.html), [`Circle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerType.html), [`Diamond`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerType.html) etc. Following properties are used to customize marker appearance,
+Shapes can be added to chart data marker by setting the [`ShowMarker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarker.html#Syncfusion_SfChart_XForms_ChartDataMarker_ShowMarker) property to `true`. There are different shapes you can set to the chart using [`MarkerType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarker.html#Syncfusion_SfChart_XForms_ChartDataMarker_MarkerType) property such as [`Triangle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerType.html#Syncfusion_SfChart_XForms_DataMarkerType_Triangle), [`Ellipse`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerType.html#Syncfusion_SfChart_XForms_DataMarkerType_Ellipse), [`Diamond`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerType.html#Syncfusion_SfChart_XForms_DataMarkerType_Diamond) etc. Following properties are used to customize marker appearance,
 
 * [`MarkerWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarker.html#Syncfusion_SfChart_XForms_ChartDataMarker_MarkerWidth) - used to change the width of the marker
 * [`MarkerHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarker.html#Syncfusion_SfChart_XForms_ChartDataMarker_MarkerHeight) - used to change the height of the marker
@@ -639,13 +639,13 @@ lineSeries.DataMarker.ConnectorLineStyle.StrokeDashArray = new double[2] { 2, 3 
 
 ![Connector line support for data markers in Xamarin.Forms Chart](datamarker_images/datamarker_img9.png)
 
-N> For Pie and Doughnut series, you can set different connector line types such as [`Line`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ConnectorLineType.html), [`StraightLine`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ConnectorLineType.html) and  [`Bezier`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ConnectorLineType.html) curve using the [`ConnectorType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_ConnectorLineType) property of pie and doughnut series.
+N> For Pie and Doughnut series, you can set different connector line types such as [`Line`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ConnectorLineType.html#Syncfusion_SfChart_XForms_ConnectorLineType_Line), [`StraightLine`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ConnectorLineType.html#Syncfusion_SfChart_XForms_ConnectorLineType_StraightLine) and  [`Bezier`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ConnectorLineType.html#Syncfusion_SfChart_XForms_ConnectorLineType_Bezier) curve using the [`ConnectorLineType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CircularSeries.html#Syncfusion_SfChart_XForms_CircularSeries_ConnectorLineType) property of pie and doughnut series.
 
 ## Label template
 
 You can customize the appearance of the data marker label with your own template using the [`LabelTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarker.html#Syncfusion_SfChart_XForms_ChartDataMarker_LabelTemplate) property of [`ChartDataMarker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarker.html).
 
-N> The BindingContext of template is the corresponding underlying model provided in the items source of chart series.You can also bind the corresponding [`ChartDataMarkerLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarkerLabel.html) class object using the [`LabelContent`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarker.html#Syncfusion_SfChart_XForms_ChartDataMarker_LabelContent) property set as [`DataMarkerLabel`](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LabelContent.html).
+N> The BindingContext of template is the corresponding underlying model provided in the items source of chart series.You can also bind the corresponding [`ChartDataMarkerLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarkerLabel.html) class object using the [`LabelContent`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarker.html#Syncfusion_SfChart_XForms_ChartDataMarker_LabelContent) property set as [`DataMarkerLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarkerLabelCreatedEventArgs.html#Syncfusion_SfChart_XForms_ChartDataMarkerLabelCreatedEventArgs_DataMarkerLabel).
 
 {% tabs %} 
 
@@ -721,7 +721,7 @@ chart.Series.Add(barSeries);
 
 ### DataMarkerLabelCreated
 
-The [`DataMarkerLabelCreated`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html) event occurs when the data marker label is created. This argument contains object of the [`ChartDataMarkerLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarkerLabel.html). The following properties are available in [`DataMarkerLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarkerLabelCreatedEventArgs.html#Syncfusion_SfChart_XForms_ChartDataMarkerLabelCreatedEventArgs_DataMarkerLabel) to customize the appearance of data markers based on condition.
+The [`DataMarkerLabelCreated`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_DataMarkerLabelCreated) event occurs when the data marker label is created. This argument contains object of the [`ChartDataMarkerLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarkerLabel.html). The following properties are available in [`DataMarkerLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarkerLabelCreatedEventArgs.html#Syncfusion_SfChart_XForms_ChartDataMarkerLabelCreatedEventArgs_DataMarkerLabel) to customize the appearance of data markers based on condition.
 
 * [`Label`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarkerLabel.html#Syncfusion_SfChart_XForms_ChartDataMarkerLabel_Label) – Gets or sets the text of data marker.
 * [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarkerLabel.html#Syncfusion_SfChart_XForms_ChartDataMarkerLabel_BackgroundColor) – Gets the background color of data marker label.
@@ -742,17 +742,17 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to add a custom data marker in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10922/how-to-add-a-custom-data-marker-in-xamarin-forms-chart)
+[How to add a custom data marker in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/9467/how-to-add-a-custom-data-marker-in-xamarin-forms-chart)
 
-[How to rotate the data marker labels](https://www.syncfusion.com/kb/5740/how-to-rotate-the-data-marker-labels)
+[How to rotate the data marker labels](https://support.syncfusion.com/kb/article/5393/how-to-rotate-the-data-marker-labels)
 
-[How to change the data marker connector type of pie and doughnut series to Bezier](https://www.syncfusion.com/kb/5526/how-to-change-the-data-marker-connector-type-of-pie-and-doughnut-series-to-bezier)
+[How to change the data marker connector type of pie and doughnut series to Bezier](https://support.syncfusion.com/kb/article/5185/how-to-change-the-data-marker-connector-type-of-pie-and-doughnut-series-to-bezier)
 
-[How to change the data marker symbol type in Chart](https://www.syncfusion.com/kb/5866/how-to-change-the-data-marker-symbol-type-in-chart)
+[How to change the data marker symbol type in Chart](https://support.syncfusion.com/kb/article/5480/how-to-change-the-data-marker-symbol-type-in-chart)
 
-[How to add the icons on top of each column/bar segment in Xamarin.Forms Chart](https://www.syncfusion.com/kb/9313/how-to-add-the-icons-on-top-of-each-column-bar-segment-in-xamarin-forms-chart)
+[How to add the icons on top of each column/bar segment in Xamarin.Forms Chart](https://support.syncfusion.com/kb/article/8167/how-to-add-the-icons-on-top-of-each-column-bar-segment-in-xamarin-forms-chart)
 
-[How to display underlying model values in Xamarin.Forms Chart data marker](https://www.syncfusion.com/kb/8714/how-to-display-underlying-model-values-in-xamarin-forms-chart-data-marker)
+[How to display underlying model values in Xamarin.Forms Chart data marker](https://support.syncfusion.com/kb/article/7684/how-to-display-underlying-model-values-in-xamarin-forms-chart-data-marker)
 
-[How to place the Xamarin.Forms Chart DataMarker label at the top and bottom of the marker alternatively](https://www.syncfusion.com/kb/10683/how-to-place-the-xamarin-forms-chart-datamarker-label-at-the-top-and-bottom-of-the-marker)
+[How to place the Xamarin.Forms Chart DataMarker label at the top and bottom of the marker alternatively](https://support.syncfusion.com/kb/article/9269/how-to-place-the-xamarin-forms-chart-datamarker-label-at-the-top-and-bottom-of-the-marker)
 

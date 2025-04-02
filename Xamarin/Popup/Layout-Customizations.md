@@ -76,7 +76,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
+Executing the above codes renders the following output in Android, iOS and Windows Phone devices respectively.
 
 ![Popup with one button](GettingStarted_images/AppearanceMode_OneButton.png)
 
@@ -130,7 +130,7 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
+Executing the above codes renders the following output in Android, iOS and Windows Phone devices respectively.
 
 ![Popup with two button](GettingStarted_images/AppearanceMode_TwoButton.png)
 
@@ -365,7 +365,7 @@ namespace GettingStarted
 
 {% endtabs %}
 
-Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
+Executing the above codes renders the following output in Android, iOS and Windows Phone devices respectively.
 
 ![Popup with header template](PopupLayout_images/HeaderTemplate.png)
 
@@ -452,7 +452,7 @@ namespace GettingStarted
 
 {% endtabs %}
 
-Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
+Executing the above codes renders the following output in Android, iOS and Windows Phone devices respectively.
 
 ![Popup with footer template](PopupLayout_images/FooterTemplate.png)
 

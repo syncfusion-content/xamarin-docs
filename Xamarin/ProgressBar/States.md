@@ -1,7 +1,7 @@
 ---
 layout: post
-title: States in Xamarin ProgressBar control | Syncfusion
-description: Learn here all about States support in Syncfusion Xamarin ProgressBar (Progress Bar) control and more.
+title: States in Xamarin ProgressBar control | Syncfusion<sup>&reg;</sup>;
+description: Learn here all about States support in Syncfusion<sup>&reg;</sup>; Xamarin ProgressBar (Progress Bar) control and more.
 platform: xamarin
 control: ProgressBar
 documentation: ug

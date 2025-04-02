@@ -34,7 +34,7 @@ maskedEdit.BorderColor = Color.Green;
 Sets the custom [`ErrorBorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ErrorBorderColor) to SfMaskedEdit. Error border color indicates the color to be used when the validation fails for your input with respect to the mask used. 
 
 > Validation triggers based on `ValidationMode` property.
-> Refer this [link](validation.html#validation-mode) to know more about the `ValidationMode` property of SfMaskedEdit control.
+> Refer this [link](validation#validation-mode) to know more about the `ValidationMode` property of SfMaskedEdit control.
 
 {% tabs %}
 {% highlight xaml %}

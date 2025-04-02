@@ -10,16 +10,16 @@ documentation: ug
 
 # Multi Drawer in Xamarin Navigation Drawer (SfNavigationDrawer)
 
-The navigation drawer allows users to open the drawer on multiple sides with different toggle methods. The DrawerSettings class and its properties need to be used when users need to provide multiple drawer. The multiple drawers can be implemented using the following drawer settings.
+The navigation drawer allows users to open the drawer on multiple sides with different toggle methods. The [`DrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html) class and its properties need to be used when users need to provide multiple drawer. The multiple drawers can be implemented using the following drawer settings.
 
-* Default drawer settings
-* Secondary drawer settings
+* [`Default drawer settings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DefaultDrawerSettings)
+* [`Secondary drawer settings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_SecondaryDrawerSettings)
 
 N> The header and footer content are optional, but the drawer content is mandatory to allocate space for the drawer.
 		
 ## Default drawer settings
 
-Implement the default drawer using the default drawer settings class. The following code sample demonstrates how to set the default drawer settings's properties inside the DrawerSettings class.
+Implement the default drawer using the default drawer settings class. The following code sample demonstrates how to set the default drawer settings's properties inside the [`DrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html) class.
 
 {% tabs %}
 
@@ -78,11 +78,11 @@ namespace NaviSample
 
 {% endtabs %}
 
-N> The navigation drawer works with the value given for the properties inside the DrawerSettings class when using the default drawer settings.
+N> The navigation drawer works with the value given for the properties inside the [`DrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html) class when using the default drawer settings.
 
 ### Default drawer header view
 
-The header content can be provided to the default drawer using the `DrawerHeaderView` property inside the DrawerSettings class of DefaultDrawerSettings. The following code demonstrates how to set header content for the default drawer.
+The header content can be provided to the default drawer using the [`DrawerHeaderView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html#Syncfusion_SfNavigationDrawer_XForms_DrawerSettings_DrawerHeaderView) property inside the [`DrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html) class of [`DefaultDrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DefaultDrawerSettings). The following code demonstrates how to set header content for the default drawer.
 
 {% tabs %}
 
@@ -143,7 +143,7 @@ namespace NaviSample
 
 ### Default drawer content view
 
-The drawer content can be provided to the default drawer using the `DrawerContentView` property inside the DrawerSettings class. The following code demonstrates how to set drawer content to the default drawer.
+The drawer content can be provided to the default drawer using the [`DrawerContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html#Syncfusion_SfNavigationDrawer_XForms_DrawerSettings_DrawerContentView) property inside the [`DrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html) class. The following code demonstrates how to set drawer content to the default drawer.
 
 {% tabs %}
 
@@ -205,7 +205,7 @@ namespace NaviSample
 
 ### Default drawer footer view
 
-The footer content can be provided to the default drawer using the `DrawerFooterView` property inside the DrawerSettings class of DefaultDrawerSettings. The following code demonstrates how to set footer content to the default drawer.
+The footer content can be provided to the default drawer using the [`DrawerFooterView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html#Syncfusion_SfNavigationDrawer_XForms_DrawerSettings_DrawerFooterView) property inside the [`DrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html) class of [`DefaultDrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DefaultDrawerSettings). The following code demonstrates how to set footer content to the default drawer.
 
 {% tabs %}
 
@@ -271,7 +271,7 @@ namespace NaviSample
 
 ## Secondary drawer settings   
 
-Implement the secondary drawer using the secondary drawer settings class. Its properties and functionalities are same as the default drawer. The secondary drawer can be set to different positions similar to the default drawer. The following code demonstrates how to set the secondary drawer settings's properties inside the DrawerSettings class.
+Implement the secondary drawer using the secondary drawer settings class. Its properties and functionalities are same as the default drawer. The secondary drawer can be set to different positions similar to the default drawer. The following code demonstrates how to set the secondary drawer settings's properties inside the [`DrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html) class.
 
 {% tabs %}
 
@@ -335,7 +335,7 @@ N> When the default drawer and the secondary drawer are set to the same position
 
 ### Secondary drawer header view
 
-The header content can be provided to the secondary drawer using the `DrawerHeaderView` property inside the DrawerSettings class of SecondaryDrawerSettings. The following code demonstrates how to set the header content to the secondary drawer.
+The header content can be provided to the secondary drawer using the [`DrawerHeaderView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html#Syncfusion_SfNavigationDrawer_XForms_DrawerSettings_DrawerHeaderView) property inside the [`DrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html) class of [`SecondaryDrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_SecondaryDrawerSettings). The following code demonstrates how to set the header content to the secondary drawer.
 
 {% tabs %}
 
@@ -401,7 +401,7 @@ namespace NaviSample
 
 ### Secondary drawer content view
 
-The drawer content can be provided to the default drawer using the `DrawerContentView` property inside the DrawerSettings class of SecondaryDrawerSettings. The following code demonstrates how to set the drawer content to the secondary drawer.
+The drawer content can be provided to the default drawer using the [`DrawerContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html#Syncfusion_SfNavigationDrawer_XForms_DrawerSettings_DrawerContentView) property inside the [`DrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html) class of [`SecondaryDrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_SecondaryDrawerSettings). The following code demonstrates how to set the drawer content to the secondary drawer.
 
 {% tabs %}
 
@@ -463,7 +463,7 @@ namespace NaviSample
 
 ### Secondary drawer footer view
 
-The footer content can be provided to the secondary drawer using the `DrawerFooterView` property inside the DrawerSettings class of SecondaryDrawerSettings. The following code demonstrates how to set footer content to the secondary drawer.
+The footer content can be provided to the secondary drawer using the [`DrawerFooterView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html#Syncfusion_SfNavigationDrawer_XForms_DrawerSettings_DrawerFooterView) property inside the [`DrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html) class of [`SecondaryDrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_SecondaryDrawerSettings). The following code demonstrates how to set footer content to the secondary drawer.
 
 {% tabs %}
 
@@ -529,7 +529,7 @@ namespace NaviSample
 
 ## Toggling method
 
-Users can toggle the secondary drawer using the `ToggleSecondaryDrawer` method. 
+Users can toggle the secondary drawer using the [`ToggleSecondaryDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ToggleSecondaryDrawer) method. 
 
 {% highlight c# %} 
 
@@ -539,7 +539,7 @@ navigationDrawer.ToggleSecondaryDrawer();
 
 ### Opening the drawer programmatically
 
-The `IsOpen` property in the DrawerSettings of SecondaryDrawerSettings is used to open or close the drawer programmatically.
+The `[IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html#Syncfusion_SfNavigationDrawer_XForms_DrawerSettings_IsOpen) property in the [`DrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html) of [`SecondaryDrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_SecondaryDrawerSettings) is used to open or close the drawer programmatically.
 
 N> Users can open only one drawer at a time.
 

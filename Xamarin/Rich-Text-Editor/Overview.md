@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin Rich Text Editor control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin Rich Text Editor (SfRichTextEditor) control, its elements and more.
+title: About Xamarin Rich Text Editor control | Syncfusion<sup>&reg;</sup>;
+description: Learn here all about introduction of Syncfusion<sup>&reg;</sup>; Xamarin Rich Text Editor (SfRichTextEditor) control, its elements and more.
 platform: xamarin
 control: Rich Text Editor
 documentation: ug
@@ -28,7 +28,7 @@ The Xamarin Rich Text Editor control is a WYSIWYG editor that provides a great u
  1. RichTextEditor scroll view will not be working if the control is placed inside a ScrollView.
  2. To avoid rendering of the RichTextEditor out of the screen, it is highly recommended to set the `MaximumHeightRequest` property when the `AutoSize` is enabled.
  3. Toolbar will be hidden when the `MaximumHeightRequest` is beyond the keyboard region. 
- 4. The RichTextEditor control will allow only text or HTML text as the content of the editor. The RTF content can be loaded in the RichTextEditor control using the Essential DocIO control.
+ 4. The RichTextEditor control will allow only text or HTML text as the content of the editor. The RTF content can be loaded in the RichTextEditor control using the Essential&reg; DocIO control.
 
 ### iOS
  1. AutoFocus will not be working when `AutoSize` is enabled.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sublayer in Xamarin.Forms Maps control | Syncfusion
-description: Learn here all about Sublayer support in Syncfusion Xamarin Maps (SfMaps) control, its elements and more.
+title: Sublayer in Xamarin.Forms Maps control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Sublayer support in Syncfusion<sup>&reg;</sup> Xamarin Maps (SfMaps) control, its elements and more.
 platform: xamarin
 control: SfMaps
 documentation: ug
@@ -13,7 +13,7 @@ Sublayer in the [Xamarin maps](https://www.syncfusion.com/xamarin-ui-controls/xa
 
 ## Adding sublayers in ShapeFileLayer
 
-You can add multiple shape files in the [`ShapeFileLayer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html) using the [`Sublayers`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html) property.
+You can add multiple shape files in the [`ShapeFileLayer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html) using the [`Sublayers`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLayer.html#Syncfusion_SfMaps_XForms_MapLayer_Sublayers) property.
 
 {% tabs %}
 

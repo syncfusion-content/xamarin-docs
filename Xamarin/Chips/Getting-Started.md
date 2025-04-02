@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Xamarin Chips control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio Xamarin Chips control, its elements and more.
+description: Learn here about getting started with Syncfusion Essential Studio® Xamarin Chips control, its elements and more.
 platform: xamarin
 control: Chips
 documentation: ug
@@ -13,7 +13,7 @@ This section explains the steps required to create chips and arrange them in a l
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -67,9 +67,9 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching an application on each platform with chips
 
@@ -121,7 +121,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 #### For SfChip
 
-To deploy the [SfChip](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html) in `Release` mode, you need to initialize the SfChip assemblies in the App.xaml.cs file in the UWP project as shown in the following code sample.
+To deploy the [SfChip](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html) in `Release` mode, you need to initialize the[SfChip](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html) assemblies in the App.xaml.cs file in the UWP project as shown in the following code sample.
 
 {% highlight c# %}
 
@@ -149,7 +149,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 #### For SfChipGroup
 
-To deploy the [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html) in `Release` mode, you need to initialize the SfChipGroup assemblies in the App.xaml.cs file in the UWP project as shown in the following code sample.
+To deploy the [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html) in `Release` mode, you need to initialize the [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html) assemblies in the App.xaml.cs file in the UWP project as shown in the following code sample.
 
 {% highlight c# %}
 
@@ -179,7 +179,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 To launch the chip group and chip in WPF, call the SfChipGroupRenderer.Init() and SfChipRenderer.Init() methods in the MainWindow constructor of the MainWindow class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample.
 
-{% highlight C# %} 
+{% highlight c# %}
 
 public partial class MainWindow : FormsApplicationPage
 {
@@ -225,7 +225,7 @@ using Syncfusion.XForms.Buttons;
 
 {% endtabs %}
 
-Then initialize an empty SfChipGroup as shown in the following code:
+Then initialize an empty [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html) as shown in the following code:
 
 {% tabs %}
 
@@ -272,7 +272,7 @@ namespace Chips
 
 ## Set layout for the control
 
-Any layout can be used to arrange the chips in the chips control using `ChipLayout` property.The chips control creates chip for each object and arranges chips in a StackLayout with horizontal orientation. Any layout can be used to arrange the chips in the chips control.In the following example, the `FlexLayout` has been used. 
+Any layout can be used to arrange the chips in the chips control using [`ChipLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipLayout) property.The chips control creates chip for each object and arranges chips in a StackLayout with horizontal orientation. Any layout can be used to arrange the chips in the chips control.In the following example, the `FlexLayout` has been used. 
 
 {% tabs %}
 
@@ -486,10 +486,10 @@ namespace Chips
 ![ChipGroup sample with display member path and itemsSource demo](images/getting-started/getting_started.png)
 
 ## Set types of chip group
-The functionality of chips control differ based on its [Type](https://help.syncfusion.com/xamarin/chips/types) property.
+The functionality of chips control differ based on its [Type](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Type) property.
 By default type of chips control have Input type. Input chip types have close button, using it chip can be can removed dynamically from children and the layout. 
 
-The following code example uses the `Action` type. In Action type, `Command` property of SfChipGroup is executed when any chip in the group is tapped. Here the Employee name of corresponding chip is set as label text when the Command is executed.
+The following code example uses the [`Action`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipsType.html#Syncfusion_XForms_Buttons_SfChipsType_Action) type. In Action type, [`Command`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Command) property of [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html) is executed when any chip in the group is tapped. Here the Employee name of corresponding chip is set as label text when the [`Command`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Command) is executed.
 
 {% tabs %}
 
@@ -622,6 +622,6 @@ You can find the complete getting started sample from this [link.](http://www.sy
 
 ## See also
 
-[How to select a multiple chips from the Xamarin ChipGroup [SfChipGroup]](https://www.syncfusion.com/kb/11155/how-to-select-a-multiple-chips-from-the-xamarin-chipgroup-sfchipgroup)
+[How to select a multiple chips from the Xamarin ChipGroup [SfChipGroup]](https://support.syncfusion.com/kb/article/9657/how-to-select-a-multiple-chips-from-the-xamarin-chipgroup-sfchipgroup)
 
-[How to display each chip in different colors in the Xamarin.Forms ChipGroup](https://www.syncfusion.com/kb/10940/how-to-display-each-chip-in-different-colors-in-the-xamarin-forms-chipgroup)
+[How to display each chip in different colors in the Xamarin.Forms ChipGroup](https://support.syncfusion.com/kb/article/9644/how-to-display-each-chip-in-different-colors-in-the-xamarin-forms-chipgroup)

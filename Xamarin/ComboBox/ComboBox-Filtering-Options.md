@@ -73,25 +73,25 @@ Content = layout;
 
 ## Filtering types
 
-The string comparison for filtering suggestions can be changed using the `SuggestionMode` property. The default filtering type is “StartsWith”, and it is case insensitive. The available filtering modes are,
+The string comparison for filtering suggestions can be changed using the [`SuggestionMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SuggestionMode) property. The default filtering type is [`“StartsWith”`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_StartsWith), and it is case insensitive. The available filtering modes are,
 
-* StartsWith
+* [`StartsWith`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_StartsWith)
 
-* StartsWithCaseSensitive
+* [`StartsWithCaseSensitive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_StartsWithCaseSensitive)
 
-* Contains
+* [`Contains`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_Contains)
 
-* ContainsWithCaseSensitive
+* [`ContainsWithCaseSensitive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_ContainsWithCaseSensitive)
 
-* Equals
+* [`Equals`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_Equals)
 
-* EqualsWithCaseSensitive
+* [`EqualsWithCaseSensitive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_EqualsWithCaseSensitive)
 
-* EndsWith
+* [`EndsWith`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_EndsWith)
 
-* EndsWithCaseSensitive
+* [`EndsWithCaseSensitive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_EndsWithCaseSensitive)
 
-* Custom
+* [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_Custom)
 
 ### Filtering words that starts with input text
 
@@ -625,13 +625,13 @@ Content = layout;
 
 The combo box provides three different ways to display the filtered suggestions. They are 
 
-* Suggest - Displays suggestions in drop-down list
+* [`Suggest`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.ComboBoxMode.html#Syncfusion_XForms_ComboBox_ComboBoxMode_Suggest) - Displays suggestions in drop-down list
 
-* Append - Appends the first suggestion to text
+* [`Append`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.ComboBoxMode.html#Syncfusion_XForms_ComboBox_ComboBoxMode_Append) - Appends the first suggestion to text
 
-* SuggestAppend - Both suggests and appends.
+* [`SuggestAppend`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.ComboBoxMode.html#Syncfusion_XForms_ComboBox_ComboBoxMode_SuggestAppend) - Both suggests and appends.
 
-The `ComboBoxMode` property is used to choose the suggestion display mode in SfComboBox control. The default value is Suggest.
+The [`ComboBoxMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ComboBoxMode) property is used to choose the suggestion display mode in [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) control. The default value is [`Suggest`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.ComboBoxMode.html#Syncfusion_XForms_ComboBox_ComboBoxMode_Suggest).
 
 ## Suggesting choices in List
 
@@ -689,7 +689,7 @@ Content = layout;
 
 ## Appending suggestions to text
 
-The first item in filtered suggestions is appended to SfComboBox text. In this mode, drop down remains closed.
+The first item in filtered suggestions is appended to [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) text. In this mode, drop down remains closed.
 
 {% tabs %}
 

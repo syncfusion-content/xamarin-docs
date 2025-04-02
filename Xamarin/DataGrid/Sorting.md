@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Sorting support in Syncfusion Xamarin DataGrid (SfDataGrid) control, its elements and more.
+title: Sorting in Xamarin DataGrid control | Syncfusion®
+description: Learn here all about Sorting support in Syncfusion® Xamarin DataGrid (SfDataGrid) control, its elements and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -19,7 +19,7 @@ N> To update sorting for the newly added row or column, set the `SfDataGrid.View
 
 ## Programmatic sorting
 
-The data grid also sorts from the code. This requires to manually define the [SortColumnDescription](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SortColumnDescription.html) objects, and add it in the [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_SortColumnDescriptions) collection. The control sorts the data based on the `SortColumnDescription` objects added to this collection.
+The data grid also sorts from the code. This requires to manually define the [SortColumnDescription](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SortColumnDescription.html) objects, and add it in the [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_SortColumnDescriptions) collection. The control sorts the data based on the `SortColumnDescription` objects added to this collection.
 
 The `SortColumnDescription` object holds the following two properties:
 
@@ -111,8 +111,8 @@ dataGrid.SortTapAction=SortTapAction.DoubleTap;
 
 The data grid provides the following events for the sorting functionality:
 
-* [SortColumnsChanging](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataGridSortColumnsChangingEventHandler.html): This event is raised while sorting the column at execution time before the column gets sorted. It helps to cancel the sorting action by setting the Cancel property of [DataGridSortColumnsChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataGridSortColumnsChangingEventArgs.html).
-* [SortColumnsChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataGridSortColumnsChangedEventHandler.html): This event is raised after the column is sorted.
+* [SortColumnsChanging](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_SortColumnsChanging): This event is raised while sorting the column at execution time before the column gets sorted. It helps to cancel the sorting action by setting the Cancel property of [DataGridSortColumnsChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataGridSortColumnsChangingEventArgs.html).
+* [SortColumnsChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_SortColumnsChanged): This event is raised after the column is sorted.
 
 These two events are triggered with `DataGridSortColumnsChangingEventArgs` and `DataGridSortColumnsChangedEventArgs` that contains the following properties:
 
@@ -336,4 +336,4 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to change the size of the sort icon in Xamarin DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/11216)
+[How to change the size of the sort icon in Xamarin DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/9829/how-to-change-the-size-of-the-sort-icon-in-xamarin-datagrid-sfdatagrid)

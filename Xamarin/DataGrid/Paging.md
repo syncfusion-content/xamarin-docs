@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Paging in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Paging support in Syncfusion Xamarin DataGrid (SfDataGrid) control, its elements and more.
+title: Paging in Xamarin DataGrid control | Syncfusion®
+description: Learn here all about Paging support in Syncfusion® Xamarin DataGrid (SfDataGrid) control, its elements and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
@@ -9,10 +9,10 @@ documentation: ug
 
 # Paging in Xamarin DataGrid (SfDataGrid)
 
-The data grid interactively supports manipulation of data using [SfDataPager](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.html# “”) control. This provides built-in options to page data on demand when dealing with large volumes of data. `SfDataPager` can be placed above or below based on the requirement to easily manage data paging.
+The data grid interactively supports manipulation of data using [SfDataPager](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager.html “”) control. This provides built-in options to page data on demand when dealing with large volumes of data. `SfDataPager` can be placed above or below based on the requirement to easily manage data paging.
 
 To use paging functionality in the data grid, add the following namespace to the project:
-[Syncfusion.SfDataGrid.XForms.DataPager](http://help.syncfusion.com/cr/xamarin/sfdatagrid# “”)
+[Syncfusion.SfDataGrid.XForms.DataPager](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager.html “”)
 
 There are two different modes in paging:
 
@@ -118,13 +118,13 @@ The following screenshot shows the outcome upon execution of the above code:
 
 ![DataGrid with paging](SfDataGrid_images/Paging_img1.jpeg)
 
-N> The `SfDataPager` provides scrolling animation while tapping the [FirstPageButton](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.NavigationButtons.html) or [LastPageButton](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.NavigationButtons.html).
+N> The `SfDataPager` provides scrolling animation while tapping the [FirstPageButton](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.NavigationButtons.html#Syncfusion_SfDataGrid_XForms_DataPager_NavigationButtons_FirstPageButton) or [LastPageButton](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.NavigationButtons.html#Syncfusion_SfDataGrid_XForms_DataPager_NavigationButtons_LastPageButton).
 
 ## OnDemandPaging	
 
 In normal Paging, data collection is entirely loaded initially to the `SfDataPager`. However, the control also allows loading the data for the current page dynamically by setting the [SfDataPager.UseOnDemandPaging](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager.html#Syncfusion_SfDataGrid_XForms_DataPager_SfDataPager_UseOnDemandPaging) to `true`.
 
-To load current page item dynamically, hook the [OnDemandLoading](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager.html) event. In the `OnDemandLoading` event, use the[LoadDynamicItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager.html#Syncfusion_SfDataGrid_XForms_DataPager_SfDataPager_LoadDynamicItems_System_Int32_System_Collections_IEnumerable_) method to load data for the corresponding page in the `SfDataPager`.
+To load current page item dynamically, hook the [OnDemandLoading](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager.html#Syncfusion_SfDataGrid_XForms_DataPager_SfDataPager_OnDemandLoading) event. In the `OnDemandLoading` event, use the[LoadDynamicItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager.html#Syncfusion_SfDataGrid_XForms_DataPager_SfDataPager_LoadDynamicItems_System_Int32_System_Collections_IEnumerable_) method to load data for the corresponding page in the `SfDataPager`.
 
 The `OnDemandLoading` event is triggered when the pager moves to the corresponding page. It contains the following event arguments:
 
@@ -390,4 +390,4 @@ N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui
 
 ## See also
 
-[How to have different page size in SfDataPager with SfDataGrid when the device is in horizontal and vertical orientation mode](https://www.syncfusion.com/kb/9299)
+[How to have different page size in SfDataPager with SfDataGrid when the device is in horizontal and vertical orientation mode](https://support.syncfusion.com/kb/article/7968/how-to-have-different-page-size-in-sfdatapager-with-sfdatagrid-when-the-device-is-in)

@@ -1,7 +1,7 @@
 ---
-title: Getting Started with Xamarin Diagram control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Diagram (SfDiagram) control, its elements and more.
-platform: Xamarin
+title: Getting Started with Xamarin Diagram control | Syncfusion;
+description: Learn here about getting started with Syncfusion<sup>&reg;</sup>; Xamarin Diagram (SfDiagram) control, its elements and more.
+platform: xamarin
 control: SfDiagram
 documentation: UG
 keywords: 
@@ -14,7 +14,7 @@ This section provides a quick overview for working with Diagram for Xamarin.Form
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion&reg; Essential Studio&reg; Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -26,7 +26,7 @@ You can add SfDiagram reference using one of the following methods:
 
 **Method 1: Adding SfDiagram reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDiagram to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfDiagram](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDiagram), and then install it.
+Syncfusion<sup>&reg;</sup>; Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDiagram to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfDiagram](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDiagram), and then install it.
 
 ![Adding SfDiagram reference from NuGet](Getting-Started_images/Adding SfDiagram reference.png)
 
@@ -34,7 +34,7 @@ N> Install the same version of SfDiagram NuGet in all the projects.
 
 **Method 2: Adding SfDiagram reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfDiagram control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion<sup>&reg;</sup>; also provides Xamarin Toolbox. Using this toolbox, you can drag the SfDiagram control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion&reg; Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfDiagram assemblies manually from the installed location**
 
@@ -61,9 +61,9 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion<sup>&reg;</sup>; assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion® license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion&reg; license key in your Xamarin application to use our components.
 
 N> If you are adding the references from toolbox, this step is not needed.
 
@@ -83,7 +83,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% endhighlight %}
 {% endtabs %}
 
-I>We need to create an instance of the `SfDiagramRenderer` in iOS and UWP projects as shown in this [KB article](https://www.syncfusion.com/kb/8618).
+I>We need to create an instance of the `SfDiagramRenderer` in iOS and UWP projects as shown in this [KB article](https://support.syncfusion.com/kb/article/7619/how-to-resolve-sfdiagram-not-rendering-issue-in-ios-and-uwp).
 
 ### Additional step for UWP
 
@@ -110,7 +110,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-I> You can refer to the [KB article](https://www.syncfusion.com/kb/8617) for more details.
+I> You can refer to the [KB article](https://support.syncfusion.com/kb/article/7497/how-to-make-sfdiagram-to-work-in-uwp-in-release-mode-when-net-native-tool-chain-is-enabled) for more details.
 
 ## Basic building blocks of Diagram
 * **Diagram**- It represents the drawing surface where all the graphical elements like nodes and connectors resides, can be used to display various types of diagrams and it is the root instance of the diagram control. A Diagram instance contains a collection of nodes and  connectors to represent the  graphical diagram.
@@ -137,6 +137,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 **Adding SfDiagram in Xamarin.Forms**
 1. Import SfDiagram control namespace as xmlns:syncfusion="clr-namespace:Syncfusion.SfDiagram.XForms;assembly=Syncfusion.SfDiagram.XForms in XAML Page.
 2. Set the SfDiagram control as content to the ContentPage.
+
 {% tabs %}
 {% highlight xml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -169,6 +170,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 {% endtabs %}
+
 The following code snippet illustrates the creation of Nodes and Connectors in the diagram.
 {% tabs %}
 {% highlight c# %}
@@ -198,7 +200,7 @@ TargetNode = End,
 diagram.AddConnector(connector1);
 diagram.AddConnector(connector2);
 this.Content = diagram;
-                          }
+         }
 ///<summary>
 ///create the node
 ///</summary>
@@ -246,6 +248,7 @@ public class Employees : ObservableCollection<Employee>
 Define Employee Information as a Collection. The below code example shows an employee array whose,
 * Name is used as a unique identifier and
 * ParentId is used to identify the person to whom an employee report to, in the organization.
+
 {% tabs %}
 {% highlight xml %}
 <!-- Initializes the employee collection--> 
@@ -301,6 +304,31 @@ private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs arg
             node.Height = 60;
             node.Annotations.Add(new Annotation() { Content = (node.Content as Employee).Name });
         }
+{% endhighlight %}
+{% endtabs %}
+
+**Density Calculation**
+
+The following code snippets shows how to calculate the unit to get same size  for SfDiagram in Android and iOS platform.
+
+{% tabs %}
+{% highlight c# %}
+
+  //For Android
+   var mainDisplayInfo = DeviceDisplay.MainDisplayInfo;
+
+   float Density = (float)mainDisplayInfo.Density;
+
+  //For iOS
+   var mainDisplayInfo = DeviceDisplay.MainDisplayInfo;
+
+   float staticDensity = (float)mainDisplayInfo.Density;
+
+   float m_currentDensity = 1;
+
+   var factor = m_currentDensity / staticDensity;
+
+
 {% endhighlight %}
 {% endtabs %}
 

@@ -11,11 +11,11 @@ documentation: ug
 
 ## Selection Changed
 
-The SelectionChanged event is used to notify when the selection is changed by swiping or dynamically setting the SelectedIndex property of SfRotator.
+The SelectionChanged event is used to notify when the selection is changed by swiping or dynamically setting the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html#Syncfusion_SfRotator_XForms_SfRotator_SelectedIndex) property of [`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html).
 
 ## ItemTapped
 
-The ItemTapped event will be triggered whenever tapping the item.
+The [`ItemTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html#Syncfusion_SfRotator_XForms_SfRotator_ItemTapped) event will be triggered whenever tapping the item.
 
 {% tabs %}
 

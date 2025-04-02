@@ -1,21 +1,21 @@
 ---
 layout: post
 title: Localization in Xamarin DateTime Range Navigator control | Syncfusion
-description: Learn here all about Localization support in Syncfusion Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator) control and more.
+description: Learn here all about Localization support in Syncfusion® Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator) control and more.
 platform: xamarin
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-## Localization 
+# Localization in Xamarin DateTime Range Navigator
 
 You can localize [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html) in all the platforms by adding a .resx file in a .NET Standard project alone. The following steps describe how to localize SfDateTimeRangeNavigator in a project.
 
-N> Here, the resources have been already created for some cultures and shared them on [`Syncfusion GitHub`](https://github.com/syncfusion/xamarin-localized-texts) for your convenience.
+N> Here, the resources have been already created for some cultures and shared them on [`Syncfusion® GitHub`](https://github.com/syncfusion/xamarin-localized-texts) for your convenience.
 
 1. Add a new folder in the .NET Standard project named Resources.
 
-2. Add resource files for the languages you wish to support and set their Build Action to EmbeddedResource. The name of the resource file should be $name of the Syncfusion component$+$language code$+.resx. For example, if you add a resource file for the French culture, add the Syncfusion.SfChart.XForms.fr-FR.resx file to Resources folder as illustrated in the following screenshot.
+2. Add resource files for the languages you wish to support and set their Build Action to EmbeddedResource. The name of the resource file should be $name of the Syncfusion® component$+$language code$+.resx. For example, if you add a resource file for the French culture, add the Syncfusion.SfChart.XForms.fr-FR.resx file to Resources folder as illustrated in the following screenshot.
 
 ![Localization support in Xamarin.Forms DateTimeRangeNavigator](localization_images/LocalizationResource.png)
 

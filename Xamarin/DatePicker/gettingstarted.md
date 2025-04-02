@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin DatePicker control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin DatePicker (SfDatePicker) control, its elements and more.
+title: Getting Started with Xamarin DatePicker control | Syncfusion<sup>&reg;</sup>
+description: Learn here about getting started with Syncfusion<sup>&reg;</sup> Xamarin DatePicker (SfDatePicker) control, its elements and more.
 platform: Xamarin
 control: DatePicker
 documentation: ug
@@ -14,7 +14,7 @@ This section explains the steps required to work with the DatePicker control fo
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -26,15 +26,15 @@ You can add SfDatePicker reference using one of the following methods:
 
 **Method 1: Adding SfDatePicker reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDatePicker to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfPicker](https://www.nuget.org/packages/Syncfusion.Xamarin.SfPicker), and then install it.
+Syncfusion<sup>&reg;</sup> Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDatePicker to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfPicker](https://www.nuget.org/packages/Syncfusion.Xamarin.SfPicker), and then install it.
 
 ![Adding SfDatePicker reference from NuGet](images/Adding SfPicker reference.png)
 
-N> Install the same version of SfPicker NuGet in all the projects.
+N> Install the same version of [`SfPicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPicker.XForms.SfPicker.html) NuGet in all the projects.
 
 **Method 2: Adding SfDatePicker reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfDatePicker control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion<sup>&reg;</sup> also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfDatePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfDatePicker assemblies manually from the installed location**
 
@@ -69,7 +69,7 @@ N> After adding the reference, an additional step is required for iOS and UWP pr
 
 ### Additional step for iOS
 
-To launch [`SfDatePicker`] in iOS, call the `SfDatePickerRenderer.Init()` in the FinishedLaunching overridden method of the `AppDelegate` class in iOS Project as demonstrated in the following code example.
+To launch [`SfDatePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html) in iOS, call the `SfDatePickerRenderer.Init()` in the FinishedLaunching overridden method of the `AppDelegate` class in iOS Project as demonstrated in the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -85,7 +85,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Additional step for UWP
 
-This step is required only if the application is deployed in Release mode with .NET native tool chain enabled. It is needed for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the [`SfDatePicker`] assembly at the `OnLaunched` overridden method of the `App` class in UWP project is the suggested work around. The following code example demonstrates initializing the [`SfDatePicker`] assembly.
+This step is required only if the application is deployed in Release mode with .NET native tool chain enabled. It is needed for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the [`SfDatePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html) assembly at the `OnLaunched` overridden method of the `App` class in UWP project is the suggested work around. The following code example demonstrates initializing the [`SfDatePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html) assembly.
 
 {% tabs %}
 {% highlight c# %}
@@ -107,7 +107,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ### Creating a simple SfDatePicker
 
-The [`SfDatePicker`] control is entirely configured in C# code or in XAML markup. The following steps explain how to create a [`SfDatePicker`] and configure its elements.
+The [`SfDatePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html) control is entirely configured in C# code or in XAML markup. The following steps explain how to create a [`SfDatePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html) and configure its elements.
 
 ### Adding namespace for referred assemblies
 
@@ -158,7 +158,7 @@ namespace DatePickerSample
 
 ### Set header to the DatePicker
 
-The SfDatePicker control allows you to define header text by setting the `SfDatePicker.HeaderText`, and enable SfDatePicker header by setting `SfDatePicker.ShowHeader` property to true. The default value of `SfDatePicker.ShowHeader` is "true".
+The [`SfDatePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html) control allows you to define header text by setting the [`SfDatePicker.HeaderText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_HeaderText), and enable [`SfDatePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html) header by setting [`SfDatePicker.ShowHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowHeader) property to true. The default value of [`SfDatePicker.ShowHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowHeader) is "true".
 
 {% tabs %}
 {% highlight xaml %}
@@ -202,7 +202,7 @@ namespace DatePickerSample
 
 ### Enable validation button in footer
 
-In SfDatePicker control, validation buttons (OK and Cancel)can be enabled by setting `SfDatePicker.ShowFooter` property to true. The default value of `SfDatePicker.ShowFooter` property is "false".
+In [`SfDatePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html) control, validation buttons (OK and Cancel)can be enabled by setting [`SfDatePicker.ShowFooter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowFooter) property to true. The default value of [`SfDatePicker.ShowFooter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowFooter) property is "false".
 
 {% tabs %}
 {% highlight xaml %}
@@ -246,7 +246,7 @@ namespace DatePickerSample
 
 ### PickerHeight and PickerWidth
 
-The SfDatePicker control allows you to the change the height and the width of the SfDatePicker using the `SfDatePicker.PickerHeight`, and `SfDatePicker.PickerWidth` properties.
+The [`SfDatePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html) control allows you to the change the height and the width of the [`SfDatePicker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html) using the [`SfDatePicker.PickerHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_PickerHeight), and [`SfDatePicker.PickerWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_PickerWidth) properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -328,7 +328,7 @@ namespace DatePickerSample
 
 ### Date
 
-The date can be selected by using the Date property. The default value of Date is current date.
+The date can be selected by using the [`Date`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_Date) property. The default value of [`Date`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfDatePicker.html#Syncfusion_XForms_Pickers_SfDatePicker_Date) is current date.
 
 {% tabs %}
 {% highlight xaml %}

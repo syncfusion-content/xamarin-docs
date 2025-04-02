@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Ink annotations in Xamarin Pdf Viewer control | Syncfusion
-description: Learn here all about Ink annotations support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
-platform: Xamarin
+description: Learn here all about Ink annotations support in Syncfusion<sup>®</sup> Xamarin Pdf Viewer (SfPdfViewer) control and more.
+platform: xamarin
 control: SfPdfViewer
 documentation: ug
 ---
@@ -17,7 +17,7 @@ This section describes how to include ink annotation in PDF viewer control Xamar
 
 ### Enabling ink annotation mode
 
-Set the `AnnotationMode` property of the PDF viewer object to ink to enable the ink annotation. By setting this, zooming and scrolling will be disabled and touch interactions will be converted into inks on the PDF pages. Refer to the following code. 
+Set the `AnnotationMode` property of the PDF viewer object to ink to enable the ink annotation. By setting this, zooming will be disabled whereas the scrolling can be performed using the scroll head or two-fingers to add ink strokes on multiple pages, and the touch interactions will be converted into inks on the PDF pages. Refer to the following code.
 
 {% tabs %}
 {% highlight c# %}
@@ -56,6 +56,8 @@ pdfViewer.AnnotationMode = AnnotationMode.None;
 
 {% endhighlight %}
 {% endtabs %}
+
+N>Two-fingers scrolling only works on mobile platforms. 
 
 ### Adding ink annotation using toolbar
 
@@ -101,13 +103,10 @@ The following code sample illustrates the same.
 {% highlight c# %}
 
 var inkPointsCollection = new List<List<float>>();
-
 inkPointsCollection.Add(new List<float> { 53f, 525f, 53f, 527f, 53f, 528f, 53f, 531f, 53f, 549f, 54f, 570f, 56f, 597f, 57f, 623f, 59f, 652f, 60f, 679f, 62f, 705f, 64f, 726f, 65f, 744f, 66f, 758f, 66f, 768f, 65f, 777f, 65f, 782f, 65f, 784f, 64f, 786f, 64f, 786f, 63f, 786f, 63f, 786f, 63f, 784f, 66f, 774f, 71f, 757f, 79f, 734f, 88f, 708f, 99f, 681f, 112f, 652f, 126f, 627f, 140f, 606f, 150f, 591f, 158f, 582f, 162f, 578f, 164f, 577f, 165f, 576f, 166f, 576f, 165f, 578f, 155f, 592f, 143f, 605f, 121f, 621f, 99f, 631f, 77f, 639f, 54f, 644f, 35f, 645f, 20f, 644f, 10f, 642f, 4f, 642f, 2f, 641f, 1f, 640f, 0f, 639f, 0f, 639f, 2f, 639f, 20f, 645f, 47f, 657f, 75f, 672f, 106f, 688f, 137f, 704f, 168f, 718f, 197f, 732f, 221f, 741f, 240f, 748f, 254f, 753f, 254f, 753f });
-
 System.Drawing.Point position = new System.Drawing.Point(100, 100);
 InkAnnotation inkAnnotation = new InkAnnotation(inkPointsCollection, 1, position);
 inkAnnotation.Settings.Color = Color.Red;     
-      
 //Adds the ink annotation to the specified page 
 pdfViewer.AddAnnotation(inkAnnotation);
 
@@ -133,16 +132,12 @@ private void PdfViewer_InkAdded(object sender, InkAddedEventArgs args)
 {
     //Retrieves the bounds of the deselected annotation.
     Rectangle bounds = args.Bounds;
-
     //Retrieves the page number where the deselected annotation resides.
     int pageNumber = args.PageNumber;
-
     //Retrieves the color of the deselected annotation.
     Color color = args.Color;
-
     //Retrieves the thickness of the deselected annotation.
     float thickness = args.Thickness;
-
     //Retrieves the opacity of the deselected annotation.
     float opacity = args.Opacity;
 
@@ -211,7 +206,7 @@ You can identify the redo operation in this session using the following event.
 
 private void PdfViewer_CanRedoInkModified(object sender, CanRedoInkModifiedEventArgs args)
 {
-         bool CanRedoInk = args.CanRedoInk;
+    bool CanRedoInk = args.CanRedoInk;
 }
 
 {% endhighlight %}
@@ -239,7 +234,6 @@ private void PdfViewer_InkSelected(object sender, InkSelectedEventArgs args)
 {
     //Casts the sender object as Ink annotation.
     InkAnnotation selectedInkAnnotation = sender as InkAnnotation;
-
     //Removes the selected annotation from the PDF viewer.
     pdfViewer.RemoveAnnotation(selectedInkAnnotation);
 }
@@ -269,16 +263,12 @@ private void PdfViewer_InkRemoved(object sender, InkRemovedEventArgs args)
 
     //Retrieves the bounds of the deselected annotation.
     Rectangle bounds = args.Bounds;
-
     //Retrieves the page number where the deselected annotation resides.
     int pageNumber = args.PageNumber;
-
     //Retrieves the color of the deselected annotation.
     Color color = args.Color;
-
     //Retrieves the thickness of the deselected annotation.
     float thickness = args.Thickness;
-
     //Retrieves the opacity of the deselected annotation.
     float opacity = args.Opacity;
 }
@@ -302,7 +292,6 @@ You can set the color of the ink annotation by using the `AnnotationSettings.Ink
              xmlns:local="clr-namespace: PdfViewerGettingStarted "
              xmlns:syncfusion ="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
              x:Class=" PdfViewerGettingStarted.MainPage">
-
     <ContentPage.Resources>
         <ResourceDictionary>
             <syncfusion:AnnotationSettings x:Key="InkAnnotationSettings">
@@ -314,9 +303,7 @@ You can set the color of the ink annotation by using the `AnnotationSettings.Ink
     </ContentPage.Resources>
     
     <ContentPage.Content>
-
         <syncfusion:SfPdfViewer x:Name="pdfViewer" AnnotationSettings="{StaticResource InkAnnotationSettings}"/>
-
     </ContentPage.Content>
 
 </ContentPage>
@@ -328,9 +315,7 @@ You can set the color of the ink annotation by using the `AnnotationSettings.Ink
 {% highlight c# %}
 
 SfPdfViewer pdfViewer = new SfPdfViewer();
-
 pdfViewer.AnnotationMode = AnnotationMode.Ink;
-
 pdfViewer.AnnotationSettings.Ink.Color = Color.Red;
 
 {% endhighlight %}
@@ -349,7 +334,6 @@ You can set the opacity of the ink annotation by using the `AnnotationSettings.I
              xmlns:local="clr-namespace: PdfViewerGettingStarted "
              xmlns:syncfusion ="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
              x:Class=" PdfViewerGettingStarted.MainPage">
-
     <ContentPage.Resources>
         <ResourceDictionary>
             <syncfusion:AnnotationSettings x:Key="InkAnnotationSettings">
@@ -358,12 +342,9 @@ You can set the opacity of the ink annotation by using the `AnnotationSettings.I
                 </syncfusion:AnnotationSettings.Ink>               
             </syncfusion:AnnotationSettings>
         </ResourceDictionary>
-    </ContentPage.Resources>
-    
+    </ContentPage.Resources>  
     <ContentPage.Content>
-
         <syncfusion:SfPdfViewer x:Name="pdfViewer" AnnotationSettings="{StaticResource InkAnnotationSettings}"/>
-
     </ContentPage.Content>
 
 </ContentPage>
@@ -375,9 +356,7 @@ You can set the opacity of the ink annotation by using the `AnnotationSettings.I
 {% highlight c# %}
 
 SfPdfViewer pdfViewer = new SfPdfViewer();
-
 pdfViewer.AnnotationMode = AnnotationMode.Ink;
-
 pdfViewer.AnnotationSettings.Ink.Opacity = 0.5f; 
 
 {% endhighlight %}
@@ -395,7 +374,6 @@ You can set the thickness of the ink annotation by using the `AnnotationSettings
              xmlns:local="clr-namespace: PdfViewerGettingStarted "
              xmlns:syncfusion ="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
              x:Class=" PdfViewerGettingStarted.MainPage">
-
     <ContentPage.Resources>
         <ResourceDictionary>
             <syncfusion:AnnotationSettings x:Key="InkAnnotationSettings">
@@ -404,12 +382,9 @@ You can set the thickness of the ink annotation by using the `AnnotationSettings
                 </syncfusion:AnnotationSettings.Ink>               
             </syncfusion:AnnotationSettings>
         </ResourceDictionary>
-    </ContentPage.Resources>
-    
+    </ContentPage.Resources>   
     <ContentPage.Content>
-
         <syncfusion:SfPdfViewer x:Name="pdfViewer" AnnotationSettings="{StaticResource InkAnnotationSettings}"/>
-
     </ContentPage.Content>
 
 </ContentPage>
@@ -422,9 +397,7 @@ You can set the thickness of the ink annotation by using the `AnnotationSettings
 {% highlight c# %}
 
 SfPdfViewer pdfViewer = new SfPdfViewer();
-
 pdfViewer.AnnotationMode = AnnotationMode.Ink;
-
 pdfViewer.AnnotationSettings.Ink.Thickness = 5;
 
 {% endhighlight %}
@@ -485,13 +458,10 @@ private void pdfViewer_InkSelected(object sender, InkSelectedEventArgs args)
 {
     //Casts the sender object as Ink annotation.
     InkAnnotation selectedInkAnnotation = sender as InkAnnotation;
-
     //Sets the color of the selected annotation using ink annotation settings.
     selectedInkAnnotation.Settings.Color = Color.Blue;
-
     //Sets the opacity of the selected annotation using ink annotation settings.
     selectedInkAnnotation.Settings.Opacity = 0.3f;
-
     //Sets the thickness of the selected annotation using ink annotation settings.
     selectedInkAnnotation.Settings.Thickness = 3;
 }
@@ -516,16 +486,12 @@ private void PdfViewer_InkTapped(object sender, InkTappedEventArgs args)
 {
     //Retrieves the bounds of the deselected annotation.
     Rectangle bounds = args.Bounds;
-
     //Retrieves the page number where the deselected annotation resides.
     int pageNumber = args.PageNumber;
-
     //Retrieves the color of the deselected annotation.
     Color color = args.Color;
-
     //Retrieves the thickness of the deselected annotation.
     float thickness = args.Thickness;
-
     //Retrieves the opacity of the deselected annotation.
     float opacity = args.Opacity;
 }
@@ -553,22 +519,21 @@ The following code shows how to identify the deselected annotation from the rais
 
 private void PdfViewer_InkDeselected(object sender, InkDeselectedEventArgs args)
 { 
-       //Retrieves the bounds of the deselected annotation.
-   Rectangle bounds = args.Bounds;
+    //Retrieves the bounds of the deselected annotation.
+    Rectangle bounds = args.Bounds;
 
-   //Retrieves the page number where the deselected annotation resides.
-   int page = args.PageNumber;
+    //Retrieves the page number where the deselected annotation resides.
+    int page = args.PageNumber;
 
-   //Retrieves the color of the deselected annotation.
-   Color color = args.Color;
+    //Retrieves the color of the deselected annotation.
+    Color color = args.Color;
 
-   //Retrieves the thickness of the deselected annotation.
-   float thickness = args.Thickness;
+    //Retrieves the thickness of the deselected annotation.
+    float thickness = args.Thickness;
 
-   //Retrieves the opacity of the deselected annotation.
-   float opacity = args.Opacity;
- 
- }
+    //Retrieves the opacity of the deselected annotation.
+    float opacity = args.Opacity;
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -611,11 +576,10 @@ The event `AnnotationMovedOrResized` will be raised when you move or resize the 
 
 private void PdfViewer_AnnotationMovedOrResized(object sender, AnnotationMovedOrResizedEventArgs args) 
 {
-     //Retrieves the old bounds of the annotation
-     Rectangle oldBounds = args.OldBounds;
-
-     //Retrieves the new bounds of the annotation
-     Rectangle newBounds = args.NewBounds;
+    //Retrieves the old bounds of the annotation
+    Rectangle oldBounds = args.OldBounds;
+    //Retrieves the new bounds of the annotation
+    Rectangle newBounds = args.NewBounds;
 }
 
 {% endhighlight %}
@@ -673,7 +637,7 @@ pdfViewerControl.AnnotationSettings.Ink.Constraints = AnnotationConstraints.Sele
 
 ## How to draw the ink annotation using a stylus and scroll or zoom PDF page with the touch
 
-The ink annotation operation can be customized so that the ink strokes can be added only using a stylus by setting the `InkAnnotationSettings.TouchMode` API to `TouchMode.Stylus`. When the `TouchMode` is set to stylus, the PDF can be zoomed and scrolled using a finger. The default value of the `TouchMode` property is `TouchMode.Direct` in which all touch interactions will be considered as ink operations. So in the `TouchMode.Direct` mode, the page cannot be scrolled or zoomed when the ink annotation mode is on.
+The ink annotation operation can be customized so that the ink strokes can be added only using a stylus by setting the `InkAnnotationSettings.TouchMode` API to `TouchMode.Stylus`. When the `TouchMode` is set to the stylus, the PDF can be zoomed and scrolled using a finger. The default value of the `TouchMode` property is `TouchMode.Direct` in which the zooming will be disabled and scrolling can be performed using the scroll head or two-fingers to add ink strokes on multiple pages, and all other touch interactions will be considered as ink operations.
 
 {% tabs %}
 {% highlight c# %}
@@ -701,14 +665,11 @@ We can modify or add new stroke points in the [InkAnnotation.InkPointsCollection
 
 private void PdfViewerControl_InkAdded(object sender, InkAddedEventArgs args) 
 {     
-     InkAnnotation inkAnnotation = sender as InkAnnotation;         
- 
-     List<List<float>> drawnPoints = inkAnnotation.InkPointsCollection; 
- 
-     //Modify the drawn ink points 
-     List<List<float>> modifiedPoints = PerformModification(drawnPoints); 
- 
-     inkAnnotation.InkPointsCollection = modifiedPoints; 
+    InkAnnotation inkAnnotation = sender as InkAnnotation;         
+    List<List<float>> drawnPoints = inkAnnotation.InkPointsCollection; 
+    //Modify the drawn ink points 
+    List<List<float>> modifiedPoints = PerformModification(drawnPoints); 
+    inkAnnotation.InkPointsCollection = modifiedPoints; 
 }
 
 {% endhighlight %}
@@ -728,7 +689,7 @@ private void PdfViewerControl_InkAdded(object sender, InkAddedEventArgs args)
 {
    if(sender is InkAnnotation)
     {
-    (sender as InkAnnotation).Name = "Ink1";
+        (sender as InkAnnotation).Name = "Ink1";
     }
 }
 
@@ -754,3 +715,79 @@ pdfViewerControl.AnnotationSettings.Ink.EnableSeparateAttributesForEachStroke = 
 
 {% endhighlight %}
 {% endtabs %}
+
+## How to erase ink annotations?
+
+You can erase ink annotation stokes using the eraser tool. You can also undo and redo the changes made by the erase operation. 
+
+### Enabling ink eraser
+
+Set the `AnnotationMode` property of the PDF viewer to `InkEraser` to enable the ink eraser. Refer to the following code.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfPdfViewer x:Name="pdfViewer"/> 
+<Button x:Name="inkEraserAnnotationButton" Command="{Binding AnnotationModeCommand, Source={x:Reference Name=pdfViewer}}" CommandParameter=" InkEraser" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+pdfViewer.AnnotationMode = AnnotationMode.InkEraser;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Disabling ink eraser
+
+Setting the `AnnotationMode` property of the PDF viewer to `None` disables the ink eraser.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfPdfViewer x:Name="pdfViewer"/> <Button x:Name="resetAnnotationButton" Command="{Binding AnnotationModeCommand, Source={x:Reference Name=pdfViewer}}" CommandParameter="None" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+pdfViewer.AnnotationMode = AnnotationMode.None;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Changing the thickness of the ink eraser
+
+You can get or set the thickness of the ink eraser tool by using the `AnnotationSettings.InkEraserSettings.Thickness` property. The default value of the ink eraser thickness is 40, and it ranges from 5 to 150. Refer to the following code example.
+
+{% tabs %}
+{% highlight xaml %}
+
+//Set the Ink eraser thickness.
+pdfViewerControl.AnnotationSettings.InkEraserSettings.Thickness = 75;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Detecting the ink erase operation
+The event `InkEdited` will be raised when you erase an ink annotation. The ink points before the erase operation and the modified ink points after the erase operation can be obtained from the event arguments.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfPdfViewer x:Name="pdfViewer" InkEdited ="PdfViewer_InkEdited"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+private void PdfViewer_InkEdited (object sender, InkEditedEventArgs args) 
+{
+ //Get the old ink points before the erase operation.
+            List<List<float>> OldInkPoints = args.OldInkPoints;
+  //Get the new modified ink points after the erase operation.
+            List<List<float>> NewInkPoints = args.NewInkPoints; 
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+After erasing the ink annotation, if its size or position is changed from the values before the erasing operation, the `AnnotationMovedOrResized` event will be raised. The old bounds before the erase operation and the new bounds after the eraser operation can be obtained from the event arguments. Refer to this [section](https://help.syncfusion.com/xamarin/pdf-viewer/ink#how-to-identify-whether-the-ink-annotation-is-moved-or-resized).

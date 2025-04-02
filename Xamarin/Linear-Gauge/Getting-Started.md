@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Linear Gauge control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Linear Gauge (SfLinearGauge) control, its elements and more.
+title: Getting Started with Xamarin Linear Gauge control | Syncfusion<sup>&reg;</sup>
+description: Learn here about getting started with Syncfusion<sup>&reg;</sup> Xamarin Linear Gauge (SfLinearGauge) control, its elements and more.
 platform: Xamarin
 control: LinearGauge
 documentation: ug
@@ -13,7 +13,7 @@ This section explains the steps required to configure a [`SfLinearGauge`](https:
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -25,7 +25,7 @@ You can add SfLinearGauge reference using one of the following methods:
 
 **Method 1: Adding SfLinearGauge reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfLinearGauge to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfGauge](https://www.nuget.org/packages/Syncfusion.Xamarin.SfGauge), and then install it.
+Syncfusion<sup>&reg;</sup> Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfLinearGauge to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfGauge](https://www.nuget.org/packages/Syncfusion.Xamarin.SfGauge), and then install it.
 
 ![Adding SfLinearGauge reference from NuGet](getting-started_images/Adding SfLinearGauge reference.png)
 
@@ -33,7 +33,7 @@ N> Install the same version of SfLinearGauge NuGet in all the projects.
 
 **Method 2: Adding SfLinearGauge reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfLinearGauge control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion<sup>&reg;</sup> also provides Xamarin Toolbox. Using this toolbox, you can drag the SfLinearGauge control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfLinearGauge assemblies manually from the installed location**
 
@@ -60,9 +60,9 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching an application on each platform with SfLinearGauge.
 
@@ -455,7 +455,7 @@ You can find the complete getting started sample from this [`link`](https://gith
 
 ## See also
 
-[How to resolve gauge not rendering issue in Xamarin.Forms for iOS](https://www.syncfusion.com/kb/7994/how-to-resolve-sfgauge-not-rendering-issue-in-xamarin-forms-for-ios)
+[How to resolve gauge not rendering issue in Xamarin.Forms for iOS](https://support.syncfusion.com/kb/article/7075/how-to-resolve-sfgauge-not-rendering-issue-in-xamarinforms-for-ios-lineargauge-)
 
-[How to design a thermometer using the linear gauge](https://www.syncfusion.com/kb/11384/how-to-design-a-thermometer-using-the-xamarin-forms-linear-gauge-sflineargauge)
+[How to design a thermometer using the linear gauge](https://support.syncfusion.com/kb/article/10007/how-to-design-thermometer-using-the-xamarin-linear-gauge)
 

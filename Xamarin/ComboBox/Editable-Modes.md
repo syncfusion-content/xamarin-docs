@@ -11,7 +11,7 @@ documentation : ug
 
 The combo box control supports both editable and non-editable text box to choose selected items in given data source. Users can select one item from the suggestion list. 
 
-`IsEditableMode` property is used to enable the user input in SfComboBox control. The default value is false.
+[`IsEditableMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_IsEditableMode) property is used to enable the user input in [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) control. The default value is false.
 
 ## Editable combo box
 

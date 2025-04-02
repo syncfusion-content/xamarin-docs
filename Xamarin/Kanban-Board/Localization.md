@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in Xamarin Kanban Board control | Syncfusion
-description: Learn here all about Localization support in Syncfusion Xamarin Kanban Board (SfKanban) control and more.
+title: Localization in Xamarin Kanban Board control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Localization support in Syncfusion<sup>&reg;</sup> Xamarin Kanban Board (SfKanban) control and more.
 platform: xamarin
 control: Kanban
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization in Xamarin Kanban Board (SfKanban)
 
-You can localize [`SfKanban`](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html) in all the platforms by adding a .resx file in a .NET Standard project alone. The following steps describe how to localize SfKanban in a project and you can download the complete sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PCL_Local1653220814.zip).
+You can localize [`SfKanban`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html) in all the platforms by adding a .resx file in a .NET Standard project alone. The following steps describe how to localize SfKanban in a project and you can download the complete sample from this [`link`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/PCL_Local1653220814.zip).
  
 N> Here, the resources have been already created for some cultures and shared them on [`Syncfusion GitHub`](https://github.com/syncfusion/xamarin-localized-texts) for your convenience. 
 
@@ -19,8 +19,9 @@ N> Here, the resources have been already created for some cultures and shared th
 
 ![Localization support in Xamarin.Forms Kanban](SfKanban_images\LocalizationResource.png)
 
-Provide the French values for each key in the respective .resx files. Here, “ItemsCount” and “Max” are the keys, and “Fritems” and “frmax” are their respective French values.
+3. Provide the French values for each key in the respective .resx files. Here, “ItemsCount” and “Max” are the keys, and “Fritems” and “frmax” are their respective French values.
 
+{% capture codesnippet1 %}
 {% highlight xml %}
 
 <data name="ItemsCount" xml:space="preserve">
@@ -30,15 +31,20 @@ Provide the French values for each key in the respective .resx files. Here, “I
     <value>frmax</value>
 </data>
 
-{% endhighlight %} 
+{% endhighlight %}
+{% endcapture %}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 4. Set the resource manager to [‘KanbanResourceManager.Manager’](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanResourceManager.html#Syncfusion_SfKanban_XForms_KanbanResourceManager_Manager) as demonstrated in the following code to get the resource manager from the users. For more details, refer [`Localization`](https://blog.syncfusion.com/post/localization-made-easy-for-syncfusion-xamarin-forms-components.aspx).
 
+{% capture codesnippet2 %}
 {% highlight C# %}
 
 KanbanResourceManager.Manager = new ResourceManager("GettingStarted.Resources.Syncfusion.SfKanban.XForms", Application.Current.GetType().Assembly);
 
-{% endhighlight %} 
+{% endhighlight %}
+{% endcapture %}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 ## Localize at application level
 

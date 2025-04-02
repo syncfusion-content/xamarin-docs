@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Charts control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Charts (SfChart) control, its elements and more.
+title: Getting Started with Xamarin Charts Control | Syncfusion
+description: Learn here all about getting started with Syncfusion® Xamarin Charts control, its elements and more details.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -18,7 +18,7 @@ To get start quickly with Xamarin.Forms SfChart, you can check on this video:
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -30,7 +30,7 @@ You can add SfChart reference using one of the following methods:
 
 **Method 1: Adding SfChart reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add chart to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfChart](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it.
+Syncfusion® Xamarin components are available in [nuget.org](https://www.nuget.org/). To add chart to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfChart](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it.
 
 ![Adding Xamarin.Forms Chart reference](Getting-Started_images/img3.png)
 
@@ -40,7 +40,7 @@ N>
 
 **Method 2: Adding SfChart reference from toolbox**
 
-Syncfusion provides Xamarin Toolbox. Using this toolbox, you can drag the SfChart control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion® provides Xamarin Toolbox. Using this toolbox, you can drag the SfChart control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion® Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfChart assemblies manually from the installed location**
 
@@ -123,9 +123,9 @@ Syncfusion.Licensing.dll<br/>
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/offline-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion® assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion® license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion® license key in your Xamarin application to use our components.
 
 ## Launching the application on each platform with chart
 
@@ -137,7 +137,7 @@ To launch the chart in iOS, call the SfChartRenderer.Init() method in the Finish
 
 N> If you are adding the references from toolbox, this step is not needed.
 
-{% highlight C# %} 
+{% highlight c# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
 { 
@@ -156,7 +156,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 To launch the chart in macOS, call the SfChartRenderer.Init() method in the DidFinishLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and LoadApplication method as demonstrated in the following code sample:
 
-{% highlight C# %} 
+{% highlight c# %}
 
 public override void DidFinishLaunching(NSNotification notification)
 { 
@@ -175,7 +175,7 @@ public override void DidFinishLaunching(NSNotification notification)
 
 To launch the chart in WPF, call the SfChartRenderer.Init() method in the MainWindow constructor of the MainWindow class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample.
 
-{% highlight C# %} 
+{% highlight c# %}
 
 public partial class MainWindow : FormsApplicationPage
 {
@@ -197,7 +197,7 @@ public partial class MainWindow : FormsApplicationPage
 
 To deploy the chart in `Release` mode, you need to initialize the chart assemblies in App.xaml.cs in UWP project as shown in the below code snippets.
 
-{% highlight C# %} 
+{% highlight c# %}
 
 // In App.xaml.cs 
 protected override void OnLaunched(LaunchActivatedEventArgs e)
@@ -225,29 +225,29 @@ The Android platform does not require any additional configuration to render the
 
 Import the [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) namespace as shown below in your respective Page,
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 
 xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms" 
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 
 using Syncfusion.SfChart.XForms;
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
-I>To render chart inside the StackLayout/ScrollView, please refer this [KB](https://www.syncfusion.com/kb/5722/how-to-add-the-chart-inside-stacklayout-scrollview).
+I>To render chart inside the StackLayout/ScrollView, please refer this [KB](https://support.syncfusion.com/kb/article/5299/how-to-add-the-chart-inside-stacklayout-scrollview).
 
 Then initialize an empty chart with [`PrimaryAxis`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_PrimaryAxis) and [`SecondaryAxis`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_SecondaryAxis) as shown below,
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 <chart:SfChart>
 
     <chart:SfChart.PrimaryAxis>
@@ -269,7 +269,7 @@ Then initialize an empty chart with [`PrimaryAxis`](https://help.syncfusion.com/
 </chart:SfChart>
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 SfChart chart = new SfChart();
 
  //Initializing Primary Axis
@@ -285,7 +285,7 @@ chart.SecondaryAxis = secondaryAxis;
 this.Content = chart;
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 Run the project and check if you get following output to make sure you have configured your project properly to add [`SfChart`.](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html)
 
@@ -328,9 +328,9 @@ Set the `ViewModel` instance as the `BindingContext` of your Page; this is done 
  
 N> Add namespace of `ViewModel` class in your XAML page if you prefer to set `BindingContext` in XAML.
 
-{% tabs %} 
+{% tabs %}
 
-{% highlight xaml %} 
+{% highlight xaml %}
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -350,11 +350,11 @@ N> Add namespace of `ViewModel` class in your XAML page if you prefer to set `Bi
 </ContentPage>
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 this.BindingContext = new ViewModel();
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ## Populate Chart with data
 
@@ -439,7 +439,7 @@ chart.Series.Add(series);
 
 You can add title to chart to provide quick information to the user about the data being plotted in the chart. You can set title using [`SfChart.Title`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Title) property as shown below.
 
-{% tabs %} 
+{% tabs %}
 
 {% highlight xaml %}
 <chart:SfChart>
@@ -457,11 +457,11 @@ You can add title to chart to provide quick information to the user about the da
 </chart:SfChart>
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 chart.Title.Text = "Chart";
 {% endhighlight %}
 
-{% endtabs %}  
+{% endtabs %}
 
 Refer this [link](https://help.syncfusion.com/xamarin/charts/charttitle) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize chart title.
 
@@ -469,7 +469,7 @@ Refer this [link](https://help.syncfusion.com/xamarin/charts/charttitle) to lear
 
 You can add data labels to improve the readability of the chart. This can be achieved using [`ChartSeries.DataMarkers`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_DataMarker) property as shown below.
 
-{% tabs %} 
+{% tabs %}
 
 {% highlight xaml %}
 <chart:SfChart>
@@ -491,11 +491,11 @@ You can add data labels to improve the readability of the chart. This can be ach
 </chart:SfChart>
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 series.DataMarker = new ChartDataMarker();
 {% endhighlight %}
 
-{% endtabs %}  
+{% endtabs %}
 
 Refer this [link](https://help.syncfusion.com/xamarin/charts/datamarker) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize data markers.
 
@@ -503,7 +503,7 @@ Refer this [link](https://help.syncfusion.com/xamarin/charts/datamarker) to lear
 
 You can enable legend using [`SfChart.Legend`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Legend) property as shown below,
 
-{% tabs %} 
+{% tabs %}
 
 {% highlight xaml %}
 <chart:SfChart>
@@ -521,15 +521,15 @@ You can enable legend using [`SfChart.Legend`](https://help.syncfusion.com/cr/xa
 </chart:SfChart>
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 chart.Legend = new ChartLegend (); 
 {% endhighlight %}
 
-{% endtabs %}  
+{% endtabs %}
 
 Additionally, you need to set label for each series using [`ChartSeries.Label`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Label) property, which will be displayed in corresponding legend.
 
-{% tabs %} 
+{% tabs %}
 
 {% highlight xaml %}
 <chart:SfChart>
@@ -549,11 +549,11 @@ Additionally, you need to set label for each series using [`ChartSeries.Label`](
 </chart:SfChart>
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 series.Label = "Heights";
 {% endhighlight %}
 
-{% endtabs %}  
+{% endtabs %}
 
 Refer this [link](https://help.syncfusion.com/xamarin/charts/legend) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) to customize legend.
 
@@ -561,7 +561,7 @@ Refer this [link](https://help.syncfusion.com/xamarin/charts/legend) to learn mo
 
 Tooltips are used to show information about the segment, when you tap on the segment. You can enable tooltip by setting [`ChartSeries.EnableTooltip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_EnableTooltip) property to true.
 
-{% tabs %} 
+{% tabs %}
 
 {% highlight xaml %}
 <chart:SfChart>
@@ -581,7 +581,7 @@ Tooltips are used to show information about the segment, when you tap on the seg
  </chart:SfChart> 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 series.EnableTooltip = true;
 {% endhighlight %}
 
@@ -591,7 +591,7 @@ Refer this [link](https://help.syncfusion.com/xamarin/charts/tooltip) to learn m
 
 The following code example gives you the complete code of above configurations.
 
-{% tabs %} 
+{% tabs %}
 
 {% highlight xaml %}
 <ContentPage xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
@@ -643,7 +643,7 @@ The following code example gives you the complete code of above configurations.
  
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %}
 
 using Syncfusion.SfChart.XForms;
 
@@ -698,20 +698,20 @@ N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-c
 
 ## See also
 
-[How to resolve the rendering issue with chart in iOS and macOS](https://www.syncfusion.com/kb/7144/how-to-resolve-chart-not-rendering-issue-in-ios-and-macos)
+[How to resolve the rendering issue with chart in iOS and macOS](https://support.syncfusion.com/kb/article/6658/how-to-resolve-chart-not-rendering-issue-in-ios-and-macos)
 
-[How to make Syncfusion Xamarin.Forms chart to work in UWP in release mode when .NET Native tool chain is enabled](https://www.syncfusion.com/kb/7149/how-to-make-syncfusion-xamarin-forms-chart-to-work-in-uwp-in-release-mode-when-net-native)
+[How to make Syncfusion Xamarin.Forms chart to work in UWP in release mode when .NET Native tool chain is enabled](https://support.syncfusion.com/kb/article/6664/how-to-make-syncfusion-xamarin-forms-chart-to-work-in-uwp-in-release-mode-when-net-native)
 
-[How to solve application crashes due to privacy violation in iOS 10+ devices](https://www.syncfusion.com/kb/9300/how-to-solve-application-crashes-due-to-privacy-violation-in-ios-10-devices)
+[How to solve application crashes due to privacy violation in iOS 10+ devices](https://support.syncfusion.com/kb/article/7971/how-to-solve-privacy-violation-in-devices-in-xamarinforms-chart)
 
-[How to add the Xamarin.Forms chart in a ListView](https://www.syncfusion.com/kb/11341/how-to-add-the-xamarin-forms-chart-in-a-listview)
+[How to add the Xamarin.Forms chart in a ListView](https://support.syncfusion.com/kb/article/10079/how-to-add-the-xamarin-forms-charts-in-a-listview)
 
-[How to remove the default padding of Xamarin.Forms chart](https://www.syncfusion.com/kb/9606/how-to-remove-the-default-padding-of-xamarin-forms-chart)
+[How to remove the default padding of Xamarin.Forms chart](https://support.syncfusion.com/kb/article/8532/how-to-remove-the-default-padding-of-xamarin-forms-chart)
 
-[How to make animation work on Android chart in release mode](https://www.syncfusion.com/kb/10729/how-to-make-animation-work-on-chart-in-release-mode-with-android-proguard)
+[How to make animation work on Android chart in release mode](https://support.syncfusion.com/kb/article/9373/how-to-make-animation-work-on-chart-in-release-mode-with-android-proguard)
 
-[How to add the chart inside StackLayout/ScrollView](https://www.syncfusion.com/kb/5722/how-to-add-the-chart-inside-stacklayout-scrollview)
+[How to add the chart inside StackLayout/ScrollView](https://support.syncfusion.com/kb/article/5299/how-to-add-the-chart-inside-stacklayout-scrollview)
 
-[How to upgrade to newer versions of NuGet Package](https://www.syncfusion.com/kb/6939/upgrading-to-newer-versions-of-nuget-package)
+[How to upgrade to newer versions of NuGet Package](https://support.syncfusion.com/kb/article/6374/upgrading-to-newer-versions-of-nuget-package)
 
-[How to view corner segments without cutting in edge of Xamarin.Forms chart](https://www.syncfusion.com/kb/10785/how-to-view-corner-segments-without-cutting-in-edge-of-xamarin-forms-chart)
+[How to view corner segments without cutting in edge of Xamarin.Forms chart](https://support.syncfusion.com/kb/article/9516/how-to-view-corner-segments-without-cutting-in-edge-of-xamarin-forms-chart)

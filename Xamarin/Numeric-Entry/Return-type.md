@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Return Type in Xamarin Numeric Entry (SfNumericTextBox)
 
-You can define the return key type of [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) by using the [`ReturnType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ReturnType) property of the type [Xamarin.Forms ReturnType](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry.returntype?view=xamarin-forms).
+You can define the return key type of [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) by using the [`ReturnType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ReturnType) property of the type [Xamarin.Forms ReturnType](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.entry.returntype?view=xamarin-forms).
 
 {% tabs %}
 
@@ -34,7 +34,7 @@ N> Default value of ReturnType is `Default`.
 
 ## Return Command
 
-The [`ReturnCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ReturnCommand) property defines an [`ICommand`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8) implementation that wraps an action when the user presses return button.
+The [`ReturnCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ReturnCommand) property defines an [`ICommand`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8) implementation that wraps an action when the user presses return button.
 
 ## Return Command Parameter
 
@@ -48,8 +48,12 @@ The [`ReturnCommandParameter`](https://help.syncfusion.com/cr/xamarin/Syncfusion
     <local:ViewModel />
  </ContentPage.BindingContext>
 
-	<syncfusion:SfNumericTextBox ReturnType="Next" Value="123" ReturnCommand="{Binding CommandProperty}" />
-	
+	<syncfusion:SfNumericTextBox x:Name="NumericTextBox"
+                             ReturnType="Next"
+                             Value="123"
+                             ReturnCommand="{Binding CommandProperty}"
+                             ReturnCommandParameter="{x:Reference NumericTextBox}"/>
+                             	
 {% endhighlight %}
 
 {% highlight c# %}
@@ -60,20 +64,12 @@ The [`ReturnCommandParameter`](https://help.syncfusion.com/cr/xamarin/Syncfusion
         public ICommand CommandProperty { protected set; get; }
         public ViewModel()
         {
-            CommandProperty = new Command(
-                execute: () =>
-                {
-                    OnSubmit();
-                },
-                canExecute: () =>
-                {
-                    return true;
-                });
+            CommandProperty = new Command(ReturnButtonClicked);
         }
         
-        private void OnSubmit()
+        private void ReturnButtonClicked(object obj)
         {
-
+            var numericTextBox = obj as SfNumericTextBox;
         }
     }
 
@@ -83,4 +79,4 @@ The [`ReturnCommandParameter`](https://help.syncfusion.com/cr/xamarin/Syncfusion
 
 ## See also
 
-[How to get the localized return key on the iOS keyboard in SfNumericTextBox](https://www.syncfusion.com/kb/11630/how-to-get-the-localized-return-key-on-the-ios-keyboard-in-xamarin-forms-numeric-controls)
+[How to get the localized return key on the iOS keyboard in SfNumericTextBox](https://support.syncfusion.com/kb/article/10234/how-to-get-the-localized-return-key-on-the-ios-keyboard-in-xamarin-forms-numeric-controls)

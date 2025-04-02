@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Zooming in Xamarin Image Editor control | Syncfusion
-description: Learn here all about Zooming support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
+title: Zooming in Xamarin Image Editor control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Zooming support in Syncfusion<sup>&reg;</sup> Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: ImageEditor
 documentation: ug
@@ -115,4 +115,4 @@ editor.PanningMode = PanningMode.TwoFinger;
 
 ## See also
 
-[How to create zoom able image in Xamarin.Forms using SfImageEditor](https://www.syncfusion.com/kb/9379/how-to-create-zoomable-image-in-xamarin-forms-using-sfimageeditor)
+[How to create zoom able image in Xamarin.Forms using SfImageEditor](https://support.syncfusion.com/kb/article/8264/how-to-create-zoomable-image-in-xamarin-forms-using-sfimageeditor)

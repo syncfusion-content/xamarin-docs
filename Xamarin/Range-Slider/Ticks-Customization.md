@@ -13,19 +13,19 @@ Tick marks can be placed along the track in a uniform manner or it's position ca
 
 ## TickPlacement
 
-The `TickPlacement` property determines where to draw tick marks in relation to the track. Available options for this property are,
+The [`TickPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_TickPlacement) property determines where to draw tick marks in relation to the track. Available options for this property are,
 
-* BottomRight
+* [`BottomRight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.TickPlacement.html#Syncfusion_SfRangeSlider_XForms_TickPlacement_BottomRight)
 
-* Inline
+* [`Inline`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.TickPlacement.html#Syncfusion_SfRangeSlider_XForms_TickPlacement_Inline)
 
-* None
+* [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.TickPlacement.html#Syncfusion_SfRangeSlider_XForms_TickPlacement_None)
 
-* Outside
+* [`Outside`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.TickPlacement.html#Syncfusion_SfRangeSlider_XForms_TickPlacement_Outside)
 
-* TopLeft
+* [`TopLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.TickPlacement.html#Syncfusion_SfRangeSlider_XForms_TickPlacement_TopLeft)
 
-N> The default option is Inline.
+N> The default option is [`Inline`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.TickPlacement.html#Syncfusion_SfRangeSlider_XForms_TickPlacement_Inline).
 
 ### BottomRight
 
@@ -73,7 +73,7 @@ Tick marks are placed either above the track in horizontal orientation or left o
 
 ### Inline
 
-Ticks are placed along the track.
+[`Ticks`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SnapsTo.html#Syncfusion_SfRangeSlider_XForms_SnapsTo_Ticks) are placed along the track.
 
 {% tabs %}
 
@@ -117,7 +117,7 @@ Tick marks are placed on both sides of the track either in horizontal or vertica
 
 ## Customizing tick color
 
-The range slider control provides the `TickColor` property to customize the color of ticks in tick bar.
+The range slider control provides the [`TickColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_TickColor) property to customize the color of ticks in tick bar.
 
 {% tabs %}
 

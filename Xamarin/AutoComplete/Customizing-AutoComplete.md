@@ -497,7 +497,7 @@ namespace AutocompleteSample
 
 ### Changing the border color of suggestion box
 
-The DropDownBorderColor property is used to change the border color of suggestion box. The following code example demonstrates how to change the border color of suggestion box.
+The [`DropDownBorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DropDownBorderColor) property is used to change the border color of suggestion box. The following code example demonstrates how to change the border color of suggestion box.
 
 
 {% tabs %}
@@ -771,7 +771,7 @@ namespace AutocompleteSample
 
 The user can customize the clear button color in the autocomplete using [`ClearButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ClearButtonColor) Property.
 
-N> `ClearButtonColor` property is available only on iOS and Android platform.
+N> [`ClearButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ClearButtonColor) property is available only on iOS and Android platform.
 
 {% tabs %}
 
@@ -941,7 +941,7 @@ N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamari
 
 ## Select text on focus
 
-The `SelectAllOnFocus` property specifies whether the text should be selected when the input field is focused.
+The [`SelectAllOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SelectAllOnFocus) property specifies whether the text should be selected when the input field is focused.
 {% tabs %}
 
 {% highlight xaml %}
@@ -1022,3 +1022,63 @@ namespace AutocompleteSample
 {% endtabs %}
 
 ![SelectAllOnFocus](images/Customizing-AutoComplete/AutoComplete_SelectAllOnFocus.gif)
+
+## Customizing the autocomplete control focus on page load
+
+The focus method in SfAutoComplete allows users to set focus programmatically, either during the component's initial loading or dynamically during runtime. 
+
+N> When working with an AutoComplete control within a Xamarin Shell Application or a Xamarin Blank Application, if you wish to focus the AutoComplete upon page load, it is advisable to include a delay before invoking the Focus() method. This delay should be added within the OnAppearing event handler, ensuring that both the page and the control are fully visible before focusing.
+
+The following code demonstrates how to focus the SfAutoComplete during its initial loading.
+
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout 
+        VerticalOptions="Start" 
+        HorizontalOptions="Start"
+        Padding="30">
+        <autocomplete:SfAutoComplete x:Name="autoComplete"
+                                     HeightRequest="40">                                   
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+  protected async override void OnAppearing()
+  {
+      await Task.Delay(500);
+      await Device.InvokeOnMainThreadAsync(() =>
+      {
+          autoComplete.Focus();
+      });
+  }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+

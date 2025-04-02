@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Pointers in Xamarin Circular Gauge control | Syncfusion
-description: Learn here all about Pointers support in Syncfusion Xamarin Circular Gauge (SfCircularGauge) control and more.
+title: Pointers in Xamarin Circular Gauge control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Pointers support in Syncfusion<sup>&reg;</sup> Xamarin Circular Gauge (SfCircularGauge) control and more.
 platform: xamarin
 control: SfCircularGauge
 documentation: ug
@@ -1014,6 +1014,8 @@ The [`ValueChangeStarted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfG
 
 * `Value` : This value will be the last value the pointer had before the changes began.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -1046,6 +1048,10 @@ The [`ValueChangeStarted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfG
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 ### Value changing event
 
@@ -1088,6 +1094,8 @@ The [`ValueChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.X
 
 * `Value` : Gets the updated value of the pointer.
 
+{% capture codesnippet2 %}
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -1111,6 +1119,10 @@ The [`ValueChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.X
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
+
 ### Value change completed event
 
 Called after a new value has been updated by terminating the dragging of the pointer. While dragging the pointer, other events (ValueChangeStarted, ValueChanging, and ValueChanged) will be called prior to the `ValueChangeCompleted` event.
@@ -1120,6 +1132,8 @@ This event will notify the completion of dragging with a new value being updated
 The [`ValueChangeCompleted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Pointer.html#Syncfusion_SfGauge_XForms_Pointer_ValueChangeCompleted) event contains the following argument.
 
 * `Value` : Gets the updated value of the pointer.
+
+{% capture codesnippet3 %}
 
 {% tabs %}
 
@@ -1144,16 +1158,20 @@ The [`ValueChangeCompleted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.S
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet3 | UnOrderList_Indent_Level_1 }} 
+
 ## See also
 
-[How to set RangeCap to RangePointer in Xamarin.Forms SfCircularGauge](https://www.syncfusion.com/kb/10580/how-to-set-rangecap-to-rangepointer-in-xamarin-forms-sfcirculargauge)
+[How to set RangeCap to RangePointer in Xamarin.Forms SfCircularGauge](https://support.syncfusion.com/kb/article/9181/how-to-set-rangecap-to-rangepointer-in-xamarin-forms-sfcirculargauge)
 
-[How to design a compass that always points to a specific place in Xamarin.Forms circular gauge](https://www.syncfusion.com/kb/11426/how-to-design-a-compass-that-always-points-to-a-specific-place-in-xamarin-forms-circular)
+[How to design a compass that always points to a specific place in Xamarin.Forms circular gauge](https://support.syncfusion.com/kb/article/9844/how-to-design-a-compass-that-always-points-to-a-specific-place-in-xamarin-forms-circular)
 
-[How to show the direction by latitude and longitude values in SfCircularGauge using direction compass](https://www.syncfusion.com/kb/10606/how-to-show-the-direction-by-latitude-and-longitude-values-in-sfcirculargauge-using)
+[How to show the direction by latitude and longitude values in SfCircularGauge using direction compass](https://support.syncfusion.com/kb/article/9146/how-to-show-the-direction-by-latitude-and-longitude-values-in-sfcirculargauge-using)
 
-[How to animate circular gauge pointer when switching between tabs](https://www.syncfusion.com/kb/9022/how-to-animate-circular-gauge-pointer-when-switching-between-tabs)
+[How to animate circular gauge pointer when switching between tabs](https://support.syncfusion.com/kb/article/8144/how-to-animate-circular-gauge-pointer-when-switching-between-tabs)
 
-[How to enable dragging support for pointer](https://www.syncfusion.com/kb/8292/how-to-enable-dragging-support-for-pointer)
+[How to enable dragging support for pointer](https://support.syncfusion.com/kb/article/7299/how-to-enable-dragging-support-for-pointer-in-xamarinforms-circular-gauge)
 
-[Rounded corner support for RangePointer](https://www.syncfusion.com/kb/8291/rounded-corner-support-for-rangepointer)
+[Rounded corner support for RangePointer](https://support.syncfusion.com/kb/article/7339/rounded-corner-support-for-rangepointer)

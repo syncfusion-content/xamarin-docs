@@ -13,7 +13,7 @@ This section explains you the steps to configure a SfNumericTextBox control in
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -60,9 +60,9 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching the SfNumericTextBox on each platform
 
@@ -134,6 +134,8 @@ The following steps explain how to create a [`SfNumericTextBox`](https://help.sy
 
 * Adding namespace for the added assemblies. 
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -150,7 +152,13 @@ The following steps explain how to create a [`SfNumericTextBox`](https://help.sy
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 * Now, add the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) control with a required optimal name by using the included namespace.
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -192,6 +200,10 @@ public partial class NumericControlPage : ContentPage
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
+
 ![Xamarin.Forms Numeric TextBox](images/numericTextBox.PNG)
 
 ## Set the value in SfNumericTextBox
@@ -222,26 +234,26 @@ You can find the complete getting started sample from this [link.](https://githu
 
 ## See also
 
-[How to disable the clear button in SfNumericTextBox]( https://www.syncfusion.com/kb/11874/how-to-disable-the-clear-button-in-numeric-textbox-in-xamarin-forms)
+[How to disable the clear button in SfNumericTextBox](https://support.syncfusion.com/kb/article/10319/how-to-disable-the-clear-button-in-numeric-textbox-in-xamarin-forms)
 
-[How to change the SfNumericTextBox style using its visual states]( https://www.syncfusion.com/kb/11785/how-to-change-the-xamarin-forms-numeric-textbox-style-using-its-visual-states)
+[How to change the SfNumericTextBox style using its visual states](https://support.syncfusion.com/kb/article/10286/how-to-change-the-xamarin-forms-numeric-textbox-style-using-its-visual-states)
 
-[How to define and apply a common style for SfNumericTextBox]( https://www.syncfusion.com/kb/11670/how-to-define-and-apply-a-common-style-for-sfnumerictextbox-in-xamarin-forms)
+[How to define and apply a common style for SfNumericTextBox](https://support.syncfusion.com/kb/article/10232/how-to-define-and-apply-a-common-style-for-sfnumerictextbox-in-xamarin-forms)
 
-[How to resolve the issue with decimal point and minus key on Samsung devices in SfNumericTextBox](https://www.syncfusion.com/kb/10419/how-to-resolve-the-issue-with-decimal-point-and-minus-key-on-samsung-devices-in) 
+[How to resolve the issue with decimal point and minus key on Samsung devices in SfNumericTextBox](https://support.syncfusion.com/kb/article/8944/how-to-resolve-the-issue-with-decimal-point-and-minus-key-on-samsung-devices-in) 
 
-[How to create SfNumericTextBox sample in Xamarin.Forms.Android platform](https://www.syncfusion.com/kb/7632/how-to-create-numerictextbox-sample-in-xamarin-forms-android-platform)
+[How to create SfNumericTextBox sample in Xamarin.Forms.Android platform](https://support.syncfusion.com/kb/article/6863/how-to-create-numerictextbox-sample-in-xamarin-forms-android-platform)
 
-[How to create a SfNumericTextBox control sample using Xaml](https://www.syncfusion.com/kb/7631/how-to-create-a-numerictextbox-control-sample-using-xaml)
+[How to create a SfNumericTextBox control sample using Xaml](https://support.syncfusion.com/kb/article/6861/how-to-create-a-numerictextbox-control-sample-using-xaml)
 
-[How to create SfNumericTextBox sample in Xamarin.Forms.UWP platform](https://www.syncfusion.com/kb/7591/how-to-create-numerictextbox-sample-in-xamarin-forms-uwp-platform)
+[How to create SfNumericTextBox sample in Xamarin.Forms.UWP platform](https://support.syncfusion.com/kb/article/6842/how-to-create-numerictextbox-sample-in-xamarinforms-platform)
 
-[How to create SfNumericTextBox sample in Xamarin.Forms.iOS platform](https://www.syncfusion.com/kb/7590/how-to-create-numerictextbox-sample-in-xamarin-forms-ios-platform)
+[How to create SfNumericTextBox sample in Xamarin.Forms.iOS platform](https://support.syncfusion.com/kb/article/6844/how-to-create-numerictextbox-sample-in-xamarin-forms-ios-platform)
 
-[How to bind the values of SfNumericTextBox with an Entry control in Xamarin.Forms](https://www.syncfusion.com/kb/7588/how-to-bind-the-values-of-numerictextbox-with-an-entry-control-in-xamarin-forms)
+[How to bind the values of SfNumericTextBox with an Entry control in Xamarin.Forms](https://support.syncfusion.com/kb/article/6847/how-to-bind-the-values-of-numerictextbox-with-an-entry-control-in-xamarin-forms)
 
-[How to bind two SfNumericTextBox in Xamarin.Forms](https://www.syncfusion.com/kb/7584/how-to-bind-two-numerictextboxes-in-xamarin-forms)
+[How to bind two SfNumericTextBox in Xamarin.Forms](https://support.syncfusion.com/kb/article/6853/how-to-bind-two-numerictextboxes-in-xamarin-forms)
 
-[What are the assemblies needed for SfNumericTextBox and how to add reference](https://www.syncfusion.com/kb/7583/what-are-the-assemblies-needed-for-numerictextbox-and-how-to-add-reference)
+[What are the assemblies needed for SfNumericTextBox and how to add reference](https://support.syncfusion.com/kb/article/6854/what-are-the-assemblies-needed-for-numerictextbox-and-how-to-add-reference)
 
-[How to bind value in SfNumericTextBox](https://www.syncfusion.com/kb/7064/how-to-bind-value-in-numerictextbox)
+[How to bind value in SfNumericTextBox](https://support.syncfusion.com/kb/article/6304/how-to-bind-value-in-xamarin-forms-numerictextbox)

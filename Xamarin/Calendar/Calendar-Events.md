@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Events (Appointments) in Xamarin Calendar control | Syncfusion
-description: Learn here all about Events (Appointments) support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
-platform: Xamarin
+title: Events (Appointments) in Xamarin Calendar control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Events (Appointments) support in Syncfusion<sup>&reg;</sup> Xamarin Calendar (SfCalendar) control and more.
+platform: xamarin
 control: Calendar
 documentation: ug
 ---
@@ -34,7 +34,7 @@ You can handle the calendar month view appointment display by using [InlineViewM
 * AgendaView - Show the selected date’s events below the month.
 
 {% tabs %}
-{% highlight xaml %} 
+{% highlight xaml %}
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:CalendarSample" x:Class="CalendarSample.MainPage" xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms">
     <syncfusion:SfCalendar.BindingContext>
@@ -74,7 +74,7 @@ namespace CalendarSample
     }
 }
 {% endhighlight %}
-{% endtabs %} 
+{% endtabs %}
 
 You can download the entire source code of this demo for Xamarin.Forms from
 here [CalendarEvents](https://github.com/SyncfusionExamples/creating-events-in-xamarin.forms-sfcalendar)
@@ -226,7 +226,7 @@ Agenda view mode
 ## Getting inline/agenda view appointment details
 
 Using  [InlineEvent](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.InlineItemTappedEventArgs.html#Syncfusion_SfCalendar_XForms_InlineItemTappedEventArgs_InlineEvent) argument in the [InlineItemTappedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.InlineItemTappedEventArgs.html) 
-of [InlineItemTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html)  event, you can get the month inline/agenda appointments details while tapping the specific appointment. You can do the required functions while tapping the inline/agenda appointment using this event.
+of [InlineItemTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_InlineItemTapped)  event, you can get the month inline/agenda appointments details while tapping the specific appointment. You can do the required functions while tapping the inline/agenda appointment using this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -250,10 +250,10 @@ Agenda view mode
 
 ## See also
 
-[How to filter the events in the Xamarin.Forms Calendar by searching the subject?](https://www.syncfusion.com/kb/10324/how-to-filter-the-events-in-the-xamarin-forms-calendar-by-searching-the-subject)
+[How to filter the events in the Xamarin.Forms Calendar by searching the subject?](https://support.syncfusion.com/kb/article/8926/how-to-filter-calendar-events-in-xamarinforms)
 
-[How to show events in custom agenda view using list view in Xamarin.Forms Calendar?](https://www.syncfusion.com/kb/10325/how-to-show-events-in-custom-agenda-view-using-list-view-in-xamarin-forms-calendar)
+[How to show events in custom agenda view using list view in Xamarin.Forms Calendar?](https://support.syncfusion.com/kb/article/8912/how-to-show-events-in-custom-agenda-view-using-list-view-in-xamarin-forms-calendar)
 
-[How to show the calendar agenda view events using SfDataGrid in Xamarin.Forms?](https://www.syncfusion.com/kb/10323/how-to-show-the-calendar-agenda-view-events-using-sfdatagrid-in-xamarin-forms)
+[How to show the calendar agenda view events using SfDataGrid in Xamarin.Forms?](https://support.syncfusion.com/kb/article/8923/how-to-show-the-calendar-agenda-view-events-using-sfdatagrid-in-xamarin-forms)
 
-[How to load the data from SQLite offline database into SfCalendar?](https://www.syncfusion.com/kb/9380/how-to-load-the-data-from-sqlite-offline-database-into-sfcalendar)
+[How to load the data from SQLite offline database into SfCalendar?](https://support.syncfusion.com/kb/article/8263/how-to-load-the-data-from-sqlite-offline-database-into-sfcalendar)

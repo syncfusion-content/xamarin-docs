@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working With MVVM in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Working With MVVM support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
+title: Working With MVVM in Xamarin DataGrid control | Syncfusion®
+description: Learn here all about Working With MVVM support in Syncfusion® Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG

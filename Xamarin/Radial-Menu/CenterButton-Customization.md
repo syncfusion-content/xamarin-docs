@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CenterButton Customization in Xamarin Radial Menu control | Syncfusion
-description: Learn here all about CenterButton Customization support in Syncfusion Xamarin Radial Menu (SfRadialMenu) control and more.
+title: CenterButton Customization in Xamarin Radial Menu control | Syncfusion®
+description: Learn here all about CenterButton Customization support in Syncfusion® Xamarin Radial Menu (SfRadialMenu) control and more.
 platform: Xamarin
 control: SfRadialMenu
 documentation: ug

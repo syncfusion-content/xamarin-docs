@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visual States in Xamarin Radio Button control | Syncfusion
-description: Learn here all about Visual States support in Syncfusion Xamarin Radio Button (SfRadioButton) control and more.
+title: Visual States in Xamarin Radio Button control | Syncfusion®
+description: Learn here all about Visual States support in Syncfusion® Xamarin Radio Button (SfRadioButton) control and more.
 platform: xamarin
 control: SfRadioButton
 documentation: ug

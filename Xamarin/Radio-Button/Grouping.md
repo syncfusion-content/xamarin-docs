@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping in Xamarin Radio Button control | Syncfusion
-description: Learn here all about Grouping support in Syncfusion Xamarin Radio Button (SfRadioButton) control and more.
+title: Grouping in Xamarin Radio Button control | Syncfusion®
+description: Learn here all about Grouping support in Syncfusion® Xamarin Radio Button (SfRadioButton) control and more.
 platform: xamarin
 control: SfRadioButton
 documentation: ug 

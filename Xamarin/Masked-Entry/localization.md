@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in Xamarin Masked Entry control | Syncfusion
-description: Learn here all about Localization support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
+title: Localization in Xamarin Masked Entry control | Syncfusion®
+description: Learn here all about Localization support in Syncfusion® Xamarin Masked Entry (SfMaskedEdit) control and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 

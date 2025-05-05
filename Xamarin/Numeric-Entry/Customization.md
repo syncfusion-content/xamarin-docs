@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Different customization in Xamarin NumericTextBox control | Syncfusion
-description: Learn here different customization support in Syncfusion Xamarin NumericTextBox (SfNumericTextBox) control and more.
+title: Different customization in Xamarin NumericTextBox control | Syncfusion®
+description: Learn here different customization support in Syncfusion® Xamarin NumericTextBox (SfNumericTextBox) control and more.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug

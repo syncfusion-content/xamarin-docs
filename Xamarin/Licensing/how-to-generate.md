@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion® license generation - Syncfusion®
+title: Overview of Xamarin.Forms license generation | Syncfusion
 description: Learn here about how to generate Syncfusion® Xamarin license key for syncfusion® Xamarin application for license validation.
 platform: xamarin
 control: Essential Studio<sup>®</sup>

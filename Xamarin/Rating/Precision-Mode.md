@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Precision Mode in Xamarin Rating control | Syncfusion
-description: Learn here all about Precision Mode support in Syncfusion Xamarin Rating (SfRating) control and more.
+title: Precision Mode in Xamarin Rating Control | Syncfusion
+description: Learn about the precision mode options available in the Syncfusion Xamarin Rating (SfRating) control, and how to configure them for your applications.
 platform: Xamarin
 control: Rating
 documentation: ug
@@ -13,7 +13,7 @@ documentation: ug
 
 The [`Precision`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_Precision) mode defines the accuracy level of the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control. It has [`Standard`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.Precision.html#Syncfusion_SfRating_XForms_Precision_Standard), [`Half`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.Precision.html#Syncfusion_SfRating_XForms_Precision_Half), and [`Exact`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.Precision.html#Syncfusion_SfRating_XForms_Precision_Exact) options. The default precision mode of the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control is [`Standard`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.Precision.html#Syncfusion_SfRating_XForms_Precision_Standard).
 
-## Standard
+## Standard Precision
 
 When the precision mode of [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) is set as [`Standard`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.Precision.html#Syncfusion_SfRating_XForms_Precision_Standard), the rating item will be filled completely based on the rating value.
 

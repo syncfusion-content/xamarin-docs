@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Display Type in Xamarin Tabbed View control | Syncfusion
-description: Learn here all about Display Type support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
+title: Display Type in Xamarin Tabbed View Control | Syncfusion
+description: Learn about the various display types supported by the Syncfusion Xamarin Tabbed View (SfTabView) control.
 platform: Xamarin
 control: TabView
 documentation: ug
@@ -11,15 +11,14 @@ documentation: ug
 
 By default, the tab view control displays the title of each tab item. It can be changed to any of the following types:
 
-* Text only
-* Image only
-* Image with text
-* No header
+- Text only
+- Image only
+- Image with text
+- No header
 
 ![Image for DisplayMode](images/Display-Type/tabstyle01.png)
 
-
-The tab view can be changed by setting the [`DisplayMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_DisplayMode) property of [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html).
+The tab view can be adjusted by setting the [`DisplayMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_DisplayMode) property of the [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html).
 
 {% tabs %}
 
@@ -150,7 +149,6 @@ namespace TabView
 
 {% endtabs %}
 
-The "no header" type can be used when the header is not needed for the tab view control. So, the content space will be occupied to the entire available height.
+The "no header" type can be utilized when a header is not needed for the tab view control, allowing the content to occupy the entire available height.
 
-N> [`Image`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabDisplayMode.html#Syncfusion_XForms_TabView_TabDisplayMode_Image) appearance in the header can be achieved through font icons.
-
+> **Note:** The [`Image`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabDisplayMode.html#Syncfusion_XForms_TabView_TabDisplayMode_Image) appearance in the header can be achieved using font icons.

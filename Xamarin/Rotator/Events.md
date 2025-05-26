@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in Xamarin Rotator control | Syncfusion
-description: Learn here all about Events support in Syncfusion Xamarin Rotator (SfRotator) control, its elements and more.
+title: Events in Xamarin Rotator Control | Syncfusion
+description: Explore the various events supported by the Syncfusion Xamarin Rotator (SfRotator) control, their features, and implementations.
 platform: xamarin 
 control: Rotator 
 documentation: ug
@@ -9,13 +9,15 @@ documentation: ug
 
 # Events in Xamarin Rotator (SfRotator)
 
+The Rotator control in Xamarin enables users to interact with items through events such as `SelectionChanged` and `ItemTapped`. These events are crucial for handling user interactions and updating UI elements in real-time.
+
 ## Selection Changed
 
-The SelectionChanged event is used to notify when the selection is changed by swiping or dynamically setting the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html#Syncfusion_SfRotator_XForms_SfRotator_SelectedIndex) property of [`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html).
+The `SelectionChanged` event is triggered when the selection of the rotator changes, either by swiping through the items or by dynamically updating the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html#Syncfusion_SfRotator_XForms_SfRotator_SelectedIndex) property of the [`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html).
 
-## ItemTapped
+## Item Tapped
 
-The [`ItemTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html#Syncfusion_SfRotator_XForms_SfRotator_ItemTapped) event will be triggered whenever tapping the item.
+The [`ItemTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html#Syncfusion_SfRotator_XForms_SfRotator_ItemTapped) event is fired whenever an item in the rotator is tapped. This can be used to trigger actions such as navigation or selection operations.
 
 {% tabs %}
 
@@ -149,7 +151,7 @@ namespace Rotator
 
 {% endtabs %}
 
-The following screenshot illustrates the output of above code.
+The following screenshot illustrates the output of the above code.
 
 ![Rotator_SelectedIndexChanged](images/SelectedIndexChanged.png)
 ![Rotator_ItemTapped](images/ItemTapped.png)

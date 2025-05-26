@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Placement Modes in Xamarin Rotator control | Syncfusion
-description: Learn here all about Placement Modes support in Syncfusion Xamarin Rotator (SfRotator) control and more.
+title: Placement Modes in Xamarin Rotator Control | Syncfusion
+description: Explore the placement modes available in the Syncfusion Xamarin Rotator (SfRotator) control for customizing your mobile application interface.
 platform: xamarin 
 control: Rotator 
 documentation: ug
@@ -9,13 +9,12 @@ documentation: ug
 
 # Placement Modes in Xamarin Rotator (SfRotator)
 
-By default, the rotator control displays the dots of each rotator item. It can be changed to any of the following types:
-
-* [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.DotPlacement.html#Syncfusion_SfRotator_XForms_DotPlacement_Default)
-* [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.DotPlacement.html#Syncfusion_SfRotator_XForms_DotPlacement_None)
-* [`Outside`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.DotPlacement.html#Syncfusion_SfRotator_XForms_DotPlacement_OutSide)
+The Xamarin Rotator, `SfRotator`, provides a flexible way to display navigation dots for image items. You can customize the appearance of these dots using the following placement modes:
+- **[`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.DotPlacement.html#Syncfusion_SfRotator_XForms_DotPlacement_Default)**: Display dots at their default position.
+- **[`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.DotPlacement.html#Syncfusion_SfRotator_XForms_DotPlacement_None)**: Hide dots completely, useful when you want a clean, dot-free interface.
+- **[`Outside`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.DotPlacement.html#Syncfusion_SfRotator_XForms_DotPlacement_OutSide)**: Place dots outside the image area.
  
-## DotsPlacement
+## DotsPlacement Property
 
 The Display Type of Rotator can be modified using the [`DotsPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html#Syncfusion_SfRotator_XForms_SfRotator_DotPlacement) Mode. The [`“None”`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.DotPlacement.html#Syncfusion_SfRotator_XForms_DotPlacement_None) type can be used when the dots are not needed for the rotator control.
 

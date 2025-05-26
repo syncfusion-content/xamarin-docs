@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Indicating the selected item in Xamarin Segmented Control | Syncfusion<sup>&reg;</sup>
-description: Learn here all about Indicating the selected item support in Syncfusion<sup>&reg;</sup> Xamarin Segmented Control (SfSegmentedControl) and more.
+title: Indicating the Selected Item in Xamarin Segmented Control | Syncfusion<sup>&reg;</sup>
+description: Discover how to indicate the selected item in Syncfusion<sup>&reg;</sup> Xamarin Segmented Control (SfSegmentedControl) and more.
 platform: Xamarin
 control: SegmentedControl
 documentation: ug
 ---
 
-# Indicating the selected item in Xamarin Segmented Control
+# Indicating the Selected Item in Xamarin Segmented Control
 
-The segmented control indicates the selected item by differentiating it with text color of the item or using selection strip.
+The segmented control indicates the selected item by differentiating it with either the text color of the item or by using a selection strip.
 
-## Selection text color
+## Selection Text Color
 
-You can change the text color of the selected item to desired color. The selected item's text color can be customized using the [`SelectionTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectionTextColor) property.
+The text color of the selected item can be changed to a desired color. Customize the selected item's text color using the [`SelectionTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectionTextColor) property.
 
 {% tabs %}
 
@@ -31,19 +31,18 @@ segmentedControl.SelectionTextColor = Color.FromHex("#02A0AE");
 
 {% endtabs %}
 
-![Xamarin_Forms_selectiontextcolor](images/Selection-indicator/Xamarin_Forms_selectiontextcolor.png)
+![Xamarin_Forms_SelectionTextColor](images/Selection-indicator/Xamarin_Forms_selectiontextcolor.png)
 
-## Selection strip
+## Selection Strip
 
-A selection strip is used to indicate the selected item in the segmented control. The selection strip can be customized in many forms.
+A selection strip is used to indicate the selected item in the segmented control. The selection strip can be customized in various ways.
 
-#### Position
+### Position
 
-The position of the selection indicator can be customized in different ways.
+Customize the position of the selection indicator according to your needs.
+#### Top
 
-##### Top
-
-The selection strip can be displayed as a line with customizable color and thickness. It can be positioned at the top of an item.
+The selection strip can be displayed as a line with customizable color and thickness, positioned at the top of an item.
 
 {% tabs %}
 
@@ -69,10 +68,9 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 ![Xamarin_Forms_Top](images/Selection-indicator/Xamarin_Forms_Top.png)
 
-##### Bottom
+#### Bottom
 
-Like top placement, selection strip can be customized by its color and thickness and can be positioned at the bottom of an item.
-
+Similarly, the selection strip can be positioned at the bottom of an item with customizable color and thickness.
 {% tabs %}
 
 {% highlight xaml %}
@@ -97,9 +95,9 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 ![Xamarin_Forms_Bottom](images/Selection-indicator/Xamarin_Forms_Bottom.png)
 
-##### Fill
+#### Fill
 
-The selection strip can be placed over a segment item to indicate the selection. You can customize its color to highlight the item.
+The selection strip can be placed over a segment item to indicate selection, with customizable color to highlight the item.
 
 {% tabs %}
 
@@ -125,9 +123,9 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 ![Xamarin_Forms_Fill](images/Selection-indicator/Xamarin_Forms_Fill.png)
 
-##### Border
+#### Border
 
-The selection strip can be set as a border to highlight the selected item.
+You can set the selection strip as a border to emphasize the selected item.
 
 {% tabs %}
 
@@ -153,9 +151,9 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 ![Xamarin_Forms_Border](images/Selection-indicator/Xamarin_Forms_Border.png)
 
-#### Color
+### Color
 
-The background color of the selection strip can be customized using the [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_Color) property of [`SelectionIndicatorSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectionIndicatorSettings).
+Customize the background color of the selection strip using the [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_Color) property of [`SelectionIndicatorSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectionIndicatorSettings).
 
 {% tabs %}
 
@@ -179,11 +177,11 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 {% endtabs %}
 
-![Xamarin_Forms_stripcolor](images/Selection-indicator/Xamarin_Forms_stripcolor.png)
+![Xamarin_Forms_StripColor](images/Selection-indicator/Xamarin_Forms_stripcolor.png)
 
-#### Thickness
+### Thickness
 
-The border thickness of the selection strip can be customized using the [`Thickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_BorderThickness) property of [`SelectionIndicatorSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectionIndicatorSettings).
+Customize the thickness of the selection strip border using the [`StrokeThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_BorderThickness) property of [`SelectionIndicatorSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectionIndicatorSettings).
 
 {% tabs %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in Xamarin Segmented Control | Syncfusion<sup>&reg;</sup>
-description: Learn here all about Customization support in Syncfusion<sup>&reg;</sup> Xamarin Segmented Control (SfSegmentedControl) and more.
+description: Explore customization capabilities in Syncfusion<sup>&reg;</sup> Xamarin Segmented Control (SfSegmentedControl).
 platform: Xamarin
 control: SegmentedControl
 documentation: ug
@@ -9,15 +9,15 @@ documentation: ug
 
 # Customization in Xamarin Segmented Control (SfSegmentedControl)
 
-The segmented control supports customizing segment color, text color, icon size, selection color, and more. This control also supports enabling the segments to fit your application’s theme. It can be customized in the following areas.
+The segmented control supports customizing segment color, text color, icon size, selection color, and more. This control also allows segments to seamlessly integrate with your application's theme. Below are the areas that can be customized.
 
-## Text appearance
+## Text Appearance
 
-The text inside the segmented control can be customized by its font size, color, and its font family.
+The text within the segmented control can be tailored by adjusting its font size, color, and font family.
 
-### Font family
+### Font Family
 
-You can customize the font family of the segmented item using the [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_FontFamily) property.
+Customize the font family of segmented items using the [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_FontFamily) property.
 
 {% tabs %}
 
@@ -45,9 +45,9 @@ Device.RuntimePlatform == Device.Android ? "Roboto"  : "Helvetica";
 
 {% endtabs %}
 
-### Font color
+### Font Color
 
-You can customize the text color of the segmented item using the [`FontColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_FontColor) property.
+Customize the text color of segmented items using the [`FontColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_FontColor) property.
 
 {% tabs %}
 
@@ -67,9 +67,9 @@ segmentedControl.SelectionTextColor = Color.Red;
 
 ![Font color customization in segmented control](images/Customization/Xamarin_Forms_Fontcolor.png)
 
-### Font size
+### Font Size
 
-You can change the text size of the segmented item using the [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_FontSize) property.
+Change the text size of segmented items using the [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_FontSize) property.
 
 {% tabs %}
 
@@ -91,11 +91,11 @@ segmentedControl.FontSize = 20;
 
 ## Border
 
-You can customize the border by their color and thickness.
+Customize the border by both color and thickness.
 
-### Border color
+### Border Color
 
-You can customize the border color of all the items in the segmented control.
+Adjust the border color for all items in the segmented control.
 
 {% tabs %}
 
@@ -115,9 +115,9 @@ segmentedControl.BorderColor = Color.Red;
 
 ![Border color customization in segmented control](images/Customization/Xamarin_Forms_Bordercolor.png)
 
-### Border thickness
+### Border Thickness
 
-You can customize the width of the border using the [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_BorderThickness) property.
+Customize the border width using the [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_BorderThickness) property.
 
 {% tabs %}
 
@@ -139,11 +139,11 @@ segmentedControl.BorderThickness = 5;
 
 ### Padding
 
-The segmented control handles padding between the items.
+The segmented control can handle padding between items.
 
-#### Segment padding
+#### Segment Padding
 
-Spacing between the segmented items in the control can be customized using the [`SegmentPadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SegmentPadding).
+Customize the spacing between segmented items with the [`SegmentPadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SegmentPadding).
 
 {% tabs %}
 
@@ -163,13 +163,13 @@ segmentedControl.SegmentPadding = 15;
 
 ![Segment padding customization in segmented control](images/Customization/Xamarin_Forms_Padding.png)
 
-### Corner radius
+### Corner Radius
 
-The segmented control provides corner radius support for the segmented items and strip.
+The segmented control provides corner radius support for segmented items and strips.
 
-#### Item radius
+#### Item Radius
 
-The segmented control customizes the corner radius for each segmented item.
+Customize the corner radius for each segmented item.
 
 {% tabs %}
 
@@ -189,9 +189,9 @@ segmentedControl.SegmentCornerRadius = 15;
 
 ![Segment corner radius customization in segmented control](images/Customization/Xamarin_Forms_ItemCornerRadius.png)
 
-#### Selection strip radius
+#### Selection Strip Radius
 
-The segmented control customizes corner radius for selection strip using the [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_CornerRadius) inside the [`SelectionIndicatorSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectionIndicatorSettings) class.
+Customize the corner radius for the selection strip using the [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_CornerRadius) within the [`SelectionIndicatorSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectionIndicatorSettings) class.
 
 {% tabs %}
 
@@ -219,9 +219,9 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 ![Selected segment corner radius customization in segmented control](images/Customization/Xamarin_Forms_SelectionstripRadius.png)
 
-#### Control radius
+#### Control Radius
 
-The segmented control also handles corner radius for border line of the whole control.
+The segmented control also supports the corner radius for the border line enclosing the entire control.
 
 
 {% tabs %}
@@ -244,11 +244,11 @@ segmentedControl.CornerRadius = 15;
 
 ### Color
 
-The segmented control allows users to customize the background color of the segmented items and background color of the control.
+The segmented control allows users to customize the background color of segmented items and the control itself.
 
-#### Item color
+#### Item Color
 
-You can customize the background color of each segmented item using the [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_Color) property in the [`SelectionIndicatorSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectionIndicatorSettings) class.
+Customize the background color of each segmented item using the [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_Color) property within the [`SelectionIndicatorSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectionIndicatorSettings) class.
 
 {% tabs %}
 
@@ -274,9 +274,9 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 ![Segment item color customization in segmented control](images/Customization/Xamarin_Forms_ItemCornerRadius.png)
 
-#### Control color
+#### Control Color
 
-You can customize the background color of the control by setting value for the [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_Color) property.
+Customize the background color of the entire control by setting the [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_Color) property.
 
 {% tabs %}
 
@@ -296,13 +296,13 @@ segmentedControl.Color = Color.FromHex("#02A0AE");
 
 ![Segmented control color customization in segmented control](images/Customization/Xamarin_Forms_color.png)
 
-## Scrolling in segmented control programmatically
+## Scrolling in Segmented Control Programmatically
 
-The SegmentedControl allows programmatic scrolling based on index and item using the [`ScrollTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_ScrollTo_System_Int32_Syncfusion_XForms_Buttons_ScrollToPosition_) methods mentioned as follows.
+The segmented control supports programmatic scrolling using the [`ScrollTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_ScrollTo_System_Int32_Syncfusion_XForms_Buttons_ScrollToPosition_) methods as follows.
 
 ### ScrollTo(index, scrollToPosition)
 
-This method is used to scroll the segment item based on given index and [`ScrollToPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_ScrollToPosition) value.
+This method scrolls the segment item based on a given index and [`ScrollToPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_ScrollToPosition) value.
 
 {% tabs %}
 
@@ -316,7 +316,7 @@ segmentedControl.ScrollTo(5,  Syncfusion.XForms.Buttons.ScrollToPosition.Start);
 
 ### ScrollTo(item, scrollToPosition)
 
-This method is used to scroll the segment item based on the given data or [`SfSegmentItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentItem.html) and [`ScrollToPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_ScrollToPosition) value.
+Scroll a segment item based on the given data or [`SfSegmentItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentItem.html) and [`ScrollToPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_ScrollToPosition) value.
 
 {% tabs %}
 
@@ -330,7 +330,7 @@ segmentedControl.ScrollTo(viewModel.Items[5], Syncfusion.XForms.Buttons.ScrollTo
 
 ## Segment Height
 
-The Segmented control height can be customized using the [SegmentHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SegmentHeight) property as shown below
+The segmented control height can be customized using the [SegmentHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SegmentHeight) property as shown below.
  
 {% tabs %}
 
@@ -374,7 +374,7 @@ The Segmented control height can be customized using the [SegmentHeight](https:/
 
 {% endtabs %}
 
-Segment Height sample can be downloaded from this [link](https://github.com/SyncfusionExamples/how-to-customize-segment-contol-height-in-xamarin.forms).
+A sample demonstrating segment height customization can be downloaded from this [link](https://github.com/SyncfusionExamples/how-to-customize-segment-contol-height-in-xamarin.forms).
 
 ![Segment Height customization in segmented control](images/Customization/Xamarin_Forms_SegmentHeight.png)
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Event in Xamarin Button control | Syncfusion
-description: Learn here all about Event support in Syncfusion Xamarin Button (SfButton) control, its elements and more.
-platform: xamarin
+title: Event in Xamarin Button Control | Syncfusion
+description: Discover event support in the Syncfusion Xamarin Button (SfButton) control and learn how to handle click events.
+platform: Xamarin
 control: SfButton
 documentation: ug 
 
@@ -10,7 +10,7 @@ documentation: ug
 
 # Event in Xamarin Button (SfButton)
 
-## Clicked event
+## Clicked Event
 
 The click event occurs when the [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html) is clicked. The event argument is of type `EventArgs`.
 

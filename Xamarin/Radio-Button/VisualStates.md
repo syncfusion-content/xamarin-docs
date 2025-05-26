@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Visual States in Xamarin Radio Button control | Syncfusion
-description: Learn here all about Visual States support in Syncfusion Xamarin Radio Button (SfRadioButton) control and more.
-platform: xamarin
+title: Visual States in Xamarin Radio Button Control | Syncfusion
+description: Learn about visual states support in Syncfusion Xamarin Radio Button (SfRadioButton) control and more.
+platform: Xamarin
 control: SfRadioButton
 documentation: ug
 ---
 
 # Visual States in Xamarin Radio Button (SfRadioButton)
 
-The visual of Radio Button can be customized using `VisualStates`. The [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html) control contains the following two visual states:
+The visual appearance of the Radio Button can be customized using `VisualStates`. The [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html) control features the following two visual states:
 
 * Checked
 * Unchecked
@@ -72,8 +72,8 @@ VisualStateManager.SetVisualStateGroups(radioButton, visualStateGroupList);
 {% endhighlight %}
 {% endtabs %}
 
-**Checked visual state:**
+**Checked Visual State:**
 ![SfRadioButton with visual state of checked state](images/RadioButton_VisualState_Checked.png)
 
-**Unchecked visual state:**
+**Unchecked Visual State:**
 ![SfRadioButton with visual state of unchecked state](images/RadioButton_VisualState_Unchecked.png)

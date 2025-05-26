@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Xamarin Segmented Control | Syncfusion<sup>&reg;</sup>
-description: Learn here about getting started with Syncfusion<sup>&reg;</sup> Xamarin Segmented Control (SfSegmentedControl), its elements and more.
+description: Discover how to get started with Syncfusion<sup>&reg;</sup> Xamarin Segmented Control (SfSegmentedControl), including its elements and more.
 platform: Xamarin
 control: SfSegmentedControl
 documentation: ug
@@ -9,37 +9,37 @@ documentation: ug
 
 # Getting Started with Xamarin Segmented Control (SfSegmentedControl)
 
-This section provides an overview for working with the segmented control for Xamarin.Forms. Walk through the entire process of creating a real-world application with the [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html).
+This section provides an overview for working with the segmented control for Xamarin.Forms. It guides you through the process of creating a real-world application using [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html).
 
-## Assembly deployment
+## Assembly Deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders at {Syncfusion Essential Studio Installed location}\Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
-N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+> Note: Assemblies can be found in the unzipped package location (Documents/Syncfusion/{Version #}/Xamarin/lib) on a Mac.
 
-## Adding SfSegmentedControl reference
+## Adding SfSegmentedControl Reference
 
-You can add [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html) reference using one of the following methods:
+You can add the [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html) reference using one of the following methods:
 
-**Method 1: Adding SfSegmentedControl reference from nuget.org**
+**Method 1: Adding SfSegmentedControl Reference from NuGet.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html) to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons), and then install it.
+Syncfusion Xamarin components are available on [nuget.org](https://www.nuget.org/). To add [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html) to your project, open the NuGet Package Manager in Visual Studio, search for [Syncfusion.Xamarin.Buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons), and install it.
 
 ![Adding SfSegmentedControl reference from NuGet](images/getting-started/Adding SfSegmentedControl reference.png)
 
-N> 
-* Install the same version of [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html) NuGet in all the projects.
-* In addition, you need to install the [Syncfusion.Xamarin.Buttons.WPF]() package for Xamarin.Forms WPF platform only.
+> Note:
+> - Install the same version of [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html) NuGet in all projects.
+> - Additionally, install the [Syncfusion.Xamarin.Buttons.WPF]() package for Xamarin.Forms WPF platform only.
 
-**Method 2: Adding SfSegmentedControl reference from toolbox**
+**Method 2: Adding SfSegmentedControl Reference from Toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides a Xamarin Toolbox. By using this toolbox, you can drag the [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install the Syncfusion Xamarin Toolbox, refer to the [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox) documentation.
 
-**Method 3: Adding SfSegmentedControl assemblies manually from the installed location**
+**Method 3: Adding SfSegmentedControl Assemblies Manually from the Installed Location**
 
-If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+If you prefer to manually reference the assemblies instead of using NuGet, add the following assemblies to the respective projects.
 
 Location: {Installed location}/{version}/Xamarin/lib
 
@@ -66,23 +66,23 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
+> Note: For more information on obtaining our components, refer to the following links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your Xamarin application to use our components.
+> Info: Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or the NuGet feed, you must include a license key in your projects. Refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering a Syncfusion license key in your Xamarin application to use our components.
 
-## Launching the SfSegmentedControl on each platform
+## Launching the SfSegmentedControl on Each Platform
 
-To use the segmented control inside an application, each platform application must initialize the segmented control renderer. This initialization steps vary from platform to platform, and it is discussed in the following sections:
+To use the segmented control inside an application, initialize the segmented control renderer for each platform application. Initialization steps vary by platform and are discussed in the following sections:
 
 ### Android and UWP
 
-The Android and UWP launches the [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html) without any initialization, and it is enough to only initialize the Xamarin.Forms Framework to launch the application.
+For Android and UWP, you can launch the [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html) without any additional initialization, except for initializing the Xamarin.Forms framework to launch the application.
 
-N> If you are adding the references from toolbox, this step is not needed.
+> Note: If you add references from the toolbox, this step is not needed.
 
 ### iOS
 
-To launch the segmented control in iOS, call the SfSegmentedControlRenderer.Init() in the `FinishedLaunching` overridden method of the `AppDelegate` class after the Xamarin.Forms Framework has been initialized and before the `LoadApplication` is called, as demonstrated in the following code example.
+To launch the segmented control in iOS, call `SfSegmentedControlRenderer.Init()` in the `FinishedLaunching` overridden method of the `AppDelegate` class after initializing the Xamarin.Forms framework and before calling `LoadApplication`, as shown in the following code example:
 
 {% highlight C# %}
 
@@ -162,9 +162,9 @@ Create a new BlankApp (Xamarin.Forms.Portable) application in Visual Studio for
 
 ### Adding SfSegmentedControl in Xamarin.Forms
 
-Add the required assembly references to the PCL and renderer projects as discussed in the Assembly deployment  [section](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfsegmentedcontrol).
+Add the required assembly references to the PCL and renderer projects as discussed in the Assembly Deployment [section](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfsegmentedcontrol).
 
-Import the control namespace as shown in the following code.
+Import the control namespace as shown in the following code:
 
 {% tabs %}
 
@@ -224,11 +224,11 @@ Set the control to content in `ContentPage`.
 
 {% endtabs %}
 
-### Adding supportive views to the application
+### Adding Supportive Views to the Application
  
-For the completeness of the ticket booking application, few framework controls are added to the application to get the data from the user.
+For the completeness of the ticket booking application, add a few framework controls to get data from the user.
 
-ViewModel class for the Entry, which we have used in our View.
+ViewModel class for the Entry, which we have used in our View:
 
 {% tabs %}
 
@@ -375,13 +375,11 @@ View can be created by the following code snippet.
 
 {% endtabs %}
 
+![Image for Adding Supportive Views](images/getting-started/Xamarin_Forms_InitialView.png)
 
-![Image for adding supportive Views](images/getting-started/Xamarin_Forms_InitialView.png)
+## Adding Data/Items to SfSegmentedControl
 
-
-## Adding data/Items to SfSegmentedControl
-
-You can add the data inside the segmented control in three different ways: 
+You can add data inside the segmented control in three different ways:
 
 1. String data
 2. SfSegmentItem
@@ -389,9 +387,9 @@ You can add the data inside the segmented control in three different ways:
 
 Items inside the segmented control can be added using the [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_ItemsSource) property of [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html), which holds the collection/list of items.
 
-### Adding data as a String
+### Adding Data as a String
 
-With the help of  Xamarin.Forms `System.Collections.Generic` you can add string data as [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_ItemsSource) to [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html).
+With the help of Xamarin.Forms `System.Collections.Generic`, you can add string data as an [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_ItemsSource) to [`SfSegmentedControl`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html).
 
 {% highlight c# %}
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Xamarin Radio Button control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Radio Button (SfRadioButton) control, its elements and more.
-platform: xamarin
+title: Getting Started with Xamarin Radio Button Control | Syncfusion
+description: Learn how to get started with Syncfusion Xamarin Radio Button (SfRadioButton) control, including its elements and more.
+platform: Xamarin
 control: SfRadioButton
 documentation: ug 
 keywords: button, SfRadioButton, RadioButton
@@ -11,37 +11,37 @@ keywords: button, SfRadioButton, RadioButton
 
 # Getting Started with Xamarin Radio Button (SfRadioButton)
 
-This section explains the steps required to configure the [Xamarin Radio Button](https://www.syncfusion.com/xamarin-ui-controls/xamarin-radio-button) (SfRadioButton) control in a real-time scenario and provides a walk-through on some of the customization features available in [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html) control.
+This section explains the steps required to configure the [Xamarin Radio Button](https://www.syncfusion.com/xamarin-ui-controls/xamarin-radio-button) (SfRadioButton) control in a real-time scenario and provides a walkthrough of some of the customization features available in [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html).
 
-## Assembly deployment
+## Assembly Deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders at `{Syncfusion Essential Studio Installed location}\Essential Studio\{Version #}\Xamarin\lib`.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
-N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+> **Note:** Assemblies can be found in the unzipped package location (Documents/Syncfusion/{Version #}/Xamarin/lib) on a Mac.
 
-## Adding SfRadioButton reference
+## Adding SfRadioButton Reference
 
-You can add [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html) reference using one of the following methods:
+You can add a reference to [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html) using one of the following methods:
 
-**Method 1: Adding SfRadioButton reference from nuget.org**
+### Method 1: Adding SfRadioButton Reference from nuget.org
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfRadioButton to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons), and then install it.
+Syncfusion Xamarin components are available on [nuget.org](https://www.nuget.org/). To add SfRadioButton to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons), and then install it.
 
-![Adding SfRadioButton reference from NuGet](Images/Adding SfRadioButton reference.png)
+![Adding SfRadioButton Reference from NuGet](Images/Adding SfRadioButton reference.png)
 
-N> 
-* Install the same version of SfRadioButton NuGet in all the projects.
-* In addition, you need to install the [Syncfusion.Xamarin.Buttons.WPF]() package for Xamarin.Forms WPF platform only.
+> **Note:**
+> - Install the same version of SfRadioButton NuGet in all the projects.
+> - Additionally, you need to install the [Syncfusion.Xamarin.Buttons.WPF]() package for Xamarin.Forms WPF platforms only.
 
-**Method 2: Adding SfRadioButton reference from toolbox**
+### Method 2: Adding SfRadioButton Reference from Toolbox
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html) control to the XAML page. It will automatically install the required [NuGet packages](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides the Xamarin Toolbox. Using this toolbox, you can drag the [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html) control to the XAML page. It will automatically install the required [NuGet packages](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
-**Method 3: Adding SfRadioButton assemblies manually from the installed location**
+### Method 3: Adding SfRadioButton Assemblies Manually from the Installed Location
 
-If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+If you prefer to manually reference the assemblies instead of referencing them from NuGet, add the following assemblies to the respective projects.
 
 Location: {Installed location}/{version}/Xamarin/lib
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: DataTemplateSelector in Xamarin Chips control | Syncfusion
-description: Learn about DataTemplateSelector support in Syncfusion Xamarin Chips control, its elements and more.
-platform: xamarin
+title: DataTemplateSelector in Xamarin Chips Control | Syncfusion
+description: Learn about DataTemplateSelector support in Syncfusion Xamarin Chips control, including its elements and more.
+platform: Xamarin
 control: Chips
 documentation: ug
 ---
@@ -10,9 +10,9 @@ documentation: ug
 # DataTemplateSelector in Xamarin Chips
 You can customize the appearance of each chip with different templates based on specific constraints using the [`DataTemplateSelector`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.datatemplateselector?view=xamarin-forms).
 
-## Create and initialize business models 
+## Create and Initialize Business Models
 
-Define a simple model class ChipModel with fields Text, CanSelect, ImageSource, and populate chip model in ViewModel.
+Define a simple model class, `ChipModel`, with fields `Text`, `CanSelect`, `ImageSource`, and populate the chip model in the ViewModel.
 
 {% tabs %}
 
@@ -50,9 +50,9 @@ Define a simple model class ChipModel with fields Text, CanSelect, ImageSource, 
 
 {% endtabs %}
 
-### Create a data template selector
+### Create a DataTemplateSelector
 
-Create a custom class by inheriting [`DataTemplateSelector`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.datatemplateselector?view=xamarin-forms), and override the `OnSelectTemplate` method to return the `DataTemplate` for that item. At runtime, the SfChipGroup invokes the `OnSelectTemplate` method for each item and passes the data object as parameter.
+Create a custom class by inheriting from the [`DataTemplateSelector`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.datatemplateselector?view=xamarin-forms), and override the `OnSelectTemplate` method to return the `DataTemplate` for a given item. At runtime, the SfChipGroup invokes the `OnSelectTemplate` method for each item and passes the data object as a parameter.
 
 {% tabs %}
 {% highlight c# %}
@@ -71,9 +71,9 @@ public class ChipDataTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-### Applying the data template selector
+### Applying the DataTemplateSelector
 
-Assign the already defined [`DataTemplateSelector`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.datatemplateselector?view=xamarin-forms) to the [`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ItemTemplate) of the SfChipGroup in either XAML or C#.
+Assign the defined [`DataTemplateSelector`](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.datatemplateselector?view=xamarin-forms) to the [`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ItemTemplate) of the SfChipGroup in either XAML or C#.
 
 {% tabs %}
 {% highlight xaml %}
@@ -122,5 +122,4 @@ this.Content = chipGroup;
 {% endhighlight %}
 {% endtabs %}
 
-![DataTemplateSelector support for SfChipGroup in Xamarin.Forms](images\customization-images/xamarin-forms-datatemplateselector.png)
-
+![DataTemplateSelector support for SfChipGroup in Xamarin.Forms](images/customization-images/xamarin-forms-datatemplateselector.png)

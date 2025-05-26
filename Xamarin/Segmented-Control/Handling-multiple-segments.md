@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Handling multiple segments in Xamarin Segmented Control | Syncfusion<sup>&reg;</sup>
-description: Learn here all about Handling multiple segments support in Syncfusion<sup>&reg;</sup> Xamarin Segmented Control (SfSegmentedControl) and more.
+title: Handling Multiple Segments in Xamarin Segmented Control | Syncfusion<sup>&reg;</sup>
+description: Learn about handling multiple segments in Syncfusion<sup>&reg;</sup> Xamarin Segmented Control (SfSegmentedControl) and more.
 platform: Xamarin
 control: SegmentedControl
 documentation: ug
 ---
 
-# Handling multiple segments in Xamarin Segmented Control
+# Handling Multiple Segments in Xamarin Segmented Control
 
-The segmented control handles segmented items with space distributed for the items in two ways. When the available space in the segmented control is not equally distributed, the items beyond the edges of the control can be viewed by scrolling the panel.
+The segmented control handles segmented items with space that can be distributed in two ways. If the available space in the segmented control is not equally distributed, items beyond the edges of the control become accessible by scrolling the panel.
 
-## Visible segment counts
+## Visible Segment Counts
 
-The segmented control displays items for view based on the count that is given for [`VisibleSegmentCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_VisibleSegmentsCount). 
+The segmented control displays items based on the count set for [`VisibleSegmentsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_VisibleSegmentsCount).
 
 {% tabs %}
 
@@ -69,11 +69,11 @@ this.Content = segmentedControl;
 
 {% endtabs %}
 
-![visiblesegment](images/Handling-multiple-segments/visiblesegment.png)
+![Visible Segment Count](images/Handling-multiple-segments/visiblesegment.png)
 
-## Segment width
+## Segment Width
 
-Users can use the [`SegmentWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SegmentWidth) property to display the segmented items within the given width instead [`VisibleSegmentCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_VisibleSegmentsCount).
+Users can apply the [`SegmentWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SegmentWidth) property to display segmented items within the specified width as an alternative to [`VisibleSegmentsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_VisibleSegmentsCount).
 
 {% tabs %}
 
@@ -90,3 +90,4 @@ segmentedControl.SegmentWidth = 80;
 {% endhighlight %}
 
 {% endtabs %}
+

@@ -1,29 +1,28 @@
 ---
 
 layout: post
-title: Predefined symbols of Syncfusion Badge view control for Xamarin.Forms
-description: Learn how to set Syncfusion badge view predefined symbols and types of badge icons in Xamarin.Forms platform
-platform: xamarin
+title: Predefined Symbols of Syncfusion Badge View Control for Xamarin.Forms
+description: Learn to configure predefined symbols and types of badge icons in the Syncfusion Badge View for Xamarin.Forms.
+platform: Xamarin
 control: SfBadgeView
 documentation: ug
 
 ---
 
-# Predefined symbols in Xamarin.Forms BadgeView (SfBadgeView)
+# Predefined Symbols in Xamarin.Forms BadgeView (SfBadgeView)
 
-You can change the badge icon using the [`BadgeIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.BadgeSetting.html#Syncfusion_XForms_BadgeView_BadgeSetting_BadgeIcon) property. Badge icons will be visible when you do not set the badge text. The badge supports the following types of [`BadgeIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.BadgeSetting.html#Syncfusion_XForms_BadgeView_BadgeSetting_BadgeIcon):
+Change the badge icon within the `SfBadgeView` using the [`BadgeIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.BadgeSetting.html#Syncfusion_XForms_BadgeView_BadgeSetting_BadgeIcon) property. Icons appear when badge text is not set. Supported `BadgeIcon` types include:
+- Add
+- Available
+- Away
+- Busy
+- Delete
+- Dot
+- None
+- Prohibit1
+- Prohibit2
 
-* Add
-* Available
-* Away
-* Busy
-* Delete 
-* Dot
-* None
-* Prohibit1
-* Prohibit2
-
-N> When both the [`BadgeIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.BadgeSetting.html#Syncfusion_XForms_BadgeView_BadgeSetting_BadgeIcon) and [`BadgeText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.SfBadgeView.html#Syncfusion_XForms_BadgeView_SfBadgeView_BadgeText) are set for badge view, then badge text has a higher priority. The badge text will be rendered in output.
+> **Note:** When both [`BadgeIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.BadgeSetting.html#Syncfusion_XForms_BadgeView_BadgeSetting_BadgeIcon) and [`BadgeText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.SfBadgeView.html#Syncfusion_XForms_BadgeView_SfBadgeView_BadgeText) are set, badge text is prioritized and will be displayed.
 
 {% tabs %}
 

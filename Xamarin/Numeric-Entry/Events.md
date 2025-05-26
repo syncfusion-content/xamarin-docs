@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Events and Interactivity in Xamarin Numeric Entry control | Syncfusion
-description: Learn here all about Events and Interactivity support in Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control and more.
+title: Events and Interactivity in Xamarin Numeric Entry Control | Syncfusion
+description: Learn all about Events and Interactivity support in the Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
 # Events in Xamarin Numeric Entry (SfNumericTextBox)
 
-## Value changed event in SfNumericTextBox
+## ValueChanged Event in SfNumericTextBox
 
-You can perform operation while the changing the value of [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) value using [`ValueChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ValueChanged) event. ValueChanged event returns the changed value in NumericTextBox.
+Perform operations while changing the value of the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) using the [`ValueChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ValueChanged) event. This event returns the changed value in the NumericTextBox.
 
 <table>
 <tr>
@@ -19,7 +19,7 @@ You can perform operation while the changing the value of [`SfNumericTextBox`](h
 </tr>
 <tr>
 <td>Value</td>
-<td>Displays changed value in NumericTextBox</td>
+<td>Displays the changed value in the NumericTextBox</td>
 </tr>
 </table>
 
@@ -47,9 +47,9 @@ void Handle_ValueChanged(object sender, Syncfusion.SfNumericTextBox.XForms.Value
 
 {% endtabs %}
 
-## Interactivity : ValueChangeMode in SfNumericTextBox
+## Interactivity: ValueChangeMode in SfNumericTextBox
 
-The [`ValueChangeMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ValueChangeMode) property is used to mention when the validation should occur, either in key pressed or in focus lost. When ValueChangeMode is set to [`OnKeyFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.ValueChangeMode.html#Syncfusion_SfNumericTextBox_XForms_ValueChangeMode_OnKeyFocus), the validation occurs for each key press. When ValueChangeMode is [`OnLostFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.ValueChangeMode.html#Syncfusion_SfNumericTextBox_XForms_ValueChangeMode_OnLostFocus), the validation occurs when the control loses focus or moves the focus to the next control. ValueChangeMode includes the following options:
+The [`ValueChangeMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ValueChangeMode) property is used to specify when the validation should occur: either on key press or on focus loss. When `ValueChangeMode` is set to [`OnKeyFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.ValueChangeMode.html#Syncfusion_SfNumericTextBox_XForms_ValueChangeMode_OnKeyFocus), validation occurs for each key press. When `ValueChangeMode` is [`OnLostFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.ValueChangeMode.html#Syncfusion_SfNumericTextBox_XForms_ValueChangeMode_OnLostFocus), validation occurs when the control loses focus. The `ValueChangeMode` options include:
 
 1. [`OnKeyFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.ValueChangeMode.html#Syncfusion_SfNumericTextBox_XForms_ValueChangeMode_OnKeyFocus)
 2. [`OnLostFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.ValueChangeMode.html#Syncfusion_SfNumericTextBox_XForms_ValueChangeMode_OnLostFocus)
@@ -112,9 +112,9 @@ private void SfNumericTextBox_ValueChanged(object sender, Syncfusion.SfNumericTe
 
 ![Display SfNumericTextBox control with ValueChanged event OnLostFocus](images/onlostfocus.png)
 
-## Completed event in SfNumericTextBox
+## Completed Event in SfNumericTextBox
 
-Raised the [`completed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Completed) event when the user finalizes the text in the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) by pressing return key on the keyboard.
+The [`Completed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Completed) event is raised when the user finalizes the text in the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) by pressing the return key on the keyboard.
 
 {% tabs %}
 
@@ -139,7 +139,7 @@ System.Diagnostics.Debug.WriteLine("Completed");
 
 {% endtabs %}
 
-## See also
+## See Also
 
 [How to change the SfNumericTextBox style using its visual states](https://support.syncfusion.com/kb/article/10286/how-to-change-the-xamarin-forms-numeric-textbox-style-using-its-visual-states)
 

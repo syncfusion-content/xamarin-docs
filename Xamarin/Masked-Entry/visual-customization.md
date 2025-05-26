@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visual Customization in Xamarin Masked Entry control | Syncfusion
-description: Learn here all about Visual Customization support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
+title: Visual Customization in Xamarin Masked Entry Control | Syncfusion
+description: Learn about visual customization support in the Syncfusion Xamarin Masked Entry (SfMaskedEdit) control.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
@@ -9,11 +9,11 @@ keywords: mask, SfMaskedEdit, maskededit
 ---
 # Visual Customization in Xamarin Masked Entry (SfMaskedEdit)
 
-The appearance of [`SfMaskedEdit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html) can be customized using the following properties:
+The appearance of the [`SfMaskedEdit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html) control can be customized using various properties.
 
 ## BorderColor
 
-Sets the custom [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_BorderColor) to SfMaskedEdit.
+Customize the border color of the `SfMaskedEdit` by setting the [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_BorderColor) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -31,11 +31,9 @@ maskedEdit.BorderColor = Color.Green;
 
 ## ErrorBorderColor
 
-Sets the custom [`ErrorBorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ErrorBorderColor) to SfMaskedEdit. Error border color indicates the color to be used when the validation fails for your input with respect to the mask used. 
+Customize the error border color using the [`ErrorBorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ErrorBorderColor) property. The error border color is used when validation fails based on the mask used.
 
-> Validation triggers based on `ValidationMode` property.
-> Refer this [link](validation#validation-mode) to know more about the `ValidationMode` property of SfMaskedEdit control.
-
+> Validation occurs according to the `ValidationMode` property. See this [link](validation#validation-mode) for more on the `ValidationMode` property of the `SfMaskedEdit` control.
 {% tabs %}
 {% highlight xaml %}
 <syncmaskededit:SfMaskedEdit x:Name="maskedEdit" MaskType="Text" Mask="00/00/0000" BorderColor="Green" ErrorBorderColor="Yellow"/>
@@ -53,13 +51,13 @@ maskedEdit.ErrorBorderColor = Color.Yellow;
  
 ## Setting Appearance of Text
 
-You can customize the display text appearance of SfMaskedEdit control using the following properties:
+Customizing the text appearance in the `SfMaskedEdit` control can be achieved using the following properties:
 
-* [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_TextColor): Changes the color of the text.
-* [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_HorizontalTextAlignment): Changes the horizontal alignment of the text.
-* [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_FontFamily): Changes the font family of the text.
-* [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_FontAttributes): Sets font attributes(bold/italic/none) of the text.
-* [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_FontSize): Sets font size of the text.
+- [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_TextColor): Sets the color of the text.
+- [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_HorizontalTextAlignment): Sets the horizontal alignment of the text.
+- [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_FontFamily): Sets the font family of the text.
+- [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_FontAttributes): Sets font attributes (bold/italic/none).
+- [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_FontSize): Sets the font size of the text.
 
 {% tabs %}
 {% highlight xaml %}

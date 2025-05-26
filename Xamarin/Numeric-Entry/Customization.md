@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Different customization in Xamarin NumericTextBox control | Syncfusion
-description: Learn here different customization support in Syncfusion Xamarin NumericTextBox (SfNumericTextBox) control and more.
+title: Customization Options in Xamarin NumericTextBox Control | Syncfusion
+description: Discover various customization options available in Syncfusion Xamarin NumericTextBox (SfNumericTextBox) control.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
 # Customization in Xamarin Numeric Entry (SfNumericTextBox)
 
-## Assign nullable value in SfNumericTextBox
+## Assign Nullable Value in SfNumericTextBox
 
-The null values can be set in [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Value) property, by setting [`AllowNull`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_AllowNull) property value to true.
+You can assign null values to the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Value) property of `SfNumericTextBox` by setting the [`AllowNull`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_AllowNull) property to `true`.
 
-N> By default, the property value is false.
+> **Note:** By default, the `AllowNull` property is set to `false`.
 
 {% tabs %}
 
@@ -34,9 +34,9 @@ this.Content = numericTextBox;
 
 ![Display nullable value image](images/AllowNull.png)
 
-## Set hint text in SfNumericTextBox
+## Set Hint Text in SfNumericTextBox
 
-The [`WaterMark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Watermark) property can be used to provide a hint that helps the user to get started with their input. The watermark text is visible when value is empty or null.
+The [`Watermark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Watermark) property provides a helpful hint to users. The watermark text is displayed when the `Value` is empty or null.
 
 {% tabs %}
 
@@ -59,14 +59,13 @@ this.Content=numericTextBox;
 
 ![Display watermark text image](images/WaterMark.png)
 
-For customizing the color of [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) [`WaterMark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Watermark), please [refer](https://help.syncfusion.com/xamarin/numeric-entry/colors) to this link.
+For customizing the color of the `SfNumericTextBox` [`Watermark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Watermark), refer to this [link](https://help.syncfusion.com/xamarin/numeric-entry/colors).
 
-## Parsing the value in SfNumericTextBox
+## Parsing the Value in SfNumericTextBox
 
-Value of the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) gets parsed based on [`ParserMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ParserMode) property. ParsingMode is of type Parsers, which is an enum of [`Double`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.Parsers.html#Syncfusion_SfNumericTextBox_XForms_Parsers_Double) and [`Decimal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.Parsers.html#Syncfusion_SfNumericTextBox_XForms_Parsers_Decimal). You have option to display the value in double or decimal. 
+The value in `SfNumericTextBox` gets parsed based on the [`ParserMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ParserMode) property. You can choose between [`Double`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.Parsers.html#Syncfusion_SfNumericTextBox_XForms_Parsers_Double) and [`Decimal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.Parsers.html#Syncfusion_SfNumericTextBox_XForms_Parsers_Decimal) parsing modes.
 
-The following code shows the Double parsing mode, which can be set using the [`ParserMode`] property.
-
+The following code snippet demonstrates the Double parsing mode:
 {% tabs %}
 
 {% highlight xaml %}
@@ -86,13 +85,13 @@ this.Content = numericTextBox;
 
 {% endtabs %}
 
-N>The default value for [`ParserMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ParserMode) is [`Decimal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.Parsers.html#Syncfusion_SfNumericTextBox_XForms_Parsers_Decimal).
+> **Note:** The default value for [`ParserMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ParserMode) is [`Decimal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.Parsers.html#Syncfusion_SfNumericTextBox_XForms_Parsers_Decimal).
 
-![Shows a parser mode behavior](images/value.png)
+![Shows parser mode behavior](images/value.png)
 
-## Range support in SfNumericTextBox
+## Range Support in SfNumericTextBox
 
-Restrict the values within a specific range by setting the [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Maximum) and [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Minimum) property values.
+Restrict values within a specific range by setting the [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Maximum) and [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Minimum) properties.
 
 {% tabs %}
 
@@ -114,16 +113,15 @@ Restrict the values within a specific range by setting the [`Maximum`](https://h
 
 {% endtabs %}
 
-N> Default Value of  [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Maximum) and [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Minimum) is "null".
+> **Note:** The default value for [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Maximum) and [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Minimum) is `null`.
 
-![SfNumericTextBox RangeSupport](images/RangeSupport.gif)
+![SfNumericTextBox Range Support](images/RangeSupport.gif)
 
-## Set the maximum number of decimal digits in SfNumericTextBox
+## Set the Maximum Number of Decimal Digits in SfNumericTextBox
 
-The maximum number of digits to be displayed after the decimal point can be specified by using the [`MaximumNumberDecimalDigits`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_MaximumNumberDecimalDigits) property. 
+Specify the maximum number of decimal digits using the [`MaximumNumberDecimalDigits`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_MaximumNumberDecimalDigits) property.
 
-N> The [[`MaximumNumberDecimalDigits`]([`MaximumNumberDecimalDigits`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_MaximumNumberDecimalDigits)) property can be provided with positive value only.
-
+> **Note:** The `MaximumNumberDecimalDigits` property must be a positive value.
 {% tabs %}
 
 {% highlight xaml %}
@@ -145,9 +143,9 @@ this.Content = numericTextBox;
 
 ![Display the textbox value](images/MaximumNumberDecimalDigits.png)
 
-## Remove default decimal digits in SfNumericTextBox
+## Remove Default Decimal Digits in SfNumericTextBox
 
-Based on the [`MaximumNumberDecimalDigits`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_MaximumNumberDecimalDigits) property, the default number of decimal digits is displayed. By disabling the [`AllowDefaultDecimalDigits`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_AllowDefaultDecimalDigits) Boolean property, those default digits can be removed from the numeric entry view.
+Based on the [`MaximumNumberDecimalDigits`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_MaximumNumberDecimalDigits) property, the default number of decimal digits is displayed. Disable the [`AllowDefaultDecimalDigits`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_AllowDefaultDecimalDigits) property to remove default digits from the numeric entry view.
 
 {% tabs %}
 
@@ -171,9 +169,9 @@ Based on the [`MaximumNumberDecimalDigits`](https://help.syncfusion.com/cr/xamar
 
 ![Display the textbox value without default decimal digits](images/AllowDefaultDecimalDigits.png)
 
-## Selection support in SfNumericTextBox
+## Selection Support in SfNumericTextBox
 
-The [`SelectAllOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_SelectAllOnFocus) property specifies whether the text should be selected or not when the control gets focus.
+The [`SelectAllOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_SelectAllOnFocus) property specifies whether the text should be selected when the control gets focus.
 
 {% tabs %}
 
@@ -196,15 +194,10 @@ this.Content = numericTextBox;
 
 ![Display the value with selection mode](images/SelectAllOnFocus.PNG)
 
-## See also
+## See Also
 
-[How to set the MaximumDecimalDigits in SfNumericTextBox](https://support.syncfusion.com/kb/article/6839/how-to-set-the-maximumdecimaldigits-in-numerictextbox)
-
-[How to have null values in SfNumericTextBox](https://support.syncfusion.com/kb/article/6838/how-to-have-null-values-in-numerictextbox)
-
-[How to provide null value to SfNumericTextBox](https://support.syncfusion.com/kb/article/6306/how-to-provide-null-value-to-numerictextbox)
-
-[How to change the SfNumericTextBox style using its visual states](https://support.syncfusion.com/kb/article/10286/how-to-change-the-xamarin-forms-numeric-textbox-style-using-its-visual-states)
-
-[How to define and apply a common style for SfNumericTextBox](https://support.syncfusion.com/kb/article/10232/how-to-define-and-apply-a-common-style-for-sfnumerictextbox-in-xamarin-forms)
-
+- [How to set the MaximumDecimalDigits in SfNumericTextBox](https://support.syncfusion.com/kb/article/6839/how-to-set-the-maximumdecimaldigits-in-numerictextbox)
+- [How to have null values in SfNumericTextBox](https://support.syncfusion.com/kb/article/6838/how-to-have-null-values-in-numerictextbox)
+- [How to provide null value to SfNumericTextBox](https://support.syncfusion.com/kb/article/6306/how-to-provide-null-value-to-numerictextbox)
+- [How to change the SfNumericTextBox style using its visual states](https://support.syncfusion.com/kb/article/10286/how-to-change-the-xamarin-forms-numeric-textbox-style-using-its-visual-states)
+- [How to define and apply a common style for SfNumericTextBox](https://support.syncfusion.com/kb/article/10232/how-to-define-and-apply-a-common-style-for-sfnumerictextbox-in-xamarin-forms)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Font Settings in Xamarin Numeric Entry control | Syncfusion
-description: Learn here all about Font Settings support in Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control and more.
+title: Font Settings in Xamarin Numeric Entry Control | Syncfusion
+description: Learn about Font Settings support in the Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug
@@ -53,7 +53,7 @@ this.Content = numericTextBox;
 
 ![Display SfNumericTextBox control with TextAlignment](images/textformatend.png)
 
-## See also
+## See Also
 
 [How to customize the font in SfNumericTextBox](https://support.syncfusion.com/kb/article/6851/how-to-custom-the-font-in-numerictextbox)
 

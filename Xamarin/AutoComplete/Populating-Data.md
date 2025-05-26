@@ -1,22 +1,21 @@
 ---
 layout: post
 title: Data Binding in Xamarin.Forms AutoComplete Control | Syncfusion
-description: This section describes how to populate the strings or objects in the autocomplete for the filtering suggestion list.
+description: Learn how to populate strings or objects in the Xamarin.Forms AutoComplete control for creating filtering suggestion lists.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
 ---
 
+# Populating Data in Xamarin.Forms AutoComplete Control
 
-# Populating Data in Xamarin AutoComplete Control
+The [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control can be populated with a list of strings or business objects, which assists users while typing. Users can choose one item from the filtered suggestion list.
 
-[`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control can be populated with a list of string or business objects, which assists the user while typing. Users can choose one item from the filtered suggestion list.
-
-[`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DataSource) property is used to populate data in [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control. This section explains populating AutoComplete with list of string and list of Employee details separately.
+The [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DataSource) property is used to populate data in the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control. This section explains how to populate AutoComplete with a list of strings and a list of Employee details separately.
 
 ## Populating String Data
 
-Create an instance of string list and populate items as shown below: 
+Create an instance of a string list and populate items as shown below:
 
 {% tabs %}
 
@@ -109,11 +108,11 @@ namespace AutocompleteSample
 
 ## Populating Business Objects
 
-Apart from string data, [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) can deal with business object data also. Now let us create Model and ViewModel classes to populate AutoComplete with Employee details.
+Apart from string data, the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control can also work with business object data. Let's create Model and ViewModel classes to populate AutoComplete with Employee details.
 
 ### Create and Initialize Business Models 
 
-Define a simple model class Employee with fields ID, Name and populate employee data in ViewModel.
+Define a simple model class Employee with fields ID, Name and populate employee data in the ViewModel.
 
 {% tabs %}
 
@@ -165,9 +164,9 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-### Populate data in AutoComplete and Setting DisplayMemberPath
+### Populate Data in AutoComplete and Set DisplayMemberPath
 
-Now populate this EmployeeViewModel data in [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control by binding with [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DataSource) property. At this point, the control is populated with the list of employees. But the Employee model contains two properties ID and Name so it is necessary to intimate by which property it should filter suggestions. [`DisplayMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DisplayMemberPath) property specifies the property path with which filtering is done on business objects.
+Now populate this EmployeeViewModel data in the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control by binding with the [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DataSource) property. At this point, the control is populated with the list of employees. Since the Employee model contains two properties (ID and Name), it is necessary to specify which property should be used for filtering suggestions. The [`DisplayMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DisplayMemberPath) property specifies the property path with which filtering is done on business objects.
 
 {% tabs %}
 
@@ -235,13 +234,14 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-N> Set the EmployeeViewModel instance as the BindingContext of your control; this is done to bind properties of EmployeeViewModel to [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html).
+> **Note**
+> Set the EmployeeViewModel instance as the BindingContext of your control; this is done to bind properties of EmployeeViewModel to the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control.
 
 ![Populating data business object](images/Populating-Data/populating-data-business-object.png)
 
 ### Setting ItemTemplate
 
-[`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ItemTemplate) property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
+The [`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ItemTemplate) property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
 
 {% tabs %}
 
@@ -284,7 +284,7 @@ N> Set the EmployeeViewModel instance as the BindingContext of your control; thi
 
 {% endtabs %}
 
-The [`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ItemTemplate) in above XAML code is translated to C# and given below:
+The [`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ItemTemplate) in the above XAML code is translated to C# and given below:
 
 {% tabs %}
 
@@ -346,15 +346,16 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-Refer [this](https://help.syncfusion.com/xamarin/sfautocomplete/customizing-autocomplete) link to learn more about the customizing options available in [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control.
+Refer to [this link](https://help.syncfusion.com/xamarin/sfautocomplete/customizing-autocomplete) to learn more about the customization options available in the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control.
 
-N> Add the required image in drawable folder(Android), Resources folder(iOS) and at project location for UWP.
+> **Note**
+> Add the required image in the drawable folder (Android), Resources folder (iOS), and at the project location for UWP.
 
 ![Item template](images/Populating-Data/item-template.png)
 
-## Populate a particular column of the items in DataTable using ItemsSource.
+## Populate a Particular Column of Items in DataTable Using ItemsSource
 
-The [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ItemsSource) property helps to populate the DataTable items by using the [`DisplayMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DisplayMemberPath) property. The following code explains the steps to add the data table items.
+The [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ItemsSource) property helps to populate DataTable items by using the [`DisplayMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DisplayMemberPath) property. The following code explains the steps to add data table items.
 
 
 ### Create, initialize, and add items in DataTable
@@ -409,7 +410,7 @@ public class ViewModel
 
 {% endtabs %}
 
-Add the column name in the [`DisplayMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DisplayMemberPath) property, to display all the data of the corresponding column, which is given as following code.   
+Add the column name in the [`DisplayMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DisplayMemberPath) property to display all the data of the corresponding column, as shown in the following code:
 
 {% tabs %}
 

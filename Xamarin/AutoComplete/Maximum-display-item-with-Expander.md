@@ -1,12 +1,12 @@
 ---
 layout: post
-title: LoadMore in Syncfusion SfAutoComplete control for Xamarin.Forms
-description: This section will deswcribe about how to restrict maximum suggestion to be displayed in Xamarin.Forms SfAutoComplete.
+title: Load More in Xamarin AutoComplete | Syncfusion
+description: This section describes how to restrict the maximum number of suggestions displayed in the Syncfusion Xamarin.Forms SfAutoComplete control.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
 ---
-# Maximum Display Item with Expander
+# Maximum Display Item with Load More Option
 
 ## Maximum display item with expander in Xamarin SfAutoComplete
 
@@ -101,13 +101,15 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-![Maximum display item with Expander](images/Maximum-display-item-with-Expander/LoadMore.png)
+![Maximum display item with Load More option](images/Maximum-display-item-with-Expander/LoadMore.png)
 
-## Restricting the maximum display of item dynamically
+## Dynamically Changing the Maximum Suggestion Count
 
-We can restrict the maximum display of items dynamically by calling [`LoadMore`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_LoadMore) method. The user can dynamically change the maximum suggestion count by calling [`LoadMore`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_LoadMore) method by giving the maximum suggestion as the argument inside.
+You can dynamically change the maximum number of suggestions displayed by calling the [`LoadMore`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_LoadMore) method. This method can be called with or without an argument:
 
-N> [`LoadMore`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_LoadMore) method has enhanced only on iOS and Android platform.
+* Without an argument: Loads all remaining items
+* With an argument: Loads the specified number of additional items
+> **Note:** The [`LoadMore`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_LoadMore) method is supported only on iOS and Android platforms.
 
 {% tabs %}
 {% highlight c# %}
@@ -121,11 +123,11 @@ autoComplete.LoadMore(5);
 {% endhighlight %}
 {% endtabs %}
 
-## Load more view customization
+## Customizing the Load More View
 
-[`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) allows customizing User Interface(UI) of Load More view.
-To customize the load more text, add the custom UI in the [`LoadMoreTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_LoadMoreTemplate) API in [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html), as shown in the following code snippet.
+The [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control allows you to customize the appearance of the Load More option using the [`LoadMoreTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_LoadMoreTemplate) property.
 
+The following example demonstrates how to create a custom Load More template:
 {% tabs %}
 
 {% highlight xaml %}

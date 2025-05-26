@@ -1,14 +1,14 @@
 ---
 layout: post
-title: No Results Found in Xamarin ComboBox control | Syncfusion
-description: Learn here all about No Results Found support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
-platform: xamarin
+title: No Results Found in Xamarin ComboBox Control | Syncfusion
+description: Learn about "No Results Found" support in the Syncfusion Xamarin ComboBox (SfComboBox) control and more.
+platform: Xamarin
 control: SfComboBox
 documentation: ug
 ---
 # No Results Found in Xamarin ComboBox (SfComboBox)
 
-When the entered item is not in the suggestion list, [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) displays a text that indicates no search results found. You can set the desire text to be displayed for indicating no results found using the [`NoResultsFoundText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_NoResultsFoundText) property.
+When the entered item is not in the suggestion list, the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) displays a text indicating that no search results were found. You can set the desired text using the [`NoResultsFoundText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_NoResultsFoundText) property.
 
 {% tabs %}
 
@@ -77,11 +77,12 @@ namespace ComboBox_Sample
 
 {% endtabs %}
 
-![NoResultsFound image](images/NoResult/NoResultFound.png)
+![No Results Found Image](images/NoResult/NoResultFound.png)
 
 ## Customizing NoResultsFoundText
 
-The [`NoResultsFoundTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_NoResultsFoundTextColor), [`NoResultsFoundFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_NoResultsFoundFontSize), [`NoResultsFoundFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_NoResultsFoundFontAttributes), and [`NoResultsFoundFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_NoResultsFoundFontFamily) properties are used to customize the foreground color, font size, font attribute, and font family of NoResultsFoundText.
+The [`NoResultsFoundTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_NoResultsFoundTextColor), [`NoResultsFoundFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_NoResultsFoundFontSize), [`NoResultsFoundFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_NoResultsFoundFontAttributes), and [`NoResultsFoundFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_NoResultsFoundFontFamily) properties are used to customize the color, font size, font attributes, and font family of the NoResultsFoundText.
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -105,4 +106,4 @@ comboBox.ComboBoxSource = new List<string>() { "Uganda", "Great Britain", "Ukrai
 
 {% endtabs %}
 
-![NoResultsFoundText_Customization](images/NoResult/NoResultsFoundText_Customization.jpg)
+![NoResultsFoundText Customization](images/NoResult/NoResultsFoundText_Customization.jpg)

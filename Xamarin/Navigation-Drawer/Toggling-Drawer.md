@@ -1,23 +1,21 @@
 ---
 layout: post
-title: Toggle methods in Xamarin Navigation Drawer control | Syncfusion
-description: Learn here all about Toggle methods support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
+title: Toggle Methods in Xamarin Navigation Drawer Control | Syncfusion
+description: Explore toggle methods support in the Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug
 ---
-# Toggle methods in Xamarin Navigation Drawer (SfNavigationDrawer)
+# Toggle Methods in Xamarin Navigation Drawer (SfNavigationDrawer)
 
-Drawer can be toggled using
+The drawer can be toggled using:
 
-*	IsOpen property
-
-*	ToggleDrawer method
-
-*	Swipe gesture
+- `IsOpen` property
+- `ToggleDrawer` method
+- Swipe gesture
 
 ## Opening Drawer Programmatically
-[`IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_IsOpen) property and [`ToggleDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ToggleDrawer) method can be used to open or close the drawer programmatically.
+The [`IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_IsOpen) property and the [`ToggleDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ToggleDrawer) method can be used to open or close the drawer programmatically.
 
 {% tabs %}
 
@@ -54,7 +52,7 @@ navigationDrawer.IsOpen = true;
 
 {% endtabs %}
 
-Using [`ToggleDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ToggleDrawer) method,
+Using the [`ToggleDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ToggleDrawer) method:
 
 {% highlight c# %} 
 
@@ -62,13 +60,13 @@ navigationDrawer.ToggleDrawer();
 
 {% endhighlight %}
 
-Toggling drawer by swipe gesture is explained in [`Swipe Gesture and Sensitivity`](https://help.syncfusion.com/xamarin/navigation-drawer/swipe-gesture-and-sensitivity) section.
+Toggling the drawer by swipe gesture is explained in the [Swipe Gesture and Sensitivity](https://help.syncfusion.com/xamarin/navigation-drawer/swipe-gesture-and-sensitivity) section.
 
 ## Opening Drawer via Binding
 
-[`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) can be used in any MVVM architecture application easily. In the below example, [`SfNavigationDrawer.IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_IsOpen) property is bound to a property in the ViewModel, based on which the drawer is opened or closed. Refer the below code example to display drawer in MVVM.
+The [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) can be easily used in any MVVM architecture application. In the example below, the [`SfNavigationDrawer.IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_IsOpen) property is bound to a property in the ViewModel, based on which the drawer is opened or closed. Refer to the code example below to display the drawer in MVVM.
 
-In the following code sample, note that the Binding context is set for the page and the property (OpenDrawer) of the ViewModel is bound to the [`SfNavigationDrawer.IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_IsOpen).
+In the following code sample, note that the Binding context is set for the page and the property (`OpenDrawer`) of the ViewModel is bound to the [`SfNavigationDrawer.IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_IsOpen).
 
 {% tabs %}
 

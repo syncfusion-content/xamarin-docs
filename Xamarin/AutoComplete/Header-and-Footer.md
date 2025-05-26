@@ -9,14 +9,12 @@ documentation: ug
 
 # Header and Footer in Xamarin AutoComplete (SfAutoComplete)
 
-## Header and Footer in Xamarin SfAutoComplete
+The [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control allows you to add custom header and footer views to the suggestion list. This enhances the user experience by providing additional information or actions at the top and bottom of the dropdown.
 
-We can provide Header and Footer view in the suggestion list in [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) by enabling [`ShowDropDownHeaderView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ShowDropDownHeaderView) and [`ShowDropDownFooterView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ShowDropDownFooterView). 
+## Adding a Header to the Suggestion List
+You can add a header view at the top of the AutoComplete's suggestion box by enabling the [`ShowDropDownHeaderView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ShowDropDownHeaderView) property. The content of the header is set using the [`DropDownHeaderView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DropDownHeaderView) property, and its height can be adjusted with the [`DropDownHeaderViewHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DropDownHeaderViewHeight) property.
 
-## Header Content
-
-We can provide Header Content at the top of the AutoComplete's Suggestion box. [`DropDownHeaderView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DropDownHeaderView) property is used to set the content of the header. The height of the Header in the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) can be adjusted by the property [`DropDownHeaderViewHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DropDownHeaderViewHeight).
-
+The following example demonstrates how to add a header to the suggestion list:
 {% tabs %}
 
 {% highlight xaml %}
@@ -152,7 +150,7 @@ The following event will be hooked.
 
 {% endtabs %}
 
-![Header Image](images/Header-and-Footer/Header.png)
+![Header in AutoComplete](images/Header-and-Footer/Header.png)
 
 ## Footer Content
 
@@ -276,6 +274,6 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-![Footer Image](images/Header-and-Footer/Footer.png)
+![Footer in AutoComplete](images/Header-and-Footer/Footer.png)
 
 N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to knows the functionalities of each feature.

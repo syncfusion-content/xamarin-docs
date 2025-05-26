@@ -1,21 +1,21 @@
 ---
-layout : post
-title: Transformation in Xamarin Carousel View control | Syncfusion
-description: Learn here all about Transformation support in Syncfusion Xamarin Carousel View (SfCarousel) control and more.
-platform : xamarin
-control : Carousel
-documentation : ug
+layout: post
+title: Transformation in Xamarin Carousel View Control | Syncfusion
+description: Explore the transformation support in Syncfusion Xamarin Carousel View (SfCarousel) control.
+platform: Xamarin
+control: SfCarousel
+documentation: ug
 ---
 
 # Transformation in Xamarin Carousel View (SfCarousel)
 
-The [`Offset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_Offset) between selected and unselected item can be customized in  [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control. And also the items can be scaled to the specified value.
+The [`Offset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_Offset) property in the [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control allows customization of the space between selected and unselected items. Items can also be scaled to a specified value.
 
-## Tilt Non Selected Items
+## Tilt Non-Selected Items
 
 The [`RotationAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_RotationAngle) property in the  [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control is used to tilt all the unselected items in a specified angle. 
 
-N> If the angle value is positive, then the rotation is in the clockwise direction. If the angle value is negative, the rotation is in the counterclockwise direction. 
+N> A positive angle value indicates rotation in the clockwise direction, while a negative value rotates counterclockwise.
 
 {% tabs %}
 
@@ -139,9 +139,9 @@ namespace CarouselSample
 
 {% endtabs %}
 
-![offset](images/offset.png)
+![Offset](images/offset.png)
 
-## Set Gap between Selected and unselected Item
+## Set Gap Between Selected and Unselected Item
 
 Distance between the selected item and other items can be customized by using [`SelectedItemOffset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_SelectedItemOffset) property of the  [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control.
 
@@ -315,10 +315,9 @@ namespace CarouselSample
 
 ![Scale offset](images/scaleoffset.png)
 
-## Spacing between the Items in Linear mode
+## Spacing Between Items in Linear Mode
 
-Spacing of all the items in Linear mode can be determined by using [`ItemSpacing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_ItemSpacing) property.
-
+The [`ItemSpacing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_ItemSpacing) property determines the spacing between items in Linear mode.
 {% tabs %}
 
 {% highlight xaml %}

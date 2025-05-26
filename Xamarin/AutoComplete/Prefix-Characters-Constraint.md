@@ -6,11 +6,12 @@ platform: xamarin
 control: SfAutoComplete
 documentation: ug
 ---
-# Prefix Characters Constraint
+# Prefix Characters Constraint in Xamarin.Forms AutoComplete
 
-## Prefix Characters Constraint in Xamarin SfAutoComplete
+## Setting Minimum Prefix Characters
+Instead of displaying the suggestion list on every character entry, you can configure the SfAutoComplete control to filter and display matches only after a specific number of characters have been entered. This is achieved using the [`MinimumPrefixCharacters`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_MinimumPrefixCharacters) property. The default value of this property is 1.
 
-Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries. This can be done by [`MinimumPrefixCharacters`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_MinimumPrefixCharacters) property and its default value is 1.
+When you set the `MinimumPrefixCharacters` property to a value greater than 1, the suggestion list will only appear after the user has typed at least that many characters.
 
 {% tabs %}
 

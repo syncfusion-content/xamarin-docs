@@ -1,17 +1,20 @@
 ---
 layout: post
-title: Diacritic sensitivity in Syncfusion SfAutoComplete control 
-description: This section will describes about how to enable and disable Diacritic sensitivity in Xamarin.Forms SfAutoComplete
+title: Diacritic Sensitivity in Xamarin SfAutoComplete | Syncfusion
+description: This section describes how to enable and disable diacritic sensitivity in the Xamarin.Forms SfAutoComplete control
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
 ---
-# Diacritic Sensitivity
+# Diacritic Sensitivity in Xamarin SfAutoComplete
 
-## Diacritic Sensitivity  in Xamarin SfAutoComplete
+The SfAutoComplete control supports working with different languages and keyboard types. This allows you to populate items from languages with letters containing diacritics (accent marks) and search for them using English characters from an en-US keyboard.
 
-The control does not stick with one type of keyboard, so you can populate items from a language with letters containing diacritics, and search for them with English characters from an en-US keyboard. Users can enable or disable the diacritic sensitivity with the [`IgnoreDiacritic`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_IgnoreDiacritic) property. In the below code example we have illustrate how to enables the diacritic sensitivity so that items in the suggestion list get populated by entering any diacritic character of that alphabet.
+## Configuring Diacritic Sensitivity
 
+Users can enable or disable the diacritic sensitivity using the [`IgnoreDiacritic`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_IgnoreDiacritic) property. When set to `false`, the control becomes diacritic-sensitive, meaning it distinguishes between characters with and without diacritics. When set to `true` (default), the control ignores diacritics during search operations.
+
+The following example demonstrates how to enable diacritic sensitivity so that items in the suggestion list are populated only when entering the exact diacritic characters:
 {% tabs %}
 
 {% highlight xaml %}

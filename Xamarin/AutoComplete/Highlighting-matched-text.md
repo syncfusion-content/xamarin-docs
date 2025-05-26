@@ -1,32 +1,32 @@
 ---
 layout: post
-title: MatchHighlighting in Syncfusion SfAutoComplete control 
-description: This section will describe about how to highlight the matched characters in Xamarin.Forms SfAutoComplete.
+title: Text Highlighting in Xamarin AutoComplete | Syncfusion
+description: This section describes how to highlight the matched characters in the Syncfusion Xamarin.Forms SfAutoComplete control.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
 ---
-# Highlighting matched text
+# Highlighting Matched Text in Xamarin AutoComplete
 
-## Highlighting matched text in Xamarin SfAutoComplete
+## Overview
 
-Highlight matching characters in a suggestion list to pick an item with more clarity. There are two ways to highlight the matching text:
+The SfAutoComplete control allows you to highlight matching characters in the suggestion list, making it easier for users to identify and select the desired item. This feature enhances the user experience by visually emphasizing the text that matches the user's input.
 
+There are two highlighting modes available:
+* [`FirstOccurrence`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.OccurrenceMode.html#Syncfusion_SfAutoComplete_XForms_OccurrenceMode_FirstOccurrence) - Highlights only the first instance of the matching text
+* [`MultipleOccurrence`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.OccurrenceMode.html#Syncfusion_SfAutoComplete_XForms_OccurrenceMode_MultipleOccurrence) - Highlights all instances of the matching text
 
-* [`First Occurrence`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.OccurrenceMode.html#Syncfusion_SfAutoComplete_XForms_OccurrenceMode_FirstOccurrence)
+## Customizing the Highlighted Text
 
-* [`Multiple Occurrence`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.OccurrenceMode.html#Syncfusion_SfAutoComplete_XForms_OccurrenceMode_MultipleOccurrence)
+You can customize the appearance of the highlighted text using the following properties:
+* [`HighlightedTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_HighlightedTextColor) - Sets the color of the highlighted text to differentiate it from the rest of the text.
+* [`HighlightedTextFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_HighlightedTextFontAttributes) - Sets the font attributes (such as Bold, Italic) of the highlighted text.
 
-The text highlight can be indicated with various customizing styles by enabling the below properties. They are
+## Highlighting the First Occurrence
 
-* [`HighlightedTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_HighlightedTextColor) -  sets the color of the highlighted text for differentiating the highlighted characters.
+When you set the [`TextHighlightMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_TextHighlightMode) property to [`FirstOccurrence`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.OccurrenceMode.html#Syncfusion_SfAutoComplete_XForms_OccurrenceMode_FirstOccurrence), only the first instance of the matching text in each suggestion item will be highlighted.
 
-* [`HighlightTextFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_HighlightedTextFontAttributes) - sets the FontAttributes of the highlighted text.
-
-## First Occurrence
-
-It highlights the first position of the matching characters in the suggestion list.
-
+This is particularly useful with the [`StartsWith`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionMode.html#Syncfusion_SfAutoComplete_XForms_SuggestionMode_StartsWith) suggestion mode, as shown in the following example:
 {% tabs %}
 
 {% highlight xaml %}
@@ -106,9 +106,9 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-![Highlighting matched text](images/Highlighting-matched-text/FirstOccurrance.png)
+![First occurrence text highlighting](images/Highlighting-matched-text/FirstOccurrance.png)
 
-## Multiple Occurrence
+## Highlighting Multiple Occurrences
 
 It highlights the matching character that are present everywhere in the suggestion list for [`Contains`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionMode.html#Syncfusion_SfAutoComplete_XForms_SuggestionMode_Contains) case in [`SuggestionMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SuggestionMode).
 
@@ -190,6 +190,6 @@ namespace AutocompleteSample
 {% endhighlight %}
 
 {% endtabs %}
-![Highlighting matched text](images/Highlighting-matched-text/MultipleOccurrance.png)
+![Multiple occurrence text highlighting](images/Highlighting-matched-text/MultipleOccurrance.png)
 
 N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to knows the functionalities of each feature.

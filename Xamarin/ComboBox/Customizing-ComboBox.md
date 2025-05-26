@@ -1,39 +1,37 @@
 ---
-layout : post
-title: Customizing ComboBox in Xamarin ComboBox control | Syncfusion
-description: Learn here all about Customizing ComboBox support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
-platform : Xamarin
-control : SfComboBox
-documentation : ug
+layout: post
+title: Customizing ComboBox in Xamarin ComboBox Control | Syncfusion
+description: Learn about customizing the Syncfusion Xamarin ComboBox (SfComboBox) control in detail, including entry and drop-down parts.
+platform: Xamarin
+control: SfComboBox
+documentation: ug
 ---
 
 # Customizing ComboBox in Xamarin ComboBox (SfComboBox)
 
-The [Xamarin ComboBox](https://www.syncfusion.com/xamarin-ui-controls/xamarin-combobox) (SfComboBox) control  provides user friendly customizing options for both entry part and drop-down part. In this section, customizing the entire ComboBox control is explained.
+The [Xamarin ComboBox](https://www.syncfusion.com/xamarin-ui-controls/xamarin-combobox) (SfComboBox) control provides user-friendly customization options for both the entry and drop-down sections. This section explains how to customize the entire ComboBox control.
 
-## Customizing the entry
+## Customizing the Entry
 
-The [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TextColor), [`TextSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TextSize), [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_FontAttributes), [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_FontFamily) and [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_BorderColor) properties are used to customize the foreground color, font size, font attribute, font family and border color of the entry part.
+Properties like [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TextColor), [`TextSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TextSize), [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_FontAttributes), [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_FontFamily), and [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_BorderColor) allow customization of text color, size, font attributes, family, and border color.
 
-### Text color
+### Text Color
 
-The combo box control provides the user to customize the foreground color of the text inside the entry part.
+Customize the text's foreground color inside the entry section.
+### Text Size
 
-### Text size
+Use the [`TextSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TextSize) property to set the text size in the entry section.
+### Font Attributes
 
-The Xamarin ComboBox (SfComboBox) control provides the user to customize the text size of the text inside the entry part using [`TextSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TextSize) property.
+Adjust font attributes of the entry section text using [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_FontAttributes).
 
-### Font attributes
+### Font Family
 
-The combo box control provides the user to customize the font attribute of the text inside the entry part using [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_FontAttributes) property.
+Set the font family for the entry section text using [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_FontFamily).
 
-### Font family
+### Border Color
 
-The combo box control provides the user to customize the font family of the text inside the entry part using [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_FontFamily) property.
-
-### Border color
-
-The combo box control provides the user to customize the border color of the entry box using [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_BorderColor) property.
+Customize the entry box's border color with the [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_BorderColor) property.
 
 {% tabs %}
 
@@ -71,12 +69,11 @@ this.Content = stackLayout;
 
 {% endtabs %}
 
-![Customizing entry](images/Customizing-ComboBox/customizing-entry.png)
+![Customizing Entry](images/Customizing-ComboBox/customizing-entry.png)
 
-### Changing delete button color
+### Changing Delete Button Color
 
-The [`ClearButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ClearButtonColor) property is used to modify the delete button color. The following code example shows changing delete button color. 
-
+Modify the delete button color using the [`ClearButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ClearButtonColor) property.
 {% tabs %}
 
 {% highlight xaml %}

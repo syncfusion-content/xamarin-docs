@@ -1,14 +1,14 @@
 ---
-layout : post
-title: ComboBox Filtering Options in Xamarin ComboBox control | Syncfusion
-description: Learn here all about ComboBox Filtering Options support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
-platform : Xamarin.Forms
-control : SfComboBox
-documentation : ug
+layout: post
+title: ComboBox Filtering Options in Xamarin ComboBox Control | Syncfusion
+description: Learn about the ComboBox Filtering Options support in the Syncfusion Xamarin ComboBox (SfComboBox) control and more.
+platform: Xamarin.Forms
+control: SfComboBox
+documentation: ug
 ---
 
 # ComboBox Filtering Options in Xamarin ComboBox (SfComboBox)
-The combo box enables the filer option for filtering the suggestions in the drop-down. 
+The ComboBox supports filtering options to narrow down the suggestions in the drop-down list.
 
 {% tabs %}	
 
@@ -203,9 +203,22 @@ Content = layout;
 
 ![Starts with casesensitive Image](images/ComboBox-Filtering-Options/starts-with-case-sensitive.png)
 
-### Filtering words that contain input text
+## Filtering Types
 
-Displays all the matches that contain the typed characters in control. This strategy is case in-sensitive.
+The method of string comparison for filtering suggestions can be adjusted using the [`SuggestionMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SuggestionMode) property. By default, the filtering type is [`StartsWith`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_StartsWith) and it is case-insensitive. The available filtering modes include:
+
+- [`StartsWith`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_StartsWith)
+- [`StartsWithCaseSensitive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_StartsWithCaseSensitive)
+- [`Contains`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_Contains)
+- [`ContainsWithCaseSensitive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_ContainsWithCaseSensitive)
+- [`Equals`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_Equals)
+- [`EqualsWithCaseSensitive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_EqualsWithCaseSensitive)
+- [`EndsWith`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_EndsWith)
+- [`EndsWithCaseSensitive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_EndsWithCaseSensitive)
+- [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html#Syncfusion_XForms_ComboBox_SuggestionMode_Custom)
+### Filtering Words that Start with Input Text
+
+Displays all matches that start with the typed characters in the control. This strategy is case-insensitive.
 	
 {% tabs %}
 
@@ -373,7 +386,7 @@ Content = layout;
 
 #### Filtering words that equals input text - case sensitive
 
-Displays all the words that completely match with the typed characters in control. This strategy is case sensitive.
+Displays all matches that start with the typed characters in control. This strategy is case-sensitive.
 	
 {% tabs %}
 
@@ -564,10 +577,9 @@ Content = layout;
 
 ![End with image](images/ComboBox-Filtering-Options/ends-with.png)
 
+### Filtering Words that Contain Input Text
 
-#### Filtering words that end with input text - case sensitive 
-
-Displays all the matches that ends with the typed characters in control. This strategy is case sensitive.
+Displays all matches that contain the typed characters in control. This strategy is case-insensitive.
 	
 {% tabs %}
 
@@ -798,3 +810,7 @@ Content = layout;
 ![Suggest append image](images/ComboBox-Filtering-Options/suggest-append.png)
 
 N> The deletion of a character is not support in this mode which is a known framework issue.
+
+    "Ukraine",
+    "United Arab Emirates",
+    "

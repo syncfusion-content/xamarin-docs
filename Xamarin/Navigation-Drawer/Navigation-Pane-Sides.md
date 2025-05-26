@@ -1,28 +1,25 @@
 ---
 layout: post
-title: Configuring The Drawer In Xamarin Navigation Drawer | Syncfusion
-description: Learn here all about Configuring The Drawer In Different Sides support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
+title: Configuring the Drawer in Xamarin Navigation Drawer | Syncfusion
+description: Learn about configuring the drawer on different sides in the Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug
 ---
-# Configuring The Drawer In Different Sides in Xamarin Navigation Drawer
+# Configuring the Drawer on Different Sides in Xamarin Navigation Drawer
 
-The supplemental pane can be drawn in and out from all four sides. [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_Position) property is used to change the side of pane and the values are
+The supplemental pane can be drawn in and out from all four sides. The [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_Position) property is used to change the side of the pane. The possible values are:
 
-*	[`Left`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Left)
+- [`Left`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Left)
+- [`Right`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Right)
+- [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Top)
+- [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Bottom)
 
-*	[`Right`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Right)
-
-*	[`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Top)
-
-*	[`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Bottom)
-
-N> The default position is [`Left`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Left).
+> Note: The default position is [`Left`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Left).
 
 ## Left
 
-The navigation pane draws in and out from [`Left`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Left) side. It can be set as shown below:
+The navigation pane draws in and out from the [`Left`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Left) side. It can be set as shown below:
 
 {% tabs %}	
 
@@ -123,7 +120,7 @@ namespace NaviSample
 
 ## Right
 
-The navigation pane draws in and out from [`Right`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Right) side. It can be set as shown below:
+The navigation pane draws in and out from the [`Right`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Right) side. It can be set as shown below:
 
 {% tabs %}	
 
@@ -225,7 +222,7 @@ namespace NaviSample
 	
 ## Top
 
-The navigation pane draws in and out from [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Top) side. It can be set as shown below:
+The navigation pane draws in and out from the [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Top) side. It can be set as shown below:
 
 {% tabs %}
 
@@ -328,7 +325,7 @@ namespace NaviSample
 
 ## Bottom
 
-The navigation pane draws in and out from [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Bottom) side. It can be set as shown below:
+The navigation pane draws in and out from the [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Bottom) side. It can be set as shown below:
 
 {% tabs %}	
 

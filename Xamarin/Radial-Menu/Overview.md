@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin Radial Menu control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin Radial Menu (SfRadialMenu) control, its elements and more.
+title: About Xamarin Radial Menu Control | Syncfusion
+description: Learn about the introduction of the Syncfusion Xamarin Radial Menu (SfRadialMenu) control, its elements, and more.
 platform: Xamarin
 control: SfRadialMenu
 documentation: ug
@@ -9,19 +9,19 @@ documentation: ug
 
 # Xamarin Radial Menu (SfRadialMenu) Overview
 
-The Essential Xamarin SfRadialMenu displays a hierarchical menu in a circular layout, which is optimized for touch enabled devices. Typically, it is used as a context menu, and it can expose more menu items in the same space than traditional menus.
+The Essential Xamarin `SfRadialMenu` displays a hierarchical menu in a circular layout, optimized for touch-enabled devices. It is typically used as a context menu, allowing more menu items to be displayed in the same space than traditional menus.
 
-## Key features
+## Key Features
 
-Key features in SfRadialMenu:
+Key features of the `SfRadialMenu` include:
 
-* Drag — The SfRadialMenu can be floated over the layout to avoid obscuring the content behind it.
-* Rotation — SfRadialMenu supports rotating items.
-* FontIcon — The built-in icon font option helps users add vector images that prevent the control from experiencing any image glitches often faced with traditional image icons.
-* Custom view — SfRadialMenu supports the custom view like image.
-* Custom segments — Complete customization options for the menu and its items, such as coloring, sizing, placement, and shapes, using the segmentation option.
-* Auto arrange — SfRadialMenu supports automatic item arrangement.
-* Custom arrange — SfRadialMenu has options to place items as users needed.
+- **Drag**: The `SfRadialMenu` can be floated over the layout to avoid obscuring any content behind it.
+- **Rotation**: Supports rotating items within the `SfRadialMenu`.
+- **FontIcon**: The built-in icon font option helps users add vector images, preventing image glitches often faced with traditional image icons.
+- **Custom View**: Supports custom views, such as images.
+- **Custom Segments**: Offers complete customization options for the menu and its items, including coloring, sizing, placement, and shapes, using the segmentation option.
+- **Auto Arrange**: Supports automatic item arrangement.
+- **Custom Arrange**: Provides options to place items according to user preferences.
 
 ![OverView of SfRadialMenu](images/overview.png)
 

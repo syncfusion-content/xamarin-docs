@@ -1,18 +1,33 @@
 ---
 layout: post
-title: AutoSizing in Syncfusion SfAutoComplete control in Xamarin.Forms
-description: Learn how to enable the AutoSizing feature in SfAutoComplete control to extend the layout based on the input token size available.
-platform: Xamarin
+title: AutoSizing in Xamarin AutoComplete Control | Syncfusion
+description: Learn how to enable the AutoSizing feature in Syncfusion Xamarin AutoComplete (SfAutoComplete) control to dynamically resize based on token content.
+platform: xamarin
 control: SfAutoComplete
 documentation: ug
 ---
 
-# Enabling the AutoSizing API
+# AutoSizing in Xamarin AutoComplete (SfAutoComplete)
 
-AutoSizing can be enabled in [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control so that the control will extend its layout based on the token size.
+## Overview
 
-[`EnableAutoSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_EnableAutoSize) property is used to enable the AutoSizing in [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control. To enable the API, you need to set the [`MultiSelectMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_MultiSelectMode) as [`Token`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.MultiSelectMode.html#Syncfusion_SfAutoComplete_XForms_MultiSelectMode_Token) and [`TokensWrapMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_TokensWrapMode) as [`Wrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokensWrapMode.html#Syncfusion_SfAutoComplete_XForms_TokensWrapMode_Wrap). The default value of [`EnableAutoSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_EnableAutoSize) is false.
+The [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control provides an AutoSizing feature that allows the control to dynamically resize its layout based on the size of the selected tokens. This feature is particularly useful when working with multiple selections in token mode.
+## Enabling AutoSizing
 
+To enable AutoSizing in the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control, set the [`EnableAutoSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_EnableAutoSize) property to `true`.
+
+### Prerequisites
+
+For AutoSizing to work properly, you must also configure the following properties:
+
+1. Set [`MultiSelectMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_MultiSelectMode) to [`Token`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.MultiSelectMode.html#Syncfusion_SfAutoComplete_XForms_MultiSelectMode_Token)
+2. Set [`TokensWrapMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_TokensWrapMode) to [`Wrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.TokensWrapMode.html#Syncfusion_SfAutoComplete_XForms_TokensWrapMode_Wrap)
+
+The default value of [`EnableAutoSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_EnableAutoSize) is `false`.
+
+## Example
+
+The following example demonstrates how to enable AutoSizing in the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control:
 {% tabs %}
 {% highlight xaml %}
 
@@ -91,4 +106,8 @@ namespace LayoutsExample
 
 ![EnableAutoSize image](images/AutoSizing/AutoSizing.png)
 
-N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to knows the functionalities of each feature.
+## See Also
+
+* [Xamarin AutoComplete Features Overview](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete)
+* [Xamarin.Forms AutoComplete Examples](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete)
+* [Working with Tokens in AutoComplete](https://help.syncfusion.com/xamarin/autocomplete/working-with-token)

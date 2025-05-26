@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DataTemplateSelector in Xamarin ComboBox control | Syncfusion
-description: Learn here all about DataTemplateSelector support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
+title: DataTemplateSelector in Xamarin ComboBox Control | Syncfusion
+description: Learn about the DataTemplateSelector support in the Syncfusion Xamarin ComboBox (SfComboBox) control and more.
 platform: Xamarin
 control: SfComboBox
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # DataTemplateSelector in Xamarin ComboBox (SfComboBox)
 
-[`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) supports DataTemplateSelector, which is used to choose a DataTemplate based on data object.
+The [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) supports a DataTemplateSelector, allowing you to select a DataTemplate based on a data object.
  
 
 {% tabs %}
@@ -102,7 +102,7 @@ documentation: ug
 
 ## Create and Initialize Business Models 
 
-Define a simple model class MobileDetail with fields IsAvailableInStock, Mobile and populate mobile detail in ViewModel.
+Define a simple model class `MobileDetail` with fields `IsAvailableInStock`, `Mobile`, and populate mobile details in the ViewModel.
 
 {% tabs %}
 
@@ -142,7 +142,7 @@ Define a simple model class MobileDetail with fields IsAvailableInStock, Mobile 
 
 ## OnSelectTemplate
 
-The OnSelectTemplate is an overridden method to return a particular DataTemplate. The following code sample demonstrates how to use the OnSelectTemplate method.
+The `OnSelectTemplate` method is overridden to return a particular DataTemplate. The following sample demonstrates how to use the `OnSelectTemplate` method.
 
 
 {% tabs %}
@@ -168,12 +168,11 @@ The OnSelectTemplate is an overridden method to return a particular DataTemplate
 
 {% endtabs %}
 
-The following screenshot illustrates the output of above code.
+The following screenshot illustrates the output of the above code.
 
-![Data template selector](images/Data-Template-Selector/DataTemplateSelector.png)
+![Data Template Selector](images/Data-Template-Selector/DataTemplateSelector.png)
 
-
-We have attached sample for reference. You can download the sample from the following link.
+For reference, a sample is available at the following link.
 
 Sample Link: [SfComboBox_DataTemplateSelector](https://github.com/SyncfusionExamples/datatemplate-selector-sfcombobox)
 

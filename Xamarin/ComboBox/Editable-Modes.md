@@ -1,21 +1,21 @@
 ---
-layout : post
-title: Editable Modes in Xamarin ComboBox control | Syncfusion
-description: Learn here all about Editable Modes support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
-platform : Xamarin
-control : SfComboBox
-documentation : ug
+layout: post
+title: Editable Modes in Xamarin ComboBox Control | Syncfusion
+description: Learn about Editable Modes support in the Syncfusion Xamarin ComboBox (SfComboBox) control and more.
+platform: Xamarin
+control: SfComboBox
+documentation: ug
 ---
 
 # Editable Modes in Xamarin ComboBox (SfComboBox)
 
-The combo box control supports both editable and non-editable text box to choose selected items in given data source. Users can select one item from the suggestion list. 
+The ComboBox control provides both editable and non-editable options to select items from a given data source. Users can choose a single item from the suggestion list.
 
-[`IsEditableMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_IsEditableMode) property is used to enable the user input in [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) control. The default value is false.
+The [`IsEditableMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_IsEditableMode) property is used to enable user input in the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) control, with the default value set to `false`.
 
-## Editable combo box
+## Editable ComboBox
 
-In editable mode, the combo box allows users to edit in the text box that shows the suggestions in drop-down list based on the input.
+In editable mode, the ComboBox allows users to type in the text box, which then displays suggestions in the drop-down list based on their input.
 
 {% tabs %}
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How to add the custom view for Syncfusion SfButton
-description: How to add the custom view for SfButton.
+title: How to Add a Custom View for Syncfusion SfButton
+description: Learn how to add a custom view for SfButton in Xamarin.Forms applications using Syncfusion controls.
 platform: xamarin.forms
 control: sfbutton
 documentation: ug
 ---
 
-# Add the custom view for button
+# Add a Custom View for SfButton
 
-You can customize the appearance of the button by adding your custom view in the [`Content`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Content) property. The following code sample demonstrates how to apply the busy indicator control as custom view for a button.
+You can customize the appearance of the SfButton by adding your custom view through the [`Content`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Content) property. The following code samples demonstrate how to apply the busy indicator control as a custom view within a button.
 
 {% tabs %}
 {% highlight xaml %}

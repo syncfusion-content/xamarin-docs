@@ -1,25 +1,25 @@
 ---
 layout: post
-title: Visual States in Xamarin Button control | Syncfusion
-description: Learn here all about Visual States support in Syncfusion Xamarin Button (SfButton) control and more.
-platform: xamarin
-control: sfbutton
+title: Visual States in Xamarin Button Control | Syncfusion
+description: Discover how to use Visual States in the Syncfusion Xamarin Button (SfButton) control for enhanced UI customization.
+platform: Xamarin
+control: SfButton
 documentation: ug
 ---
 
 # Visual States in Xamarin Button (SfButton)
 
-The button visual can be customized through `VisualStates`. The [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html) control have the following four visual states:
+The button's appearance can be customized through `VisualStates`. The [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html) control supports the following five visual states:
 
-* Normal
-* Pressed
-* Checked
-* Unchecked
-* Disabled
+- Normal
+- Pressed
+- Checked
+- Unchecked
+- Disabled
 
-N>
-* In addition, `MouseOver` VisualState is available only in the UWP platform. 
-* The visual states `Checked` and `Unchecked` are only updated when enabling the [`IsChecked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_IsChecked) property in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
+> Note:
+> - Additionally, the `MouseOver` visual state is available only on the UWP platform.
+> - The visual states `Checked` and `Unchecked` are only updated when the [`IsChecked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_IsChecked) property is enabled in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -85,13 +85,13 @@ this.Content = stackLayout;
 {% endhighlight %}
 {% endtabs %}
 
-**Pressed visual state:**
-![SfButton with visual state](images/VisualState_PressedState.png)
+**Pressed Visual State:**
+![SfButton with pressed visual state](images/VisualState_PressedState.png)
 
-**Normal visual state:**
-![SfButton with visual state](images/VisualState_NormalState.png)
+**Normal Visual State:**
+![SfButton with normal visual state](images/VisualState_NormalState.png)
 
-## See also
+## See Also
 
 [How to change Xamarin.Forms button style using its visual states](https://support.syncfusion.com/kb/article/9580/how-to-change-xamarinforms-button-style-using-its-visual-states)
 

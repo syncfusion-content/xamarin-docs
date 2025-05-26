@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Visual Customization in Xamarin CheckBox control | Syncfusion
-description: Learn here all about Visual Customization support in Syncfusion Xamarin CheckBox (SfCheckBox) control and more.
-platform: xamarin
+title: Visual Customization in Xamarin CheckBox Control | Syncfusion
+description: Learn about visual customization support in Syncfusion Xamarin CheckBox (SfCheckBox) control and more.
+platform: Xamarin
 control: SfCheckBox
 documentation: ug 
 keywords: button, SfCheckBox, CheckBox
@@ -11,8 +11,8 @@ keywords: button, SfCheckBox, CheckBox
 
 # Visual Customization in Xamarin CheckBox (SfCheckBox)
 
-## Customizing a shape
-The check box shape can be customized using the [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html#Syncfusion_XForms_Buttons_SfCheckBox_CornerRadius) property. This property specifies the uniform radius value to the every corner of the check box.
+## Customizing the Shape
+The check box shape can be customized using the [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html#Syncfusion_XForms_Buttons_SfCheckBox_CornerRadius) property. This property specifies the uniform radius value for each corner of the check box.
 
 {% tabs %}
 {% highlight xaml %}

@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Customization in Xamarin Chips control | Syncfusion
-description: Learn about Customization support in Syncfusion Essential Studio® Xamarin Chips control, its elements and more.
-platform: xamarin
+title: Customization in Xamarin Chips Control | Syncfusion
+description: Learn about customization support in Syncfusion Essential Studio® Xamarin Chips control, its elements, and more.
+platform: Xamarin
 control: Chips
 documentation: ug
 ---
 
 # Customization in Xamarin Chips
 
-The chip control supports to customize the background color, border color, close button color, and more. The chip control can be customized using the following properties:
+The chip control supports customizing the background color, border color, close button color, and more. You can customize the chip control using the following properties:
 
 ## ShowCloseButton
 
-The [`ShowCloseButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_ShowCloseButton) property sets the visible state of close button in [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html).
+The [`ShowCloseButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_ShowCloseButton) property sets the visible state of the close button in [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html).
 
 {% tabs %}
 
@@ -2410,7 +2410,7 @@ namespace ChipCustomization
 
 ## CloseButtonColor
 
-The [`CloseButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_CloseButtonColor) property customizes the color of close button in the [`SfChipGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html).
+The [`CloseButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_CloseButtonColor) property customizes the color of the close button in [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html).
 
 {% tabs %}
 
@@ -2501,11 +2501,12 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-N> The default value of [`CloseButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_CloseButtonColor) is [`Color.Black`].
+![SfChip with CloseButtonColor](images/customization-images/chip_closebuttoncolor_image.png)
+> **Note:** The default value of [`CloseButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_CloseButtonColor) is `Color.FromHex("#6b6b6b")`.
 
 ## SelectionIndicatorColor
 
-The [`SelectionIndicatorColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_SelectionIndicatorColor) property customizes the selection indicator color of the [`SfChipGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html).
+The [`SelectionIndicatorColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_SelectionIndicatorColor) property customizes the selection indicator color in [`SfChip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html).
 
 {% tabs %}
 
@@ -2591,9 +2592,9 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChipGroup with SelectionIndicatorColor](images/customization-images/chipgroup_selectionindicatorcolor_image.png)
+![SfChip with SelectionIndicatorColor](images/customization-images/chip_selectionindicatorcolor_image.png)
 
-N> The default value of [`SelectionIndicatorColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_SelectionIndicatorColor) is [`Color.White`].
+> **Note:** The default value of [`SelectionIndicatorColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html#Syncfusion_XForms_Buttons_SfChip_SelectionIndicatorColor) is `Color.FromHex("#6b6b6b")`.
 
 ## ChipImageWidth
 
@@ -2756,3 +2757,4 @@ N> The default value of [`ChipImageWidth`](https://help.syncfusion.com/cr/xamari
 [How to select a multiple chips from the Xamarin ChipGroup [SfChipGroup]](https://support.syncfusion.com/kb/article/9657/how-to-select-a-multiple-chips-from-the-xamarin-chipgroup-sfchipgroup)
 
 [How to display each chip in different colors in the Xamarin.Forms ChipGroup](https://support.syncfusion.com/kb/article/9644/how-to-display-each-chip-in-different-colors-in-the-xamarin-forms-chipgroup)
+

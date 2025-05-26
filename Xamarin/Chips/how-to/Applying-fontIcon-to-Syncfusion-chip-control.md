@@ -1,23 +1,22 @@
 ---
 layout: post
-title: How to apply the FontIcon for Syncfusion chip control | Xamarin.Forms
-description: Learn how to apply the font icon to the Sfchip and its customization options with its available basic features in Xamarin.Forms
-platform: xamarin
+title: How to Apply the FontIcon for Syncfusion Chip Control | Xamarin.Forms
+description: Learn how to apply a font icon to the SfChip and customize its features in Xamarin.Forms.
+platform: Xamarin
 control: Chips
 documentation: ug
 ---
 
 # Setting the FontIcon to SfChip
 
-SfChip is supported to display the font icon by setting `FontImageSource` to its [ImageSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageSource) property with following below steps.
+The SfChip control supports displaying a font icon by setting the `FontImageSource` to its [ImageSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageSource) property. Follow these steps to configure it:
 
-## Custom font file should be added to all the platform projects in specific location
+## Add a Custom Font File to All Platform Projects
+- **Android:** Add the custom font file to the `Assets` folder and set the `Build Action` to `AndroidAsset` for the font file.
+- **iOS:** Add the custom font file to the `Resources` folder, set the `Build Action` to `BundleResource`, and ensure the copy to output directory is set to `AlwaysCopy`.
+- **UWP:** Add the custom font file to the `Assets` folder and set the `Build Action` to `Content`.
 
-* `Android` - Add a custom font file in the `Assets` folder and set the `Build Action` to `AndroidAsset` for the font file.
-* `iOS` - Add a custom font file in the `Resources` folder and set the `Build Action` to `BundleResource`. Then, ensure that the copy to output directory is set to `AlwaysCopy`.
-* `UWP` - Add a custom font file in the `Assets` folder and the set `Build Action` to `Content`.
-
-N> For iOS, you should be added a custom font file in the info.plist file as demonstrated in below.
+> Note: For iOS, you must add the custom font file in the `info.plist` file as demonstrated below.
 
 {% tabs %}
 
@@ -36,8 +35,7 @@ N> For iOS, you should be added a custom font file in the info.plist file as dem
 
 {% endtabs %}
 
-
-Create the instance for `FontImageSource` and set to [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageSource) property of SfChip as shown in the below code snippet.
+Create an instance of `FontImageSource` and set it to the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageSource) property of SfChip, as shown in the code snippet below.
 
 {% tabs %}
 
@@ -91,7 +89,6 @@ Create the instance for `FontImageSource` and set to [`ImageSource`](https://hel
 
 {% endtabs %}
 
+> Note: FontImageSource is supported from Xamarin.Forms version 3.6 onwards.
 
-N> FontImageSource supported from Xamarin.Forms version 3.6 onwards.
-
-![Xamarin.Forms chip group icon font support](images/FontIcon.png)
+![Xamarin.Forms Chip Group Icon Font Support](images/FontIcon.png)

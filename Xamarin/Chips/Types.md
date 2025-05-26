@@ -1,30 +1,30 @@
 ---
 layout: post
-title: Chips Types in Xamarin Chips control | Syncfusion
-description: Learn about Chips Types support in Syncfusion Essential Studio® Xamarin Chips control, its elements and more.
-platform: xamarin
+title: Chips Types in Xamarin Chips Control | Syncfusion
+description: Learn about Chips Types support in Syncfusion Essential Studio® Xamarin Chips control, its elements, and more.
+platform: Xamarin
 control: Chips
 documentation: ug
 ---
 
 # Chips Types in Xamarin Chips
 
-The functionality of chips control differs based on the [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Type) property. No operation can be performed in a chip group unless the [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Type) property is set. The chips control provides four different types, and each has its own functionality. Default value of [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Type) is [`Input`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipsType.html#Syncfusion_XForms_Buttons_SfChipsType_Input). The types are,
+The functionality of the Chips control differs based on its [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Type) property. No operation can be performed in a chip group unless the [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Type) property is set. The Chips control provides four different types, each with its unique functionality. The default value of [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Type) is [`Input`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipsType.html#Syncfusion_XForms_Buttons_SfChipsType_Input). The types are:
 
 * [`Input`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipsType.html#Syncfusion_XForms_Buttons_SfChipsType_Input)
 * [`Choice`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipsType.html#Syncfusion_XForms_Buttons_SfChipsType_Choice)
 * [`Filter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipsType.html#Syncfusion_XForms_Buttons_SfChipsType_Filter)
 * [`Action`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipsType.html#Syncfusion_XForms_Buttons_SfChipsType_Action)
 
-N> Chips are arranged in [ChipLayout](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipLayout), which is a type of [layout](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/layouts#layouts-with-multiple-children). StackLayout with horizontal orientation is a default type of [ChipLayout](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipLayout).
+> **Note:** Chips are arranged in a [ChipLayout](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipLayout), which is a type of [layout](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/layouts#layouts-with-multiple-children). `StackLayout` with horizontal orientation is the default type of `ChipLayout`.
 
 ## Input
 
-Arranges the chips in a layout and enables the close button for each chip. Using the close button, a chip can be removed from children and layout as well. Additionally, it has support to add an option [`InputView`](https://help.syncfusion.com/xamarin/chips/customization#inputview) at the end of the layout, from which users can obtain the chip text for creating a chip at run time.
+This type arranges the chips in a layout and enables the close button for each chip. Using the close button, a chip can be removed from both the children and layout. Additionally, it supports adding an [`InputView`](https://help.syncfusion.com/xamarin/chips/customization#inputview) at the end of the layout, from which users can obtain the chip text for creating a chip at runtime.
 
-N> The [`InputView`](https://help.syncfusion.com/xamarin/chips/customization#inputview) is supported only in [`Input`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipsType.html#Syncfusion_XForms_Buttons_SfChipsType_Input) type.
+> **Note:** The [`InputView`](https://help.syncfusion.com/xamarin/chips/customization#inputview) is supported only in the [`Input`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipsType.html#Syncfusion_XForms_Buttons_SfChipsType_Input) type.
 
-The following code illustrates how to get an input type chip.
+The following code snippet illustrates how to implement an input type chip:
 
 {% highlight xaml %}
 <buttons:SfChipGroup 

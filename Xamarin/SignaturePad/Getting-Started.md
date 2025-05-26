@@ -1,43 +1,43 @@
 ---
 layout: post
-title: Getting Started with Xamarin SignaturePad control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin SignaturePad (SfSignaturePad) control, its elements and more.
-platform: xamarin
+title: Getting Started with Xamarin SignaturePad Control | Syncfusion
+description: Learn how to get started with the Syncfusion Xamarin SignaturePad (SfSignaturePad) control, including its configuration and key elements.
+platform: Xamarin
 control: SfSignaturePad
 documentation: ug
 ---
 
 # Getting Started with Xamarin SignaturePad (SfSignaturePad)
 
-This section explains the steps required to configure the Signature Pad.
+This section explains the steps required to configure the SignaturePad.
 
-## Assembly deployment
+## Assembly Deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders at {Syncfusion Essential Studio Installed location}\Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
-N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+> Note: Assemblies can be found in the unzipped package location (Documents/Syncfusion/{Version #}/Xamarin/lib) on a Mac.
 
-## Adding SfSignaturePad reference
+## Adding SfSignaturePad Reference
 
-You can add the Signature Pad reference using one of the following methods:
+You can add the SignaturePad reference using one of the following methods:
 
-**Method 1: Adding SfSignaturePad reference from nuget.org**
+**Method 1: Adding SfSignaturePad Reference from NuGet.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add Signature Pad to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfSignaturePad](https://www.nuget.org/packages/Syncfusion.Xamarin.SfSignaturePad), and then install it.
+Syncfusion Xamarin components are available on [nuget.org](https://www.nuget.org/). To add SignaturePad to your project, open the NuGet Package Manager in Visual Studio, search for [Syncfusion.Xamarin.SfSignaturePad](https://www.nuget.org/packages/Syncfusion.Xamarin.SfSignaturePad), and install it.
 
-N> Install the same version of `SfSignaturePad` Nuget in all the projects.
+> Note: Install the same version of `SfSignaturePad` NuGet in all projects.
 
-![Adding Signature Pad reference from nuget](images/NugetPackage.png)
+![Adding SignaturePad reference from NuGet](images/NugetPackage.png)
 
-**Method 2: Adding SfSignaturePad reference from toolbox**
+**Method 2: Adding SfSignaturePad Reference from Toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfSignaturePad`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to this [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides a Xamarin Toolbox. By using this toolbox, you can drag the [`SfSignaturePad`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install the Syncfusion Xamarin Toolbox, refer to this [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
-**Method 3: Adding SfSignaturePad assemblies manually from the installed location**
+**Method 3: Adding SfSignaturePad Assemblies Manually from the Installed Location**
 
-If you prefer to manually reference the assemblies instead of referencing from NuGet, add the following assemblies in respective projects.
+If you prefer to manually reference the assemblies instead of using NuGet, add the following assemblies to the respective projects.
 
 Location: {Installed location}/{version}/Xamarin/lib
 
@@ -57,21 +57,21 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-**Method 4: Adding SfSignaturePad dependency package**
+**Method 4: Adding SfSignaturePad Dependency Package**
 
-In addition, you need to install the 1.68.0 version of [SkiaSharp](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.68.0) nuget in all projects
+Additionally, you need to install version 1.68.0 of the [SkiaSharp](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.68.0) NuGet package in all projects.
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+> Note: For more information on obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
 
-## Launching the application on each platform with SfSignaturePad
+## Launching the Application on Each Platform with SfSignaturePad
 
-To use the Signature Pad in an application, each platform requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
+To use the SignaturePad in an application, each platform requires specific configurations. These configurations vary by platform and are discussed in the following sections:
 
-N> If you are adding the references from toolbox, this step is not needed.
+> Note: If you add references from the toolbox, this step is not needed.
 
 ### iOS
 
-To launch the [`SfSignaturePad`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html) in iOS, call the `SfSignaturePadRenderer.Init()` in the `FinishedLaunching` method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication is called as demonstrated in the following code sample.
+To launch the [`SfSignaturePad`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html) on iOS, call `SfSignaturePadRenderer.Init()` in the `FinishedLaunching` method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before `LoadApplication` is called, as demonstrated in the following code sample.
 
 {% highlight C# %} 
 
@@ -88,13 +88,13 @@ To launch the [`SfSignaturePad`](https://help.syncfusion.com/cr/xamarin/Syncfusi
 
 ### Android
 
-The Android platform does not require any additional configurations to render the Signature Pad.
+The Android platform does not require any additional configurations to render the SignaturePad.
 
-N> Signature Pad support has not been provided for UWP Platform.
+> Note: SignaturePad support has not been provided for the UWP platform.
 
-## Adding a namespace
+## Adding a Namespace
 
-Add the following namespace.
+Add the following namespace to your project.
 
 {% tabs %}
 
@@ -112,9 +112,9 @@ Add the following namespace.
 
 {% endtabs %}
 
-## Creating an SfSignaturePad control
+## Creating an SfSignaturePad Control
 
-Create an instance for the Signature Pad control, and add it as content.
+Create an instance of the SignaturePad control and add it as content.
 
 {% tabs %}
 
@@ -135,9 +135,9 @@ Content = signature;
 
 {% endtabs %}
 
-## Getting Started with a Signature Pad control
+## Getting Started with a SignaturePad Control
 
-The Signature Pad control is configured entirely in C# code or in XAML markup. The following steps explain how to create a Signature Pad and configure their elements.
+The SignaturePad control can be configured entirely in C# code or in XAML markup. The following steps explain how to create a SignaturePad and configure its elements.
 
 {% tabs %}
 
@@ -197,6 +197,6 @@ namespace SfSignaturePadGettingStarted
 
 {% endtabs %}
 
-![Xamarin Signature Pad](images/signature.png)
+![Xamarin SignaturePad](images/signature.png)
 
-N> View [sample](https://github.com/SyncfusionExamples/xamarin-sfsignaturepad-examples/tree/master/Samples/SfSignaturePadGettingStarted) in GitHub
+> Note: View the [sample](https://github.com/SyncfusionExamples/xamarin-sfsignaturepad-[REDACTED]) on GitHub.

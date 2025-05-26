@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Populating data source in Xamarin Segmented Control | Syncfusion<sup>&reg;</sup>
-description: Learn here all about Populating data source support in Syncfusion<sup>&reg;</sup> Xamarin Segmented Control (SfSegmentedControl) and more.
+title: Populating Data Source in Xamarin Segmented Control | Syncfusion<sup>&reg;</sup>
+description: Explore how to populate data sources in Syncfusion<sup>&reg;</sup> Xamarin Segmented Control (SfSegmentedControl).
 platform: Xamarin
 control: SegmentedControl
 documentation: ug
 ---
 
-# Populating data source in Xamarin Segmented Control
+# Populating Data Source in Xamarin Segmented Control
 
 The segmented control can be populated from a collection of strings, views, or a collection of objects in a built-in class.
 
-## String collection
+## String Collection
 
-The segmented control provides the collection of strings as a data source.
+The segmented control allows you to use a collection of strings as a data source.
 
 {% tabs %}
 
@@ -61,13 +61,13 @@ this.Content = segmentedControl;
 
 {% endtabs %}
 
-![SfSegmentedControl with collection of string](images/Data-source/Xamarin_Forms_string.png)
+![SfSegmentedControl with a collection of strings](images/Data-source/Xamarin_Forms_string.png)
 
-## Segment items
+## Segment Items
 
-The segmented control customize the text or icons, or use other built-in customization options available for the segments. Segment item collections can also be used.
+The segmented control customizes text or icons, or uses other built-in customization options available for the segments. Segment item collections can also be used.
 
-The items inside the [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_ItemsSource) can be added in the code behind as below.
+Items inside the [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_ItemsSource) property can be added in the code-behind as shown below:
 
 {% highlight c# %}
 
@@ -128,13 +128,13 @@ this.Content = segmentedControl;
 
 {% endtabs %} 
 
-![SfSegmentedControl with collection of SfSegmentItem](images/Data-source/Xamarin_Forms_SegmentItemCollection.png)    
+![SfSegmentedControl with a collection of SfSegmentItems](images/Data-source/Xamarin_Forms_SegmentItemCollection.png)
 
-## Custom views
+## Custom Views
 
 Custom views or images can be added as segments in the segmented control.
 
-The items inside the [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_ItemsSource) can be added in the code behind as below.
+Items inside the [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_ItemsSource) property can be added in the code-behind as shown below:
 
 {% highlight c# %}
 public class ViewModel
@@ -219,6 +219,4 @@ segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
 
 {% endtabs %}
 
-![SfSegmentedControl with collection of custom object](images/Data-source/Xamarin_Forms_ViewCollection.png)
-
-
+![SfSegmentedControl with a collection of custom objects](images/Data-source/Xamarin_Forms_ViewCollection.png)

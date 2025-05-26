@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Grouping in Xamarin Radio Button control | Syncfusion
-description: Learn here all about Grouping support in Syncfusion Xamarin Radio Button (SfRadioButton) control and more.
-platform: xamarin
+title: Grouping in Xamarin Radio Button Control | Syncfusion
+description: Learn about grouping support in Syncfusion Xamarin Radio Button (SfRadioButton) control and more.
+platform: Xamarin
 control: SfRadioButton
 documentation: ug 
 keywords: button, SfRadioButton, RadioButton, SfRadioGroup, GroupKey
@@ -13,9 +13,9 @@ keywords: button, SfRadioButton, RadioButton, SfRadioGroup, GroupKey
 
 ## Group Key
 
-The [`GroupKey`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html#Syncfusion_XForms_Buttons_SfRadioButton_GroupKey) in [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html) allows you to group a set of radio buttons present inside any layout. By grouping in this way, you can select only one radio button that comes under same [`GroupKey`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html#Syncfusion_XForms_Buttons_SfRadioButton_GroupKey) at a time.
+The [`GroupKey`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html#Syncfusion_XForms_Buttons_SfRadioButton_GroupKey) property in [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioButton.html) allows you to group a set of radio buttons within any layout. Grouping enables the selection of only one radio button that falls under the same `GroupKey` at any given time.
 
-* [`CheckedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroupKey.html#Syncfusion_XForms_Buttons_SfRadioGroupKey_CheckedItem) - Gets the current checked item from radio group.
+* [`CheckedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroupKey.html#Syncfusion_XForms_Buttons_SfRadioGroupKey_CheckedItem): Retrieves the currently selected item from the radio group.
 
 {% tabs %}
 {% highlight xaml %}
@@ -60,16 +60,16 @@ flexLayout.Children.Add(volvo);
 
 ![GroupKey support for SfRadioButton](Images/GroupKey.png)
 
-### CheckedChanged event
+### CheckedChanged Event
 
-The [`CheckedChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroupKey.html#Syncfusion_XForms_Buttons_SfRadioGroupKey_CheckedChanged) event of [`SfRadioGroupKey`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroupKey.html) occurs when a checked item is changed. The argument contains the following information:
+The [`CheckedChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroupKey.html#Syncfusion_XForms_Buttons_SfRadioGroupKey_CheckedChanged) event of [`SfRadioGroupKey`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroupKey.html) occurs when the selected item changes. The argument includes:
 
-* [`PreviousItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.CheckedChangedEventArgs.html#Syncfusion_XForms_Buttons_CheckedChangedEventArgs_PreviousItem) – Gets the previously checked radio button from group.
-* [`CurrentItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.CheckedChangedEventArgs.html#Syncfusion_XForms_Buttons_CheckedChangedEventArgs_CurrentItem) – Gets the currently checked radio button from group.
+* [`PreviousItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.CheckedChangedEventArgs.html#Syncfusion_XForms_Buttons_CheckedChangedEventArgs_PreviousItem): Retrieves the previously selected radio button from the group.
+* [`CurrentItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.CheckedChangedEventArgs.html#Syncfusion_XForms_Buttons_CheckedChangedEventArgs_CurrentItem): Retrieves the currently selected radio button from the group.
 
 ## SfRadioGroup
 
-[`SfRadioGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroup.html) is a container that contains a set of radio buttons. When you select a radio button in a radio group, all other items will be deselected automatically. At a time, you can select only one radio button from the same radio group. It also contains the [`CheckedChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroup.html#Syncfusion_XForms_Buttons_SfRadioGroup_CheckedChanged) event and the [`CheckedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroup.html#Syncfusion_XForms_Buttons_SfRadioGroup_CheckedItem) property.
+[`SfRadioGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroup.html) is a container that houses a set of radio buttons. Selecting a radio button in a group will automatically deselect all other items, allowing only one selected option at a time. It also features the [`CheckedChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroup.html#Syncfusion_XForms_Buttons_SfRadioGroup_CheckedChanged) event and the [`CheckedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroup.html#Syncfusion_XForms_Buttons_SfRadioGroup_CheckedItem) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -99,7 +99,7 @@ radioGroup.Children.Add(creditCard);
 
 ### Orientation in SfRadioGroup
 
-[`SfRadioGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroup.html) supports horizontal and vertical orientations. By default, [`SfRadioGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroup.html) is rendered with vertical orientation. You can the change the orientation by using the [`Orientation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SwitchOrientation.html) property.
+[`SfRadioGroup`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroup.html) supports both horizontal and vertical orientations. By default, it is rendered in vertical orientation. You can change the orientation using the [`Orientation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SwitchOrientation.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -125,8 +125,8 @@ radioGroup.Children.Add(creditCard);
 {% endhighlight %}
 {% endtabs %}
 
-![RadioGroup horizontal orientation](Images/Orientation.png)
+![RadioGroup Horizontal Orientation](Images/Orientation.png)
 
-## See also
+## See Also
 
-[How to get the selected Xamarin.Forms radio button (SfRadioButton)](https://support.syncfusion.com/kb/article/9506/how-to-get-the-selected-xamarin-forms-radiobutton)
+- [How to get the selected Xamarin.Forms radio button (SfRadioButton)](https://support.syncfusion.com/kb/article/9506/how-to-get-the-selected-xamarin-forms-radiobutton)

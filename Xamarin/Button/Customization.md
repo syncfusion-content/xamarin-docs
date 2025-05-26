@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Customization in Xamarin Button control | Syncfusion
-description: Learn here all about Customization support in Syncfusion Xamarin Button (SfButton) control and more.
-platform: xamarin
-control: sfbutton
+title: Customization in Xamarin Button Control | Syncfusion
+description: Discover the customization capabilities of the Syncfusion Xamarin Button (SfButton) control, including text, background, and image properties.
+platform: Xamarin
+control: SfButton
 documentation: ug
 ---
 
 # Customization in Xamarin Button (SfButton)
 
-The [Xamarin Button](https://www.syncfusion.com/xamarin-ui-controls/xamarin-button) control supports to customize the border color, image width, corner radius, background color, and more. The button control can be customized using the following properties:
+The [Xamarin Button](https://www.syncfusion.com/xamarin-ui-controls/xamarin-button) control supports customization options such as border color, image width, corner radius, and background color. The button control can be customized using the following properties:
 
 ## Text Customization
 
-The text inside the button can be customized by its text color, font size, font attributes, font family and text alignment.
+You can customize the text inside the button by modifying text color, font size, font attributes, font family, and text alignment.
 
 ### TextColor
 
-The [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_TextColor) property is used to customize the color of text in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
+The [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_TextColor) property customizes the text color in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -39,7 +39,7 @@ button.TextColor = Color.White;
 
 ### FontSize
 
-The [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_FontSize) property is used to customize the size of text in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
+The [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_FontSize) property customizes the text size in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -61,7 +61,7 @@ button.FontSize = 18;
 
 ### FontAttributes
 
-The [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_FontAttributes) property is used to customize the font style of text in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
+The [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_FontAttributes) property customizes the font style of text in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -79,11 +79,11 @@ button.FontAttributes = FontAttributes.Italic;
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton with fontattributes](images/Button_fontattributes.png)
+![SfButton with font attributes](images/Button_fontattributes.png)
 
 ### FontFamily
 
-The [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_FontFamily) property is used to customize the font family of text in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
+The [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_FontFamily) property customizes the font family of text in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -101,11 +101,11 @@ button.FontFamily = "Arial";
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton with fontfamily](images/Button_fontfamily.png)
+![SfButton with font family](images/Button_fontfamily.png)
 
 ### TextAlignment
 
-The [`HorizontalTextAlignment `](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_HorizontalTextAlignment) and [`VerticalTextAlignment `](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_VerticalTextAlignment) properties are used to customize the alignment of text in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
+The [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_HorizontalTextAlignment) and [`VerticalTextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_VerticalTextAlignment) properties customize text alignment in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -126,11 +126,11 @@ button.VerticalTextAlignment = TextAlignment.Center;
 
 ## Background Customization
 
-The background of the button can be customized by its background color, border color, border width and corner radius.
+Customize the button's background by modifying background color, border color, border width, and corner radius.
 
 ### BackgroundColor
 
-The [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_BackgroundColor) property is used to customize the background color of [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
+The [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_BackgroundColor) property customizes the background color of [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -152,7 +152,7 @@ button.BackgroundColor = Color.DeepSkyBlue;
 
 ### BorderColor
 
-The [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_BorderColor) property is used to customize the color of border in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
+The [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_BorderColor) property customizes the border color in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -175,7 +175,7 @@ button.BorderColor = Color.Red;
 
 ### BorderWidth
 
-The [`BorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_BorderWidth) property is used to customize the thickness of border in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html). 
+The [`BorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_BorderWidth) property customizes the border thickness in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -196,7 +196,7 @@ button.BorderColor = Color.Red;
 
 ### BorderThickness
 
-The [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Border.SfBorder.html#Syncfusion_XForms_Border_SfBorder_BorderThickness) property is used to customize the border thickness of the [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html) on four sides.
+The [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Border.SfBorder.html#Syncfusion_XForms_Border_SfBorder_BorderThickness) property customizes the border thickness on all four sides of the [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -217,11 +217,11 @@ button.BorderThickness = new Thickness (0,0,0,5);
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton with borderthickness](images/Button_borderthickness.png)
+![SfButton with border thickness](images/Button_borderthickness.png)
 
 ### CornerRadius
 
-The [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Border.SfBorder.html#Syncfusion_XForms_Border_SfBorder_CornerRadius) property is used to customize the rounded edges in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html) as demonstrated in the following code sample.
+The [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Border.SfBorder.html#Syncfusion_XForms_Border_SfBorder_CornerRadius) property customizes the rounded edges in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html), as demonstrated in the following code sample.
 
 {% tabs %}
 {% highlight xaml %}
@@ -239,15 +239,15 @@ button.CornerRadius = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton with cornerradius](images/Button_cornerradius.png)
+![SfButton with corner radius](images/Button_cornerradius.png)
 
 ## Image Customization
 
-The image can be customized by its show icon, image source, image width and image alignment.
+The image can be customized by configuring the show icon option, image source, image width, and image alignment.
 
 ### ShowIcon
 
-You can enable the Icon image using the [`ShowIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ShowIcon) property to know whether any image appears to the [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
+You can enable the icon image using the [`ShowIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ShowIcon) property to determine if an image appears on the [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -268,7 +268,7 @@ button.ShowIcon = True;
 
 ## Image
 
-The [`Image`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Image) property is used to customize the height, width, image source and aspect for the image of [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
+The [`Image`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Image) property customizes the height, width, image source, and aspect for the image of [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -300,9 +300,9 @@ button.Image = new Image()
 
 ### ImageSource
 
-The [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageSource) property is used to customize the icon image of [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html) by adding a custom image.
+The [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageSource) property customizes the icon image on [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html) by adding a custom image.
 
-N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ShowIcon) property to enable the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageSource) property. 
+> Note: Enable the [`ShowIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ShowIcon) property to activate the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageSource) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -321,13 +321,13 @@ button.ShowIcon = True;
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton with image with content](images/Button_icon.png)
+![SfButton with icon image](images/Button_icon.png)
 
 ### ImageWidth
 
-The [`ImageWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageWidth) property is used to customize the width of icon image in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
+The [`ImageWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageWidth) property customizes the width of the icon image in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
 
-N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ShowIcon) property to enable the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageSource) property. 
+> Note: Enable the [`ShowIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ShowIcon) property to activate the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageSource) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -349,18 +349,17 @@ button.ImageWidth = 50;
 
 ### ImageAlignment 
 
-The [`ImageAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageAlignment) property is used to customize the alignment of icon image in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html). The following options are available in [`ImageAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageAlignment):
+The [`ImageAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageAlignment) property customizes the alignment of the icon image in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html). The following options are available:
 
-* [`Start`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion_XForms_Buttons_Alignment_Start) - Places the image at the left most of [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
-* [`End`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion_XForms_Buttons_Alignment_End) - Places the image at the right most of [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
-* [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion_XForms_Buttons_Alignment_Top) - Places the image at the top of the text.
-* [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion_XForms_Buttons_Alignment_Bottom) - Places the image at the bottom of the text.
-* [`Left`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion_XForms_Buttons_Alignment_Left) - Although the flow direction has been applied, it always places the image in the left part of [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html). For example, in the direction of the RTL flow, the image setting will move to the right. Use ['Left'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion_XForms_Buttons_Alignment_Left) alignment to show this in the same left position.
-* [`Right`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion_XForms_Buttons_Alignment_Right) - Although flow direction has been applied, the image is always located in the right part of [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html). For example, in the direction of the RTL flow, the image setting will move to the left. But use ['Right'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion_XForms_Buttons_Alignment_Right) alignment to show this in the same right position.
+- [`Start`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion_XForms_Buttons_Alignment_Start) - Places the image on the left edge of [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
+- [`End`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion_XForms_Buttons_Alignment_End) - Places the image on the right edge of [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
+- [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion_XForms_Buttons_Alignment_Top) - Places the image above the text.
+- [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion_XForms_Buttons_Alignment_Bottom) - Places the image below the text.
+- [`Left`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion_XForms_Buttons_Alignment_Left) - Ensures the image remains on the left part of [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html) despite directional changes.
+- [`Right`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion_XForms_Buttons_Alignment_Right) - Ensures the image remains on the right part of [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html) despite directional changes.
+> Note: Enable the [`ShowIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ShowIcon) property to activate the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageSource) property.
 
-N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ShowIcon) property to enable the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageSource) property. 
-
-**End image alignment in `SfButton`**
+**End Image Alignment in `SfButton`**
 
 {% tabs %}
 {% highlight xaml %}
@@ -397,9 +396,9 @@ SfButton button = new SfButton()
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton with image with icon image with end alignment](images/Button_imagealignment_end.png)
+![SfButton with end image alignment](images/Button_imagealignment_end.png)
 
-**Start image alignment in `SfButton`**
+**Start Image Alignment in `SfButton`**
 
 {% tabs %}
 {% highlight xaml %}
@@ -437,9 +436,9 @@ SfButton button = new SfButton()
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton with image with icon image with start alignment](images/Button_imagealignment_start.png)
+![SfButton with start image alignment](images/Button_imagealignment_start.png)
 
-**Top image alignment in `SfButton`**
+**Top Image Alignment in `SfButton`**
 
 {% tabs %}
 {% highlight xaml %}
@@ -477,9 +476,9 @@ SfButton button = new SfButton()
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton with image with icon image with top alignment](images/Button_imagealignment_top.png)
+![SfButton with top image alignment](images/Button_imagealignment_top.png)
 
-**Bottom image alignment in `SfButton`**
+**Bottom Image Alignment in `SfButton`**
 
 {% tabs %}
 {% highlight xaml %}

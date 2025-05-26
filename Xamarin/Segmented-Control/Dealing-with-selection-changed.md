@@ -1,21 +1,21 @@
 ---
 layout: post
 title: Dealing with selection in Xamarin Segmented Control | Syncfusion<sup>&reg;</sup>
-description: Learn here all about Dealing with selection changed support in Syncfusion<sup>&reg;</sup> Xamarin Segmented Control (SfSegmentedControl) and more.
+description: Learn how to handle selection change in Syncfusion<sup>&reg;</sup> Xamarin Segmented Control (SfSegmentedControl).
 platform: Xamarin
 control: SegmentedControl
 documentation: ug
 ---
 
-# Dealing with selection changed in Xamarin Segmented Control
+# Dealing with Selection Changed in Xamarin Segmented Control
 
-The selection changed event occurs when there is a change from one segment item to another in the segmented control. It can be handled by two ways.
+The selection changed event is triggered when there's a transition from one segment item to another within the segmented control. It can be managed in two ways.
 
-## User interface
+## User Interface
 
-When users navigate from one item to another, selection is changed, so that the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectedIndex) value is updated to the new index of the item. The segmented control provides the [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectionChanged) event, which is triggered when the selection is changed with the [`SelectionChangedEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SelectionChangedEventArgs.html).
+When users navigate from one item to another, the selection is updated, and the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectedIndex) value reflects the new item index. The segmented control provides a [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectionChanged) event, which is triggered during selection change with the [`SelectionChangedEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SelectionChangedEventArgs.html).
 
-[`Index`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SelectionChangedEventArgs.html#Syncfusion_XForms_Buttons_SelectionChangedEventArgs_Index) - Gets the current index value of the selected item.
+- [`Index`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SelectionChangedEventArgs.html#Syncfusion_XForms_Buttons_SelectionChangedEventArgs_Index): Retrieves the current index of the selected item.
 
 {% tabs %}
 
@@ -37,9 +37,8 @@ void Handle_SelectionChanged(object sender, SelectionChangedEventArgs e)
 
 {% endtabs %}
 
-## Selected Index through programmatically.
-
-Users can set the default value programmatically for the selection to be placed. The selection is updated based on the index value given for the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectedIndex). 
+## Programmatically Setting the Selected Index
+Users can programmatically set the default selection value. The selection updates based on the provided [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SelectedIndex) index.
 
 {% tabs %}
 
@@ -57,12 +56,11 @@ segmentedControl.SelectedIndex = 2;
 
 {% endtabs %}
 
+![Selection change illustration](images/Selection-changed/selectionchange.png)
 
-![selectionchange](images/Selection-changed/selectionchange.png)
+## Event to Command
 
-## Event to command
-
-The SegmentedControl event can be converted into commands using [`Behaviors`](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/behaviors/). To achieve this, create a command in the ViewModel class and use [`Behaviors`](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/behaviors/) to associate it to the SegmentedControl event.
+The SegmentedControl event can be converted into commands using [`Behaviors`](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/behaviors/). To achieve this, create a command in the ViewModel class and use [`Behaviors`](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/behaviors/) to link it to the SegmentedControl event.
 
 {% tabs %}
 
@@ -125,8 +123,6 @@ The SegmentedControl event can be converted into commands using [`Behaviors`](ht
 {% endhighlight %}
 {% endtabs %}
 
-Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/xamarin.forms-segmentedcontrol-with-event-to-command-behavior).
+Download the complete source code from GitHub [here](https://github.com/SyncfusionExamples/xamarin.forms-segmentedcontrol-with-event-to-command-behavior).
 
-For more information about the event to command behavior in Xamarin.Forms, please refer to [this](https://learn.microsoft.com/en-us/samples/xamarin/xamarin-forms-samples/behaviors-eventtocommandbehavior/) link.
-
-
+For more information about event-to-command behavior in Xamarin.Forms, refer to [this link](https://learn.microsoft.com/en-us/samples/xamarin/xamarin-forms-samples/behaviors-eventtocommandbehavior/).

@@ -1,27 +1,24 @@
 ---
 layout: post
-title: Dealing with Suggestion Box in Xamarin ComboBox control | Syncfusion
-description: Learn here all about Dealing with Suggestion Box support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
-platform: xamarin
+title: Dealing with Suggestion Box in Xamarin ComboBox Control | Syncfusion
+description: Learn about managing the Suggestion Box in the Syncfusion Xamarin ComboBox (SfComboBox) control.
+platform: Xamarin
 control: SfComboBox
 documentation: ug
 ---
 
 # Dealing with Suggestion Box in Xamarin ComboBox (SfComboBox)
 
-Suggestion box is a drop-down list box, which displays the filtered suggestions inside a popup. This section explains the properties that deals with the drop-down list in [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) control.
+The suggestion box is a drop-down list that displays filtered suggestions in a popup. This section discusses the properties associated with the drop-down list in the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html).
 
-## Suggestion box placement mode
+## Suggestion Box Placement Mode
  
-The drop-down that shows the filtered items will be placed automatically based on the available space and can also be customized using the [`SuggestionBoxPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SuggestionBoxPlacement) property.
+The drop-down showing filtered items is automatically placed based on available space and can be customized using the [`SuggestionBoxPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SuggestionBoxPlacement) property.
  
-[`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html#Syncfusion_XForms_ComboBox_SuggestionBoxPlacement_Top) - Drop-down will be placed above the text box.
- 
-[`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html#Syncfusion_XForms_ComboBox_SuggestionBoxPlacement_Bottom) - Drop-down will be placed below the text box.
-
-[`Auto`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html#Syncfusion_XForms_ComboBox_SuggestionBoxPlacement_Auto) - Drop-down will be placed based on the available space either top or bottom of the text box.
-
-[`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html#Syncfusion_XForms_ComboBox_SuggestionBoxPlacement_None) -  Drop-down will not be shown with the filtered items. 
+- [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html#Syncfusion_XForms_ComboBox_SuggestionBoxPlacement_Top): Drop-down appears above the text box.
+- [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html#Syncfusion_XForms_ComboBox_SuggestionBoxPlacement_Bottom): Drop-down appears below the text box.
+- [`Auto`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html#Syncfusion_XForms_ComboBox_SuggestionBoxPlacement_Auto): Drop-down is placed depending on available space either above or below the text box.
+- [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html#Syncfusion_XForms_ComboBox_SuggestionBoxPlacement_None): Drop-down with filtered items will not be shown.
 
 {% tabs %}
 
@@ -794,3 +791,4 @@ namespace SfComboBox_Sample
 ![Filtered_Items_Image](images/ComboBox-Filtering-Options/Filtered_Items_SfComboBox.png)
 
 N> Retrieve the filter suggestion items sample is available in this [link](https://github.com/SyncfusionExamples/xamarin-forms-sfcombobox).
+

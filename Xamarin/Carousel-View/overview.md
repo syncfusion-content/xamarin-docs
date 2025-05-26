@@ -1,21 +1,19 @@
 ---
 layout: post
-title: About Xamarin Carousel View control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin Carousel View (SfCarousel) control, its elements and more.
-platform: xamarin
-control: Carousel
+title: About Xamarin Carousel View Control | Syncfusion
+description: Introduction to the Syncfusion Xamarin Carousel View (SfCarousel) control, its features, and more.
+platform: Xamarin
+control: SfCarousel
 documentation: ug
 ---
 
 # Xamarin Carousel View (SfCarousel) Overview
 
-The Essential Xamarin Carousel control allows navigating through image data in an interactive way so that they can be viewed or selected. Also, provides various customization options for its item arrangements.
-It has been available in Xamarin.Forms,Xamarin.Android and Xamarin.iOS platforms also.
+The Essential Xamarin Carousel control offers an interactive way to navigate through image data, allowing users to view or select items. This control supports extensive customization options for item arrangements and is available on Xamarin.Forms, Xamarin.Android, and Xamarin.iOS platforms.
+![Carousel Overview](images/carousel.png)
 
-![Carousel OverView](images/carousel.png)
+## Key Features
 
-## Key Features:
-
-* [`Offset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_Offset) - Support to specify the space between the unselected items in SfCarousel.
-* [`Rotation Angle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_RotationAngle) - Options to rotate all the items to a specified angle.
-* [`Duration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_Duration) - Support to specify the time taken to move an item to the selected item position.
+* [`Offset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_Offset) - Enables specifying the space between unselected items in SfCarousel.
+* [`Rotation Angle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_RotationAngle) - Allows rotating all items to a specified angle.
+* [`Duration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_Duration) - Specifies the time taken to move an item to the selected position.

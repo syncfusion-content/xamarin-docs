@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Header and Footer in Xamarin ComboBox control | Syncfusion
-description: Learn here all about Header and Footer support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
-platform: xamarin
+title: Header and Footer in Xamarin ComboBox Control | Syncfusion
+description: Learn about Header and Footer support in the Syncfusion Xamarin ComboBox (SfComboBox) control and more.
+platform: Xamarin
 control: SfComboBox
 documentation: ug
 ---
 # Header and Footer in Xamarin ComboBox (SfComboBox)
 
-You can provide header and footer views in the suggestion list in [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) by enabling the [`ShowDropDownHeaderView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ShowDropDownHeaderView) and the [`ShowDropDownFooterView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ShowDropDownFooterView) properties. 
+You can provide header and footer views in the suggestion list of [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) by enabling the [`ShowDropDownHeaderView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ShowDropDownHeaderView) and [`ShowDropDownFooterView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ShowDropDownFooterView) properties.
 
-## Header content
+## Header Content
 
-You can provide content for header at the top of the ComboBox's Suggestion box. The [`DropDownHeaderView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DropDownHeaderView) property is used to set the content of the header. The height of the header in the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) can be adjusted using the [`DropDownHeaderViewHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DropDownHeaderViewHeight) property.
+You can provide content for the header at the top of the ComboBox's suggestion box. The [`DropDownHeaderView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DropDownHeaderView) property is used to set the header's content. The header's height can be adjusted using the [`DropDownHeaderViewHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DropDownHeaderViewHeight) property.
 
 {% tabs %}
 
@@ -163,4 +163,5 @@ Content = layout;
 {% endtabs %}
 
 ![Footer Image](images/Header-and-Footer/Footer.png)
+
 

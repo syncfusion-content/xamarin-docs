@@ -1,22 +1,20 @@
 ---
 layout: post
 title: Setting Toggle Animations in Xamarin Navigation Drawer | Syncfusion
-description: Learn here all about Setting Toggle Animations support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
+description: Learn about setting toggle animation support in the Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug
 ---
 # Setting Toggle Animations in Xamarin Navigation Drawer
 
-The drawer toggling animation can be changed using [`Transition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_Transition) property and it can be set to three different values. They are
+The drawer toggling animation can be changed using the [`Transition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_Transition) property, which can be set to one of three different values:
 
-* [`SlideOnTop`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Transition.html#Syncfusion_SfNavigationDrawer_XForms_Transition_SlideOnTop)
+- [`SlideOnTop`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Transition.html#Syncfusion_SfNavigationDrawer_XForms_Transition_SlideOnTop)
+- [`Push`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Transition.html#Syncfusion_SfNavigationDrawer_XForms_Transition_Push)
+- [`Reveal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Transition.html#Syncfusion_SfNavigationDrawer_XForms_Transition_Reveal)
 
-* [`Push`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Transition.html#Syncfusion_SfNavigationDrawer_XForms_Transition_Push)
-
-* [`Reveal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Transition.html#Syncfusion_SfNavigationDrawer_XForms_Transition_Reveal)
-
-N> The default animation is [`SlideOnTop`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Transition.html#Syncfusion_SfNavigationDrawer_XForms_Transition_SlideOnTop).
+> Note: The default animation is [`SlideOnTop`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Transition.html#Syncfusion_SfNavigationDrawer_XForms_Transition_SlideOnTop).
 
 ## SlideOnTop
 
@@ -99,7 +97,7 @@ namespace NaviSample
 
 ## Push
 
-The navigation pane is hidden. It pushes the main content area in opposite side up to drawer width when opened. It can be set as shown below:
+The navigation pane is hidden. It pushes the main content area in the opposite direction up to the drawer width when opened. It can be set as shown below:
 
 {% tabs %}	
 
@@ -178,7 +176,7 @@ namespace NaviSample
 
 ## Reveal
 
-The navigation pane is hidden behind the main content. Main content moves away in opposite side up to drawer width to show the drawer content. It can be set as shown below:
+The navigation pane is hidden behind the main content. The main content moves away in the opposite direction up to the drawer width to reveal the drawer content. It can be set as shown below:
 
 {% tabs %}
 

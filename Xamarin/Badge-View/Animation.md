@@ -1,9 +1,9 @@
 ---
 
 layout: post
-title: Badge animation with Syncfusion Badge View control for Xamarin.Forms
-description: Learn how to set Syncfusion badge view animation in Xamarin.Forms platform
-platform: xamarin
+title: Badge Animation with Syncfusion Badge View Control for Xamarin.Forms
+description: Learn how to configure badge view animations in the Syncfusion Xamarin.Forms platform.
+platform: Xamarin
 control: SfBadgeView
 documentation: ug
 
@@ -52,4 +52,4 @@ Content = sfBadgeView;
 
 {% endtabs %}
 
-![Xamarin BadgeView Font Customization](animation_images/xamarin.forms-badge-view-animation.gif)
+![Xamarin BadgeView Animation](animation_images/xamarin.forms-badge-view-animation.gif)

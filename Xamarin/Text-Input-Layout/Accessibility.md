@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in Xamarin Text Input Layout control | Syncfusion
-description: Learn here all about Accessibility support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
+title: Accessibility in Xamarin Text Input Layout Control | Syncfusion
+description: Learn about accessibility support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
 platform: Xamarin
 control: SfTextInputLayout
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Accessibility in SfTextInputLayout
 
-The text input layout control has built-in AutomationId for inner elements. To keep unique id for inner elements, AutomationId of inner elements are updated based on SfTextInputLayout's AutomationId. For example, if SfTextInputLayout's AutomationId is set as sfTextInputLayout.AutomationId = "textInputLayout", then AutomationId of inner elements will be updated as follows.
+The text input layout control has built-in `AutomationId` support for its inner elements. The `AutomationId` of inner elements is updated based on the `AutomationId` of the `SfTextInputLayout` to ensure uniqueness. For example, if the `AutomationId` of `SfTextInputLayout` is set as `sfTextInputLayout.AutomationId = "textInputLayout"`, then the `AutomationId` of inner elements will be updated accordingly.
 
 <table>
 <tr>

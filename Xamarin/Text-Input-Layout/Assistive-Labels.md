@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Assistive Labels in Xamarin Text Input Layout control | Syncfusion
-description: Learn here all about Assistive Labels support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
-platform: xamarin
+title: Assistive Labels in Xamarin Text Input Layout Control | Syncfusion
+description: Learn about assistive labels support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
+platform: Xamarin
 control: SfTextInputLayout
 documentation: ug
 ---
 
 # Assistive Labels in Xamarin Text Input Layout (SfTextInputLayout)
 
-Assistive labels provide additional information about text entered in the input view controls.
+Assistive labels provide additional information about the text entered in the input view controls.
 
-## Helper text
+## Helper Text
 
-Helper text conveys additional guidance about the input field such as how it will be used. It can be set using the [HelperText](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_HelperText) property.
+Helper text provides additional guidance about the input field, such as how it will be used. It can be set using the [HelperText](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_HelperText) property.
 
 {% tabs %} 
 
@@ -40,11 +40,11 @@ inputLayout.InputView = new Entry();
 
 The visibility of the helper text can be disabled by setting the [ShowHelperText](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ShowHelperText) property to false. By default, it is set to true.
 
-![helper label](Assistive-Labels-images/helper.PNG)
+![Helper label](Assistive-Labels-images/helper.PNG)
 
-## Error message
+## Error Message
 
-When the text input is not accepted, an error message will display instructions to fix it. Error messages will be displayed below the input line till entering the correct text. It can be set using the [ErrorText](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ErrorText) property, but it will be displayed only when the [HasError](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_HasError) property is set to `true`.
+When the text input is not accepted, an error message will display instructions to correct it. Error messages remain below the input line until the correct text is entered. It can be set using the [ErrorText](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ErrorText) property, but it will only be displayed when the [HasError](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_HasError) property is set to `true`.
 
 {% tabs %} 
 
@@ -74,13 +74,13 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![error label](Assistive-Labels-images/error.gif)
+![Error label](Assistive-Labels-images/error.gif)
 
-N> Error validations should be done in the application level.
+> **Note:** Error validations should be handled at the application level.
 
-## Character counter
+## Character Counter
 
-Character counter is used when you need to limit the characters. Character limit can be set using the [CharMaxLength](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_CharMaxLength) property. The character counter can be enabled by setting the [ShowCharCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ShowCharCount) property to true.
+The character counter is used when you need to limit the number of characters. The character limit can be set using the [CharMaxLength](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_CharMaxLength) property. The character counter can be enabled by setting the [ShowCharCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ShowCharCount) property to true.
 
 {% tabs %} 
 
@@ -110,11 +110,11 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![character counter label](Assistive-Labels-images/charcount.gif)
+![Character counter label](Assistive-Labels-images/charcount.gif)
 
-N> When character count reaches the maximum character length, the error color will be applied to hint, border, and counter label.
+> **Note:** When the character count reaches the maximum character length, the error color is applied to the hint, border, and counter label.
 
-## Reserve spaces for assistive labels
+## Reserve Spaces for Assistive Labels
 
 The reserved spaces for assistive labels can be removed by setting the [ReserveSpaceForAssistiveLabels](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ReserveSpaceForAssistiveLabelsProperty) property to false.
 
@@ -143,14 +143,14 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![Reserve space for assistive label img](Assistive-Labels-images/ReserveSpaceAPI.png)
+![Reserve space for assistive label](Assistive-Labels-images/ReserveSpaceAPI.png)
 
-## See also
+## See Also
 
-[How to remove the space at the bottom of SfTextInputLayout](https://support.syncfusion.com/kb/article/9557/how-to-remove-the-space-at-the-bottom-of-textinputlayout)
+- [How to remove the space at the bottom of SfTextInputLayout](https://support.syncfusion.com/kb/article/9557/how-to-remove-the-space-at-the-bottom-of-textinputlayout)
 
-[How to apply LineBreakMode for labels in SfTextInputLayout](https://support.syncfusion.com/kb/article/9518/how-to-apply-linebreakmode-for-labels-in-xamarin-text-input-layout)
+- [How to apply LineBreakMode for labels in SfTextInputLayout](https://support.syncfusion.com/kb/article/9518/how-to-apply-linebreakmode-for-labels-in-xamarin-text-input-layout)
 
-[How to customize the properties of outline border colors, hint name, helper text, error text, and char count](https://support.syncfusion.com/kb/article/10194/how-to-customize-the-properties-of-outline-border-colors-hint-name-helper-text-error-text)
+- [How to customize the properties of outline border colors, hint name, helper text, error text, and char count](https://support.syncfusion.com/kb/article/10194/how-to-customize-the-properties-of-outline-border-colors-hint-name-helper-text-error-text)
 
-[How to customize the color of border and labels in SfTextInputLayout](https://support.syncfusion.com/kb/article/9248/how-to-customize-the-color-of-border-and-labels-in-sftextinputlayout)
+- [How to customize the color of border and labels in SfTextInputLayout](https://support.syncfusion.com/kb/article/9248/how-to-customize-the-color-of-border-and-labels-in-sftextinputlayout)

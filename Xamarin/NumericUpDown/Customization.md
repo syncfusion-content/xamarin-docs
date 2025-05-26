@@ -1,18 +1,16 @@
 ---
 layout: post
-title: Different customization in Xamarin NumericUpDown control | Syncfusion
-description: Learn here different customization support in Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control and more.
+title: Customization Options in Xamarin NumericUpDown Control | Syncfusion
+description: Explore the various customization options available in the Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
 # Customization in Xamarin NumericUpDown (SfNumericUpDown)
 
-## Parsing the value in SfNumericUpDown
+## Parsing Mode in SfNumericUpDown
 
-The value of [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) is parsed based on the [`ParsingMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_ParsingMode) property. The parsing mode is an enum property with values of [`Double`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.ParsingMode.html#Syncfusion_SfNumericUpDown_XForms_ParsingMode_Double) and [`Decimal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.ParsingMode.html#Syncfusion_SfNumericUpDown_XForms_ParsingMode_Decimal). You have options to update the value in double or decimal.
-
-The following code demonstrates the decimal parsing mode, which can be set using the [`ParsingMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_ParsingMode) property.
+The value of [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) is determined by the [`ParsingMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_ParsingMode) property. This enum property supports [`Double`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.ParsingMode.html#Syncfusion_SfNumericUpDown_XForms_ParsingMode_Double) and [`Decimal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.ParsingMode.html#Syncfusion_SfNumericUpDown_XForms_ParsingMode_Decimal) values, allowing value updates in either format.
 
 {% tabs %}
 
@@ -37,9 +35,9 @@ N> The default value of ParsingMode is Double.
 
 ![ParsingMode](images/value.PNG)
 
-## Set maximum number of decimal digits in SfNumericUpDown
+## Maximum Decimal Digits in SfNumericUpDown
 
-The maximum number of digits to be displayed after the decimal point can be specified by using [`MaximumDecimalDigits `](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_MaximumDecimalDigits) property. 
+Specify the maximum number of digits after the decimal point using the [`MaximumDecimalDigits`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_MaximumDecimalDigits) property.
 
 N> The [`MaximumDecimalDigits`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_MaximumDecimalDigits) property is provided with positive value only. By default, the value of this property is 2.
 
@@ -65,9 +63,9 @@ this.Content = NumericUpDown;
 
 ![Display the SfNumericUpDown control with MaximumDecimalDigits](images/MaximumDecimalDigits.PNG)
 
-## Assign nullable value in SfNumericUpDown
+## Nullable Values in SfNumericUpDown
 
-The null values can be set in [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Value) property, by setting [`AllowNull`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_AllowNull) property value to true.
+Assign null values to the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Value) property by setting the [`AllowNull`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_AllowNull) property to true.
 
 N> By default, the property value is false.
 
@@ -91,9 +89,9 @@ this.Content = NumericUpDown;
 
 ![AllowNull](images/AllowNull.png)
 
-## Set hint text in SfNumericUpDown
+## Hint Text in SfNumericUpDown
 
-The [`WaterMark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Watermark) property can be used to provide a hint that helps the user to get started with their input. The watermark text is visible when value is empty or null.
+Use the [`Watermark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Watermark) property to provide a hint for the user input. The watermark text is visible when the value is empty or null.
 
 {% tabs %}
 
@@ -114,11 +112,11 @@ this.Content = NumericUpDown;
 
 {% endtabs %}
 
-![WaterMark](images/WaterMark.png)
+![Watermark](images/Watermark.png)
 
-## Auto reverse in SfNumericUpDown
+## Auto Reverse in SfNumericUpDown
 
-When incrementing, the control will begin at the [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Minimum) value and progress to the [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Maximum) value, and vice-versa.
+With `AutoReverse`, the control iterates from the [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Minimum) to the [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Maximum) value, and vice-versa.
 
 N> By default the property value is false.
 
@@ -142,14 +140,10 @@ this.Content = NumericUpDown;
 
 {% endtabs %}
 
-![NumericUpDown Autoreverse gif](images/AutoReverse.gif)
+![NumericUpDown AutoReverse](images/AutoReverse.gif)
 
-## Continuous spinning between ranges
-
-Users can restrict the values to a specific range by setting the [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Maximum) and [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Minimum) property values.
-
-N> By default, the value of minimum property is Double.MinValue and the value of maximum property is Double.MaxValue.
-In iOS, if typed value is less than minimum value, the minimum value will be validated.
+## Value Range Restriction in SfNumericUpDown
+Restrict values within a specific range using the [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Maximum) properties.
 
 {% tabs %}
 
@@ -193,9 +187,9 @@ this.Content = stack;
 
 ![Display the value with maximum and minimum](images/minimum_maximum.png)
 
-## Step value support in SfNumericUpDown
+## Step Value in SfNumericUpDown
 
-The frequency with which values gets incremented and decremented can be decided using the [`StepValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_StepValue) property.
+Set the frequency of value increments and decrements using the [`StepValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_StepValue) property.
 
 N> By default the property value is 1.
 
@@ -217,11 +211,11 @@ this.Content = numericUpDown;
 
 {% endtabs %}
 
-![NumericUpDown StepValue gif](images/StepValue.gif)
+![NumericUpDown StepValue](images/StepValue.gif)
 
-## Set edit option in SfNumericUpDown
+## Editing Options in SfNumericUpDown
 
-The [`IsEditable`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_IsEditable) property is used to decide whether users need to perform edit operations in the input field.
+The [`IsEditable`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_IsEditable) property determines if users can edit the input field.
 
 N> By default, the value of [`IsEditable`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_IsEditable) property is true.
 
@@ -245,9 +239,9 @@ this.Content = numericUpDown;
 
 ![Allow editing to the SfNumericUpDown control](images/IsEditableMode.PNG)
 
-## Selection support in SfNumericUpDown
+## Selection Options in SfNumericUpDown
 
-The [`SelectAllOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_SelectAllOnFocus) property is used to specify whether the text should be selected or not when the control gets the focus.
+The [`SelectAllOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_SelectAllOnFocus) property defines whether the text is selected when the control gets focus.
 
 {% tabs %}
 
@@ -270,8 +264,8 @@ this.Content = NumericUpDown;
 
 ![Display the SfNumericUpDown control with Selection](images/SelectAllOnFocus.PNG)
 
-## See also
+## See Also
 
-[How to restrict the values of SfNumericUpDown within certain range](https://support.syncfusion.com/kb/article/6983/how-to-restrict-the-values-of-sfnumericupdown-within-certain-range)
+[Restricting SfNumericUpDown Values within a Range](https://support.syncfusion.com/kb/article/6983/how-to-restrict-the-values-of-sfnumericupdown-within-certain-range)
 
-[How to set AutoReverse property in SfNumericUpDown](https://support.syncfusion.com/kb/article/6985/how-to-set-autoreverse-property-in-sfnumericupdown)
+[Setting AutoReverse Property in SfNumericUpDown](https://support.syncfusion.com/kb/article/6985/how-to-set-autoreverse-property-in-sfnumericupdown)

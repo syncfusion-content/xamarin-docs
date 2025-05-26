@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in Xamarin Masked Entry control | Syncfusion
-description: Learn here all about Localization support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
+title: Localization in Xamarin Masked Entry Control | Syncfusion
+description: Learn about the localization support in the Syncfusion Xamarin Masked Entry (SfMaskedEdit) control.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
@@ -9,7 +9,7 @@ keywords: mask, SfMaskedEdit, maskededit
 ---
 # Localization in Xamarin Masked Entry (SfMaskedEdit)
 
-The special symbols such as currency symbol, date separator, decimal separator etc., can be localized to any specific culture using the [`Culture`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Culture) property.
+Special symbols, such as the currency symbol, date separator, and decimal separator, can be localized to any specific culture using the [`Culture`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Culture) property.
 
 <table>
 <tr>
@@ -70,6 +70,5 @@ maskedEdit.Culture = new CultureInfo("fr-FR");
 {% endhighlight %}
 {% endtabs %}
 
-Now the ‘$’ will be localized to ‘€’;‘.’ will be localized to ‘,’ and ‘,’ will be localized to ‘ ‘(single white space).
-
+With the above settings, the currency symbol `$` will be localized to `€`, the decimal separator `.` will become `,`, and the group separator `,` will transform into a single whitespace ` `.
 ![Localization support in Xamarin.Forms masked edit](SfMaskedEditImages/Localization.png)

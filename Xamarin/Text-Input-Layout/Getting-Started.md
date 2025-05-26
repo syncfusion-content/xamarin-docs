@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Text Input Layout control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control, its elements and more.
+title: Getting Started with Xamarin Text Input Layout Control | Syncfusion
+description: Learn how to get started with the Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control, including its elements and configuration.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started with Xamarin Text Input Layout (SfTextInputLayout)
 
-This section explains the steps required to configure the [Xamarin Text Input Layout](https://www.syncfusion.com/xamarin-ui-controls/xamarin-text-input-layout) (SfTextInputLayout) control with floating label.
+This section explains the steps required to configure the [Xamarin Text Input Layout](https://www.syncfusion.com/xamarin-ui-controls/xamarin-text-input-layout) (SfTextInputLayout) control with a floating label.
 
-## Assembly deployment
+## Assembly Deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all required assemblies in the installation folders at `{Syncfusion Essential Studio Installed location}\Essential Studio\{Version #}\Xamarin\lib`. For example: `C:\Program Files (x86)\Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib`.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -76,7 +76,7 @@ N> If you are adding the references from toolbox, below steps are not needed.
 
 ### iOS
 
-To launch the text input layout in iOS, call the `SfTextInputLayoutRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the `LoadApplication` method is called as demonstrated in the following code sample.
+To launch the text input layout in iOS, call the `SfTextInputLayoutRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the `LoadApplication` method.
 
 {% highlight C# %} 
 
@@ -93,7 +93,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-To deploy the text input layout in `Release` mode, initialize the core assemblies in the App.xaml.cs file in the UWP project as demonstrated in the following code samples.
+To deploy the text input layout in `Release` mode, initialize the core assemblies in the App.xaml.cs file in the UWP project as follows:
 
 {% highlight C# %} 
 
@@ -114,11 +114,11 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ### Android
 
-Android platform does not require any additional configuration to render the text input layout control.
+The Android platform does not require any additional configuration to render the text input layout control.
 
-## Initializing text input layout
+## Initializing Text Input Layout
 
-Import the [SfTextInputLayout](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html) control namespace in respective page as demonstrated in the following code sample.
+Import the [SfTextInputLayout](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html) control namespace in the respective page:
 
 {% tabs %} 
 
@@ -136,7 +136,7 @@ using Syncfusion.XForms.TextInputLayout;
 
 {% endtabs %}
 
-Add any input view control such as [Entry](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry), [Editor](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor), [SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/overview), [SfNumericUpDown](https://help.syncfusion.com/xamarin/numericupdown/overview), [SfMaskedEdit](https://help.syncfusion.com/xamarin/masked-entry/overview), [SfAutoComplete](https://help.syncfusion.com/xamarin/autocomplete/overview), [SfComboBox](https://help.syncfusion.com/xamarin/combobox/overview), [Picker](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/),[DatePicker](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/datepicker) or [TimePicker](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/timepicker) and add hint label (floating label).
+Add any input view control, such as [Entry](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry), [Editor](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor), [SfNumericTextBox](https://help.syncfusion.com/xamarin/numeric-entry/overview), [SfNumericUpDown](https://help.syncfusion.com/xamarin/numericupdown/overview), [SfMaskedEdit](https://help.syncfusion.com/xamarin/masked-entry/overview), [SfAutoComplete](https://help.syncfusion.com/xamarin/autocomplete/overview), [SfComboBox](https://help.syncfusion.com/xamarin/combobox/overview), [Picker](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/), [DatePicker](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/datepicker), or [TimePicker](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/timepicker), and add a hint label (floating label).
 
 {% tabs %} 
 
@@ -157,8 +157,8 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-### Adding hint
-Floating label for the text input layout can be added by setting the [Hint](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_Hint) property. Visibility of the hint can be collapsed by setting the [ShowHint](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ShowHint) property to `false`. By default, this property is set to `true`.
+### Adding a Hint
+A floating label for the text input layout can be added by setting the [Hint](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_Hint) property. The visibility of the hint can be collapsed by setting the [ShowHint](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ShowHint) property to `false`. By default, this property is `true`.
 
 {% tabs %} 
 
@@ -181,18 +181,17 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-When focusing the input view, the hint label will be moved to the top position; it will be returned to the original position when proceeding further (on unfocused) without entering any value.
+When the input view is focused, the hint label moves to the top position. It returns to the original position if the input view is unfocused without any value entered.
 
-The default translate animation for the hint can be disabled by setting the [EnableHintAnimation](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_EnableHintAnimation) property to `false`. Instead translate animation in hint, you can use the alpha animation by setting the [EnableFloating](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_EnableFloating) property to `false`.
+The default translation animation for the hint can be disabled by setting the [EnableHintAnimation](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_EnableHintAnimation) property to `false`. Instead of a translation animation, you can use an alpha animation by setting the [EnableFloating](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_EnableFloating) property to `false`.
 
-
-Run the project, and check if you get following output to make sure that the project has been configured properly to add the text input layout control.
+Run the project to see the output and ensure that the project has been configured properly to include the text input layout control.
 
 ![Adding hint](Getting-Started_images/hint.gif)
 
-## Enabling password visibility toggle
+## Enabling Password Visibility Toggle
 
-The password visibility toggle is used to show or hide the visibility of characters in the input view added to the control. You can enable this toggle by setting the [EnablePasswordVisibilityToggle](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_EnablePasswordVisibilityToggle) property to `true`.
+The password visibility toggle is used to show or hide the characters in the input view. This feature can be enabled by setting the [EnablePasswordVisibilityToggle](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_EnablePasswordVisibilityToggle) property to `true`.
 
 {% tabs %} 
 
@@ -220,16 +219,13 @@ inputLayout.InputView = new Entry() { Text = "John" };
 ![Enable password toggling image](Getting-Started_images/textInput_getting_img4.png)
 ![Enable password toggling_input hidden](Getting-Started_images/textInput_getting_img5.png)
 
-N> Password visibility toggle can be enabled only for [Entry](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry) control.
+> **Note:** The password visibility toggle can be enabled only for the [Entry](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry) control.
 
-You can find the complete getting started sample from this [link.]( https://github.com/SyncfusionExamples/Getting-started-SfTextInputLayout-Xamarin)
+You can find a complete getting started sample from this [link](https://github.com/SyncfusionExamples/Getting-started-SfTextInputLayout-Xamarin).
 
-## See also
+## See Also
 
-[How to reduce the inner padding of SfTextInputLayout](https://support.syncfusion.com/kb/article/9553/how-to-reduce-the-inner-padding-of-xamarin-forms-text-input-layout)
-
-[How to switch the focus from SfTextInputLayout to the next focusable control](https://support.syncfusion.com/kb/article/10285/how-to-switch-the-focus-from-xamarin-forms-text-input-layout-to-the-next-focusable-control) 
-
-[How to create a rounded corner SfTextInputLayout](https://support.syncfusion.com/kb/article/10202/how-to-create-a-rounded-corner-sftextinputlayout-in-xamarin-forms)
-
-[How to change the cursor color in SfTextInputLayout](https://support.syncfusion.com/kb/article/10066/how-to-change-the-cursor-color-in-xamarin-forms-text-input-layout)
+- [How to reduce the inner padding of SfTextInputLayout](https://support.syncfusion.com/kb/article/9553/how-to-reduce-the-inner-padding-of-xamarin-forms-text-input-layout)
+- [How to switch the focus from SfTextInputLayout to the next focusable control](https://support.syncfusion.com/kb/article/10285/how-to-switch-the-focus-from-xamarin-forms-text-input-layout-to-the-next-focusable-control)
+- [How to create a rounded corner SfTextInputLayout](https://support.syncfusion.com/kb/article/10202/how-to-create-a-rounded-corner-sftextinputlayout-in-xamarin-forms)
+- [How to change the cursor color in SfTextInputLayout](https://support.syncfusion.com/kb/article/10066/how-to-change-the-cursor-color-in-xamarin-forms-text-input-layout)

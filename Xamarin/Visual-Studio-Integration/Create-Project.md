@@ -15,7 +15,7 @@ I> The Syncfusion<sup>®</sup> Xamarin Project Templates are available from v16.
 
 To create the **Syncfusion<sup>®</sup> Xamarin Application** in Visual Studio, follow these steps
 
-> Check whether the **Xamarin Extensions - Syncfusion<sup>®</sup>** are installed or not in Visual Studio Extension Manager by going to **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later, and for Visual Studio 2017 or lower by going to **Tools -> Extensions and Updates -> Installed**. If this extension not installed, please install the extension by follow the steps from the [download and installation](download-and-installation) help topic.
+> Check whether the **Xamarin Extensions - Syncfusion<sup>®</sup>** are installed or not in Visual Studio Extension Manager by going to **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later, and for Visual Studio 2017 or lower by going to **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, please install the extension by following the steps from the [download and installation](download-and-installation) help topic.
 
 1.	Follow one of the instructions below to create a Syncfusion<sup>®</sup> Xamarin project
 
@@ -47,7 +47,7 @@ To create the **Syncfusion<sup>®</sup> Xamarin Application** in Visual Studio, 
 
 	**Assemblies From:** Choose NuGet or Installed Location to load the Syncfusion<sup>®</sup> Xamarin reference into Xamarin Application.
 
-	N> Installed location option will be shown only when the Syncfusion<sup>®</sup> Xamarin setup has been installed.
+	N> The **Installed Location** option will be shown only when the Syncfusion<sup>®</sup> Xamarin setup has been installed.
 
 	**Android**
 
@@ -97,7 +97,7 @@ To create the **Syncfusion<sup>®</sup> Xamarin Application** in Visual Studio, 
 
 	![Selected Syncfusion<sup>®</sup> Xamarin control assemblies added to the UWP project](Syncfusion_Project_Templates_images/xamarin-project-creation-controls-uwp.jpeg)
 
-6.	Then, Syncfusion<sup>®</sup> licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion<sup>®</sup> introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio<sup>®</sup> release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion<sup>®</sup> license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in Essential Studio<sup>®</sup>.
+6.	Then, Syncfusion<sup>®</sup> licensing registration required message box will be shown if you installed the trial setup or NuGet packages since Syncfusion<sup>®</sup> introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio<sup>®</sup> release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box, to generate and register the Syncfusion<sup>®</sup> license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in Essential Studio<sup>®</sup>.
 
 	![Syncfusion<sup>®</sup> license registration required information dialog in Syncfusion<sup>®</sup> Xamarin Project](Syncfusion_Project_Templates_images/xamarin-project-creation-license-registration.jpeg)
 

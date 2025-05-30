@@ -9,7 +9,7 @@ documentation: ug
 
 # Xamarin Essential<sup>®</sup> UI Kit
 
-Essential<sup>®</sup> UI Kit for Xamarin.Forms includes predefined XAML templates for Xamarin.Forms apps. The UI kit allows to build a user interface in a cross-platform application. It clearly separates the View, View Model, and Model classes, making it simple to integrate your business logic and make changes to the existing view.  
+Essential<sup>®</sup> UI Kit for Xamarin.Forms includes predefined XAML templates for Xamarin. Forms apps. The UI kit allows you to build a user interface in a cross-platform application. It clearly separates the view, view model, and model classes, making it simple to integrate your business logic and make changes to the existing view.  
 
 ## Installation of Xamarin UI Kit Extension
 
@@ -51,7 +51,7 @@ Install the appropriate Xamarin UI Kit Extension in Visual Studio by downloading
 
 ## Run the UI template item
 
-To set the desired UI Template item as the start page of your application, Open the **App.xaml.cs** of Xamarin.Forms project and make the following changes.
+To set the desired UI Template item as the start page of your application, open the **App.xaml.cs** of the Xamarin.Forms project and make the following changes.
 
 MainPage=new application name.Views. 
 

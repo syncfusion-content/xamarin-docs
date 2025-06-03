@@ -938,7 +938,7 @@ public partial class MainPage : ContentPage
 
 Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/How-to-load-xamarin.forms-listview-for-full-height-without-virtualization).
 
-When `SfListView` is in [AutoFitMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_AutoFitMode) as `Height`, the extend of the ListView will be updated only while scrolling. So you can resize the ListView in [VisualContainer]((https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.VisualContainer.html)) `PropertyChanged` method as like below.
+When `SfListView` is in [AutoFitMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_AutoFitMode) as `Height`, the extend of the ListView will be updated only while scrolling. So you can resize the ListView in [VisualContainer](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.VisualContainer.html) `PropertyChanged` method as like below.
 
 {% tabs %}
 {% highlight xaml %}

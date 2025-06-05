@@ -1,7 +1,7 @@
 ---
 layout : post
-title: Linear Arrangement in Xamarin Carousel View control | Syncfusion
-description: Learn here all about Linear Arrangement support in Syncfusion Xamarin Carousel View (SfCarousel) control and more.
+title: Linear Arrangement in Xamarin Carousel View control | Syncfusion®
+description: Learn here all about Linear Arrangement support in Syncfusion® Xamarin Carousel View (SfCarousel) control and more.
 platform : xamarin
 control : Carousel
 documentation : ug

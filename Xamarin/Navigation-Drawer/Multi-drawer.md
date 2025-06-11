@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multi Drawer in Xamarin Navigation Drawer control | Syncfusion
-description: Learn here all about Multi Drawer support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
+title: Multi Drawer in Xamarin Navigation Drawer control | Syncfusion®
+description: Learn here all about Multi Drawer support in Syncfusion® Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug

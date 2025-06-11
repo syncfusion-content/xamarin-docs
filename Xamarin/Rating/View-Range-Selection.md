@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Enable View Range Selection in Xamarin Rating control | Syncfusion
-description: Learn here all about Enable View Range Selection support in Syncfusion Xamarin Rating (SfRating) control and more.
+title: Enable View Range Selection in Xamarin Rating control | Syncfusion®
+description: Learn here all about Enable View Range Selection support in Syncfusion® Xamarin Rating (SfRating) control and more.
 platform: Xamarin
 control: Rating
 documentation: ug

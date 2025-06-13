@@ -909,7 +909,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ## Scrolling ListView without virtualization
 
-`SfListView` allows you to scroll by loading the entire collection of items inside the `ScrollView` and defining the total extend of its container to `HeightRequest` in the [Loaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_Loaded) event.
+`SfListView` allows you to scroll by loading the entire collection of items inside the `ScrollView` and defining the total extend of its container to `HeightRequest` in the [Loaded](https://ej2.syncfusion.com/javascript/documentation/drop-down-list/getting-started/) event.
 
 {% tabs %}
 {% highlight xaml %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # Check for Updates in Syncfusion<sup>®</sup> Xamarin
 
-Syncfusion<sup>®</sup> provides Extensions to update the most recent version of the Essential Studio<sup>®</sup> release. Installing the most recent version ensures that you always have the most up-to-date features, fixes, and improvements.
+Syncfusion<sup>®</sup> provides extensions to update the most recent version of the Essential Studio<sup>®</sup> release. Installing the most recent version ensures that you always have the most up-to-date features, fixes, and improvements.
 
 I> The Syncfusion<sup>®</sup> Check for updates is available from v17.1.0.32.
 

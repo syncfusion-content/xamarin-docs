@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Custom View in Xamarin Rating control | Syncfusion
-description: Learn here all about Custom View support in Syncfusion Xamarin Rating (SfRating) control, its elements and more.
+title: Custom View in Xamarin Rating Control | Syncfusion
+description: Discover how to implement custom view support in the Syncfusion Xamarin Rating (SfRating) control and customize its elements.
 platform: Xamarin
 control: Rating 
 documentation: ug
@@ -11,13 +11,12 @@ documentation: ug
 
 # Custom View in Xamarin Rating (SfRating)
 
-[`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) Items control provides support to add custom views.
+The [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control allows the integration of custom views within its rating items. Custom views enhance the user experience by providing personalized visuals.
+> Note: To use custom views on the Xamarin.Forms UWP platform, you need to set the [`ItemCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_ItemCount) property.
 
-N> To use custom views in Xamarin.Forms UWP platform, you need to set [`ItemCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_ItemCount) value.
+## Adding SfRating Items
 
-## Add SfRating items
-
-To customize the view of rating items, create and set custom view as [`SelectedView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html#Syncfusion_SfRating_XForms_SfRatingItem_SelectedView) and [`UnSelectedView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html#Syncfusion_SfRating_XForms_SfRatingItem_UnSelectedView) of [`SfRatingItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html). Refer to the following code snippet to create a custom view.
+To customize the appearance of rating items, you can set custom views as the [`SelectedView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html#Syncfusion_SfRating_XForms_SfRatingItem_SelectedView) and [`UnSelectedView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html#Syncfusion_SfRating_XForms_SfRatingItem_UnSelectedView) for each [`SfRatingItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html). Here is an example to guide you through the process:
 
 {% tabs %}
 
@@ -42,7 +41,7 @@ rating.EnableCustomView = true;
 
 {% endtabs %}
 
-## Set selected view
+## Setting the Selected View
 
 The [`SelectedView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html#Syncfusion_SfRating_XForms_SfRatingItem_SelectedView) property is used to apply the given [`SelectedView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html#Syncfusion_SfRating_XForms_SfRatingItem_SelectedView)  to selected rating item.
 
@@ -66,7 +65,7 @@ ratingItem.SelectedView = new Image() { Source = "Angry_selected.png", Aspect = 
 
 {% endtabs %}
 
-## Set unselected view
+## Setting the Unselected View
  
 The [`UnSelectedView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html#Syncfusion_SfRating_XForms_SfRatingItem_UnSelectedView) property is used to apply the given [`UnSelectedView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html#Syncfusion_SfRating_XForms_SfRatingItem_UnSelectedView) to unselected rating item.
 
@@ -90,7 +89,7 @@ ratingItem.UnSelectedView = new Image() { Source = "Angry_Unselected.png", Aspec
 
 {% endtabs %}
 
-## Add Items
+## Adding and Enabling Custom Items
 
 The [`Items`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_Items) property is used to hold the collection of [`SfRatingItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingItem.html). 
 
@@ -199,7 +198,4 @@ public MainPage()
 
 {% endtabs %}
 
-![Add custom view in Xamarin.Forms](images/CustomviewItems.png)
- 
-
-![Custom view SfRating](images/CustomviewItems.png)
+![Adding custom views in Xamarin.Forms](images/CustomviewItems.png)

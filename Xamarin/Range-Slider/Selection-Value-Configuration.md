@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Selection Value configuration in Xamarin Range Slider | Syncfusion
-description: Learn here all about Selection Value configuration support in Syncfusion Xamarin Range Slider (SfRangeSlider) control and more.
+title: Selection Value Configuration in Xamarin Range Slider | Syncfusion
+description: Explore the options for configuring selection values in the Syncfusion Xamarin Range Slider (SfRangeSlider) control.
 platform: Xamarin
 control: RangeSlider
 documentation: ug
 ---
 
-# Selection Value configuration in Xamarin Range Slider (SfRangeSlider)
+# Selection Value Configuration in Xamarin Range Slider (SfRangeSlider)
 
-Various customization options are available to configure the selection value in [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html).
+Various customization options are available for configuring selection values in [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html).
 
 ## Set Minimum Value
 
-Gets or sets the minimum possible value of the range. The thumb could not move beyond that value.
+Set the minimum possible value for the range. The thumb cannot move below this value.
 
 {% tabs %}
 
@@ -33,7 +33,7 @@ Gets or sets the minimum possible value of the range. The thumb could not move b
 
 ## Set Maximum Value
 
-Gets or sets the maximum possible value of the range. The thumb could not move after that value.
+Set the maximum possible value for the range. The thumb cannot move beyond this value.
 
 {% tabs %}
 
@@ -53,7 +53,7 @@ Gets or sets the maximum possible value of the range. The thumb could not move a
 
 ## Set Tick Frequency
 
-The [`TickFrequency`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_TickFrequency) property is used to decide the number of ticks to be displayed along the track based on [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Maximum) values.
+The [`TickFrequency`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_TickFrequency) property determines the interval of ticks displayed along the track between the [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Maximum) values.
 
 {% tabs %}
 
@@ -71,11 +71,11 @@ The [`TickFrequency`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeS
 
 {% endtabs %}
 
-N> When the [`SnapsTo`]([`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html)) property is set to `Ticks`, the [`TickFrequency`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_TickFrequency) is used to specify the interval between snap points.
+> **Note**: The [`TickFrequency`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_TickFrequency) sets intervals when [`SnapsTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_SnapsTo) is set to `Ticks`.
 
-## Set Interval between Snap Points.
+## Set Interval Between Snap Points
 
-The [`StepFrequency`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_StepFrequency) property is used to specify the interval between snap points.
+The [`StepFrequency`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_StepFrequency) property defines the interval between snap points.
 
 {% tabs %}
 
@@ -93,19 +93,17 @@ The [`StepFrequency`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeS
 
 {% endtabs %}
 
-N> When the [`SnapsTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_SnapsTo) property is set to [`StepValues`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SnapsTo.html#Syncfusion_SfRangeSlider_XForms_SnapsTo_StepValues), the [`StepFrequency`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_StepFrequency) property is enabled.
+> **Note**: The [`StepFrequency`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_StepFrequency) is used when [`SnapsTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_SnapsTo) is set to [`StepValues`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SnapsTo.html#Syncfusion_SfRangeSlider_XForms_SnapsTo_StepValues).
 
 ## Set Snapping Mode
 
-The [`SnapsTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_SnapsTo)` property determines whether the RangeSlider snaps to steps or ticks. Available options for this property are
+The [`SnapsTo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_SnapsTo) property controls whether the RangeSlider snaps to steps or ticks. Available options are:
 
-* [`StepValues`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SnapsTo.html#Syncfusion_SfRangeSlider_XForms_SnapsTo_StepValues) - The [`StepFrequency`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_StepFrequency) property will be used to specify the interval between snap points.
+- [`StepValues`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SnapsTo.html#Syncfusion_SfRangeSlider_XForms_SnapsTo_StepValues): Uses [`StepFrequency`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_StepFrequency) to specify intervals.
+- [`Ticks`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SnapsTo.html#Syncfusion_SfRangeSlider_XForms_SnapsTo_Ticks): Uses [`TickFrequency`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_TickFrequency).
+- [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SnapsTo.html#Syncfusion_SfRangeSlider_XForms_SnapsTo_None): The thumb moves independently of set values.
 
-* [`Ticks`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SnapsTo.html#Syncfusion_SfRangeSlider_XForms_SnapsTo_Ticks) - The [`TickFrequency`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_TickFrequency) property will be used to specify the interval between snap points
-
-* [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SnapsTo.html#Syncfusion_SfRangeSlider_XForms_SnapsTo_None) - The thumb is moved independent of any values.
-
-N> The default option is [`Ticks`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SnapsTo.html#Syncfusion_SfRangeSlider_XForms_SnapsTo_Ticks).
+> **Note**: The default is [`Ticks`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SnapsTo.html#Syncfusion_SfRangeSlider_XForms_SnapsTo_Ticks).
 
 {% tabs %}
 

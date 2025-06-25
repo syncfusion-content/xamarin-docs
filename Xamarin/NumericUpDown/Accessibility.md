@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in Xamarin NumericUpDown control | Syncfusion
-description: Learn here all about Accessibility support in Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control and more.
+title: Accessibility in Xamarin NumericUpDown Control | Syncfusion
+description: Learn all about accessibility support in the Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control and more.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # AutomationId in Xamarin NumericUpDown (SfNumericUpDown)
 
-The [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) control has built-in AutomationId for inner elements. To keep unique id for inner elements, AutomationId of inner elements are updated based on NumericUpDown's AutomationId. For example, if NumericUpDown's AutomationId is set as sfNumericUpDown.AutomationId = "numericUpDown", then AutomationId of inner elements will be updated as follows.
+The [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) control provides built-in automation IDs for its inner elements. To ensure each inner element has a unique ID, these automation IDs are updated based on the `SfNumericUpDown` control's own `AutomationId`. For example, if the `AutomationId` of the `SfNumericUpDown` control is set as `sfNumericUpDown.AutomationId = "numericUpDown"`, then the automation IDs of the inner elements will be as follows:
 
 <table>
 <tr>

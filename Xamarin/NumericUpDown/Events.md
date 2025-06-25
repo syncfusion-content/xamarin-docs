@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Events and Interactivity in Xamarin NumericUpDown control | Syncfusion
-description: Learn here all about Events and Interactivity support in Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control and more.
+title: Events and Interactivity in Xamarin NumericUpDown Control | Syncfusion
+description: Learn about the events and interactivity support in the Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
 # Events in Xamarin NumericUpDown (SfNumericUpDown)
 
-## Value changed event in SfNumericUpDown
+## Value Changed Event in SfNumericUpDown
  
-You can perform any operation when changing the value of [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) using the [`ValueChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_ValueChanged) event. The ValueChanged event returns the changed value in NumericUpDown.
+You can perform operations whenever the value of [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) changes, using the [`ValueChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_ValueChanged) event. This event returns the updated value in the control.
 
-For example you can restrict the NumericUpDown value if it exceed's greater than 3 digits using following code.
+For example, you can restrict the NumericUpDown value from exceeding three digits using the following code:
 
 {% tabs %}
 
@@ -47,9 +47,9 @@ void Handle_ValueChanged(object sender, Syncfusion.SfNumericUpDown.XForms.ValueE
 
 {% endtabs %}
 
-### Interactivity : ValueChangeMode
+### Interactivity: ValueChangeMode
 
-The [`ValueChangeMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_ValueChangeMode) property is used to mention when a value needs to be updated, either in key pressed or focus lost state. When ValueChangeMode is set to [`OnKeyFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.ValueChangeMode.html#Syncfusion_SfNumericUpDown_XForms_ValueChangeMode_OnKeyFocus), the value is updated with each key press. When ValueChangeMode is set to [`OnLostFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.ValueChangeMode.html#Syncfusion_SfNumericUpDown_XForms_ValueChangeMode_OnLostFocus), the value is updated when the control loses focus or the focus is moved to the next control. ValueChangeMode includes the following options:
+The [`ValueChangeMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_ValueChangeMode) property specifies when a value should be updated: either on keypress or when focus is lost. When `ValueChangeMode` is set to [`OnKeyFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.ValueChangeMode.html#Syncfusion_SfNumericUpDown_XForms_ValueChangeMode_OnKeyFocus), the value updates with each keypress. When set to [`OnLostFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.ValueChangeMode.html#Syncfusion_SfNumericUpDown_XForms_ValueChangeMode_OnLostFocus), the value updates when the control loses focus or moves to the next control.
 
 1. [`OnKeyFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.ValueChangeMode.html#Syncfusion_SfNumericUpDown_XForms_ValueChangeMode_OnKeyFocus)
 2. [`OnLostFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.ValueChangeMode.html#Syncfusion_SfNumericUpDown_XForms_ValueChangeMode_OnLostFocus)
@@ -110,9 +110,9 @@ private void SfNumericUpDown_ValueChanged(object sender, ValueEventArgs e)
 
 ![Display the value with OnLostFocus](images/onlostfocus.png)
 
-## Completed event in SfNumericUpDown
+## Completed Event in SfNumericUpDown
  
-The [`Completed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Completed) event occurs when users finalize the text in the [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) by pressing the return key(enter, ok) on the keyboard.
+The [`Completed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Completed) event occurs when users finalize the text in the `SfNumericUpDown` by pressing the return key (enter, ok) on the keyboard.
 
 {% tabs %}
 
@@ -137,9 +137,9 @@ void Handle_Completed(object sender, System.EventArgs e)
 
 {% endtabs %}
 
-## Focus changed event in SfNumericUpDown 
+## Focus Changed Event in SfNumericUpDown
 
-The [`FocusChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FocusChanged) event occurs when the control gets the focus and loses the focus.
+The [`FocusChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FocusChanged) event triggers when the control gains or loses focus.
 
 {% tabs %}
 

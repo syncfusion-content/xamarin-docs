@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Font Customization  in Xamarin Text Input Layout control | Syncfusion
-description: Learn here all about Font Customization  support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
+title: Font Customization in Xamarin Text Input Layout Control | Syncfusion
+description: Learn about font customization support in the Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Font Customization  in Xamarin Text Input Layout (SfTextInputLayout)
+# Font Customization in Xamarin Text Input Layout (SfTextInputLayout)
 
-You can customize the appearance (size, attributes, and family) of font by setting the FontFamily, FontSize, and FontAttributes properties of the LabelStyle property.
+You can customize the appearance (size, attributes, and family) of fonts by setting the `FontFamily`, `FontSize`, and `FontAttributes` properties of the `LabelStyle` property.
 
-Refer to this [documentation](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/fonts#use-a-custom-font) to configure the custom fonts in Xamarin.Forms.
+Refer to this [documentation](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/fonts#use-a-custom-font) to configure custom fonts in Xamarin.Forms.
 
 ## Hint
 
-You can customize the font of [hint](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_HintProperty) label  by setting the FontFamily, FontSize, and FontAttributes properties of HintLabelStyle in SfTextInputLayout.
+You can customize the font of the [hint](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_HintProperty) label by setting the `FontFamily`, `FontSize`, and `FontAttributes` properties of `HintLabelStyle` in `SfTextInputLayout`.
 
 {% tabs %} 
 
@@ -56,9 +56,9 @@ inputLayout.InputView = new Entry();
 
 ![Hint label style](Custom-Font-images/HintLabelStyle.png)
 
-## Helper text
+## Helper Text
 
-You can customize the font of [helper text](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_HelperTextProperty) label by setting the FontFamily, FontSize, and FontAttributes properties of HelperLabelStyle in SfTextInputLayout.
+You can customize the font of the [helper text](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_HelperTextProperty) label by setting the `FontFamily`, `FontSize`, and `FontAttributes` properties of `HelperLabelStyle` in `SfTextInputLayout`.
 
 {% tabs %} 
 
@@ -99,9 +99,9 @@ inputLayout.InputView = new Entry();
 
 ![Helper label style](Custom-Font-images/HelperLabelStyle.jpg)
 
-## Error text
+## Error Text
 
-You can customize the font of [error text](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ErrorTextProperty) label by setting the FontFamily, FontSize, and FontAttributes properties of ErrorLabelStyle in SfTextInputLayout.
+You can customize the font of the [error text](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ErrorTextProperty) label by setting the `FontFamily`, `FontSize`, and `FontAttributes` properties of `ErrorLabelStyle` in `SfTextInputLayout`.
 
 {% tabs %} 
 
@@ -146,9 +146,9 @@ inputLayout.InputView = new Entry();
 
 ![Error label style](Custom-Font-images/ErrorLabelStyle.jpg)
 
-## Counter label
+## Counter Label
 
-You can customize the font of [counter label](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_CharMaxLengthProperty) by setting the FontFamily, FontSize, and FontAttributes properties of CounterLabelStyle in SfTextInputLayout.
+You can customize the font of the [counter label](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_CharMaxLengthProperty) by setting the `FontFamily`, `FontSize`, and `FontAttributes` properties of `CounterLabelStyle` in `SfTextInputLayout`.
 
 {% tabs %} 
 
@@ -189,11 +189,8 @@ inputLayout.InputView = new Entry();
 
 ![Counter label style](Custom-Font-images/CounterLabelStyle.jpg) 
 
-## See also
+## See Also
 
-[How to customize the properties of outline border colors, hint name, helper text, error text, and char count](https://support.syncfusion.com/kb/article/10194/how-to-customize-the-properties-of-outline-border-colors-hint-name-helper-text-error-text)
-
-[How to apply LineBreakMode for labels in SfTextInputLayout](https://support.syncfusion.com/kb/article/9518/how-to-apply-linebreakmode-for-labels-in-xamarin-text-input-layout)
-
-[How to customize the color of border and labels in SfTextInputLayout](https://support.syncfusion.com/kb/article/9248/how-to-customize-the-color-of-border-and-labels-in-sftextinputlayout)
-
+- [How to customize the properties of outline border colors, hint name, helper text, error text, and char count](https://support.syncfusion.com/kb/article/10194/how-to-customize-the-properties-of-outline-border-colors-hint-name-helper-text-error-text)
+- [How to apply LineBreakMode for labels in SfTextInputLayout](https://support.syncfusion.com/kb/article/9518/how-to-apply-linebreakmode-for-labels-in-xamarin-text-input-layout)
+- [How to customize the color of border and labels in SfTextInputLayout](https://support.syncfusion.com/kb/article/9248/how-to-customize-the-color-of-border-and-labels-in-sftextinputlayout)

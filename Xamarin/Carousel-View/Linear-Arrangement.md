@@ -1,15 +1,15 @@
 ---
-layout : post
-title: Linear Arrangement in Xamarin Carousel View control | Syncfusion
-description: Learn here all about Linear Arrangement support in Syncfusion Xamarin Carousel View (SfCarousel) control and more.
-platform : xamarin
-control : Carousel
-documentation : ug
+layout: post
+title: Linear Arrangement in Xamarin Carousel View Control | Syncfusion
+description: Explore the linear arrangement support in Syncfusion Xamarin Carousel View (SfCarousel) control.
+platform: Xamarin
+control: SfCarousel
+documentation: ug
 ---
 
 # Linear Arrangement in Xamarin Carousel View (SfCarousel)
 
-The Carousel items can be populated in the view in a stacked linear layout by setting the [`ViewMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_ViewMode) property to [`Linear`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.ViewMode.html#Syncfusion_SfCarousel_XForms_ViewMode_Linear). The present option is [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.ViewMode.html#Syncfusion_SfCarousel_XForms_ViewMode_Default).
+You can arrange carousel items in a stacked linear layout by setting the [`ViewMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_ViewMode) property to [`Linear`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.ViewMode.html#Syncfusion_SfCarousel_XForms_ViewMode_Linear). The default configuration uses [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.ViewMode.html#Syncfusion_SfCarousel_XForms_ViewMode_Default) mode.
 
 {% tabs %}
 
@@ -121,9 +121,6 @@ namespace CarouselSample
 
 {% endtabs %}
 
-N> It is important to include Xamarin.Android.Support.v17.Leanback library to use carousel linear mode in Android platform.
+N> For Android platform, include the Xamarin.Android.Support.v17.Leanback library to utilize carousel linear mode.
 
-![Linear mode](images/linear.png)
-
-
-
+![Linear Mode](images/linear.png)

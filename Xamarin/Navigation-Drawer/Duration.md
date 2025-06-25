@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Animation Duration in Xamarin Navigation Drawer control | Syncfusion
-description: Learn here all about Animation Duration support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
+title: Animation Duration in Xamarin Navigation Drawer Control | Syncfusion
+description: Explore the animation duration feature in the Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control.
 platform: Xamarin
 control: SfNavigationDrawer
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 ## Animation Duration in SfNavigationDrawer
 
-The [`Duration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_Duration) property of [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) indicates timeline for completing one animation cycle. Setting smaller duration value accelerates animation speed.
+The [`Duration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_Duration) property of the [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) specifies the timeline for completing one animation cycle. Setting a smaller duration value increases the animation speed.
 
 {% tabs %}
 

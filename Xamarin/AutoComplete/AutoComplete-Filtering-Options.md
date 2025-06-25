@@ -7,12 +7,13 @@ control: AutoComplete
 documentation: ug
 ---
 
-# AutoComplete Filtering Options - Xamarin AutoComplete (SfAutoComplete)
+# AutoComplete Filtering Options in Xamarin (SfAutoComplete)
 
-## AutoComplete filtering options in Xamarin SfAutoComplete
+## Overview
 
-The phenomenon of string comparison for filtering suggestions can be changed using the [`SuggestionMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SuggestionMode) property. The default filtering strategy is [`“StartsWith”`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionMode.html#Syncfusion_SfAutoComplete_XForms_SuggestionMode_StartsWith) and it is case insensitive. The available filtering modes are
+The [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control provides various filtering options through the [`SuggestionMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SuggestionMode) property. This property determines how strings are compared when filtering suggestions. The default filtering strategy is [`StartsWith`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionMode.html#Syncfusion_SfAutoComplete_XForms_SuggestionMode_StartsWith), which is case-insensitive.
 
+The available filtering modes are:
 * [`StartsWith`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionMode.html#Syncfusion_SfAutoComplete_XForms_SuggestionMode_StartsWith)
 
 * [`StartsWithCaseSensitive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionMode.html#Syncfusion_SfAutoComplete_XForms_SuggestionMode_StartsWithCaseSensitive)
@@ -31,7 +32,7 @@ The phenomenon of string comparison for filtering suggestions can be changed usi
 
 * [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionMode.html#Syncfusion_SfAutoComplete_XForms_SuggestionMode_Custom)
 
-## Filtering Words that Starts with Input Text
+## Filtering Words that Start with Input Text
 
 Displays all the matches that starts with the typed characters in control. This strategy is case in-sensitive.
 	
@@ -124,7 +125,7 @@ namespace AutocompleteSample
 
 ![Filtering options starts with](images/AutoComplete-Filtering-Options/starts-with.png)
 
-### Filtering Words that Starts with Input Text - CaseSensitive
+## Filtering Words that Start with Input Text - Case Sensitive
 
 Displays all the matches that starts with the typed characters in control. This strategy is case sensitive.
 
@@ -217,7 +218,7 @@ namespace AutocompleteSample
 
 ![starts with case sensitive](images/AutoComplete-Filtering-Options/starts-with-case-sensitive.png)
 
-## Filtering Words that Contains the Input Text
+## Filtering Words that Contain the Input Text
 
 Displays all the matches that contains the typed characters in control. This strategy is case in-sensitive.
 	
@@ -310,7 +311,7 @@ namespace AutocompleteSample
 
 ![Filtering options contains](images/AutoComplete-Filtering-Options/contains.png)
 
-### Filtering Words that Contains the Input Text - CaseSensitive
+## Filtering Words that Contain the Input Text - Case Sensitive
 
 Displays all the matches that contains the typed characters in control. This strategy is case sensitive.
 
@@ -403,7 +404,7 @@ namespace AutocompleteSample
 
 ![contains casesensitive](images/AutoComplete-Filtering-Options/contains-casesensitive.png)
 
-## Filtering Words that Equals the Input Text
+## Filtering Words that Equal the Input Text
 
 Displays all the words that completely matches with the typed characters in control. This strategy is case in-sensitive.
 	
@@ -494,7 +495,7 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-### Filtering Words that Equals the Input Text - CaseSensitive
+## Filtering Words that Equal the Input Text - Case Sensitive
 
 Displays all the words that completely matches with the typed characters in control. This strategy is case sensitive.
 	

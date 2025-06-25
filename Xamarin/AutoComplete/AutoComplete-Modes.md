@@ -9,22 +9,18 @@ documentation: ug
 
 # AutoComplete Modes in Xamarin AutoComplete (SfAutoComplete)
 
-## AutoComplete Modes in Xamarin SfAutoComplete
+## Overview
 
-AutoComplete provides three different ways to display the filtered suggestions. They are 
+The [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control provides three different ways to display filtered suggestions through the [`AutoCompleteMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_AutoCompleteMode) property:
+* [`Suggest`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.AutoCompleteMode.html#Syncfusion_SfAutoComplete_XForms_AutoCompleteMode_Suggest) - Displays suggestions in a dropdown list
+* [`Append`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.AutoCompleteMode.html#Syncfusion_SfAutoComplete_XForms_AutoCompleteMode_Append) - Appends the first suggestion to the text
+* [`SuggestAppend`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.AutoCompleteMode.html#Syncfusion_SfAutoComplete_XForms_AutoCompleteMode_SuggestAppend) - Combines both Suggest and Append modes
 
-* [`Suggest`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.AutoCompleteMode.html#Syncfusion_SfAutoComplete_XForms_AutoCompleteMode_Suggest) - displaying suggestion in drop down list
+The default value is [`Suggest`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.AutoCompleteMode.html#Syncfusion_SfAutoComplete_XForms_AutoCompleteMode_Suggest).
 
-* [`Append`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.AutoCompleteMode.html#Syncfusion_SfAutoComplete_XForms_AutoCompleteMode_Append) - appending the first suggestion to text
+## Suggest Mode
 
-* [`SuggestAppend`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.AutoCompleteMode.html#Syncfusion_SfAutoComplete_XForms_AutoCompleteMode_SuggestAppend) - Both of these
-
-[`AutoCompleteMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_AutoCompleteMode) property is used to choose the suggestion display mode in SfAutoComplete control. The default value is [`Suggest`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.AutoCompleteMode.html#Syncfusion_SfAutoComplete_XForms_AutoCompleteMode_Suggest).
-
-## Suggesting Choices in List
-
-The filtered suggestions are displayed in a drop down list. User can pick an item from the list.
-
+In Suggest mode, filtered suggestions are displayed in a dropdown list, allowing users to select an item from the list.
 {% tabs %}
 
 {% highlight xaml %}
@@ -118,9 +114,8 @@ namespace AutocompleteSample
 
 ![suggest](images/AutoComplete-Suggesting-Modes/suggest.png)
 
-## Appending Suggestion to Text
-
-The first item in filtered suggestions is appended to [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) text. In this mode, drop down remains closed.
+## Append Mode
+In Append mode, the first item from the filtered suggestions is automatically appended to the text in the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control. The dropdown list remains closed in this mode.
 
 {% tabs %}
 
@@ -213,10 +208,13 @@ namespace AutocompleteSample
 
 ![Append](images/AutoComplete-Suggesting-Modes/append.png)
 
-## Suggesting Choices and Appending Suggestions to Text
+## SuggestAppend Mode
 
-The text is appended to the first matched item in the suggestions collection and filtered suggestions are displayed in a drop down list. The user can pick from a list directly or use up and down keys for browsing the list.
-	
+In SuggestAppend mode, the control combines both Suggest and Append behaviors:
+- The first matched item is appended to the text
+- Filtered suggestions are displayed in a dropdown list
+
+Users can either select an item directly from the list or use the up and down arrow keys to navigate through the suggestions.
 {% tabs %}	
 
 {% highlight xaml %}
@@ -309,4 +307,7 @@ namespace AutocompleteSample
 
 ![suggest append](images/AutoComplete-Suggesting-Modes/suggest-append.png)
 
-N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to knows the functionalities of each feature.
+## See Also
+
+* [Xamarin AutoComplete Features Overview](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete)
+* [Xamarin.Forms AutoComplete Examples](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete)

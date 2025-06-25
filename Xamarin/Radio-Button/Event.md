@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Event in Xamarin Radio Button control | Syncfusion
-description: Learn here all about Event support in Syncfusion Xamarin Radio Button (SfRadioButton) control and more.
-platform: xamarin
+title: Event in Xamarin Radio Button Control | Syncfusion
+description: Learn about event support in Syncfusion Xamarin Radio Button (SfRadioButton) control and more.
+platform: Xamarin
 control: SfRadioButton
 documentation: ug 
 keywords: button, SfRadioButton, RadioButton
@@ -11,11 +11,11 @@ keywords: button, SfRadioButton, RadioButton
 
 # Event in Xamarin Radio Button (SfRadioButton)
 
-## StateChanged event
+## StateChanged Event
 
-Occurs when the value(state) of the [`IsChecked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_IsChecked) property is changed by either touching the check box or setting the value to the [`IsChecked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_IsChecked) property using XAML or C# code. The event arguments are of type [`StateChangedEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.StateChangedEventArgs.html) and expose the following property:
+The `StateChanged` event occurs when the value (state) of the [`IsChecked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_IsChecked) property changes. This change can occur either through user interaction with the radio button or by programmatically setting the value using XAML or C# code. The event arguments are of type [`StateChangedEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.StateChangedEventArgs.html) and expose the following property:
 
-* [`IsChecked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_IsChecked): The new value(state) of the [`IsChecked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_IsChecked) property.
+* [`IsChecked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ToggleButton.html#Syncfusion_XForms_Buttons_ToggleButton_IsChecked): Represents the new value (state) of the `IsChecked` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -68,8 +68,8 @@ private void RadioButton_StateChanged(object sender, StateChangedEventArgs e)
 
 This demo can be downloaded from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_Event1787482656).
 
-## See also
+## See Also
 
-[How to notify the selection changes in Xamarin.Forms radio button (SfRadioButton)](https://support.syncfusion.com/kb/article/9544/how-to-notify-the-selection-changes-in-xamarin-forms-radiobutton-sfradiobutton)
+- [How to notify the selection changes in Xamarin.Forms radio button (SfRadioButton)](https://support.syncfusion.com/kb/article/9544/how-to-notify-the-selection-changes-in-xamarin-forms-radiobutton-sfradiobutton)
  
-[How to get the selected Xamarin.Forms radio button (SfRadioButton)](https://support.syncfusion.com/kb/article/9506/how-to-get-the-selected-xamarinforms-radio-button)
+- [How to get the selected Xamarin.Forms radio button (SfRadioButton)](https://support.syncfusion.com/kb/article/9506/how-to-get-the-selected-xamarinforms-radio-button)

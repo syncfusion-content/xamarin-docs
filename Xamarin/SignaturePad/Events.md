@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Events in Xamarin SignaturePad control | Syncfusion
-description: Learn here all about SignaturePad Events support in Syncfusion Xamarin SignaturePad (SfSignaturePad) control and more.
+title: Events in Xamarin SignaturePad Control | Syncfusion
+description: Learn about event support in Syncfusion Xamarin SignaturePad (SfSignaturePad) control, including how to handle StrokeStarted and StrokeCompleted events.
 platform: Xamarin
-control: SignaturePad
+control: SfSignaturePad
 documentation: ug
 ---
 
-# SignaturePad Events in Xamarin Signature (SfSignaturePad)
+# SignaturePad Events in Xamarin SignaturePad (SfSignaturePad)
 
 ## StrokeStarted 
 
-The [`StrokeStarted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_StrokeStarted) event will be triggered when drawing is started.
+The [`StrokeStarted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_StrokeStarted) event is triggered when drawing begins.
 
-[`CancelEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Core.CancelEventArgs.html) - SignaturePad draw start action can be restricted by setting the e.cancel to true.
+- [`CancelEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Core.CancelEventArgs.html): The SignaturePad draw start action can be restricted by setting `e.Cancel` to `true`.
 
 {% tabs %}
 
@@ -44,7 +44,7 @@ The [`StrokeStarted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.S
 
 ## StrokeCompleted
 
-The [`StrokeCompleted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_StrokeCompleted) event will be triggered when drawing is ended.
+The [`StrokeCompleted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_StrokeCompleted) event is triggered when drawing ends.
 
 {% tabs %}
 

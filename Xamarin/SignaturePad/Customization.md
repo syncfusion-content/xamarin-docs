@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Customization in Xamarin SignaturePad control | Syncfusion
-description: Learn here all about Customization support in Syncfusion Xamarin SignaturePad (SfSignaturePad) control and more.
-platform: xamarin
+title: Customization in Xamarin SignaturePad Control | Syncfusion
+description: Explore the customization capabilities of Syncfusion Xamarin SignaturePad (SfSignaturePad) control.
+platform: Xamarin
 control: SfSignaturePad
 documentation: ug
 ---
 
 # Customization in Xamarin SignaturePad (SfSignaturePad)
 
-The Signature Pad control supports to customize the stroke color and stroke width using the following API.
+The SignaturePad control supports customization of stroke color and stroke width using the following APIs.
 
-## Stroke color
+## Stroke Color
 
 The color of the stroke drawn can be customized using the [`StrokeColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_StrokeColor) API.
 
@@ -34,13 +34,13 @@ The color of the stroke drawn can be customized using the [`StrokeColor`](https:
 
 {% endtabs %}
 
-![stroke color](images/StrokeColor.png)
+![Stroke Color Customization](images/StrokeColor.png)
 
-## Stroke width
+## Stroke Width
 
-The width of the stroke drawn can be customized by setting the [`MinimumStrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_MinimumStrokeWidth) and [`MaximumStrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_MaximumStrokeWidth) API. The [`MinimumStrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_MinimumStrokeWidth) defines the minimum thickness of the stroke that can be drawn and the [`MaximumStrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_MaximumStrokeWidth) defines the maximum thickness the stroke can draw based on the speed and impression we provide through gesture.
+The width of the stroke drawn can be customized by setting the [`MinimumStrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_MinimumStrokeWidth) and [`MaximumStrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_MaximumStrokeWidth) APIs. The [`MinimumStrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_MinimumStrokeWidth) defines the minimum thickness of the stroke, while the [`MaximumStrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_MaximumStrokeWidth) defines the maximum thickness the stroke can have based on the speed and impression provided through gesture.
 
-N> The default value of [`MinimumStrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_MinimumStrokeWidth) is 0.08 and [`MaximumStrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_MaximumStrokeWidth) is 5.
+> Note: The default value of [`MinimumStrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_MinimumStrokeWidth) is 0.08 and [`MaximumStrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.SignaturePad.SfSignaturePad.html#Syncfusion_XForms_SignaturePad_SfSignaturePad_MaximumStrokeWidth) is 5.
 
 {% tabs %}
 
@@ -64,6 +64,6 @@ N> The default value of [`MinimumStrokeWidth`](https://help.syncfusion.com/cr/xa
 
 {% endtabs %}
 
-![Stroke width](images/StrokeWidth.png)
+![Stroke Width Customization](images/StrokeWidth.png)
 
-N> View [sample](https://github.com/SyncfusionExamples/xamarin-sfsignaturepad-examples/tree/master/Samples/SfSignaturePadCustomization) in GitHub
+> Note: View the [sample](https://github.com/SyncfusionExamples/xamarin-sfsignaturepad-examples/tree/master/Samples/SfSignaturePadCustomization) on GitHub.

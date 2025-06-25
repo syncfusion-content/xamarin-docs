@@ -1,45 +1,45 @@
 ---
 layout: post
-title: Getting Started with Xamarin Chips control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio® Xamarin Chips control, its elements and more.
-platform: xamarin
+title: Getting Started with Xamarin Chips Control | Syncfusion
+description: Learn about getting started with Syncfusion Essential Studio® Xamarin Chips control, including its elements and more.
+platform: Xamarin
 control: Chips
 documentation: ug
 ---
 
 # Getting Started with Xamarin Chips
 
-This section explains the steps required to create chips and arrange them in a layout for performing action. This section covers only the minimal features that you needed to know to get started with the chips.
+This section explains the steps required to create chips and arrange them in a layout for performing actions. It covers only the minimal features needed to get started with chips.
 
-## Assembly deployment
+## Assembly Deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you will find all the required assemblies in the installation folders: `{Syncfusion Essential Studio Installed Location}\Essential Studio\{Version #}\Xamarin\lib`.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
-N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+> **Note:** Assemblies can be found in the unzipped package location (Documents/Syncfusion/{Version #}/Xamarin/lib) on a Mac.
 
-## Adding Chips reference
+## Adding Chips Reference
 
-You can add Chips reference using one of the following methods:
+You can add the Chips reference using one of the following methods:
 
-**Method 1: Adding Chips reference from nuget.org**
+### Method 1: Adding Chips Reference from NuGet.org
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add Chips to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons), and then install it.
+Syncfusion Xamarin components are available on [nuget.org](https://www.nuget.org/). To add Chips to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons), and then install it.
 
 ![Adding Chips reference from NuGet](images/action-type-chip/Adding Chips reference.png)
 
-N> 
-* Install the same version of Chips NuGet in all the projects.
-* In addition, you need to install the [Syncfusion.Xamarin.Buttons.WPF]() package for Xamarin.Forms WPF platform only.
+> **Note:**
+> - Install the same version of the Chips NuGet in all projects.
+> - Additionally, you need to install the [Syncfusion.Xamarin.Buttons.WPF]() package for Xamarin.Forms WPF platforms only.
 
-**Method 2: Adding Chips reference from toolbox**
+### Method 2: Adding Chips Reference from Toolbox
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the Chips control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides the Xamarin Toolbox. By using this toolbox, you can drag the Chips control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
-**Method 3: Adding Chips assemblies manually from the installed location**
+### Method 3: Adding Chips Assemblies Manually from the Installed Location
 
-If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+If you prefer to manually reference the assemblies instead of referencing them from NuGet, add the following assemblies in the respective projects.
 
 Location: {Installed location}/{version}/Xamarin/lib
 
@@ -77,11 +77,11 @@ To use the chips control inside an application, each platform application requir
 
 ### iOS
 
-N> If you are adding the references from toolbox, this step is not needed.
+> **Note:** If you are adding the references from the toolbox, this step is not needed.
 
 #### For SfChip
 
-To launch the [SfChip](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html) in iOS, call the `SfChipRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample:
+To launch the [SfChip](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html) in iOS, call the `SfChipRenderer.Init()` method in the `FinishedLaunching` overridden method of the `AppDelegate` class after the Xamarin.Forms framework has been initialized and before the `LoadApplication` method is called, as demonstrated in the following code sample:
 
 {% highlight c# %}
 

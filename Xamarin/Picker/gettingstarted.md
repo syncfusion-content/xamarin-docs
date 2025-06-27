@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Xamarin Picker control | Syncfusion<sup>&reg;</sup>
+title: Getting Started with Xamarin Picker control | Syncfusion
 description: Learn here about getting started with Syncfusion<sup>&reg;</sup> Xamarin Picker (SfPicker) control, its elements and more.
 platform: Xamarin
 control: Picker

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with DataForm in Xamarin DataForm control | Syncfusion
+title: Working with DataForm in Xamarin DataForm control | Syncfusion®
 description: Learn here all about Working with DataForm support in Syncfusion<sup>&reg;</sup> Xamarin DataForm (SfDataForm) control and more.
 platform: xamarin
 control: SfDataForm

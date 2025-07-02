@@ -222,7 +222,7 @@ pdfViewer.AnnotationSettings.Popup.Icon = PopupIcon.Note;
 {% endhighlight %}
 {% endtabs %}
 
-N>Unsupported popup annotation icons will be rendered as the Comment icon.
+N> Unsupported popup annotation icons will default to the *Comment* icon.
 
 ### Changing the properties of a selected popup
 

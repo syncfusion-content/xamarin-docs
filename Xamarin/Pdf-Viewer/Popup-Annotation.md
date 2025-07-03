@@ -222,6 +222,8 @@ pdfViewer.AnnotationSettings.Popup.Icon = PopupIcon.Note;
 {% endhighlight %}
 {% endtabs %}
 
+N> Unsupported popup annotation icons will default to the *Comment* icon.
+
 ### Changing the properties of a selected popup
 
 You can change the properties of the selected annotation by casting the sender parameter of the `PopupAnnotationSelected` event handler to `PopupAnnotation` and modify its properties. The following code example shows how to change the properties.

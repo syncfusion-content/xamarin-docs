@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Setting Main Content in Xamarin Navigation Drawer control | Syncfusion
-description: Learn here all about Setting Main Content support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
+title: Setting Main Content in Xamarin Navigation Drawer Control | Syncfusion
+description: Discover how to set the main content in the Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 # Setting Main Content in Xamarin Navigation Drawer (SfNavigationDrawer)
 
-Main content of NavigationDrawer is always visible and it can be set using [`ContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ContentView) property. In the following code example, [`ContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ContentView) is switched when selection changes in ListView.
+The main content of the NavigationDrawer is always visible and can be set using the [`ContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ContentView) property. In the following code example, the `ContentView` is updated when the selection changes in a ListView.
 
 {% tabs %}
 
@@ -206,8 +206,8 @@ namespace NaviSample
 
 {% endtabs %}
 
-N> It is mandatory to set [`ContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ContentView) for [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) on initializing.
+> Note: It is mandatory to set [`ContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ContentView) for [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) upon initialization.
 
 ![contentview](Images/MainContent.png)
 
-You can find the complete Sample from this [link.](https://github.com/SyncfusionExamples/navigation-drawer-main-content)
+You can find the complete sample from this [link.](https://github.com/SyncfusionExamples/navigation-drawer-main-content)

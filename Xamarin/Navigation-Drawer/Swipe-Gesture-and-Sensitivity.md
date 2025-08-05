@@ -1,18 +1,18 @@
 ---
 layout: post
-title: SwipGesture and Sensitivity in Xamarin Navigation Drawer | Syncfusion
-description: Learn here all about SwipGesture and its Sensitivity support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
+title: Swipe Gesture and Sensitivity in Xamarin Navigation Drawer | Syncfusion
+description: Learn about Swipe Gesture and its Sensitivity support in the Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug
 ---
-# SwipeGesture and its Sensitivity in Xamarin Navigation Drawer
+# Swipe Gesture and Its Sensitivity in Xamarin Navigation Drawer
 
-NavigationDrawer supports swipe gesture for opening and closing the drawer. 
+The NavigationDrawer supports swipe gestures for opening and closing the drawer.
 
 ## Enabling Swipe Gesture
 
-It can be enabled/disabled using [`EnableSwipeGesture`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_EnableSwipeGesture) property.
+Swipe Gesture can be enabled or disabled using the [`EnableSwipeGesture`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_EnableSwipeGesture) property.
 
 {% tabs %}
 
@@ -51,7 +51,7 @@ navigationDrawer.EnableSwipeGesture = true;
 
 ## Swipe Sensitivity
 
-In smaller screens user may find it difficult to swipe the drawer from the edge in such cases we can increase the swipe region using [`TouchThreshold`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_TouchThreshold) property. It can be set as below:
+On smaller screens, users may find it difficult to swipe the drawer open from the edge. In such cases, the swipe region can be increased using the [`TouchThreshold`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_TouchThreshold) property. It can be set as demonstrated below:
 
 {% tabs %}
 

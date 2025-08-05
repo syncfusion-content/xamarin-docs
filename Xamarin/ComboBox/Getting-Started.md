@@ -1,43 +1,43 @@
 ---
 layout: post
-title: Getting Started with Xamarin ComboBox control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin ComboBox (SfComboBox) control, its elements and more.
-platform: xamarin
+title: Getting Started with Xamarin ComboBox Control | Syncfusion
+description: Learn about getting started with Syncfusion Xamarin ComboBox (SfComboBox) control, its elements, and more.
+platform: Xamarin
 control: SfComboBox
 documentation: ug
 ---
 
 # Getting Started with Xamarin ComboBox (SfComboBox)
 
-This section explains the steps required to create the [Xamarin ComboBox](https://www.syncfusion.com/xamarin-ui-controls/xamarin-combobox) control, populate it with data and filter the suggestions. This section covers only the minimal features that are needed to get started with the control.
+This section explains the steps necessary to create the [Xamarin ComboBox](https://www.syncfusion.com/xamarin-ui-controls/xamarin-combobox) control, populate it with data, and filter suggestions. It covers only the essential features needed to get started with the control.
 
-## Assembly deployment
+## Assembly Deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find the required assemblies in the installation folders at `{Syncfusion Essential Studio Installed location}\Essential Studio\{Version #}\Xamarin\lib`.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
-N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+> **Note:** Assemblies can also be found in the unzipped package location (Documents/Syncfusion/{Version #}/Xamarin/lib) on Mac.
 
-## Adding SfComboBox reference
+## Adding SfComboBox Reference
 
-You can add [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) reference using one of the following methods:
+You can add the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) reference using one of the following methods:
 
-**Method 1: Adding SfComboBox reference from nuget.org**
+**Method 1: Adding SfComboBox Reference from NuGet.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfComboBox](https://www.nuget.org/packages/Syncfusion.Xamarin.SfComboBox), and then install it.
+Syncfusion Xamarin components are available on [nuget.org](https://www.nuget.org/). To add [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfComboBox](https://www.nuget.org/packages/Syncfusion.Xamarin.SfComboBox), and install it.
 
-![Adding SfComboBox reference from NuGet](images/Getting-Started/Adding SfComboBox reference.png)
+![Adding SfComboBox Reference from NuGet](images/Getting-Started/Adding%20SfComboBox%20reference.png)
 
-N> Install the same version of [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) NuGet in all the projects.
+> **Note:** Install the same version of [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) NuGet in all projects.
 
-**Method 2: Adding SfComboBox reference from toolbox**
+**Method 2: Adding SfComboBox Reference from Toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion provides a Xamarin Toolbox, allowing you to drag the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) control onto the XAML page. This automatically installs the required NuGet packages and adds the namespace to the page. For more information, refer to the [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox) documentation.
 
-**Method 3: Adding SfComboBox assemblies manually from the installed location**
+**Method 3: Adding SfComboBox Assemblies Manually**
 
-If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+If you prefer to manually reference the assemblies instead of using NuGet, add the following assemblies to the respective projects:
 
 Location: {Installed location}/{version}/Xamarin/lib
 
@@ -68,7 +68,7 @@ N> If you are adding the references from toolbox, this step is not needed.
 
 ### Additional Step for iOS
 
-To launch the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) in iOS, call the `SfComboBoxRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework has been initialized and before the LoadApplication is called, as demonstrated in the following code example.
+To launch the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) on iOS, call the `SfComboBoxRenderer.Init()` method in the `FinishedLaunching` override in the AppDelegate class after the Xamarin.Forms Framework has been initialized and before `LoadApplication` is called, as shown below:
 
 {% highlight c# %}
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)

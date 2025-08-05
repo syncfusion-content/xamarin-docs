@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Formatting Value in Xamarin Masked Entry control | Syncfusion
-description: Learn here all about Formatting Value support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
+title: Formatting Value in Xamarin Masked Entry Control | Syncfusion
+description: Learn about formatting value support in the Syncfusion Xamarin Masked Entry (SfMaskedEdit) control.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
@@ -9,29 +9,15 @@ keywords: mask, SfMaskedEdit, maskededit
 ---
 # Formatting Value in Xamarin Masked Entry (SfMaskedEdit)
 
-SfMaskedEdit allows you to format the characters in the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) property in a mask scenario (when the Mask property is set). By default, the Value property holds your input characters, prompt characters and the literals defined in the mask. You can modify this and allow the `Value` property to hold the characters without prompt and literals by setting the [`ValueMaskFormat`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ValueMaskFormat) property of the control. The `Value` in the `SfMaskedEdit` is formatted by any one of the following formatting enum values:
+`SfMaskedEdit` allows you to format the characters in the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) property when the `Mask` property is set. By default, the `Value` property contains input characters, prompt characters, and literals defined in the mask. You can modify this behavior using the [`ValueMaskFormat`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ValueMaskFormat) property. The `Value` in `SfMaskedEdit` can be formatted using the following enum values:
 
-* ExcludePromptAndLiterals
-* IncludePrompt
-* IncludeLiterals
-* IncludePromptAndLiterals
+- **ExcludePromptAndLiterals**: The `Value` contains only the typed characters, excluding prompt characters and literals.
 
-## ExcludePromptAndLiterals
+- **IncludePrompt**: The `Value` includes typed characters and prompt characters, excluding literals.
 
-Value contains only the typed characters, the prompt characters and literals are excluded.
+- **IncludeLiterals**: The `Value` includes typed characters and literals, excluding prompt characters.
 
-## IncludePrompt
-
-Value contains the typed characters and prompt characters, literals are excluded.
-
-## IncludeLiterals
-
-Value contains the typed characters and literals, prompt characters are excluded.
-
-## IncludePromptAndLiterals
-
-Value contains typed characters, prompt characters, and literals.
-
+- **IncludePromptAndLiterals**: The `Value` contains typed characters, prompt characters, and literals.
 {% tabs %}
 {% highlight xaml %}
 <syncmaskededit:SfMaskedEdit x:Name="maskedEdit1" MaskType="Text" Mask="00/00/0000" ValueMaskFormat="ExcludePromptAndLiterals"/>
@@ -120,6 +106,6 @@ private void MaskedEdit4_ValueChanged(object sender, Syncfusion.XForms.MaskedEdi
 {% endhighlight %}
 {% endtabs %}
 
-Refer this [link](events.html#valuechanged-event) to know more about the `ValueChanged` event of SfMaskedEdit control.
+Refer to this [link](events.html#valuechanged-event) to learn more about the `ValueChanged` event in the `SfMaskedEdit` control.
 
 ![ValueFormat support in Xamarin.Forms masked edit](SfMaskedEditImages/FormattingValue.png)

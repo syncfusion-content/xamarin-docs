@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Numeric Entry control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control, its elements and more.
+title: Getting Started with Xamarin Numeric Entry Control | Syncfusion
+description: Learn about getting started with the Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control, its elements, and more.
 platform: xamarin
 control: SfNumericTextBox
 documentation: ug
@@ -9,33 +9,33 @@ documentation: ug
 
 # Getting Started with Xamarin Numeric Entry (SfNumericTextBox)
 
-This section explains you the steps to configure a SfNumericTextBox control in a real-time scenario and also provides a walk-through on some of the customization features available in SfNumericTextBox control.
+This section explains the steps to configure a `SfNumericTextBox` in a real-time scenario and provides a walk-through of some customization features available in the `SfNumericTextBox` control.
 
-## Assembly deployment
+## Assembly Deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation directory: `{Syncfusion Essential Studio Installed location}\Essential Studio\{Version #}\Xamarin\lib`.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
 N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
-## Adding SfNumericTextBox reference
+## Adding SfNumericTextBox Reference
 
-You can add SfNumericTextBox reference using one of the following methods:
+You can add the `SfNumericTextBox` reference using one of the following methods:
 
-**Method 1: Adding SfNumericTextBox reference from nuget.org**
+**Method 1: Adding SfNumericTextBox Reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfNumericTextBox to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfNumericTextBox](https://www.nuget.org/packages/Syncfusion.Xamarin.SfNumericTextBox), and then install it.
+Syncfusion Xamarin components are available on [nuget.org](https://www.nuget.org/). To add `SfNumericTextBox` to your project, open the NuGet Package Manager in Visual Studio, search for [Syncfusion.Xamarin.SfNumericTextBox](https://www.nuget.org/packages/Syncfusion.Xamarin.SfNumericTextBox), and then install it.
 
 ![Adding SfNumericTextBox reference from NuGet](images/Adding SfNumericTextBox reference.png)
 
-N> Install the same version of SfNumericTextBox NuGet in all the projects.
+> **Note:** Install the same version of the `SfNumericTextBox` NuGet package in all your projects.
 
-**Method 2: Adding SfNumericTextBox reference from toolbox**
+**Method 2: Adding SfNumericTextBox Reference from Toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfNumericTextBox control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion provides a Xamarin Toolbox that lets you drag the `SfNumericTextBox` control to a XAML page. This toolbox automatically installs the required NuGet packages and adds the namespace to the page. For installation instructions, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
-**Method 3: Adding SfNumericTextBox assemblies manually from the installed location**
+**Method 3: Adding SfNumericTextBox Assemblies Manually**
 
 If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
 
@@ -76,7 +76,7 @@ The Android and UWP launches the SfNumericTextBox without any initialization and
 
 ### iOS
 
-To launch SfNumericTextBox in iOS, need to create an instance of SfNumericTextBoxRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below.
+To launch `SfNumericTextBox` on iOS, create an instance of `SfNumericTextBoxRenderer` in the `FinishedLaunching` overridden method of the `AppDelegate` class in the iOS project as shown below.
 
 
 {% highlight C# %}

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in Xamarin Effects View control | Syncfusion
-description: Learn here all about Events support in Syncfusion Xamarin Effects View (SfEffectsView) control and more.
+title: Events in Xamarin Effects View Control | Syncfusion
+description: Explore the events supported by the Syncfusion Xamarin Effects View (SfEffectsView) control, such as AnimationCompleted and SelectionChanged.
 platform: xamarin
 control: SfEffectsView
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Events in Xamarin Effects View (SfEffectsView)
 
-## AnimationCompleted event
+## AnimationCompleted Event
 
-The [`AnimationCompleted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) event occurs when the rendered effects have been completed.
+The [`AnimationCompleted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) event is triggered when all rendered effects in the `SfEffectsView` are completed.
 
 {% tabs %} 
 
@@ -104,3 +104,4 @@ public partial class MainPage : ContentPage
 {% endtabs %}
 
 N> The [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) event triggers both on rendering `SfEffects.Selection` by direct interaction and on changing the [`IsSelected`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_IsSelected) property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html).
+

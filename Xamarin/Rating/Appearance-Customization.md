@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Appearance Customization in Xamarin Rating control | Syncfusion
-description: Learn here all about Appearance Customization support in Syncfusion Xamarin Rating (SfRating) control and more.
+title: Appearance Customization in Xamarin Rating Control | Syncfusion
+description: Discover how to customize the appearance of the Syncfusion Xamarin Rating (SfRating) control, including item color, stroke width, and stroke color.
 platform: Xamarin
 control: Rating
 documentation: ug
@@ -54,10 +54,9 @@ The [`RatedFill`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XFo
 
 ![Rated item fill color](images/ratedFill.jpg)
 
-### Unselected Items
+#### Unselected Items
 
-The [`UnRatedFill`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingSettings.html#Syncfusion_SfRating_XForms_SfRatingSettings_UnRatedFill) property fills the unrated item with the specified solid color in the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control.
-
+For unrated items, use the [`UnRatedFill`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingSettings.html#Syncfusion_SfRating_XForms_SfRatingSettings_UnRatedFill) property.
 {% tabs %}
 
 {% highlight xaml %}
@@ -118,10 +117,9 @@ The [`RatedStroke`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.X
 
 ![Rated item stroke color](images/ratedStroke.jpg)
 
-### Unselected Items
+#### Unselected Items
 
-The [`UnRatedStroke`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingSettings.html#Syncfusion_SfRating_XForms_SfRatingSettings_UnRatedStroke) property sets the stroke for the unrated area with the specified solid color in the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control.
-
+The stroke color for unrated portions is set via the [`UnRatedStroke`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingSettings.html#Syncfusion_SfRating_XForms_SfRatingSettings_UnRatedStroke) property.
 {% tabs %}
 
 {% highlight xaml %}
@@ -182,7 +180,7 @@ The [`RatedStrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRat
 
 ![Rated item stroke width](images/ratedStrokeThickness.jpg)
 
-### Unselected Items
+#### Unselected Items
 
 The [`UnRatedStrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRatingSettings.html#Syncfusion_SfRating_XForms_SfRatingSettings_UnRatedStrokeWidth) property sets the stroke width for the unrated item with the specified value in the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control.
 

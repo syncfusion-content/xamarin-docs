@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interaction in Xamarin AutoComplete Control | Syncfusion
+title: Interaction in Xamarin AutoComplete Control | Syncfusion®
 description: Learn how to perform an operation while changing its selection from dropdown list in Xamarin AutoComplete.
 platform: xamarin
 control: AutoComplete

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Font Settings in Syncfusion NumericUpDown control for Xamarin.Forms
-description: This section explains how to set the Font style in  Syncfusion NumericUpDown control for Xamarin.Forms.
+title: Font Settings in Syncfusion® NumericUpDown control for Xamarin.Forms
+description: This section explains how to set the Font style in  Syncfusion® NumericUpDown control for Xamarin.Forms.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Overview of Xamarin.Forms Licensing Errors | Syncfusion
-description: Learn here about Syncfusion® common licensing errors which appears on license validation in Syncfusion® Xamarin applications.
+description: Learn here about Syncfusion common licensing errors which appears on license validation in Syncfusion Xamarin applications.
 platform: xamarin
-control: Essential Studio<sup>®</sup>
+control: Essential Studio
 documentation: ug
 ---
 

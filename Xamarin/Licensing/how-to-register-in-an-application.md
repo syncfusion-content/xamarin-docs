@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Register license key in Xamarin.Forms  | Syncfusion
-description: Learn here about how to register Syncfusion® Xamarin license key for Xamarin application for license validation.
+description: Learn here about how to register Syncfusion Xamarin license key for Xamarin application for license validation.
 platform: xamarin
-control: Essential Studio<sup>®</sup>
+control: Essential Studio
 documentation: ug
 ---
 

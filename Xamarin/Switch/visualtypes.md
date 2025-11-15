@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visual Types in Xamarin Switch control | Syncfusion
-description: Learn here all about Visual Types support in Syncfusion Xamarin Switch (SfSwitch) control, its elements and more.
+title: Visual Types in Xamarin Switch Control | Syncfusion
+description: Explore the various visual types supported by the Syncfusion Xamarin Switch (SfSwitch) control, including elements and customization options.
 platform: Xamarin
 control: Switch
 documentation: ug
@@ -9,24 +9,23 @@ documentation: ug
 
 # Visual Types in Xamarin Switch (SfSwitch)
 
-[`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) supports customization using built-in [`visual types`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_VisualType). The [`visual types`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_VisualType) based on device platform are listed as follows.
+The [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) control supports customization through built-in [`visual types`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_VisualType). The visual types available based on the device platform are listed below:
 
-* Android – [`Material`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Material) 
-* iOS – [`Cupertino`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Cupertino)
-* Windows – [`Fluent`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Fluent)
+- Android – [`Material`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Material)
+- iOS – [`Cupertino`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Cupertino)
+- Windows – [`Fluent`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Fluent)
 
 ## Default
 
-This is the default value set for visual type.
+This is the default visual type setting.
 
-![switch conrol is having default visual type](images/default.png)
+![Switch control with default visual type](images/default.png)
 
-N> If you set [`default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Default), the visual type will be internally changed based on the device platform.
+> **Note:** When set to [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Default), the visual type changes internally based on the device platform.
 
 ## Material
 
-[`Material`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Material) visual type brings the appearance based on [`material`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Material) guidelines. The following code example demonstrates how to define [`material`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Material) visual type.
-
+The [`Material`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Material) visual type provides an appearance based on material design guidelines. The following code example demonstrates how to define the `Material` visual type.
 {% tabs %}
 
 {% highlight xaml %}
@@ -45,12 +44,11 @@ sfSwitch.VisualType = VisualType.Material;
 
 {% endtabs %}
 
-![switch conrol is having material visual type](images/material.png)
+![Switch control with material visual type](images/material.png)
 
 ## Cupertino
 
-[`Cupertino`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Cupertino) visual type brings the appearance based on [`Cupertino`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Cupertino) guidelines. The following code example demonstrates how to define [`Cupertino`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Cupertino) visual type.
-
+The [`Cupertino`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Cupertino) visual type provides an appearance based on Cupertino design guidelines. See the code example below to define the `Cupertino` visual type.
 {% tabs %}
 
 {% highlight xaml %}
@@ -69,12 +67,11 @@ sfSwitch.VisualType = VisualType.Cupertino;
 
 {% endtabs %}
 
-![switch conrol is having cupertino visual type](images/cupertino.png)
+![Switch control with Cupertino visual type](images/cupertino.png)
 
 ## Fluent
 
-[`Fluent`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Fluent) visual type brings the appearance based on[`Fluent`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Fluent) guidelines. The following code example demonstrates how to define [`Fluent`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Fluent) visual type.
-
+The [`Fluent`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Fluent) visual type offers an appearance based on Fluent design guidelines. The following code example shows how to define the `Fluent` visual type.
 {% tabs %}
 
 {% highlight xaml %}
@@ -93,9 +90,8 @@ sfSwitch.VisualType = VisualType.Fluent;
 
 {% endtabs %}
 
-![switch conrol is having fluent visual type](images/fluent.png)
+![Switch control with fluent visual type](images/fluent.png)
 
 ## Custom
 
-[`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Custom) type will allow you to customize the control, where you can handle the size, colors, images etc. of the control. Refer to this [`documentation`](https://help.syncfusion.com/xamarin/sfswitch/customization).
-
+The [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Custom) type allows you to customize the control, including aspects like size, colors, and images. Refer to this [documentation](https://help.syncfusion.com/xamarin/sfswitch/customization) for more details.

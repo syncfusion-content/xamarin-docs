@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin Rotator control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin Rotator (SfRotator) control, its elements and more.
+title: About Xamarin Rotator Control | Syncfusion
+description: Discover the Syncfusion Xamarin Rotator (SfRotator) control, its key features, and capabilities for navigating image data.
 platform: xamarin 
 control: Rotator 
 documentation: ug
@@ -9,12 +9,12 @@ documentation: ug
 
 # Xamarin Rotator (SfRotator) Overview
 
-The Rotator is a data control used to display image data and navigate through them. The images can be selected either by [`Thumbnail`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.NavigationStripMode.html#Syncfusion_SfRotator_XForms_NavigationStripMode_Thumbnail) or by [`Dots`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.NavigationStripMode.html#Syncfusion_SfRotator_XForms_NavigationStripMode_Dots) support.
+The Syncfusion Xamarin Rotator, or `SfRotator`, is a versatile data control designed to display and navigate through a collection of images. It offers users interactive ways to engage with image data by using either [`Thumbnail`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.NavigationStripMode.html#Syncfusion_SfRotator_XForms_NavigationStripMode_Thumbnail) or [`Dots`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.NavigationStripMode.html#Syncfusion_SfRotator_XForms_NavigationStripMode_Dots) navigation modes, enhancing the visual presentation of applications.
 
-![Rotator OverView](images/overview.png)
+![Rotator Overview](images/overview.png)
  
 ## Key Features
 
-* `Modes` - Options to navigate data using dots or thumbnail navigation modes.
-* `Position` - Support to decide the placement position of dots or thumbnail items in any of the four sides.
-* `Autoplay and Items Looping` - Options for auto playing items and navigate items in loop.
+- **Modes**: Navigate through data using either dots or thumbnail navigation modes for enhanced interactivity.
+- **Position**: Supports the placement of navigation elements (dots or thumbnails) on any of the four sides of the rotator.
+- **Autoplay and Item Looping**: Enables autoplay for a seamless slideshow experience and supports looping to continuously navigate items.

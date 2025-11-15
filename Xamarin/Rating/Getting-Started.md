@@ -2,7 +2,7 @@
 
 layout: post
 title: Getting Started with Xamarin Rating Control | Syncfusion
-description: Learn here all about how to getting started with Syncfusion Xamarin Rating control, its elements and more.
+description: Learn how to get started with the Syncfusion Xamarin Rating control, its components, and customization options.
 platform: xamarin
 control: Rating
 documentation: ug
@@ -11,22 +11,22 @@ documentation: ug
 
 # Getting Started with Xamarin Rating Control
 
+This guide details how to set up and configure the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control in a Xamarin application. Additionally, it provides an overview of customization features available within the `SfRating` control.
 
-This section explains how to configure a [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control.
+## Assembly Deployment
 
-## Assembly deployment
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), required assemblies can be found in the installation directory: `{Syncfusion Essential Studio Installed location}\Essential Studio\{Version #}\Xamarin\lib`.
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+Example path: `C:\Program Files (x86)\Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib`
 
-E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+> Note: On Mac, assemblies can be located in the unzipped package path: `Documents/Syncfusion/{Version #}/Xamarin/lib`.
 
-N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+## Adding SfRating Reference
 
-## Adding SfRating reference
+You can add the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) reference through the following methods:
 
-You can add [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) reference using one of the following methods:
-
-**Method 1: Adding SfRating reference from nuget.org**
+**Method 1: NuGet Package**
+Syncfusion Xamarin components are available on [nuget.org](https://www.nuget.org/). To incorporate `SfRating` into your project, open the NuGet Package Manager in Visual Studio, search for [Syncfusion.Xamarin.SfRating](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRating), and install it.
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfRating](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRating), and then install it.
 

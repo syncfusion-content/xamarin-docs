@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in Xamarin Switch control | Syncfusion
-description: Learn here all about Customization support in Syncfusion Xamarin Switch (SfSwitch) control and more.
+title: Customization in Xamarin Switch Control | Syncfusion
+description: Learn about customization support in the Syncfusion Xamarin Switch (SfSwitch) control.
 platform: Xamarin
 control: Switch
 documentation: ug
@@ -9,16 +9,16 @@ documentation: ug
 
 # Customization in Xamarin Switch (SfSwitch)
 
-The switch control provides options to customize the color based on states. The following code example demonstrates how to customize the switch control.
+The Switch control offers options to customize its appearance based on different states. The following example demonstrates how to customize the Switch control.
 
-## Solid colors
+## Solid Colors
 
-The following properties are used to apply solid colors to the thumb, track, border, and busy indicator, respectively:
+The following properties are used to apply solid colors to the thumb, track, border, and busy indicator:
 
-* [`ThumbColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_ThumbColor): Represents the color for the thumb.
-* [`ThumbBorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_ThumbBorderColor): Represents the border color for the thumb.
-* [`TrackBorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_TrackBorderColor): Represents the color for the border of the track.
-* [`TrackColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_TrackColor): Represents the color for the track.
+- [`ThumbColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_ThumbColor): Specifies the color for the thumb.
+- [`ThumbBorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_ThumbBorderColor): Specifies the border color for the thumb.
+- [`TrackBorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_TrackBorderColor): Specifies the color for the track border.
+- [`TrackColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_TrackColor): Specifies the color for the track.
 
 {% tabs %}
 
@@ -129,11 +129,11 @@ this.Content = sfSwitch;
 
 {% endtabs %}
 
-![switch conrol with visual state customization](images/customization-with-visual-state.png)
+![Switch control with visual state customization](images/customization-with-visual-state.png)
 
 ## Gradients
 
-You can also specify a range of colors in thumb and track using [`ThumbGradient`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_ThumbGradient) and [`TrackGradient`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_TrackGradient) as demonstrates in the following code example.
+Gradients can be applied to the thumb and track using [`ThumbGradient`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_ThumbGradient) and [`TrackGradient`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_TrackGradient). The following example demonstrates how to apply gradients.
 
 {% tabs %}
 
@@ -264,24 +264,24 @@ this.Content = sfSwitch;
 
 {% endtabs %}
 
-![switch conrol with gradient](images/gradient.png)
+![Switch control with gradient](images/gradient.png)
 
-N> Here [`ThumbGradient`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_ThumbGradient) and [`TrackGradient`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_TrackGradient) are type of [`SfLinearGradientBrush`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Graphics.SfLinearGradientBrush.html), So You can apply  [`SfLinearGradientBrush`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Graphics.SfLinearGradientBrush.html) or [`SfRadialGradientBrush`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Graphics.SfRadialGradientBrush.html) on it.  This [`SfLinearGradientBrush`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Graphics.SfLinearGradientBrush.html) is available in  [`Syncfusion.Xamarin.Core`](https://www.nuget.org/packages/Syncfusion.Xamarin.Core) from [`nuget.org`](https://www.nuget.org/). To know more about gradient view refer this [`link`](https://help.syncfusion.com/xamarin/sfgradientview/getting-started).
+> **Note:** [`ThumbGradient`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_ThumbGradient) and [`TrackGradient`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_TrackGradient) are of type [`SfLinearGradientBrush`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Graphics.SfLinearGradientBrush.html), and you can apply either `SfLinearGradientBrush` or [`SfRadialGradientBrush`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Graphics.SfRadialGradientBrush.html). This `SfLinearGradientBrush` is available in the [`Syncfusion.Xamarin.Core`](https://www.nuget.org/packages/Syncfusion.Xamarin.Core) package from [nuget.org](https://www.nuget.org/). For more information, refer to [this link](https://help.syncfusion.com/xamarin/sfgradientview/getting-started).
 
 ## Sizing
 
-In the switch control, sizing of the thumb and the track can be controlled using the following properties:
+In the Switch control, the sizing of the thumb and track can be controlled using the following properties:
 
-* [`TrackCornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_TrackCornerRadius): Represents a double value to create curved corner.
-* [`TrackBorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_TrackBorderWidth): Represents a double value for defining the track border width.
-* [`TrackWidthRequest`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_TrackWidthRequest): Represents a double value for defining the track width.
-* [`TrackHeightRequest`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_TrackHeightRequest): Represents double value for defining the track height.
-* [`ThumbBorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_ThumbBorderWidth): Represents a double value for defining the thumb border width.
-* [`ThumbCornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_ThumbCornerRadius): Represents a double value to create curved corner.
-* [`ThumbHeightRequest`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_ThumbHeightRequest): Represents double value for defining the thumb height.
-* [`ThumbWidthRequest`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_ThumbWidthRequest): Represents double value for defining the thumb width.
+- [`TrackCornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_TrackCornerRadius): Specifies the corner radius for the track.
+- [`TrackBorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_TrackBorderWidth): Specifies the border width for the track.
+- [`TrackWidthRequest`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_TrackWidthRequest): Specifies the track width.
+- [`TrackHeightRequest`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_TrackHeightRequest): Specifies the track height.
+- [`ThumbBorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_ThumbBorderWidth): Specifies the border width for the thumb.
+- [`ThumbCornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_ThumbCornerRadius): Specifies the corner radius for the thumb.
+- [`ThumbHeightRequest`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_ThumbHeightRequest): Specifies the thumb height.
+- [`ThumbWidthRequest`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_ThumbWidthRequest): Specifies the thumb width.
 
-The following code example demonstrates how to customize the size of the track and thumb.
+The example below demonstrates how to customize the size of the track and thumb.
 
 {% tabs %}
 
@@ -377,16 +377,16 @@ this.Content = sfSwitch;
 
 {% endtabs %}
 
-![switch conrol with sizing](images/sizing.png)
+![Switch control with sizing](images/sizing.png)
 
 ## Images
 
-Images can also be added to enhance the visual appearance. The following properties are used to add the images:
+Images can be added to enhance the visual appearance. The following properties are used to add images:
 
-* [`TrackImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_TrackImageSource): Represents the image source for the track.
-* [`ThumbImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_ThumbImageSource): Represents the image source for thumb.
+- [`TrackImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_TrackImageSource): Specifies the image source for the track.
+- [`ThumbImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_ThumbImageSource): Specifies the image source for the thumb.
 
-The following code example demonstrates how to customize the image.
+The example below demonstrates how to customize the image.
 
 {% tabs %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Toggle methods in Xamarin Navigation Drawer control | Syncfusion
-description: Learn here all about Toggle methods support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
+title: Toggle methods in Xamarin Navigation Drawer control | Syncfusion®
+description: Learn here all about Toggle methods support in Syncfusion® Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug

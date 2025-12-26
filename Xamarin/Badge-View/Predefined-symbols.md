@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Predefined symbols of Syncfusion Badge view control for Xamarin.Forms
-description: Learn how to set Syncfusion badge view predefined symbols and types of badge icons in Xamarin.Forms platform
+title: Predefined symbols of Syncfusion® Badge view control for Xamarin.Forms
+description: Learn how to set Syncfusion® badge view predefined symbols and types of badge icons in Xamarin.Forms platform
 platform: xamarin
 control: SfBadgeView
 documentation: ug

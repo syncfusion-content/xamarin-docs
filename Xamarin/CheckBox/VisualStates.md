@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visual States in Xamarin CheckBox control | Syncfusion
-description: Learn here all about Visual States support in Syncfusion Xamarin CheckBox (SfCheckBox) control and more.
+title: Visual States in Xamarin CheckBox control | Syncfusion®
+description: Learn here all about Visual States support in Syncfusion® Xamarin CheckBox (SfCheckBox) control and more.
 platform: xamarin
 control: SfCheckBox
 documentation: ug

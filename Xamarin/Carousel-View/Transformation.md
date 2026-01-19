@@ -1,7 +1,7 @@
 ---
 layout : post
-title: Transformation in Xamarin Carousel View control | Syncfusion
-description: Learn here all about Transformation support in Syncfusion Xamarin Carousel View (SfCarousel) control and more.
+title: Transformation in Xamarin Carousel View control | Syncfusion®
+description: Learn here all about Transformation support in Syncfusion® Xamarin Carousel View (SfCarousel) control and more.
 platform : xamarin
 control : Carousel
 documentation : ug

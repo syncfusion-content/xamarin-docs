@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Orientation in Xamarin Range Slider control | Syncfusion
-description: Learn here all about Orientation support in Syncfusion Xamarin Range Slider (SfRangeSlider) control and more.
+title: Orientation in Xamarin Range Slider control | Syncfusion®
+description: Learn here all about Orientation support in Syncfusion® Xamarin Range Slider (SfRangeSlider) control and more.
 platform: Xamarin
 control: SfRangeSlider
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MaskType in Xamarin Masked Entry control | Syncfusion
-description: Learn here all about MaskType support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
+title: MaskType in Xamarin Masked Entry control | Syncfusion®
+description: Learn here all about MaskType support in Syncfusion® Xamarin Masked Entry (SfMaskedEdit) control and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 

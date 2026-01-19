@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Right to left(RTL) in Xamarin ComboBox control | Syncfusion
-description: Learn here all about Right to left(RTL) support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
+title: Right to left(RTL) in Xamarin ComboBox control | Syncfusion®
+description: Learn here all about Right to left(RTL) support in Syncfusion® Xamarin ComboBox (SfComboBox) control and more.
 platform: xamarin
 control: SfComboBox
 documentation: UG

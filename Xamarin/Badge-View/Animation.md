@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Badge animation with Syncfusion Badge View control for Xamarin.Forms
-description: Learn how to set Syncfusion badge view animation in Xamarin.Forms platform
+title: Badge animation with Syncfusion® Badge View control for Xamarin.Forms
+description: This section explains about how to set Syncfusion® badge view control animation in Xamarin.Forms platform
 platform: xamarin
 control: SfBadgeView
 documentation: ug

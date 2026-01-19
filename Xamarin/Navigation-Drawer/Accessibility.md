@@ -1,7 +1,7 @@
 ---
 layout : post
-title: Accessibility in Xamarin Navigation Drawer control | Syncfusion
-description: Learn here all about Accessibility support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
+title: Accessibility in Xamarin Navigation Drawer control | Syncfusion®
+description: Learn here all about Accessibility support in Syncfusion® Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform : Xamarin.Forms
 control : SfNavigationDrawer
 documentation : ug

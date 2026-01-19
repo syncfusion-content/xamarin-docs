@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hiding Prompt Characters in Xamarin Masked Entry control | Syncfusion
-description: Learn here all about Hiding Prompt Characters support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
+title: Hiding Prompt Characters in Xamarin Masked Entry control | Syncfusion®
+description: Learn here all about Hiding Prompt Characters support in Syncfusion® Xamarin Masked Entry (SfMaskedEdit) control and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in Xamarin Numeric Entry control | Syncfusion
-description: Learn here all about Localization support in Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control and more.
+title: Localization in Xamarin Numeric Entry control | Syncfusion®
+description: Learn here all about Localization support in Syncfusion® Xamarin Numeric Entry (SfNumericTextBox) control and more.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin Button control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin Button (SfButton) control, its elements and more.
+title: About Xamarin Button control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Xamarin Button (SfButton) control, its elements and more.
 platform: xamarin
 control: sfbutton
 documentation: ug

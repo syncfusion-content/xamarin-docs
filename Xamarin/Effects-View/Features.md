@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Features in Xamarin Effects View control | Syncfusion
-description: Learn here all about Features support in Syncfusion Xamarin Effects View (SfEffectsView) control and more.
+title: Features in Xamarin Effects View control | Syncfusion®
+description: Learn here all about Features support in Syncfusion® Xamarin Effects View (SfEffectsView) control and more.
 platform: xamarin
 control: SfEffectsView
 documentation: ug

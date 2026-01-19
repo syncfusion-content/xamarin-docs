@@ -1,7 +1,7 @@
 ---
 layout: post
-title: States in Syncfusion Switch control for Xamarin.Forms.
-description: Explaining about different states in Syncfusion Switch Control (SfSwitch) for Xamarin.Forms and how it performs.
+title: States in Syncfusion® Switch control for Xamarin.Forms.
+description: Explaining about different states in Syncfusion® Switch Control (SfSwitch) for Xamarin.Forms and how it performs.
 platform: Xamarin
 control: Switch
 documentation: ug

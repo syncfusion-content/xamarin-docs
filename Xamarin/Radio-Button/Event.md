@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Event in Xamarin Radio Button control | Syncfusion
-description: Learn here all about Event support in Syncfusion Xamarin Radio Button (SfRadioButton) control and more.
+title: Event in Xamarin Radio Button control | Syncfusion®
+description: Learn here all about Event support in Syncfusion® Xamarin Radio Button (SfRadioButton) control and more.
 platform: xamarin
 control: SfRadioButton
 documentation: ug 

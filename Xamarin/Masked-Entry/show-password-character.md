@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Show Password Character in Xamarin Masked Entry control | Syncfusion
-description: Learn here all about Show Password Character support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
+title: Show Password Character in Xamarin Masked Entry control | Syncfusion®
+description: Learn here all about Show Password Character support in Syncfusion® Xamarin Masked Entry (SfMaskedEdit) control and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in Xamarin Effects View control | Syncfusion
-description: Learn here all about Customization support in Syncfusion Xamarin Effects View (SfEffectsView) control and more.
+title: Customization in Xamarin Effects View control | Syncfusion®
+description: Learn here all about Customization support in Syncfusion® Xamarin Effects View (SfEffectsView) control and more.
 platform: xamarin
 control: SfEffectsView
 documentation: ug

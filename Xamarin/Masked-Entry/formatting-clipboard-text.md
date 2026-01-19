@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Formatting clipboard text in Xamarin Masked Entry control | Syncfusion
-description: Learn here all about Formatting clipboard text support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
+title: Formatting clipboard text in Xamarin Masked Entry control | Syncfusion®
+description: Learn here all about Formatting clipboard text support in Syncfusion® Xamarin Masked Entry (SfMaskedEdit) control and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 

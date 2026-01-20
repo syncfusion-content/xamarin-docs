@@ -1,19 +1,19 @@
 ---
 layout: post
-title: CenterButton Customization in Xamarin Radial Menu control | Syncfusion
-description: Learn here all about CenterButton Customization support in Syncfusion Xamarin Radial Menu (SfRadialMenu) control and more.
+title: Center Button Customization in Xamarin Radial Menu Control | Syncfusion
+description: Discover Center Button customization support in the Syncfusion Xamarin Radial Menu (SfRadialMenu) control and more.
 platform: Xamarin
 control: SfRadialMenu
 documentation: ug
 ---
 
-# CenterButton Customization in Xamarin Radial Menu (SfRadialMenu)
+# Center Button Customization in Xamarin Radial Menu (SfRadialMenu)
 
-The CenterButton or BackButton in radial menu is a view in the center of the radial menu. It performs the operations such as opening and closing the rim and navigating to next level items. The radial menu allows you customize the CenterButton/BackButton with `FontIcon`, `Custom View`, and `Caption`.
+The Center Button or Back Button in the radial menu acts as the central element of the radial menu. It facilitates operations such as opening and closing the rim and navigating to the next level of items. The radial menu allows customization of the Center Button/Back Button with options like `FontIcon`, `Custom View`, and `Caption`.
 
 ## CenterButtonText and CenterButtonBackText
 
-The [`CenterButtonText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_CenterButtonTextProperty) changes the text of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html), and the [`CenterButtonBackText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_CenterButtonBackTextProperty) changes the text of the center back button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
+The [`CenterButtonText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_CenterButtonTextProperty) property changes the text of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html), while the [`CenterButtonBackText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_CenterButtonBackTextProperty) changes the text of the center back button.
 
 {% tabs %}
 

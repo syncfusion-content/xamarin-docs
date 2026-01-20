@@ -1,25 +1,24 @@
 ---
-layout : post
-title: UIVirtualization in Xamarin Carousel View control | Syncfusion
-description: Learn here all about UIVirtualization support in Syncfusion Xamarin Carousel View (SfCarousel) control and more.
-platform : xamarin
-control : Carousel
-documentation : ug
+layout: post
+title: UI Virtualization in Xamarin Carousel View Control | Syncfusion
+description: Discover the UI virtualization support in Syncfusion Xamarin Carousel View (SfCarousel) control.
+platform: Xamarin
+control: SfCarousel
+documentation: ug
 ---
 
-# UIVirtualization in Xamarin Carousel View (SfCarousel)
+# UI Virtualization in Xamarin Carousel View (SfCarousel)
 
-In UI virtualization concept, only the number of items that can be adaptable to the viewport of our device are arranged. Even, if the numerous items have been added to the collection, it loads only the viewport adaptable count of the carousel Items. Items are added at the right of the view when swiping the countable items in forward direction. At the same time, same number of items are removed at the left of the view for maintaining the same viewport items count. Similarly, items are added at the left of the view when swiping in backward direction for maintaining the same viewport items count. At the time, the same number of items are removed at the right of the view. Using this mechanism, virtualization concept is achieved in the carousel control. 
+UI Virtualization allows the `SfCarousel` to efficiently manage resource usage by only rendering the number of items visible in the viewport. Even if a collection contains numerous items, only those that fit within the viewport are loaded. As users swipe forward, new items appear on the right, while an equal number of items are removed from the left to maintain the count. Similarly, when swiping backward, items are added from the left while the same number is removed from the right. This mechanism optimizes performance in the carousel control.
 
-The following property has been used in UIVirtualization support:
-
+The primary property used for UI virtualization is:
 * [`EnableVirtualization`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_EnableVirtualization)  
 
 ## EnableVirtualization
 
-UI Virtualization concept is achieved by enabling the [`EnableVirtualization`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_EnableVirtualization) property.
+Enabling the [`EnableVirtualization`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_EnableVirtualization) property activates UI virtualization for the carousel view.
 
-N> The default value of the [`EnableVirtualization`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_EnableVirtualization) property is false.
+N> By default, the [`EnableVirtualization`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_EnableVirtualization) property is set to `false`.
 
 {% tabs %}
 
@@ -134,6 +133,6 @@ namespace CarouselSample
 
 {% endtabs %}
 
-![UIVirtualization](images/UIVirtualization.png)
+![UI Virtualization](images/UIVirtualization.png)
 
-You can find the complete UIVirtualization sample from this [link.](https://github.com/SyncfusionExamples/ui-virtualization-carousel)
+Access the complete UI Virtualization sample from this [link](https://github.com/SyncfusionExamples/ui-virtualization-carousel).

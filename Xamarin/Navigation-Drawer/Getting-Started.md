@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Navigation Drawer control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control, its elements and more.
+title: Getting Started with Xamarin Navigation Drawer Control | Syncfusion
+description: Discover how to get started with the Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control, its elements, and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug
@@ -9,35 +9,35 @@ documentation: ug
 
 # Getting Started with Xamarin Navigation Drawer (SfNavigationDrawer)
 
-This section explains you the steps required to create a navigation DrawerPanel with content area and data filled drawer and it covers only the minimal features that you need to know to get started with the NavigationDrawer.
+This section outlines the steps required to create a navigation drawer with a content area and data-filled drawer. It covers the essential features you need to know to get started with the NavigationDrawer.
 
-## Assembly deployment
+## Assembly Deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders: `{Syncfusion Essential Studio Installed location}\Essential Studio\{Version#}\Xamarin\lib`.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
-N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+> Note: Assemblies can be found in the unzipped package location (Documents/Syncfusion/{Version#}/Xamarin/lib) on Mac.
 
-## Adding SfNavigationDrawer reference
+## Adding SfNavigationDrawer Reference
 
-You can add [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) reference using one of the following methods:
+You can add the [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) reference using one of the following methods:
 
-**Method 1: Adding SfNavigationDrawer reference from nuget.org**
+**Method 1: Adding SfNavigationDrawer Reference from NuGet.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfNavigationDrawer](https://www.nuget.org/packages/Syncfusion.Xamarin.SfNavigationDrawer), and then install it.
+Syncfusion Xamarin components are available on [nuget.org](https://www.nuget.org/). To add [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) to your project, open the NuGet Package Manager in Visual Studio, search for [Syncfusion.Xamarin.SfNavigationDrawer](https://www.nuget.org/packages/Syncfusion.Xamarin.SfNavigationDrawer), and then install it.
 
 ![Adding SfNavigationDrawer reference from NuGet](Images/Adding SfNavigationDrawer reference.png)
 
-N> Install the same version of SfNavigationDrawer NuGet in all the projects.
+> Note: Install the same version of the SfNavigationDrawer NuGet in all projects.
 
-**Method 2: Adding SfNavigationDrawer reference from toolbox**
+**Method 2: Adding SfNavigationDrawer Reference from Toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides a Xamarin Toolbox. Using this toolbox, you can drag the [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
-**Method 3: Adding SfNavigationDrawer assemblies manually from the installed location**
+**Method 3: Adding SfNavigationDrawer Assemblies Manually from the Installed Location**
 
-If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+If you prefer to manually reference the assemblies instead of referencing from NuGet, add the following assemblies in respective projects.
 
 Location: {Installed location}/{version}/Xamarin/lib
 
@@ -60,17 +60,15 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
+> Important: Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also need to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering the Syncfusion license key in your Xamarin application for using our components.
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
-
-N> After adding the reference, an additional step is required for iOS and UWP projects. If you are adding the references from toolbox, this step is not needed.
+> Note: After adding the reference, an additional step is required for iOS and UWP projects. If you are adding the references from the toolbox, this step is not needed.
 
 ### Additional Step for iOS
 
-Currently an additional step is required for iOS project. We need to create an instance of the NavigationDrawer custom renderer as shown below. 
+Currently, an additional step is required for iOS projects. You need to create an instance of the NavigationDrawer custom renderer as shown below.
 
-Create an instance of SfNavigationDrawerRenderer in FinishedLaunching overridden method of AppDelegate class in iOS project as shown below:
+Create an instance of `SfNavigationDrawerRenderer` in the `FinishedLaunching` overridden method of the `AppDelegate` class in the iOS project:
 
 {% tabs %}
 
@@ -94,7 +92,7 @@ return base.FinishedLaunching(app, options);
 
 ### Additional Step for UWP
 
-This step is required only if application is deployed in Release mode with .NET native tool chain enabled and it is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) assembly at OnLaunched overridden method of App class in UWP project is the suggested workaround. And the code example is shown below: 
+This step is required only if the application is deployed in Release mode with the .NET native tool chain enabled and is intended to resolve the known Framework issue “Custom controls not rendering in Release mode” on the UWP platform. Initializing the [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) assembly in the `OnLaunched` overridden method of the `App` class in the UWP project is the suggested workaround. The code example is shown below:
 
 {% tabs %}
 
@@ -170,7 +168,7 @@ Window.Current.Activate();
 
 ## Initialize SfNavigationDrawer
 
-Import the [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) namespace in respective Page as shown below: 
+Import the [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) namespace in the respective page as shown below:
 
 {% tabs %}
 
@@ -188,7 +186,7 @@ Import the [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfus
 
 {% endtabs %}
 
-Then initialize an empty navigation drawer as shown below,
+Then initialize an empty navigation drawer as shown below:
 
 {% tabs %}	
 {% highlight xaml %}
@@ -231,11 +229,11 @@ namespace NaviSample
 
 {% endtabs %}
 
-N> It is mandatory to set [`ContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ContentView) for [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) on initializing.
+> Note: It is mandatory to set the [`ContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ContentView) for [`SfNavigationDrawer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html) upon initialization.
 
 ## Adjust Drawer Size
 
-The default position of navigation pane is left so let us change the drawer width to 200.
+The default position of the navigation pane is on the left, so let's change the drawer width to 200.
 
 {% tabs %}	
 {% highlight xaml %}
@@ -283,12 +281,11 @@ namespace NaviSample
 
 {% endtabs %}
 
-
-N> For changing the side of navigation pane use [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_Position) property. Use [`DrawerHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerWidth) property to change the drawer height in Top and Bottom positions.
+> Note: To change the side of the navigation pane, use the [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_Position) property. To adjust the drawer height in the Top and Bottom positions, use the [`DrawerHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerWidth) property.
 
 ## Add Hamburger Menu for Toggling Drawer
 
-Create a button and set required image to the [`Image`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Image) property of Button. Subscribe Clicked event of the button and invoke ToggleDrawer() method in it to toggle the drawer. Set this button as [`ContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ContentView) property of SfNavigationDrawer. Align the layout of [`ContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ContentView) properly to get the hamburger icon at top left as shown in following code:
+Create a button and set the required image to the [`Image`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Image) property of the button. Subscribe to the Clicked event of the button and invoke the `ToggleDrawer()` method in it to toggle the drawer. Set this button as the [`ContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ContentView) property of `SfNavigationDrawer`. Align the layout of [`ContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_ContentView) properly to get the hamburger icon at the top left as shown in the following code:
 
 {% tabs %}	
 
@@ -366,7 +363,7 @@ namespace NaviSample
 
 {% endtabs %}
 
-N> Add the required images in drawable folder of Android project, Assets folder of iOS project and add it directly to the UWP project.
+> Note: Add the required images to the drawable folder of the Android project, the Assets folder of the iOS project, and add them directly to the UWP project.
 
 ![CustomView Image](Images/HamburgerIcon.png)
 

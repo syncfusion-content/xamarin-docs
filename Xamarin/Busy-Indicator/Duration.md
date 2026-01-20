@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Animation Duration in Xamarin Busy Indicator control | Syncfusion
-description: Learn here all about Animation Duration support in Syncfusion Xamarin Busy Indicator (SfBusyIndicator) control and more.
-platform: xamarin
-control: BusyIndicator
+title: Animation Duration in Xamarin Busy Indicator Control | Syncfusion
+description: Discover the animation duration support in Syncfusion Xamarin Busy Indicator (SfBusyIndicator) control.
+platform: Xamarin
+control: SfBusyIndicator
 documentation: ug
 ---
+
 # Animation Duration in Xamarin Busy Indicator (SfBusyIndicator)
 
-## Animation Duration in Xamarin BusyIndicator (SfBusyIndicator)
-
-The [`Duration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_Duration) property of [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) indicates timeline for completing one animation cycle. Setting smaller duration value accelerates animation speed.
+The [`Duration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_Duration) property of the [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) specifies the time taken to complete one animation cycle. A smaller duration value results in faster animation speed.
 
 {% tabs %}
 

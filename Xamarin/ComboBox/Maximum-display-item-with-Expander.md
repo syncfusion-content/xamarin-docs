@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Maximum display item with Expander in Xamarin ComboBox | Syncfusion
-description: Learn here all about Maximum display item with Expander support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
-platform: xamarin
+title: Maximum Display Item with Expander in Xamarin ComboBox | Syncfusion
+description: Learn about Maximum Display Item with Expander support in the Syncfusion Xamarin ComboBox (SfComboBox) control and more.
+platform: Xamarin
 control: SfComboBox
 documentation: ug
 ---
-# Maximum display item with Expander in Xamarin ComboBox (SfComboBox)
+# Maximum Display Item with Expander in Xamarin ComboBox (SfComboBox)
 
-## Maximum display item with expander in Xamarin SfComboBox
+## Maximum Display Item with Expander in Xamarin SfComboBox
 
-Restrict the number of suggestions displayed and have the remaining items loaded by selecting the LoadMore. you can restrict the maximum suggestion to be displayed with the [`MaximumSuggestion`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_MaximumSuggestion) property and also you can set the desire text for displaying the LoadMore text with the [`LoadMoreText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_LoadMoreText) property.
+Restrict the number of suggestions displayed, and load remaining items by selecting "Load More." You can control the maximum suggestions displayed using the [`MaximumSuggestion`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_MaximumSuggestion) property, and set custom text for loading more items using the [`LoadMoreText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_LoadMoreText) property.
 
 {% tabs %}
 
@@ -101,14 +101,13 @@ namespace ComboBoxSample
 
 {% endtabs %}
 
+![Maximum Display Item with Expander](images/Maximum-display-item-with-Expander/LoadMore.png)
 
-![Maximum display item with Expander](images/Maximum-display-item-with-Expander/LoadMore.png)
+## Restricting the Maximum Display of Items Dynamically
 
-## Restricting the maximum display of items dynamically
+You can restrict the maximum display of items dynamically by calling the `LoadMore` method. The user can dynamically change the maximum suggestion count by calling the `LoadMore` method with the desired maximum suggestion count as the argument.
 
-You can restrict the maximum display of items dynamically by calling the `LoadMore` method. The user can dynamically change the maximum suggestion count by calling the LoadMore method by giving the maximum suggestion as the argument inside.
-
-N> LoadMore method has enhanced only on iOS and Android platform.
+> **Note:** The `LoadMore` method is enhanced only on iOS and Android platforms.
 
 {% tabs %}
 {% highlight c# %}
@@ -122,11 +121,9 @@ comboBox.LoadMore(5);
 {% endhighlight %}
 {% endtabs %}
 
-## Load more view customization
+## Load More View Customization
 
-[`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) allows customizing User Interface(UI) of Load More view.
-To customize the load more text, add the custom UI in the [`LoadMoreTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_LoadMoreTemplate) API in [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html), as shown in the following code snippet.
-
+[`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) allows customization of the User Interface (UI) for the Load More view. Customize the load more text by adding a custom UI using the [`LoadMoreTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_LoadMoreTemplate) API in `SfComboBox`, as shown in the following example:
 {% tabs %}
 
 {% highlight xaml %}

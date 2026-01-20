@@ -1,24 +1,23 @@
 ---
 layout: post
-title: Segmenting and Placing the Items in Xamarin Radial Menu | Syncfusion
-description: Learn here all about Segmenting and Placing the Items support in Syncfusion Xamarin Radial Menu (SfRadialMenu) control and more.
+title: Segmenting and Placing Items in Xamarin Radial Menu | Syncfusion
+description: Learn about segmenting and placing items support in the Syncfusion Xamarin Radial Menu (SfRadialMenu) control and more.
 platform: Xamarin
 control: SfRadialMenu
 documentation: ug
 ---
 
-# Segmenting and Placing the Items in Xamarin Radial Menu (SfRadialMenu)
+# Segmenting and Placing Items in Xamarin Radial Menu (SfRadialMenu)
 
-There are two different layout types available for radial menu:
+The radial menu offers two different layout types:
+- [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.LayoutType.html#Syncfusion_SfRadialMenu_XForms_LayoutType_Default)
+- [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.LayoutType.html#Syncfusion_SfRadialMenu_XForms_LayoutType_Custom)
 
-* [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.LayoutType.html#Syncfusion_SfRadialMenu_XForms_LayoutType_Default)
-* [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.LayoutType.html#Syncfusion_SfRadialMenu_XForms_LayoutType_Custom)
+Both layout types divide the available space equally among all children in the circular panel.
 
-Both the layout types divide the available space equally among all the children in the circular panel.
+## Default Layout
 
-## Default
-
-Number of segments in the panel is determined by children count in the level. Hence, segment count in each hierarchical level differs, radial menu items are arranged in the sequential order as added in the radial menu.
+The number of segments in the panel is determined by the number of children at each level. As a result, the segment count in each hierarchical level varies, and radial menu items are arranged in the sequential order they are added to the radial menu.
 
 {% tabs %}
 {% highlight xaml %}
@@ -75,9 +74,9 @@ namespace RadialSample
 {% endhighlight %}
 {% endtabs %}
 
-## Custom
+## Custom Layout
 
-The number of segments in the panel is determined using the [`VisibleSegmentsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_VisibleSegmentsCount) property. Since the segment count in all the hierarchical levels are same, radial menu items are arranged in any order based on the [`SegmentIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenuItem_SegmentIndex) property.
+The number of segments in the panel is determined using the [`VisibleSegmentsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_VisibleSegmentsCount) property. Since the segment count is consistent across all hierarchical levels, radial menu items can be arranged in any order based on the [`SegmentIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenuItem_SegmentIndex) property.
 
 {% tabs %}
 
@@ -138,19 +137,19 @@ namespace RadialSample
 
 ### VisibleSegmentsCount
 
-The [`VisibleSegmentsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_VisibleSegmentsCount) property is used to specify the number of segments available in circular panel. When children count is greater than the value given in the [`VisibleSegmentsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_VisibleSegmentsCount) property, the overflowing children are not arranged in the panel. When children count is lesser than the [`VisibleSegmentsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_VisibleSegmentsCount) property, then remaining segments are left free.
+The [`VisibleSegmentsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_VisibleSegmentsCount) property is used to specify the number of segments available in the circular panel. If the count of children exceeds the value given in the `VisibleSegmentsCount` property, the overflowing children are not arranged in the panel. If the count of children is less than `VisibleSegmentsCount`, the remaining segments are left unoccupied.
 
-![Image for before visible segment count](images/beforeVisbleSegment.png)
+![Image for visible segment count](images/beforeVisbleSegment.png)
 
-If number of item count is higher than VisibleItemCount, excessive items will not be shown.
+If the number of item counts is higher than `VisibleItemCount`, excessive items will not be shown.
 
 ![Image for after visible segment count ](images/visibleSegmentCount.png)
 
 ### SegmentIndex
 
-[`SegmentIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenuItem_SegmentIndex) property is used to specify the index of the radial menu item in circular panel. Based on the index, the radial menu items are inserted in the segment. When the [`SegmentIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenuItem_SegmentIndex) is not specified for a RadialMenuItem the menu item is arranged in the next available free segment.
+The [`SegmentIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenuItem_SegmentIndex) property specifies the index of the radial menu item in the circular panel. Based on the index, radial menu items are inserted into segments. If the `SegmentIndex` is not specified for a `RadialMenuItem`, the menu item is arranged in the next available free segment.
 
-## Code snippet for VisibleSegmentCount and SegmentIndex
+## Code Snippet for VisibleSegmentCount and SegmentIndex
 
 {% tabs %}
 

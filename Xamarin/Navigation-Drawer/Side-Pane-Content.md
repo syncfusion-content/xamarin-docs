@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setting Sliding Panel Content in Xamarin NavigationDrawer | Syncfusion
-description: Learn here all about Setting Sliding Panel Content support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
+description: Learn about setting sliding panel content support in the Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug
@@ -10,19 +10,17 @@ documentation: ug
 
 # Setting Sliding Panel Content in Xamarin Navigation Drawer
 
-The drawer pane content is viewable only if drawer is in open state. Its content can be set as
+The drawer pane content is viewable only when the drawer is in an open state. Its content can be set as:
 
-*	Header Content
+- Header Content
+- Drawer Content
+- Footer Content
 
-*	Drawer Content
-
-*	Footer Content
-
-N> Header and Footer content are optional but Drawer content is mandatory to allocate space for the drawer.
+> Note: Header and Footer content are optional, but Drawer content is mandatory to allocate space for the drawer.
 		
 ## Header Content
 
-As the name suggests it is displayed at the top of drawer. [`DrawerHeaderView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeaderView) property is used to set the header content of drawer. 
+As the name suggests, it is displayed at the top of the drawer. The [`DrawerHeaderView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeaderView) property is used to set the header content of the drawer.
 
 {% tabs %}
 
@@ -96,9 +94,9 @@ namespace NaviSample
 
 ## Header Height
 
-Height of the drawer header content can be adjusted using [`DrawerHeaderHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeaderHeight) property.
+The height of the drawer header content can be adjusted using the [`DrawerHeaderHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeaderHeight) property.
 
-N> [`DrawerHeaderView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeaderView) will be disabled by setting [`DrawerHeaderHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeaderHeight)  to zero 
+> Note: The [`DrawerHeaderView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeaderView) will be disabled by setting the [`DrawerHeaderHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeaderHeight) to zero.
 
 {% tabs %}
 
@@ -172,7 +170,7 @@ namespace NaviSample
 
 ## Footer Content
 
-As the name suggests it is displayed at the bottom of drawer. [`DrawerFooterView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerFooterView) property is used to set the footer content of drawer. 
+As the name suggests, it is displayed at the bottom of the drawer. The [`DrawerFooterView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerFooterView) property is used to set the footer content of the drawer.
 
 {% tabs %}
 
@@ -245,9 +243,9 @@ namespace NaviSample
 
 ## Footer Height
 
-Height of the drawer footer content can be adjusted using [`DrawerFooterHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerFooterHeight) property.
+The height of the drawer footer content can be adjusted using the [`DrawerFooterHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerFooterHeight) property.
 
-N> [`DrawerFooterView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerFooterView) will be disabled by setting [`DrawerFooterHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerFooterHeight) to zero 
+> Note: The [`DrawerFooterView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerFooterView) will be disabled by setting the [`DrawerFooterHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerFooterHeight) to zero.
 
 {% tabs %}
 
@@ -317,11 +315,11 @@ namespace NaviSample
 
 {% endtabs %}
 
-![Footer hight](Images/FooterHeight.png)
+![Footer height](Images/FooterHeight.png)
 
 ## Main Content
 
-Drawer main content is displayed in between header and footer content. It can be set using [`DrawerContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerContentView) property. Content view occupies the remaining space left by header and footer content.
+The drawer's main content is displayed between the header and footer content. It can be set using the [`DrawerContentView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerContentView) property. The content view occupies the remaining space left by the header and footer content.
 
 {% tabs %}
 

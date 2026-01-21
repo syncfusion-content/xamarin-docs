@@ -1,26 +1,23 @@
 ---
 layout: post
-title: Colors in Xamarin Numeric Entry control | Syncfusion
-description: Learn here all about Colors support in Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control and more.
+title: Colors in Xamarin Numeric Entry Control | Syncfusion
+description: Discover how to customize color properties in the Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
 # Colors in Xamarin Numeric Entry (SfNumericTextBox)
 
-You can customize [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) control's background, text and border colors via the following bindable properties:
+You can customize the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) control's background, text, and border colors using the following bindable properties:
 
-* [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_TextColor) - Sets the color of the NumericTextBox's value.
+- [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_TextColor): Sets the color of the numeric value displayed.
+- `BackgroundColor`: Sets the background color of the NumericTextBox frame.
+- [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_BorderColor): Defines the border color of the NumericTextBox.
+- [`WatermarkColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_WatermarkColor): Sets the color for the watermark text.
 
-* `BackgroundColor` - Sets the background color of NumericTextBox's frame.
+## Text Color in SfNumericTextBox
 
-* [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_BorderColor) - Sets the border color of NumericTextBox.
-
-* [`WatermarkColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_WatermarkColor) - Sets the color of NumericTextBox's watermark text.
-
-## Text color support in SfNumericTextBox
-
-To set the [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_TextColor) color in XAML as well as in C#.
+To set the [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_TextColor), use XAML or C#:
 
 {% tabs %}
 
@@ -43,9 +40,9 @@ this.Content = numericTextBox;
 
 ![Display SfNumericTextBox with TextColor](images/textcolor.png)
 
-## Background color support in SfNumericTextBox
+## Background Color in SfNumericTextBox
 
-To set the BackgroundColor color in XAML as well as in C#:
+To set the `BackgroundColor` using XAML or C#:
 
 {% tabs %}
 
@@ -69,9 +66,9 @@ this.Content = numericTextBox;
 
 ![Display SfNumericTextBox with BackgroundColor](images/backgroundcolor.png)
 
-## Border color support in SfNumericTextBox
+## Border Color in SfNumericTextBox
 
-To set the [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_BorderColor) color in XAML as well as in C#:
+To set the [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_BorderColor) using XAML or C#:
 
 {% tabs %}
 
@@ -94,9 +91,9 @@ this.Content = numericTextBox;
 
 ![Display SfNumericTextBox with BorderColor](images/bordercolor.png)
 
-## Watermark color support in SfNumericTextBox
+## Watermark Color in SfNumericTextBox
 
-To set the [`WatermarkColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_WatermarkColor) color in XAML as well as in C#:
+To set the [`WatermarkColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_WatermarkColor) using XAML or C#:
 
 {% tabs %}
 
@@ -120,21 +117,20 @@ this.Content = numericTextBox;
 
 ![Display SfNumericTextBox with WatermarkColor](images/watermarkcolor.png)
 
-## Restrict editing
+## Restrict Editing
 
-You can restrict the dynamic editing of the numeric entry using the [`IsReadOnly`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_IsReadOnly) property. But you can change the control text programmatically by using the bindable  [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Value) property of the numeric entry.
+You can restrict dynamic editing in the numeric entry using the [`IsReadOnly`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_IsReadOnly) property. Changes to the control text can still be made programmatically via the bindable [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Value) property.
 	
-## Visual states
+## Visual States
 
-The [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.html) has been customized based on the [VisualStates](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/visual-state-manager). 
+The [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.html) is customizable based on [VisualStates](https://learn.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/visual-state-manager).
 
-The [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.html) control has the following three basic visual states:
+**Available Visual States:**
+- Normal
+- Focused
+- Disabled
 
-* Normal
-* Focused
-* Disabled
-
-N> The focused visual state is only available in Android and iOS platforms.
+> **Note:** The focused visual state is available only on Android and iOS platforms.
 
 {% tabs %}
 
@@ -214,17 +210,16 @@ N> The focused visual state is only available in Android and iOS platforms.
 
 {% endtabs %}
 
-**Normal visual state**
-![SfNumericTextBox with normal visual state](images/NormalState.PNG)
+**Normal Visual State**
+![SfNumericTextBox with Normal Visual State](images/NormalState.PNG)
 
-**Disabled visual state**
-![SfNumericTextBox with focused visual state](images/DisabledState.PNG)
+**Disabled Visual State**
+![SfNumericTextBox with Disabled Visual State](images/DisabledState.PNG)
 
-**Focused visual state**
-![SfNumericTextBox with disabled visual state](images/FocusState.PNG)
+**Focused Visual State**
+![SfNumericTextBox with Focused Visual State](images/FocusState.PNG)
 
-## See also
+## See Also
 
-[How to customize the border of SfNumericTextBox](https://support.syncfusion.com/kb/article/6848/how-to-custom-the-border-of-numerictextbox)
-
-[How to customize the color appearance of SfNumericTextBox](https://support.syncfusion.com/kb/article/10060/how-to-customize-the-color-appearance-of-numeric-entry-in-xamarinforms)
+- [How to customize the border of SfNumericTextBox](https://support.syncfusion.com/kb/article/6848/how-to-custom-the-border-of-numerictextbox)
+- [How to customize the color appearance of SfNumericTextBox](https://support.syncfusion.com/kb/article/10060/how-to-customize-the-color-appearance-of-numeric-entry-in-xamarinforms)

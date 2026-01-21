@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin NumericUpDown control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control, its elements and more.
+title: Getting Started with Xamarin NumericUpDown Control | Syncfusion
+description: Learn how to get started with the Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control, including its elements and settings.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
@@ -9,19 +9,19 @@ documentation: ug
 
 # Getting Started with Xamarin NumericUpDown (SfNumericUpDown)
 
-This section provides overview for working with Essential SfNumericUpDown for Xamarin.Forms. You can walk through the entire process of creating a SfNumericUpDown.
+This section provides an overview of working with the Essential `SfNumericUpDown` for Xamarin.Forms. Follow the steps below to integrate and configure a `SfNumericUpDown` in your application.
 
-## Assembly deployment
+## Assembly Deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can locate all required assemblies within the directory: `{Syncfusion Essential Studio Installed location}/Essential Studio/{Version #}/Xamarin/lib`.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
 N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
-## Adding SfNumericUpDown reference
+## Adding SfNumericUpDown Reference
 
-You can add SfNumericUpDown reference using one of the following methods:
+You can add the SfNumericUpDown reference using one of the following methods:
 
 **Method 1: Adding SfNumericUpDown reference from nuget.org**
 

@@ -1,9 +1,9 @@
 ---
 
 layout: post
-title: Overview of Syncfusion Badge View control for Xamarin.Forms
-description: This section explains the key features and quick overview about Syncfusion Badge view control for Xamarin.Forms
-platform: xamarin
+title: Overview of Syncfusion Badge View Control for Xamarin.Forms
+description: Discover the key features and an overview of the Syncfusion Badge View control for Xamarin.Forms.
+platform: Xamarin
 control: SfBadgeView
 documentation: ug
 
@@ -11,16 +11,13 @@ documentation: ug
 
 # Overview
 
-Badges are used to notify users of new or unread messages, notifications, or the status of something.
+Badges notify users of new or unread messages, alerts, notifications, or statuses.
 
-## Key features
+## Key Features
 
-**Position** : Position the badge text around the badge content.
+- **Position**: Flexibly position the badge text around the badge content.
+- **Predefined Styles**: Customize the badge background with a range of predefined colors.
+- **Animation**: Utilize animations for dynamic badge text presentation.
+- **Predefined Symbols**: Access built-in notification symbols like available, busy, away, and delete.
 
-**Predefined styles**: Customize the badge background with predefined colors.
-
-**Animation**: Use animations for badge text.
-
-**Predefined symbols**: The Badge View control provides predefined notification symbols such as available, busy, away, and delete.
-
-![Xamarin badge view overview](overview_images/overview.png)
+![Xamarin Badge View Overview](overview_images/overview.png)

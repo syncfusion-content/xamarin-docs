@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Basic Features in Xamarin Masked Entry control | Syncfusion
-description: Learn here all about Basic Features support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
+title: Basic Features in Xamarin Masked Entry Control | Syncfusion
+description: Learn about the basic features supported in the Syncfusion Xamarin Masked Entry (SfMaskedEdit) control.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
@@ -10,9 +10,9 @@ keywords: mask, SfMaskedEdit, maskededit
 
 # Basic Features in Xamarin Masked Entry (SfMaskedEdit)
 
-## Setting value
+## Setting Value
 
-The SfMaskedEdit control displays the value that can be set using the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) property:
+The `SfMaskedEdit` control allows you to set a display value using the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) property:
 
 {% tabs %}
 {% highlight xaml %}
@@ -27,10 +27,9 @@ maskedEdit.Value =@"14/11/2014";
 
 ![Customize the value in Xamarin.Forms masked edit](SfMaskedEditImages/BF_SetValue.png)
 
+## Setting Prompt Character
 
-## Setting prompt character
-
-Displays prompt character for the absence of your input in Mask and its default value is ‘_’. You can set the custom prompt character using [`PromptChar`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_PromptChar) property.
+The prompt character is the default character used to indicate the absence of input in the mask, set to '_' by default. You can customize it using the [`PromptChar`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_PromptChar) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -45,16 +44,14 @@ maskedEdit.PromptChar = '*';
 
 ![Prompt character support in Xamarin.Forms masked edit](SfMaskedEditImages/BF_Prompt.png)
 
-## Setting watermark
+## Setting Watermark
 
-The watermark will prompt you with instructions or important information when it is not on focus and any valid characters are not entered. The [`Watermark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Watermark) property of [`SfMaskedEdit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html) is used to set the watermark text for the control.
-
-The following properties are used to customize its appearance:
-
-* [`WatermarkColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_WatermarkColor): Sets text color for the watermark.
-* [`WatermarkFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_WatermarkFontFamily): Represents the font to be used in the watermark.
-* [`WatermarkFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_WatermarkFontAttributes): Sets font attributes(bold/italic/none) for the watermark.
-* [`WatermarkFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_WatermarkFontSize): Sets font size for the watermark.
+The watermark provides prompts or instructions when it is not focused, and no valid characters are entered. Customize its appearance using the properties below:
+- [`Watermark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Watermark): Sets the watermark text.
+- [`WatermarkColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_WatermarkColor): Sets the text color for the watermark.
+- [`WatermarkFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_WatermarkFontFamily): Sets the font used in the watermark.
+- [`WatermarkFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_WatermarkFontAttributes): Sets font attributes (e.g., bold, italic).
+- [`WatermarkFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_WatermarkFontSize): Sets the font size for the watermark.
 
 {% tabs %}
 {% highlight xaml %}
@@ -73,16 +70,9 @@ maskedEdit.WatermarkFontSize = 20;
 
 ![Watermark support in Xamarin.Forms masked edit](SfMaskedEditImages/BF_Hint.png)
 
-## Customize the return key
+## Customize the Return Key
 
-The appearance of the return key on the soft keyboard, which is displayed when `SfMaskedEdit` has focus, can be customized by setting the [`ReturnType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ReturnType) property to a value of the ReturnType enumeration.
-
-* `Default` – indicates that no specific return key is required and that the platform default is used.
-* `Done` – indicates the return key "Done."
-* `Go` – indicates the return key "Go".
-* `Next` – indicates the return key "Next".
-* `Search` – indicates the return key "Search".
-* `Send` – indicates the return key "Send".
+The return key's appearance on the soft keyboard, displayed when `SfMaskedEdit` has focus, can be customized by setting the [`ReturnType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ReturnType) property. Options include `Default`, `Done`, `Go`, `Next`, `Search`, and `Send`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -103,14 +93,13 @@ maskededit.MaskType = Syncfusion.XForms.MaskedEdit.MaskType.RegEx;
 {% endhighlight %}
 {% endtabs %}
 
-![customize return key in Xamarin.Forms masked edit](SfMaskedEditImages/ReturnType.png)
+![Customize return key in Xamarin.Forms masked edit](SfMaskedEditImages/ReturnType.png)
 
-N> The default value of the ReturnType property is Default.
+> **Note:** The default value of the `ReturnType` property is `Default`.
 
+## Return Command and Return Command Parameter
 
-## Return command and return command parameter
-
-[`ReturnCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ReturnCommand) is triggered by pressing the return key. Additionally, You can pass the parameter through the  [`ReturnCommandParameter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ReturnCommandParameter) property to the ICommand. 
+The [`ReturnCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ReturnCommand) is triggered by pressing the return key. You can also pass a parameter through the [`ReturnCommandParameter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ReturnCommandParameter) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -156,7 +145,7 @@ N> The default value of the ReturnType property is Default.
 
 {% endtabs %}
 
-## Clear button visibility
+## Clear Button Visibility
 
 The property of [`ClearButtonVisibility`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ClearButtonVisibility) can be used to control whether a `SfMaskedEdit` displays a clear button allowing the user to clear the MaskedText. This property should be set to an enumeration member of [`ClearButtonVisibilityMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Editors.ClearButtonVisibilityMode.html).
 
@@ -189,13 +178,14 @@ maskededit.MaskType = MaskType.RegEx;
 
 ![Clear button visibility support in Xamarin.Forms masked edit](SfMaskedEditImages/ClearButton.png)
 
-## Cursor position
+> **Note:** This feature is supported from Android version 5.0 (API level 21 or higher). It is not supported on the UWP platform due to existing framework-level support.
+## Cursor Position
 
-Cursor position in the entry can either be obtained or updated using [`CursorPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_CursorPosition) property in masked edit.
+Manage the cursor position within the entry using the [`CursorPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_CursorPosition) property.
 
-## Select text on focus
+## Select Text on Focus
 
-You can control the selection of masked edit [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) when the control gets its focus using the [`SelectAllOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_SelectAllOnFocus) property.
+Control the selection of masked edit [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) upon focus using the [`SelectAllOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_SelectAllOnFocus) property.
 
 {% tabs %}
 
@@ -218,11 +208,11 @@ You can control the selection of masked edit [`Value`](https://help.syncfusion.c
 
 ![Clear button visibility support in Xamarin.Forms masked edit](SfMaskedEditImages/SelectOnFocus.png)
 
-## Restrict editing
+## Restrict Editing
 
-You can restrict the dynamic editing of the masked entry using the [`IsReadOnly`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_IsReadOnly) property. But, you can change the control text programmatically by using the bindable [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) property of the masked edit.
+Restrict dynamic editing using the [`IsReadOnly`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_IsReadOnly) property. Change control text programmatically via the bindable [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) property.
 
-## Spell check
+## Spell Check
 
 The `IsSpellCheckEnabled` property can be used to control whether spell checking is enabled or not when the user enters text and the misspellings are indicated in the red line. By default, the property is set to true.
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: How to | SfTextInputLayout |Xamarin | Syncfusion
-description: Explains the text input layout customization
+title: How to Customize SfTextInputLayout in Xamarin | Syncfusion
+description: Learn how to customize the text input layout in Xamarin using SfTextInputLayout.
 platform: Xamarin
 control: SfTextInputLayout
 documentation: ug
 --- 
-# How to 
 
-## Customize the thickness of stroke 
+# How to Customize SfTextInputLayout
+## Customize the Thickness of the Stroke
 
-The border stroke width (for [Outlined](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html)) and line thickness (for [Filled](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html) and [None](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html)) can be customized based on the focus state of the input view by setting the [FocusedStrokeWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_FocusedStrokeWidthProperty) and [UnfocusedStrokeWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_UnfocusedStrokeWidthProperty) properties.
+The border stroke width for [Outlined](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html) and line thickness for [Filled](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html) or [None](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html) container types can be customized. This customization is based on the focus state of the input view by setting the [FocusedStrokeWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_FocusedStrokeWidthProperty) and [UnfocusedStrokeWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_UnfocusedStrokeWidthProperty) properties.
 
 {% tabs %}
 
@@ -41,23 +41,17 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![FocusedStrokeWidth img](How-to-images/FocusedStroke.png)
+![Focused Stroke Width](How-to-images/FocusedStroke.png)
 
-![UnfocusedStrokeWidth img](How-to-images/UnfocusedStroke.png)
+![Unfocused Stroke Width](How-to-images/UnfocusedStroke.png)
 
-## Customize the font for input view
+## Customize the Font for Input View
 
-You can customize the font for the input view inside SfTextInputLayout using its properties.
+You can customize the font for the input view inside SfTextInputLayout using the following control properties:
 
-* [Entry](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms#properties)
-
-* [Editor](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms#properties)
-
-* [SfMaskedEdit](https://help.syncfusion.com/xamarin/sfmaskededit/visual-customization#setting-appearance-of-text) 
-
-* [SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/font-settings)
-
-* [SfAutoComplete](https://help.syncfusion.com/xamarin/sfautocomplete/customizing-autocomplete)
-
-* [SfComboBox](https://help.syncfusion.com/xamarin/sfcombobox/customizing-combobox)
-
+- [Entry](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms#properties)
+- [Editor](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms#properties)
+- [SfMaskedEdit](https://help.syncfusion.com/xamarin/sfmaskededit/visual-customization#setting-appearance-of-text)
+- [SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/font-settings)
+- [SfAutoComplete](https://help.syncfusion.com/xamarin/sfautocomplete/customizing-autocomplete)
+- [SfComboBox](https://help.syncfusion.com/xamarin/sfcombobox/customizing-combobox)

@@ -1,25 +1,26 @@
 ---
 layout: post
-title: Getting started | SfBorder | Xamarin | Syncfusion
-description: This section describes about quick tour to initial users on Syncfusion Border control for Xamarin.Forms platform.
-platform: xamarin
+title: Getting Started with SfBorder | Xamarin | Syncfusion
+description: This section provides a quick tour for new users of the Syncfusion SfBorder control in Xamarin.Forms.
+platform: Xamarin
 control: SfBorder
 documentation: ug
 ---
 
 # Getting Started with SfBorder
 
-This section provides an overview for working with the SfBorder control for Xamarin.Forms and explains the entire process of creating a real-world application.
+This tutorial provides an overview for working with the SfBorder control in Xamarin.Forms and guides you through creating a real-world application.
 
-## Assembly deployment
+## Assembly Deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), locate all necessary assemblies in: `{Syncfusion Essential Studio Installed location}/Essential Studio/{Version #}/Xamarin/lib`.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
-N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+> **Note:** On Mac, assemblies can be found in: `Documents/Syncfusion/{Version #}/Xamarin/lib`.
+## Adding SfBorder Reference
 
-## Adding SfBorder reference
+You can add the SfBorder reference using one of the following methods:
 
 You can add SfBorder reference using one of the following methods:
 
@@ -66,23 +67,21 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download).
+> **Note:** Refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download) setup guides.
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
+> **Important:** Starting with v16.2.0.x, you need to include a license key for Syncfusion assemblies from the trial setup or NuGet feed. See the [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) guide for details on registering a license key in your Xamarin application.
 
-## Launching an application on each platform with SfBorder.
+## Launching the Application on Each Platform with SfBorder
 
-To use the SfBorder control inside an application, each platform application must initialize the SfBorder renderer. This initialization step varies from platform to platform and is discussed in the following sections:
+To use SfBorder within an application, each platform requires initialization of the SfBorder renderer, as outlined below:
 
-N> If you are adding the references from toolbox, below steps are not needed.
-
+> **Note:** If using references from the Toolbox, further steps are unnecessary.
 ### Android and UWP
 
-The Android and UWP launches the SfBorder without any initialization, and it is enough to only initialize the Xamarin.Forms Framework to launch the application.
-
+For Android and UWP, launching SfBorder requires only initializing the Xamarin.Forms Framework.
 ### iOS
 
-To launch the SfBorder in iOS, call the `SfBorderRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework has been initialized and before the LoadApplication is called, as demonstrated in the following code example.
+To launch SfBorder in iOS, call `SfBorderRenderer.Init()` within the `FinishedLaunching` method of the AppDelegate class after the Xamarin.Forms Framework initialization and before `LoadApplication`.
 
 {% highlight c# %}
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
@@ -95,9 +94,9 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 }
 {% endhighlight %} 
 
-### Release mode issue in UWP platform
+### Release Mode Issue on UWP Platform
 
-The known Framework issue in UWP platform is that the custom controls will not be rendered when deployed an application in `Release Mode`. It can be resolved by initializing the SfBorder assemblies in the `App.xaml.cs` file in the UWP project, as demonstrated in the following code example.
+UWP platforms have a known issue where custom controls are not rendered when deploying an application in `Release Mode`. Resolve this by initializing SfBorder assemblies in the `App.xaml.cs` file in the UWP project, as shown:
 
 {% highlight c# %}
 // In App.xaml.cs
@@ -122,8 +121,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ### Windows Presentation Foundation (WPF)
 
-To launch the border in WPF, call the SfBorderRenderer.Init() method in the MainWindow constructor of the MainWindow class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample.
-
+Launch SfBorder in WPF by calling `SfBorderRenderer.Init()` in the `MainWindow` constructor after Xamarin.Forms initialization and before `LoadApplication`.
 {% highlight c# %}
 
 public partial class MainWindow : FormsApplicationPage
@@ -142,11 +140,11 @@ public partial class MainWindow : FormsApplicationPage
 
 {% endhighlight %}
 
-## Creating SfBorder control
+## Creating the SfBorder Control
 
-The `SfBorder` control is configured entirely in C# code or in XAML markup. The following steps explain how to create a `SfBorder` and configure its elements.
+The `SfBorder` control can be configured entirely in C# code or using XAML markup. Below are steps to create `SfBorder` and its elements:
 
-### Adding namespace for referred assemblies
+### Adding Namespace for Referred Assemblies
 
 {% tabs %}
 
@@ -164,7 +162,7 @@ using Syncfusion.XForms.Border;
 
 {% endtabs %}
 
-### Add the SfBorder control as the content of ContentPage.
+### Adding SfBorder Control as Content of ContentPage
 
 {% tabs %}
 {% highlight xaml %}
@@ -222,6 +220,6 @@ namespace BorderGettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![border](images/Xamarin_Forms_Border.png)
+![Border Example](images/Xamarin_Forms_Border.png)
 
 The complete Getting Started sample is available in [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted828010295.zip) link.

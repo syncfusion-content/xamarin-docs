@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Masked Entry control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Masked Entry (SfMaskedEdit) control, its elements and more.
+title: Getting Started with Xamarin Masked Entry Control | Syncfusion
+description: Learn about starting with the Syncfusion Xamarin Masked Entry (SfMaskedEdit) control, its elements, and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
@@ -10,35 +10,35 @@ keywords: mask, SfMaskedEdit, maskededit
 
 # Getting Started with Xamarin Masked Entry (SfMaskedEdit)
 
-This section explains you the steps required to configure a [`SfMaskedEdit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html) control in a real-time scenario and provides a walk-through on some of the customization features available in [`SfMaskedEdit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html) control.
+This section explains the steps required to configure an [`SfMaskedEdit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html) control in a real-time scenario and provides a walkthrough of some customization features available in the control.
 
-## Assembly deployment
+## Assembly Deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders: `{Syncfusion Essential Studio Installed location}\Essential Studio\{Version #}\Xamarin\lib`.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
 N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
-## Adding SfMaskedEdit reference
+## Adding SfMaskedEdit Reference
 
-You can add SfMaskedEdit reference using one of the following methods:
+You can add the `SfMaskedEdit` reference using one of the following methods:
 
-**Method 1: Adding SfMaskedEdit reference from nuget.org**
+**Method 1: Adding SfMaskedEdit Reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfMaskedEdit to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfMaskedEdit](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaskedEdit), and then install it.
+Syncfusion Xamarin components are available on [nuget.org](https://www.nuget.org/). To add `SfMaskedEdit` to your project, open the NuGet Package Manager in Visual Studio, search for [Syncfusion.Xamarin.SfMaskedEdit](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaskedEdit), and then install it.
 
 ![Adding SfMaskedEdit reference from NuGet](SfMaskedEditImages/Adding SfMaskedEdit reference.png)
 
-N> Install the same version of SfMaskedEdit NuGet in all the projects.
+> **Note:** Install the same version of the `SfMaskedEdit` NuGet package in all projects.
 
-**Method 2: Adding SfMaskedEdit reference from toolbox**
+**Method 2: Adding SfMaskedEdit Reference from Toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfMaskedEdit control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion provides a Xamarin Toolbox. Using this toolbox, you can drag the `SfMaskedEdit` control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. For installing the Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
-**Method 3: Adding SfMaskedEdit assemblies manually from the installed location**
+**Method 3: Adding SfMaskedEdit Assemblies Manually from the Installed Location**
 
-If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+If you prefer to manually reference the assemblies instead of using NuGet, add the following assemblies to the respective projects.
 
 Location: {Installed location}/{version}/Xamarin/lib
 
@@ -83,9 +83,9 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% endhighlight %}
 {% endtabs %}
 
-### Additional step for UWP
+### Additional Step for UWP
 
-This step is required only if the application is deployed in Release mode with .NET native tool chain enabled and it is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the SfMaskedEdit assembly at `OnLaunched` overridden method of the `App` class in UWP project is the suggested work around, as demonstrated in the following code example.
+This step is required if deploying the application in Release mode with the .NET native toolchain enabled and addresses the known framework issue "Custom controls not rendering in Release mode" on the UWP platform. Initialize the `SfMaskedEdit` assembly in the `OnLaunched` overridden method of the `App` class in the UWP project, as shown below.
 
 {% tabs %}
 {% highlight c# %}
@@ -111,9 +111,9 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ## Create a Simple SfMaskedEdit
 
-The SfMaskedEdit control is configured entirely in C# code or by using XAML markup. The following steps explain how to create a SfMaskedEdit and configure its elements:
+The `SfMaskedEdit` control is configured entirely in C# or using XAML markup. The following steps demonstrate how to create an `SfMaskedEdit` and configure its elements:
 
-### Add namespace for referred assemblies
+### Add Namespace for Referred Assemblies
 
 {% tabs %}
 {% highlight xaml %}
@@ -124,7 +124,7 @@ using Syncfusion.XForms.MaskedEdit;
 {% endhighlight %}
 {% endtabs %}
 
-### Refer SfMaskedEdit control with declared suffix name for Namespace
+### Reference SfMaskedEdit Control with Declared Suffix Name for Namespace
 
 {% tabs %}
 {% highlight xaml %}
@@ -164,9 +164,9 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-## Masking the input
+## Masking the Input
 
-To mask the input, set the [`Mask`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Mask) property as follows:
+To mask the input, set the [`Mask`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Mask) property as shown below:
 
 {% tabs %}
 {% highlight xaml %}
@@ -178,12 +178,11 @@ maskedEdit.Mask = "00/00/0000";
 {% endhighlight %}
 {% endtabs %}
 
-This mask expression allows only numeric inputs in the places of 0.
+This mask expression allows only numeric inputs where `0` is specified.
 
-Refer to this [link](masktype.html) to know more about the Mask characters and Mask Types available in SfMaskedEdit control.
+For more details about mask characters and types available in the `SfMaskedEdit` control, refer to this [link](masktype.html).
 
-Run the project and check if you get the following output to make sure that you have configured your project properly to add `SfMaskedEdit`.
-
+Run the project and verify that you obtain the following output to confirm proper configuration of the `SfMaskedEdit`.
 ![Xamarin.Forms masked edit](SfMaskedEditImages/GettingStarted.png)
 
-You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Masted-edit).
+A complete getting started sample is available in this [link](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Masked-edit).

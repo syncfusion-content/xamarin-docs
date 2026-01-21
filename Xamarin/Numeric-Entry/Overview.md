@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin Numeric Entry control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control, its elements and more.
+title: About Xamarin Numeric Entry Control | Syncfusion
+description: Introduction to the Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control, its elements, and more.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug
@@ -9,22 +9,15 @@ documentation: ug
 
 # Xamarin Numeric Entry (SfNumericTextBox) Overview
 
-The Essential Xamarin.Forms NumericTextBox is an advanced version of the Entry control that restricts input to numeric values.
-
-Also provides, a gesture friendly UI culture and can be configured to display different formats like currency format, scientific format etc.
-
+The Essential Xamarin.Forms NumericTextBox is an enhanced version of the Entry control, designed to restrict input to numeric values. It offers a gesture-friendly UI that supports various culture settings and can be configured to display different formats such as currency and scientific notation.
 ![overview](images/overview.png)
 
 ## Key Features
 
-* `FormatString` - Input string can be formatted by using the format strings.
+- **`FormatString`**: Allows input strings to be formatted using specific format strings.
 
-* `Culture` - Number format can be localized to any specific culture.
+- **`Culture`**: Enables localization of number formats to any specific culture.
 
-* `AllowNull` - Allows the user to set null value.
+- **`AllowNull`**: Supports setting a null value for the numeric entry.
 
-* `ParserMode` - Value gets parsed based on parser mode.
-
-
-
-
+- **`ParserMode`**: Parses values based on the specified parser mode.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sliding Direction in Xamarin Rotator control | Syncfusion
-description: Learn here all about Sliding Direction support in Syncfusion Xamarin Rotator (SfRotator) control and more.
+title: Sliding Direction in Xamarin Rotator Control | Syncfusion
+description: Explore the sliding direction capabilities of the Syncfusion Xamarin Rotator (SfRotator) control.
 platform: xamarin 
 control: Rotator
 documentation: ug
@@ -9,12 +9,11 @@ documentation: ug
 
 # Sliding Direction in Xamarin Rotator (SfRotator)
 
-The [`NavigationDirection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html#Syncfusion_SfRotator_XForms_SfRotator_NavigationDirection) property specifies the direction in which items should be navigated in [`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html) control.
+The [`NavigationDirection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html#Syncfusion_SfRotator_XForms_SfRotator_NavigationDirection) property in the `SfRotator` control specifies the direction in which rotator items should move. This functionality provides enhanced interaction capabilities for navigating image collections.
 
 ## Horizontal
 
-Rotator Items can be navigated in horizontal direction.
-
+Navigate rotator items horizontally to provide a lateral transition effect.
 {% tabs %}
 
 {% highlight xaml %}

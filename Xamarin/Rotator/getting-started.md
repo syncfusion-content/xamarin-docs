@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Rotator control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Rotator (SfRotator) control, its elements and more.
+title: Getting Started with Xamarin Rotator Control | Syncfusion
+description: Discover how to integrate and customize the Syncfusion Xamarin Rotator (SfRotator) control for use in your mobile applications.
 platform: xamarin 
 control: Rotator
 documentation: ug
@@ -9,19 +9,19 @@ documentation: ug
 
 # Getting Started with Xamarin Rotator (SfRotator)
 
-This section explains you the steps to configure a [`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html) control.
+This guide walks you through the steps needed to configure the [`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html) control in a real-world application. Additionally, it highlights some of the customization possibilities available in the `SfRotator` control.
 
-## Assembly deployment
+## Assembly Deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+Upon installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you will find all necessary assemblies in the installation folders constructed like `{Syncfusion Essential Studio Installed location}\Essential Studio\\{Version #}\Xamarin\lib`.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
 N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
-## Adding SfRotator reference
+## Adding SfRotator References
 
-You can add [`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html) reference using one of the following methods:
+You can add the [`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html) reference using one of the following methods:
 
 **Method 1: Adding SfRotator reference from nuget.org**
 
@@ -97,14 +97,11 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {% endtabs %}
 
-### ReleaseMode issue in UWP platform
+### UWP Release Mode Issue
 
-There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in `Release Mode`.
-
-The above problem can be resolved by initializing the SfRotator assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
+A known UWP issue prevents rendering custom controls in `Release Mode`. Fix this by initializing SfRotator assemblies in `App.xaml.cs`:
 
 {% highlight C# %}
-
 // In App.xaml.cs
 
 protected override void OnLaunched(LaunchActivatedEventArgs e)

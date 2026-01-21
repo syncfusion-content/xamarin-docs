@@ -1,21 +1,21 @@
 ---
-layout : post
-title: Populating Data in Xamarin Rotator control | Syncfusion
-description: Learn here all about Populating Data support in Syncfusion Xamarin Rotator (SfRotator) control and more.
-platform : Xamarin
-control : Rotator 
-documentation : ug
+layout: post
+title: Populating Data in Xamarin Rotator Control | Syncfusion
+description: Learn how to effectively populate data within the Syncfusion Xamarin Rotator (SfRotator) control using a variety of data sources.
+platform: Xamarin
+control: Rotator
+documentation: ug
 ---
 
 # Populating Data in Xamarin Rotator (SfRotator)
 
-[`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html) control supports binding to different data sources such as IList Data Source, Observable Collection Data Source.
+The [`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html) control supports binding to various data sources, including `IList` and `ObservableCollection`. This guide explains how to populate the control with image data, define custom templates, and utilize the `SfRotator` effectively.
 
-## Through Binding
+## Data Binding
 
-This section explains about setting Item Source and applying custom template to the data.
+This section covers setting the Item Source and applying a custom template to data in the `SfRotator`.
 
-### Create a Model with Data
+### Creating a Model with Data
 
 [`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html) items can be populated with a collection of image data. You can assign a collection to it. Collections include arrays, Lists and DataTables. For example you may wants to create a Rotator model with Image as follows.
 

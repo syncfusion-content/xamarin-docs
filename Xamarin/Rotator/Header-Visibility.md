@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header Visibility in Xamarin Rotator control | Syncfusion
-description: Learn here all about Header Visibility support in Syncfusion Xamarin Rotator (SfRotator) control and more.
+title: Header Visibility in Xamarin Rotator Control | Syncfusion
+description: Discover how to manage header visibility in the Syncfusion Xamarin Rotator (SfRotator) control and enhance your application's interface.
 platform: xamarin 
 control: Rotator
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ticks Customization in Xamarin Range Slider control | Syncfusion
-description: Learn here all about Ticks Customization support in Syncfusion Xamarin Range Slider (SfRangeSlider) control and more.
+title: Ticks Customization in Xamarin Range Slider Control | Syncfusion
+description: Discover all about ticks customization support in the Syncfusion Xamarin Range Slider (SfRangeSlider) control.
 platform: Xamarin
 control: RangeSlider
 documentation: ug
@@ -9,27 +9,23 @@ documentation: ug
 
 # Ticks Customization in Xamarin Range Slider (SfRangeSlider)
 
-Tick marks can be placed along the track in a uniform manner or it's position can also be customized.
+Tick marks can be uniformly placed along the track, or you can customize their position according to your needs.
 
-## TickPlacement
+## Tick Placement
 
-The [`TickPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_TickPlacement) property determines where to draw tick marks in relation to the track. Available options for this property are,
+The [`TickPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_TickPlacement) property determines where tick marks will appear relative to the track. Options are:
 
-* [`BottomRight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.TickPlacement.html#Syncfusion_SfRangeSlider_XForms_TickPlacement_BottomRight)
+- [`BottomRight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.TickPlacement.html#Syncfusion_SfRangeSlider_XForms_TickPlacement_BottomRight)
+- [`Inline`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.TickPlacement.html#Syncfusion_SfRangeSlider_XForms_TickPlacement_Inline)
+- [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.TickPlacement.html#Syncfusion_SfRangeSlider_XForms_TickPlacement_None)
+- [`Outside`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.TickPlacement.html#Syncfusion_SfRangeSlider_XForms_TickPlacement_Outside)
+- [`TopLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.TickPlacement.html#Syncfusion_SfRangeSlider_XForms_TickPlacement_TopLeft)
 
-* [`Inline`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.TickPlacement.html#Syncfusion_SfRangeSlider_XForms_TickPlacement_Inline)
-
-* [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.TickPlacement.html#Syncfusion_SfRangeSlider_XForms_TickPlacement_None)
-
-* [`Outside`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.TickPlacement.html#Syncfusion_SfRangeSlider_XForms_TickPlacement_Outside)
-
-* [`TopLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.TickPlacement.html#Syncfusion_SfRangeSlider_XForms_TickPlacement_TopLeft)
-
-N> The default option is [`Inline`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.TickPlacement.html#Syncfusion_SfRangeSlider_XForms_TickPlacement_Inline).
+> **Note**: The default setting is [`Inline`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.TickPlacement.html#Syncfusion_SfRangeSlider_XForms_TickPlacement_Inline).
 
 ### BottomRight
 
-Tick marks can be placed either below the track in horizontal orientation or right of the track in vertical orientation.
+Place tick marks either below the track in horizontal orientation or to the right of the track in vertical orientation.
 
 {% tabs %}
 
@@ -47,11 +43,11 @@ Tick marks can be placed either below the track in horizontal orientation or rig
 
 {% endtabs %}
 
-![Tick has been placed at the bottom right of SfRangeSlider in Xamarin.Forms](images/BottomRight.png)
+![Tick marks placed at the bottom right on SfRangeSlider in Xamarin.Forms](images/BottomRight.png)
 
 ### TopLeft
 
-Tick marks are placed either above the track in horizontal orientation or left of the track in vertical orientation.
+Place tick marks either above the track in horizontal orientation or to the left of the track in vertical orientation.
 
 {% tabs %}
 
@@ -69,7 +65,7 @@ Tick marks are placed either above the track in horizontal orientation or left o
 
 {% endtabs %}
 
-![Tick has been placed at the top left of SfRangeSlider in Xamarin.Forms](images/TopLeft.png)
+![Tick marks placed at the top left on SfRangeSlider in Xamarin.Forms](images/TopLeft.png)
 
 ### Inline
 
@@ -91,11 +87,11 @@ Tick marks are placed either above the track in horizontal orientation or left o
 
 {% endtabs %}
 
-![Tick has been placed on the SfRangeSlider in Xamarin.Forms](images/Inline.png)
+![Tick marks placed inline on SfRangeSlider in Xamarin.Forms](images/Inline.png)
 
 ### Outside
 
-Tick marks are placed on both sides of the track either in horizontal or vertical orientation.
+Place tick marks on both sides of the track for either horizontal or vertical orientation.
 
 {% tabs %}
 
@@ -113,11 +109,11 @@ Tick marks are placed on both sides of the track either in horizontal or vertica
 
 {% endtabs %}
 
-![Tick has been placed outside of SfRangeSlider in Xamarin.Forms](images/Outside.png)
+![Tick marks placed outside of SfRangeSlider in Xamarin.Forms](images/Outside.png)
 
-## Customizing tick color
+## Customizing Tick Color
 
-The range slider control provides the [`TickColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_TickColor) property to customize the color of ticks in tick bar.
+Customize the tick color using the [`TickColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_TickColor) property.
 
 {% tabs %}
 
@@ -158,4 +154,4 @@ namespace GettingStarted
 
 {% endtabs %}
 
-![Tick color customization of SfRangeSlider in Xamarin.Forms](images/TickColor.png)
+![Tick color customization on SfRangeSlider in Xamarin.Forms](images/TickColor.png)

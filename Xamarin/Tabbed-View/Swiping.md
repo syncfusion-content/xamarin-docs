@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Swiping in Xamarin Tabbed View | Syncfusion
-description: Learn here all about swiping support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
+description: Discover how to enable and customize swiping in the Syncfusion Xamarin Tabbed View (SfTabView) control.
 platform: Xamarin
 control: TabView
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Swiping in Xamarin Tabbed View (SfTabView)
 
-By default, both the vertical swiping for list view and horizontal swiping for tab view will work.
+By default, both vertical swiping for the list view and horizontal swiping for the tab view are enabled.
 
-## Enable swiping
+## Enable Swiping
 
 Swiping can be customized by using the [`EnableSwiping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_EnableSwiping) property of SfTabView. By default, [`EnableSwiping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_EnableSwiping) is set to true. To limit the user interaction, set the   
 [`EnableSwiping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_EnableSwiping) property of [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html) to false.

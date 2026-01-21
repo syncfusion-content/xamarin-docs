@@ -1,15 +1,15 @@
 ---
 layout: post
-title: DataTemplateSelector in Xamarin Rotator control | Syncfusion
-description: Learn here all about DataTemplateSelector support in Syncfusion Xamarin Rotator (SfRotator) control and more.
-platform: xamarin 
+title: DataTemplateSelector in Xamarin Rotator Control | Syncfusion
+description: Learn about DataTemplateSelector support in the Syncfusion Xamarin Rotator (SfRotator) control.
+platform: Xamarin
 control: Rotator 
 documentation: ug
 ---
 
 # DataTemplateSelector in Xamarin Rotator (SfRotator)
 
-[`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html) supports DataTemplateSelector which you can choose a DataTemplate based on the data object.
+The [`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html) supports `DataTemplateSelector`, allowing you to choose a `DataTemplate` based on the data object.
 
 {% tabs %}
 
@@ -150,7 +150,7 @@ The following screenshot illustrates the output of above code.
 
 ![DataTemplateSelector](images/DataTemplateSelector.png)
 
-We have attached sample for reference. You can download the sample from the following link.
+A sample is available for reference. You can download it from the following link:
 
 Sample link: [DataTemplateSelectorSample](https://github.com/SyncfusionExamples/data-template-selector-rotator)
 

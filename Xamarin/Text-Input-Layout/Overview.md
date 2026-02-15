@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Xamarin Text Input Layout control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control, its elements and more.
+title: About Xamarin Text Input Layout control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® Xamarin Text Input Layout (SfTextInputLayout) control, its elements and more.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug

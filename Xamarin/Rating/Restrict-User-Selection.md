@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Restrict user Selection  in Xamarin Rating control | Syncfusion
-description: Learn here all about Restrict user Selection  support in Syncfusion Xamarin Rating (SfRating) control and more.
+title: Restrict user Selection  in Xamarin Rating control | Syncfusion®
+description: Learn here all about Restrict user Selection  support in Syncfusion® Xamarin Rating (SfRating) control and more.
 platform: Xamarin
 control: Rating
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DataTemplateSelector in Xamarin ComboBox control | Syncfusion
-description: Learn here all about DataTemplateSelector support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
+title: DataTemplateSelector in Xamarin ComboBox control | Syncfusion®
+description: Learn here all about DataTemplateSelector support in Syncfusion® Xamarin ComboBox (SfComboBox) control and more.
 platform: Xamarin
 control: SfComboBox
 documentation: ug

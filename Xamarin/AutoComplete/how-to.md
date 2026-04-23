@@ -7,12 +7,12 @@ control: AutoComplete
 documentation: ug
 ---
 
-# How to do an operation when selecting an item from drop-down list?
+# Handling Item Selection in Xamarin AutoComplete
+## How to perform operations when selecting an item from the dropdown list
 
-## How to perform an operation when selecting an item from drop-down list?
+The [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control provides the [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SelectionChanged) event that allows you to perform custom operations when a user selects an item from the filtered suggestions. This event is triggered whenever an item is selected or deselected in the control.
 
-You can perform an operation when selecting an item among the filtered suggestions using the [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SelectionChanged) event. The [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SelectionChanged) event returns the following arguments:
-
+The [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SelectionChanged) event provides the following arguments:
 <table>
 <tr>
 <th>Members</th>

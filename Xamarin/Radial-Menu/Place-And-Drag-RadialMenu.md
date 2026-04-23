@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Placing and Dragging RadialMenu in Xamarin Radial Menu | Syncfusion
-description: Learn here all about Placing and Dragging RadialMenu support in Syncfusion Xamarin Radial Menu (SfRadialMenu) control and more.
+description: Learn about placing and dragging RadialMenu support in the Syncfusion Xamarin Radial Menu (SfRadialMenu) control and more.
 platform: Xamarin
 control: SfRadialMenu
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Placing and Dragging RadialMenu in Xamarin Radial Menu (SfRadialMenu)
 
-You can place radial menu anywhere on its parent layout, and drag it with in the parent layout. 
+You can place the radial menu anywhere on its parent layout and drag it within the parent layout.
 
 ## Dragging RadialMenu
 
-You can enable/disable dragging by using the [`IsDragEnabled`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_IsDragEnabled) property.
+You can enable or disable dragging by using the [`IsDragEnabled`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_IsDragEnabled) property.
 
 {% tabs %}
 
@@ -81,19 +81,18 @@ namespace RadialSample
 
 ![Image for dragging](images/dragging.png)
 
-## DragEvents
+## Drag Events
 
-[`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) provides for event for [`DragBegin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_DragBegin) and [`DragEnd`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_DragEnd) in which the event get hooked when the RadialMenu is get dragged.
+[`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) provides events for [`DragBegin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_DragBegin) and [`DragEnd`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_DragEnd), which are triggered when the RadialMenu is dragged.
 
-### DragBegin event
+### DragBegin Event
 
-This event get triggered when RadialMenu is start to drag with [`DragBeginEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.DragBeginEventArgs.html).
+This event is triggered when the RadialMenu begins to drag, utilizing the [`DragBeginEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.DragBeginEventArgs.html).
 
-* [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.DragBeginEventArgs.html#Syncfusion_SfRadialMenu_XForms_DragBeginEventArgs_Position) - Gets the Start position of the RadialMenu
+- [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.DragBeginEventArgs.html#Syncfusion_SfRadialMenu_XForms_DragBeginEventArgs_Position): Gets the start position of the RadialMenu.
+- [`Handled`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.DragBeginEventArgs.html#Syncfusion_SfRadialMenu_XForms_DragBeginEventArgs_Handled): Gets and sets a boolean value for enabling and disabling the dragging of the RadialMenu.
 
-* [`Handled`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.DragBeginEventArgs.html#Syncfusion_SfRadialMenu_XForms_DragBeginEventArgs_Handled) - Gets and Sets the boolean value for enabling and disabling the dragging of RadialMenu.
-
-To hook the [`DragBegin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_DragBegin) event, and to get the start position and restricts the dragging, follow the code example:
+To hook the [`DragBegin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_DragBegin) event and get the start position while restricting dragging, refer to the following code example:
 
 {% tabs %}
 
@@ -164,17 +163,15 @@ namespace RadialSample
 {% endhighlight %}
 {% endtabs %}
 
-### Drag End
+### DragEnd Event
 
-This event get triggered when dragging is ended in RadialMenu with [`DragEndEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.DragEndEventArgs.html).
+This event is triggered when dragging ends in the RadialMenu, using [`DragEndEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.DragEndEventArgs.html).
 
-* [`OldValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.DragEndEventArgs.html#Syncfusion_SfRadialMenu_XForms_DragEndEventArgs_OldValue) - Gets the Start position of the RadialMenu
+- [`OldValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.DragEndEventArgs.html#Syncfusion_SfRadialMenu_XForms_DragEndEventArgs_OldValue): Gets the start position of the RadialMenu.
+- [`NewValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.DragEndEventArgs.html#Syncfusion_SfRadialMenu_XForms_DragEndEventArgs_NewValue): Gets the end position of the RadialMenu.
+- [`Handled`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.DragEndEventArgs.html#Syncfusion_SfRadialMenu_XForms_DragEndEventArgs_Handled): Gets and sets a boolean value for restricting the RadialMenu from moving to another position.
 
-* [`NewValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.DragEndEventArgs.html#Syncfusion_SfRadialMenu_XForms_DragEndEventArgs_NewValue) - Gets the ens position of the RadialMenu
-
-* [`Handled`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.DragEndEventArgs.html#Syncfusion_SfRadialMenu_XForms_DragEndEventArgs_Handled) - Gets and Sets the boolean value for restricting the RadialMenu to move another position.
-
-To hook the [`DragEnd`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_DragEnd) event, and to get the start position, end position and restricts the movement of the RadialMenu, follow the code example:
+To hook the [`DragEnd`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_DragEnd) event and determine the start and end positions, while restricting the movement of the RadialMenu, refer to the following code example:
 
 {% tabs %}
 
@@ -247,7 +244,7 @@ namespace RadialSample
 
 ## Placing RadialMenu
 
-You can place radial menu anywhere on its parent layout. Radial Menu's position is calculated based on parent layout's center point.
+You can position the radial menu anywhere on its parent layout. The radial menu's position is calculated based on the parent layout's center point.
 
 {% tabs %}
 

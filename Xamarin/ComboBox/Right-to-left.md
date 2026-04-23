@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Right to left(RTL) in Xamarin ComboBox control | Syncfusion
-description: Learn here all about Right to left(RTL) support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
-platform: xamarin
+title: Right-to-Left (RTL) in Xamarin ComboBox Control | Syncfusion
+description: Learn about Right-to-Left (RTL) support in the Syncfusion Xamarin ComboBox (SfComboBox) control and more.
+platform: Xamarin
 control: SfComboBox
 documentation: UG
 ---
 
-# Right to left(RTL) in Xamarin ComboBox (SfComboBox)
+# Right-to-Left (RTL) in Xamarin ComboBox (SfComboBox)
 
-[`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) supports to change the layout direction of the control in the right-to-left direction by setting the [`FlowDirection`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to [`RightToLeft`](https://devblogs.microsoft.com/xamarin/right-to-left-localization-xamarin-forms) or by changing the device language.
+The [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) supports changing the layout direction to right-to-left by setting the [`FlowDirection`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to [`RightToLeft`](https://devblogs.microsoft.com/xamarin/right-to-left-localization-xamarin-forms) or by changing the device language.
 
 {% tabs %}
 {% highlight xaml %}
@@ -21,11 +21,10 @@ combobox.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
->**Note**
-For implementing the[`FlowDirection`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) in the control, Xamarin.Forms package version must be 3.0 and above. Please refer [`RightToLeft`](https://devblogs.microsoft.com/xamarin/right-to-left-localization-xamarin-forms) to get more details about [`RightToLeft`](https://devblogs.microsoft.com/xamarin/right-to-left-localization-xamarin-forms) flow direction in Xamarin.Forms.
+> **Note:** To implement the [`FlowDirection`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) in the control, the Xamarin.Forms package version must be 3.0 or above. Please refer to [RightToLeft](https://devblogs.microsoft.com/xamarin/right-to-left-localization-xamarin-forms) for more details about the right-to-left flow direction in Xamarin.Forms.
 
 ### Android
-For Android, add `android:supportsRtl="true"` in your application tag of `AndroidManifest.xml` file, and make sure your `MinSDKVersion` is 17+. By changing the device language / enabling the device's `Force RTL layout` can achieve the [`RightToLeft`](https://devblogs.microsoft.com/xamarin/right-to-left-localization-xamarin-forms) layout direction in Calendar.
+For Android, add `android:supportsRtl="true"` to your application tag in the `AndroidManifest.xml` file, and ensure your `MinSDKVersion` is 17 or higher. Changing the device language/enabling the device's `Force RTL layout` can achieve the [`RightToLeft`](https://devblogs.microsoft.com/xamarin/right-to-left-localization-xamarin-forms) layout direction in Calendar.
 
 {% tabs %}
 {% highlight xml %}
@@ -38,7 +37,7 @@ For Android, add `android:supportsRtl="true"` in your application tag of `Androi
 {% endtabs %}
 
 ### iOS
-For iOS, add the [`RightToLeft`](https://devblogs.microsoft.com/xamarin/right-to-left-localization-xamarin-forms) language in the `CFBundleLocalizations` section of your `Info.plist` file, and make sure you’re targeting iOS 9+.
+For iOS, add the [`RightToLeft`](https://devblogs.microsoft.com/xamarin/right-to-left-localization-xamarin-forms) language to the `CFBundleLocalizations` section of your `Info.plist` file, ensuring you target iOS 9 or higher.
 
 {% tabs %}
 {% highlight xml %}
@@ -57,7 +56,7 @@ For iOS, add the [`RightToLeft`](https://devblogs.microsoft.com/xamarin/right-to
 ![info plist](images/RTL/ComboBox_iosplist.png)
 
 ### UWP
-For UWP, you need to set [`FlowDirection`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to [`RightToLeft`](https://devblogs.microsoft.com/xamarin/right-to-left-localization-xamarin-forms) in the `MainPage.cs` file of the `UWP` project.
+For UWP, set [`FlowDirection`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to [`RightToLeft`](https://devblogs.microsoft.com/xamarin/right-to-left-localization-xamarin-forms) in the `MainPage.cs` file of the `UWP` project.
 
 {% tabs %}
 {% highlight c# %}

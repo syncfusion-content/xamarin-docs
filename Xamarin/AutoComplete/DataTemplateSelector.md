@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DataTemplateSelector of Syncfusion Xamarin.Forms SfAutoComplete
-description: This section will discribes about how to use a DataTemplateSelctor  for Xamarin.Forms SfAutoComplete
+title: DataTemplateSelector in Xamarin.Forms SfAutoComplete | Syncfusion
+description: This section describes how to use a DataTemplateSelector for Xamarin.Forms SfAutoComplete control
 platform: Xamarin
 control: SfAutoComplete
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # DataTemplateSelector in Xamarin AutoComplete (SfAutoComplete)
 
-[`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) supports DataTemplateSelector, which is used to choose a DataTemplate based on data object.
+The [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control supports DataTemplateSelector, which allows you to choose a DataTemplate based on the data object. This provides a powerful way to customize the appearance of items in the suggestion list based on specific conditions.
  
 
 {% tabs %}
@@ -115,9 +115,9 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-## Create and Initialize Business Models 
+## Creating and Initializing Business Models
 
-Define a simple model class MobileDetail with fields IsAvailableInStock, Mobile and populate mobile detail in ViewModel.
+Define a simple model class `MobileDetail` with properties `IsAvailableInStock` and `Mobile`, then populate mobile details in the ViewModel:
 
 {% tabs %}
 
@@ -157,12 +157,9 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
+## Implementing the OnSelectTemplate Method
 
-## OnSelectTemplate
-
-The OnSelectTemplate is an overridden method to return a particular DataTemplate. The following code sample demonstrates how to use the OnSelectTemplate method.
-
-
+The `OnSelectTemplate` is an overridden method that returns a specific DataTemplate based on conditions. In this example, we're using the `IsAvailableInStock` property to determine which template to use:
 {% tabs %}
 
 {% highlight C# %}
@@ -189,13 +186,17 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-The following screenshot illustrates the output of above code.
+The following screenshot illustrates the output of the above code:
 
 ![Data template selector](images/Data-Template-Selector/DataTemplateSelector.png)
 
 
-We have attached sample for reference. You can download the sample from the following link.
+We have attached a sample for reference. You can download the sample from the following link:
 
 Sample Link: [SfAutoComplete_DataTemplateSelector](https://github.com/SyncfusionExamples/autocomplete-datatemplate-selector)
 
-N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to knows the functionalities of each feature.
+## See Also
+
+* [How to customize the appearance of items in SfAutoComplete](https://help.syncfusion.com/xamarin/autocomplete/customizing-autocomplete)
+* [How to work with data binding in SfAutoComplete](https://help.syncfusion.com/xamarin/autocomplete/data-binding)
+N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to know the functionalities of each feature.

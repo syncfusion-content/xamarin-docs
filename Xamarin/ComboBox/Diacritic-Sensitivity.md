@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Diacritic Sensitivity in Xamarin ComboBox control | Syncfusion
-description: Learn here all about Diacritic Sensitivity support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
+title: Diacritic Sensitivity in Xamarin ComboBox control | Syncfusion®
+description: Learn here all about Diacritic Sensitivity support in Syncfusion® Xamarin ComboBox (SfComboBox) control and more.
 platform: xamarin
 control: SfComboBox
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout : post
-title: Accessibility in Xamarin Radial Menu control | Syncfusion
-description: Learn here all about Accessibility support in Syncfusion Xamarin Radial Menu (SfRadialMenu) control and more.
+title: Accessibility in Xamarin Radial Menu control | Syncfusion®
+description: Learn here all about Accessibility support in Syncfusion® Xamarin Radial Menu (SfRadialMenu) control and more.
 platform : Xamarin.Forms
 control : SfRadialMenu
 documentation : ug

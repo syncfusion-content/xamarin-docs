@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to apply the FontIcon for Syncfusion chip control | Xamarin.Forms
+title: How to apply the FontIcon for Syncfusion® chip control | Xamarin.Forms
 description: Learn how to apply the font icon to the Sfchip and its customization options with its available basic features in Xamarin.Forms
 platform: xamarin
 control: Chips

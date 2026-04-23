@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating Data  in Xamarin ComboBox control | Syncfusion
-description: Learn here all about Populating Data  support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
+title: Populating Data  in Xamarin ComboBox control | Syncfusion®
+description: Learn here all about Populating Data  support in Syncfusion® Xamarin ComboBox (SfComboBox) control and more.
 platform: xamarin
 control: SfComboBox
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Fixed Hint Position in Xamarin Text Input Layout control | Syncfusion
-description: Learn here all about Fixed Hint Position support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
+title: Fixed Hint Position in Xamarin Text Input Layout Control | Syncfusion
+description: Learn about fixing the hint position in the Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
@@ -9,14 +9,13 @@ documentation: ug
 
 # Fixed Hint Position in Xamarin Text Input Layout (SfTextInputLayout)
 
-Hint label for the text input layout is fixed always at the top position. This helps users make the hint label floating even when the input view is not focused. It can be enabled by setting the `IsHintAlwaysFloated` property.
+The hint label for the text input layout is permanently positioned at the top. This ensures that the hint label floats even when the input view is not focused. You can enable this feature by setting the `IsHintAlwaysFloated` property.
 
->**NOTE**
-The default value of the `IsHintAlwaysFloated` is `false`.
+> **Note:** The default value of `IsHintAlwaysFloated` is `false`.
 
 ## Filled
 
-The hint label position of the input view will be set always at the top for the [Filled](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html) container type. 
+The hint label position is consistently set at the top when using the [Filled](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html) container type.
 
 {% tabs %} 
 
@@ -49,7 +48,7 @@ inputLayout.InputView = new Entry();
 
 ## Outlined
 
-The hint label position of the input view will be set always at the top for the [Outlined](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html) container type.
+The hint label position is consistently set at the top for the [Outlined](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html) container type.
 
 {% tabs %} 
 
@@ -82,7 +81,7 @@ inputLayout.InputView = new Entry();
 
 ## None
 
-The hint label position of the input view will be set always at the top for the [None](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html) container type.
+The hint label position is consistently set at the top for the [None](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html) container type.
 
 {% tabs %} 
 
@@ -114,9 +113,8 @@ inputLayout.InputView = new Entry();
 
 ![None type](Hint-Position-images/HintPosition_none.jpg)
 
-## See also
+## See Also
 
-[How to customize the properties of outline border colors, hint name, helper text, error text, and char count](https://www.syncfusion.com/kb/11659/how-to-customize-the-properties-of-outline-border-colors-hint-name-helper-text-error-text)
+- [How to customize the properties of outline border colors, hint name, helper text, error text, and char count](https://www.syncfusion.com/kb/11659/how-to-customize-the-properties-of-outline-border-colors-hint-name-helper-text-error-text)
 
-[How to customize the color of border and labels in SfTextInputLayout](https://www.syncfusion.com/kb/10466/how-to-customize-the-color-of-border-and-labels-in-sftextinputlayout)
-
+- [How to customize the color of border and labels in SfTextInputLayout](https://www.syncfusion.com/kb/10466/how-to-customize-the-color-of-border-and-labels-in-sftextinputlayout)

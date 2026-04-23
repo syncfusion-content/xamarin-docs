@@ -1,23 +1,21 @@
 ---
 layout: post
-title: MaskType in Xamarin Masked Entry control | Syncfusion
-description: Learn here all about MaskType support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
+title: MaskType in Xamarin Masked Entry Control | Syncfusion
+description: Learn about MaskType support in the Syncfusion Xamarin Masked Entry (SfMaskedEdit) control.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
 ---
 # MaskType in Xamarin Masked Entry (SfMaskedEdit)
-Each [`MaskType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_MaskType) has different set of mask characters that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as:
+Each [`MaskType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_MaskType) has a different set of mask characters combined to form a mask expression. Based on complexity and usage, mask types are categorized into:
 
-* Text
-* RegEx
-
+- **Text**
+- **RegEx**
 ## Text
 
-The expressions that are generated with letters, digits, and special characters come under this group. This is mainly used for fixed length inputs. For example: phone number, zip code, and so on.
-
-### Text Mask characters
+Expressions generated using letters, digits, and special characters fall under this category. It is mainly used for fixed-length inputs, such as phone numbers and zip codes.
+### Text Mask Characters
 
 <table>
 <tr>
@@ -121,21 +119,17 @@ maskedEdit.Mask = "+1(000)000000";
 {% endhighlight %}
 {% endtabs %}
 
-This mask expression allows only numeric inputs in the places of 0.
+This mask expression allows only numeric inputs in the positions marked by zero (0).
 
-## Regex
+## RegEx
 
-The expressions that are generated with regular expressions come under this group, preferable for variable length inputs and input in range. For example: hexadecimal values [0-9A-C].
-The regular expressions provide significant advantages when creating masks as compared with other mask modes. 
+Expressions generated using regular expressions belong to this category, suitable for variable-length inputs and inputs within a range. Examples include hexadecimal values like [0-9A-C]. Regular expressions provide significant advantages over other mask modes by:
 
-**Advantages**
+- Allowing inputs of indeterminate length.
+- Restricting inputs to specific patterns, such as email addresses and passwords.
+- Restricting inputs to specified ranges at specific positions.
 
-* Allows you to enter the value of indeterminate length.
-* Restricts with specific pattern. Example email, password, and more.
-* Restricts you to enter specific range at specific position.
-
-### Regex Mask Characters
-
+### RegEx Mask Characters
 <table>
 <tr>
 <td>
@@ -219,7 +213,7 @@ Accepts any character between[A-F]/[a-f] and numbers between [0-9].
 </tr>
 </table>
 
-N> SfMaskedEdit control only supports the above listed regex mask characters. 
+> **Note:** The `SfMaskedEdit` control only supports the regex mask characters listed above.
 
 {% tabs %}
 {% highlight xaml %}
@@ -232,15 +226,15 @@ maskedEdit.Mask = @"+1\(\d{3}\)\d{5}";
 {% endhighlight %}
 {% endtabs %}
 
-This mask expression ’\d{3}’ and’ \d{5}’ allows only numeric, where {n} is the count that the input should be accepted.
+This mask expression `\d{3}` and `\d{5}` allows numeric input, where `{n}` represents the count of accepted inputs.
 
 ![MaskType support in Xamarin.Forms masked edit](SfMaskedEditImages/MaskType.png)
 
 ## Troubleshooting
 
-In case of having the requirement is to type the special characters such as _ and @, you can specify that directly in Mask as per your required order. 
+If you need to type special characters like _ and @, you can specify them directly in the mask as required.
 
-If you use the mask with "_" then typed character _ (underscore) will not be accepted since the default value of the PromptChar is _ (underscore). Hence, it will be replaced by the character when you enter. To avoid this, you can set the PromptChar text other than _ (underscore) as shown below,
+When using a mask with the "_" character, the typed "_" (underscore) will not be accepted since the default `PromptChar` is "_". It will be replaced upon entry. To avoid this, set the `PromptChar` to a character other than "_", as shown below:
 
 {% tabs %}
 {% highlight xaml %}

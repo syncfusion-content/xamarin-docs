@@ -1,18 +1,18 @@
 ---
 layout: post
 title: Number Formatting in Syncfusion NumericUpDown for Xamarin.Forms
-description: Learn how to add format String, enable parser mode, and percent display mode for NumericUpDown control.
+description: Learn how to apply format strings, enable parser mode, and use percent display mode in the NumericUpDown control.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
 # Number Formatting in Xamarin NumericUpDown (SfNumericUpDown)
 
-The values of the [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) can be configured to display different formats like currency format, percent format etc. 
+The [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) values can be configured to display in various formats, such as currency or percentage.
 
-## Format string support in SfNumericUpDown
+## Format String Support in SfNumericUpDown
 
-The [`FormatString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FormatString) property determines the format specifier by which the display text has to be formatted. 
+The [`FormatString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FormatString) property specifies the format specifier for the display text.
 
 N> The control displays the formatted text when the focus is lost. The default Value of [`FormatString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FormatString) is "n". 
 
@@ -37,11 +37,11 @@ numericUpDown.FormatString="c";
 
 {% endtabs %}
 
-![Display the value with currency notation](images/CurrencyValueformat.PNG)
+![Display value with currency notation](images/CurrencyValueformat.PNG)
 
-### Display percentage notation
+### Displaying Percentage Notation
 
-`p` – Displays the value in percentage.
+Use `p` to display values as percentages.
 	
 {% tabs %}	
 
@@ -61,11 +61,11 @@ numericUpDown.FormatString="p";
 
 {% endtabs %}
 
-![Display the value with percentage notation](images/PercentageValueformat.PNG)
+![Display value with percentage notation](images/PercentageValueformat.PNG)
 
-### Display number notation
+### Displaying Number Notation
 
-`n` – Displays the value in number format.
+Use `n` to display values in number format.
 	
 {% tabs %}	
 
@@ -119,7 +119,7 @@ numericUpDown.PercentDisplayMode=PercentDisplayMode.Value;
 
 {{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
 
-![Display the value with PercentageDisplayMode as Compute](images/PercentDisplayMode_Value.png)
+![Display value with PercentageDisplayMode as Value](images/PercentDisplayMode_Value.png)
 
 * [`Compute`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.PercentDisplayMode.html#Syncfusion_SfNumericUpDown_XForms_PercentDisplayMode_Compute) : Displays the value computed by 100 with percentage symbol.
 
@@ -144,17 +144,17 @@ numericUpDown.PercentDisplayMode=PercentDisplayMode.Compute;
 
 {% endtabs %}
 
-N> The control displays the percent value on lost focus. 
+> **Note:** The control displays the percent value on lost focus.
 
 {% endcapture %}
 
 {{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
-![Display the value with PercentageDisplayMode as Compute](images/PercentDisplayMode_Compute.png)
+![Display value with PercentageDisplayMode as Compute](images/PercentDisplayMode_Compute.png)
 
-## Set enable group separator 
+## Enabling Group Separator
 
-The [`EnableGroupSeparator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_EnableGroupSeparator) property is used to get rid of the comma in the Value of [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html).
+The [`EnableGroupSeparator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_EnableGroupSeparator) property controls whether commas are used as group separators in the `SfNumericUpDown`.
 
 {% tabs %}
 
@@ -177,6 +177,6 @@ this.Content = NumericUpDown;
 
 ![Display the SfNumericUpDown control with EnableGroupSeparator](images/enablegroupseparator.PNG)
 
-## See also
+## See Also
 
-[How to provide string formats support in SfNumericUpDown](https://support.syncfusion.com/kb/article/6976/does-sfnumericupdown-supports-other-formats)
+[Providing String Formats Support in SfNumericUpDown](https://support.syncfusion.com/kb/article/6976/does-sfnumericupdown-supports-other-formats)

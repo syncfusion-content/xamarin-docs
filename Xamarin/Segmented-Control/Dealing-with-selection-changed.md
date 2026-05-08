@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dealing with selection in Xamarin Segmented Control | Syncfusion<sup>&reg;</sup>
+title: Dealing with selection in Xamarin Segmented Control | Syncfusion
 description: Learn here all about Dealing with selection changed support in Syncfusion<sup>&reg;</sup> Xamarin Segmented Control (SfSegmentedControl) and more.
 platform: Xamarin
 control: SegmentedControl

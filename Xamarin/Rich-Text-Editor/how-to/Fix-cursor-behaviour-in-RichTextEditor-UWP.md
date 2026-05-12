@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fix in Xamarin Rich Text Editor control | Syncfusion<sup>&reg;</sup>;
+title: Fix in Xamarin Rich Text Editor control | Syncfusion
 description: Learn here all about cursor behaviour in Syncfusion<sup>&reg;</sup>; Xamarin Rich Text Editor (SfRichTextEditor) control and more.
 platform: xamarin
 control: Rich Text Editor

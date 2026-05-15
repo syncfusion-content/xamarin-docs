@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Switch control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Switch (SfSwitch) control, its elements and more.
+title: Getting Started with Xamarin Switch Control | Syncfusion
+description: Learn how to get started with the Syncfusion Xamarin Switch (SfSwitch) control, its features, and more.
 platform: Xamarin
 control: Switch
 documentation: ug
@@ -10,33 +10,33 @@ documentation: ug
 
 # Getting Started with Xamarin Switch (SfSwitch)
 
-This section explains you the steps to add the SfSwitch control with basic functionalities in Xamarin.Forms.
+This section provides step-by-step instructions to add the SfSwitch control with basic functionalities in Xamarin.Forms.
 
-## Assembly deployment
+## Assembly Deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation directory: `{Syncfusion Essential Studio Installed location}\Essential Studio\{Version #}\Xamarin\lib`.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
-N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+> **Note:** Assemblies can be found in the unzipped package location (`Documents/Syncfusion/{Version #}/Xamarin/lib`) on a Mac.
 
-## Adding SfSwitch reference
+## Adding SfSwitch Reference
 
-You can add [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) reference using one of the below methods.
+You can add the [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) reference using the following methods:
 
-**Method 1: Adding SfSwitch reference from nuget.org**
+**Method 1: Adding SfSwitch Reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/#). To add [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and then install it.
+Syncfusion Xamarin components are available on [nuget.org](https://www.nuget.org/). To add [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and install it.
 
 ![Add Packages](images/Adding-SfSwitch-reference.png)
 
-**Method 2: Adding SfSwitch reference from toolbox**
+**Method 2: Adding SfSwitch Reference from Toolbox**
 
-Syncfusion provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [`Toolbox`](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion provides a Xamarin Toolbox. You can drag the [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) control to the XAML page using this toolbox. It automatically installs the required NuGet packages and adds the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [`Toolbox`](https://help.syncfusion.com/xamarin/utility#toolbox).
 
-**Method 3: Adding SfSwitch assemblies manually from the installed location**
+**Method 3: Adding SfSwitch Assemblies Manually from the Installed Location**
 
-If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+If you prefer to manually reference the assemblies, add the following assemblies to your respective projects.
 
 Location: {Installed location}/{version}/Xamarin/lib
 
@@ -96,12 +96,11 @@ return base.FinishedLaunching(app, options);
 
 {% endtabs %}
 
-N> If you are adding the references from toolbox, this step is not needed.
+> **Note:** This step is not necessary if references are added from the toolbox.
 
-**Universal** **Windows** **Platform** **(****UWP****)**
+### Universal Windows Platform (UWP)
 
-To deploy the switch in Release mode, you need to initialize the button assemblies in App.xaml.cs in UWP project as shown in the below code snippets.
-
+To deploy the switch in release mode, initialize the button assemblies in `App.xaml.cs` in the UWP project as shown below:
 {% tabs %}
 
 {% highlight c# %}
@@ -132,13 +131,12 @@ Xamarin.Forms.Forms.Init(e, assembliesToInclude);
 
 {% endtabs %}
 
-**Android**
-
-The Android platform does not require any additional configuration to render the chart.
+### Android
+The Android platform does not require any additional configuration to render the switch.
 
 ## Initializing SfSwitch
 
-Import the Button namespace as shown below in your respective Page,
+Import the button namespace as shown below into your respective Page:
 
 {% tabs %}
 
@@ -156,7 +154,7 @@ using Syncfusion.XForms.Buttons;
 
 {% endtabs %}
 
-Then initialize the switch control as shown below using the code example.
+Then, initialize the switch control as shown in the following code example:
 
 {% tabs %}
 
@@ -174,13 +172,13 @@ SfSwitch sfSwitch = new SfSwitch();
 
 {% endtabs %}
 
-![Initializing switch conrol](images/switch.png)
+![Initializing switch control](images/switch.png)
 
-## Performing an action based on state
+## Performing an Action Based on State
 
-You can switch between the states. When the state is changed the [`StateChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_StateChanging) and [`StateChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_StateChanged) event will be triggered where you can perform an action based on the current state.The [`StateChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_StateChanging) event allows you to cancel moving to a new state.
+You can switch between states. When the state changes, the [`StateChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_StateChanging) and [`StateChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_StateChanged) events are triggered. These events allow actions based on the current state. The [`StateChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_StateChanging) event allows canceling the transition to a new state.
 
-The following code example displays a message box when switched to off state when work is completed.
+The following code example shows a message box when switched to the "off" state after work is completed:
 
 {% tabs %}
 

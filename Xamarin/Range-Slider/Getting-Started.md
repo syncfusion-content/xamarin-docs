@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Range Slider control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Range Slider (SfRangeSlider) control, its elements and more.
+title: Getting Started with Xamarin Range Slider Control | Syncfusion
+description: A comprehensive guide on how to get started with the Syncfusion Xamarin Range Slider (SfRangeSlider) control, including its features and customization options.
 platform: Xamarin
 control: RangeSlider
 documentation: ug
@@ -9,23 +9,22 @@ documentation: ug
 
 # Getting Started with Xamarin Range Slider (SfRangeSlider)
 
-This section explains you the steps to configure a [Xamarin Range Slider](https://www.syncfusion.com/xamarin-ui-controls/xamarin-range-slider) (SfRangeSlider) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) control.
+This guide will walk you through setting up the [Xamarin Range Slider](https://www.syncfusion.com/xamarin-ui-controls/xamarin-range-slider) (SfRangeSlider) control in real-world applications, along with showcasing several customization features available in the [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) control.
 
-## Assembly deployment
+## Assembly Deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), all necessary assemblies can be found in the installation folder path: `{Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib`.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
-N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+> **Note**: On Mac, assemblies are located at `Documents/Syncfusion/{Version #}/Xamarin/lib`.
 
-## Adding SfRangeSlider reference
+## Adding SfRangeSlider Reference
 
-You can add [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) reference using one of the following methods:
+You can add a reference to the [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) using various methods:
 
-**Method 1: Adding SfRangeSlider reference from nuget.org**
-
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) to your project, open the [NuGet package](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) manager in Visual Studio, search for [Syncfusion.Xamarin.SfRangeSlider](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRangeSlider), and then install it.
+### Method 1: From nuget.org
+Syncfusion Xamarin components are accessible via [nuget.org](https://www.nuget.org/). To add [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html), open the [NuGet package manager](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) in Visual Studio, search for [Syncfusion.Xamarin.SfRangeSlider](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRangeSlider), and install it.
 
 ![Adding SfRangeSlider reference from nuget.org](images/Adding SfRangeSlider reference.png)
 

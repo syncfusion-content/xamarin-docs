@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Range in Xamarin Range Slider control | Syncfusion
-description: Learn here all about Range support in Syncfusion Xamarin Range Slider (SfRangeSlider) control and more.
+title: Range in Xamarin Range Slider Control | Syncfusion
+description: Learn about range selection support in the Syncfusion Xamarin Range Slider (SfRangeSlider) control and its functionalities.
 platform: Xamarin
 control: RangeSlider
 documentation: ug
@@ -9,14 +9,13 @@ documentation: ug
 
 # Range in Xamarin Range Slider (SfRangeSlider)
 
-The [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) control supports to select range of value by using two Thumbs.
+The [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) control supports selecting a range of values using two thumbs.
 
 ## Set Show Range
 
-The [`ShowRange`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ShowRange) property should be set to true for displaying two thumbs in track with range of values.
+Configure the [`ShowRange`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ShowRange) property to true to display two thumbs on the track representing a range of values.
 
-N> When this property is set to false, single thumb is displayed without any range 
-
+> **Note**: Setting this property to false displays a single thumb without the range.
 {% tabs %}
 
 {% highlight xaml %}
@@ -33,14 +32,13 @@ N> When this property is set to false, single thumb is displayed without any ran
 
 {% endtabs %}
 
+## Set Range Values
 
-## Set Range values
-
-This section explains about setting Range start and end value.
+This section explains how to set the start and end values of the range.
 
 ### RangeStart
 
-Gets and sets the start value of the range.
+Get and set the starting value of the range.
 
 {% tabs %}
 
@@ -60,7 +58,7 @@ Gets and sets the start value of the range.
 
 ### RangeEnd
 
-Gets and sets the end value of the range.
+Get and set the ending value of the range.
 
 {% tabs %}
 
@@ -78,19 +76,19 @@ Gets and sets the end value of the range.
 
 {% endtabs %}
 
-## ValueChangeMode
+## Value Change Mode
 
-The [`ValueChangeMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueChangeMode.html) property changes the value based on the touch of the [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) control. It consists of the following two types
+The [`ValueChangeMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueChangeMode.html) property alters the slider's value based on interaction with the [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) control. There are two modes:
 
-* [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueChangeMode.html#Syncfusion_SfRangeSlider_XForms_ValueChangeMode_Default)
-* [`OnThumbPress`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueChangeMode.html#Syncfusion_SfRangeSlider_XForms_ValueChangeMode_OnThumb)
+- [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueChangeMode.html#Syncfusion_SfRangeSlider_XForms_ValueChangeMode_Default)
+- [`OnThumbPress`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueChangeMode.html#Syncfusion_SfRangeSlider_XForms_ValueChangeMode_OnThumb)
 
-N> The default value of the [`ValueChangeMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueChangeMode.html) property is [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueChangeMode.html#Syncfusion_SfRangeSlider_XForms_ValueChangeMode_Default).
+> **Note**: The default setting is [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueChangeMode.html#Syncfusion_SfRangeSlider_XForms_ValueChangeMode_Default).
 
 
 ### Default
 
-The value is updated when you touch inside the control.
+The value updates when touching inside the control.
 
 {% tabs %}
 
@@ -110,7 +108,7 @@ The value is updated when you touch inside the control.
 
 ### OnThumb
 
-The value is updated when you touch or move the thumb/knob.
+The value updates when touching or moving the thumb/knob.
 
 {% tabs %}
 
@@ -131,7 +129,7 @@ The value is updated when you touch or move the thumb/knob.
 
 ## Value
 
-Gets or sets the range value, which ranges between [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Maximum). The default value of RangeSlider is 0.
+Get or set the range value, which must be between the specified [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Maximum) limits. The default value is 0.
 
 {% tabs %}
 
@@ -151,10 +149,9 @@ Gets or sets the range value, which ranges between [`Minimum`](https://help.sync
 
 ![Range value in SfRangeSlider in Xamarin.Forms](images/Value.jpg)
 
+## Allow Drag Range
 
-## Allow drag range.
-
-Enable or disable the drag options to change a value of the ranges by using the [`AllowDragRange`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_AllowDragRange) property.
+Enable or disable drag options to adjust range values using the [`AllowDragRange`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_AllowDragRange) property.
 
 {% tabs %}
 

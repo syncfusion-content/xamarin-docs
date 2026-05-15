@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TabView Header Customization in Xamarin Tabbed View | Syncfusion
-description: Learn here all about TabView Header Customization support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
+description: Explore header customization options in the Syncfusion Xamarin Tabbed View (SfTabView) control.
 platform: Xamarin
 control: TabView
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # TabView Header Customization in Xamarin Tabbed View (SfTabView)
 
-## Tab header arrangement
+## Tab Header Arrangement
 
-### Share the header space equally
+### Share the Header Space Equally
 
-To share the header space to the tabs equally, set the number of tabs that can be distributed in the available space though the [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_VisibleHeaderCount) of [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html).
+To distribute header space equally among the tabs, set the number of tabs that can be spread across the available space using the [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_VisibleHeaderCount) property of [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html).
 
 {% tabs %}
 
@@ -107,9 +107,9 @@ namespace TabViewAutomationSample
 
 ![VisibleHeaderCount](images/TabItems/VisibleHeaderCount.png)
 
-### Add all tab items in a single view 
+### Display All Tab Items in a Single View
 
-When you set the [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_VisibleHeaderCount) to -1, you get all the tab items in a single view based on the width of the visible area in the control and tab count.
+When you set the [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_VisibleHeaderCount) to `-1`, all tab items are displayed in a single view based on the control's visible area width and the number of tabs.
 
 {% tabs %}
 
@@ -218,15 +218,15 @@ namespace TabViewAutomationSample
 
 {% endtabs %}
 
-N> The nullable support for [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_VisibleHeaderCount) only works when [OverFlowMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_OverflowMode) is set to [`Scroll`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_Scroll) or [`DropDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_DropDown). 
+> **Note:** Nullable support for [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_VisibleHeaderCount) works only when [OverflowMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_OverflowMode) is set to [`Scroll`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_Scroll) or [`DropDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_DropDown).
 
 ![VisibleHeaderCount](images/TabItems/NullVisibleHeaderCount.jpg)
 
-### Add tab items at auto size
+### Add Tab Items at Auto Size
 
-When setting the [`TabWidthMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_TabWidthMode) property as [`BasedOnText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabWidthMode.html#Syncfusion_XForms_TabView_TabWidthMode_BasedOnText) option, tab width is calculated based on the length of the tab item [`Title`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabItem.html#Syncfusion_XForms_TabView_SfTabItem_Title) string.
+By setting the [`TabWidthMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_TabWidthMode) property to [`BasedOnText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabWidthMode.html#Syncfusion_XForms_TabView_TabWidthMode_BasedOnText), the tab width is calculated based on the length of the tab item [`Title`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabItem.html#Syncfusion_XForms_TabView_SfTabItem_Title) string.
 
-The default option of [`TabWidthMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_TabWidthMode) property is [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabWidthMode.html#Syncfusion_XForms_TabView_TabWidthMode_Default). 
+The default setting for [`TabWidthMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_TabWidthMode) is [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabWidthMode.html#Syncfusion_XForms_TabView_TabWidthMode_Default).
 
 {% tabs %}
 
@@ -337,12 +337,11 @@ namespace TabViewAutomationSample
 
 ![TabItems](images/TabItems/IsAutoTabWidth.gif)
 
-
-N> The [`TabWidthMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_TabWidthMode) for [`BasedOnText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabWidthMode.html#Syncfusion_XForms_TabView_TabWidthMode_BasedOnText) is supported only when the [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_VisibleHeaderCount) is not set and [`OverFlowMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_OverflowMode) is set to [`Scroll`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_Scroll). 
+> **Note:** The [`TabWidthMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_TabWidthMode) for [`BasedOnText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabWidthMode.html#Syncfusion_XForms_TabView_TabWidthMode_BasedOnText) is supported only when [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_VisibleHeaderCount) is not set and [`OverflowMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_OverflowMode) is set to [`Scroll`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_Scroll).
 
 ## Position of Header in Xamarin Tabbed View (SfTabView)
 
-Tab headers can be positioned either above the content or below the content. This can be done by setting the [`TabHeaderPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_TabHeaderPosition) property of [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html).
+Tab headers can be positioned either above or below the content. This is configured by setting the [`TabHeaderPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_TabHeaderPosition) property of [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html).
 
 {% tabs %}
 
@@ -443,7 +442,7 @@ namespace TabView
 
 {% endtabs %}
 
-When the header is not needed, set the [`DisplayMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_DisplayMode) property of [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html) to [`NoHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabDisplayMode.html#Syncfusion_XForms_TabView_TabDisplayMode_NoHeader).
+To hide the header, set the [`DisplayMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_DisplayMode) property of [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html) to [`NoHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabDisplayMode.html#Syncfusion_XForms_TabView_TabDisplayMode_NoHeader).
 
 ![Positioning of Header](images/Position-of-Header/HeaderPosition.png)
 

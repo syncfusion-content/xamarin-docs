@@ -1,23 +1,22 @@
 ---
 layout: post
-title: About Xamarin Switch control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin Switch (SfSwitch) control, its elements and more.
+title: Overview of Xamarin Switch Control | Syncfusion
+description: Explore the introduction to the Syncfusion Xamarin Switch (SfSwitch) control, its elements, and more.
 platform: Xamarin
 control: Switch
 documentation: ug
 ---
 
-# Xamarin Switch (SfSwitch) Overview
-
-The Switch control for Xamarin.Forms provides an efficient way to select between the states based on the toggled value.
+# Overview of Xamarin Switch (SfSwitch)
+The Switch control for Xamarin.Forms offers an efficient mechanism for toggling between states based on the switch's value.
 
 ![Xamarin.Forms switch overview.](images/overview.png)
 
-## Key features
+## Key Features
 
-* Provides support for inbuilt visual types like [`Material`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Material), [`Cupertino`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Cupertino) or [`Fluent`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Fluent) type. 
-* Customizable visual based on device platforms.
-* Provides options to visualize indeterminate state.
-* Performs async action with busy indicator.
-* Supports [`horizontal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SwitchOrientation.html#Syncfusion_XForms_Buttons_SwitchOrientation_Horizontal) and [`vertical`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SwitchOrientation.html#Syncfusion_XForms_Buttons_SwitchOrientation_Vertical) orientation.
-* Allows you to add the images to enhance the look and feel.
+- Supports built-in visual types like [`Material`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Material), [`Cupertino`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Cupertino), and [`Fluent`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.VisualType.html#Syncfusion_XForms_Buttons_VisualType_Fluent).
+- Offers customizable visuals based on device platforms.
+- Enables visualization of the indeterminate state.
+- Performs asynchronous actions with a busy indicator.
+- Supports both [`horizontal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SwitchOrientation.html#Syncfusion_XForms_Buttons_SwitchOrientation_Horizontal) and [`vertical`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SwitchOrientation.html#Syncfusion_XForms_Buttons_SwitchOrientation_Vertical) orientations.
+- Allows adding images to enhance the look and feel.

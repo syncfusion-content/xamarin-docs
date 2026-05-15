@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Loading Online Images in Xamarin Rotator control | Syncfusion
-description: Learn here all about Loading Online Images support in Syncfusion Xamarin Rotator (SfRotator) control and more.
+title: Loading Online Images in Xamarin Rotator Control | Syncfusion
+description: Learn how to load online images into the Syncfusion Xamarin Rotator (SfRotator) control for enhanced user experience in your applications.
 platform: xamarin 
 control: Rotator 
 documentation: ug
@@ -9,8 +9,15 @@ documentation: ug
 
 # Loading Online Images in Xamarin Rotator (SfRotator)
 
-This section describes how to load the online images in [`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html) Control.
+This guide demonstrates how to utilize the [`SfRotator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html) control to display images sourced from online URLs, offering a dynamic user interface element for your mobile applications.
 
+## Implementing Online Image Loading
+
+Here's how to set up the `SfRotator` to load images from the web:
+
+### XAML Setup
+
+Define the basic structure within your XAML page:
 {% tabs %}
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: NestedTab in Xamarin Tabbed View control | Syncfusion
-description: Learn here all about NestedTab support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
+title: Nested Tabs in Xamarin Tabbed View Control | Syncfusion
+description: Explore the support for nested tabs in the Syncfusion Xamarin Tabbed View (SfTabView) control, including configuration and more.
 platform: Xamarin
 control: TabView
 documentation: ug
 ---
 
-# NestedTab in Xamarin Tabbed View (SfTabView)
+# Nested Tabs in Xamarin Tabbed View (SfTabView)
 
-Nested Tab items can be configured in tab view through the [`Items`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_Items) property of [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html), which holds the nested collection of [`SfTabItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabItem.html) through [`TabItemCollection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabItemCollection.html).
+Nested tab items can be configured in the tab view using the [`Items`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_Items) property of the [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html), which holds a nested collection of [`SfTabItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabItem.html) entries through the [`TabItemCollection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabItemCollection.html).
 
 {% tabs %}
 
@@ -220,7 +220,7 @@ namespace TabViewAutomationSample
 
 ## Lazy Loading 
 
-Lazy loading improves performance of [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html) at initial loading. To enable this support, set the [EnableVirtualization](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_EnableVirtualization) property to true in [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html).
+Lazy loading enhances the performance of the [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html) during initial loading. Enable this feature by setting the [EnableVirtualization](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_EnableVirtualization) property to true in [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html).
 
 {% tabs %}
 
@@ -242,4 +242,4 @@ tabView.EnableVirtualization = true;
 
 {% endtabs %}
 
-Lazy loading sample is available in this [link](https://github.com/SyncfusionExamples/lazy-loading-in-sftabview).
+A lazy loading sample is available at this [link](https://github.com/SyncfusionExamples/lazy-loading-in-sftabview).

@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: ToolTip in Xamarin Rating control | Syncfusion
-description: Learn here all about ToolTip support in Syncfusion Xamarin Rating (SfRating) control, its elements and more.
+title: ToolTip in Xamarin Rating Control | Syncfusion
+description: Explore ToolTip functionality in the Syncfusion Xamarin Rating (SfRating) control, including placement options and precision settings.
 platform: Xamarin
 control: Rating
 documentation: ug
@@ -11,19 +11,19 @@ documentation: ug
 
 # ToolTip in Xamarin Rating (SfRating)
 
-Tooltip provides additional information about objects that are unfamiliar to users and are not directly displayed in UI. In the Xamarin.Forms [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control, tooltip shows the data of [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_Value). It will be displayed when the mouse is hovered over the rating items and will be disappeared when a rating item is selected.
+ToolTips offer additional context about UI elements that may not be immediately clear to users. In the Xamarin.Forms [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control, ToolTips display the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_Value). They appear when hovering over rating items and disappear once a rating item is selected.
 
-## Set Tooltip Placement
+## Configure Tooltip Placement
 
-Using [`ToolTipPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_TooltipPlacement) property, We can define where the ToolTip need to be displayed. [`ToolTipPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_TooltipPlacement) having the following three types of placement.
+The [`ToolTipPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_TooltipPlacement) property specifies where the ToolTip is displayed in relation to the control. Options include:
 
-* [`BottomRight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.TooltipPlacement.html#Syncfusion_SfRating_XForms_TooltipPlacement_BottomRight)
-* [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.TooltipPlacement.html#Syncfusion_SfRating_XForms_TooltipPlacement_None),
-* [`TopLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.TooltipPlacement.html#Syncfusion_SfRating_XForms_TooltipPlacement_TopLeft).
+- [`BottomRight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.TooltipPlacement.html#Syncfusion_SfRating_XForms_TooltipPlacement_BottomRight)
+- [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.TooltipPlacement.html#Syncfusion_SfRating_XForms_TooltipPlacement_None)
+- [`TopLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.TooltipPlacement.html#Syncfusion_SfRating_XForms_TooltipPlacement_TopLeft)
 
-N> By default, this property value is set to [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.TooltipPlacement.html#Syncfusion_SfRating_XForms_TooltipPlacement_None).
+> Note: The default placement is set to [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.TooltipPlacement.html#Syncfusion_SfRating_XForms_TooltipPlacement_None).
 
-### BottomRight
+### BottomRight Placement
 
 The Tooltip will display on bottom of the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control.
 
@@ -49,9 +49,9 @@ public MainPage()
 
 {% endtabs %}
 
-![SfRating right bottom ToolTip](images/rightBottom.jpg)
+![SfRating BottomRight ToolTip](images/rightBottom.jpg)
 
-### TopLeft 
+### TopLeft Placement
 
 The Tooltip will be displayed on top of the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control. 
 
@@ -77,11 +77,11 @@ public MainPage()
 
 {% endtabs %}
 
-![SfRating top left ToolTip](images/topLeft.jpg) 
+![SfRating TopLeft ToolTip](images/topLeft.jpg)
 
 ### None
 
-When we set [`ToolTipPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_TooltipPlacement) as [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.TooltipPlacement.html#Syncfusion_SfRating_XForms_TooltipPlacement_None), The ToolTip will be disappear.
+Setting [`ToolTipPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_TooltipPlacement) to [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.TooltipPlacement.html#Syncfusion_SfRating_XForms_TooltipPlacement_None) will disable the ToolTip.
 
 {% tabs %}
 
@@ -105,13 +105,10 @@ public MainPage()
 
 {% endtabs %}
 
-![No tooltip](images/null.jpg)
+![No ToolTip](images/null.jpg)
 
-## Set ToolTip Precision
-
-The [`ToolTipPrecision`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_TooltipPrecision) property sets the number precisions to be displayed after decimal point in ToolTip. 
-
-N> The default value of ToolTip precision is 1.
+## ToolTip Precision Configuration
+The [`ToolTipPrecision`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_TooltipPrecision) property defines the number of decimal places shown in the ToolTip. Default precision is set to 1.
 
 {% tabs %}
 
@@ -135,4 +132,4 @@ public MainPage()
 
 {% endtabs %}
 
-![SfRating ToolTip precision](images/toolTipPrecision.jpg)
+![SfRating ToolTip Precision](images/toolTipPrecision.jpg)

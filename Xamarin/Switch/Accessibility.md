@@ -1,22 +1,22 @@
 ---
-layout : post
-title: Accessibility in Xamarin Switch control | Syncfusion
-description: Learn here all about Accessibility support in Syncfusion Xamarin Switch (SfSwitch) control and more.
-platform : Xamarin.Forms
-control : SfSwitch
-documentation : ug
+layout: post
+title: Accessibility in Xamarin Switch Control | Syncfusion
+description: Explore the accessibility support provided by the Syncfusion Xamarin Switch (SfSwitch) control.
+platform: Xamarin.Forms
+control: SfSwitch
+documentation: ug
 ---
 
-# Accessibility in Xamarin Switch(SfSwitch)
+# Accessibility in Xamarin Switch (SfSwitch)
 
 ## AutomationId 
 
-The [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) control has built-in `AutomationId` for inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) control. To keep unique AutomationId, these inner elements' AutomationIds are updated based on the control's `AutomationId`.
+The [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) control includes built-in `AutomationId` properties for its inner elements. This `AutomationId` API allows automation frameworks to locate and interact with the inner elements of the [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) control. Each inner element's AutomationId is uniquely set based on the main control's `AutomationId`.
 
-For example, if you set SfSwitch's `AutomationId` as "Turn on Night mode", then the automation framework will interact the [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) as "Turn on Night mode Track".
+For instance, if the SfSwitch's `AutomationId` is set to "Turn on Night Mode," the automation framework will identify the [`SfSwitch`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html) as "Turn on Night Mode Track."
  
-When you enable the [`Indeterminate state`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.IndeterminateState.html), then the Automation framework will interact the Off state as "Turn on Night mode Off Track", [`Indeterminate state`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.IndeterminateState.html) as "Turn on Night mode Indeterminate Track" and the On state as "Turn on Night mode On Track".
+When the [`Indeterminate state`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.IndeterminateState.html) is enabled, the automation framework identifies the Off state as "Turn on Night Mode Off Track," the Indeterminate state as "Turn on Night Mode Indeterminate Track," and the On state as "Turn on Night Mode On Track."
 
-N> AutomationId support works on Android only.
+N> AutomationId support is available on Android only.
 
 ![AutomationId Image](images/AutomationId.png)

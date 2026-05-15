@@ -1,15 +1,15 @@
 ---
 layout: post
 title: TabItem Customization in Xamarin Tabbed View | Syncfusion
-description: Learn here all about Tabitem Customization support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
+description: Learn about TabItem customization support in the Syncfusion Xamarin Tabbed View (SfTabView) control and more.
 platform: Xamarin
 control: TabView
 documentation: ug
 ---
 
-# TabView TabItem Customization in Xamarin Tabbed View (SfTabView)
+# TabItem Customization in Xamarin Tabbed View (SfTabView)
 
-Tab items can be configured in tab view through the [`Items`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_Items) property of [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html), which holds the collection of [`SfTabItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabItem.html) through [`TabItemCollection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabItemCollection.html).
+Tab items can be configured in the tab view using the [`Items`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_Items) property of [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html), which holds a collection of [`SfTabItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabItem.html) objects through [`TabItemCollection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.TabItemCollection.html).
 
 {% tabs %}
 
@@ -92,9 +92,9 @@ namespace TabViewAutomationSample
 
 ![TabItems](images/TabItems/TabItems.png)
 
-##  Selection color for text and font icons
+## Selection Color for Text and Font Icons
 
-The selected index can be differentiated by setting the [`SelectionColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabItem.html#Syncfusion_XForms_TabView_SfTabItem_SelectionColor) property of [`SfTabItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabItem.html).
+You can differentiate the selected index by setting the [`SelectionColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabItem.html#Syncfusion_XForms_TabView_SfTabItem_SelectionColor) property of [`SfTabItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabItem.html).
 
 {% tabs %}
 

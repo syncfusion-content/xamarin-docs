@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Orientation in Xamarin Range Slider control | Syncfusion
-description: Learn here all about Orientation support in Syncfusion Xamarin Range Slider (SfRangeSlider) control and more.
+title: Orientation in Xamarin Range Slider Control | Syncfusion
+description: Discover the orientation settings for the Syncfusion Xamarin Range Slider (SfRangeSlider) control, enabling horizontal and vertical slider configurations.
 platform: Xamarin
 control: SfRangeSlider
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Orientation in Xamarin Range Slider (SfRangeSlider)
 
-[`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) provides options to display values and slider to slide either horizontally or vertically.
+The [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) control allows you to configure the slider to move either horizontally or vertically.
 
-N> The default option is [`Vertical`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.Orientation.html#Syncfusion_SfRangeSlider_XForms_Orientation_Vertical).
+> **Note**: The default orientation is set to [`Vertical`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.Orientation.html#Syncfusion_SfRangeSlider_XForms_Orientation_Vertical).
 
-## Horizontal
+## Horizontal Orientation
 
 {% tabs %}
 
@@ -58,10 +58,9 @@ namespace GettingStarted
 
 {% endtabs %}
 
-![Horizantal image](images/RangeSlider-Horizontal.png)
+![Horizontal orientation of SfRangeSlider in Xamarin.Forms](images/RangeSlider-Horizontal.png)
 
-## Vertical
-
+## Vertical Orientation
 {% tabs %}
 
 {% highlight xaml %}
@@ -105,6 +104,4 @@ namespace GettingStarted
 
 {% endtabs %}
 
-![Vertical image](images/RangeSlider-Vertical.png)
-
-
+![Vertical orientation of SfRangeSlider in Xamarin.Forms](images/RangeSlider-Vertical.png)

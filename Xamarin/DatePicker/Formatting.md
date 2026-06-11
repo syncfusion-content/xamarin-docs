@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Formatting in Xamarin DatePicker control | Syncfusion<sup>&reg;</sup>
+title: Formatting in Xamarin DatePicker control | Syncfusion
 description: Learn here all about Formatting support in Syncfusion<sup>&reg;</sup> Xamarin DatePicker (SfDatePicker) control and more.
 platform: Xamarin
 control: Picker

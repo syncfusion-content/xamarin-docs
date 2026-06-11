@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Appointments in Xamarin Scheduler control | Syncfusion<sup>&reg;</sup>
+title: Appointments in Xamarin Scheduler control | Syncfusion
 description: Learn here all about Appointments support in Syncfusion<sup>&reg;</sup> Xamarin Scheduler (SfSchedule) control and more.
 platform: xamarin
 control: SfSchedule

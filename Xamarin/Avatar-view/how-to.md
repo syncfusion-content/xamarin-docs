@@ -1,15 +1,15 @@
 ---
 layout: post
-title: States in Syncfusion AvatarView control for Xamarin.Forms.
-description: This section will explain about how to use the different states that exist in Xamarin.Forms SfAvatarView.
+title: States in Syncfusion AvatarView Control for Xamarin.Forms
+description: Learn how to use different states in the Xamarin.Forms SfAvatarView, including BadgeView integration for notifications.
 platform: Xamarin
 control: AvatarView
 documentation: ug
 ---
 
-# How to set badge view to avatar
+# How to Set Badge View to Avatar
 
-The [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control provides support for [`BadgeView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.html) to notify users of new or unread messages, notifications, or the status of something.
+The [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control supports the integration of [`BadgeView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.html) to notify users of new or unread messages, notifications, or status updates.
 
 {% tabs %}
 
@@ -77,4 +77,4 @@ xmlns:badge="clr-namespace:Syncfusion.XForms.BadgeView;assembly=Syncfusion.SfBad
 
 ![BadgeView support](images/BadgeView_AvatarView.jpg)
 
-N> The [`SfBadgeView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.SfBadgeView.html) is available in [`Syncfusion.Xamarin.SfBadgeView`](https://www.nuget.org/packages/Syncfusion.Xamarin.SfBadgeView) from [`nuget.org`](https://www.nuget.org/). To know more about `SfBadgeView` view, refer to this [documentation](https://help.syncfusion.com/xamarin/sfbadgeview/getting-started).
+> **Note**: The [`SfBadgeView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.SfBadgeView.html) is available in the [`Syncfusion.Xamarin.SfBadgeView`](https://www.nuget.org/packages/Syncfusion.Xamarin.SfBadgeView) package from [nuget.org](https://www.nuget.org/). For more information on `SfBadgeView`, refer to the [documentation](https://help.syncfusion.com/xamarin/sfbadgeview/getting-started).

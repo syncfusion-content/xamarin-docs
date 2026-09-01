@@ -1,12 +1,12 @@
 ---
-layout : post
-title: Accessibility in Xamarin Range Slider control | Syncfusion
-description: Learn here all about Accessibility support in Syncfusion Xamarin Range Slider (SfRangeSlider) control and more.
-platform : Xamarin.Forms
-control : SfRangeSlider
-documentation : ug
+layout: post
+title: Accessibility in Xamarin Range Slider Control | Syncfusion
+description: Discover how to implement accessibility features in the Syncfusion Xamarin Range Slider (SfRangeSlider) control.
+platform: Xamarin.Forms
+control: SfRangeSlider
+documentation: ug
 ---
 
 # Accessibility in Xamarin Range Slider
 
-[`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) does not have support for `AutomationId` to access the thumb along track. Instead, you can change the [`RangeStart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_RangeStart), [`RangeEnd`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_RangeEnd) using the co-ordinates and [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Value) with the button click event with its `AutomationId`.
+The [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) control currently does not support the `AutomationId` property for accessing the slider thumb along the track. However, you can manipulate the [`RangeStart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_RangeStart), [`RangeEnd`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_RangeEnd), and [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Value) properties using coordinates. Additionally, these values can be adjusted through a button click event utilizing its `AutomationId`.

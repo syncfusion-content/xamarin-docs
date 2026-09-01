@@ -1,14 +1,14 @@
 ---
 layout: post
-title: CenterButton Customization in Xamarin Tabbed View control | Syncfusion
-description: Learn here all about CenterButton Customization support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
+title: CenterButton Customization in Xamarin Tabbed View Control | Syncfusion
+description: Explore the customization options for the CenterButton in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
 control: TabView
 documentation: ug
 ---
 
 # CenterButton Customization in Xamarin Tabbed View (SfTabView)
 
-This section explains how to create and customize The Xamarin.Forms [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html) CenterButton. To enable CenterButton, set the [`OverFlowMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_OverflowMode) of Xamarin.Forms [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html) to [`CenterButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_CenterButton).
+This section explains how to create and customize the CenterButton in the Xamarin.Forms [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html). To enable the CenterButton, set the [`OverflowMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_OverflowMode) of the Xamarin.Forms [`SfTabView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html) to [`CenterButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_CenterButton).
 
 {% tabs %}
 
@@ -34,9 +34,9 @@ public MainPage()
 
 {% endtabs %}
 
-## Customize CenterButtonSettings
+## Customizing CenterButtonSettings
 
-We can customize the CenterButton using the properties of [`CenterButtonSetting`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_CenterButtonSettings). The following properties are used to customize the view of CenterButton [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.CenterButtonSettings.html#Syncfusion_XForms_TabView_CenterButtonSettings_BackgroundColor), [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.CenterButtonSettings.html#Syncfusion_XForms_TabView_CenterButtonSettings_BorderColor), [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.CenterButtonSettings.html#Syncfusion_XForms_TabView_CenterButtonSettings_BorderThickness), [`Height`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.CenterButtonSettings.html#Syncfusion_XForms_TabView_CenterButtonSettings_Height), [`Title`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.CenterButtonSettings.html#Syncfusion_XForms_TabView_CenterButtonSettings_Title), [`TitleFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.CenterButtonSettings.html#Syncfusion_XForms_TabView_CenterButtonSettings_TitleFontAttributes), [`TitleFontColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.CenterButtonSettings.html#Syncfusion_XForms_TabView_CenterButtonSettings_TitleFontColor), [`TitleFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.CenterButtonSettings.html#Syncfusion_XForms_TabView_CenterButtonSettings_TitleFontSize), [`Width`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.CenterButtonSettings.html#Syncfusion_XForms_TabView_CenterButtonSettings_Width).
+You can customize the CenterButton using the properties of the [`CenterButtonSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_CenterButtonSettings). The properties available for customization include [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.CenterButtonSettings.html#Syncfusion_XForms_TabView_CenterButtonSettings_BackgroundColor), [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.CenterButtonSettings.html#Syncfusion_XForms_TabView_CenterButtonSettings_BorderColor), [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.CenterButtonSettings.html#Syncfusion_XForms_TabView_CenterButtonSettings_BorderThickness), [`Height`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.CenterButtonSettings.html#Syncfusion_XForms_TabView_CenterButtonSettings_Height), [`Title`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.CenterButtonSettings.html#Syncfusion_XForms_TabView_CenterButtonSettings_Title), [`TitleFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.CenterButtonSettings.html#Syncfusion_XForms_TabView_CenterButtonSettings_TitleFontAttributes), [`TitleFontColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.CenterButtonSettings.html#Syncfusion_XForms_TabView_CenterButtonSettings_TitleFontColor), [`TitleFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.CenterButtonSettings.html#Syncfusion_XForms_TabView_CenterButtonSettings_TitleFontSize), and [`Width`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.CenterButtonSettings.html#Syncfusion_XForms_TabView_CenterButtonSettings_Width).
 
 {% tabs %}
 
@@ -68,9 +68,9 @@ public MainPage()
 
 {% endtabs %}
 
-## CenterButtonTapped event
+## CenterButtonTapped Event
 
-When [`CenterButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_CenterButton) is tapped, the [`CenterButtonTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_CenterButtonTapped) event occurs. Using this event we can set alert message.
+When the [`CenterButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_CenterButton) is tapped, the [`CenterButtonTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_CenterButtonTapped) event is triggered. This event can be used to display an alert message.
 
 {% tabs %}
 
@@ -100,7 +100,7 @@ private void TabView_CenterButtonTapped(object sender, EventArgs e)
 
 ## Custom CenterButton
 
-When built-in view is not needed, it can be overridden by adding custom views to the [`CenterButtonView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_CenterButtonView). The [`CenterButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_CenterButton) view can be customized by adding images, labels, buttons inside the [`CenterButtonView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_CenterButtonView). Refer the following code sample to know about customizing the view of [`CenterButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_CenterButton).
+If the built-in view does not meet your needs, you can override it by adding custom views to the [`CenterButtonView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_CenterButtonView). The [`CenterButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_CenterButton) view can be customized by adding images, labels, or buttons within the [`CenterButtonView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_CenterButtonView). Refer to the following code example for guidance on customizing the [`CenterButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.OverflowMode.html#Syncfusion_XForms_TabView_OverflowMode_CenterButton).
 
 {% tabs %}
 
@@ -154,4 +154,4 @@ private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
 
 ![TabViewImage](images/Center-Button/Center_Button_Customization.png)
 
-Please find the sample from the following [Sample](https://github.com/SyncfusionExamples/center-button-tabview).
+You can find an example in this [sample](https://github.com/SyncfusionExamples/center-button-tabview).

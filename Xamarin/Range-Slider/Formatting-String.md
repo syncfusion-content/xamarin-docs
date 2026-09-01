@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Formatting String in Xamarin Range Slider control | Syncfusion
-description: Learn here all about Formatting String support in Syncfusion Xamarin Range Slider (SfRangeSlider) control and more.
+title: Formatting Strings in Xamarin Range Slider Control | Syncfusion
+description: Discover how to format strings in the Syncfusion Xamarin Range Slider (SfRangeSlider) control.
 platform: Xamarin
 control: RangeSlider
 documentation: ug
 ---
 
-# Formatting String in Xamarin Range Slider (SfRangeSlider)
+# Formatting Strings in Xamarin Range Slider (SfRangeSlider)
 
-The Value label of the [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) can be configured to display different formats like currency format, percent format etc. We can also customize the Value label with string formatting. We can customize using [`LabelFormat`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_LabelFormat) property which determines the format specifier by which the display Value has to be formatted.
+The value label of the [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) can be configured to display various formats, such as currency and percentage. You can customize the value label using string formatting with the [`LabelFormat`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_LabelFormat) property, which specifies the desired format of the displayed value.
 
-## Formatting types
+## Available Formatting Types
 
-We have different formatting types such as currency format, exponential format, number format, percentage format etc. We can also add the text with Value using [`LabelFormat`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_LabelFormat) 
+You can choose from different formatting types, including currency, exponential, number, and percentage formats. Additionally, text can be added to the value using the [`LabelFormat`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_LabelFormat) property.
 
 {% tabs %}
 
@@ -51,7 +51,7 @@ this.Content = stack;
 
 ## Culture Localization
 
-We have provided the support for changing the [`Culture`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Culture) when using Currency notation for the formatting type. For this we have to enable Currency format and set the desired culture to be shown.
+We have provided the support for changing the [`Culture`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Culture) when using currency notation for the formatting type. To do this, enable the currency format and set the desired culture.
 
 {% tabs %}
 

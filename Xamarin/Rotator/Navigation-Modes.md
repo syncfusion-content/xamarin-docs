@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Navigation Modes in Xamarin Rotator control | Syncfusion
-description: Learn here all about Navigation Modes support in Syncfusion Xamarin Rotator (SfRotator) control and more.
+title: Navigation Modes in Xamarin Rotator Control | Syncfusion
+description: Explore the navigation modes supported by the Syncfusion Xamarin Rotator (SfRotator) control, and learn how to implement them effectively.
 platform: xamarin 
 control: Rotator
 documentation: ug
@@ -11,10 +11,11 @@ documentation: ug
 
 # Navigation Modes in Xamarin Rotator (SfRotator)
 
-The [`NavigationStripMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html#Syncfusion_SfRotator_XForms_SfRotator_NavigationStripMode) property specifies the appearance of navigation bar items. The image data can be selected either by [`Thumbnail`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.NavigationStripMode.html#Syncfusion_SfRotator_XForms_NavigationStripMode_Thumbnail) or by [`Dots`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.NavigationStripMode.html#Syncfusion_SfRotator_XForms_NavigationStripMode_Dots) navigation modes.
+The [`NavigationStripMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.SfRotator.html#Syncfusion_SfRotator_XForms_SfRotator_NavigationStripMode) property defines how the navigation bar items appear in the `SfRotator` control. The items can be displayed using either the [`Thumbnail`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.NavigationStripMode.html#Syncfusion_SfRotator_XForms_NavigationStripMode_Thumbnail) or [`Dots`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.NavigationStripMode.html#Syncfusion_SfRotator_XForms_NavigationStripMode_Dots) mode.
 
-* [`Thumbnail`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRotator.XForms.NavigationStripMode.html#Syncfusion_SfRotator_XForms_NavigationStripMode_Thumbnail) - The slider items will be loaded in thumbnail view additionally. When a thumbnail item is clicked, the slider will switch to the corresponding image data.
+## Thumbnail Mode
 
+Thumbnail mode displays slider items as small preview images. Clicking on a thumbnail item switches the slider to show the corresponding image data.
 {% tabs %}
 
 {% highlight xaml %}

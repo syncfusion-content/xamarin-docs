@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Customization in Syncfusion AvatarView Xamarin.Forms
-description: This section will explain about how to achieve the customization of default View in Xamarin.Forms SfAvatarView.
+title: Customization in Syncfusion AvatarView for Xamarin.Forms
+description: Discover how to customize the appearance of SfAvatarView in Xamarin.Forms, including color, size adjustments, and more.
 platform: Xamarin
 control: AvatarView
 documentation: ug
 ---
 
-# Customization in Xamarin Avatar View(SfAvatarView)
+# Customization in Xamarin Avatar View (SfAvatarView)
 
-The [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control provides options to customize the color and size. The control can be customized using the following properties:
+The [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control provides versatile options for customizing color and size properties.
 
 ## Colors
 
-Color in the [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) can be customized by the border color, the default background color, and automatic background color.
+Customize colors in the [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) through the border color, default background color, and an automatic background color set.
 
-### Border color
+### Border Color
 
 The border color is used for setting color to the border of [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) using the [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Border.SfBorder.html#Syncfusion_XForms_Border_SfBorder_BorderColor) property.
 

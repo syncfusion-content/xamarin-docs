@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Labels Customization in Xamarin Range Slider control | Syncfusion
-description: Learn here all about Labels Customization support in Syncfusion Xamarin Range Slider (SfRangeSlider) control and more.
+title: Labels Customization in Xamarin Range Slider Control | Syncfusion
+description: Learn how to customize labels in the Syncfusion Xamarin Range Slider (SfRangeSlider) control, including visibility, placement, and font adjustments.
 platform: Xamarin
 control: RangeSlider
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # Labels Customization in Xamarin Range Slider (SfRangeSlider)
 
-[`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) provides option to show or hide the label and position customization.
+The [`SfRangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html) offers options to show or hide labels and customize their position.
 
 ## Show Value Label
 
-This property allows us to display labels for the ticks. When it sets to true, it displays the label for all the ticks based on the [`ValuePlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ValuePlacement) property.
+This feature allows displaying labels for the ticks. Setting it to true will display labels based on the [`ValuePlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ValuePlacement) property.
 
-N> The default value of the [`ShowValueLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ShowValueLabel) property is false.
+> **Note**: The default setting for [`ShowValueLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ShowValueLabel) is false.
 
 {% tabs %}
 
@@ -35,7 +35,7 @@ N> The default value of the [`ShowValueLabel`](https://help.syncfusion.com/cr/xa
 
 ## Set Custom Label
 
-To display custom labels, [`ShowCustomLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ShowCustomLabel) property should be set to true and need to populate the [`CustomLabels`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_CustomLabels) property with observable collection of items by specifying the custom labels for corresponding values.
+To enable custom labels, set the [`ShowCustomLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ShowCustomLabel) property to true and populate the [`CustomLabels`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_CustomLabels) with an observable collection specifying the labels for corresponding values.
 
 {% tabs %}
 
@@ -64,19 +64,14 @@ public RangeSliderPage ()
 
 {% endtabs %}
 
-![SfRangeSlider rendererd in vertical orientation with custom label in Xamarin.Forms](images/customLabel.png)
-
+![SfRangeSlider rendered in vertical orientation with custom label in Xamarin.Forms](images/customLabel.png)
 
 ## Value Placement
 
-The [`ValuePlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ValuePlacement) property describes the position of the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_Value) respective to ticks. 
+The [`ValuePlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ValuePlacement) property determines the label position relative to the ticks. Options include:
 
-Available options for this property are:
-
-* [`BottomRight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValuePlacement.html#Syncfusion_SfRangeSlider_XForms_ValuePlacement_BottomRight)
-
-* [`TopLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValuePlacement.html#Syncfusion_SfRangeSlider_XForms_ValuePlacement_TopLeft)
-
+- [`BottomRight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValuePlacement.html#Syncfusion_SfRangeSlider_XForms_ValuePlacement_BottomRight)
+- [`TopLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValuePlacement.html#Syncfusion_SfRangeSlider_XForms_ValuePlacement_TopLeft)
 {% tabs %}
 
 {% highlight xaml %}
@@ -253,3 +248,4 @@ The [`LabelColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlid
 {% endtabs %}
 
 ![Label in SfRangeSlider in Xamarin.Forms](images/LabelColor.jpg)
+

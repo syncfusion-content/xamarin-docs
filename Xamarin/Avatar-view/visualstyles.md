@@ -1,38 +1,37 @@
 ---
 layout: post
-title: Visual Style in Syncfusion AvatarView Xamarin.Forms.
-description: This section will explain about the different visual styles that exist in Xamarin.Forms SfAvatarView.
+title: Visual Styles in Syncfusion AvatarView Xamarin.Forms
+description: An overview of the different visual styles available in the Xamarin.Forms SfAvatarView control.
 platform: Xamarin
 control: AvatarView
 documentation: ug
 ---
 
-# Visual Style in Xamarin Avatar View(SfAvatarView) 
+# Visual Styles in Xamarin Avatar View (SfAvatarView)
 
-## Visual styles in Xamarin Avatar View(SfAvatarView)
-The  [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control supports customization using the following built-in visual styles:
+The [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control supports customization through several built-in visual styles:
 
-* [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.AvatarShape.html#Syncfusion_XForms_AvatarView_AvatarShape_Custom)
-* [`Circle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.AvatarShape.html#Syncfusion_XForms_AvatarView_AvatarShape_Circle)
-* [`Square`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.AvatarShape.html#Syncfusion_XForms_AvatarView_AvatarShape_Square)
+- [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.AvatarShape.html#Syncfusion_XForms_AvatarView_AvatarShape_Custom)
+- [`Circle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.AvatarShape.html#Syncfusion_XForms_AvatarView_AvatarShape_Circle)
+- [`Square`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.AvatarShape.html#Syncfusion_XForms_AvatarView_AvatarShape_Square)
 
 ## Custom
 
-Custom type allows you to customize the control, where you can handle the size, colors, images, etc. of the control. Refer to this [documentation](https://help.syncfusion.com/xamarin/sfavatarview/customization).
+The Custom type enables you to personalize control attributes, such as size, colors, and images. For more information, refer to the [customization documentation](https://help.syncfusion.com/xamarin/sfavatarview/customization).
 
-N> The default visual type is [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.AvatarShape.html#Syncfusion_XForms_AvatarView_AvatarShape_Custom).
+> **Note**: The default visual style is [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.AvatarShape.html#Syncfusion_XForms_AvatarView_AvatarShape_Custom).
 
 ## Circle
 
-You can directly set value to the circle in the [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) using the following styles:
+Apply the circle style in the [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) using the following options:
 
-* ExtraLargeCircle
-* LargeCircle
-* MediumCircle
-* SmallCircle
-* ExtraSmallCircle
+- ExtraLargeCircle
+- LargeCircle
+- MediumCircle
+- SmallCircle
+- ExtraSmallCircle
 
-The following code sample demonstrates how to define visual style of circle AvatarView.
+The following code sample demonstrates how to implement the circle visual style in AvatarView.
 
 {% tabs %}
 
@@ -210,15 +209,15 @@ The following code sample demonstrates how to define visual style of circle Avat
 
 ## Square
 
-You can directly set value to the square in the [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) using the following styles:
+Apply the square style in the [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) using these options:
 
-* ExtraLargeSquare
-* LargeSquare
-* MediumSquare
-* SmallSquare
-* ExtraSmallSquare
+- ExtraLargeSquare
+- LargeSquare
+- MediumSquare
+- SmallSquare
+- ExtraSmallSquare
 
-The following code sample demonstrates how to define visual style of square AvatarView.
+The following code sample demonstrates how to implement the square visual style in AvatarView.
 
 {% tabs %}
 
@@ -393,4 +392,4 @@ The following code sample demonstrates how to define visual style of square Avat
 
 ![SfAvatarView control with square visual style](images/VisualSquare_AvatarView.png)
 
-The visual style sample is available in the following link: [Sample](https://github.com/SyncfusionExamples/avatarview-visual-style).
+Access the visual style sample at the following link: [Sample](https://github.com/SyncfusionExamples/avatarview-visual-style).

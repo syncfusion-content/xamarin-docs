@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Appearance and Styling in Xamarin Rating control | Syncfusion
-description: Learn here all about Appearance and Styling support in Syncfusion Xamarin Rating (SfRating) control and more.
+title: Appearance and Styling in Xamarin Rating Control | Syncfusion
+description: Learn how to customize the appearance and styling in the Syncfusion Xamarin Rating (SfRating) control, including item size, count, and spacing.
 platform: Xamarin
 control: Rating
 documentation: ug
@@ -11,14 +11,12 @@ documentation: ug
 
 # Appearance and Styling in Xamarin Rating (SfRating)
 
-When the default view is not needed, you can customize the view of Xamarin.Forms [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control. The [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control provides support to customize the size, item count, and space between rating items.
-
+If the default view does not meet your needs, you can customize the `SfRating` control in Xamarin.Forms. This control allows you to modify the size, item count, and spacing between rating items to better fit your application design requirements.
 ## Set Size
 
-The [`ItemSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_ItemSize) property sets the size of the rating items. 
+Use the [`ItemSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_ItemSize) property to define the size of the rating items.
 
-N> By default, property value is 50.
-
+> Note: The default value for this property is 50.
 {% tabs %}
 
 {% highlight xaml %}

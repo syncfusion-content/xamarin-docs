@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Events in Syncfusion RangeSlider control for Xamarin.Forms
-description: Learn how to populate events in Syncfusion Essential Xamarin RangeSlider Control, its elements, and more.
+title: Events in Syncfusion RangeSlider Control for Xamarin.Forms
+description: Discover how to handle events in the Syncfusion Essential Xamarin RangeSlider Control, including its elements and functionalities.
 platform: xamarin
 control: RangeSlider 
 documentation: ug
 ---
 
-# How to Perform an Action while Selecting a Value?
+# How to Perform an Action While Selecting a Value
 
-[`ValueChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ValueChanging) event will be triggered when value is changed with single thumb. [`ValueEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueEventArgs.html) has [`RangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueEventArgs.html#Syncfusion_SfRangeSlider_XForms_ValueEventArgs_RangeSlider) and [`RangeValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueEventArgs.html#Syncfusion_SfRangeSlider_XForms_ValueEventArgs_Value) of the control.
+The [`ValueChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.SfRangeSlider.html#Syncfusion_SfRangeSlider_XForms_SfRangeSlider_ValueChanging) event is triggered when the value changes using a single thumb. The event provides access to [`ValueEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueEventArgs.html), which includes the [`RangeSlider`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueEventArgs.html#Syncfusion_SfRangeSlider_XForms_ValueEventArgs_RangeSlider) and [`RangeValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRangeSlider.XForms.ValueEventArgs.html#Syncfusion_SfRangeSlider_XForms_ValueEventArgs_Value).
 
 <table>
 <tr>

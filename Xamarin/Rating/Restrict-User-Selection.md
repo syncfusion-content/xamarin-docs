@@ -1,17 +1,17 @@
 ---
 
 layout: post
-title: Restrict user Selection  in Xamarin Rating control | Syncfusion
-description: Learn here all about Restrict user Selection  support in Syncfusion Xamarin Rating (SfRating) control and more.
+title: Restrict User Selection in Xamarin Rating Control | Syncfusion
+description: Learn how to restrict user selection in the Syncfusion Xamarin Rating (SfRating) control using the ReadOnly property.
 platform: Xamarin
 control: Rating
 documentation: ug
 
 ---
 
-# Restrict user Selection  in Xamarin Rating (SfRating)
+# Restrict User Selection in Xamarin Rating (SfRating)
 
-[`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control provides support for changeable or unchangeable values for Rating control. This is achieved by the [`ReadOnly`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_ReadOnly) property. When this property is set to True, the Rating value becomes unchangeable. By default, this property value is set to False.
+The [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) control allows for either changeable or unchangeable rating values. This behavior is controlled by the [`ReadOnly`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html#Syncfusion_SfRating_XForms_SfRating_ReadOnly) property. Setting this property to `True` makes the rating value static, preventing user modifications. By default, this property is set to `False`, allowing user input.
 
 {% tabs %}
 
@@ -29,6 +29,4 @@ documentation: ug
 
 {% endtabs %}
 
-![readOnly](images/readOnly.jpg)
-
-
+![ReadOnly Property in Action](images/readOnly.jpg)

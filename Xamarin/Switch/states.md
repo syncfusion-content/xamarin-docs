@@ -1,7 +1,7 @@
 ---
 layout: post
-title: States in Xamarin Switch control | Syncfusion
-description: Learn here all about States support in Syncfusion Xamarin Switch (SfSwitch) control, its elements and more.
+title: States in Xamarin Switch Control | Syncfusion
+description: Discover the various states supported by the Syncfusion Xamarin Switch (SfSwitch) control, including its elements and features.
 platform: Xamarin
 control: Switch
 documentation: ug
@@ -9,12 +9,11 @@ documentation: ug
 
 # States in Xamarin Switch (SfSwitch)
 
-Switch allows you to configure the states as explained in the following sections.
+The SfSwitch control allows you to configure the states as explained in the following sections.
 
-## On
+## On State
 
-You can switch to on state by tapping the switch button or by setting a value as demonstrated in the following code example.
-
+To switch to the "On" state, tap the switch button or configure the value as shown in the following code examples.
 {% tabs %}
 
 {% highlight xaml %}
@@ -33,12 +32,11 @@ sfSwitch.IsOn=true;
 
 {% endtabs %}
 
-![switch control is displaying on state](images/on.png)
+![Switch control is displaying on state](images/on.png)
 
-## Off
+## Off State
 
-This is the default state. You can switch to off state by tapping the switch button or by defining as demonstrated in the following code example.
-
+The "Off" state is the default state. Tap the switch button or define the state as shown in these code examples.
 {% tabs %}
 
 {% highlight xaml %}
@@ -57,11 +55,11 @@ sfSwitch.IsOn = false;
 
 {% endtabs %}
 
-![switch control displaying off state](images/off.png)
+![Switch control displaying off state](images/off.png)
 
-## Indeterminate
+## Indeterminate State
 
-The indeterminate state can be enabled when you need to display the work progress. The following code example demonstrates how to load the switch in indeterminate state by setting the [`IsOn`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_IsOn) property to null.
+The indeterminate state is useful for indicating ongoing work progress. Use the following code example to load the switch in the indeterminate state by setting the [`IsOn`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_IsOn) property to null.
 
 {% tabs %}
 
@@ -83,13 +81,13 @@ sfSwitch.AllowIndeterminateState = true;
 
 {% endtabs %}
 
-![switch conrol is displaying indeterminate state](images/intermediate.png)
+![Switch control is displaying indeterminate state](images/intermediate.png)
 
-N> By default, the switch control has only two states: on and off.
+> **Note:** By default, the switch control supports only two states: on and off.
 
-## Disabled On
+## Disabled On State
 
-You can switch to disabled on state by setting the [`IsOn`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_IsOn) property as true and `IsEnabled` property as false.
+Set the [`IsOn`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_IsOn) property to true and the `IsEnabled` property to false to switch to the disabled on state.
 
 {% tabs %}
 
@@ -109,11 +107,11 @@ sfSwitch.IsEnabled = false;
 
 {% endtabs %}
 
-![switch control displaying disabled on state](images/disabled-on.png)
+![Switch control displaying disabled on state](images/disabled-on.png)
 
-## Disabled Off
+## Disabled Off State
 
-You can switch to disabled off state by setting the [`IsOn`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_IsOn)  property as false and `IsEnabled` property as false.
+Switch to the disabled off state by setting the [`IsOn`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_IsOn) property to false and the `IsEnabled` property to false.
 
 {% tabs %}
 
@@ -133,11 +131,11 @@ sfSwitch.IsEnabled = false;
 
 {% endtabs %}
 
-![switch control displaying disabled off state](images/disabled-off.png)
+![Switch control displaying disabled off state](images/disabled-off.png)
 
-## Disabled Indeterminate
+## Disabled Indeterminate State
 
-The disabled indeterminate state can be enabled when you need to display the work progress .The below code example demonstrates loading the switch in disabled indeterminate state by setting [`IsOn`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_IsOn)  property value as null and `IsEnabled` property as false.
+Enable the disabled indeterminate state to display ongoing work progress. Load the switch in the disabled indeterminate state by setting the [`IsOn`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_IsOn) property to null and the `IsEnabled` property to false, as shown below.
 
 {% tabs %}
 
@@ -158,4 +156,4 @@ sfSwitch.IsEnabled = false;
 
 {% endtabs %}
 
-![switch conrol displaying disabled indeterminate state](images/disabled-indeterminate.png)
+![Switch control displaying disabled indeterminate state](images/disabled-indeterminate.png)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: States in Syncfusion Switch control for Xamarin.Forms.
-description: Explaining about different states in Syncfusion Switch Control (SfSwitch) for Xamarin.Forms and how it performs.
+title: Understanding States in Syncfusion Switch Control for Xamarin.Forms
+description: An exploration of different states in the Syncfusion Switch Control (SfSwitch) for Xamarin.Forms and how it performs.
 platform: Xamarin
 control: Switch
 documentation: ug
 ---
 
-# How to show busy indicator to perform async action
+# How to Show Busy Indicator for Async Actions
 
 The busy indicator indicates users that something is on progress in the background. For instance, some data is being fetched from the back end. Here, when users about to switch the state, the [`StateChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_StateChanging) event occurs, and users can set the [`IsBusy`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_IsBusy) property to true to show busy indicator and perform fetching the data from the server. After fetching the data, the [`IsOn`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_IsOn) property will be set to true or false based on validation. After validation, the [`IsBusy`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSwitch.html#Syncfusion_XForms_Buttons_SfSwitch_IsBusy) property is set to false.
 
@@ -51,9 +51,9 @@ The busy indicator indicates users that something is on progress in the backgrou
         
 {% endhighlight %}
 
-![switch control with busy indicator](images/busy-indicator.png)
+![Switch control with busy indicator](images/busy-indicator.png)
 
-## Change thumb color alone based on its state and devices
+## Customizing Thumb Color Based on State and Device
 
 You can customize the thumb color using the [`ThumbColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_ThumbColor) property based on its visual state and devices.
 
@@ -154,9 +154,9 @@ You can customize the thumb color using the [`ThumbColor`](https://help.syncfusi
 
 {% endtabs %}
 
-![switch control with busy indicator](images/thumb-color.png)
+![Switch control with busy indicator](images/thumb-color.png)
 
-## Change thumb color alone based on its state with Material theme for all devices
+## Changing Thumb Color with Material Theme Across Devices
 
 By using the [`MaterialSwitchSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.MaterialSwitchSettings-1.html), [`CupertinoSwitchSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.CupertinoSwitchSettings-1.html), and [`FluentSwitchSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.FluentSwitchSettings-1.html) properties, you can change the thumb color based on its state for all devices.
 
@@ -257,9 +257,9 @@ By using the [`MaterialSwitchSettings`](https://help.syncfusion.com/cr/xamarin/S
 
 {% endtabs %}
 
-![switch conrol with thumb color](images/thumb-color-based-on-device.png)
+![Switch control with thumb color](images/thumb-color-based-on-device.png)
 
-## Set color for disabled state
+## Setting Color for Disabled States
 
 The Switch control provides options to customize the color based on the disabled states. The below code example illustrates this customization.
 
@@ -354,9 +354,9 @@ this.Content = sfSwitch;
 
 {% endtabs %}
 
-![switch conrol with image](images/thumb-color-in-disabled-state.png)
+![Switch control with image in disabled state](images/thumb-color-in-disabled-state.png)
 
-## Change busy indicator color
+## Changing Busy Indicator Color
 
 You can customize the busy indicator color using the [`BusyIndicatorColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.ISwitchSettings.html#Syncfusion_XForms_Buttons_ISwitchSettings_BusyIndicatorColor) property based on its visual state and devices.
 
@@ -483,7 +483,6 @@ All state can be customized in same look by setting the same state for all switc
                             </Setter.Value>
 
                         </Setter>
-
                     </VisualState.Setters>
 
                 </VisualState>
@@ -553,9 +552,9 @@ this.Content = sfSwitch;
 
 {% endtabs %}
 
-![switch control with same look](images/All-state-in-same-look.png)
+![Switch control with same look](images/All-state-in-same-look.png)
 
-## Set RTL to switch control
+## Set RTL for Switch Control
 
 Switch supports to change the layout direction of the control in the right-to-left direction by setting the `FlowDirection` to `RightToLeft`.
 The device direction takes when we set the `FlowDirection` as `MatchParent`.
@@ -581,9 +580,9 @@ this.Content = sfSwitch;
 
 {% endtabs %}
 
-![switch control with RTL support](images/RTL-support.png)
+![Switch control with RTL support](images/RTL-support.png)
 
-### Setting match parent
+### Setting Match Parent
 
 {% tabs %}
 
@@ -608,9 +607,9 @@ this.Content = grid;
 
 {% endtabs %}
 
-![switch control with RTL support](images/RTL-support.png)
+![Switch control with RTL support](images/RTL-support.png)
 
-## Get default color of the switches in all three state.
+## Default Colors of Switches in Three States
 
 The following table illustrate the default color of the switches in all three state.
 

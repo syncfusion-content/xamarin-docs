@@ -1,31 +1,27 @@
 ---
 layout: post
-title: Various customization in Syncfusion AvatarView control.  
-description: Learn what are the types in AvatarType and how to set value for the Avatartype in xamarin forms AvatarView.
+title: Various Customizations in Syncfusion AvatarView Control
+description: Learn about the avatar types available in SfAvatarView and how to configure them in Xamarin.Forms.
 platform: Xamarin
 control: SfAvatarView
 documentation: ug
 ---
 
-# Content Types in Xamarin Avatar View(SfAvatarView)
+# Content Types in Xamarin Avatar View (SfAvatarView)
 
 ## Avatar Types
 
-The [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control provides the following five different ways to display the view:
+The [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html) control offers five different ways to display its content:
 
-* [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.ContentType.html#Syncfusion_XForms_AvatarView_ContentType_Default) - Adds the default image when initializing without any other source such as image and group.
-
-* [`AvatarName`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_AvatarName) - Set the initial value in [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html).
-
-* [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.ContentType.html#Syncfusion_XForms_AvatarView_ContentType_Custom) - Adds the user custom image in [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html).
-
-* [`AvatarCharacter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.ContentType.html#Syncfusion_XForms_AvatarView_ContentType_AvatarCharacter) - Sets the default image in [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html).
-
-* [`Group`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.ContentType.html#Syncfusion_XForms_AvatarView_ContentType_Group) - Adds maximum three images or initials in a single [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html).
+- [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.ContentType.html#Syncfusion_XForms_AvatarView_ContentType_Default): Provides a default image with no additional source.
+- [`AvatarName`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_AvatarName): Sets the initial value for display.
+- [`Custom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.ContentType.html#Syncfusion_XForms_AvatarView_ContentType_Custom): Displays a user-provided custom image.
+- [`AvatarCharacter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.ContentType.html#Syncfusion_XForms_AvatarView_ContentType_AvatarCharacter): Uses a preset vector image.
+- [`Group`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.ContentType.html#Syncfusion_XForms_AvatarView_ContentType_Group): Combines up to three images or initials within a single view.
 
 ## Default
 
-Automatic type avatar view is used for displaying the default vector image when initializing without the initials, custom, or group view types.
+The automatic avatar view displays a default vector image when initialized without initials, custom images, or group view types.
 
 {% tabs %}
 
@@ -62,21 +58,17 @@ Automatic type avatar view is used for displaying the default vector image when 
 
 ## Initials 
 
-When using the [`SfAvatarType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.AvatarViewType.html) as initials, you need to set the initial character using the following properties:
+To use initials with the [`SfAvatarView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html), set up the initial character using the following properties:
 
-* [`InitialsType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_InitialsType) - Defines the type of characters to be displayed.
-* [`AvatarName`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_AvatarName)- Gets or sets the value for the initials type, which displays the text in the avatar view.
-* [`InitialsColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_InitialsColor)- Gets or sets the color of the initial color value that defines color for the initial string.
+- [`InitialsType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_InitialsType): Defines the type of initials displayed.
+- [`AvatarName`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_AvatarName): Gets or sets the initials value.
+- [`InitialsColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_InitialsColor): Sets the initial color value.
 
 ### InitialsType
 
-The [`InitialsType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_InitialsType) contains the following two types:
-
-* [`SingleCharacter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.InitialsType.html#Syncfusion_XForms_AvatarView_InitialsType_SingleCharacter)
-* [`DoubleCharacter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.InitialsType.html#Syncfusion_XForms_AvatarView_InitialsType_DoubleCharacter)
-
-You must set the [`AvatarName`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_AvatarName) string property for displaying the initial value in the AvatarView.
-
+The `InitialsType` property provides these options:
+- [`SingleCharacter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.InitialsType.html#Syncfusion_XForms_AvatarView_InitialsType_SingleCharacter)
+- [`DoubleCharacter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.InitialsType.html#Syncfusion_XForms_AvatarView_InitialsType_DoubleCharacter)
 #### SingleCharacter
 
 The [`SingleCharacter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.InitialsType.html#Syncfusion_XForms_AvatarView_InitialsType_SingleCharacter) is used for displaying the first character in the string you have set in the [`Initials`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.ContentType.html#Syncfusion_XForms_AvatarView_ContentType_Initials) property.
@@ -161,13 +153,13 @@ The [`DoubleCharacter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms
 
 ![bordercolor](images/Initial_Double_AvatarView.png)
 
-## Custom image
+## Custom Image
 
-You can add a custom user image by setting the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_ImageSource) property. Refer to this [`documentation`](https://help.syncfusion.com/xamarin/SfAvatarView/getting-started).
+Add a custom image using the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_ImageSource) property. More details can be found in the [documentation](https://help.syncfusion.com/xamarin/SfAvatarView/getting-started).
 
-## Character avatars
+## Character Avatars
 
-You can set the default vector images that already present in avatar view by setting the [`AvatarCharacter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_AvatarCharacter) property.
+Use preset vector images in avatar view by setting the [`AvatarCharacter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_AvatarCharacter) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -203,10 +195,9 @@ You can set the default vector images that already present in avatar view by set
 
 ## GroupView 
 
-You can add maximum three images or initials in the same view using a GroupView type.
+In a GroupView, you can combine up to three images or initials.
 
-Set the [`InitialsMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_InitialsMemberPath) for displaying the initials in the group view. For image, set the `ImageSourcePath`. The following code sample demonstrates how to add images using the `GroupView` property.
-
+Set the [`InitialsMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.AvatarView.SfAvatarView.html#Syncfusion_XForms_AvatarView_SfAvatarView_InitialsMemberPath) for initials or `ImageSourcePath` for images.
 {% tabs %}
 {% highlight c# %}
  public class Employee

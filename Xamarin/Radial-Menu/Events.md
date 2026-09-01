@@ -1,17 +1,16 @@
 ---
-layout : post
-title: Events in Xamarin Radial Menu control | Syncfusion
-description: Learn here all about Events support in Syncfusion Xamarin Radial Menu (SfRadialMenu) control and more.
-platform : xamarin
-control : SfRadialMenu
-documentation : ug
+layout: post
+title: Events in Xamarin Radial Menu Control | Syncfusion
+description: Discover the event support in Syncfusion Xamarin Radial Menu (SfRadialMenu) control and more.
+platform: Xamarin
+control: SfRadialMenu
+documentation: ug
 ---
 
 # Events in Xamarin Radial Menu (SfRadialMenu)
 
-## Perform an action while navigating to next level
-
-In radial menu, you can perform an action while navigating from one level to another level. The [`Navigating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) event occurs when navigating from one level to another level and the [`Navigated`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) event occurs after navigating to another level.
+## Events When Navigating to the Next Level
+In the radial menu, you can perform actions while navigating between levels. The [`Navigating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) event triggers when moving from one level to another, and the [`Navigated`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) event triggers after reaching a new level.
 
 {% tabs %}
 
@@ -82,11 +81,11 @@ namespace RadialSample
 
 {% endtabs %}
 
-N> You can cancel navigation using the `Cancel` event argument.
+> Note: Navigation can be canceled using the `Cancel` event argument.
 
-## Perform an action while opening the radial menu
+## Events While Opening the Radial Menu
 
-You can perform an action while opening the radial menu. The [`Opening`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) event occurs when opening the radial menu and the [`Opened`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) event occurs after opening the radial menu.
+You can perform actions while opening the radial menu. The [`Opening`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) event triggers when the radial menu is opening, and the [`Opened`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) event triggers after the radial menu is open.
 
 {% tabs %}
 
@@ -157,9 +156,9 @@ namespace RadialSample
 
 {% endtabs %}
 
-## Perform an action while closing the radial menu
+## Events While Closing the Radial Menu
 
-You can perform an action when closing the radial menu. The [`Closing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) event occurs when closing the radial menu and the [`Closed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) event occurs after closing the radial menu.
+You can perform actions when closing the radial menu. The [`Closing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) event triggers when the radial menu is closing, and the [`Closed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) event triggers after the radial menu is closed.
 
 
 {% tabs %}
@@ -231,9 +230,8 @@ namespace RadialSample
 
 {% endtabs %}
 
-## Perform an action while tapping the center back button
-
-You can perform an action when tapping the center back button of the radial menu. The [`CenterButtonBackTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) event occurs when tapping the center button of the radial menu.
+## Event for Center Back Button Tap
+You can perform actions when the center back button of the radial menu is tapped. The [`CenterButtonBackTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) event triggers when this button is tapped.
 
 {% tabs %}
 
@@ -296,9 +294,8 @@ namespace RadialSample
 
 {% endtabs %}
 
-## Perform an action while tapping the radial menu item
-
-You can perform an action when tapping the radial menu item of the radial menu. The [`ItemTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html) event occurs when tapping the items of the radial menu.
+## Event for Radial Menu Item Tap
+You can perform actions when a radial menu item is tapped. The [`ItemTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html) event triggers when items in the radial menu are tapped.
 
 {% tabs %}
 

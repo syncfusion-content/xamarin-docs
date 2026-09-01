@@ -1,22 +1,20 @@
 ---
 layout: post
-title: Multiple selection in Xamarin ComboBox control | Syncfusion
-description: Learn here all about Multiple selection support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
-platform: xamarin
+title: Multiple Selection in Xamarin ComboBox Control | Syncfusion
+description: Learn about multiple selection support in the Syncfusion Xamarin ComboBox (SfComboBox) control and more.
+platform: Xamarin
 control: SfComboBox
 documentation: ug
 ---
-# Multiple selection in Xamarin ComboBox (SfComboBox)
+# Multiple Selection in Xamarin ComboBox (SfComboBox)
 
-Select multiple items from a suggestion list. There are two ways to perform multi selection in the combo box control.
+Select multiple items from a suggestion list using one of two methods:
+- Token Representation
+- Delimiter
 
-* Token Representation
+## Token Representation
 
-* Delimiter
-
-## Token representation
-
-Selected items will be displayed with a customizable token representation. Users can remove each tokenized item with the close button. And [`IsSelectedItemsVisibleInDropDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_IsSelectedItemsVisibleInDropDown) property is used to restrict the selected items as visible or not in dropDown. 
+Selected items will be displayed with a customizable token representation. Users can remove each tokenized item using the close button. The [`IsSelectedItemsVisibleInDropDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_IsSelectedItemsVisibleInDropDown) property determines whether selected items are visible in the drop-down.
 
 {% tabs %}
 

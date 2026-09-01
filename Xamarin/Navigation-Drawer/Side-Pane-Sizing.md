@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Setting Sliding Panel size in Xamarin Navigation Drawer | Syncfusion
-description: Learn here all about Setting Sliding Panel size support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
+title: Setting Sliding Panel Size in Xamarin Navigation Drawer | Syncfusion
+description: Learn about setting sliding panel size support in the Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug
 ---
-# Setting Sliding Panel size in Xamarin Navigation Drawer
+# Setting Sliding Panel Size in Xamarin Navigation Drawer
 
-The size of side pane can be adjusted using [`DrawerHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeight) and [`DrawerWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerWidth) properties.
+The size of the side pane can be adjusted using the [`DrawerHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeight) and [`DrawerWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerWidth) properties.
 
 ## Drawer Height
 
-[`DrawerHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeight) property is used to change the height of side pane when the [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_Position) is [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Top) or [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Bottom).
+The [`DrawerHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DrawerHeight) property is used to change the height of the side pane when the [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_Position) is set to [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Top) or [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.Position.html#Syncfusion_SfNavigationDrawer_XForms_Position_Bottom).
 
 {% tabs %}
 

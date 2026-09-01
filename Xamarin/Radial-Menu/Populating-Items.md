@@ -1,23 +1,23 @@
 ---
-layout : post
-title: Populating Items in Xamarin Radial Menu control | Syncfusion
-description: Learn here all about Populating Items support in Syncfusion Xamarin Radial Menu (SfRadialMenu) control and more.
-platform : xamarin
-control : SfRadialMenu
-documentation : ug
+layout: post
+title: Populating Items in Xamarin Radial Menu Control | Syncfusion
+description: Learn about populating items support in the Syncfusion Xamarin Radial Menu (SfRadialMenu) control and more.
+platform: Xamarin
+control: SfRadialMenu
+documentation: ug
 ---
 
 # Populating Items in Xamarin Radial Menu (SfRadialMenu)
 
-This section explains the ways about populating items through radial menu item and item source with item template.
+This section explains the methods for populating items through radial menu items and item sources with item templates.
 
-## Through radial menu items
+## Through Radial Menu Items
 
-By passing a collection of [`SfRadialMenuItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html), you can get the view of [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) control. The radial menu item class provides various options to customize the items by giving custom views, font icons, and images. You can add radial menu items by hierarchy.
+By passing a collection of [`SfRadialMenuItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html), you can view the [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) control. The radial menu item class provides various options to customize items by giving custom views, font icons, and images. You can also add radial menu items in a hierarchical manner.
 
-### Adding outer rim items of radial menu
+### Adding Outer Rim Items to the Radial Menu
 
-The following code snippet demonstrates how to add the outer rim items of radial menu.
+The following code snippet demonstrates how to add outer rim items to a radial menu.
 
 {% tabs %}
 
@@ -72,12 +72,11 @@ namespace RadialSample
 
 {% endtabs %}
 
+### Adding Nested Items to the Radial Menu
 
-### Adding nested items of radial menu
+You can populate nested items within a menu to group similar actions based on their results. For example, you can group clipboard operations by setting the clipboard as the main menu and cut, copy, and paste as its children.
 
-You can populate the nested levels of items within a menu to group similar actions based on their result. For example, you can group the clipboard operations by adding a clipboard as a main menu and cut, copy, and paste as its children.
-
-The following code snippet demonstrates how to add the nested items of radial menu.
+The following code snippet demonstrates how to add nested items to a radial menu.
 
 {% tabs %}
 

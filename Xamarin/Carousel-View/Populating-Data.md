@@ -1,28 +1,24 @@
 ---
-layout : post
-title: Populating Data in Xamarin Carousel View control | Syncfusion
-description: Learn here all about Populating Data support in Syncfusion Xamarin Carousel View (SfCarousel) control and more.
-platform : xamarin
-control : Carousel
-documentation : ug
+layout: post
+title: Populating Data in Xamarin Carousel View Control | Syncfusion
+description: Discover how to populate data in the Syncfusion Xamarin Carousel View (SfCarousel) control.
+platform: Xamarin
+control: SfCarousel
+documentation: ug
 ---
 
 # Populating Data in Xamarin Carousel View (SfCarousel)
 
-[`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control, supports binding to different data sources such as IList Data Source, Observable Collection Data Source.
+The [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control supports binding to various data sources, such as `IList` and `ObservableCollection`.
 
 ## Through Binding
 
-Items can be populated in [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control through data source and applying custom template as explained below. 
+Items can be populated in the [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control through data sources and by applying custom templates as explained below.
 
-### Create a Model with Data
-
-[`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) items can be populated with a collection of image data. For example, a user may wants to create a [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control which will display a list of images.
-
-The [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) model looks as follows.
+### Create a Data Model
+[`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) items can be populated using a collection of image data. For instance, a user may want to create a [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control to display a list of images. Below is an example model:
 
 {% highlight C# %}
-
 namespace CarouselSample
 {
     public class CarouselModel
@@ -43,7 +39,7 @@ namespace CarouselSample
 
 {% endhighlight %}
 
-Populate carousel items collection in View model with the image data. The below code works when the images are placed within the application folder for Android, iOS and UWP with build action Android Resource, Bundled Resource and Content respectively.
+Using the above model, populate the carousel items collection in the ViewModel with image data. This code works when images are placed within the application folder for Android, iOS, and UWP, with build actions Android Resource, Bundled Resource, and Content, respectively.
 
 {% highlight C# %}
 
@@ -72,12 +68,11 @@ namespace CarouselSample
 
 {% endhighlight %}
 
-N> Images can also be referred in PCL and from website URL as [instructed](https://developer.xamarin.com/guides/xamarin-forms/working-with/images/)
+N> Images can also be referenced in PCL and from a website URL as [instructed here](https://developer.xamarin.com/guides/xamarin-forms/working-with/images/).
 
+### Binding Data with a Custom Template
 
-### Binding the Data with Custom Template
-
-[`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) provides support to add a custom view as carousel items by designing a view inside its [`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_ItemTemplate). This template will be applied for all its items and its data will be binded.
+[`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) allows adding a custom view as carousel items by designing a view within its [`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_ItemTemplate). This template is applied to all items.
 
 {% tabs %}
 
@@ -186,7 +181,7 @@ namespace CarouselSample
 {% endhighlight %}
 {% endtabs %}
 
-* Now set the `BindingContext` for the items collection in code behind.
+- Set the `BindingContext` for the items collection in the code behind.
 
 {% highlight C# %}
 
@@ -196,7 +191,7 @@ namespace CarouselSample
 
 ## Through Carousel Item
 
-Different set of views can be provided to every items through [`ItemContent`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarouselItem.html#Syncfusion_SfCarousel_XForms_SfCarouselItem_ItemContent) property available in [`SfCarouselItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarouselItem.html) class.
+Different sets of views can be provided for each item using the [`ItemContent`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarouselItem.html#Syncfusion_SfCarousel_XForms_SfCarouselItem_ItemContent) property available in the [`SfCarouselItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarouselItem.html) class.
 
 {% highlight C# %}
 
@@ -234,7 +229,7 @@ namespace CarouselSample
 
 {% endhighlight %}
 
-and also carousel provides a support to display only the Image data with [`Image`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarouselItem.html#Syncfusion_SfCarousel_XForms_SfCarouselItem_ImageName) property in [`SfCarouselItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarouselItem.html) class.
+Additionally, carousel provides support to display only the image data with the [`Image`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarouselItem.html#Syncfusion_SfCarousel_XForms_SfCarouselItem_ImageName) property in the [`SfCarouselItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarouselItem.html) class.
 
 {% highlight C# %}
 
@@ -271,7 +266,4 @@ namespace CarouselSample
 
 {% endhighlight %}
 
-
-Similar way every item can be created and customized in case of different carousel item view is needed.
-
-
+Each item can be customized for specific use cases requiring different views for carousel items.

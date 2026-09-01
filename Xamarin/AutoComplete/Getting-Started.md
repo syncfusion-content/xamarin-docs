@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Syncfusion Xamarin.Forms AutoComplete
-description: A quick tour to initial users on Syncfusion autocomplete control and explain about how to use it for Xamarin.Forms platform
+title: Getting Started with Xamarin.Forms AutoComplete | Syncfusion
+description: A quick guide to help new users get started with the Syncfusion AutoComplete control for Xamarin.Forms applications
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
@@ -9,40 +9,40 @@ documentation: ug
 
 # Getting Started with Xamarin AutoComplete (SfAutoComplete)
 
-This section explains the steps to create AutoComplete, populate it with data and filter the suggestions. This section covers only the minimal features that are needed to get started with the AutoComplete.
+This section explains how to create an AutoComplete control, populate it with data, and configure filtering options. This guide covers the essential features needed to get started with the AutoComplete control.
 
-To get start quickly with [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) (SfAutoComplete), you can check on this video:
+To get started quickly with the [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) (SfAutoComplete), you can watch this video tutorial:
 
 <style>#XamarinAutoCompleteVideoTutorial{width : 90% !important; height: 400px !important }</style>
 <iframe id='XamarinAutoCompleteVideoTutorial' src='https://www.youtube.com/embed/XT5-CKZCiH8'></iframe>
 
 ## Assembly deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location}\Essential Studio\{Version #}\Xamarin\lib.
 
-E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+Example: C:\Program Files (x86)\Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
-N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+> **Note:** On Mac, assemblies can be found in the unzipped package location (Documents/Syncfusion/{Version #}/Xamarin/lib).
 
 ## Adding SfAutoComplete reference
 
-You can add [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) reference using one of the following methods:
+You can add the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) reference using one of the following methods:
 
-**Method 1: Adding SfAutoComplete reference from nuget.org**
+**Method 1: Adding SfAutoComplete reference from NuGet.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfAutoComplete to your project, open the [NuGet package](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) manager in Visual Studio, search for [Syncfusion.Xamarin.SfAutoComplete](https://www.nuget.org/packages/Syncfusion.Xamarin.SfAutoComplete), and then install it.
+Syncfusion Xamarin components are available on [NuGet.org](https://www.nuget.org/). To add SfAutoComplete to your project, open the [NuGet package](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) manager in Visual Studio, search for [Syncfusion.Xamarin.SfAutoComplete](https://www.nuget.org/packages/Syncfusion.Xamarin.SfAutoComplete), and install it.
 
 ![Adding SfAutoComplete reference](images/Getting-Started/Adding_SfAutoComplete_reference.png)
 
-N> Install the same version of SfAutoComplete NuGet in all the projects.
+> **Note:** Install the same version of SfAutoComplete NuGet in all projects in your solution.
 
 **Method 2: Adding SfAutoComplete reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion provides a Xamarin Toolbox. Using this toolbox, you can drag the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install the Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfAutoComplete assemblies manually from the installed location**
 
-If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+If you prefer to manually reference the assemblies instead of using NuGet, add the following assemblies to the respective projects:
 
 Location: {Installed location}/{version}/Xamarin/lib
 
@@ -65,15 +65,15 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
+> **Note:** To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/installation/mac-installer/how-to-download) and [Windows](https://help.syncfusion.com/xamarin/installation/web-installer/how-to-download).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
+> **Important:** Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering a Syncfusion license key in your Xamarin application to use our components.
 
 ### Additional Step for iOS
 
-N> If you are adding the references from toolbox, this step is not needed.
+> **Note:** If you are adding the references from the toolbox, this step is not needed.
 
-Create an instance of `SfAutoCompleteRenderer` in FinishedLaunching overridden method of an AppDelegate class in iOS project as shown below:
+Create an instance of `SfAutoCompleteRenderer` in the `FinishedLaunching` overridden method of the AppDelegate class in your iOS project as shown below:
 
 {% tabs %}
 
@@ -96,7 +96,7 @@ return base.FinishedLaunching(app, options);
 
 ### Additional Step for UWP
 
-This step is required only if the application is deployed in Release mode with .NET native tool chain enabled and it is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) assembly at OnLaunched overridden method of the App class in UWP project is the suggested workaround. And the code example is shown below:
+This step is required only if the application is deployed in Release mode with .NET native tool chain enabled. It addresses the known Framework issue "Custom controls not rendering in Release mode" in UWP platform. Initialize the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) assembly in the `OnLaunched` overridden method of the App class in your UWP project as shown below:
 
 {% tabs %}
 
@@ -145,7 +145,7 @@ Window.Current.Activate();
 
 ## Initializing AutoComplete 
 
-Import the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) namespace in respective Page as shown below:
+Import the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) namespace in your page as shown below:
 
 {% tabs %}
 
@@ -163,7 +163,7 @@ using Syncfusion.SfAutoComplete.XForms;
 
 {% endtabs %}
 
-Then initialize an empty autocomplete as shown below,
+Then initialize an empty AutoComplete control as shown below:
 
 {% tabs %}
 
@@ -223,7 +223,7 @@ namespace AutocompleteSample
 
 ## Populating AutoComplete with Data
 
-Now, let us create a simple list of country names and set it as the [`AutoCompleteSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_AutoCompleteSource) of AutoComplete.
+Now, let's create a simple list of country names and set it as the [`AutoCompleteSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_AutoCompleteSource) of the AutoComplete control:
 
 {% tabs %}
 

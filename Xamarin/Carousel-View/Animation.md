@@ -1,15 +1,15 @@
 ---
-layout : post
-title: Animation in Xamarin Carousel View control | Syncfusion
-description: Learn here all about Animation support in Syncfusion Xamarin Carousel View (SfCarousel) control and more.
-platform : xamarin
-control : Carousel
-documentation : ug
+layout: post
+title: Animation in Xamarin Carousel View Control | Syncfusion
+description: Explore the animation support provided by the Syncfusion Xamarin Carousel View (SfCarousel) control.
+platform: Xamarin
+control: Carousel
+documentation: ug
 ---
 
 # Animation in Xamarin Carousel View (SfCarousel)
 
-The [`Duration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_Duration) property of the [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control is used to specify the time taken to move an item to the selected item position. The duration is specified in seconds.  The default value is 300 ms.
+The [`Duration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_Duration) property of the [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control dictates the timeframe during which an item moves to the selected item position. Specified in milliseconds, this property facilitates smooth transitions. The default value is 300 ms.
 
 {% tabs %}
 

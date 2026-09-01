@@ -1,7 +1,7 @@
 ---
 layout: post
-title: No Result Found in Xamarin AutoComplete control | Syncfusion
-description: Learn about No Result Found support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more details.
+title: No Results Found in Xamarin.Forms AutoComplete | Syncfusion
+description: Learn how to configure and customize the "No Results Found" message in Syncfusion Xamarin.Forms AutoComplete (SfAutoComplete) control.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
@@ -88,11 +88,18 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-![NoResultsFound](images/Maximum-display-item-with-Expander/NoResultsFound.png)
+![No Results Found message](images/Maximum-display-item-with-Expander/NoResultsFound.png)
 
-## Customizing NoResultsFoundText
+## Customizing the No Results Found Message
 
-The [`NoResultsFoundTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_NoResultsFoundTextColor), [`NoResultsFoundFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_NoResultsFoundFontSize), [`NoResultsFoundFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_NoResultsFoundFontAttributes), and [`NoResultsFoundFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_NoResultsFoundFontFamily) properties are used to customize the foreground color, font size, font attribute, and font family of NoResultsFoundText.
+The SfAutoComplete control provides several properties to customize the appearance of the "No Results Found" message:
+
+* [`NoResultsFoundTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_NoResultsFoundTextColor) - Customizes the text color
+* [`NoResultsFoundFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_NoResultsFoundFontSize) - Sets the font size
+* [`NoResultsFoundFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_NoResultsFoundFontAttributes) - Applies font attributes (Bold, Italic, etc.)
+* [`NoResultsFoundFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_NoResultsFoundFontFamily) - Sets a custom font family
+
+The following example demonstrates how to customize the appearance of the "No Results Found" message:
 {% tabs %}
 
 {% highlight xaml %}

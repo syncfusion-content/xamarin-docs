@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multi Drawer in Xamarin Navigation Drawer control | Syncfusion
-description: Learn here all about Multi Drawer support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
+title: Multi Drawer in Xamarin Navigation Drawer Control | Syncfusion
+description: Discover multi-drawer support in the Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug
@@ -10,16 +10,16 @@ documentation: ug
 
 # Multi Drawer in Xamarin Navigation Drawer (SfNavigationDrawer)
 
-The navigation drawer allows users to open the drawer on multiple sides with different toggle methods. The [`DrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html) class and its properties need to be used when users need to provide multiple drawer. The multiple drawers can be implemented using the following drawer settings.
+The navigation drawer allows users to open drawers on multiple sides with different toggle methods. The [`DrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html) class and its properties are used to provide multiple drawers. The multiple drawers can be implemented using the following drawer settings:
 
-* [`Default drawer settings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DefaultDrawerSettings)
-* [`Secondary drawer settings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_SecondaryDrawerSettings)
+- [`Default drawer settings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_DefaultDrawerSettings)
+- [`Secondary drawer settings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.SfNavigationDrawer.html#Syncfusion_SfNavigationDrawer_XForms_SfNavigationDrawer_SecondaryDrawerSettings)
 
-N> The header and footer content are optional, but the drawer content is mandatory to allocate space for the drawer.
+> Note: The header and footer content are optional, but the drawer content is mandatory to allocate space for the drawer.
 		
-## Default drawer settings
+## Default Drawer Settings
 
-Implement the default drawer using the default drawer settings class. The following code sample demonstrates how to set the default drawer settings's properties inside the [`DrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html) class.
+Implement the default drawer using the default drawer settings class. The following code sample demonstrates setting properties for the default drawer settings inside the [`DrawerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDrawer.XForms.DrawerSettings.html) class.
 
 {% tabs %}
 
@@ -544,4 +544,5 @@ The `[IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNavigationDra
 N> Users can open only one drawer at a time.
 
 Note: The sample for implementing multiple drawers can be downloaded from this [link](https://github.com/SyncfusionExamples/multi-drawer-content).
+
 

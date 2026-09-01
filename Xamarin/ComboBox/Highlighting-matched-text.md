@@ -1,26 +1,24 @@
 ---
 layout: post
-title: Highlighting matched text in Xamarin ComboBox control | Syncfusion
-description: Learn here all about Highlighting matched text support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
-platform: xamarin
+title: Highlighting Matched Text in Xamarin ComboBox Control | Syncfusion
+description: Learn about highlighting matched text support in the Syncfusion Xamarin ComboBox (SfComboBox) control and more.
+platform: Xamarin
 control: SfComboBox
 documentation: ug
 ---
-# Highlighting matched text in Xamarin ComboBox (SfComboBox)
+# Highlighting Matched Text in Xamarin ComboBox (SfComboBox)
 
-You can highlight matching characters in a suggestion list to pick an item with more clarity by following two ways:
+You can highlight matching characters in a suggestion list for better clarity, using two modes:
 
-* [`First Occurrence`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.OccurrenceMode.html#Syncfusion_XForms_ComboBox_OccurrenceMode_FirstOccurrence)
+- [`First Occurrence`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.OccurrenceMode.html#Syncfusion_XForms_ComboBox_OccurrenceMode_FirstOccurrence)
+- [`Multiple Occurrence`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.OccurrenceMode.html#Syncfusion_XForms_ComboBox_OccurrenceMode_MultipleOccurrence)
 
-* [`Multiple Occurrence`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.OccurrenceMode.html#Syncfusion_XForms_ComboBox_OccurrenceMode_MultipleOccurrence)
+Highlighting can be customized using the following properties:
 
-Highlighting can be indicated with various customizing styles by enabling the following properties.
+- [`HighlightedTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_HighlightedTextColor): Sets the color of the highlighted text.
+- [`HighlightTextFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_HighlightedTextFontAttributes): Sets the font attributes of the highlighted text.
 
-* [`HighlightedTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_HighlightedTextColor) -  Sets the color of the highlighted text for differentiating the highlighted characters.
-
-* [`HighlightTextFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_HighlightedTextFontAttributes) - Sets the FontAttributes of the highlighted text.
-
-## First occurrence
+## First Occurrence
 
 Highlights the first position of the matching characters in the suggestion list.
 

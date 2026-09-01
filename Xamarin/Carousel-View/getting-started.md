@@ -1,43 +1,43 @@
 ---
 layout: post
-title: Getting Started with Xamarin Carousel View control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Carousel View (SfCarousel) control, its elements and more.
-platform: xamarin
-control: Carousel
+title: Getting Started with Xamarin Carousel View Control | Syncfusion
+description: Discover how to get started with the Syncfusion Xamarin Carousel View (SfCarousel) control, including its elements and more.
+platform: Xamarin
+control: SfCarousel
 documentation: ug
 ---
 
 # Getting Started with Xamarin Carousel View (SfCarousel)
 
-This section explains how to showcase a Gallery of photos along with a Title using [Xamarin Carousel View](https://www.syncfusion.com/xamarin-ui-controls/xamarin-carousel-view) (SfCarousel) Control.
+This guide explains how to showcase a gallery of photos with titles using the [Xamarin Carousel View](https://www.syncfusion.com/xamarin-ui-controls/xamarin-carousel-view) (SfCarousel) Control.
 
-## Assembly deployment
+## Assembly Deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you will find all the necessary assemblies in the installed location under {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
 N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
-## Adding SfCarousel reference
+## Adding SfCarousel References
 
-You can add [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) reference using one of the following methods:
+You can add a reference to the [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) using one of the following methods:
 
-**Method 1: Adding SfCarousel reference from nuget.org**
+### Method 1: Adding SfCarousel Reference from NuGet.org
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfCarousel](https://www.nuget.org/packages/Syncfusion.Xamarin.SfCarousel), and then install it.
+Syncfusion Xamarin components are available on [nuget.org](https://www.nuget.org/). To add [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfCarousel](https://www.nuget.org/packages/Syncfusion.Xamarin.SfCarousel), and install it.
 
 ![Adding SfCarousel reference from NuGet](images/Adding SfCarousel reference.png)
 
-N> Install the same version of [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) NuGet in all the projects.
+N> Ensure the same version of [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) NuGet is installed in all projects.
 
-**Method 2: Adding SfCarousel reference from toolbox**
+### Method 2: Adding SfCarousel Reference from Toolbox
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion offers a Xamarin Toolbox. Using this toolbox, you can drag the [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) control onto the XAML page, which will automatically install the required NuGet packages and add the namespace. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
-**Method 3: Adding SfCarousel assemblies manually from the installed location**
+### Method 3: Adding SfCarousel Assemblies Manually from Installed Location
 
-If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+For manual referencing of assemblies rather than using NuGet, add the following assemblies to their respective projects.
 
 Location: {Installed location}/{version}/Xamarin/lib
 
@@ -69,7 +69,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the tria
 
 To use [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) inside an application, each platform application must initialize the [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) renderer. This initialization step varies from platform to platform and is discussed in the following sections.
 
-### Android and  UWP
+### Android and UWP
 
 The Android and UWP launches the [`SfCarousel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html) without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application
 

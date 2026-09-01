@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DropDown in Syncfusion SfAutoComplete control for Xamarin.Forms
-description: This section describes about the placement of the drop-down suggestion and how to get the filtered SfAutoComplete items.
+title: Suggestion Box in Syncfusion SfAutoComplete for Xamarin.Forms
+description: Learn about the placement of the drop-down suggestion box and how to retrieve filtered items in Xamarin.Forms SfAutoComplete control.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
@@ -9,21 +9,20 @@ documentation: ug
 
 # Dealing with Suggestion Box
 
-## Dealing with Suggestion Box in Xamarin SfAutoComplete
+## Overview
+The suggestion box is the drop-down list that displays filtered suggestions inside a popup. This section explains the properties that control the drop-down list behavior in the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control.
 
-Suggestion box is the drop-down list box, which displays the filtered suggestions inside a popup. This section explains the properties that deals with drop-down list in the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control.
-
-## Suggestion box placement mode
+## Suggestion Box Placement Mode
  
-The drop-down that shows the filtered items will be placed automatically based on the available space and can also be customized using the [`SuggestionBoxPlacement`]( https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionBoxPlacement.html) property.
+The drop-down that shows the filtered items will be placed automatically based on the available space. You can also customize its placement using the [`SuggestionBoxPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionBoxPlacement.html) property.
  
-[`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionBoxPlacement.html#Syncfusion_SfAutoComplete_XForms_SuggestionBoxPlacement_Top) - Drop-down will be placed above the text box.
+* [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionBoxPlacement.html#Syncfusion_SfAutoComplete_XForms_SuggestionBoxPlacement_Top) - Drop-down will be placed above the text box.
  
-[`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionBoxPlacement.html#Syncfusion_SfAutoComplete_XForms_SuggestionBoxPlacement_Bottom) - Drop-down will be placed below the text box.
+* [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionBoxPlacement.html#Syncfusion_SfAutoComplete_XForms_SuggestionBoxPlacement_Bottom) - Drop-down will be placed below the text box.
 
-[`Auto`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionBoxPlacement.html#Syncfusion_SfAutoComplete_XForms_SuggestionBoxPlacement_Auto) - Drop-down will be placed based on the available space either top or bottom of the text box.
+* [`Auto`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionBoxPlacement.html#Syncfusion_SfAutoComplete_XForms_SuggestionBoxPlacement_Auto) - Drop-down will be placed based on the available space either top or bottom of the text box.
 
-[`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionBoxPlacement.html#Syncfusion_SfAutoComplete_XForms_SuggestionBoxPlacement_None) -  Drop-down will not be shown with the filtered items. 
+* [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionBoxPlacement.html#Syncfusion_SfAutoComplete_XForms_SuggestionBoxPlacement_None) - Drop-down will not be shown with the filtered items.
 
 {% tabs %}
 
@@ -115,7 +114,7 @@ namespace AutocompleteSample
 
 ![SuggestionBoxPlacement](images/Dealing-with-Suggestion-Box/suggestion-box-placement-top.png)
 
-N>Set the SoftInputMode to AdjustResize in MainActivity, to resolve the suggestion box overlapping when the keyboard is open on the Android platform.
+> **Note:** Set the SoftInputMode to AdjustResize in MainActivity to resolve the suggestion box overlapping when the keyboard is open on the Android platform.
 
 {% highlight c# %}
 
@@ -133,9 +132,9 @@ N>Set the SoftInputMode to AdjustResize in MainActivity, to resolve the suggesti
  {% endhighlight %}
 
 
-## Maximum suggestion box height
+## Maximum Suggestion Box Height
 
-The maximum height of the suggestion box in the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control can be varied using the [`MaximumDropDownHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_MaximumDropDownHeight) property.
+The maximum height of the suggestion box in the [`SfAutoComplete`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) control can be customized using the [`MaximumDropDownHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_MaximumDropDownHeight) property.
 
 {% tabs %}
 
@@ -227,9 +226,9 @@ namespace AutocompleteSample
 
 ![MaximumDropDownHeight](images/Dealing-with-Suggestion-Box/maximum-dropdown-height.png)
 
-## Opening suggestion box on focus
+## Opening Suggestion Box on Focus
 
-Suggestion box can be shown whenever the control receives focus using the [`ShowSuggestionsOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ShowSuggestionsOnFocus) property. At this time, suggestion list is the complete list of data source.
+The suggestion box can be shown whenever the control receives focus by using the [`ShowSuggestionsOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ShowSuggestionsOnFocus) property. When this property is enabled, the suggestion list will display the complete list of data source items.
 
 {% tabs %}
 
@@ -309,10 +308,10 @@ namespace AutocompleteSample
 
 ![SuggestionsOnFocus](images/Dealing-with-Suggestion-Box/show-suggestions-on-focus.png)
 
-## Delay opening suggestion box
+## Delaying Suggestion Box Opening
 
-The [`PopupDelay`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_PopupDelay) property is used to delay the suggestion box opening process. It gets milliseconds as input in integer data type.
-In this example, a time duration of 3 seconds is set to popup delay.
+The [`PopupDelay`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_PopupDelay) property is used to delay the suggestion box opening process. It accepts milliseconds as input in integer data type.
+In this example, a time duration of 3 seconds (3000 milliseconds) is set for the popup delay:
 
 {% tabs %}
 
@@ -402,11 +401,10 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-## Delay before searching algorithm starts
+## Delaying Search Process
+The [`SearchDelay`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SearchDelay) property is used to delay the searching algorithm process. It accepts milliseconds as input in integer data type.
 
-The [`SearchDelay`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SearchDelay) property is used to delay the searching algorithm process. It gets milliseconds as input in integer data type.
-
-In this example, a time duration of 3 seconds is set to search delay.
+In this example, a time duration of 3 seconds (3000 milliseconds) is set for the search delay:
 
 {% tabs %}
 
@@ -496,9 +494,8 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-## Avoid opening suggestion box
-
-To avoid opening the drop-down, you can set the [`SuggestionBoxPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SuggestionBoxPlacement) API to [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html#Syncfusion_XForms_ComboBox_SuggestionBoxPlacement_None).
+## Preventing Suggestion Box from Opening
+To prevent the drop-down suggestion box from opening, you can set the [`SuggestionBoxPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SuggestionBoxPlacement) property to [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SuggestionBoxPlacement.html#Syncfusion_SfAutoComplete_XForms_SuggestionBoxPlacement_None).
 
 {% tabs %}
 

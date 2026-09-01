@@ -1,32 +1,32 @@
 ---
-layout : post
-title: About Xamarin ComboBox control | Syncfusion
-description: Learn here all about introduction of Syncfusion Xamarin ComboBox (SfComboBox) control, its elements and more.
-platform : xamarin
-control : SfComboBox
-documentation : ug
+layout: post
+title: About Xamarin ComboBox Control | Syncfusion
+description: Learn about the Syncfusion Xamarin ComboBox (SfComboBox) control, its elements, and more.
+platform: Xamarin
+control: SfComboBox
+documentation: ug
 ---
 
 # Xamarin ComboBox (SfComboBox) Overview
 
-The combo box is a textbox component that allows users to type a value or choose an option from the list of predefined options. This control has several out of box features such as data binding, filtering, UI customization, and more.
+The ComboBox is a textbox component that allows users to enter a value or select an option from a list of predefined options. This control comes with built-in features such as data binding, filtering, UI customization, and more.
 
 ![Xamarin ComboBox](images/Overview/overview.png)
 
-## Key features
+## Key Features
 
-* Editable mode – Supports both editable and non-editable text box to choose selected item from given data source.
+- **Editable Mode**: Supports both editable and non-editable text boxes for selecting an item from a given data source.
 
-* Filtering mode – Provides options to support both filtering and non-filtering suggestion lists. Provides three ways to display filtered suggestions. These include displaying suggestions using the drop-down list, which appends the first suggestion to text, and a combination of both.
+- **Filtering Mode**: Offers options to support filtering and non-filtering suggestion lists, and provides three ways to display filtered suggestions, including using a drop-down list, appending the first suggestion to text, or a combination of both.
 
-* Suggestion modes – Suggestions can be filtered in different modes, such us StartsWith, EndWith, Contains, Equals, Custom and more. ComboBox provides both case-sensitive and case-insensitive modes. The items only filter the Allow Filtering property has enabled.
+- **Suggestion Modes**: Filter suggestions using various modes such as StartsWith, EndsWith, Contains, Equals, Custom, and more. ComboBox supports both case-sensitive and case-insensitive modes. Items filter only when the Allow Filtering property is enabled.
 
-* MultiSelection – Provides two different ways to select multiple items from the suggestion list. They are using Token representation and Delimiter. In Token mode, the text can be wrapped in two ways. They are Wrap and None. In Wrap mode text will be wrapped to next line. When using None, the text will be wrapped horizontally. 
+- **Multi-Selection**: Offers two different methods for selecting multiple items from the suggestion list: using Token representation and Delimiter. In Token mode, text can wrap in two ways: Wrap, which wraps text to the next line, and None, which wraps text horizontally.
 
-* Customization Support – Provide options to customize both the Entry and Suggestion drop down.
+- **Customization Support**: Provides options to customize both the Entry and the Suggestion drop-down.
 
-* Header and Footer – Header and Footer content can be given in the top and bottom of the Suggestion list in SfComboBox
+- **Header and Footer**: Add header and footer content to the top and bottom of the suggestion list in SfComboBox.
 
-* Highlighting Text – Highlights the matching text in the suggestion list based on the input given in it.
+- **Highlighting Text**: Highlights matching text in the suggestion list based on user input.
 
-* Watermark – Supports explanatory text inside the combo box control until the user inputs text. Watermark is restored again if user clears the text in control.
+- **Watermark**: Displays explanatory text inside the ComboBox control until the user inputs text. It is restored if the user clears the text in the control.

@@ -1,18 +1,16 @@
 ---
 layout: post
-title: Set Header in Xamarin Busy Indicator control | Syncfusion
-description: Learn here all about Set Header support in Syncfusion Xamarin Busy Indicator (SfBusyIndicator) control and more.
-platform: xamarin
-control: BusyIndicator
+title: Set Header in Xamarin Busy Indicator Control | Syncfusion
+description: Explore how to set headers in the Syncfusion Xamarin Busy Indicator (SfBusyIndicator) control.
+platform: Xamarin
+control: SfBusyIndicator
 documentation: ug
 ---
 # Set Header in Xamarin Busy Indicator (SfBusyIndicator)
 
-## Set Header in Xamarin Busy Indicator  (SfBusyIndicator)
-
 ## Title
 
-[`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) provides option to set the text that indicates the information related to loading. This can be done using [`Title`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_Title) property.
+The [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) control allows you to set informative text related to loading processes using the [`Title`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_Title) property.
 
 {% tabs %}
 
@@ -66,7 +64,7 @@ namespace GettingStarted
 
 ## TextColor
 
-[`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) provides options to change the color of the text. The color of the text can be changed using the [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_TextColor) property.
+The `SfBusyIndicator` provides the ability to customize the color of the text using the [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_TextColor) property.
 
 {% tabs %}
 
@@ -122,7 +120,7 @@ namespace GettingStarted
 
 ## TextSize
 
-[`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) provides options to change the size of the text. The size of the text can be changed using the [`TextSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_TextSize) property.
+You can adjust the text size in the `SfBusyIndicator` using the [`TextSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_TextSize) property.
 
 {% tabs %}
 
@@ -180,7 +178,7 @@ namespace GettingStarted
 
 ## TitlePlacement
 
-[`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) provides options to set the [`Title`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_Title) at the top or bottom of the Busy Indicator. The [`Title`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_Title) can be set using the [`TitlePlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_TitlePlacement) property. When the [`Title`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_Title) is not needed, set the [`TitlePlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_TitlePlacement) property of [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) to [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.TitlePlacement.html#Syncfusion_SfBusyIndicator_XForms_TitlePlacement_None).
+The `SfBusyIndicator` offers functionality to position the [`Title`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_Title) at the top or bottom of the control using the [`TitlePlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_TitlePlacement) property. Set [`TitlePlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_TitlePlacement) to [`None`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.TitlePlacement.html#Syncfusion_SfBusyIndicator_XForms_TitlePlacement_None) if the title is unnecessary.
 
 {% tabs %}
 

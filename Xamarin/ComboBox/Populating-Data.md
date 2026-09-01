@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Populating Data  in Xamarin ComboBox control | Syncfusion
-description: Learn here all about Populating Data  support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
-platform: xamarin
+title: Populating Data in Xamarin ComboBox Control | Syncfusion
+description: Learn about populating data support in the Syncfusion Xamarin ComboBox (SfComboBox) control and more.
+platform: Xamarin
 control: SfComboBox
 documentation: ug
 ---
 
-# Populating Data  in Xamarin ComboBox (SfComboBox)
+# Populating Data in Xamarin ComboBox (SfComboBox)
 
-[`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) control can be populated with a list of string or business objects, which assists the users when typing. Users can choose one item from the filtered suggestion list.
+The [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) control can be populated with a list of strings or business objects, which assists users during typing. Users can select one item from the filtered suggestion list.
 
-The [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DataSource) property is used to populate data in the combo box control. This section explains how to populate the combo box control with list of string and list of employee details separately.
+The [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DataSource) property is used to populate data in the combo box control. This section explains how to populate the combo box control with a list of strings and a list of employee details separately.
 
-## Populating string data
+## Populating String Data
 
-Create an instance of string list and populate items as shown in the following codes. 
+Create an instance of a string list and populate items as shown in the following code snippets.
 
 {% tabs %}
 

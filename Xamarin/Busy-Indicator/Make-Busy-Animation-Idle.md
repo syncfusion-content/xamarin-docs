@@ -1,16 +1,14 @@
 ---
 layout: post
 title: Make Busy Animation Idle in Xamarin Busy Indicator | Syncfusion
-description: Learn here all about Make Busy Animation Idle support in Syncfusion Xamarin Busy Indicator (SfBusyIndicator) control and more.
-platform: xamarin
-control: BusyIndicator
+description: Discover how to make the busy animation idle in the Syncfusion Xamarin Busy Indicator (SfBusyIndicator) control.
+platform: Xamarin
+control: SfBusyIndicator
 documentation: ug
 ---
 # Make Busy Animation Idle in Xamarin Busy Indicator (SfBusyIndicator)
 
-## Make Busy Animation Idle in Xamarin BusyIndicator(SfBusyIndicator)
-
-[`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) control provides support to determine whether an animation needs to be executed or not. Setting the [`IsBusy`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_IsBusy) property to false will stop the animation and removes the control from view.
+The [`SfBusyIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) control allows developers to determine if an animation should be executed. By setting the [`IsBusy`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_IsBusy) property to `false`, the animation will stop, and the control will be removed from the view.
 
 {% tabs %}
 
@@ -64,6 +62,4 @@ namespace GettingStarted
 
 {% endtabs %}
 
-N> The default value is true.
-
-
+N> The default value for the `IsBusy` property is `true`.

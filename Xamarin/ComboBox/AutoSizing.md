@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AutoSizing in Xamarin ComboBox control | Syncfusion
-description: Learn here all about AutoSizing support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
+title: AutoSizing in Xamarin ComboBox Control | Syncfusion
+description: Learn about the AutoSizing support in the Syncfusion Xamarin ComboBox (SfComboBox) control among other features.
 platform: Xamarin
 control: SfComboBox
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # AutoSizing in Xamarin ComboBox (SfComboBox)
 
-AutoSizing can be enabled in [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) control so that the control will extend its layout based on the text input.
+AutoSizing can be enabled in the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) control, allowing it to adjust its layout dynamically based on the text input.
 
-[`EnableAutoSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_EnableAutoSize) property is used to enable the autoSizing in [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) control. To enable the API, you need to set the [`MultiSelectMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_MultiSelectMode) as [`Token`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.MultiSelectMode.html#Syncfusion_XForms_ComboBox_MultiSelectMode_Token) and [`TokensWrapMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TokensWrapMode) as [`Wrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.TokensWrapMode.html#Syncfusion_XForms_ComboBox_TokensWrapMode_Wrap). The default value of [`EnableAutoSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_EnableAutoSize) is false.
+To enable AutoSizing within the [`SfComboBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html) control, set the [`EnableAutoSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_EnableAutoSize) property to true. Note that this requires the [`MultiSelectMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_MultiSelectMode) to be set to [`Token`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.MultiSelectMode.html#Syncfusion_XForms_ComboBox_MultiSelectMode_Token) and [`TokensWrapMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TokensWrapMode) to [`Wrap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.TokensWrapMode.html#Syncfusion_XForms_ComboBox_TokensWrapMode_Wrap). The default setting for [`EnableAutoSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_EnableAutoSize) is false.
 
 {% tabs %}
 {% highlight xaml %}

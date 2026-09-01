@@ -1,18 +1,17 @@
 ---
 layout: post
-title: Watermark in Xamarin AutoComplete control | Syncfusion
-description: Learn about Watermark support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more details.
+title: Watermark in Xamarin.Forms AutoComplete | Syncfusion
+description: Learn about Watermark support in Syncfusion Xamarin.Forms AutoComplete (SfAutoComplete) control and how to customize it.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
 ---
 
-# Watermark in Xamarin AutoComplete (SfAutoComplete)
+# Watermark in Xamarin.Forms AutoComplete (SfAutoComplete)
 
-## WaterMark in Xamarin SfAutocomplete
-
-[`Watermark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_Watermark) provides a short note about the type of input to enter in the editor control. Watermarks are visible only if the text is empty. Also it will reappear if the text is cleared.
-The following example, explains the usability of watermark which hints user to start with the character “U”.
+## Overview
+The [`Watermark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_Watermark) property provides a short hint that describes the expected input in the SfAutoComplete control. Watermarks are visible only when the text field is empty and will reappear if the text is cleared.
+The following example demonstrates how to use the watermark to hint users to start with the character "U":
 
 {% tabs %}
 
@@ -102,9 +101,10 @@ namespace AutocompleteSample
 
 ![Watermark](images/Watermark/watermark.png)
 
-## Changing Watermark Text Color
+> **Note:** There's an inconsistency in the example above. The XAML code shows "Enter 'U' to filter suggestions" while the C# code shows "Enter 'A' to filter suggestions". Make sure to use consistent watermark text in your implementation.
+## Customizing Watermark Text Color
 
-Text color of watermark can be customized using [`WatermarkColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_WatermarkColor) property.
+You can customize the text color of the watermark using the [`WatermarkColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_WatermarkColor) property:
 
 {% tabs %}
 
@@ -194,12 +194,11 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-![watermark color](images/Watermark/watermark-color.png)
+![Watermark color](images/Watermark/watermark-color.png)
 
-## Focus the control
+## Setting Initial Focus on the Control
 
-The autocomplete sets the user to focus the autocomplete textbox initially after the control gets rendered using [`IsFocused`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_IsFocused) property.
-
+You can set the initial focus on the AutoComplete control when the page loads by using the [`IsFocused`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_IsFocused) property. This automatically displays the keyboard for user input as soon as the control is rendered.
 {% tabs %}
 
 {% highlight xaml %}
@@ -290,4 +289,5 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to knows the functionalities of each feature.
+> **Note**
+> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to learn about the functionalities of each feature.

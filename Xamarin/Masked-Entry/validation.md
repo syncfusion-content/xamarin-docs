@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation in Xamarin Masked Entry control | Syncfusion
-description: Learn here all about Validation support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
+title: Validation in Xamarin Masked Entry Control | Syncfusion
+description: Learn about validation support in the Syncfusion Xamarin Masked Entry (SfMaskedEdit) control.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
@@ -11,10 +11,10 @@ keywords: mask, SfMaskedEdit, maskededit
 
 ## Validation Mode
 
-Input validation happens based on the value of the [`ValidationMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ValidationMode) property. The enum values of this property are:
+Input validation is determined by the [`ValidationMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ValidationMode) property. The enumeration values available for this property are:
 
-* KeyPress
-* LostFocus
+- **KeyPress**
+- **LostFocus**
 
 The default value for validation mode is `LostFocus`.
 
@@ -30,11 +30,11 @@ maskedEdit.ValidationMode = InputValidationMode.KeyPress;
 {% endhighlight %}
 {% endtabs %}
 
-When the ValidationMode is LostFocus, the validation takes place when the control lost its focus. For KeyPress, the validation triggers for each key press.
+With `ValidationMode` set to `LostFocus`, validation occurs when the control loses focus. When set to `KeyPress`, validation is triggered with each key press.
 
 ## HasError
 
-This read only property is used to check whether the validation succeeds or not. It returns true once validation succeeds or else returns false. The following code example shows the usage of [`HasError`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_HasError) property.
+The `HasError` property is a read-only attribute used to verify if validation has succeeded. It returns `true` if validation succeeds; otherwise, it returns `false`. The following example demonstrates how to use the [`HasError`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_HasError) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -56,7 +56,6 @@ private void MaskedEdit_ValueChanged(object sender, Syncfusion.XForms.MaskedEdit
 {% endhighlight %}
 {% endtabs %}
 
-
-Refer this [link](events.html#valuechanged-event) to know more about the `ValueChanged` event of SfMaskedEdit control.
+Refer to this [link](events.html#valuechanged-event) for more information about the `ValueChanged` event of the `SfMaskedEdit` control.
 
 ![ValidationMode support in Xamarin.Forms masked edit](SfMaskedEditImages/Validation.png)

@@ -1,33 +1,38 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Badge View control for Xamarin.Forms
-description: This section explains how to add SfBadgeView reference, lanching the control in each platform, and initializing the control
-platform: xamarin
+title: Getting Started with Syncfusion Badge View Control for Xamarin.Forms
+description: This section explains how to add the SfBadgeView reference, launch the control on each platform, and initialize it.
+platform: Xamarin
 control: SfBadgeView
 documentation: ug
 ---
 
-# SfBadgeView Getting Started
+# Getting Started with SfBadgeView
+This section outlines the steps required to configure the [Xamarin Badge View](https://www.syncfusion.com/xamarin-ui-controls/xamarin-badge-view) (`SfBadgeView`) control and customize its elements.
 
-This section explains the steps required to configure the [Xamarin Badge View](https://www.syncfusion.com/xamarin-ui-controls/xamarin-badge-view) (SfBadgeView) control and customize its elements.
+## Assembly Deployment
 
-## Assembly deployment
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), locate all necessary assemblies in: `{Syncfusion Essential Studio Installed location}/Essential Studio/{Version #}/Xamarin/lib`.
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+Example path: `C:\Program Files (x86)\Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib`.
 
-E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+> **Note:** On Mac, assemblies are found in: `Documents/Syncfusion/{Version #}/Xamarin/lib`.
+## Adding SfBadgeView Reference
 
-N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+You can add the SfBadgeView reference using one of the following methods:
 
-## Adding SfBadgeView reference
+**Method 1: Using NuGet**
+Syncfusion Xamarin components are available on [nuget.org](https://www.nuget.org/). To add `SfBadgeView` to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfBadgeView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfBadgeView), and install it.
 
-You can add SfBadgeView reference using one of the following methods:
+![Adding SfBadgeView reference from NuGet](getting-started_images/Adding SfBadgeView reference.png)
 
-**Method 1: Adding SfBadgeView reference from nuget.org**
+> **Note:** Install the same version of the SfBadgeView NuGet in all projects.
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfBadgeView to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfBadgeView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfBadgeView), and then install it.
+**Method 2: Using Xamarin Toolbox**
+The Xamarin Toolbox allows you to drag the `SfBadgeView` control onto the XAML page, automatically installing required [NuGet packages](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) and adding the namespace. Learn more about the [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
-![Adding SfBadgeView reference from nuget](getting-started_images/Adding SfBadgeView reference.png) 
+**Method 3: Manually Adding Assemblies**
+Manually reference assemblies from the installed location:
 
 N> Install the same version of SfBadgeView NuGet in all the projects.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in Xamarin Effects View control | Syncfusion
-description: Learn here all about Customization support in Syncfusion Xamarin Effects View (SfEffectsView) control and more.
+title: Customization in Xamarin Effects View Control | Syncfusion
+description: Discover how to customize the Syncfusion Xamarin Effects View (SfEffectsView) control, including corner radius, animation duration, colors, and more.
 platform: xamarin
 control: SfEffectsView
 documentation: ug
@@ -9,12 +9,12 @@ documentation: ug
 
 # Customization in Xamarin Effects View (SfEffectsView)
 
-The [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) control provides support to customize the corner radius, animation duration, color, and more. This section explains how to customize the effects view control.
+The [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) control offers customization options for corner radius, animation duration, colors, and more. This section provides guidance on customizing the Effects View control.
 
 
 ## CornerRadius
 
-The [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_CornerRadius) property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the corner radius of the [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) control.
+The [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_CornerRadius) property allows you to customize the corner radius of the `SfEffectsView`.
 
 {% tabs %} 
 
@@ -41,8 +41,7 @@ var effectsView = new SfEffectsView
 
 ## RippleAnimationDuration
 
-The [`RippleAnimationDuration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_RippleAnimationDuration) property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the duration of ripple animation.
-
+Customize the duration of ripple animation using the [`RippleAnimationDuration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_RippleAnimationDuration) property.
 {% tabs %} 
 
 {% highlight xaml %} 
@@ -66,7 +65,7 @@ var effectsView = new SfEffectsView()
 
 ## ScaleAnimationDuration
 
-The [`ScaleAnimationDuration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_ScaleAnimationDuration) property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the duration of scale animation.
+The [`ScaleAnimationDuration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_ScaleAnimationDuration) property allows customization of the scale animation duration.
 
 {% tabs %} 
 
@@ -96,8 +95,7 @@ var effectsView = new SfEffectsView()
 
 ## RotationAnimationDuration
 
-The [`RotationAnimationDuration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_RotationAnimationDuration) property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the duration of rotation animation.
-
+Customize the rotation animation duration using the [`RotationAnimationDuration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_RotationAnimationDuration) property.
 {% tabs %} 
 
 {% highlight xaml %} 
@@ -126,7 +124,7 @@ var effectsView = new SfEffectsView()
 
 ## InitialRippleFactor
 
-The [`InitialRippleFactor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_InitialRippleFactor) property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the radius of the ripple when ripple animation starts.
+Use the [`InitialRippleFactor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_InitialRippleFactor) property to customize the initial ripple radius when the animation starts.
 
 {% tabs %} 
 
@@ -153,8 +151,7 @@ var effectsView = new SfEffectsView
 
 ## ScaleFactor
 
-The [`ScaleFactor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_ScaleFactor) property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the scale of the view.
-
+Customize the scale of the view using the [`ScaleFactor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_ScaleFactor) property.
 {% tabs %} 
 
 {% highlight xaml %} 
@@ -187,7 +184,7 @@ var effectsView = new SfEffectsView
 
 ## HighlightColor
 
-The [`HighlightColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_HighlightColor) property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the color of highlight effect.
+Use the [`HighlightColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_HighlightColor) property to customize the highlight effect color.
 
 {% tabs %} 
 
@@ -217,8 +214,7 @@ var effectsView = new SfEffectsView
 
 ## RippleColor
 
-The [`RippleColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_RippleColor) property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the color of ripple.
-
+Customize the ripple color using the [`RippleColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_RippleColor) property.
 {% tabs %} 
 
 {% highlight xaml %} 
@@ -244,7 +240,7 @@ var effectsView = new SfEffectsView
 
 ## SelectionColor
 
-The [`SelectionColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_SelectionColor) property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the color of selection effect.
+The [`SelectionColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_SelectionColor) property is used to customize the selection effect color.
 
 {% tabs %} 
 
@@ -274,8 +270,7 @@ var effectsView = new SfEffectsView
 
 ## Angle
 
-The [`Angle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_Angle) property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the rotation angle.
-
+Customize the rotation angle using the [`Angle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_Angle) property.
 {% tabs %} 
 
 {% highlight xaml %} 
@@ -304,7 +299,7 @@ var effectsView = new SfEffectsView
 
 ## HighlightColorOpacity
 
-The [`HighlightColorOpacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_HighlightColorOpacity) property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) can be used to customise the opacity of the [`HighlightColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_HighlightColor). The default value is 0.04 and it ranges from 0 to 1.
+Adjust the opacity of the [`HighlightColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_HighlightColor) using the [`HighlightColorOpacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_HighlightColorOpacity) property. The default value is 0.04, ranging from 0 to 1.
 
 {% tabs %} 
 
@@ -334,7 +329,7 @@ var effectsView = new SfEffectsView
 
 ## RippleColorOpacity
 
-The [`RippleColorOpacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_RippleColorOpacity) property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) can be used to customise the opacity of the [`RippleColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_RippleColor). The default value is 0.12 and it ranges from 0 to 1.
+Customize the opacity of the [`RippleColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_RippleColor) using the [`RippleColorOpacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_RippleColorOpacity) property. The default value is 0.12, ranging from 0 to 1.
 
 {% tabs %} 
 
@@ -362,7 +357,7 @@ var effectsView = new SfEffectsView
 
 ## SelectionColorOpacity
 
-The [`SelectionColorOpacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_SelectionColorOpacity) property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) can be used to customise the opacity of the [`SelectionColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_SelectionColor). The default value is 0.12 and it ranges from 0 to 1.
+Adjust the opacity of the [`SelectionColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_SelectionColor) using the [`SelectionColorOpacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_SelectionColorOpacity) property. The default value is 0.12, ranging from 0 to 1.
 
 {% tabs %} 
 
@@ -390,8 +385,7 @@ var effectsView = new SfEffectsView
 
 ![Selection color opacity customization](Customization_images/EffectsView_SelectionColorOpacity.png)
 
-## See also
+## See Also
 
-[How to get the selected item from ListView while using SfEffectsView within ItemTemplate](https://support.syncfusion.com/kb/article/10193/how-to-get-the-selected-item-from-listview-while-using-effectsview-within-itemtemplate)
-
-[How to use SfEffectsView in SfListView](https://support.syncfusion.com/kb/article/9569/how-to-use-the-effects-view-in-xamarinforms-listview-sflistview)
+- [How to get the selected item from ListView while using SfEffectsView within ItemTemplate](https://support.syncfusion.com/kb/article/10193/how-to-get-the-selected-item-from-listview-while-using-effectsview-within-itemtemplate)
+- [How to use SfEffectsView in SfListView](https://support.syncfusion.com/kb/article/9569/how-to-use-the-effects-view-in-xamarinforms-listview-sflistview)

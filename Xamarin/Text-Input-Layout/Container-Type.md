@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Container Type in Xamarin Text Input Layout control | Syncfusion
-description: Learn here all about Container Type support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
+title: Container Types in Xamarin Text Input Layout Control | Syncfusion
+description: Learn about the different container types available in the Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Container Type in Xamarin Text Input Layout (SfTextInputLayout)
+# Container Types in Xamarin Text Input Layout (SfTextInputLayout)
 
-Containers improve the discoverability of input view by creating a contrast between the input view and assistive elements.
+Containers enhance the visibility of input views by creating a contrast between the input view and assistive elements.
 
 ## Filled
 
-The background of the input view will be filled with container color, and its stroke (at the bottom edge) color and thickness will be changed based on its states. It can be enabled by setting the [ContainerType](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ContainerType) property to [Filled](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html#Syncfusion_XForms_TextInputLayout_ContainerType_Filled).
+The background of the input view will be filled with the container color, and the stroke color and thickness at the bottom edge will be altered based on its state. This can be enabled by setting the [ContainerType](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ContainerType) property to [Filled](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html#Syncfusion_XForms_TextInputLayout_ContainerType_Filled).
 
 {% tabs %} 
 
@@ -42,7 +42,7 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 ## Outlined
 
-When setting the [ContainerType](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ContainerType) property to [Outlined](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html#Syncfusion_XForms_TextInputLayout_ContainerType_Outlined), the container will be covered with a rounded-corner border.
+When the [ContainerType](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ContainerType) property is set to [Outlined](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html#Syncfusion_XForms_TextInputLayout_ContainerType_Outlined), the container will have a rounded-corner border.
 
 {% tabs %} 
 
@@ -70,9 +70,9 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 ![Outlined type](Container-Type-images/textInput_container_img2.png)
 
-### Customize the corner radius of the outline border 
+### Customizing the Corner Radius of the Outline Border
 
-When setting the [OutlineCornerRadius](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_OutlineCornerRadiusProperty) property to double value, the corner radius of the container will be changed.
+You can change the corner radius of the container by setting the [OutlineCornerRadius](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_OutlineCornerRadiusProperty) property to a double value.
 
 {% tabs %}
 
@@ -102,11 +102,10 @@ inputLayout.InputView = new Entry();
 ![OutlineCornerRadius img](Container-Type-images/OutlinedCornerRadius.png)
 
 >**NOTE**
-It is applicable for the outline border when setting the container type to outlined.
+>The outline border customization is applicable only when the container type is set to outlined.
+### Customizing Padding
 
-### Custom Padding
-
-Spaces around the input view can be customized by setting the InputViewPadding property to [thickness](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.thickness?view=xamarin-forms) value.
+You can customize the spaces around the input view by setting the `InputViewPadding` property to a [thickness](https://learn.microsoft.com/en-us/dotnet/api/xamarin.forms.thickness?view=xamarin-forms) value.
 
 {% tabs %} 
 
@@ -139,11 +138,11 @@ inputLayout.InputView = new Entry();
 
 #### See Also
 
-[InputViewPadding](https://support.syncfusion.com/kb/article/9553/how-to-reduce-the-inner-padding-of-xamarin-forms-text-input-layout)
+- [InputViewPadding](https://support.syncfusion.com/kb/article/9553/how-to-reduce-the-inner-padding-of-xamarin-forms-text-input-layout)
 
 ## None
 
-When setting the [ContainerType](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ContainerType) property to [None](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html#Syncfusion_XForms_TextInputLayout_ContainerType_None), the container will have empty background and enough spacing.
+Setting the [ContainerType](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ContainerType) property to [None](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html#Syncfusion_XForms_TextInputLayout_ContainerType_None) removes the container background but maintains spacing.
 
 {% tabs %} 
 
@@ -171,13 +170,9 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 ![None type](Container-Type-images/textInput_None_Type.png)
 
-
 ## See also
 
-[How to customize the properties of outline border colors, hint name, helper text, error text, and char count](https://support.syncfusion.com/kb/article/10194/how-to-customize-the-properties-of-outline-border-colors-hint-name-helper-text-error-text)
-
-[How to create a rounded corner SfTextInputLayout](https://support.syncfusion.com/kb/article/10202/how-to-create-a-rounded-corner-sftextinputlayout-in-xamarin-forms)
-
-[How to reduce the inner padding of SfTextInputLayout](https://support.syncfusion.com/kb/article/9553/how-to-reduce-the-inner-padding-of-xamarin-forms-text-input-layout)
-
-[How to customize the color of border and labels in SfTextInputLayout](https://support.syncfusion.com/kb/article/9248/how-to-customize-the-color-of-border-and-labels-in-sftextinputlayout)
+- [Customizing outline border colors, hint name, helper text, error text, and char count](https://support.syncfusion.com/kb/article/10194/how-to-customize-the-properties-of-outline-border-colors-hint-name-helper-text-error-text)
+- [Creating a rounded corner SfTextInputLayout](https://support.syncfusion.com/kb/article/10202/how-to-create-a-rounded-corner-sftextinputlayout-in-xamarin-forms)
+- [Reducing the inner padding of SfTextInputLayout](https://support.syncfusion.com/kb/article/9553/how-to-reduce-the-inner-padding-of-xamarin-forms-text-input-layout)
+- [Customizing the color of border and labels in SfTextInputLayout](https://support.syncfusion.com/kb/article/9248/how-to-customize-the-color-of-border-and-labels-in-sftextinputlayout)

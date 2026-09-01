@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Number Formatting in Xamarin Numeric Entry control | Syncfusion
-description: Learn here all about Number Formatting support in Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control and more.
+title: Number Formatting in Xamarin Numeric Entry Control | Syncfusion
+description: Learn about Number Formatting support in the Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
 # Number Formatting in Xamarin Numeric Entry (SfNumericTextBox)
 
-The values of the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) can be configured to display different formats like currency format, percent format etc. 
+The values of the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) can be configured to display different formats such as currency and percentage.
 
-## Format string in SfNumericTextBox
+## Format String in SfNumericTextBox
 
-The [`FormatString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_FormatString) property determines the format specifier by which the display text has to be formatted. 
+The [`FormatString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_FormatString) property determines the format specifier used to format the display text.
 
-N> The control displays the formatted text when the focus is lost. The default value of [`FormatString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_FormatString) is "n".
+> **Note:** The control displays the formatted text when focus is lost. The default value for [`FormatString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_FormatString) is "n".
 
-### Display currency notation in SfNumericTextBox
+### Display Currency Notation in SfNumericTextBox
 
-`c` - Displays the value with currency notation.
+The specifier `c` displays the value with currency notation.
 	
 {% tabs %}	
 
@@ -41,9 +41,9 @@ this.Content=numericTextBox;
 	
 ![Display the value with currency notation](images/currency.png)
 
-### Display number notation in SfNumericTextBox
+### Display Number Notation in SfNumericTextBox
 
-`n` – Displays the value in number format.
+The specifier `n` displays the value in number format.
 
 {% tabs %}
 
@@ -66,9 +66,9 @@ this.Content=numericTextBox;
 
 ![Display value with number notation](images/number.png)
 
-### Display percentage notation in SfNumericTextBox
+### Display Percentage Notation in SfNumericTextBox
 
-`p` – Displays the value in percentage.
+The specifier `p` displays the value in percentage format.
 	
 {% tabs %}	
 
@@ -89,11 +89,11 @@ this.Content=numericTextBox;
 
 {% endtabs %}
 	
-![Display the value with Percentage mode](images/percentage.png)
+![Display the value with percentage mode](images/percentage.png)
 
-N> Instead of using above [`FormatString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_FormatString) types, you can provide any symbol or value as string in FormatString property which will be appended with the value in [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html). 
+> **Note:** Instead of using the above [`FormatString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_FormatString) types, you can provide any symbol or value as a string in the `FormatString` property, which will be appended to the value in the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html).
 
-By passing any string, you can get the same as appended with the value of [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html).
+By passing any string, you can append it to the value of the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html).
 
 {% tabs %}	
 
@@ -118,11 +118,11 @@ this.Content = numericTextBox;
 
 ![Display the value with custom format string](images/years.png)
 
-## Compute to percentage in SfNumericTextBox
+## Compute to Percentage in SfNumericTextBox
 
-When the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) is in percentage format, the value can be displayed in two ways as follows:
+When the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) is in percentage format, the value can be displayed in two ways:
 
-* [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.PercentDisplayMode.html#Syncfusion_SfNumericTextBox_XForms_PercentDisplayMode_Value): Displays the actual value with percentage symbol.
+- **[`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.PercentDisplayMode.html#Syncfusion_SfNumericTextBox_XForms_PercentDisplayMode_Value):** Displays the actual value with a percentage symbol.
 
 {% capture codesnippet1 %}
 
@@ -208,13 +208,14 @@ this.Content = numericTextBox;
 
 ![Display the value with enable group separator](images/enablegroupseparator.PNG)
 
-## Group separator modes in SfNumericTextBox
+## Group Separator Modes in SfNumericTextBox
 
-[`GroupSeparatorMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_GroupSeparatorMode) provides 2 states to display the group separator. 
+[`GroupSeparatorMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_GroupSeparatorMode) provides two states for displaying the group separator:
 
-When the mode is set to Always, it will display the separator while typing; however when the mode is set to [`LostFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.GroupSeparatorMode.html#Syncfusion_SfNumericTextBox_XForms_GroupSeparatorMode_LostFocus) it will enable the separator when the control loses its focus.
+- **Always**: Displays the separator while typing.
+- **[`LostFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.GroupSeparatorMode.html#Syncfusion_SfNumericTextBox_XForms_GroupSeparatorMode_LostFocus):** Enables the separator when the control loses focus.
 
-N> [`EnableGroupSeparator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_EnableGroupSeparator) property must be enabled to use the [`GroupSeparatorMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_GroupSeparatorMode).
+> **Note:** The [`EnableGroupSeparator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_EnableGroupSeparator) property must be enabled to use the [`GroupSeparatorMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_GroupSeparatorMode).
 
 {% tabs %}
 
@@ -237,14 +238,10 @@ N> [`EnableGroupSeparator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 
 {% endtabs %}
 
-![Display the value with enable group separator](images/SeparatorMode.png)
+![Display the value with enabled group separator](images/SeparatorMode.png)
 
-## See also
+## See Also
 
-[How to truncate the trailing zero's in SfNumericTextBox](https://support.syncfusion.com/kb/article/10127/how-to-truncate-the-trailing-zeros-in-xamarin-forms-numeric-control-sfnumerictextbox)
-
-[How to set customized currency symbol in SfNumericTextBox](https://support.syncfusion.com/kb/article/9131/how-to-set-customized-currency-symbol-in-xamarinforms-numeric-controls)
-
-[How to display the value with currency symbol in SfNumericTextBox](https://support.syncfusion.com/kb/article/9143/how-to-display-the-value-with-currency-symbol-in-xamarinforms-numeric-controls)
-
-
+- [How to truncate the trailing zeros in SfNumericTextBox](https://support.syncfusion.com/kb/article/10127/how-to-truncate-the-trailing-zeros-in-xamarin-forms-numeric-control-sfnumerictextbox)
+- [How to set customized currency symbol in SfNumericTextBox](https://support.syncfusion.com/kb/article/9131/how-to-set-customized-currency-symbol-in-xamarinforms-numeric-controls)
+- [How to display the value with a currency symbol in SfNumericTextBox](https://support.syncfusion.com/kb/article/9143/how-to-display-the-value-with-currency-symbol-in-xamarinforms-numeric-controls)

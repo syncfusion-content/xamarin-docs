@@ -1,7 +1,7 @@
 ---
 layout: post
-title: States and Colors in Xamarin Text Input Layout control | Syncfusion
-description: Learn here all about States and Colors support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
+title: States and Colors in Xamarin Text Input Layout Control | Syncfusion
+description: Explore the states and color customization support in the Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
@@ -9,14 +9,14 @@ documentation: ug
 
 # States and Colors in Xamarin Text Input Layout (SfTextInputLayout)
 
-Based on the states, the colors will be applied to the hint labels and borders. So, when the input view is in focused state, the focused color will be applied; it is similar to other states also. The current hint color or active color can be obtained from the [CurrentActiveColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_CurrentActiveColor) property.
+The `SfTextInputLayout` control allows customization of hint labels and borders based on different states. For example, when the input view is in a focused state, the focused color is applied; similar behavior occurs in other states. The current hint color or active color can be accessed from the [CurrentActiveColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_CurrentActiveColor) property.
 
-N> Since error is not a state, the error color will not be set to [CurrentActiveColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_CurrentActiveColor) when [HasError](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_HasError) property is set to `true`.
+> **Note:** Since error is not a state, the error color will not be set to `CurrentActiveColor` when the [HasError](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_HasError) property is `true`.
 
-## Focused color
-When the input view is focused, the [FocusedColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_FocusedColor) property value will be applied to the hint label and border. 
+## Focused Color
+When the input view is focused, the [FocusedColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_FocusedColor) property value is applied to the hint label and border.
 
-I> Cursor color of the input view will be same as the `Accent` color of the application in each platform.
+> **Info:** The cursor color of the input view will match the `Accent` color of the application on each platform.
 
 {% tabs %} 
 
@@ -45,10 +45,10 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 ![Focused color](States-And-Colors-images/textInput_colors_img1.png)
 
-## Unfocused color
-When the input view is unfocused, the [UnfocusedColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_UnfocusedColor) property value will be applied to the hint label and border. 
+## Unfocused Color
+When the input view is unfocused, the [UnfocusedColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_UnfocusedColor) property value is applied to the hint label and border.
 
-N> Thickness of the border will also vary between the focused and unfocused states.
+> **Note:** The thickness of the border also varies between the focused and unfocused states.
 
 {% tabs %} 
 
@@ -77,8 +77,8 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 ![Unfocused color](States-And-Colors-images/textInput_colors_img2.png)
 
-## Error color
-The error color can also be customized by setting the [ErrorColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ErrorColor) property.
+## Error Color
+The error color can be customized by setting the [ErrorColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ErrorColor) property.
 
 {% tabs %} 
 
@@ -109,12 +109,12 @@ inputLayout.InputView = new Entry() { Text = "John/" };
 
 ![Error color](States-And-Colors-images/textInput_colors_img3.png)
 
-## Container color
-The color of the container can be customized by setting the [ContainerBackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ContainerBackgroundColor) property. It is applicable when the [ContainerType](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ContainerType) property is set to [Filled](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html) and [Outlined](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html).
+## Container Color
+The container color can be customized by setting the [ContainerBackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ContainerBackgroundColor) property. This applies when the [ContainerType](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ContainerType) is set to [Filled](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html) or [Outlined](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html).
 
 ### Filled
 
-The color of the container is customized when the [ContainerType](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ContainerType) is [Filled](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html).
+Customize the container color when the [ContainerType](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html) is [Filled](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html).
 
 {% tabs %} 
 
@@ -147,7 +147,7 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 ### Outlined
 
-The color of the container is customized when the [ContainerType](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ContainerType) is [Outlined](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html).
+Customize the container color when the [ContainerType](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html) is [Outlined](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html).
 
 {% tabs %} 
 
@@ -176,11 +176,11 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![outlined](States-And-Colors-images/textInput_colors_img6.png)
+![Outlined](States-And-Colors-images/textInput_colors_img6.png)
 
-## Disabled state
+## Disabled State
 
-The text input layout is disabled by setting the [IsEnabled](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_IsEnabled) property to `false`. The color of the container and other UI elements will also be changed to the disabled state, but its color cannot be customized.
+The text input layout can be disabled by setting the [IsEnabled](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_IsEnabled) property to `false`. The color of the container and other UI elements will change to the disabled state, but these colors cannot be customized.
 
 {% tabs %} 
 
@@ -207,9 +207,9 @@ inputLayout.InputView = new Entry();
 
 ![Disabled state](States-And-Colors-images/textInput_colors_img5.PNG)
 
-## Customizing the text color of label
+## Customizing the Text Color of Labels
 
-You can customize the text color of the [`hint`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_Hint) label, counter label, [`helper`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_HelperText) label and [`error`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ErrorText) label using the `Color` property of the [`LabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.LabelStyle.html).
+The text color of the [`hint`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_Hint) label, counter label, [`helper`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_HelperText) label, and [`error`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ErrorText) label can be customized using the `Color` property of the [`LabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.LabelStyle.html).
 
 {% tabs %} 
 
@@ -263,12 +263,9 @@ You can customize the text color of the [`hint`](https://help.syncfusion.com/cr/
 
 ![Label text color](States-And-Colors-images/LabelTextColor.PNG)
 
-## See also
+## See Also
 
-[How to validate with required verification in SfTextInputLayout](https://www.syncfusion.com/kb/11788/how-to-validate-with-required-verification-in-text-input-layout-in-xamarin-forms)
-
-[How to customize the properties of outline border colors, hint name, helper text, error text, and char count](https://www.syncfusion.com/kb/11659/how-to-customize-the-properties-of-outline-border-colors-hint-name-helper-text-error-text)
-
-[How to change the cursor color in SfTextInputLayout](https://www.syncfusion.com/kb/11608/how-to-change-the-cursor-color-in-xamarin-forms-text-input-layout)
-
-[How to customize the color of border and labels in SfTextInputLayout](https://www.syncfusion.com/kb/10466/how-to-customize-the-color-of-border-and-labels-in-sftextinputlayout)
+- [How to validate with required verification in SfTextInputLayout](https://www.syncfusion.com/kb/11788/how-to-validate-with-required-verification-in-text-input-layout-in-xamarin-forms)
+- [How to customize the properties of outline border colors, hint name, helper text, error text, and char count](https://www.syncfusion.com/kb/11659/how-to-customize-the-properties-of-outline-border-colors-hint-name-helper-text-error-text)
+- [How to change the cursor color in SfTextInputLayout](https://www.syncfusion.com/kb/11608/how-to-change-the-cursor-color-in-xamarin-forms-text-input-layout)
+- [How to customize the color of border and labels in SfTextInputLayout](https://www.syncfusion.com/kb/10466/how-to-customize-the-color-of-border-and-labels-in-sftextinputlayout)

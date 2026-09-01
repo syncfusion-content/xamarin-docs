@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Icons in Xamarin Text Input Layout control | Syncfusion
-description: Learn here all about Custom Icons support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
+title: Custom Icons in Xamarin Text Input Layout Control | Syncfusion
+description: Learn about custom icon support in the Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
@@ -9,17 +9,15 @@ documentation: ug
 
 # Custom Icons in Xamarin Text Input Layout (SfTextInputLayout)
 
-Any custom icons can be added to the leading edge or the trailing edge of input view in the text input layout control. The events and commands related to the custom icons should be handled at the application level.
+Custom icons can be added to either the leading edge or trailing edge of an input view in the text input layout control. Events and commands related to custom icons should be handled at the application level. Unicode or font icons for the labels can be displayed as icons.
 
-Unicode or font icons for the labels can be displayed as icons.
+> **Note:** Refer to the following resources to learn more about font icons:
+> * [How to create font icons using our Metro Studio and export as TTF](https://help.syncfusion.com/metro-studio/export-icon-font)
+> * [How to set font family for custom fonts in labels](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/fonts#using-a-custom-font)
 
-N> Refer to the following links to learn more about font icons:
-* [How to create font icons using our metro studio and export as ttf?](https://help.syncfusion.com/metro-studio/export-icon-font)
-* [How to set font family for the custom fonts in labels?](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/fonts#using-a-custom-font)
+## Leading View
 
-## Leading view
-
-A label can be added as a leading icon for the input view by setting the [LeadingView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_LeadingView) property. It can be positioned either inside or outside the container by setting the [LeadingViewPosition](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_LeadingViewPosition) property. By default, it is positioned [Outside](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ViewPosition.html).
+A label can be added as a leading icon for the input view by setting the [LeadingView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_LeadingView) property. It can be positioned either inside or outside the container by using the [LeadingViewPosition](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_LeadingViewPosition) property, with the default position being [Outside](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ViewPosition.html).
 
 {% tabs %} 
 
@@ -53,9 +51,9 @@ inputLayout.InputView = new Entry();
 ![Leading view inside position](Custom-Icons-images/textInput_icons_img1.png)
 ![Leading view outside position](Custom-Icons-images/textInput_icons_img2.png)
 
-## Trailing  view
+## Trailing View
 
-A label can be added as a trailing icon for the input view by setting the [TrailingView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_TrailingView) property. It can be positioned either inside or outside  the container of input view by setting the [TrailingViewPosition](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_TrailingViewPosition) property. By default, it is positioned [Inside](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ViewPosition.html).
+A label can be added as a trailing icon for the input view by setting the [TrailingView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_TrailingView) property. It can be positioned either inside or outside the container of the input view by setting the [TrailingViewPosition](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_TrailingViewPosition) property, with the default position being [Inside](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ViewPosition.html).
 
 {% tabs %}
 
@@ -89,9 +87,9 @@ inputLayout.InputView = new Entry();
 ![Trailing view inside position](Custom-Icons-images/textInput_icons_img3.png)
 ![Trailing view outside position](Custom-Icons-images/textInput_icons_img4.png)
 
-## Leading and trailing view customization
+## Leading and Trailing View Customization
 
-The height and width of the leading and trailing view's direct child can be customized inside the text input layout. The leading and trailing view's height can be customized up to 48px, but there is no limit on width.
+The height and width of the leading and trailing view's direct child can be customized within the text input layout. The height of these views can be adjusted up to 48px, but there is no limit on width.
 
 {% tabs %}
 
@@ -140,9 +138,9 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![customisation](Custom-Icons-images/textInput_icons_img5.png)
+![Customization](Custom-Icons-images/textInput_icons_img5.png)
 
-## Leading and trailing view visibility customization
+## Leading and Trailing View Visibility Customization
 
 The [`ShowLeadingView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ShowLeadingView) and [`ShowTrailingView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_ShowTrailingView) properties in [`SfTextInputLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html) can be used to control the visibility of the leading and trailing views respectively.
 
@@ -185,8 +183,8 @@ inputLayout.ShowTrailingView = false;
 
 {% endtabs %}
 
-![Visibility customisation](Custom-Icons-images/ShowLeadingView_ShowTrailingView.gif)
+![Visibility customization](Custom-Icons-images/ShowLeadingView_ShowTrailingView.gif)
 
-## See also
+## See Also
 
 [How to align leading and trailing views](http://www.syncfusion.com/support/kb/11046/how-to-vertically-center-align-icons-in-leading-and-trailing-views)

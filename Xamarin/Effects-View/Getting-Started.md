@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Xamarin Effects View control | Syncfusion
-description: Learn here about getting started with Syncfusion Xamarin Effects View (SfEffectsView) control, its elements and more.
+title: Getting Started with Xamarin Effects View Control | Syncfusion
+description: Learn how to get started with the Syncfusion Xamarin Effects View (SfEffectsView) control, including its elements and configuration.
 platform: xamarin
 control: SfEffectsView
 documentation: ug
@@ -9,33 +9,31 @@ documentation: ug
 
 # Getting Started with Xamarin Effects View (SfEffectsView)
 
-This section explains the steps required to configure the SfEffectsView control.
+This section outlines the steps required to configure the SfEffectsView control.
 
-## Assembly deployment
+## Assembly Deployment
 
-After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+After installing [Essential Studio® for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can locate the necessary assemblies in the installation folders at `{Syncfusion Essential Studio Installed location}\Essential Studio\{Version #}\Xamarin\lib`. For example: `C:\Program Files (x86)\Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib`.
 
-E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+> **Note:** Assemblies are also available in the unzipped package location at `Documents/Syncfusion/{Version #}/Xamarin/lib` on Mac.
 
-N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+## Adding SfEffectsView Reference
 
-## Adding SfEffectsView reference
+You can add the SfEffectsView reference using one of the following methods:
 
-You can add SfEffectsView reference using one of the following methods:
+**Method 1: Adding SfEffectsView Reference from NuGet**
 
-**Method 1: Adding SfEffectsView reference from nuget.org**
-
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfEffectsView to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and then install it.
+Syncfusion Xamarin components are available on [nuget.org](https://www.nuget.org/). To add SfEffectsView to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and install it.
 
 ![Add Packages](Getting-Started_images/Reference.png)
 
-**Method 2: Adding SfEffectsView reference from toolbox**
+**Method 2: Adding SfEffectsView Reference from Toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfEffectsView control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion provides a Xamarin Toolbox. Using this toolbox, you can drag the SfEffectsView control to the XAML page, automatically installing the required NuGet packages and adding the namespace. Refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox) for installation details.
 
-**Method 3: Adding SfEffectsView assemblies manually from the installed location**
+**Method 3: Adding SfEffectsView Assemblies Manually**
 
-If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+If you prefer to manually reference the assemblies instead of using NuGet, add the following assemblies to the respective projects:
 
 Location : {Installed location}/{version}/Xamarin/lib
 
@@ -70,7 +68,7 @@ N> If you are adding the references from toolbox, the following steps are not ne
 
 ### iOS
 
-To launch the SfEffectsView in iOS, call the `SfEffectsViewRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the `LoadApplication` method is called as demonstrated in the following code sample.
+To launch the SfEffectsView in iOS, call the `SfEffectsViewRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the `LoadApplication` method, as demonstrated below.
 
 {% highlight C# %} 
 
@@ -86,7 +84,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-To deploy the effects view in `Release` mode, initialize the core assemblies in the App.xaml.cs file in the UWP project as demonstrated in the following code samples.
+To deploy the effects view in `Release` mode, initialize the core assemblies in the App.xaml.cs file in the UWP project as shown below.
 
 {% highlight C# %} 
 
@@ -107,11 +105,11 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ### Android
 
-Android platform does not require any additional configuration to render the SfEffectsView control.
+The Android platform does not require additional configuration to render the SfEffectsView control.
 
 ## Initializing SfEffectsView
 
-Import the [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) control namespace in respective page as demonstrated in the following code sample.
+Import the [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) control namespace into the respective page.
 
 {% tabs %} 
 
@@ -129,7 +127,7 @@ using Syncfusion.XForms.EffectsView;
 
 {% endtabs %}
 
-Then, initialize the SfEffectsView as demonstrated in the following code example.
+Then, initialize the SfEffectsView as demonstrated below.
 
 {% tabs %} 
 
@@ -152,10 +150,9 @@ effectsView.CornerRadius = new Thickness(0, 25, 0, 25);
 
 ![EffectsView Initialization](Getting-Started_images/RippleEffect.gif)
 
-You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/Getting-started-of-SfEffectsView-in-Xamarin.Forms)
+You can find a complete getting started sample from this [link](https://github.com/SyncfusionExamples/Getting-started-of-SfEffectsView-in-Xamarin.Forms).
 
-## See also
+## See Also
 
-[How to get the selected item from ListView while using SfEffectsView within ItemTemplate](https://support.syncfusion.com/kb/article/10193/how-to-get-the-selected-item-from-listview-while-using-effectsview-within-itemtemplate)
-
-[How to use effects view in SfListView](https://support.syncfusion.com/kb/article/9569/how-to-use-the-effects-view-in-xamarinforms-listview-sflistview)
+- [How to get the selected item from ListView while using SfEffectsView within ItemTemplate](https://support.syncfusion.com/kb/article/10193/how-to-get-the-selected-item-from-listview-while-using-effectsview-within-itemtemplate)
+- [How to use effects view in SfListView](https://support.syncfusion.com/kb/article/9569/how-to-use-the-effects-view-in-xamarinforms-listview-sflistview)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spin Button Customization in Xamarin NumericUpDown | Syncfusion
-description: Learn here all about Spin Button Customization support in Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control and more.
+description: Explore the customization options for spin buttons in the Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
@@ -9,13 +9,12 @@ documentation: ug
 
 # Spin Button Customization in Xamarin NumericUpDown (SfNumericUpDown)
 
-Spin button position in the [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) control can be changed relative to the TextBox based on [`SpinButtonAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_SpinButtonAlignment) property. 
+The spin button position in the [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) control can be adjusted using the [`SpinButtonAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_SpinButtonAlignment) property.
 
-There are three built-in modes:
+Here are three available alignment modes:
 
-## Align the spin button in right side
-
-Spin buttons will get aligned to the right side of the control.
+## Right Alignment
+Align the spin buttons to the right side of the control.
 
 {% tabs %}
 
